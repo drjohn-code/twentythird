@@ -36,9 +36,9 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <span className="label">Legal</span>
-            <Link href="/contact">Privacy</Link>
-            <Link href="/contact">Terms</Link>
-            <Link href="/contact">Ethics</Link>
+            <Link href="/legal/privacy">Privacy</Link>
+            <Link href="/legal/terms">Terms</Link>
+            <Link href="/legal/cookies">Cookies</Link>
           </div>
         </div>
         <div className="footer-bot">

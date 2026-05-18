@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GoogleAuthButton from "@/components/ui/GoogleAuthButton";
 import { signIn } from "../actions";
 
 type SearchParams = Promise<{ error?: string; message?: string }>;
@@ -14,6 +15,10 @@ export default async function SignInPage({
     <main className="auth-shell">
         <form action={signIn} className="auth-card glass">
           <h1 className="serif">Sign in</h1>
+          <GoogleAuthButton label="Sign in with Google" />
+          <div className="auth-divider" role="separator" aria-label="or">
+            <span>or</span>
+          </div>
           <label>
             <span>Email</span>
             <input
