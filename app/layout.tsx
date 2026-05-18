@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Atmosphere from "../components/layout/Atmosphere";
+import Grain from "../components/layout/Grain";
+import Nav from "../components/layout/Nav";
+import Footer from "../components/layout/Footer";
+import SiteInteractions from "../components/layout/SiteInteractions";
 
 const serif = Instrument_Serif({
   subsets: ["latin"],
@@ -47,7 +52,14 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <Atmosphere />
+        <Grain />
+        <Nav />
+        {children}
+        <Footer />
+        <SiteInteractions />
+      </body>
     </html>
   );
 }

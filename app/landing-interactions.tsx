@@ -4,44 +4,6 @@ import { useEffect } from "react";
 
 export default function LandingInteractions() {
   useEffect(() => {
-    const root = document.documentElement;
-
-    /* ----- theme toggle ----- */
-    const btn = document.getElementById("themeToggle");
-    const onToggle = () => {
-      const cur = root.getAttribute("data-theme");
-      const next = cur === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      try {
-        localStorage.setItem("theme", next);
-      } catch {}
-    };
-    btn?.addEventListener("click", onToggle);
-
-    /* ----- reveal on enter ----- */
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add("in");
-        });
-      },
-      { threshold: 0.18 },
-    );
-    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-
-    const io2 = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.classList.add("in");
-        });
-      },
-      { threshold: 0.18 },
-    );
-    document
-      .querySelectorAll(".split-section")
-      .forEach((el) => io2.observe(el));
-
-    /* ----- pinned brain section state cycling ----- */
     const pin = document.querySelector(".brain-pin") as HTMLElement | null;
     const states = document.querySelectorAll(".brain-state");
     const pips = document.querySelectorAll(".brain-progress .pip");
@@ -72,7 +34,6 @@ export default function LandingInteractions() {
     window.addEventListener("scroll", onScroll, { passive: true });
     updateBrain();
 
-    /* ----- hero parallax fade ----- */
     const fades = document.querySelectorAll<HTMLElement>("[data-fade]");
     const onFade = () => {
       fades.forEach((el) => {
@@ -89,11 +50,8 @@ export default function LandingInteractions() {
     onFade();
 
     return () => {
-      btn?.removeEventListener("click", onToggle);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("scroll", onFade);
-      io.disconnect();
-      io2.disconnect();
     };
   }, []);
 

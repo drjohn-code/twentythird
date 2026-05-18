@@ -11,14 +11,7 @@ export default async function SignInPage({
   const { error, message } = await searchParams;
 
   return (
-    <>
-      <div className="atmosphere" aria-hidden="true">
-        <div className="fog fog-1"></div>
-        <div className="fog fog-2"></div>
-      </div>
-      <div className="grain" aria-hidden="true"></div>
-
-      <main className="auth-shell">
+    <main className="auth-shell">
         <form action={signIn} className="auth-card glass">
           <h1 className="serif">Sign in</h1>
           <label>
@@ -48,8 +41,7 @@ export default async function SignInPage({
           <p className="auth-foot">
             New here? <Link href="/auth/sign-up">Create an account</Link>
           </p>
-        </form>
-      </main>
-    </>
+      </form>
+    </main>
   );
 }
