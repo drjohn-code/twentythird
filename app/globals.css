@@ -1046,6 +1046,9 @@ section{position:relative;}
   color:var(--fg);border-bottom-color:var(--hair-strong);
 }
 
+/* contact: centered form wrap */
+.contact-form-wrap{max-width:720px;margin:0 auto}
+
 /* contact: form fields */
 .contact-form{display:block}
 .field-group{display:flex;flex-direction:column;gap:28px}
