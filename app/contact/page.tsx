@@ -31,10 +31,10 @@ export default function ContactPage() {
         </div>
       </Reveal>
 
-      {/* FORM */}
+      {/* FORM + CONTACT DETAILS */}
       <section className="page-section">
         <div className="container">
-          <div className="contact-form-wrap">
+          <div className="contact-split">
             <FigureCard
               label="form"
               subtitle="substantive inquiries only"
@@ -42,6 +42,24 @@ export default function ContactPage() {
             >
               <ContactForm />
             </FigureCard>
+            <div className="contact-details">
+              <div className="contact-detail">
+                <span className="contact-detail-label">ADDRESS</span>
+                <span className="contact-detail-value">Rosendal, Uppsala, Sweden</span>
+              </div>
+              <div className="contact-detail">
+                <span className="contact-detail-label">EMAIL</span>
+                <a href="mailto:info@wellowork.net" className="contact-detail-value contact-detail-link">
+                  info@wellowork.net
+                </a>
+              </div>
+              <div className="contact-detail">
+                <span className="contact-detail-label">PHONE</span>
+                <a href="tel:+46760281272" className="contact-detail-value contact-detail-link">
+                  +46 760 28 12 72
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
