@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "../../components/layout/Reveal";
 import FigureCard from "../../components/figures/FigureCard";
@@ -109,21 +110,11 @@ export default function ContactPage() {
               >
                 <ContactForm />
               </FigureCard>
-              <div className="split-copy">
-                <div className="row-meta">
-                  <span className="num"></span>
-                  <span className="tag" style={{ fontSize: "16px" }}>
-                    Cadence
-                  </span>
-                </div>
-                <h3>
-                  When you will <span className="it">hear back</span>.
-                </h3>
-                <p>
-                  Median response over the last ninety days. Clinical inquiries
-                  are routed first; partnership replies are slower by design,
-                  because they need a meeting before a sentence.
-                </p>
+              <FigureCard
+                label="response"
+                subtitle="last 90 days, median"
+                fig="Fig. 03"
+              >
                 <ReportMock
                   caseLabel="response · last 90 days"
                   prepared="median"
@@ -136,11 +127,34 @@ export default function ContactPage() {
                   footerLabel="window"
                   footerValue="weekdays, Uppsala"
                 />
-              </div>
+              </FigureCard>
             </div>
           </div>
         </div>
       </section>
+
+      {/* FINAL CTA */}
+      <Reveal as="section" className="page-final">
+        <div className="container">
+          <div className="eyebrow" style={{ marginBottom: "28px" }}>
+            BEGIN
+          </div>
+          <h2>
+            Or just <span className="it">start</span>.
+          </h2>
+          <div className="cta-row">
+            <Link href="/auth/sign-up" className="cta">
+              Start your discovery <span className="arrow">→</span>
+            </Link>
+            <Link href="/about" className="cta-ghost">
+              <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
+                or
+              </span>{" "}
+              read the origin
+            </Link>
+          </div>
+        </div>
+      </Reveal>
 
       {/* SAFETY DISCLAIMER */}
       <div className="disclaimer-band">

@@ -1091,7 +1091,7 @@ section{position:relative;}
 /* contact: safety disclaimer band */
 .disclaimer-band{
   border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
-  padding:40px 0;margin-top:80px;
+  padding:40px 0;margin-top:0;
   text-align:center;position:relative;z-index:2;
 }
 .disclaimer-band p{
@@ -1100,12 +1100,12 @@ section{position:relative;}
   padding:0 36px;
 }
 
-/* about: final cta block (mirrors landing final, scoped) */
+/* final cta block (about + contact, scoped) */
 .page-final{
-  min-height:60vh;display:grid;place-items:center;
-  padding:120px 0;text-align:center;position:relative;
+  padding:120px 0 100px;
+  text-align:center;position:relative;
 }
-.page-final .container{max-width:880px;padding:0 36px}
+.page-final .container{max-width:880px;margin:0 auto;padding:0 36px}
 .page-final h2{
   font-family:var(--serif);
   font-size:clamp(40px,5.6vw,84px);
