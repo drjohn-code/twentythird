@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { signInWithGoogle } from "@/lib/supabase/client";
+import { AUTH_ERRORS } from "@/lib/auth/messages";
 
 type Props = {
   label: string;
@@ -19,11 +20,12 @@ export default function GoogleAuthButton({ label, next }: Props) {
       const { error } = await signInWithGoogle(next);
       if (error) {
         setLoading(false);
-        setError("couldn't reach google — try again");
+        setError(AUTH_ERRORS.OAUTH_FAILED);
       }
+      // On success the browser is already redirecting; leave loading=true.
     } catch {
       setLoading(false);
-      setError("couldn't reach google — try again");
+      setError(AUTH_ERRORS.OAUTH_FAILED);
     }
   }
 
@@ -63,14 +65,15 @@ export default function GoogleAuthButton({ label, next }: Props) {
           </svg>
         </span>
         <span className="google-label">
-          {loading ? (
-            <em className="google-loading">signing you in…</em>
-          ) : (
-            label
-          )}
+          <span>{label}</span>
+          {loading ? <em className="auth-submit-pending">…</em> : null}
         </span>
       </button>
-      {error ? <p className="google-error">{error}</p> : null}
+      {error ? (
+        <p className="google-error" role="alert">
+          {error}
+        </p>
+      ) : null}
     </div>
   );
 }

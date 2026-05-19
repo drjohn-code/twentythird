@@ -1,26 +1,33 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-
-function safeNext(raw: string | null): string {
-  if (!raw) return "/";
-  if (!raw.startsWith("/") || raw.startsWith("//")) return "/";
-  return raw;
-}
+import { resolveDestinationForUser } from "@/lib/auth/post-auth";
+import { AUTH_ERRORS } from "@/lib/auth/messages";
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = safeNext(searchParams.get("next"));
+  const nextParam = searchParams.get("next");
 
-  if (code) {
-    const supabase = await createClient();
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
-    if (!error) {
-      return NextResponse.redirect(`${origin}${next}`);
-    }
+  if (!code) {
+    return NextResponse.redirect(
+      `${origin}/auth/sign-in?error=${encodeURIComponent(AUTH_ERRORS.CALLBACK_FAILED)}`,
+    );
   }
 
-  return NextResponse.redirect(
-    `${origin}/auth/sign-in?error=${encodeURIComponent("Could not complete sign-in.")}`,
+  const supabase = await createClient();
+  const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+
+  if (error || !data.session) {
+    return NextResponse.redirect(
+      `${origin}/auth/sign-in?error=${encodeURIComponent(AUTH_ERRORS.CALLBACK_FAILED)}`,
+    );
+  }
+
+  const destination = await resolveDestinationForUser(
+    supabase,
+    data.session.user.id,
+    nextParam,
   );
+
+  return NextResponse.redirect(`${origin}${destination}`);
 }
