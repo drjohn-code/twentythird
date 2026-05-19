@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   title: "TwentyThird — Psychodynamic AI for the inner life",
   description:
     "Advanced psychodynamic AI for self-discovery. Subconscious loop mapping, deep-core profiling, and Lacanian analysis of the linguistic unconscious.",
-  metadataBase: new URL("https://twentythird.com"),
+  metadataBase: new URL("https://day-23.com"),
   openGraph: {
     title: "TwentyThird",
     description: "Psychodynamic AI for the inner life.",
