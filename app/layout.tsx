@@ -30,9 +30,16 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TwentyThird — psychodynamic AI",
+  title: "TwentyThird — Psychodynamic AI for the inner life",
   description:
-    "Advanced psychodynamic AI for self-discovery. Root-cause analysis grounded in Freud and Lacan.",
+    "Advanced psychodynamic AI for self-discovery. Subconscious loop mapping, deep-core profiling, and Lacanian analysis of the linguistic unconscious.",
+  metadataBase: new URL("https://twentythird.com"),
+  openGraph: {
+    title: "TwentyThird",
+    description: "Psychodynamic AI for the inner life.",
+    siteName: "TwentyThird",
+    type: "website",
+  },
 };
 
 const themeBootstrap = `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
