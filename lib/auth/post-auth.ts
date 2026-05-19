@@ -13,7 +13,7 @@ export type ProfileGate = {
 } | null;
 
 const ONBOARDING_PATH = "/onboarding";
-const HOME_PATH = "/";
+const DASHBOARD_PATH = "/dashboard";
 
 /**
  * Decide the path an authenticated user belongs on, given their
@@ -21,12 +21,15 @@ const HOME_PATH = "/";
  * incomplete" — the trigger and backfill in the migration mean a
  * profile should always exist, but if one is missing we route to
  * onboarding rather than letting the user roam.
+ *
+ * The /onboarding entry then forwards to the correct sub-step via
+ * lib/onboarding/routing.ts.
  */
 export function resolvePostAuthDestination(profile: ProfileGate): string {
   if (!profile || profile.onboarding_completed_at === null) {
     return ONBOARDING_PATH;
   }
-  return HOME_PATH;
+  return DASHBOARD_PATH;
 }
 
 /**

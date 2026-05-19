@@ -4,7 +4,7 @@ import { safeNext } from "@/lib/auth/post-auth";
 
 type CookieToSet = { name: string; value: string; options: CookieOptions };
 
-const GATED_PREFIXES = ["/onboarding", "/app"];
+const GATED_PREFIXES = ["/onboarding", "/dashboard", "/app"];
 
 function isGated(pathname: string): boolean {
   return GATED_PREFIXES.some(
