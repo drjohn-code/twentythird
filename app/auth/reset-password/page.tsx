@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import InlineError from "@/components/ui/InlineError";
 import AuthSubmit from "@/components/ui/AuthSubmit";
 import { resetPassword } from "../actions";
@@ -11,6 +12,7 @@ import {
 
 type SearchParams = Promise<{
   error?: string;
+  code?: string;
 }>;
 
 export default async function ResetPasswordPage({
@@ -18,7 +20,16 @@ export default async function ResetPasswordPage({
 }: {
   searchParams: SearchParams;
 }) {
-  const { error } = await searchParams;
+  const { error, code } = await searchParams;
+
+  // Defensive fallback: Supabase's /auth/v1/verify endpoint sometimes
+  // ignores redirectTo and uses the project's Site URL instead, which
+  // lands the user here with ?code=... unexchanged. Server Components
+  // cannot write cookies, so we hand the code off to the recovery
+  // route handler which exchanges it and sets the session cookies.
+  if (code) {
+    redirect(`/auth/callback/recovery?code=${encodeURIComponent(code)}`);
+  }
 
   // We allow authenticated users here — they may be mid-recovery.
   // If there's no user at all the recovery link wasn't valid; show

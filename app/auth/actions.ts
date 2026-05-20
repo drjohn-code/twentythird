@@ -188,8 +188,14 @@ export async function forgotPassword(formData: FormData) {
 
   const supabase = await createClient();
   const origin = await siteOrigin();
+  // Path-encoded recovery callback. Supabase's /auth/v1/verify endpoint
+  // can strip or overwrite query params on redirectTo when it appends
+  // ?code=...; putting the "recovery" signal in the path makes it
+  // survive that round-trip intact.
+  const redirectTo = `${origin}/auth/callback/recovery`;
+  console.log("[forgotPassword] redirectTo:", redirectTo);
   await supabase.auth.resetPasswordForEmail(parsed.data.email, {
-    redirectTo: `${origin}/auth/reset-password`,
+    redirectTo,
   });
 
   // Always-same success state regardless of whether the email is
