@@ -104,6 +104,7 @@ export type StepDef = {
   lede: string;
   /** Minutes (8–14). Shown in the side meta block. */
   estMinutes: number;
+  epigraph?: string;
   closeQuestions: CloseQuestion[];
   openQuestions: OpenQuestion[];
 };
