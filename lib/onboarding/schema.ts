@@ -61,7 +61,7 @@ function questionValidator(q: CloseQuestion | OpenQuestion) {
       const allowed = new Set(q.options.map((o) => o.value));
       return z
         .array(z.string().refine((v) => allowed.has(v), `Unknown option for ${q.id}`))
-        .max(q.max ?? q.options.length);
+        .max(q.maxSelections ?? q.options.length);
     }
     case "scale": {
       return z.number().int().min(q.min).max(q.max);
