@@ -38,7 +38,15 @@ export type MultiQuestion = {
   options: Option[];
   max?: number;
 };
-
+export type MultiQuestion = {
+  kind: "multi";
+  id: string;
+  number: string;
+  title: string;
+  subtitle: string; 
+  options: Option[];
+  max?: number;
+};
 export type ScaleQuestion = {
   kind: "scale";
   id: string;
