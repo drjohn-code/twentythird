@@ -35,14 +35,6 @@ export type MultiQuestion = {
   id: string;
   number: string;
   title: string;
-  options: Option[];
-  max?: number;
-};
-export type MultiQuestion = {
-  kind: "multi";
-  id: string;
-  number: string;
-  title: string;
   subtitle: string; 
   options: Option[];
   max?: number;
