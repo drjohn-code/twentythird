@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState, useTransition } from "react";
+import { useMemo, useState } from "react";
+import { useFormStatus } from "react-dom";
 import Checkbox from "@/components/ui/Checkbox";
 import Field from "@/components/ui/Field";
 import Input from "@/components/ui/Input";
@@ -41,7 +42,6 @@ export default function AccountForm({
   const [year, setYear] = useState(defaultBirthYear);
   const [gender, setGender] = useState<string | null>(defaultGender || null);
   const [terms, setTerms] = useState(false);
-  const [isPending, startTransition] = useTransition();
 
   const years = useMemo(() => {
     const out: { value: string; label: string }[] = [];
@@ -58,19 +58,11 @@ export default function AccountForm({
   const genderOk = !!gender;
   const ready = nameOk && yearOk && genderOk && terms;
 
-  function onSubmit(formData: FormData) {
-    if (gender) formData.set("gender", gender);
-    formData.set("terms_accepted", terms ? "on" : "");
-    startTransition(() => {
-      initiateAccount(formData);
-    });
-  }
-
   const showFieldError = (field: string) =>
     errorKind === "invalid" && errorField === field;
 
   return (
-    <form action={onSubmit} className="auth-form account-form" noValidate>
+    <form action={initiateAccount} className="auth-form account-form" noValidate>
       {errorKind === "save_failed" ? (
         <InlineError>
           Couldn&apos;t save that. Try again in a moment.
@@ -136,6 +128,9 @@ export default function AccountForm({
           value={gender}
           onChange={setGender}
         />
+        {/* Radio buttons render as type="button" so they don't contribute
+            to FormData; mirror the controlled value here for submission. */}
+        <input type="hidden" name="gender" value={gender ?? ""} />
       </Field>
 
       <div className="auth-field onb-field terms-field">
@@ -166,21 +161,28 @@ export default function AccountForm({
         </Checkbox>
       </div>
 
-      <button
-        type="submit"
-        className="pill account-submit"
-        disabled={!ready || isPending}
-        aria-busy={isPending || undefined}
-      >
-        <span>Initiate account</span>
-        {isPending ? (
-          <em className="auth-submit-pending">…</em>
-        ) : (
-          <span aria-hidden="true" className="serif-i">
-            →
-          </span>
-        )}
-      </button>
+      <SubmitButton disabled={!ready} />
     </form>
+  );
+}
+
+function SubmitButton({ disabled }: { disabled: boolean }) {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      className="pill account-submit"
+      disabled={disabled || pending}
+      aria-busy={pending || undefined}
+    >
+      <span>Initiate account</span>
+      {pending ? (
+        <em className="auth-submit-pending">…</em>
+      ) : (
+        <span aria-hidden="true" className="serif-i">
+          →
+        </span>
+      )}
+    </button>
   );
 }
