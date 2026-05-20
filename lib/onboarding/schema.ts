@@ -95,8 +95,9 @@ export function stepPayloadSchema(stepNumber: number) {
   const qidSet = new Set(qs.map((q) => q.id));
   const shape: Record<string, z.ZodTypeAny> = {};
   for (const q of qs) {
-  if (q?.id) { 
-    shape[q.id] = questionValidator(q).optional();
+  const id = q?.id; 
+  if (id) {         
+    shape[id] = questionValidator(q).optional();
   }
   }
   shape[SKIPPED_KEY] = z
