@@ -25,6 +25,7 @@ export type SingleQuestion = {
   id: string;
   number: string;
   title: string;
+  subtitle: string; 
   options: Option[];
   /** Renders horizontally as chips when there are ≤ 4 short options. */
   layout?: "vertical" | "horizontal";
@@ -44,6 +45,7 @@ export type ScaleQuestion = {
   id: string;
   number: string;
   title: string;
+  subtitle: string; 
   min: 1;
   max: 10;
   lowLabel: string;
@@ -55,6 +57,7 @@ export type NumberQuestion = {
   id: string;
   number: string;
   title: string;
+  subtitle: string; 
   unit: string;
   min?: number;
   max?: number;
@@ -65,6 +68,7 @@ export type OpenQuestion = {
   id: string;
   number: string;
   title: string;
+  subtitle: string; 
   placeholderEcho?: string;
 };
 
