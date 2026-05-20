@@ -72,11 +72,20 @@ export type OpenQuestion = {
   placeholderEcho?: string;
 };
 
+export type PerOptionNumberQuestion = {
+  kind: "per_option_number";
+  id: string;
+  number: string;
+  title: string;
+  subtitle: string;
+};
+
 export type CloseQuestion =
   | SingleQuestion
   | MultiQuestion
   | ScaleQuestion
-  | NumberQuestion;
+  | NumberQuestion
+  | PerOptionNumberQuestion;
 
 export type AnyQuestion = CloseQuestion | OpenQuestion;
 
