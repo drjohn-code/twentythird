@@ -2022,23 +2022,27 @@ section{position:relative;}
   .question-title{font-size:19px}
   .scale-value{font-size:32px}
 }
+/* --- Mobile Overrides --- */
 @media (max-width: 768px) {
+    /* 1. Reduce Font Sizes */
+    .hero-title { 
+        font-size: 32px; 
+        line-height: 1.2;
+    }
 
-  h1 {
-    font-size: 56px !important;
-    line-height: 1 !important;
-  }
+    /* 2. Fix Buttons & Spacing */
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+    
+    .button {
+        width: 100%; /* Make buttons full width */
+        padding: 15px;
+        white-space: nowrap; /* Prevents text from breaking lines awkwardly */
+    }
 
-  h2 {
-    font-size: 40px !important;
-  }
-
-  p {
-    font-size: 16px !important;
-  }
-
-  section {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
+    /* 3. Reduce Padding/Margins */
+    body { padding: 10px; }
 }
