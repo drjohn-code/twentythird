@@ -78,6 +78,10 @@ export type PerOptionNumberQuestion = {
   number: string;
   title: string;
   subtitle: string;
+  unit: string;        
+  min: number;         
+  max: number;         
+  dependsOn: string;
 };
 
 export type CloseQuestion =
