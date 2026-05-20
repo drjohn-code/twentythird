@@ -242,7 +242,7 @@ export default function StepForm({
           options={q.options}
           value={v}
           onChange={(next) => setValue(q.id, next)}
-          maxSelections={q.maxSelections}
+          max={q.maxSelections}
         />
       );
     }
