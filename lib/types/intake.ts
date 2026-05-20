@@ -38,7 +38,7 @@ export type MultiQuestion = {
   title: string;
   subtitle: string; 
   options: Option[];
-  max?: number;
+  maxSelections?: number;
 };
 export type ScaleQuestion = {
   kind: "scale";
