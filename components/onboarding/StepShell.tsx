@@ -5,6 +5,18 @@ import StepForm from "@/components/onboarding/StepForm";
 import { TOTAL_STEPS } from "@/lib/onboarding/steps";
 import type { StepDef, StepPayload } from "@/lib/types/intake";
 
+/** Stable canonical string for a payload — used as the React key on the
+ *  client form so it remounts whenever the server-fetched snapshot changes.
+ *  Insures back-nav / direct-URL / cache changes all force a fresh useState. */
+function payloadFingerprint(payload: StepPayload): string {
+  const keys = Object.keys(payload).sort();
+  const parts: string[] = [];
+  for (const k of keys) {
+    parts.push(`${k}=${JSON.stringify(payload[k])}`);
+  }
+  return parts.join("&");
+}
+
 type StepShellProps = {
   step: StepDef;
   initialPayload: StepPayload;
@@ -77,6 +89,7 @@ export default function StepShell({
           <p className="step-lede">{step.lede}</p>
 
           <StepForm
+            key={`${step.number}:${payloadFingerprint(initialPayload)}`}
             step={step}
             initialPayload={initialPayload}
             isLast={isLast}

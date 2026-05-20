@@ -109,9 +109,21 @@ export type AnswerValue =
   | OpenAnswer
   | null;
 
-/** Per-step payload — every question id mapped to its answer (or null
- *  for skipped). Validation happens in lib/onboarding/schema.ts. */
-export type StepPayload = Record<string, AnswerValue>;
+/** Per-step payload, as stored in the `intake_responses.payload` jsonb column.
+ *
+ *  Shape:
+ *    - keys are question ids (`q1_1`, `q1_2`, …) → answer values
+ *    - reserved sibling key `skipped: string[]` lists question ids the user
+ *      explicitly skipped
+ *    - absent key = unanswered. `null` is not a valid value in the persisted
+ *      shape (legacy rows may still contain it; readers must treat null as
+ *      unanswered)
+ *
+ *  Validation happens in lib/onboarding/schema.ts.
+ */
+export type StepPayload = {
+  [k: string]: AnswerValue | string[] | undefined;
+};
 
 export type Gender = "male" | "female" | "non_binary" | "prefer_not_to_say";
 

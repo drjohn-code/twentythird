@@ -55,50 +55,63 @@ function questionValidator(q: CloseQuestion | OpenQuestion) {
       const allowed = new Set(q.options.map((o) => o.value));
       return z
         .string()
-        .refine((v) => allowed.has(v), `Unknown option for ${q.id}`)
-        .nullable();
+        .refine((v) => allowed.has(v), `Unknown option for ${q.id}`);
     }
     case "multi": {
       const allowed = new Set(q.options.map((o) => o.value));
       return z
         .array(z.string().refine((v) => allowed.has(v), `Unknown option for ${q.id}`))
-        .max(q.max ?? q.options.length)
-        .nullable();
+        .max(q.max ?? q.options.length);
     }
     case "scale": {
-      return z
-        .number()
-        .int()
-        .min(q.min)
-        .max(q.max)
-        .nullable();
+      return z.number().int().min(q.min).max(q.max);
     }
     case "number": {
       let schema = z.number();
       if (typeof q.min === "number") schema = schema.min(q.min);
       if (typeof q.max === "number") schema = schema.max(q.max);
-      return schema.nullable();
+      return schema;
     }
     case "open": {
-      return z.string().max(5000).nullable();
+      return z.string().max(5000);
     }
   }
 }
 
-/** Build a schema for one step's payload object. */
+/** Reserved key in the payload: the list of explicitly-skipped question ids. */
+export const SKIPPED_KEY = "skipped" as const;
+
+/** Build a schema for one step's payload object.
+ *
+ * Persisted shape:
+ *   - keys are question ids → answer values (string / number / string[])
+ *   - reserved sibling key `skipped: string[]` lists explicitly-skipped qids
+ *   - missing key = unanswered; null is NOT a valid persisted value
+ */
 export function stepPayloadSchema(stepNumber: number) {
   const step = getStep(stepNumber);
   if (!step) throw new Error(`Unknown step ${stepNumber}`);
+  const qs = [...step.closeQuestions, ...step.openQuestions];
+  const qidSet = new Set(qs.map((q) => q.id));
   const shape: Record<string, z.ZodTypeAny> = {};
-  for (const q of [...step.closeQuestions, ...step.openQuestions]) {
-    // Every question is optional (the whole flow is opt-in answers).
-    // A missing key is treated as a skip = null at normalisation.
+  for (const q of qs) {
     shape[q.id] = questionValidator(q).optional();
   }
+  shape[SKIPPED_KEY] = z
+    .array(
+      z
+        .string()
+        .refine((v) => qidSet.has(v), "Unknown question id in skipped"),
+    )
+    .optional();
   return z.object(shape).strict();
 }
 
-/** Drop unknown keys, coerce missing keys to null, then validate. */
+/** Filter unknown keys, validate, and emit the canonical persisted shape:
+ *   - answered questions only (omit absent / empty)
+ *   - explicit skips collected into `skipped: string[]`
+ *   - null is dropped entirely
+ */
 export function normaliseStepPayload(
   stepNumber: number,
   raw: unknown,
@@ -107,26 +120,45 @@ export function normaliseStepPayload(
   if (!step) throw new Error(`Unknown step ${stepNumber}`);
   const schema = stepPayloadSchema(stepNumber);
 
-  // Filter unknown keys first so .strict() doesn't fail on garbage.
-  const allowed = new Set(
-    [...step.closeQuestions, ...step.openQuestions].map((q) => q.id),
-  );
+  const qs = [...step.closeQuestions, ...step.openQuestions];
+  const allowed = new Set<string>(qs.map((q) => q.id));
+  allowed.add(SKIPPED_KEY);
+
   const filtered: Record<string, unknown> =
     raw && typeof raw === "object" && !Array.isArray(raw)
       ? Object.fromEntries(
-          Object.entries(raw as Record<string, unknown>).filter(([k]) =>
-            allowed.has(k),
-          ),
+          Object.entries(raw as Record<string, unknown>).filter(([k, v]) => {
+            if (!allowed.has(k)) return false;
+            // Tolerate clients that still send null for unanswered keys —
+            // strip them here so the schema (which forbids null) doesn't reject.
+            if (v === null) return false;
+            return true;
+          }),
         )
       : {};
 
-  const parsed = schema.parse(filtered);
+  const parsed = schema.parse(filtered) as Record<string, unknown>;
 
-  // Coerce missing keys to null so the row is shape-complete.
+  const skipFromInput = Array.isArray(parsed[SKIPPED_KEY])
+    ? (parsed[SKIPPED_KEY] as string[])
+    : [];
+  const skipSet = new Set(skipFromInput);
+
   const out: StepPayload = {};
-  for (const q of [...step.closeQuestions, ...step.openQuestions]) {
-    const v = (parsed as Record<string, unknown>)[q.id];
-    out[q.id] = (v === undefined ? null : (v as AnswerValue));
+  const skipList: string[] = [];
+  for (const q of qs) {
+    if (skipSet.has(q.id)) {
+      skipList.push(q.id);
+      continue;
+    }
+    const v = parsed[q.id];
+    if (v === undefined) continue;
+    if (typeof v === "string" && v.length === 0) continue;
+    if (Array.isArray(v) && v.length === 0) continue;
+    out[q.id] = v as AnswerValue;
+  }
+  if (skipList.length > 0) {
+    out[SKIPPED_KEY] = skipList;
   }
   return out;
 }

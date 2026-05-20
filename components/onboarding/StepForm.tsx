@@ -27,6 +27,7 @@ import {
   DASHBOARD_PATH,
   INTAKE_INTRO_PATH,
 } from "@/lib/onboarding/routing";
+import { SKIPPED_KEY } from "@/lib/onboarding/schema";
 import type {
   AnswerValue,
   CloseQuestion,
@@ -44,12 +45,19 @@ type StepFormProps = {
 const AUTOSAVE_MS = 800;
 const SUBMIT_HOLD_MS = 1200;
 
-const SKIP = "__skip__";
-type Values = Record<string, AnswerValue | typeof SKIP | undefined>;
+type Values = Record<string, AnswerValue | undefined>;
 
 function defaultFor(q: CloseQuestion | OpenQuestion): AnswerValue {
   if (q.kind === "multi") return [];
   return null;
+}
+
+/** True if a value is meaningful enough to persist. */
+function isEmptyAnswer(v: AnswerValue | undefined): boolean {
+  if (v === undefined || v === null) return true;
+  if (typeof v === "string" && v.length === 0) return true;
+  if (Array.isArray(v) && v.length === 0) return true;
+  return false;
 }
 
 function reduceMotion(): boolean {
@@ -68,24 +76,31 @@ export default function StepForm({
     [step],
   );
 
-  // null = explicitly skipped; undefined = unanswered; otherwise value
+  // Persisted shape:
+  //   answered  → initialPayload[qid] holds the value
+  //   skipped   → qid appears in initialPayload.skipped
+  //   absent / null → unanswered (null is tolerated for legacy rows)
   const [values, setValues] = useState<Values>(() => {
     const v: Values = {};
     for (const q of all) {
       const saved = initialPayload[q.id];
-      v[q.id] = saved === undefined ? defaultFor(q) : saved;
+      if (saved === undefined || saved === null) {
+        v[q.id] = defaultFor(q);
+      } else {
+        v[q.id] = saved as AnswerValue;
+      }
     }
     return v;
   });
 
   const [skipped, setSkipped] = useState<Record<string, boolean>>(() => {
+    const rawSkipped = initialPayload[SKIPPED_KEY];
+    const skipSet = new Set<string>(
+      Array.isArray(rawSkipped) ? (rawSkipped as string[]) : [],
+    );
     const s: Record<string, boolean> = {};
     for (const q of all) {
-      const saved = initialPayload[q.id];
-      // A question is "skipped" if the saved value is explicitly null
-      // AND the default-for-kind would normally render empty too.
-      // We use a separate flag so unanswered ≠ skipped.
-      s[q.id] = saved === null;
+      s[q.id] = skipSet.has(q.id);
     }
     return s;
   });
@@ -103,17 +118,18 @@ export default function StepForm({
 
   const buildPayload = useCallback((): StepPayload => {
     const out: StepPayload = {};
+    const skipList: string[] = [];
     for (const q of all) {
       if (skipped[q.id]) {
-        out[q.id] = null;
+        skipList.push(q.id);
         continue;
       }
       const v = values[q.id];
-      if (v === undefined) {
-        out[q.id] = null;
-      } else {
-        out[q.id] = v as AnswerValue;
-      }
+      if (isEmptyAnswer(v)) continue;
+      out[q.id] = v as AnswerValue;
+    }
+    if (skipList.length > 0) {
+      out[SKIPPED_KEY] = skipList;
     }
     return out;
   }, [all, values, skipped]);
