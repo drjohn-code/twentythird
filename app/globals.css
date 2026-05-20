@@ -2022,3 +2022,23 @@ section{position:relative;}
   .question-title{font-size:19px}
   .scale-value{font-size:32px}
 }
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 56px !important;
+    line-height: 1 !important;
+  }
+
+  h2 {
+    font-size: 40px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
