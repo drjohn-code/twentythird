@@ -35,7 +35,7 @@ export default function LandingPage() {
               Start your discovery
               <span className="arrow">→</span>
             </a>
-            <a href="#" className="cta-ghost">
+            <a href="/science" className="cta-ghost">
               <span
                 style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}
               >
@@ -213,7 +213,7 @@ export default function LandingPage() {
                   pattern across years, name it, and watch it lose its
                   gravity.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/case-studies/relational-attractor" className="row-link">
                   Read the case study <span className="ar">→</span>
                 </a>
               </div>
@@ -296,7 +296,7 @@ export default function LandingPage() {
                   back to the waking decision they were trying to make for
                   you.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/examples/dream-interpretation" className="row-link">
                   See an annotated example <span className="ar">→</span>
                 </a>
               </div>
@@ -383,7 +383,7 @@ export default function LandingPage() {
                   a script — written early, rehearsed quietly — that we will
                   help you read aloud and rewrite, sentence by sentence.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/papers/professional-blocks" className="row-link">
                   The method paper <span className="ar">→</span>
                 </a>
               </div>
@@ -467,7 +467,7 @@ export default function LandingPage() {
                   therapist&apos;s office knowing what you&apos;re there to
                   say.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/methodology" className="row-link">
                   See the methodology <span className="ar">→</span>
                 </a>
               </div>
@@ -547,7 +547,7 @@ export default function LandingPage() {
                   intelligible to a trained clinician. Not a personality
                   quiz; a working brief.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/reports/sample" className="row-link">
                   View a sample report <span className="ar">→</span>
                 </a>
               </div>
@@ -628,7 +628,7 @@ export default function LandingPage() {
                   page and into the body. Small, deliberate. Built around
                   your structure, not a generic curriculum.
                 </p>
-                <a href="#" className="row-link">
+                <a href="/plan" className="row-link">
                   How the plan adapts <span className="ar">→</span>
                 </a>
               </div>
@@ -710,7 +710,7 @@ export default function LandingPage() {
             <a href="/auth/sign-up" className="cta">
               Start your discovery <span className="arrow">→</span>
             </a>
-            <a href="#" className="cta-ghost">
+            <a href="/science" className="cta-ghost">
               <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
                 or
               </span>{" "}

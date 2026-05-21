@@ -19,8 +19,8 @@ export default function Footer() {
           <div className="footer-col">
             <span className="label">Product</span>
             <Link href="/auth/sign-up">Discovery</Link>
-            <Link href="/#outcomes">Reports</Link>
-            <Link href="/#outcomes">Integration plans</Link>
+            <Link href="/reports/sample">Sample report</Link>
+            <Link href="/plan">Integration plan</Link>
           </div>
           <div className="footer-col">
             <span className="label">Company</span>
@@ -30,9 +30,11 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <span className="label">Resources</span>
-            <Link href="/#philosophy">Method</Link>
-            <Link href="/#brain">The Work</Link>
-            <Link href="/about">Origin</Link>
+            <Link href="/science">The science</Link>
+            <Link href="/methodology">Methodology</Link>
+            <Link href="/papers/professional-blocks">Method paper</Link>
+            <Link href="/case-studies/relational-attractor">Case study</Link>
+            <Link href="/examples/dream-interpretation">Dream example</Link>
           </div>
           <div className="footer-col">
             <span className="label">Legal</span>
