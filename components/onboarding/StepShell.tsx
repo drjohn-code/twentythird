@@ -102,5 +102,5 @@ export default function StepShell({
 
 function topicFromEyebrow(eyebrow: string): string {
   const parts = eyebrow.split("·").map((s) => s.trim());
-  return parts[1] ?? "";
+  return parts[0] ?? "";
 }

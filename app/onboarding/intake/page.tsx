@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import Reveal from "@/components/layout/Reveal";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import Eyebrow from "@/components/ui/Eyebrow";
 import IntroPanel from "@/components/onboarding/IntroPanel";
 import {
@@ -33,6 +34,7 @@ export default async function IntakeIntroPage() {
 
   return (
     <main className="intake-intro-shell">
+      <ScrollToTop />
       <div className="intake-intro-inner">
         <Reveal as="div" className="intake-intro-head">
           <Eyebrow>INTAKE · NO WRONG ANSWERS</Eyebrow>

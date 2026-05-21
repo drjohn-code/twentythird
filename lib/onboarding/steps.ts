@@ -27,7 +27,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 1,
     slug: "origins",
-    eyebrow: "SECTION 01 · ORIGINS · DEVELOPMENTAL IMPRINTING",
+    eyebrow: "ORIGINS · DEVELOPMENTAL IMPRINTING",
     headline: [
       { text: "What the early room " },
       { text: "taught you", italic: true },
@@ -137,7 +137,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 2,
     slug: "attachment",
-    eyebrow: "SECTION 02 · ATTACHMENT · FAMILY STRUCTURE",
+    eyebrow: "ATTACHMENT · FAMILY STRUCTURE",
     headline: [
       { text: "The first " },
       { text: "bonds", italic: true },
@@ -257,7 +257,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 3,
     slug: "authority",
-    eyebrow: "SECTION 03 · AUTHORITY · SYMBOLIC LAW",
+    eyebrow: "AUTHORITY · SYMBOLIC LAW",
     headline: [
       { text: "The voices you " },
       { text: "inherited", italic: true },
@@ -344,7 +344,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 4,
     slug: "belonging",
-    eyebrow: "SECTION 04 · BELONGING · SOCIAL IDENTITY",
+    eyebrow: "BELONGING · SOCIAL IDENTITY",
     headline: [
       { text: "Who gets to " },
       { text: "see you", italic: true },
@@ -435,7 +435,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 5,
     slug: "persona",
-    eyebrow: "SECTION 05 · PERSONA · DESIRE & DIGITAL SELF",
+    eyebrow: "PERSONA · DESIRE & DIGITAL SELF",
     headline: [
       { text: "The self you " },
       { text: "perform", italic: true },
@@ -556,7 +556,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 6,
     slug: "desire",
-    eyebrow: "SECTION 06 · DESIRE · INTIMACY & REPETITION",
+    eyebrow: "DESIRE · INTIMACY & REPETITION",
     headline: [
       { text: "The pattern that " },
       { text: "keeps returning", italic: true },
@@ -663,7 +663,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 7,
     slug: "achievement",
-    eyebrow: "SECTION 07 · ACHIEVEMENT · WORK & RECOGNITION",
+    eyebrow: "ACHIEVEMENT · WORK & RECOGNITION",
     headline: [
       { text: "What you are " },
       { text: "trying to prove", italic: true },
@@ -773,7 +773,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 8,
     slug: "escape",
-    eyebrow: "SECTION 08 · ESCAPE · PLEASURE & RITUAL",
+    eyebrow: "ESCAPE · PLEASURE & RITUAL",
     headline: [
       { text: "Where you go " },
       { text: "to not be here", italic: true },
@@ -867,7 +867,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 9,
     slug: "self-relation",
-    eyebrow: "SECTION 09 · SELF-RELATION · INTERNAL DIALOGUE",
+    eyebrow: "SELF-RELATION · INTERNAL DIALOGUE",
     headline: [
       { text: "The voice you can't " },
       { text: "quite quiet", italic: true },
@@ -955,7 +955,7 @@ const STEPS_INTERNAL: StepDef[] = [
   {
     number: 10,
     slug: "future-fantasy",
-    eyebrow: "SECTION 10 · FUTURE · FANTASY, FEAR & DESIRE",
+    eyebrow: "FUTURE · FANTASY, FEAR & DESIRE",
     headline: [
       { text: "What you are " },
       { text: "truly searching for", italic: true },

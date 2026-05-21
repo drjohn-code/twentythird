@@ -813,7 +813,7 @@ section{position:relative;}
     display:flex;flex-direction:column;justify-content:flex-end;
   }
   .hero h1{
-    font-size:clamp(64px, 13vw, 96px);
+    font-size:clamp(54px, 11vw, 82px);
     line-height:1.02;
     margin-bottom:32px;
   }
@@ -2149,4 +2149,16 @@ section{position:relative;}
   .account-panel, .intro-panel, .dashboard-panel{padding:28px 22px}
   .question-title{font-size:19px}
   .scale-value{font-size:32px}
+
+  .dash-row.rep-row{
+    display:grid;
+    grid-template-columns:1fr auto;
+    grid-template-areas:
+      "label label"
+      "meter pct";
+    column-gap:14px;row-gap:10px;align-items:center;
+  }
+  .dash-row.rep-row .k{grid-area:label;font-size:7.5px;white-space:nowrap}
+  .dash-row.rep-row .meter{grid-area:meter}
+  .dash-row.rep-row .pct{grid-area:pct}
 }

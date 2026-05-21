@@ -49,10 +49,10 @@ export default function StepProgress({
   );
 }
 
-/** "SECTION 03 · AUTHORITY · SYMBOLIC LAW" → "Authority" */
+/** "AUTHORITY · SYMBOLIC LAW" → "Authority" */
 function sectionTitle(eyebrow: string): string {
   const parts = eyebrow.split("·").map((s) => s.trim());
-  const name = parts[1] ?? "";
+  const name = parts[0] ?? "";
   if (!name) return "";
   return name.charAt(0) + name.slice(1).toLowerCase();
 }
