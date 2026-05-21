@@ -32,7 +32,7 @@ export default function ContactPage() {
       </Reveal>
 
       {/* FORM + CONTACT DETAILS */}
-      <section className="page-section">
+      <section className="page-section contact-form-section">
         <div className="container">
           <div className="contact-split">
             <FigureCard

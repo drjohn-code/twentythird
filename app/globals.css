@@ -807,10 +807,10 @@ section{position:relative;}
 @media (max-width: 980px){
   .hero{
     grid-template-columns:1fr;
-    padding:80px 36px 60px;
-    min-height:auto;
+    padding:80px 36px 36px;
+    min-height:100vh;
     position:relative;
-    align-items:end;
+    display:flex;flex-direction:column;justify-content:flex-end;
   }
   .hero h1{
     font-size:clamp(36px, 9vw, 48px);
@@ -839,14 +839,20 @@ section{position:relative;}
     padding:0;
     order:1;
   }
+  .hero .cta-row{
+    display:flex;flex-direction:row;align-items:center;gap:16px;flex-wrap:nowrap;
+  }
+  .hero .cta{
+    width:auto;align-self:flex-start;
+  }
 
   .philosophy{
     position:relative;
     grid-template-columns:1fr;
     gap:0;
-    padding:90px 36px 70px;
+    padding:60px 36px 40px;
     min-height:auto;
-    align-items:end;
+    display:flex;flex-direction:column;justify-content:flex-end;
   }
   .philo-portrait{
     position:absolute;
@@ -887,16 +893,48 @@ section{position:relative;}
   .split-stack{gap:60px}
   .section-head{margin-bottom:48px}
   .section-head h2{font-size:clamp(32px, 7vw, 42px);line-height:1.06}
-  .philo-copy h2{font-size:clamp(30px, 6.5vw, 40px);line-height:1.1}
-  .philo-copy p.sub{font-size:15px;line-height:1.55;max-width:none}
-  .philo-meta{flex-direction:column;gap:18px;align-items:flex-start}
+  .philo-copy h2{font-size:clamp(28px, 6.4vw, 38px);line-height:1.08}
+  .philo-copy p.sub{font-size:15px;line-height:1.5;max-width:none}
+  .philo-meta{
+    display:flex;flex-direction:row;gap:18px;flex-wrap:nowrap;
+    justify-content:space-between;align-items:flex-start;
+  }
+  .philo-meta div{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .philo-meta .label{font-size:9px;letter-spacing:0.18em}
+  .philo-meta .val{font-size:clamp(12px, 3.6vw, 14px);line-height:1.15}
+  .philo-meta div:nth-child(2) .val,
+  .philo-meta div:nth-child(3) .val{white-space:nowrap}
   .final{padding:80px 0;min-height:auto}
   .final h2{font-size:clamp(34px, 8vw, 44px);line-height:1.05;margin-bottom:32px}
   .cta-row{flex-direction:column;align-items:flex-start;gap:18px}
   .final .cta-row{align-items:center}
-  .cta{padding:14px 22px;font-size:12.5px;white-space:nowrap}
-  .pattern-summary{grid-template-columns:1fr;gap:18px;justify-items:start}
-  .pattern-summary .ps-row{align-items:flex-start;text-align:left}
+  .cta{padding:10px 18px;font-size:13px;white-space:nowrap}
+
+  .split-visual .vh{font-size:10px;letter-spacing:0.14em}
+  .split-visual .vh > span:last-child{white-space:nowrap}
+  .pattern-list li{grid-template-columns:48px 1fr 78px}
+  .pattern-list .year{font-size:16px}
+  .pattern-list .out{font-size:14px;white-space:nowrap}
+  .pattern-list .bar-label{font-size:9px;white-space:nowrap}
+  .pattern-summary{
+    display:flex;flex-direction:row;gap:14px;
+    justify-content:space-between;align-items:flex-start;
+    grid-template-columns:none;justify-items:initial;
+  }
+  .pattern-summary .ps-row{flex-direction:column;gap:4px;align-items:flex-start;text-align:left}
+  .pattern-summary .k{font-size:9px;letter-spacing:0.16em}
+  .pattern-summary .v{font-size:14px;white-space:nowrap}
+
+  .pc-streak{
+    display:grid;grid-template-columns:auto auto 1fr;gap:12px;align-items:center;
+  }
+  .pc-streak .streak-label{font-size:9px;letter-spacing:0.16em}
+  .pc-streak .streak-val{font-size:13px;white-space:nowrap}
+  .pc-streak .streak-mini{margin-left:0;overflow:hidden;min-width:0}
+  .pc-stream-row .time,
+  .pc-stream-row .label{font-size:10px}
+  .pc-stream-row .dur{font-size:12px}
+
   .theme-toggle{display:none}
   .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
   .nav-links{display:none}
@@ -913,7 +951,7 @@ section{position:relative;}
 
 /* ------- auth pages ------- */
 .auth-shell{
-  min-height:100vh;display:grid;place-items:center;padding:120px 24px 60px;
+  min-height:100vh;display:grid;place-items:center;padding:105px 24px 53px;
   position:relative;z-index:2;
 }
 .auth-card{
@@ -927,17 +965,17 @@ section{position:relative;}
 .auth-card h1 em{font-style:italic}
 
 /* form grammar — strict per CLAUDE.md */
-.auth-form{display:flex;flex-direction:column;gap:28px;width:100%}
-.auth-field{display:flex;flex-direction:column;gap:10px}
+.auth-form{display:flex;flex-direction:column;gap:22px;width:100%}
+.auth-field{display:flex;flex-direction:column;gap:7px}
 .auth-field input,
 .auth-field textarea,
 .auth-field select{
-  font:inherit;color:var(--fg);font-family:var(--sans);font-size:17px;
+  font:inherit;color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.4;
   background:var(--glass-bg);border:1px solid var(--hair);
-  border-radius:3px;padding:14px 16px;width:100%;
+  border-radius:3px;padding:11px 16px;width:100%;
   transition:border-color 300ms var(--ease);
 }
-.auth-field textarea{resize:vertical;min-height:96px;line-height:1.5}
+.auth-field textarea{resize:vertical;min-height:82px;line-height:1.5}
 .auth-field input:focus,
 .auth-field textarea:focus,
 .auth-field select:focus{outline:none;border-color:var(--hair-strong)}
@@ -1076,6 +1114,7 @@ section{position:relative;}
 .page-section{padding:120px 0;position:relative}
 .page-section .container{max-width:1240px;margin:0 auto;padding:0 36px}
 .page-section .section-head{margin-bottom:64px}
+.contact-form-section{padding:104px 0}
 
 /* day-23 arc — single horizontal axis with markers */
 .day23-arc{display:flex;flex-direction:column;gap:32px;justify-content:center;height:100%}
@@ -1195,8 +1234,8 @@ section{position:relative;}
 
 /* contact: form fields */
 .contact-form{display:block}
-.field-group{display:flex;flex-direction:column;gap:28px}
-.field{display:flex;flex-direction:column;gap:10px}
+.field-group{display:flex;flex-direction:column;gap:22px}
+.field{display:flex;flex-direction:column;gap:7px}
 .field-label{
   font-family:var(--sans);font-size:11px;font-weight:500;
   color:var(--fg-mute);letter-spacing:0.22em;text-transform:uppercase;
@@ -1205,12 +1244,12 @@ section{position:relative;}
   font:inherit;color:var(--fg);
   background:var(--glass-bg);
   border:1px solid var(--hair);border-radius:3px;
-  padding:14px 16px;font-size:17px;font-family:var(--sans);line-height:1.4;
+  padding:11px 16px;font-size:16px;font-family:var(--sans);line-height:1.4;
   transition:border-color 300ms var(--ease);
   width:100%;
 }
 .field-input:focus{outline:none;border-color:var(--hair-strong)}
-.field-textarea{resize:vertical;min-height:160px;line-height:1.55}
+.field-textarea{resize:vertical;min-height:136px;line-height:1.55}
 .field-select-wrap{position:relative}
 .field-select{
   appearance:none;-webkit-appearance:none;-moz-appearance:none;
@@ -1403,6 +1442,7 @@ section{position:relative;}
   .page-hero{padding:130px 0 40px}
   .page-hero .container{grid-template-columns:1fr;gap:48px}
   .page-section{padding:80px 0}
+  .contact-form-section{padding:70px 0}
   .day23-bar{margin:28px 4px 22px}
   .day23-label{font-size:12px}
   .contact-row{grid-template-columns:1fr;gap:6px}
@@ -1452,8 +1492,8 @@ section{position:relative;}
 .onb-headline em{font-style:italic}
 .onb-lede{margin-top:-4px}
 
-.onb-form{display:flex;flex-direction:column;gap:28px;width:100%}
-.onb-field{gap:10px}
+.onb-form{display:flex;flex-direction:column;gap:22px;width:100%}
+.onb-field{gap:7px}
 
 .onb-select-wrap{position:relative}
 .onb-select-wrap select{
@@ -1515,9 +1555,9 @@ section{position:relative;}
 .field-input,
 .field-textarea,
 .field-select{
-  font:inherit;color:var(--fg);font-family:var(--sans);font-size:17px;
+  font:inherit;color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.4;
   background:var(--glass-bg);border:1px solid var(--hair);
-  border-radius:3px;padding:14px 16px;width:100%;
+  border-radius:3px;padding:11px 16px;width:100%;
   transition:border-color 300ms var(--ease);
 }
 .field-input:focus,
@@ -1526,7 +1566,7 @@ section{position:relative;}
 .field-input.is-invalid,
 .field-textarea.is-invalid,
 .field-select.is-invalid{border-color:var(--hair-strong)}
-.field-textarea{resize:vertical;min-height:140px;line-height:1.55}
+.field-textarea{resize:vertical;min-height:119px;line-height:1.55}
 .field-select{appearance:none;-webkit-appearance:none;padding-right:40px;cursor:pointer}
 .field-select-wrap{position:relative}
 .field-select-caret{
