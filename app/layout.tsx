@@ -40,9 +40,6 @@ export const metadata: Metadata = {
     siteName: "TwentyThird",
     type: "website",
   },
-icons: {
-    icon: "/icon.png",
-  },
 };
 
 const themeBootstrap = `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
