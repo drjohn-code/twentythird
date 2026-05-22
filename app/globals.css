@@ -964,6 +964,10 @@ section{position:relative;}
   .pattern-summary .k{font-size:9px;letter-spacing:0.16em}
   .pattern-summary .v{font-size:14px;white-space:nowrap}
 
+  .dream-key{grid-template-columns:1fr;gap:10px}
+  .dream-text p{font-size:17px;line-height:1.5}
+  .dream-text .ann{white-space:normal}
+
   .pc-streak{
     display:grid;grid-template-columns:auto auto 1fr;gap:12px;align-items:center;
   }

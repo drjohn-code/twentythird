@@ -40,11 +40,12 @@ export default function DreamExamplePage() {
           <Reveal className="section-head">
             <div className="eyebrow">AS REPORTED</div>
             <h2 className="head-h2">
-              The dream, <span className="it">verbatim</span>.
+              The dream, <span className="it">verbatim</span>, with its key.
             </h2>
             <p className="lede">
               Eight markers, inline. Each chip names a mechanism the dream-work
-              is using; the key follows.
+              is using; the eight readings sit below the narrative, indexed by
+              number.
             </p>
           </Reveal>
 
@@ -84,24 +85,6 @@ export default function DreamExamplePage() {
                   </>,
                 ]}
               />
-            </FigureCard>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* THE KEY */}
-      <section className="page-section" style={{ paddingTop: "0" }}>
-        <div className="container">
-          <Reveal className="section-head">
-            <div className="eyebrow">THE KEY</div>
-            <h2 className="head-h2">
-              Eight mechanisms, eight short{" "}
-              <span className="it">readings</span>.
-            </h2>
-          </Reveal>
-
-          <Reveal>
-            <FigureCard label="annotation key" subtitle="eight entries" fig="Fig. 02">
               <DreamKey
                 entries={[
                   { n: "01", label: "displacement", gloss: "the workplace stands in for the childhood house" },
@@ -158,7 +141,7 @@ export default function DreamExamplePage() {
                 <FigureCard
                   label="signal extraction"
                   subtitle="from one dream"
-                  fig="Fig. 03"
+                  fig="Fig. 02"
                 >
                   <ReportMock
                     caseLabel="dream 0184-W3"
