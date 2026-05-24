@@ -1,12 +1,43 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 import {
   CATCHUP_QUESTIONS,
   isComplete,
   type CatchupAnswers,
+  type CatchupQuestion,
 } from "@/lib/catchup-questions";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
-import { recomputeDepthFor, richnessScore } from "@/lib/depth";
+import { recomputeDepthFor, depthBand } from "@/lib/depth";
+import { classifySafety, maxSeverity, type SafetySeverity } from "@/lib/ai/safety";
+import { callAI } from "@/lib/ai/router";
+import {
+  buildCatchupSummaryPrompt,
+  type CatchupAnswerInput,
+} from "@/lib/ai/prompts/catchup-summary";
+import {
+  buildCatchupFeedbackPrompt,
+  type CatchupFeedbackResponse,
+} from "@/lib/ai/prompts/catchup-feedback";
+import {
+  buildCatchupRefinementPrompt,
+  type CatchupRefinementResponse,
+} from "@/lib/ai/prompts/catchup-refinement";
+
+// POST /api/catchup — record a weekly Catchup and trigger the pipeline.
+// GET  /api/catchup?id=<uuid> — poll for status while the background job runs.
+//
+// Flow:
+//   1. Validate, write row with status='processing'.
+//   2. Return { catchup_id } immediately.
+//   3. Background: safety pass → summary → feedback JSON → refinement
+//      JSON → depth recompute → status='ready'.
+//   4. Client polls GET until status is 'ready' and renders the summary.
+
+type CatchupRequestBody = {
+  week_number?: number;
+  answers?: Partial<CatchupAnswers>;
+};
 
 type ExistingReadingRow = {
   id: string;
@@ -16,30 +47,9 @@ type ExistingReadingRow = {
   definition: string;
   weight: number;
   version: number;
+  lede: string | null;
 };
 
-type CatchupRequestBody = {
-  week_number?: number;
-  answers?: Partial<CatchupAnswers>;
-};
-
-/**
- * POST /api/catchup — record a weekly Catchup and refine the readings.
- *
- * Writes:
- *   - one `catchups` row (one per ISO week per user, enforced here)
- *   - one new v(n+1) `block_readings` row per slug (all 12) with the
- *     previous version's row marked superseded
- *   - lazily recomputed `users_meta.reading_depth`
- *
- * Returns:
- *   { summary: string[] (3 paragraphs), shifted: [{ slug, deltaWeight, weight }] }
- *
- * TODO: model-driven reading refinement — currently a deterministic
- *       rule-based stub (richer answers nudge weight up).
- * TODO: connection-aware refinement — incorporate active connection
- *       inputs into shifted weights once Phase 6 lands real data.
- */
 export async function POST(request: Request): Promise<NextResponse> {
   const supabase = await createClient();
   const {
@@ -69,16 +79,15 @@ export async function POST(request: Request): Promise<NextResponse> {
       ? body.week_number
       : currentIsoWeek(new Date());
 
-  // One catchup per ISO week per user. If a row already exists for this
-  // week, refuse — the page guard should prevent reaching here, but the
-  // server is the source of truth.
+  // One catchup per ISO week per user — page guard should keep us
+  // out of here on a duplicate, but the server is the source of truth.
   const { data: existingThisWeek } = await supabase
     .from("catchups")
     .select("id")
     .eq("user_id", user.id)
     .eq("week_number", weekNumber)
     .limit(1)
-    .maybeSingle();
+    .maybeSingle<{ id: string }>();
 
   if (existingThisWeek) {
     return NextResponse.json(
@@ -87,352 +96,478 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
 
-  // ── Compute a 3-paragraph summary in the analyst's voice ──────────
-  // Rule-based stub. The shape and serif-italic register are correct;
-  // the content is canned for now and refined upstream later.
-  const summary = composeSummary(answers);
+  const { data: inserted, error: insertErr } = await supabase
+    .from("catchups")
+    .insert({
+      user_id: user.id,
+      week_number: weekNumber,
+      answers: answers as Record<string, unknown>,
+      summary: null,
+      status: "processing",
+    })
+    .select("id")
+    .single<{ id: string }>();
 
-  const { error: insertErr } = await supabase.from("catchups").insert({
-    user_id: user.id,
-    week_number: weekNumber,
-    answers: answers as Record<string, unknown>,
-    summary: summary.join("\n\n"),
-  });
-  if (insertErr) {
+  if (insertErr || !inserted) {
     return NextResponse.json(
       { error: "could not store the catchup" },
       { status: 500 },
     );
   }
 
-  // ── Refresh block_readings for all twelve slugs ───────────────────
-  const { data: existingRows } = await supabase
-    .from("block_readings")
-    .select("id, block_slug, reading, takeaway, definition, weight, version")
-    .eq("user_id", user.id)
-    .is("superseded_at", null);
-
-  const previous = new Map<BlockSlug, ExistingReadingRow>();
-  for (const row of (existingRows ?? []) as ExistingReadingRow[]) {
-    previous.set(row.block_slug as BlockSlug, row);
-  }
-
-  const refinedSource = `catchup:week_${String(weekNumber).padStart(2, "0")}`;
-  const richness = computeRichness(answers);
-  const shifted: { slug: BlockSlug; deltaWeight: number; weight: number }[] =
-    [];
-
-  for (const block of BLOCKS) {
-    const prev = previous.get(block.slug);
-    const baseWeight = prev?.weight ?? 0.1;
-    const bump = bumpFor(block.slug, answers, richness);
-    const nextWeight = clamp01(baseWeight + bump);
-    const delta = nextWeight - baseWeight;
-
-    const nextReading = refineReadingCopy({
-      slug: block.slug,
-      previousReading: prev?.reading ?? null,
-      answers,
-      richness,
-    });
-
-    const nextTakeaway = prev?.takeaway ?? "";
-    const nextDefinition = prev?.definition ?? block.definition;
-    const nextVersion = (prev?.version ?? 1) + 1;
-
-    const { error: insErr } = await supabase.from("block_readings").insert({
-      user_id: user.id,
-      block_slug: block.slug,
-      reading: nextReading,
-      takeaway: nextTakeaway || refinedTakeaway(block.slug),
-      definition: nextDefinition,
-      weight: nextWeight,
-      version: nextVersion,
-      last_refined_source: refinedSource,
-    });
-    if (insErr) {
-      // Continue on per-slug errors — partial refinement is better than
-      // none, and the user-facing "shifted" list reflects what landed.
-      continue;
-    }
-
-    if (prev) {
-      await supabase
-        .from("block_readings")
-        .update({ superseded_at: new Date().toISOString() })
-        .eq("id", prev.id);
-    }
-
-    shifted.push({ slug: block.slug, deltaWeight: delta, weight: nextWeight });
-  }
-
-  // Sort by delta magnitude so the top movers surface in the summary.
-  shifted.sort((a, b) => Math.abs(b.deltaWeight) - Math.abs(a.deltaWeight));
-
-  // ── Recompute depth ───────────────────────────────────────────────
-  await recomputeDepthFor(user.id, supabase);
+  // Fire the background pipeline. We do not await — the runner polls
+  // GET /api/catchup?id=… and renders the summary when status flips.
+  void runCatchupPipeline({
+    userId: user.id,
+    catchupId: inserted.id,
+    weekNumber,
+    answers: answers as CatchupAnswers,
+  }).catch(() => undefined);
 
   return NextResponse.json(
+    { catchup_id: inserted.id, status: "processing" },
+    { status: 202 },
+  );
+}
+
+export async function GET(request: Request): Promise<NextResponse> {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+  const url = new URL(request.url);
+  const id = url.searchParams.get("id");
+  if (!id) {
+    return NextResponse.json({ error: "id required" }, { status: 400 });
+  }
+  const { data } = await supabase
+    .from("catchups")
+    .select("id, status, summary, feedback, week_number, created_at")
+    .eq("user_id", user.id)
+    .eq("id", id)
+    .maybeSingle<{
+      id: string;
+      status: string;
+      summary: string | null;
+      feedback: CatchupFeedbackResponse | null;
+      week_number: number;
+      created_at: string;
+    }>();
+  if (!data) {
+    return NextResponse.json({ error: "not found" }, { status: 404 });
+  }
+  const shifted = await loadShifted(supabase, user.id, data.created_at);
+  return NextResponse.json(
     {
-      summary,
+      id: data.id,
+      status: data.status,
+      summary: (data.summary ?? "")
+        .split("\n\n")
+        .map((p) => p.trim())
+        .filter(Boolean),
+      feedback: data.feedback,
       shifted,
     },
-    { status: 201 },
+    { status: 200 },
   );
 }
 
-// ────────────────────────────────────────────────────────────────────
-// Stub: rule-based summary generator
-// ────────────────────────────────────────────────────────────────────
-
-function composeSummary(answers: Partial<CatchupAnswers>): string[] {
-  const stayedWith = stringAnswer(answers["stayed_with"]);
-  const loop = stringAnswer(answers["loop"]);
-  const dream = stringAnswer(answers["dream"]);
-  const closeness = stringAnswer(answers["closeness"]);
-  const loudest = stringAnswer(answers["loudest_voice"]);
-  const workCatch = stringAnswer(answers["work_catch"]);
-  const avoided = stringAnswer(answers["avoided_question"]);
-
-  // Three short serif paragraphs. Lowercase italic is reserved for the
-  // analyst's voice; the paragraphs themselves are plain serif on the
-  // page (the renderer styles them).
-  const opening = stayedWith
-    ? `Something from the week is still in the room — ${quoteFragment(stayedWith)}. Held lightly, it gives the reading something to work with.`
-    : `The week ended quietly. That itself is data — quiet weeks have their own shape.`;
-
-  const middle = (() => {
-    const parts: string[] = [];
-    if (closeness && closeness !== "openly")
-      parts.push(`Closeness was met ${humanCloseness(closeness)}.`);
-    if (loudest && loudest !== "none")
-      parts.push(`${humanLoudest(loudest)} carried the loudest voice.`);
-    if (workCatch && workCatch !== "nowhere")
-      parts.push(`Work caught at ${humanWorkCatch(workCatch)}.`);
-    if (loop)
-      parts.push(`A familiar loop appeared — ${quoteFragment(loop)}.`);
-    if (parts.length === 0)
-      parts.push(
-        `The week's pattern was unremarkable on the surface; the structure shifts anyway.`,
-      );
-    return parts.join(" ");
-  })();
-
-  const closing = (() => {
-    if (dream && dream.trim().length > 12)
-      return `A dream was offered — ${quoteFragment(dream)}. It will be read for grammar, not symbols.`;
-    if (avoided)
-      return `One question is being kept back: ${quoteFragment(avoided)}. We can sit with it next week, or not. Either is allowed.`;
-    return `Nothing pressing was avoided this week. We continue.`;
-  })();
-
-  return [opening, middle, closing];
-}
-
-function quoteFragment(s: string): string {
-  const trimmed = s.trim().replace(/\s+/g, " ");
-  if (trimmed.length <= 80) return `"${trimmed}"`;
-  return `"${trimmed.slice(0, 77)}…"`;
-}
-
-function humanCloseness(v: string): string {
-  switch (v) {
-    case "not_at_all":
-      return "with the door closed";
-    case "briefly":
-      return "briefly, then withdrawn from";
-    case "with_hesitation":
-      return "with hesitation";
-    case "too_far":
-      return "past your usual edge";
-    default:
-      return "openly";
+async function loadShifted(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  userId: string,
+  catchupCreatedAt: string,
+): Promise<Array<{ slug: BlockSlug; weight: number; deltaWeight: number }>> {
+  const { data } = await supabase
+    .from("block_readings")
+    .select("block_slug, weight, created_at, last_refined_source")
+    .eq("user_id", userId)
+    .gte("created_at", catchupCreatedAt)
+    .order("created_at", { ascending: false });
+  const rows = (data ?? []) as Array<{
+    block_slug: string;
+    weight: number;
+    created_at: string;
+    last_refined_source: string | null;
+  }>;
+  const seen = new Set<string>();
+  const out: Array<{
+    slug: BlockSlug;
+    weight: number;
+    deltaWeight: number;
+  }> = [];
+  for (const r of rows) {
+    if (seen.has(r.block_slug)) continue;
+    seen.add(r.block_slug);
+    out.push({
+      slug: r.block_slug as BlockSlug,
+      weight: r.weight,
+      deltaWeight: 0,
+    });
   }
-}
-function humanLoudest(v: string): string {
-  switch (v) {
-    case "demand":
-      return "The demand";
-    case "doubt":
-      return "The doubt";
-    case "desire":
-      return "Desire itself";
-    case "watcher":
-      return "The watcher";
-    default:
-      return "No single voice";
-  }
-}
-function humanWorkCatch(v: string): string {
-  switch (v) {
-    case "start":
-      return "the start";
-    case "middle":
-      return "the middle";
-    case "finish":
-      return "the finish";
-    case "visibility":
-      return "the visibility";
-    default:
-      return "no single place";
-  }
+  return out;
 }
 
 // ────────────────────────────────────────────────────────────────────
-// Stub: reading copy refinement
-//
-// Returns the next-version reading string. If the user gave a long,
-// rich answer to a slug-relevant question, the reading is "refined
-// after the latest catchup" — otherwise it carries the previous one.
+// Background pipeline
 // ────────────────────────────────────────────────────────────────────
 
-function refineReadingCopy({
-  slug,
-  previousReading,
-  answers,
-  richness,
-}: {
-  slug: BlockSlug;
-  previousReading: string | null;
-  answers: Partial<CatchupAnswers>;
-  richness: number;
-}): string {
-  const carry =
-    previousReading ?? "too early to say with confidence — the shape is forming.";
-  const stayed = stringAnswer(answers["stayed_with"]);
-  const loop = stringAnswer(answers["loop"]);
-  const dream = stringAnswer(answers["dream"]);
-  const avoided = stringAnswer(answers["avoided_question"]);
+type PipelineInput = {
+  userId: string;
+  catchupId: string;
+  weekNumber: number;
+  answers: CatchupAnswers;
+};
 
-  // Pick the most-relevant answer fragment per slug; if rich, surface
-  // a "refined" line that quotes the user back. Otherwise the previous
-  // reading carries forward unchanged.
-  const fragment =
-    slug === "subconscious-loops"
-      ? loop || stayed
-      : slug === "linguistic-unconscious"
-        ? stayed || avoided
-        : slug === "dream-logic"
-          ? dream
-          : slug === "intimacy-threshold"
-            ? stayed
-            : slug === "desire-structure"
-              ? avoided || stayed
-              : slug === "professional-block"
-                ? stringAnswer(answers["work_catch"])
-                : stayed;
-
-  if (richness >= 0.45 && fragment && fragment.trim().length > 20) {
-    return `refined after the latest catchup — held around ${quoteFragment(fragment)}.`;
-  }
-  return carry;
-}
-
-function refinedTakeaway(slug: BlockSlug): string {
-  // Carry a sensible fallback if no previous takeaway exists — should be
-  // rare since handle_new_user seeds v1 takeaways for every slug.
-  switch (slug) {
-    case "subconscious-loops":
-      return "the retreat is the loop. not the closeness.";
-    case "linguistic-unconscious":
-      return "someone else's voice is still speaking through this word.";
-    case "father-imago":
-      return "the seat changes. the chair does not.";
-    case "intimacy-threshold":
-      return "being known is the edge, not being close.";
-    case "desire-structure":
-      return "what is pushed away points more clearly than what is chased.";
-    case "professional-block":
-      return "the block is at visibility, not at effort.";
-    default:
-      return "the shape continues to form.";
-  }
-}
-
-// ────────────────────────────────────────────────────────────────────
-// Bump rules — small, deterministic per-slug nudges based on the answers.
-// Ensures *every* slug shifts (even slightly) on every catchup so the
-// case file has motion. The most-relevant slug for an answer gets the
-// largest bump.
-// ────────────────────────────────────────────────────────────────────
-
-function bumpFor(
-  slug: BlockSlug,
-  answers: Partial<CatchupAnswers>,
-  richness: number,
-): number {
-  const base = 0.015; // every slug shifts a touch
-  const richBonus = richness * 0.06; // up to +0.06 from open-answer richness
-  let topical = 0;
-
-  const closeness = stringAnswer(answers["closeness"]);
-  const loop = stringAnswer(answers["loop"]);
-  const dream = stringAnswer(answers["dream"]);
-  const loudest = stringAnswer(answers["loudest_voice"]);
-  const workCatch = stringAnswer(answers["work_catch"]);
-
-  switch (slug) {
-    case "subconscious-loops":
-      if (loop && loop.trim().length > 8) topical += 0.05;
-      break;
-    case "linguistic-unconscious":
-      if (richness > 0.3) topical += 0.04;
-      break;
-    case "father-imago":
-      if (loudest === "demand" || loudest === "watcher") topical += 0.04;
-      break;
-    case "intimacy-threshold":
-      if (closeness && closeness !== "openly") topical += 0.05;
-      break;
-    case "desire-structure":
-      if (loudest === "desire") topical += 0.05;
-      break;
-    case "professional-block":
-      if (workCatch && workCatch !== "nowhere") topical += 0.05;
-      break;
-    case "dream-logic":
-      if (dream && dream.trim().length > 12) topical += 0.05;
-      break;
-    case "mother-imago":
-    case "relational-pattern":
-    case "defenses":
-    case "shadow":
-    case "transference":
-      topical += richness * 0.02;
-      break;
+async function runCatchupPipeline(input: PipelineInput): Promise<void> {
+  const admin = adminClient();
+  if (!admin) {
+    // No service-role client in this environment — mark failed.
+    return;
   }
 
-  return base + richBonus + topical;
+  const { userId, catchupId, weekNumber, answers } = input;
+  const answerInputs = toAnswerInputs(answers);
+
+  try {
+    // ── 1. Safety pass on every open answer ─────────────────────────
+    const openAnswers = CATCHUP_QUESTIONS.filter(
+      (q): q is CatchupQuestion & { type: "open" } => q.type === "open",
+    );
+    const severities = await Promise.all(
+      openAnswers.map(async (q) => {
+        const value = answers[q.key];
+        if (typeof value !== "string" || value.trim().length === 0) {
+          return "none" as SafetySeverity;
+        }
+        try {
+          const cls = await classifySafety(
+            value,
+            userId,
+            "catchup",
+            catchupId,
+          );
+          return cls.severity;
+        } catch {
+          return "none" as SafetySeverity;
+        }
+      }),
+    );
+    const highest = maxSeverity(severities);
+
+    // ── 2. Summary ──────────────────────────────────────────────────
+    let summaryText = "";
+    try {
+      const { system, messages } = buildCatchupSummaryPrompt({
+        weekNumber,
+        answers: answerInputs,
+      });
+      const { text } = await callAI("catchup_summary", {
+        system,
+        messages,
+        maxTokens: 800,
+        temperature: 0.45,
+        userId,
+      });
+      summaryText = text.trim();
+    } catch {
+      // The summary is recoverable copy — fall back to a quiet line.
+      summaryText =
+        "The catchup is on file. The reading has been updated quietly; the longer summary will arrive on the next pass.";
+    }
+
+    // ── 3. Refinement ───────────────────────────────────────────────
+    const { data: existingRows } = await admin
+      .from("block_readings")
+      .select(
+        "id, block_slug, reading, takeaway, definition, weight, version, lede",
+      )
+      .eq("user_id", userId)
+      .is("superseded_at", null);
+
+    const previous = new Map<BlockSlug, ExistingReadingRow>();
+    for (const row of (existingRows ?? []) as ExistingReadingRow[]) {
+      previous.set(row.block_slug as BlockSlug, row);
+    }
+
+    // Active connections feed context. The summary is enriched on
+    // connection-summary completion; here we just read whatever
+    // exists.
+    const { data: connectionRows } = await admin
+      .from("connections")
+      .select("role, context_summary, status")
+      .eq("inviter_user_id", userId)
+      .eq("status", "active");
+    const connectionContexts = ((connectionRows ?? []) as Array<{
+      role: string;
+      context_summary: string | null;
+    }>)
+      .filter((c) => !!c.context_summary)
+      .map((c) => ({ role: c.role, summary: c.context_summary! }));
+
+    let refinement: CatchupRefinementResponse | null = null;
+    try {
+      const { system, messages } = buildCatchupRefinementPrompt({
+        weekNumber,
+        answers: answerInputs,
+        previous: BLOCKS.map((b) => {
+          const prev = previous.get(b.slug);
+          return {
+            slug: b.slug,
+            reading: prev?.reading ?? "too early to say with confidence — the shape is forming.",
+            takeaway: prev?.takeaway ?? "",
+            weight: prev?.weight ?? 0.1,
+          };
+        }),
+        connectionContexts,
+      });
+      const { text } = await callAI("catchup_refinement", {
+        system,
+        messages,
+        jsonMode: true,
+        maxTokens: 3500,
+        temperature: 0.4,
+        userId,
+        timeoutMs: 90_000,
+      });
+      refinement = parseRefinement(text);
+    } catch {
+      refinement = null;
+    }
+
+    const refinedSource = `catchup:week_${String(weekNumber).padStart(2, "0")}`;
+    const nowIso = new Date().toISOString();
+    const materialShifts: BlockSlug[] = [];
+
+    if (refinement) {
+      for (const block of BLOCKS) {
+        const refined = refinement[block.slug];
+        if (!refined) continue;
+        const prev = previous.get(block.slug);
+        const nextVersion = (prev?.version ?? 1) + 1;
+        const nextWeight = clamp01(refined.weight);
+        const delta = Math.abs(nextWeight - (prev?.weight ?? 0));
+        if (delta > 0.1) materialShifts.push(block.slug);
+
+        const { error: insErr } = await admin.from("block_readings").insert({
+          user_id: userId,
+          block_slug: block.slug,
+          reading: refined.reading,
+          takeaway: refined.takeaway,
+          definition: prev?.definition ?? block.definition,
+          weight: nextWeight,
+          version: nextVersion,
+          last_refined_source: refinedSource,
+        });
+        if (insErr) continue;
+        if (prev) {
+          await admin
+            .from("block_readings")
+            .update({ superseded_at: nowIso })
+            .eq("id", prev.id);
+        }
+      }
+    }
+
+    // ── 4. Feedback ─────────────────────────────────────────────────
+    const subState = await readSubscriptionAndStats(admin, userId);
+    let feedback: CatchupFeedbackResponse | null = null;
+    try {
+      const dashboardReadings = BLOCKS.filter(
+        (b) => b.surface === "dashboard",
+      ).map((b) => {
+        const prev = previous.get(b.slug);
+        return {
+          slug: b.slug,
+          reading: prev?.reading ?? "",
+          weight: prev?.weight ?? 0.1,
+        };
+      });
+      const { system, messages } = buildCatchupFeedbackPrompt({
+        weekNumber,
+        answers: answerInputs,
+        currentReadings: dashboardReadings,
+        recentSessionCount: subState.recentSessionCount,
+        totalCatchups: subState.totalCatchups,
+        totalReports: subState.totalReports,
+        depthBand: subState.depthBand,
+        isSubscribed: subState.isSubscribed,
+        highestSafetySeverity: highest,
+      });
+      const { text } = await callAI("catchup_feedback", {
+        system,
+        messages,
+        jsonMode: true,
+        maxTokens: 600,
+        temperature: 0.3,
+        userId,
+      });
+      feedback = parseFeedback(text, highest);
+    } catch {
+      // Feedback failure is recoverable — the summary still renders.
+      feedback = forceSafetyFeedback(highest);
+    }
+
+    // ── 5. Write summary + feedback + status ────────────────────────
+    await admin
+      .from("catchups")
+      .update({
+        summary: summaryText,
+        feedback,
+        status: "ready",
+      })
+      .eq("id", catchupId);
+
+    // ── 6. Depth recompute ─────────────────────────────────────────
+    await recomputeDepthFor(userId, admin);
+
+    // ── 7. Lede regeneration is queued lazily on /readings render.
+    //       We don't block the catchup pipeline on it.
+    void materialShifts;
+  } catch {
+    await admin
+      .from("catchups")
+      .update({ status: "failed" })
+      .eq("id", catchupId);
+  }
 }
 
-// ────────────────────────────────────────────────────────────────────
-// Helpers
-// ────────────────────────────────────────────────────────────────────
+function forceSafetyFeedback(
+  severity: SafetySeverity,
+): CatchupFeedbackResponse {
+  if (severity === "high" || severity === "critical") {
+    return {
+      consider: null,
+      recommend: "professional_care",
+      recommend_reason:
+        "what surfaced in this week's answers asks for care beyond what the room can hold.",
+    };
+  }
+  return { consider: null, recommend: null, recommend_reason: null };
+}
 
-function computeRichness(answers: Partial<CatchupAnswers>): number {
-  const opens = CATCHUP_QUESTIONS.filter((q) => q.type === "open").map(
-    (q) => q.key,
-  );
-  let sum = 0;
-  let n = 0;
-  for (const k of opens) {
-    const v = answers[k];
-    if (typeof v === "string" && v.trim().length > 0) {
-      sum += richnessScore(v);
-      n += 1;
+async function readSubscriptionAndStats(
+  admin: NonNullable<ReturnType<typeof adminClient>>,
+  userId: string,
+): Promise<{
+  isSubscribed: boolean;
+  recentSessionCount: number;
+  totalCatchups: number;
+  totalReports: number;
+  depthBand: "thin" | "partial" | "steady" | "deep";
+}> {
+  const since21 = new Date(
+    Date.now() - 21 * 24 * 60 * 60 * 1000,
+  ).toISOString();
+  const [sub, sessionCount, catchupCount, reportCount, meta] =
+    await Promise.all([
+      admin
+        .from("subscriptions")
+        .select("status")
+        .eq("user_id", userId)
+        .maybeSingle<{ status: string | null }>(),
+      admin
+        .from("sessions")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", userId)
+        .gte("created_at", since21),
+      admin
+        .from("catchups")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", userId),
+      admin
+        .from("reports")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", userId)
+        .eq("status", "ready"),
+      admin
+        .from("users_meta")
+        .select("reading_depth")
+        .eq("user_id", userId)
+        .maybeSingle<{ reading_depth: number | null }>(),
+    ]);
+  return {
+    isSubscribed: sub.data?.status === "active",
+    recentSessionCount: sessionCount.count ?? 0,
+    totalCatchups: catchupCount.count ?? 0,
+    totalReports: reportCount.count ?? 0,
+    depthBand: depthBand(meta.data?.reading_depth ?? 0),
+  };
+}
+
+function parseRefinement(raw: string): CatchupRefinementResponse {
+  const parsed = JSON.parse(raw) as Record<string, unknown>;
+  const out = {} as CatchupRefinementResponse;
+  for (const block of BLOCKS) {
+    const r = parsed[block.slug];
+    if (typeof r !== "object" || r === null) continue;
+    const obj = r as Record<string, unknown>;
+    out[block.slug] = {
+      reading:
+        typeof obj.reading === "string"
+          ? obj.reading
+          : "too early to say with confidence — the shape is forming.",
+      takeaway: typeof obj.takeaway === "string" ? obj.takeaway : "",
+      weight: typeof obj.weight === "number" ? obj.weight : 0.1,
+    };
+  }
+  return out;
+}
+
+function parseFeedback(
+  raw: string,
+  severity: SafetySeverity,
+): CatchupFeedbackResponse {
+  const parsed = JSON.parse(raw) as Record<string, unknown>;
+  const consider =
+    typeof parsed.consider === "string" && parsed.consider.trim().length > 0
+      ? parsed.consider.trim()
+      : null;
+  const recommendRaw = parsed.recommend;
+  const validRecs = new Set([
+    "session",
+    "report",
+    "professional_care",
+    "rest",
+    null,
+  ]);
+  const recommend = validRecs.has(recommendRaw as never)
+    ? (recommendRaw as CatchupFeedbackResponse["recommend"])
+    : null;
+  const recommend_reason =
+    typeof parsed.recommend_reason === "string" &&
+    parsed.recommend_reason.trim().length > 0
+      ? parsed.recommend_reason.trim()
+      : null;
+  const out: CatchupFeedbackResponse = {
+    consider: severity === "high" || severity === "critical" ? null : consider,
+    recommend,
+    recommend_reason,
+  };
+  if (severity === "high" || severity === "critical") {
+    out.recommend = "professional_care";
+    if (!out.recommend_reason) {
+      out.recommend_reason =
+        "what surfaced in this week's answers asks for care beyond what the room can hold.";
     }
   }
-  return n > 0 ? sum / n : 0;
+  return out;
 }
 
-function stringAnswer(v: unknown): string {
-  return typeof v === "string" ? v : "";
+function toAnswerInputs(answers: CatchupAnswers): CatchupAnswerInput[] {
+  return CATCHUP_QUESTIONS.map((q) => ({
+    question_key: q.key,
+    question_text: q.prompt,
+    answer: answers[q.key] ?? null,
+  }));
 }
 
 function clamp01(n: number): number {
-  if (Number.isNaN(n)) return 0;
+  if (!Number.isFinite(n)) return 0.1;
   if (n < 0) return 0;
-  if (n > 1) return 1;
+  if (n > 0.95) return 0.95;
   return n;
 }
 

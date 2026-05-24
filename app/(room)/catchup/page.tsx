@@ -32,9 +32,16 @@ export default async function CatchupPage() {
     return <ReadBack row={existing} />;
   }
 
+  const { data: sub } = await supabase
+    .from("subscriptions")
+    .select("status")
+    .eq("user_id", user.id)
+    .maybeSingle<{ status: string | null }>();
+  const isSubscribed = sub?.status === "active";
+
   return (
     <section className="room-section">
-      <CatchupRunner weekNumber={weekNumber} />
+      <CatchupRunner weekNumber={weekNumber} isSubscribed={isSubscribed} />
     </section>
   );
 }

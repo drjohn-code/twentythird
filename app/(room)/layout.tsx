@@ -10,6 +10,7 @@ import PendingStatus from "@/components/dashboard/PendingStatus";
 import RoomNav from "@/components/room/RoomNav";
 import TodayLine from "@/components/room/TodayLine";
 import RoomFooter from "@/components/room/RoomFooter";
+import SafetyResponse from "@/components/room/SafetyResponse";
 import {
   computeTodayLine,
   type TodayContext,
@@ -57,6 +58,28 @@ export default async function RoomLayout({
     );
   }
 
+  // Initial-readings pending — intake is submitted but the v2
+  // readings are still being generated. Show the same PendingStatus
+  // so the user never lands on placeholder copy.
+  const initialReadingsStatus = await readInitialReadingsStatus(
+    supabase,
+    user.id,
+  );
+  if (
+    initialReadingsStatus === "pending" ||
+    initialReadingsStatus === "generating"
+  ) {
+    const submittedAt = gate.intake_submitted_at
+      ? new Date(gate.intake_submitted_at)
+      : null;
+    return (
+      <div className="room-shell">
+        <PendingStatus submittedAt={submittedAt} />
+        <RoomFooter />
+      </div>
+    );
+  }
+
   // Pull what the Today line + nav need. Everything here is cheap and
   // server-side; depth + today have no caches by design.
   const [
@@ -66,12 +89,17 @@ export default async function RoomLayout({
     sessionsRes,
     connectionsRes,
     reportsRes,
+    safetyFlagsRes,
   ] = await Promise.all([
     supabase
       .from("users_meta")
-      .select("display_name, reading_depth")
+      .select("display_name, reading_depth, initial_readings_status")
       .eq("user_id", user.id)
-      .maybeSingle<{ display_name: string | null; reading_depth: number | null }>(),
+      .maybeSingle<{
+        display_name: string | null;
+        reading_depth: number | null;
+        initial_readings_status: string | null;
+      }>(),
     supabase
       .from("profiles")
       .select("full_name")
@@ -104,6 +132,14 @@ export default async function RoomLayout({
       .select("status, created_at")
       .eq("user_id", user.id)
       .eq("status", "ready")
+      .order("created_at", { ascending: false })
+      .limit(1),
+    supabase
+      .from("safety_flags")
+      .select("id, severity, source, acknowledged_at, created_at")
+      .eq("user_id", user.id)
+      .in("severity", ["high", "critical"])
+      .is("acknowledged_at", null)
       .order("created_at", { ascending: false })
       .limit(1),
   ]);
@@ -187,6 +223,26 @@ export default async function RoomLayout({
     );
   })();
 
+  const unacknowledgedFlagRow =
+    (safetyFlagsRes.data as
+      | Array<{
+          id: string;
+          severity: string;
+          source: string;
+          acknowledged_at: string | null;
+        }>
+      | null
+      | undefined)?.[0] ?? null;
+
+  const initialReadingsPending =
+    metaRes.data?.initial_readings_status === "pending" ||
+    metaRes.data?.initial_readings_status === "generating";
+
+  const catchupHasUnaddressedConsider = await readCatchupConsider(
+    supabase,
+    user.id,
+  );
+
   const todayCtx: TodayContext = {
     firstName,
     isoWeek,
@@ -198,6 +254,9 @@ export default async function RoomLayout({
     reportRecentlyReady,
     catchupRecentlySubmitted,
     depthBand: band,
+    hasUnacknowledgedSafetyFlag: !!unacknowledgedFlagRow,
+    initialReadingsPending,
+    catchupHasUnaddressedConsider,
   };
   const todaySentence = resolveTodayLine(computeTodayLine(todayCtx));
 
@@ -206,11 +265,61 @@ export default async function RoomLayout({
       <RoomNav firstName={firstName} />
       <main className="room-main">
         <TodayLine sentence={todaySentence} />
+        {unacknowledgedFlagRow ? (
+          <div className="safety-response-wrap">
+            <SafetyResponse
+              context={
+                unacknowledgedFlagRow.source === "intake"
+                  ? "intake"
+                  : unacknowledgedFlagRow.source === "catchup"
+                    ? "catchup"
+                    : "session"
+              }
+              showResources
+            />
+          </div>
+        ) : null}
         {children}
       </main>
       <RoomFooter />
     </div>
   );
+}
+
+async function readCatchupConsider(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  userId: string,
+): Promise<boolean> {
+  const { data } = await supabase
+    .from("catchups")
+    .select("created_at, feedback")
+    .eq("user_id", userId)
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle<{
+      created_at: string;
+      feedback: { consider?: string | null } | null;
+    }>();
+  if (!data?.feedback?.consider) return false;
+  const since = new Date(data.created_at).getTime();
+  const { count } = await supabase
+    .from("sessions")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", userId)
+    .gte("created_at", new Date(since).toISOString());
+  return (count ?? 0) === 0;
+}
+
+async function readInitialReadingsStatus(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  userId: string,
+): Promise<string> {
+  const { data } = await supabase
+    .from("users_meta")
+    .select("initial_readings_status")
+    .eq("user_id", userId)
+    .maybeSingle<{ initial_readings_status: string | null }>();
+  return data?.initial_readings_status ?? "ready";
 }
 
 function firstNameFrom(name: string | null): string | null {

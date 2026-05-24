@@ -10,8 +10,10 @@ import BlockSection from "@/components/room/BlockSection";
 import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
 import { DASHBOARD_BLOCKS, type BlockSlug } from "@/lib/blocks";
 import { blockSeeds } from "@/lib/copy";
+import { queueReadingLede } from "@/lib/ai/reading-lede-jobs";
 
 type BlockReadingRow = {
+  id: string;
   block_slug: string;
   reading: string;
   takeaway: string;
@@ -20,6 +22,7 @@ type BlockReadingRow = {
   last_refined_source: string | null;
   version: number;
   created_at: string;
+  lede: string | null;
 };
 
 type SubscriptionRow = {
@@ -59,7 +62,7 @@ export default async function ReadingsPage() {
     supabase
       .from("block_readings")
       .select(
-        "block_slug, reading, takeaway, definition, weight, last_refined_source, version, created_at",
+        "id, block_slug, reading, takeaway, definition, weight, last_refined_source, version, created_at, lede",
       )
       .eq("user_id", user.id)
       .is("superseded_at", null)
@@ -109,8 +112,18 @@ export default async function ReadingsPage() {
       {DASHBOARD_BLOCKS.map((b) => {
         const row = readingsBySlug.get(b.slug);
         const definition = row?.definition ?? b.definition;
-        const lede = readingLedeFor(b.slug, row?.reading ?? blockSeeds[b.slug].reading);
+        const lede = ledeFromRow(b.slug, row);
         const hasPriorReadings = row ? row.version > 1 : false;
+        if (row && (!row.lede || row.lede.trim().length === 0)) {
+          // Queue regeneration in the background — the page renders
+          // a fallback lede this time; the next visit shows the real
+          // one.
+          void queueReadingLede({
+            userId: user.id,
+            blockReadingId: row.id,
+            slug: b.slug,
+          });
+        }
         return (
           <BlockSection
             key={b.slug}
@@ -131,17 +144,29 @@ export default async function ReadingsPage() {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// Reading lede — short serif paragraphs specific to the user.
-//
-// Until the model is wired (Phase 3+ refinement), we open with the
-// current reading row's italic line and follow with two stub
-// paragraphs that explain its texture. The shape is intentional:
-// observation, mechanism, prognosis.
-// TODO: model-driven reading lede.
+// Reading lede — cached AI prose lives on block_readings.lede.
+// When present, we render it as a single paragraph (split on blank
+// lines if the model wrote multiple). When missing, we fall back to
+// the opening reading + the seed tail and queue regeneration.
 // ────────────────────────────────────────────────────────────────────
 
-function readingLedeFor(slug: BlockSlug, openingReading: string): string[] {
-  const opening = openingReading.replace(/^./, (c) => c.toUpperCase());
+function ledeFromRow(
+  slug: BlockSlug,
+  row: BlockReadingRow | undefined,
+): string[] {
+  if (row?.lede && row.lede.trim().length > 0) {
+    const paragraphs = row.lede
+      .split(/\n\s*\n/)
+      .map((p) => p.trim())
+      .filter(Boolean);
+    return paragraphs.length > 0
+      ? paragraphs
+      : [row.lede.trim()];
+  }
+  const opening =
+    (row?.reading ?? blockSeeds[slug].reading).replace(/^./, (c) =>
+      c.toUpperCase(),
+    );
   const tail = LEDE_TAIL[slug] ?? [];
   return [opening, ...tail];
 }

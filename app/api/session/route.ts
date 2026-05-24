@@ -1,22 +1,41 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 import { recomputeDepthFor } from "@/lib/depth";
 import { sessionClose } from "@/lib/copy";
+import { classifySafety } from "@/lib/ai/safety";
+import { callAI, streamAI, AiOverCapacityError } from "@/lib/ai/router";
+import { buildSessionReplyPrompt } from "@/lib/ai/prompts/session-reply";
+import { buildSessionClosePrompt } from "@/lib/ai/prompts/session-close";
 
-// ────────────────────────────────────────────────────────────────────
-// Consulting session — start / turn / close.
+// Consulting session — start / turn (streamed) / close.
 //
-// Stubbed analyst voice. The schema and the ritual are correct;
-// the model is wired in a later phase.
-//
-// TODO: wire to model — currently picks from ~6 canned serif italic
-//       replies per topic. Real inference belongs behind this route.
-// TODO: connection-aware prompt engineering — once Phase 6 ships
-//       relationship intake data, the analyst can reference a
-//       connection by first name + role.
-// ────────────────────────────────────────────────────────────────────
+// turn is now a Server-Sent Events response: each token delta is sent
+// as `event: delta\ndata: {"text":"..."}` and the final event is
+// `event: done\ndata: {"transcript":[...]}`. The client appends to
+// the analyst turn as deltas arrive.
 
-const SOFT_MAX_DURATION_SECONDS = 2 * 60 * 60; // 2h soft cap
+const SOFT_MAX_DURATION_SECONDS = 2 * 60 * 60;
+const SESSION_TURN_RATE_LIMIT = 30;
+
+// Per-user hourly rate limit on session turns. The cap is process-local
+// for now (acceptable while we run a single Next.js node); a future
+// upgrade puts a `rate_limits` table behind it.
+const TURNS_PER_HOUR = 30;
+const turnCounters = new Map<string, { windowStart: number; count: number }>();
+
+function checkTurnRateLimit(userId: string): boolean {
+  const now = Date.now();
+  const windowMs = 60 * 60 * 1000;
+  const existing = turnCounters.get(userId);
+  if (!existing || now - existing.windowStart > windowMs) {
+    turnCounters.set(userId, { windowStart: now, count: 1 });
+    return true;
+  }
+  if (existing.count >= TURNS_PER_HOUR) return false;
+  existing.count += 1;
+  return true;
+}
 
 const TOPICS = [
   "Dreaming future",
@@ -64,7 +83,7 @@ type RequestBody = StartBody | TurnBody | CloseBody;
 
 // ────────────────────────────────────────────────────────────────────
 
-export async function POST(request: Request): Promise<NextResponse> {
+export async function POST(request: Request): Promise<Response> {
   const supabase = await createClient();
   const {
     data: { user },
@@ -79,13 +98,10 @@ export async function POST(request: Request): Promise<NextResponse> {
   } catch {
     return NextResponse.json({ error: "invalid body" }, { status: 400 });
   }
-
   if (!body || typeof body !== "object" || !("action" in body)) {
     return NextResponse.json({ error: "missing action" }, { status: 400 });
   }
 
-  // Every action requires an active subscription. The page guard also
-  // hides the surface, but the server is the source of truth.
   const { data: sub } = await supabase
     .from("subscriptions")
     .select("status")
@@ -102,7 +118,7 @@ export async function POST(request: Request): Promise<NextResponse> {
     case "start":
       return startSession(supabase, user.id, body);
     case "turn":
-      return appendTurn(supabase, user.id, body);
+      return streamTurn(supabase, user.id, body);
     case "close":
       return closeSession(supabase, user.id, body);
     default:
@@ -118,18 +134,18 @@ async function startSession(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   body: StartBody,
-): Promise<NextResponse> {
+): Promise<Response> {
   const topic = normalizeTopic(body.topic);
   const held =
     typeof body.held_question === "string" && body.held_question.trim()
       ? body.held_question.trim()
       : await deriveHeldQuestion(supabase, userId);
 
-  // If an open session already exists, return it rather than spawning
-  // a second one. The shell's "unfinished" Today line points at this.
   const { data: openRow } = await supabase
     .from("sessions")
-    .select("id, user_id, topic, held_question, transcript, closed_at, duration_seconds, created_at")
+    .select(
+      "id, user_id, topic, held_question, transcript, closed_at, duration_seconds, created_at",
+    )
     .eq("user_id", userId)
     .is("closed_at", null)
     .order("created_at", { ascending: false })
@@ -162,19 +178,18 @@ async function startSession(
       { status: 500 },
     );
   }
-
   return NextResponse.json({ session: data, resumed: false }, { status: 201 });
 }
 
 // ────────────────────────────────────────────────────────────────────
-// turn
+// turn — Server-Sent Events
 // ────────────────────────────────────────────────────────────────────
 
-async function appendTurn(
+async function streamTurn(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   body: TurnBody,
-): Promise<NextResponse> {
+): Promise<Response> {
   const text = typeof body.text === "string" ? body.text.trim() : "";
   if (!text) {
     return NextResponse.json({ error: "empty turn" }, { status: 400 });
@@ -191,48 +206,206 @@ async function appendTurn(
     );
   }
 
-  const now = new Date().toISOString();
-  const userTurn: Turn = { role: "user", text, at: now };
-  const analystTurn: Turn = {
-    role: "analyst",
-    text: stubAnalystReply(row.topic, text, row.transcript ?? []),
-    at: new Date(Date.now() + 1).toISOString(),
+  // Rate-limit user turns per session — counted from the transcript.
+  const userTurnsSoFar = (row.transcript ?? []).filter(
+    (t) => t.role === "user",
+  ).length;
+  if (userTurnsSoFar >= SESSION_TURN_RATE_LIMIT) {
+    return NextResponse.json(
+      { error: "this session has reached its turn cap." },
+      { status: 429 },
+    );
+  }
+
+  // Hourly per-user cap across all sessions.
+  if (!checkTurnRateLimit(userId)) {
+    return NextResponse.json(
+      { error: "the room asks for a small pause. try again in a few minutes." },
+      { status: 429 },
+    );
+  }
+
+  const userTurn: Turn = {
+    role: "user",
+    text,
+    at: new Date().toISOString(),
   };
-  const nextTranscript: Turn[] = [
-    ...(row.transcript ?? []),
-    userTurn,
-    analystTurn,
-  ];
-
-  const elapsedSeconds = Math.floor(
-    (Date.now() - new Date(row.created_at).getTime()) / 1000,
-  );
-  const cappedDuration = Math.min(elapsedSeconds, SOFT_MAX_DURATION_SECONDS);
-
-  const { error } = await supabase
+  // Persist the user turn immediately so the safety classification
+  // and the analyst reply both see it on retry.
+  await supabase
     .from("sessions")
     .update({
-      transcript: nextTranscript,
-      duration_seconds: cappedDuration,
+      transcript: [...(row.transcript ?? []), userTurn],
     })
     .eq("id", row.id)
     .eq("user_id", userId);
 
-  if (error) {
-    return NextResponse.json(
-      { error: "could not record the turn" },
-      { status: 500 },
-    );
-  }
+  // Connection contexts — current active connections, summaries
+  // already produced by lib/ai/safety + connection-summary path.
+  const { data: connRows } = await supabase
+    .from("connections")
+    .select("role, context_summary, connection_first_name, status")
+    .eq("inviter_user_id", userId)
+    .eq("status", "active");
+  const connectionContexts = ((connRows ?? []) as Array<{
+    role: string;
+    context_summary: string | null;
+    connection_first_name: string | null;
+  }>)
+    .filter((c) => !!c.context_summary)
+    .map((c) => ({
+      role: c.role,
+      firstName: c.connection_first_name,
+      summary: c.context_summary!,
+    }));
 
-  return NextResponse.json(
-    {
-      analyst: analystTurn,
-      duration_seconds: cappedDuration,
-      soft_max_seconds: SOFT_MAX_DURATION_SECONDS,
+  // Latest dashboard readings.
+  const { data: readingsRows } = await supabase
+    .from("block_readings")
+    .select("block_slug, reading")
+    .eq("user_id", userId)
+    .is("superseded_at", null);
+  const readings = ((readingsRows ?? []) as Array<{
+    block_slug: string;
+    reading: string;
+  }>).map((r) => ({ slug: r.block_slug, reading: r.reading }));
+
+  // Encode SSE response.
+  const encoder = new TextEncoder();
+  const stream = new ReadableStream<Uint8Array>({
+    async start(controller) {
+      const send = (event: string, data: unknown) => {
+        controller.enqueue(
+          encoder.encode(
+            `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`,
+          ),
+        );
+      };
+
+      // Safety classification BEFORE the analyst replies.
+      let classification;
+      try {
+        classification = await classifySafety(
+          text,
+          userId,
+          "session",
+          row.id,
+        );
+      } catch {
+        classification = {
+          severity: "none" as const,
+          categories: [],
+          excerpt: null,
+          reasoning: null,
+        };
+      }
+
+      // High / critical — synthesize a safety response in the analyst
+      // voice. Do not call the analyst model.
+      if (
+        classification.severity === "high" ||
+        classification.severity === "critical"
+      ) {
+        const safetyText =
+          "what you just wrote points to weight that asks for real care — beyond what this room can hold. please reach out to a doctor, therapist, or local crisis line today. we can return to the room when you are safe.";
+        const analystTurn: Turn = {
+          role: "analyst",
+          text: safetyText,
+          at: new Date(Date.now() + 1).toISOString(),
+        };
+        for (const piece of chunk(safetyText, 12)) {
+          send("delta", { text: piece });
+        }
+        await supabase
+          .from("sessions")
+          .update({
+            transcript: [...(row.transcript ?? []), userTurn, analystTurn],
+          })
+          .eq("id", row.id)
+          .eq("user_id", userId);
+        send("done", { analyst: analystTurn, safety: true });
+        controller.close();
+        return;
+      }
+
+      // Normal flow — stream the analyst reply.
+      const cappedTranscript = (row.transcript ?? []).slice(-20);
+      const promptInput = buildSessionReplyPrompt({
+        topic: row.topic,
+        heldQuestion: row.held_question,
+        transcript: [...cappedTranscript, userTurn],
+        readings,
+        connectionContexts,
+        mediumSafetyDistress: classification.severity === "medium",
+      });
+
+      let accumulated = "";
+      try {
+        for await (const ev of streamAI("session_reply", {
+          system: promptInput.system,
+          messages: promptInput.messages,
+          maxTokens: 400,
+          temperature: 0.7,
+          userId,
+          timeoutMs: 120_000,
+        })) {
+          if (ev.kind === "delta") {
+            accumulated += ev.text;
+            send("delta", { text: ev.text });
+          }
+        }
+      } catch (err) {
+        if (err instanceof AiOverCapacityError) {
+          const fallback =
+            "the room is briefly quiet — try again in a minute.";
+          send("delta", { text: fallback });
+          accumulated = fallback;
+        } else {
+          send("error", {
+            message: "the analyst could not be reached just now.",
+          });
+        }
+      }
+
+      const analystTurn: Turn = {
+        role: "analyst",
+        text: accumulated.trim(),
+        at: new Date(Date.now() + 1).toISOString(),
+      };
+
+      const elapsedSeconds = Math.floor(
+        (Date.now() - new Date(row.created_at).getTime()) / 1000,
+      );
+      const cappedDuration = Math.min(
+        elapsedSeconds,
+        SOFT_MAX_DURATION_SECONDS,
+      );
+
+      await supabase
+        .from("sessions")
+        .update({
+          transcript: [...(row.transcript ?? []), userTurn, analystTurn],
+          duration_seconds: cappedDuration,
+        })
+        .eq("id", row.id)
+        .eq("user_id", userId);
+
+      send("done", {
+        analyst: analystTurn,
+        duration_seconds: cappedDuration,
+        soft_max_seconds: SOFT_MAX_DURATION_SECONDS,
+      });
+      controller.close();
     },
-    { status: 200 },
-  );
+  });
+
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/event-stream",
+      "Cache-Control": "no-cache, no-transform",
+      Connection: "keep-alive",
+    },
+  });
 }
 
 // ────────────────────────────────────────────────────────────────────
@@ -243,7 +416,7 @@ async function closeSession(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   body: CloseBody,
-): Promise<NextResponse> {
+): Promise<Response> {
   const row = await fetchOpenSession(supabase, userId, body.session_id);
   if (!row) {
     return NextResponse.json({ error: "session not found" }, { status: 404 });
@@ -261,9 +434,30 @@ async function closeSession(
   const cappedDuration = Math.min(elapsedSeconds, SOFT_MAX_DURATION_SECONDS);
   const closingAt = new Date().toISOString();
 
+  let closingText = "";
+  try {
+    const { system, messages } = buildSessionClosePrompt({
+      topic: row.topic,
+      heldQuestion: row.held_question,
+      transcript: row.transcript ?? [],
+    });
+    const { text } = await callAI("session_close", {
+      system,
+      messages,
+      maxTokens: 300,
+      temperature: 0.5,
+      userId,
+      timeoutMs: 30_000,
+    });
+    closingText = text.trim();
+  } catch {
+    closingText =
+      "what was named today belongs to the week between us. we continue next time.";
+  }
+
   const closingTurn: Turn = {
     role: "analyst",
-    text: closingRitual(row.topic, row.transcript ?? []),
+    text: closingText,
     at: closingAt,
   };
   const finalTurn: Turn = {
@@ -296,8 +490,22 @@ async function closeSession(
     );
   }
 
-  // Depth recompute — sessions count toward the depth signal. Best
-  // effort; a recompute failure should not fail the close.
+  // Final safety pass over the full transcript — best effort.
+  try {
+    const admin = adminClient();
+    if (admin) {
+      const transcriptText = nextTranscript
+        .filter((t) => t.role === "user")
+        .map((t) => t.text)
+        .join("\n\n");
+      if (transcriptText.trim().length > 0) {
+        await classifySafety(transcriptText, userId, "session", row.id);
+      }
+    }
+  } catch {
+    // ignore — close still succeeds
+  }
+
   await recomputeDepthFor(userId, supabase);
 
   return NextResponse.json(
@@ -342,8 +550,6 @@ function normalizeTopic(t: string | null | undefined): string | null {
   return hit ?? null;
 }
 
-// Held question — what's still open from the last session or the most
-// recent Catchup. Server-side, no model. Falls back to a quiet default.
 async function deriveHeldQuestion(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
@@ -360,11 +566,9 @@ async function deriveHeldQuestion(
       topic: string | null;
       closed_at: string | null;
     }>();
-
   if (lastSession?.held_question && lastSession.held_question.trim()) {
     return lastSession.held_question;
   }
-
   const { data: lastCatchup } = await supabase
     .from("catchups")
     .select("answers, week_number")
@@ -375,7 +579,6 @@ async function deriveHeldQuestion(
       answers: Record<string, unknown> | null;
       week_number: number;
     }>();
-
   if (lastCatchup?.answers) {
     const stayed = stringField(lastCatchup.answers, "stayed_with");
     const workCatch = stringField(lastCatchup.answers, "work_catch");
@@ -390,7 +593,6 @@ async function deriveHeldQuestion(
       return `something from last week is still in the room. shall we open it?`;
     }
   }
-
   return "what would you like to begin with today?";
 }
 
@@ -399,99 +601,14 @@ function stringField(o: Record<string, unknown>, k: string): string {
   return typeof v === "string" ? v.trim() : "";
 }
 
-// ────────────────────────────────────────────────────────────────────
-// Stubbed analyst voice
-//
-// Topical, lightly varied, in serif italic when rendered. The voice
-// stays singular (analyst); Freud / Lacan may be cited inline only as
-// sources for a named concept.
-// ────────────────────────────────────────────────────────────────────
-
-const REPLIES_BY_TOPIC: Record<Topic | "default", string[]> = {
-  "Dreaming future": [
-    "say more about the version of it you would not admit to wanting.",
-    "the future you describe — is it the one you were taught to want, or one you found by refusing?",
-    "what would it cost to be wrong about the shape of it?",
-    "notice the word that did the most work in that sentence. begin again from there.",
-    "where, in that picture, is the part you have already lived?",
-    "the wish is clear. what would the wish leave undone?",
-  ],
-  "Night dream": [
-    "read it for the grammar, not the symbols. who is the speaker, and who is being addressed?",
-    "the figure that arrives second — what does the first one need to be replaced by?",
-    "the dream condenses two scenes — which one is it not allowed to say plainly?",
-    "stay with the moment the dream changes register. that hinge is the work.",
-    "the dream offers a substitution. what is being kept out of the room by it?",
-    "the unconscious uses pictures to write sentences. which sentence is this?",
-  ],
-  "Relations in my life": [
-    "you describe the other clearly. describe the position you take when they appear.",
-    "the move you make at the threshold — is it familiar from somewhere older?",
-    "what does the other person let you avoid by being who they are?",
-    "what part of you only comes forward when this person is in the room?",
-    "the relationship reproduces a structure. whose structure is it?",
-    "the closeness is welcome up to a point. listen for the point — it always has the same shape.",
-  ],
-  "Professional growth": [
-    "the block sits at a specific moment. which moment, exactly?",
-    "what would it mean to be seen finishing it?",
-    "the doubt is reliable. what does its reliability protect you from?",
-    "the work is not the obstacle. the visibility of the work is. what is forbidden about being seen?",
-    "describe the version of yourself that would not need to begin again.",
-    "what is the prohibition you are honoring without naming?",
-  ],
-  default: [
-    "say more — without arranging it first.",
-    "the word you just used — say it again, slower.",
-    "the sentence stopped before it finished. finish it now.",
-    "what would be different if you let that be true?",
-    "notice which part of that you said in someone else's voice.",
-    "stay with it. the next sentence is the one we are listening for.",
-  ],
-};
-
-function stubAnalystReply(
-  topic: string | null,
-  userText: string,
-  prior: Turn[],
-): string {
-  const pool =
-    (topic && (REPLIES_BY_TOPIC as Record<string, string[]>)[topic]) ||
-    REPLIES_BY_TOPIC.default;
-  // Deterministic-ish rotation: index by prior analyst turn count so
-  // consecutive replies are different without needing randomness.
-  const analystTurnsSoFar = prior.filter((t) => t.role === "analyst").length;
-  const idx =
-    (analystTurnsSoFar + signalIndex(userText)) % pool.length;
-  return pool[idx];
-}
-
-// Cheap "did the user say something specific" signal — bumps the
-// reply index when the turn is substantive, so a longer turn lands a
-// different reply than a one-word probe.
-function signalIndex(s: string): number {
-  const words = s.split(/\s+/).filter(Boolean).length;
-  if (words >= 30) return 3;
-  if (words >= 12) return 2;
-  if (words >= 4) return 1;
-  return 0;
-}
-
-function closingRitual(topic: string | null, prior: Turn[]): string {
-  const turns = prior.length;
-  if (turns === 0) {
-    return "we opened the room and you waited. that is also a session. we return next time, where you are.";
+function chunk(text: string, size: number): string[] {
+  const out: string[] = [];
+  for (let i = 0; i < text.length; i += size) {
+    out.push(text.slice(i, i + size));
   }
-  switch (topic) {
-    case "Dreaming future":
-      return "what you named today belongs to a future you are entitled to. let it sit in the room until next time.";
-    case "Night dream":
-      return "the dream has been read. let it work on you between now and the next sitting — it usually answers a question we have not yet asked.";
-    case "Relations in my life":
-      return "we have mapped a small piece of the structure. it will appear again in the week. recognizing it is already the work.";
-    case "Professional growth":
-      return "the block is more specific now. give the week one finished page, however small. the visibility is the practice.";
-    default:
-      return "we held what could be held. the rest belongs to the week between us. we continue next time.";
-  }
+  return out;
 }
+
+// Suppress unused-import warning under strict TS.
+type _Topic = Topic;
+void (0 as unknown as _Topic);

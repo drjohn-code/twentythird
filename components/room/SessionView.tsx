@@ -164,6 +164,31 @@ export default function SessionView({
     try {
       const opened = await ensureSession(topic);
       if (!opened) return;
+
+      // Optimistically append the user turn + an empty analyst turn
+      // that grows as deltas arrive.
+      const userAt = new Date().toISOString();
+      const userTurn: Turn = { role: "user", text, at: userAt };
+      const analystAt = new Date(Date.now() + 1).toISOString();
+      const analystSeed: Turn = {
+        role: "analyst",
+        text: "",
+        at: analystAt,
+      };
+      setSession((s) =>
+        s
+          ? {
+              ...s,
+              transcript: [
+                ...(s.transcript ?? []),
+                userTurn,
+                analystSeed,
+              ],
+            }
+          : s,
+      );
+      setDraft("");
+
       const res = await fetch("/api/session", {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -173,31 +198,45 @@ export default function SessionView({
           text,
         }),
       });
-      if (!res.ok) {
+      if (!res.ok || !res.body) {
         const body = (await res.json().catch(() => ({}))) as {
           error?: string;
         };
         throw new Error(body.error ?? "could not record the turn");
       }
-      const data = (await res.json()) as {
-        analyst: Turn;
-        duration_seconds: number;
-      };
-      const userTurn: Turn = {
-        role: "user",
-        text,
-        at: new Date().toISOString(),
-      };
-      setSession((s) =>
-        s
-          ? {
-              ...s,
-              transcript: [...(s.transcript ?? []), userTurn, data.analyst],
-              duration_seconds: data.duration_seconds,
+
+      await consumeSSE(res.body, {
+        onDelta: (piece) => {
+          setSession((s) => {
+            if (!s) return s;
+            const transcript = [...(s.transcript ?? [])];
+            const last = transcript[transcript.length - 1];
+            if (!last || last.role !== "analyst") return s;
+            transcript[transcript.length - 1] = {
+              ...last,
+              text: last.text + piece,
+            };
+            return { ...s, transcript };
+          });
+        },
+        onDone: (finalAnalyst, duration) => {
+          setSession((s) => {
+            if (!s) return s;
+            const transcript = [...(s.transcript ?? [])];
+            const last = transcript[transcript.length - 1];
+            if (last && last.role === "analyst") {
+              transcript[transcript.length - 1] = finalAnalyst;
             }
-          : s,
-      );
-      setDraft("");
+            return {
+              ...s,
+              transcript,
+              duration_seconds:
+                typeof duration === "number" ? duration : s.duration_seconds,
+            };
+          });
+        },
+        onError: (msg) => setError(msg),
+      });
     } catch (e) {
       setError(e instanceof Error ? e.message : "something went wrong");
     } finally {
@@ -425,4 +464,61 @@ function formatElapsed(totalSeconds: number): string {
   if (minutes < 1) return "just opened";
   if (minutes === 1) return "01 min in";
   return `${String(minutes).padStart(2, "0")} min in`;
+}
+
+// ────────────────────────────────────────────────────────────────────
+// SSE consumer — parses event/data pairs and dispatches.
+// ────────────────────────────────────────────────────────────────────
+
+type SSEHandlers = {
+  onDelta: (text: string) => void;
+  onDone: (analyst: Turn, durationSeconds?: number) => void;
+  onError: (message: string) => void;
+};
+
+async function consumeSSE(
+  body: ReadableStream<Uint8Array>,
+  handlers: SSEHandlers,
+): Promise<void> {
+  const reader = body.getReader();
+  const decoder = new TextDecoder();
+  let buf = "";
+  let currentEvent = "delta";
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    let boundary = buf.indexOf("\n\n");
+    while (boundary !== -1) {
+      const chunk = buf.slice(0, boundary);
+      buf = buf.slice(boundary + 2);
+      boundary = buf.indexOf("\n\n");
+      const lines = chunk.split("\n");
+      currentEvent = "delta";
+      let dataLine = "";
+      for (const line of lines) {
+        if (line.startsWith("event:")) currentEvent = line.slice(6).trim();
+        else if (line.startsWith("data:")) dataLine += line.slice(5).trim();
+      }
+      if (!dataLine) continue;
+      try {
+        const payload = JSON.parse(dataLine) as Record<string, unknown>;
+        if (currentEvent === "delta" && typeof payload.text === "string") {
+          handlers.onDelta(payload.text);
+        } else if (currentEvent === "done") {
+          const analyst = payload.analyst as Turn | undefined;
+          const duration = payload.duration_seconds as number | undefined;
+          if (analyst) handlers.onDone(analyst, duration);
+        } else if (currentEvent === "error") {
+          const message =
+            typeof payload.message === "string"
+              ? payload.message
+              : "something went wrong";
+          handlers.onError(message);
+        }
+      } catch {
+        // ignore malformed event
+      }
+    }
+  }
 }

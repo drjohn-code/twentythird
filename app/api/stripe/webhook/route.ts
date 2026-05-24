@@ -24,10 +24,9 @@ import { adminClient } from "@/lib/supabase/admin";
 //
 // Idempotency: Stripe delivers retries. The subscription path uses an
 // upsert on user_id (unique). For one-off reports we dedupe on the
-// payment intent id by checking before insert.
-//
-// TODO: queue worker — the dev-only autoflip below pretends a worker
-//       ran and produced a PDF. Production needs a real queue.
+// payment intent id by checking before insert. After the row is
+// inserted we fire /api/internal/report-generate, the same internal
+// generator the public POST /api/reports uses.
 // ────────────────────────────────────────────────────────────────────
 
 export const runtime = "nodejs";
@@ -178,21 +177,29 @@ export async function POST(request: Request): Promise<NextResponse> {
             .select("id")
             .single<{ id: string }>();
 
-          // Dev-only autoflip mirrors /api/reports behavior — pretends
-          // the queue worker ran. The placeholder pdf_url encodes the
-          // payment intent id when present so a developer can trace it
-          // back to Stripe.
-          if (process.env.NODE_ENV !== "production" && inserted) {
-            const placeholder = paymentIntentId
-              ? `/reports/${inserted.id}/placeholder.pdf?pi=${paymentIntentId}`
-              : `/reports/${inserted.id}/placeholder.pdf`;
-            setTimeout(() => {
-              void supabase
-                .from("reports")
-                .update({ status: "ready", pdf_url: placeholder })
-                .eq("id", inserted.id);
-            }, 3000);
+          // Trigger the real generator. The internal endpoint runs
+          // the model and uploads the PDF; the row flips to ready
+          // when the artifact lands. Failures are caught upstream.
+          if (inserted) {
+            const siteUrl =
+              process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+              "http://localhost:3000";
+            const internalToken = process.env.AI_INTERNAL_TOKEN;
+            if (internalToken) {
+              void fetch(`${siteUrl}/api/internal/report-generate`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "x-internal-token": internalToken,
+                },
+                body: JSON.stringify({ report_id: inserted.id }),
+              }).catch(() => undefined);
+            }
           }
+          // Capture the paymentIntentId — unused now that we no longer
+          // build a placeholder URL, but kept available for future
+          // traceback.
+          void paymentIntentId;
         }
         break;
       }

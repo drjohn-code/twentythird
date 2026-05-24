@@ -4,16 +4,20 @@
 // else in the build; treat the priority order accordingly.
 //
 // Priority (highest wins):
-//   1. connectionAccepted    — first visit after a connection accepts
-//   2. connectionEnded       — first visit after disconnect by either side
-//   3. reportReady           — a queued/generating report is now ready
-//   4. unfinished            — open (not-closed) consulting session exists
-//   5. openDream             — a recent catchup mentioned a dream that
-//                              hasn't been worked
-//   6. catchupReady          — no catchup this ISO week, week is current
-//   7. thinReading           — depth band == 'thin'
-//   8. catchupCompleted      — first visit after submitting a catchup
-//   9. quiet                 — default
+//   1. safetyFollowup          — unacknowledged high/critical flag exists
+//   2. initialReadingsGenerating — post-intake reading generation in flight
+//   3. connectionAccepted      — first visit after a connection accepts
+//   4. connectionEnded         — first visit after disconnect by either side
+//   5. reportReady             — a queued/generating report is now ready
+//   6. unfinished              — open (not-closed) consulting session exists
+//   7. openDream               — a recent catchup mentioned a dream that
+//                                hasn't been worked
+//   8. catchupConsider         — latest catchup feedback has a "consider" line
+//                                and no session has happened since
+//   9. catchupReady            — no catchup this ISO week, week is current
+//  10. thinReading             — depth band == 'thin'
+//  11. catchupCompleted        — first visit after submitting a catchup
+//  12. quiet                   — default
 //
 // `welcomeBack` is reserved for the first visit after magic-link auth
 // (handled at the auth callback, not here).
@@ -42,9 +46,23 @@ export type TodayContext = {
   catchupRecentlySubmitted: boolean;
   /** Current depth band. */
   depthBand: DepthBand;
+  /** True if any unacknowledged high/critical safety flag exists. */
+  hasUnacknowledgedSafetyFlag?: boolean;
+  /** True if initial post-intake readings are still being generated. */
+  initialReadingsPending?: boolean;
+  /** True if the latest catchup carried a "consider" line and no session has happened since. */
+  catchupHasUnaddressedConsider?: boolean;
 };
 
 export function computeTodayLine(ctx: TodayContext): TodayLineRef {
+  if (ctx.hasUnacknowledgedSafetyFlag) {
+    return { key: "safetyFollowup" };
+  }
+
+  if (ctx.initialReadingsPending) {
+    return { key: "initialReadingsGenerating" };
+  }
+
   if (ctx.recentlyAcceptedConnection) {
     return {
       key: "connectionAccepted",
@@ -69,6 +87,10 @@ export function computeTodayLine(ctx: TodayContext): TodayLineRef {
 
   if (ctx.openDreamDay) {
     return { key: "openDream", args: [ctx.openDreamDay] };
+  }
+
+  if (ctx.catchupHasUnaddressedConsider) {
+    return { key: "catchupConsider" };
   }
 
   if (!ctx.catchupForThisWeek) {

@@ -15,9 +15,8 @@ type RouteParams = { id: string };
 /**
  * /reports/[id] — quiet status page for a queued or ready report.
  *
- * Per the build prompt: no spinners, a single serif italic line. We
- * surface the four possible states (queued, generating, ready, failed)
- * with appropriately quiet copy.
+ * No spinners, a single serif italic line. When status is ready, we
+ * mint a 24-hour signed URL for the stored artifact and link to it.
  */
 export default async function ReportStatusPage({
   params,
@@ -29,7 +28,6 @@ export default async function ReportStatusPage({
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  // The (room) layout has already guaranteed a session.
   if (!user) return null;
 
   const { data: report } = await supabase
@@ -43,12 +41,20 @@ export default async function ReportStatusPage({
     redirect("/readings");
   }
 
+  let signedUrl: string | null = null;
+  if (report.status === "ready" && report.pdf_url) {
+    const { data: signed } = await supabase.storage
+      .from("reports")
+      .createSignedUrl(report.pdf_url, 60 * 60 * 24);
+    signedUrl = signed?.signedUrl ?? null;
+  }
+
   return (
     <section className="report-status">
       <Eyebrow>CLINICAL REPORT</Eyebrow>
       <p className="report-status-line">{lineFor(report.status)}</p>
-      {report.status === "ready" && report.pdf_url ? (
-        <RowLink href={report.pdf_url}>open the report</RowLink>
+      {report.status === "ready" && signedUrl ? (
+        <RowLink href={signedUrl}>open the report</RowLink>
       ) : (
         <RowLink href="/readings" arrow="left">
           back to the readings
@@ -61,7 +67,7 @@ export default async function ReportStatusPage({
 function lineFor(status: ReportRow["status"]): string {
   switch (status) {
     case "queued":
-      return "your report is being prepared — we'll email you when it's ready.";
+      return "your report is being prepared.";
     case "generating":
       return "the report is being written.";
     case "ready":

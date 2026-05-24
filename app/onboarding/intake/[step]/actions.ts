@@ -121,6 +121,35 @@ export async function submitIntake(): Promise<SubmitIntakeResult> {
       user_id: user.id,
       status: "queued",
     });
+
+    // Mark the readings as pending generation. The internal
+    // initial-readings route will flip this to generating → ready.
+    await admin
+      .from("users_meta")
+      .update({ initial_readings_status: "pending" })
+      .eq("user_id", user.id);
+
+    // Trigger the initial readings job. Fire-and-forget — the
+    // background job inside the route handler does the real work.
+    // We ignore failures here so the intake submit still resolves.
+    const siteUrl =
+      process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+      "http://localhost:3000";
+    const internalToken = process.env.AI_INTERNAL_TOKEN;
+    if (internalToken) {
+      try {
+        await fetch(`${siteUrl}/api/internal/initial-readings`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-internal-token": internalToken,
+          },
+          body: JSON.stringify({ user_id: user.id }),
+        });
+      } catch {
+        // best effort — the worker can pick it up later
+      }
+    }
   }
 
   revalidatePath("/room");

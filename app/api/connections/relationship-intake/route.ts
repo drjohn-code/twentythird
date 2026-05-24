@@ -8,6 +8,8 @@ import {
   type RelationshipAnswers,
   type RelationshipQuestion,
 } from "@/lib/relationship-intake-questions";
+import { callAI } from "@/lib/ai/router";
+import { buildConnectionSummaryPrompt } from "@/lib/ai/prompts/connection-summary";
 
 // POST /api/connections/relationship-intake
 //
@@ -74,12 +76,16 @@ export async function POST(req: Request) {
 
   const { data: conn } = await admin
     .from("connections")
-    .select("id, inviter_user_id, status")
+    .select(
+      "id, inviter_user_id, status, role, connection_first_name",
+    )
     .eq("invite_token", token)
     .maybeSingle<{
       id: string;
       inviter_user_id: string;
       status: string;
+      role: string;
+      connection_first_name: string | null;
     }>();
 
   if (!conn) {
@@ -121,7 +127,101 @@ export async function POST(req: Request) {
   // but a recompute keeps `reading_depth_computed_at` fresh.
   await recomputeDepthFor(conn.inviter_user_id, admin);
 
+  // Fire the connection summary in the background. Best-effort —
+  // the inviter's catchup / session / report prompts pick it up
+  // whenever it lands.
+  void generateConnectionSummary({
+    connectionId: conn.id,
+    inviterUserId: conn.inviter_user_id,
+    role: conn.role,
+    connectionFirstName: conn.connection_first_name,
+    answers: normalised,
+  }).catch(() => undefined);
+
   return NextResponse.json({ ok: true });
+}
+
+// ────────────────────────────────────────────────────────────────────
+// Connection summary — generated from the relationship intake answers,
+// stored on connections.context_summary, injected downstream.
+// ────────────────────────────────────────────────────────────────────
+
+type SummaryJob = {
+  connectionId: string;
+  inviterUserId: string;
+  role: string;
+  connectionFirstName: string | null;
+  answers: RelationshipAnswers;
+};
+
+async function generateConnectionSummary(job: SummaryJob): Promise<void> {
+  const admin = adminClient();
+  if (!admin) return;
+
+  // Look up the inviter's first name for the prompt.
+  const { data: inviterProfile } = await admin
+    .from("profiles")
+    .select("full_name")
+    .eq("id", job.inviterUserId)
+    .maybeSingle<{ full_name: string | null }>();
+  const inviterFirst = firstName(inviterProfile?.full_name ?? null);
+
+  const validRoles = new Set([
+    "partner",
+    "closest_friend",
+    "parent",
+    "sibling",
+    "co_parent",
+  ]);
+  const role = validRoles.has(job.role)
+    ? (job.role as
+        | "partner"
+        | "closest_friend"
+        | "parent"
+        | "sibling"
+        | "co_parent")
+    : "closest_friend";
+
+  const answers = Object.entries(job.answers).map(([key, value]) => {
+    const q = QUESTION_BY_KEY.get(key);
+    return {
+      question_key: key,
+      question_text: q?.prompt ?? key,
+      answer: value,
+    };
+  });
+
+  try {
+    const { system, messages } = buildConnectionSummaryPrompt({
+      role,
+      inviterFirstName: inviterFirst,
+      connectionFirstName: job.connectionFirstName,
+      answers,
+    });
+    const { text } = await callAI("connection_summary", {
+      system,
+      messages,
+      maxTokens: 500,
+      temperature: 0.4,
+      userId: job.inviterUserId,
+      timeoutMs: 45_000,
+    });
+    const summary = text.trim();
+    if (summary.length === 0) return;
+    await admin
+      .from("connections")
+      .update({ context_summary: summary })
+      .eq("id", job.connectionId);
+  } catch {
+    // best effort — context_summary stays null until the next attempt
+  }
+}
+
+function firstName(full: string | null): string | null {
+  if (!full) return null;
+  const trimmed = full.trim();
+  if (!trimmed) return null;
+  return trimmed.split(/\s+/)[0] ?? null;
 }
 
 // ────────────────────────────────────────────────────────────────────

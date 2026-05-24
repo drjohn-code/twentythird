@@ -28,6 +28,8 @@ export const todayLines = {
   catchupReady: (week: number) =>
     `week ${String(week).padStart(2, "0")} catchup is ready.`,
   catchupCompleted: "the catchup is in. the reading has shifted.",
+  catchupConsider:
+    "something from the latest catchup is asking to be brought into the room.",
   openDream: (day: string) => `a dream from ${day.toLowerCase()} is still open.`,
   unfinished: "we left something unfinished last time.",
   thinReading:
@@ -38,6 +40,10 @@ export const todayLines = {
     `${name.toLowerCase()} has ended the connection. the reading will adjust over the next session.`,
   reportReady: "the clinical report is ready.",
   welcomeBack: "welcome back to the room.",
+  initialReadingsGenerating:
+    "the room is being prepared — your readings are taking shape.",
+  safetyFollowup:
+    "what was named at the last entry asks for care beyond the room — please reach out today.",
 } as const;
 
 export type TodayLineKey = keyof typeof todayLines;
@@ -188,7 +194,18 @@ export const blockSeeds: Record<BlockSlug, BlockSeed> = {
 // ──────────────────────────────────────────────────────────────────
 
 export type TodayLineRef =
-  | { key: "quiet" | "catchupCompleted" | "unfinished" | "thinReading" | "reportReady" | "welcomeBack" }
+  | {
+      key:
+        | "quiet"
+        | "catchupCompleted"
+        | "catchupConsider"
+        | "unfinished"
+        | "thinReading"
+        | "reportReady"
+        | "welcomeBack"
+        | "initialReadingsGenerating"
+        | "safetyFollowup";
+    }
   | { key: "catchupReady"; args: [week: number] }
   | { key: "openDream"; args: [day: string] }
   | { key: "connectionAccepted"; args: [name: string] }

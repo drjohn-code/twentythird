@@ -1,33 +1,21 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
+// POST /api/reports — queue a clinical report for generation.
+//
+// Subscriber gets one included report per calendar month. Free users
+// are bounced to /reports/confirm to pay. The Stripe webhook is the
+// only path that creates a paid one-off report.
+//
+// The actual generation happens in the background — this route only
+// inserts the row and fires the internal generator endpoint.
+
 type SubscriptionRow = { status: string | null };
 type UsersMetaRow = { reading_depth: number | null };
 
-/**
- * POST /api/reports — queue a clinical report for generation.
- *
- * Entitlement (Phase 7):
- *   - Active subscribers can request one report per calendar month
- *     (the subscription includes one). Beyond that, they are routed
- *     to /reports/confirm to pay the one-off price.
- *   - Free users must go through Stripe checkout — the webhook is the
- *     only path that creates a paid one-off report row. This route
- *     responds with a 303 to /reports/confirm for them.
- *
- * For form submissions (Accept: text/html) this responds with a 303
- * redirect to the new report's status page. For JSON callers it
- * returns { report_id }.
- *
- * TODO: queue worker. In dev the report autoflips to status='ready'
- *       after 3s via setTimeout; production needs a real worker.
- */
-
 function siteOrigin(request: Request): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL;
-  if (fromEnv && fromEnv.length > 0) {
-    return fromEnv.replace(/\/$/, "");
-  }
+  if (fromEnv && fromEnv.length > 0) return fromEnv.replace(/\/$/, "");
   return new URL(request.url).origin;
 }
 
@@ -58,8 +46,6 @@ export async function POST(request: Request): Promise<NextResponse> {
     .maybeSingle<SubscriptionRow>();
   const isSubscribed = sub?.status === "active";
 
-  // Free users — bounce to the paid confirmation page. The webhook is
-  // the only path that creates one-off paid reports.
   if (!isSubscribed) {
     if (wantsRedirect(request)) {
       return NextResponse.redirect(
@@ -77,9 +63,7 @@ export async function POST(request: Request): Promise<NextResponse> {
   }
 
   // Subscribers — one included report per calendar month. Anything
-  // beyond that has to go through the one-off paid path. The webhook
-  // also writes reports; the count here covers both sources, so a paid
-  // one-off this month does NOT entitle the user to a second free one.
+  // beyond that has to go through the one-off paid path.
   const monthStart = startOfMonthIso(new Date());
   const { count: thisMonthCount } = await supabase
     .from("reports")
@@ -87,7 +71,6 @@ export async function POST(request: Request): Promise<NextResponse> {
     .eq("user_id", user.id)
     .eq("kind", "clinical")
     .gte("created_at", monthStart);
-
   if ((thisMonthCount ?? 0) >= 1) {
     if (wantsRedirect(request)) {
       return NextResponse.redirect(
@@ -101,6 +84,19 @@ export async function POST(request: Request): Promise<NextResponse> {
           "monthly report already issued — additional reports are paid via /reports/confirm",
         confirm_url: "/reports/confirm",
       },
+      { status: 409 },
+    );
+  }
+
+  // One in-flight at a time.
+  const { count: inFlightCount } = await supabase
+    .from("reports")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", user.id)
+    .in("status", ["queued", "generating"]);
+  if ((inFlightCount ?? 0) >= 1) {
+    return NextResponse.json(
+      { error: "a report is already in progress." },
       { status: 409 },
     );
   }
@@ -122,7 +118,6 @@ export async function POST(request: Request): Promise<NextResponse> {
     })
     .select("id")
     .single<{ id: string }>();
-
   if (error || !inserted) {
     return NextResponse.json(
       { error: "could not queue report" },
@@ -130,18 +125,9 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
 
-  // Dev-only autoflip — pretends the worker ran.
-  if (process.env.NODE_ENV !== "production") {
-    setTimeout(() => {
-      void supabase
-        .from("reports")
-        .update({
-          status: "ready",
-          pdf_url: `/reports/${inserted.id}/placeholder.pdf`,
-        })
-        .eq("id", inserted.id);
-    }, 3000);
-  }
+  // Fire the internal generator. We do not await — the page renders
+  // the queued state and polls /reports/[id] until status is 'ready'.
+  void triggerGenerator(inserted.id);
 
   if (wantsRedirect(request)) {
     return NextResponse.redirect(
@@ -150,4 +136,24 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
   return NextResponse.json({ report_id: inserted.id }, { status: 201 });
+}
+
+async function triggerGenerator(reportId: string): Promise<void> {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+    "http://localhost:3000";
+  const internalToken = process.env.AI_INTERNAL_TOKEN;
+  if (!internalToken) return;
+  try {
+    await fetch(`${siteUrl}/api/internal/report-generate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-internal-token": internalToken,
+      },
+      body: JSON.stringify({ report_id: reportId }),
+    });
+  } catch {
+    // best effort — the row stays queued; a future worker pass can pick it up
+  }
 }

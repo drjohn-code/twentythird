@@ -32,16 +32,117 @@ The full specification lives in `~/Downloads/Room-Build-Prompt.md` and the phase
 
 Search for these markers any time with `rg -n "TODO:" "app/(room)/" "components/room/" "app/api/" "lib/"`. Current inventory:
 
-- `app/api/session/route.ts` — analyst replies are picked from ~6 canned serif italic strings (`TODO: wire to model`, `TODO: connection-aware prompt engineering`).
-- `app/api/catchup/route.ts` — reading deltas are deterministic rule-based stubs (`TODO: model-driven reading refinement`, `TODO: connection-aware refinement`).
-- `app/api/reports/route.ts` and `app/api/stripe/webhook/route.ts` — dev-only `setTimeout` flips `reports.status` to `ready` (`TODO: queue worker`).
-- `app/(room)/readings/page.tsx` — reading lede copy is the seed strings from `lib/copy.ts` (`TODO: model-driven reading lede`, `TODO: hydrate from refined model output`).
 - `lib/depth.ts` — open-question richness is the simple word-count heuristic specified in the build prompt (`TODO: replace with embedding-based richness`). Onboarding-completion tally compares against intake step definitions loosely (`TODO: tally precisely against lib/onboarding/steps.ts`).
 - `app/api/connections/route.ts` — accept-with-account flow stubs the magic-link OTP (`TODO: wire magic-link OTP`).
 - `app/api/settings/delete/route.ts` — connection-ended notification on account deletion is not wired to Resend (`TODO: Phase 6 — Resend the connection-ended email`).
 - `lib/emails/sender.ts`, `app/api/contact/route.ts` — sender domain assumes `day-23.com` is verified in Resend (`TODO: confirm day-23.com is verified in Resend`).
 
-Out of scope, by spec: real AI inference, real PDF generation, real cron for pending-invite expiry, embedding-based richness, i18n, connection-aware prompt engineering, mobile-specific layouts beyond the existing 980px breakpoint.
+Real AI inference, safety detection, and report generation are no longer stubbed — see "AI architecture" below.
+
+Out of scope, by spec: real cron for pending-invite expiry, embedding-based richness, i18n, mobile-specific layouts beyond the existing 980px breakpoint.
+
+---
+
+## AI architecture
+
+Every AI call passes through `lib/ai/router.ts`. No other file imports the OpenRouter URL, the API key, or a model name. Swapping the model for a task is an env var change in `.env.local` — never a code change.
+
+**Router (`lib/ai/router.ts`).** `import "server-only"` at the top. Exports `callAI(task, opts)` (non-streaming) and `streamAI(task, opts)` (SSE-style async iterator used by session replies). Both wrap a `fetch` against `https://openrouter.ai/api/v1/chat/completions` with the `HTTP-Referer`/`X-Title` headers, a 60s default timeout (sessions extend to 120s), and a `try/finally` that logs to `ai_calls`. When `jsonMode: true`, sets `response_format: { type: "json_object" }` and retries once on a parse failure.
+
+**Task models (`TASK_MODELS`).** Per-task default model, each overridable by `AI_MODEL_<TASK_UPPER>`:
+
+```
+safety_classify    → anthropic/claude-haiku-4.5
+initial_readings   → anthropic/claude-sonnet-4.5
+catchup_summary    → anthropic/claude-haiku-4.5
+catchup_feedback   → anthropic/claude-sonnet-4.5
+catchup_refinement → anthropic/claude-sonnet-4.5
+session_reply      → anthropic/claude-sonnet-4.5
+session_close      → anthropic/claude-haiku-4.5
+reading_lede       → anthropic/claude-sonnet-4.5
+connection_summary → anthropic/claude-haiku-4.5
+report_generation  → anthropic/claude-opus-4.7
+```
+
+**Prompts (`lib/ai/prompts/*.ts`).** One file per task, each exporting a `build<Name>Prompt(input): { system, messages }` pure function. The analyst voice is encoded once in `lib/ai/prompts/analyst-voice.ts` as `ANALYST_VOICE` and imported by every analyst-facing prompt. Voice rules live there, not in the routes.
+
+**Pipelines:**
+
+- *Initial readings* (post-intake). `app/onboarding/intake/[step]/actions.ts:submitIntake` flips `users_meta.initial_readings_status = 'pending'` and POSTs to `/api/internal/initial-readings` (service-role-only, gated by `AI_INTERNAL_TOKEN`). The internal route runs safety classification across every free-text intake answer, then calls `initial_readings` once to produce v2 reading copy for all twelve slugs. New `block_readings` rows are inserted, the v1 seeds are superseded, depth is recomputed, status flips to `'ready'`. The `(room)` layout renders `PendingStatus` while status is `'pending'` or `'generating'`.
+- *Reading lede* (long-form on `/readings`). `block_readings.lede` is the cache. When missing on render, `lib/ai/reading-lede-jobs.ts` queues a background `reading_lede` call. The page renders a seed-tail fallback this visit; the cached prose appears next visit.
+- *Catchup* (`app/api/catchup/route.ts`). POST writes a `catchups` row with `status = 'processing'` and returns the id. The background job runs safety classification on every open answer, then `catchup_summary`, then `catchup_refinement` (JSON, all twelve slugs), then `catchup_feedback` (JSON: `consider` + `recommend`). On `status = 'ready'` the runner shows the summary, the feedback "something to hold" block, and an optional row-link recommendation. `feedback.recommend === 'professional_care'` renders `SafetyResponse` in place of the regular recommendation.
+- *Consulting Room* (`app/api/session/route.ts`). The `'turn'` action is now a Server-Sent Events response. Each turn runs `classifySafety` first; on `high`/`critical` we synthesize the safety response and never call the analyst model. On `medium`, an additional instruction is appended to the analyst prompt. Otherwise `streamAI("session_reply", …)` pipes deltas to the SSE channel, accumulated, and persisted as the analyst turn. `'close'` runs `session_close` for the ritual paragraph and a final safety pass on the full transcript.
+- *Connection summary* (`app/api/connections/relationship-intake/route.ts`). When the invitee submits the 12 relationship questions, `connection_summary` produces a single paragraph stored on `connections.context_summary`. The summary is injected into session, catchup refinement, and report prompts when the connection is active.
+- *Report generation* (`app/api/reports/route.ts` → `app/api/internal/report-generate/route.ts`). The public route inserts a `reports` row, enforces the entitlement window and the one-in-flight rule, and POSTs to the internal generator. The generator loads intake, current readings, catchup summaries (not full answers), session closings, connection summaries, and `safety_flags` of severity ≥ `medium`. It calls `report_generation` (Opus, JSON-mode) for the structured document, acknowledges any flags it surfaced, renders the document on `/internal/report-pdf/[id]` (signed by the same internal token), and captures the page through `lib/ai/report-store.ts:captureReportArtifact`. The artifact is uploaded to the `reports` Supabase Storage bucket; the row stores the path, not a URL. The Room report page mints a 24h signed URL on demand.
+
+**Streaming contract.** SSE messages from `/api/session?action=turn` look like:
+
+```
+event: delta
+data: {"text":"..."}
+
+event: done
+data: {"analyst": {...}, "duration_seconds": 42}
+```
+
+`event: error` carries a friendly message string. `SessionView` consumes the stream with a small parser; text appears as it arrives (no decorative animation — per the design system).
+
+**PDF capture.** `captureReportArtifact` calls a hosted browser service when `PDF_RENDER_SERVICE_URL` is set (Browserless or equivalent — POST `{ url, options: { format: "A4" } }` and consume the binary body). When not set, it falls back to storing the rendered HTML directly under a `.html` extension; the report page serves whichever artifact exists. Production should set the env vars.
+
+**Storage bucket.** Reports live in a Supabase Storage bucket named `reports`. Path: `<user_id>/<report_id>.<pdf|html>`. RLS for the bucket: `SELECT` allowed when `(storage.foldername(name))[1] = auth.uid()::text`. Configure this once in the Supabase dashboard, or via SQL on `storage.objects`. The router uses the service role to upload; user-side reads go through the page, which mints a signed URL with the user's session client.
+
+---
+
+## Safety model
+
+Four severity levels — `low`, `medium`, `high`, `critical` — plus `none`. Defined in the `safety_classify` prompt and enforced by `lib/ai/safety.ts`.
+
+- `none`: ordinary distress.
+- `low`: significant pain without acute risk. No row written.
+- `medium`: passive ideation, recent harm experiences, escalating distress. Writes a `safety_flags` row. Adds a single instruction to the next analyst reply.
+- `high`: active ideation without a plan, ongoing abuse, recent severe symptoms. Writes a row. The analyst reply is replaced by the safety response.
+- `critical`: active plan, imminent risk. Same handling as `high`.
+
+`safety_flags` row shape: `user_id`, `source` (`intake|catchup|session`), `source_id`, `severity`, `categories[]`, short `excerpt` (≤ 240 chars), `acknowledged_at`. Excerpts are retained because the receiving clinician needs source language; the `ai_calls` table never holds prompt or completion text.
+
+A failed classifier never silently drops a turn — `lib/ai/safety.ts` catches every classifier error and writes a `low`-severity flag tagged with `classifier_failed` so the miss is visible in the data.
+
+The `(room)` layout renders `SafetyResponse` above the page content whenever an unacknowledged high/critical flag exists; the Today line switches to `safetyFollowup`. Acknowledgement happens automatically when a generated report includes the flag in its clinical_priorities.
+
+---
+
+## Running OpenRouter locally
+
+```
+# .env.local — set the key and (optionally) override models
+OPENROUTER_API_KEY=sk-or-...
+
+# Override any task's model without redeploying
+AI_MODEL_SESSION_REPLY=anthropic/claude-opus-4.7
+
+# Generator throttle — friendly degrade above this hourly count
+AI_CALLS_HOURLY_LIMIT=5000
+
+# Required for internal-only routes (initial-readings, report-generate)
+AI_INTERNAL_TOKEN=<random>
+
+# Optional — hosted browser for PDF rendering
+PDF_RENDER_SERVICE_URL=https://browserless.example.com/pdf
+PDF_RENDER_SERVICE_TOKEN=...
+```
+
+**Inspecting calls.** The `ai_calls` table is service-role-only. From the Supabase SQL editor:
+
+```sql
+select task, model, status, duration_ms, prompt_tokens, completion_tokens, cost_usd, created_at
+from public.ai_calls
+order by created_at desc
+limit 50;
+```
+
+There is no prompt text, no completion text, no user-identifiable content in this table — only metadata.
+
+**Swapping a model.** Change `AI_MODEL_SESSION_REPLY` in `.env.local`, restart `npm run dev`, and the next session reply uses the new model. No code change.
 
 ---
 
@@ -64,6 +165,31 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 STRIPE_PRICE_SUBSCRIPTION=          # price id, not the amount
 STRIPE_PRICE_REPORT=                # price id, not the amount
+
+# OpenRouter — the only model gateway
+OPENROUTER_API_KEY=
+
+# Per-task model overrides (optional — defaults live in lib/ai/router.ts)
+AI_MODEL_SAFETY_CLASSIFY=
+AI_MODEL_INITIAL_READINGS=
+AI_MODEL_CATCHUP_SUMMARY=
+AI_MODEL_CATCHUP_FEEDBACK=
+AI_MODEL_CATCHUP_REFINEMENT=
+AI_MODEL_SESSION_REPLY=
+AI_MODEL_SESSION_CLOSE=
+AI_MODEL_READING_LEDE=
+AI_MODEL_CONNECTION_SUMMARY=
+AI_MODEL_REPORT_GENERATION=
+
+# Friendly degrade threshold
+AI_CALLS_HOURLY_LIMIT=5000
+
+# Internal-only routes (initial-readings, report-generate, report PDF render)
+AI_INTERNAL_TOKEN=
+
+# Hosted browser for PDF capture (optional — HTML fallback if unset)
+PDF_RENDER_SERVICE_URL=
+PDF_RENDER_SERVICE_TOKEN=
 ```
 
 The pricing *amounts* (`23.23`, `11.11`) live in Stripe itself, plus the informational comment in `.env.local` and the user-facing confirm pages. They do not appear in code that ships to the client elsewhere.
