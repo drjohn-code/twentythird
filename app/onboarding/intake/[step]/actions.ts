@@ -9,6 +9,7 @@ import {
   isValidStepNumber,
 } from "@/lib/onboarding/steps";
 import { normaliseStepPayload } from "@/lib/onboarding/schema";
+import { sendIntakeSubmittedEmail } from "@/lib/emails/intake-submitted";
 
 export type SaveStepResult =
   | { ok: true; savedAt: string; completedThrough: number }
@@ -76,6 +77,14 @@ export async function saveStep(
   return { ok: true, savedAt: nowIso, completedThrough: next };
 }
 
+function firstNameFrom(name: string | null): string | null {
+  if (!name) return null;
+  const trimmed = name.trim();
+  if (!trimmed) return null;
+  const first = trimmed.split(/\s+/)[0];
+  return first || null;
+}
+
 export type SubmitIntakeResult =
   | { ok: true }
   | { ok: false; reason: "auth" | "incomplete" | "db" };
@@ -109,6 +118,31 @@ export async function submitIntake(): Promise<SubmitIntakeResult> {
     })
     .eq("id", user.id);
   if (error) return { ok: false, reason: "db" };
+
+  // Best-effort confirmation email. Failures are logged inside sendEmail
+  // and do not block the redirect — the user still lands on PendingStatus.
+  if (user.email) {
+    const { data: profileRow } = await supabase
+      .from("profiles")
+      .select("full_name")
+      .eq("id", user.id)
+      .maybeSingle<{ full_name: string | null }>();
+    const firstName = firstNameFrom(profileRow?.full_name ?? null);
+    try {
+      const res = await sendIntakeSubmittedEmail({
+        to: user.email,
+        firstName,
+      });
+      if (!res.ok) {
+        console.error(
+          "[intake-submitted] email send failed:",
+          res.error,
+        );
+      }
+    } catch (e) {
+      console.error("[intake-submitted] email send threw:", e);
+    }
+  }
 
   // Enqueue an analysis job via the service-role client.
   // analysis_jobs has no insert policy for authenticated users by

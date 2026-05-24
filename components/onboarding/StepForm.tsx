@@ -210,6 +210,7 @@ export default function StepForm({
         await new Promise((r) => setTimeout(r, SUBMIT_HOLD_MS));
       }
       router.push(DASHBOARD_PATH);
+      router.refresh();
     });
   }
 
@@ -359,7 +360,10 @@ export default function StepForm({
       <div className="step-foot-divider" aria-hidden="true" />
 
       <div className="step-foot">
-        <SaveExitModalTrigger onBeforeNavigate={flushBeforeNavigate} />
+        <SaveExitModalTrigger
+          onBeforeNavigate={flushBeforeNavigate}
+          step={step.number}
+        />
 
         <div className="step-foot-actions">
           {step.number > 1 ? (
