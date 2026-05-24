@@ -2,6 +2,7 @@ import Glass from "@/components/ui/Glass";
 import Eyebrow from "@/components/ui/Eyebrow";
 import CTAGhost from "@/components/ui/CTAGhost";
 import Reveal from "@/components/layout/Reveal";
+import DevOpenRoomLink from "@/components/dashboard/DevOpenRoomLink";
 
 type PendingStatusProps = {
   submittedAt: Date | null;
@@ -32,12 +33,11 @@ export default function PendingStatus({ submittedAt }: PendingStatusProps) {
         </h1>
         <p className="dashboard-lede">
           <span className="serif-i">
-            We are running your responses through the psychodynamic
-            models now.
+            we are running your responses through the psychodynamic
+            models now. the first pass usually takes about 2 hours.
+            we&apos;ll write when the work is ready, and the room will
+            open.
           </span>
-          <br />
-          The first pass usually takes about 48 hours. You will get an
-          email when it is ready, and the room will reopen.
         </p>
       </Reveal>
 
@@ -81,6 +81,13 @@ export default function PendingStatus({ submittedAt }: PendingStatusProps) {
       <div className="dashboard-cta">
         <CTAGhost href="/">return to the quiet room</CTAGhost>
       </div>
+
+      {/* TEMP: dev-only shortcut to open the Room without waiting for the 2-hour cron. Remove before launch. */}
+      {process.env.NODE_ENV === "development" ? (
+        <div className="dev-open-room-slot">
+          <DevOpenRoomLink />
+        </div>
+      ) : null}
     </main>
   );
 }

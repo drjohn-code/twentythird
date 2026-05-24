@@ -1,7 +1,7 @@
 import Glass from "@/components/ui/Glass";
 import CTA from "@/components/ui/CTA";
-import CTAGhost from "@/components/ui/CTAGhost";
-import { INTAKE_INTRO_PATH, DASHBOARD_PATH } from "@/lib/onboarding/routing";
+import SaveExitModalTrigger from "@/components/onboarding/SaveExitModal";
+import { INTAKE_INTRO_PATH } from "@/lib/onboarding/routing";
 
 /** Screen 2 — the long-form brief panel before step 1. */
 export default function IntroPanel() {
@@ -33,7 +33,7 @@ export default function IntroPanel() {
       <div className="intro-divider" aria-hidden="true" />
       <div className="intro-actions">
         <CTA href={`${INTAKE_INTRO_PATH}/1`}>Begin intake</CTA>
-        <CTAGhost href={DASHBOARD_PATH}>save and return later</CTAGhost>
+        <SaveExitModalTrigger />
       </div>
     </Glass>
   );

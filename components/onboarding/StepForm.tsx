@@ -16,7 +16,7 @@ import Scale from "@/components/ui/Scale";
 import Input from "@/components/ui/Input";
 import Textarea from "@/components/ui/Textarea";
 import RowLink from "@/components/ui/RowLink";
-import CTAGhost from "@/components/ui/CTAGhost";
+import SaveExitModalTrigger from "@/components/onboarding/SaveExitModal";
 import SaveIndicator from "@/components/onboarding/SaveIndicator";
 import {
   saveStep,
@@ -192,12 +192,6 @@ export default function StepForm({
     router.push(`${INTAKE_INTRO_PATH}/${step.number - 1}`);
   }
 
-  async function onSaveAndExit(e: React.MouseEvent) {
-    e.preventDefault();
-    await flushBeforeNavigate();
-    router.push(DASHBOARD_PATH);
-  }
-
   function onSubmitFinal() {
     startSubmit(async () => {
       await flushBeforeNavigate();
@@ -323,6 +317,7 @@ export default function StepForm({
               id={q.id}
               number={q.number}
               title={q.title}
+              subtitle={q.subtitle}
               skipped={!!skipped[q.id]}
               onToggleSkip={() => toggleSkip(q.id)}
             >
@@ -350,6 +345,7 @@ export default function StepForm({
                 id={q.id}
                 number={q.number}
                 title={q.title}
+                subtitle={q.subtitle}
                 skipped={!!skipped[q.id]}
                 onToggleSkip={() => toggleSkip(q.id)}
               >
@@ -363,15 +359,7 @@ export default function StepForm({
       <div className="step-foot-divider" aria-hidden="true" />
 
       <div className="step-foot">
-        <CTAGhost href={DASHBOARD_PATH} prefix="or">
-          <button
-            type="button"
-            onClick={onSaveAndExit}
-            className="step-save-exit"
-          >
-            save and return later
-          </button>
-        </CTAGhost>
+        <SaveExitModalTrigger onBeforeNavigate={flushBeforeNavigate} />
 
         <div className="step-foot-actions">
           {step.number > 1 ? (

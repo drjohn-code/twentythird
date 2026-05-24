@@ -6,16 +6,18 @@ type QuestionRowProps = {
   id: string;
   number: string;
   title: string;
+  subtitle: string;
   skipped: boolean;
   onToggleSkip: () => void;
   children: ReactNode;
 };
 
-/** Number + title + skip button + input slot. The grammar of every question. */
+/** Number + title + subtitle + skip button + input slot. The grammar of every question. */
 export default function QuestionRow({
   id,
   number,
   title,
+  subtitle,
   skipped,
   onToggleSkip,
   children,
@@ -44,6 +46,9 @@ export default function QuestionRow({
         </button>
       </div>
       <h3 className="question-title serif">{title}</h3>
+      {subtitle ? (
+        <p className="question-subtitle serif-i">{subtitle}</p>
+      ) : null}
       {!skipped ? <div className="question-body">{children}</div> : null}
     </div>
   );
