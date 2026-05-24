@@ -123,6 +123,6 @@ export async function submitIntake(): Promise<SubmitIntakeResult> {
     });
   }
 
-  revalidatePath("/dashboard");
+  revalidatePath("/room");
   return { ok: true };
 }

@@ -120,42 +120,51 @@ The system has **two themes**, dark (default) and light. Both share semantic tok
 ## 5. Typography
 
 ### Type stack
-| Family | Variable | Use |
-|---|---|---|
-| **Instrument Serif** (400, 400 italic) | `--serif` | All display, headlines, italic captions, numeric values in clinical contexts |
-| **Inter** (300/400/500/600) | `--sans` | Body copy, navigation, buttons |
-| **JetBrains Mono** (400/500) | `--mono` | Eyebrows, figure labels, timestamps, ratios with units |
+The serif role is split. Instrument Serif is a display face — it is gorgeous at large sizes and gets brittle on screen below about 32px, especially in italic. Source Serif 4 is a screen-engineered transitional serif from the same lineage; it carries every italic caption, dream entry, and clinical term that was previously illegible. Together they feel like one publication: a display face for chapter openers, a text face for the body of the monograph.
+
+| Family | Variable | Tailwind class | Use |
+|---|---|---|---|
+| **Instrument Serif** (400, 400 italic) | `--serif-display` | `font-serif-display` | **Display only — sizes ≥ 32px.** Hero `h1`, every section `h2`, philosophy `h2`, row `h3`s with min ≥ 32px, the large italic clinical numerals in figures (the 68px `.big` in insight-timeline, the 56px day-23 `.big`, the 40px `.scale-value`), the `TwentyThird` wordmark next to the logo (20–22px logotype exception). |
+| **Source Serif 4** (400/600, both italic) | `--serif-text` (aliased as `--serif`) | `font-serif` *(default)* | **Text serif — everything else that was serif.** Italic captions, dream-text paragraphs, figure subtitles in `.vh em`, pattern-list outcome labels (e.g. *withdrew*), italic clinical terms (*intimacy threshold*, *obsessional · with hysterical traces*), state `h3`s in the 26–38px band, onboarding question titles, the italic *or* in `<CTAGhost>`, the row-link arrow, any serif body or summary text. |
+| **Inter** (300/400/500/600) | `--sans` | `font-sans` | Body copy, navigation, buttons |
+| **JetBrains Mono** (400/500) | `--mono` | `font-mono` | Eyebrows, figure labels, timestamps, ratios with units |
 
 Fallback chains:
 ```css
---serif: "Instrument Serif", "EB Garamond", Georgia, serif;
---sans:  "Inter", system-ui, -apple-system, sans-serif;
---mono:  "JetBrains Mono", ui-monospace, monospace;
+--serif-display: "Instrument Serif", "EB Garamond", Georgia, serif;
+--serif-text:    "Source Serif 4", "Source Serif Pro", "EB Garamond", Georgia, serif;
+--serif:         var(--serif-text);            /* default — every existing var(--serif) reaches the text face */
+--sans:          "Inter", system-ui, -apple-system, sans-serif;
+--mono:          "JetBrains Mono", ui-monospace, monospace;
 ```
+
+Tailwind v4 (CSS-config): the project has no `tailwind.config.ts`. The corresponding tokens are declared in `globals.css` under `@theme inline` so `font-serif` and `font-serif-display` utility classes are available.
 
 Body defaults: `17px / 1.55`, antialiased, `font-feature-settings: "ss01","cv11"`.
 
 ### Scale
 | Role | Family | Size | Line | Tracking | Notes |
 |---|---|---|---|---|---|
-| Hero `h1` | serif | `clamp(48px, 7.2vw, 104px)` | `1.02` | `-0.025em` | italic span for "AI" / "Self-Discovery" |
-| Final `h2` | serif | `clamp(48px, 7vw, 108px)` | `1.02` | `-0.025em` | italic line breaks |
-| Section `h2` (split) | serif | `clamp(40px, 5.2vw, 76px)` | `1.04` | `-0.022em` | |
-| Pinned `h2` (brain) | serif | `clamp(40px, 5vw, 72px)` | `1.05` | `-0.02em` | |
-| Philosophy `h2` | serif | `clamp(34px, 4.4vw, 60px)` | `1.10` | `-0.02em` | |
-| Row `h3` | serif | `clamp(32px, 3.5vw, 50px)` | `1.06` | `-0.02em` | |
-| State `h3` | serif | `clamp(26px, 2.6vw, 38px)` | `1.12` | `-0.015em` | |
-| Italic numeric (`v`, `pc-day`, `tl big`) | serif italic | `18–68px` | — | varies | clinical numerals |
+| Hero `h1` | serif-display | `clamp(48px, 7.2vw, 104px)` | `1.02` | `-0.025em` | italic span for "AI" / "Self-Discovery" |
+| Final `h2` | serif-display | `clamp(48px, 7vw, 108px)` | `1.02` | `-0.025em` | italic line breaks |
+| Section `h2` (split) | serif-display | `clamp(40px, 5.2vw, 76px)` | `1.04` | `-0.022em` | |
+| Pinned `h2` (brain) | serif-display | `clamp(40px, 5vw, 72px)` | `1.05` | `-0.02em` | |
+| Philosophy `h2` | serif-display | `clamp(34px, 4.4vw, 60px)` | `1.10` | `-0.02em` | |
+| Row `h3` (`.split-copy h3`) | serif-display | `clamp(32px, 3.5vw, 50px)` | `1.06` | `-0.02em` | min ≥ 32px → display |
+| State `h3` (`.brain-state h3`, `.legal-sub h3`) | serif-text | `clamp(26px, 2.6vw, 38px)` | `1.12` | `-0.015em` | boundary case — held on text serif for legibility |
+| Onboarding question title | serif-text | `clamp(26px, 3.5vw, 40px)` | `1.15` | `-0.018em` | `.relintake-q-prompt`, `.catchup-q-prompt` |
+| Large italic numeric (`.tl-summary .big`, `.scale-value`) | serif-display italic | `40–68px` | — | varies | clinical numerals at display size |
+| Inline italic numeric / clinical term (`pattern-summary .v.it`, `pc-day`, `dk-label`, caption `name`) | serif-text italic | `13–24px` | — | varies | interpretations, not raw data |
 | Body | sans | `16–17px` | `1.55–1.65` | — | `--fg-dim` for description copy |
-| Wordmark | serif | `20–22px` | — | `-0.018em` | |
+| Wordmark | serif-display | `20–22px` | — | `-0.018em` | logotype exception — Instrument Serif keeps the brand voice |
 | Nav link / signin | sans | `13px` | — | `-0.005em` | `--fg-dim` → `--fg` on hover |
 | CTA pill | sans 500 | `13px` | — | `-0.005em` | |
 | `.eyebrow` | sans 500 | `11px` | — | `0.22em` | UPPERCASE, `--fg-mute` |
 | `.mono` | mono | `11px` | — | `0.04em` | figure labels |
-| Caption `name` | serif italic | `18px` | — | — | `--fg-dim` |
+| Caption `name` | serif-text italic | `18px` | — | — | `--fg-dim` |
 
 ### Italic conventions
-Italics are **semantic**. They appear in three contexts only:
+Italics are **semantic** — they carry voice, not emphasis. Source Serif 4 ships a true italic in both weights, so the rules below do not change; italics simply read at small sizes now. They appear in three contexts only:
 1. Headlines — a single italic phrase per headline marks the unconscious / qualifying half of the idea.
 2. Captions and clinical names — italic, lowercase, never punctuated.
 3. Numeric values in clinical contexts (`~14 wks`, `intimacy threshold`, `obsessional · with hysterical traces`) — these are *interpretations*, not raw data.
@@ -163,11 +172,13 @@ Italics are **semantic**. They appear in three contexts only:
 Never use italics inside body paragraphs for emphasis. Use them only for terms of art and quoted dream content.
 
 ### Rules
+- The serif rule is **size-based, not semantic**: ≥ 32px → `--serif-display`; everything below → `--serif` (text). There is no need to pick by element. The 26–38px band on state `h3`s stays on the text face unless a future variant clears 38px cleanly and reads well in Instrument Serif.
+- When adding a new serif rule, reach for `var(--serif)` by default. Only switch to `var(--serif-display)` if the rendered size sits cleanly at or above 32px.
 - Headlines always set in serif. Sans-serif headlines are forbidden.
 - Eyebrows always sans, mono is the alternative for figure metadata.
 - Line height shrinks as font size grows. Hero is `1.02`. Body is `1.55–1.65`.
 - Letter-spacing tightens as size grows; loosens for uppercase mono and eyebrows.
-- Never stack three serif weights — Instrument Serif is single-weight by design.
+- Two serif weights total, one per face: Instrument Serif 400, Source Serif 4 400 (with 600 reserved for the rare emphatic clinical numeral). Do not stack more.
 - Set `text-wrap: pretty` on multi-line headlines wherever supported.
 
 ---

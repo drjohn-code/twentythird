@@ -115,21 +115,24 @@ Two themes: **dark** (default) and **light**. Tokens live as CSS custom properti
 
 ## Typography
 
-Three families. No others — ever. Loaded via `next/font` in `app/layout.tsx` and exposed as CSS variables (`--font-serif`, `--font-sans`, `--font-mono`).
+Four families, two of them serif. No others — ever. Loaded via `next/font` in `app/layout.tsx` and exposed as CSS variables (`--font-serif-display`, `--font-serif-text`, `--font-sans`, `--font-mono`). Inside `globals.css` they are mapped to `--serif-display`, `--serif-text`, with `--serif` aliased to `--serif-text` so every existing `font-family:var(--serif)` resolves to the text serif by default. The Tailwind v4 `@theme inline` block in `globals.css` also exposes them as utility classes (`font-serif` → text serif, `font-serif-display` → display serif).
 
-| Family | Tailwind class | Use |
+| Family | CSS token / Tailwind class | Use |
 |---|---|---|
-| **Instrument Serif** (400, 400 italic) | `font-serif` | All display, headlines, italic captions, clinical numerals |
+| **Instrument Serif** (400, 400 italic) | `var(--serif-display)` · `font-serif-display` | **Display only — sizes ≥ 32px.** Hero `h1`, every section `h2`, philosophy `h2`, row `h3`s with min ≥ 32px, the large italic clinical numerals in figures (the 68px `.big` in insight-timeline, the 56px day-23 `.big`, the 40px `.scale-value`), the `TwentyThird` wordmark next to the logo (20–22px logotype exception). |
+| **Source Serif 4** (400 / 600, both italic) | `var(--serif)` / `var(--serif-text)` · `font-serif` *(default)* | **Text serif — everything else that was serif.** Italic captions, dream-text paragraphs, figure subtitles (`.vh em`), pattern-list outcome labels (e.g. *withdrew*), italic clinical terms (*intimacy threshold*, *obsessional · with hysterical traces*), state `h3`s in the 26–38px band, onboarding question titles, the italic *or* in `<CTAGhost>`, the row-link arrow, any serif body or summary text. |
 | **Inter** (300/400/500/600) | `font-sans` (default) | Body copy, navigation, buttons |
 | **JetBrains Mono** (400/500) | `font-mono` | Eyebrows, figure labels, timestamps, ratios |
 
 **Key rules:**
+- The serif rule is **size-based, not semantic**: ≥ 32px → display serif; everything below → text serif. There is no need to pick by element. The boundary case is the state `h3` in the 26–38px band — keep it on text serif unless a future variant clears 38px cleanly and reads well in Instrument Serif.
 - Headlines always serif. Sans-serif headlines are forbidden.
 - Eyebrows always sans (or mono for figure metadata).
-- Italics appear only in: (1) headlines — one italic phrase per headline, (2) captions and clinical names, (3) interpretive numerals (`~14 wks`, `obsessional`).
+- Italics appear only in: (1) headlines — one italic phrase per headline, (2) captions and clinical names, (3) interpretive numerals (`~14 wks`, `obsessional`). Source Serif 4 has a true italic — the semantic use does not change, italics now simply read at small sizes.
 - Never use italics inside body paragraphs for emphasis.
 - `text-wrap: pretty` on multi-line headlines (Tailwind: `text-pretty`).
 - Body: `text-[17px] leading-[1.55]`, antialiased, `font-feature-settings: "ss01","cv11"` (set globally in `globals.css`).
+- When adding a new serif rule, reach for `var(--serif)` by default. Only switch to `var(--serif-display)` if the rendered size sits cleanly at or above 32px.
 
 ---
 

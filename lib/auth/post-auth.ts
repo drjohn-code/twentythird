@@ -13,7 +13,7 @@ export type ProfileGate = {
 } | null;
 
 const ONBOARDING_PATH = "/onboarding";
-const DASHBOARD_PATH = "/dashboard";
+const DASHBOARD_PATH = "/room";
 
 /**
  * Decide the path an authenticated user belongs on, given their

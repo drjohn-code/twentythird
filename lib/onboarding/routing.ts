@@ -16,7 +16,7 @@ export type IntakeGate = {
 
 export const ACCOUNT_PATH = "/onboarding/account";
 export const INTAKE_INTRO_PATH = "/onboarding/intake";
-export const DASHBOARD_PATH = "/dashboard";
+export const DASHBOARD_PATH = "/room";
 
 export async function fetchIntakeGate(
   supabase: SupabaseClient,

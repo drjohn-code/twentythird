@@ -1,17 +1,24 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import { Instrument_Serif, Source_Serif_4, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Atmosphere from "../components/layout/Atmosphere";
 import Grain from "../components/layout/Grain";
-import Nav from "../components/layout/Nav";
-import Footer from "../components/layout/Footer";
+import { MarketingNav, MarketingFooter } from "../components/layout/MarketingChrome";
 import SiteInteractions from "../components/layout/SiteInteractions";
 
-const serif = Instrument_Serif({
+const serifDisplay = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal", "italic"],
-  variable: "--font-serif",
+  variable: "--font-serif-display",
+  display: "swap",
+});
+
+const serifText = Source_Serif_4({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-serif-text",
   display: "swap",
 });
 
@@ -53,7 +60,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-theme="dark"
-      className={`${serif.variable} ${sans.variable} ${mono.variable}`}
+      className={`${serifDisplay.variable} ${serifText.variable} ${sans.variable} ${mono.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -62,9 +69,9 @@ export default function RootLayout({
       <body>
         <Atmosphere />
         <Grain />
-        <Nav />
+        <MarketingNav />
         {children}
-        <Footer />
+        <MarketingFooter />
         <SiteInteractions />
       </body>
     </html>
