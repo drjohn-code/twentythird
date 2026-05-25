@@ -7,6 +7,7 @@ import {
   fetchIntakeGate,
 } from "@/lib/onboarding/routing";
 import PendingStatus from "@/components/dashboard/PendingStatus";
+import IntakeFailedState from "@/components/dashboard/IntakeFailedState";
 import RoomNav from "@/components/room/RoomNav";
 import TodayLine from "@/components/room/TodayLine";
 import RoomFooter from "@/components/room/RoomFooter";
@@ -41,6 +42,22 @@ export default async function RoomLayout({
   }
   if (!gate.intake_submitted_at) {
     redirect(INTAKE_INTRO_PATH);
+  }
+
+  // Permanent-failure state — the initial readings job hit a
+  // non-transient error (parse failure, code bug, non-recoverable
+  // 4xx). The user gets a quiet error head and a single retry CTA;
+  // POST /api/intake/retry resets intake_status back to 'processing'
+  // and re-fires the AI pipeline. Only renders when the gate
+  // explicitly reads 'failed' — never on 'processing' (which would
+  // let the user spam the pipeline mid-run).
+  if (gate.intake_status === "failed") {
+    return (
+      <div className="room-shell">
+        <IntakeFailedState />
+        <RoomFooter />
+      </div>
+    );
   }
 
   // Profile-being-read state — preserved verbatim from the prior

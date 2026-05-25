@@ -38,23 +38,16 @@ export type AITask =
   | "report_generation";
 
 const DEFAULT_MODELS: Record<AITask, string> = {
-  // Fast background tasks (Replaces Haiku)
-  safety_classify: "meta-llama/llama-4-scout:free",
-  catchup_summary: "google/gemma-3-27b-it:free",
-  session_close: "google/gemma-3-27b-it:free",
-  connection_summary: "google/gemma-3-27b-it:free",
-
-  // Smart analysis & extraction tasks (Replaces Sonnet)
-  initial_readings: "meta-llama/llama-3.3-70b-instruct:free",
-  catchup_feedback: "meta-llama/llama-3.3-70b-instruct:free",
-  catchup_refinement: "meta-llama/llama-3.3-70b-instruct:free",
-  reading_lede: "meta-llama/llama-3.3-70b-instruct:free",
-
-  // Conversational chat (Replaces Sonnet for chat)
-  session_reply: "deepseek/deepseek-chat-v3-0324:free",
-
-  // Heavyweight report generation (Replaces Opus)
-  report_generation: "meta-llama/llama-4-maverick:free",
+  safety_classify: "anthropic/claude-haiku-4.5",
+  initial_readings: "anthropic/claude-sonnet-4.5",
+  catchup_summary: "anthropic/claude-haiku-4.5",
+  catchup_feedback: "anthropic/claude-sonnet-4.5",
+  catchup_refinement: "anthropic/claude-sonnet-4.5",
+  session_reply: "anthropic/claude-sonnet-4.5",
+  session_close: "anthropic/claude-haiku-4.5",
+  reading_lede: "anthropic/claude-sonnet-4.5",
+  connection_summary: "anthropic/claude-haiku-4.5",
+  report_generation: "anthropic/claude-opus-4.7",
 };
 function envKeyFor(task: AITask): string {
   return `AI_MODEL_${task.toUpperCase()}`;
@@ -114,6 +107,44 @@ export class AiOverCapacityError extends Error {
     super("ai over capacity");
     this.name = "AiOverCapacityError";
   }
+}
+
+// Structured error for every failure path that goes through OpenRouter.
+// `kind` distinguishes upstream-HTTP from client-side aborts and from
+// generic network failures. `status` is set only when we got an actual
+// HTTP response back (kind === "http").
+export class AiHttpError extends Error {
+  readonly kind: "http" | "timeout" | "network";
+  readonly status: number | null;
+  readonly task: AITask;
+
+  constructor(args: {
+    kind: "http" | "timeout" | "network";
+    status: number | null;
+    task: AITask;
+    message: string;
+  }) {
+    super(args.message);
+    this.name = "AiHttpError";
+    this.kind = args.kind;
+    this.status = args.status;
+    this.task = args.task;
+  }
+}
+
+// Transient = upstream-fixable. Permanent = code/data fixable.
+// Callers that own user-visible state machines (initial_readings,
+// catchup, report) use this to decide whether to flip a row to a
+// permanent failure or leave it in a retryable state.
+export function isTransientAiError(err: unknown): boolean {
+  if (err instanceof AiOverCapacityError) return true;
+  if (err instanceof AiHttpError) {
+    if (err.kind === "timeout" || err.kind === "network") return true;
+    if (err.kind === "http" && err.status !== null) {
+      return err.status === 402 || err.status === 429 || err.status >= 500;
+    }
+  }
+  return false;
 }
 
 // ────────────────────────────────────────────────────────────────────
@@ -256,6 +287,7 @@ export async function callAI(
     let text = "";
     let status: LogPayload["status"] = "ok";
     let errorMessage: string | null = null;
+    let thrown: unknown = null;
     try {
       const res = await fetch(OPENROUTER_URL, {
         method: "POST",
@@ -267,18 +299,38 @@ export async function callAI(
         const t = await safeText(res);
         status = "error";
         errorMessage = `${res.status} ${t.slice(0, 200)}`;
-        throw new Error(errorMessage);
+        throw new AiHttpError({
+          kind: "http",
+          status: res.status,
+          task,
+          message: errorMessage,
+        });
       }
       const json = (await res.json()) as OpenRouterChatResponse;
       text = json.choices?.[0]?.message?.content ?? "";
       usage = extractUsage(json);
     } catch (err) {
+      thrown = err;
       if ((err as Error).name === "AbortError") {
         status = "timeout";
         errorMessage = "timeout";
-      } else if (!errorMessage) {
-        status = "error";
-        errorMessage = describeError(err);
+        thrown = new AiHttpError({
+          kind: "timeout",
+          status: null,
+          task,
+          message: "timeout",
+        });
+      } else if (!(err instanceof AiHttpError)) {
+        if (!errorMessage) {
+          status = "error";
+          errorMessage = describeError(err);
+        }
+        thrown = new AiHttpError({
+          kind: "network",
+          status: null,
+          task,
+          message: errorMessage,
+        });
       }
       const duration = Date.now() - started;
       await logCall({
@@ -292,7 +344,7 @@ export async function callAI(
         status,
         errorMessage,
       });
-      throw err;
+      throw thrown;
     } finally {
       clearTimeout(timer);
     }
@@ -379,6 +431,7 @@ export async function* streamAI(
   let status: LogPayload["status"] = "ok";
   let errorMessage: string | null = null;
 
+  let thrown: unknown = null;
   try {
     const res = await fetch(OPENROUTER_URL, {
       method: "POST",
@@ -390,7 +443,12 @@ export async function* streamAI(
       const t = await safeText(res);
       status = "error";
       errorMessage = `${res.status} ${t.slice(0, 200)}`;
-      throw new Error(errorMessage);
+      throw new AiHttpError({
+        kind: "http",
+        status: res.status,
+        task,
+        message: errorMessage,
+      });
     }
 
     const reader = res.body.getReader();
@@ -424,14 +482,29 @@ export async function* streamAI(
     }
     yield { kind: "done", usage };
   } catch (err) {
+    thrown = err;
     if ((err as Error).name === "AbortError") {
       status = "timeout";
       errorMessage = "timeout";
-    } else if (!errorMessage) {
-      status = "error";
-      errorMessage = describeError(err);
+      thrown = new AiHttpError({
+        kind: "timeout",
+        status: null,
+        task,
+        message: "timeout",
+      });
+    } else if (!(err instanceof AiHttpError)) {
+      if (!errorMessage) {
+        status = "error";
+        errorMessage = describeError(err);
+      }
+      thrown = new AiHttpError({
+        kind: "network",
+        status: null,
+        task,
+        message: errorMessage,
+      });
     }
-    throw err;
+    throw thrown;
   } finally {
     clearTimeout(timer);
     await logCall({

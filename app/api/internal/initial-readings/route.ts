@@ -7,7 +7,7 @@ import {
   type IntakeAnswerInput,
   type InitialReadingsResponse,
 } from "@/lib/ai/prompts/initial-readings";
-import { callAI } from "@/lib/ai/router";
+import { callAI, AiHttpError, isTransientAiError } from "@/lib/ai/router";
 import { classifySafety } from "@/lib/ai/safety";
 import { recomputeDepthFor } from "@/lib/depth";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
@@ -28,8 +28,17 @@ import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 //   5. Recompute depth.
 //   6. Mark initial_readings_status = 'ready'.
 //
-// Failures are caught and recorded: status flips to 'failed', the
-// user sees a quiet retry affordance in /room.
+// Failures are classified:
+//   - Transient (HTTP 429/402/5xx, fetch timeouts, network errors,
+//     hourly capacity guard): leaves profiles.intake_status as
+//     'processing' and resets users_meta.initial_readings_status to
+//     'pending'. The room_ready email scheduler keeps deferring (capped
+//     at 6h) and a retry mechanism — manual via /api/internal/intake-retry
+//     or future automated worker — can pick the user back up.
+//   - Permanent (JSON parse failures, missing data, code bugs, 4xx
+//     responses other than 429/402): flips intake_status to 'failed'
+//     and initial_readings_status to 'failed'. The Room gate renders a
+//     quiet error state with a retry CTA.
 
 type InitialReadingsBody = { user_id?: string };
 
@@ -211,7 +220,26 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
 
     console.log(`[initial-readings] complete for user ${userId}`);
   } catch (e) {
-    console.error(`[initial-readings] failed for user ${userId}:`, e);
+    const transient = isTransientAiError(e);
+    const detail =
+      e instanceof AiHttpError
+        ? `${e.kind}${e.status !== null ? ` ${e.status}` : ""} (task=${e.task})`
+        : e instanceof Error
+          ? e.message
+          : String(e);
+    console.error(
+      `[initial-readings] ${transient ? "transient" : "permanent"} failure for user ${userId}: ${detail}`,
+      e,
+    );
+
+    if (transient) {
+      await admin
+        .from("users_meta")
+        .update({ initial_readings_status: "pending" })
+        .eq("user_id", userId);
+      return;
+    }
+
     await admin
       .from("users_meta")
       .update({ initial_readings_status: "failed" })
