@@ -34,8 +34,9 @@ Search for these markers any time with `rg -n "TODO:" "app/(room)/" "components/
 
 - `lib/depth.ts` — open-question richness is the simple word-count heuristic specified in the build prompt (`TODO: replace with embedding-based richness`). Onboarding-completion tally compares against intake step definitions loosely (`TODO: tally precisely against lib/onboarding/steps.ts`).
 - `app/api/connections/route.ts` — accept-with-account flow stubs the magic-link OTP (`TODO: wire magic-link OTP`).
-- `app/api/settings/delete/route.ts` — connection-ended notification on account deletion is not wired to Resend (`TODO: Phase 6 — Resend the connection-ended email`).
-- `lib/emails/sender.ts`, `app/api/contact/route.ts` — sender domain assumes `day-23.com` is verified in Resend (`TODO: confirm day-23.com is verified in Resend`).
+- `lib/emails/sender.ts` — sender domain assumes `day-23.com` is verified in Resend (`TODO: confirm day-23.com is verified in Resend`). Idempotency-keys on `sendEmail` are not implemented (`TODO: Resend idempotency-key for true exactly-once`).
+- `lib/emails/onboarding-resume.ts`, `app/api/internal/run-scheduled-emails/route.ts` — onboarding-resume has no preference toggle on `email_preferences` (`TODO: discuss whether onboarding-resume needs its own preference column`).
+- `app/api/internal/schedule-weekly-catchups/route.ts` — assumes every user is in Europe/London (`TODO: per-user timezone on users_meta`).
 
 Real AI inference, safety detection, and report generation are no longer stubbed — see "AI architecture" below.
 
@@ -90,6 +91,122 @@ data: {"analyst": {...}, "duration_seconds": 42}
 **PDF capture.** `captureReportArtifact` calls a hosted browser service when `PDF_RENDER_SERVICE_URL` is set (Browserless or equivalent — POST `{ url, options: { format: "A4" } }` and consume the binary body). When not set, it falls back to storing the rendered HTML directly under a `.html` extension; the report page serves whichever artifact exists. Production should set the env vars.
 
 **Storage bucket.** Reports live in a Supabase Storage bucket named `reports`. Path: `<user_id>/<report_id>.<pdf|html>`. RLS for the bucket: `SELECT` allowed when `(storage.foldername(name))[1] = auth.uid()::text`. Configure this once in the Supabase dashboard, or via SQL on `storage.objects`. The router uses the service role to upload; user-side reads go through the page, which mints a signed URL with the user's session client.
+
+---
+
+## Email system
+
+Every TwentyThird-sent email is composed against one shell — `brandEmailShell` in [lib/emails/sender.ts](lib/emails/sender.ts) — and sent through Resend from `noreply@day-23.com`. Templates in `lib/emails/*.ts` are pure functions that build a payload (`{ subject, text, html }`) via the shell; a thin `sendXxxEmail` wrapper applies the recipient and forwards to `sendEmail`. Splitting build from send is what lets `/api/dev/preview-email` render html without hitting Resend.
+
+### The shell
+
+`brandEmailShell(input: BrandEmailShellInput)` takes structured props rather than a single bodyHtml blob:
+
+```ts
+{
+  preheader: string,                       // hidden inbox-preview line
+  eyebrow: string,                         // Inter 11px 0.22em uppercase
+  title: { text: string, italicPhrase: string },
+  lede: string,                            // Inter 17px 1-2 sentences
+  cta?: { label: string, href: string },   // optional — see note below
+  fallbackUrl?: string,                    // "or paste this link"
+  note?: { italicText: string },           // optional — used only by invite today
+  figureFooter: {                          // mandatory clinical close
+    figNumber: string,
+    leftItalic: string,                    // "Fig. NN · [italic]"
+    rightLabel: string,
+    rightItalic: string,                   // "LABEL · [italic]"
+  },
+  securityNote?: string,                   // optional Inter 13px paragraph
+}
+```
+
+Three contracts the shell enforces or guarantees:
+
+1. **`italicPhrase` is a build-time invariant.** The shell calls `text.includes(italicPhrase)` and throws if false. Never silently renders a flat title. There's no test runner; the throw is the contract. If you add a template whose italic-phrase isn't an exact substring of its title, the first call site (preview route or live render) crashes loudly.
+
+2. **CTA is deliberately optional.** Some emails are destination-less — `intake-submitted` has no CTA because the room doesn't exist yet at send time, and a button to a 404 would undermine the message. Leave it off rather than point at nothing.
+
+3. **The institutional closer is mandatory and is rendered by the shell, not by templates.** No template ever passes a signature. Every email closes with two lines above the footer hairline:
+
+   ```
+   CognitiveLab, WelloWork AB         ← Instrument Serif italic, 15px, #a0a0a6
+   ATTENDING INSTITUTION              ← JetBrains Mono 10px, 0.18em uppercase, #6a6a72
+   ```
+
+   This is intentional and unchanging. The previous `— the analyst.` signature was removed in this pass. Do not reintroduce a named signature. The institution signs.
+
+### Visual lock
+
+Dark-only — `<meta name="color-scheme" content="dark">` + `supported-color-schemes` keep clients from auto-inverting. 600px container, centered, background `#0a0a0b`. Hairline color `#1a1a1c`. Hero is 44px desktop (NOT 52px — see the comment in `sender.ts` for the rationale across all seven titles), 36px mobile. Inline SVG logo (28×28 in header, 22×22 in footer) renders in Apple Mail, Gmail web/mobile, and Outlook web — the wordmark beside it carries the brand if the SVG fails.
+
+### Templates and Fig. NN scheme
+
+| File | Eyebrow | Fig. | Hero title | Italic |
+|---|---|---|---|---|
+| [intake-submitted.ts](lib/emails/intake-submitted.ts) | `PROFILE READ` | **01** | Your answers are *being read*. | *being read* |
+| *(Supabase Auth)* | `PASSWORD RESET` | **02** | A new key, *quietly issued*. | *quietly issued* |
+| [room-ready.ts](lib/emails/room-ready.ts) | `ROOM READY` | **03** | The *first reading* is open. | *first reading* |
+| [invite.ts](lib/emails/invite.ts) | `INVITATION` | **04** | {Name} would like you *in the reading*. | *in the reading* |
+| [connection-accepted.ts](lib/emails/connection-accepted.ts) | `CONNECTION ACCEPTED` | **05** | {Name} has *accepted the connection*. | *accepted the connection* |
+| [connection-ended.ts](lib/emails/connection-ended.ts) | `CONNECTION ENDED` | **06** | {Name} has *ended the connection*. | *ended the connection* |
+| [weekly-catchup-reminder.ts](lib/emails/weekly-catchup-reminder.ts) | `WEEKLY CATCHUP` | **07** | A week has passed *quietly*. | *quietly* |
+| [onboarding-resume.ts](lib/emails/onboarding-resume.ts) | `INTAKE HELD` | **08** | The intake is *where you left it*. | *where you left it* |
+
+Fig. 02 is reserved for the Supabase-managed reset-password template (rendered by Supabase Auth — out of this codebase). Next new template gets Fig. 09.
+
+### Direct vs scheduled
+
+**Direct sends** (route handler fires immediately):
+- `intake-submitted` from `submitIntake()`
+- `invite` and `connection-accepted` from `/api/connections`
+- `connection-ended` from `/api/connections` (disconnect) and from `/api/settings/delete` (account deletion — one per active connection, to the other party)
+
+**Scheduled sends** — three kinds in the `scheduled_emails` table:
+
+| Kind | Producer | Drained by | Send window |
+|---|---|---|---|
+| `room_ready` | `submitIntake()` enqueues with `send_after = now() + 5 min` | `/api/internal/run-scheduled-emails` (every minute) | up to 6h after `send_after` — defers each tick until `profiles.intake_status = 'ready'`, fails with `retry_window_expired` thereafter |
+| `onboarding_resume` | `/onboarding/saved` page render upserts with `send_after = now() + 24h` | same drainer | re-verifies `intake_status` is still unsubmitted at send time; sealed with `skipped_completed` if the user finished in the meantime |
+| `weekly_catchup_reminder` | `/api/internal/schedule-weekly-catchups` (Sundays 18:00 UTC) enqueues with `send_after = now()` | same drainer | also re-checked at send time — skipped silently if a catchups row appeared since enqueue |
+
+The drainer is authenticated by `AI_INTERNAL_TOKEN` — same pattern as `/api/internal/initial-readings`. It accepts either `x-internal-token` (canonical) or `Authorization: Bearer …` (the form Vercel Cron sends when `CRON_SECRET` is set; configure that env var equal to `AI_INTERNAL_TOKEN`).
+
+**Idempotency** lives at the table layer, not via Resend headers. A row is pending while `sent_at IS NULL AND failed_at IS NULL`; the drainer only writes `sent_at` after Resend accepts the message. A crash between Resend acceptance and the DB update retries on the next tick — acceptable double-send risk for this iteration. Weekly-catchup uniqueness is additionally enforced by a partial unique index on `(user_id, (payload->>'iso_week'))` for `sent_at IS NOT NULL` rows.
+
+`/api/dev/open-room` (dev-only) seals any pending `room_ready` row for the user when it manually fires the email, so the scheduler can't double-send after the manual transition.
+
+### Preference matrix
+
+`users_meta.email_preferences` (jsonb, all toggles default-on) is checked by exactly two senders. The `emailPreferenceEnabled` helper in `lib/emails/preferences.ts` is the single read site. Default-on semantics: missing row, missing key, or non-boolean value all return `true`.
+
+| Email | Gated on | Why |
+|---|---|---|
+| `intake-submitted` | none | transactional, one-time per user |
+| `room-ready` | none | transactional, one-time per user |
+| `invite` | none | recipient may have no account / preference row |
+| `connection-accepted` | `connection_requests` | inviter chose to be notified or not |
+| `connection-ended` | none | transactional — recipient needs to know the relationship intake has ended |
+| `weekly-catchup-reminder` | `weekly_catchup` | recurring opt-in |
+| `onboarding-resume` | none (TODO) | no preference column exists yet |
+
+### Invite-specific contracts
+
+- **Strict inviter name.** `/api/connections` `handleInvite` and `handleResend` resolve the inviter's first name via `firstNameFrom(profiles.full_name)` **before** writing to the database. If null, the route returns `422 missing_inviter_first_name` and no row is inserted / no token is regenerated. The InviteForm translates this 422 into *"Your name is not on file. Add it in settings, then send the invite again."* with a row-link to `/settings#account`. No generic fallback email is ever sent — the named summons is the whole point.
+- **Note handling — form caps, server validates, template trusts.** `NOTE_MAX_LENGTH = 140` is exported from `lib/emails/invite.ts` as the single source of truth. The form sets `maxLength={NOTE_MAX_LENGTH}` and shows a quiet mono char count below the textarea. The server (`handleInvite`) trims the incoming note, returns `422 invalid_note_length` if `trim().length > NOTE_MAX_LENGTH`, treats trim-empty as `null`, and passes either a valid non-empty trimmed string or `null` to the template. The template renders what it's given — no defensive trim/cap/empty handling.
+
+### Dev preview harness
+
+`/api/dev/preview-email?kind=<kind>` ([app/api/dev/preview-email/route.ts](app/api/dev/preview-email/route.ts)) is `NODE_ENV === "development"` only (404 in prod, matching the `/api/dev/open-room` gating pattern). One query param. Returns `text/html` of the rendered template with stub args.
+
+Eight kinds today: `intake-submitted`, `room-ready`, `invite`, `invite-with-note`, `connection-accepted`, `connection-ended`, `weekly-catchup-reminder`, `onboarding-resume`. The `invite-with-note` variant exercises the optional-note rendering branch.
+
+```bash
+npm run dev
+open "http://localhost:3000/api/dev/preview-email?kind=invite-with-note"
+```
+
+Add a new template's kind to the `KIND_RENDERERS` map in the same file — it's the single source of truth for "what previewable kinds exist."
 
 ---
 
@@ -184,8 +301,13 @@ AI_MODEL_REPORT_GENERATION=
 # Friendly degrade threshold
 AI_CALLS_HOURLY_LIMIT=5000
 
-# Internal-only routes (initial-readings, report-generate, report PDF render)
+# Internal-only routes (initial-readings, report-generate, report PDF
+# render, run-scheduled-emails, schedule-weekly-catchups). Vercel Cron
+# requires CRON_SECRET to be set to the SAME value as AI_INTERNAL_TOKEN
+# — the scheduler route accepts both `x-internal-token` and
+# `Authorization: Bearer <token>` so one secret covers both.
 AI_INTERNAL_TOKEN=
+CRON_SECRET=                        # equal to AI_INTERNAL_TOKEN in prod
 
 # Hosted browser for PDF capture (optional — HTML fallback if unset)
 PDF_RENDER_SERVICE_URL=
@@ -219,6 +341,8 @@ The pricing *amounts* (`23.23`, `11.11`) live in Stripe itself, plus the informa
 10. **Reduced motion is one global rule.** `app/globals.css` has `@media (prefers-reduced-motion: reduce){ *{animation:none !important;transition:none !important} html{scroll-behavior:auto} }`. Every Room animation (depth-meter fill, catchup progress strip, settings save strip, session timer) inherits this — no per-component opt-in needed.
 
 11. **The crisis safety footer is in the layout, not per-page.** `RoomFooter` renders the safety line for every `app/(room)/*` route by construction. `/invite/[token]` deliberately renders without it: the spec instructs *"no nav, atmosphere visible"* — the invitee landing is not a Room page.
+
+12. **Email scheduling lives in Postgres, not in memory.** The `scheduled_emails` table is the only queue. Producers (intake submit, save-and-return page render, weekly cron) write rows; the every-minute drainer reads them. No `setTimeout` in a route handler, no in-memory queue, no external job runner. The drainer is the only consumer; idempotency is the `sent_at IS NULL` check. Vercel Cron is the only schedule source.
 
 ---
 
@@ -256,7 +380,14 @@ One-off report flow: hit `/reports/confirm` while signed in (as a free user), co
 - Embedding-based richness for Reading Depth — current word-count heuristic is intentionally simple per spec.
 - Connection-aware prompt engineering — the analyst may reference connections by first name and role; the prompt-construction site for that is marked in `app/api/session/route.ts`.
 - Magic-link OTP for the accept-with-account branch of `app/api/connections/route.ts` is stubbed.
-- *Intake → room transition is manual today.* `app/api/dev/open-room/route.ts` flips `profiles.intake_status` from `processing` to `ready` and fires the room-ready email (`lib/emails/room-ready.ts`); production needs the same transition to happen automatically two hours after `intake_submitted_at`. Cleanest wiring: a Supabase `pg_cron` job running every five minutes that updates `profiles set intake_status = 'ready' where intake_status = 'processing' and intake_submitted_at < now() - interval '2 hours'`. Pair it with an `after update on profiles` trigger that, when the new status is `ready` and the old was `processing`, calls a Supabase Edge Function which loads the user's email and posts to Resend using the same `lib/emails/room-ready.ts` payload (or duplicates the template inline — the Edge Function is server-only). The cron's `where` clause must match the manual route's `where` clause exactly (`intake_status = 'processing'`) so the two paths can't double-fire the email if cron and a manual call race. The dev route should stay in place behind the `NODE_ENV` guard so engineers can still force the transition during local testing.
+- *Intake → room transition.* `submitIntake()` schedules the room-ready email for `now() + 5 min`; the every-minute drainer at `/api/internal/run-scheduled-emails` checks `profiles.intake_status === 'ready'` before sending and defers up to 6h otherwise. The `intake_status = 'processing' → 'ready'` flip is still gated on the AI generation pipeline (`/api/internal/initial-readings`). `/api/dev/open-room` remains behind the `NODE_ENV` guard for local testing and also seals the pending `scheduled_emails` row so the drainer can't double-send after a manual transition.
+- *Resend domain.* `noreply@day-23.com` is the sender — verify the DNS records (SPF, DKIM, return-path) in the Resend dashboard before launch, or fall back to `onboarding@resend.dev` in `lib/emails/sender.ts`.
+- *Per-user timezone for weekly catchup.* The producer at `/api/internal/schedule-weekly-catchups` assumes Europe/London for everyone. A `users_meta.timezone` column + an hourly producer that filters by "local-time is Sunday evening" would generalize cleanly.
+- *Onboarding-resume preference.* No toggle on `email_preferences` gates this email — it always sends. Decision pending whether a fifth toggle is worth the schema churn.
+- *Failed-send dashboard.* `scheduled_emails.failed_at` + `failure_reason` are populated but only visible via direct SQL. A Settings-or-internal view would surface them.
+- *No test infrastructure.* Deliberately omitted this pass — `package.json` has no `vitest`/`jest`. The italic-substring assertion in `brandEmailShell` is a runtime throw rather than a unit test; the dev preview harness is the verification path. If a future change introduces real branching logic (e.g. localized templates, multi-recipient summaries), wire a test runner alongside it.
+- *`profiles.first_name` promotion.* The invite flow's strict name check goes through `firstNameFrom(profiles.full_name)` — a parse, not a column read. Promote `first_name` to a real column on `profiles`, backfill from `full_name`, and switch the invite route + every other sender to read it directly. Add the parse fallback at backfill time, not at every render.
+- *Scheduled-invite refactor.* `invite` is the only "human-triggered" email that fires synchronously from a route handler. Converting it to a `scheduled_emails` row (kind `connection_invite`, `send_after = now()`) would give uniform failure-surface behavior — the 422 `missing_inviter_first_name` becomes a `failed_at` reason instead of an HTTP error, and the form simply confirms "queued." Trade-off: the user loses immediate confirmation that the email actually went out. Defer until a second human-triggered email exists to share the pattern.
 
 ---
 

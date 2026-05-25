@@ -1831,7 +1831,7 @@ section{position:relative;}
 .question-row.is-skipped .question-title{color:var(--fg-mute)}
 .question-subtitle{
   font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.4;
-  color:var(--fg-dim);max-width:560px;margin:8px 0 0;letter-spacing:-0.005em;
+  color:var(--fg-dim);max-width:560px;margin:4px 0 0;letter-spacing:-0.005em;
 }
 .question-row.is-skipped .question-subtitle{color:var(--fg-mute)}
 .question-body{display:flex;flex-direction:column;gap:14px}
@@ -3827,6 +3827,13 @@ section{position:relative;}
 }
 .invite-form-error{
   font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg-dim);margin:0;
+}
+.invite-form-error-block{
+  display:flex;flex-direction:column;gap:14px;
+}
+.invite-form-charcount{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.04em;
+  color:var(--fg-mute);text-align:right;margin-top:8px;
 }
 .invite-form-actions{display:flex;justify-content:flex-start;margin-top:4px}
 .invite-form-submit{

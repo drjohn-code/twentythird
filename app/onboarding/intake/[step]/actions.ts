@@ -163,6 +163,29 @@ export async function submitIntake(): Promise<SubmitIntakeResult> {
       .update({ initial_readings_status: "pending" })
       .eq("user_id", user.id);
 
+    // Schedule the room-ready email for 5 minutes from now. The
+    // scheduler at /api/internal/run-scheduled-emails checks
+    // profiles.intake_status === 'ready' at send time; if intake is
+    // still 'processing' it defers to the next tick (capped at 6h).
+    // Idempotency: the dev-only /api/dev/open-room route also tries to
+    // send, but only on the row's actual processing→ready transition,
+    // so the two paths can't race for the same user.
+    const sendAfter = new Date(Date.now() + 5 * 60 * 1000).toISOString();
+    const { error: schedErr } = await admin
+      .from("scheduled_emails")
+      .insert({
+        user_id: user.id,
+        kind: "room_ready",
+        payload: {},
+        send_after: sendAfter,
+      });
+    if (schedErr) {
+      console.error(
+        "[intake-submit] room_ready scheduling failed:",
+        schedErr,
+      );
+    }
+
     // Trigger the initial readings job. Fire-and-forget — the
     // background job inside the route handler does the real work.
     // We ignore failures here so the intake submit still resolves.

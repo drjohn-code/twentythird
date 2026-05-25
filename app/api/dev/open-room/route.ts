@@ -86,6 +86,20 @@ export async function POST(): Promise<NextResponse> {
     roomUrl: `${siteUrl}/room`,
   });
 
+  // Seal any pending room_ready scheduled_emails row for this user so
+  // the every-minute scheduler doesn't double-send the email after
+  // this manual transition.
+  await admin
+    .from("scheduled_emails")
+    .update({
+      sent_at: new Date().toISOString(),
+      failure_reason: "sealed_by_dev_open_room",
+    })
+    .eq("user_id", user.id)
+    .eq("kind", "room_ready")
+    .is("sent_at", null)
+    .is("failed_at", null);
+
   revalidatePath("/room");
 
   return NextResponse.json({

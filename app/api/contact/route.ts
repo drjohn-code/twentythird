@@ -1,11 +1,8 @@
 import "server-only";
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
 import { adminClient } from "../../../lib/supabase/admin";
+import { escapeHtml, sendEmail } from "../../../lib/emails/sender";
 
-// TODO: confirm day-23.com is verified in Resend; otherwise fall back to
-// "TwentyThird <onboarding@resend.dev>" until verification lands.
-const FROM_EMAIL = "TwentyThird <noreply@day-23.com>";
 const TO_EMAIL = "info@day-23.com";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -18,15 +15,6 @@ type Payload = {
 
 function fail(error: string, status = 400) {
   return NextResponse.json({ ok: false, error }, { status });
-}
-
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
 
 export async function POST(request: Request) {
@@ -70,22 +58,20 @@ export async function POST(request: Request) {
     return fail("We couldn't save your message. Please try again.", 500);
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (apiKey) {
-    const timestamp = new Date().toISOString();
-    const plainText = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      ``,
-      `Message:`,
-      message,
-      ``,
-      `—`,
-      `Received: ${timestamp}`,
-      `User agent: ${userAgent ?? "—"}`,
-    ].join("\n");
+  const timestamp = new Date().toISOString();
+  const plainText = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    ``,
+    `Message:`,
+    message,
+    ``,
+    `—`,
+    `Received: ${timestamp}`,
+    `User agent: ${userAgent ?? "—"}`,
+  ].join("\n");
 
-    const html = `<!doctype html>
+  const html = `<!doctype html>
 <html><body style="margin:0;padding:32px;background:#ffffff;color:#000000;font-family:system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.55">
   <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;max-width:560px">
     <tr><td style="padding-bottom:8px;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#000000">New contact</td></tr>
@@ -100,25 +86,13 @@ export async function POST(request: Request) {
   </table>
 </body></html>`;
 
-    try {
-      const resend = new Resend(apiKey);
-      const { error: emailError } = await resend.emails.send({
-        from: FROM_EMAIL,
-        to: [TO_EMAIL],
-        replyTo: email,
-        subject: `New contact — ${name}`,
-        text: plainText,
-        html,
-      });
-      if (emailError) {
-        console.error("[contact] Resend send error:", emailError);
-      }
-    } catch (e) {
-      console.error("[contact] Resend threw:", e);
-    }
-  } else {
-    console.error("[contact] RESEND_API_KEY missing — skipping email send.");
-  }
+  await sendEmail({
+    to: TO_EMAIL,
+    replyTo: email,
+    subject: `New contact — ${name}`,
+    text: plainText,
+    html,
+  });
 
   return NextResponse.json({ ok: true });
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
 
 // DELETE /api/settings/delete
 //
@@ -9,7 +10,9 @@ import { adminClient } from "@/lib/supabase/admin";
 // Cascades through auth.users.on_delete to every table in the room
 // schema (every fk is `references auth.users(id) on delete cascade`).
 //
-// Connection-end notifications are stubbed — Phase 6 wires Resend.
+// Before the cascade we notify every other party that an active
+// connection is ending. These emails are always sent — connection-end
+// is transactional, not preference-gated.
 
 const REQUIRED_PHRASE = "delete the case file";
 
@@ -38,10 +41,48 @@ export async function DELETE(req: Request) {
     );
   }
 
-  // Mark any active connections as ended-by-this-user before deletion
-  // so the other party's depth recompute and notification (Phase 6)
-  // can read accurate metadata after the cascade.
-  await supabase
+  // The actual auth.users delete requires service role. If the env is
+  // missing, fail closed — partial deletes are worse than a refused one.
+  const admin = adminClient();
+  if (!admin) {
+    return NextResponse.json(
+      { error: "admin_unavailable" },
+      { status: 503 },
+    );
+  }
+
+  // Resolve the ender's first name + each other party's email BEFORE
+  // mutating connections / deleting the user. Profile rows survive the
+  // status flip but vanish on auth.users cascade.
+  const { data: enderProfile } = await admin
+    .from("profiles")
+    .select("full_name, email")
+    .eq("id", user.id)
+    .maybeSingle<{ full_name: string | null; email: string | null }>();
+  const enderFirstName =
+    firstNameFromName(enderProfile?.full_name) ??
+    firstNameFromName(enderProfile?.email) ??
+    "your connection";
+
+  const { data: activeConnections } = await admin
+    .from("connections")
+    .select(
+      "id, inviter_user_id, connection_user_id, connection_email",
+    )
+    .or(`inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`)
+    .eq("status", "active")
+    .returns<
+      {
+        id: string;
+        inviter_user_id: string;
+        connection_user_id: string | null;
+        connection_email: string;
+      }[]
+    >();
+
+  // Mark active connections ended-by-this-user before cascade so the
+  // other party's depth recompute reads accurate metadata.
+  await admin
     .from("connections")
     .update({
       status: "ended",
@@ -53,16 +94,37 @@ export async function DELETE(req: Request) {
     )
     .eq("status", "active");
 
-  // TODO: Phase 6 — Resend the connection-ended email to each other party.
-
-  // The actual auth.users delete requires service role. If the env is
-  // missing, fail closed — partial deletes are worse than a refused one.
-  const admin = adminClient();
-  if (!admin) {
-    return NextResponse.json(
-      { error: "admin_unavailable" },
-      { status: 503 },
-    );
+  // Notify each other party. Transactional — no preference gate.
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+    "https://day-23.com";
+  for (const c of activeConnections ?? []) {
+    const otherIsInviter = c.inviter_user_id !== user.id;
+    const otherUserId = otherIsInviter ? c.inviter_user_id : c.connection_user_id;
+    let otherEmail: string | null = null;
+    if (otherUserId) {
+      const { data: other } = await admin
+        .from("profiles")
+        .select("email")
+        .eq("id", otherUserId)
+        .maybeSingle<{ email: string | null }>();
+      otherEmail = other?.email ?? null;
+    }
+    if (!otherEmail && !otherIsInviter) {
+      // Other party is the connection on a no-account invite; fall
+      // back to the email captured on the connections row.
+      otherEmail = c.connection_email;
+    }
+    if (!otherEmail) continue;
+    try {
+      await sendConnectionEndedEmail({
+        to: otherEmail,
+        enderFirstName,
+        roomUrl: `${siteUrl}/room`,
+      });
+    } catch (e) {
+      console.error("[delete-account] connection-ended send threw:", e);
+    }
   }
 
   const { error } = await admin.auth.admin.deleteUser(user.id);
@@ -74,4 +136,15 @@ export async function DELETE(req: Request) {
   await supabase.auth.signOut();
 
   return NextResponse.json({ ok: true });
+}
+
+function firstNameFromName(value: string | null | undefined): string | null {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  // Strip an email's @domain so a name-less profile still yields a
+  // usable salutation token.
+  const head = trimmed.split("@")[0]!;
+  const first = head.split(/\s+/)[0];
+  return first || null;
 }

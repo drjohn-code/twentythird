@@ -1,49 +1,60 @@
 import "server-only";
-import { brandEmailShell, escapeHtml, sendEmail } from "./sender";
+import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Intake-submitted email — sent the moment the user submits step 10.
-// Mirrors the promise on the PendingStatus screen: answers received,
-// first pass usually about two hours, we'll write again when the room
-// opens. One italic lede, one short paragraph, one italic sign-off.
+// Confirmation only; no CTA. The room opens when the AI generation
+// pipeline + the 5-minute scheduled email fires. See ROOM.md.
+//
+// Voice: brand-voiced, lowercase subject, single italic phrase in the
+// hero title, no signature (the shell renders the institutional
+// closer unconditionally).
 
 export type IntakeSubmittedEmailInput = {
   to: string;
+  /** Used only in the subject's salutation; null falls back to "you,". */
   firstName: string | null;
 };
 
-export async function sendIntakeSubmittedEmail(
+export function buildIntakeSubmittedEmail(
   input: IntakeSubmittedEmailInput,
-) {
-  const { to, firstName } = input;
-
+): EmailPayload {
+  const { firstName } = input;
   const salutation = firstName ? `${firstName},` : "you,";
 
   const subject = "your profile is being read.";
-  const preheader = "answers received. first pass is underway.";
 
   const text = [
     `${salutation}`,
     ``,
-    `your answers are in. the first pass through the psychodynamic models is underway — usually about two hours.`,
+    `Your answers are in. The first pass through the psychodynamic models is underway. The room opens when the work is ready.`,
     ``,
-    `we'll write again when the work is ready and the room opens.`,
-    ``,
-    `— the analyst.`,
+    `CognitiveLab, WelloWork AB`,
+    `ATTENDING INSTITUTION`,
   ].join("\n");
 
-  const bodyHtml = `
-    <tr><td style="padding:0 0 22px 0;font-style:italic;color:#5a5a60;font-size:24px;line-height:1.3">
-      ${escapeHtml(salutation)}
-    </td></tr>
-    <tr><td style="padding:0 0 22px 0;color:#121214;font-size:16px;line-height:1.65">
-      your answers are in. the first pass through the psychodynamic models is underway — usually about two hours. we&rsquo;ll write again when the work is ready and the room opens.
-    </td></tr>
-    <tr><td style="padding:6px 0 8px 0;font-style:italic;color:#5a5a60;font-size:15px;line-height:1.55">
-      — the analyst.
-    </td></tr>
-  `;
+  const html = brandEmailShell({
+    preheader:
+      "First pass underway. The room opens when the work is ready.",
+    eyebrow: "PROFILE READ",
+    title: {
+      text: "Your answers are being read.",
+      italicPhrase: "being read",
+    },
+    lede: "The first pass through the psychodynamic models is underway. The room opens when the work is ready.",
+    figureFooter: {
+      figNumber: "01",
+      leftItalic: "intake received",
+      rightLabel: "First pass",
+      rightItalic: "underway",
+    },
+  });
 
-  const html = brandEmailShell({ preheader, bodyHtml });
+  return { subject, text, html };
+}
 
-  return sendEmail({ to, subject, text, html });
+export async function sendIntakeSubmittedEmail(
+  input: IntakeSubmittedEmailInput,
+) {
+  const payload = buildIntakeSubmittedEmail(input);
+  return sendEmail({ to: input.to, ...payload });
 }

@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { adminClient } from "@/lib/supabase/admin";
 import Reveal from "@/components/layout/Reveal";
 import Glass from "@/components/ui/Glass";
 import Eyebrow from "@/components/ui/Eyebrow";
@@ -44,6 +45,14 @@ export default async function OnboardingSavedPage({
       ? INTAKE_INTRO_PATH
       : `${INTAKE_INTRO_PATH}/${target}`;
 
+  // Schedule the 24h "your answers are held" reminder. One pending row
+  // per user+kind — a revisit to /onboarding/saved bumps send_after
+  // instead of inserting a duplicate. The scheduler re-verifies the
+  // intake is still unsubmitted at send time; if the user completes
+  // the intake before the row fires, the row is sealed with note
+  // 'skipped_completed' rather than sending the email.
+  await scheduleOnboardingResume(user.id);
+
   return (
     <main className="intake-intro-shell">
       <div className="intake-intro-inner">
@@ -69,4 +78,37 @@ export default async function OnboardingSavedPage({
       </div>
     </main>
   );
+}
+
+async function scheduleOnboardingResume(userId: string): Promise<void> {
+  const admin = adminClient();
+  if (!admin) return;
+  const sendAfter = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+  const { data: existing } = await admin
+    .from("scheduled_emails")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("kind", "onboarding_resume")
+    .is("sent_at", null)
+    .is("failed_at", null)
+    .maybeSingle<{ id: string }>();
+  if (existing) {
+    const { error } = await admin
+      .from("scheduled_emails")
+      .update({ send_after: sendAfter })
+      .eq("id", existing.id);
+    if (error) {
+      console.error("[onboarding-saved] bump send_after failed:", error);
+    }
+    return;
+  }
+  const { error } = await admin.from("scheduled_emails").insert({
+    user_id: userId,
+    kind: "onboarding_resume",
+    payload: {},
+    send_after: sendAfter,
+  });
+  if (error) {
+    console.error("[onboarding-saved] insert scheduled row failed:", error);
+  }
 }

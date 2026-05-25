@@ -1,13 +1,14 @@
 import "server-only";
-import { brandEmailShell, escapeHtml, sendEmail } from "./sender";
+import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Sent to the inviter when the invitee accepts the connection. Brief,
-// analyst-voiced, no celebratory exclamation. Mirrors the Today line.
+// institutional, no celebratory exclamation. Mirrors the Today line.
+// Preference-gated: respects users_meta.email_preferences.connection_requests
+// at the route layer.
 
 export type ConnectionAcceptedEmailInput = {
-  /** Inviter's email. */
   to: string;
-  /** Inviter's first name — used in the body greeting. */
+  /** Inviter's first name — used only in the text body's salutation. */
   inviterFirstName: string | null;
   /** Connection's first name as captured on accept. */
   connectionFirstName: string;
@@ -15,43 +16,68 @@ export type ConnectionAcceptedEmailInput = {
   roomUrl: string;
 };
 
-export async function sendConnectionAcceptedEmail(
+export function buildConnectionAcceptedEmail(
   input: ConnectionAcceptedEmailInput,
-) {
-  const { to, inviterFirstName, connectionFirstName, roomUrl } = input;
+): EmailPayload {
+  const { inviterFirstName, connectionFirstName, roomUrl } = input;
 
-  const name = connectionFirstName.trim().toLowerCase();
-  const subject = `${name} has accepted the connection.`;
+  // Subject keeps the lowercase brand convention; title is sentence
+  // case because the proper noun anchors the line. Both casings use
+  // the locale-aware variants so non-ASCII names (Turkish "İ",
+  // Lithuanian, German ß, etc.) round-trip correctly.
+  const nameLower = connectionFirstName.trim().toLocaleLowerCase();
+  const nameTitle = capitalizeFirst(connectionFirstName.trim());
+  const subject = `${nameLower} has accepted the connection.`;
+  const titleText = `${nameTitle} has accepted the connection.`;
 
-  const greeting = inviterFirstName ? `${inviterFirstName}, ` : "";
-
+  const salutation = inviterFirstName ? `${inviterFirstName},` : "you,";
   const text = [
-    `${greeting}${name} has accepted the connection.`,
+    `${salutation}`,
+    ``,
+    `${nameTitle} has accepted the connection.`,
     ``,
     `Their relationship intake will inform your reading from the next session forward. They will not see your readings; you will not see theirs.`,
     ``,
-    `Return to the room when you are ready:`,
+    `Return to the room:`,
     roomUrl,
+    ``,
+    `CognitiveLab, WelloWork AB`,
+    `ATTENDING INSTITUTION`,
   ].join("\n");
 
-  const bodyHtml = `
-    <tr><td style="padding:0 0 22px 0;font-style:italic;color:#5a5a60;font-size:22px;line-height:1.35">
-      ${escapeHtml(name)} has accepted the connection.
-    </td></tr>
-    <tr><td style="padding:0 0 22px 0;color:#121214;font-size:16px;line-height:1.65">
-      Their relationship intake will inform your reading from the next session forward. They will not see your readings; you will not see theirs.
-    </td></tr>
-    <tr><td style="padding:6px 0 0 0">
-      <a href="${escapeHtml(roomUrl)}" style="font-family:Arial,sans-serif;font-size:13px;letter-spacing:-0.005em;color:#121214;text-decoration:none;border-bottom:1px solid #121214;padding-bottom:3px">
-        return to the room →
-      </a>
-    </td></tr>
-  `;
-
   const html = brandEmailShell({
-    preheader: `${name} has accepted the connection.`,
-    bodyHtml,
+    preheader: `${nameTitle} has accepted the connection. Effect on next session forward.`,
+    eyebrow: "CONNECTION ACCEPTED",
+    title: {
+      text: titleText,
+      italicPhrase: "accepted the connection",
+    },
+    lede: "Their relationship intake will inform your reading from the next session forward. They will not see your readings; you will not see theirs.",
+    cta: { label: "Return to the room", href: roomUrl },
+    fallbackUrl: roomUrl,
+    figureFooter: {
+      figNumber: "05",
+      leftItalic: "connection accepted",
+      rightLabel: "Effect",
+      rightItalic: "next session forward",
+    },
   });
 
-  return sendEmail({ to, subject, text, html });
+  return { subject, text, html };
+}
+
+export async function sendConnectionAcceptedEmail(
+  input: ConnectionAcceptedEmailInput,
+) {
+  const payload = buildConnectionAcceptedEmail(input);
+  return sendEmail({ to: input.to, ...payload });
+}
+
+function capitalizeFirst(s: string): string {
+  // Locale-aware first-letter capitalization. Preserves the rest of
+  // the string as written, so "DJ", "Anna-Marie", or "İrem" round-trip
+  // correctly (a naive .toLowerCase() pre-pass would mangle the
+  // Turkish dotted-I, the German ß, etc.).
+  if (!s) return s;
+  return s.charAt(0).toLocaleUpperCase() + s.slice(1);
 }

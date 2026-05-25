@@ -1,63 +1,65 @@
 import "server-only";
-import { brandEmailShell, escapeHtml, sendEmail } from "./sender";
+import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Room-ready email — sent once intake_status flips from 'processing'
-// to 'ready'. Today the trigger is the dev-only manual route at
-// app/api/dev/open-room/route.ts; production will be the scheduled
-// 2-hour pg_cron job described in ROOM.md under "Known gaps before
-// launch". The template stays small on purpose — one italic lede, one
-// short paragraph, one CTA. Nothing else.
+// to 'ready'. Production trigger is the scheduled_emails drainer at
+// /api/internal/run-scheduled-emails (5 min after intake submit, with
+// up to 6h of retry deferrals while intake_status is still
+// 'processing'). Dev manual trigger remains at /api/dev/open-room.
+//
+// One-time per user; no preference gate. CTA points at /room.
 
 export type RoomReadyEmailInput = {
   to: string;
-  /** First name from profiles.full_name, or null if unknown. */
+  /** First name from profiles.full_name (via firstNameFrom), or null. */
   firstName: string | null;
-  /** Fully composed URL to /room. The caller is the one with NEXT_PUBLIC_SITE_URL. */
+  /** Fully composed URL to /room. Caller resolves NEXT_PUBLIC_SITE_URL. */
   roomUrl: string;
 };
 
-export async function sendRoomReadyEmail(input: RoomReadyEmailInput) {
-  const { to, firstName, roomUrl } = input;
-
+export function buildRoomReadyEmail(input: RoomReadyEmailInput): EmailPayload {
+  const { firstName, roomUrl } = input;
   const salutation = firstName ? `${firstName},` : "you,";
 
   const subject = "your room is open.";
-  const preheader = "the first reading is ready.";
 
   const text = [
     `${salutation}`,
     ``,
-    `the work is ready.`,
+    `The first reading is open.`,
     ``,
-    `your first reading is in the room — twelve blocks of psychodynamic profile, ready to read in your own time. nothing about the room is fixed; everything refines as you bring more of yourself to it.`,
+    `Twelve blocks of psychodynamic profile, in the room and ready to read. The work refines as you return to it.`,
     ``,
-    `enter the room:`,
+    `Enter the room:`,
     roomUrl,
     ``,
-    `we'll keep listening.`,
+    `CognitiveLab, WelloWork AB`,
+    `ATTENDING INSTITUTION`,
   ].join("\n");
 
-  const bodyHtml = `
-    <tr><td style="padding:0 0 22px 0;font-style:italic;color:#5a5a60;font-size:24px;line-height:1.3">
-      ${escapeHtml(salutation)}
-    </td></tr>
-    <tr><td style="padding:0 0 18px 0;font-style:italic;color:#121214;font-size:22px;line-height:1.35">
-      the work is ready.
-    </td></tr>
-    <tr><td style="padding:0 0 22px 0;color:#121214;font-size:16px;line-height:1.65">
-      your first reading is in the room — twelve blocks of psychodynamic profile, ready to read in your own time. nothing about the room is fixed; everything refines as you bring more of yourself to it.
-    </td></tr>
-    <tr><td style="padding:6px 0 28px 0">
-      <a href="${escapeHtml(roomUrl)}" style="font-family:Arial,sans-serif;font-size:13px;letter-spacing:-0.005em;color:#121214;text-decoration:none;border-bottom:1px solid #121214;padding-bottom:3px">
-        enter the room →
-      </a>
-    </td></tr>
-    <tr><td style="padding:0 0 8px 0;color:#5a5a60;font-style:italic;font-size:14px;line-height:1.55">
-      we&rsquo;ll keep listening.
-    </td></tr>
-  `;
+  const html = brandEmailShell({
+    preheader:
+      "Twelve blocks ready to read. The work refines as you return to it.",
+    eyebrow: "ROOM READY",
+    title: {
+      text: "The first reading is open.",
+      italicPhrase: "first reading",
+    },
+    lede: "Twelve blocks of psychodynamic profile, in the room and ready to read. The work refines as you return to it.",
+    cta: { label: "Enter the room", href: roomUrl },
+    fallbackUrl: roomUrl,
+    figureFooter: {
+      figNumber: "03",
+      leftItalic: "room opened",
+      rightLabel: "First reading",
+      rightItalic: "ready",
+    },
+  });
 
-  const html = brandEmailShell({ preheader, bodyHtml });
+  return { subject, text, html };
+}
 
-  return sendEmail({ to, subject, text, html });
+export async function sendRoomReadyEmail(input: RoomReadyEmailInput) {
+  const payload = buildRoomReadyEmail(input);
+  return sendEmail({ to: input.to, ...payload });
 }

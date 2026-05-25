@@ -6,16 +6,16 @@ import { recomputeDepthFor } from "@/lib/depth";
 import {
   MAX_ACTIVE_CONNECTIONS,
   firstNameFrom,
-  firstNameOrEmailLocal,
   generateInviteToken,
   inviteExpiryFromNow,
   isConnectionRole,
   isLikelyEmail,
   type ConnectionRole,
 } from "@/lib/connections";
-import { sendInviteEmail } from "@/lib/emails/invite";
+import { sendInviteEmail, NOTE_MAX_LENGTH } from "@/lib/emails/invite";
 import { sendConnectionAcceptedEmail } from "@/lib/emails/connection-accepted";
 import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
+import { emailPreferenceEnabled } from "@/lib/emails/preferences";
 
 // /api/connections — every write side of the Connections feature.
 //
@@ -126,8 +126,7 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
   const email =
     typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
   const role = body.role;
-  const noteRaw =
-    typeof body.note === "string" ? body.note.trim().slice(0, 240) : "";
+  const noteRawInput = typeof body.note === "string" ? body.note : "";
 
   if (!isLikelyEmail(email)) {
     return NextResponse.json({ error: "invalid_email" }, { status: 400 });
@@ -138,6 +137,18 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
   if (email === (user.email ?? "").toLowerCase()) {
     return NextResponse.json({ error: "self_invite" }, { status: 400 });
   }
+
+  // Note validation — server is the enforcement point. The template
+  // trusts its input. The form caps via maxLength but a hand-crafted
+  // POST can still arrive with a longer string.
+  const noteTrimmed = noteRawInput.trim();
+  if (noteTrimmed.length > NOTE_MAX_LENGTH) {
+    return NextResponse.json(
+      { error: "invalid_note_length" },
+      { status: 422 },
+    );
+  }
+  const note: string | null = noteTrimmed.length > 0 ? noteTrimmed : null;
 
   const admin = adminClient();
   if (!admin) {
@@ -172,16 +183,24 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
     );
   }
 
-  // Resolve inviter first name for the email subject.
+  // Strict inviter first name — derived only from profiles.full_name.
+  // If null, return 422 before inserting the connections row: the
+  // named summons is the whole point of the invite template, and we
+  // want the user to fix their settings rather than send a generic
+  // email. TODO: promote profiles.first_name to a real column so
+  // this lookup becomes an indexed column read.
   const { data: profile } = await admin
     .from("profiles")
-    .select("full_name, email")
+    .select("full_name")
     .eq("id", user.id)
-    .maybeSingle<{ full_name: string | null; email: string | null }>();
-  const inviterName = firstNameOrEmailLocal(
-    profile?.full_name ?? null,
-    profile?.email ?? user.email ?? "",
-  );
+    .maybeSingle<{ full_name: string | null }>();
+  const inviterName = firstNameFrom(profile?.full_name ?? null);
+  if (!inviterName) {
+    return NextResponse.json(
+      { error: "missing_inviter_first_name" },
+      { status: 422 },
+    );
+  }
 
   const token = generateInviteToken();
   const expiresAt = inviteExpiryFromNow().toISOString();
@@ -192,7 +211,7 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
       inviter_user_id: user.id,
       connection_email: email,
       role,
-      note: noteRaw || null,
+      note,
       invite_token: token,
       status: "pending",
       expires_at: expiresAt,
@@ -208,7 +227,7 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
   await sendInviteEmail({
     to: email,
     inviterFirstName: inviterName,
-    note: noteRaw || null,
+    note,
     acceptUrl,
   });
 
@@ -291,12 +310,19 @@ async function handleAccept(
     .eq("id", conn.inviter_user_id)
     .maybeSingle<{ email: string | null; full_name: string | null }>();
   if (inviterProfile?.email) {
-    await sendConnectionAcceptedEmail({
-      to: inviterProfile.email,
-      inviterFirstName: firstNameFrom(inviterProfile.full_name),
-      connectionFirstName: firstName,
-      roomUrl: `${siteOriginFromEnv()}/room`,
-    });
+    const allowed = await emailPreferenceEnabled(
+      admin,
+      conn.inviter_user_id,
+      "connection_requests",
+    );
+    if (allowed) {
+      await sendConnectionAcceptedEmail({
+        to: inviterProfile.email,
+        inviterFirstName: firstNameFrom(inviterProfile.full_name),
+        connectionFirstName: firstName,
+        roomUrl: `${siteOriginFromEnv()}/room`,
+      });
+    }
   }
 
   return NextResponse.json({
@@ -527,6 +553,22 @@ async function handleResend(body: Record<string, unknown>) {
     return NextResponse.json({ error: "wrong_status" }, { status: 409 });
   }
 
+  // Strict inviter first name — same contract as handleInvite. Resolve
+  // BEFORE regenerating the token so we don't burn a token if the name
+  // is missing.
+  const { data: profile } = await admin
+    .from("profiles")
+    .select("full_name")
+    .eq("id", user.id)
+    .maybeSingle<{ full_name: string | null }>();
+  const inviterName = firstNameFrom(profile?.full_name ?? null);
+  if (!inviterName) {
+    return NextResponse.json(
+      { error: "missing_inviter_first_name" },
+      { status: 422 },
+    );
+  }
+
   const newToken = generateInviteToken();
   const newExpiry = inviteExpiryFromNow().toISOString();
   const { error: updErr } = await admin
@@ -541,7 +583,6 @@ async function handleResend(body: Record<string, unknown>) {
     return NextResponse.json({ error: "update_failed" }, { status: 500 });
   }
 
-  const inviterName = (await loadFirstName(admin, user.id)) ?? "your friend";
   const acceptUrl = `${siteOriginFromEnv()}/invite/${newToken}`;
   await sendInviteEmail({
     to: conn.connection_email,

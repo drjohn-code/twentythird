@@ -1,70 +1,93 @@
 import "server-only";
-import { brandEmailShell, escapeHtml, sendEmail } from "./sender";
+import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 import { inviteEmail } from "@/lib/copy";
 
 // Connection invite email — sent to a prospective connection on behalf
-// of the inviter. Subject and body live entirely inside the analyst's
-// voice; the inviter's optional note appears as a serif italic block.
+// of the inviter. The single human beat in an otherwise institutional
+// system: the inviter's optional one-line note renders as an italic
+// blockquote between the lede and the CTA.
+//
+// **Contract — the template trusts its input.**
+//   - `inviterFirstName: string` (non-nullable). The route resolves it
+//     via firstNameFrom(profiles.full_name); if that returns null, the
+//     route returns 422 missing_inviter_first_name without calling the
+//     template. No fallback to "An invitation, quietly issued."
+//   - `note: string | null`. The route trims, length-checks against
+//     NOTE_MAX_LENGTH, and treats trim-empty as null. The template
+//     receives either a valid non-empty trimmed string or null and
+//     renders accordingly. No defensive trim/cap/empty handling here.
+//
+// NOTE_MAX_LENGTH is exported as the shared source of truth for the
+// form layer (InviteForm `maxLength`) and the server layer
+// (handleInvite validation). The template does NOT enforce it.
+//
+// TODO: promote profiles.first_name to a real column, backfill from
+// full_name, then read it directly in the route.
+
+export const NOTE_MAX_LENGTH = 140;
 
 export type InviteEmailInput = {
   to: string;
   inviterFirstName: string;
-  /** Optional one-line note the inviter wrote on the form. Already trimmed. */
+  /** Trimmed non-empty note from the form, or null. Route's responsibility. */
   note: string | null;
-  /** Full URL to /invite/<token> — the route handler composes this. */
+  /** Full URL to /invite/<token>. */
   acceptUrl: string;
 };
 
-export async function sendInviteEmail(input: InviteEmailInput) {
-  const { to, inviterFirstName, note, acceptUrl } = input;
+export function buildInviteEmail(input: InviteEmailInput): EmailPayload {
+  const { inviterFirstName, note, acceptUrl } = input;
 
   const subject = inviteEmail.subject(inviterFirstName);
+  const titleText = `${inviterFirstName} would like you in the reading.`;
+
+  // Null = absent (don't render the blockquote). Anything non-null is
+  // assumed already trimmed + length-checked by the route.
+  const noteForShell = note !== null ? { italicText: note } : undefined;
 
   const text = [
-    `${inviterFirstName} has invited you into their reading at TwentyThird.`,
+    `${inviterFirstName} would like you in the reading at TwentyThird.`,
     ``,
-    `TwentyThird is an editorial-clinical instrument: a quiet room where the structure of someone's inner life is read with care and language they can take to a clinician. A connection does not see the inviter's readings or sessions, and you will not see theirs. What you say about the relationship feeds the model that produces ${inviterFirstName}'s reading — and, if you choose, your own.`,
+    `TwentyThird is a quiet room where the structure of someone's inner life is read with care. A connection does not see the inviter's readings or sessions, and you will not see theirs.`,
     ``,
-    note ? `${inviterFirstName} added a note for you:\n  ${note}` : ``,
-    note ? `` : ``,
-    `Open the invite to read more and choose how to respond:`,
+    note !== null ? `${inviterFirstName} added a note:\n  ${note}` : ``,
+    note !== null ? `` : ``,
+    `Open the invite:`,
     acceptUrl,
     ``,
     `If this arrived in error, the invite expires on its own in fourteen days.`,
+    ``,
+    `CognitiveLab, WelloWork AB`,
+    `ATTENDING INSTITUTION`,
   ]
     .filter((l) => l !== ``)
     .join("\n");
 
-  const noteHtml = note
-    ? `<tr><td style="padding:24px 0 24px 0">
-        <blockquote style="margin:0;padding:0 0 0 18px;border-left:1px solid rgba(0,0,0,0.16);font-style:italic;color:#5a5a60;font-size:18px;line-height:1.55">
-          ${escapeHtml(note)}
-        </blockquote>
-      </td></tr>`
-    : "";
-
-  const bodyHtml = `
-    <tr><td style="padding:0 0 22px 0;font-style:italic;color:#5a5a60;font-size:24px;line-height:1.3">
-      ${escapeHtml(inviterFirstName)} has invited you into their reading.
-    </td></tr>
-    <tr><td style="padding:0 0 18px 0;color:#121214;font-size:16px;line-height:1.65">
-      TwentyThird is an editorial-clinical instrument — a quiet room where the structure of someone's inner life is read with care, and rendered in language a clinician can use. A connection does not see the inviter's readings or sessions, and ${escapeHtml(inviterFirstName)} will not see yours. What you say about the relationship feeds the model that produces their reading.
-    </td></tr>
-    ${noteHtml}
-    <tr><td style="padding:6px 0 28px 0">
-      <a href="${escapeHtml(acceptUrl)}" style="font-family:Arial,sans-serif;font-size:13px;letter-spacing:-0.005em;color:#121214;text-decoration:none;border-bottom:1px solid #121214;padding-bottom:3px">
-        open the invite →
-      </a>
-    </td></tr>
-    <tr><td style="padding:0 0 8px 0;color:#5a5a60;font-style:italic;font-size:14px;line-height:1.55">
-      if this arrived in error, the invite expires on its own in fourteen days.
-    </td></tr>
-  `;
-
   const html = brandEmailShell({
-    preheader: `${inviterFirstName} would like you in the reading.`,
-    bodyHtml,
+    preheader: `${inviterFirstName} would like you in the reading. A connection does not see your readings; you will not see theirs.`,
+    eyebrow: "INVITATION",
+    title: {
+      text: titleText,
+      italicPhrase: "in the reading",
+    },
+    lede: "TwentyThird is a quiet room where the structure of someone's inner life is read with care. A connection does not see the inviter's readings or sessions, and you will not see theirs.",
+    note: noteForShell,
+    cta: { label: "Open the invite", href: acceptUrl },
+    fallbackUrl: acceptUrl,
+    figureFooter: {
+      figNumber: "04",
+      leftItalic: "invitation issued",
+      rightLabel: "Expires",
+      rightItalic: "fourteen days",
+    },
+    securityNote:
+      "If this arrived in error, the invite expires on its own in fourteen days.",
   });
 
-  return sendEmail({ to, subject, text, html });
+  return { subject, text, html };
+}
+
+export async function sendInviteEmail(input: InviteEmailInput) {
+  const payload = buildInviteEmail(input);
+  return sendEmail({ to: input.to, ...payload });
 }
