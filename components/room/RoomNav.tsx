@@ -85,9 +85,14 @@ export default function RoomNav({ firstName }: RoomNavProps) {
             {firstName.toLowerCase()}
           </span>
         ) : null}
-        <Link href="/auth/sign-out" className="room-nav-signout">
-          sign out
-        </Link>
+        <form action="/auth/sign-out" method="post">
+          <button
+            type="submit"
+            className="room-nav-signout bg-transparent border-0 p-0 cursor-pointer"
+          >
+            sign out
+          </button>
+        </form>
       </div>
     </nav>
   );

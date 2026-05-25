@@ -132,12 +132,78 @@ export class AiHttpError extends Error {
   }
 }
 
+class JsonParseError extends Error {
+  raw: string;
+  constructor(raw: string) {
+    super("json parse failure");
+    this.name = "JsonParseError";
+    this.raw = raw;
+  }
+}
+
+// parseModelJson — normalize the model's raw text into a JSON string
+// we know parses, or throw JsonParseError. Used by callAI when
+// jsonMode is true. Anthropic models on OpenRouter do not honor
+// response_format: { type: "json_object" } reliably, so even with
+// prompts that say "no fence, no prose" they occasionally add one.
+// This is the belt for those suspenders.
+//
+// Verification path (no unit test runner in the repo). Each sample is
+// what `raw` might look like coming back from the model; each yields
+// the same `{"a":1}` once cleaned:
+//
+//   1. clean JSON
+//        {"a":1}
+//
+//   2. ```json fenced
+//        ```json
+//        {"a":1}
+//        ```
+//
+//   3. plain ``` fenced
+//        ```
+//        {"a":1}
+//        ```
+//
+//   4. prose preamble (and/or trailing prose)
+//        Here is the response:
+//        {"a":1}
+//        Hope this helps.
+//
+// All jsonMode prompts in this codebase ask for an object, not an
+// array — so the bracket-slicing only handles `{...}`. Add an array
+// branch if a future prompt returns one.
+function parseModelJson(raw: string): string {
+  let cleaned = raw.trim();
+
+  if (cleaned.startsWith("```")) {
+    cleaned = cleaned
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/```\s*$/, "")
+      .trim();
+  }
+
+  const first = cleaned.indexOf("{");
+  const last = cleaned.lastIndexOf("}");
+  if (first >= 0 && last > first) {
+    cleaned = cleaned.slice(first, last + 1);
+  }
+
+  try {
+    JSON.parse(cleaned);
+  } catch {
+    throw new JsonParseError(raw);
+  }
+  return cleaned;
+}
+
 // Transient = upstream-fixable. Permanent = code/data fixable.
 // Callers that own user-visible state machines (initial_readings,
 // catchup, report) use this to decide whether to flip a row to a
 // permanent failure or leave it in a retryable state.
 export function isTransientAiError(err: unknown): boolean {
   if (err instanceof AiOverCapacityError) return true;
+  if (err instanceof JsonParseError) return true;
   if (err instanceof AiHttpError) {
     if (err.kind === "timeout" || err.kind === "network") return true;
     if (err.kind === "http" && err.status !== null) {
@@ -352,8 +418,8 @@ export async function callAI(
 
     if (opts.jsonMode) {
       try {
-        JSON.parse(text);
-      } catch {
+        text = parseModelJson(text);
+      } catch (e) {
         await logCall({
           task,
           model,
@@ -365,7 +431,7 @@ export async function callAI(
           status: "parse_error",
           errorMessage: "first parse failed",
         });
-        throw new JsonParseError(text);
+        throw e;
       }
     }
 
@@ -391,15 +457,6 @@ export async function callAI(
       return await attempt();
     }
     throw err;
-  }
-}
-
-class JsonParseError extends Error {
-  raw: string;
-  constructor(raw: string) {
-    super("json parse failure");
-    this.name = "JsonParseError";
-    this.raw = raw;
   }
 }
 
