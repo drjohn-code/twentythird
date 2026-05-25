@@ -1,6 +1,9 @@
 import "server-only";
 import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 import { inviteEmail } from "@/lib/copy";
+import { NOTE_MAX_LENGTH } from "./invite-constants";
+
+export { NOTE_MAX_LENGTH };
 
 // Connection invite email — sent to a prospective connection on behalf
 // of the inviter. The single human beat in an otherwise institutional
@@ -23,8 +26,6 @@ import { inviteEmail } from "@/lib/copy";
 //
 // TODO: promote profiles.first_name to a real column, backfill from
 // full_name, then read it directly in the route.
-
-export const NOTE_MAX_LENGTH = 140;
 
 export type InviteEmailInput = {
   to: string;

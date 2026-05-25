@@ -8,7 +8,7 @@ import Select from "@/components/ui/Select";
 import Textarea from "@/components/ui/Textarea";
 import RowLink from "@/components/ui/RowLink";
 import { CONNECTION_ROLES, isLikelyEmail } from "@/lib/connections";
-import { NOTE_MAX_LENGTH } from "@/lib/emails/invite";
+import { NOTE_MAX_LENGTH } from "@/lib/emails/invite-constants";
 
 // Inline invite form — lives inside the Settings → Connections block.
 // Email + role + optional note. Submits to POST /api/connections?action=invite.
