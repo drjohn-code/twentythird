@@ -62,15 +62,15 @@ async function handle(req: Request): Promise<NextResponse> {
 
   const isoWeek = isoWeekString(new Date());
 
-  // Load eligible users — anyone whose intake has landed. We pull email
-  // here so the row carries enough metadata for the drainer; the
-  // drainer still re-resolves email at send time to pick up changes.
+  // Load eligible users — anyone whose intake has landed. The drainer
+  // is the authoritative gate for email availability (it resolves
+  // email via auth.admin.getUserById at send time); profiles.email
+  // can be null or stale and is not consulted here.
   const { data: users, error: usersErr } = await admin
     .from("profiles")
-    .select("id, email, intake_status")
+    .select("id, intake_status")
     .eq("intake_status", "ready")
-    .not("email", "is", null)
-    .returns<{ id: string; email: string | null; intake_status: string }[]>();
+    .returns<{ id: string; intake_status: string }[]>();
   if (usersErr) {
     return NextResponse.json(
       { error: "users_query_failed", detail: usersErr.message },
@@ -83,8 +83,6 @@ async function handle(req: Request): Promise<NextResponse> {
   let skipped_already_done = 0;
 
   for (const u of users ?? []) {
-    if (!u.email) continue;
-
     // Skip if a row already pending for this user+kind. (Sent rows are
     // covered by the partial unique index on (user_id, iso_week).)
     const { data: pending } = await admin

@@ -177,22 +177,41 @@ async function dispatch(admin: Admin, row: ScheduledRow): Promise<Outcome> {
   }
 }
 
+// Resolve the user's email via auth.admin.getUserById — the only
+// always-correct source. profiles.email can lag or be null (e.g. a
+// row created late by initiateAccount with a missing email field).
+// Returns the email string on success, or null if auth lookup failed
+// or returned no email. Callers should treat null as fail
+// `auth_user_missing`.
+async function resolveUserEmail(
+  admin: Admin,
+  userId: string,
+): Promise<string | null> {
+  try {
+    const { data, error } = await admin.auth.admin.getUserById(userId);
+    if (error) return null;
+    const email = data.user?.email;
+    if (typeof email !== "string" || !email) return null;
+    return email;
+  } catch {
+    return null;
+  }
+}
+
 async function dispatchRoomReady(
   admin: Admin,
   row: ScheduledRow,
 ): Promise<Outcome> {
   const { data: profile, error } = await admin
     .from("profiles")
-    .select("email, full_name, intake_status")
+    .select("full_name, intake_status")
     .eq("id", row.user_id)
     .maybeSingle<{
-      email: string | null;
       full_name: string | null;
       intake_status: string | null;
     }>();
   if (error) return { action: "defer", reason: "profile_lookup_failed" };
   if (!profile) return { action: "fail", reason: "profile_not_found" };
-  if (!profile.email) return { action: "fail", reason: "missing_email" };
 
   // The room-ready email is only meaningful once readings exist.
   // If intake is still processing, defer to the next tick.
@@ -206,8 +225,11 @@ async function dispatchRoomReady(
     };
   }
 
+  const email = await resolveUserEmail(admin, row.user_id);
+  if (!email) return { action: "fail", reason: "auth_user_missing" };
+
   const res = await sendRoomReadyEmail({
-    to: profile.email,
+    to: email,
     firstName: firstNameFrom(profile.full_name),
     roomUrl: `${siteOrigin()}/room`,
   });
@@ -227,10 +249,9 @@ async function dispatchWeeklyCatchup(
 
   const { data: profile } = await admin
     .from("profiles")
-    .select("email, full_name")
+    .select("full_name")
     .eq("id", row.user_id)
-    .maybeSingle<{ email: string | null; full_name: string | null }>();
-  if (!profile?.email) return { action: "fail", reason: "missing_email" };
+    .maybeSingle<{ full_name: string | null }>();
 
   // Preference gate — `weekly_catchup` toggle on users_meta.email_preferences.
   const { data: meta } = await admin
@@ -263,9 +284,12 @@ async function dispatchWeeklyCatchup(
     return { action: "sent", note: "skipped_catchup_already_done" };
   }
 
+  const email = await resolveUserEmail(admin, row.user_id);
+  if (!email) return { action: "fail", reason: "auth_user_missing" };
+
   const res = await sendWeeklyCatchupReminderEmail({
-    to: profile.email,
-    firstName: firstNameFrom(profile.full_name),
+    to: email,
+    firstName: firstNameFrom(profile?.full_name ?? null),
     catchupUrl: `${siteOrigin()}/catchup`,
     isoWeek,
   });
@@ -281,31 +305,32 @@ async function dispatchOnboardingResume(
 ): Promise<Outcome> {
   const { data: profile } = await admin
     .from("profiles")
-    .select("email, full_name, intake_status, onboarding_step")
+    .select("full_name, intake_status, onboarding_step")
     .eq("id", row.user_id)
     .maybeSingle<{
-      email: string | null;
       full_name: string | null;
       intake_status: string | null;
       onboarding_step: number | null;
     }>();
-  if (!profile?.email) return { action: "fail", reason: "missing_email" };
 
   // If they completed intake between scheduling and now, seal the row
   // as a no-op send rather than emailing.
   // TODO: discuss whether onboarding-resume needs its own preference
   // column on users_meta.email_preferences (currently always sends).
   if (
-    profile.intake_status === "processing" ||
-    profile.intake_status === "ready"
+    profile?.intake_status === "processing" ||
+    profile?.intake_status === "ready"
   ) {
     return { action: "sent", note: "skipped_completed" };
   }
 
+  const email = await resolveUserEmail(admin, row.user_id);
+  if (!email) return { action: "fail", reason: "auth_user_missing" };
+
   const res = await sendOnboardingResumeEmail({
-    to: profile.email,
-    firstName: firstNameFrom(profile.full_name),
-    resumeUrl: `${siteOrigin()}/onboarding/intake/${profile.onboarding_step ?? 1}`,
+    to: email,
+    firstName: firstNameFrom(profile?.full_name ?? null),
+    resumeUrl: `${siteOrigin()}/onboarding/intake/${profile?.onboarding_step ?? 1}`,
   });
   if (!res.ok) {
     return { action: "defer", reason: `resend_${res.error}` };

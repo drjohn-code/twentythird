@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import "server-only";
 import { adminClient } from "@/lib/supabase/admin";
 import { STEPS } from "@/lib/onboarding/steps";
@@ -65,6 +65,8 @@ export async function POST(request: Request): Promise<NextResponse> {
     return NextResponse.json({ error: "user_id required" }, { status: 400 });
   }
 
+  console.log(`[initial-readings] request received for user ${userId}`);
+
   // Flip to generating up front. If the column was missing in legacy
   // rows the update is a no-op; the user simply does not see a
   // pending state and gets v1 seed copy until this completes.
@@ -73,19 +75,30 @@ export async function POST(request: Request): Promise<NextResponse> {
     .update({ initial_readings_status: "generating" })
     .eq("user_id", userId);
 
-  // Fire-and-forget the background work — but await within a try so
-  // unexpected throws can flip the row to failed.
-  void runInitialReadingsJob(userId);
+  // Schedule the background work via Next 15's after() so Vercel
+  // doesn't reclaim the function between sending the 202 and the job
+  // finishing. The previous `void runInitialReadingsJob(...)` was a
+  // dangling promise — on serverless that work could be killed.
+  after(() => runInitialReadingsJob(userId));
 
   return NextResponse.json({ ok: true, started: true }, { status: 202 });
 }
 
 async function runInitialReadingsJob(userId: string): Promise<void> {
+  console.log(`[initial-readings] starting for user ${userId}`);
   const admin = adminClient();
-  if (!admin) return;
+  if (!admin) {
+    console.error(
+      `[initial-readings] aborting for user ${userId}: service role unavailable`,
+    );
+    return;
+  }
 
   try {
     const intake = await loadIntake(userId);
+    console.log(
+      `[initial-readings] loaded ${intake.length} intake answers for user ${userId}`,
+    );
 
     // Safety pass — every free-text answer. Failures here are
     // tolerated; classifySafety has its own fallback that writes a
@@ -97,6 +110,9 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
           () => undefined,
         ),
       ),
+    );
+    console.log(
+      `[initial-readings] safety pass done for user ${userId} (${freeText.length} free-text answers)`,
     );
 
     // Generate the readings.
@@ -110,6 +126,7 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
       userId,
       timeoutMs: 90_000,
     });
+    console.log(`[initial-readings] AI call returned for user ${userId}`);
 
     const parsed = parseInitialReadingsResponse(text);
 
@@ -136,6 +153,7 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
     }
 
     const nowIso = new Date().toISOString();
+    let written = 0;
 
     for (const block of BLOCKS) {
       const reading = parsed[block.slug];
@@ -155,6 +173,7 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
         last_refined_source: "intake",
       });
       if (insErr) continue;
+      written += 1;
 
       if (prior) {
         await admin
@@ -163,18 +182,44 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
           .eq("id", prior.id);
       }
     }
+    console.log(
+      `[initial-readings] wrote ${written} block_readings for user ${userId}`,
+    );
 
     await recomputeDepthFor(userId, admin);
 
+    // Mark BOTH status fields ready in lockstep:
+    // - users_meta.initial_readings_status gates the room shell
+    //   (room/layout.tsx) on whether to show PendingStatus vs the
+    //   real readings.
+    // - profiles.intake_status gates the room_ready email scheduler
+    //   (run-scheduled-emails.dispatchRoomReady). Without this write,
+    //   nothing in production transitioned intake_status from
+    //   'processing' to 'ready' and the email would defer until the
+    //   6h retry window expired. The dev-only /api/dev/open-room
+    //   route did this flip in development; this is the production
+    //   equivalent, paired with the readings actually existing.
     await admin
       .from("users_meta")
       .update({ initial_readings_status: "ready" })
       .eq("user_id", userId);
-  } catch {
+
+    await admin
+      .from("profiles")
+      .update({ intake_status: "ready" })
+      .eq("id", userId);
+
+    console.log(`[initial-readings] complete for user ${userId}`);
+  } catch (e) {
+    console.error(`[initial-readings] failed for user ${userId}:`, e);
     await admin
       .from("users_meta")
       .update({ initial_readings_status: "failed" })
       .eq("user_id", userId);
+    await admin
+      .from("profiles")
+      .update({ intake_status: "failed" })
+      .eq("id", userId);
   }
 }
 

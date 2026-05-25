@@ -47,11 +47,18 @@ export async function initiateAccount(formData: FormData) {
   // The handle_new_user trigger creates the row on signup, so an
   // update is the common path. We upsert anyway to recover from any
   // case where the trigger didn't fire (e.g. older auth.users rows).
+  // email is sourced from auth.users.user.email so that the INSERT
+  // branch of this upsert (which fires when the profiles row was never
+  // created by the handle_new_user trigger — e.g. the row was deleted
+  // and the auth.users row remained) still populates email correctly.
+  // The trigger covers the normal new-signup path; this covers
+  // late-creation paths. See migration 20260525160000.
   const { error } = await supabase
     .from("profiles")
     .upsert(
       {
         id: user.id,
+        email: user.email ?? null,
         full_name: parsed.data.full_name,
         birth_year: parsed.data.birth_year,
         gender: parsed.data.gender,
