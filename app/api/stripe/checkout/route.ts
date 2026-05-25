@@ -76,6 +76,14 @@ async function readKind(request: Request): Promise<CheckoutKind | null> {
 }
 
 export async function POST(request: Request): Promise<NextResponse> {
+  // TEMP: remove after debugging "No such price" production issue.
+  console.log("[stripe-checkout-debug]", {
+    secretKeyPrefix: process.env.STRIPE_SECRET_KEY?.slice(0, 8) ?? "MISSING",
+    priceSubscriptionFull: process.env.STRIPE_PRICE_SUBSCRIPTION ?? "MISSING",
+    priceReportFull: process.env.STRIPE_PRICE_REPORT ?? "MISSING",
+    kind: (await request.clone().json().catch(() => ({}))).kind ?? "unknown",
+  });
+
   const kind = await readKind(request);
   if (!kind) {
     return NextResponse.json(
