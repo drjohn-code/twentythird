@@ -5,6 +5,7 @@ import Reveal from "@/components/layout/Reveal";
 import CaseFileList, {
   type CaseEntry,
 } from "@/components/room/CaseFileList";
+import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
 
 // /case-file — the chronological dossier.
 //
@@ -27,6 +28,8 @@ const KIND_BY_FILTER: Record<
 
 type SearchParams = Promise<{ filter?: string }>;
 
+type SubscriptionRow = { status: string | null };
+
 export default async function CaseFilePage({
   searchParams,
 }: {
@@ -41,7 +44,7 @@ export default async function CaseFilePage({
   } = await supabase.auth.getUser();
   if (!user) return null;
 
-  let query = supabase
+  let entriesQuery = supabase
     .from("case_file_entries")
     .select("entry_id, entry_kind, entry_title, entry_summary, occurred_at")
     .eq("user_id", user.id)
@@ -50,11 +53,45 @@ export default async function CaseFilePage({
 
   if (filter !== "all") {
     const kinds = KIND_BY_FILTER[filter];
-    query = query.in("entry_kind", kinds as string[]);
+    entriesQuery = entriesQuery.in("entry_kind", kinds as string[]);
   }
 
-  const { data } = await query;
-  const entries = (data ?? []) as CaseEntry[];
+  const monthStartIso = new Date(
+    Date.UTC(
+      new Date().getUTCFullYear(),
+      new Date().getUTCMonth(),
+      1,
+      0,
+      0,
+      0,
+    ),
+  ).toISOString();
+
+  const [entriesRes, subRes, metaRes, monthReportRes] = await Promise.all([
+    entriesQuery,
+    supabase
+      .from("subscriptions")
+      .select("status")
+      .eq("user_id", user.id)
+      .maybeSingle<SubscriptionRow>(),
+    supabase
+      .from("users_meta")
+      .select("reading_depth")
+      .eq("user_id", user.id)
+      .maybeSingle<{ reading_depth: number | null }>(),
+    supabase
+      .from("reports")
+      .select("id", { count: "exact", head: true })
+      .eq("user_id", user.id)
+      .eq("kind", "clinical")
+      .gte("created_at", monthStartIso),
+  ]);
+
+  const entries = (entriesRes.data ?? []) as CaseEntry[];
+  const isSubscribed = subRes.data?.status === "active";
+  const depth = metaRes.data?.reading_depth ?? 0;
+  const monthlyReportUsed =
+    isSubscribed && (monthReportRes.count ?? 0) >= 1;
 
   return (
     <>
@@ -89,6 +126,12 @@ export default async function CaseFilePage({
       <section className="room-section">
         <CaseFileList entries={entries} filter={filter} />
       </section>
+
+      <ClinicalReportCTA
+        isSubscribed={isSubscribed}
+        depth={depth}
+        monthlyReportUsed={monthlyReportUsed}
+      />
     </>
   );
 }
