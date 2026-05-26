@@ -7,9 +7,9 @@ import ConsultingPreview from "@/components/room/ConsultingPreview";
 
 // ────────────────────────────────────────────────────────────────────
 // ConsultingOffer — the full unsubscribed page body for /consulting.
-// Eyebrow → headline → lede → printed sitting → what a session does →
-// what is included → "subscribers receive…" line → centered footer
-// (inverted Pill above a RowLink back to /room).
+// Eyebrow → headline → lede → printed sitting → "what a session does"
+// panels → centered footer (closing clinical line above the inverted
+// Pill, with a RowLink back to /room beneath it).
 //
 // Subscribed users skip this entirely — see app/(room)/consulting/page.tsx.
 // ────────────────────────────────────────────────────────────────────
@@ -56,45 +56,10 @@ export default function ConsultingOffer() {
         </article>
       </div>
 
-      <Hairline className="consulting-preview-divider" />
-
-      <ul
-        className="consulting-offer-list"
-        aria-label="what the subscription includes"
-      >
-        <li className="consulting-offer-list-row">
-          <span className="consulting-offer-list-left">
-            unlimited sittings with the analyst
-          </span>
-          <span className="consulting-offer-list-right">INCLUDED</span>
-        </li>
-        <li className="consulting-offer-list-row">
-          <span className="consulting-offer-list-left">
-            one clinical report each month
-          </span>
-          <span className="consulting-offer-list-right">
-            INCLUDED · 12–18 PAGES
-          </span>
-        </li>
-        <li className="consulting-offer-list-row">
-          <span className="consulting-offer-list-left">
-            up to two named connections
-          </span>
-          <span className="consulting-offer-list-right">INCLUDED</span>
-        </li>
-        <li className="consulting-offer-list-row">
-          <span className="consulting-offer-list-left">
-            the case file, kept always
-          </span>
-          <span className="consulting-offer-list-right">YOURS · ALWAYS</span>
-        </li>
-      </ul>
-
-      <p className="consulting-offer-lede consulting-offer-lede-second">
-        Subscribers receive one clinical report each month.
-      </p>
-
       <div className="consulting-offer-footer">
+        <p className="consulting-offer-foot-line">
+          Subscribers receive one clinical report each month.
+        </p>
         <Pill href="/subscribe/confirm" arrow className="consulting-offer-pill">
           Enter the consulting room
         </Pill>

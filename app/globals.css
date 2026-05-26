@@ -2628,7 +2628,7 @@ section{position:relative;}
 .room-hero{
   display:grid;grid-template-columns:1fr 1.1fr;gap:64px;
   align-items:center;
-  padding:24px 0 48px;
+  padding:24px 0 0;
 }
 .room-hero-text{display:flex;flex-direction:column;gap:22px;max-width:520px;min-width:0}
 .room-hero-greet{
@@ -2653,14 +2653,14 @@ section{position:relative;}
 }
 .room-hero.in .room-hero-line{opacity:1;transform:translateY(0)}
 
-/* Dial column: 300px ring + caption stacked to its right, vertically
-   centered to the ring midpoint via flex align-items:center. */
+/* Dial column: 255px ring + strengthen link stacked to its right,
+   vertically centered to the ring midpoint via flex align-items:center. */
 .room-hero-figure{
   display:flex;align-items:center;gap:28px;
   justify-content:flex-start;min-width:0;
 }
 .room-hero-dial{
-  position:relative;width:300px;height:300px;flex-shrink:0;
+  position:relative;width:255px;height:255px;flex-shrink:0;
   color:var(--fg);
 }
 .room-hero-dial svg{width:100%;height:100%;overflow:visible;display:block}
@@ -2676,29 +2676,25 @@ section{position:relative;}
 .room-hero-dial-seed{fill:var(--fg)}
 .room-hero-dial-num{
   fill:currentColor;font-family:var(--sans);font-weight:500;
-  font-style:normal;letter-spacing:-0.02em;font-size:130px;
+  font-style:normal;letter-spacing:-0.02em;font-size:116px;
   dominant-baseline:central;
   opacity:0;transition:opacity 500ms var(--ease);transition-delay:1250ms;
 }
 .room-hero.in .room-hero-dial-num{opacity:1}
 
 .room-hero-caption{
-  display:flex;flex-direction:column;gap:12px;align-items:flex-start;
+  display:flex;flex-direction:column;align-items:flex-start;
   opacity:0;transform:translateY(8px);
   transition:opacity 500ms var(--ease), transform 500ms var(--ease);
   transition-delay:1100ms;
 }
 .room-hero.in .room-hero-caption{opacity:1;transform:translateY(0)}
-.room-hero-band{
-  font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg-dim);
-  margin:0;line-height:1;letter-spacing:0;
-}
 
 @media (max-width: 980px){
   .room-hero{
     display:flex;flex-direction:column;
     gap:24px;
-    padding:8px 0 32px;
+    padding:8px 0 0;
     align-items:flex-start;
   }
   /* Hoist the children of .room-hero-text and .room-hero-figure to the
@@ -3446,8 +3442,7 @@ section{position:relative;}
   display:flex;flex-direction:column;gap:24px;max-width:1080px;
 }
 .consulting-offer > .eyebrow,
-.consulting-offer > .consulting-offer-h,
-.consulting-offer > .consulting-offer-cta{
+.consulting-offer > .consulting-offer-h{
   max-width:680px;
 }
 .consulting-offer-h{
@@ -3458,10 +3453,6 @@ section{position:relative;}
 .consulting-offer-lede{
   font-family:var(--serif);font-size:17px;line-height:1.55;
   color:var(--fg-dim);max-width:560px;
-}
-.consulting-offer-lede-second{color:var(--fg-mute)}
-.consulting-offer-cta{
-  display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:14px;
 }
 
 /* — Session room — */
@@ -3600,33 +3591,28 @@ section{position:relative;}
 
 /* — Consulting offer (unsubscribed /consulting state) — */
 
-.consulting-offer-cta{
-  display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:14px;
-}
-
 /* Breathing room around the major blocks inside .consulting-offer */
 .consulting-preview-figure{margin-top:80px}
 .consulting-preview-divider{margin:32px 0}
-.consulting-offer-lede-second{margin-top:32px;text-align:center;max-width:none}
 
 /* The transcript figure — drop min-height; let content set it. Disable
  * the FigureCard's default vertical centering so the rhythm is the
- * one declared here (28px after header hairline, 36px before turns). */
+ * one declared here. */
 .consulting-preview-figure.split-visual{min-height:0;padding:30px 34px}
 .consulting-preview-figure .vb{
   justify-content:flex-start;gap:28px;padding-top:10px;
 }
 
-/* The figure body grid — rail on the left, transcript on the right. */
+/* The figure body grid — rail on the left, chat on the right. */
 .consulting-preview-grid{
-  display:grid;grid-template-columns:200px 1fr;gap:48px;
+  display:grid;grid-template-columns:220px 1fr;gap:48px;
   align-items:start;
 }
 @media (max-width: 980px){
   .consulting-preview-grid{grid-template-columns:1fr;gap:28px}
 }
 
-/* Left rail — reading "areas" the analyst is seeing */
+/* Left rail — case file areas, each with two snippets */
 .consulting-preview-rail{
   display:flex;flex-direction:column;gap:14px;
   border-right:1px solid var(--hair);padding-right:24px;
@@ -3646,45 +3632,90 @@ section{position:relative;}
   display:flex;flex-direction:column;
 }
 .consulting-preview-rail-row{
-  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  display:flex;flex-direction:column;gap:8px;
   padding:14px 0;border-bottom:1px solid var(--hair);
 }
 .consulting-preview-rail-row:last-child{border-bottom:0}
+.consulting-preview-rail-head{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+}
 .consulting-preview-rail-label{
-  font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.3;
+  font-family:var(--sans);font-size:13px;font-weight:500;line-height:1.3;
   color:var(--fg-dim);
 }
 .consulting-preview-rail-row.is-active .consulting-preview-rail-label{
-  color:var(--fg);font-style:normal;
+  color:var(--fg);
 }
 .consulting-preview-rail-dot{
   width:3px;height:3px;border-radius:999px;background:var(--fg);
   display:inline-block;flex-shrink:0;
 }
+.consulting-preview-rail-snippets{
+  display:flex;flex-direction:column;gap:4px;
+}
+.consulting-preview-rail-snippet{
+  margin:0;
+  font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.4;
+  color:var(--fg-mute);
+}
+.consulting-preview-rail-row.is-active .consulting-preview-rail-snippet{
+  color:var(--fg-dim);
+}
+.consulting-preview-rail-wk{
+  font-family:var(--mono);font-size:9.5px;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--fg-mute);
+  font-style:normal;
+}
 
-/* Transcript column */
+/* Chat column */
 .consulting-preview-main{
   display:flex;flex-direction:column;
 }
 .consulting-preview-held{
   font-family:var(--serif);font-style:italic;color:var(--fg-dim);
   font-size:19px;line-height:1.4;text-align:center;
-  max-width:480px;margin:0 auto 36px;text-wrap:pretty;
+  max-width:480px;margin:0 auto 32px;text-wrap:pretty;
 }
 .consulting-preview-turns{
   display:flex;flex-direction:column;gap:28px;
 }
-.consulting-preview-user{
-  font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--fg);
+.consulting-preview-turn{
+  display:flex;flex-direction:column;gap:6px;align-items:flex-start;
+}
+.consulting-preview-role-label{
+  font-family:var(--mono);font-size:10px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+.consulting-preview-bubble{
+  border-radius:24px;padding:16px 20px;max-width:480px;
+  overflow:hidden;
+}
+.consulting-preview-bubble-text{
+  font-family:var(--sans);font-size:16px;line-height:1.5;color:var(--fg);
   margin:0;text-wrap:pretty;
 }
 .consulting-preview-analyst{
-  font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--fg);
+  font-family:var(--serif);font-size:18px;line-height:1.55;color:var(--fg);
   margin:0;text-wrap:pretty;
 }
 .consulting-preview-analyst em{font-style:italic}
 .consulting-preview-analyst strong{
   font-family:var(--serif);font-style:normal;font-weight:600;
+}
+
+/* Decorative "say it…" row — signals where you would type. Not a form. */
+.consulting-preview-faux-input{
+  margin-top:40px;
+  display:flex;align-items:center;gap:12px;
+  border-top:1px solid var(--hair);padding-top:24px;
+  opacity:0.5;pointer-events:none;user-select:none;
+}
+.consulting-preview-faux-input-prompt{
+  flex:1;
+  font-family:var(--serif);font-style:italic;font-size:15px;color:var(--fg-mute);
+}
+.consulting-preview-faux-input-affordance{
+  font-family:var(--serif);font-style:italic;font-size:15px;color:var(--fg-mute);
 }
 
 .consulting-preview-mark{
@@ -3713,30 +3744,14 @@ section{position:relative;}
   margin:0;text-wrap:pretty;
 }
 
-/* "What is included" list */
-.consulting-offer-list{
-  list-style:none;margin:0;padding:0;
-  display:flex;flex-direction:column;
-  border-top:1px solid var(--hair);
-}
-.consulting-offer-list-row{
-  display:flex;justify-content:space-between;align-items:baseline;gap:24px;
-  padding:18px 0;border-bottom:1px solid var(--hair);
-}
-.consulting-offer-list-left{
-  font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.4;
-  color:var(--fg);
-}
-.consulting-offer-list-right{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
-  text-transform:uppercase;color:var(--fg-mute);
-  white-space:nowrap;flex-shrink:0;
-}
-
-/* Footer cluster — centered inverted Pill above a RowLink */
+/* Footer cluster — closing clinical line, inverted Pill, RowLink. Centered. */
 .consulting-offer-footer{
-  display:flex;flex-direction:column;align-items:center;gap:24px;
-  padding-top:80px;
+  display:flex;flex-direction:column;align-items:center;gap:32px;
+  padding-top:60px;
+}
+.consulting-offer-foot-line{
+  font-family:var(--serif);font-size:15px;line-height:1.5;color:var(--fg-dim);
+  text-align:center;max-width:560px;margin:0;
 }
 .consulting-offer-pill{padding:14px 28px;font-size:14px}
 .consulting-offer-pill .pill-arrow{
@@ -3745,16 +3760,20 @@ section{position:relative;}
 }
 .consulting-offer-pill:hover .pill-arrow{transform:translateX(4px)}
 
+@media (prefers-reduced-motion: reduce){
+  .consulting-offer-pill .pill-arrow{transition:none}
+}
+
 @media (max-width: 980px){
   .consulting-preview-figure.split-visual{padding:24px}
   .consulting-preview-held{font-size:18px;margin-bottom:28px}
-  .consulting-preview-analyst{font-size:18px}
+  .consulting-preview-analyst{font-size:17px}
+  .consulting-preview-bubble{max-width:none;padding:14px 18px}
+  .consulting-preview-bubble-text{font-size:15px}
   .consulting-offer-panel{min-height:0;padding:24px;gap:12px}
   .consulting-offer-panel-title{font-size:22px}
-  .consulting-offer-list-left{font-size:17px}
-  .consulting-offer-list-right{font-size:10px;letter-spacing:0.18em}
   .consulting-preview-figure{margin-top:48px}
-  .consulting-offer-footer{padding-top:56px}
+  .consulting-offer-footer{padding-top:48px;gap:24px}
 }
 
 /* =====================================================================

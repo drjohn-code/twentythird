@@ -2,21 +2,73 @@ import FigureCard from "@/components/figures/FigureCard";
 
 // ────────────────────────────────────────────────────────────────────
 // ConsultingPreview — the transcript figure shown to unsubscribed
-// users on /consulting. A left rail of reading "areas" with one row
-// marked active (the partner area, since the printed sitting is about
-// that), and a tightened three-turn transcript on the right. The
-// analyst's middle reply references a specific reading from the case
-// file — that is the proof-of-memory moment.
+// users on /consulting. Two halves inside one FigureCard:
+//
+//   • Left rail — six "areas" the analyst is reading from, each with
+//     two italic case-file snippets so the rail reads as a record,
+//     not nav. The Partner area is marked active.
+//
+//   • Right column — a chat-style transcript. User turns sit in glass
+//     bubbles with a YOU mono label; analyst turns are plain serif
+//     paragraphs with an ANALYST mono label. Both align left. The
+//     asymmetry — user in a bubble, analyst on the page — is the
+//     design tell. The middle analyst reply references the intimacy
+//     threshold reading from week 04 — that is the proof-of-memory
+//     beat. A decorative "say it…" input sits below the transcript;
+//     it is a <div>, not a form, and is aria-hidden.
+//
+// This chat-bubble grammar is local to this preview only. The live
+// SessionView keeps its own transcript rules.
 // ────────────────────────────────────────────────────────────────────
 
-// decorative — preview-only; not tied to block slugs
-const AREAS: { label: string; active?: boolean }[] = [
-  { label: "family area" },
-  { label: "partner area", active: true },
-  { label: "work area" },
-  { label: "dream area" },
-  { label: "friends area" },
-  { label: "self area" },
+// decorative — preview only, not tied to block_readings
+type Snippet = { wk: string; text: string };
+type Area = { title: string; active?: boolean; snippets: [Snippet, Snippet] };
+
+const AREAS: Area[] = [
+  {
+    title: "Family",
+    snippets: [
+      { wk: "WK 06", text: "the mother’s silence as a kind of instruction…" },
+      { wk: "WK 02", text: "father came up unprompted, again…" },
+    ],
+  },
+  {
+    title: "Partner",
+    active: true,
+    snippets: [
+      { wk: "WK 04", text: "the week-they-get-serious pattern surfaced…" },
+      { wk: "WK 03", text: "“I just woke up and knew” — a verdict, not a trial…" },
+    ],
+  },
+  {
+    title: "Work",
+    snippets: [
+      { wk: "WK 05", text: "the promotion as exposure, not reward…" },
+      { wk: "WK 01", text: "imposter language softened slightly…" },
+    ],
+  },
+  {
+    title: "Dream",
+    snippets: [
+      { wk: "WK 04", text: "recurring house dream, doors locked from inside…" },
+      { wk: "WK 02", text: "the dream of being told to leave…" },
+    ],
+  },
+  {
+    title: "Friends",
+    snippets: [
+      { wk: "WK 06", text: "withdrawal noted around close friends too…" },
+      { wk: "WK 03", text: "keeps the count of confidants low…" },
+    ],
+  },
+  {
+    title: "Self",
+    snippets: [
+      { wk: "WK 05", text: "the “I don’t know” as a structural refusal…" },
+      { wk: "WK 02", text: "still calls it “the thing I do”…" },
+    ],
+  },
 ];
 
 export default function ConsultingPreview() {
@@ -30,25 +82,38 @@ export default function ConsultingPreview() {
       <div className="consulting-preview-grid">
         <aside
           className="consulting-preview-rail"
-          aria-label="reading areas surfaced for this sitting"
+          aria-label="case file areas the analyst is reading from"
         >
           <p className="consulting-preview-rail-eyebrow">READING FROM</p>
           <ul className="consulting-preview-rail-list">
-            {AREAS.map(({ label, active }) => (
+            {AREAS.map(({ title, active, snippets }) => (
               <li
-                key={label}
+                key={title}
                 className={
                   "consulting-preview-rail-row" +
                   (active ? " is-active" : "")
                 }
               >
-                <span className="consulting-preview-rail-label">{label}</span>
-                {active ? (
-                  <span
-                    className="consulting-preview-rail-dot"
-                    aria-label="active"
-                  />
-                ) : null}
+                <div className="consulting-preview-rail-head">
+                  <span className="consulting-preview-rail-label">{title}</span>
+                  {active ? (
+                    <span
+                      className="consulting-preview-rail-dot"
+                      aria-label="active"
+                    />
+                  ) : null}
+                </div>
+                <div className="consulting-preview-rail-snippets">
+                  {snippets.map((s, i) => (
+                    <p key={i} className="consulting-preview-rail-snippet">
+                      <span className="consulting-preview-rail-wk">{s.wk}</span>
+                      <span className="consulting-preview-rail-snippet-text">
+                        {" · "}
+                        {s.text}
+                      </span>
+                    </p>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>
@@ -60,39 +125,75 @@ export default function ConsultingPreview() {
           </p>
 
           <div className="consulting-preview-turns">
-            <p className="consulting-preview-user">
-              I keep ending things the week they get serious. I don&rsquo;t
-              know why I do it.
-            </p>
-            <p className="consulting-preview-analyst">
-              You name a pattern, then narrate it as a stranger&rsquo;s. The{" "}
-              <em>&ldquo;I don&rsquo;t know&rdquo;</em> is doing work — it
-              keeps the act on the far side of intention. Notice when the{" "}
-              <em>withdrawal</em> begins. Often the foreclosure happens
-              earlier than the leaving.
-            </p>
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">YOU</span>
+              <div className="consulting-preview-bubble glass">
+                <p className="consulting-preview-bubble-text">
+                  I keep ending things the week they get serious. I don&rsquo;t
+                  know why I do it.
+                </p>
+              </div>
+            </div>
 
-            <p className="consulting-preview-user">
-              Earlier how? Last time it felt like I just woke up one morning
-              and knew.
-            </p>
-            <p className="consulting-preview-analyst">
-              The morning is the verdict, not the trial. Your{" "}
-              <strong>intimacy threshold</strong> reading from week 04 noted
-              the same shape — a quiet rehearsal of leaving, two to three
-              weeks before the conversation. The morning is when the body
-              finally agrees with what you&rsquo;d already decided.
-            </p>
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">ANALYST</span>
+              <p className="consulting-preview-analyst">
+                You name a pattern, then narrate it as a stranger&rsquo;s. The{" "}
+                <em>&ldquo;I don&rsquo;t know&rdquo;</em> is doing work — it
+                keeps the act on the far side of intention. Notice when the{" "}
+                <em>withdrawal</em> begins. Often the foreclosure happens
+                earlier than the leaving.
+              </p>
+            </div>
 
-            <p className="consulting-preview-user">
-              That&rsquo;s the part that scares me. That it&rsquo;s already
-              decided.
-            </p>
-            <p className="consulting-preview-analyst">
-              <em>Decided</em> is the word. Not <em>chosen</em>. Something in
-              the structure prefers the foreclosure to the test. We will keep
-              going there.
-            </p>
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">YOU</span>
+              <div className="consulting-preview-bubble glass">
+                <p className="consulting-preview-bubble-text">
+                  Earlier how? Last time it felt like I just woke up one
+                  morning and knew.
+                </p>
+              </div>
+            </div>
+
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">ANALYST</span>
+              <p className="consulting-preview-analyst">
+                The morning is the verdict, not the trial. Your{" "}
+                <strong>intimacy threshold</strong> reading from week 04 noted
+                the same shape — a quiet rehearsal of leaving, two to three
+                weeks before the conversation. The morning is when the body
+                finally agrees with what you&rsquo;d already decided.
+              </p>
+            </div>
+
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">YOU</span>
+              <div className="consulting-preview-bubble glass">
+                <p className="consulting-preview-bubble-text">
+                  That&rsquo;s the part that scares me. That it&rsquo;s already
+                  decided.
+                </p>
+              </div>
+            </div>
+
+            <div className="consulting-preview-turn">
+              <span className="consulting-preview-role-label">ANALYST</span>
+              <p className="consulting-preview-analyst">
+                <em>Decided</em> is the word. Not <em>chosen</em>. Something in
+                the structure prefers the foreclosure to the test. We will keep
+                going there.
+              </p>
+            </div>
+          </div>
+
+          <div className="consulting-preview-faux-input" aria-hidden="true">
+            <span className="consulting-preview-faux-input-prompt">
+              say it…
+            </span>
+            <span className="consulting-preview-faux-input-affordance">
+              say it →
+            </span>
           </div>
         </div>
       </div>

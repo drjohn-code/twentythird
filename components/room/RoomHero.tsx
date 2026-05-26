@@ -47,7 +47,6 @@ export default function RoomHero({ firstName, depth }: RoomHeroProps) {
       <div className="room-hero-figure">
         <DepthDial depth={depth} band={band} />
         <div className="room-hero-caption">
-          <p className="room-hero-band">{band}</p>
           <RowLink href="/settings#depth">strengthen</RowLink>
         </div>
       </div>
@@ -56,10 +55,10 @@ export default function RoomHero({ firstName, depth }: RoomHeroProps) {
 }
 
 function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
-  const size = 300;
-  const trackStroke = 1.2;
-  const arcStroke = 3.2;
-  const seedR = 4;
+  const size = 255;
+  const trackStroke = 2;
+  const arcStroke = 5;
+  const seedR = 3.4;
   // Pull the arc in by the seed radius so the dot sits cleanly on it.
   const r = (size - arcStroke) / 2 - seedR;
   const c = 2 * Math.PI * r;
