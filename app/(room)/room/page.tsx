@@ -8,7 +8,7 @@ import FigureCard from "@/components/figures/FigureCard";
 import ReportMock from "@/components/figures/ReportMock";
 import InsightTimeline from "@/components/figures/InsightTimeline";
 import Reveal from "@/components/layout/Reveal";
-import DepthMeter from "@/components/room/DepthMeter";
+import RoomHero from "@/components/room/RoomHero";
 import BlockCard from "@/components/room/BlockCard";
 import Hairline from "@/components/room/Hairline";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
@@ -54,17 +54,22 @@ export default async function RoomLandingPage() {
 
   const [
     metaRes,
+    profileRes,
     readingsRes,
     subRes,
     catchupsRes,
     caseFileRes,
-    activeConnectionsRes,
   ] = await Promise.all([
     supabase
       .from("users_meta")
-      .select("reading_depth")
+      .select("reading_depth, display_name")
       .eq("user_id", user.id)
-      .maybeSingle<{ reading_depth: number | null }>(),
+      .maybeSingle<{ reading_depth: number | null; display_name: string | null }>(),
+    supabase
+      .from("profiles")
+      .select("full_name")
+      .eq("id", user.id)
+      .maybeSingle<{ full_name: string | null }>(),
     supabase
       .from("block_readings")
       .select(
@@ -89,18 +94,13 @@ export default async function RoomLandingPage() {
       .eq("user_id", user.id)
       .order("occurred_at", { ascending: false })
       .limit(3),
-    supabase
-      .from("connections")
-      .select("id", { count: "exact", head: true })
-      .eq("inviter_user_id", user.id)
-      .eq("status", "active"),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
   const isSubscribed = subRes.data?.status === "active";
-  const activeConnectionCount = activeConnectionsRes.count ?? 0;
-  const showDeepenIntake = depth < 0.7;
-  const showInviteConnection = activeConnectionCount < 2;
+  const firstName = firstNameFrom(
+    metaRes.data?.display_name ?? profileRes.data?.full_name ?? null,
+  );
 
   const readingsBySlug = new Map<string, BlockReadingRow>();
   for (const row of (readingsRes.data ?? []) as BlockReadingRow[]) {
@@ -117,32 +117,8 @@ export default async function RoomLandingPage() {
 
   return (
     <>
-      {/* 1 — Reading Depth */}
-      <section className="room-section">
-        <DepthMeter
-          variant="landing"
-          depth={depth}
-          prompt={largestMissingSource({
-            depth,
-            recentCatchupCount:
-              (catchupsRes.data as CatchupSummaryRow[] | null)?.length ?? 0,
-          })}
-        />
-        {showDeepenIntake || showInviteConnection ? (
-          <div className="mt-6 flex flex-col gap-4">
-            {showDeepenIntake ? (
-              <RowLink href="/intake">deepen the intake</RowLink>
-            ) : null}
-            {showInviteConnection ? (
-              <RowLink href="/connections">
-                invite a connection
-              </RowLink>
-            ) : null}
-          </div>
-        ) : null}
-      </section>
-
-      <Hairline />
+      {/* 1 — Landing hero */}
+      <RoomHero firstName={firstName} depth={depth} />
 
       {/* 2 — Latest reading preview */}
       <section className="room-section">
@@ -423,22 +399,10 @@ function catchupMarkers(
   }));
 }
 
-function largestMissingSource({
-  depth,
-  recentCatchupCount,
-}: {
-  depth: number;
-  recentCatchupCount: number;
-}): { href: string; label: string } | null {
-  if (depth >= 0.5) return null;
-  // Priority per the build prompt. Intake completeness is the layout
-  // gate (we wouldn't be here without it submitted) so the first
-  // checkable rung is "no recent catchup".
-  if (recentCatchupCount === 0) {
-    return { href: "/catchup", label: "open this week's catchup" };
-  }
-  // Other branches (connections, sessions) need server fetches that
-  // would duplicate the layout's work — wire them in Phase 5/6 once
-  // connections/sessions are real surfaces.
-  return { href: "/catchup", label: "open this week's catchup" };
+function firstNameFrom(name: string | null): string | null {
+  if (!name) return null;
+  const trimmed = name.trim();
+  if (!trimmed) return null;
+  const first = trimmed.split(/\s+/)[0];
+  return first || null;
 }

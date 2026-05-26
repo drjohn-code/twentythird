@@ -114,32 +114,52 @@ export default async function SettingsPage() {
         <dl className="account-row-horizontal">
           <div className="account-cell">
             <dt>name</dt>
-            <dd>{profile.full_name ?? "—"}</dd>
+            <dd>
+              <span>{profile.full_name ?? "—"}</span>
+            </dd>
+            <div className="account-cell-foot">
+              <Link href="/auth/change-name" className="auth-rowlink">
+                <span>change</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
           <div className="account-cell">
             <dt>email</dt>
-            <dd className="account-cell-with-edit">
+            <dd>
               <span title={profile.email ?? undefined}>
                 {profile.email ?? "—"}
               </span>
+            </dd>
+            <div className="account-cell-foot">
               <Link href="/auth/change-email" className="auth-rowlink">
                 <span>change</span>
                 <span aria-hidden="true">→</span>
               </Link>
-            </dd>
+            </div>
           </div>
           <div className="account-cell">
             <dt>birth year</dt>
-            <dd>{profile.birth_year ?? "—"}</dd>
+            <dd>
+              <span>{profile.birth_year ?? "—"}</span>
+            </dd>
+            <div className="account-cell-foot">
+              <Link href="/auth/change-birth-year" className="auth-rowlink">
+                <span>change</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
           <div className="account-cell">
             <dt>language</dt>
             <dd>
               <span>english</span>
+            </dd>
+            <div className="account-cell-foot">
               <span className="account-row-note">
                 more locales arrive in next version.
               </span>
-            </dd>
+            </div>
           </div>
         </dl>
         {locale !== "en" ? null : null}

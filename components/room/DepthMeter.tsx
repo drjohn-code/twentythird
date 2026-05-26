@@ -1,9 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
 import {
-  depthLines,
   depthExplainer,
   depthSourceSubtitle,
   depthStatusLine,
@@ -16,13 +14,6 @@ import {
   depthStatusFromBand,
   type DepthBreakdown,
 } from "@/lib/depth";
-
-type LandingProps = {
-  variant: "landing";
-  depth: number;
-  /** What's the largest missing source? Shown as a row-link only when depth < 0.5. */
-  prompt?: { href: string; label: string } | null;
-};
 
 /**
  * One sub-block in the 2×2 Settings grid (Intake / Catchups / Sessions /
@@ -40,67 +31,23 @@ export type DepthSubBlock = {
   cta: { label: string; href: string };
 };
 
-type SettingsProps = {
+type DepthMeterProps = {
   variant: "settings";
   depth: number;
   /** The four sub-blocks, in display order. */
   subBlocks: DepthSubBlock[];
 };
 
-type DepthMeterProps = LandingProps | SettingsProps;
-
 /**
- * Reading Depth — the data-completeness signal.
- *
- *   - landing  → meter + line + optional row-link to the largest
- *                missing source (when depth < 0.5).
- *   - settings → the big block on /settings: explainer paragraph at top,
- *                overall colored status + bar + italic line, then a 2×2
- *                grid of interactive sub-blocks.
+ * Reading Depth — the data-completeness signal. Settings-block layout:
+ * explainer paragraph at top, overall colored status + bar + italic
+ * line, then a 2×2 grid of interactive sub-blocks.
  */
 export default function DepthMeter(props: DepthMeterProps) {
-  if (props.variant === "landing") return <LandingMeter {...props} />;
   return <SettingsBlockMeter {...props} />;
 }
 
-function LandingMeter({ depth, prompt }: LandingProps) {
-  const band: DepthBand = depthBand(depth);
-  const pctWidth = `${clamp01Pct(depth)}%`;
-
-  return (
-    <Reveal as="div" className="depth-meter">
-      <Eyebrow>READING DEPTH</Eyebrow>
-      <div
-        className="depth-meter-track"
-        role="meter"
-        aria-label="Reading depth"
-        aria-valuemin={0}
-        aria-valuemax={1}
-        aria-valuenow={depth}
-        aria-valuetext={depthLines[band]}
-      >
-        <span
-          className="depth-meter-fill"
-          style={
-            { ["--depth-w" as string]: pctWidth } as React.CSSProperties
-          }
-        />
-      </div>
-      <p className="depth-meter-line">{depthLines[band]}</p>
-
-      {prompt && depth < 0.5 ? (
-        <div className="depth-meter-prompt">
-          <Link href={prompt.href} className="auth-rowlink">
-            <span>{prompt.label}</span>
-            <span aria-hidden="true">→</span>
-          </Link>
-        </div>
-      ) : null}
-    </Reveal>
-  );
-}
-
-function SettingsBlockMeter({ depth, subBlocks }: SettingsProps) {
+function SettingsBlockMeter({ depth, subBlocks }: DepthMeterProps) {
   const band: DepthBand = depthBand(depth);
   const status: DepthStatus = depthStatusFromBand(band);
   const pctWidth = `${clamp01Pct(depth)}%`;
@@ -187,6 +134,16 @@ function CTAArrow({ href, label }: { href: string; label: ReactNode }) {
 /**
  * Circular completeness ring. SVG so the color comes from the
  * data-status attribute via currentColor.
+ *
+ * Sizing is driven by CSS (`.depth-ring { width; height }`) rather than
+ * the `size` prop, so the same component works at 78px in /settings
+ * and 40px in /intake. The `size` prop only controls the viewBox math
+ * — the rendered pixel size follows CSS.
+ *
+ * Animation: the final stroke-dashoffset is exposed as a CSS custom
+ * property (`--ring-offset`) and the full circumference as `--ring-c`.
+ * CSS holds the ring at `--ring-c` (empty) until the parent .reveal
+ * gains `.in`, at which point it transitions to `--ring-offset` once.
  */
 export function DepthRing({
   ratio,
@@ -202,14 +159,20 @@ export function DepthRing({
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const offset = c * (1 - safe);
+  const isEmpty = safe <= 0;
+  const ringStyle = {
+    ["--ring-c" as string]: `${c}`,
+    ["--ring-offset" as string]: `${offset}`,
+  } as React.CSSProperties;
   return (
     <svg
       className="depth-ring"
       data-status={status}
+      data-empty={isEmpty ? "true" : "false"}
       viewBox={`0 0 ${size} ${size}`}
-      width={size}
-      height={size}
+      preserveAspectRatio="xMidYMid meet"
       aria-hidden="true"
+      style={ringStyle}
     >
       <circle
         className="depth-ring-track"
@@ -218,15 +181,16 @@ export function DepthRing({
         r={r}
         strokeWidth={stroke}
       />
-      <circle
-        className="depth-ring-fill"
-        cx={size / 2}
-        cy={size / 2}
-        r={r}
-        strokeWidth={stroke}
-        strokeDasharray={c}
-        strokeDashoffset={offset}
-      />
+      {isEmpty ? null : (
+        <circle
+          className="depth-ring-fill"
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          strokeWidth={stroke}
+          strokeDasharray={c}
+        />
+      )}
     </svg>
   );
 }

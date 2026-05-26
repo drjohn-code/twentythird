@@ -2624,6 +2624,75 @@ section{position:relative;}
   display:flex;flex-direction:column;gap:18px;max-width:780px;
 }
 
+/* ---- Room landing hero ---- */
+.room-hero{
+  display:grid;grid-template-columns:1.22fr 0.88fr;gap:64px;
+  align-items:center;
+  padding:24px 0 48px;
+}
+.room-hero-text{display:flex;flex-direction:column;gap:22px;max-width:520px;min-width:0}
+.room-hero-greet{
+  font-family:var(--serif-display);font-weight:400;
+  font-size:clamp(40px, 5.4vw, 64px);letter-spacing:-0.02em;line-height:1.04;
+  margin:0;color:var(--fg);text-wrap:pretty;
+}
+.room-hero-greet > span{
+  display:inline-block;opacity:0;transform:translateY(8px);
+  transition:opacity 700ms var(--ease), transform 700ms var(--ease);
+}
+.room-hero-greet .it{font-style:italic;color:var(--fg-dim)}
+.room-hero.in .room-hero-greet > span{opacity:1;transform:translateY(0)}
+.room-hero.in .room-hero-greet > span:nth-child(2){transition-delay:120ms}
+.room-hero.in .room-hero-greet > span:nth-child(3){transition-delay:220ms}
+.room-hero-line{
+  font-family:var(--serif);font-style:italic;font-size:17px;color:var(--fg-dim);
+  max-width:480px;margin:0;line-height:1.5;
+  opacity:0;transform:translateY(8px);
+  transition:opacity 700ms var(--ease), transform 700ms var(--ease);
+  transition-delay:360ms;
+}
+.room-hero.in .room-hero-line{opacity:1;transform:translateY(0)}
+
+.room-hero-dial-wrap{display:flex;justify-content:flex-end;align-items:center}
+.room-hero-dial{
+  position:relative;width:140px;height:140px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--fg);
+}
+.room-hero-dial svg{width:100%;height:100%;overflow:visible}
+.room-hero-dial-track{fill:none;stroke:var(--hair)}
+.room-hero-dial-arc{
+  fill:none;stroke:currentColor;stroke-linecap:round;
+  transform:rotate(-90deg);transform-origin:50% 50%;
+  stroke-dashoffset:var(--arc-c, 0);
+  transition:stroke-dashoffset 1200ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay:300ms;
+}
+.room-hero.in .room-hero-dial-arc{stroke-dashoffset:var(--arc-offset, 0)}
+.room-hero-dial-seed{fill:var(--fg)}
+.room-hero-dial-word{
+  position:absolute;font-family:var(--serif);font-style:italic;
+  font-size:22px;color:var(--fg-dim);letter-spacing:-0.01em;
+  opacity:0;transition:opacity 700ms var(--ease);transition-delay:520ms;
+  pointer-events:none;
+}
+.room-hero.in .room-hero-dial-word{opacity:1}
+
+@media (max-width: 980px){
+  .room-hero{
+    grid-template-columns:1fr;gap:28px;
+    padding:8px 0 32px;
+  }
+  .room-hero-dial-wrap{justify-content:flex-start;order:-1}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .room-hero-dial-arc{stroke-dashoffset:var(--arc-offset, 0);transition:none}
+  .room-hero-greet > span,
+  .room-hero-line,
+  .room-hero-dial-word{opacity:1;transform:none;transition:none}
+}
+
 /* ---- Depth meter ---- */
 .depth-meter{display:flex;flex-direction:column;gap:14px;width:100%}
 .depth-meter-track{
@@ -2672,7 +2741,7 @@ section{position:relative;}
 }
 .depth-block-column{
   display:flex;flex-direction:column;gap:32px;
-  width:100%;max-width:760px;margin:0 auto;
+  width:100%;
 }
 .depth-block-overall{display:flex;flex-direction:column;gap:14px}
 .depth-block-overall-head{
@@ -2703,20 +2772,24 @@ section{position:relative;}
 .depth-block .depth-meter-track[data-status="deep"] .depth-meter-fill{background:var(--depth-deep)}
 
 /* 2×2 sub-block grid. Each card is its own block — own border, own
-   background — with visible gap between them. */
+   background — with visible gap between them. Matches the .settings-pair
+   grid below it so the upper Reading Depth row and the lower
+   Notifications/Subscription row share identical column edges. */
 .depth-sub-grid{
-  display:grid;grid-template-columns:repeat(2, 1fr);gap:24px;
+  display:grid;grid-template-columns:1fr 1fr;
+  column-gap:24px;row-gap:24px;
+  grid-auto-rows:1fr;
 }
 .depth-sub-block{
-  display:flex;flex-direction:column;gap:18px;
-  padding:32px 32px;
+  display:flex;flex-direction:column;gap:22px;
+  padding:36px;
   border:1px solid var(--hair);border-radius:24px;
   background:var(--glass-bg);
-  min-height:220px;
+  min-height:260px;height:100%;
 }
 .depth-sub-block-head{display:flex;flex-direction:column;gap:6px}
 .depth-sub-block-title{
-  font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-0.01em;
+  font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:-0.01em;
   color:var(--fg);margin:0;
 }
 .depth-sub-block-subtitle{
@@ -2724,19 +2797,20 @@ section{position:relative;}
   margin:0;line-height:1.45;
 }
 .depth-sub-block-body{
-  display:flex;align-items:center;gap:18px;flex:1 1 auto;padding:8px 0 4px;
+  display:flex;align-items:center;gap:24px;flex:1 1 auto;padding:10px 0 6px;
 }
 .depth-sub-block-meta{
-  display:flex;flex-direction:column;gap:2px;min-width:0;
+  display:flex;flex-direction:column;gap:6px;min-width:0;
 }
 .depth-sub-block-status-word{
-  font-family:var(--serif);font-style:italic;font-size:17px;letter-spacing:-0.005em;
+  font-family:var(--serif);font-style:italic;font-size:22px;letter-spacing:-0.005em;
+  line-height:1.1;
 }
 .depth-sub-block-status-word[data-status="low"]{color:var(--depth-low)}
 .depth-sub-block-status-word[data-status="moderate"]{color:var(--depth-mid)}
 .depth-sub-block-status-word[data-status="deep"]{color:var(--depth-deep)}
 .depth-sub-block-status-caption{
-  font-family:var(--mono);font-size:10px;letter-spacing:0.18em;
+  font-family:var(--mono);font-size:12px;letter-spacing:0.18em;
   text-transform:uppercase;color:var(--fg-mute);
 }
 .depth-sub-block-cta{
@@ -2753,18 +2827,52 @@ section{position:relative;}
 /* Status ring — used in sub-blocks and intake blocks. Pure SVG so
    colors come from currentColor / data-status. */
 .depth-ring{
-  width:54px;height:54px;flex-shrink:0;display:block;
+  width:78px;height:78px;flex-shrink:0;display:block;
   color:var(--fg-dim);
 }
 .depth-ring[data-status="low"]{color:var(--depth-low)}
 .depth-ring[data-status="moderate"]{color:var(--depth-mid)}
 .depth-ring[data-status="deep"]{color:var(--depth-deep)}
-.depth-ring-track{stroke:var(--hair-strong);fill:none}
+.depth-ring-track{
+  stroke:var(--hair-strong);fill:none;
+  transition:opacity 900ms var(--ease);
+}
 .depth-ring-fill{
   stroke:currentColor;fill:none;
   transform:rotate(-90deg);transform-origin:50% 50%;
   stroke-linecap:round;
-  transition:stroke-dashoffset 1400ms var(--ease);
+  /* Default — render at final fill. Intake grid uses this branch and
+     shows the ring fully drawn on first paint. */
+  stroke-dashoffset:var(--ring-offset, 0);
+}
+/* First-view animation (scoped to /settings depth sub-blocks) — the
+   depth-block enters the viewport via the <Reveal> wrapper, which adds
+   `.in`. Until then, fills sit at full circumference (no fill); when
+   `.in` lands, the fill draws to its target dashoffset over 900ms
+   ease-out. Empty rings (data-empty="true") skip the fill and gently
+   reveal the track only. */
+.depth-sub-block .depth-ring-fill{
+  stroke-dashoffset:var(--ring-c, 0);
+  transition:stroke-dashoffset 900ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.depth-sub-block .depth-ring[data-empty="true"] .depth-ring-track{
+  opacity:0;
+  transition:opacity 900ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.in .depth-sub-block .depth-ring-fill{
+  stroke-dashoffset:var(--ring-offset, 0);
+}
+.reveal.in .depth-sub-block .depth-ring[data-empty="true"] .depth-ring-track{
+  opacity:1;
+}
+@media (prefers-reduced-motion: reduce){
+  .depth-sub-block .depth-ring-fill{
+    stroke-dashoffset:var(--ring-offset, 0);
+    transition:none;
+  }
+  .depth-sub-block .depth-ring[data-empty="true"] .depth-ring-track{
+    opacity:1;transition:none;
+  }
 }
 
 /* ────────────────────────────────────────────────────────────────
@@ -3308,7 +3416,12 @@ section{position:relative;}
 .room-section-tight{padding:40px 0}
 
 .consulting-offer{
-  display:flex;flex-direction:column;gap:24px;max-width:680px;
+  display:flex;flex-direction:column;gap:24px;max-width:1080px;
+}
+.consulting-offer > .eyebrow,
+.consulting-offer > .consulting-offer-h,
+.consulting-offer > .consulting-offer-cta{
+  max-width:680px;
 }
 .consulting-offer-h{
   font-family:var(--serif-display);font-weight:400;letter-spacing:-0.022em;
@@ -3456,6 +3569,91 @@ section{position:relative;}
   .session-transcript{max-height:54vh}
   .session-turn-analyst{font-size:18px}
   .consulting-offer-h{font-size:clamp(36px,9vw,52px)}
+}
+
+/* — Consulting preview (unsubscribed /consulting offer state) — */
+
+.consulting-preview{
+  display:flex;flex-direction:column;gap:72px;
+  padding:120px 0;width:100%;
+}
+.consulting-preview-section{display:flex;flex-direction:column;gap:24px}
+.consulting-preview-divider{margin:0}
+
+/* Section 1 — printed sample sitting inside a FigureCard */
+.consulting-preview-transcript{
+  display:flex;flex-direction:column;gap:28px;
+  padding:8px 0 4px;
+}
+.consulting-preview-held{
+  font-family:var(--serif);font-style:italic;color:var(--fg-dim);
+  font-size:19px;line-height:1.4;text-align:center;
+  max-width:480px;margin:0 auto;text-wrap:pretty;
+}
+.consulting-preview-user{
+  font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--fg);
+  margin:0;text-wrap:pretty;
+}
+.consulting-preview-analyst{
+  font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--fg);
+  margin:0;text-wrap:pretty;
+}
+.consulting-preview-analyst em{font-style:italic}
+.consulting-preview-mark{
+  border-top:1px solid var(--hair);padding-top:14px;
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);text-align:center;
+  margin:0;
+}
+
+/* Section 2 — three small glass panels */
+.consulting-preview-panels{
+  display:grid;grid-template-columns:1fr;gap:24px;
+}
+@media (min-width: 981px){
+  .consulting-preview-panels{grid-template-columns:repeat(3,1fr);gap:40px}
+}
+.consulting-preview-panel{
+  border-radius:24px;padding:28px;min-height:180px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.consulting-preview-panel-title{
+  font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.2;
+  color:var(--fg);margin:0;
+}
+.consulting-preview-panel-body{
+  font-family:var(--sans);font-size:15px;line-height:1.5;color:var(--fg-dim);
+  margin:0;text-wrap:pretty;
+}
+
+/* Section 3 — what is included */
+.consulting-preview-list{
+  list-style:none;margin:0;padding:0;
+  display:flex;flex-direction:column;
+  border-top:1px solid var(--hair);
+}
+.consulting-preview-list-row{
+  display:flex;justify-content:space-between;align-items:baseline;gap:24px;
+  padding:18px 0;border-bottom:1px solid var(--hair);
+}
+.consulting-preview-list-left{
+  font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.4;
+  color:var(--fg);
+}
+.consulting-preview-list-right{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+  white-space:nowrap;flex-shrink:0;
+}
+
+@media (max-width: 980px){
+  .consulting-preview{gap:56px;padding:80px 0}
+  .consulting-preview-held{font-size:18px}
+  .consulting-preview-analyst{font-size:18px}
+  .consulting-preview-panel{min-height:0;padding:24px;gap:12px}
+  .consulting-preview-panel-title{font-size:22px}
+  .consulting-preview-list-left{font-size:17px}
+  .consulting-preview-list-right{font-size:10px;letter-spacing:0.18em}
 }
 
 /* =====================================================================
@@ -3642,7 +3840,8 @@ section{position:relative;}
 
 /* Horizontal Account row — name / email / birth year / language side-by-side.
    Spans the full content width; email column gets extra room so the address
-   isn't clipped. Labels share a baseline, values share a baseline. */
+   isn't clipped. Each column is a 3-row subgrid so the label, value, and
+   helper (change → or italic note) share baselines across all four columns. */
 .account-row-horizontal{
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,1.8fr) minmax(0,0.7fr) minmax(0,1fr);
@@ -3650,7 +3849,8 @@ section{position:relative;}
   gap:0;margin:0;padding:0;width:100%;
 }
 .account-cell{
-  display:grid;grid-template-rows:auto 1fr;row-gap:14px;
+  display:grid;grid-template-rows:auto auto auto;row-gap:14px;
+  align-items:start;
   padding:0 32px;border-left:1px solid var(--hair);
   min-width:0;
 }
@@ -3659,23 +3859,25 @@ section{position:relative;}
 .account-cell dt{
   font-family:var(--mono);font-size:11px;letter-spacing:0.18em;
   text-transform:uppercase;color:var(--fg-mute);
+  margin:0;
 }
 .account-cell dd{
   margin:0;font-family:var(--serif);font-size:18px;color:var(--fg);
-  letter-spacing:-0.005em;display:flex;flex-direction:column;gap:6px;
+  letter-spacing:-0.005em;
   min-width:0;align-self:start;
 }
 .account-cell dd > span{
-  min-width:0;word-break:break-word;
+  display:block;min-width:0;word-break:break-word;
 }
-.account-cell dd .account-row-note{white-space:normal}
-.account-cell-with-edit{
-  flex-direction:row !important;align-items:baseline;justify-content:space-between;gap:24px;
+.account-cell-foot{
+  align-self:start;min-width:0;display:flex;align-items:baseline;
+  min-height:20px;
 }
-.account-cell-with-edit > span{
-  flex:1 1 auto;min-width:0;
+.account-cell-foot .auth-rowlink{flex:0 0 auto}
+.account-cell-foot .account-row-note{
+  font-family:var(--serif);font-style:italic;font-size:14px;
+  color:var(--fg-mute);line-height:1.45;white-space:normal;
 }
-.account-cell-with-edit .auth-rowlink{flex:0 0 auto}
 
 /* Intake answers */
 .intake-answers{display:flex;flex-direction:column;gap:48px}
@@ -3993,6 +4195,10 @@ section{position:relative;}
 @media (max-width: 980px){
   .settings-pair{grid-template-columns:1fr;column-gap:0;row-gap:18px;padding:40px 0}
   .settings-pair > .settings-block{padding:28px}
+  /* Keep the depth grid in lock-step with the pair below it, so both
+     2-column card grids collapse together. */
+  .depth-sub-grid{grid-template-columns:1fr;row-gap:18px}
+  .depth-sub-block{padding:28px;min-height:0}
 }
 
 /* ────────────────────────────────────────────────────────────────
@@ -4023,6 +4229,10 @@ section{position:relative;}
 .subscription-actions{
   margin-top:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
 }
+.subscription-actions-center{
+  flex-direction:column;align-items:center;gap:12px;
+  width:100%;
+}
 .subscription-primary{
   appearance:none;cursor:pointer;
   padding:12px 22px;border-radius:999px;border:0;
@@ -4032,6 +4242,27 @@ section{position:relative;}
   min-height:40px;
 }
 .subscription-primary:hover{transform:translateY(-1px);opacity:0.92}
+.subscription-primary-wide{
+  width:65%;min-width:280px;max-width:100%;
+  min-height:48px;padding:14px 28px;
+  font-size:15px;letter-spacing:0.04em;
+}
+.subscription-reassurance{
+  margin:0;
+  font-family:var(--serif);font-style:italic;font-size:13px;
+  color:var(--fg-mute);text-align:center;line-height:1.45;
+}
+.subscription-features{
+  list-style:none;padding:0;margin:0;
+  display:flex;flex-direction:column;gap:8px;
+}
+.subscription-features li{
+  font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.45;
+  color:var(--fg-dim);letter-spacing:-0.005em;
+}
+.subscription-body-none{gap:24px}
+.subscription-body-none .subscription-note{margin-bottom:0}
+.subscription-body-none .subscription-features{margin-top:-6px}
 .subscription-secondary{
   appearance:none;cursor:pointer;background:transparent;
   padding:0 0 4px 0;border:0;border-bottom:1px solid var(--hair);

@@ -65,16 +65,29 @@ function StatusRow({ value }: { value: string }) {
 
 function NoneBody() {
   return (
-    <div className="subscription-body">
+    <div className="subscription-body subscription-body-none">
       <p className="subscription-note">
         the consulting room and a monthly clinical report sit behind the
         subscription.
       </p>
-      <form action="/api/stripe/checkout" method="post" className="subscription-actions">
+      <ul className="subscription-features">
+        <li>— access to the consulting room</li>
+        <li>— monthly clinical report</li>
+        <li>— unlimited sessions &amp; connections</li>
+        <li>— full reading depth, all chapters open</li>
+      </ul>
+      <form
+        action="/api/stripe/checkout"
+        method="post"
+        className="subscription-actions subscription-actions-center"
+      >
         <input type="hidden" name="kind" value="subscription" />
-        <button type="submit" className="subscription-primary">
+        <button type="submit" className="subscription-primary subscription-primary-wide">
           subscribe
         </button>
+        <p className="subscription-reassurance">
+          no commitment. cancel anytime.
+        </p>
       </form>
     </div>
   );

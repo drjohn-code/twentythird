@@ -4,6 +4,7 @@ import CTA from "@/components/ui/CTA";
 import RowLink from "@/components/ui/RowLink";
 import Reveal from "@/components/layout/Reveal";
 import SessionView from "@/components/room/SessionView";
+import ConsultingPreview from "@/components/room/ConsultingPreview";
 
 // ────────────────────────────────────────────────────────────────────
 // /consulting — the Consulting Room.
@@ -125,6 +126,7 @@ function UnsubscribedState() {
         your readings. Sessions are private, kept in the case file, and
         feed the readings between sittings.
       </p>
+      <ConsultingPreview />
       <p className="consulting-offer-lede consulting-offer-lede-second">
         Subscribers receive one clinical report each month.
       </p>
