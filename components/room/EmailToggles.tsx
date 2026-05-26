@@ -9,9 +9,7 @@ import { dispatchSettingsSaved } from "@/components/room/SettingsSaveStrip";
 
 export type EmailPreferences = {
   weekly_catchup: boolean;
-  session_summaries: boolean;
-  report_ready: boolean;
-  connection_requests: boolean;
+  consulting_session_reminder: boolean;
   quiet_hours_start: string; // "HH:MM"
   quiet_hours_end: string;
 };
@@ -19,10 +17,7 @@ export type EmailPreferences = {
 const TOGGLES: ReadonlyArray<{
   key: keyof Pick<
     EmailPreferences,
-    | "weekly_catchup"
-    | "session_summaries"
-    | "report_ready"
-    | "connection_requests"
+    "weekly_catchup" | "consulting_session_reminder"
   >;
   label: string;
   sub: string;
@@ -33,19 +28,9 @@ const TOGGLES: ReadonlyArray<{
     sub: "a quiet note at the start of the new week",
   },
   {
-    key: "session_summaries",
-    label: "session summaries",
-    sub: "the closing paragraph after each consultation",
-  },
-  {
-    key: "report_ready",
-    label: "report ready",
-    sub: "when the clinical report is prepared",
-  },
-  {
-    key: "connection_requests",
-    label: "connection requests",
-    sub: "when someone invites you, or accepts your invite",
+    key: "consulting_session_reminder",
+    label: "consulting session reminder",
+    sub: "a reminder before your upcoming consultation",
   },
 ];
 

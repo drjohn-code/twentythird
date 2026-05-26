@@ -8,6 +8,8 @@ type SettingsBlockProps = {
   intro?: ReactNode;
   /** Anchor id for in-page navigation. */
   id?: string;
+  /** When true, the body drops its 820px max-width and spans the full content width. */
+  wideBody?: boolean;
   children: ReactNode;
 };
 
@@ -16,6 +18,7 @@ export default function SettingsBlock({
   title,
   intro,
   id,
+  wideBody,
   children,
 }: SettingsBlockProps) {
   return (
@@ -24,7 +27,13 @@ export default function SettingsBlock({
         <h2 className="settings-block-h">{title}</h2>
         {intro ? <p className="settings-block-intro">{intro}</p> : null}
       </header>
-      <div className="settings-block-body">{children}</div>
+      <div
+        className={
+          "settings-block-body" + (wideBody ? " is-wide" : "")
+        }
+      >
+        {children}
+      </div>
       <Hairline />
     </section>
   );

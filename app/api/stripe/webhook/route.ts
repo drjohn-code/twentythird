@@ -37,6 +37,7 @@ type SubscriptionUpsert = {
   stripe_subscription_id: string | null;
   status: string;
   current_period_end: string | null;
+  cancel_at_period_end: boolean;
 };
 
 function periodEndIso(sub: Stripe.Subscription): string | null {
@@ -113,10 +114,12 @@ export async function POST(request: Request): Promise<NextResponse> {
 
           let status = "active";
           let periodEnd: string | null = null;
+          let cancelAtPeriodEnd = false;
           if (subscriptionId) {
             const sub = await stripe.subscriptions.retrieve(subscriptionId);
             status = sub.status;
             periodEnd = periodEndIso(sub);
+            cancelAtPeriodEnd = Boolean(sub.cancel_at_period_end);
           }
 
           const row: SubscriptionUpsert = {
@@ -125,6 +128,7 @@ export async function POST(request: Request): Promise<NextResponse> {
             stripe_subscription_id: subscriptionId,
             status,
             current_period_end: periodEnd,
+            cancel_at_period_end: cancelAtPeriodEnd,
           };
           await supabase
             .from("subscriptions")
@@ -232,6 +236,7 @@ export async function POST(request: Request): Promise<NextResponse> {
               stripe_subscription_id: sub.id,
               status: sub.status,
               current_period_end: periodEndIso(sub),
+              cancel_at_period_end: Boolean(sub.cancel_at_period_end),
             },
             { onConflict: "user_id" },
           );
@@ -248,6 +253,7 @@ export async function POST(request: Request): Promise<NextResponse> {
             status: "canceled",
             stripe_subscription_id: sub.id,
             current_period_end: periodEndIso(sub),
+            cancel_at_period_end: false,
           })
           .eq("stripe_customer_id", customerId);
         break;

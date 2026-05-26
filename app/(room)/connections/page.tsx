@@ -1,8 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
-import RowLink from "@/components/ui/RowLink";
-import Hairline from "@/components/room/Hairline";
 import ConnectionList, {
   type ActiveConnectionDisplay,
   type PendingConnectionDisplay,
@@ -12,8 +10,9 @@ import { MAX_ACTIVE_CONNECTIONS } from "@/lib/connections";
 import { connectionExplainer } from "@/lib/copy";
 
 // /connections — manage the people whose presence shapes the reading.
-// Pulled out of Settings → Section 04 so the Settings page can host
-// the new consolidated Reading Depth block without competing concerns.
+// Any authenticated user can add up to MAX_ACTIVE_CONNECTIONS; the
+// invite form is the only way to add one and it lives directly on
+// this page.
 
 type ConnectionRow = {
   id: string;
@@ -28,10 +27,6 @@ type ConnectionRow = {
   created_at: string;
 };
 
-type SubscriptionRow = {
-  status: string | null;
-};
-
 export default async function ConnectionsPage() {
   const supabase = await createClient();
   const {
@@ -39,27 +34,17 @@ export default async function ConnectionsPage() {
   } = await supabase.auth.getUser();
   if (!user) return null;
 
-  const [connectionsRes, subRes] = await Promise.all([
-    supabase
-      .from("connections")
-      .select(
-        "id, inviter_user_id, connection_user_id, connection_email, connection_first_name, role, status, accepted_at, expires_at, created_at",
-      )
-      .or(
-        `inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`,
-      )
-      .order("created_at", { ascending: false }),
-    supabase
-      .from("subscriptions")
-      .select("status")
-      .eq("user_id", user.id)
-      .maybeSingle<SubscriptionRow>(),
-  ]);
+  const { data: connectionRows } = await supabase
+    .from("connections")
+    .select(
+      "id, inviter_user_id, connection_user_id, connection_email, connection_first_name, role, status, accepted_at, expires_at, created_at",
+    )
+    .or(`inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`)
+    .order("created_at", { ascending: false });
 
-  const rows = (connectionsRes.data as ConnectionRow[] | null) ?? [];
+  const rows = (connectionRows as ConnectionRow[] | null) ?? [];
   const { active, pending } = buildConnectionDisplays(rows, user.id);
-  const isSubscribed = subRes.data?.status === "active";
-  const canInvite = isSubscribed && active.length < MAX_ACTIVE_CONNECTIONS;
+  const canInvite = active.length < MAX_ACTIVE_CONNECTIONS;
 
   return (
     <>
@@ -75,34 +60,20 @@ export default async function ConnectionsPage() {
         <div className="settings-block-body">
           <ConnectionList active={active} pending={pending} />
 
-          {isSubscribed ? (
-            canInvite ? (
-              <div className="connection-invite-wrap">
-                <p className="connection-invite-eyebrow">INVITE A CONNECTION</p>
-                <InviteForm />
-              </div>
-            ) : (
-              <p className="connection-limit-note">
-                <em className="serif-i">
-                  two connections is the limit. disconnect one to add another.
-                </em>
-              </p>
-            )
-          ) : (
-            <div className="settings-stub-cta connection-unsubscribed">
-              <p className="connection-unsubscribed-line">
-                <em className="serif-i">
-                  connections begin with the consulting room. enter to unlock
-                  the invite.
-                </em>
-              </p>
-              <RowLink href="/consulting">enter the consulting room</RowLink>
+          {canInvite ? (
+            <div className="connection-invite-wrap">
+              <p className="connection-invite-eyebrow">INVITE A CONNECTION</p>
+              <InviteForm />
             </div>
+          ) : (
+            <p className="connection-limit-note">
+              <em className="serif-i">
+                two connections is the limit. disconnect one to add another.
+              </em>
+            </p>
           )}
         </div>
       </section>
-
-      <Hairline />
     </>
   );
 }

@@ -17,6 +17,8 @@ const HIDE_PREFIXES = [
   "/settings",
   "/subscribe",
   "/reports",
+  "/intake",
+  "/connections",
   "/invite",
 ];
 

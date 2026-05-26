@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -32,13 +33,12 @@ type UsersMetaRow = {
 type SubscriptionRow = {
   status: string | null;
   current_period_end: string | null;
+  cancel_at_period_end: boolean | null;
 };
 
 const DEFAULT_EMAIL_PREFS: EmailPreferences = {
   weekly_catchup: true,
-  session_summaries: true,
-  report_ready: true,
-  connection_requests: true,
+  consulting_session_reminder: true,
   quiet_hours_start: "21:00",
   quiet_hours_end: "08:00",
 };
@@ -50,7 +50,7 @@ export default async function SettingsPage() {
   } = await supabase.auth.getUser();
   if (!user) return null;
 
-  const [profileRes, metaRes, subRes] = await Promise.all([
+  const [profileRes, metaRes, subscription] = await Promise.all([
     supabase
       .from("profiles")
       .select("full_name, email, birth_year")
@@ -61,11 +61,7 @@ export default async function SettingsPage() {
       .select("locale, email_preferences")
       .eq("user_id", user.id)
       .maybeSingle<UsersMetaRow>(),
-    supabase
-      .from("subscriptions")
-      .select("status, current_period_end")
-      .eq("user_id", user.id)
-      .maybeSingle<SubscriptionRow>(),
+    loadSubscriptionRow(supabase, user.id),
   ]);
 
   const inputs = await loadDepthInputs(user.id, supabase);
@@ -114,7 +110,7 @@ export default async function SettingsPage() {
       </Reveal>
 
       {/* Account */}
-      <SettingsBlock title="Account">
+      <SettingsBlock title="Account" wideBody>
         <dl className="account-row-horizontal">
           <div className="account-cell">
             <dt>name</dt>
@@ -123,7 +119,9 @@ export default async function SettingsPage() {
           <div className="account-cell">
             <dt>email</dt>
             <dd className="account-cell-with-edit">
-              <span>{profile.email ?? "—"}</span>
+              <span title={profile.email ?? undefined}>
+                {profile.email ?? "—"}
+              </span>
               <Link href="/auth/change-email" className="auth-rowlink">
                 <span>change</span>
                 <span aria-hidden="true">→</span>
@@ -149,7 +147,7 @@ export default async function SettingsPage() {
 
       {/* Reading depth — consolidates the old per-source breakdown and
           the old standalone Connections section. */}
-      <SettingsBlock title="Reading depth" id="depth">
+      <SettingsBlock title="Reading depth" id="depth" wideBody>
         <DepthMeter
           variant="settings"
           depth={depth}
@@ -164,7 +162,7 @@ export default async function SettingsPage() {
         </SettingsBlock>
 
         <SettingsBlock title="Subscription" id="subscription">
-          <SubscriptionCard subscription={subRes.data ?? null} />
+          <SubscriptionCard subscription={subscription} />
         </SettingsBlock>
       </div>
 
@@ -182,6 +180,38 @@ export default async function SettingsPage() {
       </section>
     </>
   );
+}
+
+// ────────────────────────────────────────────────────────────────────
+// Subscription row loader.
+//
+// The `cancel_at_period_end` column lands in a separate migration. If
+// the deploy order slips (code first, schema later) the wide select
+// throws PostgREST 42703 and the whole row disappears — which would
+// silently flip active subscribers back to "not subscribed." Detect
+// that one error and refetch the legacy columns, defaulting the new
+// flag to false. Real read failures still surface as a null row.
+// ────────────────────────────────────────────────────────────────────
+
+async function loadSubscriptionRow(
+  supabase: SupabaseClient,
+  userId: string,
+): Promise<SubscriptionRow | null> {
+  const wide = await supabase
+    .from("subscriptions")
+    .select("status, current_period_end, cancel_at_period_end")
+    .eq("user_id", userId)
+    .maybeSingle<SubscriptionRow>();
+  if (!wide.error) return wide.data;
+  if (wide.error.code !== "42703") return null;
+
+  const legacy = await supabase
+    .from("subscriptions")
+    .select("status, current_period_end")
+    .eq("user_id", userId)
+    .maybeSingle<Omit<SubscriptionRow, "cancel_at_period_end">>();
+  if (legacy.error || !legacy.data) return null;
+  return { ...legacy.data, cancel_at_period_end: false };
 }
 
 // ────────────────────────────────────────────────────────────────────

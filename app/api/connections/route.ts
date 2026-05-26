@@ -13,16 +13,14 @@ import {
   type ConnectionRole,
 } from "@/lib/connections";
 import { sendInviteEmail, NOTE_MAX_LENGTH } from "@/lib/emails/invite";
-import { sendConnectionAcceptedEmail } from "@/lib/emails/connection-accepted";
 import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
-import { emailPreferenceEnabled } from "@/lib/emails/preferences";
 
 // /api/connections — every write side of the Connections feature.
 //
 // Reads stay client-side via RLS (select policy on connections covers
 // both inviter and connection_user_id). Writes pass through here:
 //
-//   POST ?action=invite           — authed, subscribed, < 2 active
+//   POST ?action=invite           — authed, < 2 active
 //   POST ?action=accept           — public, by token (no account path)
 //   POST ?action=accept-account   — public, by token (sends magic link)
 //   POST ?action=decline          — public, by token
@@ -108,19 +106,6 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
   } = await supabase.auth.getUser();
   if (!user) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
-  }
-
-  // Subscription gate. Read via RLS — the user can read their own row.
-  const { data: sub } = await supabase
-    .from("subscriptions")
-    .select("status")
-    .eq("user_id", user.id)
-    .maybeSingle<{ status: string | null }>();
-  if (!sub || sub.status !== "active") {
-    return NextResponse.json(
-      { error: "subscription_required" },
-      { status: 402 },
-    );
   }
 
   const email =
@@ -302,28 +287,6 @@ async function handleAccept(
 
   // Recompute the inviter's depth — accepted connection contributes.
   await recomputeDepthFor(conn.inviter_user_id, admin);
-
-  // Notify the inviter (best-effort).
-  const { data: inviterProfile } = await admin
-    .from("profiles")
-    .select("email, full_name")
-    .eq("id", conn.inviter_user_id)
-    .maybeSingle<{ email: string | null; full_name: string | null }>();
-  if (inviterProfile?.email) {
-    const allowed = await emailPreferenceEnabled(
-      admin,
-      conn.inviter_user_id,
-      "connection_requests",
-    );
-    if (allowed) {
-      await sendConnectionAcceptedEmail({
-        to: inviterProfile.email,
-        inviterFirstName: firstNameFrom(inviterProfile.full_name),
-        connectionFirstName: firstName,
-        roomUrl: `${siteOriginFromEnv()}/room`,
-      });
-    }
-  }
 
   return NextResponse.json({
     ok: true,

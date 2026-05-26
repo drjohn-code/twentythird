@@ -1,50 +1,18 @@
 // The analyst's voice, centralized.
 //
-// Any copy that lands in Room JSX should live here first. Today line
-// variants, depth band lines, connection explainer, email subjects,
-// per-block seed reading/takeaway/definition strings — everything the
-// analyst says in the product belongs in one file so the voice stays
-// coherent and translatable later.
+// Any copy that lands in Room JSX should live here first. Depth band
+// lines, connection explainer, email subjects, per-block seed
+// reading/takeaway/definition strings — everything the analyst says
+// in the product belongs in one file so the voice stays coherent and
+// translatable later.
 //
 // Voice rules (from CLAUDE.md):
 //   - Short, certain sentences.
-//   - Lowercase for italic captions and the today line.
-//   - Period or em-dash at the end of the today line. No other punctuation.
+//   - Lowercase for italic captions.
 //   - Italics signal the half-said. Don't italicize for emphasis.
 //   - Numerals in clinical context are figures, never words.
 
 import type { BlockSlug } from "@/lib/blocks";
-
-// ──────────────────────────────────────────────────────────────────
-// Today line
-// ──────────────────────────────────────────────────────────────────
-//
-// Each entry is either a literal string or a function returning a
-// string. The keys are what computeTodayLine() returns; the args it
-// also returns are spread into the function.
-
-export const todayLines = {
-  quiet: "a quiet day. nothing pending.",
-  catchupCompleted: "the catchup is in. the reading has shifted.",
-  catchupConsider:
-    "something from the latest catchup is asking to be brought into the room.",
-  openDream: (day: string) => `a dream from ${day.toLowerCase()} is still open.`,
-  unfinished: "we left something unfinished last time.",
-  thinReading:
-    "the reading is still thin — fifteen minutes of catchup would deepen it.",
-  connectionAccepted: (name: string) =>
-    `${name.toLowerCase()} has accepted the connection. the reading has more to work with now.`,
-  connectionEnded: (name: string) =>
-    `${name.toLowerCase()} has ended the connection. the reading will adjust over the next session.`,
-  reportReady: "the clinical report is ready.",
-  welcomeBack: "welcome back to the room.",
-  initialReadingsGenerating:
-    "the room is being prepared — your readings are taking shape.",
-  safetyFollowup:
-    "what was named at the last entry asks for care beyond the room — please reach out today.",
-} as const;
-
-export type TodayLineKey = keyof typeof todayLines;
 
 // ──────────────────────────────────────────────────────────────────
 // Reading Depth — band lines and explainer
@@ -209,39 +177,3 @@ export const blockSeeds: Record<BlockSlug, BlockSeed> = {
   },
 };
 
-// ──────────────────────────────────────────────────────────────────
-// Resolve a TodayContext into a finished sentence.
-//
-// computeTodayLine() in lib/today.ts returns { key, args? }. This
-// function turns that into the visible string.
-// ──────────────────────────────────────────────────────────────────
-
-export type TodayLineRef =
-  | {
-      key:
-        | "quiet"
-        | "catchupCompleted"
-        | "catchupConsider"
-        | "unfinished"
-        | "thinReading"
-        | "reportReady"
-        | "welcomeBack"
-        | "initialReadingsGenerating"
-        | "safetyFollowup";
-    }
-  | { key: "openDream"; args: [day: string] }
-  | { key: "connectionAccepted"; args: [name: string] }
-  | { key: "connectionEnded"; args: [name: string] };
-
-export function resolveTodayLine(ref: TodayLineRef): string {
-  switch (ref.key) {
-    case "openDream":
-      return todayLines.openDream(ref.args[0]);
-    case "connectionAccepted":
-      return todayLines.connectionAccepted(ref.args[0]);
-    case "connectionEnded":
-      return todayLines.connectionEnded(ref.args[0]);
-    default:
-      return todayLines[ref.key];
-  }
-}

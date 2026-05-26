@@ -126,9 +126,7 @@ function UnsubscribedState() {
         feed the readings between sittings.
       </p>
       <p className="consulting-offer-lede consulting-offer-lede-second">
-        Subscribers can also invite up to two connections — the people
-        whose presence shapes the reading — and one clinical report is
-        included each month.
+        Subscribers receive one clinical report each month.
       </p>
       <div className="consulting-offer-cta">
         <CTA href="/subscribe/confirm">Enter the consulting room</CTA>

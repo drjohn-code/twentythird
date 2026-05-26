@@ -109,37 +109,39 @@ function SettingsBlockMeter({ depth, subBlocks }: SettingsProps) {
     <Reveal as="div" className="depth-block">
       <p className="depth-block-intro">{depthExplainer}</p>
 
-      <div className="depth-block-overall">
-        <div className="depth-block-overall-head">
-          <span className="depth-block-overall-label">OVERALL READING DEPTH</span>
-          <span className="depth-status-word" data-status={status}>
-            {depthStatusWord[status]}
-          </span>
+      <div className="depth-block-column">
+        <div className="depth-block-overall">
+          <div className="depth-block-overall-head">
+            <span className="depth-block-overall-label">OVERALL READING DEPTH</span>
+            <span className="depth-status-word" data-status={status}>
+              {depthStatusWord[status]}
+            </span>
+          </div>
+          <div
+            className="depth-meter-track"
+            data-status={status}
+            role="meter"
+            aria-label="Reading depth"
+            aria-valuemin={0}
+            aria-valuemax={1}
+            aria-valuenow={depth}
+            aria-valuetext={depthStatusLine[status]}
+          >
+            <span
+              className="depth-meter-fill"
+              style={
+                { ["--depth-w" as string]: pctWidth } as React.CSSProperties
+              }
+            />
+          </div>
+          <p className="depth-block-line">{depthStatusLine[status]}</p>
         </div>
-        <div
-          className="depth-meter-track"
-          data-status={status}
-          role="meter"
-          aria-label="Reading depth"
-          aria-valuemin={0}
-          aria-valuemax={1}
-          aria-valuenow={depth}
-          aria-valuetext={depthStatusLine[status]}
-        >
-          <span
-            className="depth-meter-fill"
-            style={
-              { ["--depth-w" as string]: pctWidth } as React.CSSProperties
-            }
-          />
-        </div>
-        <p className="depth-block-line">{depthStatusLine[status]}</p>
-      </div>
 
-      <div className="depth-sub-grid">
-        {subBlocks.map((b) => (
-          <SubBlockCard key={b.source} block={b} />
-        ))}
+        <div className="depth-sub-grid">
+          {subBlocks.map((b) => (
+            <SubBlockCard key={b.source} block={b} />
+          ))}
+        </div>
       </div>
     </Reveal>
   );

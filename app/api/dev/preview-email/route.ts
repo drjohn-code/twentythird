@@ -3,7 +3,6 @@ import "server-only";
 import { buildIntakeSubmittedEmail } from "@/lib/emails/intake-submitted";
 import { buildRoomReadyEmail } from "@/lib/emails/room-ready";
 import { buildInviteEmail } from "@/lib/emails/invite";
-import { buildConnectionAcceptedEmail } from "@/lib/emails/connection-accepted";
 import { buildConnectionEndedEmail } from "@/lib/emails/connection-ended";
 import { buildWeeklyCatchupReminderEmail } from "@/lib/emails/weekly-catchup-reminder";
 import { buildOnboardingResumeEmail } from "@/lib/emails/onboarding-resume";
@@ -55,13 +54,6 @@ const KIND_RENDERERS: Record<string, Renderer> = {
       inviterFirstName: "Anna",
       note: "Looking forward to your read of our dynamic.",
       acceptUrl: ACCEPT_URL,
-    }),
-  "connection-accepted": () =>
-    buildConnectionAcceptedEmail({
-      to: "dev@example.com",
-      inviterFirstName: "Anna",
-      connectionFirstName: "Marcus",
-      roomUrl: ROOM_URL,
     }),
   "connection-ended": () =>
     buildConnectionEndedEmail({

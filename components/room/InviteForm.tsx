@@ -182,8 +182,6 @@ function renderError(error: FormError | null) {
 
 function humanError(code: string): string {
   switch (code) {
-    case "subscription_required":
-      return "the consulting room subscription is required to invite a connection.";
     case "invalid_email":
       return "please check the email address.";
     case "invalid_role":
