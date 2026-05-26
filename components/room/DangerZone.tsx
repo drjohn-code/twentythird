@@ -53,13 +53,10 @@ export default function DangerZone() {
     <>
       <button
         type="button"
-        className="danger-zone-row"
+        className="danger-zone-trigger"
         onClick={() => setOpen(true)}
       >
-        <span className="danger-zone-label">
-          delete account and erase the case file
-        </span>
-        <span aria-hidden="true">→</span>
+        Delete account
       </button>
 
       {open ? (

@@ -9,7 +9,7 @@
 // catchup / session / onboarding-edit / connection write.
 
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { DepthBand } from "@/lib/copy";
+import type { DepthBand, DepthStatus } from "@/lib/copy";
 
 // ──────────────────────────────────────────────────────────────────
 // Inputs
@@ -174,6 +174,29 @@ export function depthBand(depth: number): DepthBand {
   if (depth >= 0.5) return "steady";
   if (depth >= 0.3) return "partial";
   return "thin";
+}
+
+// ──────────────────────────────────────────────────────────────────
+// Three-band status — the colored word shown in Settings.
+//
+// Drives the overall Reading Depth status word and each per-source
+// sub-block. A ratio in [0, 1]. The thresholds are intentionally
+// gentler than depthBand() — sub-sources rarely sit at full credit,
+// and we'd rather call something "moderate" than "low" once a user
+// has put real work in.
+// ──────────────────────────────────────────────────────────────────
+
+export function depthStatusFor(ratio: number): DepthStatus {
+  if (ratio >= 0.66) return "deep";
+  if (ratio >= 0.33) return "moderate";
+  return "low";
+}
+
+export function depthStatusFromBand(band: DepthBand): DepthStatus {
+  if (band === "deep") return "deep";
+  if (band === "steady") return "moderate";
+  if (band === "partial") return "moderate";
+  return "low";
 }
 
 // ──────────────────────────────────────────────────────────────────

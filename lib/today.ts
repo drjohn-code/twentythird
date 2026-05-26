@@ -14,10 +14,9 @@
 //                                hasn't been worked
 //   8. catchupConsider         — latest catchup feedback has a "consider" line
 //                                and no session has happened since
-//   9. catchupReady            — no catchup this ISO week, week is current
-//  10. thinReading             — depth band == 'thin'
-//  11. catchupCompleted        — first visit after submitting a catchup
-//  12. quiet                   — default
+//   9. thinReading             — depth band == 'thin'
+//  10. catchupCompleted        — first visit after submitting a catchup
+//  11. quiet                   — default
 //
 // `welcomeBack` is reserved for the first visit after magic-link auth
 // (handled at the auth callback, not here).
@@ -28,10 +27,6 @@ import type { TodayLineRef } from "@/lib/copy";
 export type TodayContext = {
   /** First name for personalization in the connection-accepted variant. */
   firstName: string | null;
-  /** Current ISO week number (1..53). */
-  isoWeek: number;
-  /** True if a catchups row exists for the current ISO week. */
-  catchupForThisWeek: boolean;
   /** Most-recently accepted connection within the last 7 days, if any. */
   recentlyAcceptedConnection: { firstName: string; acceptedAt: Date } | null;
   /** Most-recently ended connection within the last 7 days, if any. */
@@ -91,10 +86,6 @@ export function computeTodayLine(ctx: TodayContext): TodayLineRef {
 
   if (ctx.catchupHasUnaddressedConsider) {
     return { key: "catchupConsider" };
-  }
-
-  if (!ctx.catchupForThisWeek) {
-    return { key: "catchupReady", args: [ctx.isoWeek] };
   }
 
   if (ctx.depthBand === "thin") {

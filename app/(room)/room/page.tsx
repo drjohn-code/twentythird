@@ -131,10 +131,10 @@ export default async function RoomLandingPage() {
         {showDeepenIntake || showInviteConnection ? (
           <div className="mt-6 flex flex-col gap-4">
             {showDeepenIntake ? (
-              <RowLink href="/settings#intake">deepen the intake</RowLink>
+              <RowLink href="/intake">deepen the intake</RowLink>
             ) : null}
             {showInviteConnection ? (
-              <RowLink href="/settings#connections">
+              <RowLink href="/connections">
                 invite a connection
               </RowLink>
             ) : null}

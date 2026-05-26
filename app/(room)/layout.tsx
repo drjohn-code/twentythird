@@ -124,7 +124,7 @@ export default async function RoomLayout({
       .maybeSingle<{ full_name: string | null }>(),
     supabase
       .from("catchups")
-      .select("created_at, week_number")
+      .select("created_at")
       .eq("user_id", user.id)
       .order("created_at", { ascending: false })
       .limit(1),
@@ -168,10 +168,7 @@ export default async function RoomLayout({
   const depth = metaRes.data?.reading_depth ?? 0;
   const band = depthBand(depth);
 
-  const isoWeek = currentIsoWeek(new Date());
   const latestCatchup = catchupsRes.data?.[0] ?? null;
-  const catchupForThisWeek =
-    latestCatchup ? latestCatchup.week_number === isoWeek : false;
   const catchupRecentlySubmitted =
     latestCatchup
       ? Date.now() - new Date(latestCatchup.created_at).getTime() <
@@ -262,8 +259,6 @@ export default async function RoomLayout({
 
   const todayCtx: TodayContext = {
     firstName,
-    isoWeek,
-    catchupForThisWeek,
     recentlyAcceptedConnection,
     recentlyEndedConnection,
     hasOpenSession: (sessionsRes.data?.length ?? 0) > 0,
@@ -347,16 +342,3 @@ function firstNameFrom(name: string | null): string | null {
   return first || null;
 }
 
-// ISO-8601 week number. Trigger source: weeks start on Monday; week 1
-// is the one containing the first Thursday of the year.
-function currentIsoWeek(d: Date): number {
-  const date = new Date(
-    Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()),
-  );
-  const day = date.getUTCDay() || 7;
-  date.setUTCDate(date.getUTCDate() + 4 - day);
-  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
-  return Math.ceil(
-    ((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7,
-  );
-}

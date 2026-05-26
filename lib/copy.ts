@@ -25,8 +25,6 @@ import type { BlockSlug } from "@/lib/blocks";
 
 export const todayLines = {
   quiet: "a quiet day. nothing pending.",
-  catchupReady: (week: number) =>
-    `week ${String(week).padStart(2, "0")} catchup is ready.`,
   catchupCompleted: "the catchup is in. the reading has shifted.",
   catchupConsider:
     "something from the latest catchup is asking to be brought into the room.",
@@ -62,6 +60,31 @@ export const depthLines = {
 export type DepthBand = keyof typeof depthLines;
 
 export const depthExplainer = `Reading depth describes how much of you the reading has had access to — from intake, from weekly catchups, from consultations, and from the people whose presence shapes you. A deeper reading is not a better person; it is a more accurate one. You can deepen it at any time, or leave it where it is.`;
+
+// Three-band status — coarser than DepthBand. Drives the colored
+// status word and the per-source ring/bar tone in Settings.
+export type DepthStatus = "low" | "moderate" | "deep";
+
+export const depthStatusWord: Record<DepthStatus, string> = {
+  low: "Low",
+  moderate: "Moderate",
+  deep: "Accurate",
+};
+
+// TODO: refine moderate / deep copy with the analyst voice.
+export const depthStatusLine: Record<DepthStatus, string> = {
+  low: "the reading is thin. it will sketch a shape, not yet a structure.",
+  moderate: "the reading is taking shape. it can hold a working hypothesis.",
+  deep: "the reading is full enough to ground the work.",
+};
+
+// One short subtitle per sub-source for the 2×2 grid.
+export const depthSourceSubtitle = {
+  intake: "the questions you answered to begin.",
+  catchups: "weekly check-ins that keep the reading current.",
+  sessions: "longer consultations with the analyst.",
+  connections: "people whose presence shapes the reading.",
+} as const;
 
 // ──────────────────────────────────────────────────────────────────
 // Connections
@@ -206,15 +229,12 @@ export type TodayLineRef =
         | "initialReadingsGenerating"
         | "safetyFollowup";
     }
-  | { key: "catchupReady"; args: [week: number] }
   | { key: "openDream"; args: [day: string] }
   | { key: "connectionAccepted"; args: [name: string] }
   | { key: "connectionEnded"; args: [name: string] };
 
 export function resolveTodayLine(ref: TodayLineRef): string {
   switch (ref.key) {
-    case "catchupReady":
-      return todayLines.catchupReady(ref.args[0]);
     case "openDream":
       return todayLines.openDream(ref.args[0]);
     case "connectionAccepted":
