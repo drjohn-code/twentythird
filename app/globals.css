@@ -2587,7 +2587,10 @@ section{position:relative;}
 }
 .room-nav-name{
   font-family:var(--serif);font-style:italic;font-size:13px;color:var(--fg-dim);
+  transition:color 300ms var(--ease);
 }
+.room-nav-name:hover{color:var(--fg)}
+.room-nav-name.is-active{font-style:normal;color:var(--fg)}
 .room-nav-signout{
   font-family:var(--sans);font-size:13px;color:var(--fg-dim);
   transition:color 300ms var(--ease);

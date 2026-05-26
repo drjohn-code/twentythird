@@ -232,6 +232,7 @@ export default async function SettingsPage() {
       <SettingsBlock
         eyebrow="02"
         title="Your intake"
+        id="intake"
         intro={
           <em className="serif-i">
             the intake is not a one-time form. answers can deepen.
@@ -245,6 +246,7 @@ export default async function SettingsPage() {
       <SettingsBlock
         eyebrow="03"
         title="Reading depth"
+        id="depth"
         intro={
           <em className="serif-i">
             a quieter, more accurate reading — not a higher score.

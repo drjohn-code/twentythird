@@ -25,6 +25,7 @@ function isActive(pathname: string | null, href: string): boolean {
 
 export default function RoomNav({ firstName }: RoomNavProps) {
   const pathname = usePathname();
+  const settingsActive = isActive(pathname, "/settings");
 
   return (
     <nav className="room-nav glass" aria-label="Room">
@@ -81,9 +82,13 @@ export default function RoomNav({ firstName }: RoomNavProps) {
           </svg>
         </button>
         {firstName ? (
-          <span className="room-nav-name" aria-hidden="true">
+          <Link
+            href="/settings"
+            className={`room-nav-name${settingsActive ? " is-active" : ""}`}
+            aria-current={settingsActive ? "page" : undefined}
+          >
             {firstName.toLowerCase()}
-          </span>
+          </Link>
         ) : null}
         <form action="/auth/sign-out" method="post">
           <button

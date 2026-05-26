@@ -58,6 +58,7 @@ export default async function RoomLandingPage() {
     subRes,
     catchupsRes,
     caseFileRes,
+    activeConnectionsRes,
   ] = await Promise.all([
     supabase
       .from("users_meta")
@@ -88,10 +89,18 @@ export default async function RoomLandingPage() {
       .eq("user_id", user.id)
       .order("occurred_at", { ascending: false })
       .limit(3),
+    supabase
+      .from("connections")
+      .select("id", { count: "exact", head: true })
+      .eq("inviter_user_id", user.id)
+      .eq("status", "active"),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
   const isSubscribed = subRes.data?.status === "active";
+  const activeConnectionCount = activeConnectionsRes.count ?? 0;
+  const showDeepenIntake = depth < 0.7;
+  const showInviteConnection = activeConnectionCount < 2;
 
   const readingsBySlug = new Map<string, BlockReadingRow>();
   for (const row of (readingsRes.data ?? []) as BlockReadingRow[]) {
@@ -119,6 +128,18 @@ export default async function RoomLandingPage() {
               (catchupsRes.data as CatchupSummaryRow[] | null)?.length ?? 0,
           })}
         />
+        {showDeepenIntake || showInviteConnection ? (
+          <div className="mt-6 flex flex-col gap-4">
+            {showDeepenIntake ? (
+              <RowLink href="/settings#intake">deepen the intake</RowLink>
+            ) : null}
+            {showInviteConnection ? (
+              <RowLink href="/settings#connections">
+                invite a connection
+              </RowLink>
+            ) : null}
+          </div>
+        ) : null}
       </section>
 
       <Hairline />
