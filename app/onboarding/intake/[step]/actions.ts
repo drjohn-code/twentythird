@@ -9,6 +9,7 @@ import {
   isValidStepNumber,
 } from "@/lib/onboarding/steps";
 import { normaliseStepPayload } from "@/lib/onboarding/schema";
+import { firstNameFrom } from "@/lib/connections";
 import { sendIntakeSubmittedEmail } from "@/lib/emails/intake-submitted";
 
 export type SaveStepResult =
@@ -77,13 +78,6 @@ export async function saveStep(
   return { ok: true, savedAt: nowIso, completedThrough: next };
 }
 
-function firstNameFrom(name: string | null): string | null {
-  if (!name) return null;
-  const trimmed = name.trim();
-  if (!trimmed) return null;
-  const first = trimmed.split(/\s+/)[0];
-  return first || null;
-}
 
 export type SubmitIntakeResult =
   | { ok: true }

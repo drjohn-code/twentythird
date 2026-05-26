@@ -13,6 +13,7 @@ import BlockCard from "@/components/room/BlockCard";
 import Hairline from "@/components/room/Hairline";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
 import { blockSeeds } from "@/lib/copy";
+import { firstNameFrom } from "@/lib/connections";
 
 type BlockReadingRow = {
   block_slug: string;
@@ -399,10 +400,3 @@ function catchupMarkers(
   }));
 }
 
-function firstNameFrom(name: string | null): string | null {
-  if (!name) return null;
-  const trimmed = name.trim();
-  if (!trimmed) return null;
-  const first = trimmed.split(/\s+/)[0];
-  return first || null;
-}

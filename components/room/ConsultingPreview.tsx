@@ -1,113 +1,105 @@
 import FigureCard from "@/components/figures/FigureCard";
-import Hairline from "@/components/room/Hairline";
-import Reveal from "@/components/layout/Reveal";
 
 // ────────────────────────────────────────────────────────────────────
-// ConsultingPreview — shown on /consulting for unsubscribed users.
-// Three stacked sections: a printed sample sitting, what a session
-// does, and what is included. No interaction, no pricing, no figures
-// from the user's own record. Wrapped in a single Reveal so the whole
-// preview lands together on enter.
+// ConsultingPreview — the transcript figure shown to unsubscribed
+// users on /consulting. A left rail of reading "areas" with one row
+// marked active (the partner area, since the printed sitting is about
+// that), and a tightened three-turn transcript on the right. The
+// analyst's middle reply references a specific reading from the case
+// file — that is the proof-of-memory moment.
 // ────────────────────────────────────────────────────────────────────
+
+// decorative — preview-only; not tied to block slugs
+const AREAS: { label: string; active?: boolean }[] = [
+  { label: "family area" },
+  { label: "partner area", active: true },
+  { label: "work area" },
+  { label: "dream area" },
+  { label: "friends area" },
+  { label: "self area" },
+];
 
 export default function ConsultingPreview() {
   return (
-    <Reveal as="section" className="consulting-preview" aria-label="what a consulting room sitting looks like">
-      <div className="consulting-preview-section">
-        <FigureCard
-          label="the consulting room"
-          subtitle="a sitting, previewed"
-          fig="Fig. 08"
+    <FigureCard
+      label="the consulting room"
+      subtitle="a sitting, previewed"
+      fig="Fig. 08"
+      className="consulting-preview-figure"
+    >
+      <div className="consulting-preview-grid">
+        <aside
+          className="consulting-preview-rail"
+          aria-label="reading areas surfaced for this sitting"
         >
-          <div className="consulting-preview-transcript">
-            <p className="consulting-preview-held">
-              &ldquo;what part of you keeps choosing this?&rdquo;
-            </p>
+          <p className="consulting-preview-rail-eyebrow">READING FROM</p>
+          <ul className="consulting-preview-rail-list">
+            {AREAS.map(({ label, active }) => (
+              <li
+                key={label}
+                className={
+                  "consulting-preview-rail-row" +
+                  (active ? " is-active" : "")
+                }
+              >
+                <span className="consulting-preview-rail-label">{label}</span>
+                {active ? (
+                  <span
+                    className="consulting-preview-rail-dot"
+                    aria-label="active"
+                  />
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </aside>
+
+        <div className="consulting-preview-main">
+          <p className="consulting-preview-held">
+            &ldquo;what part of you keeps choosing this?&rdquo;
+          </p>
+
+          <div className="consulting-preview-turns">
             <p className="consulting-preview-user">
-              I keep ending things the week they get serious. I don&rsquo;t know
-              why I do it.
+              I keep ending things the week they get serious. I don&rsquo;t
+              know why I do it.
             </p>
             <p className="consulting-preview-analyst">
-              You name a pattern, then narrate it as a stranger&rsquo;s. The
-              {" "}&lsquo;I don&rsquo;t know&rsquo; is doing work — it keeps the
-              act on the far side of intention. Notice when the{" "}
-              <em>withdrawal</em> begins. Often the foreclosure happens earlier
-              than the leaving.
+              You name a pattern, then narrate it as a stranger&rsquo;s. The{" "}
+              <em>&ldquo;I don&rsquo;t know&rdquo;</em> is doing work — it
+              keeps the act on the far side of intention. Notice when the{" "}
+              <em>withdrawal</em> begins. Often the foreclosure happens
+              earlier than the leaving.
+            </p>
+
+            <p className="consulting-preview-user">
+              Earlier how? Last time it felt like I just woke up one morning
+              and knew.
+            </p>
+            <p className="consulting-preview-analyst">
+              The morning is the verdict, not the trial. Your{" "}
+              <strong>intimacy threshold</strong> reading from week 04 noted
+              the same shape — a quiet rehearsal of leaving, two to three
+              weeks before the conversation. The morning is when the body
+              finally agrees with what you&rsquo;d already decided.
+            </p>
+
+            <p className="consulting-preview-user">
+              That&rsquo;s the part that scares me. That it&rsquo;s already
+              decided.
+            </p>
+            <p className="consulting-preview-analyst">
+              <em>Decided</em> is the word. Not <em>chosen</em>. Something in
+              the structure prefers the foreclosure to the test. We will keep
+              going there.
             </p>
           </div>
-          <p className="consulting-preview-mark">
-            EXAMPLE · NOT FROM YOUR RECORD
-          </p>
-        </FigureCard>
+        </div>
       </div>
 
-      <Hairline className="consulting-preview-divider" />
-
-      <div className="consulting-preview-section consulting-preview-panels">
-        <article className="consulting-preview-panel glass">
-          <p className="consulting-preview-panel-title">
-            named, not narrated
-          </p>
-          <p className="consulting-preview-panel-body">
-            The analyst will name what&rsquo;s happening in your speech — the
-            slip, the qualifier, the half-said — and hold it there until you
-            can see it.
-          </p>
-        </article>
-        <article className="consulting-preview-panel glass">
-          <p className="consulting-preview-panel-title">
-            kept in the case file
-          </p>
-          <p className="consulting-preview-panel-body">
-            Every sitting is written down. The next reading reads it. Patterns
-            surface across weeks, not turns.
-          </p>
-        </article>
-        <article className="consulting-preview-panel glass">
-          <p className="consulting-preview-panel-title">
-            one voice, no roster
-          </p>
-          <p className="consulting-preview-panel-body">
-            Not a chatbot rotation. A single analytic voice, trained on your
-            intake and refined by every catchup.
-          </p>
-        </article>
-      </div>
-
-      <Hairline className="consulting-preview-divider" />
-
-      <div className="consulting-preview-section">
-        <ul className="consulting-preview-list" aria-label="what the subscription includes">
-          <li className="consulting-preview-list-row">
-            <span className="consulting-preview-list-left">
-              unlimited sittings with the analyst
-            </span>
-            <span className="consulting-preview-list-right">INCLUDED</span>
-          </li>
-          <li className="consulting-preview-list-row">
-            <span className="consulting-preview-list-left">
-              one clinical report each month
-            </span>
-            <span className="consulting-preview-list-right">
-              INCLUDED · 12–18 PAGES
-            </span>
-          </li>
-          <li className="consulting-preview-list-row">
-            <span className="consulting-preview-list-left">
-              up to two named connections
-            </span>
-            <span className="consulting-preview-list-right">INCLUDED</span>
-          </li>
-          <li className="consulting-preview-list-row">
-            <span className="consulting-preview-list-left">
-              the case file, kept always
-            </span>
-            <span className="consulting-preview-list-right">
-              YOURS · ALWAYS
-            </span>
-          </li>
-        </ul>
-      </div>
-    </Reveal>
+      <p className="consulting-preview-mark">
+        EXAMPLE · NOT FROM YOUR RECORD
+      </p>
+    </FigureCard>
   );
 }

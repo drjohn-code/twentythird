@@ -1,10 +1,8 @@
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
-import CTA from "@/components/ui/CTA";
-import RowLink from "@/components/ui/RowLink";
 import Reveal from "@/components/layout/Reveal";
 import SessionView from "@/components/room/SessionView";
-import ConsultingPreview from "@/components/room/ConsultingPreview";
+import ConsultingOffer from "@/components/room/ConsultingOffer";
 
 // ────────────────────────────────────────────────────────────────────
 // /consulting — the Consulting Room.
@@ -86,7 +84,7 @@ export default async function ConsultingPage() {
   const isSubscribed = subRes.data?.status === "active";
 
   if (!isSubscribed) {
-    return <UnsubscribedState />;
+    return <ConsultingOffer />;
   }
 
   const openSession = openSessionRes.data ?? null;
@@ -106,34 +104,6 @@ export default async function ConsultingPage() {
         heldQuestion={heldQuestion}
         softMaxSeconds={SOFT_MAX_DURATION_SECONDS}
       />
-    </Reveal>
-  );
-}
-
-// ────────────────────────────────────────────────────────────────────
-// Unsubscribed offer state
-// ────────────────────────────────────────────────────────────────────
-
-function UnsubscribedState() {
-  return (
-    <Reveal as="section" className="room-section consulting-offer">
-      <Eyebrow>CONSULTING ROOM</Eyebrow>
-      <h1 className="consulting-offer-h">
-        The consulting room<span className="it">.</span>
-      </h1>
-      <p className="consulting-offer-lede">
-        A long-form sitting with the analyst, held in the same voice as
-        your readings. Sessions are private, kept in the case file, and
-        feed the readings between sittings.
-      </p>
-      <ConsultingPreview />
-      <p className="consulting-offer-lede consulting-offer-lede-second">
-        Subscribers receive one clinical report each month.
-      </p>
-      <div className="consulting-offer-cta">
-        <CTA href="/subscribe/confirm">Enter the consulting room</CTA>
-        <RowLink href="/readings">return to the readings</RowLink>
-      </div>
     </Reveal>
   );
 }

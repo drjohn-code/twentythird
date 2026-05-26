@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import "server-only";
 import { adminClient } from "@/lib/supabase/admin";
+import { firstNameFrom } from "@/lib/connections";
 import { sendRoomReadyEmail } from "@/lib/emails/room-ready";
 import { sendWeeklyCatchupReminderEmail } from "@/lib/emails/weekly-catchup-reminder";
 import { sendOnboardingResumeEmail } from "@/lib/emails/onboarding-resume";
@@ -351,13 +352,6 @@ function readBoolPref(
   return typeof v === "boolean" ? v : true;
 }
 
-function firstNameFrom(name: string | null): string | null {
-  if (!name) return null;
-  const trimmed = name.trim();
-  if (!trimmed) return null;
-  const first = trimmed.split(/\s+/)[0];
-  return first || null;
-}
 
 function siteOrigin(): string {
   return (

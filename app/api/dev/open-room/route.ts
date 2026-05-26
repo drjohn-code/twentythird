@@ -3,6 +3,7 @@ import { revalidatePath } from "next/cache";
 import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { firstNameFrom } from "@/lib/connections";
 import { sendRoomReadyEmail } from "@/lib/emails/room-ready";
 
 // POST /api/dev/open-room
@@ -109,10 +110,3 @@ export async function POST(): Promise<NextResponse> {
   });
 }
 
-function firstNameFrom(name: string | null): string | null {
-  if (!name) return null;
-  const trimmed = name.trim();
-  if (!trimmed) return null;
-  const first = trimmed.split(/\s+/)[0];
-  return first || null;
-}

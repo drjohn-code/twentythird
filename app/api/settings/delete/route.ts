@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { firstNameOrEmailLocal } from "@/lib/connections";
 import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
 
 // DELETE /api/settings/delete
@@ -60,9 +61,10 @@ export async function DELETE(req: Request) {
     .eq("id", user.id)
     .maybeSingle<{ full_name: string | null; email: string | null }>();
   const enderFirstName =
-    firstNameFromName(enderProfile?.full_name) ??
-    firstNameFromName(enderProfile?.email) ??
-    "your connection";
+    firstNameOrEmailLocal(
+      enderProfile?.full_name,
+      enderProfile?.email ?? "",
+    ) || "your connection";
 
   const { data: activeConnections } = await admin
     .from("connections")
@@ -138,13 +140,3 @@ export async function DELETE(req: Request) {
   return NextResponse.json({ ok: true });
 }
 
-function firstNameFromName(value: string | null | undefined): string | null {
-  if (!value) return null;
-  const trimmed = value.trim();
-  if (!trimmed) return null;
-  // Strip an email's @domain so a name-less profile still yields a
-  // usable salutation token.
-  const head = trimmed.split("@")[0]!;
-  const first = head.split(/\s+/)[0];
-  return first || null;
-}

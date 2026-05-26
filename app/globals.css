@@ -2626,7 +2626,7 @@ section{position:relative;}
 
 /* ---- Room landing hero ---- */
 .room-hero{
-  display:grid;grid-template-columns:1.22fr 0.88fr;gap:64px;
+  display:grid;grid-template-columns:1fr 1.1fr;gap:64px;
   align-items:center;
   padding:24px 0 48px;
 }
@@ -2653,44 +2653,71 @@ section{position:relative;}
 }
 .room-hero.in .room-hero-line{opacity:1;transform:translateY(0)}
 
-.room-hero-dial-wrap{display:flex;justify-content:flex-end;align-items:center}
+/* Dial column: 300px ring + caption stacked to its right, vertically
+   centered to the ring midpoint via flex align-items:center. */
+.room-hero-figure{
+  display:flex;align-items:center;gap:28px;
+  justify-content:flex-start;min-width:0;
+}
 .room-hero-dial{
-  position:relative;width:140px;height:140px;
-  display:flex;align-items:center;justify-content:center;
+  position:relative;width:300px;height:300px;flex-shrink:0;
   color:var(--fg);
 }
-.room-hero-dial svg{width:100%;height:100%;overflow:visible}
+.room-hero-dial svg{width:100%;height:100%;overflow:visible;display:block}
 .room-hero-dial-track{fill:none;stroke:var(--hair)}
 .room-hero-dial-arc{
   fill:none;stroke:currentColor;stroke-linecap:round;
   transform:rotate(-90deg);transform-origin:50% 50%;
   stroke-dashoffset:var(--arc-c, 0);
-  transition:stroke-dashoffset 1200ms cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay:300ms;
+  transition:stroke-dashoffset 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay:250ms;
 }
 .room-hero.in .room-hero-dial-arc{stroke-dashoffset:var(--arc-offset, 0)}
 .room-hero-dial-seed{fill:var(--fg)}
-.room-hero-dial-word{
-  position:absolute;font-family:var(--serif);font-style:italic;
-  font-size:22px;color:var(--fg-dim);letter-spacing:-0.01em;
-  opacity:0;transition:opacity 700ms var(--ease);transition-delay:520ms;
-  pointer-events:none;
+.room-hero-dial-num{
+  fill:currentColor;font-family:var(--sans);font-weight:500;
+  font-style:normal;letter-spacing:-0.02em;font-size:130px;
+  dominant-baseline:central;
+  opacity:0;transition:opacity 500ms var(--ease);transition-delay:1250ms;
 }
-.room-hero.in .room-hero-dial-word{opacity:1}
+.room-hero.in .room-hero-dial-num{opacity:1}
+
+.room-hero-caption{
+  display:flex;flex-direction:column;gap:12px;align-items:flex-start;
+  opacity:0;transform:translateY(8px);
+  transition:opacity 500ms var(--ease), transform 500ms var(--ease);
+  transition-delay:1100ms;
+}
+.room-hero.in .room-hero-caption{opacity:1;transform:translateY(0)}
+.room-hero-band{
+  font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg-dim);
+  margin:0;line-height:1;letter-spacing:0;
+}
 
 @media (max-width: 980px){
   .room-hero{
-    grid-template-columns:1fr;gap:28px;
+    display:flex;flex-direction:column;
+    gap:24px;
     padding:8px 0 32px;
+    align-items:flex-start;
   }
-  .room-hero-dial-wrap{justify-content:flex-start;order:-1}
+  /* Hoist the children of .room-hero-text and .room-hero-figure to the
+     flex column so the dial, greeting, status, and caption can be
+     reordered independently. */
+  .room-hero-text,
+  .room-hero-figure{display:contents}
+  .room-hero-dial{order:1}
+  .room-hero-greet{order:2}
+  .room-hero-line{order:3;margin-top:-8px}
+  .room-hero-caption{order:4}
 }
 
 @media (prefers-reduced-motion: reduce){
   .room-hero-dial-arc{stroke-dashoffset:var(--arc-offset, 0);transition:none}
   .room-hero-greet > span,
   .room-hero-line,
-  .room-hero-dial-word{opacity:1;transform:none;transition:none}
+  .room-hero-dial-num,
+  .room-hero-caption{opacity:1;transform:none;transition:none}
 }
 
 /* ---- Depth meter ---- */
@@ -3571,24 +3598,81 @@ section{position:relative;}
   .consulting-offer-h{font-size:clamp(36px,9vw,52px)}
 }
 
-/* — Consulting preview (unsubscribed /consulting offer state) — */
+/* — Consulting offer (unsubscribed /consulting state) — */
 
-.consulting-preview{
-  display:flex;flex-direction:column;gap:72px;
-  padding:120px 0;width:100%;
+.consulting-offer-cta{
+  display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:14px;
 }
-.consulting-preview-section{display:flex;flex-direction:column;gap:24px}
-.consulting-preview-divider{margin:0}
 
-/* Section 1 — printed sample sitting inside a FigureCard */
-.consulting-preview-transcript{
-  display:flex;flex-direction:column;gap:28px;
-  padding:8px 0 4px;
+/* Breathing room around the major blocks inside .consulting-offer */
+.consulting-preview-figure{margin-top:80px}
+.consulting-preview-divider{margin:32px 0}
+.consulting-offer-lede-second{margin-top:32px;text-align:center;max-width:none}
+
+/* The transcript figure — drop min-height; let content set it. Disable
+ * the FigureCard's default vertical centering so the rhythm is the
+ * one declared here (28px after header hairline, 36px before turns). */
+.consulting-preview-figure.split-visual{min-height:0;padding:30px 34px}
+.consulting-preview-figure .vb{
+  justify-content:flex-start;gap:28px;padding-top:10px;
+}
+
+/* The figure body grid — rail on the left, transcript on the right. */
+.consulting-preview-grid{
+  display:grid;grid-template-columns:200px 1fr;gap:48px;
+  align-items:start;
+}
+@media (max-width: 980px){
+  .consulting-preview-grid{grid-template-columns:1fr;gap:28px}
+}
+
+/* Left rail — reading "areas" the analyst is seeing */
+.consulting-preview-rail{
+  display:flex;flex-direction:column;gap:14px;
+  border-right:1px solid var(--hair);padding-right:24px;
+}
+@media (max-width: 980px){
+  .consulting-preview-rail{
+    border-right:0;border-bottom:1px solid var(--hair);
+    padding-right:0;padding-bottom:18px;
+  }
+}
+.consulting-preview-rail-eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);margin:0;
+}
+.consulting-preview-rail-list{
+  list-style:none;margin:0;padding:0;
+  display:flex;flex-direction:column;
+}
+.consulting-preview-rail-row{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:14px 0;border-bottom:1px solid var(--hair);
+}
+.consulting-preview-rail-row:last-child{border-bottom:0}
+.consulting-preview-rail-label{
+  font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.3;
+  color:var(--fg-dim);
+}
+.consulting-preview-rail-row.is-active .consulting-preview-rail-label{
+  color:var(--fg);font-style:normal;
+}
+.consulting-preview-rail-dot{
+  width:3px;height:3px;border-radius:999px;background:var(--fg);
+  display:inline-block;flex-shrink:0;
+}
+
+/* Transcript column */
+.consulting-preview-main{
+  display:flex;flex-direction:column;
 }
 .consulting-preview-held{
   font-family:var(--serif);font-style:italic;color:var(--fg-dim);
   font-size:19px;line-height:1.4;text-align:center;
-  max-width:480px;margin:0 auto;text-wrap:pretty;
+  max-width:480px;margin:0 auto 36px;text-wrap:pretty;
+}
+.consulting-preview-turns{
+  display:flex;flex-direction:column;gap:28px;
 }
 .consulting-preview-user{
   font-family:var(--sans);font-size:17px;line-height:1.55;color:var(--fg);
@@ -3599,61 +3683,78 @@ section{position:relative;}
   margin:0;text-wrap:pretty;
 }
 .consulting-preview-analyst em{font-style:italic}
-.consulting-preview-mark{
-  border-top:1px solid var(--hair);padding-top:14px;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
-  text-transform:uppercase;color:var(--fg-mute);text-align:center;
-  margin:0;
+.consulting-preview-analyst strong{
+  font-family:var(--serif);font-style:normal;font-weight:600;
 }
 
-/* Section 2 — three small glass panels */
-.consulting-preview-panels{
+.consulting-preview-mark{
+  border-top:1px solid var(--hair);padding-top:14px;margin-top:8px;
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);text-align:center;
+}
+
+/* Three glass panels — "what a session does" */
+.consulting-offer-panels{
   display:grid;grid-template-columns:1fr;gap:24px;
 }
 @media (min-width: 981px){
-  .consulting-preview-panels{grid-template-columns:repeat(3,1fr);gap:40px}
+  .consulting-offer-panels{grid-template-columns:repeat(3,1fr);gap:40px}
 }
-.consulting-preview-panel{
+.consulting-offer-panel{
   border-radius:24px;padding:28px;min-height:180px;
   display:flex;flex-direction:column;gap:14px;
 }
-.consulting-preview-panel-title{
+.consulting-offer-panel-title{
   font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.2;
   color:var(--fg);margin:0;
 }
-.consulting-preview-panel-body{
+.consulting-offer-panel-body{
   font-family:var(--sans);font-size:15px;line-height:1.5;color:var(--fg-dim);
   margin:0;text-wrap:pretty;
 }
 
-/* Section 3 — what is included */
-.consulting-preview-list{
+/* "What is included" list */
+.consulting-offer-list{
   list-style:none;margin:0;padding:0;
   display:flex;flex-direction:column;
   border-top:1px solid var(--hair);
 }
-.consulting-preview-list-row{
+.consulting-offer-list-row{
   display:flex;justify-content:space-between;align-items:baseline;gap:24px;
   padding:18px 0;border-bottom:1px solid var(--hair);
 }
-.consulting-preview-list-left{
+.consulting-offer-list-left{
   font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.4;
   color:var(--fg);
 }
-.consulting-preview-list-right{
+.consulting-offer-list-right{
   font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
   text-transform:uppercase;color:var(--fg-mute);
   white-space:nowrap;flex-shrink:0;
 }
 
+/* Footer cluster — centered inverted Pill above a RowLink */
+.consulting-offer-footer{
+  display:flex;flex-direction:column;align-items:center;gap:24px;
+  padding-top:80px;
+}
+.consulting-offer-pill{padding:14px 28px;font-size:14px}
+.consulting-offer-pill .pill-arrow{
+  font-family:var(--serif);font-style:italic;
+  transition:transform 400ms var(--ease);
+}
+.consulting-offer-pill:hover .pill-arrow{transform:translateX(4px)}
+
 @media (max-width: 980px){
-  .consulting-preview{gap:56px;padding:80px 0}
-  .consulting-preview-held{font-size:18px}
+  .consulting-preview-figure.split-visual{padding:24px}
+  .consulting-preview-held{font-size:18px;margin-bottom:28px}
   .consulting-preview-analyst{font-size:18px}
-  .consulting-preview-panel{min-height:0;padding:24px;gap:12px}
-  .consulting-preview-panel-title{font-size:22px}
-  .consulting-preview-list-left{font-size:17px}
-  .consulting-preview-list-right{font-size:10px;letter-spacing:0.18em}
+  .consulting-offer-panel{min-height:0;padding:24px;gap:12px}
+  .consulting-offer-panel-title{font-size:22px}
+  .consulting-offer-list-left{font-size:17px}
+  .consulting-offer-list-right{font-size:10px;letter-spacing:0.18em}
+  .consulting-preview-figure{margin-top:48px}
+  .consulting-offer-footer{padding-top:56px}
 }
 
 /* =====================================================================

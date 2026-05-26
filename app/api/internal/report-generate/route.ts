@@ -8,6 +8,7 @@ import {
   type ReportGenerationInput,
 } from "@/lib/ai/prompts/report-generation";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
+import { firstNameFrom } from "@/lib/connections";
 import {
   captureReportArtifact,
   safetySummaryFrom,
@@ -202,7 +203,7 @@ async function buildGenerationInput(
       .in("severity", ["medium", "high", "critical"]),
   ]);
 
-  const inviterFirstName = firstName(profileRes.data?.full_name ?? null);
+  const inviterFirstName = firstNameFrom(profileRes.data?.full_name ?? null);
 
   // Intake: map each step payload back to (question_key, question_text, answer)
   // Defer loading the STEPS module statically — the user-side schema
@@ -317,11 +318,6 @@ async function buildGenerationInput(
     connections,
     safetyFlags,
   };
-}
-
-function firstName(full: string | null): string | null {
-  if (!full) return null;
-  return full.trim().split(/\s+/)[0] ?? null;
 }
 
 function parseReportDocument(raw: string): ReportDocument {

@@ -1,6 +1,7 @@
 import "server-only";
 import { NextResponse } from "next/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { firstNameFrom } from "@/lib/connections";
 import { recomputeDepthFor } from "@/lib/depth";
 import {
   RELATIONSHIP_INTAKE_QUESTIONS,
@@ -164,7 +165,7 @@ async function generateConnectionSummary(job: SummaryJob): Promise<void> {
     .select("full_name")
     .eq("id", job.inviterUserId)
     .maybeSingle<{ full_name: string | null }>();
-  const inviterFirst = firstName(inviterProfile?.full_name ?? null);
+  const inviterFirst = firstNameFrom(inviterProfile?.full_name ?? null);
 
   const validRoles = new Set([
     "partner",
@@ -215,13 +216,6 @@ async function generateConnectionSummary(job: SummaryJob): Promise<void> {
   } catch {
     // best effort — context_summary stays null until the next attempt
   }
-}
-
-function firstName(full: string | null): string | null {
-  if (!full) return null;
-  const trimmed = full.trim();
-  if (!trimmed) return null;
-  return trimmed.split(/\s+/)[0] ?? null;
 }
 
 // ────────────────────────────────────────────────────────────────────

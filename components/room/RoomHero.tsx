@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { depthLines, type DepthBand } from "@/lib/copy";
 import { depthBand } from "@/lib/depth";
+import RowLink from "@/components/ui/RowLink";
 
 type RoomHeroProps = {
   firstName: string | null;
@@ -43,19 +44,24 @@ export default function RoomHero({ firstName, depth }: RoomHeroProps) {
         </h1>
         <p className="room-hero-line">{depthLines[band]}</p>
       </div>
-      <div className="room-hero-dial-wrap">
+      <div className="room-hero-figure">
         <DepthDial depth={depth} band={band} />
+        <div className="room-hero-caption">
+          <p className="room-hero-band">{band}</p>
+          <RowLink href="/settings#depth">strengthen</RowLink>
+        </div>
       </div>
     </section>
   );
 }
 
 function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
-  const size = 140;
-  const stroke = 1.4;
-  const seedR = 1.7;
-  // Pull the arc in by a hair so the seed dot sits cleanly on it.
-  const r = (size - stroke) / 2 - seedR;
+  const size = 300;
+  const trackStroke = 1.2;
+  const arcStroke = 3.2;
+  const seedR = 4;
+  // Pull the arc in by the seed radius so the dot sits cleanly on it.
+  const r = (size - arcStroke) / 2 - seedR;
   const c = 2 * Math.PI * r;
   const safe = Math.max(0, Math.min(1, depth));
   const offset = c * (1 - safe);
@@ -86,14 +92,14 @@ function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
           cx={size / 2}
           cy={size / 2}
           r={r}
-          strokeWidth={stroke}
+          strokeWidth={trackStroke}
         />
         <circle
           className="room-hero-dial-arc"
           cx={size / 2}
           cy={size / 2}
           r={r}
-          strokeWidth={stroke}
+          strokeWidth={arcStroke}
           strokeDasharray={c}
         />
         <circle
@@ -102,10 +108,15 @@ function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
           cy={size / 2 - r}
           r={seedR}
         />
+        <text
+          className="room-hero-dial-num"
+          x={size / 2}
+          y={size * 0.52}
+          textAnchor="middle"
+        >
+          23
+        </text>
       </svg>
-      <span className="room-hero-dial-word" aria-hidden="true">
-        {band}
-      </span>
     </div>
   );
 }

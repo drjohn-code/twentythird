@@ -6,6 +6,7 @@ import {
   INTAKE_INTRO_PATH,
   fetchIntakeGate,
 } from "@/lib/onboarding/routing";
+import { firstNameFrom } from "@/lib/connections";
 import PendingStatus from "@/components/dashboard/PendingStatus";
 import IntakeFailedState from "@/components/dashboard/IntakeFailedState";
 import RoomNav from "@/components/room/RoomNav";
@@ -150,10 +151,3 @@ async function readInitialReadingsStatus(
   return data?.initial_readings_status ?? "ready";
 }
 
-function firstNameFrom(name: string | null): string | null {
-  if (!name) return null;
-  const trimmed = name.trim();
-  if (!trimmed) return null;
-  const first = trimmed.split(/\s+/)[0];
-  return first || null;
-}
