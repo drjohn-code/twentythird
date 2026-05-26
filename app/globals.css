@@ -2569,7 +2569,7 @@ section{position:relative;}
 
 /* ---- Room shell ---- */
 .room-shell{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column}
-.room-main{flex:1 0 auto;padding:140px 36px 80px;width:100%;max-width:1240px;margin:0 auto}
+.room-main{flex:0 0 auto;padding:140px 36px 80px;width:100%;max-width:1240px;margin:0 auto}
 
 /* ---- Room nav (glass pill, sibling of marketing .nav) ---- */
 .room-nav{
@@ -3060,6 +3060,54 @@ section{position:relative;}
   font-family:var(--serif);font-style:italic;font-size:24px;color:var(--fg-dim);
   text-align:center;
   padding:36px;
+}
+
+/* Static SessionView preview rendered inside .consulting-placeholder on
+   the /room landing. Mirrors the live SessionView structure at a
+   reduced type scale. */
+.session-preview{
+  display:flex;flex-direction:column;gap:20px;
+  width:100%;text-align:left;font-style:normal;
+}
+.session-preview-held{
+  font-family:var(--serif);font-style:italic;color:var(--fg);
+  font-size:18px;line-height:1.4;text-align:center;
+  margin:0 0 4px;text-wrap:pretty;
+}
+.session-preview-topics{
+  list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;
+}
+.session-preview-topic-row{
+  display:flex;width:100%;align-items:center;
+  border:1px solid var(--hair);border-radius:3px;
+  padding:10px 14px;
+  font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg);
+  letter-spacing:-0.005em;
+}
+.session-preview-topic-row.is-selected{border-color:var(--fg)}
+.session-preview-transcript{
+  display:flex;flex-direction:column;gap:20px;
+}
+.session-preview-turn{margin:0;padding:0;text-wrap:pretty}
+.session-preview-turn-user{
+  font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--fg);
+}
+.session-preview-turn-analyst{
+  font-family:var(--serif);font-size:17px;line-height:1.5;color:var(--fg);
+}
+.session-preview-turn-analyst em{font-style:italic}
+.session-preview-input-row{
+  display:flex;align-items:flex-end;gap:14px;
+  border-top:1px solid var(--hair);padding-top:14px;
+}
+.session-preview-input{
+  flex:1 1 auto;
+  font-family:var(--sans);font-size:15px;line-height:1.55;color:var(--fg-mute);
+  padding:4px 0;
+}
+.session-preview-say{
+  font-family:var(--serif);font-style:italic;font-size:16px;color:var(--fg-dim);
+  padding:4px 0;white-space:nowrap;
 }
 
 /* Case File preview list */

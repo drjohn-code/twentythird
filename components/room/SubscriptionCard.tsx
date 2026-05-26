@@ -73,7 +73,7 @@ function NoneBody() {
       <ul className="subscription-features">
         <li>— access to the consulting room</li>
         <li>— monthly clinical report</li>
-        <li>— unlimited sessions &amp; connections</li>
+        <li>— unlimited sessions &amp; 3 more connections</li>
         <li>— full reading depth, all chapters open</li>
       </ul>
       <form

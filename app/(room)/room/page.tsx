@@ -11,6 +11,7 @@ import Reveal from "@/components/layout/Reveal";
 import RoomHero from "@/components/room/RoomHero";
 import BlockCard from "@/components/room/BlockCard";
 import Hairline from "@/components/room/Hairline";
+import SessionPreview from "@/components/room/SessionPreview";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
 import { blockSeeds } from "@/lib/copy";
 import { firstNameFrom } from "@/lib/connections";
@@ -279,7 +280,7 @@ export default async function RoomLandingPage() {
               </FigureCard>
             ) : (
               <Glass as="div" className="consulting-placeholder">
-                <span>the consulting room</span>
+                <SessionPreview />
               </Glass>
             )}
           </div>
