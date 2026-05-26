@@ -3,13 +3,19 @@
 // The shell padding / heading / border come from <SettingsBlock>; this
 // component only renders the body. Three terminal UIs:
 //
-//   not subscribed   → short description + primary "Subscribe" button
+//   not subscribed   → member badge, tagline, feature grid, price + CTA
 //   active           → STATUS row + "Cancel subscription" link-button
 //   cancelled (paid) → STATUS row + "Resubscribe" primary button
 //
 // State (cancelled but still in paid period) is detected from the
 // subscriptions row's `cancel_at_period_end` flag — which the Stripe
 // webhook persists alongside `status` and `current_period_end`.
+//
+// The connection-bonus number on the NoneBody feature grid reads from
+// SUBSCRIBER_BONUS_CONNECTIONS so changing the constant updates the
+// member-benefit line everywhere automatically.
+
+import { SUBSCRIBER_BONUS_CONNECTIONS } from "@/lib/connections";
 
 export type SubscriptionCardRow = {
   status: string | null;
@@ -66,27 +72,80 @@ function StatusRow({ value }: { value: string }) {
 function NoneBody() {
   return (
     <div className="subscription-body subscription-body-none">
-      <p className="subscription-note">
-        the consulting room and a monthly clinical report sit behind the
-        subscription.
+      <p className="subscription-badge">MEMBER ACCESS</p>
+
+      <p className="subscription-tagline">
+        The consulting room, opened. <em>A reading that keeps reading.</em>
       </p>
-      <ul className="subscription-features">
-        <li>— access to the consulting room</li>
-        <li>— monthly clinical report</li>
-        <li>— unlimited sessions &amp; 3 more connections</li>
-        <li>— full reading depth, all chapters open</li>
+
+      <ul className="subscription-feature-grid">
+        <li className="subscription-feature">
+          <span className="subscription-feature-dot" aria-hidden="true" />
+          <div className="subscription-feature-text">
+            <span className="subscription-feature-title">
+              Consulting room
+            </span>
+            <span className="subscription-feature-desc">
+              long-form sessions with the analyst.
+            </span>
+          </div>
+        </li>
+        <li className="subscription-feature">
+          <span className="subscription-feature-dot" aria-hidden="true" />
+          <div className="subscription-feature-text">
+            <span className="subscription-feature-title">
+              Monthly clinical report
+            </span>
+            <span className="subscription-feature-desc">
+              one therapist-ready map each calendar month.
+            </span>
+          </div>
+        </li>
+        <li className="subscription-feature">
+          <span className="subscription-feature-dot" aria-hidden="true" />
+          <div className="subscription-feature-text">
+            <span className="subscription-feature-title">
+              {SUBSCRIBER_BONUS_CONNECTIONS} more connections
+            </span>
+            <span className="subscription-feature-desc">
+              add the people whose presence shapes the reading.
+            </span>
+          </div>
+        </li>
+        <li className="subscription-feature">
+          <span className="subscription-feature-dot" aria-hidden="true" />
+          <div className="subscription-feature-text">
+            <span className="subscription-feature-title">
+              Full reading depth
+            </span>
+            <span className="subscription-feature-desc">
+              every chapter open, no ceiling on detail.
+            </span>
+          </div>
+        </li>
       </ul>
+
       <form
         action="/api/stripe/checkout"
         method="post"
-        className="subscription-actions subscription-actions-center"
+        className="subscription-cta-stack"
       >
         <input type="hidden" name="kind" value="subscription" />
-        <button type="submit" className="subscription-primary subscription-primary-wide">
+
+        <div className="subscription-price">
+          <span className="subscription-price-amount">€23.23</span>
+          <span className="subscription-price-period">per month</span>
+        </div>
+
+        <button
+          type="submit"
+          className="subscription-primary subscription-primary-wide"
+        >
           subscribe
         </button>
+
         <p className="subscription-reassurance">
-          no commitment. cancel anytime.
+          <em>no commitment.</em> cancel anytime from settings.
         </p>
       </form>
     </div>

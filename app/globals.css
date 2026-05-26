@@ -3213,7 +3213,7 @@ section{position:relative;}
 
 /* Clinical report CTA — bottom of /readings, centered */
 .clinical-report-cta{
-  padding:140px 0 60px;display:grid;place-items:center;text-align:center;
+  padding:140px 0 0;display:grid;place-items:center;text-align:center;
   position:relative;
 }
 .clinical-report-cta-inner{
@@ -3237,12 +3237,23 @@ section{position:relative;}
 }
 .clinical-report-actions{margin-top:6px}
 .clinical-report-foot{
-  display:flex;justify-content:space-between;width:100%;max-width:620px;
+  width:100%;max-width:620px;text-align:center;
   font-family:var(--mono);font-size:10px;letter-spacing:0.2em;
   text-transform:uppercase;color:var(--fg-mute);
-  padding-top:24px;margin-top:8px;
-  border-top:1px solid var(--hair);
+  margin-top:8px;
 }
+.clinical-report-foot-link{
+  color:var(--fg);transition:opacity 300ms var(--ease);
+}
+.clinical-report-foot-link:hover{opacity:0.7}
+
+/* Solid CTA variant — inverted fg/bg, used for State B
+   (subscriber generating their included monthly report). */
+.cta.cta-solid{
+  background:var(--fg);color:var(--bg);
+  border-color:var(--fg);box-shadow:none;
+}
+.cta.cta-solid:hover{background:var(--fg);opacity:0.92}
 
 /* Report status page (/reports/[id]) — quiet placeholder */
 .report-status{
@@ -3274,7 +3285,7 @@ section{position:relative;}
   .reading-section{padding:72px 0}
   .reading-h2{font-size:clamp(28px, 7vw, 36px);line-height:1.08}
   .reading-defn, .reading-lede p{font-size:16px;line-height:1.5}
-  .clinical-report-cta{padding:90px 0 40px}
+  .clinical-report-cta{padding:90px 0 0}
   .clinical-report-h{font-size:clamp(32px, 8vw, 44px);line-height:1.05}
   .clinical-report-lede{font-size:15px;line-height:1.55}
   .clinical-report-foot{font-size:9px;letter-spacing:0.16em}
@@ -4047,6 +4058,45 @@ section{position:relative;}
   color:var(--fg-mute);line-height:1.45;white-space:normal;
 }
 
+/* Inline edit field — Settings Account row.
+   The editing-state input replaces the value `<dd>` and the save/cancel
+   pair replaces the `change →` row-link. The grid stays at three rows so
+   neighbouring cells keep their baselines. */
+.inline-edit-input{
+  appearance:none;background:var(--glass-bg);
+  border:1px solid var(--hair);border-radius:3px;
+  padding:14px 16px;
+  font-family:var(--sans);font-size:17px;color:var(--fg);
+  line-height:1.4;width:100%;
+  transition:border-color 300ms var(--ease);
+}
+.inline-edit-input:focus{outline:none;border-color:var(--hair-strong)}
+.inline-edit-input[readonly]{cursor:default}
+.inline-edit-error{
+  font-family:var(--serif);font-style:italic;font-size:13px;
+  color:var(--fg-dim);margin:8px 0 0;
+}
+.inline-edit-actions{gap:16px}
+.inline-edit-actions .auth-rowlink-button:disabled{
+  opacity:0.5;pointer-events:none;
+}
+.inline-edit-cancel{
+  appearance:none;background:transparent;border:0;cursor:pointer;
+  font-family:var(--sans);font-size:13px;color:var(--fg-dim);
+  padding:0;
+  transition:color 300ms var(--ease);
+}
+.inline-edit-cancel:hover:not(:disabled){color:var(--fg)}
+.inline-edit-cancel:disabled{opacity:0.5;pointer-events:none}
+.reset-password-confirm{
+  font-family:var(--serif);font-style:italic;font-size:13px;
+  color:var(--fg-dim);line-height:1.45;
+}
+.reset-password-error{
+  font-family:var(--serif);font-style:italic;font-size:13px;
+  color:var(--fg-dim);margin-left:12px;
+}
+
 /* Intake answers */
 .intake-answers{display:flex;flex-direction:column;gap:48px}
 .intake-answers-group{display:flex;flex-direction:column;gap:14px}
@@ -4370,14 +4420,41 @@ section{position:relative;}
 }
 
 /* ────────────────────────────────────────────────────────────────
-   Subscription card body — three states share a column layout: an
-   optional STATUS row (mono label + serif italic value), an optional
-   note, and a single action button row pinned to the bottom.
+   Subscription card — three terminal states share a column layout.
+   The outer .settings-block dimensions are owned by .settings-pair;
+   nothing here changes the container's width or height.
+
+   States:
+     NoneBody       — member badge, tagline, feature grid, price + CTA
+     ActiveBody     — STATUS row + secondary "cancel" link
+     CancelledBody  — STATUS row + primary "resubscribe"
    ──────────────────────────────────────────────────────────────── */
 .subscription-body{
   display:flex;flex-direction:column;gap:22px;
   flex:1;
 }
+
+/* Atmospheric polish on the Subscription card itself — a faint top
+   highlight + a soft fog wash anchored to the bottom. Pure alpha of
+   --fg, no hue. Sits inside the existing radius via overflow:hidden
+   on the parent which we set just for this block. */
+.settings-pair > .settings-block#subscription{
+  position:relative;overflow:hidden;
+}
+.settings-pair > .settings-block#subscription::before{
+  content:"";position:absolute;inset-inline:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--glass-hi),transparent);
+  pointer-events:none;
+}
+.settings-pair > .settings-block#subscription::after{
+  content:"";position:absolute;inset-inline:0;bottom:0;height:55%;
+  background:radial-gradient(80% 100% at 50% 100%,
+    rgba(255,255,255,0.035), transparent 70%);
+  pointer-events:none;z-index:0;
+}
+.settings-pair > .settings-block#subscription > *{position:relative;z-index:1}
+
+/* Shared status row — used by ActiveBody and CancelledBody. */
 .subscription-status{
   display:flex;flex-direction:column;gap:8px;
   padding-bottom:18px;border-bottom:1px solid var(--hair);
@@ -4390,47 +4467,30 @@ section{position:relative;}
   font-family:var(--serif);font-style:italic;font-size:18px;
   letter-spacing:-0.005em;color:var(--fg);line-height:1.35;
 }
-.subscription-note{
-  font-family:var(--serif);font-size:16px;line-height:1.55;
-  color:var(--fg-dim);max-width:46ch;margin:0;
-}
+
+/* Shared actions row — ActiveBody and CancelledBody. */
 .subscription-actions{
   margin-top:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
 }
-.subscription-actions-center{
-  flex-direction:column;align-items:center;gap:12px;
-  width:100%;
-}
+
+/* Primary CTA — shared between NoneBody (wide variant) and CancelledBody. */
 .subscription-primary{
   appearance:none;cursor:pointer;
   padding:12px 22px;border-radius:999px;border:0;
   background:var(--fg);color:var(--bg);
   font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:-0.005em;
-  transition:transform 400ms var(--ease), opacity 300ms var(--ease);
+  transition:transform 400ms var(--ease), opacity 300ms var(--ease),
+    box-shadow 400ms var(--ease);
   min-height:40px;
+  box-shadow:inset 0 1px 0 var(--glass-hi);
 }
-.subscription-primary:hover{transform:translateY(-1px);opacity:0.92}
+.subscription-primary:hover{transform:translateY(-1px);opacity:0.94}
 .subscription-primary-wide{
-  width:65%;min-width:280px;max-width:100%;
-  min-height:48px;padding:14px 28px;
-  font-size:15px;letter-spacing:0.04em;
+  width:100%;min-width:0;max-width:100%;
+  min-height:50px;padding:15px 28px;
+  font-size:14px;letter-spacing:0.08em;text-transform:uppercase;
 }
-.subscription-reassurance{
-  margin:0;
-  font-family:var(--serif);font-style:italic;font-size:13px;
-  color:var(--fg-mute);text-align:center;line-height:1.45;
-}
-.subscription-features{
-  list-style:none;padding:0;margin:0;
-  display:flex;flex-direction:column;gap:8px;
-}
-.subscription-features li{
-  font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.45;
-  color:var(--fg-dim);letter-spacing:-0.005em;
-}
-.subscription-body-none{gap:24px}
-.subscription-body-none .subscription-note{margin-bottom:0}
-.subscription-body-none .subscription-features{margin-top:-6px}
+
 .subscription-secondary{
   appearance:none;cursor:pointer;background:transparent;
   padding:0 0 4px 0;border:0;border-bottom:1px solid var(--hair);
@@ -4438,6 +4498,96 @@ section{position:relative;}
   transition:color 300ms var(--ease), border-color 300ms var(--ease);
 }
 .subscription-secondary:hover{color:var(--fg);border-color:var(--hair-strong)}
+
+/* ──────────────────────────────────────────────────────────────
+   NoneBody — the marketing surface.
+   Order: badge · tagline · feature grid · price · CTA · reassurance.
+   The feature grid is the optical middle; price + CTA sit pinned to
+   the bottom via margin-top:auto on .subscription-cta-stack so the
+   button is always the gravitational center.
+   ────────────────────────────────────────────────────────────── */
+.subscription-body-none{gap:20px}
+
+.subscription-badge{
+  margin:0;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:0.28em;
+  text-transform:uppercase;color:var(--fg-mute);
+  display:inline-flex;align-items:center;gap:10px;align-self:flex-start;
+  padding:6px 10px 6px 0;
+}
+.subscription-badge::before{
+  content:"";width:18px;height:1px;background:var(--fg-mute);
+  display:inline-block;
+}
+
+.subscription-tagline{
+  margin:0;
+  font-family:var(--serif);font-size:19px;line-height:1.4;
+  letter-spacing:-0.005em;color:var(--fg);
+  max-width:34ch;
+}
+.subscription-tagline em{
+  font-style:italic;color:var(--fg-dim);
+}
+
+.subscription-feature-grid{
+  list-style:none;padding:0;margin:4px 0 0 0;
+  display:grid;grid-template-columns:1fr 1fr;
+  column-gap:22px;row-gap:18px;
+}
+.subscription-feature{
+  display:flex;align-items:flex-start;gap:12px;
+  padding-top:14px;border-top:1px solid var(--hair);
+}
+.subscription-feature-dot{
+  display:inline-block;width:5px;height:5px;border-radius:999px;
+  background:var(--fg);margin-top:8px;flex-shrink:0;
+  opacity:0.9;
+}
+.subscription-feature-text{
+  display:flex;flex-direction:column;gap:3px;min-width:0;
+}
+.subscription-feature-title{
+  font-family:var(--sans);font-size:13.5px;font-weight:500;
+  color:var(--fg);letter-spacing:-0.005em;line-height:1.3;
+}
+.subscription-feature-desc{
+  font-family:var(--serif);font-style:italic;font-size:13px;line-height:1.4;
+  color:var(--fg-dim);letter-spacing:-0.005em;
+}
+
+.subscription-cta-stack{
+  margin-top:auto;
+  display:flex;flex-direction:column;align-items:stretch;gap:14px;
+  padding-top:22px;border-top:1px solid var(--hair);
+}
+.subscription-price{
+  display:flex;align-items:baseline;justify-content:center;gap:10px;
+}
+.subscription-price-amount{
+  font-family:var(--mono);font-size:22px;font-weight:500;
+  color:var(--fg);letter-spacing:-0.01em;
+}
+.subscription-price-period{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+
+.subscription-reassurance{
+  margin:0;
+  font-family:var(--serif);font-size:13px;
+  color:var(--fg-mute);text-align:center;line-height:1.45;
+  letter-spacing:-0.005em;
+}
+.subscription-reassurance em{
+  font-style:italic;color:var(--fg-dim);
+}
+
+/* Single-column collapse below the pair's breakpoint — keep the
+   feature grid two-up where there's room, drop to one-up on narrow. */
+@media (max-width: 560px){
+  .subscription-feature-grid{grid-template-columns:1fr;row-gap:14px}
+}
 
 /* ────────────────────────────────────────────────────────────────
    Connections (Settings → 04)
@@ -4473,6 +4623,11 @@ section{position:relative;}
 }
 .connection-row-action{justify-self:end;display:inline-flex;align-items:baseline}
 .connection-row-action-double{gap:18px;flex-wrap:wrap;justify-content:flex-end}
+.connection-row-error{
+  grid-column:1 / -1;font-family:var(--serif);font-style:italic;
+  font-size:13px;color:var(--fg-dim);padding-top:4px;
+  text-transform:none;letter-spacing:0;
+}
 
 .connection-invite-wrap{
   display:flex;flex-direction:column;gap:18px;
@@ -4486,6 +4641,33 @@ section{position:relative;}
   font-family:var(--serif);font-size:15px;color:var(--fg-dim);
   padding-top:24px;border-top:1px solid var(--hair);margin:0;
 }
+.connection-limit-upsell{
+  display:flex;flex-direction:column;gap:12px;
+}
+.connection-limit-upsell .connection-limit-note{
+  padding-top:24px;
+}
+.connection-limit-upsell-link{
+  display:inline-flex;align-items:baseline;gap:8px;
+  font-family:var(--sans);font-size:13px;color:var(--fg);
+  text-decoration:none;letter-spacing:-0.005em;
+  padding-bottom:2px;border-bottom:1px solid var(--hair);
+  align-self:flex-start;
+  transition:gap 400ms var(--ease), border-color 300ms var(--ease);
+}
+.connection-limit-upsell-link:hover{gap:12px;border-color:var(--hair-strong)}
+
+.connection-usage{
+  display:flex;align-items:baseline;gap:12px;margin:0;
+  padding-bottom:14px;border-bottom:1px solid var(--hair);
+}
+.connection-usage-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+.connection-usage-value{
+  font-family:var(--mono);font-size:14px;color:var(--fg);letter-spacing:-0.005em;
+}
 
 /* Invite form (in Settings) */
 .invite-form{
@@ -4497,9 +4679,23 @@ section{position:relative;}
 .invite-form-error{
   font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg-dim);margin:0;
 }
-.invite-form-error-block{
+.invite-form-error-block,
+.invite-form-feedback{
   display:flex;flex-direction:column;gap:14px;
 }
+.invite-form-success{
+  font-family:var(--serif);font-style:italic;font-size:14px;color:var(--fg);margin:0;
+}
+.invite-form-copylink{
+  appearance:none;background:transparent;border:0;cursor:pointer;
+  display:inline-flex;align-items:baseline;gap:8px;
+  font-family:var(--sans);font-size:13px;color:var(--fg);
+  text-decoration:none;letter-spacing:-0.005em;
+  padding:0 0 2px 0;border-bottom:1px solid var(--hair);
+  align-self:flex-start;
+  transition:gap 400ms var(--ease), border-color 300ms var(--ease);
+}
+.invite-form-copylink:hover{gap:12px;border-color:var(--hair-strong)}
 .invite-form-charcount{
   font-family:var(--mono);font-size:11px;letter-spacing:0.04em;
   color:var(--fg-mute);text-align:right;margin-top:8px;

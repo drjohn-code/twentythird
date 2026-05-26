@@ -58,12 +58,80 @@ export const depthSourceSubtitle = {
 // Connections
 // ──────────────────────────────────────────────────────────────────
 
-export const connectionExplainer = `Up to two people whose presence shapes the reading. They do not see your readings; you do not see theirs. What they say about the relationship feeds the model that produces your readings, and yours feeds theirs.`;
+// Limit-aware so the explainer stays in sync with the connections cap.
+// Pass the user's effective limit (base + any subscriber bonus).
+export function connectionExplainer(limit: number): string {
+  return `Up to ${numberWord(limit)} people whose presence shapes the reading. They do not see your readings; you do not see theirs. What they say about the relationship feeds the model that produces your readings, and yours feeds theirs.`;
+}
+
+function numberWord(n: number): string {
+  switch (n) {
+    case 1: return "one";
+    case 2: return "two";
+    case 3: return "three";
+    case 4: return "four";
+    case 5: return "five";
+    case 6: return "six";
+    case 7: return "seven";
+    case 8: return "eight";
+    case 9: return "nine";
+    case 10: return "ten";
+    default: return String(n);
+  }
+}
 
 export const inviteEmail = {
   subject: (inviterName: string) =>
     `${inviterName} would like you in the reading.`,
   // The body template is composed in lib/emails/invite.ts in Phase 6.
+} as const;
+
+// Lookup + invite feedback. Lowercase italic register; short sentences.
+// Every string in the connect-by-email flow lives here so the voice
+// can be retuned in one place.
+export const connectionLookupCopy = {
+  invalidEmail: "please enter a valid email address.",
+  self: "you cannot connect with yourself.",
+  notMember: {
+    line:
+      "this email is not part of the members yet. invite them to create an account so you can connect.",
+    copyHint: "share the sign-up link",
+    copied: "link copied",
+  },
+  requestSent: "you have already sent a request to this member.",
+  requestReceived: {
+    line:
+      "this member has sent you a request — check your invitations.",
+    inboxLabel: "open the request",
+  },
+  alreadyConnected: "you are already connected with this member.",
+  rateLimited:
+    "too many lookups in a short window. wait a moment, then try again.",
+  sent: "connection request sent.",
+  sending: "sending…",
+  send: "send request",
+  limitReached: (limit: number) =>
+    `${limit} connections is the limit. disconnect one to add another.`,
+  limitReachedFree: (limit: number) =>
+    `${limit} connections is the limit on the free tier.`,
+  generic: "could not send the request.",
+} as const;
+
+// Incoming-requests section on /connections. Same voice as the lookup
+// flow above so the page reads as one piece.
+export const incomingRequestsCopy = {
+  eyebrow: "AWAITING YOU",
+  empty: "no one is waiting on you.",
+  accept: "accept",
+  decline: "decline",
+  limitReached: (limit: number) =>
+    `${limit} connections is the limit. disconnect one to accept this.`,
+  limitReachedFree: (limit: number) =>
+    `${limit} connections is the limit on the free tier.`,
+  upsell: "subscribers add more",
+  inviteExpired: "this invite has expired.",
+  inviteEnded: "this invite is no longer pending.",
+  generic: "could not act on this request.",
 } as const;
 
 // ──────────────────────────────────────────────────────────────────

@@ -37,7 +37,22 @@ export function isConnectionRole(v: unknown): v is ConnectionRole {
   );
 }
 
+// Free-tier ceiling on active connections.
 export const MAX_ACTIVE_CONNECTIONS = 2;
+
+// Additional connections granted to a paying subscriber, on top of the
+// free-tier base. The Subscription card on /settings reads this so the
+// member-benefit line stays in sync if the number is ever changed.
+export const SUBSCRIBER_BONUS_CONNECTIONS = 3;
+
+// The effective per-user cap. Server enforcement and every UI display
+// must read through this so the two numbers never drift apart.
+export function effectiveConnectionsLimit(isSubscribed: boolean): number {
+  return (
+    MAX_ACTIVE_CONNECTIONS + (isSubscribed ? SUBSCRIBER_BONUS_CONNECTIONS : 0)
+  );
+}
+
 export const INVITE_TTL_DAYS = 14;
 
 export function inviteExpiryFromNow(now: Date = new Date()): Date {

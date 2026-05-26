@@ -4,7 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 import { recomputeDepthFor } from "@/lib/depth";
 import {
-  MAX_ACTIVE_CONNECTIONS,
+  effectiveConnectionsLimit,
   firstNameFrom,
   generateInviteToken,
   inviteExpiryFromNow,
@@ -55,7 +55,9 @@ const ALLOWED_ACTIONS = new Set([
   "invite",
   "accept",
   "accept-account",
+  "accept-incoming",
   "decline",
+  "decline-incoming",
   "disconnect",
   "resend",
   "cancel",
@@ -82,8 +84,12 @@ export async function POST(req: Request) {
       return handleAccept(body, /* withAccount */ false);
     case "accept-account":
       return handleAccept(body, /* withAccount */ true);
+    case "accept-incoming":
+      return handleAcceptIncoming(body);
     case "decline":
       return handleDecline(body);
+    case "decline-incoming":
+      return handleDeclineIncoming(body);
     case "disconnect":
       return handleDisconnect(body);
     case "resend":
@@ -142,30 +148,116 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
 
   // Active-count guard. Counts ACTIVE rows where caller is inviter OR
   // is the connection — caps total active relationships for this user.
-  const { count: activeCount } = await admin
-    .from("connections")
-    .select("id", { count: "exact", head: true })
-    .eq("status", "active")
-    .or(`inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`);
+  // Effective limit accounts for the subscriber bonus.
+  const [{ count: activeCount }, { data: subRow }] = await Promise.all([
+    admin
+      .from("connections")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "active")
+      .or(`inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`),
+    admin
+      .from("subscriptions")
+      .select("status")
+      .eq("user_id", user.id)
+      .maybeSingle<{ status: string | null }>(),
+  ]);
 
-  if ((activeCount ?? 0) >= MAX_ACTIVE_CONNECTIONS) {
+  const isSubscribed = subRow?.status === "active";
+  const limit = effectiveConnectionsLimit(isSubscribed);
+  if ((activeCount ?? 0) >= limit) {
     return NextResponse.json({ error: "limit_reached" }, { status: 409 });
   }
 
-  // Pending guard — at most one pending invite per (inviter, email).
-  const { data: existingPending } = await admin
-    .from("connections")
-    .select("id")
-    .eq("inviter_user_id", user.id)
-    .eq("connection_email", email)
-    .eq("status", "pending")
-    .maybeSingle();
+  // Membership check — only active members may be invited. The lookup
+  // endpoint runs this same check before this POST fires; we repeat it
+  // here as defense in depth because a hand-crafted POST could skip
+  // the lookup. Banned (banned_until > now) is reported as not_member;
+  // ban status is not leaked.
+  const { data: targetProfile } = await admin
+    .from("profiles")
+    .select("id, email")
+    .eq("email", email)
+    .maybeSingle<{ id: string; email: string | null }>();
 
-  if (existingPending) {
+  if (!targetProfile) {
+    return NextResponse.json({ error: "not_member" }, { status: 404 });
+  }
+
+  const { data: targetAuth } = await admin.auth.admin.getUserById(
+    targetProfile.id,
+  );
+  const targetAuthUser = targetAuth?.user ?? null;
+  if (!targetAuthUser) {
+    return NextResponse.json({ error: "not_member" }, { status: 404 });
+  }
+  const bannedUntilMs = targetAuthUser.banned_until
+    ? new Date(targetAuthUser.banned_until).getTime()
+    : 0;
+  if (Number.isFinite(bannedUntilMs) && bannedUntilMs > Date.now()) {
+    return NextResponse.json({ error: "not_member" }, { status: 404 });
+  }
+
+  const targetId = targetProfile.id;
+  const callerEmail = (user.email ?? "").trim().toLowerCase();
+
+  // Existing relationship — block duplicate sends in either direction
+  // and any already-active pairing. connection_user_id can be null on
+  // legacy rows so we match on connection_email too.
+  const [
+    outByEmail,
+    outByUserId,
+    inByEmail,
+    inByUserId,
+  ] = await Promise.all([
+    admin
+      .from("connections")
+      .select("status")
+      .eq("inviter_user_id", user.id)
+      .eq("connection_email", email)
+      .in("status", ["pending", "active"]),
+    admin
+      .from("connections")
+      .select("status")
+      .eq("inviter_user_id", user.id)
+      .eq("connection_user_id", targetId)
+      .in("status", ["pending", "active"]),
+    admin
+      .from("connections")
+      .select("status")
+      .eq("inviter_user_id", targetId)
+      .eq("connection_email", callerEmail)
+      .in("status", ["pending", "active"]),
+    admin
+      .from("connections")
+      .select("status")
+      .eq("inviter_user_id", targetId)
+      .eq("connection_user_id", user.id)
+      .in("status", ["pending", "active"]),
+  ]);
+
+  const outRows = [
+    ...(outByEmail.data ?? []),
+    ...(outByUserId.data ?? []),
+  ];
+  const inRows = [
+    ...(inByEmail.data ?? []),
+    ...(inByUserId.data ?? []),
+  ];
+
+  if (
+    outRows.some((r) => r.status === "active") ||
+    inRows.some((r) => r.status === "active")
+  ) {
+    return NextResponse.json({ error: "already_connected" }, { status: 409 });
+  }
+  if (outRows.some((r) => r.status === "pending")) {
     return NextResponse.json(
       { error: "pending_invite_exists" },
       { status: 409 },
     );
+  }
+  if (inRows.some((r) => r.status === "pending")) {
+    return NextResponse.json({ error: "request_received" }, { status: 409 });
   }
 
   // Strict inviter first name — derived only from profiles.full_name.
@@ -194,6 +286,7 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
     .from("connections")
     .insert({
       inviter_user_id: user.id,
+      connection_user_id: targetId,
       connection_email: email,
       role,
       note,
@@ -293,6 +386,189 @@ async function handleAccept(
     connection_id: conn.id,
     mode: acceptanceMode,
   });
+}
+
+// ────────────────────────────────────────────────────────────────────
+// accept-incoming / decline-incoming
+//
+// Authenticated recipient acts on a pending row they received. Distinct
+// from the token-based handlers above — those serve the public /invite
+// landing for invitees without an account; these serve members who are
+// already signed in and can see the pending row on /connections.
+// ────────────────────────────────────────────────────────────────────
+
+async function handleAcceptIncoming(body: Record<string, unknown>) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+
+  const connectionId =
+    typeof body.connection_id === "string" ? body.connection_id : "";
+  if (!connectionId) {
+    return NextResponse.json(
+      { error: "missing_connection_id" },
+      { status: 400 },
+    );
+  }
+
+  const admin = adminClient();
+  if (!admin) {
+    return NextResponse.json({ error: "server_misconfigured" }, { status: 500 });
+  }
+
+  const { data: conn } = await admin
+    .from("connections")
+    .select(
+      "id, inviter_user_id, connection_user_id, connection_email, status, expires_at",
+    )
+    .eq("id", connectionId)
+    .maybeSingle<{
+      id: string;
+      inviter_user_id: string;
+      connection_user_id: string | null;
+      connection_email: string;
+      status: string;
+      expires_at: string;
+    }>();
+
+  if (!conn) {
+    return NextResponse.json({ error: "not_found" }, { status: 404 });
+  }
+  if (conn.connection_user_id !== user.id) {
+    return NextResponse.json({ error: "forbidden" }, { status: 403 });
+  }
+  if (conn.status === "active") {
+    return NextResponse.json({ ok: true, connection_id: conn.id });
+  }
+  if (conn.status !== "pending") {
+    return NextResponse.json(
+      { error: `invite_${conn.status}` },
+      { status: 410 },
+    );
+  }
+  if (new Date(conn.expires_at).getTime() < Date.now()) {
+    await admin
+      .from("connections")
+      .update({ status: "expired" })
+      .eq("id", conn.id);
+    return NextResponse.json({ error: "invite_expired" }, { status: 410 });
+  }
+
+  // Recipient-side cap. Accepting cannot push the recipient over their
+  // effective limit — same enforcement as the inviter's send-side cap.
+  const [{ count: activeCount }, { data: subRow }] = await Promise.all([
+    admin
+      .from("connections")
+      .select("id", { count: "exact", head: true })
+      .eq("status", "active")
+      .or(`inviter_user_id.eq.${user.id},connection_user_id.eq.${user.id}`),
+    admin
+      .from("subscriptions")
+      .select("status")
+      .eq("user_id", user.id)
+      .maybeSingle<{ status: string | null }>(),
+  ]);
+  const limit = effectiveConnectionsLimit(subRow?.status === "active");
+  if ((activeCount ?? 0) >= limit) {
+    return NextResponse.json({ error: "limit_reached" }, { status: 409 });
+  }
+
+  // First name for the inviter's view of this connection. Profile's
+  // full_name → first name; falls back to the email local part so the
+  // row never renders blank.
+  const { data: profile } = await admin
+    .from("profiles")
+    .select("full_name, email")
+    .eq("id", user.id)
+    .maybeSingle<{ full_name: string | null; email: string | null }>();
+  const firstName =
+    firstNameFrom(profile?.full_name) ??
+    firstNameFrom(profile?.email) ??
+    (user.email?.split("@")[0] ?? "");
+
+  const now = new Date().toISOString();
+  const { error: updErr } = await admin
+    .from("connections")
+    .update({
+      status: "active",
+      accepted_at: now,
+      connection_first_name: firstName,
+    })
+    .eq("id", conn.id);
+  if (updErr) {
+    return NextResponse.json({ error: "update_failed" }, { status: 500 });
+  }
+
+  // Depth contribution flips on for both parties.
+  await Promise.all([
+    recomputeDepthFor(conn.inviter_user_id, admin),
+    recomputeDepthFor(user.id, admin),
+  ]);
+
+  return NextResponse.json({ ok: true, connection_id: conn.id });
+}
+
+async function handleDeclineIncoming(body: Record<string, unknown>) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+
+  const connectionId =
+    typeof body.connection_id === "string" ? body.connection_id : "";
+  if (!connectionId) {
+    return NextResponse.json(
+      { error: "missing_connection_id" },
+      { status: 400 },
+    );
+  }
+
+  const admin = adminClient();
+  if (!admin) {
+    return NextResponse.json({ error: "server_misconfigured" }, { status: 500 });
+  }
+
+  const { data: conn } = await admin
+    .from("connections")
+    .select("id, connection_user_id, status")
+    .eq("id", connectionId)
+    .maybeSingle<{
+      id: string;
+      connection_user_id: string | null;
+      status: string;
+    }>();
+
+  if (!conn) {
+    return NextResponse.json({ error: "not_found" }, { status: 404 });
+  }
+  if (conn.connection_user_id !== user.id) {
+    return NextResponse.json({ error: "forbidden" }, { status: 403 });
+  }
+  if (conn.status === "declined") {
+    return NextResponse.json({ ok: true });
+  }
+  if (conn.status !== "pending") {
+    return NextResponse.json(
+      { error: `invite_${conn.status}` },
+      { status: 410 },
+    );
+  }
+
+  const { error } = await admin
+    .from("connections")
+    .update({ status: "declined" })
+    .eq("id", conn.id);
+  if (error) {
+    return NextResponse.json({ error: "update_failed" }, { status: 500 });
+  }
+  return NextResponse.json({ ok: true });
 }
 
 // ────────────────────────────────────────────────────────────────────

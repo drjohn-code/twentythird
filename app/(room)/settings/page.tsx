@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
@@ -13,6 +12,7 @@ import EmailToggles, {
 } from "@/components/room/EmailToggles";
 import SubscriptionCard from "@/components/room/SubscriptionCard";
 import DangerZone from "@/components/room/DangerZone";
+import AccountFields from "@/components/room/settings/AccountFields";
 import {
   loadDepthInputs,
   computeDepthBreakdown,
@@ -111,57 +111,11 @@ export default async function SettingsPage() {
 
       {/* Account */}
       <SettingsBlock title="Account" wideBody>
-        <dl className="account-row-horizontal">
-          <div className="account-cell">
-            <dt>name</dt>
-            <dd>
-              <span>{profile.full_name ?? "—"}</span>
-            </dd>
-            <div className="account-cell-foot">
-              <Link href="/auth/change-name" className="auth-rowlink">
-                <span>change</span>
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
-          <div className="account-cell">
-            <dt>email</dt>
-            <dd>
-              <span title={profile.email ?? undefined}>
-                {profile.email ?? "—"}
-              </span>
-            </dd>
-            <div className="account-cell-foot">
-              <Link href="/auth/change-email" className="auth-rowlink">
-                <span>change</span>
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
-          <div className="account-cell">
-            <dt>birth year</dt>
-            <dd>
-              <span>{profile.birth_year ?? "—"}</span>
-            </dd>
-            <div className="account-cell-foot">
-              <Link href="/auth/change-birth-year" className="auth-rowlink">
-                <span>change</span>
-                <span aria-hidden="true">→</span>
-              </Link>
-            </div>
-          </div>
-          <div className="account-cell">
-            <dt>language</dt>
-            <dd>
-              <span>english</span>
-            </dd>
-            <div className="account-cell-foot">
-              <span className="account-row-note">
-                more locales arrive in next version.
-              </span>
-            </div>
-          </div>
-        </dl>
+        <AccountFields
+          fullName={profile.full_name ?? ""}
+          email={profile.email ?? user.email ?? ""}
+          birthYear={profile.birth_year}
+        />
         {locale !== "en" ? null : null}
       </SettingsBlock>
 

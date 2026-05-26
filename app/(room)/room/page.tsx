@@ -30,14 +30,6 @@ type SubscriptionRow = {
   status: string | null;
 };
 
-type CaseEntryRow = {
-  entry_id: string;
-  entry_kind: string;
-  entry_title: string;
-  entry_summary: string;
-  occurred_at: string;
-};
-
 type CatchupSummaryRow = {
   week_number: number;
   created_at: string;
@@ -60,7 +52,6 @@ export default async function RoomLandingPage() {
     readingsRes,
     subRes,
     catchupsRes,
-    caseFileRes,
   ] = await Promise.all([
     supabase
       .from("users_meta")
@@ -90,12 +81,6 @@ export default async function RoomLandingPage() {
       .eq("user_id", user.id)
       .order("created_at", { ascending: false })
       .limit(4),
-    supabase
-      .from("case_file_entries")
-      .select("entry_id, entry_kind, entry_title, entry_summary, occurred_at")
-      .eq("user_id", user.id)
-      .order("occurred_at", { ascending: false })
-      .limit(3),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
@@ -114,8 +99,6 @@ export default async function RoomLandingPage() {
   const catchupWithinThisWeek =
     latestCatchup &&
     Date.now() - new Date(latestCatchup.created_at).getTime() < ISO_WEEK_MS;
-
-  const caseFileRows = (caseFileRes.data as CaseEntryRow[] | null) ?? [];
 
   return (
     <>
@@ -286,57 +269,6 @@ export default async function RoomLandingPage() {
           </div>
         </Reveal>
       </section>
-
-      <Hairline />
-
-      {/* 6 — Case File preview */}
-      <section className="room-section">
-        <Reveal as="div" className="room-section-head">
-          <Eyebrow>CASE FILE</Eyebrow>
-          <h2
-            style={{
-              fontFamily: "var(--serif)",
-              fontSize: "clamp(28px, 3vw, 38px)",
-              letterSpacing: "-0.02em",
-              lineHeight: 1.1,
-            }}
-          >
-            A record, kept <span className="it">quietly.</span>
-          </h2>
-        </Reveal>
-        <Reveal as="div" className="case-preview">
-          {caseFileRows.length === 0 ? (
-            <p
-              style={{
-                fontFamily: "var(--serif)",
-                fontStyle: "italic",
-                color: "var(--fg-dim)",
-                fontSize: "17px",
-              }}
-            >
-              the case file is empty for now — the first catchup will
-              open it.
-            </p>
-          ) : (
-            caseFileRows.map((row) => (
-              <div key={row.entry_id} className="case-preview-row">
-                <span className="case-preview-date">
-                  {formatCaseDate(row.occurred_at)}
-                </span>
-                <span className="case-preview-kind">
-                  {row.entry_kind}
-                </span>
-                <span className="case-preview-title">
-                  {row.entry_title}
-                </span>
-              </div>
-            ))
-          )}
-        </Reveal>
-        <div>
-          <RowLink href="/case-file">open the case file</RowLink>
-        </div>
-      </section>
     </>
   );
 }
@@ -372,17 +304,6 @@ function refinedLabel(lastRefinedSource: string | null | undefined): string {
     return "refined after session";
   }
   return lastRefinedSource;
-}
-
-function formatCaseDate(iso: string): string {
-  const d = new Date(iso);
-  return d
-    .toLocaleDateString("en-US", {
-      year: "2-digit",
-      month: "short",
-      day: "2-digit",
-    })
-    .toUpperCase();
 }
 
 function catchupMarkers(

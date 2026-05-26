@@ -1,6 +1,7 @@
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
 import Reveal from "@/components/layout/Reveal";
+import { effectiveConnectionsLimit } from "@/lib/connections";
 
 // ────────────────────────────────────────────────────────────────────
 // /subscribe/confirm
@@ -22,6 +23,7 @@ export default async function SubscribeConfirmPage({
 }) {
   const sp = await searchParams;
   const canceled = sp.canceled === "1";
+  const subscriberLimit = effectiveConnectionsLimit(true);
 
   return (
     <Reveal as="section" className="room-section consulting-offer">
@@ -31,8 +33,9 @@ export default async function SubscribeConfirmPage({
       </h1>
       <p className="consulting-offer-lede">
         The subscription is <span className="serif-i">€23.23 a month</span>.
-        It includes the consulting room, the ability to invite up to two
-        connections, and one clinical report each calendar month.
+        It includes the consulting room, the ability to invite up to{" "}
+        {subscriberLimit} connections, and one clinical report each calendar
+        month.
       </p>
       <p className="consulting-offer-lede consulting-offer-lede-second">
         Billing is handled by Stripe. Cancel at any time from settings —

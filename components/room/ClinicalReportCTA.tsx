@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Eyebrow from "@/components/ui/Eyebrow";
 import CTA from "@/components/ui/CTA";
 import Reveal from "@/components/layout/Reveal";
@@ -7,22 +8,33 @@ type ClinicalReportCTAProps = {
   isSubscribed: boolean;
   /** Current reading depth in [0, 1]. */
   depth: number;
+  /**
+   * True when the subscriber has already used their included
+   * report for the current calendar month. Computed by counting
+   * `reports` rows with `kind = 'clinical'` and `created_at >=`
+   * the first of the month. Always false for non-subscribers.
+   */
+  monthlyReportUsed: boolean;
 };
 
 /**
  * Bottom of /readings — the offer to generate a clinical report.
  *
- * The price NEVER appears on this CTA. It is only shown on the
- * confirmation screens.
+ * Three states drive the button + caption:
+ *   A · non-subscriber                  → glass CTA → /reports/confirm + caption
+ *   B · subscriber, monthly unused      → solid CTA → POST /api/reports
+ *   C · subscriber, monthly already used → glass CTA → /reports/confirm
  *
- * Subscribed users get a real <form method="POST"> straight to
- * /api/reports, which creates a queued row and redirects to its status
- * page. Free users go to /reports/confirm where the price string lives.
+ * The price never appears here. It is only shown on /reports/confirm.
  */
 export default function ClinicalReportCTA({
   isSubscribed,
   depth,
+  monthlyReportUsed,
 }: ClinicalReportCTAProps) {
+  const canGenerateIncluded = isSubscribed && !monthlyReportUsed;
+  const showSubscribersCaption = !isSubscribed;
+
   return (
     <Reveal as="section" className="clinical-report-cta">
       <a id="clinical-report" className="anchor-target" aria-hidden="true" />
@@ -45,9 +57,9 @@ export default function ClinicalReportCTA({
           </p>
         ) : null}
         <div className="clinical-report-actions">
-          {isSubscribed ? (
+          {canGenerateIncluded ? (
             <form method="POST" action="/api/reports">
-              <button type="submit" className="cta">
+              <button type="submit" className="cta cta-solid">
                 <span>Generate clinical report</span>
                 <span className="arrow" aria-hidden="true">
                   →
@@ -58,10 +70,17 @@ export default function ClinicalReportCTA({
             <CTA href="/reports/confirm">Request clinical report</CTA>
           )}
         </div>
-        <div className="clinical-report-foot">
-          <span>subscribers · one report included each month</span>
-          <span />
-        </div>
+        {showSubscribersCaption ? (
+          <p className="clinical-report-foot">
+            <span>one report included each month for </span>
+            <Link
+              href="/subscribe/confirm"
+              className="clinical-report-foot-link"
+            >
+              subscribers
+            </Link>
+          </p>
+        ) : null}
       </div>
     </Reveal>
   );

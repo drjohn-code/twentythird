@@ -53,7 +53,18 @@ export default async function ReadingsPage() {
   // (room) layout has already guaranteed a session. Narrow for TS.
   if (!user) return null;
 
-  const [metaRes, readingsRes, subRes] = await Promise.all([
+  const monthStartIso = new Date(
+    Date.UTC(
+      new Date().getUTCFullYear(),
+      new Date().getUTCMonth(),
+      1,
+      0,
+      0,
+      0,
+    ),
+  ).toISOString();
+
+  const [metaRes, readingsRes, subRes, monthReportRes] = await Promise.all([
     supabase
       .from("users_meta")
       .select("reading_depth")
@@ -72,10 +83,18 @@ export default async function ReadingsPage() {
       .select("status")
       .eq("user_id", user.id)
       .maybeSingle<SubscriptionRow>(),
+    supabase
+      .from("reports")
+      .select("id", { count: "exact", head: true })
+      .eq("user_id", user.id)
+      .eq("kind", "clinical")
+      .gte("created_at", monthStartIso),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
   const isSubscribed = subRes.data?.status === "active";
+  const monthlyReportUsed =
+    isSubscribed && (monthReportRes.count ?? 0) >= 1;
 
   const readingsBySlug = new Map<string, BlockReadingRow>();
   let mostRecentAt: Date | null = null;
@@ -138,7 +157,11 @@ export default async function ReadingsPage() {
         );
       })}
 
-      <ClinicalReportCTA isSubscribed={isSubscribed} depth={depth} />
+      <ClinicalReportCTA
+        isSubscribed={isSubscribed}
+        depth={depth}
+        monthlyReportUsed={monthlyReportUsed}
+      />
     </>
   );
 }
