@@ -2955,9 +2955,8 @@ section{position:relative;}
   display:grid;grid-template-columns:repeat(2, 1fr);gap:28px;
 }
 .block-card{
-  border-radius:24px;padding:28px 30px;min-height:380px;
+  border-radius:24px;padding:28px 30px 24px;min-height:620px;
   display:flex;flex-direction:column;gap:18px;position:relative;
-  aspect-ratio:1 / 1;
   transition:border-color 300ms var(--ease);
 }
 .block-card:hover{border-color:var(--hair-strong)}
@@ -2974,38 +2973,23 @@ section{position:relative;}
 .block-card-reading{
   font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.35;
   color:var(--fg);text-wrap:pretty;letter-spacing:-0.01em;
-  flex:1 1 auto;
 }
 .block-card-takeaway{
   font-family:var(--serif);font-size:15px;line-height:1.4;color:var(--fg-dim);
 }
-.block-card-meta{
-  display:flex;justify-content:space-between;align-items:baseline;
-  font-family:var(--mono);font-size:10px;letter-spacing:0.16em;
-  text-transform:uppercase;color:var(--fg-mute);
-  padding-top:14px;border-top:1px solid var(--hair);
-  gap:14px;
+.block-card-diagram{
+  flex:1 1 auto;display:flex;align-items:center;justify-content:center;
+  min-height:200px;padding:8px 0;position:relative;
 }
 .block-card-trigger{
   align-self:flex-end;font-family:var(--sans);font-size:13px;color:var(--fg-dim);
   display:inline-flex;align-items:baseline;gap:8px;
-  padding-bottom:2px;border-bottom:1px solid var(--hair);
-  background:none;cursor:pointer;
+  padding:6px 0 2px;border-top:1px solid var(--hair);
+  background:none;cursor:pointer;text-decoration:none;
+  margin-top:auto;width:100%;justify-content:flex-end;
   transition:color 300ms var(--ease), border-color 300ms var(--ease), gap 400ms var(--ease);
 }
-.block-card-trigger:hover{color:var(--fg);border-color:var(--hair-strong);gap:12px}
-.block-card-defn{
-  overflow:hidden;max-height:0;
-  transition:max-height 600ms var(--ease), opacity 400ms var(--ease);
-  opacity:0;
-}
-.block-card.is-open .block-card-defn{
-  max-height:400px;opacity:1;
-}
-.block-card-defn-inner{
-  padding-top:16px;border-top:1px solid var(--hair);
-  font-family:var(--serif);font-size:15px;color:var(--fg-dim);line-height:1.55;
-}
+.block-card-trigger:hover{color:var(--fg);border-top-color:var(--hair-strong);gap:12px}
 
 /* ---- Room split-row (landing previews) ---- */
 .room-split{
@@ -3211,6 +3195,15 @@ section{position:relative;}
 }
 .reading-figure .split-visual{margin:0}
 
+.reading-actions-row{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  margin-top:4px;
+}
+.reading-actions-sep{
+  font-family:var(--serif);font-size:14px;color:var(--fg-mute);
+  user-select:none;
+}
+
 /* Clinical report CTA — bottom of /readings, centered */
 .clinical-report-cta{
   padding:140px 0 0;display:grid;place-items:center;text-align:center;
@@ -3273,7 +3266,7 @@ section{position:relative;}
   .room-section{padding:56px 0;gap:28px}
   .room-split, .room-split.reverse{grid-template-columns:1fr;gap:28px}
   .block-grid{grid-template-columns:1fr;gap:18px}
-  .block-card{aspect-ratio:auto;min-height:280px;padding:24px}
+  .block-card{min-height:520px;padding:24px}
   .case-preview-row{
     grid-template-columns:1fr;gap:6px;padding:16px 0;
   }
@@ -3903,6 +3896,16 @@ section{position:relative;}
 .case-file-empty{
   font-family:var(--serif);font-style:italic;font-size:18px;color:var(--fg-dim);
   padding:24px 0;
+}
+.case-file-empty-block{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;gap:32px;min-height:280px;padding:48px 0;
+}
+.case-file-empty-block .case-file-empty{
+  padding:0;max-width:520px;line-height:1.5;
+}
+@media (max-width: 980px){
+  .case-file-empty-block{min-height:220px;padding:32px 0;gap:24px}
 }
 
 /* Per-entry stub */
@@ -5059,4 +5062,255 @@ section{position:relative;}
   font-family:var(--serif);font-size:17px;color:var(--fg-dim);max-width:640px;margin:0;
 }
 .catchup-feedback-rest em{font-style:italic}
+
+/* =====================================================================
+   Room analytics — StructureMap radar, six per-reading diagrams, and
+   the WeakDataOverlay that gates every figure on intake richness.
+   ===================================================================== */
+
+/* ---- WeakDataOverlay ----------------------------------------------- */
+.weak-data-overlay{position:relative;width:100%;height:100%;min-height:inherit;display:flex}
+.weak-data-blur{
+  position:absolute;inset:0;
+  filter:blur(14px);opacity:0.5;
+  pointer-events:none;user-select:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.weak-data-blur > *{width:100%;height:100%}
+.weak-data-copy{
+  position:relative;z-index:2;width:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;text-align:center;padding:20px;
+}
+.weak-data-label{
+  font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+.weak-data-link{
+  font-family:var(--serif);font-style:italic;font-size:15px;color:var(--fg-dim);
+  display:inline-flex;align-items:baseline;gap:8px;
+  text-decoration:none;transition:color 300ms var(--ease), gap 400ms var(--ease);
+}
+.weak-data-link:hover{color:var(--fg);gap:12px}
+
+/* ---- StructureMap radar (Fig. 01 on /room) ------------------------- */
+.structure-map{
+  display:flex;flex-direction:column;gap:18px;align-items:center;width:100%;
+}
+.structure-radar{
+  width:100%;max-width:280px;height:auto;aspect-ratio:1/1;display:block;
+}
+.structure-radar-ring{
+  fill:none;stroke:var(--hair);stroke-width:1;
+}
+.structure-radar-axis{
+  stroke:var(--hair);stroke-width:1;
+}
+.structure-radar-poly{
+  fill:var(--fg);fill-opacity:0.08;
+  stroke:var(--fg);stroke-width:1.2;stroke-linejoin:round;
+  transform:scale(0);
+  transition:transform 1400ms var(--ease);
+}
+.reveal.in .structure-radar-poly{transform:scale(1)}
+.structure-radar-dot{
+  fill:var(--fg);
+  opacity:0;transition:opacity 700ms var(--ease) 600ms;
+}
+.reveal.in .structure-radar-dot{opacity:1}
+.structure-radar-label{
+  font-family:var(--mono);font-size:9.5px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;fill:var(--fg-mute);
+}
+.structure-map-foot{
+  display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center;
+  padding-top:6px;border-top:1px solid var(--hair);width:100%;
+}
+.structure-map-foot-label{
+  font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+.structure-map-foot-value{
+  font-family:var(--serif);font-style:italic;font-size:17px;color:var(--fg);
+  letter-spacing:-0.005em;
+}
+
+/* ---- ReadingDiagram card-size shell ------------------------------- */
+.reading-diagram-card{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  position:relative;min-height:180px;
+}
+
+/* ---- LoopCycle ----------------------------------------------------- */
+.loop-cycle{width:100%;display:flex;align-items:center;justify-content:center}
+.loop-cycle-svg{
+  width:100%;height:auto;aspect-ratio:1/1;display:block;
+}
+.loop-cycle-card .loop-cycle-svg{max-width:200px}
+.loop-cycle-section .loop-cycle-svg{max-width:340px}
+.loop-cycle-ring{
+  fill:none;stroke:var(--hair);stroke-width:1;
+  stroke-dasharray:560;stroke-dashoffset:560;
+  transition:stroke-dashoffset 1400ms var(--ease);
+}
+.reveal.in .loop-cycle-ring{stroke-dashoffset:0}
+.loop-cycle-dot{fill:var(--fg)}
+.loop-cycle-arrow{
+  font-family:var(--serif);font-style:italic;font-size:14px;
+  fill:var(--fg-dim);
+}
+.loop-cycle-section .loop-cycle-arrow{font-size:16px}
+.loop-cycle-label{
+  font-family:var(--serif);font-style:italic;
+  fill:var(--fg);letter-spacing:-0.005em;
+}
+.loop-cycle-card .loop-cycle-label{font-size:11px}
+.loop-cycle-section .loop-cycle-label{font-size:14px}
+
+/* ---- LinguisticMarkers -------------------------------------------- */
+.ling-markers{width:100%;display:flex;flex-direction:column;justify-content:center}
+.ling-markers-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.ling-markers-section .ling-markers-list{gap:16px}
+.ling-markers-row{
+  display:grid;grid-template-columns:1fr 2fr auto;align-items:center;gap:14px;
+}
+.ling-markers-label{
+  font-family:var(--serif);font-style:italic;color:var(--fg);
+}
+.ling-markers-card .ling-markers-label{font-size:13px}
+.ling-markers-section .ling-markers-label{font-size:15px}
+.ling-markers-meter{
+  display:block;height:1px;background:var(--hair-strong);position:relative;
+}
+.ling-markers-meter i{
+  position:absolute;left:0;top:0;height:100%;background:var(--fg);
+  width:0;transition:width 1400ms var(--ease);
+}
+.reveal.in .ling-markers-meter i{width:var(--w, 60%)}
+.ling-markers-count{
+  font-family:var(--mono);font-size:11px;color:var(--fg-mute);letter-spacing:0.04em;
+}
+
+/* ---- AuthorityAxis ------------------------------------------------- */
+.auth-axis{width:100%;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.auth-axis-labels{
+  display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:9.5px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+.auth-axis-section .auth-axis-labels{font-size:10.5px}
+.auth-axis-track{
+  position:relative;width:100%;height:1px;background:var(--hair-strong);
+}
+.auth-axis-tick{
+  position:absolute;top:50%;transform:translate(-50%, -50%) scale(0);
+  width:8px;height:8px;border-radius:999px;background:var(--fg);
+  transition:transform 1200ms var(--ease) 200ms;
+}
+.reveal.in .auth-axis-tick{transform:translate(-50%, -50%) scale(1)}
+.auth-axis-foot{
+  display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:10px;color:var(--fg-mute);letter-spacing:0.08em;
+}
+.auth-axis-foot-dim{font-variant-numeric:tabular-nums}
+
+/* ---- ThresholdGraph ----------------------------------------------- */
+.threshold-graph{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%}
+.threshold-graph-svg{
+  width:100%;height:auto;aspect-ratio:1/1;display:block;
+}
+.threshold-graph-card .threshold-graph-svg{max-width:200px}
+.threshold-graph-section .threshold-graph-svg{max-width:300px}
+.threshold-graph-frame{
+  fill:none;stroke:var(--hair-strong);stroke-width:1;
+}
+.threshold-graph-mid{stroke:var(--hair);stroke-width:1;stroke-dasharray:2 3}
+.threshold-graph-quad{
+  font-family:var(--mono);font-size:8.5px;font-weight:500;letter-spacing:0.18em;
+  text-transform:uppercase;fill:var(--fg-mute);
+}
+.threshold-graph-section .threshold-graph-quad{font-size:10px}
+.threshold-graph-dot{
+  fill:var(--fg);
+  opacity:0;transition:opacity 700ms var(--ease) 700ms;
+}
+.reveal.in .threshold-graph-dot{opacity:1}
+.threshold-graph-axes{
+  display:flex;justify-content:space-between;width:100%;
+  font-family:var(--mono);font-size:9px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+}
+
+/* ---- DesireBars --------------------------------------------------- */
+.desire-bars{width:100%;display:flex;flex-direction:column;justify-content:center}
+.desire-bars-list{
+  list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;
+}
+.desire-bars-section .desire-bars-list{gap:24px}
+.desire-bars-row{
+  display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;
+}
+.desire-bars-label{
+  font-family:var(--serif);font-style:italic;color:var(--fg);
+}
+.desire-bars-card .desire-bars-label{font-size:13px}
+.desire-bars-section .desire-bars-label{font-size:16px}
+.desire-bars-meter{
+  display:block;height:1px;background:var(--hair-strong);position:relative;
+}
+.desire-bars-meter i{
+  position:absolute;left:0;top:0;height:100%;background:var(--fg);
+  width:0;transition:width 1400ms var(--ease);
+}
+.reveal.in .desire-bars-meter i{width:var(--w, 50%)}
+.desire-bars-pct{
+  font-family:var(--mono);font-size:11px;color:var(--fg-mute);letter-spacing:0.04em;
+}
+
+/* ---- DefenceLadder ------------------------------------------------ */
+.defence-ladder{width:100%;display:flex;flex-direction:column;justify-content:center}
+.defence-ladder-list{
+  list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;
+}
+.defence-ladder-section .defence-ladder-list{gap:26px}
+.defence-ladder-rung{
+  display:grid;grid-template-columns:14px 1fr auto;align-items:center;gap:14px;
+  position:relative;
+}
+.defence-ladder-cap{
+  width:8px;height:8px;border-radius:999px;
+  background:transparent;border:1px solid var(--hair);
+  transition:background 700ms var(--ease), border-color 700ms var(--ease);
+}
+.defence-ladder-line{
+  display:block;height:1px;background:var(--hair-strong);
+  transition:height 700ms var(--ease), background 700ms var(--ease);
+}
+.defence-ladder-label{
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--fg-mute);
+  transition:color 700ms var(--ease);
+}
+.defence-ladder-section .defence-ladder-label{font-size:11px}
+.defence-ladder-rung.is-active .defence-ladder-cap{
+  background:var(--fg);border-color:var(--fg);
+}
+.defence-ladder-rung.is-active .defence-ladder-line{
+  background:var(--fg);height:2px;
+}
+.defence-ladder-rung.is-active .defence-ladder-label{color:var(--fg)}
+
+/* Mobile — diagrams stay readable on small screens */
+@media (max-width: 980px){
+  .structure-radar{max-width:240px}
+  .structure-radar-label{font-size:9px;letter-spacing:0.18em}
+  .loop-cycle-section .loop-cycle-svg{max-width:280px}
+  .threshold-graph-section .threshold-graph-svg{max-width:240px}
+  .threshold-graph-quad,
+  .threshold-graph-section .threshold-graph-quad{font-size:8.5px}
+  .ling-markers-section .ling-markers-row,
+  .desire-bars-section .desire-bars-row{
+    grid-template-columns:1fr 1.6fr auto;gap:10px;
+  }
+}
 

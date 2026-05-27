@@ -1,16 +1,15 @@
 import { createClient } from "@/lib/supabase/server";
 import Glass from "@/components/ui/Glass";
-import FigureCard from "@/components/figures/FigureCard";
-import PatternList from "@/components/figures/PatternList";
-import DreamText, { Ann } from "@/components/figures/DreamText";
-import DreamKey from "@/components/figures/DreamKey";
-import ReportMock from "@/components/figures/ReportMock";
-import ScriptRevision from "@/components/figures/ScriptRevision";
 import BlockSection from "@/components/room/BlockSection";
 import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
+import ReadingDiagram from "@/components/room/analytics/ReadingDiagram";
 import { DASHBOARD_BLOCKS, type BlockSlug } from "@/lib/blocks";
 import { blockSeeds } from "@/lib/copy";
 import { queueReadingLede } from "@/lib/ai/reading-lede-jobs";
+import {
+  computeReadingDiagramInput,
+  type StructureInputs,
+} from "@/lib/structures";
 
 type BlockReadingRow = {
   id: string;
@@ -27,6 +26,17 @@ type BlockReadingRow = {
 
 type SubscriptionRow = {
   status: string | null;
+};
+
+type IntakeResponseRow = {
+  step_number: number;
+  payload: Record<string, unknown> | null;
+};
+
+type IntakeAnswerRow = {
+  question_key: string;
+  answer: { value: unknown } | null;
+  version: number;
 };
 
 const FIGURE_INDEX: Record<BlockSlug, number> = {
@@ -64,7 +74,14 @@ export default async function ReadingsPage() {
     ),
   ).toISOString();
 
-  const [metaRes, readingsRes, subRes, monthReportRes] = await Promise.all([
+  const [
+    metaRes,
+    readingsRes,
+    subRes,
+    monthReportRes,
+    intakeResponsesRes,
+    intakeAnswersRes,
+  ] = await Promise.all([
     supabase
       .from("users_meta")
       .select("reading_depth")
@@ -89,6 +106,14 @@ export default async function ReadingsPage() {
       .eq("user_id", user.id)
       .eq("kind", "clinical")
       .gte("created_at", monthStartIso),
+    supabase
+      .from("intake_responses")
+      .select("step_number, payload")
+      .eq("user_id", user.id),
+    supabase
+      .from("intake_answers")
+      .select("question_key, answer, version")
+      .eq("user_id", user.id),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
@@ -103,6 +128,17 @@ export default async function ReadingsPage() {
     const ts = new Date(row.created_at);
     if (!mostRecentAt || ts > mostRecentAt) mostRecentAt = ts;
   }
+
+  const structureInputs: StructureInputs = {
+    weights: weightsFrom(readingsBySlug),
+    takeaways: takeawaysFrom(readingsBySlug),
+    readingDepth: depth,
+    freeText: gatherFreeText(
+      (intakeResponsesRes.data ?? []) as IntakeResponseRow[],
+      (intakeAnswersRes.data ?? []) as IntakeAnswerRow[],
+    ),
+    userId: user.id,
+  };
 
   return (
     <>
@@ -143,6 +179,10 @@ export default async function ReadingsPage() {
             slug: b.slug,
           });
         }
+        const diagramInput = computeReadingDiagramInput(
+          b.slug,
+          structureInputs,
+        );
         return (
           <BlockSection
             key={b.slug}
@@ -152,7 +192,11 @@ export default async function ReadingsPage() {
             definition={definition}
             readingLede={lede}
             hasPriorReadings={hasPriorReadings}
-            figure={figureFor(b.slug)}
+            figure={
+              diagramInput ? (
+                <ReadingDiagram input={diagramInput} size="section" />
+              ) : null
+            }
           />
         );
       })}
@@ -221,166 +265,6 @@ const LEDE_TAIL: Partial<Record<BlockSlug, string[]>> = {
   ],
 };
 
-// ────────────────────────────────────────────────────────────────────
-// Figure mapping — each slug owns one figure pattern from
-// components/figures. The figures use stub data for now;
-// TODO: hydrate from refined model output once Phase 3+ writes it.
-// ────────────────────────────────────────────────────────────────────
-
-function figureFor(slug: BlockSlug) {
-  switch (slug) {
-    case "subconscious-loops":
-      return (
-        <FigureCard
-          label="LONGITUDINAL"
-          subtitle="recurrence"
-          fig="Fig. 01"
-        >
-          <PatternList
-            rows={[
-              { year: "2014", width: 56, outcome: "first cycle, repaired late" },
-              { year: "2017", width: 64, outcome: "same shape, faster exit" },
-              { year: "2021", width: 58, outcome: "named, not yet altered" },
-              { year: "2024", width: 62, outcome: "interrupted once" },
-            ]}
-            summary={[
-              { k: "frequency", v: "~3.2y" },
-              { k: "duration", v: "~14 wks", italic: true },
-              { k: "trend", v: "softening", italic: true },
-            ]}
-          />
-        </FigureCard>
-      );
-    case "linguistic-unconscious":
-      return (
-        <FigureCard
-          label="ANNOTATED"
-          subtitle="speech sample"
-          fig="Fig. 02"
-        >
-          <DreamText
-            paragraphs={[
-              <>
-                I keep telling myself I <Ann n="1">should</Ann> have
-                been further along by now, but every time the work is
-                almost finished I find a reason to begin{" "}
-                <Ann n="2">again</Ann>.
-              </>,
-              <>
-                It is not that I do not want it &mdash; I do, only it
-                feels like the want is{" "}
-                <Ann n="3">already someone else&rsquo;s</Ann>.
-              </>,
-            ]}
-          />
-          <DreamKey
-            entries={[
-              { n: "01", label: "should", gloss: "inherited demand" },
-              { n: "02", label: "again", gloss: "loop marker" },
-              {
-                n: "03",
-                label: "already someone else's",
-                gloss: "displaced desire",
-              },
-            ]}
-          />
-        </FigureCard>
-      );
-    case "father-imago":
-      return (
-        <FigureCard
-          label="PROFILE"
-          subtitle="father position"
-          fig="Fig. 03"
-        >
-          <ReportMock
-            caseLabel="case · self"
-            prepared="last refined · this week"
-            rows={[
-              { k: "authority received", pct: ".68", width: 68 },
-              { k: "authority granted", pct: ".71", width: 71 },
-              { k: "judgment internal", pct: ".82", width: 82 },
-            ]}
-            footerLabel="dominant posture"
-            footerValue="judge · before being judged"
-          />
-        </FigureCard>
-      );
-    case "intimacy-threshold":
-      return (
-        <FigureCard
-          label="PROFILE"
-          subtitle="closeness response"
-          fig="Fig. 04"
-        >
-          <ReportMock
-            caseLabel="case · self"
-            prepared="last refined · this week"
-            rows={[
-              { k: "tolerated proximity", pct: ".74", width: 74 },
-              { k: "withdrawal latency", pct: ".46", width: 46 },
-              { k: "repair openness", pct: ".58", width: 58 },
-            ]}
-            footerLabel="threshold sits at"
-            footerValue="legibility · not nearness"
-          />
-        </FigureCard>
-      );
-    case "desire-structure":
-      return (
-        <FigureCard
-          label="PROFILE"
-          subtitle="want vs. refusal"
-          fig="Fig. 05"
-        >
-          <ReportMock
-            caseLabel="case · self"
-            prepared="last refined · this week"
-            rows={[
-              { k: "stated wants", pct: ".77", width: 77 },
-              { k: "active refusals", pct: ".62", width: 62 },
-              { k: "named desire", pct: ".34", width: 34 },
-            ]}
-            footerLabel="signal carried by"
-            footerValue="the refusal · not the want"
-          />
-        </FigureCard>
-      );
-    case "professional-block":
-      return (
-        <FigureCard
-          label="REVISION"
-          subtitle="working scripts"
-          fig="Fig. 06"
-        >
-          <ScriptRevision
-            rows={[
-              {
-                prefix: "START",
-                old: "I need it perfect before I begin.",
-                next: "I begin in draft. The shape arrives by working.",
-              },
-              {
-                prefix: "FINISH",
-                old: "If I finish, they will see what is missing.",
-                next: "If I finish, the work begins its own conversation.",
-              },
-              {
-                prefix: "SHOW",
-                old: "It is not ready to be seen.",
-                next: "Being seen is the last step of the work, not after it.",
-              },
-            ]}
-            metaLeft={{ label: "site", value: "visibility" }}
-            metaRight={{ label: "trend", value: "softening" }}
-          />
-        </FigureCard>
-      );
-    default:
-      return null;
-  }
-}
-
 function formatRefinedDate(d: Date | null): string {
   if (!d) return "—";
   return d
@@ -390,4 +274,46 @@ function formatRefinedDate(d: Date | null): string {
       day: "2-digit",
     })
     .toUpperCase();
+}
+
+function weightsFrom(
+  readingsBySlug: Map<string, BlockReadingRow>,
+): StructureInputs["weights"] {
+  const out: StructureInputs["weights"] = {};
+  for (const [slug, row] of readingsBySlug) {
+    out[slug as keyof StructureInputs["weights"]] = row.weight ?? 0;
+  }
+  return out;
+}
+
+function takeawaysFrom(
+  readingsBySlug: Map<string, BlockReadingRow>,
+): StructureInputs["takeaways"] {
+  const out: StructureInputs["takeaways"] = {};
+  for (const [slug, row] of readingsBySlug) {
+    out[slug as keyof StructureInputs["takeaways"]] = row.takeaway ?? "";
+  }
+  return out;
+}
+
+function gatherFreeText(
+  responses: IntakeResponseRow[],
+  edits: IntakeAnswerRow[],
+): string {
+  const chunks: string[] = [];
+  for (const r of responses) {
+    if (!r.payload) continue;
+    for (const v of Object.values(r.payload)) {
+      if (typeof v === "string" && v.length > 10 && v.includes(" ")) {
+        chunks.push(v);
+      }
+    }
+  }
+  for (const a of edits) {
+    const v = a.answer?.value;
+    if (typeof v === "string" && v.length > 10 && v.includes(" ")) {
+      chunks.push(v);
+    }
+  }
+  return chunks.join(" ");
 }

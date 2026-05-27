@@ -62,9 +62,17 @@ export default function BlockSection({
               ))}
             </div>
             {hasPriorReadings ? (
-              <RowLink href={`/case-file?filter=readings#${slug}`}>
-                see in case file
-              </RowLink>
+              <div className="reading-actions-row">
+                <RowLink href="/settings#depth">
+                  strengthen the accuracy
+                </RowLink>
+                <span className="reading-actions-sep" aria-hidden="true">
+                  ·
+                </span>
+                <RowLink href="/readings#clinical-report">
+                  request a report
+                </RowLink>
+              </div>
             ) : null}
           </div>
           <div className="reading-figure">{figure}</div>

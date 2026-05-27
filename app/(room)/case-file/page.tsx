@@ -5,30 +5,36 @@ import Reveal from "@/components/layout/Reveal";
 import CaseFileList, {
   type CaseEntry,
 } from "@/components/room/CaseFileList";
+import CaseFileEmpty from "@/components/room/CaseFileEmpty";
 import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
+import SubscriptionCard from "@/components/room/SubscriptionCard";
+import SettingsBlock from "@/components/room/SettingsBlock";
+import { loadSubscriptionRow } from "@/lib/subscription";
 
 // /case-file — the chronological dossier.
 //
 // Filter is passed via ?filter= so it stays a server render. Hairline
 // text toggles (not chips). Silent weeks are computed in the list
-// component, not the view.
+// component, not the view. Intake readings live on /readings — they
+// are not surfaced here.
 
-const FILTERS = ["all", "readings", "catchups", "sessions", "reports"] as const;
+const FILTERS = ["all", "catchups", "sessions", "reports"] as const;
 type Filter = (typeof FILTERS)[number];
 
 const KIND_BY_FILTER: Record<
   Exclude<Filter, "all">,
   ReadonlyArray<string>
 > = {
-  readings: ["reading"],
   catchups: ["catchup"],
   sessions: ["session"],
   reports: ["report"],
 };
 
-type SearchParams = Promise<{ filter?: string }>;
+// The "all" tab merges catchups, sessions, and reports — never intake
+// readings (which are surfaced on /readings, not here).
+const ALL_KINDS: ReadonlyArray<string> = ["catchup", "session", "report"];
 
-type SubscriptionRow = { status: string | null };
+type SearchParams = Promise<{ filter?: string }>;
 
 export default async function CaseFilePage({
   searchParams,
@@ -44,17 +50,16 @@ export default async function CaseFilePage({
   } = await supabase.auth.getUser();
   if (!user) return null;
 
-  let entriesQuery = supabase
+  const kindsForQuery =
+    filter === "all" ? ALL_KINDS : KIND_BY_FILTER[filter];
+
+  const entriesQuery = supabase
     .from("case_file_entries")
     .select("entry_id, entry_kind, entry_title, entry_summary, occurred_at")
     .eq("user_id", user.id)
+    .in("entry_kind", kindsForQuery as string[])
     .order("occurred_at", { ascending: false })
     .limit(300);
-
-  if (filter !== "all") {
-    const kinds = KIND_BY_FILTER[filter];
-    entriesQuery = entriesQuery.in("entry_kind", kinds as string[]);
-  }
 
   const monthStartIso = new Date(
     Date.UTC(
@@ -67,13 +72,9 @@ export default async function CaseFilePage({
     ),
   ).toISOString();
 
-  const [entriesRes, subRes, metaRes, monthReportRes] = await Promise.all([
+  const [entriesRes, subscription, metaRes, monthReportRes] = await Promise.all([
     entriesQuery,
-    supabase
-      .from("subscriptions")
-      .select("status")
-      .eq("user_id", user.id)
-      .maybeSingle<SubscriptionRow>(),
+    loadSubscriptionRow(supabase, user.id),
     supabase
       .from("users_meta")
       .select("reading_depth")
@@ -88,10 +89,12 @@ export default async function CaseFilePage({
   ]);
 
   const entries = (entriesRes.data ?? []) as CaseEntry[];
-  const isSubscribed = subRes.data?.status === "active";
+  const isSubscribed = subscription?.status === "active";
   const depth = metaRes.data?.reading_depth ?? 0;
   const monthlyReportUsed =
     isSubscribed && (monthReportRes.count ?? 0) >= 1;
+
+  const isEmpty = entries.length === 0;
 
   return (
     <>
@@ -124,18 +127,56 @@ export default async function CaseFilePage({
       </Reveal>
 
       <section className="room-section">
-        <CaseFileList entries={entries} filter={filter} />
+        {isEmpty ? (
+          <CaseFileEmpty {...emptyStateFor(filter)} />
+        ) : (
+          <CaseFileList entries={entries} filter={filter} />
+        )}
       </section>
 
-      <ClinicalReportCTA
-        isSubscribed={isSubscribed}
-        depth={depth}
-        monthlyReportUsed={monthlyReportUsed}
-      />
+      {filter === "sessions" ? (
+        <SettingsBlock title="Subscription" id="subscription">
+          <SubscriptionCard subscription={subscription} />
+        </SettingsBlock>
+      ) : (
+        <ClinicalReportCTA
+          isSubscribed={isSubscribed}
+          depth={depth}
+          monthlyReportUsed={monthlyReportUsed}
+        />
+      )}
     </>
   );
 }
 
 function isFilter(v: string | undefined): v is Filter {
   return !!v && (FILTERS as readonly string[]).includes(v);
+}
+
+// Per-tab empty-state text + CTA. The all and catchups tabs share the
+// same copy (the first catchup is what opens the file in both cases).
+// Sessions speaks to the consultation, reports has no CTA — it cannot
+// be willed into existence by the user.
+function emptyStateFor(
+  filter: Filter,
+): { text: string; cta?: { label: string; href: string } } {
+  switch (filter) {
+    case "all":
+    case "catchups":
+      return {
+        text: "the case file is still empty — the first catchup will open it.",
+        cta: { label: "Go to Catchup", href: "/catchup" },
+      };
+    case "sessions":
+      return {
+        text:
+          "the case file is still empty — the first consultation session will open it.",
+        cta: { label: "Go to Consulting", href: "/consulting" },
+      };
+    case "reports":
+      return {
+        text:
+          "the case file is still empty — the first generated report will open it.",
+      };
+  }
 }

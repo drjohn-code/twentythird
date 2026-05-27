@@ -1,65 +1,32 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
+import Link from "next/link";
 
 type BlockCardProps = {
   /** 1..6 catalogue index (rendered as "Reading 0N"). */
   index: number;
+  /** Slug — used to build the /readings#<slug> deep-link. */
+  slug: string;
   /** Italic subtitle — e.g. "father‑imago". Lowercase, no trailing punctuation. */
   subtitle: string;
   /** Serif italic reading — the clinical observation. Max 18 words. */
   reading: string;
   /** Serif takeaway — what to be aware of. Max 14 words. */
   takeaway: string;
-  /** Plain serif definition shown in the "what this is" expansion. 2–4 sentences. */
-  definition: string;
-  /** Weight in [0, 1] — rendered as ".72" mono in the metadata row. */
-  weight: number;
-  /** Free-form line, e.g. "refined after catchup · week 04". */
-  refinedLabel: string;
+  /** The per-slug diagram, pre-rendered (already wrapped in WeakDataOverlay if needed). */
+  diagram: ReactNode;
 };
-
-function fmtWeight(w: number): string {
-  const clamped = Math.max(0, Math.min(1, w));
-  return clamped.toFixed(2).replace(/^0/, "");
-}
 
 export default function BlockCard({
   index,
+  slug,
   subtitle,
   reading,
   takeaway,
-  definition,
-  weight,
-  refinedLabel,
+  diagram,
 }: BlockCardProps) {
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!open) return;
-    const onPointer = (e: MouseEvent) => {
-      if (!ref.current) return;
-      if (!ref.current.contains(e.target as Node)) setOpen(false);
-    };
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
-    };
-    document.addEventListener("mousedown", onPointer);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onPointer);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-
   const num = `Reading ${String(index).padStart(2, "0")}`;
-
   return (
-    <div
-      ref={ref}
-      className={`block-card glass${open ? " is-open" : ""}`}
-    >
+    <div className="block-card glass">
       <div className="block-card-head">
         <span className="block-card-num">{num}</span>
         <span className="block-card-subtitle">{subtitle}</span>
@@ -71,27 +38,15 @@ export default function BlockCard({
 
       <p className="block-card-takeaway">{takeaway}</p>
 
-      <div className="block-card-meta">
-        <span>weight · {fmtWeight(weight)}</span>
-        <span>{refinedLabel}</span>
-      </div>
+      <div className="block-card-diagram">{diagram}</div>
 
-      <button
-        type="button"
+      <Link
+        href={`/readings#${slug}`}
         className="block-card-trigger"
-        aria-expanded={open}
-        onClick={() => setOpen((o) => !o)}
       >
-        <span>{open ? "close" : "what this is"}</span>
+        <span>what this is</span>
         <span aria-hidden="true">→</span>
-      </button>
-
-      <div
-        className="block-card-defn"
-        aria-hidden={!open}
-      >
-        <div className="block-card-defn-inner">{definition}</div>
-      </div>
+      </Link>
     </div>
   );
 }

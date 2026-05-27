@@ -16,7 +16,7 @@ export type CaseEntry = {
   occurred_at: string;
 };
 
-type Filter = "all" | "readings" | "catchups" | "sessions" | "reports" | "connections";
+type Filter = "all" | "catchups" | "sessions" | "reports" | "connections";
 
 type CaseFileListProps = {
   entries: CaseEntry[];
@@ -29,13 +29,9 @@ type CaseFileListProps = {
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
 
 export default function CaseFileList({ entries, filter }: CaseFileListProps) {
-  if (entries.length === 0) {
-    return (
-      <p className="case-file-empty">
-        the case file is still empty — the first catchup will open it.
-      </p>
-    );
-  }
+  // Empty state is rendered by the page so it can vary per active tab
+  // (different wording, different CTA, sometimes a Subscription block
+  // beneath instead of the Clinical Report).
 
   // Walk newest → oldest; insert a silent-week node where the gap
   // between adjacent entries crosses 7 days. We only render these

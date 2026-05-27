@@ -1,20 +1,25 @@
-import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import CTA from "@/components/ui/CTA";
 import RowLink from "@/components/ui/RowLink";
 import Glass from "@/components/ui/Glass";
 import FigureCard from "@/components/figures/FigureCard";
-import ReportMock from "@/components/figures/ReportMock";
 import InsightTimeline from "@/components/figures/InsightTimeline";
 import Reveal from "@/components/layout/Reveal";
 import RoomHero from "@/components/room/RoomHero";
 import BlockCard from "@/components/room/BlockCard";
 import Hairline from "@/components/room/Hairline";
 import SessionPreview from "@/components/room/SessionPreview";
+import StructureMap from "@/components/room/analytics/StructureMap";
+import ReadingDiagram from "@/components/room/analytics/ReadingDiagram";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
 import { blockSeeds } from "@/lib/copy";
 import { firstNameFrom } from "@/lib/connections";
+import {
+  computeStructure,
+  computeReadingDiagramInput,
+  type StructureInputs,
+} from "@/lib/structures";
 
 type BlockReadingRow = {
   block_slug: string;
@@ -35,6 +40,17 @@ type CatchupSummaryRow = {
   created_at: string;
 };
 
+type IntakeResponseRow = {
+  step_number: number;
+  payload: Record<string, unknown> | null;
+};
+
+type IntakeAnswerRow = {
+  question_key: string;
+  answer: { value: unknown } | null;
+  version: number;
+};
+
 const ISO_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 export default async function RoomLandingPage() {
@@ -52,6 +68,8 @@ export default async function RoomLandingPage() {
     readingsRes,
     subRes,
     catchupsRes,
+    intakeResponsesRes,
+    intakeAnswersRes,
   ] = await Promise.all([
     supabase
       .from("users_meta")
@@ -81,6 +99,14 @@ export default async function RoomLandingPage() {
       .eq("user_id", user.id)
       .order("created_at", { ascending: false })
       .limit(4),
+    supabase
+      .from("intake_responses")
+      .select("step_number, payload")
+      .eq("user_id", user.id),
+    supabase
+      .from("intake_answers")
+      .select("question_key, answer, version")
+      .eq("user_id", user.id),
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
@@ -100,6 +126,20 @@ export default async function RoomLandingPage() {
     latestCatchup &&
     Date.now() - new Date(latestCatchup.created_at).getTime() < ISO_WEEK_MS;
 
+  // ── Build StructureInputs from already-loaded data ──────────────
+  const structureInputs: StructureInputs = {
+    weights: weightsFrom(readingsBySlug),
+    takeaways: takeawaysFrom(readingsBySlug),
+    readingDepth: depth,
+    freeText: gatherFreeText(
+      (intakeResponsesRes.data ?? []) as IntakeResponseRow[],
+      (intakeAnswersRes.data ?? []) as IntakeAnswerRow[],
+    ),
+    userId: user.id,
+  };
+
+  const structure = computeStructure(structureInputs);
+
   return (
     <>
       {/* 1 — Landing hero */}
@@ -118,22 +158,16 @@ export default async function RoomLandingPage() {
               by each Catchup, consultation, and accepted connection. The
               structure is steady; the texture moves.
             </p>
-            <RowLink href="/readings">open the readings</RowLink>
+            {structure.isBlurred ? (
+              <RowLink href="/settings#depth">
+                strengthen the data for analytics
+              </RowLink>
+            ) : (
+              <RowLink href="/readings">open the readings</RowLink>
+            )}
           </div>
           <div className="room-split-figure">
-            <FigureCard
-              label="STRUCTURE"
-              subtitle="dominant figure"
-              fig="Fig. 01"
-            >
-              <ReportMock
-                caseLabel="case · self"
-                prepared="prepared · this week"
-                rows={topThreeMeters(readingsBySlug)}
-                footerLabel="dominant structure"
-                footerValue="obsessional · with hysterical traces"
-              />
-            </FigureCard>
+            <StructureMap result={structure} />
           </div>
         </Reveal>
       </section>
@@ -157,16 +191,23 @@ export default async function RoomLandingPage() {
           {DASHBOARD_BLOCKS.map((b) => {
             const row = readingsBySlug.get(b.slug);
             const seed = blockSeeds[b.slug];
+            const diagramInput = computeReadingDiagramInput(
+              b.slug,
+              structureInputs,
+            );
             return (
               <BlockCard
                 key={b.slug}
                 index={b.index}
+                slug={b.slug}
                 subtitle={b.subtitle}
                 reading={row?.reading ?? seed.reading}
                 takeaway={row?.takeaway ?? seed.takeaway}
-                definition={row?.definition ?? b.definition}
-                weight={row?.weight ?? 0.6}
-                refinedLabel={refinedLabel(row?.last_refined_source)}
+                diagram={
+                  diagramInput ? (
+                    <ReadingDiagram input={diagramInput} size="card" />
+                  ) : null
+                }
               />
             );
           })}
@@ -277,33 +318,54 @@ export default async function RoomLandingPage() {
 // Helpers
 // ────────────────────────────────────────────────────────────────────
 
-function topThreeMeters(
+function weightsFrom(
   readingsBySlug: Map<string, BlockReadingRow>,
-): { k: string; pct: string; width: number }[] {
-  const rows = DASHBOARD_BLOCKS.slice(0, 3).map((b) => {
-    const row = readingsBySlug.get(b.slug);
-    const w = Math.round((row?.weight ?? 0.6) * 100);
-    return {
-      k: b.subtitle,
-      pct: `.${String(Math.max(0, Math.min(99, w))).padStart(2, "0")}`,
-      width: w,
-    };
-  });
-  return rows;
+): StructureInputs["weights"] {
+  const out: StructureInputs["weights"] = {};
+  for (const [slug, row] of readingsBySlug) {
+    out[slug as keyof StructureInputs["weights"]] = row.weight ?? 0;
+  }
+  return out;
 }
 
-function refinedLabel(lastRefinedSource: string | null | undefined): string {
-  if (!lastRefinedSource) return "intake reading · v1";
-  // Phase 3+ writes labels like "catchup:week_04"; surface as
-  // "refined after catchup · week 04".
-  const catchupMatch = /^catchup:week_(\d+)$/i.exec(lastRefinedSource);
-  if (catchupMatch) {
-    return `refined after catchup · week ${catchupMatch[1].padStart(2, "0")}`;
+function takeawaysFrom(
+  readingsBySlug: Map<string, BlockReadingRow>,
+): StructureInputs["takeaways"] {
+  const out: StructureInputs["takeaways"] = {};
+  for (const [slug, row] of readingsBySlug) {
+    out[slug as keyof StructureInputs["takeaways"]] = row.takeaway ?? "";
   }
-  if (lastRefinedSource.startsWith("session:")) {
-    return "refined after session";
+  return out;
+}
+
+function gatherFreeText(
+  responses: IntakeResponseRow[],
+  edits: IntakeAnswerRow[],
+): string {
+  const chunks: string[] = [];
+  for (const r of responses) {
+    if (!r.payload) continue;
+    for (const v of Object.values(r.payload)) {
+      if (
+        typeof v === "string" &&
+        v.length > 10 &&
+        v.includes(" ")
+      ) {
+        chunks.push(v);
+      }
+    }
   }
-  return lastRefinedSource;
+  for (const a of edits) {
+    const v = a.answer?.value;
+    if (
+      typeof v === "string" &&
+      v.length > 10 &&
+      v.includes(" ")
+    ) {
+      chunks.push(v);
+    }
+  }
+  return chunks.join(" ");
 }
 
 function catchupMarkers(
@@ -321,4 +383,3 @@ function catchupMarkers(
     label: `w${r.week_number}`,
   }));
 }
-

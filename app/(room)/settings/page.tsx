@@ -1,4 +1,3 @@
-import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -13,6 +12,7 @@ import EmailToggles, {
 import SubscriptionCard from "@/components/room/SubscriptionCard";
 import DangerZone from "@/components/room/DangerZone";
 import AccountFields from "@/components/room/settings/AccountFields";
+import { loadSubscriptionRow } from "@/lib/subscription";
 import {
   loadDepthInputs,
   computeDepthBreakdown,
@@ -29,11 +29,6 @@ type ProfileRow = {
 type UsersMetaRow = {
   locale: string;
   email_preferences: EmailPreferences | null;
-};
-type SubscriptionRow = {
-  status: string | null;
-  current_period_end: string | null;
-  cancel_at_period_end: boolean | null;
 };
 
 const DEFAULT_EMAIL_PREFS: EmailPreferences = {
@@ -154,38 +149,6 @@ export default async function SettingsPage() {
       </section>
     </>
   );
-}
-
-// ────────────────────────────────────────────────────────────────────
-// Subscription row loader.
-//
-// The `cancel_at_period_end` column lands in a separate migration. If
-// the deploy order slips (code first, schema later) the wide select
-// throws PostgREST 42703 and the whole row disappears — which would
-// silently flip active subscribers back to "not subscribed." Detect
-// that one error and refetch the legacy columns, defaulting the new
-// flag to false. Real read failures still surface as a null row.
-// ────────────────────────────────────────────────────────────────────
-
-async function loadSubscriptionRow(
-  supabase: SupabaseClient,
-  userId: string,
-): Promise<SubscriptionRow | null> {
-  const wide = await supabase
-    .from("subscriptions")
-    .select("status, current_period_end, cancel_at_period_end")
-    .eq("user_id", userId)
-    .maybeSingle<SubscriptionRow>();
-  if (!wide.error) return wide.data;
-  if (wide.error.code !== "42703") return null;
-
-  const legacy = await supabase
-    .from("subscriptions")
-    .select("status, current_period_end")
-    .eq("user_id", userId)
-    .maybeSingle<Omit<SubscriptionRow, "cancel_at_period_end">>();
-  if (legacy.error || !legacy.data) return null;
-  return { ...legacy.data, cancel_at_period_end: false };
 }
 
 // ────────────────────────────────────────────────────────────────────
