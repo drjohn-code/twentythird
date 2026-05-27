@@ -35,7 +35,8 @@ export type AITask =
   | "session_close"
   | "reading_lede"
   | "connection_summary"
-  | "report_generation";
+  | "report_generation"
+  | "case_detail";
 
 const DEFAULT_MODELS: Record<AITask, string> = {
   safety_classify: "anthropic/claude-haiku-4.5",
@@ -48,6 +49,7 @@ const DEFAULT_MODELS: Record<AITask, string> = {
   reading_lede: "anthropic/claude-sonnet-4.5",
   connection_summary: "anthropic/claude-haiku-4.5",
   report_generation: "anthropic/claude-opus-4.7",
+  case_detail: "anthropic/claude-haiku-4.5",
 };
 function envKeyFor(task: AITask): string {
   return `AI_MODEL_${task.toUpperCase()}`;

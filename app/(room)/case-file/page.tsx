@@ -124,20 +124,26 @@ export default async function CaseFilePage({
             </Link>
           ))}
         </nav>
-      </Reveal>
 
-      <section className="room-section">
         {isEmpty ? (
           <CaseFileEmpty {...emptyStateFor(filter)} />
         ) : (
           <CaseFileList entries={entries} filter={filter} />
         )}
-      </section>
+      </Reveal>
 
       {filter === "sessions" ? (
-        <SettingsBlock title="Subscription" id="subscription">
-          <SubscriptionCard subscription={subscription} />
-        </SettingsBlock>
+        isSubscribed ? (
+          <SettingsBlock title="Subscription" id="subscription">
+            <SubscriptionCard subscription={subscription} />
+          </SettingsBlock>
+        ) : (
+          <div className="mx-auto max-w-[480px] text-center">
+            <SettingsBlock title="Subscription" id="subscription">
+              <SubscriptionCard subscription={subscription} />
+            </SettingsBlock>
+          </div>
+        )
       ) : (
         <ClinicalReportCTA
           isSubscribed={isSubscribed}

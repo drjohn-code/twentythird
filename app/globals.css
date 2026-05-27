@@ -3935,6 +3935,29 @@ section{position:relative;}
   display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:14px;
 }
 
+/* Two-section detail view (catchup + session) */
+.case-file-detail{
+  display:flex;flex-direction:column;gap:28px;
+  max-width:620px;margin-top:8px;
+}
+.case-file-detail-section{
+  display:flex;flex-direction:column;gap:10px;
+  padding-top:24px;border-top:1px solid var(--hair);
+}
+.case-file-detail-section:first-child{
+  border-top:0;padding-top:0;
+}
+.case-file-detail-body{
+  font-family:var(--serif);font-size:17px;line-height:1.55;color:var(--fg);
+  text-wrap:pretty;
+}
+.case-file-detail-body em{
+  font-style:italic;color:var(--fg-dim);
+}
+.case-file-entry-error{
+  display:flex;flex-direction:column;gap:14px;align-items:flex-start;
+}
+
 /* =====================================================================
  * Settings — Phase 5
  * ===================================================================== */
