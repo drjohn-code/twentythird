@@ -72,6 +72,10 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--bg);color:var(--fg);}
 html{scroll-behavior:smooth}
+/* Anchor jumps inside the Room land below the fixed nav pill. The
+   marketing tree does not carry .room-shell, so this scope leaves
+   / and /about etc. untouched. */
+html:has(.room-shell){scroll-padding-top:120px}
 body{
   font-family:var(--sans);
   font-size:17px;
