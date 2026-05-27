@@ -15,11 +15,11 @@ export default function CaseDetailSections({ detail }: Props) {
   return (
     <div className="case-file-detail">
       <section className="case-file-detail-section">
-        <div className="eyebrow">SUMMARY · USER ANSWERS</div>
+        <div className="eyebrow">SUMMARY · YOUR ANSWERS</div>
         <p className="case-file-detail-body">{renderItalics(detail.summary)}</p>
       </section>
       <section className="case-file-detail-section">
-        <div className="eyebrow">RECOMMENDATION</div>
+        <div className="eyebrow">OUR CATCHUP</div>
         <p className="case-file-detail-body">
           {renderItalics(detail.recommendation)}
         </p>

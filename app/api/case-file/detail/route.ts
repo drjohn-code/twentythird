@@ -13,6 +13,7 @@ import {
 import {
   enforceWordCap,
   isMeaningful,
+  wordCount,
 } from "@/lib/case-file/answer-validator";
 import {
   CATCHUP_QUESTIONS,
@@ -33,11 +34,23 @@ import type { AnyQuestion } from "@/lib/types/intake";
 //     return them straight away — no model call.
 //   - Otherwise: load the entry, the user's intake, run the meaningful-
 //     answer validator on each open answer, build the prompt, call
-//     callAI("case_detail", { jsonMode: true }), enforce 40-word caps
+//     callAI("case_detail", { jsonMode: true }), enforce word caps
 //     server-side (truncate at the last sentence inside the limit),
 //     and persist the result.
+//   - Section 1 ("SUMMARY · YOUR ANSWERS"): ≤ 60 words, hard cap.
+//   - Section 2 ("OUR CATCHUP"): 50–100 words. ≤ 100 enforced by
+//     truncation; ≥ 50 enforced by a SINGLE retry with a regeneration
+//     notice. If the entry has no real signal (no closed answers,
+//     no meaningful open answers, sparse intake) we accept short
+//     output without retrying — invented recommendations are worse
+//     than a brief honest one.
 
-const MAX_WORDS_PER_SECTION = 40;
+const MAX_WORDS_SUMMARY = 60;
+const MIN_WORDS_RECOMMENDATION = 50;
+const MAX_WORDS_RECOMMENDATION = 100;
+
+/** Below this many intake snippets we treat intake as "thin." */
+const THIN_INTAKE_THRESHOLD = 3;
 
 type Body = {
   entry_id?: unknown;
@@ -142,7 +155,7 @@ async function handleCatchup(
     intake,
   };
 
-  const detail = await generateDetail(promptInput, userId);
+  const detail = await generateDetailWithBounds(promptInput, userId);
   if (!detail) {
     return NextResponse.json(
       { error: "generation failed" },
@@ -303,7 +316,7 @@ async function handleSession(
     intake,
   };
 
-  const detail = await generateDetail(promptInput, userId);
+  const detail = await generateDetailWithBounds(promptInput, userId);
   if (!detail) {
     return NextResponse.json(
       { error: "generation failed" },
@@ -397,6 +410,13 @@ function shortenTitle(title: string): string {
 
 // ────────────────────────────────────────────────────────────────────
 // AI call + word-cap enforcement
+//
+// generateDetail runs the prompt once. generateDetailWithBounds wraps
+// it: if the recommendation is below the 50-word floor AND the entry
+// actually has signal to justify a fuller recommendation, it retries
+// once with a notice asking for length. The second result is accepted
+// even if still short — we explicitly do not loop, to honour the
+// "honest short note beats fabricated padding" rule.
 // ────────────────────────────────────────────────────────────────────
 
 async function generateDetail(
@@ -409,7 +429,7 @@ async function generateDetail(
       system,
       messages,
       jsonMode: true,
-      maxTokens: 400,
+      maxTokens: 600,
       temperature: 0.35,
       userId,
       timeoutMs: 45_000,
@@ -418,6 +438,64 @@ async function generateDetail(
   } catch {
     return null;
   }
+}
+
+async function generateDetailWithBounds(
+  input: CaseDetailPromptInput,
+  userId: string,
+): Promise<CaseDetailResponse | null> {
+  const first = await generateDetail(input, userId);
+  if (!first) return null;
+
+  const recWords = wordCount(first.recommendation);
+  if (recWords >= MIN_WORDS_RECOMMENDATION) return first;
+
+  // Allow a short recommendation through when there is genuinely
+  // nothing to ground a longer one in. Padding here would be
+  // fabrication — worse than a brief honest line.
+  if (!hasSignal(input)) {
+    console.warn(
+      `[case-detail] accepting short recommendation (${recWords} words) — entry has no usable signal (kind=${input.entryKind}, closed=${input.closedAnswers.length}, meaningfulOpen=${input.openAnswers.filter((a) => a.meaningful).length}, intake=${input.intake.length})`,
+    );
+    return first;
+  }
+
+  // Single retry — ask for length while keeping every other rule.
+  const second = await generateDetail(
+    {
+      ...input,
+      regenerateNotice:
+        `Your previous recommendation was only ${recWords} words. The minimum is 50 and the maximum is 100. Lengthen the recommendation while keeping every rule: plain everyday language, no jargon, no fabrication, ground only in intake context and meaningful answers, no padding with generalities. Return the same JSON shape.`,
+    },
+    userId,
+  );
+
+  if (second && wordCount(second.recommendation) >= MIN_WORDS_RECOMMENDATION) {
+    return second;
+  }
+
+  // Second pass still short — accept whatever we have and log. Do not
+  // loop. The user's brief explicitly forbids inventing content to hit
+  // the minimum.
+  const accepted = second ?? first;
+  console.warn(
+    `[case-detail] accepting short recommendation after retry (${wordCount(accepted.recommendation)} words) — model would not lengthen honestly`,
+  );
+  return accepted;
+}
+
+/**
+ * "Signal" = the entry contains enough real material to ground a 50–100
+ * word recommendation. We require any one of:
+ *   - at least one closed-question answer (catchups always have these),
+ *   - at least one open answer flagged meaningful,
+ *   - intake context with at least THIN_INTAKE_THRESHOLD step snippets.
+ */
+function hasSignal(input: CaseDetailPromptInput): boolean {
+  if (input.closedAnswers.length > 0) return true;
+  if (input.openAnswers.some((a) => a.meaningful)) return true;
+  if (input.intake.length >= THIN_INTAKE_THRESHOLD) return true;
+  return false;
 }
 
 function parseAndCap(raw: string): CaseDetailResponse | null {
@@ -431,12 +509,12 @@ function parseAndCap(raw: string): CaseDetailResponse | null {
   const obj = parsed as Record<string, unknown>;
   const summary =
     typeof obj.summary === "string" && obj.summary.trim().length > 0
-      ? enforceWordCap(obj.summary.trim(), MAX_WORDS_PER_SECTION)
+      ? enforceWordCap(obj.summary.trim(), MAX_WORDS_SUMMARY)
       : "";
   const recommendation =
     typeof obj.recommendation === "string" &&
     obj.recommendation.trim().length > 0
-      ? enforceWordCap(obj.recommendation.trim(), MAX_WORDS_PER_SECTION)
+      ? enforceWordCap(obj.recommendation.trim(), MAX_WORDS_RECOMMENDATION)
       : "";
   if (!summary || !recommendation) return null;
   return { summary, recommendation };
