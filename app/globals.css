@@ -403,10 +403,7 @@ section{position:relative;}
   50%{transform:scale(1.04);opacity:0.85}
 }
 
-/* translateZ(0) keeps the copy on its own compositing layer: the sibling
-   brain-img uses mix-blend-mode, which on WebKit can leave this text unpainted
-   on first arrival (it only appears after a scroll forces a repaint). */
-.brain-copy{padding:0 60px 0 20px;position:relative;transform:translateZ(0)}
+.brain-copy{padding:0 60px 0 20px;position:relative}
 .brain-copy .eyebrow{margin-bottom:24px}
 .brain-copy h2{
   font-family:var(--serif-display);
@@ -418,12 +415,14 @@ section{position:relative;}
 .brain-states{position:relative;min-height:280px}
 .brain-state{
   position:absolute;inset:0;
-  opacity:0;transform:translateY(20px);
-  transition:opacity 700ms var(--ease), transform 700ms var(--ease);
+  opacity:0;
   display:flex;flex-direction:column;gap:18px;
   max-width:520px;
 }
-.brain-state.active{opacity:1;transform:translateY(0)}
+/* No entrance motion: the active state is shown immediately via opacity alone.
+   A transition here could stall at opacity 0 on first arrival (content only
+   appearing after a scroll forced a repaint). */
+.brain-state.active{opacity:1}
 .brain-state .tag{
   display:inline-flex;align-items:center;gap:10px;
   font-family:var(--mono);font-size:11px;color:var(--fg-mute);
