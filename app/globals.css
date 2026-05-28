@@ -966,14 +966,19 @@ section{position:relative;}
     max-width:none;
   }
 
-  .brain-pin{height:340vh}
+  /* Mobile: un-pin the brain section. The desktop scroll-jacked pin (340vh
+     sticky stage + JS-driven opacity states) is fragile on mobile — dynamic
+     viewport and momentum scroll left the copy stuck at opacity:0 until a
+     repaint. Here the section flows normally and every state is visible via
+     CSS, so visibility never depends on JS. */
+  .brain-pin{height:auto}
   .brain-stage{
-    position:sticky;top:0;
-    display:flex;flex-direction:column;justify-content:flex-end;
+    position:relative;
+    display:flex;flex-direction:column;align-items:stretch;
     gap:18px;
-    height:100vh;min-height:100vh;
-    padding:84px 0 36px;
-    overflow:hidden;
+    height:auto;min-height:0;
+    padding:80px 0 70px;
+    overflow:visible;
   }
   .brain-visual{height:auto;padding:0}
   .brain-img{width:50vw;max-width:210px}
@@ -985,32 +990,19 @@ section{position:relative;}
   .brain-copy h2{
     font-size:clamp(28px, 6.6vw, 36px);
     line-height:1.06;
-    margin-bottom:20px;
+    margin-bottom:28px;
   }
-  .brain-states{min-height:350px}
-  .brain-state{gap:10px;max-width:none}
+  .brain-states{min-height:0;display:flex;flex-direction:column;gap:32px}
+  .brain-state{
+    position:relative;inset:auto;
+    opacity:1;transform:none;
+    gap:10px;max-width:none;
+  }
   .brain-state h3{font-size:clamp(20px, 5.4vw, 26px);line-height:1.14}
   .brain-state p{font-size:14px;line-height:1.55}
   .brain-state .tag{font-size:10px}
   .brain-state .tag .num{font-size:18px}
-  .brain-progress{
-    position:static;transform:none;
-    flex-direction:row;
-    gap:10px;
-    align-items:center;justify-content:center;
-    padding:0 16px 4px;
-  }
-  .brain-progress .pip{width:30px;height:1px}
-  .brain-progress .pip::after{
-    left:0;top:0;right:auto;bottom:auto;
-    height:1px;width:0;
-    transition:width 500ms var(--ease);
-  }
-  .brain-progress .pip.done::after,
-  .brain-progress .pip.active::after{
-    height:1px;width:100%;
-  }
-  .brain-progress .pip-label{font-size:9px}
+  .brain-progress{display:none}
   .split-row, .split-row.reverse{grid-template-columns:1fr;gap:14px}
   .split-row.reverse .split-copy{order:1}
   .split-row.reverse .split-visual{order:2}
@@ -1080,21 +1072,6 @@ section{position:relative;}
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important;transition:none !important}
   html{scroll-behavior:auto}
-}
-
-@media (max-width: 980px) and (prefers-reduced-motion: reduce){
-  .brain-pin{height:auto}
-  .brain-stage{
-    position:relative;
-    grid-template-rows:none;
-    height:auto;min-height:auto;
-    padding:80px 0;
-    overflow:visible;
-  }
-  .brain-visual{height:auto}
-  .brain-progress{display:none}
-  .brain-states{min-height:0}
-  .brain-state{position:relative;inset:auto;opacity:1;transform:none}
 }
 
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 900ms var(--ease), transform 900ms var(--ease)}
