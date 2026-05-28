@@ -287,6 +287,7 @@ section{position:relative;}
 .cta-ghost{
   font-size:13px;color:var(--fg-dim);
   display:inline-flex;align-items:center;gap:6px;
+  white-space:nowrap;
   transition:color 300ms var(--ease);
 }
 .cta-ghost:hover{color:var(--fg)}
@@ -927,7 +928,7 @@ section{position:relative;}
     order:1;
   }
   .hero .cta-row{
-    display:flex;flex-direction:row;align-items:center;gap:16px;flex-wrap:nowrap;
+    display:flex;flex-direction:column;align-items:flex-start;gap:18px;
   }
   .hero .cta{
     width:auto;align-self:flex-start;
@@ -937,8 +938,8 @@ section{position:relative;}
     position:relative;
     grid-template-columns:1fr;
     gap:0;
-    padding:60px 36px 40px;
-    min-height:auto;
+    padding:80px 36px 48px;
+    min-height:100vh;
     display:flex;flex-direction:column;justify-content:flex-end;
   }
   .philo-portrait{
@@ -954,7 +955,7 @@ section{position:relative;}
     mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
     -webkit-mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
   }
-  .philo-portrait .portrait-wrap img{opacity:0.42}
+  .philo-portrait .portrait-wrap img{opacity:0.42;transform:scale(1.25);transform-origin:center top}
   .philo-portrait .portrait-wrap::after{
     background:radial-gradient(ellipse 80% 90% at 50% 50%, transparent 25%, var(--bg) 92%);
   }
