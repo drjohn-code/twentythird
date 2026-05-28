@@ -58,10 +58,14 @@ export default function LandingPage() {
             CORE PHILOSOPHY
           </div>
           <h2>
+            5‑minute fixes don&apos;t{" "}
+            <span className="it">change anyone</span>.
+          </h2>
+          <p className="sub">
             We do root‑cause analysis. By fusing the foundational insights of
             Sigmund Freud with Jacques Lacan&apos;s breakthroughs in
-            linguistics, desire, and identity
-          </h2>
+            linguistics, desire, and identity.
+          </p>
           <p className="sub">
             Most tools work on the surface. We work where it was written — in
             the architecture of language, the slips of speech, the patterns
@@ -90,6 +94,161 @@ export default function LandingPage() {
           <div className="caption">
             <span className="mono">PORTRAIT — 1967</span>
             <span className="name">Jacques Lacan</span>
+          </div>
+        </div>
+      </section>
+
+      {/* DATA PRIVACY */}
+      <section className="split-section" id="privacy">
+        <div className="container">
+          <div className="section-head reveal">
+            <div className="eyebrow" style={{ fontSize: "16px" }}>
+              CONFIDENTIALITY
+            </div>
+            <h2>
+              Data privacy is <span className="it">the</span> priority.
+            </h2>
+            <p className="lede">
+              Confidentiality is not a feature here; it is the precondition
+              for depth. People speak freely only where they feel safe — so
+              the room is built to keep what you say protected.
+            </p>
+          </div>
+
+          <div className="split-stack">
+            <div className="split-row">
+              <div className="split-copy">
+                <div className="row-meta">
+                  <span className="num"></span>
+                  <span className="tag" style={{ fontSize: "16px" }}>
+                    Safeguards
+                  </span>
+                </div>
+                <h3>
+                  A room built to <span className="it">hold</span> what you
+                  say.
+                </h3>
+                <p>
+                  The work asks for your most undefended material. The room is
+                  built to receive it in confidence and keep it closed to
+                  anyone it was not meant for.
+                </p>
+              </div>
+              <div className="split-visual glass">
+                <div className="vh">
+                  <span className="lhs">
+                    <span>Data handling</span> <em>standing posture</em>
+                  </span>
+                  <span>Fig. 02</span>
+                </div>
+                <div className="vb">
+                  <ul className="privacy-list">
+                    <li>
+                      <span className="k">processing</span>
+                      <span className="v">
+                        Every entry is processed triple‑blind.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="k">encryption</span>
+                      <span className="v">All data is encrypted.</span>
+                    </li>
+                    <li>
+                      <span className="k">protection</span>
+                      <span className="v">
+                        Held under the highest‑grade protection available.
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="privacy-foot">
+                    <span className="k">Purpose</span>
+                    <span className="v">
+                      a quiet, secure place to speak deeply
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="split-section" id="process">
+        <div className="container">
+          <div className="section-head reveal">
+            <div className="eyebrow">HOW IT WORKS</div>
+            <h2>
+              Four steps, <span className="it">one widening circle</span>.
+            </h2>
+            <p className="lede">
+              Communication deepens in four moves. Each one widens what the
+              system can read — from a single intake to a standing
+              conversation.
+            </p>
+          </div>
+
+          <div className="story-grid">
+            <article className="story-step glass">
+              <div className="story-head">
+                <span className="story-num">STEP 01</span>
+                <span className="story-sub">deep‑core profiling</span>
+              </div>
+              <h3>
+                A <span className="it">10‑step</span> intake.
+              </h3>
+              <p>
+                Create your account and complete a 10‑step intake. This is
+                the deep‑core profiling pass; the first reading is built
+                entirely from what you set down here.
+              </p>
+            </article>
+
+            <article className="story-step glass">
+              <div className="story-head">
+                <span className="story-num">STEP 02</span>
+                <span className="story-sub">mediated, never mutual</span>
+              </div>
+              <h3>
+                The people who <span className="it">shape you</span>.
+              </h3>
+              <p>
+                Add the people who shape you, each by role — partner, closest
+                friend, parent, sibling, co‑parent. What they share is never
+                visible to you; what you share is never visible to them. Only
+                the system reads both.
+              </p>
+            </article>
+
+            <article className="story-step glass">
+              <div className="story-head">
+                <span className="story-num">STEP 03</span>
+                <span className="story-sub">the weekly reading</span>
+              </div>
+              <h3>
+                The Sunday <span className="it">Catchup</span>.
+              </h3>
+              <p>
+                On Sunday evenings, tell us what happened during your week and
+                how it felt to live it. Each Catchup refines the reading — the
+                picture sharpens as the weeks accumulate.
+              </p>
+            </article>
+
+            <article className="story-step glass">
+              <div className="story-head">
+                <span className="story-num">STEP 04</span>
+                <span className="story-sub">fully private</span>
+              </div>
+              <h3>
+                The <span className="it">Consulting Room</span>.
+              </h3>
+              <p>
+                Speak in a fully private consultation with the analyst — a
+                voice that knows you better than anyone, trained across 23
+                layers of frontier AI models.
+              </p>
+            </article>
           </div>
         </div>
       </section>
