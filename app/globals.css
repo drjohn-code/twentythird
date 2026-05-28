@@ -977,16 +977,17 @@ section{position:relative;}
   .brain-pin{height:340vh}
   .brain-stage{
     position:sticky;top:0;
-    display:flex;flex-direction:column;justify-content:center;align-items:stretch;
+    display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;
     gap:22px;
     height:100vh;height:100dvh;
     padding:76px 24px 30px;
     overflow:hidden;
   }
-  /* image + halo + rings become a centered, faded backdrop */
+  /* image + halo + rings become a faded backdrop, shifted up 8% of the section */
   .brain-visual{
     position:absolute;inset:0;height:100%;
     z-index:0;pointer-events:none;padding:0;
+    transform:translateY(-8%);
   }
   .brain-img{width:80vw;max-width:300px;opacity:0.18}
   .brain-rings span:nth-child(1){width:64vw;max-width:260px}
@@ -1010,15 +1011,15 @@ section{position:relative;}
   .brain-state p{font-size:14px;line-height:1.55}
   .brain-state .tag{font-size:10px}
   .brain-state .tag .num{font-size:18px}
-  /* indicator: horizontal A / B / C lines, centered under the copy.
-     Reset the desktop absolute offsets (top:50%/right:36px) or they shift the
-     now-relative element off-screen. */
+  /* indicator: horizontal A / B / C lines in flow below the copy. The stage
+     bottom-aligns the copy + pips group so the content sits at the bottom
+     (near the pips) rather than floating in the vertical middle. */
   .brain-progress{
     position:relative;z-index:2;transform:none;
     top:auto;right:auto;bottom:auto;left:auto;
     flex-direction:row;gap:10px;
     align-items:center;justify-content:center;
-    padding:18px 0 0;
+    padding:0;
   }
   .brain-progress .pip{width:30px;height:1px}
   .brain-progress .pip::after{
@@ -1104,6 +1105,10 @@ section{position:relative;}
 
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 900ms var(--ease), transform 900ms var(--ease)}
 .reveal.in{opacity:1;transform:translateY(0)}
+/* Reduced motion: never hide content behind the reveal animation, even without JS. */
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none}
+}
 
 /* ------- auth pages ------- */
 .auth-shell{

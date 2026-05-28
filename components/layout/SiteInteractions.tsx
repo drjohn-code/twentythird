@@ -52,18 +52,18 @@ export default function SiteInteractions() {
       { threshold: 0.18 },
     );
 
-    const raf = requestAnimationFrame(() => {
-      document.querySelectorAll(".reveal").forEach((el) => {
-        if (!reveal(el)) io.observe(el);
-      });
-      document.querySelectorAll(".split-section").forEach((el) => {
-        if (!reveal(el)) io2.observe(el);
-      });
+    // Reveal anything already in view synchronously on mount — a rAF tick can be
+    // throttled before first paint or lose the race with scroll restoration,
+    // leaving in-viewport content stuck at opacity 0. Observe the rest.
+    document.querySelectorAll(".reveal").forEach((el) => {
+      if (!reveal(el)) io.observe(el);
+    });
+    document.querySelectorAll(".split-section").forEach((el) => {
+      if (!reveal(el)) io2.observe(el);
     });
 
     return () => {
       btn?.removeEventListener("click", onToggle);
-      cancelAnimationFrame(raf);
       io.disconnect();
       io2.disconnect();
     };
