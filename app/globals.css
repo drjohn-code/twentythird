@@ -815,10 +815,10 @@ section{position:relative;}
 }
 .story-step h3 .it{font-style:italic;color:var(--fg-dim)}
 .story-step p{color:var(--fg-dim);font-size:16px;line-height:1.65}
-.split-section.in .story-step:nth-child(1){opacity:1;transform:none;transition-delay:120ms}
-.split-section.in .story-step:nth-child(2){opacity:1;transform:none;transition-delay:220ms}
-.split-section.in .story-step:nth-child(3){opacity:1;transform:none;transition-delay:320ms}
-.split-section.in .story-step:nth-child(4){opacity:1;transform:none;transition-delay:420ms}
+/* story-step reveal is per-element via the .reveal class (each card animates as it enters view) */
+.story-step:nth-child(2){transition-delay:80ms}
+.story-step:nth-child(3){transition-delay:160ms}
+.story-step:nth-child(4){transition-delay:240ms}
 
 /* ------- final CTA ------- */
 .final{
@@ -955,7 +955,7 @@ section{position:relative;}
     mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
     -webkit-mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
   }
-  .philo-portrait .portrait-wrap img{opacity:0.42;transform:scale(1.25);transform-origin:center top}
+  .philo-portrait .portrait-wrap img{opacity:0.42;transform:scale(1.25) translateY(-5%);transform-origin:center top}
   .philo-portrait .portrait-wrap::after{
     background:radial-gradient(ellipse 80% 90% at 50% 50%, transparent 25%, var(--bg) 92%);
   }

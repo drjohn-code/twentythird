@@ -117,7 +117,7 @@ export default function LandingPage() {
 
           <div className="split-stack">
             <div className="split-row">
-              <div className="split-copy">
+              <div className="split-copy reveal">
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
@@ -134,7 +134,7 @@ export default function LandingPage() {
                   anyone it was not meant for.
                 </p>
               </div>
-              <div className="split-visual glass">
+              <div className="split-visual glass reveal">
                 <div className="vh">
                   <span className="lhs">
                     <span>Data handling</span> <em>standing posture</em>
@@ -177,7 +177,9 @@ export default function LandingPage() {
       <section className="split-section" id="process">
         <div className="container">
           <div className="section-head reveal">
-            <div className="eyebrow">HOW IT WORKS</div>
+            <div className="eyebrow" style={{ fontSize: "16px" }}>
+              HOW IT WORKS
+            </div>
             <h2>
               Four steps, <span className="it">one widening circle</span>.
             </h2>
@@ -189,7 +191,7 @@ export default function LandingPage() {
           </div>
 
           <div className="story-grid">
-            <article className="story-step glass">
+            <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 01</span>
                 <span className="story-sub">deep‑core profiling</span>
@@ -204,7 +206,7 @@ export default function LandingPage() {
               </p>
             </article>
 
-            <article className="story-step glass">
+            <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 02</span>
                 <span className="story-sub">mediated, never mutual</span>
@@ -220,7 +222,7 @@ export default function LandingPage() {
               </p>
             </article>
 
-            <article className="story-step glass">
+            <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 03</span>
                 <span className="story-sub">the weekly reading</span>
@@ -235,7 +237,7 @@ export default function LandingPage() {
               </p>
             </article>
 
-            <article className="story-step glass">
+            <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 04</span>
                 <span className="story-sub">fully private</span>
