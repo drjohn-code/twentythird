@@ -966,43 +966,71 @@ section{position:relative;}
     max-width:none;
   }
 
-  /* Mobile: un-pin the brain section. The desktop scroll-jacked pin (340vh
-     sticky stage + JS-driven opacity states) is fragile on mobile — dynamic
-     viewport and momentum scroll left the copy stuck at opacity:0 until a
-     repaint. Here the section flows normally and every state is visible via
-     CSS, so visibility never depends on JS. */
-  .brain-pin{height:auto}
+  /* Mobile: keep the desktop stepped/pinned behavior, stacked vertically.
+     The brain image sits BEHIND the copy as a faded backdrop (same pattern as
+     the hero/philosophy portraits) instead of stacked above it — that keeps
+     the in-flow content to just heading + one state + indicator, which always
+     fits a single screen. That fit is what prevents the earlier regression
+     (content pushed below the fold / clipped → "blank until refresh").
+     Visibility is still owned by the .active class (one part at a time), but
+     because the content fits, state A is reliably on screen at entry. */
+  .brain-pin{height:340vh}
   .brain-stage{
-    position:relative;
-    display:flex;flex-direction:column;align-items:stretch;
-    gap:18px;
-    height:auto;min-height:0;
-    padding:80px 0 70px;
-    overflow:visible;
+    position:sticky;top:0;
+    display:flex;flex-direction:column;justify-content:center;align-items:stretch;
+    gap:22px;
+    height:100vh;height:100dvh;
+    padding:76px 24px 30px;
+    overflow:hidden;
   }
-  .brain-visual{height:auto;padding:0}
-  .brain-img{width:50vw;max-width:210px}
-  .brain-rings span:nth-child(1){width:58vw;max-width:240px}
-  .brain-rings span:nth-child(2){width:74vw;max-width:300px}
-  .brain-rings span:nth-child(3){width:90vw;max-width:360px}
-  .brain-copy{padding:8px 24px 0}
+  /* image + halo + rings become a centered, faded backdrop */
+  .brain-visual{
+    position:absolute;inset:0;height:100%;
+    z-index:0;pointer-events:none;padding:0;
+  }
+  .brain-img{width:80vw;max-width:300px;opacity:0.18}
+  .brain-rings span:nth-child(1){width:64vw;max-width:260px}
+  .brain-rings span:nth-child(2){width:80vw;max-width:320px}
+  .brain-rings span:nth-child(3){width:96vw;max-width:380px}
+  .brain-copy{position:relative;z-index:2;padding:0}
   .brain-copy .eyebrow{margin-bottom:14px}
   .brain-copy h2{
     font-size:clamp(28px, 6.6vw, 36px);
     line-height:1.06;
-    margin-bottom:28px;
+    margin-bottom:24px;
   }
-  .brain-states{min-height:0;display:flex;flex-direction:column;gap:32px}
+  /* overlay the 3 states in one grid cell so the box auto-sizes to the
+     tallest part and there is no layout shift when switching */
+  .brain-states{position:relative;display:grid;align-items:start;min-height:0}
   .brain-state{
-    position:relative;inset:auto;
-    opacity:1;transform:none;
+    position:relative;inset:auto;grid-area:1 / 1;
     gap:10px;max-width:none;
   }
   .brain-state h3{font-size:clamp(20px, 5.4vw, 26px);line-height:1.14}
   .brain-state p{font-size:14px;line-height:1.55}
   .brain-state .tag{font-size:10px}
   .brain-state .tag .num{font-size:18px}
-  .brain-progress{display:none}
+  /* indicator: horizontal A / B / C lines, centered under the copy.
+     Reset the desktop absolute offsets (top:50%/right:36px) or they shift the
+     now-relative element off-screen. */
+  .brain-progress{
+    position:relative;z-index:2;transform:none;
+    top:auto;right:auto;bottom:auto;left:auto;
+    flex-direction:row;gap:10px;
+    align-items:center;justify-content:center;
+    padding:18px 0 0;
+  }
+  .brain-progress .pip{width:30px;height:1px}
+  .brain-progress .pip::after{
+    left:0;top:0;right:auto;bottom:auto;
+    height:1px;width:0;
+    transition:width 500ms var(--ease);
+  }
+  .brain-progress .pip.done::after,
+  .brain-progress .pip.active::after{
+    height:1px;width:100%;
+  }
+  .brain-progress .pip-label{font-size:9px}
   .split-row, .split-row.reverse{grid-template-columns:1fr;gap:14px}
   .split-row.reverse .split-copy{order:1}
   .split-row.reverse .split-visual{order:2}
