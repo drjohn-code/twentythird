@@ -955,7 +955,7 @@ section{position:relative;}
     mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
     -webkit-mask-image: radial-gradient(ellipse 110% 90% at 50% 45%, #000 25%, transparent 82%);
   }
-  .philo-portrait .portrait-wrap img{opacity:0.42;transform:scale(1.25) translateY(-5%);transform-origin:center top}
+  .philo-portrait .portrait-wrap img{opacity:0.42;transform:scale(1.25) translateY(-18%);transform-origin:center top}
   .philo-portrait .portrait-wrap::after{
     background:radial-gradient(ellipse 80% 90% at 50% 50%, transparent 25%, var(--bg) 92%);
   }
@@ -969,15 +969,14 @@ section{position:relative;}
   .brain-pin{height:340vh}
   .brain-stage{
     position:sticky;top:0;
-    grid-template-columns:1fr;
-    grid-template-rows:auto 1fr auto;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    gap:18px;
     height:100vh;min-height:100vh;
-    padding:84px 0 20px;
+    padding:84px 0 36px;
     overflow:hidden;
-    align-items:start;
   }
   .brain-visual{height:auto;padding:0}
-  .brain-img{width:62vw;max-width:260px}
+  .brain-img{width:50vw;max-width:210px}
   .brain-rings span:nth-child(1){width:58vw;max-width:240px}
   .brain-rings span:nth-child(2){width:74vw;max-width:300px}
   .brain-rings span:nth-child(3){width:90vw;max-width:360px}
@@ -988,7 +987,7 @@ section{position:relative;}
     line-height:1.06;
     margin-bottom:20px;
   }
-  .brain-states{min-height:200px}
+  .brain-states{min-height:350px}
   .brain-state{gap:10px;max-width:none}
   .brain-state h3{font-size:clamp(20px, 5.4vw, 26px);line-height:1.14}
   .brain-state p{font-size:14px;line-height:1.55}
