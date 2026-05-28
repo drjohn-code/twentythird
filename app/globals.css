@@ -403,7 +403,12 @@ section{position:relative;}
   50%{transform:scale(1.04);opacity:0.85}
 }
 
-.brain-copy{padding:0 60px 0 20px;position:relative}
+/* Safari/WebKit mix-blend-mode fix: isolation gives the copy its own stacking
+   context so the sibling .brain-img (mix-blend-mode) can't leave this text
+   unpainted until a scroll forces a repaint. Compositing-only — adds no motion.
+   Do not strip; if the first-paint repaint persists in Safari, swap for
+   transform:translateZ(0). */
+.brain-copy{padding:0 60px 0 20px;position:relative;isolation:isolate}
 .brain-copy .eyebrow{margin-bottom:24px}
 .brain-copy h2{
   font-family:var(--serif-display);
@@ -415,14 +420,12 @@ section{position:relative;}
 .brain-states{position:relative;min-height:280px}
 .brain-state{
   position:absolute;inset:0;
-  opacity:0;
+  opacity:0;transform:translateY(20px);
+  transition:opacity 700ms var(--ease), transform 700ms var(--ease);
   display:flex;flex-direction:column;gap:18px;
   max-width:520px;
 }
-/* No entrance motion: the active state is shown immediately via opacity alone.
-   A transition here could stall at opacity 0 on first arrival (content only
-   appearing after a scroll forced a repaint). */
-.brain-state.active{opacity:1}
+.brain-state.active{opacity:1;transform:translateY(0)}
 .brain-state .tag{
   display:inline-flex;align-items:center;gap:10px;
   font-family:var(--mono);font-size:11px;color:var(--fg-mute);
@@ -1005,9 +1008,12 @@ section{position:relative;}
   /* overlay the 3 states in one grid cell so the box auto-sizes to the
      tallest part and there is no layout shift when switching */
   .brain-states{position:relative;display:grid;align-items:start;min-height:0}
+  /* Mobile: no entry motion. State A ships .active at opacity:1 and paints on
+     first arrival; switching states snaps. Desktop keeps the 700ms A→B→C fade. */
   .brain-state{
     position:relative;inset:auto;grid-area:1 / 1;
     gap:10px;max-width:none;
+    transition:none;
   }
   .brain-state h3{font-size:clamp(20px, 5.4vw, 26px);line-height:1.14}
   .brain-state p{font-size:14px;line-height:1.55}
