@@ -47,10 +47,6 @@ export default async function LandingPage() {
             </a>
           </div>
         </div>
-        <div className="scroll-hint">
-          <span>{t("hero.scroll")}</span>
-          <span className="line"></span>
-        </div>
       </section>
 
       {/* PHILOSOPHY */}

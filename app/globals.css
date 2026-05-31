@@ -263,7 +263,6 @@ section{position:relative;}
   display:grid;grid-template-columns:1fr 1.05fr;
   align-items:center;
   padding-top:110px;
-  position:relative;
 }
 .hero-portrait{
   position:relative;
@@ -327,20 +326,6 @@ section{position:relative;}
   transition:color 300ms var(--ease);
 }
 .cta-ghost:hover{color:var(--fg)}
-
-.scroll-hint{
-  position:absolute;left:50%;bottom:28px;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:10px;
-  color:var(--fg-mute);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;
-}
-.scroll-hint .line{
-  width:1px;height:36px;background:linear-gradient(to bottom, var(--fg-mute), transparent);
-  animation:scrollPulse 2.4s var(--ease-in-out) infinite;
-}
-@keyframes scrollPulse{
-  0%,100%{opacity:0.4;transform:scaleY(0.6);transform-origin:top}
-  50%{opacity:1;transform:scaleY(1);transform-origin:top}
-}
 
 /* ------- philosophy ------- */
 .philosophy{
