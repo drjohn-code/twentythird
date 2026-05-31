@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSYKODYNAMISK INTELLIGENS",
+        "titleLine1": "Avancerad",
+        "titleLine2Pre": "Psykodynamisk",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "för",
+        "titleLine3It": "Självupptäckt",
+        "ctaPrimary": "Påbörja din upptäckt",
+        "ctaGhostOr": "eller",
+        "ctaGhostText": "läs om vetenskapen",
+        "scroll": "skrolla"
+      },
+      "philosophy": {
+        "eyebrow": "KÄRNFILOSOFI",
+        "titlePre": "5-minutersfixar",
+        "titleIt": "förändrar ingen",
+        "sub1": "Vi utför rotorsaksanalys. Genom att förena Sigmund Freuds grundläggande insikter med Jacques Lacans genombrott inom lingvistik, begär och identitet.",
+        "sub2": "De flesta verktyg arbetar på ytan. Vi arbetar där det skrevs – i språkets arkitektur, talets felsägningar, de mönster du ännu inte har namngivit.",
+        "metaLineageLabel": "Härkomst",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metod",
+        "metaMethodVal": "Strukturell",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "Det omedvetna"
+      },
+      "privacy": {
+        "eyebrow": "SEKRETESS",
+        "titlePre": "Datasekretess är",
+        "titleIt": "den",
+        "titlePost": "prioriterade.",
+        "lede": "Sekretess är ingen funktion här; det är förutsättningen för djup. Människor talar fritt endast där de känner sig trygga – så rummet är byggt för att skydda det du säger.",
+        "rowTag": "Skyddsåtgärder",
+        "rowTitlePre": "Ett rum byggt för att",
+        "rowTitleIt": "hålla",
+        "rowTitlePost": "det du säger.",
+        "rowBody": "Arbetet kräver ditt mest oskyddade material. Rummet är byggt för att ta emot det konfidentiellt och hålla det stängt för alla det inte var avsett för.",
+        "figLabel": "Datahantering",
+        "figSubtitle": "stående hållning",
+        "listProcessingKey": "bearbetning",
+        "listProcessingVal": "Varje inmatning bearbetas trippelblindt.",
+        "listEncryptionKey": "kryptering",
+        "listEncryptionVal": "All data är krypterad.",
+        "listProtectionKey": "skydd",
+        "listProtectionVal": "Förvaras under högsta tillgängliga skyddsgrad.",
+        "footKey": "Syfte",
+        "footVal": "en lugn, säker plats att tala djupt"
+      },
+      "process": {
+        "eyebrow": "SÅ FUNGERAR DET",
+        "titlePre": "Fyra steg,",
+        "titleIt": "en vidgande cirkel",
+        "lede": "Kommunikationen fördjupas i fyra drag. Varje drag vidgar vad systemet kan läsa – från ett enskilt intag till en pågående konversation.",
+        "step1Sub": "djupgående profilering",
+        "step1TitlePre": "Ett",
+        "step1TitleIt": "10-stegs",
+        "step1TitlePost": "intag.",
+        "step1Body": "Skapa ditt konto och slutför ett 10-stegs intag. Detta är den djupgående profileringsfasen; den första läsningen byggs helt utifrån vad du anger här.",
+        "step2Sub": "medierat, aldrig ömsesidigt",
+        "step2TitlePre": "Människorna som",
+        "step2TitleIt": "formar dig",
+        "step2Body": "Lägg till de människor som formar dig, var och en efter roll – partner, närmaste vän, förälder, syskon, medförälder. Vad de delar är aldrig synligt för dig; vad du delar är aldrig synligt för dem. Endast systemet läser båda.",
+        "step3Sub": "den veckovisa läsningen",
+        "step3TitlePre": "Söndagens",
+        "step3TitleIt": "Catchup",
+        "step3Body": "På söndagskvällar berättar du vad som hände under din vecka och hur det kändes att leva den. Varje Catchup förfinar läsningen – bilden skärps när veckorna ackumuleras.",
+        "step4Sub": "helt privat",
+        "step4TitlePre": "Konsultations-",
+        "step4TitleIt": "rummet",
+        "step4Body": "Tala i en helt privat konsultation med analytikern – en röst som känner dig bättre än någon annan, tränad över 23 lager av banbrytande AI-modeller."
+      },
+      "brain": {
+        "eyebrow": "ARBETET",
+        "titleLine1": "Dekonstruerar",
+        "titleLine2": "ditt undermedvetna",
+        "state1Tag": "Mönsterkartläggning",
+        "state1TitlePre": "Undermedvetna",
+        "state1TitleIt": "loopar",
+        "state1TitlePost": "& återfall.",
+        "state1Body": "Vi spårar de återkommande cyklerna i dina val, relationsångest och känslomässiga triggers. Genom att identifiera dessa loopar visar vi dig exakt var dina medvetna intentioner kapas av omedveten programmering.",
+        "state2Tag": "Profilering",
+        "state2TitlePre": "Djupgående",
+        "state2TitleIt": "psykodynamisk",
+        "state2TitlePost": "profilering.",
+        "state2Body": "Gå bortom ytliga personlighetstester. Detta är en strukturell skanning av din psykologiska dynamik – en kartläggning av hur dina tidigare erfarenheter formar din nuvarande identitet, ditt ego och dina försvarsmekanismer.",
+        "state3Tag": "Språk",
+        "state3TitlePre": "Lingvistisk",
+        "state3TitleIt": "undermedveten",
+        "state3TitlePost": "utforskning.",
+        "state3Body": "Med rötter i Lacans teori analyserar vår AI dina ordassociationer, pauser och talmönster. Vi hjälper dig att läsa mellan raderna i dina egna tankar för att få tillgång till den dolda ångest och de *begär* du ännu inte har kunnat uttrycka."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMERA",
+        "titleLine1": "Bryt cykeln,",
+        "titleLine2": "Skriv sedan om den.",
+        "lede": "Tre rörelser i arbetet. Tre platser där insikt blir förändring.",
+        "row1Tag": "Relationell",
+        "row1TitlePre": "Läk dina",
+        "row1TitleIt": "relationella",
+        "row1TitlePost": "dynamiker.",
+        "row1Body": "Samma attraktor drar dig mot samma typ av person, samma konflikt, samma tillbakadragande. Vi synliggör mönstret över år, namnger det och ser det förlora sin dragningskraft.",
+        "row1Link": "Läs fallstudien",
+        "row1FigLabel": "Subjekt 1149-A",
+        "row1FigSubtitle": "longitudinellt mönster",
+        "row1Outcome": "drog sig tillbaka",
+        "row1SummaryRecurrenceKey": "återfall",
+        "row1SummaryIntervalKey": "intervall",
+        "row1SummaryAttractorKey": "attraktor",
+        "row1SummaryAttractorVal": "intimitetströskel",
+        "row2Tag": "Drömarbete",
+        "row2TitlePre": "Avkoda",
+        "row2TitleIt": "drömlogik",
+        "row2TitlePost": ", anpassa mål.",
+        "row2Body": "Dina drömmar är repetitioner av mening. Vi följer deras grammatik – förskjutningarna, kondensationerna, felsägningarna – tillbaka till det vakna beslut de försökte fatta åt dig.",
+        "row2Link": "Se ett kommenterat exempel",
+        "row2FigLabel": "Session 06",
+        "row2FigSubtitle": "dröminlägg, kommenterat",
+        "row2Dream1Pre": "Jag är tillbaka i mina föräldrars hus",
+        "row2Ann1": "urscen",
+        "row2Dream1Mid": ", men rummen fortsätter att öppnas in i andra rum",
+        "row2Ann2": "egogräns",
+        "row2Dream2Pre": "En man med min fars röst",
+        "row2Ann3": "fader-imago",
+        "row2Dream2Mid": "räcker mig en nyckel. Nyckeln förvandlas till vatten",
+        "row2Ann4": "förskjutning",
+        "row2Dream3Pre": "Jag vaknar innan jag kan öppna dörren",
+        "row2Ann5": "begär / brist",
+        "row2Key1": "urscen",
+        "row2Key2": "egogräns",
+        "row2Key3": "fader-imago",
+        "row2Key4": "förskjutning",
+        "row2Key5": "begär / brist",
+        "row3Tag": "Kallelse",
+        "row3TitlePre": "Upplös",
+        "row3TitleIt": "professionella",
+        "row3TitlePost": "blockeringar.",
+        "row3Body": "Taket du ständigt slår i handlar sällan om skicklighet. Det är ett manus – skrivet tidigt, repeterat tyst – som vi hjälper dig att läsa högt och skriva om, mening för mening.",
+        "row3Link": "Metodrapporten",
+        "row3FigLabel": "Manuskriptrevision",
+        "row3FigSubtitle": "arbetsutkast",
+        "row3Line1Prefix": "01 · Jag är",
+        "row3Line1Old": "inte redo än.",
+        "row3Line1New": "redan tillåten.",
+        "row3Line2Prefix": "02 · att",
+        "row3Line2Old": "vänta på min tur.",
+        "row3Line2New": "namnge vad jag vill.",
+        "row3Line3Prefix": "03 · för att",
+        "row3Line3Old": "någon kanske blir besviken.",
+        "row3Line3New": "besvikelse är också språk.",
+        "row3MetaOriginalPre": "original",
+        "row3MetaOriginalIt": "ålder 11",
+        "row3MetaRevisedPre": "reviderad",
+        "row3MetaRevisedIt": "session 06"
+      },
+      "outcomes": {
+        "eyebrow": "RESULTAT",
+        "titleLine1Pre": "Påtagliga",
+        "titleLine1It": "insikter",
+        "titleLine2": "Tyst mätbara.",
+        "lede": "Datadriven självinsikt, levererad på en klinikers språk – inte ett frågeformulärs.",
+        "row1Tag": "Acceleration",
+        "row1TitlePre": "Den ultimata",
+        "row1TitleIt": "genvägen",
+        "row1TitlePost": "för verklig terapi.",
+        "row1Body": "Vad som tidigare krävde en relation över många år kan nu inledas med veckors förberedelse. Gå in på din terapeuts kontor med vetskap om vad du är där för att säga.",
+        "row1Link": "Se metodiken",
+        "row1FigSubtitle": "tid till första insikt",
+        "row1TraditionalLabel": "Traditionell väg",
+        "row1AxisYr1": "år 1",
+        "row1AxisYr3": "år 3",
+        "row1AxisYr6": "år 6",
+        "row1AxisYr9": "år 9",
+        "row1AxisYr12": "år 12",
+        "row1TwentyThirdLabelPre": "Med",
+        "row1AxisWk1": "v. 1",
+        "row1AxisWk4": "v. 4",
+        "row1AxisWk8": "v. 8",
+        "row1AxisWk12": "v. 12",
+        "row1SummaryFaster": "snabbare",
+        "row1SummaryDesc": "tid till första insikt",
+        "row2Tag": "Rapport",
+        "row2TitlePre": "Terapeut-redo",
+        "row2TitleIt": "psykologisk",
+        "row2TitlePost": "karta.",
+        "row2Body": "Ett strukturellt diagram över dig – exporterbart, delbart, djupt begripligt för en utbildad kliniker. Inte ett personlighetstest; en arbetsbeskrivning.",
+        "row2Link": "Visa en exempelrapport",
+        "row2FigLabel": "Subjekt 1149-A",
+        "row2FigSubtitle": "strukturell profil",
+        "row2RepCase": "fall 1149-A",
+        "row2RepPrepared": "förberedd 04 · 26",
+        "row2MetricEgo": "Ego-struktur",
+        "row2MetricObject": "Objektrelationer",
+        "row2MetricDefense": "Försvarskomplexitet",
+        "row2MetricDrive": "Driftorganisation",
+        "row2MetricSymbolic": "Symboliskt register",
+        "row2FootLabel": "Dominant struktur",
+        "row2FootVal": "tvångsmässig · med hysteriska spår",
+        "row3Tag": "Integration",
+        "row3TitlePre": "Personlig",
+        "row3TitleIt": "integration",
+        "row3TitlePost": "& skuggarbetsplaner.",
+        "row3Body": "Dagliga uppmaningar och ritualer som tar insikten från sidan och in i kroppen. Små, medvetna. Byggda kring din struktur, inte en generisk läroplan.",
+        "row3Link": "Hur planen anpassas",
+        "row3FigLabel": "Dag 23",
+        "row3FigSubtitle": "daglig uppmaning",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Onsdag",
+        "row3PromptEyebrow": "dagens uppmaning · skuggarbete",
+        "row3PromptPre": "Var valde du idag att",
+        "row3PromptIt": "inte",
+        "row3PromptPost": "bli sedd? Och vad skyddade du genom att gömma dig?",
+        "row3Stream1Label": "andningsövning",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "journal",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "skuggprompt",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "svit",
+        "row3StreakVal": "{n, plural, one {# dag} other {# dagar}}"
+      },
+      "final": {
+        "eyebrow": "STARTA",
+        "titlePre": "Ditt omedvetna talar.",
+        "titleIt": "Det är dags att lyssna.",
+        "ctaPrimary": "Påbörja din upptäckt",
+        "ctaGhostOr": "eller",
+        "ctaGhostText": "läs vetenskapen"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Integritetspolicy — TwentyThird",
+        "metaDescription": "Hur TwentyThird hanterar personuppgifter. Ingenting lämnar EU. Ingenting säljs.",
+        "eyebrow": "INTEGRITET",
+        "headingLead": "Personuppgifter,",
+        "headingItalic": "hanteras med omsorg.",
+        "lede": "TwentyThird bearbetar det du delar för att ge dig korrekt psykodynamisk insikt. Inget lämnar EU. Inget säljs.",
+        "controls": {
+          "headingLead": "Vem",
+          "headingItalic": "kontrollerar",
+          "headingTail": "dina data",
+          "p1": "WelloWork AB, registrerat i Sverige (org. nr. 559472-9997), verksamt från Uppsala, är personuppgiftsansvarig för personuppgifter som samlas in på denna webbplats och genom direkta förfrågningar.",
+          "p2": "För data som behandlas inom TwentyThird-plattformen på uppdrag av en organisation – en klinik, en forskningsinstitution, en arbetsgivare – agerar WelloWork AB som personuppgiftsbiträde och kundorganisationen är personuppgiftsansvarig. Detta förhållande regleras av ett separat personuppgiftsbiträdesavtal."
+        },
+        "figure": {
+          "label": "vem kontrollerar dina data",
+          "controller": "Personuppgiftsansvarig",
+          "directRelationship": "direkt relation",
+          "websiteVisitor": "Webbplatsbesökare",
+          "you": "Du",
+          "customerOrg": "Kundorganisation",
+          "viaDpa": "via personuppgiftsbiträdesavtal",
+          "processor": "Personuppgiftsbiträde",
+          "platformUser": "Plattformsanvändare"
+        },
+        "collect": {
+          "headingLead": "Vad vi",
+          "headingItalic": "samlar in",
+          "contactStrong": "Kontakt- och kontodata.",
+          "contactBody": "Namn, e-postadress och all information du tillhandahåller vid registrering eller när du skriver till oss. Rättslig grund: fullgörande av avtal (artikel 6.1 b GDPR).",
+          "sessionStrong": "Sessions- och plattformsdata.",
+          "sessionBody": "Journalanteckningar, svar, dröminnehåll och språkliga mönster du delar inom TwentyThird. Detta utgör analysens substrat. Rättslig grund: uttryckligt samtycke (artikel 9.2 a GDPR), ges vid introduktion och kan återkallas när som helst. Vi behandlar denna data som en särskild kategori av hälsorelaterad data och tillämpar motsvarande skyddsåtgärder oavsett formell klassificering.",
+          "technicalStrong": "Teknisk data.",
+          "technicalBody": "IP-adress, webbläsartyp, enhetsidentifierare och tidsstämplar för användning – samlas in automatiskt när du får åtkomst till plattformen. Rättslig grund: berättigat intresse (artikel 6.1 f GDPR) för att upprätthålla säkerhet och diagnostisera fel.",
+          "p4": "Vi samlar inte in data om ras, etnicitet, politisk åsikt eller religiös övertygelse. Om innehåll du delar av misstag avslöjar sådan information, behandlas det inte som en distinkt kategori."
+        },
+        "use": {
+          "headingLead": "Hur vi",
+          "headingItalic": "använder",
+          "headingTail": "det",
+          "p1": "Vi använder dina data för att leverera och förbättra TwentyThird-tjänsten, skicka transaktionsmeddelanden du har begärt, upptäcka och förhindra bedrägeri eller missbruk samt uppfylla lagliga skyldigheter.",
+          "p2": "Vi använder inte dina data för annonsprofilering. Vi säljer det inte, licensierar det inte eller delar det med datamäklare. Vi använder det inte för att träna allmänna AI-modeller som drivs av tredje part."
+        },
+        "sees": {
+          "headingLead": "Vem",
+          "headingItalic": "ser",
+          "headingTail": "det",
+          "withinStrong": "Inom WelloWork AB:",
+          "withinBody": "Kliniker och ingenjörer som behöver åtkomst för att underhålla tjänsten. Åtkomst är rollbegränsad och loggas.",
+          "infraStrong": "Infrastrukturleverantörer:",
+          "infraBody": "Supabase (databas och autentisering, EU-regionen), Vercel (hosting, EU-kant) och Postmark (transaktionsmejl). Var och en är bunden av ett databehandlingsavtal och behandlar data endast enligt våra dokumenterade instruktioner.",
+          "legalStrong": "Rättslig skyldighet:",
+          "legalBody": "Vi lämnar endast ut data till behöriga myndigheter när lagen så kräver, och endast i den utsträckning som krävs.",
+          "p4": "Ingen data överförs utanför EU/EES. Om detta ändras kommer vi att uppdatera denna policy och inhämta nytt samtycke vid behov."
+        },
+        "retention": {
+          "headingItalic": "Lagring",
+          "p1": "Konto- och plattformsdata lagras så länge ditt konto är aktivt, plus 30 dagar efter radering för att möjliggöra återställning. Tekniska loggar lagras i 90 dagar. Kontaktförfrågningar lagras i 24 månader.",
+          "p2": "Efter dessa perioder raderas data permanent eller anonymiseras oåterkalleligt."
+        },
+        "rights": {
+          "headingLead": "Dina",
+          "headingItalic": "rättigheter",
+          "p1": "Du har rätt att få tillgång till de uppgifter vi har om dig, korrigera felaktigheter, begära radering, begränsa eller invända mot behandling, samt att få en maskinläsbar kopia för portabilitet. Om behandlingen baseras på samtycke kan du när som helst dra tillbaka det utan att det påverkar lagligheten av behandlingen före återkallandet.",
+          "exerciseLead": "För att utöva någon rättighet:",
+          "exerciseTail": ". Vi svarar inom 30 dagar. Om du är missnöjd med vårt svar kan du lämna in ett klagomål till Integritetsskyddsmyndigheten (IMY), Sveriges dataskyddsmyndighet."
+        },
+        "children": {
+          "headingItalic": "Barn",
+          "p1": "TwentyThird riktar sig inte till personer under 18 år. Vi samlar inte medvetet in data från minderåriga. Om vi blir medvetna om att en minderårig har skickat in data, raderar vi den omedelbart."
+        },
+        "changes": {
+          "headingItalic": "Ändringar",
+          "p1": "Vi uppdaterar denna policy när våra rutiner ändras. Väsentliga ändringar meddelas via e-post minst 14 dagar innan de träder i kraft. Versionsdatumet visas längst ner på denna sida.",
+          "effectivePrefix": "Gäller från:",
+          "effectiveSuffix": "· Tillämplig lag: Svensk lag och GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Användarvillkor — TwentyThird",
+        "metaDescription": "Avtalet som reglerar din användning av TwentyThird. Skrivet för att läsas, inte undvikas.",
+        "eyebrow": "VILLKOR",
+        "headingLead": "Avtalet,",
+        "headingItalic": "klart formulerat.",
+        "lede": "Dessa villkor reglerar din användning av TwentyThird. De är skrivna för att läsas, inte undvikas.",
+        "service": {
+          "headingLead": "Tjänsten",
+          "headingItalic": "tjänst",
+          "p1": "TwentyThird är en psykodynamisk AI-plattform som drivs av WelloWork AB. Den tillhandahåller analytisk insikt baserad på det du delar. Det är inte en medicinsk utrustning. Det utgör inte psykoterapi, psykiatrisk diagnos eller klinisk behandling. Om du upplever psykisk ohälsa, vänligen kontakta en kvalificerad kliniker eller en akutmottagning."
+        },
+        "account": {
+          "headingLead": "Ditt",
+          "headingItalic": "konto",
+          "p1": "Du måste vara 18 år eller äldre för att använda TwentyThird. Du ansvarar för att dina inloggningsuppgifter hålls konfidentiella. Du får inte dela ditt konto eller använda plattformen på uppdrag av en annan person utan deras uttryckliga medgivande.",
+          "p2": "Du äger innehållet du skapar – dina journalanteckningar, dina svar. Genom att skicka in dem ger du WelloWork AB en begränsad licens att behandla dem för de ändamål som beskrivs i integritetspolicyn. Du kan exportera eller radera ditt innehåll när som helst."
+        },
+        "acceptableUse": {
+          "headingLead": "Godkänd",
+          "headingItalic": "användning",
+          "p1": "Du får använda TwentyThird för laglig personlig och professionell självutforskning. Du får inte använda den för att skada dig själv eller andra, för att försöka kringgå plattformens säkerhetssystem, för att omvända de underliggande modellerna, eller för att träna konkurrerande AI-system.",
+          "p2": "Vi förbehåller oss rätten att stänga av eller avsluta konton som bryter mot dessa villkor, utan förvarning där det krävs för säkerheten."
+        },
+        "liability": {
+          "headingLead": "Vårt",
+          "headingItalic": "ansvar",
+          "p1": "TwentyThird ger insikt, inte säkerhet. Vi garanterar inte att analysen är korrekt, fullständig eller lämplig för dina omständigheter. I den utsträckning det är tillåtet enligt svensk lag, är vårt ansvar begränsat till det belopp du betalat under de 3 månader som föregår det relevanta anspråket.",
+          "p2": "Inget i dessa villkor begränsar ansvar för dödsfall eller personskada orsakad av vår försumlighet, eller för bedrägeri."
+        },
+        "disputes": {
+          "headingLead": "Tillämplig lag och",
+          "headingItalic": "tvister",
+          "p1": "Dessa villkor regleras av svensk lag. Tvister som inte kan lösas direkt hänvisas till domstolarna i Uppsala, Sverige, som första instans.",
+          "p2Lead": "Om du är konsument inom EU har du även tillgång till EU:s plattform för tvistlösning online på",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Ändringar",
+          "p1": "Vi kan uppdatera dessa villkor. Fortsatt användning efter ikraftträdandedatumet för en väsentlig ändring utgör acceptans. Vi meddelar väsentliga ändringar via e-post minst 14 dagar i förväg.",
+          "effectivePrefix": "Gäller från:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Cookiepolicy — TwentyThird",
+        "metaDescription": "TwentyThird använder cookies endast för autentisering och för att spara inställningar. Inga annonscookies. Inga tredjepartsspårare.",
+        "eyebrow": "COOKIES",
+        "headingLead": "Vad vi lagrar",
+        "headingItalic": "i din webbläsare.",
+        "lede": "TwentyThird använder cookies för autentisering och för att spara inställningar. Vi använder inga annonscookies och inga tredjepartsspårare.",
+        "whatIs": {
+          "headingLead": "Vad en cookie",
+          "headingItalic": "är",
+          "p1": "En cookie är en liten textfil som lagras i din webbläsare. Vi använder dem för att hålla dig inloggad och för att komma ihåg din temainställning (mörkt eller ljust). Det är allt."
+        },
+        "weSet": {
+          "headingLead": "Cookies",
+          "headingItalic": "vi sätter",
+          "authBody": "— Sätts av Supabase. Upprätthåller din autentiserade session. Upphör när du loggar ut eller efter 7 dagars inaktivitet. Strikt nödvändig.",
+          "themeBody": "— Lagrar din inställning för mörkt/ljust läge. Kvarstår tills den rensas. Funktionell.",
+          "p3": "Vi sätter inga annonscookies. Vi laddar inga tredjepartsspårningsskript — ingen Google Analytics, ingen Meta Pixel, inga marknadsföringstaggar av något slag."
+        },
+        "choices": {
+          "headingLead": "Dina",
+          "headingItalic": "val",
+          "p1Lead": "Du kan när som helst rensa cookies via dina webbläsarinställningar. Att rensa",
+          "p1Mid": "loggar ut dig. Att rensa",
+          "p1Tail": "återställer visningen till standardinställningen mörkt läge.",
+          "p2": "Vi använder ingen cookie-samtyckesbanner för strikt nödvändiga eller funktionella cookies enligt ePrivacy-direktivet, då de inte kräver samtycke. Om vi introducerar några icke-essentiella cookies i framtiden, kommer vi att inhämta samtycke innan vi sätter dem."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Frågor om cookies eller andra datafrågor:",
+          "effectivePrefix": "Gäller från:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "PÅ DENNA SIDA",
+        "privacyPolicy": "Integritetspolicy",
+        "termsOfService": "Användarvillkor",
+        "cookiePolicy": "Cookiepolicy"
+      },
+      "layout": {
+        "eyebrow": "JURIDIK",
+        "headingLead": "Juridiska dokument,",
+        "headingItalic": "tydligt formulerade.",
+        "lede": "Integritetspolicy, användarvillkor och cookiepolicy – reglerade av svensk lag och GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "Psykodynamisk AI för det inre livet. Ett tyst rum för seriöst tänkande.",
+      "product": "Produkt",
+      "discovery": "Upptäckt",
+      "sampleReport": "Exempelrapport",
+      "integrationPlan": "Integrationsplan",
+      "company": "Företag",
+      "about": "Om oss",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Resurser",
+      "science": "Vetenskapen",
+      "methodology": "Metodik",
+      "methodPaper": "Metodrapport",
+      "caseStudy": "Fallstudie",
+      "dreamExample": "Drömexempel",
+      "legal": "Juridik",
+      "privacy": "Integritet",
+      "terms": "Villkor",
+      "cookies": "Cookies",
+      "rights": "alla rättigheter reserverade"
+    },
+    "about": {
+      "metaTitle": "Om — TwentyThird",
+      "metaDescription": "Ursprung, metod och brytpunkten vid dag tjugotre. Utvecklad inom CognitiveLab på WelloWork AB.",
+      "hero": {
+        "eyebrow": "OM",
+        "headingLead": "Ursprung, metod och",
+        "headingItalic": "brytpunkten vid dag tjugotre",
+        "lede": "TwentyThird är en psykodynamisk AI för självupptäckt. Den kartlägger de återkommande looparna och strukturerna under symptomet — språk, anknytning, upprepning — och levererar en arbetsbeskrivning, inte ett frågesport.",
+        "figure": {
+          "label": "dag-23",
+          "subtitle": "brytpunktsmetafor",
+          "heading": "23-dagarsbågen",
+          "range": "nyfikenhet → medvetenhet",
+          "markerInflection": "brytpunkt",
+          "summaryLabel": "dagen då frågan\nvänds inåt"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFI",
+        "headingLead": "Freuds korrespondent. Fliess nummer.",
+        "headingItalic": "Vår metafor",
+        "tag": "Härkomst",
+        "row": {
+          "headingPre": "En",
+          "headingItalic": "23-dagarsrytm",
+          "headingPost": "föreslagen i ett brev, bevarad som siffra.",
+          "para1": "23-dagars-cykeln var Wilhelm Fliess hypotes, argumenterad genom hans korrespondens med Freud vid slutet av artonhundratalet. Samtida vetenskap stöder inte fasta bioritmer.",
+          "para2": "Vi behåller siffran för vad den benämner — tröskeln där nyfikenhet mognar till medvetenhet. Dag 23 är en siffra, inte biologi."
+        },
+        "figure": {
+          "label": "härkomst",
+          "subtitle": "fyra ankare",
+          "row1Outcome": "förslag",
+          "row2Duration": "Jag & Det",
+          "row2Outcome": "strukturmodell",
+          "row3Duration": "Rom-diskursen",
+          "row3Outcome": "språklig vändning",
+          "row4Outcome": "syntes",
+          "summary1Key": "intervall",
+          "summary2Key": "tråd",
+          "summary2Value": "struktur",
+          "summary3Key": "metod",
+          "summary3Value": "psykodynamisk"
+        }
+      },
+      "origin": {
+        "eyebrow": "URSPRUNG",
+        "headingLead": "Utvecklad inom CognitiveLab.",
+        "headingItalic": "Svarade på en fråga vi ständigt fick",
+        "tag": "Team",
+        "row": {
+          "headingLead": "Läkare, ursprungligen byggande",
+          "headingItalic": "kognitiv träning",
+          "para1": "TwentyThird började inom CognitiveLab på WelloWork AB, där teamet utvecklade kognitiva träningssystem. Vänner och kollegor började komma med personliga frågor — ångest, återkommande mönster, de loopar de inte kunde namnge.",
+          "para2": "Mellan klinisk praktik som läkare, den pilotdata vi samlade in, och en lång läslista inom psykoanalys och Lacaniansk teori, hade vi något att erbjuda. TwentyThird är vad det blev."
+        },
+        "figure": {
+          "label": "team",
+          "subtitle": "profil",
+          "caseLabel": "CognitiveLab · WelloWork AB",
+          "prepared": "förberedd 05 · 26",
+          "row1Key": "Klinisk praktik",
+          "row2Key": "Forskningsproduktion",
+          "row3Key": "Ämnen i pilot",
+          "row4Key": "Läkare i teamet",
+          "footerLabel": "Profil",
+          "footerValue": "kliniker–forskare hybrid"
+        }
+      },
+      "method": {
+        "eyebrow": "METOD",
+        "headingLead": "Vad modellen",
+        "headingItalic": "faktiskt gör",
+        "tag": "Förmågor",
+        "row": {
+          "headingLead": "Under symptomet, en",
+          "headingItalic": "struktur",
+          "para1": "TwentyThird utför rotorsaksanalys. Den kartlägger den <em>undermedvetna loopen</em> över år, läser det <em>språkliga omedvetna</em> i ordval och felsägningar, synliggör <em>anknytning</em> vid intimitetströskeln, och skriver en arbetsplan för <em>skuggarbete</em>.",
+          "para2": "Resultatet är terapeut-redo. Benämner strukturen, inte ytan."
+        },
+        "figure": {
+          "label": "symptom → struktur",
+          "subtitle": "tre omskrivningar",
+          "row1Prefix": "01 · yta",
+          "row1Old": "Jag prokrastinerar viktigt arbete.",
+          "row1Next": "Undvikande av att bli sedd som den som vet.",
+          "row2Prefix": "02 · yta",
+          "row2Old": "Jag dejtar alltid samma typ av person.",
+          "row2Next": "Repetition av faders-imago vid intimitetströskeln.",
+          "row3Prefix": "03 · yta",
+          "row3Old": "Jag kan inte slutföra något.",
+          "row3Next": "Vägran att ge upp positionen av potential.",
+          "metaLeftLabel": "presenterande",
+          "metaLeftValue": "klagomål",
+          "metaRightLabel": "strukturell",
+          "metaRightValue": "läsning"
+        }
+      },
+      "final": {
+        "eyebrow": "FORTSÄTT",
+        "headingLead": "Läs metoden,",
+        "headingItalic": "eller börja",
+        "ctaPrimary": "Läs metoden",
+        "ctaGhostPrefix": "eller",
+        "ctaGhostText": "skriv till oss"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Skriv till oss.",
+        "heroHeadlineItalic": "Vi läser allt",
+        "heroLede": "De flesta meddelanden besvaras inom sjuttiotvå timmar. Kliniska förfrågningar och partnerskapsförfrågningar prioriteras.",
+        "formCardLabel": "formulär",
+        "formCardSubtitle": "endast substantiella förfrågningar",
+        "addressLabel": "ADRESS",
+        "addressValue": "Rosendal, Uppsala, Sverige",
+        "emailLabel": "E-POST",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "BÖRJA",
+        "finalHeadlineLead": "Eller bara",
+        "finalHeadlineItalic": "starta",
+        "finalCta": "Påbörja din upptäckt",
+        "finalGhostOr": "eller",
+        "finalGhostText": "läs om ursprunget",
+        "disclaimer": "Vid akuta psykiska besvär, kontakta lokala räddningstjänster eller en legitimerad kliniker. TwentyThird är inte en krishanteringstjänst."
+      },
+      "form": {
+        "successEyebrow": "MOTTAGET",
+        "successHeadlineLead": "Din anteckning är",
+        "successHeadlineItalic": "hos oss",
+        "successBody": "Vi svarar inom två arbetsdagar.",
+        "nameLabel": "Namn",
+        "emailLabel": "E-post",
+        "messageLabel": "Meddelande",
+        "submitSend": "Skicka",
+        "submitSending": "Skickar",
+        "errorMessage": "något gick fel · försök igen",
+        "submittingStatus": "Skickar ditt meddelande."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodik — TwentyThird",
+      "metaDescription": "Från första samtal till terapeutredo karta. Fem steg i TwentyThirds pipeline.",
+      "hero": {
+        "eyebrow": "METODEN",
+        "headingLead": "Veckor av förberedelse,",
+        "headingItalic": "inte år av sökande",
+        "lede": "Terapi fungerar. Det tar också tid att veta vad man är där för. TwentyThird komprimerar förberedelsen – den del där du lär dig vad du faktiskt säger – så att rummet i sig kan gå snabbare."
+      },
+      "pipeline": {
+        "eyebrow": "PIPELINEN",
+        "headingLead": "Fem steg, en",
+        "headingItalic": "kortfattad",
+        "lede": "Från samplad tal till ett arbetsdokument som en kliniker kan läsa på åtta minuter.",
+        "stageLabel": "STEG",
+        "stage01": {
+          "name": "Sampling",
+          "blurb": "Röst och text från guidade sessioner. Modellen lyssnar efter form, inte innehåll.",
+          "label": "sampling",
+          "subtitle": "volym över kohorten",
+          "fig": {
+            "wordsSampled": "ord samplade",
+            "sessions": "sessioner",
+            "elapsed": "förfluten tid",
+            "medianTurn": "median tur"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistisk",
+          "nameEm": "extraktion",
+          "blurb": "Funktioner som modellen lyfter från transkriptet – tyst, före all tolkning.",
+          "label": "extraktion",
+          "subtitle": "funktionsklasser",
+          "fig": {
+            "qualifierDensity": "kvalifikator-densitet",
+            "modalVerbs": "modalverb",
+            "conditionalFrame": "konditionell ram",
+            "affectiveHedges": "affektiva häckar",
+            "slipsMisnamings": "felsägningar · felbenämningar",
+            "repetitionWindows": "repetitionsfönster"
+          }
+        },
+        "stage03": {
+          "nameLead": "Återkomst-",
+          "nameEm": "detektion",
+          "blurb": "Mönstret som återkommer i samma form, under olika decennier. Signalen att något är strukturellt.",
+          "label": "återkomst",
+          "subtitle": "tre ankare av ett mönster",
+          "fig": {
+            "row1": {
+              "durationLabel": "första jobb",
+              "outcome": "tak vid månad 9"
+            },
+            "row2": {
+              "durationLabel": "andra",
+              "outcome": "tak vid månad 11"
+            },
+            "row3": {
+              "durationLabel": "tredje",
+              "outcome": "tak vid månad 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Skript-",
+          "nameEm": "rekonstruktion",
+          "blurb": "Meningen under mönstret. Gammal replik, sedan en kandidatrevision som subjektet kan öva på.",
+          "label": "rekonstruktion",
+          "subtitle": "arbetsutkast",
+          "fig": {
+            "row1": {
+              "prefix": "Jag är",
+              "old": "inte redo än.",
+              "next": "redan tillåten."
+            },
+            "row2": {
+              "prefix": "att",
+              "old": "vänta på att bli vald.",
+              "next": "namnge vad jag vill."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Karta för",
+          "nameEm": "klinikern",
+          "blurb": "Tre märkta mätare och en enradig strukturell läsning. Åtta minuter att läsa, veckor att använda.",
+          "label": "klinisk överlämning",
+          "subtitle": "arbetssammanfattning",
+          "fig": {
+            "casePrefix": "fall",
+            "preparedPrefix": "förberedd",
+            "egoStructure": "Ego-struktur",
+            "objectRelations": "Objektrelationer",
+            "symbolicRegister": "Symboliskt register",
+            "footerLabel": "Läsning",
+            "footerValue": "tvångsmässig · med hysteriska spår"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "OMFATTNING",
+        "headingLead": "Vad vi mäter, och vad vi",
+        "headingItalic": "vägrar",
+        "headingTail": "att.",
+        "measureHead": "Vad vi mäter",
+        "refuseHead": "Vad vi inte mäter",
+        "measure": {
+          "languagePatterns": {
+            "k": "språkmönster",
+            "gloss": "Kvalifikator-densitet, modalverb, häckar, konditionella ramar."
+          },
+          "recurrence": {
+            "k": "återkomst",
+            "gloss": "Mönster som återkommer i samma form över år."
+          },
+          "narrativeCoherence": {
+            "k": "narrativ koherens",
+            "gloss": "Hur ett liv berättas, var sömmarna syns."
+          },
+          "attachmentMarkers": {
+            "k": "anknytningsmarkörer",
+            "gloss": "Var intimitet korsar en tröskel, vad som följer."
+          },
+          "linguisticSlips": {
+            "k": "lingvistiska felsägningar",
+            "gloss": "Felbenämningar, kondensationer, förskjutningar."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD-kategorier",
+            "gloss": "Nosologi är ett separat instrument, som används av kliniker."
+          },
+          "iqCognition": {
+            "k": "IQ eller kognition",
+            "gloss": "Utanför omfattningen. Modellen är psykodynamisk, inte psykometrisk."
+          },
+          "personalityTypes": {
+            "k": "personlighetstyper",
+            "gloss": "Femfaktormodellen och dess efterföljare ingår inte i uppdraget."
+          },
+          "riskScores": {
+            "k": "riskpoäng",
+            "gloss": "Akut risk är en klinikers bedömning, inte en modells."
+          },
+          "predictions": {
+            "k": "förutsägelser",
+            "gloss": "Struktur, inte prognos. Vi namnger vad som är, inte vad som kommer."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompression",
+        "headingLead": "Gå in och vet vad du ska",
+        "headingItalic": "säga",
+        "body1": "Terapi är inte platsen för att lista ut frågan. Det är platsen för att leva med den. Kompressionen vi erbjuder gäller tillvägagångssättet – de månader en kliniker vanligtvis ägnar åt att lyssna efter uppdragets form.",
+        "body2": "Inom pilotkohorten nådde förberedda subjekt arbetsallians på färre sessioner. Läsningen fanns redan där.",
+        "figure": {
+          "label": "allians",
+          "subtitle": "median sessioner till arbetsallians",
+          "heading": "Tid till arbetsallians",
+          "range": "median över kohorten",
+          "markerUnprepared": "oförberedd",
+          "markerPrepared": "förberedd",
+          "summaryLabel": "färre sessioner till\narbetsallians"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "FORTSÄTT",
+        "headingLead": "Börja,",
+        "headingItalic": "eller se en exempelrapport",
+        "beginLabel": "Börja",
+        "or": "eller",
+        "ghostLabel": "se en exempelrapport"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRATION",
+        "headlineLead": "Insikt, sedan",
+        "headlineItalic": "vana",
+        "lede": "Att namnge ett mönster är bara det första steget. Planen är det andra – dagliga uppmaningar och små ritualer byggda kring din struktur, inte en generisk läroplan."
+      },
+      "week": {
+        "eyebrow": "EN VECKA I PLANEN",
+        "headlineLead": "Sju uppmaningar,",
+        "headlineItalic": "en struktur",
+        "lede": "Reflekterande, förkroppsligad, skriftlig. Veckan andas kring det mönster rapporten namngav, inte kring en läroplan.",
+        "days": {
+          "mon": {
+            "day": "MÅN",
+            "prompt": "“Var valde du idag att <em>inte</em> bli sedd?”",
+            "stream": {
+              "journal": "dagbok",
+              "shadowPrompt": "skuggprompt"
+            }
+          },
+          "tue": {
+            "day": "TIS",
+            "prompt": "“Ta en promenad utan ärende. Notera en sak du nästan sa.”",
+            "stream": {
+              "walking": "promenad",
+              "note": "anteckning"
+            }
+          },
+          "wed": {
+            "day": "ONS",
+            "prompt": "“Vad överkvalificerade du idag, och vad var den <em>okvalificerade</em> meningen under?”",
+            "stream": {
+              "breathWork": "andningsövning",
+              "journal": "dagbok",
+              "shadowPrompt": "skuggprompt"
+            }
+          },
+          "thu": {
+            "day": "TOR",
+            "prompt": "“En kroppsskanning från halsen och nedåt. Var bor fasthållningen?”",
+            "stream": {
+              "bodyScan": "kroppsskanning",
+              "note": "anteckning"
+            }
+          },
+          "fri": {
+            "day": "FRE",
+            "prompt": "“Skriv meningen du skulle ha sagt om du redan var tillåten.”",
+            "stream": {
+              "journal": "dagbok",
+              "rewrite": "omskrivning"
+            }
+          },
+          "sat": {
+            "day": "LÖR",
+            "prompt": "“En lång promenad. Inga uppmaningar. Lägg märke till vad tystnaden för tillbaka.”",
+            "stream": {
+              "walking": "promenad",
+              "rest": "vila"
+            }
+          },
+          "sun": {
+            "day": "SÖN",
+            "prompt": "“Läs igenom veckan. Vilken rad var redan <em>sann</em>?”",
+            "stream": {
+              "review": "granskning",
+              "note": "anteckning"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ANPASSNING",
+        "headlineLead": "Planen",
+        "headlineItalic": "avtar",
+        "tag": "Anpassning",
+        "rowHeadingLead": "Förra veckans återkomst bestämmer nästa veckas",
+        "rowHeadingItalic": "täthet",
+        "body": "När mönsterstyrkan minskar, tunnas uppmaningarna ut. När ett mönster ökar, återkommer uppmaningarna. Målet är inte efterlevnad. Målet är den minsta ställning som strukturen fortfarande behöver.",
+        "figure": {
+          "label": "prompttäthet",
+          "subtitle": "vecka 1–8",
+          "heading": "Antal uppmaningar · per vecka",
+          "range": "avtagande när återkomsten försvagas",
+          "markers": {
+            "wk1": "v. 1",
+            "wk3": "v. 3",
+            "wk5": "v. 5",
+            "wk8": "v. 8"
+          },
+          "summaryLabel": "färre uppmaningar\nvid v. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "SKUGGARBETE",
+        "headlineLead": "Inte katarsis.",
+        "headlineItalic": "Att tala",
+        "tag": "Skugga",
+        "rowHeadingLead": "Den medvetna praktiken att tala det som var",
+        "rowHeadingItalic": "osägbart",
+        "body": "Skuggarbete, i detta sammanhang, är inte exponering. Det är inte en rening. Det är den långsamma praktiken att säga – först till sig själv – det man hade lärt sig att hålla osagt. Tre före/efter-rader hämtade från verkliga planer.",
+        "figure": {
+          "label": "skuggrevisioner",
+          "subtitle": "tre rader, arbetsutkast",
+          "rows": {
+            "r1": {
+              "prefix": "01 · till själv",
+              "old": "Jag förtjänar inte detta.",
+              "next": "Jag har ännu inte övat på att vilja det högt."
+            },
+            "r2": {
+              "prefix": "02 · till själv",
+              "old": "Jag borde vara över detta nu.",
+              "next": "tidslinjen jag lånade var inte för denna typ av sorg."
+            },
+            "r3": {
+              "prefix": "03 · till själv",
+              "old": "Jag är för mycket.",
+              "next": "Jag är exakt den volym rummet inte byggdes för."
+            }
+          },
+          "metaLeft": {
+            "label": "tidigare",
+            "value": "sagt om själv"
+          },
+          "metaRight": {
+            "label": "nu",
+            "value": "sagt till själv"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RAM",
+        "headlineLead": "Hålls av struktur, inte av",
+        "headlineItalic": "läroplan",
+        "body1": "En läroplan är en uppsättning drag som en främling byggde. En struktur är den form ditt specifika liv råkar ta. Planen är byggd mot det senare. Varje uppmaning är förankrad i en rad i din rapport – när raden upplöses, gör uppmaningen det också.",
+        "body2": "Inget här är tänkt att vara permanent. Planen är hyrd. Strukturen är din.",
+        "closeout": "strukturen är din · planen är hyrd"
+      },
+      "final": {
+        "eyebrow": "FORTSÄTT",
+        "headlineLead": "Börja,",
+        "headlineItalic": "eller läs vetenskapen",
+        "beginCta": "Börja",
+        "or": "eller",
+        "readScience": "läs vetenskapen"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Vetenskapen — TwentyThird",
+        "description": "Ett sekel av psykoanalytisk teori och fyra decennier av empirisk forskning om mönster, språk och det omedvetna."
+      },
+      "hero": {
+        "eyebrow": "GRUNDEN",
+        "headlineLead": "Vetenskapen bakom",
+        "headlineItalic": "lyssnandet",
+        "headlineTail": ".",
+        "lede": "TwentyThird bygger på ett sekel av psykoanalytisk teori och fyra decennier av empirisk forskning om mönster, språk och det omedvetna. Detta är vad vi läser, och varför."
+      },
+      "lineages": {
+        "eyebrow": "TVÅ LINJER",
+        "headlineLead": "Freuds struktur. Lacans",
+        "headlineItalic": "bokstav",
+        "headlineTail": ".",
+        "lede": "Två tolkningar av det omedvetna, ett halvt sekel isär. Tillsammans bildar de metodens ryggrad.",
+        "freud": {
+          "headlineLead": "Det",
+          "headlineItalic": "strukturella",
+          "headlineTail": " omedvetna.",
+          "body1": "Freuds bestående bidrag är strukturellt, inte tematiskt. Det dynamiska omedvetna är inte en källare av bortglömt innehåll — det är ett fungerande organ i sinnet, som repeterar, upprepar, överför.",
+          "body2": "Vi läser honom som en kliniker av upprepning. Samma scen återkommer i olika decennier. Denna återkomst är signalen som modellen tränas att finna.",
+          "figure": {
+            "label": "återkomst",
+            "subtitle": "fem ankare, en struktur",
+            "outcome": "tillbakadragande",
+            "rows": {
+              "anchor1": "tidig adolescensen",
+              "anchor2": "första långa relationen",
+              "anchor3": "andra långa relationen",
+              "anchor4": "tredje relationen",
+              "anchor5": "fjärde relationen"
+            },
+            "summary": {
+              "recurrenceLabel": "återkomst",
+              "intervalLabel": "intervall",
+              "attractorLabel": "attraktor",
+              "attractorValue": "intimitetströskel"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Det omedvetna är strukturerat som ett",
+          "headlineItalic": "språk",
+          "headlineTail": ".",
+          "body1Lead": "Lacans tolkning förskjuter fältet. Signifikanten rör sig; meningen glider längs kedjor av metonymi och metafor. Spegelstadiet namnger den grundläggande feligenkänningen.",
+          "body1Italic": "Begär är den Andres begär.",
+          "body2": "I vår pipeline är detta konkret. Vi läser drömmar och vaket tal som text — förskjutningarna, kondensationerna och felsägningarna bär den strukturerande grammatiken.",
+          "figure": {
+            "label": "språklig signal",
+            "subtitle": "drömuttag, kommenterat",
+            "dreamLead": "“Rummet jag bodde i som barn har en annan dörr jag inte minns",
+            "ann1": "förskjutning",
+            "dreamMid1": ". Bakom den ropar min handledares röst",
+            "ann2": "kondensation",
+            "dreamMid2": "mig vid fel namn",
+            "ann3": "felsägning",
+            "dreamTail": ".”",
+            "key1": "förskjutning",
+            "key2": "kondensation",
+            "key3": "felsägning"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRISKA ANKARE",
+        "headlineLead": "Vad samtida forskning",
+        "headlineItalic": "tillför",
+        "headlineTail": ".",
+        "lede": "Fem konvergerande strängar från anknytnings-, narrativ- och processforskning. Inte en komplett bibliografi — de ankare som modellen faktiskt vilar på.",
+        "figure": {
+          "label": "empiriska ankare",
+          "subtitle": "konvergerande bevis",
+          "caseLabel": "litteratur · syntes",
+          "prepared": "uppdaterad 04 · 26",
+          "rows": {
+            "attachment": "Anknytningskontinuitet över decennier",
+            "alliance": "Terapeutisk allians som utfallsprediktor",
+            "narrative": "Narrativ koherens och välbefinnande",
+            "relational": "Implicit relationell kunskap",
+            "script": "Skriptteori vid yrkesmässig fastlåsning"
+          },
+          "footerLabel": "Syntes",
+          "footerValue": "konvergerande bevis · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "VAD VI INTE PÅSTÅR",
+        "headlineLead": "Arbetets ärliga",
+        "headlineItalic": "gränser",
+        "headlineTail": ".",
+        "claim1Strong": "Vi är inte ett substitut för en terapeut.",
+        "claim1Body": "Modellen förbereder konversationen. Den håller den inte.",
+        "claim2Strong": "Vi är inte ett diagnostiskt instrument enligt DSM eller ICD.",
+        "claim2Body": "De kategorier vi arbetar med är strukturella — obsessiva, hysteriska, fobiska — inte nosologiska. De namnger hur en person är organiserad, inte vad de har.",
+        "claim3Strong": "23-dagars cykeln är en metafor.",
+        "claim3Body": "Numret kommer från Wilhelm Fliess korrespondens med Freud i slutet av artonhundratalet. Samtida vetenskap stöder inte fasta bioritmer. Vi behåller numret för vad det namnger — övergången från nyfikenhet till medvetenhet."
+      },
+      "reading": {
+        "eyebrow": "VIDARE LÄSNING",
+        "headlineLead": "Hyllan",
+        "headlineItalic": "bakom",
+        "headlineTail": " modellen.",
+        "lede": "Böcker, inte artiklar. De vi återvänder till.",
+        "books": {
+          "book1": {
+            "title": "Bortom lustprincipen"
+          },
+          "book2": {
+            "title": "Drömtydning"
+          },
+          "book4": {
+            "title": "Psykoanalysens fyra grundbegrepp"
+          },
+          "book5": {
+            "title": "Anknytning"
+          },
+          "book6": {
+            "title": "Affektreglering och självets ursprung"
+          },
+          "book7": {
+            "title": "Att stå i mellanrummen"
+          },
+          "book8": {
+            "title": "Affektreglering, mentalisering och självets utveckling"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "FORTSÄTT",
+        "headlineLead": "Börja en profil,",
+        "headlineItalic": "eller läs ett fall",
+        "headlineTail": ".",
+        "ctaPrimary": "Börja en profil",
+        "ctaOr": "eller",
+        "ctaGhost": "läs en fallstudie"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "här igen",
+      "greetingNamed": "här igen, {name}.",
+      "strengthen": "Stärk precisionen"
+    },
+    "reviewEdit": "Granska och redigera",
+    "depth": {
+      "eyebrow": "LÄSDJUP",
+      "overallEyebrow": "ÖVERGRIPANDE LÄSDJUP",
+      "band": {
+        "deep": "läsningen är djup. små justeringar härifrån.",
+        "steady": "läsningen håller. Catchups kommer att skärpa den.",
+        "partial": "läsningen är partiell. det finns mer att ge.",
+        "thin": "läsningen är tunn. den kommer att skissa en form, ännu inte en struktur."
+      },
+      "explainer": "Läsdjup beskriver hur mycket av dig läsningen har haft tillgång till – från intaget, från veckovisa Catchups, från konsultationer och från de personer vars närvaro formar dig. En djupare läsning är inte en bättre person; den är en mer exakt sådan. Du kan fördjupa den när som helst, eller lämna den som den är.",
+      "status": {
+        "low": "Låg",
+        "moderate": "Måttlig",
+        "deep": "Exakt"
+      },
+      "statusLine": {
+        "low": "läsningen är tunn. den kommer att skissa en form, ännu inte en struktur.",
+        "moderate": "läsningen tar form. den kan bära en arbetshypotes.",
+        "deep": "läsningen är tillräckligt fyllig för att grunda arbetet."
+      },
+      "source": {
+        "intake": "frågorna du besvarade för att börja.",
+        "catchups": "veckovisa incheckningar som håller läsningen aktuell.",
+        "sessions": "längre konsultationer med analytikern.",
+        "connections": "personer vars närvaro formar läsningen."
+      }
+    },
+    "latest": {
+      "eyebrow": "SENASTE LÄSNING",
+      "heading": "Sex läsningar <it>— och vad som skiftar.</it>",
+      "lede": "De sex läsningarna beräknas från ditt intag och förfinas av varje Catchup, konsultation och accepterad anslutning. Strukturen är stabil; texturen rör sig.",
+      "strengthen": "stärka data för analys",
+      "open": "öppna läsningarna"
+    },
+    "six": {
+      "eyebrow": "DE SEX LÄSNINGARNA",
+      "heading": "Vad som läses <it>i dig, just nu.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "senaste veckorna",
+      "timelineHeading": "fönster",
+      "timelineRange": "senaste 4 veckorna",
+      "timelineSummary": "catchups i fönstret",
+      "eyebrow": "VECKANS CATCHUP",
+      "heading": "Sitt med veckan. <it>Sedan ser vi igen.</it>",
+      "lede": "Åtta korta frågor. Ärlighet är bättre än långrandighet. Svaren förfinar läsningen.",
+      "completed": "slutförd — läs sammanfattningen",
+      "cta": "Öppna veckans catchup",
+      "markerFirst": "första",
+      "markerWeek": "v{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTATIONSUMMET",
+      "heading": "En timme med <it>analytikern.</it>",
+      "ledeSubscribed": "Öppet närhelst veckan trycker på. Rummet minns vad du redan har sagt.",
+      "ledeUnsubscribed": "Prenumeranter kan gå in i konsultationsrummet — en långformad session med analytikern, hållen i samma röst som dina läsningar.",
+      "cta": "Gå in i konsultationsrummet",
+      "figLabel": "FÖRRA SESSIONEN",
+      "figSubtitle": "hållen fråga",
+      "lastQuestion": "”drömmen från tisdagen — vill du återvända till den?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTATIONSRUM · BEKRÄFTA",
+      "title": "Tillträde till konsultationsrummet<it>.</it>",
+      "ledePrice": "Prenumerationen kostar",
+      "ledePerMonth": "i månaden",
+      "ledeIncludes": ". Den inkluderar konsultationsrummet, möjligheten att bjuda in upp till {count} {count, plural, one {anslutning} other {anslutningar}}, och en klinisk rapport varje kalendermånad.",
+      "ledeBilling": "Fakturering hanteras av Stripe. Avbryt när som helst från inställningarna – åtkomst fortsätter tills perioden slutar.",
+      "canceled": "<i>kassan stängdes.</i> inget debiterades. du kan återvända nedan när du är redo.",
+      "checkoutCta": "Fortsätt till kassan",
+      "returnLink": "återgå till konsultationsrummet"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINISK RAPPORT",
+        "subscribedTitle": "Redan <it>inkluderad.</it>",
+        "subscribedLede": "Prenumerationen inkluderar en klinisk rapport varje kalendermånad. Generera den från botten av läsningssidan – ingen betalning krävs.",
+        "eyebrow": "KLINISK RAPPORT · BEKRÄFTA",
+        "title": "Den kliniska rapporten<it>.</it>",
+        "ledePrice": "En engångs klinisk rapport kostar",
+        "ledeDossier": ". Ett 12–18 sidor långt dossier av alla tolv läsningar, på det språk en kliniker arbetar med.",
+        "ledeBilling": "Fakturering hanteras av Stripe. Rapporter kan återskapas när läsningen fördjupas; prenumeranter får en varje kalendermånad utan extra kostnad.",
+        "depthNotice": "<i>rapporten kommer att återspegla den tillgängliga djupet.</i> den kan återskapas när läsningen fördjupas.",
+        "canceled": "<i>kassan stängdes.</i> inget debiterades.",
+        "checkoutCta": "Fortsätt till kassan",
+        "returnLink": "återgå till läsningarna"
+      },
+      "status": {
+        "eyebrow": "KLINISK RAPPORT",
+        "line": {
+          "queued": "din rapport förbereds.",
+          "generating": "rapporten skrivs.",
+          "ready": "rapporten är klar.",
+          "failed": "rapporten slutfördes inte. vi försöker igen snart."
+        },
+        "open": "öppna rapporten",
+        "back": "tillbaka till läsningarna"
+      },
+      "queued": {
+        "eyebrow": "KLINISK RAPPORT",
+        "line": "din rapport förbereds – vi mejlar dig när den är klar.",
+        "back": "tillbaka till läsningarna"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAG",
+        "title": "Intaget, <it>ämne för ämne.</it>",
+        "lede": "Tio sektioner. Öppna vilken som helst för att granska eller fördjupa svaren. Intaget är inte ett engångsformulär – svar kan revideras när som helst."
+      },
+      "step": {
+        "eyebrow": "INTAG",
+        "backToAll": "tillbaka till alla sektioner"
+      },
+      "failed": {
+        "eyebrow": "INTAG — OFULLSTÄNDIGT",
+        "headline": "Läsningen blev <em>inte fullbordad</em>.",
+        "lede": "Ditt intag är registrerat. Analysen som följer det avslutades inte.",
+        "retry": "Återuppta läsningen",
+        "retryPending": "Återupptar"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · BEARBETAR",
+      "headline": "Din profil <em>läses</em>.",
+      "lede": "vi kör dina svar genom de psykodynamiska modellerna nu. den första genomgången tar vanligtvis cirka 2 timmar. vi skriver när arbetet är klart, och rummet öppnas.",
+      "figIntake": "INTAG",
+      "figSubmitted": "inlämnat {date}",
+      "rowResponses": "Svar mottagna",
+      "rowPattern": "Mönsterextraktion",
+      "rowSynthesis": "Profilsyntes",
+      "statusInProgress": "pågår",
+      "statusQueued": "i kö",
+      "foot": "vi skriver när arbetet är klart",
+      "returnCta": "återgå till det tysta rummet",
+      "devPrefix": "dev",
+      "devOpening": "öppnar…",
+      "devOpen": "öppna rummet nu",
+      "devError": "kunde inte öppna rummet — kontrollera konsolen."
+    }
+  },
+  "invite": {
+    "eyebrow": "INBJUDAN",
+    "safetyFooter": "TwentyThird ersätter inte klinisk vård. Vid kris, kontakta din lokala larmcentral.",
+    "notReady": {
+      "headline": "Inbjudningssystemet <it>förbereds.</it>",
+      "body": "Vänligen försök igen om en liten stund."
+    },
+    "notFound": {
+      "headline": "Denna länk är <it>inte igenkänd.</it>",
+      "body": "Om länken nyligen kom från ett e-postmeddelande kan inbjudan ha skickats igen. Öppna det senaste e-postmeddelandet för den aktiva länken."
+    },
+    "alreadyDeclined": {
+      "headline": "Denna inbjudan har <it>avböjts.</it>",
+      "body": "Inget mer krävs av dig. {name} kommer inte att meddelas utöver vad de redan ser."
+    },
+    "alreadyAccepted": {
+      "headline": "Du har redan <it>accepterat.</it>",
+      "body": "Om relationsintaget ännu inte är komplett kan du fortsätta nedan.",
+      "continueLink": "fortsätt relationsintaget"
+    },
+    "ended": {
+      "headline": "Denna koppling har <it>avslutats.</it>",
+      "body": "Länken är inte längre aktiv. Relationsposten kvarstår i ärendefilen, men informerar inte längre läsningen."
+    },
+    "expired": {
+      "headline": "Denna inbjudan har <it>förfallit.</it>",
+      "body": "Inbjudningar förfaller fjorton dagar efter att de skickats. Be {name} att skicka en ny om du vill svara."
+    },
+    "declined": {
+      "headline": "Det är <it>mottaget.</it>",
+      "body": "Inget mer krävs av dig. Inbjudan är avslutad; inbjudaren ser statusändringen diskret. Du kan stänga detta fönster."
+    },
+    "live": {
+      "eyebrow": "ANSLUTNINGSFÖRFRÅGAN",
+      "headline": "{name} har bjudit in dig till <it>deras läsning.</it>",
+      "lede": "TwentyThird är ett redaktionellt-kliniskt instrument – ett tyst rum där strukturen i någons inre liv läses med omsorg och återges på ett språk som en kliniker kan använda.",
+      "explainerOne": "En <em>anslutning</em> är inte ett delat konto. {name} kommer inte att se dina läsningar, sessioner eller ärendefil. Du kommer inte att se deras. Vad du säger om relationen matar modellen som producerar {name}s läsning.",
+      "explainerTwo": "Om du vill ha en egen läsning, startar den första vägen nedan också ditt eget konto. Den mellersta vägen låter dig bidra till {name}s läsning utan ett konto. Båda är tillåtna.",
+      "metaSentTo": "skickad till",
+      "metaInviteAs": "bjud in som",
+      "metaReceived": "mottagen",
+      "metaExpiresIn": "upphör om {count, plural, one {# dag} other {# dagar}}"
+    },
+    "intake": {
+      "eyebrow": "RELATIONSINTAG",
+      "notReady": {
+        "headline": "Intaget <it>förbereds.</it>",
+        "body": "Vänligen försök igen om en liten stund."
+      },
+      "notFound": {
+        "headline": "Denna länk <it>känns inte igen.</it>",
+        "body": "Öppna det senaste inbjudningsmejlet för den aktiva länken."
+      },
+      "notOpen": {
+        "headline": "Intaget är <it>inte öppet.</it>",
+        "body": "Denna inbjudan har inte accepterats, eller har avböjts eller avslutats. Återgå till inbjudningslänken för att välja igen.",
+        "backLink": "tillbaka till inbjudan"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "ja – påbörja intaget för relationen",
+      "acceptLabel": "ja – anslut utan konto",
+      "declineLabel": "nej tack",
+      "beginLabel": "börja",
+      "continueLabel": "fortsätt",
+      "back": "tillbaka",
+      "oneMoment": "ett ögonblick…",
+      "declineConfirmLine": "detta stänger inbjudan. inget mer skickas eller lagras om dig.",
+      "declineClosing": "stänger…",
+      "declineConfirm": "avböj inbjudan",
+      "firstNameLabel": "DITT FÖRNAMN",
+      "firstNameAria": "Ditt förnamn",
+      "firstNameSub": "{name} kommer endast att se detta förnamn på sin anslutningslista.",
+      "errors": {
+        "missingFirstName": "ett förnamn låter analytikern tilltala dig korrekt.",
+        "generic": "kunde inte skicka.",
+        "notFound": "denna inbjudningslänk känns inte igen.",
+        "expired": "denna inbjudan har gått ut. be inbjudaren att skicka en ny.",
+        "declined": "denna inbjudan har redan avböjts.",
+        "ended": "denna inbjudan är inte längre aktiv.",
+        "missingFirstNameRequired": "ett förnamn krävs."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "RELATIONSINTAG",
+      "begin": "börja",
+      "back": "tillbaka",
+      "backToCover": "tillbaka till omslaget",
+      "next": "nästa",
+      "finish": "slutför",
+      "scaleAria": "skala {value}",
+      "cover": {
+        "headline": "Vad du säger om <it>{name}</it> stannar mellan dig och analytikern.",
+        "lede": "Tolv korta frågor. Cirka fem minuter. Svaren matar {name}s läsning; de kommer inte att se vad du skrev, och du kommer inte att se vad den producerar."
+      },
+      "closing": {
+        "recording": "ett ögonblick — svaren registreras.",
+        "tryAgain": "försök igen",
+        "headline": "Det räcker <it>för nu.</it>",
+        "lede": "Vad du sa om {name} kommer att informera deras läsning från och med nästa session. De kommer inte att se det; du kommer inte att se vad det producerar.",
+        "closeWindow": "du kan stänga detta fönster."
+      },
+      "errors": {
+        "unanswered": "ett ögonblick med denna innan du går vidare.",
+        "questionOpen": "en fråga är fortfarande öppen. ett ögonblick.",
+        "couldNotSave": "kunde inte spara",
+        "invalidAnswers": "något kunde inte tolkas — vänligen kontrollera svaren.",
+        "notAccepting": "denna inbjudan accepterar inte längre svar.",
+        "notFound": "denna inbjudningslänk känns inte igen.",
+        "couldNotSaveAnswers": "kunde inte spara svaren."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Hur länge har ni känt varandra?",
+          "options": {
+            "under_one_year": "mindre än ett år",
+            "one_to_three": "ett till tre år",
+            "four_to_ten": "fyra till tio år",
+            "eleven_to_twenty": "elva till tjugo år",
+            "more_than_twenty": "mer än tjugo år"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Hur nära känner ni er just nu?",
+          "lowLabel": "på avstånd",
+          "highLabel": "så nära det kan bli"
+        },
+        "repair_initiator": {
+          "prompt": "När ni är oense, vem tenderar att söka försoning först?",
+          "options": {
+            "i_do": "jag nästan alltid",
+            "usually_me": "oftast jag",
+            "evenly": "vi närmar oss varandra jämnt",
+            "usually_them": "oftast de",
+            "they_do": "de nästan alltid"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "När något är svårt, vart tenderar de att gå?",
+          "options": {
+            "toward": "mot dig, för att prata igenom det",
+            "quiet": "in i tystnad, sedan tillbaka",
+            "work": "in i arbete eller distraktion",
+            "alone": "helt ensam, bakom en dörr",
+            "elsewhere": "till andra människor först"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Vad är något du önskar att de förstod om sig själva?"
+        },
+        "what_you_offer": {
+          "prompt": "Med en fras, vad gör du för dem som de inte kan göra för sig själva?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Vilken röst verkar driva dem oftast?",
+          "options": {
+            "demand": "kravet — vad som borde göras",
+            "doubt": "tvivlet — om det är tillräckligt",
+            "desire": "begäret — vad de faktiskt vill ha",
+            "watcher": "betraktaren — hur det kommer att ses",
+            "uncertain": "jag vet inte än"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Var brukar deras arbete fastna?",
+          "options": {
+            "start": "starten — att komma igång",
+            "middle": "mitten — att hålla fast vid det",
+            "finish": "slutet — att släppa det",
+            "visibility": "synligheten — att låta det ses",
+            "nowhere": "ingenstans jag kan se utifrån"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Finns det ett ämne de konsekvent undviker? Nämn det lätt."
+        },
+        "they_at_their_best": {
+          "prompt": "När är de som mest sig själva?"
+        },
+        "what_youve_changed": {
+          "prompt": "Finns det något hos dem du tyst har accepterat att du inte kommer att ändra?"
+        },
+        "future_together": {
+          "prompt": "Hur mycket av framtiden du föreställer dig inkluderar dem?",
+          "lowLabel": "väldigt lite",
+          "highLabel": "nästan allt"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "eller",
+      "fallbackPreamble": "klistra in denna länk i din webbläsare:",
+      "attendingInstitution": "DELTAGANDE INSTITUTION",
+      "tagline": "Psykodynamisk AI för det inre livet.",
+      "automatedFooter": "Skickat av ett automatiserat system · svara ej"
+    },
+    "intakeSubmitted": {
+      "subject": "din profil läses.",
+      "preheader": "Första genomgången pågår. Rummet öppnas när arbetet är klart.",
+      "eyebrow": "PROFIL LÄSES",
+      "titleText": "Dina svar läses.",
+      "italicPhrase": "läses",
+      "lede": "Den första genomgången av de psykodynamiska modellerna pågår. Rummet öppnas när arbetet är klart.",
+      "figLeftItalic": "intag mottaget",
+      "figRightLabel": "Första genomgången",
+      "figRightItalic": "pågår",
+      "text": "{salutation}\n\nDina svar har inkommit. Den första genomgången av de psykodynamiska modellerna pågår. Rummet öppnas när arbetet är klart.\n\nCognitiveLab, WelloWork AB\nDELTAGANDE INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "ditt rum är öppet.",
+      "preheader": "Tolv block redo att läsas. Arbetet förfinas när du återvänder till det.",
+      "eyebrow": "RUM REDO",
+      "titleText": "Den första läsningen är öppen.",
+      "italicPhrase": "första läsningen",
+      "lede": "Tolv block av psykodynamisk profil, i rummet och redo att läsas. Arbetet förfinas när du återvänder till det.",
+      "ctaLabel": "Gå in i rummet",
+      "figLeftItalic": "rummet öppnat",
+      "figRightLabel": "Första läsningen",
+      "figRightItalic": "redo",
+      "text": "{salutation}\n\nDen första läsningen är öppen.\n\nTolv block av psykodynamisk profil, i rummet och redo att läsas. Arbetet förfinas när du återvänder till det.\n\nGå in i rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} vill ha dig med i läsningen.",
+      "preheader": "{inviterName} vill ha dig med i läsningen. En anslutning ser inte dina läsningar; du kommer inte att se deras.",
+      "eyebrow": "INBJUDAN",
+      "titleText": "{inviterName} vill ha dig med i läsningen.",
+      "italicPhrase": "med i läsningen",
+      "lede": "TwentyThird är ett tyst rum där strukturen i någons inre liv läses med omsorg. En anslutning ser inte inbjudarens läsningar eller sessioner, och du kommer inte att se dina egna.",
+      "ctaLabel": "Öppna inbjudan",
+      "figLeftItalic": "inbjudan utfärdad",
+      "figRightLabel": "Förfaller",
+      "figRightItalic": "fjorton dagar",
+      "securityNote": "Om detta meddelande kommit av misstag, förfaller inbjudan automatiskt om fjorton dagar.",
+      "textIntro": "{inviterName} vill ha dig med i läsningen på TwentyThird.",
+      "textBody": "TwentyThird är ett tyst rum där strukturen i någons inre liv läses med omsorg. En anslutning ser inte inbjudarens läsningar eller sessioner, och du kommer inte att se dina egna.",
+      "textNote": "{inviterName} lade till en anteckning:\n  {note}",
+      "textOpen": "Öppna inbjudan:",
+      "textSecurity": "Om detta meddelande kommit av misstag, förfaller inbjudan automatiskt om fjorton dagar.",
+      "textCloser": "CognitiveLab, WelloWork AB\nDELTAGANDE INSTITUTION"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} har accepterat anslutningen.",
+      "preheader": "{nameTitle} har accepterat anslutningen. Effekt på nästa session framåt.",
+      "eyebrow": "ANSLUTNING ACCEPTERAD",
+      "titleText": "{nameTitle} har accepterat anslutningen.",
+      "italicPhrase": "accepterat anslutningen",
+      "lede": "Deras relationsintag kommer att informera din läsning från nästa session framåt. De kommer inte att se dina läsningar; du kommer inte att se deras.",
+      "ctaLabel": "Återgå till rummet",
+      "figLeftItalic": "anslutning accepterad",
+      "figRightLabel": "Effekt",
+      "figRightItalic": "nästa session framåt",
+      "text": "{salutation}\n\n{nameTitle} har accepterat anslutningen.\n\nDeras relationsintag kommer att informera din läsning från nästa session framåt. De kommer inte att se dina läsningar; du kommer inte att se deras.\n\nÅtergå till rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} har avslutat anslutningen.",
+      "preheader": "{nameTitle} har avslutat anslutningen. Din läsning kommer att justeras under nästa session.",
+      "eyebrow": "ANSLUTNING AVSLUTAD",
+      "titleText": "{nameTitle} har avslutat anslutningen.",
+      "italicPhrase": "avslutade anslutningen",
+      "lede": "Din läsning kommer att justeras under nästa session. Vad som sades om relationen finns kvar i ärendemappen; det påverkar inte längre den aktiva läsningen.",
+      "ctaLabel": "Återgå till Rummet",
+      "figLeftItalic": "anslutning avslutad",
+      "figRightLabel": "Effekt",
+      "figRightItalic": "från och med nästa session",
+      "text": "{nameTitle} har avslutat anslutningen.\n\nDin läsning kommer att justeras under nästa session. Vad som sades om relationen finns kvar i ärendemappen; det påverkar inte längre den aktiva läsningen.\n\nÅtergå till Rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "veckans Catchup är öppen.",
+      "preheader": "En kort reflektion. Fem minuter. Den uppdaterar läsningen.",
+      "eyebrow": "VECKANS CATCHUP",
+      "titleText": "En vecka har passerat stilla.",
+      "italicPhrase": "stilla",
+      "lede": "En kort reflektion – vad som är högljutt, vad som förblivit tyst, vad som har förändrats. Den uppdaterar läsningen.",
+      "ctaLabel": "Öppna Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "fem minuter",
+      "text": "{salutation}\n\nEn vecka har passerat stilla.\n\nEn kort reflektion – vad som är högljutt, vad som förblivit tyst, vad som har förändrats. Den uppdaterar läsningen.\n\nÖppna Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nDELTAGANDE INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "dina svar är sparade.",
+      "preheader": "Ditt intag återupptas där du slutade. Arbetet börjar inte förrän det är klart.",
+      "eyebrow": "INTAG PAUSAT",
+      "titleText": "Intaget är där du lämnade det.",
+      "italicPhrase": "där du lämnade det",
+      "lede": "Ditt intag återupptas där du slutade. Arbetet börjar inte förrän det är klart.",
+      "ctaLabel": "Återgå till intaget",
+      "figLeftItalic": "intag pausat",
+      "figRightLabel": "Återuppta",
+      "figRightItalic": "där du slutade",
+      "text": "{salutation}\n\nIntaget är där du lämnade det.\n\nDitt intag återupptas där du slutade. Arbetet börjar inte förrän det är klart.\n\nÅtergå till intaget:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nDELTAGANDE INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Vilka ord beskriver bäst hemmet du växte upp i.",
+          "subtitle": "välj upp till tre ord som känns sanna, även om de motsäger varandra – hem är oftast en blandning",
+          "options": {
+            "calm": "Lugnt",
+            "strict": "Strikt",
+            "emotionally_distant": "Känslomässigt distanserat",
+            "chaotic": "Kaotiskt",
+            "achievement_focused": "Starkt prestationsfokuserat",
+            "protective": "Beskyddande",
+            "unpredictable": "Oförutsägbart",
+            "conflict_heavy": "Konfliktfyllt"
+          }
+        },
+        "q1_2": {
+          "title": "Vilken roll tog du naturligt som barn.",
+          "subtitle": "tänk på den roll du spelade i din familj utan att någon sa åt dig – fredsmäklaren, hjälparen, den tysta",
+          "options": {
+            "peacemaker": "Fredsmäklaren",
+            "achiever": "Presteraren",
+            "invisible_child": "Det osynliga barnet",
+            "caregiver": "Vårdaren",
+            "rebel": "Rebellen",
+            "funny_one": "Den roliga",
+            "responsible_one": "Den ansvariga",
+            "problem_child": "Problembarnet"
+          }
+        },
+        "q1_3": {
+          "title": "Hur känslomässigt trygg kände du dig under uppväxten.",
+          "subtitle": "gå på din magkänsla om hemmet, inte den version familjen skulle berätta för en främling",
+          "lowLabel": "1 · ALDRIG TRYGG",
+          "highLabel": "10 · FULLT TRYGG"
+        },
+        "q1_4": {
+          "title": "Diskuterades känslor öppet hemma.",
+          "subtitle": "inte bara om känslor fanns, utan om någon faktiskt namngav eller pratade om dem högt",
+          "options": {
+            "frequently": "Ofta",
+            "sometimes": "Ibland",
+            "rarely": "Sällan",
+            "never": "Aldrig"
+          }
+        },
+        "q1_5": {
+          "title": "Ett barndomsminne som fortfarande känns känslomässigt levande idag.",
+          "subtitle": "beskriv en specifik scen som fortfarande återkommer till dig – var du var, vem som var där, vad som hände, hur det kändes"
+        },
+        "q1_6": {
+          "title": "Vad lärde du dig att du behövde göra för att få kärlek eller godkännande.",
+          "subtitle": "de små saker du märkte fungerade – att vara snäll, att vara tyst, att prestera, att hålla dig undan – dela vad du minns att du anpassade"
+        },
+        "q1_7": {
+          "title": "Vilka känslor var svåra att uttrycka i ditt hem.",
+          "subtitle": "vilka känslor ignorerades, avfärdades eller straffades när du försökte visa dem – ilska, sorg, rädsla, glädje, vad som helst"
+        },
+        "q1_8": {
+          "title": "När du tänker på ditt yngre jag, vad känner du inför det.",
+          "subtitle": "var ärlig med den känsla som uppstår – värme, sorg, distans, frustration, beskyddande – vad som än faktiskt finns där"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Hur skulle du beskriva din mor eller primära modersgestalt?",
+          "subtitle": "några meningar om hur hon var, hur hon fanns där för dig och hur du kände dig i hennes närvaro",
+          "options": {
+            "warm": "Varm",
+            "controlling": "Kontrollerande",
+            "emotionally_unavailable": "Känslomässigt otillgänglig",
+            "sacrificing": "Uppoffrande",
+            "critical": "Kritisk",
+            "anxious": "Ångestfylld",
+            "unpredictable": "Oförutsägbar",
+            "admired": "Beundrad",
+            "fearful": "Rädd",
+            "not_applicable": "Ej tillämpligt"
+          }
+        },
+        "q2_2": {
+          "title": "Hur skulle du beskriva din far eller primära fadersgestalt?",
+          "subtitle": "några meningar om hur han var, hur han fanns där för dig och hur du kände dig i hans närvaro",
+          "options": {
+            "supportive": "Stödjande",
+            "distant": "Distant",
+            "dominant": "Dominant",
+            "passive": "Passiv",
+            "ambitious": "Ambitiös",
+            "emotionally_closed": "Känslomässigt sluten",
+            "protective": "Beskyddande",
+            "critical": "Kritisk",
+            "absent": "Frånvarande",
+            "not_applicable": "Ej tillämpligt"
+          }
+        },
+        "q2_3": {
+          "title": "Din syskonposition.",
+          "subtitle": "var du hamnade i ordningen – äldst, mellan, yngst, ensambarn, eller någonstans däremellan",
+          "options": {
+            "oldest": "Äldst",
+            "middle": "Mellan",
+            "youngest": "Yngst",
+            "only_child": "Ensambarn"
+          }
+        },
+        "q2_4": {
+          "title": "Vilken roll passar bäst för din syskonposition?",
+          "subtitle": "utöver födelseordningen, den roll du slutade spela – den ansvariga, rebellen, den osynliga, favoriten",
+          "options": {
+            "responsible": "Ansvarig",
+            "ignored": "Ignorerad",
+            "compared": "Jämförd med andra",
+            "favored": "Föredragen",
+            "competitive": "Tävlingsinriktad",
+            "protective": "Beskyddande",
+            "not_applicable": "Ej tillämpligt"
+          }
+        },
+        "q2_5": {
+          "title": "Vilken förälder förstod dig bäst?",
+          "subtitle": "namnge dem och säg vad de såg i dig som den andra missade eller missförstod"
+        },
+        "q2_6": {
+          "title": "Vilken förälder påverkade dina rädslor mest?",
+          "subtitle": "vars oro du absorberade under uppväxten, och hur dessa rädslor fortfarande visar sig i ditt liv idag"
+        },
+        "q2_7": {
+          "title": "Hur såg konflikter ut i din familj?",
+          "subtitle": "beskriv formen argumenten tog – skrik, tystnad, smällda dörrar, kalla veckor, upprepade mönster – vad som än kändes bekant"
+        },
+        "q2_8": {
+          "title": "Vilken typ av uppmärksamhet var svårast att ta emot?",
+          "subtitle": "den typ av omsorg som gjorde dig obekväm – beröm, oro, fysisk närhet, att bli sedd – och varför det var svårt"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Hur religiös eller andlig var miljön du växte upp i.",
+          "subtitle": "hemmets faktiska atmosfär – sedvänjor, regler, uppfattningar i luften – inte vad du tror nu som vuxen",
+          "lowLabel": "1 · INTE ALLS",
+          "highLabel": "10 · DÄRUTINOM"
+        },
+        "q3_2": {
+          "title": "Vilket budskap var starkast under uppväxten.",
+          "subtitle": "regeln eller förväntningen som upprepades så ofta att den blev bakgrundsbrus – om framgång, beteende, image, plikt, familj",
+          "options": {
+            "success": "Framgång är viktigast",
+            "reputation": "Rykte är viktigast",
+            "obedience": "Lydnad är viktigast",
+            "family_loyalty": "Familjelojalitet är viktigast",
+            "independence": "Oberoende är viktigast",
+            "sacrifice": "Uppoffring är viktigast"
+          }
+        },
+        "q3_3": {
+          "title": "Hur starkt känner du dig dömd av samhället.",
+          "subtitle": "hur mycket du känner dig övervakad eller bedömd av människor utanför din närmaste krets – på jobbet, online, offentligt",
+          "lowLabel": "1 · INTE ALLS",
+          "highLabel": "10 · STÄNDIGT"
+        },
+        "q3_4": {
+          "title": "Vilka övertygelser från din uppväxt formar dig fortfarande.",
+          "subtitle": "de värderingar, regler eller antaganden du ärvde och fortfarande lever efter, även om du inte har tänkt på dem på flera år"
+        },
+        "q3_5": {
+          "title": "Vilka övertygelser motstår du i hemlighet.",
+          "subtitle": "de du offentligt följer men i tysthet inte håller med om – om pengar, relationer, framgång, kön, vad som helst"
+        },
+        "q3_6": {
+          "title": "Vad skulle din familj eller gemenskap ogilla mest med ditt sanna jag.",
+          "subtitle": "de delar av dig själv, ditt liv eller dina val som du håller dolda för dem, och varför du håller dem dolda"
+        },
+        "q3_7": {
+          "title": "Vilken typ av person förväntades du bli.",
+          "subtitle": "den framtid andra föreställde sig för dig – karriär, familj, beteende, image – innan du hade något att säga till om"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Hur många känner dig verkligen.",
+          "subtitle": "de personer som har sett den oredigerade versionen av dig och inte skulle chockeras av något i ditt inre liv",
+          "options": {
+            "none": "Ingen",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Många"
+          }
+        },
+        "q4_2": {
+          "title": "I grupper blir du oftast.",
+          "subtitle": "rollen du glider in i utan att tänka – den roliga, lyssnaren, ledaren, observatören, den som håller stämningen god",
+          "options": {
+            "leader": "Ledare",
+            "observer": "Observatör",
+            "entertainer": "Underhållare",
+            "mediator": "Medlare",
+            "intellectual": "Intellektuell",
+            "caregiver": "Vårdare",
+            "withdrawn": "Tillbakadragen"
+          }
+        },
+        "q4_3": {
+          "title": "Hur rädd är du för att göra andra besvikna.",
+          "subtitle": "hur mycket en annan persons reaktion – en blick, en suck, tystnad – kan forma vad du säger eller gör",
+          "lowLabel": "1 · INTE ALLS",
+          "highLabel": "10 · DAGLIGEN"
+        },
+        "q4_4": {
+          "title": "Vilka delar av dig själv döljer du socialt.",
+          "subtitle": "tankarna, känslorna, dragen eller delarna av din historia du håller undanstoppade när du är bland andra människor"
+        },
+        "q4_5": {
+          "title": "När känner du dig mest accepterad.",
+          "subtitle": "situationerna eller relationerna där du slutar prestera och bara kan vara – beskriv vad som gör dessa utrymmen annorlunda"
+        },
+        "q4_6": {
+          "title": "Vilka sociala situationer dränerar dig mest.",
+          "subtitle": "sammankomsterna, dynamiken eller relationerna som gör dig tröttare än de borde – och vad med dem som är utmattande"
+        },
+        "q4_7": {
+          "title": "Vilken typ av människor avundas du.",
+          "subtitle": "avund pekar oftast på något du vill ha men inte har tillåtit dig själv att öppet vilja – beskriv vem som utlöser det och varför"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Vilka plattformar använder du aktivt.",
+          "subtitle": "apparna du öppnar av vana, mer än en gång om dagen, inte de du tekniskt sett har ett konto på",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Ingen"
+          }
+        },
+        "q5_2": {
+          "title": "Genomsnittlig daglig användning per plattform.",
+          "subtitle": "en grov uppskattning av hur mycket tid du faktiskt spenderar på varje – minuter eller timmar, utan bedömning",
+          "unit": "MINUTER PER DAG"
+        },
+        "q5_3": {
+          "title": "Vad du huvudsakligen använder dem till.",
+          "subtitle": "den verkliga anledningen under den uppenbara – anslutning, distraktion, validering, flykt, jämförelse, information",
+          "options": {
+            "validation": "Validering",
+            "learning": "Lärande",
+            "escapism": "Flykt",
+            "networking": "Nätverkande",
+            "self_expression": "Självuttryck",
+            "entertainment": "Underhållning",
+            "comparison": "Jämförelse",
+            "dating": "Dejting"
+          }
+        },
+        "q5_4": {
+          "title": "Hur ofta raderar eller redigerar du inlägg innan publicering.",
+          "subtitle": "hur mycket du repeterar, tvekar eller skriver om det du delar innan du låter andra se det",
+          "options": {
+            "always": "Alltid",
+            "often": "Ofta",
+            "sometimes": "Ibland",
+            "rarely": "Sällan",
+            "never": "Aldrig"
+          }
+        },
+        "q5_5": {
+          "title": "Hur ofta jämför du ditt liv med andras online.",
+          "subtitle": "den tysta mätningen som sker under scrollning – om utseende, framgång, relationer, livsstil, vad som helst",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · STÄNDIGT"
+        },
+        "q5_6": {
+          "title": "Vilken version av dig själv visas online.",
+          "subtitle": "beskriv karaktären du presenterar – den kurerade versionen – och hur den skiljer sig från den du är när ingen tittar"
+        },
+        "q5_7": {
+          "title": "Vad söker du känslomässigt när du öppnar sociala medier.",
+          "subtitle": "känslan du sträcker dig efter i det ögonblick du öppnar appen – distraktion, tröst, spänning, domning, anslutning"
+        },
+        "q5_8": {
+          "title": "Vilken typ av innehåll gör dig obekväm.",
+          "subtitle": "inläggen eller videorna som får dig att snabbt scrolla förbi, och vad du tror obehaget egentligen handlar om"
+        },
+        "q5_9": {
+          "title": "Vilken typ av människor attraherar din uppmärksamhet online.",
+          "subtitle": "kontona du stannar och tittar på – beskriv de egenskaper de delar och vad som drar dig in"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Din nuvarande relationsstatus.",
+          "subtitle": "där du faktiskt befinner dig just nu – singel, dejtar, i förhållande, gift, separerad, komplicerat – inte där du önskar att du vore",
+          "options": {
+            "single": "Singel",
+            "dating": "Dejtar",
+            "in_relationship": "I ett förhållande",
+            "engaged": "Förlovad",
+            "married": "Gift",
+            "separated_divorced": "Separerad eller skild",
+            "widowed": "Änka/änkling",
+            "its_complicated": "Det är komplicerat"
+          }
+        },
+        "q6_2": {
+          "title": "Hur många seriösa förhållanden du har haft.",
+          "subtitle": "de som betydde något känslomässigt, oavsett hur länge de varade eller hur officiella de var",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Typiska konflikter i dina relationer.",
+          "subtitle": "de argument som ständigt dyker upp i olika former med olika partners – pengar, avstånd, kontroll, kommunikation",
+          "options": {
+            "distance": "Avstånd",
+            "jealousy": "Svartsjuka",
+            "control": "Kontroll",
+            "emotional_unavailability": "Känslomässig otillgänglighet",
+            "communication": "Kommunikation",
+            "trust": "Tillit",
+            "dependency": "Beroende"
+          }
+        },
+        "q6_4": {
+          "title": "I relationer tenderar du att.",
+          "subtitle": "ditt standardbeteende när det blir svårt – dra dig närmare, dra dig undan, ta kontroll, stänga av, försöka fixa",
+          "options": {
+            "pursue": "Förfölja",
+            "withdraw": "Dra dig undan",
+            "overgive": "Överge",
+            "test_loyalty": "Testa lojalitet",
+            "avoid_vulnerability": "Undvika sårbarhet"
+          }
+        },
+        "q6_5": {
+          "title": "Vilken typ av människor faller du upprepade gånger för.",
+          "subtitle": "typen som ständigt dyker upp i ditt kärleksliv – inte bara utseende, utan känslomönster, temperament, hur de behandlar dig"
+        },
+        "q6_6": {
+          "title": "Vad brukar avsluta dina relationer.",
+          "subtitle": "den verkliga anledningen till att saker faller isär, bortom den officiella historien du berättar för vänner eller familj"
+        },
+        "q6_7": {
+          "title": "Vilket känslomässigt behov vill du helst få uppfyllt.",
+          "subtitle": "behovet du har svårast att be om direkt – att bli sedd, att bli vald, att vara trygg, att vara fri, att vara önskad"
+        },
+        "q6_8": {
+          "title": "Vad fruktar du mest i intimitet.",
+          "subtitle": "vad närhet riskerar för dig – att bli känd, att bli fångad, att bli lämnad, att vara för mycket, att vara otillräcklig"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Din nuvarande anställningsstatus.",
+          "subtitle": "formen på ditt arbetsliv just nu — anställd, egenföretagare, mellan jobb, studerande, vårdgivare, något annat",
+          "options": {
+            "employed_full_time": "Anställd, heltid",
+            "employed_part_time": "Anställd, deltid",
+            "self_employed": "Egenföretagare eller grundare",
+            "freelance": "Frilans eller konsult",
+            "studying": "Studerande",
+            "between_roles": "Mellan anställningar",
+            "caregiving": "Vårdgivare i hemmet",
+            "retired": "Pensionerad",
+            "not_working": "Arbetar ej"
+          }
+        },
+        "q7_2": {
+          "title": "Hur nöjd är du med din karriärriktning.",
+          "subtitle": "den längre bågen av vart ditt arbete är på väg, inte hur du känner inför just denna vecka",
+          "lowLabel": "1 · VILSEN",
+          "highLabel": "10 · EXAKT RÄTT"
+        },
+        "q7_3": {
+          "title": "På jobbet är du oftast.",
+          "subtitle": "sättet du agerar professionellt — den roll du tar när ingen tilldelar dig en",
+          "options": {
+            "perfectionistic": "Perfektionistisk",
+            "avoidant": "Undvikande",
+            "competitive": "Tävlingsinriktad",
+            "cooperative": "Samarbetsvillig",
+            "over_responsible": "Överansvarig",
+            "detached": "Avskärmad"
+          }
+        },
+        "q7_4": {
+          "title": "Din största stress på arbetsplatsen.",
+          "subtitle": "källan till press som följer dig hem — en person, en arbetsbörda, en rädsla, en miljö, ett mönster",
+          "options": {
+            "criticism": "Kritik",
+            "failure": "Misslyckande",
+            "visibility": "Synlighet",
+            "authority": "Auktoritet",
+            "uncertainty": "Osäkerhet",
+            "conflict": "Konflikt"
+          }
+        },
+        "q7_5": {
+          "title": "Vad betyder framgång känslomässigt för dig.",
+          "subtitle": "känslan du föreställer dig infinner sig när du äntligen har den — lättnad, stolthet, frid, frihet, att vara tillräcklig"
+        },
+        "q7_6": {
+          "title": "Vilken typ av erkännande påverkar dig mest.",
+          "subtitle": "det beröm som verkligen når fram och förändrar hur du känner, och den typ som studsar av oavsett hur mycket du får"
+        },
+        "q7_7": {
+          "title": "Vilket misslyckande påverkar dig fortfarande idag.",
+          "subtitle": "ett specifikt misslyckande du inte riktigt har bearbetat färdigt — vad som hände, och hur det fortfarande formar dina val"
+        },
+        "q7_8": {
+          "title": "Om pengar försvann, vad skulle du sträva efter.",
+          "subtitle": "det arbete eller den aktivitet du skulle utföra även om ingen betalade dig för det — beskriv hur det ser ut"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Hur hanterar du vanligtvis stress.",
+          "subtitle": "vad du tar till när det blir tungt — mat, skärmar, träning, isolering, samtal, substanser, sömn, arbete",
+          "options": {
+            "isolation": "Isolering",
+            "food": "Mat",
+            "gaming": "Spel",
+            "exercise": "Träning",
+            "overworking": "Överarbete",
+            "scrolling": "Skrollning",
+            "substance_use": "Substansbruk",
+            "shopping": "Shopping",
+            "sleeping": "Sömn",
+            "socializing": "Socialisering"
+          }
+        },
+        "q8_2": {
+          "title": "Hur ofta umgås du socialt.",
+          "subtitle": "hur ofta du tillbringar tid med andra människor personligen, inte online eller via meddelanden",
+          "options": {
+            "multiple_per_week": "Flera gånger i veckan",
+            "weekly": "Veckovis",
+            "monthly": "Månatligen",
+            "rarely": "Sällan",
+            "never": "Aldrig"
+          }
+        },
+        "q8_3": {
+          "title": "Hur ofta känner du dig ensam även i en grupp.",
+          "subtitle": "den ensamhet som uppstår när du är omgiven av människor men ändå känner dig osedd eller långt borta",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · ALLTID"
+        },
+        "q8_4": {
+          "title": "Vilka aktiviteter får dig att glömma dig själv.",
+          "subtitle": "de saker som drar in dig så djupt att tiden försvinner — på gott och ont, hälsosamt eller inte"
+        },
+        "q8_5": {
+          "title": "Vad undviker du att tänka på mest.",
+          "subtitle": "ämnet eller minnet du snabbt styr bort från när det dyker upp — om dig själv, ditt förflutna, din framtid"
+        },
+        "q8_6": {
+          "title": "När känner du dig känslomässigt avdomnad.",
+          "subtitle": "de situationer där volymen sjunker till noll — arbete, relationer, konflikt, intimitet, att vara ensam"
+        },
+        "q8_7": {
+          "title": "Vilken vana känns svårast att sluta med.",
+          "subtitle": "beteendet du har försökt ändra eller sluta med mer än en gång, utan framgång — beskriv vad det är och vad som fortsätter att dra dig tillbaka"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Hur självkritisk är du.",
+          "subtitle": "tonen i din inre röst när du misslyckas eller inte räcker till – hård, rättvis, avfärdande, förödande",
+          "lowLabel": "1 · VÄNLIG",
+          "highLabel": "10 · OBEHÖRIG"
+        },
+        "q9_2": {
+          "title": "Vilket påstående ligger närmast din privata rädsla.",
+          "subtitle": "meningen om dig själv som lever under allt annat, den du bara skulle erkänna en svår dag",
+          "options": {
+            "never_enough": "Jag räcker aldrig till",
+            "fear_abandoned": "Jag är rädd för att bli övergiven",
+            "fear_losing_control": "Jag är rädd för att förlora kontrollen",
+            "fear_failure": "Jag är rädd för att misslyckas",
+            "fear_ordinary": "Jag är rädd för att vara alldaglig",
+            "fear_rejection": "Jag är rädd för avvisande",
+            "fear_dependence": "Jag är rädd för beroende"
+          }
+        },
+        "q9_3": {
+          "title": "Hur ofta känner du dig frånkopplad från dig själv.",
+          "subtitle": "känslan av att betrakta ditt eget liv på avstånd, som om du inte är helt närvarande i det",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · DAGLIGEN"
+        },
+        "q9_4": {
+          "title": "Vilken tanke upprepas oftast i ditt sinne.",
+          "subtitle": "den återkommande meningen eller oron som regelbundet återkommer – skriv den med dess faktiska ord, inte en sammanfattning"
+        },
+        "q9_5": {
+          "title": "Vad kritiserar du dig själv för i hemlighet.",
+          "subtitle": "det du bedömer dig själv för som ingen annan vet om – gällande din kropp, ditt sinne, dina val, din karaktär"
+        },
+        "q9_6": {
+          "title": "Vad skulle få dig att känna dig tillräcklig.",
+          "subtitle": "villkoret du tyst har satt för dig själv för att äntligen slappna av – var ärlig, svaret är ofta mindre än du förväntar dig"
+        },
+        "q9_7": {
+          "title": "Om din inre röst hade en personlighet, hur skulle du beskriva den.",
+          "subtitle": "åldern, könet, tonen i den rösten – och vems röst det faktiskt kan vara, om du spårar den tillbaka"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Vad är viktigast för dig.",
+          "subtitle": "välj det som är viktigast just nu – de andra kan fortfarande vara viktiga, men var ärlig med rankningen",
+          "options": {
+            "freedom": "Frihet",
+            "love": "Kärlek",
+            "recognition": "Erkännande",
+            "stability": "Stabilitet",
+            "power": "Makt",
+            "meaning": "Mening",
+            "peace": "Frid",
+            "influence": "Inflytande"
+          }
+        },
+        "q10_2": {
+          "title": "Hur hoppfull är du inför din framtid.",
+          "subtitle": "den känsla du har när du tänker framåt, inte det glada svar du ger andra när de frågar",
+          "lowLabel": "1 · INGEN",
+          "highLabel": "10 · DJUPT"
+        },
+        "q10_3": {
+          "title": "Vad vill du i hemlighet mest.",
+          "subtitle": "det du inte riktigt har tillåtit dig att uttala – det som känns för stort, för riskabelt eller för pinsamt",
+          "options": {
+            "to_be_understood": "Att bli förstådd",
+            "to_be_admired": "Att bli beundrad",
+            "to_feel_safe": "Att känna sig trygg",
+            "to_be_desired": "Att vara åtrådd",
+            "to_feel_important": "Att känna sig viktig",
+            "to_feel_free": "Att känna sig fri",
+            "to_belong": "Att höra till"
+          }
+        },
+        "q10_4": {
+          "title": "Beskriv ditt ideala framtida liv i detalj.",
+          "subtitle": "de konkreta detaljerna – var du är, vem du är med, hur dina morgnar ser ut, arbetet, ljuset, rytmen"
+        },
+        "q10_5": {
+          "title": "Vilken rädsla skulle kunna förstöra den framtiden.",
+          "subtitle": "det – internt eller externt – som har stoppat dig förut, och kan stoppa dig igen om du tillåter det"
+        },
+        "q10_6": {
+          "title": "Vilken del av dig själv försöker du fortfarande bli.",
+          "subtitle": "versionen av dig vid horisonten – egenskaperna, friheterna, sättet att vara som du långsamt rör dig mot"
+        },
+        "q10_7": {
+          "title": "Om ingen dömde dig, hur skulle du leva annorlunda.",
+          "subtitle": "valen du skulle göra om blickarna upphörde – om arbete, kärlek, kropp, tid, pengar, röst"
+        },
+        "q10_8": {
+          "title": "Vad tror du att du verkligen söker efter.",
+          "subtitle": "det djupare under alla dina tidigare svar – vad varje val och längtan egentligen pekar på"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "URSPRUNG · UTVECKLINGSRELATERAD PRÄGLING",
+        "headline": [
+          "Vad det tidiga rummet ",
+          "lärde dig",
+          "."
+        ],
+        "lede": "Det första avsnittet lyssnar efter emotionellt klimat, trygghet och den roll du tilldelades. Mönster som registreras här blir grunden för allt som senare byggs.",
+        "title": "Ursprung",
+        "subtitle": "utvecklingsrelaterad prägling"
+      },
+      "attachment": {
+        "eyebrow": "ANKNYTNING · FAMILJESTRUKTUR",
+        "headline": [
+          "De första ",
+          "banden",
+          ", och den form de lämnade."
+        ],
+        "lede": "Lokaliserar din anknytningsstil, din relation till auktoritet och den triangulering du växte upp inom. Formen på det första bandet blir mallen som varje senare band mäts mot.",
+        "title": "Anknytning",
+        "subtitle": "familjestruktur"
+      },
+      "authority": {
+        "eyebrow": "AUKTORITET · SYMBOLISK LAG",
+        "headline": [
+          "Rösterna du ",
+          "ärvde",
+          "."
+        ],
+        "lede": "Avslöjar de moraliska koderna, skuldkänslorna och den ärvda identiteten som fortfarande verkar i bakgrunden. Rösterna du växte upp under försvinner sällan; de blir rösten som dömer dig.",
+        "title": "Auktoritet",
+        "subtitle": "symbolisk lag"
+      },
+      "belonging": {
+        "eyebrow": "TILLHÖRIGHET · SOCIAL IDENTITET",
+        "headline": [
+          "Vem som får ",
+          "se dig",
+          "."
+        ],
+        "lede": "Mäter socialt beroende, identitetsmaskering och rädslan för exkludering. Tillhörighet är sällan gratis; detta avsnitt frågar vad du byter bort för den.",
+        "title": "Tillhörighet",
+        "subtitle": "social identitet"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · BEGÄR & DIGITALT JAG",
+        "headline": [
+          "Jaget du ",
+          "uppvisar",
+          "."
+        ],
+        "lede": "Läser av det idealiserade jaget, valideringsloopen och den symboliska föreställning du iscensätter online. Personan är inte en lögn; den är en halvt avslöjad önskan.",
+        "title": "Persona",
+        "subtitle": "begär & digitalt jag"
+      },
+      "desire": {
+        "eyebrow": "BEGÄR · INTIMITET & REPETITION",
+        "headline": [
+          "Mönstret som ",
+          "återkommer",
+          "."
+        ],
+        "lede": "Finner den återkommande relationsformen, rädslan för övergivenhet, motsägelsen inom begäret. Det som upprepas är sällan valt; det är det som ber om att bli sett.",
+        "title": "Begär",
+        "subtitle": "intimitet & repetition"
+      },
+      "achievement": {
+        "eyebrow": "PRESTATION · ARBETE & ERKÄNNANDE",
+        "headline": [
+          "Vad du ",
+          "försöker bevisa",
+          "."
+        ],
+        "lede": "Upptäcker prestationsångest, erkännandehunger och din relation till auktoritet på jobbet. Under varje ambition finns en publik bestående av en eller två personer.",
+        "title": "Prestation",
+        "subtitle": "arbete & erkännande"
+      },
+      "escape": {
+        "eyebrow": "FLYKT · NÖJE & RITUAL",
+        "headline": [
+          "Vart du går ",
+          "för att inte vara här",
+          "."
+        ],
+        "lede": "Identifierar undvikandemönstren, tvången och ritualerna som reglerar njutning. Utgången du söker säger lika mycket som rummet du lämnar.",
+        "title": "Flykt",
+        "subtitle": "nöje & ritual"
+      },
+      "self-relation": {
+        "eyebrow": "SJÄLVRELATION · INTERN DIALOG",
+        "headline": [
+          "Rösten du inte ",
+          "riktigt kan tysta",
+          "."
+        ],
+        "lede": "Kartlägger överjagets gräns, skamstrukturerna och de internaliserade rösterna. Sättet du talar till dig själv i ensamhet är det ärligaste beviset på vem som uppfostrade dig.",
+        "title": "Självrelation",
+        "subtitle": "intern dialog"
+      },
+      "future-fantasy": {
+        "eyebrow": "FRAMTID · FANTASI, RÄDSLA & BEGÄR",
+        "headline": [
+          "Vad du ",
+          "verkligen söker",
+          "."
+        ],
+        "lede": "Den emotionella kulmen – framtiden du föreställer dig, rädslan som hemsöker den, det underliggande kärnbegäret. Den sista frågan är den första som återkommer.",
+        "title": "Framtidsfantasi",
+        "subtitle": "fantasi, rädsla & begär"
+      }
+    }
+  },
+  "common": {
+    "or": "eller",
+    "loading": "laddar…",
+    "sending": "skickar…",
+    "save": "Spara",
+    "saved": "sparad",
+    "cancel": "Avbryt",
+    "close": "Stäng",
+    "back": "Tillbaka",
+    "continue": "Fortsätt",
+    "retry": "Försök igen",
+    "more": "mer"
+  },
+  "nav": {
+    "room": "Rum",
+    "readings": "Tolkningar",
+    "catchup": "Catchup",
+    "consulting": "Konsultation",
+    "caseFile": "Akt",
+    "settings": "Inställningar",
+    "signIn": "Logga in",
+    "signOut": "Logga ut",
+    "getStarted": "Kom igång",
+    "language": "Språk",
+    "method": "Metod",
+    "theWork": "Arbetet",
+    "about": "Om",
+    "contact": "Kontakt",
+    "start": "Start"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Logga ",
+      "titleItalic": "in",
+      "titleAfter": ".",
+      "googleLabel": "Logga in med Google",
+      "or": "eller",
+      "emailLabel": "E-POST",
+      "passwordLabel": "LÖSENORD",
+      "forgotPassword": "Glömt lösenord",
+      "submit": "Logga in",
+      "footPrompt": "Ny här? ",
+      "footLink": "Skapa ett konto"
+    },
+    "signUp": {
+      "titleBefore": "Skapa ett ",
+      "titleItalic": "konto",
+      "titleAfter": ".",
+      "googleLabel": "Fortsätt med Google",
+      "or": "eller",
+      "emailLabel": "E-POST",
+      "passwordLabel": "LÖSENORD",
+      "confirmPasswordLabel": "BEKRÄFTA LÖSENORD",
+      "submit": "Skapa konto",
+      "footPrompt": "Har du redan ett? ",
+      "footLink": "Logga in",
+      "resentNote": "En ny länk har skickats.",
+      "resendConfirmation": "Skicka bekräftelse igen",
+      "pendingFootPrompt": "Fel adress? ",
+      "pendingFootLink": "Börja om"
+    },
+    "forgot": {
+      "titleBefore": "Glömt ditt ",
+      "titleItalic": "lösenord",
+      "titleAfter": ".",
+      "lede": "Ange den adress du registrerade dig med. Vi skickar en länk för att återställa det.",
+      "emailLabel": "E-POST",
+      "submit": "Skicka återställningslänk",
+      "footPrompt": "Kom du ihåg det? ",
+      "footLink": "Logga in",
+      "sentBackLink": "Tillbaka till inloggning"
+    },
+    "reset": {
+      "titleBefore": "Ange ett ",
+      "titleItalic": "nytt lösenord",
+      "titleAfter": ".",
+      "newPasswordLabel": "NYTT LÖSENORD",
+      "confirmPasswordLabel": "BEKRÄFTA LÖSENORD",
+      "submit": "Uppdatera lösenord",
+      "expiredTitleBefore": "Den länken är ",
+      "expiredTitleItalic": "inte längre giltig",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Begär en ny länk"
+    },
+    "errors": {
+      "invalid_credentials": "E-post eller lösenord stämmer inte.",
+      "email_taken": "Den e-postadressen är redan registrerad. Försök logga in.",
+      "weak_password": "Använd minst 8 tecken.",
+      "passwords_dont_match": "Lösenorden stämmer inte överens.",
+      "email_invalid": "Det ser inte ut som en giltig e-postadress.",
+      "rate_limited": "För många försök. Försök igen om en stund.",
+      "unconfirmed_email": "Bekräfta din e-post först. Kontrollera din inkorg.",
+      "reset_link_expired": "Den länken har gått ut. Begär en ny.",
+      "reset_link_invalid": "Den länken är inte längre giltig. Begär en ny.",
+      "oauth_failed": "Kunde inte nå Google. Försök igen.",
+      "callback_failed": "Kunde inte slutföra inloggningen.",
+      "generic": "Något gick fel. Försök igen.",
+      "no_session": "Logga in för att fortsätta."
+    },
+    "success": {
+      "checkInboxEyebrow": "KONTROLLERA DIN INKORG",
+      "confirmationHeadlineBefore": "Vi har skickat en ",
+      "confirmationHeadlineItalic": "bekräftelselänk",
+      "confirmationHeadlineAfter": " till ",
+      "confirmationLede": "Klicka på den för att slutföra skapandet av ditt konto.",
+      "resetSentEyebrow": "KONTROLLERA DIN INKORG",
+      "resetSentHeadlineBefore": "Om den e-postadressen är ",
+      "resetSentHeadlineItalic": "registrerad",
+      "resetSentHeadlineAfter": ", har vi skickat en återställningslänk.",
+      "resetSentLede": "Länken fungerar en gång och går ut inom en timme. Ingen länk betyder inget konto.",
+      "passwordUpdated": "Lösenord uppdaterat. Loggar in dig."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONTO",
+      "headlineBefore": "Ställ in ditt",
+      "headlineItalic": "tysta rum",
+      "lede": "Ett namn, ett år och ett ja. Sedan börjar arbetet.",
+      "saveFailed": "Kunde inte spara det. Försök igen om en stund.",
+      "nameLabel": "NAMN",
+      "nameRequired": "Namn krävs.",
+      "prefilledHint": "förifyllt från Google · redigerbart",
+      "yearLabel": "FÖDELSEÅR",
+      "yearRequired": "Välj ett år.",
+      "genderLabel": "KÖN",
+      "genderRequired": "Välj ett alternativ.",
+      "gender": {
+        "male": "Man",
+        "female": "Kvinna",
+        "nonBinary": "Icke-binär",
+        "preferNotToSay": "Föredrar att inte säga"
+      },
+      "languageLabel": "SPRÅK",
+      "termsBefore": "Jag accepterar",
+      "termsLink": "Användarvillkoren",
+      "termsAnd": "och",
+      "privacyLink": "Integritetspolicyn",
+      "termsAfter": ".",
+      "submit": "Initiera konto"
+    },
+    "intro": {
+      "eyebrow": "INTAG · INGA FELAKTIGA SVAR",
+      "headlineBefore": "Det finns inga rätta svar",
+      "headlineItalic": "här"
+    },
+    "brief": {
+      "title": "BRIEFEN",
+      "hint": "läs en gång, börja sedan",
+      "opener": "De felaktiga svaren – tvekan, stavfelen, överhoppen – talar lika tydligt som de rätta.",
+      "privacy": "Allt du skriver är privat. Inget lämnar detta rum.",
+      "length": "Eftersom arbetet är djupt, är intaget långt. Vi har delat upp det i tio delar. Hela processen tar cirka två timmar.",
+      "resume": "Spara och fortsätt en annan dag. Redigera valfri sektion efter att du har slutfört den – profilen fortsätter att lyssna.",
+      "begin": "Börja intag"
+    },
+    "saved": {
+      "eyebrow": "SPARA & PAUSA",
+      "headlineItalic": "Sparat.",
+      "headlineAfter": "Kom tillbaka när du är redo.",
+      "body": "Allt du har skrivit finns i din ärendemapp. Rummet öppnas på samma plats nästa gång.",
+      "keepGoing": "fortsätt",
+      "leaveRoom": "Lämna det tysta rummet"
+    },
+    "step": {
+      "label": "STEG",
+      "of": "AV",
+      "min": "MIN",
+      "progressLabel": "Intagets framsteg",
+      "finalEpigraph": "den sista frågan är alltid den första igen.",
+      "backTo": "Steg {n}",
+      "continueTo": "Fortsätt till Steg {n}",
+      "submit": "Spara & skicka",
+      "submitReading": "läser in…"
+    },
+    "questions": {
+      "closeTitle": "STÄNGDA FRÅGOR",
+      "closeHint": "välj det som stämmer",
+      "openTitle": "ÖPPNA FRÅGOR",
+      "openHint": "skriv det som dyker upp",
+      "countLabel": "{count, plural, one {fråga} other {frågor}}"
+    },
+    "saveExit": {
+      "or": "eller",
+      "saveAndReturn": "spara och återvänd senare"
+    },
+    "saveIndicator": {
+      "saving": "sparar…",
+      "saved": "sparat",
+      "saveFailed": "kunde inte spara"
+    }
+  },
+  "readings": {
+    "whatThisIs": "vad detta är →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "omedvetna loopar",
+        "definition": "Upprepande sekvenser av känsla, handling och resultat som sker utanför medvetet val. Att namnge loopen är det första avbrottet av den.",
+        "seedReading": "närmar sig intimitet och iscensätter sedan ett litet misslyckande för att dra sig tillbaka.",
+        "seedTakeaway": "reträtten är loopen. inte intimiteten."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "språkligt omedvetna",
+        "definition": "Sättet omedvetet material framträder i ordval, upprepningar, felsägningar och talets struktur – Lacans påstående att det omedvetna är strukturerat som ett språk.",
+        "seedReading": "talet dubblerar ordet ”bör” – platsen för ett ärvt krav.",
+        "seedTakeaway": "någon annans röst talar fortfarande genom detta ord."
+      },
+      "father-imago": {
+        "subtitle": "fader-imago",
+        "definition": "Den internaliserade bilden av fadern, formad tidigt och delvis mytisk. Den formar hur auktoritet, ambition och omdöme möts senare i livet.",
+        "seedReading": "dömer från ovan innan den döms från ovan – positionen är identisk.",
+        "seedTakeaway": "sätet byts. stolen gör det inte."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimitetströskel",
+        "definition": "Punkten där närhet börjar kännas som en risk, och en defensiv rörelse följer. Olika för varje person; förvånansvärt stabil över relationer.",
+        "seedReading": "håller väl tills den andre blir läsbar – drar sig sedan tillbaka.",
+        "seedTakeaway": "att vara känd är gränsen, inte att vara nära."
+      },
+      "desire-structure": {
+        "subtitle": "begärsstruktur",
+        "definition": "Vad användaren faktiskt vill, åtskilt från vad de har blivit tillsagda att vilja. Ofta upptäckt genom negation – genom att märka vad de vägrar.",
+        "seedReading": "namnger många önskningar, vägrar två – vägran är signalen.",
+        "seedTakeaway": "det som skjuts bort pekar tydligare än det som jagas."
+      },
+      "professional-block": {
+        "subtitle": "professionell blockering",
+        "definition": "Där arbetet fastnar: starten, mitten, slutet eller synligheten. Varje plats har sin egen omedvetna källa.",
+        "seedReading": "mållinjen är där tvivlet anländer, aldrig starten.",
+        "seedTakeaway": "blockeringen är vid synlighet, inte vid ansträngning."
+      },
+      "mother-imago": {
+        "subtitle": "moder-imago",
+        "definition": "Den internaliserade bilden av modern – den första anpassningen, den första separationen. Den informerar om beroendets och tillflyktens textur.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "tidig anpassning lämnar en lång signatur."
+      },
+      "dream-logic": {
+        "subtitle": "dröm-logik",
+        "definition": "Kondensationen och förskjutningen i drömmaterialet. Läs för grammatiken, inte symbolerna.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "dröminnehåll har sin egen grammatik."
+      },
+      "relational-pattern": {
+        "subtitle": "relationsmönster",
+        "definition": "Den återkommande hållningen i relationer – förföljare, tillbakadragen, förälder, barn, jämlike. Stabil över partners mer än vad partners är stabila över användaren.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "samma form framträder i olika rum."
+      },
+      "defenses": {
+        "subtitle": "försvar",
+        "definition": "De karakteristiska drag som används för att hålla svårt material borta från medvetandet – intellektualisering, förskjutning, reaktionsbildning, splittring. Försvar är inte misslyckanden; de är gamla lösningar.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "försvaret namnger det som en gång var outhärdligt."
+      },
+      "shadow": {
+        "subtitle": "skugga",
+        "definition": "Vad som har förnekats och tilldelats andra – de egenskaper användaren är mest säker på att de inte är. Ofta vägen till vitalitet.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "det som förnekas verkar fortfarande."
+      },
+      "transference": {
+        "subtitle": "överföring",
+        "definition": "Sättet gamla relationsfigurer projiceras på nuvarande – analytikern, partnern, chefen. Mönstret avslöjar imagon.",
+        "seedReading": "för tidigt att säga med säkerhet – formen håller på att ta form.",
+        "seedTakeaway": "gamla figurer anländer i nuvarande rum."
+      }
+    },
+    "strip": {
+      "lastRefined": "senast förfinad",
+      "readingDepth": "läsdjup"
+    },
+    "section": {
+      "eyebrow": "LÄSNING {index} · {subtitle}",
+      "strengthen": "stärk noggrannheten",
+      "requestReport": "begär en rapport"
+    },
+    "card": {
+      "reading": "Läsning {index}"
+    },
+    "report": {
+      "eyebrow": "KLINISK RAPPORT",
+      "heading": "För din <it>analytiker.</it>",
+      "lede": "Ett 12–18 sidor långt dossier – de sex läsningarna fullt utvecklade, plus ytterligare sex som instrumentpanelen inte visar: moder-imago, dröm-logik, relationsmönster, försvar, skugga, överföring. Översatt till det språk en kliniker arbetar med.",
+      "note": "rapporten kommer att återspegla tillgängligt djup. den kan återskapas när läsningen fördjupas.",
+      "generate": "Generera klinisk rapport",
+      "request": "Begär klinisk rapport",
+      "footPrefix": "en rapport ingår varje månad för ",
+      "footLink": "prenumeranter"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "FRÅGA {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Vad dröjde sig kvar från veckan?",
+        "framing": "en fras, en bild, en mening någon sa."
+      },
+      "closeness": {
+        "prompt": "Hur nära lät du någon komma?",
+        "options": {
+          "not_at_all": "inte alls",
+          "briefly": "kortvarigt",
+          "with_hesitation": "med tvekan",
+          "openly": "öppet",
+          "too_far": "för långt"
+        }
+      },
+      "loop": {
+        "prompt": "Fångade du dig själv i en bekant *loop*?",
+        "framing": "var, och hur det slutade."
+      },
+      "loudest_voice": {
+        "prompt": "Vilken röst var högst denna vecka?",
+        "options": {
+          "demand": "kravet",
+          "doubt": "tvivlet",
+          "desire": "begäret",
+          "watcher": "betraktaren",
+          "none": "ingen av dessa"
+        }
+      },
+      "dream": {
+        "prompt": "Fanns det en dröm värd att skriva ner?",
+        "framing": "i så fall, fragmentet som dröjde sig kvar."
+      },
+      "acted_on_desire": {
+        "prompt": "Hur långt agerade du på vad du faktiskt ville?",
+        "lowLabel": "inte alls",
+        "highLabel": "helt och hållet"
+      },
+      "work_catch": {
+        "prompt": "Var fångade arbetet dig?",
+        "options": {
+          "start": "början",
+          "middle": "mitten",
+          "finish": "slutet",
+          "visibility": "synligheten",
+          "nowhere": "ingenstans"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Vad är frågan du inte vill svara på just nu?",
+        "framing": "den som hela tiden glider undan."
+      }
+    },
+    "openHint": "längre svar fördjupar läsningen",
+    "scaleLegend": "{low} till {high}",
+    "noValue": "inget värde valt",
+    "valueOf": "{value} av {max}",
+    "weekLabel": "VECKA {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Vad dröjde sig kvar<it>?</it>",
+    "coverLede": "Åtta korta frågor. Ärlighet är bättre än längd. Svar förfinar läsningen; inget här bedöms.",
+    "begin": "Börja",
+    "back": "tillbaka",
+    "next": "nästa",
+    "submitting": "skickar in",
+    "closeTheWeek": "avsluta veckan",
+    "previousQuestion": "föregående fråga",
+    "processingLine": "<em>veckan läses.</em>",
+    "summaryEyebrow": "{weekLabel} · LÄS TILLBAKA",
+    "summaryTitle": "Veckan, <it>med dina egna ord.</it>",
+    "caseLabel": "fall · {week}",
+    "justRefined": "just förfinad",
+    "readingsShifted": "läsningar förskjutna",
+    "readingsCount": "{n} av 12",
+    "returnToRoom": "Återgå till rummet",
+    "readAgain": "läs den igen i fallfilen",
+    "somethingToHold": "NÅGOT ATT HÅLLA FAST VID",
+    "enterConsultingRoom": "gå in i konsultationsrummet",
+    "openConsultingRoom": "öppna konsultationsrummet",
+    "requestReport": "begär en klinisk rapport",
+    "errorSubmit": "kunde inte skicka in catchup",
+    "errorGeneric": "något gick fel",
+    "errorFailed": "catchupen är arkiverad. sammanfattningen kommer senare.",
+    "errorGiveUp": "rummet är kortvarigt tyst — din catchup är arkiverad. uppdatera om en minut.",
+    "summaryFallback": "Catchupen är arkiverad. Läsningen har uppdaterats tyst; den längre sammanfattningen kommer vid nästa genomgång.",
+    "readBackTitle": "Veckan, <it>redan inne.</it>",
+    "readBackEmpty": "catchupen är arkiverad. sammanfattningen blir kort denna vecka.",
+    "readBackFoot": "nästa catchup öppnar i början av vecka {n}."
+  },
+  "consulting": {
+    "sessionClose": "vår timme är slut.",
+    "sayIt": "säg det →",
+    "closeSession": "avsluta sessionen →",
+    "eyebrow": "KONSULTATIONSUMMET",
+    "closing": "avslutar",
+    "closeSessionLabel": "avsluta sessionen",
+    "timerAria": "sessionstid förfluten",
+    "chooseTopicAria": "välj ett ämne",
+    "noTopic": "inget ämne",
+    "justOpened": "nyss öppnad",
+    "minutesIn": "{count} minuter in",
+    "speakToAnalyst": "tala med analytikern",
+    "send": "skicka",
+    "sessionClosedFoot": "sessionen är avslutad. den har sparats i ärendemappen.",
+    "previewHeld": "vilken del av dig fortsätter att välja detta?",
+    "previewTopicDreamingFuture": "Drömmer framtid",
+    "previewTopicNightDream": "Nattdröm",
+    "previewTopicRelations": "Relationer i mitt liv",
+    "previewTopicProfessionalGrowth": "Professionell utveckling",
+    "previewTurnAnalyst1": "Du namnger ett mönster, sedan berättar du det som om det vore en främlings. Lägg märke till när *tillbakadragandet* börjar.",
+    "previewTurnUser1": "Jag avslutar alltid saker veckan de blir allvarliga.",
+    "previewTurnAnalyst2": "Morgonen är domen, inte rättegången. Din *intimitetströskel* repeterade avskedet veckor före samtalet.",
+    "sayItEllipsis": "säg det…",
+    "offerHeadline": "Konsultationsrummet",
+    "offerLede": "En längre sittning med analytikern, utförd i samma röst som dina läsningar. Sessionerna är privata, sparas i ärendemappen och bidrar till läsningarna mellan sittningarna.",
+    "offerPanelsAria": "vad en session gör",
+    "offerPanel1Title": "namngivet, inte berättat",
+    "offerPanel1Body": "Analytikern kommer att namnge vad som sker i ditt tal — felsägningen, förbehållet, det halvsagda — och hålla det där tills du kan se det.",
+    "offerPanel2Title": "sparat i ärendemappen",
+    "offerPanel2Body": "Varje sittning skrivs ned. Nästa läsning läser den. Mönster framträder över veckor, inte vändor.",
+    "offerPanel3Title": "en röst, ingen rotation",
+    "offerPanel3Body": "Inte en chatbot-rotation. En enda analytisk röst, tränad på din intagning och förfinad av varje uppföljning.",
+    "offerFootLine": "Prenumeranter får en klinisk rapport varje månad.",
+    "offerPillCta": "Gå in i konsultationsrummet",
+    "offerReturnToRoom": "återgå till rummet",
+    "previewFigureLabel": "konsultationsrummet",
+    "previewFigureSubtitle": "en sittning, förhandsgranskad",
+    "previewRailAria": "ärendemappens områden som analytikern läser från",
+    "previewReadingFrom": "LÄSER FRÅN",
+    "previewActive": "aktiv",
+    "previewRoleYou": "DU",
+    "previewRoleAnalyst": "ANALYTIKER",
+    "previewBubble1": "Jag avslutar alltid saker veckan de blir allvarliga. Jag vet inte varför jag gör det.",
+    "previewAnalyst1": "Du namnger ett mönster, sedan berättar du det som om det vore en främlings. *”Jag vet inte”* utför ett arbete — det håller handlingen på avsiktens bortre sida. Lägg märke till när *tillbakadragandet* börjar. Ofta sker uteslutningen tidigare än avskedet.",
+    "previewBubble2": "Tidigare hur? Förra gången kändes det som att jag bara vaknade en morgon och visste.",
+    "previewAnalyst2": "Morgonen är domen, inte rättegången. Din <strong>intimitetströskel</strong>-läsning från vecka 04 noterade samma form — en tyst repetition av avskedet, två till tre veckor före samtalet. Morgonen är när kroppen slutligen instämmer med vad du redan hade beslutat.",
+    "previewBubble3": "Det är den delen som skrämmer mig. Att det redan är beslutat.",
+    "previewAnalyst3": "*Beslutat* är ordet. Inte *valt*. Något i strukturen föredrar uteslutningen framför testet. Vi kommer att fortsätta dit.",
+    "previewExampleMark": "EXEMPEL · INTE FRÅN DINA ANTECKNINGAR"
+  },
+  "caseFile": {
+    "silentWeek": "— tyst vecka —",
+    "eyebrow": "FALLAKT",
+    "headlineLead": "En journal, förd",
+    "headlineItalic": "i tysthet.",
+    "lede": "Varje Catchup, session och rapport – ordnade efter datum. Mellanrummen är en del av journalen.",
+    "filterAria": "Filter",
+    "filter": {
+      "all": "alla",
+      "catchups": "catchups",
+      "sessions": "sessioner",
+      "reports": "rapporter"
+    },
+    "subscriptionTitle": "Prenumeration",
+    "emptyCatchups": "fallakten är fortfarande tom – den första Catchupen öppnar den.",
+    "emptyCatchupsCta": "Gå till Catchup",
+    "emptySessions": "fallakten är fortfarande tom – den första konsultationssessionen öppnar den.",
+    "emptySessionsCta": "Gå till Konsultation",
+    "emptyReports": "fallakten är fortfarande tom – den första genererade rapporten öppnar den.",
+    "open": "öppna",
+    "kindCatchup": "catchup",
+    "kindSession": "session",
+    "kindReport": "klinisk rapport",
+    "kindReading": "intagsavläsning",
+    "kindConnection": "anslutningshändelse",
+    "entryEyebrow": "FALLAKT · POST",
+    "entryBackToCaseFile": "tillbaka till fallakten",
+    "entryReturnToRoom": "återgå till rummet",
+    "sessionStillOpen": "denna session är fortfarande öppen. avläsningen visas när den stängs.",
+    "entryDetailComing": "detaljvyn för denna post kommer. för närvarande innehåller fallakten datum, typ och titel – resten finns fortfarande i rummet.",
+    "detailSummaryEyebrow": "SAMMANFATTNING · DINA SVAR",
+    "detailRecommendationEyebrow": "VÅR CATCHUP",
+    "preparingRead": "förbereder avläsningen…",
+    "readNotAssembled": "avläsningen kunde inte sammanställas just nu.",
+    "tryAgain": "försök igen",
+    "intakeClose": "stäng",
+    "intakeEdit": "redigera",
+    "intakeSaving": "sparar",
+    "intakeSave": "spara",
+    "intakeCancel": "avbryt",
+    "intakeUnsupported": "denna fråga redigeras inifrån intaget självt.",
+    "intakePickUpTo": "plocka upp till {count}.",
+    "intakeScaleSetTo": "Ställ in på {value}"
+  },
+  "settings": {
+    "eyebrow": "INSTÄLLNINGAR",
+    "heading": "Rummet, <it>dess form.</it>",
+    "lede": "Inget här är permanent. Svar kan redigeras, preferenser ändras, och ärendefilen kan raderas helt.",
+    "blocks": {
+      "account": "Konto",
+      "readingDepth": "Läsdjup",
+      "notifications": "Meddelanden",
+      "subscription": "Prenumeration",
+      "dangerZone": "Riskzon"
+    },
+    "dangerZoneIntro": "den enda oåterkalleliga åtgärden i rummet.",
+    "depthSub": {
+      "intake": {
+        "title": "Ditt intag",
+        "caption": "{answered} / {total} besvarade",
+        "ctaEmpty": "Fyll i ditt intag",
+        "ctaPartial": "Lägg till mer detaljer",
+        "ctaFull": "Granska ditt intag"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} under de senaste 8 veckorna",
+        "ctaEmpty": "Lägg till en catchup",
+        "ctaDue": "Fyll i veckans catchup",
+        "ctaFull": "Granska tidigare catchups"
+      },
+      "sessions": {
+        "title": "Sessioner",
+        "caption": "{count} slutförda",
+        "ctaEmpty": "Starta en konsultation",
+        "ctaPartial": "Fortsätt en konsultation",
+        "ctaFull": "Granska tidigare sessioner"
+      },
+      "connections": {
+        "title": "Anslutningar",
+        "caption": "{count} aktiva",
+        "ctaEmpty": "Lägg till en anslutning",
+        "ctaSingle": "Lägg till ytterligare en anslutning",
+        "ctaFull": "Granska dina anslutningar"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "påminnelse om veckans catchup",
+        "sub": "en diskret notis i början av den nya veckan"
+      },
+      "consulting_session_reminder": {
+        "label": "påminnelse om konsultationssession",
+        "sub": "en påminnelse inför din kommande konsultation"
+      },
+      "connection_requests": {
+        "label": "anslutning accepterad",
+        "sub": "en notis när någon accepterar din inbjudan"
+      }
+    },
+    "toggleOn": "på",
+    "toggleOff": "av",
+    "quietHours": {
+      "label": "tysta timmar",
+      "sub": "inga e-postmeddelanden mellan dessa timmar, i din lokala tid",
+      "from": "från",
+      "to": "till"
+    },
+    "saveFailed": "kunde inte spara",
+    "dangerZone": {
+      "trigger": "Radera konto",
+      "modalAria": "Bekräfta radering av konto",
+      "eyebrow": "RISKZON",
+      "heading": "Radera <it>ärendefilen.</it>",
+      "body": "Detta tar bort varje läsning, catchup, session och rapport från registret. Aktiva anslutningar avslutas; båda parter kommer att meddelas. Det kan inte ångras.",
+      "instruction": "skriv <phrase></phrase> för att aktivera åtgärden.",
+      "inputAria": "Skriv bekräftelsefrasen",
+      "cancel": "avbryt",
+      "erasing": "raderar…",
+      "eraseConfirm": "radera ärendefilen",
+      "deleteFailed": "radering misslyckades"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "MEDLEMSKAP",
+      "tagline": "Konsultationsrummet, öppnat. <em>En läsning som fortsätter att läsa.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultationsrum",
+          "desc": "långa sessioner med analytikern."
+        },
+        "report": {
+          "title": "Månatlig klinisk rapport",
+          "desc": "en terapeutredo karta varje kalendermånad."
+        },
+        "connections": {
+          "title": "{count} fler anslutningar",
+          "desc": "lägg till de personer vars närvaro formar läsningen."
+        },
+        "depth": {
+          "title": "Fullt läsdjup",
+          "desc": "varje kapitel öppet, inget tak för detaljer."
+        }
+      },
+      "perMonth": "per månad",
+      "subscribe": "prenumerera",
+      "reassurance": "<em>inget åtagande.</em> avbryt när som helst från inställningarna.",
+      "activeToday": "aktiv – förnyas idag",
+      "activeRenews": "aktiv – förnyas om {days, plural, one {1 dag} other {# dagar}}",
+      "cancel": "avbryt prenumeration",
+      "cancelled": "avbruten – åtkomst till {date}",
+      "resubscribe": "återprenumerera"
+    },
+    "resetPassword": {
+      "sent": "en återställningslänk har skickats till {email}. kontrollera din inkorg",
+      "sending": "skickar",
+      "action": "återställ lösenord",
+      "error": "kunde inte skicka. försök igen"
+    }
+  },
+  "connections": {
+    "explainer": "Upp till {limit, plural, one {# person vars närvaro formar läsningen} other {# personer vars närvaro formar läsningen}}. De ser inte dina läsningar; du ser inte deras. Vad de säger om relationen matar modellen som producerar dina läsningar, och dina matar deras.",
+    "invite": {
+      "emailSubject": "{inviterName} vill ha dig i läsningen."
+    },
+    "form": {
+      "emailLabel": "E-POST",
+      "roleLabel": "ROLL",
+      "rolePlaceholder": "välj en",
+      "noteLabel": "EN MENING DE KOMMER ATT LÄSA FÖRST",
+      "noteHint": "valfritt. en rad räcker.",
+      "addMoreSub": "lägg till fler med en prenumeration",
+      "missingNameLine": "ditt namn finns inte registrerat. lägg till det i inställningarna, skicka sedan förfrågan igen.",
+      "addYourName": "lägg till ditt namn",
+      "noteLengthError": "anteckningar är begränsade till en rad – cirka {max} tecken."
+    },
+    "list": {
+      "empty": "inga kopplingar ännu. inbjudningsfunktionen finns nedan.",
+      "active": "AKTIVA",
+      "pending": "VÄNTANDE",
+      "since": "sedan",
+      "invited": "inbjuden",
+      "received": "mottagen",
+      "resend": "skicka igen",
+      "expiresIn": "går ut om {days, plural, one {# dag} other {# dagar}}",
+      "cancel": "avbryt"
+    },
+    "lookup": {
+      "invalidEmail": "ange en giltig e-postadress.",
+      "self": "du kan inte koppla dig till dig själv.",
+      "notMemberLine": "denna e-postadress är inte en del av medlemmarna ännu. bjud in dem att skapa ett konto så att ni kan koppla er.",
+      "copyHint": "dela registreringslänken",
+      "copied": "länk kopierad",
+      "requestSent": "du har redan skickat en förfrågan till denna medlem.",
+      "requestReceivedLine": "denna medlem har skickat dig en förfrågan — kontrollera dina inbjudningar.",
+      "inboxLabel": "öppna förfrågan",
+      "alreadyConnected": "du är redan kopplad till denna medlem.",
+      "rateLimited": "för många uppslagningar under en kort period. vänta ett ögonblick, försök sedan igen.",
+      "sent": "kopplingsförfrågan skickad.",
+      "sending": "skickar…",
+      "send": "skicka förfrågan",
+      "limitReached": "{limit, plural, one {# koppling är gränsen. koppla ifrån den för att lägga till en annan.} other {# kopplingar är gränsen. koppla ifrån en för att lägga till en annan.}}",
+      "limitReachedFree": "{limit, plural, one {# koppling är gränsen på gratisnivån.} other {# kopplingar är gränsen på gratisnivån.}}",
+      "generic": "kunde inte skicka förfrågan."
+    },
+    "incoming": {
+      "eyebrow": "VÄNTAR PÅ DIG",
+      "empty": "ingen väntar på dig.",
+      "accept": "acceptera",
+      "decline": "avvisa",
+      "limitReached": "{limit, plural, one {# koppling är gränsen. koppla ifrån den för att acceptera denna.} other {# kopplingar är gränsen. koppla ifrån en för att acceptera denna.}}",
+      "limitReachedFree": "{limit, plural, one {# koppling är gränsen på gratisnivån.} other {# kopplingar är gränsen på gratisnivån.}}",
+      "upsell": "prenumeranter lägger till fler",
+      "inviteExpired": "denna inbjudan har gått ut.",
+      "inviteEnded": "denna inbjudan är inte längre väntande.",
+      "generic": "kunde inte agera på denna förfrågan."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "närmaste vän",
+      "parent": "förälder",
+      "sibling": "syskon",
+      "co_parent": "medförälder"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "EN ANTECKNING FRÅN ANALYTIKERN",
+    "noteAria": "En anteckning från analytikern",
+    "lede": "detta är bortom vad rummet kan rymma.",
+    "body": {
+      "intake": "Något i det du skrev vid intaget pekar på en tyngd som kräver verklig omsorg – bortom vad detta rum kan rymma. Överväg att kontakta en läkare, terapeut eller lokal krislinje idag. Läsningen kommer att finnas här när du återvänder.",
+      "catchup": "Något i veckans Catchup pekar på en tyngd som kräver verklig omsorg – bortom vad detta rum kan rymma. Överväg att kontakta en läkare, terapeut eller lokal krislinje idag. Läsningen kommer att hålla.",
+      "session": "Det du just skrev pekar på en tyngd som kräver verklig omsorg – bortom vad detta rum kan rymma. Överväg att kontakta en läkare, terapeut eller lokal krislinje idag. Vi kan återvända till rummet när du är säker."
+    },
+    "crisisResources": "KRISRESURSER",
+    "resources": {
+      "us": "Förenta staterna",
+      "ukIe": "Storbritannien & Irland",
+      "europe": "Europa (de flesta länder)",
+      "everywhere": "Överallt",
+      "localEmergency": "lokala räddningstjänsten"
+    },
+    "hintResources": "om du inte hittar en linje är din närmaste akutmottagning det rätta rummet.",
+    "hintLink": "krisresurser listas längst ner på varje Rums-sida.",
+    "footerLine": "TwentyThird ersätter inte klinisk vård. Vid kris, kontakta din lokala krislinje.",
+    "footerRoomLabel": "rummet"
+  }
+}

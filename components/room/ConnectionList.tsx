@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import DisconnectConfirm from "@/components/room/DisconnectConfirm";
 import {
   daysUntil,
   formatShortDate,
-  roleLabel,
 } from "@/lib/connections";
-import { incomingRequestsCopy } from "@/lib/copy";
 
 // ConnectionList — renders incoming requests, active connections, and
 // outgoing pending invites. Client component because every row action
@@ -48,25 +47,20 @@ type Props = {
 };
 
 export default function ConnectionList({ active, pending, incoming }: Props) {
+  const t = useTranslations("connections");
   const empty =
     active.length === 0 && pending.length === 0 && incoming.length === 0;
 
   return (
     <div className="connection-list">
-      {empty ? (
-        <p className="settings-stub">
-          no connections yet. the invite affordance is below.
-        </p>
-      ) : null}
+      {empty ? <p className="settings-stub">{t("list.empty")}</p> : null}
 
       {incoming.length > 0 ? (
         <section
           className="connection-list-group"
           id="incoming-requests"
         >
-          <p className="connection-list-eyebrow">
-            {incomingRequestsCopy.eyebrow}
-          </p>
+          <p className="connection-list-eyebrow">{t("incoming.eyebrow")}</p>
           <ul className="connection-list-rows">
             {incoming.map((row) => (
               <IncomingRow key={row.id} row={row} />
@@ -77,7 +71,7 @@ export default function ConnectionList({ active, pending, incoming }: Props) {
 
       {active.length > 0 ? (
         <section className="connection-list-group">
-          <p className="connection-list-eyebrow">ACTIVE</p>
+          <p className="connection-list-eyebrow">{t("list.active")}</p>
           <ul className="connection-list-rows">
             {active.map((c) => (
               <li key={c.id} className="connection-row">
@@ -85,10 +79,10 @@ export default function ConnectionList({ active, pending, incoming }: Props) {
                   {(c.firstName ?? localOf(c.email)).toLowerCase()}
                 </span>
                 <span className="connection-row-meta">
-                  {roleLabel(c.role)}
+                  {t(`roles.${c.role}`)}
                 </span>
                 <span className="connection-row-meta">
-                  since{" "}
+                  {t("list.since")}{" "}
                   {c.acceptedAt ? formatShortDate(c.acceptedAt) : "—"}
                 </span>
                 <span className="connection-row-action">
@@ -105,7 +99,7 @@ export default function ConnectionList({ active, pending, incoming }: Props) {
 
       {pending.length > 0 ? (
         <section className="connection-list-group">
-          <p className="connection-list-eyebrow">PENDING</p>
+          <p className="connection-list-eyebrow">{t("list.pending")}</p>
           <ul className="connection-list-rows">
             {pending.map((p) => (
               <PendingRow key={p.id} row={p} />
@@ -119,6 +113,7 @@ export default function ConnectionList({ active, pending, incoming }: Props) {
 
 function PendingRow({ row }: { row: PendingConnectionDisplay }) {
   const router = useRouter();
+  const t = useTranslations("connections");
   const [isPending, startTransition] = useTransition();
   const expires = daysUntil(row.expiresAt);
 
@@ -140,12 +135,12 @@ function PendingRow({ row }: { row: PendingConnectionDisplay }) {
   return (
     <li className="connection-row connection-row-pending">
       <span className="connection-row-email">{row.email.toLowerCase()}</span>
-      <span className="connection-row-meta">{roleLabel(row.role)}</span>
+      <span className="connection-row-meta">{t(`roles.${row.role}`)}</span>
       <span className="connection-row-meta">
-        invited {formatShortDate(row.createdAt)}
+        {t("list.invited")} {formatShortDate(row.createdAt)}
       </span>
       <span className="connection-row-meta">
-        expires in {expires} {expires === 1 ? "day" : "days"}
+        {t("list.expiresIn", { days: expires })}
       </span>
       <span className="connection-row-action connection-row-action-double">
         <button
@@ -154,7 +149,7 @@ function PendingRow({ row }: { row: PendingConnectionDisplay }) {
           onClick={() => act("resend")}
           disabled={isPending}
         >
-          <span>resend</span>
+          <span>{t("list.resend")}</span>
           <span aria-hidden="true">→</span>
         </button>
         <button
@@ -163,7 +158,7 @@ function PendingRow({ row }: { row: PendingConnectionDisplay }) {
           onClick={() => act("cancel")}
           disabled={isPending}
         >
-          <span>cancel</span>
+          <span>{t("list.cancel")}</span>
           <span aria-hidden="true">→</span>
         </button>
       </span>
@@ -179,6 +174,7 @@ type IncomingError =
 
 function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
   const router = useRouter();
+  const t = useTranslations("connections");
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<IncomingError | null>(null);
   const expires = daysUntil(row.expiresAt);
@@ -215,12 +211,12 @@ function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
   return (
     <li className="connection-row">
       <span className="connection-row-name">{name}</span>
-      <span className="connection-row-meta">{roleLabel(row.role)}</span>
+      <span className="connection-row-meta">{t(`roles.${row.role}`)}</span>
       <span className="connection-row-meta">
-        received {formatShortDate(row.createdAt)}
+        {t("list.received")} {formatShortDate(row.createdAt)}
       </span>
       <span className="connection-row-meta">
-        expires in {expires} {expires === 1 ? "day" : "days"}
+        {t("list.expiresIn", { days: expires })}
       </span>
       <span className="connection-row-action connection-row-action-double">
         {error?.kind === "limit" ? (
@@ -228,7 +224,7 @@ function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
             href="/subscribe/confirm"
             className="auth-rowlink"
           >
-            <span>{incomingRequestsCopy.upsell}</span>
+            <span>{t("incoming.upsell")}</span>
             <span aria-hidden="true">→</span>
           </Link>
         ) : (
@@ -239,7 +235,7 @@ function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
               onClick={() => act("accept-incoming")}
               disabled={isPending}
             >
-              <span>{incomingRequestsCopy.accept}</span>
+              <span>{t("incoming.accept")}</span>
               <span aria-hidden="true">→</span>
             </button>
             <button
@@ -248,7 +244,7 @@ function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
               onClick={() => act("decline-incoming")}
               disabled={isPending}
             >
-              <span>{incomingRequestsCopy.decline}</span>
+              <span>{t("incoming.decline")}</span>
               <span aria-hidden="true">→</span>
             </button>
           </>
@@ -256,17 +252,20 @@ function IncomingRow({ row }: { row: IncomingConnectionDisplay }) {
       </span>
       {error && error.kind !== "limit" ? (
         <span className="connection-row-meta connection-row-error">
-          {errorText(error.kind)}
+          {errorText(error.kind, t)}
         </span>
       ) : null}
     </li>
   );
 }
 
-function errorText(kind: "expired" | "ended" | "generic"): string {
-  if (kind === "expired") return incomingRequestsCopy.inviteExpired;
-  if (kind === "ended") return incomingRequestsCopy.inviteEnded;
-  return incomingRequestsCopy.generic;
+function errorText(
+  kind: "expired" | "ended" | "generic",
+  t: (key: string) => string,
+): string {
+  if (kind === "expired") return t("incoming.inviteExpired");
+  if (kind === "ended") return t("incoming.inviteEnded");
+  return t("incoming.generic");
 }
 
 function localOf(email: string): string {

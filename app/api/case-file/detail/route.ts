@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { getActiveLocale } from "@/lib/i18n/locale";
 import { callAI } from "@/lib/ai/router";
 import {
   buildCaseDetailPrompt,
@@ -106,10 +107,12 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
 
+  const locale = await getActiveLocale();
+
   if (entryKind === "catchup") {
-    return handleCatchup(supabase, user.id, entryId);
+    return handleCatchup(supabase, user.id, entryId, locale);
   }
-  return handleSession(supabase, user.id, entryId);
+  return handleSession(supabase, user.id, entryId, locale);
 }
 
 // ────────────────────────────────────────────────────────────────────
@@ -120,6 +123,7 @@ async function handleCatchup(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   entryId: string,
+  locale: string,
 ): Promise<NextResponse> {
   const { data: row } = await supabase
     .from("catchups")
@@ -153,6 +157,7 @@ async function handleCatchup(
     closedAnswers,
     openAnswers,
     intake,
+    locale,
   };
 
   const detail = await generateDetailWithBounds(promptInput, userId);
@@ -243,6 +248,7 @@ async function handleSession(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   entryId: string,
+  locale: string,
 ): Promise<NextResponse> {
   const { data: row } = await supabase
     .from("sessions")
@@ -314,6 +320,7 @@ async function handleSession(
     openAnswers,
     transcript,
     intake,
+    locale,
   };
 
   const detail = await generateDetailWithBounds(promptInput, userId);

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { getActiveLocale } from "@/lib/i18n/locale";
 import { recomputeDepthFor } from "@/lib/depth";
 import { sessionClose } from "@/lib/copy";
 import { classifySafety } from "@/lib/ai/safety";
@@ -114,13 +115,15 @@ export async function POST(request: Request): Promise<Response> {
     );
   }
 
+  const locale = await getActiveLocale();
+
   switch (body.action) {
     case "start":
       return startSession(supabase, user.id, body);
     case "turn":
-      return streamTurn(supabase, user.id, body);
+      return streamTurn(supabase, user.id, body, locale);
     case "close":
-      return closeSession(supabase, user.id, body);
+      return closeSession(supabase, user.id, body, locale);
     default:
       return NextResponse.json({ error: "unknown action" }, { status: 400 });
   }
@@ -189,6 +192,7 @@ async function streamTurn(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   body: TurnBody,
+  locale: string,
 ): Promise<Response> {
   const text = typeof body.text === "string" ? body.text.trim() : "";
   if (!text) {
@@ -337,6 +341,7 @@ async function streamTurn(
         readings,
         connectionContexts,
         mediumSafetyDistress: classification.severity === "medium",
+        locale,
       });
 
       let accumulated = "";
@@ -416,6 +421,7 @@ async function closeSession(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   body: CloseBody,
+  locale: string,
 ): Promise<Response> {
   const row = await fetchOpenSession(supabase, userId, body.session_id);
   if (!row) {
@@ -440,6 +446,7 @@ async function closeSession(
       topic: row.topic,
       heldQuestion: row.held_question,
       transcript: row.transcript ?? [],
+      locale,
     });
     const { text } = await callAI("session_close", {
       system,

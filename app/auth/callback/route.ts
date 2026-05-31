@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { resolveDestinationForUser } from "@/lib/auth/post-auth";
-import { AUTH_ERRORS } from "@/lib/auth/messages";
+import { syncLocaleOnAuth } from "@/lib/i18n/locale";
 
 export async function GET(request: NextRequest) {
   const { searchParams, origin, pathname } = new URL(request.url);
@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
 
   if (!code) {
     return NextResponse.redirect(
-      `${origin}/auth/sign-in?error=${encodeURIComponent(AUTH_ERRORS.CALLBACK_FAILED)}`,
+      `${origin}/auth/sign-in?error=callback_failed`,
     );
   }
 
@@ -35,11 +35,11 @@ export async function GET(request: NextRequest) {
   if (error || !data.session) {
     if (isRecovery) {
       return NextResponse.redirect(
-        `${origin}/auth/forgot-password?error=${encodeURIComponent(AUTH_ERRORS.RESET_LINK_EXPIRED)}`,
+        `${origin}/auth/forgot-password?error=reset_link_expired`,
       );
     }
     return NextResponse.redirect(
-      `${origin}/auth/sign-in?error=${encodeURIComponent(AUTH_ERRORS.CALLBACK_FAILED)}`,
+      `${origin}/auth/sign-in?error=callback_failed`,
     );
   }
 
@@ -50,6 +50,10 @@ export async function GET(request: NextRequest) {
   if (isRecovery) {
     return NextResponse.redirect(`${origin}/auth/reset-password`);
   }
+
+  // Carry the anonymous locale choice into the account on first sign-in
+  // (covers email confirmation and OAuth flows).
+  await syncLocaleOnAuth(supabase, data.session.user.id);
 
   const destination = await resolveDestinationForUser(
     supabase,

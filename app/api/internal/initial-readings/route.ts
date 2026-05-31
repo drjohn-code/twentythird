@@ -9,6 +9,7 @@ import {
 } from "@/lib/ai/prompts/initial-readings";
 import { callAI, AiHttpError, isTransientAiError } from "@/lib/ai/router";
 import { classifySafety } from "@/lib/ai/safety";
+import { localeForUser } from "@/lib/emails/locale";
 import { recomputeDepthFor } from "@/lib/depth";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 
@@ -124,8 +125,9 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
       `[initial-readings] safety pass done for user ${userId} (${freeText.length} free-text answers)`,
     );
 
-    // Generate the readings.
-    const { system, messages } = buildInitialReadingsPrompt({ intake });
+    // Generate the readings — in the target user's stored locale.
+    const locale = await localeForUser(admin, userId);
+    const { system, messages } = buildInitialReadingsPrompt({ intake, locale });
     const { text } = await callAI("initial_readings", {
       system,
       messages,

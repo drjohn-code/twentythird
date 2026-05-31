@@ -1,0 +1,2863 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSICHODINAMINIS INTELEKTAS",
+        "titleLine1": "Pažangus",
+        "titleLine2Pre": "Psichodinaminis",
+        "titleLine2It": "DI",
+        "titleLine3Pre": "skirtas",
+        "titleLine3It": "Savęs atradimui",
+        "ctaPrimary": "Pradėkite savo atradimą",
+        "ctaGhostOr": "arba",
+        "ctaGhostText": "skaitykite apie mokslą",
+        "scroll": "slinkti"
+      },
+      "philosophy": {
+        "eyebrow": "PAGRINDINĖ FILOSOFIJA",
+        "titlePre": "5 minučių pataisymai nieko",
+        "titleIt": "nepakeičia",
+        "sub1": "Atliekame pagrindinių priežasčių analizę. Sujungdami fundamentalias Sigmundo Freudo įžvalgas su Jacques'o Lacano atradimais kalbotyros, troškimų ir tapatybės srityse.",
+        "sub2": "Dauguma įrankių veikia paviršiuje. Mes dirbame ten, kur tai buvo parašyta – kalbos architektūroje, kalbos klaidose, modeliuose, kurių dar nepavadinote.",
+        "metaLineageLabel": "Kilmė",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metodas",
+        "metaMethodVal": "Struktūrinis",
+        "metaFocusLabel": "Fokusas",
+        "metaFocusVal": "Pasąmonė"
+      },
+      "privacy": {
+        "eyebrow": "KONFIDENCIALUMAS",
+        "titlePre": "Duomenų privatumas yra",
+        "titleIt": "svarbiausias",
+        "titlePost": "prioritetas.",
+        "lede": "Konfidencialumas čia nėra funkcija; tai yra gylio prielaida. Žmonės laisvai kalba tik ten, kur jaučiasi saugūs – todėl kambarys sukurtas taip, kad tai, ką sakote, būtų apsaugota.",
+        "rowTag": "Apsaugos priemonės",
+        "rowTitlePre": "Kambarys, sukurtas",
+        "rowTitleIt": "išlaikyti",
+        "rowTitlePost": "tai, ką sakote.",
+        "rowBody": "Darbas reikalauja jūsų labiausiai neapsaugotos medžiagos. Kambarys sukurtas priimti ją konfidencialiai ir laikyti uždarytą nuo visų, kam ji nebuvo skirta.",
+        "figLabel": "Duomenų tvarkymas",
+        "figSubtitle": "stovinti laikysena",
+        "listProcessingKey": "apdorojimas",
+        "listProcessingVal": "Kiekvienas įrašas apdorojamas trigubai aklai.",
+        "listEncryptionKey": "šifravimas",
+        "listEncryptionVal": "Visi duomenys yra užšifruoti.",
+        "listProtectionKey": "apsauga",
+        "listProtectionVal": "Saugoma aukščiausio lygio apsauga.",
+        "footKey": "Tikslas",
+        "footVal": "tyli, saugi vieta giliam pokalbiui"
+      },
+      "process": {
+        "eyebrow": "KAIP TAI VEIKIA",
+        "titlePre": "Keturi žingsniai,",
+        "titleIt": "vienas platėjantis ratas",
+        "lede": "Bendravimas gilėja keturiais judesiais. Kiekvienas išplečia tai, ką sistema gali perskaityti – nuo vienkartinio įrašo iki nuolatinio pokalbio.",
+        "step1Sub": "giluminis profiliavimas",
+        "step1TitlePre": "10 žingsnių",
+        "step1TitleIt": "įvadas",
+        "step1TitlePost": ".",
+        "step1Body": "Sukurkite paskyrą ir užpildykite 10 žingsnių įvadą. Tai yra giluminio profiliavimo etapas; pirmasis skaitymas visiškai sudaromas iš to, ką čia įrašote.",
+        "step2Sub": "tarpininkaujama, niekada abipusė",
+        "step2TitlePre": "Žmonės, kurie",
+        "step2TitleIt": "formuoja jus",
+        "step2Body": "Pridėkite žmones, kurie jus formuoja, kiekvieną pagal vaidmenį – partnerį, artimiausią draugą, tėvą, brolį ar seserį, bendrą tėvą. Tai, kuo jie dalijasi, jums niekada nėra matoma; tai, kuo dalijatės jūs, jiems niekada nėra matoma. Tik sistema skaito abu.",
+        "step3Sub": "savaitinis skaitymas",
+        "step3TitlePre": "Sekmadienio",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Sekmadienio vakarais papasakokite, kas nutiko per jūsų savaitę ir kaip jautėtės ją gyvendami. Kiekvienas Catchup patikslina skaitymą – vaizdas ryškėja, savaitėms kaupiantis.",
+        "step4Sub": "visiškai privatu",
+        "step4TitlePre": "Konsultacijų",
+        "step4TitleIt": "kambarys",
+        "step4Body": "Kalbėkite visiškai privačioje konsultacijoje su analitiku – balsu, kuris pažįsta jus geriau nei bet kas, apmokytu per 23 pažangiausių AI modelių sluoksnius."
+      },
+      "brain": {
+        "eyebrow": "DARBAS",
+        "titleLine1": "Dekonstruojame",
+        "titleLine2": "jūsų pasąmonę",
+        "state1Tag": "Šablonų žemėlapis",
+        "state1TitlePre": "Pasąmonės",
+        "state1TitleIt": "kilpos",
+        "state1TitlePost": "ir pasikartojimas.",
+        "state1Body": "Sekame pasikartojančius ciklus jūsų pasirinkimuose, santykių nerimuose ir emociniuose trigeriuose. Nustatydami šias kilpas, tiksliai parodome, kur jūsų sąmoningus ketinimus užvaldo pasąmonės programavimas.",
+        "state2Tag": "Profiliavimas",
+        "state2TitlePre": "Gilusis",
+        "state2TitleIt": "psichodinaminis",
+        "state2TitlePost": "profiliavimas.",
+        "state2Body": "Atsikratykite paviršutiniškų asmenybės testų. Tai yra struktūrinis jūsų psichologinės dinamikos skenavimas – nustatoma, kaip jūsų praeities patirtys formuoja dabartinę tapatybę, ego ir gynybos mechanizmus.",
+        "state3Tag": "Kalba",
+        "state3TitlePre": "Lingvistinės",
+        "state3TitleIt": "pasąmonės",
+        "state3TitlePost": "tyrimas.",
+        "state3Body": "Remdamasis Lakaniano teorija, mūsų dirbtinis intelektas analizuoja jūsų žodžių asociacijas, pauzes ir kalbos modelius. Padėsime jums skaityti tarp eilučių savo mintyse, kad pasiektumėte paslėptus nerimus ir troškimus, kurių dar negalėjote išsakyti."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMACIJA",
+        "titleLine1": "Nutraukite ciklą,",
+        "titleLine2": "Tada perrašykite jį.",
+        "lede": "Trys judesiai darbe. Trys vietos, kur įžvalga virsta pokyčiu.",
+        "row1Tag": "Santykinis",
+        "row1TitlePre": "Išgydykite savo",
+        "row1TitleIt": "santykinę",
+        "row1TitlePost": "dinamiką.",
+        "row1Body": "Tas pats atraktorius traukia jus prie to paties tipo žmogaus, tos pačios kovos, to paties atsitraukimo. Mes atskleidžiame modelį per daugelį metų, pavadiname jį ir stebime, kaip jis praranda savo gravitaciją.",
+        "row1Link": "Skaityti atvejo studiją",
+        "row1FigLabel": "Tiriamasis 1149-A",
+        "row1FigSubtitle": "išilginis modelis",
+        "row1Outcome": "atsitraukė",
+        "row1SummaryRecurrenceKey": "pasikartojimas",
+        "row1SummaryIntervalKey": "intervalas",
+        "row1SummaryAttractorKey": "atraktorius",
+        "row1SummaryAttractorVal": "intymumo slenkstis",
+        "row2Tag": "Sapnų darbas",
+        "row2TitlePre": "Iššifruokite",
+        "row2TitleIt": "sapnų logiką",
+        "row2TitlePost": ", suderinkite tikslus.",
+        "row2Body": "Jūsų sapnai yra prasmės repeticijos. Mes sekame jų gramatiką – poslinkius, kondensacijas, paslydimus – atgal prie pabudimo sprendimo, kurį jie bandė jums padaryti.",
+        "row2Link": "Žr. anotuotą pavyzdį",
+        "row2FigLabel": "Sesija 06",
+        "row2FigSubtitle": "sapno įrašas, anotuotas",
+        "row2Dream1Pre": "Aš grįžau į tėvų namus",
+        "row2Ann1": "pirminė scena",
+        "row2Dream1Mid": ", bet kambariai vis atsiveria į kitus kambarius",
+        "row2Ann2": "ego riba",
+        "row2Dream2Pre": "Vyras tėvo balsu",
+        "row2Ann3": "tėvo-imago",
+        "row2Dream2Mid": "paduoda man raktą. Raktas virsta vandeniu",
+        "row2Ann4": "poslinkis",
+        "row2Dream3Pre": "Pabundu, kol dar negaliu atidaryti durų",
+        "row2Ann5": "troškimas / trūkumas",
+        "row2Key1": "pirminė scena",
+        "row2Key2": "ego riba",
+        "row2Key3": "tėvo-imago",
+        "row2Key4": "poslinkis",
+        "row2Key5": "troškimas / trūkumas",
+        "row3Tag": "Pašaukimas",
+        "row3TitlePre": "Išsklaidykite",
+        "row3TitleIt": "profesinius",
+        "row3TitlePost": "blokus.",
+        "row3Body": "Lubos, į kurias vis atsitrenkiate, retai susijusios su įgūdžiais. Tai scenarijus – parašytas anksti, tyliai repetuotas – kurį mes padėsime jums perskaityti garsiai ir perrašyti, sakinys po sakinio.",
+        "row3Link": "Metodo straipsnis",
+        "row3FigLabel": "Scenarijaus peržiūra",
+        "row3FigSubtitle": "darbinis projektas",
+        "row3Line1Prefix": "01 · Aš esu",
+        "row3Line1Old": "dar nepasiruošęs.",
+        "row3Line1New": "jau leidžiama.",
+        "row3Line2Prefix": "02 · kad",
+        "row3Line2Old": "palaukčiau savo eilės.",
+        "row3Line2New": "įvardinčiau, ko noriu.",
+        "row3Line3Prefix": "03 · nes",
+        "row3Line3Old": "kažkas gali nusivilti.",
+        "row3Line3New": "nusivylimas taip pat yra kalba.",
+        "row3MetaOriginalPre": "originalas",
+        "row3MetaOriginalIt": "11 metų",
+        "row3MetaRevisedPre": "peržiūrėta",
+        "row3MetaRevisedIt": "06 sesija"
+      },
+      "outcomes": {
+        "eyebrow": "REZULTATAI",
+        "titleLine1Pre": "Apčiuopiamos",
+        "titleLine1It": "įžvalgos",
+        "titleLine2": "Tyliai pamatuojamos.",
+        "lede": "Duomenimis pagrįstas savęs pažinimas, pateikiamas klinicisto, o ne viktorinos, kalba.",
+        "row1Tag": "Pagreitis",
+        "row1TitlePre": "Didžiausias",
+        "row1TitleIt": "trumpinimas",
+        "row1TitlePost": "realaus pasaulio terapijai.",
+        "row1Body": "Tai, kas anksčiau užtrukdavo ilgus metus, dabar gali prasidėti po kelių savaičių pasiruošimo. Įeikite į savo terapeuto kabinetą žinodami, ką norite pasakyti.",
+        "row1Link": "Žr. metodiką",
+        "row1FigSubtitle": "laikas iki pirmosios įžvalgos",
+        "row1TraditionalLabel": "Tradicinis kelias",
+        "row1AxisYr1": "1 m.",
+        "row1AxisYr3": "3 m.",
+        "row1AxisYr6": "6 m.",
+        "row1AxisYr9": "9 m.",
+        "row1AxisYr12": "12 m.",
+        "row1TwentyThirdLabelPre": "Su",
+        "row1AxisWk1": "1 sav.",
+        "row1AxisWk4": "4 sav.",
+        "row1AxisWk8": "8 sav.",
+        "row1AxisWk12": "12 sav.",
+        "row1SummaryFaster": "greičiau",
+        "row1SummaryDesc": "laikas iki pirmosios įžvalgos",
+        "row2Tag": "Ataskaita",
+        "row2TitlePre": "Terapeutui paruoštas",
+        "row2TitleIt": "psichologinis",
+        "row2TitlePost": "žemėlapis.",
+        "row2Body": "Jūsų struktūrinė diagrama – eksportuojama, dalinama, puikiai suprantama apmokytam klinicistui. Ne asmenybės testas; o darbinis aprašas.",
+        "row2Link": "Peržiūrėti ataskaitos pavyzdį",
+        "row2FigLabel": "Tiriamasis 1149-A",
+        "row2FigSubtitle": "struktūrinis profilis",
+        "row2RepCase": "atvejis 1149-A",
+        "row2RepPrepared": "paruošta 04 · 26",
+        "row2MetricEgo": "Ego struktūra",
+        "row2MetricObject": "Objektų santykiai",
+        "row2MetricDefense": "Gynybos sudėtingumas",
+        "row2MetricDrive": "Potraukių organizacija",
+        "row2MetricSymbolic": "Simbolinis registras",
+        "row2FootLabel": "Dominuojanti struktūra",
+        "row2FootVal": "obsesinis · su isterijos pėdsakais",
+        "row3Tag": "Integracija",
+        "row3TitlePre": "Individualizuoti",
+        "row3TitleIt": "integracijos",
+        "row3TitlePost": "ir šešėlinio darbo planai.",
+        "row3Body": "Kasdieniai raginimai ir ritualai, kurie įžvalgas perkelia nuo popieriaus lapo į kūną. Maži, apgalvoti. Sukurti pagal jūsų struktūrą, o ne bendrą mokymo programą.",
+        "row3Link": "Kaip prisitaiko planas",
+        "row3FigLabel": "23 diena",
+        "row3FigSubtitle": "kasdienis raginimas",
+        "row3FigPlan": "planas 04",
+        "row3Day": "Trečiadienis",
+        "row3PromptEyebrow": "šiandienos raginimas · šešėlinis darbas",
+        "row3PromptPre": "Kur šiandien pasirinkote",
+        "row3PromptIt": "nebūti",
+        "row3PromptPost": "matomas? Ir ką saugojote slėpdamiesi?",
+        "row3Stream1Label": "kvėpavimo pratimai",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "žurnalas",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "šešėlinis raginimas",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "serija",
+        "row3StreakVal": "{n, plural, one {# diena} few {# dienos} many {# dienų} other {# dienų}}"
+      },
+      "final": {
+        "eyebrow": "PRADŽIA",
+        "titlePre": "Jūsų pasąmonė kalba.",
+        "titleIt": "Atėjo laikas klausytis.",
+        "ctaPrimary": "Pradėkite savo atradimus",
+        "ctaGhostOr": "arba",
+        "ctaGhostText": "skaitykite apie mokslą"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Privatumo politika — TwentyThird",
+        "metaDescription": "Kaip TwentyThird tvarko asmeninius duomenis. Niekas nepalieka ES. Niekas neparduodama.",
+        "eyebrow": "PRIVATUMAS",
+        "headingLead": "Asmens duomenys,",
+        "headingItalic": "tvarkoma atidžiai.",
+        "lede": "TwentyThird apdoroja jūsų pasidalintą informaciją, kad suteiktų tikslią psichodinaminę įžvalgą. Niekas nepalieka ES. Niekas neparduodama.",
+        "controls": {
+          "headingLead": "Kas",
+          "headingItalic": "kontroliuoja",
+          "headingTail": "jūsų duomenis",
+          "p1": "„WelloWork AB“, registruota Švedijoje (įmonės kodas 559472‑9997), veikianti iš Upsalos, yra duomenų valdytojas, atsakingas už asmens duomenis, surinktus šioje svetainėje ir tiesioginių užklausų metu.",
+          "p2": "Už duomenis, tvarkomus TwentyThird platformoje organizacijos – klinikos, tyrimų institucijos, darbdavio – vardu, „WelloWork AB“ veikia kaip duomenų tvarkytojas, o klientų organizacija yra duomenų valdytojas. Šiuos santykius reglamentuoja atskira Duomenų tvarkymo sutartis."
+        },
+        "figure": {
+          "label": "kas kontroliuoja jūsų duomenis",
+          "controller": "Duomenų valdytojas",
+          "directRelationship": "tiesioginis ryšys",
+          "websiteVisitor": "Svetainės lankytojas",
+          "you": "Jūs",
+          "customerOrg": "Kliento organizacija",
+          "viaDpa": "per Duomenų tvarkymo sutartį",
+          "processor": "Duomenų tvarkytojas",
+          "platformUser": "Platformos vartotojas"
+        },
+        "collect": {
+          "headingLead": "Ką mes",
+          "headingItalic": "renkame",
+          "contactStrong": "Kontaktiniai ir paskyros duomenys.",
+          "contactBody": "Vardas, el. pašto adresas ir bet kokia informacija, kurią pateikiate registruodamiesi ar rašydami mums. Teisinis pagrindas: sutarties vykdymas (BDAR 6 str. 1 d. b punktas).",
+          "sessionStrong": "Sesijos ir platformos duomenys.",
+          "sessionBody": "Dienoraščio įrašai, atsakymai, sapnų turinys ir kalbiniai modeliai, kuriais dalijatės TwentyThird platformoje. Tai yra analizės pagrindas. Teisinis pagrindas: aiškus sutikimas (BDAR 9 str. 2 d. a punktas), duotas prisijungiant ir bet kada atšaukiamas. Šiuos duomenis laikome specialios kategorijos su sveikata susijusiais duomenimis ir taikome atitinkamas apsaugos priemones, nepriklausomai nuo formalios klasifikacijos.",
+          "technicalStrong": "Techniniai duomenys.",
+          "technicalBody": "IP adresas, naršyklės tipas, įrenginio identifikatoriai ir naudojimo laiko žymės – automatiškai renkami, kai prisijungiate prie platformos. Teisinis pagrindas: teisėtas interesas (BDAR 6 str. 1 d. f punktas) siekiant užtikrinti saugumą ir diagnozuoti klaidas.",
+          "p4": "Mes nerenkame duomenų apie rasę, etninę kilmę, politines pažiūras ar religinius įsitikinimus. Jei jūsų bendrinamas turinys atsitiktinai atskleidžia tokią informaciją, ji nėra apdorojama kaip atskira kategorija."
+        },
+        "use": {
+          "headingLead": "Kaip mes",
+          "headingItalic": "naudojame",
+          "headingTail": "tai",
+          "p1": "Jūsų duomenis naudojame TwentyThird paslaugai teikti ir tobulinti, siųsti Jūsų prašomus transakcinius pranešimus, aptikti ir užkirsti kelią sukčiavimui ar piktnaudžiavimui, bei laikytis teisinių įsipareigojimų.",
+          "p2": "Jūsų duomenų nenaudojame reklaminiam profiliavimui. Mes jų neparduodame, nesuteikiame licencijų ir nesidaliname su duomenų brokeriais. Mes jų nenaudojame bendrosios paskirties AI modeliams, valdomiems trečiųjų šalių, apmokyti."
+        },
+        "sees": {
+          "headingLead": "Kas",
+          "headingItalic": "mato",
+          "headingTail": "tai",
+          "withinStrong": "WelloWork AB viduje:",
+          "withinBody": "Klinicistai ir inžinieriai, kuriems reikalinga prieiga paslaugos palaikymui. Prieiga yra ribojama pagal vaidmenį ir registruojama.",
+          "infraStrong": "Infrastruktūros teikėjai:",
+          "infraBody": "Supabase (duomenų bazė ir autentifikavimas, ES regionas), Vercel (talpinimas, ES kraštas) ir Postmark (transakciniai el. laiškai). Kiekvienas yra saistomas Duomenų tvarkymo sutarties ir tvarko duomenis tik pagal mūsų dokumentuotus nurodymus.",
+          "legalStrong": "Teisinė prievolė:",
+          "legalBody": "Duomenis kompetentingoms institucijoms atskleidžiame tik tada, kai to reikalauja įstatymai, ir tik tiek, kiek reikalaujama.",
+          "p4": "Jokie duomenys nėra perduodami už ES/EEE ribų. Jei tai pasikeis, atnaujinsime šią politiką ir, jei reikės, gausime naują sutikimą."
+        },
+        "retention": {
+          "headingItalic": "Duomenų saugojimas",
+          "p1": "Paskyros ir platformos duomenys saugomi tol, kol jūsų paskyra yra aktyvi, ir dar 30 dienų po ištrynimo, kad būtų galima atkurti. Techniniai žurnalai saugomi 90 dienų. Užklausos saugomos 24 mėnesius.",
+          "p2": "Po šių laikotarpių duomenys yra visam laikui ištrinami arba negrįžtamai anonimizuojami."
+        },
+        "rights": {
+          "headingLead": "Jūsų",
+          "headingItalic": "teisės",
+          "p1": "Jūs turite teisę susipažinti su mūsų turimais duomenimis apie jus, ištaisyti netikslumus, prašyti ištrinti, apriboti arba prieštarauti duomenų tvarkymui ir gauti mašininio skaitymo kopiją perkeliamumui. Kai duomenų tvarkymas grindžiamas sutikimu, galite jį bet kada atšaukti, nepaveikdami duomenų tvarkymo teisėtumo iki atšaukimo.",
+          "exerciseLead": "Norėdami pasinaudoti bet kuria teise, susisiekite su mumis adresu",
+          "exerciseTail": ". Atsakome per 30 dienų. Jei esate nepatenkinti mūsų atsakymu, galite pateikti skundą Integritetsskyddsmyndigheten (IMY), Švedijos duomenų apsaugos institucijai."
+        },
+        "children": {
+          "headingItalic": "Vaikai",
+          "p1": "TwentyThird nėra skirta asmenims iki 18 metų. Mes sąmoningai nerenkame duomenų iš nepilnamečių. Jei sužinosime, kad nepilnametis pateikė duomenis, mes juos nedelsiant ištrinsime."
+        },
+        "changes": {
+          "headingItalic": "Pakeitimai",
+          "p1": "Šią politiką atnaujiname, kai keičiasi mūsų praktika. Apie esminius pakeitimus pranešama el. paštu likus bent 14 dienų iki jų įsigaliojimo. Versijos data nurodyta šio puslapio apačioje.",
+          "effectivePrefix": "Galioja nuo:",
+          "effectiveSuffix": "· Taikoma teisė: Švedijos teisė ir BDAR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Paslaugų teikimo sąlygos — TwentyThird",
+        "metaDescription": "Sutartis, reglamentuojanti jūsų naudojimąsi TwentyThird. Parašyta, kad būtų skaitoma, o ne vengiama.",
+        "eyebrow": "SĄLYGOS",
+        "headingLead": "Sutartis,",
+        "headingItalic": "aiškiai išdėstyta.",
+        "lede": "Šios sąlygos reglamentuoja jūsų naudojimąsi TwentyThird. Jos parašytos, kad būtų skaitomos, o ne vengiamos.",
+        "service": {
+          "headingLead": "Paslauga",
+          "headingItalic": "paslaugos",
+          "p1": "TwentyThird yra psichodinaminė AI platforma, valdoma WelloWork AB. Ji teikia analitinę įžvalgą, gautą iš to, kuo dalijatės. Tai nėra medicininis prietaisas. Tai nėra psichoterapija, psichiatrinė diagnozė ar klinikinis gydymas. Jei patiriate psichologinį stresą, susisiekite su kvalifikuotu klinicistu arba pagalbos tarnyba."
+        },
+        "account": {
+          "headingLead": "Jūsų",
+          "headingItalic": "paskyra",
+          "p1": "Norėdami naudotis TwentyThird, turite būti 18 metų ar vyresni. Jūs esate atsakingi už savo prisijungimo duomenų konfidencialumo išlaikymą. Negalite dalytis savo paskyra ar naudotis platforma kito asmens vardu be jo aiškaus sutikimo.",
+          "p2": "Jums priklauso jūsų sukurtas turinys – jūsų žurnalo įrašai, jūsų atsakymai. Juos pateikdami, suteikiate WelloWork AB ribotą licenciją juos apdoroti Privatumo politikoje aprašytais tikslais. Galite eksportuoti arba ištrinti savo turinį bet kuriuo metu."
+        },
+        "acceptableUse": {
+          "headingLead": "Leistinas",
+          "headingItalic": "naudojimas",
+          "p1": "Galite naudoti TwentyThird teisėtai asmeninei ir profesinei savęs pažinimo veiklai. Negalite jo naudoti, kad pakenktumėte sau ar kitiems, bandytumėte apeiti platformos saugumo sistemas, atliktumėte atvirkštinę inžineriją pagrindiniams modeliams ar apmokytumėte konkuruojančias AI sistemas.",
+          "p2": "Pasiliekame teisę sustabdyti arba nutraukti paskyras, kurios pažeidžia šias sąlygas, be išankstinio įspėjimo, kai to reikalauja saugumas."
+        },
+        "liability": {
+          "headingLead": "Mūsų",
+          "headingItalic": "atsakomybė",
+          "p1": "TwentyThird teikia įžvalgą, o ne tikrumą. Mes negarantuojame, kad analizė yra tiksli, išsami ar tinkama jūsų aplinkybėms. Tiek, kiek leidžia Švedijos įstatymai, mūsų atsakomybė yra apribota suma, kurią sumokėjote per 3 mėnesius iki atitinkamo reikalavimo.",
+          "p2": "Niekas šiose sąlygose neriboja atsakomybės už mirtį ar asmens sužalojimą, sukeltą mūsų aplaidumo, ar už sukčiavimą."
+        },
+        "disputes": {
+          "headingLead": "Taikoma teisė ir",
+          "headingItalic": "ginčai",
+          "p1": "Šios sąlygos reglamentuojamos Švedijos įstatymais. Ginčai, kurių negalima išspręsti tiesiogiai, perduodami Upsalos (Švedija) teismams kaip pirmosios instancijos teismui.",
+          "p2Lead": "Jei esate vartotojas ES, taip pat turite prieigą prie ES internetinės ginčų sprendimo platformos adresu",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Pakeitimai",
+          "p1": "Mes galime atnaujinti šias sąlygas. Tęstinis naudojimas po esminio pakeitimo įsigaliojimo datos reiškia sutikimą. Apie esminius pakeitimus pranešame el. paštu likus bent 14 dienų.",
+          "effectivePrefix": "Įsigalioja:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Slapukų politika — TwentyThird",
+        "metaDescription": "TwentyThird naudoja slapukus tik autentifikavimui ir nuostatų išsaugojimui. Jokių reklaminių slapukų. Jokių trečiųjų šalių sekiklių.",
+        "eyebrow": "SLAPUKAI",
+        "headingLead": "Ką saugome",
+        "headingItalic": "jūsų naršyklėje.",
+        "lede": "TwentyThird naudoja slapukus autentifikavimui ir nuostatų išsaugojimui. Nenaudojame reklaminių slapukų ir jokių trečiųjų šalių sekiklių.",
+        "whatIs": {
+          "headingLead": "Kas yra",
+          "headingItalic": "slapukas",
+          "p1": "Slapukas yra mažas tekstinis failas, saugomas jūsų naršyklėje. Juos naudojame, kad išlaikytume jus prisijungusius ir prisimintume jūsų temos nuostatą (tamsią ar šviesią). Tai viskas."
+        },
+        "weSet": {
+          "headingLead": "Slapukai,",
+          "headingItalic": "kuriuos nustatome",
+          "authBody": "— Nustatytas Supabase. Palaiko jūsų autentifikuotą sesiją. Baigia galioti, kai atsijungiate arba po 7 dienų neveiklumo. Griežtai būtinas.",
+          "themeBody": "— Saugo jūsų tamsaus/šviesaus režimo nuostatą. Išlieka, kol neišvaloma. Funkcinis.",
+          "p3": "Nenustatome reklaminių slapukų. Nekrauname jokių trečiųjų šalių sekimo scenarijų — jokios Google Analytics, jokios Meta Pixel, jokių rinkodaros žymų."
+        },
+        "choices": {
+          "headingLead": "Jūsų",
+          "headingItalic": "pasirinkimai",
+          "p1Lead": "Galite išvalyti slapukus bet kuriuo metu per savo naršyklės nustatymus. Išvalius",
+          "p1Mid": "būsite atsijungę. Išvalius",
+          "p1Tail": "bus atkurta numatytoji tamsi rodymo nuostata.",
+          "p2": "Nenaudojame slapukų sutikimo juostos griežtai būtiniems ar funkciniams slapukams pagal ePrivatumo direktyvą, nes jiems nereikia sutikimo. Jei ateityje įvesime kokius nors nebūtinas slapukus, prieš juos nustatydami gausime sutikimą."
+        },
+        "contact": {
+          "headingItalic": "Susisiekite",
+          "p1Lead": "Klausimai apie slapukus ar kitus duomenų klausimus:",
+          "effectivePrefix": "Galioja nuo:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "ŠIAME PUSLAPYJE",
+        "privacyPolicy": "Privatumo politika",
+        "termsOfService": "Paslaugų teikimo sąlygos",
+        "cookiePolicy": "Slapukų politika"
+      },
+      "layout": {
+        "eyebrow": "TEISINĖ INFORMACIJA",
+        "headingLead": "Teisiniai dokumentai,",
+        "headingItalic": "aiškiai išdėstyti.",
+        "lede": "Privatumo politika, paslaugų teikimo sąlygos ir slapukų politika – reglamentuojama Švedijos įstatymų ir BDAR."
+      }
+    },
+    "footer": {
+      "tagline": "Psichodinaminis dirbtinis intelektas vidiniam gyvenimui. Rami erdvė rimtoms mintims.",
+      "product": "Produktas",
+      "discovery": "Atradimas",
+      "sampleReport": "Ataskaitos pavyzdys",
+      "integrationPlan": "Integracijos planas",
+      "company": "Įmonė",
+      "about": "Apie mus",
+      "contact": "Susisiekti",
+      "manifesto": "Manifestas",
+      "resources": "Ištekliai",
+      "science": "Mokslas",
+      "methodology": "Metodologija",
+      "methodPaper": "Metodo aprašymas",
+      "caseStudy": "Atvejo analizė",
+      "dreamExample": "Sapno pavyzdys",
+      "legal": "Teisinė informacija",
+      "privacy": "Privatumas",
+      "terms": "Sąlygos",
+      "cookies": "Slapukai",
+      "rights": "visos teisės saugomos"
+    },
+    "about": {
+      "metaTitle": "Apie — TwentyThird",
+      "metaDescription": "Kilmė, metodas ir lūžis dvidešimt trečią dieną. Sukurta CognitiveLab, WelloWork AB.",
+      "hero": {
+        "eyebrow": "APIE",
+        "headingLead": "Kilmė, metodas ir",
+        "headingItalic": "lūžis dvidešimt trečią dieną",
+        "lede": "TwentyThird yra psichodinaminis dirbtinis intelektas, skirtas savęs pažinimui. Jis atvaizduoja pasikartojančius ciklus ir struktūras po simptomu – kalbą, prisirišimą, pasikartojimą – ir pateikia darbinį aprašą, o ne viktoriną.",
+        "figure": {
+          "label": "diena-23",
+          "subtitle": "lūžio metafora",
+          "heading": "23 dienų lankas",
+          "range": "smalsumas → sąmoningumas",
+          "markerInflection": "lūžis",
+          "summaryLabel": "diena, kai klausimas\npasisuka į vidų"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFIJA",
+        "headingLead": "Freudo korespondentas. Flieso numeris.",
+        "headingItalic": "Mūsų metafora",
+        "tag": "Kilmė",
+        "row": {
+          "headingPre": "A",
+          "headingItalic": "23 dienų ritmas",
+          "headingPost": "pasiūlytas laiške, išsaugotas kaip skaičius.",
+          "para1": "23 dienų ciklas buvo Wilhelmo Flieso hipotezė, aptarta jo korespondencijoje su Freudu XIX amžiaus pabaigoje. Šiuolaikinis mokslas nepalaiko fiksuotų bioritmų.",
+          "para2": "Mes išlaikome skaičių dėl to, ką jis įvardija – slenkstį, kuriame smalsumas subręsta į sąmoningumą. Diena-23 yra skaičius, o ne biologija."
+        },
+        "figure": {
+          "label": "kilmė",
+          "subtitle": "keturi inkarai",
+          "row1Outcome": "pasiūlymas",
+          "row2Duration": "Ego ir Id",
+          "row2Outcome": "struktūrinis modelis",
+          "row3Duration": "Romos diskursas",
+          "row3Outcome": "lingvistinis posūkis",
+          "row4Outcome": "sintezė",
+          "summary1Key": "intervalas",
+          "summary2Key": "gija",
+          "summary2Value": "struktūra",
+          "summary3Key": "metodas",
+          "summary3Value": "psichodinaminis"
+        }
+      },
+      "origin": {
+        "eyebrow": "KILMĖ",
+        "headingLead": "Sukurta CognitiveLab.",
+        "headingItalic": "Atsakė į klausimą, kurį mums nuolat užduodavo",
+        "tag": "Komanda",
+        "row": {
+          "headingLead": "Gydytojai, iš pradžių kūrę",
+          "headingItalic": "kognityvinį lavinimą",
+          "para1": "TwentyThird atsirado CognitiveLab, WelloWork AB, kur komanda kūrė kognityvinio lavinimo sistemas. Draugai ir kolegos pradėjo kelti asmeninius klausimus – nerimą, pasikartojančius modelius, ciklus, kurių negalėjo įvardyti.",
+          "para2": "Tarp klinikinės praktikos kaip gydytojai, kaupiamų bandomųjų duomenų ir ilgo psichoanalizės bei Lakaninės teorijos literatūros sąrašo, turėjome ką pasiūlyti. TwentyThird yra tai, kuo tai tapo."
+        },
+        "figure": {
+          "label": "komanda",
+          "subtitle": "profilis",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "paruošta 05 · 26",
+          "row1Key": "Klinikinė praktika",
+          "row2Key": "Tyrimų rezultatai",
+          "row3Key": "Tiriamieji bandomajame tyrime",
+          "row4Key": "Gydytojai komandoje",
+          "footerLabel": "Profilis",
+          "footerValue": "klinicistas–tyrėjas hibridas"
+        }
+      },
+      "method": {
+        "eyebrow": "METODAS",
+        "headingLead": "Ką modelis",
+        "headingItalic": "iš tiesų daro",
+        "tag": "Galimybės",
+        "row": {
+          "headingLead": "Po simptomu, a",
+          "headingItalic": "struktūra",
+          "para1": "TwentyThird atlieka pagrindinės priežasties analizę. Jis atvaizduoja *pasąmonės ciklą* per daugelį metų, skaito *lingvistinę pasąmonę* žodžių pasirinkime ir kalbos klaidose, iškelia *prisirišimą* ties intymumo slenksčiu ir parašo darbinį planą *šešėlių darbui*.",
+          "para2": "Rezultatas yra paruoštas terapeutui. Įvardija struktūrą, o ne paviršių."
+        },
+        "figure": {
+          "label": "simptomas → struktūra",
+          "subtitle": "trys perrašymai",
+          "row1Prefix": "01 · paviršius",
+          "row1Old": "Atidėlioju svarbius darbus.",
+          "row1Next": "Vengimas būti matomam kaip žinančiam.",
+          "row2Prefix": "02 · paviršius",
+          "row2Old": "Vis susitikinėju su tuo pačiu žmogumi.",
+          "row2Next": "Tėvo-imago kartojimas ties intymumo slenksčiu.",
+          "row3Prefix": "03 · paviršius",
+          "row3Old": "Nieko negaliu užbaigti.",
+          "row3Next": "Atsisakymas atsisakyti potencialo pozicijos.",
+          "metaLeftLabel": "pristatomasis",
+          "metaLeftValue": "nusiskundimas",
+          "metaRightLabel": "struktūrinis",
+          "metaRightValue": "skaitymas"
+        }
+      },
+      "figure": {
+        "label": "simptomas → struktūra",
+        "subtitle": "trys perrašymai",
+        "row1Prefix": "01 · paviršius",
+        "row1Old": "Atidėlioju svarbius darbus.",
+        "row1Next": "Vengimas būti matomam kaip tas, kuris žino.",
+        "row2Prefix": "02 · paviršius",
+        "row2Old": "Visada susitikinėju su tuo pačiu žmogumi.",
+        "row2Next": "Tėvo-imago pasikartojimas ties intymumo slenksčiu.",
+        "row3Prefix": "03 · paviršius",
+        "row3Old": "Nieko negaliu užbaigti.",
+        "row3Next": "Atsisakymas atsisakyti potencialo pozicijos.",
+        "metaLeftLabel": "pristatomasis",
+        "metaLeftValue": "skundas",
+        "metaRightLabel": "struktūrinis",
+        "metaRightValue": "skaitymas"
+      },
+      "final": {
+        "eyebrow": "TĘSTI",
+        "headingLead": "Skaitykite metodą,",
+        "headingItalic": "arba pradėkite",
+        "ctaPrimary": "Skaitykite metodą",
+        "ctaGhostPrefix": "arba",
+        "ctaGhostText": "parašykite mums"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKTAI",
+        "heroHeadlineLead": "Parašykite mums.",
+        "heroHeadlineItalic": "Mes perskaitome viską",
+        "heroLede": "Į daugumą žinučių atsakoma per septyniasdešimt dvi valandas. Klinikinės ir partnerystės užklausos turi pirmenybę.",
+        "formCardLabel": "forma",
+        "formCardSubtitle": "tik esminėms užklausoms",
+        "addressLabel": "ADRESAS",
+        "addressValue": "Rosendal, Upsala, Švedija",
+        "emailLabel": "EL. PAŠTAS",
+        "phoneLabel": "TELEFONAS",
+        "finalEyebrow": "PRADĖTI",
+        "finalHeadlineLead": "Arba tiesiog",
+        "finalHeadlineItalic": "pradėkite",
+        "finalCta": "Pradėkite savo atradimą",
+        "finalGhostOr": "arba",
+        "finalGhostText": "perskaitykite apie kilmę",
+        "disclaimer": "Esant skubiems psichikos sveikatos klausimams, kreipkitės į vietos pagalbos tarnybas arba licencijuotą specialistą. TwentyThird nėra krizių tarnyba."
+      },
+      "form": {
+        "successEyebrow": "GAVOME",
+        "successHeadlineLead": "Jūsų žinutė",
+        "successHeadlineItalic": "pas mus",
+        "successBody": "Atsakysime per dvi darbo dienas.",
+        "nameLabel": "Vardas",
+        "emailLabel": "El. paštas",
+        "messageLabel": "Žinutė",
+        "submitSend": "Siųsti",
+        "submitSending": "Siunčiama",
+        "errorMessage": "kažkas nutiko · bandykite dar kartą",
+        "submittingStatus": "Siunčiama jūsų žinutė."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodika – TwentyThird",
+      "metaDescription": "Nuo pirmo pokalbio iki terapeutui paruošto žemėlapio. Penki TwentyThird proceso etapai.",
+      "hero": {
+        "eyebrow": "METODAS",
+        "headingLead": "Savaitės pasiruošimo,",
+        "headingItalic": "o ne metų paieškų",
+        "lede": "Terapija veikia. Tačiau reikia laiko, kad suprastumėte, ko iš jos tikitės. TwentyThird sutrumpina pasiruošimo – dalies, kurioje sužinote, ką iš tikrųjų sakote – laiką, kad pats seansas vyktų greičiau."
+      },
+      "pipeline": {
+        "eyebrow": "PROCESAS",
+        "headingLead": "Penki etapai, vienas",
+        "headingItalic": "trumpas",
+        "lede": "Nuo kalbos pavyzdžių iki veikiančio dokumento, kurį klinicistas gali perskaityti per aštuonias minutes.",
+        "stageLabel": "ETAPAS",
+        "stage01": {
+          "name": "Mėginių ėmimas",
+          "blurb": "Balsas ir tekstas iš vadovaujamų seansų. Modelis klausosi formos, o ne turinio.",
+          "label": "mėginių ėmimas",
+          "subtitle": "apimtis visoje kohortoje",
+          "fig": {
+            "wordsSampled": "žodžių imtis",
+            "sessions": "seansai",
+            "elapsed": "praėjo",
+            "medianTurn": "mediana posūkis"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistinė",
+          "nameEm": "ekstrakcija",
+          "blurb": "Ypatybės, kurias modelis iškelia iš transkripto – tyliai, prieš bet kokią interpretaciją.",
+          "label": "ekstrakcija",
+          "subtitle": "ypatybių klasės",
+          "fig": {
+            "qualifierDensity": "kvalifikatorių tankis",
+            "modalVerbs": "modaliniai veiksmažodžiai",
+            "conditionalFrame": "sąlyginė struktūra",
+            "affectiveHedges": "afektiniai aptvarai",
+            "slipsMisnamings": "apsirikimai · klaidingi pavadinimai",
+            "repetitionWindows": "pasikartojimo langai"
+          }
+        },
+        "stage03": {
+          "nameLead": "Pasikartojimo",
+          "nameEm": "aptikimas",
+          "blurb": "Tas pats pasikartojantis modelis, skirtingais dešimtmečiais. Signalas, kad kažkas yra struktūriška.",
+          "label": "pasikartojimas",
+          "subtitle": "trys vieno modelio inkarai",
+          "fig": {
+            "row1": {
+              "durationLabel": "pirmas darbas",
+              "outcome": "lubos 9 mėnesį"
+            },
+            "row2": {
+              "durationLabel": "antras",
+              "outcome": "lubos 11 mėnesį"
+            },
+            "row3": {
+              "durationLabel": "trečias",
+              "outcome": "lubos 8 mėnesį"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Scenarijaus",
+          "nameEm": "rekonstrukcija",
+          "blurb": "Sakinis po modeliu. Sena eilutė, tada galimas pataisymas, kurį subjektas gali repetuoti.",
+          "label": "rekonstrukcija",
+          "subtitle": "darbinis projektas",
+          "fig": {
+            "row1": {
+              "prefix": "Aš esu",
+              "old": "dar nepasiruošęs.",
+              "next": "jau leidžiama."
+            },
+            "row2": {
+              "prefix": "kad",
+              "old": "laukti, kol būsiu pasirinktas.",
+              "next": "įvardyti, ko noriu."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Žemėlapis",
+          "nameEm": "klinicistui",
+          "blurb": "Trys pažymėti matuokliai ir vienos eilutės struktūrinis skaitymas. Aštuonios minutės skaityti, savaitės naudoti.",
+          "label": "klinikinis perdavimas",
+          "subtitle": "darbinis aprašas",
+          "fig": {
+            "casePrefix": "atvejis",
+            "preparedPrefix": "paruošta",
+            "egoStructure": "Ego struktūra",
+            "objectRelations": "Objektų santykiai",
+            "symbolicRegister": "Simbolinis registras",
+            "footerLabel": "Skaitymas",
+            "footerValue": "obsesinis · su isterijos pėdsakais"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "APIMTIS",
+        "headingLead": "Ką matuojame, ir ko",
+        "headingItalic": "atsisakome",
+        "headingTail": ".",
+        "measureHead": "Ką matuojame",
+        "refuseHead": "Ko nematuojame",
+        "measure": {
+          "languagePatterns": {
+            "k": "kalbos modeliai",
+            "gloss": "Kvalifikatorių tankis, modaliniai veiksmažodžiai, aptvarai, sąlyginės struktūros."
+          },
+          "recurrence": {
+            "k": "pasikartojimas",
+            "gloss": "Modeliai, kurie pasikartoja ta pačia forma per daugelį metų."
+          },
+          "narrativeCoherence": {
+            "k": "naratyvinė darna",
+            "gloss": "Kaip pasakojamas gyvenimas, kur matosi siūlės."
+          },
+          "attachmentMarkers": {
+            "k": "prisirišimo žymekliai",
+            "gloss": "Kur intymumas peržengia slenkstį, kas seka po to."
+          },
+          "linguisticSlips": {
+            "k": "lingvistiniai apsirikimai",
+            "gloss": "Klaidingi pavadinimai, kondensacijos, poslinkiai."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD kategorijos",
+            "gloss": "Nozologija yra atskiras instrumentas, naudojamas klinikų."
+          },
+          "iqCognition": {
+            "k": "IQ ar pažinimas",
+            "gloss": "Nepatenka į taikymo sritį. Modelis yra psichodinaminis, o ne psichometrinis."
+          },
+          "personalityTypes": {
+            "k": "asmenybės tipai",
+            "gloss": "Penkių faktorių modelis ir jo atšakos nėra šio aprašo dalis."
+          },
+          "riskScores": {
+            "k": "rizikos balai",
+            "gloss": "Ūminės rizikos vertinimas yra klinicisto, o ne modelio sprendimas."
+          },
+          "predictions": {
+            "k": "prognozės",
+            "gloss": "Struktūra, o ne prognozė. Mes įvardijame tai, kas yra, o ne tai, kas ateina."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Suspaudimas",
+        "headingLead": "Ateikite žinodami, ką",
+        "headingItalic": "sakyti",
+        "body1": "Terapija nėra vieta išsiaiškinti klausimą. Tai vieta gyventi su juo. Mūsų siūlomas suspaudimas yra susijęs su požiūriu – mėnesiais, kuriuos klinicistas paprastai praleidžia klausydamasis aprašo formos.",
+        "body2": "Visoje bandomojoje kohortoje paruošti subjektai pasiekė darbinį aljansą per mažiau seansų. Skaitymas jau buvo ten.",
+        "figure": {
+          "label": "alianse",
+          "subtitle": "mediana seansų iki darbinio aljanso",
+          "heading": "Laikas iki darbinio aljanso",
+          "range": "mediana visoje kohortoje",
+          "markerUnprepared": "neparuošta",
+          "markerPrepared": "paruošta",
+          "summaryLabel": "mažiau seansų iki\ndarbinio aljanso"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "TĘSTI",
+        "headingLead": "Pradėti,",
+        "headingItalic": "arba peržiūrėti ataskaitos pavyzdį",
+        "beginLabel": "Pradėti",
+        "or": "arba",
+        "ghostLabel": "peržiūrėti ataskaitos pavyzdį"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRACIJA",
+        "headlineLead": "Įžvalga, tada",
+        "headlineItalic": "įprotis",
+        "lede": "Įvardyti modelį yra tik pirmas žingsnis. Planas yra antras – kasdieniai raginimai ir maži ritualai, sukurti pagal jūsų struktūrą, o ne pagal bendrą mokymo programą."
+      },
+      "week": {
+        "eyebrow": "SAVAITĖ PLANE",
+        "headlineLead": "Septyni raginimai,",
+        "headlineItalic": "viena struktūra",
+        "lede": "Refleksyvus, įkūnytas, rašytinis. Savaitė sukasi aplink modelį, kurį įvardijo ataskaita, o ne aplink mokymo programą.",
+        "days": {
+          "mon": {
+            "day": "PIRM",
+            "prompt": "„Kur šiandien pasirinkote <em>nebūti</em> matomas?“",
+            "stream": {
+              "journal": "žurnalas",
+              "shadowPrompt": "šešėlio raginimas"
+            }
+          },
+          "tue": {
+            "day": "ANT",
+            "prompt": "„Pasivaikščiokite be tikslo. Atkreipkite dėmesį į vieną dalyką, kurį beveik pasakėte.“",
+            "stream": {
+              "walking": "ėjimas",
+              "note": "pastaba"
+            }
+          },
+          "wed": {
+            "day": "TREČ",
+            "prompt": "„Ką šiandien per daug kvalifikavote, ir koks buvo <em>nekvalifikuotas</em> sakinys po to?“",
+            "stream": {
+              "breathWork": "kvėpavimo pratimai",
+              "journal": "žurnalas",
+              "shadowPrompt": "šešėlio raginimas"
+            }
+          },
+          "thu": {
+            "day": "KETV",
+            "prompt": "„Kūno skenavimas nuo gerklės žemyn. Kur gyvena susilaikymas?“",
+            "stream": {
+              "bodyScan": "kūno skenavimas",
+              "note": "pastaba"
+            }
+          },
+          "fri": {
+            "day": "PENK",
+            "prompt": "„Parašykite sakinį, kurį būtumėte pasakęs, jei jau būtų buvę leista.“",
+            "stream": {
+              "journal": "žurnalas",
+              "rewrite": "perrašymas"
+            }
+          },
+          "sat": {
+            "day": "ŠEŠT",
+            "prompt": "„Ilgas pasivaikščiojimas. Jokių raginimų. Atkreipkite dėmesį, ką grąžina tyla.“",
+            "stream": {
+              "walking": "ėjimas",
+              "rest": "poilsis"
+            }
+          },
+          "sun": {
+            "day": "SEKM",
+            "prompt": "„Perskaitykite savaitę iš naujo. Kuri eilutė jau buvo <em>tiesa</em>?“",
+            "stream": {
+              "review": "apžvalga",
+              "note": "pastaba"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTACIJA",
+        "headlineLead": "Planas",
+        "headlineItalic": "mažėja",
+        "tag": "Adaptacija",
+        "rowHeadingLead": "Praėjusios savaitės pasikartojimas nustato kitos savaitės",
+        "rowHeadingItalic": "tankį",
+        "body": "Kai modelio stiprumas sumažėja, raginimai retėja. Kai modelis sustiprėja, raginimai grįžta. Tikslas nėra laikymasis. Tikslas yra mažiausias pastolis, kurio struktūrai vis dar reikia.",
+        "figure": {
+          "label": "raginimų tankis",
+          "subtitle": "1–8 savaitės",
+          "heading": "Raginimų skaičius · per savaitę",
+          "range": "mažėja silpnėjant pasikartojimui",
+          "markers": {
+            "wk1": "1 sav.",
+            "wk3": "3 sav.",
+            "wk5": "5 sav.",
+            "wk8": "8 sav."
+          },
+          "summaryLabel": "mažiau raginimų\n8 sav."
+        }
+      },
+      "shadow": {
+        "eyebrow": "ŠEŠĖLIO DARBAS",
+        "headlineLead": "Ne katarsis.",
+        "headlineItalic": "Kalbėjimas",
+        "tag": "Šešėlis",
+        "rowHeadingLead": "Sąmoningas kalbėjimo, kas buvo",
+        "rowHeadingItalic": "neišsakoma",
+        "body": "Šešėlio darbas, šiame kontekste, nėra atskleidimas. Tai nėra apsivalymas. Tai lėtas kalbėjimo – pirmiausia sau – to, ką buvo mokyta nutylėti, praktikavimas. Trys prieš / po eilutės, paimtos iš realių planų.",
+        "figure": {
+          "label": "šešėlio pataisymai",
+          "subtitle": "trys eilutės, darbinis variantas",
+          "rows": {
+            "r1": {
+              "prefix": "01 · sau",
+              "old": "Aš to nenusipelniau.",
+              "next": "Aš dar nepraktikavau to norėti garsiai."
+            },
+            "r2": {
+              "prefix": "02 · sau",
+              "old": "Aš jau turėjau tai įveikti.",
+              "next": "laiko juosta, kurią pasiskolinau, nebuvo skirta tokiam sielvartui."
+            },
+            "r3": {
+              "prefix": "03 · sau",
+              "old": "Aš esu per daug.",
+              "next": "Aš esu lygiai toks tūris, kuriam kambarys nebuvo pastatytas."
+            }
+          },
+          "metaLeft": {
+            "label": "anksčiau",
+            "value": "pasakyta apie save"
+          },
+          "metaRight": {
+            "label": "dabar",
+            "value": "pasakyta sau"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RĖMAS",
+        "headlineLead": "Laikomas struktūros, o ne",
+        "headlineItalic": "mokymo programos",
+        "body1": "Mokymo programa yra veiksmų rinkinys, kurį sukūrė nepažįstamasis. Struktūra yra forma, kurią įgauna jūsų konkretus gyvenimas. Planas sudarytas pagal pastarąją. Kiekvienas raginimas yra susietas su eilute jūsų ataskaitoje – kai eilutė išnyksta, raginimas taip pat.",
+        "body2": "Niekas čia neturi būti nuolatinis. Planas yra nuomojamas. Struktūra yra jūsų.",
+        "closeout": "struktūra yra jūsų · planas yra nuomojamas"
+      },
+      "final": {
+        "eyebrow": "TĘSTI",
+        "headlineLead": "Pradėti,",
+        "headlineItalic": "arba skaityti mokslą",
+        "beginCta": "Pradėti",
+        "or": "arba",
+        "readScience": "skaityti mokslą"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Mokslas — TwentyThird",
+        "description": "Šimtmetis psichoanalitinės teorijos ir keturi dešimtmečiai empirinių tyrimų apie modelius, kalbą ir pasąmonę."
+      },
+      "hero": {
+        "eyebrow": "PAGRINDAS",
+        "headlineLead": "Mokslas už",
+        "headlineItalic": "klausymosi",
+        "headlineTail": ".",
+        "lede": "TwentyThird remiasi šimtmečiu psichoanalitinės teorijos ir keturiais dešimtmečiais empirinių tyrimų apie modelius, kalbą ir pasąmonę. Tai yra tai, ką mes skaitome ir kodėl."
+      },
+      "lineages": {
+        "eyebrow": "DVI KILMĖS LINIJOS",
+        "headlineLead": "Freudo struktūra. Lacano",
+        "headlineItalic": "raidė",
+        "headlineTail": ".",
+        "lede": "Du pasąmonės skaitymai, skiriantys pusę amžiaus. Kartu jie sudaro metodo pagrindą.",
+        "freud": {
+          "headlineLead": "Struktūrinė",
+          "headlineItalic": "pasąmonė",
+          "headlineTail": ".",
+          "body1": "Freudo ilgalaikis indėlis yra struktūrinis, o ne teminis. Dinaminė pasąmonė nėra užmiršto turinio rūsys – tai veikiantis proto organas, repetuojantis, kartojantis, perkeliantis.",
+          "body2": "Mes jį skaitome kaip pasikartojimo kliniką. Ta pati scena pasirodo skirtingais dešimtmečiais. Tas pasikartojimas yra signalas, kurį modelis apmokytas rasti.",
+          "figure": {
+            "label": "pasikartojimas",
+            "subtitle": "penki inkarai, viena struktūra",
+            "outcome": "pasitraukimas",
+            "rows": {
+              "anchor1": "ankstyvoji paauglystė",
+              "anchor2": "pirmasis ilgalaikis ryšys",
+              "anchor3": "antrasis ilgalaikis ryšys",
+              "anchor4": "trečiasis ryšys",
+              "anchor5": "ketvirtasis ryšys"
+            },
+            "summary": {
+              "recurrenceLabel": "pasikartojimas",
+              "intervalLabel": "intervalas",
+              "attractorLabel": "atraktorius",
+              "attractorValue": "intymumo slenkstis"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Pasąmonė yra struktūruota kaip",
+          "headlineItalic": "kalba",
+          "headlineTail": ".",
+          "body1Lead": "Lacano skaitymas keičia lauką. Signifikantas juda; prasmė slysta metonimijos ir metaforos grandinėmis. Veidrodžio stadija įvardija pamatinį klaidingą atpažinimą.",
+          "body1Italic": "Geismas yra Kito geismas.",
+          "body2": "Mūsų sistemoje tai yra konkretu. Mes skaitome sapnus ir budrią kalbą kaip tekstą – poslinkiai, kondensacijos ir apsirikimai neša struktūruojančią gramatiką.",
+          "figure": {
+            "label": "lingvistinis signalas",
+            "subtitle": "sapno ištrauka, anotuota",
+            "dreamLead": "„Kambarys, kuriame gyvenau vaikystėje, turi dar vienas duris, kurių nepamenu",
+            "ann1": "poslinkis",
+            "dreamMid1": ". Už jų mano vadovo balsas",
+            "ann2": "kondensacija",
+            "dreamMid2": "mane vadina neteisingu vardu",
+            "ann3": "apsirikimas",
+            "dreamTail": ".”",
+            "key1": "poslinkis",
+            "key2": "kondensacija",
+            "key3": "apsirikimas"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRINIAI INKARAI",
+        "headlineLead": "Ką šiuolaikiniai tyrimai",
+        "headlineItalic": "prideda",
+        "headlineTail": ".",
+        "lede": "Penkios susiliejančios gijos iš prisirišimo, naratyvo ir proceso tyrimų. Tai nėra išsami bibliografija – tai inkarai, ant kurių iš tikrųjų remiasi modelis.",
+        "figure": {
+          "label": "empiriniai inkarai",
+          "subtitle": "susiliejančių įrodymų",
+          "caseLabel": "literatūra · sintezė",
+          "prepared": "atnaujinta 04 · 26",
+          "rows": {
+            "attachment": "Prisirišimo tęstinumas per dešimtmečius",
+            "alliance": "Terapinis aljansas kaip rezultato prognozė",
+            "narrative": "Naratyvinė darna ir gerovė",
+            "relational": "Implicitinis santykių žinojimas",
+            "script": "Scenarijaus teorija profesiniame užstrigime"
+          },
+          "footerLabel": "Sintezė",
+          "footerValue": "susiliejančių įrodymų · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "KO NEPAREIŠKIAME",
+        "headlineLead": "Sąžiningos",
+        "headlineItalic": "ribos",
+        "headlineTail": " darbo.",
+        "claim1Strong": "Mes nepakeičiame terapeuto.",
+        "claim1Body": "Modelis paruošia pokalbį. Jis jo nepalaiko.",
+        "claim2Strong": "Mes nesame diagnostikos priemonė pagal DSM ar ICD.",
+        "claim2Body": "Kategorijos, su kuriomis dirbame, yra struktūrinės – obsesinės, isterinės, fobinės – o ne nozologinės. Jos įvardija, kaip žmogus yra organizuotas, o ne tai, ką jis turi.",
+        "claim3Strong": "23 dienų ciklas yra metafora.",
+        "claim3Body": "Skaičius kilęs iš Wilhelmo Fliesso susirašinėjimo su Freudu XIX amžiaus pabaigoje. Šiuolaikinis mokslas nepalaiko fiksuotų bioritmų. Mes išlaikome skaičių dėl to, ką jis įvardija – perėjimą nuo smalsumo prie sąmoningumo."
+      },
+      "reading": {
+        "eyebrow": "TOLIMESNIS SKAITYMAS",
+        "headlineLead": "Lentyna",
+        "headlineItalic": "už",
+        "headlineTail": " modelio.",
+        "lede": "Knygos, ne straipsniai. Tos, prie kurių grįžtame.",
+        "books": {
+          "book1": {
+            "title": "Anapus malonumo principo"
+          },
+          "book2": {
+            "title": "Sapnų aiškinimas"
+          },
+          "book4": {
+            "title": "Keturi fundamentalūs psichoanalizės konceptai"
+          },
+          "book5": {
+            "title": "Prisirišimas"
+          },
+          "book6": {
+            "title": "Afekto reguliavimas ir savasties kilmė"
+          },
+          "book7": {
+            "title": "Stovėjimas erdvėse"
+          },
+          "book8": {
+            "title": "Afekto reguliavimas, mentalizacija ir savasties vystymasis"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "TĘSTI",
+        "headlineLead": "Pradėkite profilį,",
+        "headlineItalic": "arba perskaitykite atvejį",
+        "headlineTail": ".",
+        "ctaPrimary": "Pradėti profilį",
+        "ctaOr": "arba",
+        "ctaGhost": "perskaityti atvejo studiją"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "vėl čia",
+      "greetingNamed": "vėl čia, {name}.",
+      "strengthen": "Stiprinti tikslumą"
+    },
+    "reviewEdit": "Peržiūrėti ir redaguoti",
+    "depth": {
+      "eyebrow": "SKAITYMO GILUMAS",
+      "overallEyebrow": "BENDRAS SKAITYMO GILUMAS",
+      "band": {
+        "deep": "skaitymas yra gilus. nuo čia – nedideli koregavimai.",
+        "steady": "skaitymas išlieka. Catchup'ai jį patikslins.",
+        "partial": "skaitymas yra dalinis. yra dar ką duoti.",
+        "thin": "skaitymas yra plonas. jis nubrėš formą, dar ne struktūrą."
+      },
+      "explainer": "Skaitymo gilumas apibūdina, kiek jūsų skaitymas pasiekė – iš intake, iš savaitinių Catchup'ų, iš konsultacijų ir iš žmonių, kurių buvimas jus formuoja. Gylesnis skaitymas nėra geresnis žmogus; tai tikslesnis. Galite jį pagilinti bet kuriuo metu arba palikti tokį, koks yra.",
+      "status": {
+        "low": "Žemas",
+        "moderate": "Vidutinis",
+        "deep": "Tikslus"
+      },
+      "statusLine": {
+        "low": "skaitymas yra plonas. jis nubrėš formą, dar ne struktūrą.",
+        "moderate": "skaitymas įgauna formą. jis gali išlaikyti darbinę hipotezę.",
+        "deep": "skaitymas yra pakankamai išsamus, kad pagrįstų darbą."
+      },
+      "source": {
+        "intake": "klausimai, į kuriuos atsakėte pradėdami.",
+        "catchups": "savaitiniai patikrinimai, kurie palaiko skaitymą aktualų.",
+        "sessions": "ilgesnės konsultacijos su analitiku.",
+        "connections": "žmonės, kurių buvimas formuoja skaitymą."
+      }
+    },
+    "latest": {
+      "eyebrow": "NAUJAUSIAS SKAITYMAS",
+      "heading": "Šeši skaitymai <it>— ir kas keičiasi.</it>",
+      "lede": "Šeši skaitymai apskaičiuojami iš jūsų įrašo ir tobulinami kiekvienu „Catchup“, konsultacija ir priimtu ryšiu. Struktūra yra pastovi; tekstūra juda.",
+      "strengthen": "stiprinti duomenis analizei",
+      "open": "atverti skaitymus"
+    },
+    "six": {
+      "eyebrow": "ŠEŠI SKAITYMAI",
+      "heading": "Kas skaitoma <it>jumyse, šiuo metu.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "pastarosios savaitės",
+      "timelineHeading": "langas",
+      "timelineRange": "paskutinės 4 savaitės",
+      "timelineSummary": "savaitės apžvalgos lange",
+      "eyebrow": "SAVAITĖS APŽVALGA",
+      "heading": "Pasėdėkite su savaite. <it>Tada vėl pažvelgsime.</it>",
+      "lede": "Aštuoni trumpi klausimai. Nuoširdumas geriau nei ilgumas. Atsakymai patikslina skaitymą.",
+      "completed": "užbaigta – perskaitykite santrauką",
+      "cta": "Atidaryti šios savaitės apžvalgą",
+      "markerFirst": "pirmoji",
+      "markerWeek": "s{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTACIJŲ KAMBARYS",
+      "heading": "Valanda su <it>analitiku.</it>",
+      "ledeSubscribed": "Atviras, kai savaitė spaudžia. Kambarys prisimena, ką jau pasakėte.",
+      "ledeUnsubscribed": "Prenumeratoriai gali patekti į konsultacijų kambarį – ilgą sesiją su analitiku, vykstančią tuo pačiu balsu kaip ir jūsų skaitymai.",
+      "cta": "Įeiti į konsultacijų kambarį",
+      "figLabel": "PASKUTINĖ SESIJA",
+      "figSubtitle": "nutylėtas klausimas",
+      "lastQuestion": "„antradienio sapnas – ar norite prie jo sugrįžti?“"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTACIJŲ KABINETAS · PATVIRTINTI",
+      "title": "Įėjimas į konsultacijų kabinetą<it>.</it>",
+      "ledePrice": "Prenumerata yra",
+      "ledePerMonth": "per mėnesį",
+      "ledeIncludes": ". Ji apima konsultacijų kabinetą, galimybę pakviesti iki {count} {count, plural, one {ryšio} few {ryšių} many {ryšių} other {ryšių}}, ir vieną klinikinę ataskaitą kiekvieną kalendorinį mėnesį.",
+      "ledeBilling": "Atsiskaitymus tvarko Stripe. Atšaukti galite bet kuriuo metu nustatymuose — prieiga tęsiasi iki laikotarpio pabaigos.",
+      "canceled": "<i>mokėjimas buvo uždarytas.</i> niekas nebuvo apmokestinta. galite grįžti žemiau, kai būsite pasiruošę.",
+      "checkoutCta": "Tęsti į atsiskaitymą",
+      "returnLink": "grįžti į konsultacijų kabinetą"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINIKINIS PRANEŠIMAS",
+        "subscribedTitle": "Jau <it>įtraukta.</it>",
+        "subscribedLede": "Prenumerata apima vieną klinikinį pranešimą kiekvieną kalendorinį mėnesį. Jį galite sugeneruoti puslapio apačioje – mokėjimas nereikalingas.",
+        "eyebrow": "KLINIKINIS PRANEŠIMAS · PATVIRTINTI",
+        "title": "Klinikinis pranešimas<it>.</it>",
+        "ledePrice": "Vienkartinis klinikinis pranešimas kainuoja",
+        "ledeDossier": ". 12–18 puslapių visų dvylikos skaitymų dosjė, klinicisto darbo kalba.",
+        "ledeBilling": "Atsiskaitymą tvarko Stripe. Pranešimai gali būti generuojami iš naujo, gilėjant skaitymui; prenumeratoriai gauna po vieną kiekvieną kalendorinį mėnesį be atskiro mokesčio.",
+        "depthNotice": "<i>pranešimas atspindės turimą gylį.</i> jį galima sugeneruoti iš naujo, gilėjant skaitymui.",
+        "canceled": "<i>mokėjimas buvo atšauktas.</i> niekas nebuvo apmokestinta.",
+        "checkoutCta": "Tęsti apmokėjimą",
+        "returnLink": "grįžti prie skaitymų"
+      },
+      "status": {
+        "eyebrow": "KLINIKINIS PRANEŠIMAS",
+        "line": {
+          "queued": "jūsų pranešimas ruošiamas.",
+          "generating": "pranešimas rašomas.",
+          "ready": "pranešimas paruoštas.",
+          "failed": "pranešimas nebuvo baigtas. netrukus bandysime dar kartą."
+        },
+        "open": "atidaryti pranešimą",
+        "back": "grįžti prie skaitymų"
+      },
+      "queued": {
+        "eyebrow": "KLINIKINIS PRANEŠIMAS",
+        "line": "jūsų pranešimas ruošiamas – atsiųsime jums el. laišką, kai jis bus paruoštas.",
+        "back": "grįžti prie skaitymų"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "PRADINIS VERTINIMAS",
+        "title": "Pradinis vertinimas, <it>tema po temos.</it>",
+        "lede": "Dešimt skyrių. Atidarykite bet kurį, kad peržiūrėtumėte arba pagilintumėte jame esančius atsakymus. Pradinis vertinimas nėra vienkartinė forma – atsakymai gali būti koreguojami bet kuriuo metu."
+      },
+      "step": {
+        "eyebrow": "PRADINIS VERTINIMAS",
+        "backToAll": "grįžti į visus skyrius"
+      },
+      "failed": {
+        "eyebrow": "PRADINIS VERTINIMAS — NEBAIGTA",
+        "headline": "Skaitymas <em>nebuvo baigtas</em>.",
+        "lede": "Jūsų pradinis vertinimas yra faile. Po jo sekusi analizė nebuvo baigta.",
+        "retry": "Tęsti skaitymą",
+        "retryPending": "Tęsiama"
+      }
+    },
+    "pending": {
+      "eyebrow": "BŪSENA · APDOROJAMA",
+      "headline": "Jūsų profilis *skaitomas*.",
+      "lede": "Dabar jūsų atsakymus apdorojame psichodinaminiais modeliais. Pirmasis etapas paprastai trunka apie 2 valandas. Parašysime, kai darbas bus paruoštas, ir Kambarys atsidarys.",
+      "figIntake": "PRADINIS VERTINIMAS",
+      "figSubmitted": "pateikta {date}",
+      "rowResponses": "Atsakymai gauti",
+      "rowPattern": "Šablonų išskyrimas",
+      "rowSynthesis": "Profilio sintezė",
+      "statusInProgress": "vykdoma",
+      "statusQueued": "eilėje",
+      "foot": "parašysime, kai darbas bus paruoštas",
+      "returnCta": "grįžti į tylųjį kambarį",
+      "devPrefix": "dev",
+      "devOpening": "atidaroma…",
+      "devOpen": "atidaryti Kambarį dabar",
+      "devError": "nepavyko atidaryti Kambario – patikrinkite konsolę."
+    }
+  },
+  "invite": {
+    "eyebrow": "KVIESTI",
+    "safetyFooter": "TwentyThird nepakeičia klinikinės priežiūros. Kilus krizei, kreipkitės į vietinę pagalbos liniją.",
+    "notReady": {
+      "headline": "Kvietimų sistema <it>ruošiama.</it>",
+      "body": "Bandykite dar kartą netrukus."
+    },
+    "notFound": {
+      "headline": "Ši nuoroda <it>neatpažinta.</it>",
+      "body": "Jei nuoroda gauta neseniai el. paštu, kvietimas galėjo būti išsiųstas pakartotinai. Atidarykite naujausią el. laišką, kad rastumėte aktyvią nuorodą."
+    },
+    "alreadyDeclined": {
+      "headline": "Šis kvietimas buvo <it>atmestas.</it>",
+      "body": "Daugiau nieko nereikia. {name} nebus pranešta daugiau, nei jie jau mato."
+    },
+    "alreadyAccepted": {
+      "headline": "Jūs jau <it>priėmėte.</it>",
+      "body": "Jei santykių įvertinimas dar nebaigtas, galite tęsti toliau.",
+      "continueLink": "tęsti santykių įvertinimą"
+    },
+    "ended": {
+      "headline": "Šis ryšys <it>nutrauktas.</it>",
+      "body": "Nuoroda nebegalioja. Ryšio įrašas lieka bylos faile, tačiau nebeturi įtakos skaitymui."
+    },
+    "expired": {
+      "headline": "Šis kvietimas <it>pasibaigė.</it>",
+      "body": "Kvietimai baigia galioti praėjus keturiolikai dienų nuo išsiuntimo. Paprašykite {name} atsiųsti naują, jei norite atsakyti."
+    },
+    "declined": {
+      "headline": "Tai <it>gauta.</it>",
+      "body": "Daugiau nieko iš jūsų nereikia. Kvietimas uždarytas; kvietėjas tyliai mato būsenos pasikeitimą. Galite uždaryti šį langą."
+    },
+    "live": {
+      "eyebrow": "RYŠIO UŽKLAUSA",
+      "headline": "{name} pakvietė jus į <it>savo skaitymą.</it>",
+      "lede": "TwentyThird yra redakcinis-klinikinis instrumentas – tylus kambarys, kuriame atidžiai skaitoma ir klinicisto naudojama kalba pateikiama asmens vidinio gyvenimo struktūra.",
+      "explainerOne": "<em>Ryšys</em> nėra bendra paskyra. {name} nematys jūsų skaitymų, sesijų ar bylos. Jūs nematysite jų. Tai, ką pasakysite apie santykius, papildys modelį, kuris sukuria {name} skaitymą.",
+      "explainerTwo": "Jei norėtumėte savo skaitymo, pirmasis kelias žemiau taip pat pradeda jūsų pačių paskyrą. Vidurinis kelias leidžia jums prisidėti prie {name} skaitymo be paskyros. Leidžiama bet kuri galimybė.",
+      "metaSentTo": "išsiųsta",
+      "metaInviteAs": "pakviesti kaip",
+      "metaReceived": "gauta",
+      "metaExpiresIn": "baigiasi po {count, plural, one {# dienos} few {# dienų} many {# dienų} other {# dienų}}"
+    },
+    "intake": {
+      "eyebrow": "SANTYKIŲ SUVARTOJIMAS",
+      "notReady": {
+        "headline": "Suvartojimas yra <it>ruošiamas.</it>",
+        "body": "Prašome pabandyti dar kartą netrukus."
+      },
+      "notFound": {
+        "headline": "Ši nuoroda <it>neatpažinta.</it>",
+        "body": "Atidarykite naujausią kvietimo el. laišką, kad gautumėte aktyvią nuorodą."
+      },
+      "notOpen": {
+        "headline": "Suvartojimas <it>negalimas.</it>",
+        "body": "Šis kvietimas nebuvo priimtas, atmestas arba baigtas. Grįžkite prie kvietimo nuorodos, kad pasirinktumėte iš naujo.",
+        "backLink": "atgal į kvietimą"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "taip – pradėti santykių įvertinimą",
+      "acceptLabel": "taip – prisijungti be paskyros",
+      "declineLabel": "ne, ačiū",
+      "beginLabel": "pradėti",
+      "continueLabel": "tęsti",
+      "back": "atgal",
+      "oneMoment": "vienas momentas…",
+      "declineConfirmLine": "tai uždaro kvietimą. jokia papildoma informacija apie jus nėra siunčiama ar saugoma.",
+      "declineClosing": "uždarymas…",
+      "declineConfirm": "atmesti kvietimą",
+      "firstNameLabel": "JŪSŲ VARDAS",
+      "firstNameAria": "Jūsų vardas",
+      "firstNameSub": "{name} matys tik šį vardą savo ryšių sąraše.",
+      "errors": {
+        "missingFirstName": "vardas leidžia analitikui tinkamai į jus kreiptis.",
+        "generic": "nepavyko pateikti.",
+        "notFound": "šis kvietimo nuoroda neatpažinta.",
+        "expired": "šis kvietimas pasibaigė. paprašykite kvietėjo atsiųsti naują.",
+        "declined": "šis kvietimas jau buvo atmestas.",
+        "ended": "šis kvietimas nebėra aktyvus.",
+        "missingFirstNameRequired": "reikalingas vardas."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "SANTYKIŲ SUVARTOJIMAS",
+      "begin": "pradėti",
+      "back": "atgal",
+      "backToCover": "grįžti į viršelį",
+      "next": "kitas",
+      "finish": "baigti",
+      "scaleAria": "skalė {value}",
+      "cover": {
+        "headline": "Tai, ką pasakysite apie <it>{name}</it>, lieka tarp jūsų ir analitiko.",
+        "lede": "Dvylika trumpų klausimų. Apie penkias minutes. Atsakymai maitina {name} skaitymą; jie nematys, ką parašėte, o jūs nematysite, ką tai sukurs."
+      },
+      "closing": {
+        "recording": "akimirka – atsakymai įrašomi.",
+        "tryAgain": "bandyti dar kartą",
+        "headline": "Kol kas <it>pakanka.</it>",
+        "lede": "Tai, ką pasakėte apie {name}, informuos jų skaitymą nuo kitos sesijos. Jie to nematys; jūs nematysite, ką tai sukurs.",
+        "closeWindow": "galite uždaryti šį langą."
+      },
+      "errors": {
+        "unanswered": "akimirka su šiuo klausimu prieš pereinant toliau.",
+        "questionOpen": "klausimas vis dar atviras. akimirka.",
+        "couldNotSave": "nepavyko išsaugoti",
+        "invalidAnswers": "kažkas nebuvo išanalizuota – patikrinkite atsakymus.",
+        "notAccepting": "šis kvietimas nebepriima atsakymų.",
+        "notFound": "šis kvietimo nuoroda neatpažinta.",
+        "couldNotSaveAnswers": "nepavyko išsaugoti atsakymų."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Kiek laiko pažįstate vienas kitą?",
+          "options": {
+            "under_one_year": "mažiau nei metus",
+            "one_to_three": "nuo vienerių iki trejų metų",
+            "four_to_ten": "nuo ketverių iki dešimties metų",
+            "eleven_to_twenty": "nuo vienuolikos iki dvidešimties metų",
+            "more_than_twenty": "daugiau nei dvidešimt metų"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Kaip artimi jaučiatės šiuo metu?",
+          "lowLabel": "atstumu",
+          "highLabel": "kaip tik įmanoma artimiausi"
+        },
+        "repair_initiator": {
+          "prompt": "Kai nesutariate, kas pirmas linkęs ieškoti susitaikymo?",
+          "options": {
+            "i_do": "beveik visada aš",
+            "usually_me": "dažniausiai aš",
+            "evenly": "judame vienas kito link tolygiai",
+            "usually_them": "dažniausiai jie",
+            "they_do": "beveik visada jie"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kai sunku, kur jie linkę eiti?",
+          "options": {
+            "toward": "į jus, kad aptartų",
+            "quiet": "į tylą, tada atgal",
+            "work": "į darbą ar išsiblaškymą",
+            "alone": "visiškai vieni, už durų",
+            "elsewhere": "pirmiausia pas kitus žmones"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Ką, jūsų nuomone, jie turėtų suprasti apie save, bet nesupranta?"
+        },
+        "what_you_offer": {
+          "prompt": "Viena fraze, ką jūs darote už juos, ko jie negali padaryti patys?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Kuris balsas, atrodo, juos dažniausiai veda?",
+          "options": {
+            "demand": "reikalavimas – kas turėtų būti padaryta",
+            "doubt": "abejonė – ar to pakanka",
+            "desire": "troškimas – ko jie iš tikrųjų nori",
+            "watcher": "stebėtojas – kaip tai bus matoma",
+            "uncertain": "dar nežinau"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Kur jų darbas dažniausiai užstringa?",
+          "options": {
+            "start": "pradžia – įsitraukimas",
+            "middle": "vidurys – išlaikymas",
+            "finish": "pabaiga – paleidimas",
+            "visibility": "matomumas – leidimas būti matomam",
+            "nowhere": "niekur, kiek matau iš šalies"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Ar yra tema, kurios jie nuolat vengia? Įvardykite ją lengvai."
+        },
+        "they_at_their_best": {
+          "prompt": "Kada jie yra labiausiai savimi?"
+        },
+        "what_youve_changed": {
+          "prompt": "Ar yra kažkas apie juos, ką tyliai priėmėte, kad nepakeisite?"
+        },
+        "future_together": {
+          "prompt": "Kiek ateities, kurią įsivaizduojate, apima juos?",
+          "lowLabel": "labai mažai",
+          "highLabel": "beveik visa"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "arba",
+      "fallbackPreamble": "įklijuokite šią nuorodą į savo naršyklę:",
+      "attendingInstitution": "DALYVAUJANTI INSTITUCIJA",
+      "tagline": "Psichodinaminis DI vidiniam gyvenimui.",
+      "automatedFooter": "Išsiųsta automatizuotos sistemos · neatsakykite"
+    },
+    "intakeSubmitted": {
+      "subject": "jūsų profilis skaitomas.",
+      "preheader": "Pirmasis peržiūrėjimas vyksta. Kambarys atsidarys, kai darbas bus paruoštas.",
+      "eyebrow": "PROFILIS SKAITOMAS",
+      "titleText": "Jūsų atsakymai skaitomi.",
+      "italicPhrase": "skaitomi",
+      "lede": "Pirmasis peržiūrėjimas per psichodinaminius modelius vyksta. Kambarys atsidarys, kai darbas bus paruoštas.",
+      "figLeftItalic": "įrašas gautas",
+      "figRightLabel": "Pirmasis peržiūrėjimas",
+      "figRightItalic": "vyksta",
+      "text": "{salutation}\n\nJūsų atsakymai gauti. Pirmasis peržiūrėjimas per psichodinaminius modelius vyksta. Kambarys atsidarys, kai darbas bus paruoštas.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "jūsų Kambarys atidarytas.",
+      "preheader": "Dvylika blokų paruošta skaityti. Darbas tobulėja, kai prie jo grįžtate.",
+      "eyebrow": "KAMBARYS PARUOŠTAS",
+      "titleText": "Pirmasis skaitymas atidarytas.",
+      "italicPhrase": "pirmasis skaitymas",
+      "lede": "Dvylika psichodinaminio profilio blokų, Kambaryje ir paruošta skaityti. Darbas tobulėja, kai prie jo grįžtate.",
+      "ctaLabel": "Įeiti į Kambarį",
+      "figLeftItalic": "Kambarys atidarytas",
+      "figRightLabel": "Pirmasis skaitymas",
+      "figRightItalic": "paruošta",
+      "text": "{salutation}\n\nPirmasis skaitymas atidarytas.\n\nDvylika psichodinaminio profilio blokų, Kambaryje ir paruošta skaityti. Darbas tobulėja, kai prie jo grįžtate.\n\nĮeiti į Kambarį:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nTwentyThird institucija"
+    },
+    "invite": {
+      "subject": "{inviterName} kviečia jus į skaitymą.",
+      "preheader": "{inviterName} kviečia jus į skaitymą. Ryšys nemato jūsų skaitymų; jūs nematysite jų.",
+      "eyebrow": "KVIETIMAS",
+      "titleText": "{inviterName} kviečia jus į skaitymą.",
+      "italicPhrase": "į skaitymą",
+      "lede": "TwentyThird yra tylus kambarys, kuriame atidžiai skaitoma vidinio gyvenimo struktūra. Ryšys nemato kvietėjo skaitymų ar sesijų, ir jūs nematysite jų.",
+      "ctaLabel": "Atidaryti kvietimą",
+      "figLeftItalic": "kvietimas išsiųstas",
+      "figRightLabel": "Baigiasi",
+      "figRightItalic": "po keturiolikos dienų",
+      "securityNote": "Jei šis laiškas gautas per klaidą, kvietimas savaime nustos galioti po keturiolikos dienų.",
+      "textIntro": "{inviterName} kviečia jus į skaitymą TwentyThird platformoje.",
+      "textBody": "TwentyThird yra tylus kambarys, kuriame atidžiai skaitoma vidinio gyvenimo struktūra. Ryšys nemato kvietėjo skaitymų ar sesijų, ir jūs nematysite jų.",
+      "textNote": "{inviterName} pridėjo pastabą:\n  {note}",
+      "textOpen": "Atidaryti kvietimą:",
+      "textSecurity": "Jei šis laiškas gautas per klaidą, kvietimas savaime nustos galioti po keturiolikos dienų.",
+      "textCloser": "CognitiveLab, WelloWork AB\nLANKANTI INSTITUCIJA"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} priėmė ryšį.",
+      "preheader": "{nameTitle} priėmė ryšį. Poveikis nuo kitos sesijos.",
+      "eyebrow": "RYŠYS PRIIMTAS",
+      "titleText": "{nameTitle} priėmė ryšį.",
+      "italicPhrase": "priėmė ryšį",
+      "lede": "Jų santykių įvertinimas paveiks jūsų skaitymą nuo kitos sesijos. Jie nematys jūsų skaitymų; jūs nematysite jų.",
+      "ctaLabel": "Grįžti į kambarį",
+      "figLeftItalic": "ryšys priimtas",
+      "figRightLabel": "Poveikis",
+      "figRightItalic": "nuo kitos sesijos",
+      "text": "{salutation}\n\n{nameTitle} priėmė ryšį.\n\nJų santykių įvertinimas paveiks jūsų skaitymą nuo kitos sesijos. Jie nematys jūsų skaitymų; jūs nematysite jų.\n\nGrįžti į kambarį:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} nutraukė ryšį.",
+      "preheader": "{nameTitle} nutraukė ryšį. Jūsų skaitymas bus pakoreguotas per kitą seansą.",
+      "eyebrow": "RYŠYS NUTRAUKTAS",
+      "titleText": "{nameTitle} nutraukė ryšį.",
+      "italicPhrase": "nutraukė ryšį",
+      "lede": "Jūsų skaitymas bus pakoreguotas per kitą seansą. Tai, kas buvo pasakyta apie santykius, išlieka bylos faile; tai nebeturi įtakos aktyviam skaitymui.",
+      "ctaLabel": "Grįžti į kambarį",
+      "figLeftItalic": "ryšys nutrauktas",
+      "figRightLabel": "Poveikis",
+      "figRightItalic": "nuo kito seanso",
+      "text": "{nameTitle} nutraukė ryšį.\n\nJūsų skaitymas bus pakoreguotas per kitą seansą. Tai, kas buvo pasakyta apie santykius, išlieka bylos faile; tai nebeturi įtakos aktyviam skaitymui.\n\nGrįžti į kambarį:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "šios savaitės „Catchup“ yra atidarytas.",
+      "preheader": "Trumpas apmąstymas. Penkios minutės. Jis atnaujina skaitymą.",
+      "eyebrow": "SAVAITINIS CATCHUP",
+      "titleText": "Savaitė praėjo ramiai.",
+      "italicPhrase": "ramiai",
+      "lede": "Trumpas apmąstymas – kas garsu, kas liko tylu, kas pasikeitė. Jis atnaujina skaitymą.",
+      "ctaLabel": "Atidaryti „Catchup“",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "penkios minutės",
+      "text": "{salutation}\n\nSavaitė praėjo ramiai.\n\nTrumpas apmąstymas – kas garsu, kas liko tylu, kas pasikeitė. Jis atnaujina skaitymą.\n\nAtidaryti „Catchup“:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nTwentyThird institutas"
+    },
+    "onboardingResume": {
+      "subject": "jūsų atsakymai saugomi.",
+      "preheader": "Jūsų įvadas tęsiasi nuo ten, kur sustojote. Darbas neprasideda, kol jis nebaigtas.",
+      "eyebrow": "ĮVADAS SUSTABDYTAS",
+      "titleText": "Įvadas yra ten, kur jį palikote.",
+      "italicPhrase": "kur jį palikote",
+      "lede": "Jūsų įvadas tęsiasi nuo ten, kur sustojote. Darbas neprasideda, kol jis nebaigtas.",
+      "ctaLabel": "Grįžti prie įvado",
+      "figLeftItalic": "įvadas pristabdytas",
+      "figRightLabel": "Tęsti",
+      "figRightItalic": "nuo ten, kur sustojote",
+      "text": "{salutation}\n\nĮvadas yra ten, kur jį palikote.\n\nJūsų įvadas tęsiasi nuo ten, kur sustojote. Darbas neprasideda, kol jis nebaigtas.\n\nGrįžti prie įvado:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Kokie žodžiai geriausiai apibūdina namus, kuriuose užaugote.",
+          "subtitle": "pasirinkite iki trijų žodžių, kurie atrodo teisingi, net jei jie prieštarauja vienas kitam – namai dažnai yra mišinys",
+          "options": {
+            "calm": "Ramūs",
+            "strict": "Griežti",
+            "emotionally_distant": "Emociškai atitolę",
+            "chaotic": "Chaotiški",
+            "achievement_focused": "Orientuoti į pasiekimus",
+            "protective": "Saugantys",
+            "unpredictable": "Nenuspėjami",
+            "conflict_heavy": "Pilni konfliktų"
+          }
+        },
+        "q1_2": {
+          "title": "Kokį vaidmenį natūraliai atlikote vaikystėje.",
+          "subtitle": "pagalvokite apie vaidmenį, kurį atlikote savo šeimoje, niekam to nenurodžius – taikdarys, pagalbininkas, tylenis",
+          "options": {
+            "peacemaker": "Taikdarys",
+            "achiever": "Pasiekiantis",
+            "invisible_child": "Nematomas vaikas",
+            "caregiver": "Rūpintojas",
+            "rebel": "Maištininkas",
+            "funny_one": "Juokdarys",
+            "responsible_one": "Atsakingasis",
+            "problem_child": "Problemiškas vaikas"
+          }
+        },
+        "q1_3": {
+          "title": "Kiek emociškai saugiai jautėtės augdami.",
+          "subtitle": "pasikliaukite savo intuicija apie namus, o ne ta versija, kurią šeima pasakotų nepažįstamajam",
+          "lowLabel": "1 · NIEKADA NESAUGU",
+          "highLabel": "10 · VISIŠKAI SAUGU"
+        },
+        "q1_4": {
+          "title": "Ar namuose buvo atvirai aptariamos emocijos.",
+          "subtitle": "ne tik ar jausmai egzistavo, bet ar kas nors juos iš tikrųjų įvardijo ar aptarė garsiai",
+          "options": {
+            "frequently": "Dažnai",
+            "sometimes": "Kartais",
+            "rarely": "Retai",
+            "never": "Niekada"
+          }
+        },
+        "q1_5": {
+          "title": "Vienas vaikystės prisiminimas, kuris šiandien vis dar atrodo emociškai gyvas.",
+          "subtitle": "apibūdinkite vieną konkrečią sceną, kuri vis dar grįžta – kur buvote, kas ten buvo, kas nutiko, kaip jautėtės"
+        },
+        "q1_6": {
+          "title": "Ką išmokote daryti, kad gautumėte meilę ar pritarimą.",
+          "subtitle": "maži dalykai, kuriuos pastebėjote, kad veikia – būti geram, būti tyliam, pasiekti, netrukdyti – pasidalinkite tuo, ką prisimenate koregavę"
+        },
+        "q1_7": {
+          "title": "Kokias emocijas buvo sunku išreikšti jūsų namuose.",
+          "subtitle": "kokie jausmai buvo ignoruojami, atmetami ar baudžiami, kai bandėte juos parodyti – pyktis, liūdesys, baimė, džiaugsmas, bet kas"
+        },
+        "q1_8": {
+          "title": "Kai galvojate apie save jaunesnį, ką jaučiate jiems.",
+          "subtitle": "būkite sąžiningi apie kylantį jausmą – šilumą, liūdesį, atstumą, nusivylimą, apsaugą – viską, kas iš tikrųjų yra"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Kaip apibūdintumėte savo motiną ar pagrindinę motinišką globėją.",
+          "subtitle": "keletas sakinių apie tai, kokia ji buvo, kaip ji jums pasirodė ir kaip jautėtės šalia jos",
+          "options": {
+            "warm": "Šilta",
+            "controlling": "Kontroliuojanti",
+            "emotionally_unavailable": "Emociškai nepasiekiama",
+            "sacrificing": "Pasiaukojanti",
+            "critical": "Kritiška",
+            "anxious": "Nerimastinga",
+            "unpredictable": "Nenuspėjama",
+            "admired": "Žavima",
+            "fearful": "Baiminga",
+            "not_applicable": "Netaikoma"
+          }
+        },
+        "q2_2": {
+          "title": "Kaip apibūdintumėte savo tėvą ar pagrindinį tėvišką globėją.",
+          "subtitle": "keletas sakinių apie tai, koks jis buvo, kaip jis jums pasirodė ir kaip jautėtės šalia jo",
+          "options": {
+            "supportive": "Palaikantis",
+            "distant": "Atitolęs",
+            "dominant": "Dominavimas",
+            "passive": "Pasyvus",
+            "ambitious": "Ambicingas",
+            "emotionally_closed": "Emociškai uždaras",
+            "protective": "Saugantis",
+            "critical": "Kritiškas",
+            "absent": "Nesantis",
+            "not_applicable": "Netaikoma"
+          }
+        },
+        "q2_3": {
+          "title": "Jūsų brolių ir seserų pozicija.",
+          "subtitle": "kurioje vietoje buvote – vyriausias, vidurinis, jauniausias, vienintelis vaikas ar kažkur tarp jų",
+          "options": {
+            "oldest": "Vyriausias",
+            "middle": "Vidurinis",
+            "youngest": "Jauniausias",
+            "only_child": "Vienintelis vaikas"
+          }
+        },
+        "q2_4": {
+          "title": "Kuris vaidmuo geriausiai atitinka jūsų brolių ir seserų poziciją.",
+          "subtitle": "ne tik gimimo tvarka, bet ir vaidmuo, kurį atlikote – atsakingas, maištininkas, nematomas, favoritas",
+          "options": {
+            "responsible": "Atsakingas",
+            "ignored": "Ignoruojamas",
+            "compared": "Lyginamas su kitais",
+            "favored": "Mėgstamas",
+            "competitive": "Konkurencingas",
+            "protective": "Saugantis",
+            "not_applicable": "Netaikoma"
+          }
+        },
+        "q2_5": {
+          "title": "Kuris iš tėvų jus geriausiai suprato.",
+          "subtitle": "įvardykite juos ir pasakykite, ką jie jumyse matė, ko kitas nepastebėjo ar suprato klaidingai"
+        },
+        "q2_6": {
+          "title": "Kuris iš tėvų labiausiai paveikė jūsų baimes.",
+          "subtitle": "kieno nerimą sugėrėte augdami ir kaip tos baimės vis dar pasireiškia jūsų gyvenime šiandien"
+        },
+        "q2_7": {
+          "title": "Kaip atrodė konfliktas jūsų šeimoje.",
+          "subtitle": "apibūdinkite ginčų formas – šauksmus, tylą, trankomas duris, šaltas savaites, pasikartojančius modelius – visa, kas atrodė pažįstama"
+        },
+        "q2_8": {
+          "title": "Kokio dėmesio buvo sunkiausia sulaukti.",
+          "subtitle": "rūpestis, kuris jums kėlė nepatogumų – pagyrimai, susirūpinimas, fizinis artumas, buvimas matomu – ir kodėl tai buvo sunku"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Kokia religinė ar dvasinė buvo aplinka, kurioje augote.",
+          "subtitle": "tikroji namų atmosfera – praktikos, taisyklės, įsitikinimai ore – ne tai, kuo tikite dabar, būdami suaugę",
+          "lowLabel": "1 · VISAI NE",
+          "highLabel": "10 · LABAI"
+        },
+        "q3_2": {
+          "title": "Kokia žinutė buvo stipriausia augant.",
+          "subtitle": "ta taisyklė ar lūkestis, kartojamas taip dažnai, kad tapo foniniu triukšmu – apie sėkmę, elgesį, įvaizdį, pareigą, šeimą",
+          "options": {
+            "success": "Sėkmė svarbiausia",
+            "reputation": "Reputacija svarbiausia",
+            "obedience": "Paklusnumas svarbiausias",
+            "family_loyalty": "Šeimos lojalumas svarbiausias",
+            "independence": "Nepriklausomybė svarbiausia",
+            "sacrifice": "Pasiaukojimas svarbiausias"
+          }
+        },
+        "q3_3": {
+          "title": "Kaip stipriai jaučiatės visuomenės vertinami.",
+          "subtitle": "kiek jaučiatės stebimi ar vertinami žmonių už jūsų artimo rato ribų – darbe, internete, viešumoje",
+          "lowLabel": "1 · VISAI NE",
+          "highLabel": "10 · NUOLAT"
+        },
+        "q3_4": {
+          "title": "Kokie įsitikinimai iš jūsų auklėjimo vis dar jus formuoja.",
+          "subtitle": "vertybės, taisyklės ar prielaidos, kurias paveldėjote ir kuriomis vis dar gyvenate, net jei apie jas negalvojote daugelį metų",
+          "highLabel": null
+        },
+        "q3_5": {
+          "title": "Kokiems įsitikinimams slapta priešinatės.",
+          "subtitle": "tiems, su kuriais viešai sutinkate, bet tyliai nesutinkate – apie pinigus, santykius, sėkmę, lytį, bet ką",
+          "highLabel": null
+        },
+        "q3_6": {
+          "title": "Kam jūsų šeima ar bendruomenė labiausiai nepritartų apie tikrąjį jus.",
+          "subtitle": "tas jūsų dalis, jūsų gyvenimą ar pasirinkimus, kuriuos slepiate nuo jų, ir kodėl juos slepiate",
+          "highLabel": null
+        },
+        "q3_7": {
+          "title": "Kokiu žmogumi tikėtasi, kad tapsite.",
+          "subtitle": "ateitis, kurią kiti jums įsivaizdavo – karjera, šeima, elgesys, įvaizdis – kol dar neturėjote žodžio",
+          "highLabel": null
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Kiek žmonių iš tiesų pažįsta tikrąjį jus.",
+          "subtitle": "žmonės, kurie matė neredaguotą jūsų versiją ir nebūtų šokiruoti nieko jūsų vidiniame gyvenime",
+          "options": {
+            "none": "Nė vienas",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Daugelis"
+          }
+        },
+        "q4_2": {
+          "title": "Grupėse dažniausiai tampate.",
+          "subtitle": "vaidmuo, į kurį įsitraukiate negalvodami – juokdarys, klausytojas, lyderis, stebėtojas, tas, kuris palaiko sklandumą",
+          "options": {
+            "leader": "Lyderis",
+            "observer": "Stebėtojas",
+            "entertainer": "Pramogautojas",
+            "mediator": "Tarpininkas",
+            "intellectual": "Intelektualas",
+            "caregiver": "Rūpintojas",
+            "withdrawn": "Atsiskyrėlis"
+          }
+        },
+        "q4_3": {
+          "title": "Kiek bijote nuvilti kitus.",
+          "subtitle": "kiek kito žmogaus reakcija – žvilgsnis, atodūsis, tyla – gali paveikti tai, ką sakote ar darote",
+          "lowLabel": "1 · VISAI NE",
+          "highLabel": "10 · KASDIEN"
+        },
+        "q4_4": {
+          "title": "Kokias savo dalis slepiate socialiai.",
+          "subtitle": "mintys, jausmai, bruožai ar jūsų istorijos dalys, kurias slepiate būdami su kitais žmonėmis"
+        },
+        "q4_5": {
+          "title": "Kada jaučiatės labiausiai priimtas.",
+          "subtitle": "situacijos ar santykiai, kuriuose nustojate vaidinti ir galite tiesiog būti – apibūdinkite, kuo tos erdvės skiriasi"
+        },
+        "q4_6": {
+          "title": "Kokios socialinės situacijos jus labiausiai išsekina.",
+          "subtitle": "susibūrimai, dinamika ar santykiai, kurie jus išvargina labiau nei turėtų – ir kas juose yra išsekina"
+        },
+        "q4_7": {
+          "title": "Kokiems žmonėms pavydite.",
+          "subtitle": "pavydas dažniausiai rodo tai, ko norite, bet neleidote sau atvirai norėti – apibūdinkite, kas jį sukelia ir kodėl"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Kokias platformas aktyviai naudojate.",
+          "subtitle": "programėlės, kurias atidarote iš įpročio, daugiau nei kartą per dieną, o ne tos, kuriose techniškai turite paskyrą",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Nė vienos"
+          }
+        },
+        "q5_2": {
+          "title": "Vidutinis dienos naudojimas platformoje.",
+          "subtitle": "apytikslis laiko, kurį iš tikrųjų praleidžiate kiekvienoje, įvertinimas – minutės ar valandos, be vertinimo",
+          "unit": "MINUČIŲ PER DIENĄ"
+        },
+        "q5_3": {
+          "title": "Kam daugiausia jas naudojate.",
+          "subtitle": "tikroji priežastis po akivaizdžios – ryšys, išsiblaškymas, patvirtinimas, pabėgimas, palyginimas, informacija",
+          "options": {
+            "validation": "Patvirtinimas",
+            "learning": "Mokymasis",
+            "escapism": "Pabėgimas",
+            "networking": "Tinklų kūrimas",
+            "self_expression": "Saviraiška",
+            "entertainment": "Pramogos",
+            "comparison": "Palyginimas",
+            "dating": "Pažintys"
+          }
+        },
+        "q5_4": {
+          "title": "Kaip dažnai ištrinate ar redaguojate įrašus prieš publikuodami.",
+          "subtitle": "kiek kartų repetuojate, abejojate ar perrašote tai, ką dalinatės, prieš leisdami kitiems tai pamatyti",
+          "options": {
+            "always": "Visada",
+            "often": "Dažnai",
+            "sometimes": "Kartais",
+            "rarely": "Retai",
+            "never": "Niekada"
+          }
+        },
+        "q5_5": {
+          "title": "Kaip dažnai lyginate savo gyvenimą su kitų gyvenimais internete.",
+          "subtitle": "tylusis matavimas, kuris vyksta slenkant – apie išvaizdą, sėkmę, santykius, gyvenimo būdą, bet ką",
+          "lowLabel": "1 · NIEKADA",
+          "highLabel": "10 · NUOLAT"
+        },
+        "q5_6": {
+          "title": "Kokia jūsų versija pasirodo internete.",
+          "subtitle": "apibūdinkite personažą, kurį pristatote – kuruojamą versiją – ir kuo ji skiriasi nuo to, kas esate, kai niekas nestebi"
+        },
+        "q5_7": {
+          "title": "Ko emociškai ieškote atidarę socialinę mediją.",
+          "subtitle": "jausmas, kurio siekiate atidarę programėlę – išsiblaškymas, komfortas, jaudulys, nutirpimas, ryšys"
+        },
+        "q5_8": {
+          "title": "Koks turinys jums kelia diskomfortą.",
+          "subtitle": "įrašai ar vaizdo įrašai, dėl kurių norisi greitai prasukti, ir ką, jūsų manymu, iš tikrųjų reiškia tas diskomfortas"
+        },
+        "q5_9": {
+          "title": "Kokie žmonės patraukia jūsų dėmesį internete.",
+          "subtitle": "paskyros, ties kuriomis sustojate ir stebite – apibūdinkite savybes, kurias jie turi bendras, ir kas jus traukia"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Jūsų dabartinė santykių būklė.",
+          "subtitle": "kurioje iš tikrųjų esate dabar – vienišas, susitikinėjantis, turintis partnerį, vedęs, išsiskyręs, sudėtinga – o ne kurioje norėtumėte būti",
+          "options": {
+            "single": "Vienišas",
+            "dating": "Susitikinėju",
+            "in_relationship": "Turiu santykius",
+            "engaged": "Susžadėjęs",
+            "married": "Vedęs",
+            "separated_divorced": "Išsiskyręs ar išsituokęs",
+            "widowed": "Našlys",
+            "its_complicated": "Sudėtinga"
+          }
+        },
+        "q6_2": {
+          "title": "Kiek rimtų santykių esate turėjęs.",
+          "subtitle": "tie, kurie emociškai buvo svarbūs, nepriklausomai nuo to, kiek ilgai truko ar kokie oficialūs buvo",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tipiški konfliktai jūsų santykiuose.",
+          "subtitle": "ginčai, kurie nuolat pasikartoja įvairiomis formomis su skirtingais partneriais – pinigai, atstumas, kontrolė, bendravimas",
+          "options": {
+            "distance": "Atstumas",
+            "jealousy": "Pavydas",
+            "control": "Kontrolė",
+            "emotional_unavailability": "Emocinis neprieinamumas",
+            "communication": "Bendravimas",
+            "trust": "Pasitikėjimas",
+            "dependency": "Priklausomybė"
+          }
+        },
+        "q6_4": {
+          "title": "Santykiuose jūs linkęs.",
+          "subtitle": "jūsų numatytasis veiksmas, kai viskas tampa sunku – artintis, atsitraukti, imtis vadovavimo, užsisklęsti, bandyti taisyti",
+          "options": {
+            "pursue": "Artintis",
+            "withdraw": "Atsitraukti",
+            "overgive": "Per daug duoti",
+            "test_loyalty": "Tikrinti lojalumą",
+            "avoid_vulnerability": "Vengti pažeidžiamumo"
+          }
+        },
+        "q6_5": {
+          "title": "Į kokius žmones jūs nuolat įsimylite.",
+          "subtitle": "tipas, kuris nuolat pasirodo jūsų meilės gyvenime – ne tik išvaizda, bet ir emociniai modeliai, temperamentas, kaip jie su jumis elgiasi"
+        },
+        "q6_6": {
+          "title": "Kas dažniausiai nutraukia jūsų santykius.",
+          "subtitle": "tikroji priežastis, kodėl viskas sugriūva, be oficialios istorijos, kurią pasakojate draugams ar šeimai"
+        },
+        "q6_7": {
+          "title": "Kokį emocinį poreikį labiausiai norite patenkinti.",
+          "subtitle": "poreikis, kurį sunkiausiai tiesiogiai išsakyti – būti matomam, būti pasirinktam, būti saugiam, būti laisvam, būti norimam"
+        },
+        "q6_8": {
+          "title": "Ko labiausiai bijote intymume.",
+          "subtitle": "ką artumas jums kelia pavojų – būti pažintam, būti įkalintam, būti paliktam, būti per daug, būti nepakankamai"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Jūsų dabartinė užimtumo būklė.",
+          "subtitle": "jūsų darbinio gyvenimo forma šiuo metu – dirbantis, savarankiškai dirbantis, tarp darbų, studijuojantis, besirūpinantis, kažkas kita",
+          "options": {
+            "employed_full_time": "Dirbantis, visu etatu",
+            "employed_part_time": "Dirbantis, ne visu etatu",
+            "self_employed": "Savarankiškai dirbantis arba įkūrėjas",
+            "freelance": "Laisvai samdomas arba pagal sutartį",
+            "studying": "Studijuojantis",
+            "between_roles": "Tarp darbų",
+            "caregiving": "Rūpinimasis namuose",
+            "retired": "Išėjęs į pensiją",
+            "not_working": "Nedirbantis"
+          }
+        },
+        "q7_2": {
+          "title": "Kiek esate patenkintas savo karjeros kryptimi.",
+          "subtitle": "ilgesnė jūsų darbo eigos trajektorija, o ne tai, kaip jaučiatės šią konkrečią savaitę",
+          "lowLabel": "1 · PASIMETĘS",
+          "highLabel": "10 · TIKSLIAI TINKAMA"
+        },
+        "q7_3": {
+          "title": "Darbo vietoje paprastai esate.",
+          "subtitle": "kaip profesionaliai veikiate – vaidmuo, kurį prisiimate, kai niekas jums jo neskiria",
+          "options": {
+            "perfectionistic": "Perfekcionistas",
+            "avoidant": "Vengiantis",
+            "competitive": "Konkurencingas",
+            "cooperative": "Bendradarbiaujantis",
+            "over_responsible": "Pernelyg atsakingas",
+            "detached": "Atitrūkęs"
+          }
+        },
+        "q7_4": {
+          "title": "Didžiausias stresas darbe.",
+          "subtitle": "spaudimo šaltinis, kuris seka jus namo – asmuo, darbo krūvis, baimė, aplinka, modelis",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Nesėkmė",
+            "visibility": "Matomumas",
+            "authority": "Autoritetas",
+            "uncertainty": "Neapibrėžtumas",
+            "conflict": "Konfliktas"
+          }
+        },
+        "q7_5": {
+          "title": "Ką sėkmė emociškai reiškia jums.",
+          "subtitle": "jausmas, kurį įsivaizduojate atsirandantį, kai pagaliau ją pasiekiate – palengvėjimas, pasididžiavimas, ramybė, laisvė, pakankamumas"
+        },
+        "q7_6": {
+          "title": "Koks pripažinimas jus labiausiai veikia.",
+          "subtitle": "pagyrimas, kuris iš tiesų pasiekia ir pakeičia jūsų savijautą, ir tas, kuris atšoka, kad ir kiek jo gautumėte"
+        },
+        "q7_7": {
+          "title": "Kokia nesėkmė vis dar veikia jus šiandien.",
+          "subtitle": "konkreti nesėkmė, kurios dar ne visiškai apdorojote – kas nutiko ir kaip ji vis dar formuoja jūsų pasirinkimus"
+        },
+        "q7_8": {
+          "title": "Jei pinigai išnyktų, kuo užsiimtumėte.",
+          "subtitle": "darbas ar veikla, kurią darytumėte, net jei niekas už tai nemokėtų – apibūdinkite, kaip tai atrodo"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Kaip dažniausiai tvarkotės su stresu.",
+          "subtitle": "ko griebiatės, kai viskas pasidaro sunku – maisto, ekranų, fizinio krūvio, izoliacijos, pokalbių, medžiagų, miego, darbo",
+          "options": {
+            "isolation": "Izoliacija",
+            "food": "Maistas",
+            "gaming": "Žaidimai",
+            "exercise": "Fizinis krūvis",
+            "overworking": "Persidirbimas",
+            "scrolling": "Naršymas",
+            "substance_use": "Medžiagų vartojimas",
+            "shopping": "Apsipirkimas",
+            "sleeping": "Miegojimas",
+            "socializing": "Buvimas su žmonėmis"
+          }
+        },
+        "q8_2": {
+          "title": "Kaip dažnai išeinate į viešumą.",
+          "subtitle": "kaip dažnai leidžiate laiką su kitais žmonėmis gyvai, ne internetu ar žinutėmis",
+          "options": {
+            "multiple_per_week": "Keliskart per savaitę",
+            "weekly": "Kartą per savaitę",
+            "monthly": "Kartą per mėnesį",
+            "rarely": "Retai",
+            "never": "Niekada"
+          }
+        },
+        "q8_3": {
+          "title": "Kaip dažnai jaučiatės vieniši net būdami grupėje.",
+          "subtitle": "vienatvė, kuri pasireiškia, kai esate apsupti žmonių, bet vis tiek jaučiatės nepastebėti ar toli",
+          "lowLabel": "1 · NIEKADA",
+          "highLabel": "10 · VISADA"
+        },
+        "q8_4": {
+          "title": "Kokios veiklos priverčia jus pamiršti save.",
+          "subtitle": "dalykai, kurie taip giliai įtraukia, kad laikas dingsta – į gera ar į bloga, sveika ar ne"
+        },
+        "q8_5": {
+          "title": "Apie ką labiausiai vengiama galvoti.",
+          "subtitle": "tema ar prisiminimas, kurio greitai vengiama, kai jis iškyla – apie save, savo praeitį, savo ateitį"
+        },
+        "q8_6": {
+          "title": "Kada jaučiatės emociškai nutirpę.",
+          "subtitle": "situacijos, kai garsas nukrenta iki nulio – darbas, santykiai, konfliktas, intymumas, buvimas vienam"
+        },
+        "q8_7": {
+          "title": "Kokio įpročio sunkiausia atsisakyti.",
+          "subtitle": "elgesys, kurį bandėte pakeisti ar mesti daugiau nei vieną kartą, bet nesėkmingai – apibūdinkite, kas tai yra ir kas jus vis grąžina"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Kiek esate savikritiškas.",
+          "subtitle": "vidinio balso tonas, kai suklystate ar nepasiekiate tikslo – griežtas, teisingas, atmetantis, niokojantis",
+          "lowLabel": "1 · ŠVELNUS",
+          "highLabel": "10 · NEGailestingas"
+        },
+        "q9_2": {
+          "title": "Kuris teiginys labiausiai atitinka jūsų asmeninę baimę.",
+          "subtitle": "sakinys apie save, kuris gyvena po viskuo kitu, tas, kurį prisipažintumėte tik sunkią dieną",
+          "options": {
+            "never_enough": "Niekada nesu pakankamas",
+            "fear_abandoned": "Bijau būti paliktas",
+            "fear_losing_control": "Bijau prarasti kontrolę",
+            "fear_failure": "Bijau nesėkmės",
+            "fear_ordinary": "Bijau būti eilinis",
+            "fear_rejection": "Bijau atstūmimo",
+            "fear_dependence": "Bijau priklausomybės"
+          }
+        },
+        "q9_3": {
+          "title": "Kaip dažnai jaučiatės atsijungęs nuo savęs.",
+          "subtitle": "jausmas, tarsi stebėtumėte savo gyvenimą iš nedidelio atstumo, lyg nebūtumėte visiškai jame",
+          "lowLabel": "1 · NIEKADA",
+          "highLabel": "10 · KASDIEN"
+        },
+        "q9_4": {
+          "title": "Kokia mintis dažniausiai kartojasi jūsų galvoje.",
+          "subtitle": "besisukantis sakinys ar nerimas, kuris reguliariai grįžta – parašykite jį tikrais žodžiais, o ne santrauka"
+        },
+        "q9_5": {
+          "title": "Už ką slapta save kritikuojate.",
+          "subtitle": "dalykai, už kuriuos save vertinate ir apie kuriuos niekas kitas nežino – apie jūsų kūną, protą, pasirinkimus, charakterį"
+        },
+        "q9_6": {
+          "title": "Kas priverstų jus jaustis pakankamu.",
+          "subtitle": "sąlyga, kurią tyliai sau nustatėte, kad pagaliau atsipalaiduotumėte – būkite sąžiningi, atsakymas dažnai būna mažesnis, nei tikitės"
+        },
+        "q9_7": {
+          "title": "Jei jūsų vidinis balsas turėtų asmenybę, kaip jį apibūdintumėte.",
+          "subtitle": "to balso amžius, lytis, tonas – ir kieno balsas tai iš tikrųjų galėtų būti, jei atsektumėte"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Kas jums svarbiau.",
+          "subtitle": "pasirinkite tai, kas šiuo metu svarbiausia – kiti dalykai vis tiek gali būti svarbūs, bet būkite sąžiningi dėl eiliškumo",
+          "options": {
+            "freedom": "Laisvė",
+            "love": "Meilė",
+            "recognition": "Pripažinimas",
+            "stability": "Stabilumas",
+            "power": "Galios",
+            "meaning": "Prasmė",
+            "peace": "Ramybė",
+            "influence": "Įtaka"
+          }
+        },
+        "q10_2": {
+          "title": "Kiek vilties turite dėl savo ateities.",
+          "subtitle": "jaučiamas jausmas, kai galvojate apie ateitį, o ne linksmas atsakymas, kurį duodate kitiems žmonėms, kai jie klausia",
+          "lowLabel": "1 · JOKIOS",
+          "highLabel": "10 · GILIAI"
+        },
+        "q10_3": {
+          "title": "Ko slapta labiausiai norite.",
+          "subtitle": "noras, kurio dar neleidote sau įvardyti garsiai – tas, kuris atrodo per didelis, per rizikingas ar per gėdingas",
+          "options": {
+            "to_be_understood": "Būti suprastam",
+            "to_be_admired": "Būti žavimam",
+            "to_feel_safe": "Jaustis saugiai",
+            "to_be_desired": "Būti geidžiamam",
+            "to_feel_important": "Jaustis svarbiam",
+            "to_feel_free": "Jaustis laisvam",
+            "to_belong": "Priklausyti"
+          }
+        },
+        "q10_4": {
+          "title": "Detaliai apibūdinkite savo idealų ateities gyvenimą.",
+          "subtitle": "konkretūs detales – kur esate, su kuo esate, kaip atrodo jūsų rytai, darbas, šviesa, ritmas"
+        },
+        "q10_5": {
+          "title": "Kokia baimė galėtų sunaikinti tą ateitį.",
+          "subtitle": "dalykas – vidinis ar išorinis – kuris jus sustabdė anksčiau ir galėtų sustabdyti vėl, jei leistumėte"
+        },
+        "q10_6": {
+          "title": "Kokia savo dalimi vis dar stengiatės tapti.",
+          "subtitle": "jūsų versija horizonte – savybės, laisvės, buvimo būdas, link kurio lėtai judate"
+        },
+        "q10_7": {
+          "title": "Jei niekas jūsų neteistų, kaip gyventumėte kitaip.",
+          "subtitle": "pasirinkimai, kuriuos darytumėte, jei stebėjimas sustotų – apie darbą, meilę, kūną, laiką, pinigus, balsą"
+        },
+        "q10_8": {
+          "title": "Ko, jūsų manymu, iš tiesų ieškote.",
+          "subtitle": "gilesnis dalykas po visais jūsų ankstesniais atsakymais – į ką iš tiesų nukreiptas kiekvienas pasirinkimas ir ilgesys"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "KILMĖ · VYSTYMOSI ĮSPAUDAS",
+        "headline": [
+          "Ko jus ",
+          "išmokė",
+          " ankstyvasis kambarys."
+        ],
+        "lede": "Pirmasis skyrius įvertina emocinį klimatą, saugumą ir vaidmenį, kurį atlikote. Čia užfiksuoti modeliai tampa pagrindu, ant kurio statoma visa vėlesnė patirtis.",
+        "title": "Kilmė",
+        "subtitle": "vystymosi įspaudas"
+      },
+      "attachment": {
+        "eyebrow": "PRISIRIŠIMAS · ŠEIMOS STRUKTŪRA",
+        "headline": [
+          "Pirmieji ",
+          "ryšiai",
+          " ir jų palikta forma."
+        ],
+        "lede": "Nustato jūsų prisirišimo stilių, santykį su autoritetu ir trianguliaciją, kurioje augote. Pirmojo ryšio forma tampa šablonu, pagal kurį vertinami visi vėlesni ryšiai.",
+        "title": "Prisirišimas",
+        "subtitle": "šeimos struktūra"
+      },
+      "authority": {
+        "eyebrow": "AUTORITETAS · SIMBOLINIS ĮSTATYMAS",
+        "headline": [
+          "Balsai, kuriuos ",
+          "paveldėjote",
+          "."
+        ],
+        "lede": "Atskleidžia moralinius kodeksus, kaltės struktūras ir paveldėtą tapatybę, vis dar veikiančią fone. Balsai, su kuriais augote, retai pasitraukia; jie tampa balsu, kuris jus teisia.",
+        "title": "Autoritetas",
+        "subtitle": "simbolinis įstatymas"
+      },
+      "belonging": {
+        "eyebrow": "PRISIKLAUSYMAS · SOCIALINĖ TAPATYBĖ",
+        "headline": [
+          "Kam leidžiama jus ",
+          "matyti",
+          "."
+        ],
+        "lede": "Matuoja socialinę priklausomybę, tapatybės maskavimą ir baimę būti atstumtam. Priklausymas retai būna nemokamas; šis skyrius klausia, kuo už jį mokate.",
+        "title": "Priklausymas",
+        "subtitle": "socialinė tapatybė"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · TROŠKIMAS IR SKAITMENINIS AŠ",
+        "headline": [
+          "Aš, kurį ",
+          "vaidinate",
+          "."
+        ],
+        "lede": "Analizuoja idealizuotą save, patvirtinimo ciklą ir simbolinį pasirodymą, kurį rengiate internete. Persona nėra melas; tai pusiau atskleistas noras.",
+        "title": "Persona",
+        "subtitle": "troškimas ir skaitmeninis aš"
+      },
+      "desire": {
+        "eyebrow": "TROŠKIMAS · INTYMUMAS IR PASIKARTOJIMAS",
+        "headline": [
+          "Modelis, kuris ",
+          "vis grįžta",
+          "."
+        ],
+        "lede": "Randa pasikartojančią santykių formą, apleistumo baimę, prieštaravimą troškimo viduje. Tai, kas kartojasi, retai pasirenkama; tai yra tai, kas prašosi būti pamatytas.",
+        "title": "Troškimas",
+        "subtitle": "intymumas ir pasikartojimas"
+      },
+      "achievement": {
+        "eyebrow": "PASIEKIMAI · DARBAS IR PRIPAŽINIMAS",
+        "headline": [
+          "Ką jūs ",
+          "bandote įrodyti",
+          "."
+        ],
+        "lede": "Aptinka pasiekimų nerimą, pripažinimo troškimą ir jūsų santykį su autoritetu darbe. Po kiekviena ambicija slypi vieno ar dviejų žmonių auditorija.",
+        "title": "Pasiekimai",
+        "subtitle": "darbas ir pripažinimas"
+      },
+      "escape": {
+        "eyebrow": "PABĖGIMAS · MALONUMAS IR RITUALAS",
+        "headline": [
+          "Kur einate, ",
+          "kad nebūtumėte čia",
+          "."
+        ],
+        "lede": "Nustato vengimo modelius, prievartas ir ritualus, reguliuojančius malonumą. Išėjimas, kurio siekiate, pasako tiek pat, kiek ir kambarys, kurį paliekate.",
+        "title": "Pabėgimas",
+        "subtitle": "malonumas ir ritualas"
+      },
+      "self-relation": {
+        "eyebrow": "SANTYKIS SU SAVIMI · VIDINIS DIALOGAS",
+        "headline": [
+          "Balsas, kurio ",
+          "negali nutildyti",
+          "."
+        ],
+        "lede": "Atvaizduoja superego ribą, gėdos struktūras ir internalizuotus balsus. Tai, kaip kalbate su savimi privačiai, yra pats nuoširdžiausias įrašas apie tai, kas jus užaugino.",
+        "title": "Santykis su savimi",
+        "subtitle": "vidinis dialogas"
+      },
+      "future-fantasy": {
+        "eyebrow": "ATEITIS · FANTASY, BAIMĖ IR TROŠKIMAS",
+        "headline": [
+          "Ko jūs ",
+          "iš tiesų ieškote",
+          "."
+        ],
+        "lede": "Emocinis kulminacija – ateitis, kurią įsivaizduojate, baimė, kuri ją persekioja, pagrindinis troškimas po ja. Paskutinis klausimas yra pirmasis, kuris grįžta.",
+        "title": "Ateities fantazija",
+        "subtitle": "fantazija, baimė ir troškimas"
+      }
+    }
+  },
+  "common": {
+    "or": "arba",
+    "loading": "įkeliama…",
+    "sending": "siunčiama…",
+    "save": "Išsaugoti",
+    "saved": "išsaugota",
+    "cancel": "Atšaukti",
+    "close": "Uždaryti",
+    "back": "Atgal",
+    "continue": "Tęsti",
+    "retry": "Bandyti dar kartą",
+    "more": "daugiau"
+  },
+  "nav": {
+    "room": "Kambarys",
+    "readings": "Skaitymai",
+    "catchup": "Catchup",
+    "consulting": "Konsultacija",
+    "caseFile": "Bylos aplankas",
+    "settings": "Nustatymai",
+    "signIn": "Prisijungti",
+    "signOut": "Atsijungti",
+    "getStarted": "Pradėti",
+    "language": "Kalba",
+    "method": "Metodas",
+    "theWork": "Darbas",
+    "about": "Apie",
+    "contact": "Susisiekti",
+    "start": "Pradėti"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Prisijungti ",
+      "titleItalic": "prie",
+      "titleAfter": " paskyros.",
+      "googleLabel": "Prisijungti su Google",
+      "or": "arba",
+      "emailLabel": "EL. PAŠTAS",
+      "passwordLabel": "SLAPTAŽODIS",
+      "forgotPassword": "Pamiršote slaptažodį",
+      "submit": "Prisijungti",
+      "footPrompt": "Naujas vartotojas? ",
+      "footLink": "Sukurti paskyrą"
+    },
+    "signUp": {
+      "titleBefore": "Sukurti ",
+      "titleItalic": "paskyrą",
+      "titleAfter": ".",
+      "googleLabel": "Tęsti su Google",
+      "or": "arba",
+      "emailLabel": "EL. PAŠTAS",
+      "passwordLabel": "SLAPTAŽODIS",
+      "confirmPasswordLabel": "PATVIRTINTI SLAPTAŽODĮ",
+      "submit": "Sukurti paskyrą",
+      "footPrompt": "Jau turite paskyrą? ",
+      "footLink": "Prisijungti",
+      "resentNote": "Nauja nuoroda išsiųsta.",
+      "resendConfirmation": "Išsiųsti patvirtinimą iš naujo",
+      "pendingFootPrompt": "Neteisingas adresas? ",
+      "pendingFootLink": "Pradėti iš naujo"
+    },
+    "forgot": {
+      "titleBefore": "Pamiršote ",
+      "titleItalic": "slaptažodį",
+      "titleAfter": ".",
+      "lede": "Įveskite el. pašto adresą, kuriuo registravotės. Išsiųsime nuorodą slaptažodžiui atkurti.",
+      "emailLabel": "EL. PAŠTAS",
+      "submit": "Siųsti atkūrimo nuorodą",
+      "footPrompt": "Prisiminėte? ",
+      "footLink": "Prisijungti",
+      "sentBackLink": "Grįžti į prisijungimą"
+    },
+    "reset": {
+      "titleBefore": "Nustatyti ",
+      "titleItalic": "naują slaptažodį",
+      "titleAfter": ".",
+      "newPasswordLabel": "NAUJAS SLAPTAŽODIS",
+      "confirmPasswordLabel": "PATVIRTINTI SLAPTAŽODĮ",
+      "submit": "Atnaujinti slaptažodį",
+      "expiredTitleBefore": "Ši nuoroda ",
+      "expiredTitleItalic": "nebegalioja",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Prašyti naujos nuorodos"
+    },
+    "errors": {
+      "invalid_credentials": "El. paštas arba slaptažodis nesutampa.",
+      "email_taken": "Šis el. paštas jau registruotas. Bandykite prisijungti.",
+      "weak_password": "Naudokite bent 8 simbolius.",
+      "passwords_dont_match": "Slaptažodžiai nesutampa.",
+      "email_invalid": "Tai neatrodo kaip galiojantis el. pašto adresas.",
+      "rate_limited": "Per daug bandymų. Bandykite dar kartą po akimirkos.",
+      "unconfirmed_email": "Pirmiausia patvirtinkite savo el. paštą. Patikrinkite gautuosius.",
+      "reset_link_expired": "Ši nuoroda pasibaigė. Prašykite naujos.",
+      "reset_link_invalid": "Ši nuoroda nebegalioja. Prašykite naujos.",
+      "oauth_failed": "Nepavyko prisijungti prie Google. Bandykite dar kartą.",
+      "callback_failed": "Nepavyko užbaigti prisijungimo.",
+      "generic": "Kažkas nutiko. Bandykite dar kartą.",
+      "no_session": "Prisijunkite, kad tęstumėte."
+    },
+    "success": {
+      "checkInboxEyebrow": "PATIKRINKITE GAUTUOSIUS",
+      "confirmationHeadlineBefore": "Išsiuntėme ",
+      "confirmationHeadlineItalic": "patvirtinimo nuorodą",
+      "confirmationHeadlineAfter": " į ",
+      "confirmationLede": "Spustelėkite ją, kad užbaigtumėte paskyros kūrimą.",
+      "resetSentEyebrow": "PATIKRINKITE GAUTUOSIUS",
+      "resetSentHeadlineBefore": "Jei šis el. paštas ",
+      "resetSentHeadlineItalic": "yra registruotas",
+      "resetSentHeadlineAfter": ", išsiuntėme atkūrimo nuorodą.",
+      "resetSentLede": "Nuoroda galioja vieną kartą ir baigia galioti per valandą. Jei nuorodos negavote, paskyros nėra.",
+      "passwordUpdated": "Slaptažodis atnaujintas. Jungiamės."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "PASKYRA",
+      "headlineBefore": "Įrenkite savo",
+      "headlineItalic": "tylų kambarį",
+      "lede": "Vardas, metai ir „taip“. Tada prasideda darbas.",
+      "saveFailed": "Nepavyko išsaugoti. Bandykite dar kartą po akimirkos.",
+      "nameLabel": "VARDAS",
+      "nameRequired": "Vardas yra privalomas.",
+      "prefilledHint": "užpildyta iš Google · redaguojama",
+      "yearLabel": "GIMIMO METAI",
+      "yearRequired": "Pasirinkite metus.",
+      "genderLabel": "LYTIS",
+      "genderRequired": "Pasirinkite vieną.",
+      "gender": {
+        "male": "Vyras",
+        "female": "Moteris",
+        "nonBinary": "Ne dvejetainė",
+        "preferNotToSay": "Nenoriu sakyti"
+      },
+      "languageLabel": "KALBA",
+      "termsBefore": "Aš sutinku su",
+      "termsLink": "Sąlygomis",
+      "termsAnd": "ir",
+      "privacyLink": "Privatumo politika",
+      "termsAfter": ".",
+      "submit": "Inicijuoti paskyrą"
+    },
+    "intro": {
+      "eyebrow": "PRADINIS VERTINIMAS · NĖRA NETEISINGŲ ATSAKYMŲ",
+      "headlineBefore": "Čia nėra teisingų atsakymų",
+      "headlineItalic": "čia",
+      "headlineAfter": null
+    },
+    "brief": {
+      "title": "APRAŠYMAS",
+      "hint": "perskaitykite vieną kartą, tada pradėkite",
+      "opener": "Neteisingi atsakymai – dvejojimai, rašybos klaidos, praleidimai – kalba taip pat aiškiai, kaip ir teisingi.",
+      "privacy": "Viskas, ką rašote, yra privati. Niekas nepalieka šio kambario.",
+      "length": "Kadangi darbas yra gilus, pradinis vertinimas yra ilgas. Padalijome jį į dešimt dalių. Visas procesas trunka apie dvi valandas.",
+      "resume": "Išsaugokite ir tęskite kitą dieną. Redaguokite bet kurią dalį, kai ją baigsite – profilis nuolat klausosi.",
+      "begin": "Pradėti vertinimą"
+    },
+    "saved": {
+      "eyebrow": "IŠSAUGOTI IR PRISTABDYTI",
+      "headlineItalic": "Išsaugota.",
+      "headlineAfter": "Grįžkite, kai būsite pasiruošę.",
+      "body": "Viskas, ką parašėte, yra jūsų bylos faile. Kambarys kitą kartą atsidarys toje pačioje vietoje.",
+      "keepGoing": "tęsti",
+      "leaveRoom": "Palikti tylų kambarį"
+    },
+    "step": {
+      "label": "ŽINGSNIS",
+      "of": "IŠ",
+      "min": "MIN",
+      "progressLabel": "Pradinio vertinimo eiga",
+      "finalEpigraph": "paskutinis klausimas visada yra tas pats pirmasis.",
+      "backTo": "Grįžti į {n} žingsnį",
+      "continueTo": "Tęsti iki {n} žingsnio",
+      "submit": "Išsaugoti ir pateikti",
+      "submitReading": "skaitoma…"
+    },
+    "questions": {
+      "closeTitle": "UŽDARI KLAUSIMAI",
+      "closeHint": "pasirinkite, kas tiesa",
+      "openTitle": "ATVIRI KLAUSIMAI",
+      "openHint": "rašykite, kas iškyla",
+      "countLabel": "{count, plural, one {klausimas} few {klausimai} many {klausimų} other {klausimų}}"
+    },
+    "saveExit": {
+      "or": "arba",
+      "saveAndReturn": "išsaugoti ir grįžti vėliau"
+    },
+    "saveIndicator": {
+      "saving": "saugoma…",
+      "saved": "išsaugota",
+      "saveFailed": "išsaugoti nepavyko"
+    }
+  },
+  "readings": {
+    "whatThisIs": "kas tai yra →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "pasąmonės kilpos",
+        "definition": "Pasikartojančios jausmų, veiksmų ir rezultatų sekos, vykstančios už sąmoningo pasirinkimo ribų. Kilpos įvardijimas yra pirmasis jos nutraukimas.",
+        "seedReading": "artėja prie artumo, tada sukuria nedidelę nesėkmę, kad atsitrauktų.",
+        "seedTakeaway": "atsitraukimas yra kilpa. ne artumas."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "lingvistinė pasąmonė",
+        "definition": "Kaip pasąmoninė medžiaga pasireiškia žodžių pasirinkimu, pasikartojimais, apsirikimais ir kalbos struktūra – Lacano teiginys, kad pasąmonė yra struktūruota kaip kalba.",
+        "seedReading": "kalba dubliuojasi žodžiu „turėtų“ – paveldėto reikalavimo vieta.",
+        "seedTakeaway": "kažkieno kito balsas vis dar kalba per šį žodį."
+      },
+      "father-imago": {
+        "subtitle": "tėvo-imago",
+        "definition": "Internalizuotas tėvo paveikslas, susiformavęs anksti ir iš dalies mitinis. Jis formuoja, kaip vėliau gyvenime susiduriama su autoritetu, ambicijomis ir sprendimais.",
+        "seedReading": "teisėjas iš viršaus prieš tai, kai yra teisiamas iš viršaus – pozicija yra identiška.",
+        "seedTakeaway": "sėdynė keičiasi. kėdė ne."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intymumo slenkstis",
+        "definition": "Taškas, kuriame artumas pradeda atrodyti kaip rizika, ir po to seka gynybinis judesys. Kiekvienam asmeniui skirtingas; stebėtinai stabilus santykiuose.",
+        "seedReading": "gerai laikosi, kol kitas tampa įskaitomas – tada atsitraukia.",
+        "seedTakeaway": "būti žinomam yra riba, o ne būti artimam."
+      },
+      "desire-structure": {
+        "subtitle": "troškimų struktūra",
+        "definition": "Ko vartotojas iš tikrųjų nori, atskirta nuo to, ko jam buvo pasakyta norėti. Dažnai atrasta neigimu – pastebint, ko jis atsisako.",
+        "seedReading": "įvardija daug norų, atsisako dviejų – atsisakymas yra signalas.",
+        "seedTakeaway": "tai, kas atstumiama, rodo aiškiau nei tai, kas vejasi."
+      },
+      "professional-block": {
+        "subtitle": "profesinis blokas",
+        "definition": "Kur darbas stringa: pradžia, vidurys, pabaiga ar matomumas. Kiekviena vieta turi savo pasąmoninį šaltinį.",
+        "seedReading": "finišo linija yra ten, kur atsiranda abejonės, niekada ne pradžia.",
+        "seedTakeaway": "blokas yra matomume, o ne pastangose."
+      },
+      "mother-imago": {
+        "subtitle": "motinos-imago",
+        "definition": "Internalizuotas motinos paveikslas – pirmasis prisitaikymas, pirmasis atsiskyrimas. Jis informuoja apie priklausomybės ir prieglobsčio tekstūrą.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "ankstyvas prisitaikymas palieka ilgą parašą."
+      },
+      "dream-logic": {
+        "subtitle": "sapnų logika",
+        "definition": "Kondensacija ir poslinkis, veikiantys sapnų medžiagoje. Skaitykite gramatiką, o ne simbolius.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "sapnų turinys turi savo gramatiką."
+      },
+      "relational-pattern": {
+        "subtitle": "santykio modelis",
+        "definition": "Pasikartojanti pozicija santykiuose – persekiotojas, atsitraukiantis, tėvas, vaikas, lygus. Stabilus tarp partnerių labiau nei partneriai stabilūs tarp vartotojo.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "ta pati forma pasirodo skirtinguose kambariuose."
+      },
+      "defenses": {
+        "subtitle": "gynybos mechanizmai",
+        "definition": "Charakteringi judesiai, naudojami siekiant išlaikyti sudėtingą medžiagą už sąmonės ribų – intelektualizacija, poslinkis, reakcijos formavimas, skilimas. Gynybos mechanizmai nėra nesėkmės; tai seni sprendimai.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "gynyba įvardija tai, kas kadaise buvo nepakeliama."
+      },
+      "shadow": {
+        "subtitle": "šešėlis",
+        "definition": "Kas buvo atsisakyta ir priskirta kitiems – savybės, kuriomis vartotojas yra labiausiai įsitikinęs, kad jos nėra. Dažnai tai yra kelias į gyvybingumą.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "tai, kas atsisakyta, vis dar veikia."
+      },
+      "transference": {
+        "subtitle": "perkėlimas",
+        "definition": "Kaip senos santykių figūros projektuojamos į dabartines – analitikas, partneris, viršininkas. Modelis atskleidžia imago.",
+        "seedReading": "per anksti pasakyti užtikrintai – forma formuojasi.",
+        "seedTakeaway": "senos figūros atvyksta į dabartinius kambarius."
+      }
+    },
+    "strip": {
+      "lastRefined": "paskutinį kartą patikslinta",
+      "readingDepth": "skaitymo gylis"
+    },
+    "section": {
+      "eyebrow": "SKAITYMAS {index} · {subtitle}",
+      "strengthen": "sustiprinti tikslumą",
+      "requestReport": "prašyti ataskaitos"
+    },
+    "card": {
+      "reading": "Skaitymas {index}"
+    },
+    "report": {
+      "eyebrow": "KLINIKINĖ ATASKAITA",
+      "heading": "Jūsų <it>analitikui.</it>",
+      "lede": "12–18 puslapių dosjė – šeši skaitymai išsamiai išplėtoti, plius dar šeši, kurių prietaisų skydelis nerodo: motinos-imago, sapnų logika, santykių modelis, gynybos mechanizmai, šešėlis, perkėlimas. Išversta į kalbą, kuria dirba klinicistas.",
+      "note": "ataskaita atspindės turimą gylį. ją galima iš naujo sugeneruoti, kai skaitymas gilėja.",
+      "generate": "Generuoti klinikinę ataskaitą",
+      "request": "Prašyti klinikinės ataskaitos",
+      "footPrefix": "viena ataskaita įtraukta kiekvieną mėnesį ",
+      "footLink": "prenumeratoriams"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "KLAUSIMAS {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Kas iš šios savaitės jums įstrigo?",
+        "framing": "frazė, vaizdas, kieno nors pasakytas sakinys."
+      },
+      "closeness": {
+        "prompt": "Kiek arti prisileidote ką nors?",
+        "options": {
+          "not_at_all": "visiškai ne",
+          "briefly": "trumpam",
+          "with_hesitation": "nedrąsiai",
+          "openly": "atvirai",
+          "too_far": "per daug"
+        }
+      },
+      "loop": {
+        "prompt": "Ar pagavote save įprastame cikle?",
+        "framing": "kur ir kaip jis baigėsi."
+      },
+      "loudest_voice": {
+        "prompt": "Kuris balsas šią savaitę buvo garsiausias?",
+        "options": {
+          "demand": "reikalavimas",
+          "doubt": "abejonė",
+          "desire": "troškimas",
+          "watcher": "stebėtojas",
+          "none": "nė vienas iš šių"
+        }
+      },
+      "dream": {
+        "prompt": "Ar buvo sapnas, vertas užrašyti?",
+        "framing": "jei taip, tai fragmentas, kuris išliko."
+      },
+      "acted_on_desire": {
+        "prompt": "Kiek toli veikėte pagal tai, ko iš tikrųjų norėjote?",
+        "lowLabel": "visiškai ne",
+        "highLabel": "visiškai"
+      },
+      "work_catch": {
+        "prompt": "Kur darbas jus pagavo?",
+        "options": {
+          "start": "pradžioje",
+          "middle": "viduryje",
+          "finish": "pabaigoje",
+          "visibility": "matomume",
+          "nowhere": "niekur"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Koks yra klausimas, į kurį nenorite atsakyti dabar?",
+        "framing": "tas, kuris vis praslysta."
+      }
+    },
+    "openHint": "ilgesni atsakymai gilina skaitymą",
+    "scaleLegend": "{low} iki {high}",
+    "noValue": "nepasirinkta reikšmė",
+    "valueOf": "{value} iš {max}",
+    "weekLabel": "SAVAITĖ {n}",
+    "coverEyebrow": "APŽVALGA · {weekLabel}",
+    "coverTitle": "Kas jums įstrigo<it>?</it>",
+    "coverLede": "Aštuoni trumpi klausimai. Sąžiningumas geriau nei ilgumas. Atsakymai patikslina skaitymą; niekas čia nėra vertinama.",
+    "begin": "Pradėti",
+    "back": "atgal",
+    "next": "kitas",
+    "submitting": "teikiama",
+    "closeTheWeek": "užbaigti savaitę",
+    "previousQuestion": "ankstesnis klausimas",
+    "processingLine": "<em>savaitė yra skaitoma.</em>",
+    "summaryEyebrow": "{weekLabel} · PERSKAITYTA",
+    "summaryTitle": "Savaitė, <it>jūsų pačių žodžiais.</it>",
+    "caseLabel": "byla · {week}",
+    "justRefined": "ką tik patikslinta",
+    "readingsShifted": "skaitymai pasislinko",
+    "readingsCount": "{n} iš 12",
+    "returnToRoom": "Grįžti į kambarį",
+    "readAgain": "perskaityti dar kartą bylos faile",
+    "somethingToHold": "KAŽKAS, KĄ GALIMA LAIKYTI",
+    "enterConsultingRoom": "įeiti į konsultacijų kambarį",
+    "openConsultingRoom": "atidaryti konsultacijų kambarį",
+    "requestReport": "paprašyti klinikinės ataskaitos",
+    "errorSubmit": "nepavyko pateikti apžvalgos",
+    "errorGeneric": "kažkas nutiko ne taip",
+    "errorFailed": "apžvalga yra faile. suvestinė bus pateikta vėliau.",
+    "errorGiveUp": "kambarys trumpam nutyla – jūsų apžvalga yra faile. atnaujinkite po minutės.",
+    "summaryFallback": "Apžvalga yra faile. Skaitymas buvo tyliai atnaujintas; ilgesnė suvestinė bus pateikta kitame etape.",
+    "readBackTitle": "Savaitė, <it>jau viduje.</it>",
+    "readBackEmpty": "apžvalga yra faile. suvestinė šią savaitę bus trumpa.",
+    "readBackFoot": "kita apžvalga prasideda {n} savaitės pradžioje."
+  },
+  "consulting": {
+    "sessionClose": "mūsų valanda baigėsi.",
+    "sayIt": "sakyti →",
+    "closeSession": "baigti seansą →",
+    "eyebrow": "KONSULTACIJŲ KAMBARYS",
+    "closing": "baigiama",
+    "closeSessionLabel": "baigti seansą",
+    "timerAria": "praėjo seanso laikas",
+    "chooseTopicAria": "pasirinkti temą",
+    "noTopic": "nėra temos",
+    "justOpened": "ką tik atidaryta",
+    "minutesIn": "{count} min. praėjo",
+    "speakToAnalyst": "kalbėtis su analitiku",
+    "send": "siųsti",
+    "sessionClosedFoot": "seansas baigtas. jis išsaugotas bylos dokumentuose.",
+    "previewHeld": "kuri jūsų dalis vis renkasi tai?",
+    "previewTopicDreamingFuture": "Ateities svajonės",
+    "previewTopicNightDream": "Nakties sapnas",
+    "previewTopicRelations": "Santykiai mano gyvenime",
+    "previewTopicProfessionalGrowth": "Profesinis augimas",
+    "previewTurnAnalyst1": "Įvardijate modelį, tada jį pasakojate kaip svetimą. Pastebėkite, kada prasideda <em>atsitraukimas</em>.",
+    "previewTurnUser1": "Aš vis nutraukiu santykius tą savaitę, kai jie tampa rimti.",
+    "previewTurnAnalyst2": "Rytas yra nuosprendis, o ne teismas. Jūsų <em>intymumo slenkstis</em> repetavo išėjimą savaitėmis anksčiau nei pokalbis.",
+    "sayItEllipsis": "sakyti…",
+    "offerHeadline": "Konsultacijų kambarys",
+    "offerLede": "Ilgalaikis pokalbis su analitiku, vykstantis tuo pačiu tonu kaip ir jūsų skaitymai. Seansai yra privatūs, saugomi bylos dokumentuose ir maitina skaitymus tarp susitikimų.",
+    "offerPanelsAria": "ką daro seansas",
+    "offerPanel1Title": "įvardinta, ne pasakojama",
+    "offerPanel1Body": "Analitikas įvardins, kas vyksta jūsų kalboje – apsirikimą, kvalifikatorių, pusiau pasakytą – ir laikys tai ten, kol galėsite tai pamatyti.",
+    "offerPanel2Title": "saugoma bylos dokumentuose",
+    "offerPanel2Body": "Kiekvienas susitikimas užrašomas. Kitą skaitymą perskaito. Modeliai išryškėja per savaites, ne per posūkius.",
+    "offerPanel3Title": "vienas balsas, jokių sąrašų",
+    "offerPanel3Body": "Ne pokalbių roboto rotacija. Vienas analitinis balsas, apmokytas pagal jūsų įrašus ir patobulintas kiekvienu Catchup.",
+    "offerFootLine": "Prenumeratoriai kas mėnesį gauna vieną klinikinę ataskaitą.",
+    "offerPillCta": "Įeiti į konsultacijų kambarį",
+    "offerReturnToRoom": "grįžti į kambarį",
+    "previewFigureLabel": "konsultacijų kambarys",
+    "previewFigureSubtitle": "susitikimas, peržiūra",
+    "previewRailAria": "bylos sritys, iš kurių analitikas skaito",
+    "previewReadingFrom": "SKAIČIAU IŠ",
+    "previewActive": "aktyvus",
+    "previewRoleYou": "JŪS",
+    "previewRoleAnalyst": "ANALITIKAS",
+    "previewBubble1": "Aš vis nutraukiu santykius tą savaitę, kai jie tampa rimti. Nežinau, kodėl tai darau.",
+    "previewAnalyst1": "Jūs įvardijate modelį, tada jį pasakojate kaip svetimą. <em>„Nežinau“</em> atlieka darbą – tai išlaiko veiksmą toli nuo ketinimo. Pastebėkite, kada prasideda <em>atsitraukimas</em>. Dažnai uždarymas įvyksta anksčiau nei išėjimas.",
+    "previewBubble2": "Anksčiau kaip? Paskutinį kartą atrodė, kad tiesiog atsibudau vieną rytą ir žinojau.",
+    "previewAnalyst2": "Rytas yra nuosprendis, o ne teismas. Jūsų <strong>intymumo slenksčio</strong> skaitymas iš 04 savaitės pastebėjo tą pačią formą – tylią išėjimo repeticiją, dvi ar tris savaites prieš pokalbį. Rytas yra tada, kai kūnas pagaliau sutinka su tuo, ką jau buvote nusprendę.",
+    "previewBubble3": "Štai kas mane gąsdina. Kad tai jau nuspręsta.",
+    "previewAnalyst3": "<em>Nuspręsta</em> yra žodis. Ne <em>pasirinkta</em>. Kažkas struktūroje teikia pirmenybę uždarymui, o ne išbandymui. Mes ten ir toliau eisime.",
+    "previewExampleMark": "PAVYZDYS · NE IŠ JŪSŲ ĮRAŠŲ"
+  },
+  "caseFile": {
+    "silentWeek": "— tylioji savaitė —",
+    "eyebrow": "BYLOS DOKUMENTAI",
+    "headlineLead": "Įrašas, saugomas",
+    "headlineItalic": "tyliai.",
+    "lede": "Kiekvienas „Catchup“, sesija ir ataskaita – saugomi chronologine tvarka. Tarpai yra įrašo dalis.",
+    "filterAria": "Filtras",
+    "filter": {
+      "all": "visi",
+      "catchups": "„Catchup“",
+      "sessions": "sesijos",
+      "reports": "ataskaitos"
+    },
+    "subscriptionTitle": "Prenumerata",
+    "emptyCatchups": "byla vis dar tuščia – pirmasis „Catchup“ ją atvers.",
+    "emptyCatchupsCta": "Eiti į „Catchup“",
+    "emptySessions": "byla vis dar tuščia – pirmoji konsultacijos sesija ją atvers.",
+    "emptySessionsCta": "Eiti į Konsultacijų kambarį",
+    "emptyReports": "byla vis dar tuščia – pirmoji sugeneruota ataskaita ją atvers.",
+    "open": "atidaryti",
+    "kindCatchup": "„Catchup“",
+    "kindSession": "sesija",
+    "kindReport": "klinikinė ataskaita",
+    "kindReading": "įvadinė analizė",
+    "kindConnection": "ryšio įvykis",
+    "entryEyebrow": "BYLOS DOKUMENTAI · ĮRAŠAS",
+    "entryBackToCaseFile": "grįžti į bylos dokumentus",
+    "entryReturnToRoom": "grįžti į kambarį",
+    "sessionStillOpen": "ši sesija vis dar atvira. analizė pasirodys jai pasibaigus.",
+    "entryDetailComing": "šio įrašo detali peržiūra netrukus pasirodys. kol kas bylos dokumentuose saugoma data, tipas ir pavadinimas – visa kita vis dar kambaryje.",
+    "detailSummaryEyebrow": "SANTRAUKA · JŪSŲ ATSAKYMAI",
+    "detailRecommendationEyebrow": "MŪSŲ „CATCHUP“",
+    "preparingRead": "ruošiama analizė…",
+    "readNotAssembled": "analizės nepavyko surinkti šiuo metu.",
+    "tryAgain": "bandyti dar kartą",
+    "intakeClose": "uždaryti",
+    "intakeEdit": "redaguoti",
+    "intakeSaving": "saugoma",
+    "intakeSave": "išsaugoti",
+    "intakeCancel": "atšaukti",
+    "intakeUnsupported": "šis klausimas redaguojamas pačiame įvade.",
+    "intakePickUpTo": "pasirinkite iki {count}.",
+    "intakeScaleSetTo": "Nustatyta į {value}"
+  },
+  "settings": {
+    "eyebrow": "NUSTATYMAI",
+    "heading": "Kambario <it>forma.</it>",
+    "lede": "Niekas čia nėra nuolatinis. Atsakymai gali būti redaguojami, nuostatos keičiamos, o bylos failas gali būti visiškai ištrintas.",
+    "blocks": {
+      "account": "Paskyra",
+      "readingDepth": "Skaitymo gylis",
+      "notifications": "Pranešimai",
+      "subscription": "Prenumerata",
+      "dangerZone": "Pavojaus zona"
+    },
+    "dangerZoneIntro": "vienintelis neatšaukiamas veiksmas kambaryje.",
+    "depthSub": {
+      "intake": {
+        "title": "Jūsų įrašas",
+        "caption": "{answered} / {total} atsakyta",
+        "ctaEmpty": "Užpildykite savo įrašą",
+        "ctaPartial": "Pridėkite daugiau detalių",
+        "ctaFull": "Peržiūrėkite savo įrašą"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count, plural, one {# per pastarąsias 8 sav.} few {# per pastarąsias 8 sav.} many {# per pastarąsias 8 sav.} other {# per pastarąsias 8 sav.}}",
+        "ctaEmpty": "Pridėti catchup",
+        "ctaDue": "Užpildykite šios savaitės catchup",
+        "ctaFull": "Peržiūrėkite ankstesnius catchup"
+      },
+      "sessions": {
+        "title": "Sesijos",
+        "caption": "{count, plural, one {# užbaigta} few {# užbaigtos} many {# užbaigta} other {# užbaigtos}}",
+        "ctaEmpty": "Pradėti konsultaciją",
+        "ctaPartial": "Tęsti konsultaciją",
+        "ctaFull": "Peržiūrėkite ankstesnes sesijas"
+      },
+      "connections": {
+        "title": "Ryšiai",
+        "caption": "{count, plural, one {# aktyvus} few {# aktyvūs} many {# aktyvių} other {# aktyvūs}}",
+        "ctaEmpty": "Pridėti ryšį",
+        "ctaSingle": "Pridėti dar vieną ryšį",
+        "ctaFull": "Peržiūrėkite savo ryšius"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "savaitės catchup priminimas",
+        "sub": "tylus pranešimas naujos savaitės pradžioje"
+      },
+      "consulting_session_reminder": {
+        "label": "konsultacijos sesijos priminimas",
+        "sub": "priminimas prieš artėjančią konsultaciją"
+      },
+      "connection_requests": {
+        "label": "ryšys priimtas",
+        "sub": "pranešimas, kai kas nors priima jūsų kvietimą"
+      }
+    },
+    "toggleOn": "įjungta",
+    "toggleOff": "išjungta",
+    "quietHours": {
+      "label": "tylios valandos",
+      "sub": "jokių el. laiškų tarp šių valandų, jūsų vietos laiku",
+      "from": "nuo",
+      "to": "iki"
+    },
+    "saveFailed": "išsaugoti nepavyko",
+    "dangerZone": {
+      "trigger": "Ištrinti paskyrą",
+      "modalAria": "Patvirtinti paskyros ištrynimą",
+      "eyebrow": "PAVOJAUS ZONA",
+      "heading": "Ištrinti <it>bylos failą.</it>",
+      "body": "Tai pašalina kiekvieną skaitymą, catchup, sesiją ir ataskaitą iš įrašo. Aktyvūs ryšiai bus nutraukti; abi šalys bus informuotos. To negalima atšaukti.",
+      "instruction": "įveskite <phrase></phrase>, kad įjungtumėte veiksmą.",
+      "inputAria": "Įveskite patvirtinimo frazę",
+      "cancel": "atšaukti",
+      "erasing": "trinama…",
+      "eraseConfirm": "ištrinti bylos failą",
+      "deleteFailed": "ištrinti nepavyko"
+    },
+    "subscription": {
+      "statusLabel": "BŪSENA",
+      "badge": "NARIO PRIEIGA",
+      "tagline": "Konsultacijų kambarys, atidarytas. <em>Skaitymas, kuris tęsia skaitymą.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultacijų kambarys",
+          "desc": "ilgalaikės sesijos su analitiku."
+        },
+        "report": {
+          "title": "Mėnesinė klinikinė ataskaita",
+          "desc": "vienas terapeutui paruoštas žemėlapis kiekvieną kalendorinį mėnesį."
+        },
+        "connections": {
+          "title": "{count, plural, one {# daugiau ryšių} few {# daugiau ryšių} many {# daugiau ryšių} other {# daugiau ryšių}}",
+          "desc": "pridėkite žmones, kurių buvimas formuoja skaitymą."
+        },
+        "depth": {
+          "title": "Visas skaitymo gylis",
+          "desc": "kiekvienas skyrius atviras, be detalių apribojimų."
+        }
+      },
+      "perMonth": "per mėnesį",
+      "subscribe": "prenumeruoti",
+      "reassurance": "<em>jokių įsipareigojimų.</em> atšaukti bet kada nustatymuose.",
+      "activeToday": "aktyvus — atnaujinama šiandien",
+      "activeRenews": "aktyvus — atnaujinama po {days, plural, one {1 dienos} few {# dienų} many {# dienų} other {# dienų}}",
+      "cancel": "atšaukti prenumeratą",
+      "cancelled": "atšaukta — prieiga iki {date}",
+      "resubscribe": "prenumeruoti iš naujo"
+    },
+    "resetPassword": {
+      "sent": "nuoroda slaptažodžiui atkurti išsiųsta į {email}. patikrinkite savo pašto dėžutę",
+      "sending": "siunčiama",
+      "action": "atkurti slaptažodį",
+      "error": "nepavyko išsiųsti. bandykite dar kartą"
+    }
+  },
+  "connections": {
+    "explainer": "Iki {limit, plural, one {# asmens, kurio buvimas formuoja skaitymą} few {# asmenų, kurių buvimas formuoja skaitymą} many {# asmenų, kurių buvimas formuoja skaitymą} other {# asmenų, kurių buvimas formuoja skaitymą}}. Jie nemato jūsų skaitymų; jūs nematote jų. Tai, ką jie sako apie santykius, maitina modelį, kuris generuoja jūsų skaitymus, o jūsų maitina jų.",
+    "invite": {
+      "emailSubject": "{inviterName} norėtų, kad būtumėte skaityme."
+    },
+    "form": {
+      "emailLabel": "EL. PAŠTAS",
+      "roleLabel": "VAIDMUO",
+      "rolePlaceholder": "pasirinkite vieną",
+      "noteLabel": "SAKINYS, KURĮ JIE PERSKAITYS PIRMIAUSIA",
+      "noteHint": "neprivaloma. užtenka vienos eilutės.",
+      "addMoreSub": "pridėti daugiau su prenumerata",
+      "missingNameLine": "jūsų vardo nėra faile. pridėkite jį nustatymuose, tada išsiųskite užklausą iš naujo.",
+      "addYourName": "pridėti savo vardą",
+      "noteLengthError": "pastabos apribotos viena eilute – apie {max} simbolių."
+    },
+    "list": {
+      "empty": "kol kas nėra ryšių. kvietimo galimybė yra žemiau.",
+      "active": "AKTYVŪS",
+      "pending": "LAUKIANTYS",
+      "since": "nuo",
+      "invited": "pakviestas",
+      "received": "gauta",
+      "resend": "išsiųsti iš naujo",
+      "cancel": "atšaukti",
+      "expiresIn": "baigiasi po {days, plural, one {# dienos} few {# dienų} many {# dienų} other {# dienų}}"
+    },
+    "lookup": {
+      "invalidEmail": "įveskite galiojantį el. pašto adresą.",
+      "self": "negali prisijungti prie savęs.",
+      "notMemberLine": "šis el. paštas dar nėra tarp narių. pakvieskite juos susikurti paskyrą, kad galėtumėte prisijungti.",
+      "copyHint": "pasidalinti registracijos nuoroda",
+      "copied": "nuoroda nukopijuota",
+      "requestSent": "jau išsiuntėte užklausą šiam nariui.",
+      "requestReceivedLine": "šis narys jums išsiuntė užklausą – patikrinkite savo kvietimus.",
+      "inboxLabel": "atidaryti užklausą",
+      "alreadyConnected": "jau esate prisijungę prie šio nario.",
+      "rateLimited": "per daug užklausų per trumpą laiką. palaukite akimirką, tada bandykite dar kartą.",
+      "sent": "ryšio užklausa išsiųsta.",
+      "sending": "siunčiama…",
+      "send": "siųsti užklausą",
+      "limitReached": "{limit, plural, one {# ryšys yra limitas. atjunkite jį, kad pridėtumėte kitą.} few {# ryšiai yra limitas. atjunkite vieną, kad pridėtumėte kitą.} many {# ryšių yra limitas. atjunkite vieną, kad pridėtumėte kitą.} other {# ryšių yra limitas. atjunkite vieną, kad pridėtumėte kitą.}}",
+      "limitReachedFree": "{limit, plural, one {# ryšys yra limitas nemokamame plane.} few {# ryšiai yra limitas nemokamame plane.} many {# ryšių yra limitas nemokamame plane.} other {# ryšių yra limitas nemokamame plane.}}",
+      "generic": "nepavyko išsiųsti užklausos."
+    },
+    "incoming": {
+      "eyebrow": "LAUKIA JŪSŲ",
+      "empty": "niekas jūsų nelaukia.",
+      "accept": "priimti",
+      "decline": "atmesti",
+      "limitReached": "{limit, plural, one {# ryšys yra limitas. atjunkite jį, kad priimtumėte šį.} few {# ryšiai yra limitas. atjunkite vieną, kad priimtumėte šį.} many {# ryšių yra limitas. atjunkite vieną, kad priimtumėte šį.} other {# ryšių yra limitas. atjunkite vieną, kad priimtumėte šį.}}",
+      "limitReachedFree": "{limit, plural, one {# ryšys yra limitas nemokamame plane.} few {# ryšiai yra limitas nemokamame plane.} many {# ryšių yra limitas nemokamame plane.} other {# ryšių yra limitas nemokamame plane.}}",
+      "upsell": "prenumeratoriai prideda daugiau",
+      "inviteExpired": "šis kvietimas pasibaigė.",
+      "inviteEnded": "šis kvietimas nebėra laukiantis.",
+      "generic": "nepavyko atlikti veiksmo su šia užklausa."
+    },
+    "roles": {
+      "partner": "partneris",
+      "closest_friend": "artimiausias draugas",
+      "parent": "tėvas",
+      "sibling": "brolis/sesuo",
+      "co_parent": "bendratėvis"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "ANALITIKO PASTABA",
+    "noteAria": "Analitiko pastaba",
+    "lede": "tai viršija kambario galimybes.",
+    "body": {
+      "intake": "Kažkas jūsų įraše, padarytame įvedimo metu, rodo naštą, kuriai reikia tikros priežiūros – viršijančios šio kambario galimybes. Prašome apsvarstyti galimybę šiandien kreiptis į gydytoją, terapeutą ar vietinę krizių liniją. Skaitymas bus čia, kai sugrįšite.",
+      "catchup": "Kažkas šios savaitės Catchup rodo naštą, kuriai reikia tikros priežiūros – viršijančios šio kambario galimybes. Prašome apsvarstyti galimybę šiandien kreiptis į gydytoją, terapeutą ar vietinę krizių liniją. Skaitymas išliks.",
+      "session": "Tai, ką ką tik parašėte, rodo naštą, kuriai reikia tikros priežiūros – viršijančios šio kambario galimybes. Prašome apsvarstyti galimybę šiandien kreiptis į gydytoją, terapeutą ar vietinę krizių liniją. Galime grįžti į kambarį, kai būsite saugūs."
+    },
+    "crisisResources": "KRIZIŲ PAGALBOS ŠALTINIAI",
+    "resources": {
+      "us": "Jungtinės Valstijos",
+      "ukIe": "Jungtinė Karalystė ir Airija",
+      "europe": "Europa (dauguma šalių)",
+      "everywhere": "Visur",
+      "localEmergency": "vietinės pagalbos tarnybos"
+    },
+    "hintResources": "jei negalite rasti linijos, artimiausias ligoninės priėmimo skyrius yra tinkama vieta.",
+    "hintLink": "krizių pagalbos šaltiniai nurodyti kiekvieno Kambario puslapio apačioje.",
+    "footerLine": "TwentyThird nepakeičia klinikinės priežiūros. Kilus krizei, kreipkitės į vietinę pagalbos liniją.",
+    "footerRoomLabel": "kambarys"
+  }
+}

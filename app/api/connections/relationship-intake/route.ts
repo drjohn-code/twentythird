@@ -1,6 +1,7 @@
 import "server-only";
 import { NextResponse } from "next/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { getActiveLocale } from "@/lib/i18n/locale";
 import { firstNameFrom } from "@/lib/connections";
 import { recomputeDepthFor } from "@/lib/depth";
 import {
@@ -128,6 +129,10 @@ export async function POST(req: Request) {
   // but a recompute keeps `reading_depth_computed_at` fresh.
   await recomputeDepthFor(conn.inviter_user_id, admin);
 
+  // Resolve the active locale in request context (cookies/headers
+  // available here) and thread it into the detached summary job.
+  const locale = await getActiveLocale();
+
   // Fire the connection summary in the background. Best-effort —
   // the inviter's catchup / session / report prompts pick it up
   // whenever it lands.
@@ -137,6 +142,7 @@ export async function POST(req: Request) {
     role: conn.role,
     connectionFirstName: conn.connection_first_name,
     answers: normalised,
+    locale,
   }).catch(() => undefined);
 
   return NextResponse.json({ ok: true });
@@ -153,6 +159,7 @@ type SummaryJob = {
   role: string;
   connectionFirstName: string | null;
   answers: RelationshipAnswers;
+  locale: string;
 };
 
 async function generateConnectionSummary(job: SummaryJob): Promise<void> {
@@ -198,6 +205,7 @@ async function generateConnectionSummary(job: SummaryJob): Promise<void> {
       inviterFirstName: inviterFirst,
       connectionFirstName: job.connectionFirstName,
       answers,
+      locale: job.locale,
     });
     const { text } = await callAI("connection_summary", {
       system,

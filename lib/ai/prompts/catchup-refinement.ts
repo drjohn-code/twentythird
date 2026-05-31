@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 import type { CatchupAnswerInput } from "./catchup-summary";
 
@@ -39,6 +39,7 @@ export function buildCatchupRefinementPrompt(input: {
   answers: CatchupAnswerInput[];
   previous: RefinementReadingInput[];
   connectionContexts: Array<{ role: string; summary: string }>;
+  locale: string;
 }): { system: string; messages: ChatMessage[] } {
   const slugList = BLOCKS.map(
     (b) => `- ${b.slug} (${b.subtitle}, ${b.surface})`,
@@ -66,7 +67,7 @@ export function buildCatchupRefinementPrompt(input: {
           .join("\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

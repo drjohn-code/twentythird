@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 
 // Initial readings — generated once, post-intake, before the user
@@ -40,6 +40,7 @@ Constraints:
 
 export function buildInitialReadingsPrompt(input: {
   intake: IntakeAnswerInput[];
+  locale: string;
 }): { system: string; messages: ChatMessage[] } {
   const slugList = BLOCKS.map(
     (b) => `  - ${b.slug} (${b.subtitle}, ${b.surface}) — ${b.definition}`,
@@ -53,7 +54,7 @@ export function buildInitialReadingsPrompt(input: {
     .join("\n\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

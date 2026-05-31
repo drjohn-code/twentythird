@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Glass from "@/components/ui/Glass";
 import Eyebrow from "@/components/ui/Eyebrow";
 
@@ -23,54 +26,49 @@ export default function SafetyResponse({
   context = "session",
   showResources = false,
 }: SafetyResponseProps) {
-  const body =
-    context === "intake"
-      ? "Something in what you wrote at intake points to weight that asks for real care — beyond what this room can hold. Please consider reaching out to a doctor, therapist, or local crisis line today. The reading will be here when you return."
-      : context === "catchup"
-        ? "Something in this week's catchup points to weight that asks for real care — beyond what this room can hold. Please consider reaching out to a doctor, therapist, or local crisis line today. The reading will hold."
-        : "What you just wrote points to weight that asks for real care — beyond what this room can hold. Please consider reaching out to a doctor, therapist, or local crisis line today. We can return to the room when you are safe.";
+  const t = useTranslations("safety");
 
   return (
     <Glass
       as="aside"
       className="safety-response"
       role="note"
-      aria-label="A note from the analyst"
+      aria-label={t("noteAria")}
     >
-      <Eyebrow>A NOTE FROM THE ANALYST</Eyebrow>
+      <Eyebrow>{t("noteEyebrow")}</Eyebrow>
       <p className="safety-response__lede">
-        <em>this is beyond what the room can hold.</em>
+        <em>{t("lede")}</em>
       </p>
-      <p className="safety-response__body">{body}</p>
+      <p className="safety-response__body">{t(`body.${context}`)}</p>
 
       {showResources ? (
         <div className="safety-response__resources">
-          <Eyebrow as="div">CRISIS RESOURCES</Eyebrow>
+          <Eyebrow as="div">{t("crisisResources")}</Eyebrow>
           <ul className="safety-response__list">
             <li>
-              <span className="safety-response__loc">United States</span>
+              <span className="safety-response__loc">{t("resources.us")}</span>
               <span className="safety-response__num">988</span>
             </li>
             <li>
-              <span className="safety-response__loc">United Kingdom &amp; Ireland</span>
+              <span className="safety-response__loc">{t("resources.ukIe")}</span>
               <span className="safety-response__num">116 123 (Samaritans)</span>
             </li>
             <li>
-              <span className="safety-response__loc">Europe (most countries)</span>
+              <span className="safety-response__loc">{t("resources.europe")}</span>
               <span className="safety-response__num">112</span>
             </li>
             <li>
-              <span className="safety-response__loc">Everywhere</span>
-              <span className="safety-response__num">local emergency services</span>
+              <span className="safety-response__loc">{t("resources.everywhere")}</span>
+              <span className="safety-response__num">{t("resources.localEmergency")}</span>
             </li>
           </ul>
           <p className="safety-response__hint">
-            <em>if you cannot find a line, your nearest hospital emergency department is the right room.</em>
+            <em>{t("hintResources")}</em>
           </p>
         </div>
       ) : (
         <p className="safety-response__hint">
-          <em>crisis resources are listed at the bottom of every Room page.</em>
+          <em>{t("hintLink")}</em>
         </p>
       )}
     </Glass>

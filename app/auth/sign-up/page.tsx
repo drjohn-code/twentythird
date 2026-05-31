@@ -1,16 +1,13 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import GoogleAuthButton from "@/components/ui/GoogleAuthButton";
 import InlineError from "@/components/ui/InlineError";
 import AuthSubmit from "@/components/ui/AuthSubmit";
 import { signUp, resendConfirmation } from "../actions";
 import { createClient } from "@/lib/supabase/server";
 import { resolveDestinationForUser } from "@/lib/auth/post-auth";
-import {
-  AUTH_SUCCESS,
-  PASSWORD_HINT,
-  MIN_PASSWORD_LENGTH,
-} from "@/lib/auth/messages";
+import { PASSWORD_HINT, MIN_PASSWORD_LENGTH } from "@/lib/auth/messages";
 
 type SearchParams = Promise<{
   error?: string;
@@ -26,6 +23,7 @@ export default async function SignUpPage({
   searchParams: SearchParams;
 }) {
   const { error, email, pending, resent, next } = await searchParams;
+  const t = await getTranslations("auth");
 
   const supabase = await createClient();
   const {
@@ -40,28 +38,29 @@ export default async function SignUpPage({
     return (
       <main className="auth-shell">
         <div className="auth-card glass">
-          <div className="eyebrow">{AUTH_SUCCESS.CHECK_INBOX_EYEBROW}</div>
+          <div className="eyebrow">{t("success.checkInboxEyebrow")}</div>
           <h1 className="serif">
-            {AUTH_SUCCESS.CONFIRMATION_HEADLINE_BEFORE}
-            <em>{AUTH_SUCCESS.CONFIRMATION_HEADLINE_ITALIC}</em>
-            {AUTH_SUCCESS.CONFIRMATION_HEADLINE_AFTER}
+            {t("success.confirmationHeadlineBefore")}
+            <em>{t("success.confirmationHeadlineItalic")}</em>
+            {t("success.confirmationHeadlineAfter")}
             <span className="auth-email-echo">{email}</span>.
           </h1>
-          <p className="auth-lede">{AUTH_SUCCESS.CONFIRMATION_LEDE}</p>
+          <p className="auth-lede">{t("success.confirmationLede")}</p>
 
           {resent === "1" ? (
-            <p className="auth-note">A new link has been sent.</p>
+            <p className="auth-note">{t("signUp.resentNote")}</p>
           ) : null}
 
           <form action={resendConfirmation} className="auth-form">
             <input type="hidden" name="email" value={email} />
             <button type="submit" className="auth-rowlink auth-rowlink-button">
-              Resend confirmation<span aria-hidden="true">→</span>
+              {t("signUp.resendConfirmation")}<span aria-hidden="true">→</span>
             </button>
           </form>
 
           <p className="auth-foot">
-            Wrong address? <Link href="/auth/sign-up">Start over</Link>
+            {t("signUp.pendingFootPrompt")}
+            <Link href="/auth/sign-up">{t("signUp.pendingFootLink")}</Link>
           </p>
         </div>
       </main>
@@ -72,21 +71,27 @@ export default async function SignUpPage({
     <main className="auth-shell">
       <div className="auth-card glass">
         <h1 className="serif">
-          Create an <em>account</em>.
+          {t("signUp.titleBefore")}
+          <em>{t("signUp.titleItalic")}</em>
+          {t("signUp.titleAfter")}
         </h1>
 
-        {error ? <InlineError>{error}</InlineError> : null}
+        {error ? (
+          <InlineError>
+            {t.has(`errors.${error}`) ? t(`errors.${error}`) : t("errors.generic")}
+          </InlineError>
+        ) : null}
 
-        <GoogleAuthButton label="Continue with Google" next="/onboarding" />
+        <GoogleAuthButton label={t("signUp.googleLabel")} next="/onboarding" />
 
         <div className="auth-divider" role="separator" aria-label="or">
-          <span>or</span>
+          <span>{t("signUp.or")}</span>
         </div>
 
         <form action={signUp} className="auth-form" noValidate>
           <div className="auth-field">
             <label className="eyebrow" htmlFor="signup-email">
-              EMAIL
+              {t("signUp.emailLabel")}
             </label>
             <input
               id="signup-email"
@@ -101,7 +106,7 @@ export default async function SignUpPage({
 
           <div className="auth-field">
             <label className="eyebrow" htmlFor="signup-password">
-              PASSWORD
+              {t("signUp.passwordLabel")}
             </label>
             <input
               id="signup-password"
@@ -120,7 +125,7 @@ export default async function SignUpPage({
 
           <div className="auth-field">
             <label className="eyebrow" htmlFor="signup-confirm">
-              CONFIRM PASSWORD
+              {t("signUp.confirmPasswordLabel")}
             </label>
             <input
               id="signup-confirm"
@@ -133,11 +138,12 @@ export default async function SignUpPage({
             />
           </div>
 
-          <AuthSubmit>Create account</AuthSubmit>
+          <AuthSubmit>{t("signUp.submit")}</AuthSubmit>
         </form>
 
         <p className="auth-foot">
-          Already have one? <Link href="/auth/sign-in">Sign in</Link>
+          {t("signUp.footPrompt")}
+          <Link href="/auth/sign-in">{t("signUp.footLink")}</Link>
         </p>
       </div>
     </main>

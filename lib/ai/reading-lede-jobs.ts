@@ -9,6 +9,7 @@ import "server-only";
 import { adminClient } from "@/lib/supabase/admin";
 import { callAI } from "@/lib/ai/router";
 import { buildReadingLedePrompt } from "@/lib/ai/prompts/reading-lede";
+import { localeForUser } from "@/lib/emails/locale";
 import { getBlock, type BlockSlug } from "@/lib/blocks";
 
 const inFlight = new Set<string>();
@@ -84,6 +85,7 @@ async function runJob(job: LedeJob): Promise<void> {
     }));
 
   try {
+    const locale = await localeForUser(admin, job.userId);
     const { system, messages } = buildReadingLedePrompt({
       slug: job.slug,
       subtitle: block.subtitle,
@@ -92,6 +94,7 @@ async function runJob(job: LedeJob): Promise<void> {
       takeaway: row.takeaway,
       figureType: FIGURE_TYPE_BY_SLUG[job.slug],
       excerpts,
+      locale,
     });
     const { text } = await callAI("reading_lede", {
       system,

@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 type SaveIndicatorProps = {
   state: "idle" | "saving" | "saved" | "error";
   savedAt: Date | null;
@@ -13,20 +15,22 @@ function fmtTime(d: Date): string {
 
 /** Tiny mono indicator: "saving…" ↔ "saved · 14:22". */
 export default function SaveIndicator({ state, savedAt }: SaveIndicatorProps) {
+  const t = useTranslations("onboarding");
   let label: React.ReactNode = null;
   let mode = "is-idle";
   if (state === "saving") {
-    label = <em className="serif-i">saving…</em>;
+    label = <em className="serif-i">{t("saveIndicator.saving")}</em>;
     mode = "is-saving";
   } else if (state === "saved" && savedAt) {
     label = (
       <span className="mono">
-        saved <span className="save-dot">·</span> {fmtTime(savedAt)}
+        {t("saveIndicator.saved")} <span className="save-dot">·</span>{" "}
+        {fmtTime(savedAt)}
       </span>
     );
     mode = "is-saved";
   } else if (state === "error") {
-    label = <em className="serif-i">save failed</em>;
+    label = <em className="serif-i">{t("saveIndicator.saveFailed")}</em>;
     mode = "is-error";
   }
   return (

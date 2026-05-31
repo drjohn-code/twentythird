@@ -1,5 +1,6 @@
 import "server-only";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { adminClient } from "@/lib/supabase/admin";
 import RelationshipIntake from "@/components/room/RelationshipIntake";
 import { firstNameFrom } from "@/lib/connections";
@@ -19,6 +20,7 @@ export default async function InviteIntakePage({
 }) {
   const { token } = await params;
   const admin = adminClient();
+  const t = await getTranslations("invite");
 
   if (!admin) {
     return (
@@ -29,11 +31,13 @@ export default async function InviteIntakePage({
           </Link>
         </header>
         <section className="invite-page invite-page-quiet">
-          <p className="eyebrow">RELATIONSHIP INTAKE</p>
+          <p className="eyebrow">{t("intake.eyebrow")}</p>
           <h1 className="invite-page-h">
-            The intake is being <span className="it">prepared.</span>
+            {t.rich("intake.notReady.headline", {
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h1>
-          <p className="invite-page-lede">Please try again shortly.</p>
+          <p className="invite-page-lede">{t("intake.notReady.body")}</p>
         </section>
       </main>
     );
@@ -62,13 +66,13 @@ export default async function InviteIntakePage({
           </Link>
         </header>
         <section className="invite-page invite-page-quiet">
-          <p className="eyebrow">RELATIONSHIP INTAKE</p>
+          <p className="eyebrow">{t("intake.eyebrow")}</p>
           <h1 className="invite-page-h">
-            This link is <span className="it">not recognised.</span>
+            {t.rich("intake.notFound.headline", {
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h1>
-          <p className="invite-page-lede">
-            Open the most recent invite email for the active link.
-          </p>
+          <p className="invite-page-lede">{t("intake.notFound.body")}</p>
         </section>
       </main>
     );
@@ -83,16 +87,15 @@ export default async function InviteIntakePage({
           </Link>
         </header>
         <section className="invite-page invite-page-quiet">
-          <p className="eyebrow">RELATIONSHIP INTAKE</p>
+          <p className="eyebrow">{t("intake.eyebrow")}</p>
           <h1 className="invite-page-h">
-            The intake is <span className="it">not open.</span>
+            {t.rich("intake.notOpen.headline", {
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h1>
-          <p className="invite-page-lede">
-            This invite has not been accepted, or has been declined or
-            ended. Return to the invite link to choose again.
-          </p>
+          <p className="invite-page-lede">{t("intake.notOpen.body")}</p>
           <Link href={`/invite/${token}`} className="auth-rowlink invite-cta-link">
-            <span>back to the invite</span>
+            <span>{t("intake.notOpen.backLink")}</span>
             <span aria-hidden="true">→</span>
           </Link>
         </section>
@@ -119,10 +122,7 @@ export default async function InviteIntakePage({
         </Link>
       </header>
       <RelationshipIntake token={token} inviterFirstName={inviterFirstName} />
-      <footer className="invite-shell-foot">
-        TwentyThird is not a substitute for clinical care. In crisis,
-        contact your local emergency line.
-      </footer>
+      <footer className="invite-shell-foot">{t("safetyFooter")}</footer>
     </main>
   );
 }

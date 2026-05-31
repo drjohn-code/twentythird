@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { depthLines, type DepthBand } from "@/lib/copy";
+import { useTranslations } from "next-intl";
+import { type DepthBand } from "@/lib/copy";
 import { depthBand } from "@/lib/depth";
 import RowLink from "@/components/ui/RowLink";
 
@@ -11,6 +12,7 @@ type RoomHeroProps = {
 };
 
 export default function RoomHero({ firstName, depth }: RoomHeroProps) {
+  const t = useTranslations("room");
   const ref = useRef<HTMLElement | null>(null);
 
   // Trigger the entrance on mount. Above-the-fold, so we don't gate
@@ -32,7 +34,7 @@ export default function RoomHero({ firstName, depth }: RoomHeroProps) {
     <section ref={ref} className="room-hero reveal" aria-label="Room landing">
       <div className="room-hero-text">
         <h1 className="room-hero-greet">
-          <span>here again</span>
+          <span>{t("hero.greeting")}</span>
           {name ? (
             <>
               <span aria-hidden="true">,&nbsp;</span>
@@ -42,19 +44,27 @@ export default function RoomHero({ firstName, depth }: RoomHeroProps) {
             <span aria-hidden="true">.</span>
           )}
         </h1>
-        <p className="room-hero-line">{depthLines[band]}</p>
+        <p className="room-hero-line">{t(`depth.band.${band}`)}</p>
       </div>
       <div className="room-hero-figure">
-        <DepthDial depth={depth} band={band} />
+        <DepthDial depth={depth} band={band} bandLine={t(`depth.band.${band}`)} />
         <div className="room-hero-caption">
-          <RowLink href="/settings#depth">Strengthen the accuracy</RowLink>
+          <RowLink href="/settings#depth">{t("hero.strengthen")}</RowLink>
         </div>
       </div>
     </section>
   );
 }
 
-function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
+function DepthDial({
+  depth,
+  band,
+  bandLine,
+}: {
+  depth: number;
+  band: DepthBand;
+  bandLine: string;
+}) {
   const size = 255;
   const trackStroke = 3;
   const arcStroke = 7.5;
@@ -79,7 +89,7 @@ function DepthDial({ depth, band }: { depth: number; band: DepthBand }) {
       aria-valuemin={0}
       aria-valuemax={1}
       aria-valuenow={depth}
-      aria-valuetext={depthLines[band]}
+      aria-valuetext={bandLine}
     >
       <svg
         viewBox={`0 0 ${size} ${size}`}

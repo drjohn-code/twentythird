@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   RELATIONSHIP_INTAKE_QUESTIONS,
   isComplete,
@@ -27,6 +28,7 @@ type Stage = "cover" | "running" | "closing";
 
 export default function RelationshipIntake({ token, inviterFirstName }: Props) {
   const router = useRouter();
+  const t = useTranslations("invite");
   const [stage, setStage] = useState<Stage>("cover");
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<RelationshipAnswers>({});
@@ -50,7 +52,7 @@ export default function RelationshipIntake({ token, inviterFirstName }: Props) {
     if (!current) return;
     const v = answers[current.key];
     if (v === undefined || v === null || (typeof v === "string" && v.trim() === "")) {
-      setError("a moment with this one before moving on.");
+      setError(t("relIntake.errors.unanswered"));
       return;
     }
     setError(null);
@@ -76,7 +78,7 @@ export default function RelationshipIntake({ token, inviterFirstName }: Props) {
     startTransition(async () => {
       try {
         if (!isComplete(answers)) {
-          setError("a question is still open. one moment.");
+          setError(t("relIntake.errors.questionOpen"));
           setStage("running");
           return;
         }
@@ -89,13 +91,13 @@ export default function RelationshipIntake({ token, inviterFirstName }: Props) {
           const data = (await res.json().catch(() => null)) as
             | { error?: string }
             | null;
-          setError(humanError(data?.error));
+          setError(humanError(data?.error, t));
           setStage("running");
           return;
         }
         // Stay on the closing screen — show the thank-you state.
       } catch {
-        setError("could not save");
+        setError(t("relIntake.errors.couldNotSave"));
         setStage("running");
       }
     });
@@ -159,21 +161,21 @@ function CoverScreen({
   inviterFirstName: string;
   onBegin: () => void;
 }) {
+  const t = useTranslations("invite");
   return (
     <div className="relintake-cover">
-      <p className="eyebrow">RELATIONSHIP INTAKE</p>
+      <p className="eyebrow">{t("relIntake.eyebrow")}</p>
       <h1 className="relintake-h">
-        What you say about{" "}
-        <span className="it">{inviterFirstName.toLowerCase()}</span> stays
-        between you and the analyst.
+        {t.rich("relIntake.cover.headline", {
+          name: inviterFirstName.toLowerCase(),
+          it: (chunks) => <span className="it">{chunks}</span>,
+        })}
       </h1>
       <p className="relintake-lede">
-        Twelve short questions. About five minutes. The answers feed{" "}
-        {inviterFirstName.toLowerCase()}&apos;s reading; they will not see
-        what you wrote, and you will not see what it produces.
+        {t("relIntake.cover.lede", { name: inviterFirstName.toLowerCase() })}
       </p>
       <button type="button" className="relintake-cta" onClick={onBegin}>
-        <span>begin</span>
+        <span>{t("relIntake.begin")}</span>
         <span className="serif-i" aria-hidden="true">
           →
         </span>
@@ -201,9 +203,12 @@ function QuestionScreen({
   isFirst: boolean;
   isLast: boolean;
 }) {
+  const t = useTranslations("invite");
   return (
     <div className="relintake-q">
-      <h2 className="relintake-q-prompt">{question.prompt}</h2>
+      <h2 className="relintake-q-prompt">
+        {t(`relIntake.questions.${question.key}.prompt`)}
+      </h2>
 
       {question.type === "closed" ? (
         <ul className="relintake-choices">
@@ -219,7 +224,7 @@ function QuestionScreen({
                   onClick={() => onChange(o.value)}
                   aria-pressed={checked}
                 >
-                  {o.label}
+                  {t(`relIntake.questions.${question.key}.options.${o.value}`)}
                 </button>
               </li>
             );
@@ -249,7 +254,7 @@ function QuestionScreen({
                   type="button"
                   className={"relintake-scale-tick" + (on ? " is-on" : "")}
                   onClick={() => onChange(tickValue)}
-                  aria-label={`scale ${tickValue}`}
+                  aria-label={t("relIntake.scaleAria", { value: tickValue })}
                 />
               );
             })}
@@ -258,8 +263,8 @@ function QuestionScreen({
             </span>
           </div>
           <div className="relintake-scale-ends">
-            <span>{question.labels.min}</span>
-            <span>{question.labels.max}</span>
+            <span>{t(`relIntake.questions.${question.key}.lowLabel`)}</span>
+            <span>{t(`relIntake.questions.${question.key}.highLabel`)}</span>
           </div>
         </div>
       ) : null}
@@ -273,10 +278,10 @@ function QuestionScreen({
           onClick={onBack}
           disabled={isFirst ? false : undefined}
         >
-          {isFirst ? "back to cover" : "back"}
+          {isFirst ? t("relIntake.backToCover") : t("relIntake.back")}
         </button>
         <button type="button" className="relintake-next" onClick={onNext}>
-          <span>{isLast ? "finish" : "next"}</span>
+          <span>{isLast ? t("relIntake.finish") : t("relIntake.next")}</span>
           <span aria-hidden="true">→</span>
         </button>
       </div>
@@ -325,32 +330,33 @@ function ClosingScreen({
   onReturn: () => void;
   error: string | null;
 }) {
+  const t = useTranslations("invite");
   return (
     <div className="relintake-closing">
       {isPending ? (
-        <p className="relintake-h-italic">
-          a moment — the answers are being recorded.
-        </p>
+        <p className="relintake-h-italic">{t("relIntake.closing.recording")}</p>
       ) : error ? (
         <>
           <p className="relintake-h-italic">{error}</p>
           <button type="button" className="relintake-cta" onClick={onReturn}>
-            <span>try again</span>
+            <span>{t("relIntake.closing.tryAgain")}</span>
             <span aria-hidden="true">→</span>
           </button>
         </>
       ) : (
         <>
           <h2 className="relintake-h">
-            That is enough <span className="it">for now.</span>
+            {t.rich("relIntake.closing.headline", {
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h2>
           <p className="relintake-lede">
-            What you said about {inviterFirstName.toLowerCase()} will inform
-            their reading from their next session forward. They will not see
-            it; you will not see what it produces.
+            {t("relIntake.closing.lede", {
+              name: inviterFirstName.toLowerCase(),
+            })}
           </p>
           <p className="relintake-lede serif-i">
-            you can close this window.
+            {t("relIntake.closing.closeWindow")}
           </p>
         </>
       )}
@@ -362,20 +368,23 @@ function ClosingScreen({
 // helpers
 // ────────────────────────────────────────────────────────────────────
 
-function humanError(code: string | undefined | null): string {
+function humanError(
+  code: string | undefined | null,
+  t: (key: string) => string,
+): string {
   switch (code) {
     case "incomplete_answers":
-      return "a question is still open. one moment.";
+      return t("relIntake.errors.questionOpen");
     case "invalid_answers":
-      return "something did not parse — please check the answers.";
+      return t("relIntake.errors.invalidAnswers");
     case "connection_pending":
     case "connection_declined":
     case "connection_expired":
     case "connection_ended":
-      return "this invite is no longer accepting answers.";
+      return t("relIntake.errors.notAccepting");
     case "invite_not_found":
-      return "this invite link is not recognised.";
+      return t("relIntake.errors.notFound");
     default:
-      return "could not save the answers.";
+      return t("relIntake.errors.couldNotSaveAnswers");
   }
 }

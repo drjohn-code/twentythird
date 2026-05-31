@@ -1,0 +1,2888 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "common": {
+    "or": "vai",
+    "loading": "ielādē…",
+    "sending": "sūta…",
+    "save": "Saglabāt",
+    "saved": "saglabāts",
+    "cancel": "Atcelt",
+    "close": "Aizvērt",
+    "back": "Atpakaļ",
+    "continue": "Turpināt",
+    "retry": "Mēģināt vēlreiz",
+    "more": "vairāk"
+  },
+  "nav": {
+    "room": "Telpa",
+    "readings": "Lasījumi",
+    "catchup": "Catchup",
+    "consulting": "Konsultācija",
+    "caseFile": "Lietas Materiāli",
+    "settings": "Iestatījumi",
+    "signIn": "Ieiet",
+    "signOut": "Iziet",
+    "getStarted": "Sākt",
+    "language": "Valoda",
+    "method": "Metode",
+    "theWork": "Darbs",
+    "about": "Par",
+    "contact": "Kontakti",
+    "start": "Sākt"
+  },
+  "marketing": {
+    "footer": {
+      "tagline": "Psihodinamiskā mākslīgā intelekta sistēma iekšējai dzīvei. Klusa telpa nopietnam domāšanas darbam.",
+      "product": "Produkts",
+      "discovery": "Atklāšana",
+      "sampleReport": "Parauga ziņojums",
+      "integrationPlan": "Integrācijas plāns",
+      "company": "Uzņēmums",
+      "about": "Par mums",
+      "contact": "Kontakti",
+      "manifesto": "Manifests",
+      "resources": "Resursi",
+      "science": "Zinātne",
+      "methodology": "Metodoloģija",
+      "methodPaper": "Metodes raksts",
+      "caseStudy": "Gadījuma izpēte",
+      "dreamExample": "Sapņa piemērs",
+      "legal": "Juridiskā informācija",
+      "privacy": "Privātums",
+      "terms": "Noteikumi",
+      "cookies": "Sīkdatnes",
+      "rights": "visas tiesības aizsargātas"
+    },
+    "about": {
+      "metaTitle": "Par — TwentyThird",
+      "metaDescription": "Izcelsme, metode un lūzuma punkts divdesmit trešajā dienā. Izveidots CognitiveLab ietvaros WelloWork AB.",
+      "hero": {
+        "eyebrow": "PAR",
+        "headingLead": "Izcelsme, metode un",
+        "headingItalic": "lūzuma punkts divdesmit trešajā dienā",
+        "lede": "TwentyThird ir psihodinamiskā mākslīgā intelekta sistēma pašizziņai. Tā kartē atkārtojošās cilpas un struktūras zem simptomu virsmas — valodu, pieķeršanos, atkārtošanos — un atgriež darba uzdevumu, nevis testu.",
+        "figure": {
+          "label": "day-23",
+          "subtitle": "lūzuma metafora",
+          "heading": "23 dienu loks",
+          "range": "zinātkāre → apziņa",
+          "markerInflection": "lūzums",
+          "summaryLabel": "diena, kad jautājums\ngriežas uz iekšu"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIJA",
+        "headingLead": "Freida korespondents. Flīsa skaitlis.",
+        "headingItalic": "Mūsu metafora",
+        "tag": "Ciltsraksts",
+        "row": {
+          "headingPre": "A",
+          "headingItalic": "23 dienu ritms",
+          "headingPost": "— piedāvāts vēstulē, saglabāts kā figūra.",
+          "para1": "23 dienu cikls bija Vilhelma Flīsa hipotēze, ko viņš aizstāvēja sarakstē ar Freidu deviņpadsmitā gadsimta beigās. Mūsdienu zinātne neatbalsta fiksētu bioritmiku.",
+          "para2": "Mēs saglabājam skaitli tā dēļ, ko tas nosauc — slieksni, kurā zinātkāre nobriešana apziņā. Day‑23 ir figūra, nevis bioloģija."
+        },
+        "figure": {
+          "label": "ciltsraksts",
+          "subtitle": "četri enkuri",
+          "row1Outcome": "piedāvājums",
+          "row2Duration": "Es un Tas",
+          "row2Outcome": "strukturālais modelis",
+          "row3Duration": "Romas diskurss",
+          "row3Outcome": "lingvistiskais pagrieziens",
+          "row4Outcome": "sintēze",
+          "summary1Key": "intervāls",
+          "summary2Key": "pavediens",
+          "summary2Value": "struktūra",
+          "summary3Key": "metode",
+          "summary3Value": "psihodinamiskā"
+        }
+      },
+      "origin": {
+        "eyebrow": "IZCELSME",
+        "headingLead": "Izveidots CognitiveLab ietvaros.",
+        "headingItalic": "Atbildēja uz jautājumu, ko mums uzdeva atkal un atkal",
+        "tag": "Komanda",
+        "row": {
+          "headingLead": "Ārsti, sākotnēji veidojot",
+          "headingItalic": "kognitīvo treniņu",
+          "para1": "TwentyThird sākās CognitiveLab ietvaros WelloWork AB, kur komanda izstrādāja kognitīvā treniņa sistēmas. Draugi un kolēģi sāka nest personīgus jautājumus — trauksmi, atkārtojošus modeļus, cilpas, ko viņi nespēja nosaukt.",
+          "para2": "Starp klīnisko praksi kā ārstiem, pilot datiem, ko uzkrājām, un garu lasāmvielu sarakstu psihoanalīzē un Lakāna teorijā, mums bija ko piedāvāt. TwentyThird ir tas, kas no tā radās."
+        },
+        "figure": {
+          "label": "komanda",
+          "subtitle": "profils",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "sagatavots 05 · 26",
+          "row1Key": "Klīniskā prakse",
+          "row2Key": "Pētījumu izvade",
+          "row3Key": "Subjekti pilot programmā",
+          "row4Key": "Ārsti komandā",
+          "footerLabel": "Profils",
+          "footerValue": "klīnicista–pētnieka hibrīds"
+        }
+      },
+      "method": {
+        "eyebrow": "METODE",
+        "headingLead": "Ko modelis",
+        "headingItalic": "faktiski dara",
+        "tag": "Spējas",
+        "row": {
+          "headingLead": "Zem simptomu virsmas —",
+          "headingItalic": "struktūra",
+          "para1": "TwentyThird veic pamatcēloņa analīzi. Tas kartē <em>zemapziņas cilpu</em> cauri gadiem, lasa <em>lingvistisko neapzināto</em> vārdu izvēlē un runas paslīdējumos, atklāj <em>pieķeršanos</em> intimitātes slieksnim un raksta darba plānu <em>ēnas darbam</em>.",
+          "para2": "Izvade ir terapeita gatava. Nosauc struktūru, nevis virsmu."
+        },
+        "figure": {
+          "label": "simptoms → struktūra",
+          "subtitle": "trīs pārrakstījumi",
+          "row1Prefix": "01 · virsma",
+          "row1Old": "Es atliku svarīgu darbu.",
+          "row1Next": "Izvairīšanās no tā, lai tiktu redzēts kā tas, kurš zina.",
+          "row2Prefix": "02 · virsma",
+          "row2Old": "Es turpinu satikt vienu un to pašu cilvēku.",
+          "row2Next": "Tēva-imago atkārtošana intimitātes slieksnim.",
+          "row3Prefix": "03 · virsma",
+          "row3Old": "Es nevaru neko pabeigt.",
+          "row3Next": "Atteikšanās nodot potenciāla pozīciju.",
+          "metaLeftLabel": "uzrādītā",
+          "metaLeftValue": "sūdzība",
+          "metaRightLabel": "strukturālais",
+          "metaRightValue": "lasījums"
+        }
+      },
+      "final": {
+        "eyebrow": "TURPINĀT",
+        "headingLead": "Lasiet metodi",
+        "headingItalic": "vai sāciet",
+        "ctaPrimary": "Lasīt metodi",
+        "ctaGhostPrefix": "vai",
+        "ctaGhostText": "rakstiet mums"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKTI",
+        "heroHeadlineLead": "Rakstiet mums.",
+        "heroHeadlineItalic": "Mēs lasām visu",
+        "heroLede": "Lielākā daļa ziņojumu tiek atbildēti septiņdesmit divās stundās. Klīniskie un partnerības jautājumi ir prioritāri.",
+        "formCardLabel": "forma",
+        "formCardSubtitle": "tikai būtiski jautājumi",
+        "addressLabel": "ADRESE",
+        "addressValue": "Rosendal, Uppsala, Zviedrija",
+        "emailLabel": "E‑PASTS",
+        "phoneLabel": "TĀLRUNIS",
+        "finalEyebrow": "SĀKT",
+        "finalHeadlineLead": "Vai vienkārši",
+        "finalHeadlineItalic": "sāciet",
+        "finalCta": "Sāciet savu atklāšanu",
+        "finalGhostOr": "vai",
+        "finalGhostText": "lasiet izcelsmi",
+        "disclaimer": "Steidzamos garīgās veselības jautājumos, lūdzu, sazinieties ar vietējiem neatliekamās palīdzības dienestiem vai licencētu klīnicistu. TwentyThird nav krīzes dienests."
+      },
+      "form": {
+        "successEyebrow": "SAŅEMTS",
+        "successHeadlineLead": "Jūsu ziņojums ir",
+        "successHeadlineItalic": "pie mums",
+        "successBody": "Mēs atbildēsim divu darba dienu laikā.",
+        "nameLabel": "Vārds",
+        "emailLabel": "E‑pasts",
+        "messageLabel": "Ziņojums",
+        "submitSend": "Sūtīt",
+        "submitSending": "Sūta",
+        "errorMessage": "kaut kas nogāja greizi · mēģiniet vēlreiz",
+        "submittingStatus": "Sūta jūsu ziņojumu."
+      }
+    },
+    "landing": {
+      "hero": {
+        "eyebrow": "PSIHODINAMISKĀ INTELIĢENCE",
+        "titleLine1": "Progresīva",
+        "titleLine2Pre": "psihodinamiskā",
+        "titleLine2It": "MI",
+        "titleLine3Pre": "pašizziņai",
+        "titleLine3It": "sevis atklāšanai",
+        "ctaPrimary": "Sāciet savu izziņu",
+        "ctaGhostOr": "vai",
+        "ctaGhostText": "lasiet zinātni",
+        "scroll": "ritiniet"
+      },
+      "philosophy": {
+        "eyebrow": "PAMATFILOZOFIJA",
+        "titlePre": "5 minūšu risinājumi",
+        "titleIt": "nevienu nemaina",
+        "sub1": "Mēs veicam cēloņu analīzi. Apvienojot Zigmunda Freida pamatatzinumus ar Žaka Lakāna atklājumiem lingvistikā, vēlmē un identitātē.",
+        "sub2": "Lielākā daļa rīku strādā virspusē. Mēs strādājam tur, kur tas tika rakstīts — valodas arhitektūrā, runas atrautumos, modeļos, kurus vēl neesat nosaucis.",
+        "metaLineageLabel": "Līnija",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metode",
+        "metaMethodVal": "Strukturāla",
+        "metaFocusLabel": "Fokuss",
+        "metaFocusVal": "Neapzinātais"
+      },
+      "privacy": {
+        "eyebrow": "KONFIDENCIALITĀTE",
+        "titlePre": "Datu privātums ir",
+        "titleIt": "prioritāte",
+        "titlePost": ".",
+        "lede": "Konfidencialitāte šeit nav funkcija; tā ir dziļuma priekšnoteikums. Cilvēki runā brīvi tikai tur, kur jūtas droši — tāpēc telpa ir veidota, lai aizsargātu to, ko jūs sakāt.",
+        "rowTag": "Aizsardzība",
+        "rowTitlePre": "Telpa, kas veidota,",
+        "rowTitleIt": "lai turētu",
+        "rowTitlePost": "to, ko jūs sakāt.",
+        "rowBody": "Darbs prasa jūsu visneaizsargātāko materiālu. Telpa ir veidota, lai to pieņemtu konfidenciāli un turētu slēgtu ikvienam, kam tas nebija paredzēts.",
+        "figLabel": "Datu apstrāde",
+        "figSubtitle": "stāvokļa pozīcija",
+        "listProcessingKey": "apstrāde",
+        "listProcessingVal": "Katrs ieraksts tiek apstrādāts trīskārt akli.",
+        "listEncryptionKey": "šifrēšana",
+        "listEncryptionVal": "Visi dati ir šifrēti.",
+        "listProtectionKey": "aizsardzība",
+        "listProtectionVal": "Glabāti ar augstākā līmeņa pieejamo aizsardzību.",
+        "footKey": "Mērķis",
+        "footVal": "klusa, droša vieta, kur runāt dziļi"
+      },
+      "process": {
+        "eyebrow": "KĀ TAS DARBOJAS",
+        "titlePre": "Četri soļi,",
+        "titleIt": "viens paplašinošs aplis",
+        "lede": "Komunikācija padziļinās četros gājienos. Katrs paplašina to, ko sistēma var nolasīt — no vienas uzņemšanas līdz pastāvīgai sarunai.",
+        "step1Sub": "dziļā kodola profilēšana",
+        "step1TitlePre": "An",
+        "step1TitleIt": "10 soļu",
+        "step1TitlePost": "uzņemšana.",
+        "step1Body": "Izveidojiet savu kontu un aizpildiet 10 soļu uzņemšanu. Šī ir dziļā kodola profilēšanas pāreja; pirmais lasījums tiek veidots pilnībā no tā, ko jūs šeit ieliekat.",
+        "step2Sub": "starpniecisks, nekad savstarpējs",
+        "step2TitlePre": "Cilvēki, kas",
+        "step2TitleIt": "jūs veido",
+        "step2Body": "Pievienojiet cilvēkus, kas jūs veido, katru pēc lomas — partneris, tuvākais draugs, vecāks, brālis vai māsa, līdzaprūpētājs. To, ko viņi dalās, jūs nekad neredzat; to, ko jūs dalāties, viņi nekad neredz. Tikai sistēma lasa abus.",
+        "step3Sub": "iknedēļas lasījums",
+        "step3TitlePre": "Svētdienas",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Svētdienas vakaros pastāstiet mums, kas notika jūsu nedēļas laikā un kā jūs to izjutāt. Katrs Catchup precizē lasījumu — attēls asinājas, nedēļām uzkrājoties.",
+        "step4Sub": "pilnībā privāts",
+        "step4TitlePre": "The",
+        "step4TitleIt": "Consulting Room",
+        "step4Body": "Runājiet pilnībā privātā konsultācijā ar analītiķi — balsi, kas jūs pazīst labāk nekā jebkurš, apmācīta pāri 23 robežu AI modeļu slāņiem."
+      },
+      "brain": {
+        "eyebrow": "DARBS",
+        "titleLine1": "Dekonstruējot",
+        "titleLine2": "tavu zemapziņu",
+        "state1Tag": "Modeļu kartēšana",
+        "state1TitlePre": "Zemapziņas",
+        "state1TitleIt": "cilpas",
+        "state1TitlePost": "un atkārtošanās.",
+        "state1Body": "Mēs izsekojam atkārtojošos ciklus tavās izvēlēs, attiecību trauksmes un emocionālajos trigerus. Identificējot šīs cilpas, mēs tev parādām precīzi, kur tavas apzinātās nodomu pārņem neapzinātā programmēšana.",
+        "state2Tag": "Profilēšana",
+        "state2TitlePre": "Dziļās kodola",
+        "state2TitleIt": "psihodinamiskā",
+        "state2TitlePost": "profilēšana.",
+        "state2Body": "Atstāj aiz muguras virspusējus personības testus. Šī ir strukturāla tavu psiholoģisko dinamiku skenēšana — kartējot, kā pagātnes pieredze veido tavu pašreizējo identitāti, ego un aizsardzības mehānismus.",
+        "state3Tag": "Valoda",
+        "state3TitlePre": "Lingvistiskās",
+        "state3TitleIt": "neapzinātā",
+        "state3TitlePost": "izpēte.",
+        "state3Body": "Balstīta Lakāna teorijā, mūsu AI analizē tavu vārdu asociācijas, pauzes un runas modeļus. Mēs palīdzam tev lasīt starp rindiņām tavās pašas domās, lai piekļūtu slēptajām trauksmes un vēlmēm, kuras vēl neesi spējis izteikt."
+      },
+      "transform": {
+        "eyebrow": "PĀRVEIDOT",
+        "titleLine1": "Pārrauj ciklu,",
+        "titleLine2": "Tad pārraksti to.",
+        "lede": "Trīs kustības darbā. Trīs vietas, kur ieskats kļūst par pārmaiņām.",
+        "row1Tag": "Attiecību",
+        "row1TitlePre": "Dziedini savas",
+        "row1TitleIt": "attiecību",
+        "row1TitlePost": "dinamikas.",
+        "row1Body": "Tas pats atraktors ved tevi pie tā paša cilvēka veida, tās pašas ķildas, tās pašas atkāpšanās. Mēs atklājam rakstu cauri gadiem, nosaucam to un vērojam, kā tas zaudē savu gravitāciju.",
+        "row1Link": "Lasīt gadījuma izpēti",
+        "row1FigLabel": "Subjekts 1149-A",
+        "row1FigSubtitle": "ilgtermiņa raksts",
+        "row1Outcome": "atkāpās",
+        "row1SummaryRecurrenceKey": "atkārtošanās",
+        "row1SummaryIntervalKey": "intervāls",
+        "row1SummaryAttractorKey": "atraktors",
+        "row1SummaryAttractorVal": "intimitātes slieksnis",
+        "row2Tag": "Sapņu darbs",
+        "row2TitlePre": "Atšifrē",
+        "row2TitleIt": "sapņu loģiku",
+        "row2TitlePost": ", saskaņo mērķus.",
+        "row2Body": "Tavi sapņi ir nozīmes mēģinājumi. Mēs sekojam to gramatikai — pārvietojumiem, kondensācijām, atrāvieniem — atpakaļ līdz nomodā pieņemtajam lēmumam, ko tie mēģināja pieņemt tavā vietā.",
+        "row2Link": "Skatīt anotētu piemēru",
+        "row2FigLabel": "Sesija 06",
+        "row2FigSubtitle": "sapņa ieraksts, anotēts",
+        "row2Dream1Pre": "Esmu atpakaļ vecāku mājā",
+        "row2Ann1": "primārā aina",
+        "row2Dream1Mid": ", bet istabas turpina atvērties citās istabās",
+        "row2Ann2": "ego robeža",
+        "row2Dream2Pre": "Vīrietis ar mana tēva balsi",
+        "row2Ann3": "tēva-imago",
+        "row2Dream2Mid": "pasniedz man atslēgu. Atslēga pārvēršas ūdenī",
+        "row2Ann4": "pārvietojums",
+        "row2Dream3Pre": "Pamostos, pirms varu atvērt durvis",
+        "row2Ann5": "vēlme / trūkums",
+        "row2Key1": "primārā aina",
+        "row2Key2": "ego robeža",
+        "row2Key3": "tēva-imago",
+        "row2Key4": "pārvietojums",
+        "row2Key5": "vēlme / trūkums",
+        "row3Tag": "Profesionālā",
+        "row3TitlePre": "Izšķīdini",
+        "row3TitleIt": "profesionālos",
+        "row3TitlePost": "blokus.",
+        "row3Body": "Griesti, pret kuriem tu turpini atsitiies, reti ir par prasmēm. Tas ir skripts — uzrakstīts agri, klusām izmēģināts — ko mēs palīdzēsim tev nolasīt skaļi un pārrakstīt, teikumu pēc teikuma.",
+        "row3Link": "Metodes raksts",
+        "row3FigLabel": "Skripta pārskatīšana",
+        "row3FigSubtitle": "darba melnraksts",
+        "row3Line1Prefix": "01 · Es esmu",
+        "row3Line1Old": "vēl negatavs.",
+        "row3Line1New": "jau atļauts.",
+        "row3Line2Prefix": "02 · lai",
+        "row3Line2Old": "gaidītu savu kārtu.",
+        "row3Line2New": "nosauktu, ko gribu.",
+        "row3Line3Prefix": "03 · jo",
+        "row3Line3Old": "kāds varētu būt vīlies.",
+        "row3Line3New": "vilšanās ir arī valoda.",
+        "row3MetaOriginalPre": "oriģināls",
+        "row3MetaOriginalIt": "11 gadi",
+        "row3MetaRevisedPre": "pārskatīts",
+        "row3MetaRevisedIt": "sesija 06"
+      },
+      "outcomes": {
+        "eyebrow": "REZULTĀTI",
+        "titleLine1Pre": "Taustāmi",
+        "titleLine1It": "ieskati",
+        "titleLine2": "Klusi izmērāmi.",
+        "lede": "Uz datiem balstīta pašapziņa, izteikta klīnicistu valodā — ne testa.",
+        "row1Tag": "Paātrināšana",
+        "row1TitlePre": "Galvenais",
+        "row1TitleIt": "īsceļš",
+        "row1TitlePost": "reālai terapijai.",
+        "row1Body": "Tas, kam agrāk vajadzēja attiecības daudzus gadus, tagad var sākties ar nedēļu sagatavošanos. Ieej terapeita kabinetā zinot, ko esi atnācis teikt.",
+        "row1Link": "Skatīt metodoloģiju",
+        "row1FigSubtitle": "laiks līdz pirmajam ieskatam",
+        "row1TraditionalLabel": "Tradicionālais ceļš",
+        "row1AxisYr1": "1. g.",
+        "row1AxisYr3": "3. g.",
+        "row1AxisYr6": "6. g.",
+        "row1AxisYr9": "9. g.",
+        "row1AxisYr12": "12. g.",
+        "row1TwentyThirdLabelPre": "Ar",
+        "row1AxisWk1": "1. ned.",
+        "row1AxisWk4": "4. ned.",
+        "row1AxisWk8": "8. ned.",
+        "row1AxisWk12": "12. ned.",
+        "row1SummaryFaster": "ātrāk",
+        "row1SummaryDesc": "laiks līdz pirmajam ieskatam",
+        "row2Tag": "Ziņojums",
+        "row2TitlePre": "Terapeitam gatava",
+        "row2TitleIt": "psiholoģiskā",
+        "row2TitlePost": "karte.",
+        "row2Body": "Strukturāla tava diagramma — eksportējama, dalāma, dziļi saprotama apmācītam klīnicistam. Ne personības tests; darba uzdevums.",
+        "row2Link": "Skatīt parauga ziņojumu",
+        "row2FigLabel": "Subjekts 1149-A",
+        "row2FigSubtitle": "strukturālais profils",
+        "row2RepCase": "gadījums 1149-A",
+        "row2RepPrepared": "sagatavots 04 · 26",
+        "row2MetricEgo": "Es struktūra",
+        "row2MetricObject": "Objektu attiecības",
+        "row2MetricDefense": "Aizsardzības kompleksitāte",
+        "row2MetricDrive": "Dziņu organizācija",
+        "row2MetricSymbolic": "Simboliskais reģistrs",
+        "row2FootLabel": "Dominējošā struktūra",
+        "row2FootVal": "obsesīva · ar histeriskām pēdām",
+        "row3Tag": "Integrācija",
+        "row3TitlePre": "Personalizēti",
+        "row3TitleIt": "integrācijas",
+        "row3TitlePost": "un ēnas darba plāni.",
+        "row3Body": "Ikdienas uzvednes un rituāli, kas pārnes ieskatu no lapas uz ķermeni. Mazi, apzināti. Veidoti ap tavu struktūru, ne vispārīgu programmu.",
+        "row3Link": "Kā plāns pielāgojas",
+        "row3FigLabel": "23. diena",
+        "row3FigSubtitle": "ikdienas uzvedne",
+        "row3FigPlan": "plāns 04",
+        "row3Day": "Trešdiena",
+        "row3PromptEyebrow": "šodienas uzvedne · ēnas darbs",
+        "row3PromptPre": "Kur šodien tu izvēlējies",
+        "row3PromptIt": "nebūt",
+        "row3PromptPost": "redzamam? Un ko tu glābi, slēpjoties?",
+        "row3Stream1Label": "elpošanas darbs",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "žurnāls",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "ēnas uzvedne",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "sērija",
+        "row3StreakVal": "{n, plural, zero {# dienu} one {# diena} other {# dienas}}"
+      },
+      "final": {
+        "eyebrow": "SĀKT",
+        "titlePre": "Jūsu neapzinātais runā.",
+        "titleIt": "Ir laiks klausīties.",
+        "ctaPrimary": "Sāciet savu atklāsmi",
+        "ctaGhostOr": "vai",
+        "ctaGhostText": "lasiet zinātni"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Privātuma politika — TwentyThird",
+        "metaDescription": "Kā TwentyThird apstrādā personas datus. Nekas neatstāj ES. Nekas netiek pārdots.",
+        "eyebrow": "PRIVĀTUMS",
+        "headingLead": "Personas dati,",
+        "headingItalic": "apstrādāti rūpīgi.",
+        "lede": "TwentyThird apstrādā to, ko jūs dalāties, lai sniegtu precīzu psihodinamisku ieskatu. Nekas nepamet ES. Nekas netiek pārdots.",
+        "controls": {
+          "headingLead": "Kas",
+          "headingItalic": "kontrolē",
+          "headingTail": "jūsu datus",
+          "p1": "WelloWork AB, reģistrēts Zviedrijā (org. nr. 559472‑9997), ar atrašanās vietu Upsalā, ir datu pārzinis personiskajiem datiem, kas tiek vākti šajā tīmekļa vietnē un caur tiešiem pieprasījumiem.",
+          "p2": "Datiem, kas tiek apstrādāti TwentyThird platformā organizācijas vārdā — klīnikas, pētniecības iestādes, darba devēja — WelloWork AB darbojas kā apstrādātājs, un klienta organizācija ir pārzinis. Šīs attiecības regulē atsevišķs Datu apstrādes līgums."
+        },
+        "figure": {
+          "label": "kas kontrolē jūsu datus",
+          "controller": "Kontrolieris",
+          "directRelationship": "tieša attiecība",
+          "websiteVisitor": "Vietnes apmeklētājs",
+          "you": "Jūs",
+          "customerOrg": "Klienta organizācija",
+          "viaDpa": "caur DPA",
+          "processor": "Apstrādātājs",
+          "platformUser": "Platformas lietotājs"
+        },
+        "collect": {
+          "headingLead": "Ko mēs",
+          "headingItalic": "vācam",
+          "contactStrong": "Kontaktinformācija un konta dati.",
+          "contactBody": "Vārds, e-pasta adrese un jebkura informācija, ko sniedzat, reģistrējoties vai rakstot mums. Juridiskais pamats: līguma izpilde (VDAR 6. panta 1. punkta b) apakšpunkts).",
+          "sessionStrong": "Sesiju un platformas dati.",
+          "sessionBody": "Žurnāla ieraksti, atbildes, sapņu saturs un lingvistiskie modeļi, ko dalāties TwentyThird iekšienē. Tas ir analīzes substrāts. Juridiskais pamats: skaidra piekrišana (VDAR 9. panta 2. punkta a) apakšpunkts), sniegta reģistrējoties un jebkurā brīdī atsaucama. Mēs izturamies pret šiem datiem kā īpašās kategorijas veselības tuviem datiem un piemērojam atbilstošus drošības pasākumus neatkarīgi no formālās klasifikācijas.",
+          "technicalStrong": "Tehniskie dati.",
+          "technicalBody": "IP adrese, pārlūkprogrammas tips, ierīces identifikatori un lietošanas laika zīmogi — vākti automātiski, kad piekļūstat platformai. Juridiskais pamats: leģitīma interese (VDAR 6. panta 1. punkta f) apakšpunkts) drošības uzturēšanai un kļūdu diagnosticēšanai.",
+          "p4": "Mēs nevācam datus par rasi, etnisko piederību, politisko uzskatu vai reliģisko pārliecību. Ja jūsu dalītais saturs nejaušā veidā atklāj šādu informāciju, tā netiek apstrādāta kā atsevišķa kategorija."
+        },
+        "use": {
+          "headingLead": "Kā mēs to",
+          "headingItalic": "izmantojam",
+          "headingTail": "tā",
+          "p1": "Mēs izmantojam jūsu datus, lai nodrošinātu un uzlabotu TwentyThird pakalpojumu, nosūtītu jūsu pieprasītos transakciju paziņojumus, atklātu un novērstu krāpšanu vai ļaunprātīgu izmantošanu, kā arī izpildītu juridiskās saistības.",
+          "p2": "Mēs neizmantojam jūsu datus reklāmas profilēšanai. Mēs tos nepārdodam, nelicencējam un nedalām ar datu starpniekiem. Mēs tos neizmantojam, lai apmācītu trešo pušu vispārējas nozīmes mākslīgā intelekta modeļus."
+        },
+        "sees": {
+          "headingLead": "Kas",
+          "headingItalic": "redz",
+          "headingTail": "to",
+          "withinStrong": "WelloWork AB ietvaros:",
+          "withinBody": "Klīnicisti un inženieri, kuriem nepieciešama piekļuve pakalpojuma uzturēšanai. Piekļuve ir ierobežota pēc lomas un reģistrēta.",
+          "infraStrong": "Infrastruktūras nodrošinātāji:",
+          "infraBody": "Supabase (datubāze un autentifikācija, ES reģions), Vercel (mitināšana, ES mala) un Postmark (transakciju e-pasts). Katru saista Datu apstrādes līgums, un tie apstrādā datus tikai pēc mūsu dokumentētām instrukcijām.",
+          "legalStrong": "Juridisks pienākums:",
+          "legalBody": "Mēs izpaužam datus kompetentām iestādēm tikai tad, kad to prasa likums, un tikai nepieciešamajā apjomā.",
+          "p4": "Nekādi dati netiek pārsūtīti ārpus ES/EEZ. Ja tas mainīsies, mēs atjaunināsim šo politiku un iegūsim jaunu piekrišanu, kur nepieciešams."
+        },
+        "retention": {
+          "headingItalic": "Glabāšana",
+          "p1": "Konta un platformas dati tiek glabāti, kamēr konts ir aktīvs, plus 30 dienas pēc dzēšanas, lai ļautu atjaunošanu. Tehniskie žurnāli tiek glabāti 90 dienas. Kontaktpieprasījumi tiek glabāti 24 mēnešus.",
+          "p2": "Pēc šiem periodiem dati tiek neatgriezeniski dzēsti vai anonimizēti."
+        },
+        "rights": {
+          "headingLead": "Jūsu",
+          "headingItalic": "tiesības",
+          "p1": "Jums ir tiesības piekļūt datiem, ko mēs par jums glabājam, labot neprecizitātes, pieprasīt dzēšanu, ierobežot vai iebilst pret apstrādi un saņemt mašīnlasāmu kopiju pārnesamībai. Ja apstrāde balstās uz piekrišanu, jūs varat to jebkurā laikā atsaukt, neietekmējot apstrādes likumību pirms atsaukšanas.",
+          "exerciseLead": "Lai izmantotu jebkuru tiesību:",
+          "exerciseTail": ". Mēs atbildam 30 dienu laikā. Ja neesat apmierināts ar mūsu atbildi, varat iesniegt sūdzību Integritetsskyddsmyndigheten (IMY), Zviedrijas datu aizsardzības iestādē."
+        },
+        "children": {
+          "headingItalic": "Nepilngadīgie",
+          "p1": "TwentyThird nav paredzēts personām, kas jaunākas par 18 gadiem. Mēs apzināti nevācam datus no nepilngadīgajiem. Ja mēs uzzinām, ka nepilngadīgais ir iesniedzis datus, mēs tos nekavējoties dzēšam."
+        },
+        "changes": {
+          "headingItalic": "Izmaiņas",
+          "p1": "Mēs atjauninām šo politiku, kad mainās mūsu prakse. Par būtiskām izmaiņām paziņojam pa e-pastu vismaz 14 dienas pirms to stāšanās spēkā. Versijas datums norādīts šīs lapas apakšā.",
+          "effectivePrefix": "Spēkā no:",
+          "effectiveSuffix": "· Piemērojamie tiesību akti: Zviedrijas likumi un VDAR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Lietošanas noteikumi — TwentyThird",
+        "metaDescription": "Līgums, kas regulē TwentyThird lietošanu. Rakstīts, lai to lasītu, nevis izvairītos.",
+        "eyebrow": "NOTEIKUMI",
+        "headingLead": "Līgums,",
+        "headingItalic": "izteikts skaidri.",
+        "lede": "Šie noteikumi regulē TwentyThird lietošanu. Tie ir rakstīti, lai tos lasītu, nevis izvairītos.",
+        "service": {
+          "headingLead": "Šis",
+          "headingItalic": "pakalpojums",
+          "p1": "TwentyThird ir psihodinamiska mākslīgā intelekta platforma, ko pārvalda WelloWork AB. Tā sniedz analītiskus secinājumus, pamatojoties uz to, ko jūs dalāties. Tā nav medicīniska ierīce. Tā nav psihoterapija, psihiatriska diagnoze vai klīniska ārstēšana. Ja jūs piedzīvojat psiholoģisku krīzi, lūdzu, sazinieties ar kvalificētu speciālistu vai neatliekamās palīdzības dienestu."
+        },
+        "account": {
+          "headingLead": "Jūsu",
+          "headingItalic": "konts",
+          "p1": "Lai lietotu TwentyThird, jums jābūt vismaz 18 gadus vecam. Jūs esat atbildīgs par savu pieejas datu konfidencialitāti. Jūs nedrīkstat dalīties ar savu kontu vai lietot platformu citas personas vārdā bez viņas skaidras piekrišanas.",
+          "p2": "Jūs esat sava satura īpašnieks — jūsu žurnāla ierakstu, jūsu atbilžu. Iesniedzot tos, jūs piešķirat WelloWork AB ierobežotu licenci tos apstrādāt nolūkos, kas aprakstīti Privātuma politikā. Jūs varat eksportēt vai dzēst savu saturu jebkurā laikā."
+        },
+        "acceptableUse": {
+          "headingLead": "Pieļaujamā",
+          "headingItalic": "lietošana",
+          "p1": "Jūs drīkstat lietot TwentyThird likumīgai personiskai un profesionālai pašizpētei. Jūs nedrīkstat to lietot, lai kaitētu sev vai citiem, lai mēģinātu apietu platformas drošības sistēmas, lai veiktu reversās inženierijas pamatmodeļiem vai lai apmācītu konkurējošas mākslīgā intelekta sistēmas.",
+          "p2": "Mēs paturam tiesības apturēt vai izbeigt kontus, kas pārkāpj šos noteikumus, bez iepriekšēja brīdinājuma, ja tas nepieciešams drošības nolūkos."
+        },
+        "liability": {
+          "headingLead": "Mūsu",
+          "headingItalic": "atbildība",
+          "p1": "TwentyThird sniedz secinājumus, nevis noteiktību. Mēs negarantējam, ka analīze ir precīza, pilnīga vai piemērota jūsu apstākļiem. Ciktāl to pieļauj Zviedrijas likumi, mūsu atbildība ir ierobežota līdz summai, ko esat samaksājis 3 mēnešos pirms attiecīgā prasījuma.",
+          "p2": "Nekas šajos noteikumos neierobežo atbildību par nāvi vai personas miesas bojājumiem, ko izraisījusi mūsu nolaidība, vai par krāpšanu."
+        },
+        "disputes": {
+          "headingLead": "Piemērojamie tiesību akti un",
+          "headingItalic": "strīdi",
+          "p1": "Šos noteikumus regulē Zviedrijas likumi. Strīdi, kurus nevar atrisināt tieši, tiek nodoti Upsalas, Zviedrija, tiesām kā pirmās instances tiesai.",
+          "p2Lead": "Ja esat ES patērētājs, jums ir pieejama arī ES Tiešsaistes strīdu izšķiršanas platforma",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Izmaiņas",
+          "p1": "Mēs varam atjaunināt šos noteikumus. Turpināta lietošana pēc būtiskas izmaiņas spēkā stāšanās datuma nozīmē piekrišanu. Mēs paziņojam par būtiskām izmaiņām pa e-pastu vismaz 14 dienas iepriekš.",
+          "effectivePrefix": "Spēkā:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Sīkdatņu politika — TwentyThird",
+        "metaDescription": "TwentyThird izmanto sīkdatnes tikai autentifikācijai un preferenču saglabāšanai. Nav reklāmas sīkdatņu. Nav trešo pušu izsekotāju.",
+        "eyebrow": "SĪKDATNES",
+        "headingLead": "Ko mēs glabājam",
+        "headingItalic": "jūsu pārlūkā.",
+        "lede": "TwentyThird izmanto sīkdatnes autentifikācijai un preferenču saglabāšanai. Mēs neizmantojam reklāmas sīkdatnes un trešo pušu izsekotājus.",
+        "whatIs": {
+          "headingLead": "Kas ir",
+          "headingItalic": "sīkdatne",
+          "p1": "Sīkdatne ir neliels teksta fails, kas tiek glabāts jūsu pārlūkā. Mēs tās izmantojam, lai saglabātu jūsu pieteikšanos un atcerētos jūsu tēmas izvēli (tumšā vai gaišā). Tas ir viss."
+        },
+        "weSet": {
+          "headingLead": "Sīkdatnes,",
+          "headingItalic": "ko mēs iestatām",
+          "authBody": "— Iestata Supabase. Uztur jūsu autentificēto sesiju. Beidzas, kad izrakstāties vai pēc 7 neaktivitātes dienām. Stingri nepieciešama.",
+          "themeBody": "— Glabā jūsu tumšā/gaišā režīma izvēli. Saglabājas līdz dzēšanai. Funkcionāla.",
+          "p3": "Mēs neiestatām reklāmas sīkdatnes. Mēs neielādējam trešo pušu izsekošanas skriptus — ne Google Analytics, ne Meta Pixel, nekādas mārketinga atzīmes."
+        },
+        "choices": {
+          "headingLead": "Jūsu",
+          "headingItalic": "izvēles",
+          "p1Lead": "Jūs varat jebkurā laikā dzēst sīkdatnes caur pārlūka iestatījumiem. Dzēšot",
+          "p1Mid": "jūs tiksiet izrakstīts. Dzēšot",
+          "p1Tail": "displejs atgriezīsies pie tumšā noklusējuma.",
+          "p2": "Mēs neizmantojam sīkdatņu piekrišanas banneri stingri nepieciešamām vai funkcionālām sīkdatnēm saskaņā ar ePrivacy direktīvu, jo tām nav nepieciešama piekrišana. Ja nākotnē ieviešam jebkādas neesenciālas sīkdatnes, mēs iegūsim piekrišanu pirms to iestatīšanas."
+        },
+        "contact": {
+          "headingItalic": "Kontakts",
+          "p1Lead": "Jautājumi par sīkdatnēm vai jebkuru citu datu jautājumu:",
+          "effectivePrefix": "Spēkā no:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "ŠAI LAPĀ",
+        "privacyPolicy": "Privātuma politika",
+        "termsOfService": "Lietošanas noteikumi",
+        "cookiePolicy": "Sīkdatņu politika"
+      },
+      "layout": {
+        "eyebrow": "JURIDISKS",
+        "headingLead": "Juridiskie dokumenti,",
+        "headingItalic": "izteikti skaidri.",
+        "lede": "Privātuma politika, pakalpojumu sniegšanas noteikumi un sīkdatņu politika — regulē Zviedrijas likumi un VDAR."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodoloģija — TwentyThird",
+      "metaDescription": "No pirmās sarunas līdz terapeitam gatavai kartei. Pieci TwentyThird procesa posmi.",
+      "hero": {
+        "eyebrow": "METODE",
+        "headingLead": "Nedēļas sagatavošanās,",
+        "headingItalic": "nevis gadi meklējumos",
+        "lede": "Terapija darbojas. Bet prasa laiku, lai saprastu, kāpēc esi tur. TwentyThird saspiež sagatavošanos — daļu, kurā tu mācies, ko patiesībā saki — lai pati telpa varētu virzīties ātrāk."
+      },
+      "pipeline": {
+        "eyebrow": "PROCESS",
+        "headingLead": "Pieci posmi, viens",
+        "headingItalic": "īss",
+        "lede": "No paraugu runas līdz darba dokumentam, ko klīnicists var izlasīt astoņās minūtēs.",
+        "stageLabel": "POSMS",
+        "stage01": {
+          "name": "Paraugu ņemšana",
+          "blurb": "Balss un teksts no vadītām sesijām. Modelis klausās formu, nevis saturu.",
+          "label": "paraugu ņemšana",
+          "subtitle": "apjoms visā kohortā",
+          "fig": {
+            "wordsSampled": "vārdi paraugā",
+            "sessions": "sesijas",
+            "elapsed": "pagājis",
+            "medianTurn": "mediānas gājiens"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistiskā",
+          "nameEm": "ekstrakcija",
+          "blurb": "Pazīmes, ko modelis izceļ no transkripta — klusi, pirms jebkādas interpretācijas.",
+          "label": "ekstrakcija",
+          "subtitle": "pazīmju klases",
+          "fig": {
+            "qualifierDensity": "kvalifikatoru blīvums",
+            "modalVerbs": "modālie darbības vārdi",
+            "conditionalFrame": "nosacījuma struktūra",
+            "affectiveHedges": "afektīvās atruna",
+            "slipsMisnamings": "atraunas · nepareizi nosaukumi",
+            "repetitionWindows": "atkārtošanās logi"
+          }
+        },
+        "stage03": {
+          "nameLead": "Atkārtošanās",
+          "nameEm": "atklāšana",
+          "blurb": "Raksts, kas atgriežas tajā pašā formā dažādās desmitgadēs. Signāls, ka kaut kas ir strukturāls.",
+          "label": "atkārtošanās",
+          "subtitle": "trīs viena raksta enkuri",
+          "fig": {
+            "row1": {
+              "durationLabel": "pirmais darbs",
+              "outcome": "griesti 9. mēnesī"
+            },
+            "row2": {
+              "durationLabel": "otrais",
+              "outcome": "griesti 11. mēnesī"
+            },
+            "row3": {
+              "durationLabel": "trešais",
+              "outcome": "griesti 8. mēnesī"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Skripta",
+          "nameEm": "rekonstrukcija",
+          "blurb": "Teikums zem raksta. Vecā rinda, tad kandidāta versija, ko subjekts var mēģināt.",
+          "label": "rekonstrukcija",
+          "subtitle": "darba melnraksts",
+          "fig": {
+            "row1": {
+              "prefix": "Es",
+              "old": "vēl neesmu gatavs.",
+              "next": "jau esmu atļauts."
+            },
+            "row2": {
+              "prefix": "lai",
+              "old": "gaidītu, kad mani izvēlas.",
+              "next": "nosauktu, ko gribu."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Karte",
+          "nameEm": "klīnicistam",
+          "blurb": "Trīs marķēti mērītāji un vienas rindas strukturāls lasījums. Astoņas minūtes lasīt, nedēļas lietot.",
+          "label": "klīniskā nodošana",
+          "subtitle": "darba īss",
+          "fig": {
+            "casePrefix": "gadījums",
+            "preparedPrefix": "sagatavots",
+            "egoStructure": "Ego struktūra",
+            "objectRelations": "Objektu attiecības",
+            "symbolicRegister": "Simboliskais reģistrs",
+            "footerLabel": "Lasījums",
+            "footerValue": "obsesīvs · ar histeriskām pēdām"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "APJOMS",
+        "headingLead": "Ko mērām un ko",
+        "headingItalic": "atsakāmies",
+        "headingTail": "mērīt.",
+        "measureHead": "Ko mērām",
+        "refuseHead": "Ko nemērām",
+        "measure": {
+          "languagePatterns": {
+            "k": "valodas raksti",
+            "gloss": "Kvalifikatoru blīvums, modālie darbības vārdi, atrunas, nosacījuma struktūras."
+          },
+          "recurrence": {
+            "k": "atkārtošanās",
+            "gloss": "Raksti, kas atgriežas tajā pašā formā gadu garumā."
+          },
+          "narrativeCoherence": {
+            "k": "naratīva koherence",
+            "gloss": "Kā dzīve tiek stāstīta, kur redzamas šuves."
+          },
+          "attachmentMarkers": {
+            "k": "pieķeršanās marķieri",
+            "gloss": "Kur intimitāte šķērso slieksni, kas seko."
+          },
+          "linguisticSlips": {
+            "k": "lingvistiskās atraunas",
+            "gloss": "Nepareizi nosaukumi, kondensācijas, pārvietojumi."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD kategorijas",
+            "gloss": "Nozoloģija ir atsevišķs instruments, ko lieto klīnicisti."
+          },
+          "iqCognition": {
+            "k": "IQ vai kognicija",
+            "gloss": "Ārpus apjoma. Modelis ir psihodinamiskais, nevis psihometriskais."
+          },
+          "personalityTypes": {
+            "k": "personības tipi",
+            "gloss": "Piecu faktoru un tā pēcnācēji nav daļa no īsā."
+          },
+          "riskScores": {
+            "k": "riska rādītāji",
+            "gloss": "Akūts risks ir klīnicista lēmums, nevis modeļa."
+          },
+          "predictions": {
+            "k": "prognozes",
+            "gloss": "Struktūra, nevis prognoze. Nosaucam, kas ir, nevis kas nāks."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompresija",
+        "headingLead": "Ieej zinot, ko",
+        "headingItalic": "teikt",
+        "body1": "Terapija nav vieta, kur noskaidrot jautājumu. Tā ir vieta, kur ar to dzīvot. Kompresija, ko piedāvājam, ir pieejā — mēnešos, ko klīnicists parasti pavada, klausoties pēc īsā formas.",
+        "body2": "Visā pilotprojekta kohortā sagatavotie subjekti sasniedza darba aliansi mazākā sesiju skaitā. Lasījums jau bija tur.",
+        "figure": {
+          "label": "alianse",
+          "subtitle": "mediānas sesijas līdz darba aliansēm",
+          "heading": "Laiks līdz darba aliansēm",
+          "range": "mediāna visā kohortā",
+          "markerUnprepared": "nesagatavots",
+          "markerPrepared": "sagatavots",
+          "summaryLabel": "mazāk sesiju līdz\ndarba aliansēm"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "TURPINĀT",
+        "headingLead": "Sāc,",
+        "headingItalic": "vai apskati parauga ziņojumu",
+        "beginLabel": "Sākt",
+        "or": "vai",
+        "ghostLabel": "apskati parauga ziņojumu"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRĀCIJA",
+        "headlineLead": "Ieskats, tad",
+        "headlineItalic": "ieradums",
+        "lede": "Modeļa nosaukšana ir tikai pirmais solis. Plāns ir otrais — ikdienas norādes un mazi rituāli, kas veidoti ap jūsu struktūru, nevis vispārīga mācību programma."
+      },
+      "week": {
+        "eyebrow": "NEDĒĻA PLĀNĀ",
+        "headlineLead": "Septiņas norādes,",
+        "headlineItalic": "viena struktūra",
+        "lede": "Reflektīva, iemiesota, rakstīta. Nedēļa elpo ap modeli, ko ziņojums nosauca, nevis ap mācību programmu.",
+        "days": {
+          "mon": {
+            "day": "PIRM",
+            "prompt": "“Kur šodien izvēlējāties <em>netikt</em> pamanīts?”",
+            "stream": {
+              "journal": "žurnāls",
+              "shadowPrompt": "ēnas norāde"
+            }
+          },
+          "tue": {
+            "day": "OTR",
+            "prompt": "“Dodieties pastaigā bez mērķa. Atzīmējiet vienu lietu, ko gandrīz pateicāt.”",
+            "stream": {
+              "walking": "pastaiga",
+              "note": "piezīme"
+            }
+          },
+          "wed": {
+            "day": "TREŠ",
+            "prompt": "“Ko šodien pārāk kvalificējāt, un kāds bija <em>nekvalificētais</em> teikums apakšā?”",
+            "stream": {
+              "breathWork": "elpošanas darbs",
+              "journal": "žurnāls",
+              "shadowPrompt": "ēnas norāde"
+            }
+          },
+          "thu": {
+            "day": "CET",
+            "prompt": "“Ķermeņa skenēšana no rīkles uz leju. Kur mīt turēšana?”",
+            "stream": {
+              "bodyScan": "ķermeņa skenēšana",
+              "note": "piezīme"
+            }
+          },
+          "fri": {
+            "day": "PIEKT",
+            "prompt": "“Uzrakstiet teikumu, ko būtu teicis, ja jums jau būtu atļauts.”",
+            "stream": {
+              "journal": "žurnāls",
+              "rewrite": "pārrakstīt"
+            }
+          },
+          "sat": {
+            "day": "SEST",
+            "prompt": "“Gara pastaiga. Bez norādēm. Pievērsiet uzmanību tam, ko atnes klusums.”",
+            "stream": {
+              "walking": "pastaiga",
+              "rest": "atpūta"
+            }
+          },
+          "sun": {
+            "day": "SVĒT",
+            "prompt": "“Pārlasiet nedēļu. Kura rinda jau bija <em>patiesa</em>?”",
+            "stream": {
+              "review": "pārskats",
+              "note": "piezīme"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTĀCIJA",
+        "headlineLead": "Plāns",
+        "headlineItalic": "sašaurinās",
+        "tag": "Adaptācija",
+        "rowHeadingLead": "Pagājušās nedēļas atkārtošanās nosaka nākamās nedēļas",
+        "rowHeadingItalic": "blīvumu",
+        "body": "Kad modeļa stiprums samazinās, norādes kļūst retākas. Kad modelis pieaug, norādes atgriežas. Mērķis nav ievērošana. Mērķis ir mazākās sastatnes, kas struktūrai joprojām nepieciešamas.",
+        "figure": {
+          "label": "norāžu blīvums",
+          "subtitle": "1.–8. nedēļa",
+          "heading": "Norāžu skaits · nedēļā",
+          "range": "samazinās, atkārtošanās vājinoties",
+          "markers": {
+            "wk1": "1. ned.",
+            "wk3": "3. ned.",
+            "wk5": "5. ned.",
+            "wk8": "8. ned."
+          },
+          "summaryLabel": "mazāk norāžu\nlīdz 8. ned."
+        }
+      },
+      "shadow": {
+        "eyebrow": "ĒNU DARBS",
+        "headlineLead": "Nav katarse.",
+        "headlineItalic": "Runāšana",
+        "tag": "Ēna",
+        "rowHeadingLead": "Apzināta prakse runāt to, kas bija",
+        "rowHeadingItalic": "neizsakāms",
+        "body": "Ēnu darbs šajā kontekstā nav atklāšana. Tā nav attīrīšana. Tā ir lēna prakse teikt — vispirms sev — to, ko bija mācīts paturēt neizteiktu. Trīs pirms/pēc rindas, kas ņemtas no reāliem plāniem.",
+        "figure": {
+          "label": "ēnu labojumi",
+          "subtitle": "trīs rindas, darba projekts",
+          "rows": {
+            "r1": {
+              "prefix": "01 · sev",
+              "old": "Es to neesmu pelnījis.",
+              "next": "Es vēl neesmu praktizējis vēlēšanos to skaļi izteikt."
+            },
+            "r2": {
+              "prefix": "02 · sev",
+              "old": "Man jau vajadzētu būt pāri tam.",
+              "next": "laika grafiks, ko aizņēmos, nebija paredzēts šāda veida bēdām."
+            },
+            "r3": {
+              "prefix": "03 · sev",
+              "old": "Esmu par daudz.",
+              "next": "Esmu tieši tāds apjoms, kam telpa nebija būvēta."
+            }
+          },
+          "metaLeft": {
+            "label": "iepriekš",
+            "value": "teikts par sevi"
+          },
+          "metaRight": {
+            "label": "tagad",
+            "value": "teikts sev"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RĀMIS",
+        "headlineLead": "Noturēts ar struktūru, nevis ar",
+        "headlineItalic": "mācību programmu",
+        "body1": "Mācību programma ir svešinieka izveidotu darbību kopums. Struktūra ir forma, ko jūsu īpašā dzīve pieņem. Plāns ir veidots pret pēdējo. Katra norāde ir piesaistīta rindiņai jūsu ziņojumā — kad rindiņa izzūd, izzūd arī norāde.",
+        "body2": "Nekam šeit nav jābūt pastāvīgam. Plāns ir īrēts. Struktūra ir jūsu.",
+        "closeout": "struktūra ir jūsu · plāns ir īrēts"
+      },
+      "final": {
+        "eyebrow": "TURPINĀT",
+        "headlineLead": "Sākt,",
+        "headlineItalic": "vai lasīt zinātni",
+        "beginCta": "Sākt",
+        "or": "vai",
+        "readScience": "lasīt zinātni"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Zinātne — TwentyThird",
+        "description": "Gadsimts psihoanalītiskās teorijas un četras desmitgades empīrisku pētījumu par modeļiem, valodu un neapzināto."
+      },
+      "hero": {
+        "eyebrow": "PAMATS",
+        "headlineLead": "Zinātne aiz",
+        "headlineItalic": "klausīšanās",
+        "headlineTail": ".",
+        "lede": "TwentyThird ir balstīts uz gadsimtu ilgu psihoanalītisko teoriju un četrām desmitgadēm empīrisku pētījumu par modeļiem, valodu un neapzināto. Lūk, ko mēs lasām un kāpēc."
+      },
+      "lineages": {
+        "eyebrow": "DIVAS LĪNIJAS",
+        "headlineLead": "Freida struktūra. Lakāna",
+        "headlineItalic": "vēstule",
+        "headlineTail": ".",
+        "lede": "Divas neapzinātā lasīšanas, pusgadsimta attālumā. Kopā tās veido metodes mugurkaulu.",
+        "freud": {
+          "headlineLead": "Apziņas",
+          "headlineItalic": "strukturālā",
+          "headlineTail": " bezapziņa.",
+          "body1": "Freida paliekošais ieguldījums ir strukturāls, nevis tematisks. Dinamiskā bezapziņa nav aizmirsta satura pagrabs — tas ir strādājošs prāta orgāns, kas atkārto, atkārto un pārnes.",
+          "body2": "Mēs viņu lasām kā atkārtošanās klīnicistu. Viena un tā pati aina parādās dažādās desmitgadēs. Šī atkārtošanās ir signāls, ko modelis ir apmācīts atrast.",
+          "figure": {
+            "label": "atkārtošanās",
+            "subtitle": "pieci enkuri, viena struktūra",
+            "outcome": "izvairīšanās",
+            "rows": {
+              "anchor1": "agrīna pusaudža vecums",
+              "anchor2": "pirmā ilgstošā saikne",
+              "anchor3": "otrā ilgstošā saikne",
+              "anchor4": "trešā saikne",
+              "anchor5": "ceturtā saikne"
+            },
+            "summary": {
+              "recurrenceLabel": "atkārtošanās",
+              "intervalLabel": "intervāls",
+              "attractorLabel": "atraktors",
+              "attractorValue": "intimitātes slieksnis"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Bezapziņa ir strukturēta kā",
+          "headlineItalic": "valoda",
+          "headlineTail": ".",
+          "body1Lead": "Lakāna lasījums maina lauku. Signifikators kustas; nozīme slīd pa metonīmijas un metaforas ķēdēm. Spoguļa stadija nosauc pamatā esošo nepareizo atpazīšanu.",
+          "body1Italic": "Vēlme ir Otra vēlme.",
+          "body2": "Mūsu sistēmā tas ir konkrēti. Mēs lasām sapņus un nomoda runu kā tekstu — pārvietojumi, kondensācijas un kļūdas nes strukturējošo gramatiku.",
+          "figure": {
+            "label": "lingvistiskais signāls",
+            "subtitle": "sapņa fragments, anotēts",
+            "dreamLead": "“Istabai, kurā dzīvoju bērnībā, ir vēl vienas durvis, kuras neatceros",
+            "ann1": "pārvietojums",
+            "dreamMid1": ". Aiz tām mana vadītāja balss",
+            "ann2": "kondensācija",
+            "dreamMid2": "mani sauc nepareizā vārdā",
+            "ann3": "kļūda",
+            "dreamTail": ".”",
+            "key1": "pārvietojums",
+            "key2": "kondensācija",
+            "key3": "kļūda"
+          }
+        }
+      },
+      "freud": {
+        "headlineLead": "Strukturālais",
+        "headlineItalic": "neapzinātais",
+        "headlineTail": ".",
+        "body1": "Freida paliekošais ieguldījums ir strukturāls, nevis tematisks. Dinamiskais neapzinātais nav aizmirsta satura pagrabs — tas ir strādājošs prāta orgāns, kas atkārto, atkārto un pārnes.",
+        "body2": "Mēs viņu lasām kā atkārtošanās klīnicistu. Viena un tā pati aina parādās dažādās desmitgadēs. Šī atkārtošanās ir signāls, ko modelis ir apmācīts atrast.",
+        "figure": {
+          "label": "atkārtošanās",
+          "subtitle": "pieci enkuri, viena struktūra",
+          "outcome": "atsaukšana",
+          "rows": {
+            "anchor1": "agrīnā pusaudža vecums",
+            "anchor2": "pirmā ilgstošā saikne",
+            "anchor3": "otrā ilgstošā saikne",
+            "anchor4": "trešā saikne",
+            "anchor5": "ceturtā saikne"
+          },
+          "summary": {
+            "recurrenceLabel": "atkārtošanās",
+            "intervalLabel": "intervāls",
+            "attractorLabel": "atraktors",
+            "attractorValue": "intimitātes slieksnis"
+          }
+        }
+      },
+      "lacan": {
+        "headlineLead": "Neapzinātais ir strukturēts kā",
+        "headlineItalic": "valoda",
+        "headlineTail": ".",
+        "body1Lead": "Lakāna lasījums maina lauku. Signifikators kustas; nozīme slīd pa metonīmijas un metaforas ķēdēm. Spoguļa stadija nosauc pamatā esošo nepareizo atpazīšanu.",
+        "body1Italic": "Vēlme ir Otra vēlme.",
+        "body2": "Mūsu sistēmā tas ir konkrēts. Mēs lasām sapņus un nomoda runu kā tekstu — pārvietojumi, kondensācijas un kļūdas nes strukturējošo gramatiku.",
+        "figure": {
+          "label": "lingvistiskais signāls",
+          "subtitle": "sapņa fragments, anotēts",
+          "dreamLead": "“Istabai, kurā es dzīvoju bērnībā, ir vēl citas durvis, kuras es neatceros",
+          "ann1": "pārvietojums",
+          "dreamMid1": ". Aiz tām mana uzrauga balss",
+          "ann2": "kondensācija",
+          "dreamMid2": "mani sauc nepareizā vārdā",
+          "ann3": "kļūda",
+          "dreamTail": ".”",
+          "key1": "pārvietojums",
+          "key2": "kondensācija",
+          "key3": "kļūda"
+        }
+      },
+      "research": {
+        "eyebrow": "EMPĪRISKIE ENKURI",
+        "headlineLead": "Ko pievieno mūsdienu",
+        "headlineItalic": "pētījumi",
+        "headlineTail": ".",
+        "lede": "Piecas konverģējošas virknes no piesaistes, naratīva un procesa pētījumiem. Ne pilnīga bibliogrāfija — enkuri, uz kuriem modelis patiešām balstās.",
+        "figure": {
+          "label": "empīriskie enkuri",
+          "subtitle": "konverģējoši pierādījumi",
+          "caseLabel": "literatūra · sintēze",
+          "prepared": "atjaunināts 04 · 26",
+          "rows": {
+            "attachment": "Piesaistes nepārtrauktība gadu desmitiem",
+            "alliance": "Terapeitiskā alianse kā rezultātu prognozētājs",
+            "narrative": "Naratīva saskaņotība un labklājība",
+            "relational": "Netiešas attiecību zināšanas",
+            "script": "Scenārija teorija profesionālajā iestrēgumā"
+          },
+          "footerLabel": "Sintēze",
+          "footerValue": "konverģējoši pierādījumi · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "KO MĒS NEAPGALVOJAM",
+        "headlineLead": "Darba godīgās",
+        "headlineItalic": "robežas",
+        "headlineTail": ".",
+        "claim1Strong": "Mēs neaizstājam terapeitu.",
+        "claim1Body": "Modelis sagatavo sarunu. Tas to neuztur.",
+        "claim2Strong": "Mēs neesam diagnostikas instruments saskaņā ar DSM vai ICD.",
+        "claim2Body": "Kategorijas, kurās mēs strādājam, ir strukturālas — obsesīvas, histēriskas, fobiskas — nevis nozoloģiskas. Tās nosauc, kā persona ir organizēta, nevis to, kas viņai ir.",
+        "claim3Strong": "23 dienu cikls ir metafora.",
+        "claim3Body": "Skaitlis nāk no Vilhelma Flīsa sarakstes ar Freidu deviņpadsmitā gadsimta beigās. Mūsdienu zinātne neatbalsta fiksētus bioritmus. Mēs saglabājam skaitli tam, ko tas nosauc — pāreju no zinātkāres uz apzināšanos."
+      },
+      "reading": {
+        "eyebrow": "TURPMĀKAJAI LASĪŠANAI",
+        "headlineLead": "Plaukts",
+        "headlineItalic": "aiz",
+        "headlineTail": " modeļa.",
+        "lede": "Grāmatas, nevis raksti. Tās, pie kurām mēs atgriežamies.",
+        "books": {
+          "book1": {
+            "title": "Aiz baudas principa"
+          },
+          "book2": {
+            "title": "Sapņu interpretācija"
+          },
+          "book4": {
+            "title": "Četri psihoanalīzes pamatjēdzieni"
+          },
+          "book5": {
+            "title": "Piesaiste"
+          },
+          "book6": {
+            "title": "Afekta regulācija un sevis izcelsme"
+          },
+          "book7": {
+            "title": "Stāvot telpās"
+          },
+          "book8": {
+            "title": "Afekta regulācija, mentalizācija un sevis attīstība"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "TURPINĀT",
+        "headlineLead": "Sākt profilu,",
+        "headlineItalic": "vai lasīt gadījumu",
+        "headlineTail": ".",
+        "ctaPrimary": "Sākt profilu",
+        "ctaOr": "vai",
+        "ctaGhost": "lasīt gadījuma izpēti"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "atkal šeit",
+      "greetingNamed": "atkal šeit, {name}.",
+      "strengthen": "Stiprināt precizitāti"
+    },
+    "reviewEdit": "Pārskatīt un rediģēt",
+    "depth": {
+      "eyebrow": "LASĪJUMA DZIĻUMS",
+      "overallEyebrow": "KOPĒJAIS LASĪJUMA DZIĻUMS",
+      "band": {
+        "deep": "lasījums ir dziļš. no šejienes nelielas korekcijas.",
+        "steady": "lasījums noturās. Catchups to asinās.",
+        "partial": "lasījums ir daļējs. ir vēl ko dot.",
+        "thin": "lasījums ir virspusējs. tas ieskicēs formu, bet vēl ne struktūru."
+      },
+      "explainer": "Lasījuma dziļums apraksta, cik daudz no jums lasījumam ir bijis pieejams — no uzņemšanas, no iknedēļas Catchups, no konsultācijām un no cilvēkiem, kuru klātbūtne jūs veido. Dziļāks lasījums nenozīmē labāku cilvēku; tas nozīmē precīzāku. Jūs varat to padziļināt jebkurā laikā vai atstāt to, kā ir.",
+      "status": {
+        "low": "Zems",
+        "moderate": "Vidējs",
+        "deep": "Precīzs"
+      },
+      "statusLine": {
+        "low": "lasījums ir virspusējs. tas ieskicēs formu, bet vēl ne struktūru.",
+        "moderate": "lasījums veidojas. tas var saturēt darba hipotēzi.",
+        "deep": "lasījums ir pietiekami pilnīgs, lai pamatotu darbu."
+      },
+      "source": {
+        "intake": "jautājumi, uz kuriem atbildējāt sākumā.",
+        "catchups": "iknedēļas pārbaudes, kas uztur lasījumu aktuālu.",
+        "sessions": "garākas konsultācijas ar analītiķi.",
+        "connections": "cilvēki, kuru klātbūtne veido lasījumu."
+      }
+    },
+    "latest": {
+      "eyebrow": "JAUNĀKAIS LASĪJUMS",
+      "heading": "Seši lasījumi <it>— un kas mainās.</it>",
+      "lede": "Seši lasījumi tiek aprēķināti no jūsu uzņemšanas anketas un precizēti ar katru Catchup, konsultāciju un apstiprināto savienojumu. Struktūra ir stabila; tekstūra mainās.",
+      "strengthen": "stiprināt datus analīzei",
+      "open": "atvērt lasījumus"
+    },
+    "six": {
+      "eyebrow": "SEŠI LASĪJUMI",
+      "heading": "Kas tiek lasīts <it>jūsos, tieši tagad.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "pēdējās nedēļas",
+      "timelineHeading": "logs",
+      "timelineRange": "pēdējās 4 nedēļas",
+      "timelineSummary": "catchups logā",
+      "eyebrow": "NEDĒĻAS CATCHUP",
+      "heading": "Apsēdieties ar nedēļu. <it>Tad mēs atkal ieskatāmies.</it>",
+      "lede": "Astoņi īsi jautājumi. Godīgums ir labāks par garumu. Atbildes precizē lasījumu.",
+      "completed": "pabeigts — lasiet kopsavilkumu",
+      "cta": "Atvērt šīs nedēļas catchup",
+      "markerFirst": "pirmais",
+      "markerWeek": "nedēļa {week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTĀCIJAS TELPA",
+      "heading": "Stunda ar <it>analītiķi.</it>",
+      "ledeSubscribed": "Atvērta, kad vien nedēļa spiež. Telpa atceras to, ko jau esat teicis.",
+      "ledeUnsubscribed": "Abonenti var ieiet konsultāciju telpā — garā sesijā ar analītiķi, kas notiek tādā pašā tonī kā jūsu lasījumi.",
+      "cta": "Ieiet konsultāciju telpā",
+      "figLabel": "PĒDĒJĀ SESIJA",
+      "figSubtitle": "aizturēts jautājums",
+      "lastQuestion": "“sapnis no otrdienas — vai vēlaties pie tā atgriezties?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTĀCIJU TELPA · APSTIPRINĀT",
+      "title": "Ieeja konsultāciju telpā<it>.</it>",
+      "ledePrice": "Abonements ir",
+      "ledePerMonth": "mēnesī",
+      "ledeIncludes": ". Tas ietver konsultāciju telpu, iespēju uzaicināt līdz {count} {count, plural, one {savienojumam} few {savienojumiem} other {savienojumiem}} un vienu klīnisko ziņojumu katru kalendāro mēnesi.",
+      "ledeBilling": "Norēķinus apstrādā Stripe. Atcelt var jebkurā laikā iestatījumos — piekļuve saglabājas līdz perioda beigām.",
+      "canceled": "<i>norēķini tika slēgti.</i> nekas netika iekasēts. varat atgriezties zemāk, kad būsiet gatavs.",
+      "checkoutCta": "Turpināt uz norēķiniem",
+      "returnLink": "atgriezties konsultāciju telpā"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLĪNISKAIS ZIŅOJUMS",
+        "subscribedTitle": "Jau <it>iekļauts.</it>",
+        "subscribedLede": "Abonements ietver vienu klīnisko ziņojumu katru kalendāro mēnesi. Ģenerējiet to no lasījumu lapas apakšas — maksājums nav nepieciešams.",
+        "eyebrow": "KLĪNISKAIS ZIŅOJUMS · APSTIPRINĀT",
+        "title": "Klīniskais ziņojums<it>.</it>",
+        "ledePrice": "Vienreizējs klīniskais ziņojums ir",
+        "ledeDossier": ". 12–18 lappušu garš visu divpadsmit lasījumu dosjē, valodā, kādā strādā klīnicists.",
+        "ledeBilling": "Norēķinus apstrādā Stripe. Ziņojumus var atkārtoti ģenerēt, padziļinoties lasījumam; abonenti saņem vienu katru kalendāro mēnesi bez atsevišķas maksas.",
+        "depthNotice": "<i>ziņojums atspoguļos pieejamo dziļumu.</i> to var atkārtoti ģenerēt, padziļinoties lasījumam.",
+        "canceled": "<i>norēķini tika slēgti.</i> nekas netika iekasēts.",
+        "checkoutCta": "Turpināt uz norēķiniem",
+        "returnLink": "atgriezties pie lasījumiem"
+      },
+      "status": {
+        "eyebrow": "KLĪNISKAIS ZIŅOJUMS",
+        "line": {
+          "queued": "jūsu ziņojums tiek sagatavots.",
+          "generating": "ziņojums tiek rakstīts.",
+          "ready": "ziņojums ir gatavs.",
+          "failed": "ziņojums netika pabeigts. mēs drīzumā mēģināsim vēlreiz."
+        },
+        "open": "atvērt ziņojumu",
+        "back": "atpakaļ uz lasījumiem"
+      },
+      "queued": {
+        "eyebrow": "KLĪNISKAIS ZIŅOJUMS",
+        "line": "jūsu ziņojums tiek sagatavots — mēs jums nosūtīsim e-pastu, kad tas būs gatavs.",
+        "back": "atpakaļ uz lasījumiem"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "UZŅEMŠANA",
+        "title": "Uzņemšana, <it>tēma pēc tēmas.</it>",
+        "lede": "Desmit sadaļas. Atveriet jebkuru, lai pārskatītu vai padziļinātu tajā sniegtās atbildes. Uzņemšana nav vienreizēja veidlapa — atbildes var pārskatīt jebkurā laikā."
+      },
+      "step": {
+        "eyebrow": "UZŅEMŠANA",
+        "backToAll": "atpakaļ uz visām sadaļām"
+      },
+      "failed": {
+        "eyebrow": "UZŅEMŠANA — NEPILNĪGA",
+        "headline": "Lasījums <em>netika pabeigts</em>.",
+        "lede": "Jūsu uzņemšanas dati ir reģistrēti. Tam sekojošā analīze netika pabeigta.",
+        "retry": "Atsākt lasījumu",
+        "retryPending": "Atsākšana"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUSS · APSTRĀDE",
+      "headline": "Jūsu profils tiek <em>lasīts</em>.",
+      "lede": "mēs tagad apstrādājam jūsu atbildes ar psihodinamiskajiem modeļiem. pirmā apstrāde parasti ilgst apmēram 2 stundas. mēs jums paziņosim, kad darbs būs gatavs, un telpa tiks atvērta.",
+      "figIntake": "UZŅEMŠANA",
+      "figSubmitted": "iesniegts {date}",
+      "rowResponses": "Saņemtās atbildes",
+      "rowPattern": "Modeļu ekstrakcija",
+      "rowSynthesis": "Profila sintēze",
+      "statusInProgress": "notiek",
+      "statusQueued": "rindā",
+      "foot": "mēs jums paziņosim, kad darbs būs gatavs",
+      "returnCta": "atgriezties klusajā telpā",
+      "devPrefix": "izstrāde",
+      "devOpening": "atvēršana…",
+      "devOpen": "atvērt telpu tagad",
+      "devError": "nevarēja atvērt telpu — pārbaudiet konsoli."
+    }
+  },
+  "invite": {
+    "eyebrow": "IELŪGUMS",
+    "safetyFooter": "TwentyThird neaizstāj klīnisko aprūpi. Krīzes gadījumā sazinieties ar vietējo neatliekamās palīdzības dienestu.",
+    "notReady": {
+      "headline": "Uzaicinājumu sistēma tiek <it>sagatavota.</it>",
+      "body": "Lūdzu, mēģiniet vēlreiz pēc brīža."
+    },
+    "notFound": {
+      "headline": "Šī saite <it>netiek atpazīta.</it>",
+      "body": "Ja saite nesen tika saņemta e-pastā, uzaicinājums, iespējams, ir nosūtīts atkārtoti. Atveriet jaunāko e-pastu, lai atrastu aktīvo saiti."
+    },
+    "alreadyDeclined": {
+      "headline": "Šis uzaicinājums tika <it>atteikts.</it>",
+      "body": "Nekas vairāk no jums nav nepieciešams. {name} netiks paziņots vairāk par to, ko viņš jau redz."
+    },
+    "alreadyAccepted": {
+      "headline": "Jūs jau esat <it>pieņēmis.</it>",
+      "body": "Ja attiecību uzņemšana vēl nav pabeigta, varat turpināt zemāk.",
+      "continueLink": "turpināt attiecību uzņemšanu"
+    },
+    "ended": {
+      "headline": "Šis savienojums ir <it>beidzies.</it>",
+      "body": "Saite vairs nav aktīva. Attiecību ieraksts paliek lietas failā, taču vairs neietekmē lasījumu."
+    },
+    "expired": {
+      "headline": "Šis uzaicinājums ir <it>beidzies.</it>",
+      "body": "Uzaicinājumi beidzas četrpadsmit dienas pēc to nosūtīšanas. Palūdziet {name} nosūtīt jaunu, ja vēlaties atbildēt."
+    },
+    "declined": {
+      "headline": "Tas ir <it>saņemts.</it>",
+      "body": "Nekas cits no jums nav nepieciešams. Ielūgums ir slēgts; ielūdzējs klusi redz statusa maiņu. Jūs varat aizvērt šo logu."
+    },
+    "live": {
+      "eyebrow": "SAVIENOJUMA PIEPRASĪJUMS",
+      "headline": "{name} ir uzaicinājis jūs uz <it>savu lasījumu.</it>",
+      "lede": "TwentyThird ir redakcionāli-klīnisks instruments — klusa telpa, kurā ar rūpību tiek lasīta kāda cilvēka iekšējās dzīves struktūra un atveidota valodā, ko var izmantot klīnicists.",
+      "explainerOne": "<em>Savienojums</em> nav kopīgs konts. {name} neredzēs jūsu lasījumus, sesijas vai lietas failu. Jūs neredzēsiet viņu. Tas, ko jūs sakāt par attiecībām, baro modeli, kas veido {name} lasījumu.",
+      "explainerTwo": "Ja vēlaties savu lasījumu, pirmais ceļš zemāk arī sāk jūsu pašu kontu. Vidējais ceļš ļauj jums dot ieguldījumu {name} lasījumā bez konta. Abi ir atļauti.",
+      "metaSentTo": "nosūtīts uz",
+      "metaInviteAs": "uzaicināt kā",
+      "metaReceived": "saņemts",
+      "metaExpiresIn": "termiņš beidzas pēc {count, plural, one {# dienas} other {# dienām}}"
+    },
+    "intake": {
+      "eyebrow": "ATTIECĪBU UZŅEMŠANA",
+      "notReady": {
+        "headline": "Uzņemšana tiek <it>sagatavota.</it>",
+        "body": "Lūdzu, mēģiniet vēlreiz pēc brīža."
+      },
+      "notFound": {
+        "headline": "Šī saite <it>netiek atpazīta.</it>",
+        "body": "Atveriet jaunāko uzaicinājuma e-pastu, lai atrastu aktīvo saiti."
+      },
+      "notOpen": {
+        "headline": "Uzņemšana <it>nav atvērta.</it>",
+        "body": "Šis uzaicinājums nav pieņemts, vai ir noraidīts vai beidzies. Atgriezieties pie uzaicinājuma saites, lai izvēlētos vēlreiz.",
+        "backLink": "atpakaļ uz uzaicinājumu"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "jā — sākt attiecību uzņemšanu",
+      "acceptLabel": "jā — izveidot savienojumu bez konta",
+      "declineLabel": "nē, paldies",
+      "beginLabel": "sākt",
+      "continueLabel": "turpināt",
+      "back": "atpakaļ",
+      "oneMoment": "vienu mirkli…",
+      "declineConfirmLine": "tas aizver ielūgumu. nekas cits par jums netiek nosūtīts vai saglabāts.",
+      "declineClosing": "aizver…",
+      "declineConfirm": "atteikt ielūgumu",
+      "firstNameLabel": "JŪSU VĀRDS",
+      "firstNameAria": "Jūsu vārds",
+      "firstNameSub": "{name} redzēs šo vārdu tikai savā savienojumu sarakstā.",
+      "errors": {
+        "missingFirstName": "vārds ļauj analītiķim pareizi jūs uzrunāt.",
+        "generic": "nevarēja iesniegt.",
+        "notFound": "šī ielūguma saite nav atpazīta.",
+        "expired": "šis ielūgums ir beidzies. lūdziet ielūdzēju nosūtīt jaunu.",
+        "declined": "šis ielūgums jau tika atteikts.",
+        "ended": "šis ielūgums vairs nav aktīvs.",
+        "missingFirstNameRequired": "vārds ir obligāts."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "ATTIECĪBU UZŅEMŠANA",
+      "begin": "sākt",
+      "back": "atpakaļ",
+      "backToCover": "atpakaļ uz vāku",
+      "next": "nākamais",
+      "finish": "pabeigt",
+      "scaleAria": "skala {value}",
+      "cover": {
+        "headline": "Tas, ko jūs sakāt par <it>{name}</it>, paliek starp jums un analītiķi.",
+        "lede": "Divpadsmit īsi jautājumi. Apmēram piecas minūtes. Atbildes baro {name} lasījumu; viņi neredzēs, ko jūs rakstījāt, un jūs neredzēsiet, ko tas radīs."
+      },
+      "closing": {
+        "recording": "mirklis — atbildes tiek ierakstītas.",
+        "tryAgain": "mēģināt vēlreiz",
+        "headline": "Tas ir pietiekami <it>pagaidām.</it>",
+        "lede": "Tas, ko jūs teicāt par {name}, informēs viņu lasījumu no nākamās sesijas. Viņi to neredzēs; jūs neredzēsiet, ko tas radīs.",
+        "closeWindow": "jūs varat aizvērt šo logu."
+      },
+      "errors": {
+        "unanswered": "mirklis ar šo pirms turpināt.",
+        "questionOpen": "jautājums joprojām ir atvērts. mirklis.",
+        "couldNotSave": "nevarēja saglabāt",
+        "invalidAnswers": "kaut kas netika parsēts — lūdzu, pārbaudiet atbildes.",
+        "notAccepting": "šis uzaicinājums vairs nepieņem atbildes.",
+        "notFound": "šī uzaicinājuma saite nav atpazīta.",
+        "couldNotSaveAnswers": "nevarēja saglabāt atbildes."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Cik ilgi jūs viens otru pazīstat?",
+          "options": {
+            "under_one_year": "mazāk nekā gadu",
+            "one_to_three": "viens līdz trīs gadi",
+            "four_to_ten": "četri līdz desmit gadi",
+            "eleven_to_twenty": "vienpadsmit līdz divdesmit gadi",
+            "more_than_twenty": "vairāk nekā divdesmit gadi"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Cik tuvi jūs abi jūtaties šobrīd?",
+          "lowLabel": "attālumā",
+          "highLabel": "cik tuvu vien var būt"
+        },
+        "repair_initiator": {
+          "prompt": "Kad jūs nepiekrītat, kurš mēdz pirmais meklēt izlīgumu?",
+          "options": {
+            "i_do": "gandrīz vienmēr es",
+            "usually_me": "parasti es",
+            "evenly": "mēs virzāmies viens pret otru vienmērīgi",
+            "usually_them": "parasti viņi",
+            "they_do": "gandrīz vienmēr viņi"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kad kaut kas ir grūti, kur viņi mēdz doties?",
+          "options": {
+            "toward": "pie jums, lai izrunātu",
+            "quiet": "klusumā, tad atpakaļ",
+            "work": "darbā vai uzmanības novēršanā",
+            "alone": "pilnīgi vieni, aiz durvīm",
+            "elsewhere": "vispirms pie citiem cilvēkiem"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Ko jūs vēlētos, lai viņi saprastu par sevi?"
+        },
+        "what_you_offer": {
+          "prompt": "Vienā frāzē, ko jūs darāt viņu labā, ko viņi nevar izdarīt paši?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Kura balss, šķiet, viņus visbiežāk vada?",
+          "options": {
+            "demand": "prasība — kas jādara",
+            "doubt": "šaubas — vai tas ir pietiekami",
+            "desire": "vēlme — ko viņi patiesībā vēlas",
+            "watcher": "vērotājs — kā tas tiks uztverts",
+            "uncertain": "es vēl nezinu"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Kur parasti iestrēgst viņu darbs?",
+          "options": {
+            "start": "sākums — iekļūšana",
+            "middle": "vidus — palikšana pie tā",
+            "finish": "beigas — atlaišana",
+            "visibility": "redzamība — ļaušana tam tikt redzētam",
+            "nowhere": "nekur, ko es varētu redzēt no ārpuses"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Vai ir kāda tēma, no kuras viņi konsekventi izvairās? Nosauciet to viegli."
+        },
+        "they_at_their_best": {
+          "prompt": "Kad viņi ir visvairāk paši?"
+        },
+        "what_youve_changed": {
+          "prompt": "Vai ir kaut kas viņos, ko jūs klusi esat pieņēmis, ka nemainīsit?"
+        },
+        "future_together": {
+          "prompt": "Cik liela daļa no nākotnes, ko jūs iedomājaties, ietver viņus?",
+          "lowLabel": "ļoti maz",
+          "highLabel": "gandrīz viss"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "vai",
+      "fallbackPreamble": "iekopējiet šo saiti savā pārlūkprogrammā:",
+      "attendingInstitution": "APMEKLĒJOŠĀ INSTITŪCIJA",
+      "tagline": "Psihodinamiskais AI iekšējai dzīvei.",
+      "automatedFooter": "Sūtīts ar automatizētu sistēmu · neatbildēt"
+    },
+    "intakeSubmitted": {
+      "subject": "jūsu profils tiek lasīts.",
+      "preheader": "Pirmā caurskate notiek. Istaba atveras, kad darbs ir gatavs.",
+      "eyebrow": "PROFILA LASĪJUMS",
+      "titleText": "Jūsu atbildes tiek lasītas.",
+      "italicPhrase": "tiek lasītas",
+      "lede": "Pirmā caurskate caur psihodinamiskajiem modeļiem ir sākusies. Istaba atveras, kad darbs ir gatavs.",
+      "figLeftItalic": "uzņemšana saņemta",
+      "figRightLabel": "Pirmā caurskate",
+      "figRightItalic": "notiek",
+      "text": "{salutation}\n\nJūsu atbildes ir saņemtas. Pirmā caurskate caur psihodinamiskajiem modeļiem ir sākusies. Istaba atveras, kad darbs ir gatavs.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "jūsu istaba ir atvērta.",
+      "preheader": "Divpadsmit bloki gatavi lasīšanai. Darbs pilnveidojas, atgriežoties pie tā.",
+      "eyebrow": "ISTABA GATAVA",
+      "titleText": "Pirmais lasījums ir atvērts.",
+      "italicPhrase": "pirmais lasījums",
+      "lede": "Divpadsmit psihodinamiskā profila bloki, istabā un gatavi lasīšanai. Darbs pilnveidojas, atgriežoties pie tā.",
+      "ctaLabel": "Ienākt istabā",
+      "figLeftItalic": "istaba atvērta",
+      "figRightLabel": "Pirmais lasījums",
+      "figRightItalic": "gatavs",
+      "text": "{salutation}\n\nPirmais lasījums ir atvērts.\n\nDivpadsmit psihodinamiskā profila bloki, istabā un gatavi lasīšanai. Darbs pilnveidojas, atgriežoties pie tā.\n\nIenākt istabā:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nAPMEKLĒJOŠĀ INSTITŪCIJA"
+    },
+    "invite": {
+      "subject": "{inviterName} vēlētos tevi lasījumā.",
+      "preheader": "{inviterName} vēlētos tevi lasījumā. Savienojums neredz tavus lasījumus; tu neredzēsi viņu.",
+      "eyebrow": "IEDAICINĀJUMS",
+      "titleText": "{inviterName} vēlētos tevi lasījumā.",
+      "italicPhrase": "lasījumā",
+      "lede": "TwentyThird ir klusa telpa, kurā ar rūpību tiek lasīta cilvēka iekšējās dzīves struktūra. Savienojums neredz ielūdzēja lasījumus vai sesijas, un tu neredzēsi viņu.",
+      "ctaLabel": "Atvērt ielūgumu",
+      "figLeftItalic": "ielūgums izsniegts",
+      "figRightLabel": "Termiņš",
+      "figRightItalic": "četrpadsmit dienas",
+      "securityNote": "Ja šis ielūgums saņemts kļūdas dēļ, tas automātiski beidzas pēc četrpadsmit dienām.",
+      "textIntro": "{inviterName} vēlētos tevi lasījumā TwentyThird.",
+      "textBody": "TwentyThird ir klusa telpa, kurā ar rūpību tiek lasīta cilvēka iekšējās dzīves struktūra. Savienojums neredz ielūdzēja lasījumus vai sesijas, un tu neredzēsi viņu.",
+      "textNote": "{inviterName} pievienoja piezīmi:\n  {note}",
+      "textOpen": "Atvērt ielūgumu:",
+      "textSecurity": "Ja šis ielūgums saņemts kļūdas dēļ, tas automātiski beidzas pēc četrpadsmit dienām.",
+      "textCloser": "CognitiveLab, WelloWork AB\nAPMEKLĒJOŠĀ INSTITŪCIJA"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} ir pieņēmis savienojumu.",
+      "preheader": "{nameTitle} ir pieņēmis savienojumu. Ietekme uz nākamo sesiju uz priekšu.",
+      "eyebrow": "SAVIENOJUMS PIEŅEMTS",
+      "titleText": "{nameTitle} ir pieņēmis savienojumu.",
+      "italicPhrase": "savienojums pieņemts",
+      "lede": "Viņu attiecību uzņemšana informēs jūsu lasījumu no nākamās sesijas uz priekšu. Viņi neredzēs jūsu lasījumus; jūs neredzēsiet viņu.",
+      "ctaLabel": "Atgriezties telpā",
+      "figLeftItalic": "savienojums pieņemts",
+      "figRightLabel": "Ietekme",
+      "figRightItalic": "nākamā sesija uz priekšu",
+      "text": "{salutation}\n\n{nameTitle} ir pieņēmis savienojumu.\n\nViņu attiecību uzņemšana informēs jūsu lasījumu no nākamās sesijas uz priekšu. Viņi neredzēs jūsu lasījumus; jūs neredzēsiet viņu.\n\nAtgriezties telpā:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} ir pārtraucis savienojumu.",
+      "preheader": "{nameTitle} ir pārtraucis savienojumu. Jūsu lasījums pielāgosies nākamajā sesijā.",
+      "eyebrow": "SAVIENOJUMS PĀRTRAUKTS",
+      "titleText": "{nameTitle} ir pārtraucis savienojumu.",
+      "italicPhrase": "savienojums pārtraukts",
+      "lede": "Jūsu lasījums pielāgosies nākamajā sesijā. Tas, kas tika teikts par attiecībām, tiek saglabāts lietas failā; tas vairs netiek ņemts vērā aktīvajā lasījumā.",
+      "ctaLabel": "Atgriezties telpā",
+      "figLeftItalic": "savienojums pārtraukts",
+      "figRightLabel": "Efekts",
+      "figRightItalic": "no nākamās sesijas",
+      "text": "{nameTitle} ir pārtraucis savienojumu.\n\nJūsu lasījums pielāgosies nākamajā sesijā. Tas, kas tika teikts par attiecībām, tiek saglabāts lietas failā; tas vairs netiek ņemts vērā aktīvajā lasījumā.\n\nAtgriezties telpā:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "šīs nedēļas Catchup ir atvērts.",
+      "preheader": "Īsa refleksija. Piecas minūtes. Tā atjaunina lasījumu.",
+      "eyebrow": "NEDĒĻAS CATCHUP",
+      "titleText": "Nedēļa pagājusi klusi.",
+      "italicPhrase": "klusi",
+      "lede": "Īsa refleksija — kas ir skaļš, kas palicis kluss, kas mainījies. Tā atjaunina lasījumu.",
+      "ctaLabel": "Atvērt Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "piecas minūtes",
+      "text": "{salutation}\n\nNedēļa pagājusi klusi.\n\nĪsa refleksija — kas ir skaļš, kas palicis kluss, kas mainījies. Tā atjaunina lasījumu.\n\nAtvērt Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "jūsu atbildes tiek saglabātas.",
+      "preheader": "Jūsu uzņemšana atsākas no vietas, kur apstājāties. Darbs nesākas, kamēr tas nav pabeigts.",
+      "eyebrow": "UZŅEMŠANA APTURĒTA",
+      "titleText": "Uzņemšana ir tur, kur to atstājāt.",
+      "italicPhrase": "kur to atstājāt",
+      "lede": "Jūsu uzņemšana atsākas no vietas, kur apstājāties. Darbs nesākas, kamēr tas nav pabeigts.",
+      "ctaLabel": "Atgriezties pie uzņemšanas",
+      "figLeftItalic": "uzņemšana apturēta",
+      "figRightLabel": "Atsākt",
+      "figRightItalic": "kur apstājāties",
+      "text": "{salutation}\n\nUzņemšana ir tur, kur to atstājāt.\n\nJūsu uzņemšana atsākas no vietas, kur apstājāties. Darbs nesākas, kamēr tas nav pabeigts.\n\nAtgriezties pie uzņemšanas:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nAPMEKLĒJOŠĀ INSTITŪCIJA"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Kuri vārdi vislabāk raksturo mājas, kurās uzaugāt.",
+          "subtitle": "izvēlieties līdz trim vārdiem, kas šķiet patiesi, pat ja tie ir pretrunīgi — mājas parasti ir dažādu sajūtu apvienojums",
+          "options": {
+            "calm": "Mierīgas",
+            "strict": "Stingras",
+            "emotionally_distant": "Emocionāli attālinātas",
+            "chaotic": "Haotiskas",
+            "achievement_focused": "Orientētas uz sasniegumiem",
+            "protective": "Aizsargājošas",
+            "unpredictable": "Neprognozējamas",
+            "conflict_heavy": "Konfliktiem bagātas"
+          }
+        },
+        "q1_2": {
+          "title": "Kādu lomu jūs dabiski ieņēmāt bērnībā.",
+          "subtitle": "padomājiet par lomu, ko spēlējāt savā ģimenē, nevienam to neliekot — miera uzturētājs, palīgs, klusais bērns",
+          "options": {
+            "peacemaker": "Miera uzturētājs",
+            "achiever": "Sasniegumu meklētājs",
+            "invisible_child": "Neredzamais bērns",
+            "caregiver": "Aprūpētājs",
+            "rebel": "Dumpinieks",
+            "funny_one": "Jautrais",
+            "responsible_one": "Atbildīgais",
+            "problem_child": "Problēmbērns"
+          }
+        },
+        "q1_3": {
+          "title": "Cik emocionāli droši jutāties, augot.",
+          "subtitle": "vadīties pēc savas intuīcijas par mājām, nevis pēc versijas, ko ģimene stāstītu svešiniekam",
+          "lowLabel": "1 · NEKAD NEDROŠI",
+          "highLabel": "10 · PILNĪBĀ DROŠI"
+        },
+        "q1_4": {
+          "title": "Vai mājās atklāti apsprieda emocijas.",
+          "subtitle": "ne tikai tas, vai jūtas bija, bet vai kāds tās patiešām nosauca vai par tām runāja skaļi",
+          "options": {
+            "frequently": "Bieži",
+            "sometimes": "Reizēm",
+            "rarely": "Reti",
+            "never": "Nekad"
+          }
+        },
+        "q1_5": {
+          "title": "Viena bērnības atmiņa, kas joprojām šodien šķiet emocionāli dzīva.",
+          "subtitle": "aprakstiet vienu konkrētu ainu, kas joprojām nāk prātā — kur bijāt, kas tur bija, kas notika, kā jutāties"
+        },
+        "q1_6": {
+          "title": "Ko jūs iemācījāties darīt, lai saņemtu mīlestību vai atzinību.",
+          "subtitle": "mazās lietas, kas, jūsuprāt, darbojās — būt labam, būt klusam, sasniegt, netraucēt — dalieties ar to, ko atceraties pielāgojot"
+        },
+        "q1_7": {
+          "title": "Kādas emocijas bija grūti izteikt jūsu mājās.",
+          "subtitle": "kuras jūtas tika ignorētas, noraidītas vai sodītas, kad mēģinājāt tās parādīt — dusmas, skumjas, bailes, prieks, jebkas"
+        },
+        "q1_8": {
+          "title": "Kad domājat par savu jaunāko sevi, ko jūs pret viņu jūtat.",
+          "subtitle": "esiet godīgi par sajūtu, kas rodas — siltums, skumjas, distance, vilšanās, aizsardzība — lai kas tur patiešām būtu"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Kā jūs raksturotu savu māti vai primāro mātes aprūpētāju.",
+          "subtitle": "daži teikumi par to, kāda viņa bija, kā viņa par jums rūpējās un kā jūs jutāties viņas klātbūtnē",
+          "options": {
+            "warm": "Silta",
+            "controlling": "Kontrolējoša",
+            "emotionally_unavailable": "Emocionāli nepieejama",
+            "sacrificing": "Pašaizliedzīga",
+            "critical": "Kritiska",
+            "anxious": "Nemierīga",
+            "unpredictable": "Neprognozējama",
+            "admired": "Apbrīnota",
+            "fearful": "Bailīga",
+            "not_applicable": "Nav piemērojams"
+          }
+        },
+        "q2_2": {
+          "title": "Kā jūs raksturotu savu tēvu vai primāro tēva aprūpētāju.",
+          "subtitle": "daži teikumi par to, kāds viņš bija, kā viņš par jums rūpējās un kā jūs jutāties viņa klātbūtnē",
+          "options": {
+            "supportive": "Atbalstošs",
+            "distant": "Atturīgs",
+            "dominant": "Dominējošs",
+            "passive": "Pasīvs",
+            "ambitious": "Ambiciozs",
+            "emotionally_closed": "Emocionāli noslēgts",
+            "protective": "Aizsargājošs",
+            "critical": "Kritisks",
+            "absent": "Prombūtnē",
+            "not_applicable": "Nav piemērojams"
+          }
+        },
+        "q2_3": {
+          "title": "Jūsu vieta starp brāļiem un māsām.",
+          "subtitle": "jūsu vieta dzimšanas secībā — vecākais, vidējais, jaunākais, vienīgais bērns vai kaut kur pa vidu",
+          "options": {
+            "oldest": "Vecākais",
+            "middle": "Vidējais",
+            "youngest": "Jaunākais",
+            "only_child": "Vienīgais bērns"
+          }
+        },
+        "q2_4": {
+          "title": "Kura loma vislabāk atbilst jūsu vietai starp brāļiem un māsām.",
+          "subtitle": "ārpus dzimšanas secības, loma, ko jūs beigās spēlējāt — atbildīgais, dumpinieks, neredzamais, mīlulis",
+          "options": {
+            "responsible": "Atbildīgais",
+            "ignored": "Ignorētais",
+            "compared": "Salīdzināts ar citiem",
+            "favored": "Iecienītais",
+            "competitive": "Konkurētspējīgais",
+            "protective": "Aizsargājošais",
+            "not_applicable": "Nav piemērojams"
+          }
+        },
+        "q2_5": {
+          "title": "Kurš no vecākiem jūs saprata vislabāk.",
+          "subtitle": "nosauciet viņus un pastāstiet, ko viņi redzēja jūsos, ko otrs palaida garām vai saprata nepareizi"
+        },
+        "q2_6": {
+          "title": "Kurš no vecākiem visvairāk ietekmēja jūsu bailes.",
+          "subtitle": "kura raizes jūs uzņēmāt, augot, un kā šīs bailes joprojām izpaužas jūsu dzīvē šodien"
+        },
+        "q2_7": {
+          "title": "Kā izskatījās konflikti jūsu ģimenē.",
+          "subtitle": "aprakstiet strīdu formu — kliegšana, klusums, durvju aizciršana, aukstas nedēļas, atkārtoti modeļi — viss, kas šķita pazīstams"
+        },
+        "q2_8": {
+          "title": "Kāda veida uzmanību bija visgrūtāk saņemt.",
+          "subtitle": "aprūpe, kas lika jums justies neērti — uzslavas, bažas, fizisks tuvums, redzamība — un kāpēc tas bija grūti"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Cik reliģiska vai garīga bija vide, kurā uzaugāt.",
+          "subtitle": "mājas faktiskā atmosfēra — prakse, noteikumi, gaisā esošie uzskati — nevis tas, kam ticat tagad kā pieaugušais",
+          "lowLabel": "1 · NEKĀDA",
+          "highLabel": "10 · ĻOTI"
+        },
+        "q3_2": {
+          "title": "Kura vēsts bija spēcīgākā, uzaugot.",
+          "subtitle": "noteikums vai gaidas, kas tika atkārtotas tik bieži, ka kļuva par fona troksni — par panākumiem, uzvedību, tēlu, pienākumu, ģimeni",
+          "options": {
+            "success": "Panākumi ir vissvarīgākie",
+            "reputation": "Reputācija ir vissvarīgākā",
+            "obedience": "Paklausība ir vissvarīgākā",
+            "family_loyalty": "Ģimenes lojalitāte ir vissvarīgākā",
+            "independence": "Neatkarība ir vissvarīgākā",
+            "sacrifice": "Upurēšanās ir vissvarīgākā"
+          }
+        },
+        "q3_3": {
+          "title": "Cik stipri jūtaties sabiedrības nosodīts.",
+          "subtitle": "cik ļoti jūtaties novērots vai vērtēts no cilvēkiem ārpus jūsu tuvā loka — darbā, tiešsaistē, sabiedrībā",
+          "lowLabel": "1 · NEKĀDĀ",
+          "highLabel": "10 · PASTĀVĪGI"
+        },
+        "q3_4": {
+          "title": "Kādi uzskati no jūsu audzināšanas joprojām jūs veido.",
+          "subtitle": "vērtības, noteikumi vai pieņēmumi, ko esat mantojis un joprojām ievērojat, pat ja par tiem neesat domājis gadiem ilgi"
+        },
+        "q3_5": {
+          "title": "Kādiem uzskatiem jūs slepeni pretojaties.",
+          "subtitle": "tiem, ar kuriem publiski piekrītat, bet klusi nepiekrītat — par naudu, attiecībām, panākumiem, dzimumu, jebko"
+        },
+        "q3_6": {
+          "title": "Kas jūsu ģimenei vai kopienai visvairāk nepatiktu jūsu patiesajā būtībā.",
+          "subtitle": "tās jūsu daļas, jūsu dzīve vai jūsu izvēles, ko slēpjat no viņiem, un kāpēc tās slēpjat"
+        },
+        "q3_7": {
+          "title": "Par kādu personu jums bija paredzēts kļūt.",
+          "subtitle": "nākotne, ko citi jums iedomājās — karjera, ģimene, uzvedība, tēls — pirms jums bija jebkāda teikšana par to"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Cik cilvēku patiesi pazīst īsto jūs.",
+          "subtitle": "cilvēki, kuri ir redzējuši jūsu nerediģēto versiju un nebūtu šokēti par neko jūsu iekšējā dzīvē",
+          "options": {
+            "none": "Neviens",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Daudzi"
+          }
+        },
+        "q4_2": {
+          "title": "Grupās jūs parasti kļūstat par.",
+          "subtitle": "lomu, kurā jūs ieejat bez domāšanas — smieklīgais, klausītājs, līderis, novērotājs, tas, kurš uztur mieru",
+          "options": {
+            "leader": "Līderis",
+            "observer": "Novērotājs",
+            "entertainer": "Izklaidētājs",
+            "mediator": "Mediators",
+            "intellectual": "Intelektuālis",
+            "caregiver": "Aprūpētājs",
+            "withdrawn": "Noslēgts"
+          }
+        },
+        "q4_3": {
+          "title": "Cik ļoti jūs baidāties pievilt citus.",
+          "subtitle": "cik lielā mērā citas personas reakcija — skatiens, nopūta, klusums — var ietekmēt to, ko jūs sakāt vai darāt",
+          "lowLabel": "1 · NEKĀDĀ MĒRĀ",
+          "highLabel": "10 · KATRU DIENU"
+        },
+        "q4_4": {
+          "title": "Kuras savas daļas jūs slēpjat sabiedrībā.",
+          "subtitle": "domas, jūtas, īpašības vai jūsu vēstures fragmenti, ko jūs paturat paslēptus, atrodoties citu cilvēku tuvumā"
+        },
+        "q4_5": {
+          "title": "Kad jūs jūtaties visvairāk pieņemts.",
+          "subtitle": "situācijas vai attiecības, kurās jūs pārtraucat tēlot un varat vienkārši būt — aprakstiet, kas padara šīs telpas atšķirīgas"
+        },
+        "q4_6": {
+          "title": "Kādas sociālās situācijas jūs visvairāk iztukšo.",
+          "subtitle": "sanāksmes, dinamika vai attiecības, kas jūs nogurdina vairāk, nekā vajadzētu — un kas tajās ir nogurdinošs"
+        },
+        "q4_7": {
+          "title": "Kādus cilvēkus jūs apskaužat.",
+          "subtitle": "skaušana parasti norāda uz kaut ko, ko jūs vēlaties, bet neesat atļāvis sev atklāti vēlēties — aprakstiet, kurš to izraisa un kāpēc"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Kuras platformas jūs aktīvi izmantojat.",
+          "subtitle": "lietotnes, kuras atverat ieraduma dēļ, vairāk nekā reizi dienā, nevis tās, kurās jums tehniski ir konts",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Nevienu"
+          }
+        },
+        "q5_2": {
+          "title": "Vidējais dienas lietojums katrai platformai.",
+          "subtitle": "aptuvena aplēse par to, cik daudz laika jūs patiešām pavadāt katrā no tām — minūtes vai stundas, bez vērtējuma",
+          "unit": "MINŪTES DIENĀ"
+        },
+        "q5_3": {
+          "title": "Kādam nolūkam tās galvenokārt izmantojat.",
+          "subtitle": "īstais iemesls zem acīmredzamā — savienojums, uzmanības novēršana, apstiprinājums, bēgšana, salīdzināšana, informācija",
+          "options": {
+            "validation": "Apstiprinājums",
+            "learning": "Mācīšanās",
+            "escapism": "Bēgšana",
+            "networking": "Tīklošanās",
+            "self_expression": "Pašizpausme",
+            "entertainment": "Izklaide",
+            "comparison": "Salīdzināšana",
+            "dating": "Iepazīšanās"
+          }
+        },
+        "q5_4": {
+          "title": "Cik bieži jūs dzēšat vai rediģējat ierakstus pirms publicēšanas.",
+          "subtitle": "cik daudz jūs atkārtojat, apšaubāt vai pārrakstāt to, ko kopīgojat, pirms ļaujat citiem to redzēt",
+          "options": {
+            "always": "Vienmēr",
+            "often": "Bieži",
+            "sometimes": "Dažreiz",
+            "rarely": "Reti",
+            "never": "Nekad"
+          }
+        },
+        "q5_5": {
+          "title": "Cik bieži jūs salīdzināt savu dzīvi ar citiem tiešsaistē.",
+          "subtitle": "klusā mērīšana, kas notiek ritinot — par izskatu, panākumiem, attiecībām, dzīvesveidu, jebko",
+          "lowLabel": "1 · NEKAD",
+          "highLabel": "10 · PASTĀVĪGI"
+        },
+        "q5_6": {
+          "title": "Kāda jūsu versija parādās tiešsaistē.",
+          "subtitle": "aprakstiet tēlu, ko prezentējat — kurēto versiju — un kā tas atšķiras no tā, kas esat, kad neviens neskatās"
+        },
+        "q5_7": {
+          "title": "Ko jūs emocionāli meklējat, atverot sociālos medijus.",
+          "subtitle": "sajūta, pēc kuras tiecaties brīdī, kad atverat lietotni — uzmanības novēršana, komforts, satraukums, nejutīgums, savienojums"
+        },
+        "q5_8": {
+          "title": "Kāda veida saturs jums rada diskomfortu.",
+          "subtitle": "ieraksti vai videoklipi, kas liek jums ātri ritināt garām, un ko, jūsuprāt, patiesībā nozīmē šis diskomforts"
+        },
+        "q5_9": {
+          "title": "Kādi cilvēki piesaista jūsu uzmanību tiešsaistē.",
+          "subtitle": "konti, pie kuriem apstājaties un skatāties — aprakstiet īpašības, kas tiem ir kopīgas, un kas jūs piesaista"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Jūsu pašreizējais attiecību statuss.",
+          "subtitle": "kur jūs patiesībā atrodaties šobrīd — viens, tiekaties, partnerattiecībās, precējies, šķīries, sarežģīti — nevis kur vēlaties būt",
+          "options": {
+            "single": "Viens",
+            "dating": "Tiekaties",
+            "in_relationship": "Attiecībās",
+            "engaged": "Saderinājies",
+            "married": "Precējies",
+            "separated_divorced": "Šķīries vai atraitnis",
+            "widowed": "Atraitnis",
+            "its_complicated": "Sarežģīti"
+          }
+        },
+        "q6_2": {
+          "title": "Cik nopietnas attiecības jums ir bijušas.",
+          "subtitle": "tās, kas emocionāli bija svarīgas, neatkarīgi no to ilguma vai oficiālā statusa",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tipiski konflikti jūsu attiecībās.",
+          "subtitle": "strīdi, kas atkārtoti parādās dažādās formās ar dažādiem partneriem — nauda, attālums, kontrole, komunikācija",
+          "options": {
+            "distance": "Attālums",
+            "jealousy": "Greizsirdība",
+            "control": "Kontrole",
+            "emotional_unavailability": "Emocionālā nepieejamība",
+            "communication": "Komunikācija",
+            "trust": "Uzticība",
+            "dependency": "Atkarība"
+          }
+        },
+        "q6_4": {
+          "title": "Attiecībās jūs mēdzat.",
+          "subtitle": "jūsu noklusējuma rīcība, kad lietas kļūst grūtas — tuvoties, attālināties, uzņemties vadību, noslēgties, mēģināt labot",
+          "options": {
+            "pursue": "Tiekties",
+            "withdraw": "Attālināties",
+            "overgive": "Pārmērīgi dot",
+            "test_loyalty": "Pārbaudīt lojalitāti",
+            "avoid_vulnerability": "Izvairīties no ievainojamības"
+          }
+        },
+        "q6_5": {
+          "title": "Kādos cilvēkos jūs atkārtoti iemīlaties.",
+          "subtitle": "tips, kas atkārtoti parādās jūsu mīlas dzīvē — ne tikai izskats, bet arī emocionālie modeļi, temperaments, kā viņi pret jums izturas"
+        },
+        "q6_6": {
+          "title": "Kas parasti izbeidz jūsu attiecības.",
+          "subtitle": "īstais iemesls, kāpēc lietas sabrūk, pārsniedzot oficiālo stāstu, ko stāstāt draugiem vai ģimenei"
+        },
+        "q6_7": {
+          "title": "Kādu emocionālo vajadzību jūs visvairāk vēlaties piepildīt.",
+          "subtitle": "vajadzība, ko jums ir visgrūtāk tieši lūgt — tikt pamanītam, tikt izvēlētam, būt drošībā, būt brīvam, būt vēlētam"
+        },
+        "q6_8": {
+          "title": "No kā jūs visvairāk baidāties intimitātē.",
+          "subtitle": "ko tuvība jums apdraud — tikt pazītam, tikt iesprostotam, tikt pamestam, būt par daudz, nebūt pietiekami"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Jūsu pašreizējais nodarbinātības statuss.",
+          "subtitle": "jūsu darba dzīves forma šobrīd — nodarbināts, pašnodarbināts, starp darbiem, studē, aprūpē, kaut kas cits",
+          "options": {
+            "employed_full_time": "Nodarbināts, pilna laika",
+            "employed_part_time": "Nodarbināts, nepilna laika",
+            "self_employed": "Pašnodarbināts vai dibinātājs",
+            "freelance": "Ārštata vai līgumdarbs",
+            "studying": "Studē",
+            "between_roles": "Starp lomām",
+            "caregiving": "Aprūpē mājās",
+            "retired": "Pensijā",
+            "not_working": "Nestrādā"
+          }
+        },
+        "q7_2": {
+          "title": "Cik apmierināts esat ar savu karjeras virzienu.",
+          "subtitle": "garākais loks, kurp virzās jūsu darbs, nevis tas, kā jūtaties šajā konkrētajā nedēļā",
+          "lowLabel": "1 · PAZAUDĒTS",
+          "highLabel": "10 · TIEŠI PAREIZI"
+        },
+        "q7_3": {
+          "title": "Darbā jūs parasti esat.",
+          "subtitle": "veids, kā jūs profesionāli darbojaties — loma, ko uzņematies, kad neviens jums to nepiešķir",
+          "options": {
+            "perfectionistic": "Perfekcionistisks",
+            "avoidant": "Izvairīgs",
+            "competitive": "Konkurētspējīgs",
+            "cooperative": "Kooperatīvs",
+            "over_responsible": "Pārāk atbildīgs",
+            "detached": "Atdalīts"
+          }
+        },
+        "q7_4": {
+          "title": "Jūsu lielākais stress darba vietā.",
+          "subtitle": "spiediena avots, kas seko jums mājās — persona, darba slodze, bailes, vide, modelis",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Neveiksme",
+            "visibility": "Redzamība",
+            "authority": "Autoritāte",
+            "uncertainty": "Nenoteiktība",
+            "conflict": "Konflikts"
+          }
+        },
+        "q7_5": {
+          "title": "Ko panākumi emocionāli nozīmē jums.",
+          "subtitle": "sajūta, ko iedomājaties, kad beidzot to sasniedzat — atvieglojums, lepnums, miers, brīvība, pietiekamība"
+        },
+        "q7_6": {
+          "title": "Kāda veida atzinība jūs visvairāk ietekmē.",
+          "subtitle": "uzslava, kas patiesi sasniedz un maina jūsu pašsajūtu, un tā, kas atlec neatkarīgi no tā, cik daudz to saņemat"
+        },
+        "q7_7": {
+          "title": "Kāda neveiksme joprojām jūs ietekmē šodien.",
+          "subtitle": "konkrēta neveiksme, kuru vēl neesat pilnībā apstrādājis — kas notika un kā tā joprojām veido jūsu izvēles"
+        },
+        "q7_8": {
+          "title": "Ja nauda pazustu, ko jūs darītu.",
+          "subtitle": "darbs vai aktivitāte, ko jūs darītu pat tad, ja neviens par to nemaksātu — aprakstiet, kā tas izskatās"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Kā jūs parasti tiekat galā ar stresu.",
+          "subtitle": "pēc kā jūs sniedzaties, kad kļūst smagi — ēdiens, ekrāni, fiziskās aktivitātes, izolācija, sarunas, vielas, miegs, darbs",
+          "options": {
+            "isolation": "Izolācija",
+            "food": "Ēdiens",
+            "gaming": "Spēlēšana",
+            "exercise": "Fiziskās aktivitātes",
+            "overworking": "Pārmērīgs darbs",
+            "scrolling": "Ritināšana",
+            "substance_use": "Vielu lietošana",
+            "shopping": "Iepirkšanās",
+            "sleeping": "Gulēšana",
+            "socializing": "Socializēšanās"
+          }
+        },
+        "q8_2": {
+          "title": "Cik bieži jūs socializējaties ārpus mājas.",
+          "subtitle": "cik bieži jūs pavadāt laiku ar citiem cilvēkiem klātienē, nevis tiešsaistē vai ar ziņojumu starpniecību",
+          "options": {
+            "multiple_per_week": "Vairākas reizes nedēļā",
+            "weekly": "Reizi nedēļā",
+            "monthly": "Reizi mēnesī",
+            "rarely": "Reti",
+            "never": "Nekad"
+          }
+        },
+        "q8_3": {
+          "title": "Cik bieži jūs jūtaties vientuļš pat grupā.",
+          "subtitle": "vientulība, kas parādās, kad esat cilvēku ielenkumā, bet joprojām jūtaties nepamanīts vai tāls",
+          "lowLabel": "1 · NEKAD",
+          "highLabel": "10 · VIENMĒR"
+        },
+        "q8_4": {
+          "title": "Kādas aktivitātes liek jums aizmirst par sevi.",
+          "subtitle": "lietas, kas jūs tik dziļi ievilina, ka laiks pazūd — uz labu vai sliktu, veselīgi vai ne"
+        },
+        "q8_5": {
+          "title": "Par ko jūs visvairāk izvairāties domāt.",
+          "subtitle": "tēma vai atmiņa, no kuras jūs ātri novēršaties, kad tā parādās — par sevi, savu pagātni, savu nākotni"
+        },
+        "q8_6": {
+          "title": "Kad jūs jūtaties emocionāli nejūtīgs.",
+          "subtitle": "situācijas, kurās skaļums nokrītas līdz nullei — darbs, attiecības, konflikti, intimitāte, atrašanās vienatnē"
+        },
+        "q8_7": {
+          "title": "Kādu ieradumu ir visgrūtāk pārtraukt.",
+          "subtitle": "uzvedība, ko esat mēģinājis mainīt vai atmest vairāk nekā vienu reizi, bez panākumiem — aprakstiet, kas tas ir un kas jūs atkal pievelk"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Cik paškritisks jūs esat.",
+          "subtitle": "jūsu iekšējās balss tonis, kad jūs kļūdāties vai neizdodas — skarbs, taisnīgs, noraidošs, postošs",
+          "lowLabel": "1 · MAIGS",
+          "highLabel": "10 · NEŽĒLĪGS"
+        },
+        "q9_2": {
+          "title": "Kurš apgalvojums visvairāk atbilst jūsu privātajām bailēm.",
+          "subtitle": "teikums par jums pašiem, kas slēpjas zem visa pārējā, ko jūs atzītu tikai grūtā dienā",
+          "options": {
+            "never_enough": "Es nekad neesmu pietiekams",
+            "fear_abandoned": "Es baidos tikt pamests",
+            "fear_losing_control": "Es baidos zaudēt kontroli",
+            "fear_failure": "Es baidos no neveiksmes",
+            "fear_ordinary": "Es baidos būt parasts",
+            "fear_rejection": "Es baidos no noraidījuma",
+            "fear_dependence": "Es baidos no atkarības"
+          }
+        },
+        "q9_3": {
+          "title": "Cik bieži jūs jūtaties atrauts no sevis.",
+          "subtitle": "sajūta, ka vērojat savu dzīvi no neliela attāluma, it kā jūs tajā nebūtu pilnībā iekšā",
+          "lowLabel": "1 · NEKAD",
+          "highLabel": "10 · KATRU DIENU"
+        },
+        "q9_4": {
+          "title": "Kura doma visbiežāk atkārtojas jūsu prātā.",
+          "subtitle": "atkārtotais teikums vai bažas, kas regulāri atgriežas — uzrakstiet to ar precīziem vārdiem, nevis kopsavilkumu"
+        },
+        "q9_5": {
+          "title": "Par ko jūs sevi privāti kritizējat.",
+          "subtitle": "lietas, par kurām jūs sevi vērtējat un par kurām neviens cits nezina — par jūsu ķermeni, prātu, izvēlēm, raksturu"
+        },
+        "q9_6": {
+          "title": "Kas liktu jums justies pietiekami.",
+          "subtitle": "nosacījums, ko esat klusi sev noteicis, lai beidzot atpūstos — esiet godīgi, atbilde bieži ir mazāka, nekā jūs gaidāt"
+        },
+        "q9_7": {
+          "title": "Ja jūsu iekšējai balsij būtu personība, kā jūs to aprakstītu.",
+          "subtitle": "šīs balss vecums, dzimums, tonis — un kam šī balss patiesībā varētu piederēt, ja to izsekotu"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Kas jums ir svarīgāks.",
+          "subtitle": "izvēlieties to, kas šobrīd ir vissvarīgākais — pārējais joprojām var būt svarīgs, taču esiet godīgi par rangu",
+          "options": {
+            "freedom": "Brīvība",
+            "love": "Mīlestība",
+            "recognition": "Atzinība",
+            "stability": "Stabilitāte",
+            "power": "Vara",
+            "meaning": "Jēga",
+            "peace": "Miers",
+            "influence": "Ietekme"
+          }
+        },
+        "q10_2": {
+          "title": "Cik cerīgi jūs raugāties uz savu nākotni.",
+          "subtitle": "sajūta, kas rodas, domājot par nākotni, nevis optimistiskā atbilde, ko sniedzat citiem, kad viņi jautā",
+          "lowLabel": "1 · NEKĀDAS",
+          "highLabel": "10 · DZIĻI"
+        },
+        "q10_3": {
+          "title": "Ko jūs slepeni visvairāk vēlaties.",
+          "subtitle": "vēlme, ko jūs vēl neesat atļāvis sev nosaukt skaļi — tā, kas šķiet pārāk liela, pārāk riskanta vai pārāk apkaunojoša",
+          "options": {
+            "to_be_understood": "Būt saprastam",
+            "to_be_admired": "Būt apbrīnotam",
+            "to_feel_safe": "Justies droši",
+            "to_be_desired": "Būt iekārotam",
+            "to_feel_important": "Justies svarīgam",
+            "to_feel_free": "Justies brīvam",
+            "to_belong": "Piederēt"
+          }
+        },
+        "q10_4": {
+          "title": "Detalizēti aprakstiet savu ideālo nākotnes dzīvi.",
+          "subtitle": "konkrētās detaļas — kur atrodaties, ar ko esat kopā, kā izskatās jūsu rīti, darbs, gaisma, ritms"
+        },
+        "q10_5": {
+          "title": "Kādas bailes varētu iznīcināt šo nākotni.",
+          "subtitle": "lieta — iekšēja vai ārēja —, kas jūs ir apturējusi iepriekš un varētu apturēt atkal, ja to pieļausiet"
+        },
+        "q10_6": {
+          "title": "Kādu sevis daļu jūs joprojām cenšaties kļūt.",
+          "subtitle": "jūsu versija pie apvāršņa — īpašības, brīvības, esības veids, uz ko jūs lēnām virzāties"
+        },
+        "q10_7": {
+          "title": "Ja neviens jūs nenosodītu, kā jūs dzīvotu citādi.",
+          "subtitle": "izvēles, ko jūs veiktu, ja vērošana apstātos — par darbu, mīlestību, ķermeni, laiku, naudu, balsi"
+        },
+        "q10_8": {
+          "title": "Ko, jūsuprāt, jūs patiesi meklējat.",
+          "subtitle": "dziļākā lieta zem visām jūsu iepriekšējām atbildēm — uz ko patiesībā norāda katra izvēle un ilgas"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "PIRMSĀKUMI · ATTĪSTĪBAS NOSPULGUMS",
+        "headline": [
+          "Ko agrīnā telpa ",
+          "iemācīja",
+          " jums."
+        ],
+        "lede": "Pirmā sadaļa uzklausa emocionālo klimatu, drošību un lomu, kurā jūs tikāt iedalīts. Šeit ierakstītie modeļi kļūst par pamatu visam, kas vēlāk tiek veidots.",
+        "title": "Pirmsākumi",
+        "subtitle": "attīstības nospulgums"
+      },
+      "attachment": {
+        "eyebrow": "PIESAISTE · ĢIMENES STRUKTŪRA",
+        "headline": [
+          "Pirmās ",
+          "saites",
+          " un to atstātā forma."
+        ],
+        "lede": "Nosaka jūsu piesaistes stilu, jūsu attiecības ar autoritāti un triangulāciju, kurā jūs uzaugāt. Pirmās saites forma kļūst par veidni, pret kuru tiek mērītas visas vēlākās saites.",
+        "title": "Piesaiste",
+        "subtitle": "ģimenes struktūra"
+      },
+      "authority": {
+        "eyebrow": "AUTORITĀTE · SIMBOLISKAIS LIKUMS",
+        "headline": [
+          "Balsis, ko jūs ",
+          "mantojāt",
+          "."
+        ],
+        "lede": "Atklāj morāles kodeksus, vainas struktūras un mantoto identitāti, kas joprojām darbojas fonā. Balsis, kuru ietekmē jūs uzaugāt, reti kad pazūd; tās kļūst par balsi, kas jūs tiesā.",
+        "title": "Autoritāte",
+        "subtitle": "simboliskais likums"
+      },
+      "belonging": {
+        "eyebrow": "PIEDERĪBA · SOCIĀLĀ IDENTITĀTE",
+        "headline": [
+          "Kam ir atļauts ",
+          "jūs redzēt",
+          "."
+        ],
+        "lede": "Mēra sociālo atkarību, identitātes maskēšanu un izslēgšanas bailes. Piederība reti ir bezmaksas; šī sadaļa jautā, ko jūs par to upurējat.",
+        "title": "Piederība",
+        "subtitle": "sociālā identitāte"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · VĒLME UN DIGITĀLĀ ES",
+        "headline": [
+          "Es, ko jūs ",
+          "izpildāt",
+          "."
+        ],
+        "lede": "Lasījums par idealizēto es, validācijas cilpu un simbolisko izrādi, ko jūs veidojat tiešsaistē. Persona nav meli; tā ir pa pusei atklāta vēlme.",
+        "title": "Persona",
+        "subtitle": "vēlme un digitālā es"
+      },
+      "desire": {
+        "eyebrow": "VĒLME · INTIMITĀTE UN ATKĀRTOJUMS",
+        "headline": [
+          "Modelis, kas ",
+          "turpina atgriezties",
+          "."
+        ],
+        "lede": "Atrod atkārtoto attiecību formu, pamešanas bailes, pretrunu vēlmē. Tas, kas atkārtojas, reti tiek izvēlēts; tas ir tas, kas lūdz tikt redzēts.",
+        "title": "Vēlme",
+        "subtitle": "intimitāte un atkārtojums"
+      },
+      "achievement": {
+        "eyebrow": "SASNIEGUMS · DARBS UN ATZĪŠANA",
+        "headline": [
+          "Ko jūs ",
+          "cenšaties pierādīt",
+          "."
+        ],
+        "lede": "Nosaka sasniegumu trauksmi, atzinības izsalkumu un jūsu attiecības ar autoritāti darbā. Zem katras ambīcijas ir viena vai divu cilvēku auditorija.",
+        "title": "Sasniegums",
+        "subtitle": "darbs un atzīšana"
+      },
+      "escape": {
+        "eyebrow": "AIZBIEDZĪBA · BAUDAS UN RITUĀLS",
+        "headline": [
+          "Kur jūs dodaties, ",
+          "lai nebūtu šeit",
+          "."
+        ],
+        "lede": "Identificē izvairīšanās modeļus, piespiešanas un rituālus, kas regulē baudu. Izeja, pēc kuras jūs sniedzaties, pasaka tikpat daudz, cik telpa, ko jūs atstājat.",
+        "title": "Aizbēgšana",
+        "subtitle": "bauda un rituāls"
+      },
+      "self-relation": {
+        "eyebrow": "PAŠATTIECĪBAS · IEKŠĒJAIS DIALOGS",
+        "headline": [
+          "Balss, ko jūs nevarat ",
+          "pilnībā apklusināt",
+          "."
+        ],
+        "lede": "Kartē superego robežu, kauna struktūras un internalizētās balsis. Veids, kā jūs runājat ar sevi privāti, ir visgodīgākais ieraksts par to, kas jūs audzināja.",
+        "title": "Pašattiecības",
+        "subtitle": "iekšējais dialogs"
+      },
+      "future-fantasy": {
+        "eyebrow": "NĀKOTNE · FANTAZIJA, BAILĒS UN VĒLME",
+        "headline": [
+          "Ko jūs ",
+          "patiesi meklējat",
+          "."
+        ],
+        "lede": "Emocionālais kulminācija — nākotne, ko jūs iedomājaties, bailes, kas to vajā, pamatvēlme zem tās. Pēdējais jautājums ir pirmais, kas atgriezās.",
+        "title": "Nākotnes fantāzija",
+        "subtitle": "fantāzija, bailes un vēlme"
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Pierakstīties ",
+      "titleItalic": "sistēmā",
+      "titleAfter": ".",
+      "googleLabel": "Pierakstīties ar Google",
+      "or": "vai",
+      "emailLabel": "E-PASTS",
+      "passwordLabel": "PAROLE",
+      "forgotPassword": "Aizmirsāt paroli",
+      "submit": "Pierakstīties",
+      "footPrompt": "Jauns lietotājs? ",
+      "footLink": "Izveidot kontu"
+    },
+    "signUp": {
+      "titleBefore": "Izveidot ",
+      "titleItalic": "kontu",
+      "titleAfter": ".",
+      "googleLabel": "Turpināt ar Google",
+      "or": "vai",
+      "emailLabel": "E-PASTS",
+      "passwordLabel": "PAROLE",
+      "confirmPasswordLabel": "APSTIPRINĀT PAROLI",
+      "submit": "Izveidot kontu",
+      "footPrompt": "Jau ir konts? ",
+      "footLink": "Pierakstīties",
+      "resentNote": "Jauna saite ir nosūtīta.",
+      "resendConfirmation": "Nosūtīt apstiprinājumu vēlreiz",
+      "pendingFootPrompt": "Nepareiza adrese? ",
+      "pendingFootLink": "Sākt no jauna"
+    },
+    "forgot": {
+      "titleBefore": "Aizmirsāt ",
+      "titleItalic": "paroli",
+      "titleAfter": ".",
+      "lede": "Ievadiet adresi, ar kuru reģistrējāties. Mēs nosūtīsim saiti tās atiestatīšanai.",
+      "emailLabel": "E-PASTS",
+      "submit": "Nosūtīt atiestatīšanas saiti",
+      "footPrompt": "Atcerējāties? ",
+      "footLink": "Pierakstīties",
+      "sentBackLink": "Atpakaļ uz pieteikšanos"
+    },
+    "reset": {
+      "titleBefore": "Iestatīt ",
+      "titleItalic": "jaunu paroli",
+      "titleAfter": ".",
+      "newPasswordLabel": "JAUNA PAROLE",
+      "confirmPasswordLabel": "APSTIPRINĀT PAROLI",
+      "submit": "Atjaunināt paroli",
+      "expiredTitleBefore": "Šī saite ",
+      "expiredTitleItalic": "vairs nav derīga",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Pieprasīt jaunu saiti"
+    },
+    "errors": {
+      "invalid_credentials": "E-pasts vai parole neatbilst.",
+      "email_taken": "Šis e-pasts jau ir reģistrēts. Mēģiniet pierakstīties.",
+      "weak_password": "Izmantojiet vismaz 8 rakstzīmes.",
+      "passwords_dont_match": "Paroles nesakrīt.",
+      "email_invalid": "Tas neizskatās pēc derīga e-pasta.",
+      "rate_limited": "Pārāk daudz mēģinājumu. Mēģiniet vēlreiz pēc brīža.",
+      "unconfirmed_email": "Vispirms apstipriniet savu e-pastu. Pārbaudiet iesūtni.",
+      "reset_link_expired": "Šī saite ir beigusies. Pieprasiet jaunu.",
+      "reset_link_invalid": "Šī saite vairs nav derīga. Pieprasiet jaunu.",
+      "oauth_failed": "Nevarēja sasniegt Google. Mēģiniet vēlreiz.",
+      "callback_failed": "Nevarēja pabeigt pieteikšanos.",
+      "generic": "Kaut kas nogāja greizi. Mēģiniet vēlreiz.",
+      "no_session": "Pierakstieties, lai turpinātu."
+    },
+    "success": {
+      "checkInboxEyebrow": "PĀRBAUDIET SAVU IESŪTNI",
+      "confirmationHeadlineBefore": "Mēs esam nosūtījuši ",
+      "confirmationHeadlineItalic": "apstiprinājuma saiti",
+      "confirmationHeadlineAfter": " uz ",
+      "confirmationLede": "Noklikšķiniet uz tās, lai pabeigtu konta izveidi.",
+      "resetSentEyebrow": "PĀRBAUDIET SAVU IESŪTNI",
+      "resetSentHeadlineBefore": "Ja šis e-pasts ir ",
+      "resetSentHeadlineItalic": "reģistrēts",
+      "resetSentHeadlineAfter": ", mēs esam nosūtījuši atiestatīšanas saiti.",
+      "resetSentLede": "Saite darbojas vienu reizi un beidzas stundas laikā. Ja saite nav saņemta, konts nepastāv.",
+      "passwordUpdated": "Parole atjaunināta. Notiek pieteikšanās."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONTS",
+      "headlineBefore": "Iestatiet savu",
+      "headlineItalic": "klusā telpa",
+      "lede": "Vārds, gads un apstiprinājums. Tad sākas darbs.",
+      "saveFailed": "Neizdevās saglabāt. Mēģiniet vēlreiz pēc brīža.",
+      "nameLabel": "VĀRDS",
+      "nameRequired": "Vārds ir obligāts.",
+      "prefilledHint": "aizpildīts no Google · rediģējams",
+      "yearLabel": "DZIMŠANAS GADS",
+      "yearRequired": "Izvēlieties gadu.",
+      "genderLabel": "DZIMUMS",
+      "genderRequired": "Izvēlieties vienu.",
+      "gender": {
+        "male": "Vīrietis",
+        "female": "Sieviete",
+        "nonBinary": "Ne-binārs",
+        "preferNotToSay": "Nevēlos norādīt"
+      },
+      "languageLabel": "VALODA",
+      "termsBefore": "Es piekrītu",
+      "termsLink": "Noteikumiem",
+      "termsAnd": "un",
+      "privacyLink": "Privātuma politikai",
+      "termsAfter": ".",
+      "submit": "Aktivizēt kontu"
+    },
+    "intro": {
+      "eyebrow": "UZŅEMŠANA · NAV NEPAREIZU ATBILŽU",
+      "headlineBefore": "Šeit nav pareizu atbilžu",
+      "headlineItalic": "šeit"
+    },
+    "brief": {
+      "title": "ĪSS IESKATS",
+      "hint": "izlasiet vienreiz, tad sāciet",
+      "opener": "Nepareizās atbildes — vilcināšanās, drukas kļūdas, izlaidumi — runā tikpat skaidri kā pareizās.",
+      "privacy": "Viss, ko rakstāt, ir privāts. Nekas neatstāj šo telpu.",
+      "length": "Tā kā darbs ir dziļš, uzņemšana ir ilga. Mēs to esam sadalījuši desmit daļās. Viss aizņem apmēram divas stundas.",
+      "resume": "Saglabājiet un turpiniet citā dienā. Rediģējiet jebkuru sadaļu pēc tās pabeigšanas — profils turpina klausīties.",
+      "begin": "Sākt uzņemšanu"
+    },
+    "saved": {
+      "eyebrow": "SAGLABĀT UN APTURĒT",
+      "headlineItalic": "Saglabāts.",
+      "headlineAfter": "Atgriezieties, kad esat gatavs.",
+      "body": "Viss, ko esat uzrakstījis, atrodas jūsu lietas failā. Nākamreiz telpa atvērsies tajā pašā vietā.",
+      "keepGoing": "turpināt",
+      "leaveRoom": "Atstāt kluso telpu"
+    },
+    "step": {
+      "label": "SOLIS",
+      "of": "NO",
+      "min": "MIN",
+      "progressLabel": "Uzņemšanas progress",
+      "finalEpigraph": "pēdējais jautājums vienmēr ir atkal pirmais.",
+      "backTo": "Solis {n}",
+      "continueTo": "Turpināt uz soli {n}",
+      "submit": "Saglabāt un iesniegt",
+      "submitReading": "lasīšana…"
+    },
+    "questions": {
+      "closeTitle": "SLĒGTIE JAUTĀJUMI",
+      "closeHint": "izvēlieties to, kas ir patiess",
+      "openTitle": "ATVĒRTIE JAUTĀJUMI",
+      "openHint": "rakstiet to, kas parādās",
+      "countLabel": "{count, plural, one {jautājums} few {jautājumi} other {jautājumi}}"
+    },
+    "saveExit": {
+      "or": "vai",
+      "saveAndReturn": "saglabāt un atgriezties vēlāk"
+    },
+    "saveIndicator": {
+      "saving": "saglabā…",
+      "saved": "saglabāts",
+      "saveFailed": "saglabāšana neizdevās"
+    }
+  },
+  "readings": {
+    "whatThisIs": "kas tas ir →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "zemapziņas cilpas",
+        "definition": "Atkārtotas sajūtu, darbību un iznākumu secības, kas notiek ārpus apzinātas izvēles. Cilpas nosaukšana ir tās pirmā pārtraukšana.",
+        "seedReading": "tuvojas tuvībai, tad rada nelielu neveiksmi, lai atkāptos.",
+        "seedTakeaway": "atkāpšanās ir cilpa. nevis tuvība."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "lingvistiskais bezapziņa",
+        "definition": "Veids, kā bezapziņas materiāls parādās vārdu izvēlē, atkārtojumos, kļūdās un runas struktūrā — Lakāna apgalvojums, ka bezapziņa ir strukturēta kā valoda.",
+        "seedReading": "runa dubultojas uz vārda “vajadzētu” — mantotas prasības vieta.",
+        "seedTakeaway": "kāda cita balss joprojām runā caur šo vārdu."
+      },
+      "father-imago": {
+        "subtitle": "tēva-imago",
+        "definition": "Internalizētais tēva tēls, kas veidojies agrīnā vecumā un ir daļēji mītisks. Tas veido to, kā vēlāk dzīvē tiek uztverta autoritāte, ambīcijas un spriedums.",
+        "seedReading": "spriež no augšas, pirms tiek spriests no augšas — pozīcija ir identiska.",
+        "seedTakeaway": "sēdeklis mainās. krēsls nemainās."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimitātes slieksnis",
+        "definition": "Punkts, kurā tuvība sāk šķist risks, un seko aizsardzības kustība. Katram cilvēkam atšķirīgs; pārsteidzoši stabils attiecībās.",
+        "seedReading": "labi turas, līdz otrs kļūst salasāms — tad atkāpjas.",
+        "seedTakeaway": "būt pazīstamam ir robeža, nevis būt tuvu."
+      },
+      "desire-structure": {
+        "subtitle": "vēlmju struktūra",
+        "definition": "Ko lietotājs patiešām vēlas, atšķirībā no tā, ko viņam ir teikts vēlēties. Bieži tiek atklāts noliegumā — pamanot, ko viņš atsakās.",
+        "seedReading": "nosauc daudzas vēlmes, atsakās no divām — atteikums ir signāls.",
+        "seedTakeaway": "tas, kas tiek atgrūsts, norāda skaidrāk nekā tas, kas tiek dzenāts."
+      },
+      "professional-block": {
+        "subtitle": "profesionālais bloks",
+        "definition": "Kur darbs apstājas: sākums, vidus, beigas vai redzamība. Katrai vietai ir savs bezapziņas avots.",
+        "seedReading": "finiša līnija ir vieta, kur rodas šaubas, nekad sākums.",
+        "seedTakeaway": "bloks ir redzamībā, nevis pūlēs."
+      },
+      "mother-imago": {
+        "subtitle": "mātes-imago",
+        "definition": "Internalizētais mātes tēls — pirmā saskaņa, pirmā atdalīšanās. Tas informē atkarības un patvēruma tekstūru.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "agrīna saskaņa atstāj ilgu parakstu."
+      },
+      "dream-logic": {
+        "subtitle": "sapņu loģika",
+        "definition": "Kondensācija un pārvietošana, kas darbojas sapņu materiālā. Lasiet gramatiku, nevis simbolus.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "sapņu saturam ir sava gramatika."
+      },
+      "relational-pattern": {
+        "subtitle": "attiecību modelis",
+        "definition": "Atkārtota poza attiecībās — dzinējs, atkāpējs, vecāks, bērns, vienlīdzīgs. Stabilāks starp partneriem nekā partneri ir stabili attiecībā pret lietotāju.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "tāda pati forma parādās dažādās telpās."
+      },
+      "defenses": {
+        "subtitle": "aizsardzības mehānismi",
+        "definition": "Raksturīgās kustības, ko izmanto, lai grūtu materiālu paturētu ārpus apziņas — intelektualizācija, pārvietošana, reakcijas veidošanās, sadalīšana. Aizsardzības mehānismi nav neveiksmes; tie ir veci risinājumi.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "aizsardzība nosauc to, kas reiz bija nepanesams."
+      },
+      "shadow": {
+        "subtitle": "ēna",
+        "definition": "Tas, kas ir atteikts un piešķirts citiem — īpašības, par kurām lietotājs ir visvairāk pārliecināts, ka tās nav. Bieži vien ceļš uz vitalitāti.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "tas, kas ir atteikts, joprojām darbojas."
+      },
+      "transference": {
+        "subtitle": "transference",
+        "definition": "Veids, kā vecas attiecību figūras tiek projicētas uz pašreizējām — analītiķi, partneri, priekšnieku. Modelis atklāj imago.",
+        "seedReading": "pārāk agri, lai droši teiktu — forma veidojas.",
+        "seedTakeaway": "vecas figūras ierodas pašreizējās telpās."
+      }
+    },
+    "strip": {
+      "lastRefined": "pēdējoreiz precizēts",
+      "readingDepth": "lasīšanas dziļums"
+    },
+    "section": {
+      "eyebrow": "LASĪJUMS {index} · {subtitle}",
+      "strengthen": "stiprināt precizitāti",
+      "requestReport": "pieprasīt ziņojumu"
+    },
+    "card": {
+      "reading": "Lasījums {index}"
+    },
+    "report": {
+      "eyebrow": "KLĪNISKAIS ZIŅOJUMS",
+      "heading": "Jūsu <it>analītiķim.</it>",
+      "lede": "12–18 lappušu dosjē — seši lasījumi pilnībā izstrādāti, plus vēl seši, ko informācijas panelis nerāda: mātes-imago, sapņu loģika, attiecību modelis, aizsardzības mehānismi, ēna, transference. Tulkojumā klīnicista darba valodā.",
+      "note": "ziņojums atspoguļos pieejamo dziļumu. to var atkārtoti ģenerēt, lasījumam padziļinoties.",
+      "generate": "Ģenerēt klīnisko ziņojumu",
+      "request": "Pieprasīt klīnisko ziņojumu",
+      "footPrefix": "viens ziņojums iekļauts katru mēnesi ",
+      "footLink": "abonentiem"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "JAUTĀJUMS {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Kas no nedēļas palika ar jums?",
+        "framing": "frāze, attēls, kāda teikums."
+      },
+      "closeness": {
+        "prompt": "Cik tuvu jūs ļāvāt kādam piekļūt?",
+        "options": {
+          "not_at_all": "nemaz",
+          "briefly": "īsi",
+          "with_hesitation": "ar vilcināšanos",
+          "openly": "atklāti",
+          "too_far": "pārāk tuvu"
+        }
+      },
+      "loop": {
+        "prompt": "Vai jūs pieķērāt sevi pazīstamā cilpā?",
+        "framing": "kur, un kā tā beidzās."
+      },
+      "loudest_voice": {
+        "prompt": "Kura balss šonedēļ bija skaļākā?",
+        "options": {
+          "demand": "prasība",
+          "doubt": "šaubas",
+          "desire": "vēlme",
+          "watcher": "vērotājs",
+          "none": "neviena no šīm"
+        }
+      },
+      "dream": {
+        "prompt": "Vai bija sapnis, ko vērts pierakstīt?",
+        "framing": "ja jā, tad fragments, kas palika atmiņā."
+      },
+      "acted_on_desire": {
+        "prompt": "Cik tālu jūs rīkojāties atbilstoši tam, ko patiesībā vēlējāties?",
+        "lowLabel": "nemaz",
+        "highLabel": "pilnībā"
+      },
+      "work_catch": {
+        "prompt": "Kur darbs jūs pieķēra?",
+        "options": {
+          "start": "sākumā",
+          "middle": "vidū",
+          "finish": "beigās",
+          "visibility": "redzamībā",
+          "nowhere": "nekur"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Kāds ir jautājums, uz kuru jūs nevēlaties atbildēt tieši tagad?",
+        "framing": "tas, kas turpina izslīdēt garām."
+      }
+    },
+    "openHint": "garākas atbildes padziļina lasījumu",
+    "scaleLegend": "no {low} līdz {high}",
+    "noValue": "nav izvēlēta vērtība",
+    "valueOf": "{value} no {max}",
+    "weekLabel": "NEDĒĻA {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Kas palika ar jums<it>?</it>",
+    "coverLede": "Astoņi īsi jautājumi. Godīgums ir labāks par garumu. Atbildes precizē lasījumu; nekas šeit netiek vērtēts.",
+    "begin": "Sākt",
+    "back": "atpakaļ",
+    "next": "nākamais",
+    "submitting": "iesniedz",
+    "closeTheWeek": "noslēgt nedēļu",
+    "previousQuestion": "iepriekšējais jautājums",
+    "processingLine": "<em>nedēļa tiek lasīta.</em>",
+    "summaryEyebrow": "{weekLabel} · LASĪT ATPAKAĻ",
+    "summaryTitle": "Nedēļa, <it>jūsu pašu vārdiem.</it>",
+    "caseLabel": "lieta · {week}",
+    "justRefined": "tikko precizēts",
+    "readingsShifted": "lasījumi mainīti",
+    "readingsCount": "{n} no 12",
+    "returnToRoom": "Atgriezties telpā",
+    "readAgain": "izlasīt vēlreiz lietas failā",
+    "somethingToHold": "KAUT KAS, KO TURĒT",
+    "enterConsultingRoom": "ieiet konsultāciju telpā",
+    "openConsultingRoom": "atvērt konsultāciju telpu",
+    "requestReport": "pieprasīt klīnisko ziņojumu",
+    "errorSubmit": "nevarēja iesniegt catchup",
+    "errorGeneric": "kaut kas nogāja greizi",
+    "errorFailed": "catchup ir reģistrēts. kopsavilkums tiks piegādāts vēlāk.",
+    "errorGiveUp": "telpa uz brīdi ir klusa — jūsu catchup ir reģistrēts. atsvaidziniet pēc minūtes.",
+    "summaryFallback": "Catchup ir reģistrēts. Lasījums ir klusi atjaunināts; garāks kopsavilkums tiks piegādāts nākamajā reizē.",
+    "readBackTitle": "Nedēļa, <it>jau iekšā.</it>",
+    "readBackEmpty": "catchup ir reģistrēts. kopsavilkums šonedēļ būs īss.",
+    "readBackFoot": "nākamais catchup sākas {n}. nedēļas sākumā."
+  },
+  "consulting": {
+    "sessionClose": "tā ir mūsu stunda.",
+    "sayIt": "sakiet to →",
+    "closeSession": "beigt sesiju →",
+    "eyebrow": "KONSULTĀCIJU TELPA",
+    "closing": "slēgšana",
+    "closeSessionLabel": "beigt sesiju",
+    "timerAria": "sesijas laiks pagājis",
+    "chooseTopicAria": "izvēlēties tēmu",
+    "noTopic": "nav tēmas",
+    "justOpened": "tikko atvērts",
+    "minutesIn": "{count, plural, one {# minūte} few {# minūtes} other {# minūtes} iekšā}",
+    "speakToAnalyst": "runāt ar analītiķi",
+    "send": "sūtīt",
+    "sessionClosedFoot": "sesija ir slēgta. tā ir saglabāta lietas kartītē.",
+    "previewHeld": "kura jūsu daļa turpina izvēlēties šo?",
+    "previewTopicDreamingFuture": "Sapņojot par nākotni",
+    "previewTopicNightDream": "Nakts sapnis",
+    "previewTopicRelations": "Attiecības manā dzīvē",
+    "previewTopicProfessionalGrowth": "Profesionālā izaugsme",
+    "previewTurnAnalyst1": "Jūs nosaucat modeli, tad to stāstāt kā svešinieka stāstu. Pievērsiet uzmanību, kad sākas <em>atsaukšanās</em>.",
+    "previewTurnUser1": "Es visu laiku pārtraucu lietas nedēļā, kad tās kļūst nopietnas.",
+    "previewTurnAnalyst2": "Rīts ir spriedums, nevis tiesa. Jūsu <em>intimitātes slieksnis</em> mēģināja aiziet nedēļas pirms sarunas.",
+    "sayItEllipsis": "sakiet to…",
+    "offerHeadline": "Konsultāciju telpa",
+    "offerLede": "Ilgstoša sēde ar analītiķi, kas notiek tādā pašā balsī kā jūsu lasījumi. Sesijas ir privātas, saglabātas lietas kartītē un baro lasījumus starp sēdēm.",
+    "offerPanelsAria": "ko dara sesija",
+    "offerPanel1Title": "nosaukts, nevis stāstīts",
+    "offerPanel1Body": "Analītiķis nosauks to, kas notiek jūsu runā — kļūdu, kvalifikatoru, puspateikto — un turēs to tur, līdz jūs to varēsiet redzēt.",
+    "offerPanel2Title": "saglabāts lietas kartītē",
+    "offerPanel2Body": "Katra sēde tiek pierakstīta. Nākamais lasījums to lasa. Modeļi parādās nedēļām, nevis pagriezieniem.",
+    "offerPanel3Title": "viena balss, nav saraksta",
+    "offerPanel3Body": "Nav tērzēšanas robota rotācijas. Viena analītiska balss, apmācīta jūsu uzņemšanā un pilnveidota ar katru pārbaudi.",
+    "offerFootLine": "Abonenti katru mēnesi saņem vienu klīnisko ziņojumu.",
+    "offerPillCta": "Ienākt konsultāciju telpā",
+    "offerReturnToRoom": "atgriezties telpā",
+    "previewFigureLabel": "konsultāciju telpa",
+    "previewFigureSubtitle": "sēde, priekšskatījums",
+    "previewRailAria": "lietas kartītes apgabali, no kuriem analītiķis lasa",
+    "previewReadingFrom": "LASA NO",
+    "previewActive": "aktīvs",
+    "previewRoleYou": "JŪS",
+    "previewRoleAnalyst": "ANALĪTIĶIS",
+    "previewBubble1": "Es visu laiku pārtraucu lietas nedēļā, kad tās kļūst nopietnas. Es nezinu, kāpēc es to daru.",
+    "previewAnalyst1": "Jūs nosaucat modeli, tad to stāstāt kā svešinieka stāstu. <em>“Es nezinu”</em> veic darbu — tas notur aktu tālu no nodoma. Pievērsiet uzmanību, kad sākas <em>atsaukšanās</em>. Bieži vien atsaukšanās notiek agrāk nekā aiziešana.",
+    "previewBubble2": "Agrāk kā? Pēdējo reizi man šķita, ka es vienkārši pamodos vienu rītu un zināju.",
+    "previewAnalyst2": "Rīts ir spriedums, nevis tiesa. Jūsu <strong>intimitātes sliekšņa</strong> lasījums no 04. nedēļas atzīmēja to pašu formu — klusu aiziešanas mēģinājumu divas līdz trīs nedēļas pirms sarunas. Rīts ir tad, kad ķermenis beidzot piekrīt tam, ko jau bijāt nolēmis.",
+    "previewBubble3": "Tā ir daļa, kas mani biedē. Ka tas jau ir nolemts.",
+    "previewAnalyst3": "<em>Nolemts</em> ir vārds. Nevis <em>izvēlēts</em>. Kaut kas struktūrā dod priekšroku atsaukšanai, nevis pārbaudei. Mēs turpināsim to pētīt.",
+    "previewExampleMark": "PIEMĒRS · NAV NO JŪSU IERAKSTA"
+  },
+  "caseFile": {
+    "silentWeek": "— klusā nedēļa —",
+    "eyebrow": "LIETAS KARTĪTE",
+    "headlineLead": "Ieraksts, saglabāts",
+    "headlineItalic": "klusi.",
+    "lede": "Katrs Catchup, sesija un ziņojums — saglabāts hronoloģiskā secībā. Nepilnības ir daļa no ieraksta.",
+    "filterAria": "Filtrēt",
+    "filter": {
+      "all": "visi",
+      "catchups": "catchups",
+      "sessions": "sesijas",
+      "reports": "ziņojumi"
+    },
+    "subscriptionTitle": "Abonements",
+    "emptyCatchups": "lietas kartīte joprojām ir tukša — pirmais catchup to atvērs.",
+    "emptyCatchupsCta": "Doties uz Catchup",
+    "emptySessions": "lietas kartīte joprojām ir tukša — pirmā konsultāciju sesija to atvērs.",
+    "emptySessionsCta": "Doties uz Konsultāciju telpu",
+    "emptyReports": "lietas kartīte joprojām ir tukša — pirmais ģenerētais ziņojums to atvērs.",
+    "open": "atvērt",
+    "kindCatchup": "catchup",
+    "kindSession": "sesija",
+    "kindReport": "klīniskais ziņojums",
+    "kindReading": "uzņemšanas lasījums",
+    "kindConnection": "savienojuma notikums",
+    "entryEyebrow": "LIETAS KARTĪTE · IERAKSTS",
+    "entryBackToCaseFile": "atpakaļ uz lietas kartīti",
+    "entryReturnToRoom": "atgriezties telpā",
+    "sessionStillOpen": "šī sesija joprojām ir atvērta. lasījums parādīsies pēc tās slēgšanas.",
+    "entryDetailComing": "šī ieraksta detalizētais skats drīzumā būs pieejams. pagaidām lietas kartītē ir datums, veids un nosaukums — pārējais joprojām ir telpā.",
+    "detailSummaryEyebrow": "KOPSAVILKUMS · JŪSU ATBILDES",
+    "detailRecommendationEyebrow": "MŪSU CATCHUP",
+    "preparingRead": "gatavojam lasījumu…",
+    "readNotAssembled": "lasījumu nevarēja apkopot šobrīd.",
+    "tryAgain": "mēģināt vēlreiz",
+    "intakeClose": "aizvērt",
+    "intakeEdit": "rediģēt",
+    "intakeSaving": "saglabā",
+    "intakeSave": "saglabāt",
+    "intakeCancel": "atcelt",
+    "intakeUnsupported": "šis jautājums tiek rediģēts no pašas uzņemšanas anketas.",
+    "intakePickUpTo": "paņemt līdz {count}.",
+    "intakeScaleSetTo": "Iestatīts uz {value}"
+  },
+  "settings": {
+    "eyebrow": "IESTATĪJUMI",
+    "heading": "Telpas <it>forma.</it>",
+    "lede": "Nekas šeit nav pastāvīgs. Atbildes var rediģēt, preferences mainīt, un lietas failu var pilnībā izdzēst.",
+    "blocks": {
+      "account": "Konts",
+      "readingDepth": "Lasīšanas dziļums",
+      "notifications": "Paziņojumi",
+      "subscription": "Abonements",
+      "dangerZone": "Bīstamā zona"
+    },
+    "dangerZoneIntro": "vienīgā neatgriezeniskā darbība telpā.",
+    "depthSub": {
+      "intake": {
+        "title": "Jūsu uzņemšana",
+        "caption": "{answered} / {total} atbildēts",
+        "ctaEmpty": "Pabeigt uzņemšanu",
+        "ctaPartial": "Pievienot vairāk detaļu",
+        "ctaFull": "Pārskatīt uzņemšanu"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} pēdējās 8 nedēļās",
+        "ctaEmpty": "Pievienot catchup",
+        "ctaDue": "Pabeigt šīs nedēļas catchup",
+        "ctaFull": "Pārskatīt iepriekšējos catchups"
+      },
+      "sessions": {
+        "title": "Sesijas",
+        "caption": "{count} pabeigtas",
+        "ctaEmpty": "Sākt konsultāciju",
+        "ctaPartial": "Turpināt konsultāciju",
+        "ctaFull": "Pārskatīt iepriekšējās sesijas"
+      },
+      "connections": {
+        "title": "Savienojumi",
+        "caption": "{count} aktīvi",
+        "ctaEmpty": "Pievienot savienojumu",
+        "ctaSingle": "Pievienot citu savienojumu",
+        "ctaFull": "Pārskatīt savienojumus"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "iknedēļas catchup atgādinājums",
+        "sub": "klusināta piezīme jaunas nedēļas sākumā"
+      },
+      "consulting_session_reminder": {
+        "label": "konsultāciju sesijas atgādinājums",
+        "sub": "atgādinājums pirms gaidāmās konsultācijas"
+      },
+      "connection_requests": {
+        "label": "savienojums pieņemts",
+        "sub": "piezīme, kad kāds pieņem jūsu ielūgumu"
+      }
+    },
+    "toggleOn": "ieslēgts",
+    "toggleOff": "izslēgts",
+    "quietHours": {
+      "label": "klusās stundas",
+      "sub": "bez e-pasta starp šīm stundām, jūsu vietējā laikā",
+      "from": "no",
+      "to": "līdz"
+    },
+    "saveFailed": "saglabāšana neizdevās",
+    "dangerZone": {
+      "trigger": "Dzēst kontu",
+      "modalAria": "Apstiprināt konta dzēšanu",
+      "eyebrow": "BĪSTAMĀ ZONA",
+      "heading": "Izdzēst <it>lietas failu.</it>",
+      "body": "Tas noņem katru lasījumu, catchup, sesiju un ziņojumu no ieraksta. Aktīvie savienojumi tiks pārtraukti; abas puses tiks informētas. To nevar atsaukt.",
+      "instruction": "ierakstiet <phrase></phrase>, lai aktivizētu darbību.",
+      "inputAria": "Ierakstiet apstiprinājuma frāzi",
+      "cancel": "atcelt",
+      "erasing": "dzēš…",
+      "eraseConfirm": "dzēst lietas failu",
+      "deleteFailed": "dzēšana neizdevās"
+    },
+    "subscription": {
+      "statusLabel": "STATUSS",
+      "badge": "DALĪBNIEKA PIEEJA",
+      "tagline": "Konsultāciju telpa, atvērta. <em>Lasījums, kas turpina lasīt.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultāciju telpa",
+          "desc": "ilgtermiņa sesijas ar analītiķi."
+        },
+        "report": {
+          "title": "Ikmēneša klīniskais ziņojums",
+          "desc": "viena terapeitam sagatavota karte katru kalendāro mēnesi."
+        },
+        "connections": {
+          "title": "{count, plural, one {1 papildu savienojums} few {# papildu savienojumi} many {# papildu savienojumu} other {# papildu savienojumi}}",
+          "desc": "pievienojiet cilvēkus, kuru klātbūtne veido lasījumu."
+        },
+        "depth": {
+          "title": "Pilns lasīšanas dziļums",
+          "desc": "katra nodaļa atvērta, bez ierobežojumiem detaļās."
+        }
+      },
+      "perMonth": "mēnesī",
+      "subscribe": "abonēt",
+      "reassurance": "<em>bez saistībām.</em> atcelt jebkurā laikā no iestatījumiem.",
+      "activeToday": "aktīvs — atjaunojas šodien",
+      "activeRenews": "aktīvs — atjaunojas pēc {days, plural, one {1 dienas} few {# dienām} many {# dienu} other {# dienām}}",
+      "cancel": "atcelt abonementu",
+      "cancelled": "atcelts — piekļuve līdz {date}",
+      "resubscribe": "atkārtoti abonēt"
+    },
+    "resetPassword": {
+      "sent": "atjaunošanas saite ir nosūtīta uz {email}. pārbaudiet savu iesūtni",
+      "sending": "sūta",
+      "action": "atjaunot paroli",
+      "error": "nevarēja nosūtīt. mēģiniet vēlreiz"
+    }
+  },
+  "connections": {
+    "explainer": "Līdz {limit, plural, one {# persona, kuras klātbūtne veido lasījumu} other {# personas, kuru klātbūtne veido lasījumu}}. Viņi neredz jūsu lasījumus; jūs neredzat viņu. Tas, ko viņi saka par attiecībām, baro modeli, kas veido jūsu lasījumus, un jūsu baro viņu.",
+    "invite": {
+      "emailSubject": "{inviterName} vēlas jūs lasījumā."
+    },
+    "form": {
+      "emailLabel": "E-PASTS",
+      "roleLabel": "LOMA",
+      "rolePlaceholder": "izvēlieties vienu",
+      "noteLabel": "TEIKUMS, KO VIŅI IZLASĪS PIRMO",
+      "noteHint": "nav obligāti. pietiek ar vienu rindiņu.",
+      "addMoreSub": "pievienot vairāk ar abonementu",
+      "missingNameLine": "jūsu vārds nav reģistrēts. pievienojiet to iestatījumos, pēc tam nosūtiet pieprasījumu vēlreiz.",
+      "addYourName": "pievienot savu vārdu",
+      "noteLengthError": "piezīmes ir ierobežotas līdz vienai rindiņai — aptuveni {max} rakstzīmes."
+    },
+    "list": {
+      "empty": "savienojumu vēl nav. uzaicinājuma iespēja ir zemāk.",
+      "active": "AKTĪVS",
+      "pending": "GAIDA",
+      "since": "kopš",
+      "invited": "uzaicināts",
+      "received": "saņemts",
+      "resend": "nosūtīt vēlreiz",
+      "cancel": "atcelt",
+      "expiresIn": "termiņš beidzas pēc {days, plural, one {# dienas} other {# dienām}}"
+    },
+    "lookup": {
+      "invalidEmail": "lūdzu, ievadiet derīgu e-pasta adresi.",
+      "self": "jūs nevarat izveidot savienojumu ar sevi.",
+      "notMemberLine": "šis e-pasts vēl nav daļa no dalībniekiem. uzaiciniet viņus izveidot kontu, lai jūs varētu izveidot savienojumu.",
+      "copyHint": "kopīgot reģistrācijas saiti",
+      "copied": "saite nokopēta",
+      "requestSent": "jūs jau esat nosūtījis pieprasījumu šim dalībniekam.",
+      "requestReceivedLine": "šis dalībnieks jums ir nosūtījis pieprasījumu — pārbaudiet savus uzaicinājumus.",
+      "inboxLabel": "atvērt pieprasījumu",
+      "alreadyConnected": "jūs jau esat savienots ar šo dalībnieku.",
+      "rateLimited": "pārāk daudz meklējumu īsā laika posmā. pagaidiet brīdi, pēc tam mēģiniet vēlreiz.",
+      "sent": "savienojuma pieprasījums nosūtīts.",
+      "sending": "sūta…",
+      "send": "nosūtīt pieprasījumu",
+      "limitReached": "{limit, plural, one {# savienojums ir ierobežojums. atvienojiet to, lai pievienotu citu.} other {# savienojumi ir ierobežojums. atvienojiet vienu, lai pievienotu citu.}}",
+      "limitReachedFree": "{limit, plural, one {# savienojums ir ierobežojums bezmaksas līmenī.} other {# savienojumi ir ierobežojums bezmaksas līmenī.}}",
+      "generic": "nevarēja nosūtīt pieprasījumu."
+    },
+    "incoming": {
+      "eyebrow": "GAIDA JŪS",
+      "empty": "neviens jūs negaida.",
+      "accept": "pieņemt",
+      "decline": "atteikties",
+      "limitReached": "{limit, plural, one {# savienojums ir ierobežojums. atvienojiet to, lai pieņemtu šo.} other {# savienojumi ir ierobežojums. atvienojiet vienu, lai pieņemtu šo.}}",
+      "limitReachedFree": "{limit, plural, one {# savienojums ir ierobežojums bezmaksas līmenī.} other {# savienojumi ir ierobežojums bezmaksas līmenī.}}",
+      "upsell": "abonenti pievieno vairāk",
+      "inviteExpired": "šis uzaicinājums ir beidzies.",
+      "inviteEnded": "šis uzaicinājums vairs nav gaidīšanas režīmā.",
+      "generic": "nevarēja veikt darbības ar šo pieprasījumu."
+    },
+    "roles": {
+      "partner": "partneris",
+      "closest_friend": "tuvākais draugs",
+      "parent": "vecāks",
+      "sibling": "brālis/māsa",
+      "co_parent": "līdzvecāks"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "PIEZĪME NO ANALĪTIĶA",
+    "noteAria": "Piezīme no analītiķa",
+    "lede": "tas pārsniedz telpas spēju noturēt.",
+    "body": {
+      "intake": "Kaut kas jūsu sākotnējā ierakstā norāda uz smagumu, kas prasa patiesu aprūpi — tas pārsniedz šīs telpas spēju noturēt. Lūdzu, apsveriet iespēju šodien sazināties ar ārstu, terapeitu vai vietējo krīzes tālruni. Lasījums jūs gaidīs, kad atgriezīsieties.",
+      "catchup": "Kaut kas šīs nedēļas Catchup norāda uz smagumu, kas prasa patiesu aprūpi — tas pārsniedz šīs telpas spēju noturēt. Lūdzu, apsveriet iespēju šodien sazināties ar ārstu, terapeitu vai vietējo krīzes tālruni. Lasījums saglabāsies.",
+      "session": "Tas, ko jūs tikko uzrakstījāt, norāda uz smagumu, kas prasa patiesu aprūpi — tas pārsniedz šīs telpas spēju noturēt. Lūdzu, apsveriet iespēju šodien sazināties ar ārstu, terapeitu vai vietējo krīzes tālruni. Mēs varam atgriezties telpā, kad būsiet drošībā."
+    },
+    "crisisResources": "KRĪZES RESURSI",
+    "resources": {
+      "us": "Amerikas Savienotās Valstis",
+      "ukIe": "Apvienotā Karaliste un Īrija",
+      "europe": "Eiropa (lielākā daļa valstu)",
+      "everywhere": "Visur",
+      "localEmergency": "vietējie neatliekamās palīdzības dienesti"
+    },
+    "hintResources": "ja nevarat atrast tālruni, jūsu tuvākā slimnīcas neatliekamās palīdzības nodaļa ir pareizā telpa.",
+    "hintLink": "krīzes resursi ir uzskaitīti katras Telpas lapas apakšā.",
+    "footerLine": "TwentyThird neaizstāj klīnisko aprūpi. Krīzes gadījumā sazinieties ar vietējo neatliekamās palīdzības dienestu.",
+    "footerRoomLabel": "telpa"
+  }
+}

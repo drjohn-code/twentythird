@@ -1,11 +1,12 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 
 export type SessionCloseInput = {
   topic: string | null;
   heldQuestion: string;
   /** Full transcript of the session that is about to close. */
   transcript: Array<{ role: "user" | "analyst" | "system"; text: string }>;
+  locale: string;
 };
 
 const SYSTEM_TAIL = `Task — the ritual closing paragraph at the end of a Consulting Room session.
@@ -34,7 +35,7 @@ export function buildSessionClosePrompt(input: SessionCloseInput): {
           .join("\n\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

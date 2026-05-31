@@ -1,0 +1,2842 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSYKODYNAMISK INTELLIGENS",
+        "titleLine1": "Avanceret",
+        "titleLine2Pre": "Psykodynamisk",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "til",
+        "titleLine3It": "Selvopdagelse",
+        "ctaPrimary": "Start din opdagelse",
+        "ctaGhostOr": "eller",
+        "ctaGhostText": "læs om videnskaben",
+        "scroll": "rul ned"
+      },
+      "philosophy": {
+        "eyebrow": "KERNEFILOSOFI",
+        "titlePre": "5-minutters løsninger",
+        "titleIt": "ændrer ingen",
+        "sub1": "Vi udfører rodårsagsanalyse. Ved at forene Sigmund Freuds grundlæggende indsigter med Jacques Lacans gennembrud inden for lingvistik, begær og identitet.",
+        "sub2": "De fleste værktøjer arbejder på overfladen. Vi arbejder der, hvor det blev skrevet – i sprogets arkitektur, i talens forglemmelser, i de mønstre du endnu ikke har navngivet.",
+        "metaLineageLabel": "Linje",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metode",
+        "metaMethodVal": "Strukturel",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "Det ubevidste"
+      },
+      "privacy": {
+        "eyebrow": "FORTROLIGHED",
+        "titlePre": "Databeskyttelse er",
+        "titleIt": "den",
+        "titlePost": "prioritet.",
+        "lede": "Fortrolighed er ikke en funktion her; det er forudsætningen for dybde. Mennesker taler frit, kun hvor de føler sig trygge – så rummet er bygget til at holde det, du siger, beskyttet.",
+        "rowTag": "Sikkerhedsforanstaltninger",
+        "rowTitlePre": "Et rum bygget til at",
+        "rowTitleIt": "holde",
+        "rowTitlePost": "det, du siger.",
+        "rowBody": "Arbejdet kræver dit mest ubeskyttede materiale. Rummet er bygget til at modtage det fortroligt og holde det lukket for enhver, det ikke var tiltænkt.",
+        "figLabel": "Datahåndtering",
+        "figSubtitle": "stående holdning",
+        "listProcessingKey": "behandling",
+        "listProcessingVal": "Hver indtastning behandles tredobbelt blindt.",
+        "listEncryptionKey": "kryptering",
+        "listEncryptionVal": "Alle data er krypterede.",
+        "listProtectionKey": "beskyttelse",
+        "listProtectionVal": "Opbevares under den højest tilgængelige beskyttelse.",
+        "footKey": "Formål",
+        "footVal": "et roligt, sikkert sted at tale dybt"
+      },
+      "process": {
+        "eyebrow": "SÅDAN VIRKER DET",
+        "titlePre": "Fire trin,",
+        "titleIt": "én udvidende cirkel",
+        "lede": "Kommunikationen uddybes i fire bevægelser. Hver udvider, hvad systemet kan læse – fra en enkelt indtagelse til en vedvarende samtale.",
+        "step1Sub": "dybdegående profilering",
+        "step1TitlePre": "En",
+        "step1TitleIt": "10-trins",
+        "step1TitlePost": "intake.",
+        "step1Body": "Opret din konto og udfyld en 10-trins intake. Dette er den dybdegående profileringsrunde; den første reading er udelukkende bygget på det, du angiver her.",
+        "step2Sub": "medieret, aldrig gensidig",
+        "step2TitlePre": "Menneskerne der",
+        "step2TitleIt": "former dig",
+        "step2Body": "Tilføj de mennesker, der former dig, hver efter rolle – partner, nærmeste ven, forælder, søskende, medforælder. Hvad de deler, er aldrig synligt for dig; hvad du deler, er aldrig synligt for dem. Kun systemet læser begge dele.",
+        "step3Sub": "den ugentlige reading",
+        "step3TitlePre": "Søndagens",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Fortæl os søndag aften, hvad der skete i løbet af din uge, og hvordan det føltes at leve den. Hver Catchup forfiner readingen – billedet skærpes, efterhånden som ugerne akkumuleres.",
+        "step4Sub": "fuldstændig privat",
+        "step4TitlePre": "Det",
+        "step4TitleIt": "Consulting Room",
+        "step4Body": "Tal i en fuldstændig privat konsultation med the analyst – en stemme, der kender dig bedre end nogen anden, trænet på tværs af 23 lag af banebrydende AI-modeller."
+      },
+      "brain": {
+        "eyebrow": "ARBEJDET",
+        "titleLine1": "Dekonstruktion",
+        "titleLine2": "af dit underbevidste",
+        "state1Tag": "Mønsterkortlægning",
+        "state1TitlePre": "Underbevidste",
+        "state1TitleIt": "loops",
+        "state1TitlePost": "& gentagelse.",
+        "state1Body": "Vi sporer de tilbagevendende cyklusser i dine valg, relationsangst og følelsesmæssige triggere. Ved at identificere disse loops viser vi dig præcis, hvor dine bevidste intentioner kapres af ubevidst programmering.",
+        "state2Tag": "Profilering",
+        "state2TitlePre": "Dybdegående",
+        "state2TitleIt": "psykodynamisk",
+        "state2TitlePost": "profilering.",
+        "state2Body": "Bevæg dig forbi overfladiske personlighedstests. Dette er en strukturel scanning af din psykologiske dynamik – en kortlægning af, hvordan dine tidligere oplevelser former din nuværende identitet, dit ego og dine forsvarsmekanismer.",
+        "state3Tag": "Sprog",
+        "state3TitlePre": "Sproglig",
+        "state3TitleIt": "ubevidsthed",
+        "state3TitlePost": "udforskning.",
+        "state3Body": "Med rødder i Lacansk teori analyserer vores AI dine ordassociationer, pauser og talemønstre. Vi hjælper dig med at læse mellem linjerne i dine egne tanker for at få adgang til de skjulte angster og ønsker, du endnu ikke har kunnet give stemme."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMER",
+        "titleLine1": "Bryd cyklussen,",
+        "titleLine2": "Og omskriv den.",
+        "lede": "Tre bevægelser i arbejdet. Tre steder hvor indsigt bliver til forandring.",
+        "row1Tag": "Relationel",
+        "row1TitlePre": "Helbred dine",
+        "row1TitleIt": "relationelle",
+        "row1TitlePost": "dynamikker.",
+        "row1Body": "Den samme tiltrækker trækker dig mod den samme type person, den samme konflikt, den samme tilbagetrækning. Vi afdækker mønsteret over år, navngiver det, og ser det miste sin tyngdekraft.",
+        "row1Link": "Læs casestudiet",
+        "row1FigLabel": "Subjekt 1149-A",
+        "row1FigSubtitle": "longitudinelt mønster",
+        "row1Outcome": "trak sig tilbage",
+        "row1SummaryRecurrenceKey": "gentagelse",
+        "row1SummaryIntervalKey": "interval",
+        "row1SummaryAttractorKey": "tiltrækker",
+        "row1SummaryAttractorVal": "intimitetstærskel",
+        "row2Tag": "Drømmearbejde",
+        "row2TitlePre": "Afkod",
+        "row2TitleIt": "drømmelogik",
+        "row2TitlePost": ", afstem mål.",
+        "row2Body": "Dine drømme er meningsprøver. Vi følger deres grammatik – forskydningerne, kondensationerne, forglemmelserne – tilbage til den vågne beslutning, de forsøgte at træffe for dig.",
+        "row2Link": "Se et annoteret eksempel",
+        "row2FigLabel": "Session 06",
+        "row2FigSubtitle": "drømmeindtastning, annoteret",
+        "row2Dream1Pre": "Jeg er tilbage i mine forældres hus",
+        "row2Ann1": "urscene",
+        "row2Dream1Mid": ", men værelserne åbner sig hele tiden ind til andre værelser",
+        "row2Ann2": "egogrænse",
+        "row2Dream2Pre": "En mand med min fars stemme",
+        "row2Ann3": "fader-imago",
+        "row2Dream2Mid": "rækker mig en nøgle. Nøglen bliver til vand",
+        "row2Ann4": "forskydning",
+        "row2Dream3Pre": "Jeg vågner før jeg kan åbne døren",
+        "row2Ann5": "begær / mangel",
+        "row2Key1": "urscene",
+        "row2Key2": "egogrænse",
+        "row2Key3": "fader-imago",
+        "row2Key4": "forskydning",
+        "row2Key5": "begær / mangel",
+        "row3Tag": "Kald",
+        "row3TitlePre": "Opløs",
+        "row3TitleIt": "professionelle",
+        "row3TitlePost": "blokeringer.",
+        "row3Body": "Det loft, du hele tiden rammer, handler sjældent om færdigheder. Det er et manuskript – skrevet tidligt, øvet stille – som vi vil hjælpe dig med at læse højt og omskrive, sætning for sætning.",
+        "row3Link": "Metodeafhandlingen",
+        "row3FigLabel": "Manuskriptrevision",
+        "row3FigSubtitle": "arbejdsudkast",
+        "row3Line1Prefix": "01 · Jeg er",
+        "row3Line1Old": "ikke klar endnu.",
+        "row3Line1New": "allerede tilladt.",
+        "row3Line2Prefix": "02 · til at",
+        "row3Line2Old": "vente på min tur.",
+        "row3Line2New": "navngive hvad jeg ønsker.",
+        "row3Line3Prefix": "03 · fordi",
+        "row3Line3Old": "nogen måske bliver skuffet.",
+        "row3Line3New": "skuffelse er også sprog.",
+        "row3MetaOriginalPre": "original",
+        "row3MetaOriginalIt": "alder 11",
+        "row3MetaRevisedPre": "revideret",
+        "row3MetaRevisedIt": "session 06"
+      },
+      "outcomes": {
+        "eyebrow": "RESULTATER",
+        "titleLine1Pre": "Konkrete",
+        "titleLine1It": "indsigter",
+        "titleLine2": "Stille målbare.",
+        "lede": "Datadrevet selvindsigt, leveret i en klinikers sprog – ikke en quiz.",
+        "row1Tag": "Acceleration",
+        "row1TitlePre": "Den ultimative",
+        "row1TitleIt": "genvej",
+        "row1TitlePost": "til terapi i den virkelige verden.",
+        "row1Body": "Hvad der tidligere tog et mangeårigt forhold, kan nu begynde med ugers forberedelse. Gå ind til din terapeuts kontor med viden om, hvad du er der for at sige.",
+        "row1Link": "Se metodologien",
+        "row1FigSubtitle": "tid til første indsigt",
+        "row1TraditionalLabel": "Traditionel vej",
+        "row1AxisYr1": "år 1",
+        "row1AxisYr3": "år 3",
+        "row1AxisYr6": "år 6",
+        "row1AxisYr9": "år 9",
+        "row1AxisYr12": "år 12",
+        "row1TwentyThirdLabelPre": "Med",
+        "row1AxisWk1": "uge 1",
+        "row1AxisWk4": "uge 4",
+        "row1AxisWk8": "uge 8",
+        "row1AxisWk12": "uge 12",
+        "row1SummaryFaster": "hurtigere",
+        "row1SummaryDesc": "tid til første indsigt",
+        "row2Tag": "Rapport",
+        "row2TitlePre": "Terapeut-klar",
+        "row2TitleIt": "psykologisk",
+        "row2TitlePost": "kort.",
+        "row2Body": "Et strukturelt diagram af dig – eksportérbart, delbart, dybt forståeligt for en trænet kliniker. Ikke en personlighedsquiz; en arbejdsbriefing.",
+        "row2Link": "Se en eksempelrapport",
+        "row2FigLabel": "Subjekt 1149-A",
+        "row2FigSubtitle": "strukturel profil",
+        "row2RepCase": "sag 1149-A",
+        "row2RepPrepared": "udarbejdet 04 · 26",
+        "row2MetricEgo": "Ego-struktur",
+        "row2MetricObject": "Objektrelationer",
+        "row2MetricDefense": "Forsvarskompleksitet",
+        "row2MetricDrive": "Driftsorganisation",
+        "row2MetricSymbolic": "Symbolsk register",
+        "row2FootLabel": "Dominant struktur",
+        "row2FootVal": "obsessionel · med hysteriske træk",
+        "row3Tag": "Integration",
+        "row3TitlePre": "Personlig",
+        "row3TitleIt": "integration",
+        "row3TitlePost": "& skyggearbejdsplaner.",
+        "row3Body": "Daglige prompts og ritualer, der tager indsigt fra siden og ind i kroppen. Små, bevidste. Bygget omkring din struktur, ikke en generisk læseplan.",
+        "row3Link": "Hvordan planen tilpasser sig",
+        "row3FigLabel": "Dag 23",
+        "row3FigSubtitle": "daglig prompt",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Onsdag",
+        "row3PromptEyebrow": "dagens prompt · skyggearbejde",
+        "row3PromptPre": "Hvor valgte du i dag",
+        "row3PromptIt": "ikke",
+        "row3PromptPost": "at blive set? Og hvad beskyttede du ved at skjule dig?",
+        "row3Stream1Label": "åndedrætsarbejde",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "journal",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "skygge-prompt",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "stribe",
+        "row3StreakVal": "{n, plural, one {# dag} other {# dage}}"
+      },
+      "final": {
+        "eyebrow": "BEGYND",
+        "titlePre": "Din underbevidsthed taler.",
+        "titleIt": "Det er tid til at lytte.",
+        "ctaPrimary": "Påbegynd din opdagelse",
+        "ctaGhostOr": "eller",
+        "ctaGhostText": "læs videnskaben"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Fortrolighedspolitik — TwentyThird",
+        "metaDescription": "Hvordan TwentyThird håndterer personlige data. Intet forlader EU. Intet sælges.",
+        "eyebrow": "FORTROLIGHED",
+        "headingLead": "Personlige data,",
+        "headingItalic": "behandlet med omhu.",
+        "lede": "TwentyThird behandler det, du deler, for at give dig præcis psykodynamisk indsigt. Intet forlader EU. Intet sælges.",
+        "controls": {
+          "headingLead": "Hvem",
+          "headingItalic": "kontrollerer",
+          "headingTail": "dine data",
+          "p1": "WelloWork AB, registreret i Sverige (org. nr. 559472-9997), der opererer fra Uppsala, er dataansvarlig for personoplysninger indsamlet på denne hjemmeside og gennem direkte forespørgsler.",
+          "p2": "For data behandlet inden for TwentyThird-platformen på vegne af en organisation – en klinik, en forskningsinstitution, en arbejdsgiver – fungerer WelloWork AB som databehandler, og kundens organisation er den dataansvarlige. Dette forhold er reguleret af en separat databehandleraftale."
+        },
+        "figure": {
+          "label": "hvem kontrollerer dine data",
+          "controller": "Dataansvarlig",
+          "directRelationship": "direkte forhold",
+          "websiteVisitor": "Webstedsbesøgende",
+          "you": "Dig",
+          "customerOrg": "Kundens organisation",
+          "viaDpa": "via databehandleraftale",
+          "processor": "Databehandler",
+          "platformUser": "Platformbruger"
+        },
+        "collect": {
+          "headingLead": "Hvad vi",
+          "headingItalic": "indsamler",
+          "contactStrong": "Kontakt- og kontodata.",
+          "contactBody": "Navn, e-mailadresse og enhver information, du giver, når du tilmelder dig eller skriver til os. Retsgrundlag: opfyldelse af kontrakt (artikel 6, stk. 1, litra b, GDPR).",
+          "sessionStrong": "Sessions- og platformdata.",
+          "sessionBody": "Journalindgange, svar, drømmeindhold og sproglige mønstre, du deler inden for TwentyThird. Dette er analysens substrat. Retsgrundlag: udtrykkeligt samtykke (artikel 9, stk. 2, litra a, GDPR), givet ved onboarding og kan til enhver tid trækkes tilbage. Vi behandler disse data som særlige kategorier af sundhedsrelaterede data og anvender tilsvarende sikkerhedsforanstaltninger uanset formel klassifikation.",
+          "technicalStrong": "Tekniske data.",
+          "technicalBody": "IP-adresse, browsertype, enhedsidentifikatorer og brugstidspunkter – indsamles automatisk, når du tilgår platformen. Retsgrundlag: legitim interesse (artikel 6, stk. 1, litra f, GDPR) for at opretholde sikkerhed og diagnosticere fejl.",
+          "p4": "Vi indsamler ikke data om race, etnicitet, politisk holdning eller religiøs overbevisning. Hvis indhold, du deler, tilfældigt afslører sådanne oplysninger, behandles det ikke som en særskilt kategori."
+        },
+        "use": {
+          "headingLead": "Hvordan vi",
+          "headingItalic": "bruger",
+          "headingTail": "det",
+          "p1": "Vi bruger dine data til at levere og forbedre TwentyThird-tjenesten, sende transaktionsmeddelelser, du har anmodet om, opdage og forhindre svindel eller misbrug samt overholde juridiske forpligtelser.",
+          "p2": "Vi bruger ikke dine data til reklameprofilering. Vi sælger dem ikke, licenserer dem ikke eller deler dem med datamæglere. Vi bruger dem ikke til at træne generelle AI-modeller, der drives af tredjeparter."
+        },
+        "sees": {
+          "headingLead": "Hvem",
+          "headingItalic": "ser",
+          "headingTail": "det",
+          "withinStrong": "Inden for WelloWork AB:",
+          "withinBody": "Klinikere og ingeniører, der har brug for adgang til at vedligeholde tjenesten. Adgang er rollebegrænset og logføres.",
+          "infraStrong": "Infrastrukturudbydere:",
+          "infraBody": "Supabase (database og autentificering, EU-region), Vercel (hosting, EU edge) og Postmark (transaktionelle e-mails). Hver er bundet af en databehandleraftale og behandler kun data efter vores dokumenterede instruktion.",
+          "legalStrong": "Juridisk forpligtelse:",
+          "legalBody": "Vi videregiver kun data til kompetente myndigheder, når loven kræver det, og kun i det omfang det er påkrævet.",
+          "p4": "Ingen data overføres uden for EU/EØS. Hvis dette ændres, vil vi opdatere denne politik og indhente nyt samtykke, hvor det er påkrævet."
+        },
+        "retention": {
+          "headingItalic": "Opbevaring",
+          "p1": "Konto- og platformdata opbevares, så længe din konto er aktiv, plus 30 dage efter sletning for at muliggøre gendannelse. Tekniske logfiler opbevares i 90 dage. Kontaktforespørgsler opbevares i 24 måneder.",
+          "p2": "Efter disse perioder slettes data permanent eller anonymiseres irreversibelt."
+        },
+        "rights": {
+          "headingLead": "Dine",
+          "headingItalic": "rettigheder",
+          "p1": "Du har ret til at få adgang til de data, vi opbevarer om dig, rette unøjagtigheder, anmode om sletning, begrænse eller gøre indsigelse mod behandling samt modtage en maskinlæsbar kopi til portabilitet. Hvor behandling er baseret på samtykke, kan du til enhver tid trække det tilbage uden at påvirke lovligheden af behandling før tilbagetrækning.",
+          "exerciseLead": "For at udøve en rettighed:",
+          "exerciseTail": ". Vi svarer inden for 30 dage. Hvis du er utilfreds med vores svar, kan du indgive en klage til Integritetsskyddsmyndigheten (IMY), Sveriges databeskyttelsesmyndighed."
+        },
+        "children": {
+          "headingItalic": "Børn",
+          "p1": "TwentyThird er ikke rettet mod personer under 18 år. Vi indsamler ikke bevidst data fra mindreårige. Hvis vi bliver opmærksomme på, at en mindreårig har indsendt data, sletter vi dem omgående."
+        },
+        "changes": {
+          "headingItalic": "Ændringer",
+          "p1": "Vi opdaterer denne politik, når vores praksis ændres. Væsentlige ændringer meddeles via e-mail mindst 14 dage før de træder i kraft. Versionsdatoen fremgår nederst på denne side.",
+          "effectivePrefix": "Gældende fra:",
+          "effectiveSuffix": "· Gældende lov: Svensk lov og GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Servicevilkår — TwentyThird",
+        "metaDescription": "Aftalen, der regulerer din brug af TwentyThird. Skrevet til at blive læst, ikke undgået.",
+        "eyebrow": "VILKÅR",
+        "headingLead": "Aftalen,",
+        "headingItalic": "klart formuleret.",
+        "lede": "Disse vilkår regulerer din brug af TwentyThird. De er skrevet til at blive læst, ikke undgået.",
+        "service": {
+          "headingLead": "Tjenesten",
+          "headingItalic": "service",
+          "p1": "TwentyThird er en psykodynamisk AI-platform drevet af WelloWork AB. Den giver analytisk indsigt baseret på det, du deler. Det er ikke et medicinsk udstyr. Det udgør ikke psykoterapi, psykiatrisk diagnose eller klinisk behandling. Hvis du er i psykisk nød, bedes du kontakte en kvalificeret kliniker eller en nødtjeneste."
+        },
+        "account": {
+          "headingLead": "Din",
+          "headingItalic": "konto",
+          "p1": "Du skal være fyldt 18 år for at bruge TwentyThird. Du er ansvarlig for at opretholde fortroligheden af dine legitimationsoplysninger. Du må ikke dele din konto eller bruge platformen på vegne af en anden person uden dennes udtrykkelige samtykke.",
+          "p2": "Du ejer det indhold, du opretter – dine journaloptegnelser, dine svar. Ved at indsende dem giver du WelloWork AB en begrænset licens til at behandle dem til de formål, der er beskrevet i fortrolighedspolitikken. Du kan eksportere eller slette dit indhold når som helst."
+        },
+        "acceptableUse": {
+          "headingLead": "Acceptabel",
+          "headingItalic": "brug",
+          "p1": "Du må bruge TwentyThird til lovlig personlig og professionel selvudforskning. Du må ikke bruge det til at skade dig selv eller andre, til at forsøge at omgå platformens sikkerhedssystemer, til at reverse-engineere de underliggende modeller eller til at træne konkurrerende AI-systemer.",
+          "p2": "Vi forbeholder os retten til at suspendere eller opsige konti, der overtræder disse vilkår, uden forudgående varsel, hvor det er nødvendigt af sikkerhedshensyn."
+        },
+        "liability": {
+          "headingLead": "Vores",
+          "headingItalic": "ansvar",
+          "p1": "TwentyThird giver indsigt, ikke sikkerhed. Vi garanterer ikke, at analysen er nøjagtig, fuldstændig eller passende for dine omstændigheder. I det omfang det er tilladt i henhold til svensk lov, er vores ansvar begrænset til det beløb, du har betalt i de 3 måneder forud for det relevante krav.",
+          "p2": "Intet i disse vilkår begrænser ansvaret for død eller personskade forårsaget af vores uagtsomhed eller for svindel."
+        },
+        "disputes": {
+          "headingLead": "Gældende lov og",
+          "headingItalic": "tvister",
+          "p1": "Disse vilkår er underlagt svensk lov. Tvister, der ikke kan løses direkte, henvises til domstolene i Uppsala, Sverige, som første instans.",
+          "p2Lead": "Hvis du er forbruger i EU, har du også adgang til EU's platform for onlinetvistbilæggelse på",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Ændringer",
+          "p1": "Vi kan opdatere disse vilkår. Fortsat brug efter ikrafttrædelsesdatoen for en væsentlig ændring udgør accept. Vi meddeler væsentlige ændringer via e-mail mindst 14 dage i forvejen.",
+          "effectivePrefix": "Gældende fra:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Cookiepolitik — TwentyThird",
+        "metaDescription": "TwentyThird anvender kun cookies til godkendelse og fastholdelse af præferencer. Ingen reklamecookies. Ingen tredjeparts-trackere.",
+        "eyebrow": "COOKIES",
+        "headingLead": "Hvad vi gemmer",
+        "headingItalic": "i din browser.",
+        "lede": "TwentyThird anvender cookies til godkendelse og fastholdelse af præferencer. Vi anvender ingen reklamecookies og ingen tredjeparts-trackere.",
+        "whatIs": {
+          "headingLead": "Hvad en cookie",
+          "headingItalic": "er",
+          "p1": "En cookie er en lille tekstfil, der gemmes i din browser. Vi bruger dem til at holde dig logget ind og til at huske din temapræference (mørk eller lys). Det er alt."
+        },
+        "weSet": {
+          "headingLead": "Cookies",
+          "headingItalic": "vi sætter",
+          "authBody": "— Sat af Supabase. Opretholder din godkendte session. Udløber, når du logger ud eller efter 7 dages inaktivitet. Strengt nødvendig.",
+          "themeBody": "— Gemmer din præference for mørk/lys tilstand. Vedvarer, indtil den ryddes. Funktionel.",
+          "p3": "Vi sætter ingen reklamecookies. Vi indlæser ingen tredjeparts-sporingsscripts — ingen Google Analytics, ingen Meta Pixel, ingen marketingtags af nogen art."
+        },
+        "choices": {
+          "headingLead": "Dine",
+          "headingItalic": "valg",
+          "p1Lead": "Du kan til enhver tid rydde cookies via dine browserindstillinger. Rydning af",
+          "p1Mid": "vil logge dig ud. Rydning af",
+          "p1Tail": "vil nulstille visningen til den mørke standard.",
+          "p2": "Vi anvender ikke et cookie-samtykkebanner for strengt nødvendige eller funktionelle cookies under ePrivacy-direktivet, da de ikke kræver samtykke. Hvis vi i fremtiden introducerer ikke-essentielle cookies, vil vi indhente samtykke, før vi sætter dem."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Spørgsmål om cookies eller andre dataforhold:",
+          "effectivePrefix": "Gældende fra:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "PÅ DENNE SIDE",
+        "privacyPolicy": "Fortrolighedspolitik",
+        "termsOfService": "Servicevilkår",
+        "cookiePolicy": "Cookiepolitik"
+      },
+      "layout": {
+        "eyebrow": "JURA",
+        "headingLead": "Juridiske dokumenter,",
+        "headingItalic": "klart formuleret.",
+        "lede": "Fortrolighedspolitik, servicevilkår og cookiepolitik — reguleret af svensk lovgivning og GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "Psykodynamisk AI til det indre liv. Et stille rum for seriøs tænkning.",
+      "product": "Produkt",
+      "discovery": "Opdagelse",
+      "sampleReport": "Eksempelrapport",
+      "integrationPlan": "Integrationsplan",
+      "company": "Virksomhed",
+      "about": "Om os",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Ressourcer",
+      "science": "Videnskaben",
+      "methodology": "Metodologi",
+      "methodPaper": "Metoderapport",
+      "caseStudy": "Casestudie",
+      "dreamExample": "Drømmeeksempel",
+      "legal": "Juridisk",
+      "privacy": "Privatliv",
+      "terms": "Betingelser",
+      "cookies": "Cookies",
+      "rights": "alle rettigheder forbeholdes"
+    },
+    "about": {
+      "metaTitle": "Om — TwentyThird",
+      "metaDescription": "Oprindelse, metode og vendepunktet på dag treogtyve. Udviklet i CognitiveLab hos WelloWork AB.",
+      "hero": {
+        "eyebrow": "OM",
+        "headingLead": "Oprindelse, metode og",
+        "headingItalic": "vendepunktet på dag treogtyve",
+        "lede": "TwentyThird er en psykodynamisk AI til selvopdagelse. Den kortlægger de tilbagevendende sløjfer og strukturer under symptomet — sprog, tilknytning, gentagelse — og leverer en arbejdsbrief, ikke en quiz.",
+        "figure": {
+          "label": "dag-23",
+          "subtitle": "vendepunktsmetafor",
+          "heading": "Den 23-dages bue",
+          "range": "nysgerrighed → bevidsthed",
+          "markerInflection": "vendepunkt",
+          "summaryLabel": "dag spørgsmålet\nvender indad"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFI",
+        "headingLead": "Freuds korrespondent. Fliess' tal.",
+        "headingItalic": "Vores metafor",
+        "tag": "Arv",
+        "row": {
+          "headingPre": "En",
+          "headingItalic": "23-dages rytme",
+          "headingPost": "foreslået i et brev, fastholdt som figur.",
+          "para1": "Den 23-dages cyklus var Wilhelm Fliess' hypotese, argumenteret gennem hans korrespondance med Freud i slutningen af det nittende århundrede. Samtidig videnskab understøtter ikke faste biorytmer.",
+          "para2": "Vi beholder tallet for det, det navngiver — tærsklen, hvor nysgerrighed modnes til bevidsthed. Dag-23 er figur, ikke biologi."
+        },
+        "figure": {
+          "label": "arv",
+          "subtitle": "fire ankre",
+          "row1Outcome": "forslag",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "strukturel model",
+          "row3Duration": "Rom-diskurs",
+          "row3Outcome": "lingvistisk vending",
+          "row4Outcome": "syntese",
+          "summary1Key": "interval",
+          "summary2Key": "tråd",
+          "summary2Value": "struktur",
+          "summary3Key": "metode",
+          "summary3Value": "psykodynamisk"
+        }
+      },
+      "origin": {
+        "eyebrow": "OPRINDELSE",
+        "headingLead": "Udviklet i CognitiveLab.",
+        "headingItalic": "Besvarede et spørgsmål, vi ofte blev stillet",
+        "tag": "Team",
+        "row": {
+          "headingLead": "Læger, oprindeligt med fokus på",
+          "headingItalic": "kognitiv træning",
+          "para1": "TwentyThird startede i CognitiveLab hos WelloWork AB, hvor teamet udviklede kognitive træningssystemer. Venner og kolleger begyndte at komme med personlige spørgsmål — angst, tilbagevendende mønstre, de sløjfer, de ikke kunne navngive.",
+          "para2": "Mellem klinisk praksis som læger, de pilotdata, vi akkumulerede, og en lang læseliste inden for psykoanalyse og Lacaniansk teori, havde vi noget at tilbyde. TwentyThird er, hvad det blev til."
+        },
+        "figure": {
+          "label": "team",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "udarbejdet 05 · 26",
+          "row1Key": "Klinisk praksis",
+          "row2Key": "Forskningsresultater",
+          "row3Key": "Subjekter i pilot",
+          "row4Key": "Læger i teamet",
+          "footerLabel": "Profil",
+          "footerValue": "kliniker-forsker hybrid"
+        }
+      },
+      "method": {
+        "eyebrow": "METODE",
+        "headingLead": "Hvad modellen",
+        "headingItalic": "faktisk gør",
+        "tag": "Funktioner",
+        "row": {
+          "headingLead": "Under symptomet, en",
+          "headingItalic": "struktur",
+          "para1": "TwentyThird udfører rodårsagsanalyse. Den kortlægger den <em>underbevidste sløjfe</em> over år, læser det <em>lingvistiske ubevidste</em> i ordvalg og talefejl, afdækker <em>tilknytning</em> ved intimitetstærsklen og udarbejder en arbejdsplan for <em>skyggearbejde</em>.",
+          "para2": "Outputtet er terapeut-klart. Navngiver strukturen, ikke overfladen."
+        },
+        "figure": {
+          "label": "symptom → struktur",
+          "subtitle": "tre omskrivninger",
+          "row1Prefix": "01 · overflade",
+          "row1Old": "Jeg udskyder vigtigt arbejde.",
+          "row1Next": "Undgåelse af at blive set som den, der ved.",
+          "row2Prefix": "02 · overflade",
+          "row2Old": "Jeg dater den samme person igen og igen.",
+          "row2Next": "Gentagelse af fader-imago ved intimitetstærsklen.",
+          "row3Prefix": "03 · overflade",
+          "row3Old": "Jeg kan ikke afslutte noget.",
+          "row3Next": "Afvisning af at opgive positionen som potentiale.",
+          "metaLeftLabel": "præsenterende",
+          "metaLeftValue": "klage",
+          "metaRightLabel": "strukturel",
+          "metaRightValue": "læsning"
+        }
+      },
+      "final": {
+        "eyebrow": "FORTSÆT",
+        "headingLead": "Læs metoden,",
+        "headingItalic": "eller begynd",
+        "ctaPrimary": "Læs metoden",
+        "ctaGhostPrefix": "eller",
+        "ctaGhostText": "skriv til os"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Skriv til os.",
+        "heroHeadlineItalic": "Vi læser alt",
+        "heroLede": "De fleste beskeder besvares inden for toogfyrre timer. Kliniske og partnerskabsforespørgsler prioriteres.",
+        "formCardLabel": "formular",
+        "formCardSubtitle": "kun indholdsmæssige henvendelser",
+        "addressLabel": "ADRESSE",
+        "addressValue": "Rosendal, Uppsala, Sverige",
+        "emailLabel": "E-MAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "BEGYND",
+        "finalHeadlineLead": "Eller bare",
+        "finalHeadlineItalic": "start",
+        "finalCta": "Start din opdagelse",
+        "finalGhostOr": "eller",
+        "finalGhostText": "læs om oprindelsen",
+        "disclaimer": "Ved presserende mentale sundhedsproblemer bedes du kontakte lokale alarmtjenester eller en autoriseret kliniker. TwentyThird er ikke en krisetjeneste."
+      },
+      "form": {
+        "successEyebrow": "MODTAGET",
+        "successHeadlineLead": "Din besked er",
+        "successHeadlineItalic": "hos os",
+        "successBody": "Vi svarer inden for to arbejdsdage.",
+        "nameLabel": "Navn",
+        "emailLabel": "E-mail",
+        "messageLabel": "Besked",
+        "submitSend": "Send",
+        "submitSending": "Sender",
+        "errorMessage": "noget gik galt · prøv igen",
+        "submittingStatus": "Sender din besked."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologi — TwentyThird",
+      "metaDescription": "Fra første samtale til terapeut-klar kortlægning. Fem trin i TwentyThird-pipelinen.",
+      "hero": {
+        "eyebrow": "METODEN",
+        "headingLead": "Ugers forberedelse,",
+        "headingItalic": "ikke års søgen",
+        "lede": "Terapi virker. Det tager også tid at vide, hvad man er der for. TwentyThird komprimerer forberedelsen — den del, hvor du lærer, hvad du *faktisk* siger — så selve rummet kan forløbe hurtigere."
+      },
+      "pipeline": {
+        "eyebrow": "PIPELINEN",
+        "headingLead": "Fem trin, én",
+        "headingItalic": "kort",
+        "lede": "Fra samplet tale til et arbejdsdokument en kliniker kan læse på otte minutter.",
+        "stageLabel": "TRIN",
+        "stage01": {
+          "name": "Sampling",
+          "blurb": "Stemme og tekst fra guidede sessioner. Modellen lytter efter form, ikke indhold.",
+          "label": "sampling",
+          "subtitle": "volumen på tværs af kohorten",
+          "fig": {
+            "wordsSampled": "ord samplet",
+            "sessions": "sessioner",
+            "elapsed": "forløbet",
+            "medianTurn": "median tur"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistisk",
+          "nameEm": "ekstraktion",
+          "blurb": "Træk modellen udleder fra transskriptionen — diskret, før enhver fortolkning.",
+          "label": "ekstraktion",
+          "subtitle": "feature-klasser",
+          "fig": {
+            "qualifierDensity": "kvalifikator-tæthed",
+            "modalVerbs": "modalverber",
+            "conditionalFrame": "betinget ramme",
+            "affectiveHedges": "affektive forbehold",
+            "slipsMisnamings": "forvanskninger · fejlbenævnelser",
+            "repetitionWindows": "gentagelsesvinduer"
+          }
+        },
+        "stage03": {
+          "nameLead": "Gentagelses-",
+          "nameEm": "detektion",
+          "blurb": "Mønsteret, der vender tilbage i samme form, i forskellige årtier. Signalet om, at noget er strukturelt.",
+          "label": "gentagelse",
+          "subtitle": "tre ankerpunkter for ét mønster",
+          "fig": {
+            "row1": {
+              "durationLabel": "første job",
+              "outcome": "loft ved måned 9"
+            },
+            "row2": {
+              "durationLabel": "andet",
+              "outcome": "loft ved måned 11"
+            },
+            "row3": {
+              "durationLabel": "tredje",
+              "outcome": "loft ved måned 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Manuskript-",
+          "nameEm": "rekonstruktion",
+          "blurb": "Sætningen under mønsteret. Gammel linje, derefter en kandidat-revision, som subjektet kan øve sig på.",
+          "label": "rekonstruktion",
+          "subtitle": "arbejdsudkast",
+          "fig": {
+            "row1": {
+              "prefix": "Jeg er",
+              "old": "ikke klar endnu.",
+              "next": "allerede tilladt."
+            },
+            "row2": {
+              "prefix": "til",
+              "old": "at vente på at blive valgt.",
+              "next": "at navngive, hvad jeg vil."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Kort til",
+          "nameEm": "klinikeren",
+          "blurb": "Tre mærkede målere og en et-linjes strukturel læsning. Otte minutter at læse, uger at bruge.",
+          "label": "klinisk overdragelse",
+          "subtitle": "arbejdsbrief",
+          "fig": {
+            "casePrefix": "sag",
+            "preparedPrefix": "forberedt",
+            "egoStructure": "Ego-struktur",
+            "objectRelations": "Objektrelationer",
+            "symbolicRegister": "Symbolsk register",
+            "footerLabel": "Læsning",
+            "footerValue": "obsessionel · med hysteriske spor"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "OMFANG",
+        "headingLead": "Hvad vi måler, og hvad vi",
+        "headingItalic": "nægter",
+        "headingTail": "at.",
+        "measureHead": "Hvad vi måler",
+        "refuseHead": "Hvad vi ikke måler",
+        "measure": {
+          "languagePatterns": {
+            "k": "sprogmønstre",
+            "gloss": "Kvalifikator-tæthed, modalverber, forbehold, betingede rammer."
+          },
+          "recurrence": {
+            "k": "gentagelse",
+            "gloss": "Mønstre, der vender tilbage i samme form over år."
+          },
+          "narrativeCoherence": {
+            "k": "narrativ kohærens",
+            "gloss": "Hvordan et liv fortælles, hvor sømmene viser sig."
+          },
+          "attachmentMarkers": {
+            "k": "tilknytningsmarkører",
+            "gloss": "Hvor intimitet krydser en tærskel, hvad der følger."
+          },
+          "linguisticSlips": {
+            "k": "lingvistiske forvanskninger",
+            "gloss": "Fejlbenævnelser, kondensationer, forskydninger."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD-kategorier",
+            "gloss": "Nosologi er et separat instrument, brugt af klinikere."
+          },
+          "iqCognition": {
+            "k": "IQ eller kognition",
+            "gloss": "Uden for omfang. Modellen er psykodynamisk, ikke psykometrisk."
+          },
+          "personalityTypes": {
+            "k": "personlighedstyper",
+            "gloss": "Fem-faktor og dens efterkommere er ikke en del af briefet."
+          },
+          "riskScores": {
+            "k": "risikoscorer",
+            "gloss": "Akut risiko er en klinikers vurdering, ikke en models."
+          },
+          "predictions": {
+            "k": "forudsigelser",
+            "gloss": "Struktur, ikke prognose. Vi navngiver, hvad der *er*, ikke hvad der kommer."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompression",
+        "headingLead": "Gå ind og vid, hvad du skal",
+        "headingItalic": "sige",
+        "body1": "Terapi er ikke stedet at finde ud af spørgsmålet. Det er stedet at leve med det. Den kompression, vi tilbyder, er på tilgangen — de måneder en kliniker normalt bruger på at lytte efter briefets form.",
+        "body2": "På tværs af pilotkohorten opnåede forberedte subjekter en arbejdsalliance på færre sessioner. Læsningen var allerede der.",
+        "figure": {
+          "label": "alliance",
+          "subtitle": "median sessioner til arbejdsalliance",
+          "heading": "Tid til arbejdsalliance",
+          "range": "median på tværs af kohorten",
+          "markerUnprepared": "uforberedt",
+          "markerPrepared": "forberedt",
+          "summaryLabel": "færre sessioner til\narbejdsalliance"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "FORTSÆT",
+        "headingLead": "Begynd,",
+        "headingItalic": "eller se en eksempelrapport",
+        "beginLabel": "Begynd",
+        "or": "eller",
+        "ghostLabel": "se en eksempelrapport"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRATION",
+        "headlineLead": "Indsigt, derefter",
+        "headlineItalic": "vane",
+        "lede": "At navngive et mønster er kun det første træk. Planen er det andet – daglige anvisninger og små ritualer bygget op omkring din struktur, ikke en generisk læseplan."
+      },
+      "week": {
+        "eyebrow": "EN UGE I PLANEN",
+        "headlineLead": "Syv anvisninger,",
+        "headlineItalic": "én struktur",
+        "lede": "Reflekterende, legemliggjort, skrevet. Ugen ånder omkring det mønster, rapporten navngav, ikke omkring en læseplan.",
+        "days": {
+          "mon": {
+            "day": "MAN",
+            "prompt": "“Hvor valgte du i dag <em>ikke</em> at blive set?”",
+            "stream": {
+              "journal": "journal",
+              "shadowPrompt": "skygge-anvisning"
+            }
+          },
+          "tue": {
+            "day": "TIR",
+            "prompt": "“Gå en tur uden ærinde. Bemærk én ting, du næsten sagde.”",
+            "stream": {
+              "walking": "gåtur",
+              "note": "note"
+            }
+          },
+          "wed": {
+            "day": "ONS",
+            "prompt": "“Hvad overkvalificerede du i dag, og hvad var den <em>ukvalificerede</em> sætning under?”",
+            "stream": {
+              "breathWork": "åndedrætsarbejde",
+              "journal": "journal",
+              "shadowPrompt": "skygge-anvisning"
+            }
+          },
+          "thu": {
+            "day": "TOR",
+            "prompt": "“En kropsscanning fra struben og ned. Hvor bor fastholdelsen?”",
+            "stream": {
+              "bodyScan": "kropsscanning",
+              "note": "note"
+            }
+          },
+          "fri": {
+            "day": "FRE",
+            "prompt": "“Skriv den sætning, du ville have sagt, hvis du allerede havde fået lov.”",
+            "stream": {
+              "journal": "journal",
+              "rewrite": "omskrivning"
+            }
+          },
+          "sat": {
+            "day": "LØR",
+            "prompt": "“En lang gåtur. Ingen anvisninger. Bemærk, hvad stilheden bringer tilbage.”",
+            "stream": {
+              "walking": "gåtur",
+              "rest": "hvile"
+            }
+          },
+          "sun": {
+            "day": "SØN",
+            "prompt": "“Læs ugen igennem. Hvilken linje var allerede <em>sand</em>?”",
+            "stream": {
+              "review": "gennemgang",
+              "note": "note"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTATION",
+        "headlineLead": "Planen",
+        "headlineItalic": "aftager",
+        "tag": "Adaptation",
+        "rowHeadingLead": "Sidste uges gentagelse sætter næste uges",
+        "rowHeadingItalic": "tæthed",
+        "body": "Når mønsterstyrken falder, tyndes anvisningerne ud. Når et mønster stiger, vender anvisningerne tilbage. Målet er ikke overholdelse. Målet er det mindste stillads, strukturen stadig har brug for.",
+        "figure": {
+          "label": "anvisningstæthed",
+          "subtitle": "uger 1–8",
+          "heading": "Antal anvisninger · pr. uge",
+          "range": "aftagende efterhånden som gentagelsen svækkes",
+          "markers": {
+            "wk1": "uge 1",
+            "wk3": "uge 3",
+            "wk5": "uge 5",
+            "wk8": "uge 8"
+          },
+          "summaryLabel": "færre anvisninger\nved uge 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "SKYGGEARBEJDE",
+        "headlineLead": "Ikke katarsis.",
+        "headlineItalic": "Tale",
+        "tag": "Skygge",
+        "rowHeadingLead": "Den bevidste praksis med at sige, hvad der var",
+        "rowHeadingItalic": "usigeligt",
+        "body": "Skyggearbejde er i denne sammenhæng ikke eksponering. Det er ikke en udrensning. Det er den langsomme praksis med at sige – først til sig selv – hvad man var blevet lært at holde usagt. Tre før/efter linjer hentet fra virkelige planer.",
+        "figure": {
+          "label": "skygge-revisioner",
+          "subtitle": "tre linjer, arbejdsudkast",
+          "rows": {
+            "r1": {
+              "prefix": "01 · til mig selv",
+              "old": "Jeg fortjener ikke dette.",
+              "next": "Jeg har endnu ikke øvet mig i at ønske det højt."
+            },
+            "r2": {
+              "prefix": "02 · til mig selv",
+              "old": "Jeg burde være ovre dette nu.",
+              "next": "tidslinjen, jeg lånte, var ikke til denne form for sorg."
+            },
+            "r3": {
+              "prefix": "03 · til mig selv",
+              "old": "Jeg er for meget.",
+              "next": "Jeg er præcis den volumen, rummet ikke var bygget til."
+            }
+          },
+          "metaLeft": {
+            "label": "tidligere",
+            "value": "sagt om sig selv"
+          },
+          "metaRight": {
+            "label": "nu",
+            "value": "sagt til sig selv"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RAMME",
+        "headlineLead": "Holdt af struktur, ikke af",
+        "headlineItalic": "læseplan",
+        "body1": "En læseplan er et sæt træk, en fremmed har bygget. En struktur er den form, dit særlige liv tilfældigvis antager. Planen er bygget op mod det sidste. Hver anvisning er forankret i en linje i din rapport – når linjen opløses, gør anvisningen det også.",
+        "body2": "Intet her er ment som permanent. Planen er lejet. Strukturen er din.",
+        "closeout": "strukturen er din · planen er lejet"
+      },
+      "final": {
+        "eyebrow": "FORTSÆT",
+        "headlineLead": "Begynd,",
+        "headlineItalic": "eller læs videnskaben",
+        "beginCta": "Begynd",
+        "or": "eller",
+        "readScience": "læs videnskaben"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Videnskaben — TwentyThird",
+        "description": "Et århundredes psykoanalytisk teori og fire årtiers empirisk forskning i mønster, sprog og det ubevidste."
+      },
+      "hero": {
+        "eyebrow": "FUNDAMENTET",
+        "headlineLead": "Videnskaben bag",
+        "headlineItalic": "lytningen",
+        "headlineTail": ".",
+        "lede": "TwentyThird bygger på et århundredes psykoanalytisk teori og fire årtiers empirisk forskning i mønster, sprog og det ubevidste. Dette er, hvad vi læser, og hvorfor."
+      },
+      "lineages": {
+        "eyebrow": "TO SLÆGTSLINJER",
+        "headlineLead": "Freuds struktur. Lacans",
+        "headlineItalic": "bogstav",
+        "headlineTail": ".",
+        "lede": "To læsninger af det ubevidste, et halvt århundrede fra hinanden. Sammen danner de metodens rygrad.",
+        "freud": {
+          "headlineLead": "Det",
+          "headlineItalic": "strukturelle",
+          "headlineTail": " ubevidste.",
+          "body1": "Freuds varige bidrag er strukturelt, ikke tematisk. Det dynamiske ubevidste er ikke en kælder af glemt indhold – det er et arbejdende organ i sindet, der øver, gentager, overfører.",
+          "body2": "Vi læser ham som en kliniker af gentagelse. Den samme scene ankommer i forskellige årtier. Denne gentagelse er det signal, modellen er trænet til at finde.",
+          "figure": {
+            "label": "gentagelse",
+            "subtitle": "fem ankre, én struktur",
+            "outcome": "tilbagetrækning",
+            "rows": {
+              "anchor1": "tidlig ungdom",
+              "anchor2": "første lange bånd",
+              "anchor3": "andet lange bånd",
+              "anchor4": "tredje bånd",
+              "anchor5": "fjerde bånd"
+            },
+            "summary": {
+              "recurrenceLabel": "gentagelse",
+              "intervalLabel": "interval",
+              "attractorLabel": "attraktor",
+              "attractorValue": "intimitetstærskel"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Det ubevidste er struktureret som et",
+          "headlineItalic": "sprog",
+          "headlineTail": ".",
+          "body1Lead": "Lacans læsning flytter feltet. Signifikanten bevæger sig; betydningen glider langs kæder af metonymi og metafor. Spejlstadiet navngiver den grundlæggende misgenkendelse.",
+          "body1Italic": "Begær er den Andens begær.",
+          "body2": "I vores pipeline er dette konkret. Vi læser drømme og vågen tale som tekst – forskydningerne, kondensationerne og forsnakkelserne bærer den strukturerende grammatik.",
+          "figure": {
+            "label": "sprogligt signal",
+            "subtitle": "drømmeuddrag, annoteret",
+            "dreamLead": "“Værelset jeg boede i som barn har en anden dør jeg ikke husker",
+            "ann1": "forskydning",
+            "dreamMid1": ". Bag den kalder min vejleders stemme",
+            "ann2": "kondensation",
+            "dreamMid2": "mig ved det forkerte navn",
+            "ann3": "forsnakkelser",
+            "dreamTail": ".”",
+            "key1": "forskydning",
+            "key2": "kondensation",
+            "key3": "forsnakkelser"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRISKE ANKRE",
+        "headlineLead": "Hvad nutidig forskning",
+        "headlineItalic": "tilføjer",
+        "headlineTail": ".",
+        "lede": "Fem konvergerende strenge fra tilknytnings-, narrativ- og procesforskning. Ikke en komplet bibliografi – de ankre, modellen faktisk hviler på.",
+        "figure": {
+          "label": "empiriske ankre",
+          "subtitle": "konvergerende evidens",
+          "caseLabel": "litteratur · syntese",
+          "prepared": "opdateret 04 · 26",
+          "rows": {
+            "attachment": "Tilknytningskontinuitet gennem årtier",
+            "alliance": "Terapeutisk alliance som udfaldsprædiktor",
+            "narrative": "Narrativ kohærens og velbefindende",
+            "relational": "Implicit relationel viden",
+            "script": "Skriptteori i erhvervsmæssig fastlåsthed"
+          },
+          "footerLabel": "Syntese",
+          "footerValue": "konvergerende evidens · n = 2.418"
+        }
+      },
+      "limits": {
+        "eyebrow": "HVAD VI IKKE PÅSTÅR",
+        "headlineLead": "Arbejdets ærlige",
+        "headlineItalic": "grænser",
+        "headlineTail": ".",
+        "claim1Strong": "Vi er ikke en erstatning for en terapeut.",
+        "claim1Body": "Modellen forbereder samtalen. Den holder den ikke.",
+        "claim2Strong": "Vi er ikke et diagnostisk instrument under DSM eller ICD.",
+        "claim2Body": "De kategorier, vi arbejder inden for, er strukturelle – obsessionelle, hysteriske, fobiske – ikke nosologiske. De navngiver, hvordan en person er organiseret, ikke hvad de har.",
+        "claim3Strong": "Den 23-dages cyklus er metafor.",
+        "claim3Body": "Tallet stammer fra Wilhelm Fliess' korrespondance med Freud i slutningen af det nittende århundrede. Samtidig videnskab understøtter ikke faste biorytmer. Vi beholder tallet for det, det navngiver – overgangen fra nysgerrighed til bevidsthed."
+      },
+      "reading": {
+        "eyebrow": "YDERLIGERE LÆSNING",
+        "headlineLead": "Hylden",
+        "headlineItalic": "bag",
+        "headlineTail": " modellen.",
+        "lede": "Bøger, ikke artikler. Dem vi vender tilbage til.",
+        "books": {
+          "book1": {
+            "title": "Hinsides lystprincippet"
+          },
+          "book2": {
+            "title": "Drømmetydning"
+          },
+          "book4": {
+            "title": "Psykoanalysens fire grundbegreber"
+          },
+          "book5": {
+            "title": "Tilknytning"
+          },
+          "book6": {
+            "title": "Affektregulering og selvets oprindelse"
+          },
+          "book7": {
+            "title": "At stå i rummene"
+          },
+          "book8": {
+            "title": "Affektregulering, mentalisering og selvets udvikling"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "FORTSÆT",
+        "headlineLead": "Begynd en profil,",
+        "headlineItalic": "eller læs en case",
+        "headlineTail": ".",
+        "ctaPrimary": "Begynd en profil",
+        "ctaOr": "eller",
+        "ctaGhost": "læs en casestudie"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "her igen",
+      "greetingNamed": "her igen, {name}.",
+      "strengthen": "Styrk nøjagtigheden"
+    },
+    "reviewEdit": "Gennemse og rediger",
+    "depth": {
+      "eyebrow": "LÆSEDYBDE",
+      "overallEyebrow": "OVERORDNET LÆSEDYBDE",
+      "band": {
+        "deep": "læsningen er dyb. små justeringer herfra.",
+        "steady": "læsningen holder. Catchups vil skærpe den.",
+        "partial": "læsningen er delvis. der er mere at give.",
+        "thin": "læsningen er tynd. den vil skitsere en form, endnu ikke en struktur."
+      },
+      "explainer": "Læsedybde beskriver, hvor meget af dig læsningen har haft adgang til — fra intake, fra ugentlige Catchups, fra konsultationer og fra de mennesker, hvis tilstedeværelse former dig. En dybere læsning er ikke en bedre person; det er en mere præcis. Du kan uddybe den når som helst eller lade den være, som den er.",
+      "status": {
+        "low": "Lav",
+        "moderate": "Moderat",
+        "deep": "Nøjagtig"
+      },
+      "statusLine": {
+        "low": "læsningen er tynd. den vil skitsere en form, endnu ikke en struktur.",
+        "moderate": "læsningen tager form. den kan rumme en arbejdshypotese.",
+        "deep": "læsningen er fyldestgørende nok til at fundere arbejdet."
+      },
+      "source": {
+        "intake": "spørgsmålene du besvarede for at begynde.",
+        "catchups": "ugentlige check-ins, der holder læsningen aktuel.",
+        "sessions": "længere konsultationer med the analyst.",
+        "connections": "mennesker hvis tilstedeværelse former læsningen."
+      }
+    },
+    "latest": {
+      "eyebrow": "SENESTE LÆSNING",
+      "heading": "Seks læsninger <it>— og hvad der skifter.</it>",
+      "lede": "De seks læsninger beregnes ud fra din indtagelse og forfines af hver Catchup, konsultation og accepterede forbindelse. Strukturen er stabil; teksturen bevæger sig.",
+      "strengthen": "styrk dataene til analyse",
+      "open": "åbn læsningerne"
+    },
+    "six": {
+      "eyebrow": "DE SEKS LÆSNINGER",
+      "heading": "Hvad der læses <it>i dig, lige nu.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "seneste uger",
+      "timelineHeading": "vindue",
+      "timelineRange": "sidste 4 uger",
+      "timelineSummary": "catchups i vindue",
+      "eyebrow": "UGENTLIG CATCHUP",
+      "heading": "Sid med ugen. <it>Så ser vi igen.</it>",
+      "lede": "Otte korte spørgsmål. Ærlighed er bedre end længde. Svarene forfiner læsningen.",
+      "completed": "gennemført — læs resuméet",
+      "cta": "Åbn denne uges catchup",
+      "markerFirst": "første",
+      "markerWeek": "uge {week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTATIONSVÆRELSET",
+      "heading": "En time med <it>analytikeren.</it>",
+      "ledeSubscribed": "Åbent når ugen presser på. Værelset husker, hvad du allerede har sagt.",
+      "ledeUnsubscribed": "Abonnenter kan træde ind i konsultationsværelset — en længere session med analytikeren, afholdt i samme stemme som dine læsninger.",
+      "cta": "Gå ind i konsultationsværelset",
+      "figLabel": "SIDSTE SESSION",
+      "figSubtitle": "holdt spørgsmål",
+      "lastQuestion": "“drømmen fra tirsdag — vil du vende tilbage til den?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTATIONSVÆRELSET · BEKRÆFT",
+      "title": "Adgang til konsultationsværelset<it>.</it>",
+      "ledePrice": "Abonnementet er",
+      "ledePerMonth": "om måneden",
+      "ledeIncludes": ". Det inkluderer konsultationsværelset, muligheden for at invitere op til {count} {count, plural, one {forbindelse} other {forbindelser}}, og én klinisk rapport hver kalendermåned.",
+      "ledeBilling": "Fakturering håndteres af Stripe. Opsig når som helst fra indstillinger — adgangen fortsætter, indtil perioden udløber.",
+      "canceled": "<i>betalingen blev lukket.</i> intet blev opkrævet. du kan vende tilbage nedenfor, når du er klar.",
+      "checkoutCta": "Fortsæt til betaling",
+      "returnLink": "vend tilbage til konsultationsværelset"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINISK RAPPORT",
+        "subscribedTitle": "Allerede <it>inkluderet.</it>",
+        "subscribedLede": "Abonnementet inkluderer én klinisk rapport hver kalendermåned. Generer den fra bunden af læsesiden – ingen betaling er nødvendig.",
+        "eyebrow": "KLINISK RAPPORT · BEKRÆFT",
+        "title": "Den kliniske rapport<it>.</it>",
+        "ledePrice": "En engangs klinisk rapport er",
+        "ledeDossier": ". Et 12-18 siders dossier af alle tolv læsninger, på det sprog en kliniker arbejder i.",
+        "ledeBilling": "Fakturering håndteres af Stripe. Rapporter kan regenereres, efterhånden som læsningen uddybes; abonnenter modtager én hver kalendermåned uden særskilt opkrævning.",
+        "depthNotice": "<i>rapporten vil afspejle den tilgængelige dybde.</i> den kan regenereres, efterhånden som læsningen uddybes.",
+        "canceled": "<i>kassen blev lukket.</i> intet blev opkrævet.",
+        "checkoutCta": "Fortsæt til kassen",
+        "returnLink": "vend tilbage til læsningerne"
+      },
+      "status": {
+        "eyebrow": "KLINISK RAPPORT",
+        "line": {
+          "queued": "din rapport forberedes.",
+          "generating": "rapporten skrives.",
+          "ready": "rapporten er klar.",
+          "failed": "rapporten blev ikke færdiggjort. vi prøver igen om lidt."
+        },
+        "open": "åbn rapporten",
+        "back": "tilbage til læsningerne"
+      },
+      "queued": {
+        "eyebrow": "KLINISK RAPPORT",
+        "line": "din rapport forberedes – vi sender dig en e-mail, når den er klar.",
+        "back": "tilbage til læsningerne"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INDTAG",
+        "title": "Indtaget, <it>emne for emne.</it>",
+        "lede": "Ti sektioner. Åbn en hvilken som helst for at gennemgå eller uddybe svarene deri. Indtaget er ikke en engangsformular — svar kan revideres når som helst."
+      },
+      "step": {
+        "eyebrow": "INDTAG",
+        "backToAll": "tilbage til alle sektioner"
+      },
+      "failed": {
+        "eyebrow": "INDTAG — UFULDSTÆNDIGT",
+        "headline": "Læsningen blev <em>ikke afsluttet</em>.",
+        "lede": "Dit indtag er registreret. Den efterfølgende analyse blev ikke færdiggjort.",
+        "retry": "Genoptag læsningen",
+        "retryPending": "Genoptager"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · BEHANDLER",
+      "headline": "Din profil <em>læses</em>.",
+      "lede": "vi kører nu dine svar gennem de psykodynamiske modeller. første gennemgang tager typisk omkring 2 timer. vi skriver, når arbejdet er klar, og rummet åbnes.",
+      "figIntake": "INDTAG",
+      "figSubmitted": "indsendt {date}",
+      "rowResponses": "Svar modtaget",
+      "rowPattern": "Mønsterudtræk",
+      "rowSynthesis": "Profilesyntese",
+      "statusInProgress": "i gang",
+      "statusQueued": "i kø",
+      "foot": "vi skriver, når arbejdet er klar",
+      "returnCta": "vend tilbage til det stille rum",
+      "devPrefix": "udvikling",
+      "devOpening": "åbner…",
+      "devOpen": "åbn rummet nu",
+      "devError": "kunne ikke åbne rummet — tjek konsollen."
+    }
+  },
+  "invite": {
+    "eyebrow": "INVITER",
+    "safetyFooter": "TwentyThird er ikke en erstatning for klinisk behandling. I krisesituationer, kontakt din lokale alarmcentral.",
+    "notReady": {
+      "headline": "Invitesystemet er under <it>forberedelse.</it>",
+      "body": "Prøv igen om et øjeblik."
+    },
+    "notFound": {
+      "headline": "Dette link er <it>ikke genkendt.</it>",
+      "body": "Hvis linket for nylig kom fra en e-mail, er invitationen muligvis blevet gensendt. Åbn den seneste e-mail for at finde det aktive link."
+    },
+    "alreadyDeclined": {
+      "headline": "Denne invitation blev <it>afvist.</it>",
+      "body": "Intet yderligere er påkrævet fra dig. {name} vil ikke blive underrettet ud over, hvad de allerede ser."
+    },
+    "alreadyAccepted": {
+      "headline": "Du har allerede <it>accepteret.</it>",
+      "body": "Hvis indtaget for forbindelsen endnu ikke er afsluttet, kan du fortsætte nedenfor.",
+      "continueLink": "fortsæt indtaget for forbindelsen"
+    },
+    "ended": {
+      "headline": "Denne forbindelse er <it>afsluttet.</it>",
+      "body": "Linket er ikke længere aktivt. Forbindelsesjournalen forbliver i sagsmappen, men informerer ikke længere læsningen."
+    },
+    "expired": {
+      "headline": "Denne invitation er <it>udløbet.</it>",
+      "body": "Invitationer udløber fjorten dage efter afsendelse. Bed {name} om at sende en ny, hvis du ønsker at svare."
+    },
+    "declined": {
+      "headline": "Det er <it>modtaget.</it>",
+      "body": "Intet yderligere er påkrævet fra Dem. Invitationen er lukket; inviterende ser statusændringen diskret. De kan lukke dette vindue."
+    },
+    "live": {
+      "eyebrow": "FORBINDELSESANMODNING",
+      "headline": "{name} har inviteret dig ind i <it>deres læsning.</it>",
+      "lede": "TwentyThird er et redaktionelt-klinisk instrument — et stille rum, hvor strukturen af en persons indre liv læses med omhu og gengives i et sprog, en kliniker kan anvende.",
+      "explainerOne": "En <em>forbindelse</em> er ikke en delt konto. {name} vil ikke se dine læsninger, sessioner eller sagsmappe. Du vil ikke se deres. Hvad du siger om forholdet, fodrer den model, der producerer {name}s læsning.",
+      "explainerTwo": "Ønsker du din egen læsning, begynder den første sti nedenfor også din egen konto. Den midterste sti lader dig bidrage til {name}s læsning uden en konto. Begge er tilladt.",
+      "metaSentTo": "sendt til",
+      "metaInviteAs": "inviter som",
+      "metaReceived": "modtaget",
+      "metaExpiresIn": "udløber om {count, plural, one {# dag} other {# dage}}"
+    },
+    "intake": {
+      "eyebrow": "FORHOLDSTILTAG",
+      "notReady": {
+        "headline": "Indtaget er under <it>forberedelse.</it>",
+        "body": "Prøv venligst igen om et øjeblik."
+      },
+      "notFound": {
+        "headline": "Dette link er <it>ikke genkendt.</it>",
+        "body": "Åbn den seneste invitationsmail for det aktive link."
+      },
+      "notOpen": {
+        "headline": "Indtaget er <it>ikke åbent.</it>",
+        "body": "Denne invitation er ikke blevet accepteret, eller er blevet afvist eller afsluttet. Vend tilbage til invitationslinket for at vælge igen.",
+        "backLink": "tilbage til invitationen"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "ja — start relationsindtaget",
+      "acceptLabel": "ja — opret forbindelse uden konto",
+      "declineLabel": "nej tak",
+      "beginLabel": "start",
+      "continueLabel": "fortsæt",
+      "back": "tilbage",
+      "oneMoment": "et øjeblik…",
+      "declineConfirmLine": "dette lukker invitationen. intet yderligere sendes eller gemmes om dig.",
+      "declineClosing": "lukker…",
+      "declineConfirm": "afvis invitationen",
+      "firstNameLabel": "DIT FORNAVN",
+      "firstNameAria": "Dit fornavn",
+      "firstNameSub": "{name} vil kun se dette fornavn på deres forbindelsesliste.",
+      "errors": {
+        "missingFirstName": "et fornavn giver analytikeren mulighed for at tiltale dig korrekt.",
+        "generic": "kunne ikke indsende.",
+        "notFound": "dette invitationslink genkendes ikke.",
+        "expired": "denne invitation er udløbet. bed den inviterende om at sende en ny.",
+        "declined": "denne invitation er allerede afvist.",
+        "ended": "denne invitation er ikke længere aktiv.",
+        "missingFirstNameRequired": "et fornavn er påkrævet."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "FORHOLDSOPSAMLING",
+      "begin": "begynd",
+      "back": "tilbage",
+      "backToCover": "tilbage til forside",
+      "next": "næste",
+      "finish": "afslut",
+      "scaleAria": "skala {value}",
+      "cover": {
+        "headline": "Hvad du siger om <it>{name}</it> forbliver mellem dig og analytikeren.",
+        "lede": "Tolv korte spørgsmål. Cirka fem minutter. Svarene indgår i {name}s læsning; de vil ikke se, hvad du skrev, og du vil ikke se, hvad det producerer."
+      },
+      "closing": {
+        "recording": "et øjeblik – svarene bliver registreret.",
+        "tryAgain": "prøv igen",
+        "headline": "Det er nok <it>for nu.</it>",
+        "lede": "Hvad du sagde om {name} vil informere deres læsning fra deres næste session og fremefter. De vil ikke se det; du vil ikke se, hvad det producerer.",
+        "closeWindow": "du kan lukke dette vindue."
+      },
+      "errors": {
+        "unanswered": "et øjeblik med dette, før du går videre.",
+        "questionOpen": "et spørgsmål er stadig åbent. et øjeblik.",
+        "couldNotSave": "kunne ikke gemme",
+        "invalidAnswers": "noget blev ikke fortolket – tjek venligst svarene.",
+        "notAccepting": "denne invitation accepterer ikke længere svar.",
+        "notFound": "dette invitationslink genkendes ikke.",
+        "couldNotSaveAnswers": "kunne ikke gemme svarene."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Hvor længe har I kendt hinanden?",
+          "options": {
+            "under_one_year": "mindre end et år",
+            "one_to_three": "et til tre år",
+            "four_to_ten": "fire til ti år",
+            "eleven_to_twenty": "elleve til tyve år",
+            "more_than_twenty": "mere end tyve år"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Hvor tæt føler I jer på hinanden lige nu?",
+          "lowLabel": "på afstand",
+          "highLabel": "så tæt som det kan blive"
+        },
+        "repair_initiator": {
+          "prompt": "Når I er uenige, hvem søger så typisk forsoning først?",
+          "options": {
+            "i_do": "det gør jeg næsten altid",
+            "usually_me": "som regel mig",
+            "evenly": "vi bevæger os ligeligt mod hinanden",
+            "usually_them": "som regel dem",
+            "they_do": "det gør de næsten altid"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Når noget er svært, hvor går de så hen?",
+          "options": {
+            "toward": "hen imod dig for at tale det igennem",
+            "quiet": "ind i stilhed, så tilbage",
+            "work": "ind i arbejde eller distraktion",
+            "alone": "helt alene, bag en dør",
+            "elsewhere": "til andre mennesker først"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Hvad er noget, du ønsker, de forstod om sig selv?"
+        },
+        "what_you_offer": {
+          "prompt": "I én sætning, hvad gør du for dem, som de ikke kan gøre for sig selv?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Hvilken stemme synes at drive dem oftest?",
+          "options": {
+            "demand": "kravet – hvad der bør gøres",
+            "doubt": "tvivlen – om det er nok",
+            "desire": "begæret – hvad de faktisk ønsker",
+            "watcher": "observatøren – hvordan det vil blive set",
+            "uncertain": "jeg ved det ikke endnu"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Hvor går deres arbejde typisk i stå?",
+          "options": {
+            "start": "starten – at komme i gang",
+            "middle": "midten – at holde fast",
+            "finish": "afslutningen – at give slip",
+            "visibility": "synligheden – at lade det blive set",
+            "nowhere": "ingen steder, jeg kan se udefra"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Er der et emne, de konsekvent undgår? Navngiv det let."
+        },
+        "they_at_their_best": {
+          "prompt": "Hvornår er de mest sig selv?"
+        },
+        "what_youve_changed": {
+          "prompt": "Er der noget ved dem, du stille og roligt har accepteret, at du ikke vil ændre?"
+        },
+        "future_together": {
+          "prompt": "Hvor meget af den fremtid, du forestiller dig, inkluderer dem?",
+          "lowLabel": "meget lidt",
+          "highLabel": "næsten det hele"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "eller",
+      "fallbackPreamble": "indsæt dette link i din browser:",
+      "attendingInstitution": "DELTAGENDE INSTITUTION",
+      "tagline": "Psykodynamisk AI for det indre liv.",
+      "automatedFooter": "Sendt af automatisk system · svar ikke"
+    },
+    "intakeSubmitted": {
+      "subject": "din profil læses.",
+      "preheader": "Første gennemlæsning er i gang. Rummet åbner, når arbejdet er klar.",
+      "eyebrow": "PROFIL LÆST",
+      "titleText": "Dine svar læses.",
+      "italicPhrase": "læses",
+      "lede": "Den første gennemlæsning af de psykodynamiske modeller er i gang. Rummet åbner, når arbejdet er klar.",
+      "figLeftItalic": "intake modtaget",
+      "figRightLabel": "Første gennemlæsning",
+      "figRightItalic": "i gang",
+      "text": "{salutation}\n\nDine svar er modtaget. Den første gennemlæsning af de psykodynamiske modeller er i gang. Rummet åbner, når arbejdet er klar.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "dit rum er åbent.",
+      "preheader": "Tolv blokke klar til læsning. Arbejdet forfines, når du vender tilbage til det.",
+      "eyebrow": "RUM KLAR",
+      "titleText": "Den første læsning er åben.",
+      "italicPhrase": "første læsning",
+      "lede": "Tolv blokke af psykodynamisk profil, i rummet og klar til læsning. Arbejdet forfines, når du vender tilbage til det.",
+      "ctaLabel": "Gå ind i rummet",
+      "figLeftItalic": "rum åbnet",
+      "figRightLabel": "Første læsning",
+      "figRightItalic": "klar",
+      "text": "{salutation}\n\nDen første læsning er åben.\n\nTolv blokke af psykodynamisk profil, i rummet og klar til læsning. Arbejdet forfines, når du vender tilbage til det.\n\nGå ind i rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} vil gerne have dig med i læsningen.",
+      "preheader": "{inviterName} vil gerne have dig med i læsningen. En forbindelse ser ikke dine læsninger; du vil ikke se deres.",
+      "eyebrow": "INVITATION",
+      "titleText": "{inviterName} vil gerne have dig med i læsningen.",
+      "italicPhrase": "i læsningen",
+      "lede": "TwentyThird er et stille rum, hvor strukturen af ens indre liv læses med omhu. En forbindelse ser ikke inviterens læsninger eller sessioner, og du vil ikke se deres.",
+      "ctaLabel": "Åbn invitationen",
+      "figLeftItalic": "invitation udstedt",
+      "figRightLabel": "Udløber",
+      "figRightItalic": "fjorten dage",
+      "securityNote": "Hvis dette er modtaget ved en fejl, udløber invitationen af sig selv om fjorten dage.",
+      "textIntro": "{inviterName} vil gerne have dig med i læsningen hos TwentyThird.",
+      "textBody": "TwentyThird er et stille rum, hvor strukturen af ens indre liv læses med omhu. En forbindelse ser ikke inviterens læsninger eller sessioner, og du vil ikke se deres.",
+      "textNote": "{inviterName} tilføjede en note:\n  {note}",
+      "textOpen": "Åbn invitationen:",
+      "textSecurity": "Hvis dette er modtaget ved en fejl, udløber invitationen af sig selv om fjorten dage.",
+      "textCloser": "CognitiveLab, WelloWork AB\nTILKNYTTET INSTITUTION"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} har accepteret forbindelsen.",
+      "preheader": "{nameTitle} har accepteret forbindelsen. Effekt på næste session fremadrettet.",
+      "eyebrow": "FORBINDELSE ACCEPTERET",
+      "titleText": "{nameTitle} har accepteret forbindelsen.",
+      "italicPhrase": "accepteret forbindelsen",
+      "lede": "Deres relationsindtag vil informere din læsning fra næste session fremadrettet. De vil ikke se dine læsninger; du vil ikke se deres.",
+      "ctaLabel": "Vend tilbage til rummet",
+      "figLeftItalic": "forbindelse accepteret",
+      "figRightLabel": "Effekt",
+      "figRightItalic": "næste session fremadrettet",
+      "text": "{salutation}\n\n{nameTitle} har accepteret forbindelsen.\n\nDeres relationsindtag vil informere din læsning fra næste session fremadrettet. De vil ikke se dine læsninger; du vil ikke se deres.\n\nVend tilbage til rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} har afsluttet forbindelsen.",
+      "preheader": "{nameTitle} har afsluttet forbindelsen. Din læsning vil justeres over den næste session.",
+      "eyebrow": "FORBINDELSE AFSLUTTET",
+      "titleText": "{nameTitle} har afsluttet forbindelsen.",
+      "italicPhrase": "afsluttet forbindelsen",
+      "lede": "Din læsning vil justeres over den næste session. Hvad der blev sagt om forholdet, bevares i sagsmappen; det indgår ikke længere i den aktive læsning.",
+      "ctaLabel": "Vend tilbage til rummet",
+      "figLeftItalic": "forbindelse afsluttet",
+      "figRightLabel": "Effekt",
+      "figRightItalic": "fra næste session",
+      "text": "{nameTitle} har afsluttet forbindelsen.\n\nDin læsning vil justeres over den næste session. Hvad der blev sagt om forholdet, bevares i sagsmappen; det indgår ikke længere i den aktive læsning.\n\nVend tilbage til rummet:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "ugens Catchup er åben.",
+      "preheader": "En kort refleksion. Fem minutter. Den opdaterer din læsning.",
+      "eyebrow": "UGENTLIG CATCHUP",
+      "titleText": "En uge er gået stille hen.",
+      "italicPhrase": "stille hen",
+      "lede": "En kort refleksion – hvad der er tydeligt, hvad der er forblevet stille, hvad der har ændret sig. Den opdaterer din læsning.",
+      "ctaLabel": "Åbn Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "fem minutter",
+      "text": "{salutation}\n\nEn uge er gået stille hen.\n\nEn kort refleksion – hvad der er tydeligt, hvad der er forblevet stille, hvad der har ændret sig. Den opdaterer din læsning.\n\nÅbn Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "dine svar er fastholdt.",
+      "preheader": "Din indtagelse genoptages, hvor du stoppede. Arbejdet begynder først, når det er afsluttet.",
+      "eyebrow": "INDTAGELSE FASIHOLDT",
+      "titleText": "Indtagelsen er, hvor du forlod den.",
+      "italicPhrase": "hvor du forlod den",
+      "lede": "Din indtagelse genoptages, hvor du stoppede. Arbejdet begynder først, når det er afsluttet.",
+      "ctaLabel": "Vend tilbage til indtagelsen",
+      "figLeftItalic": "indtagelse pauset",
+      "figRightLabel": "Genoptag",
+      "figRightItalic": "hvor du stoppede",
+      "text": "{salutation}\n\nIndtagelsen er, hvor du forlod den.\n\nDin indtagelse genoptages, hvor du stoppede. Arbejdet begynder først, når det er afsluttet.\n\nVend tilbage til indtagelsen:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Hvilke ord beskriver bedst det hjem, du voksede op i.",
+          "subtitle": "vælg op til tre ord, der føles sande, selvom de modsiger hinanden — hjem er som regel en blanding",
+          "options": {
+            "calm": "Roligt",
+            "strict": "Strengt",
+            "emotionally_distant": "Emotionelt distanceret",
+            "chaotic": "Kaotisk",
+            "achievement_focused": "Meget præstationsorienteret",
+            "protective": "Beskyttende",
+            "unpredictable": "Uforudsigeligt",
+            "conflict_heavy": "Konfliktfyldt"
+          }
+        },
+        "q1_2": {
+          "title": "Hvilken rolle indtog du naturligt som barn.",
+          "subtitle": "tænk på den rolle, du spillede i din familie, uden at nogen bad dig om det — fredsstifteren, hjælperen, den stille",
+          "options": {
+            "peacemaker": "Fredsstifter",
+            "achiever": "Præstationsorienteret",
+            "invisible_child": "Usynligt barn",
+            "caregiver": "Omsorgsperson",
+            "rebel": "Rebel",
+            "funny_one": "Den sjove",
+            "responsible_one": "Den ansvarlige",
+            "problem_child": "Problembarn"
+          }
+        },
+        "q1_3": {
+          "title": "Hvor følelsesmæssigt tryg følte du dig under opvæksten.",
+          "subtitle": "følg din mavefornemmelse om hjemmet, ikke den version familien ville fortælle en fremmed",
+          "lowLabel": "1 · ALDRIG TRYGT",
+          "highLabel": "10 · FULDT UD TRYGT"
+        },
+        "q1_4": {
+          "title": "Blev følelser åbent diskuteret derhjemme.",
+          "subtitle": "ikke kun om følelser var til stede, men om nogen faktisk navngav eller talte om dem højt",
+          "options": {
+            "frequently": "Ofte",
+            "sometimes": "Nogle gange",
+            "rarely": "Sjældent",
+            "never": "Aldrig"
+          }
+        },
+        "q1_5": {
+          "title": "Et barndomsminde, der stadig føles følelsesmæssigt levende i dag.",
+          "subtitle": "beskriv en specifik scene, der stadig vender tilbage til dig — hvor du var, hvem der var der, hvad der skete, hvordan det føltes"
+        },
+        "q1_6": {
+          "title": "Hvad lærte du, at du skulle gøre for at modtage kærlighed eller anerkendelse.",
+          "subtitle": "de små ting, du bemærkede virkede — at være god, at være stille, at præstere, at holde sig ude af vejen — del hvad du husker, du tilpassede dig"
+        },
+        "q1_7": {
+          "title": "Hvilke følelser var svære at udtrykke i dit hjem.",
+          "subtitle": "hvilke følelser blev ignoreret, afvist eller straffet, når du forsøgte at vise dem — vrede, tristhed, frygt, glæde, hvad som helst"
+        },
+        "q1_8": {
+          "title": "Når du tænker på dit yngre jeg, hvad føler du over for det.",
+          "subtitle": "vær ærlig omkring den følelse, der opstår — varme, tristhed, distance, frustration, beskyttelse — hvad end der faktisk er der"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Hvordan vil du beskrive din mor eller primære moderlige omsorgsperson.",
+          "subtitle": "et par sætninger om, hvordan hun var, hvordan hun var der for dig, og hvordan du følte dig omkring hende",
+          "options": {
+            "warm": "Varm",
+            "controlling": "Kontrollerende",
+            "emotionally_unavailable": "Emotionelt utilgængelig",
+            "sacrificing": "Opoffrende",
+            "critical": "Kritisk",
+            "anxious": "Angstfuld",
+            "unpredictable": "Uforudsigelig",
+            "admired": "Beundret",
+            "fearful": "Frygtsom",
+            "not_applicable": "Ikke relevant"
+          }
+        },
+        "q2_2": {
+          "title": "Hvordan vil du beskrive din far eller primære faderlige omsorgsperson.",
+          "subtitle": "et par sætninger om, hvordan han var, hvordan han var der for dig, og hvordan du følte dig omkring ham",
+          "options": {
+            "supportive": "Støttende",
+            "distant": "Distant",
+            "dominant": "Dominant",
+            "passive": "Passiv",
+            "ambitious": "Ambitiøs",
+            "emotionally_closed": "Emotionelt lukket",
+            "protective": "Beskyttende",
+            "critical": "Kritisk",
+            "absent": "Fraværende",
+            "not_applicable": "Ikke relevant"
+          }
+        },
+        "q2_3": {
+          "title": "Din søskendeposition.",
+          "subtitle": "hvor du faldt i rækkefølgen — ældste, midterste, yngste, enebarn, eller et sted derimellem",
+          "options": {
+            "oldest": "Ældste",
+            "middle": "Midterste",
+            "youngest": "Yngste",
+            "only_child": "Enebarn"
+          }
+        },
+        "q2_4": {
+          "title": "Hvilken rolle passer bedst til din søskendeposition.",
+          "subtitle": "udover fødselsrækkefølgen, den rolle du endte med at spille — den ansvarlige, rebellen, den usynlige, favoritten",
+          "options": {
+            "responsible": "Ansvarlig",
+            "ignored": "Ignoreret",
+            "compared": "Sammenlignet med andre",
+            "favored": "Foretrukket",
+            "competitive": "Konkurrencepræget",
+            "protective": "Beskyttende",
+            "not_applicable": "Ikke relevant"
+          }
+        },
+        "q2_5": {
+          "title": "Hvilken forælder forstod dig bedst.",
+          "subtitle": "nævn dem og sig, hvad de så i dig, som den anden gik glip af eller misforstod"
+        },
+        "q2_6": {
+          "title": "Hvilken forælder påvirkede din frygt mest.",
+          "subtitle": "hvis bekymringer du absorberede i opvæksten, og hvordan den frygt stadig viser sig i dit liv i dag"
+        },
+        "q2_7": {
+          "title": "Hvordan så konflikter ud i din familie.",
+          "subtitle": "beskriv den form skænderier tog — råben, tavshed, smækkede døre, kolde uger, gentagne mønstre — hvad end der føltes velkendt"
+        },
+        "q2_8": {
+          "title": "Hvilken form for opmærksomhed føltes sværest at modtage.",
+          "subtitle": "den form for omsorg, der gjorde dig utilpas — ros, bekymring, fysisk nærhed, at blive set — og hvorfor det var svært"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Hvor religiøst eller spirituelt var det miljø, du voksede op i.",
+          "subtitle": "den faktiske atmosfære i hjemmet – praksis, regler, overbevisninger i luften – ikke hvad du tror nu som voksen",
+          "lowLabel": "1 · OVERHOVEDET IKKE",
+          "highLabel": "10 · DYBT"
+        },
+        "q3_2": {
+          "title": "Hvilket budskab var stærkest i din opvækst.",
+          "subtitle": "reglen eller forventningen, der blev gentaget så ofte, at den blev baggrundsstøj – om succes, adfærd, image, pligt, familie",
+          "options": {
+            "success": "Succes betyder mest",
+            "reputation": "Omdømme betyder mest",
+            "obedience": "Lydighed betyder mest",
+            "family_loyalty": "Familiens loyalitet betyder mest",
+            "independence": "Uafhængighed betyder mest",
+            "sacrifice": "Opoffrelse betyder mest"
+          }
+        },
+        "q3_3": {
+          "title": "Hvor stærkt føler du dig dømt af samfundet.",
+          "subtitle": "hvor meget du føler dig overvåget eller evalueret af mennesker uden for din nære kreds – på arbejde, online, offentligt",
+          "lowLabel": "1 · OVERHOVEDET IKKE",
+          "highLabel": "10 · KONSTANT"
+        },
+        "q3_4": {
+          "title": "Hvilke overbevisninger fra din opvækst former dig stadig.",
+          "subtitle": "de værdier, regler eller antagelser, du arvede og stadig lever efter, selvom du ikke har tænkt over dem i årevis"
+        },
+        "q3_5": {
+          "title": "Hvilke overbevisninger modsætter du dig i hemmelighed.",
+          "subtitle": "dem du offentligt følger, men stille er uenig i – om penge, relationer, succes, køn, hvad som helst"
+        },
+        "q3_6": {
+          "title": "Hvad ville din familie eller dit samfund misbillige mest ved dit sande jeg.",
+          "subtitle": "de dele af dig selv, dit liv eller dine valg, du holder skjult for dem, og hvorfor du holder dem skjult"
+        },
+        "q3_7": {
+          "title": "Hvilken slags person forventedes du at blive.",
+          "subtitle": "den fremtid andre forestillede sig for dig – karriere, familie, adfærd, image – før du havde noget at skulle have sagt"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Hvor mange mennesker kender dit sande jeg.",
+          "subtitle": "de mennesker, der har set den uredigerede version af dig og ikke ville blive chokeret over noget i dit indre liv",
+          "options": {
+            "none": "Ingen",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Mange"
+          }
+        },
+        "q4_2": {
+          "title": "I grupper bliver du som regel.",
+          "subtitle": "den rolle, du glider ind i uden at tænke – den sjove, lytteren, lederen, observatøren, den der holder tingene kørende",
+          "options": {
+            "leader": "Leder",
+            "observer": "Observatør",
+            "entertainer": "Underholder",
+            "mediator": "Mægler",
+            "intellectual": "Intellektuel",
+            "caregiver": "Omsorgsperson",
+            "withdrawn": "Tilbagetrukket"
+          }
+        },
+        "q4_3": {
+          "title": "Hvor bange er du for at skuffe andre.",
+          "subtitle": "hvor meget en anden persons reaktion – et blik, et suk, stilhed – kan forme, hvad du siger eller gør",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · DAGLIGT"
+        },
+        "q4_4": {
+          "title": "Hvilke dele af dig selv skjuler du socialt.",
+          "subtitle": "de tanker, følelser, træk eller dele af din historie, du holder skjult, når du er sammen med andre mennesker"
+        },
+        "q4_5": {
+          "title": "Hvornår føler du dig mest accepteret.",
+          "subtitle": "de situationer eller relationer, hvor du holder op med at præstere og bare kan være – beskriv hvad der gør disse rum anderledes"
+        },
+        "q4_6": {
+          "title": "Hvilke sociale situationer dræner dig mest.",
+          "subtitle": "de sammenkomster, dynamikker eller relationer, der efterlader dig mere træt, end de burde – og hvad ved dem er udmattende"
+        },
+        "q4_7": {
+          "title": "Hvilken slags mennesker misunder du.",
+          "subtitle": "misundelse peger som regel på noget, du ønsker, men ikke har tilladt dig selv at ønske åbent – beskriv hvem der udløser det, og hvorfor"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Hvilke platforme bruger du aktivt.",
+          "subtitle": "de apps, du åbner af vane, mere end én gang om dagen, ikke dem, du teknisk set har en konto på",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Ingen"
+          }
+        },
+        "q5_2": {
+          "title": "Gennemsnitlig daglig brug per platform.",
+          "subtitle": "et groft skøn over, hvor meget tid du faktisk bruger på hver – minutter eller timer, uden fordømmelse",
+          "unit": "MINUTTER PER DAG"
+        },
+        "q5_3": {
+          "title": "Hvad du primært bruger dem til.",
+          "subtitle": "den virkelige årsag bag den åbenlyse – forbindelse, distraktion, validering, flugt, sammenligning, information",
+          "options": {
+            "validation": "Validering",
+            "learning": "Læring",
+            "escapism": "Eskapisme",
+            "networking": "Netværk",
+            "self_expression": "Selvudfoldelse",
+            "entertainment": "Underholdning",
+            "comparison": "Sammenligning",
+            "dating": "Dating"
+          }
+        },
+        "q5_4": {
+          "title": "Hvor ofte sletter eller redigerer du opslag før publicering.",
+          "subtitle": "hvor meget du øver, tvivler på eller omskriver det, du deler, før andre får det at se",
+          "options": {
+            "always": "Altid",
+            "often": "Ofte",
+            "sometimes": "Nogle gange",
+            "rarely": "Sjældent",
+            "never": "Aldrig"
+          }
+        },
+        "q5_5": {
+          "title": "Hvor ofte sammenligner du dit liv med andres online.",
+          "subtitle": "den stille måling, der finder sted under scrolling – om udseende, succes, relationer, livsstil, hvad som helst",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · KONSTANT"
+        },
+        "q5_6": {
+          "title": "Hvilken version af dig selv vises online.",
+          "subtitle": "beskriv den karakter, du præsenterer – den kuraterede version – og hvordan den adskiller sig fra den, du er, når ingen ser med"
+        },
+        "q5_7": {
+          "title": "Hvad søger du følelsesmæssigt, når du åbner sociale medier.",
+          "subtitle": "følelsen du rækker ud efter i det øjeblik, du åbner appen – distraktion, komfort, spænding, følelsesløshed, forbindelse"
+        },
+        "q5_8": {
+          "title": "Hvilken slags indhold gør dig utilpas.",
+          "subtitle": "de opslag eller videoer, der får dig til at scrolle hurtigt forbi, og hvad du tror, det ubehag i virkeligheden handler om"
+        },
+        "q5_9": {
+          "title": "Hvilken slags mennesker tiltrækker din opmærksomhed online.",
+          "subtitle": "de konti, du stopper op og ser på – beskriv de kvaliteter, de deler, og hvad der tiltrækker dig"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Din nuværende civilstand.",
+          "subtitle": "hvor du faktisk er lige nu – single, dater, i et forhold, gift, separeret, kompliceret – ikke hvor du ønsker at være",
+          "options": {
+            "single": "Single",
+            "dating": "Dater",
+            "in_relationship": "I et forhold",
+            "engaged": "Forlovet",
+            "married": "Gift",
+            "separated_divorced": "Separeret eller skilt",
+            "widowed": "Enke/enkemand",
+            "its_complicated": "Det er kompliceret"
+          }
+        },
+        "q6_2": {
+          "title": "Hvor mange seriøse forhold har du været i.",
+          "subtitle": "dem der betød noget følelsesmæssigt, uanset hvor længe de varede eller hvor officielle de var",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Typiske konflikter i dine forhold.",
+          "subtitle": "de argumenter der bliver ved med at dukke op i forskellige former på tværs af forskellige partnere – penge, afstand, kontrol, kommunikation",
+          "options": {
+            "distance": "Afstand",
+            "jealousy": "Jalousi",
+            "control": "Kontrol",
+            "emotional_unavailability": "Følelsesmæssig utilgængelighed",
+            "communication": "Kommunikation",
+            "trust": "Tillid",
+            "dependency": "Afhængighed"
+          }
+        },
+        "q6_4": {
+          "title": "I forhold har du en tendens til at.",
+          "subtitle": "din standardreaktion når tingene bliver svære – trække tættere på, trække sig væk, tage styring, lukke ned, forsøge at fikse",
+          "options": {
+            "pursue": "Forfølge",
+            "withdraw": "Trække dig tilbage",
+            "overgive": "Overgive dig",
+            "test_loyalty": "Teste loyalitet",
+            "avoid_vulnerability": "Undgå sårbarhed"
+          }
+        },
+        "q6_5": {
+          "title": "Hvilken type mennesker falder du gentagne gange for.",
+          "subtitle": "typen der bliver ved med at dukke op i dit kærlighedsliv – ikke kun udseende, men følelsesmæssige mønstre, temperament, hvordan de behandler dig"
+        },
+        "q6_6": {
+          "title": "Hvad afslutter normalt dine forhold.",
+          "subtitle": "den virkelige grund til at tingene falder fra hinanden, ud over den officielle historie du fortæller venner eller familie"
+        },
+        "q6_7": {
+          "title": "Hvilket følelsesmæssigt behov ønsker du mest opfyldt.",
+          "subtitle": "behovet du finder sværest at bede om direkte – at blive set, at blive valgt, at være sikker, at være fri, at være ønsket"
+        },
+        "q6_8": {
+          "title": "Hvad frygter du mest i intimitet.",
+          "subtitle": "hvad nærhed sætter på spil for dig – at blive kendt, at blive fanget, at blive forladt, at være for meget, at være utilstrækkelig"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Din nuværende ansættelsesstatus.",
+          "subtitle": "formen på dit arbejdsliv lige nu — ansat, selvstændig, mellem jobs, studerende, omsorgsgiver, noget andet",
+          "options": {
+            "employed_full_time": "Ansat, fuldtid",
+            "employed_part_time": "Ansat, deltid",
+            "self_employed": "Selvstændig eller grundlægger",
+            "freelance": "Freelance eller kontraktansat",
+            "studying": "Studerende",
+            "between_roles": "Mellem jobs",
+            "caregiving": "Omsorgsgiver derhjemme",
+            "retired": "Pensioneret",
+            "not_working": "Ikke i arbejde"
+          }
+        },
+        "q7_2": {
+          "title": "Hvor tilfreds er du med din karriereretning.",
+          "subtitle": "den længere bane for, hvor dit arbejde bevæger sig hen, ikke hvordan du har det med denne specifikke uge",
+          "lowLabel": "1 · FORTABT",
+          "highLabel": "10 · HELT RIGTIGT"
+        },
+        "q7_3": {
+          "title": "På arbejdet er du som regel.",
+          "subtitle": "den måde, du agerer professionelt på — den rolle, du indtager, når ingen tildeler dig en",
+          "options": {
+            "perfectionistic": "Perfektionistisk",
+            "avoidant": "Undvigende",
+            "competitive": "Konkurrencepræget",
+            "cooperative": "Samarbejdsvillig",
+            "over_responsible": "Overansvarlig",
+            "detached": "Distant"
+          }
+        },
+        "q7_4": {
+          "title": "Din største stressfaktor på arbejdspladsen.",
+          "subtitle": "kilden til det pres, der følger dig hjem — en person, en arbejdsbyrde, en frygt, et miljø, et mønster",
+          "options": {
+            "criticism": "Kritik",
+            "failure": "Fiasko",
+            "visibility": "Synlighed",
+            "authority": "Autoritet",
+            "uncertainty": "Usikkerhed",
+            "conflict": "Konflikt"
+          }
+        },
+        "q7_5": {
+          "title": "Hvad betyder succes følelsesmæssigt for dig.",
+          "subtitle": "følelsen du forestiller dig ankommer, når du endelig har den — lettelse, stolthed, fred, frihed, at være nok"
+        },
+        "q7_6": {
+          "title": "Hvilken form for anerkendelse påvirker dig mest.",
+          "subtitle": "den ros, der virkelig rammer og ændrer, hvordan du føler, og den slags, der preller af, uanset hvor meget du får af den"
+        },
+        "q7_7": {
+          "title": "Hvilken fiasko påvirker dig stadig i dag.",
+          "subtitle": "en specifik fiasko, du endnu ikke helt har bearbejdet — hvad der skete, og hvordan det stadig former dine valg"
+        },
+        "q7_8": {
+          "title": "Hvis penge forsvandt, hvad ville du så forfølge.",
+          "subtitle": "det arbejde eller den aktivitet, du ville udføre, selvom ingen betalte dig for det — beskriv, hvordan det ser ud"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Hvordan håndterer du typisk stress.",
+          "subtitle": "hvad du griber ud efter, når tingene bliver tunge — mad, skærme, motion, isolation, samtale, stoffer, søvn, arbejde",
+          "options": {
+            "isolation": "Isolation",
+            "food": "Mad",
+            "gaming": "Spil",
+            "exercise": "Motion",
+            "overworking": "Overarbejde",
+            "scrolling": "Scrolling",
+            "substance_use": "Brug af stoffer",
+            "shopping": "Shopping",
+            "sleeping": "Søvn",
+            "socializing": "Socialt samvær"
+          }
+        },
+        "q8_2": {
+          "title": "Hvor ofte er du socialt ude.",
+          "subtitle": "hvor ofte du tilbringer tid med andre mennesker personligt, ikke online eller via beskeder",
+          "options": {
+            "multiple_per_week": "Flere gange om ugen",
+            "weekly": "Ugentligt",
+            "monthly": "Månedligt",
+            "rarely": "Sjældent",
+            "never": "Aldrig"
+          }
+        },
+        "q8_3": {
+          "title": "Hvor ofte føler du dig ensom, selv i en gruppe.",
+          "subtitle": "den ensomhed, der opstår, når du er omgivet af mennesker, men stadig føler dig uset eller langt væk",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · ALTID"
+        },
+        "q8_4": {
+          "title": "Hvilke aktiviteter får dig til at glemme dig selv.",
+          "subtitle": "de ting, der opsluger dig så dybt, at tiden forsvinder — på godt og ondt, sundt eller ej"
+        },
+        "q8_5": {
+          "title": "Hvad undgår du mest at tænke på.",
+          "subtitle": "det emne eller minde, du hurtigt styrer uden om, når det dukker op — om dig selv, din fortid, din fremtid"
+        },
+        "q8_6": {
+          "title": "Hvornår føler du dig følelsesmæssigt følelsesløs.",
+          "subtitle": "de situationer, hvor lydstyrken falder til nul — arbejde, relationer, konflikt, intimitet, at være alene"
+        },
+        "q8_7": {
+          "title": "Hvilken vane er sværest at stoppe.",
+          "subtitle": "den adfærd, du har forsøgt at ændre eller stoppe mere end én gang, uden held — beskriv hvad det er, og hvad der bliver ved med at trække dig tilbage"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Hvor selvkritisk er du.",
+          "subtitle": "tonen i din indre stemme, når du fejler eller kommer til kort — hård, retfærdig, afvisende, ødelæggende",
+          "lowLabel": "1 · MILD",
+          "highLabel": "10 · NÅDESLØS"
+        },
+        "q9_2": {
+          "title": "Hvilken udtalelse føles tættest på din private frygt.",
+          "subtitle": "den sætning om dig selv, der lever under alt andet, den du kun ville indrømme på en dårlig dag",
+          "options": {
+            "never_enough": "Jeg er aldrig nok",
+            "fear_abandoned": "Jeg frygter at blive forladt",
+            "fear_losing_control": "Jeg frygter at miste kontrollen",
+            "fear_failure": "Jeg frygter fiasko",
+            "fear_ordinary": "Jeg frygter at være almindelig",
+            "fear_rejection": "Jeg frygter afvisning",
+            "fear_dependence": "Jeg frygter afhængighed"
+          }
+        },
+        "q9_3": {
+          "title": "Hvor ofte føler du dig afkoblet fra dig selv.",
+          "subtitle": "fornemmelsen af at betragte dit eget liv på afstand, som om du ikke er helt inde i det",
+          "lowLabel": "1 · ALDRIG",
+          "highLabel": "10 · DAGLIGT"
+        },
+        "q9_4": {
+          "title": "Hvilken tanke gentager sig oftest i dit sind.",
+          "subtitle": "den gentagne sætning eller bekymring, der vender tilbage regelmæssigt — skriv den med dens faktiske ord, ikke et resumé"
+        },
+        "q9_5": {
+          "title": "Hvad kritiserer du dig selv for privat.",
+          "subtitle": "de ting du bedømmer dig selv på, som ingen andre kender til — om din krop, dit sind, dine valg, din karakter"
+        },
+        "q9_6": {
+          "title": "Hvad ville få dig til at føle dig nok.",
+          "subtitle": "den betingelse du stille og roligt har sat for dig selv for endelig at slappe af — vær ærlig, svaret er ofte mindre end du forventer"
+        },
+        "q9_7": {
+          "title": "Hvis din indre stemme havde en personlighed, hvordan ville du så beskrive den.",
+          "subtitle": "alderen, kønnet, tonen i den stemme — og hvis stemme det i virkeligheden kunne være, hvis du sporer den tilbage"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Hvad betyder mest for dig.",
+          "subtitle": "vælg det, der betyder mest lige nu — de andre kan stadig betyde noget, men vær ærlig omkring rangeringen",
+          "options": {
+            "freedom": "Frihed",
+            "love": "Kærlighed",
+            "recognition": "Anerkendelse",
+            "stability": "Stabilitet",
+            "power": "Magt",
+            "meaning": "Mening",
+            "peace": "Fred",
+            "influence": "Indflydelse"
+          }
+        },
+        "q10_2": {
+          "title": "Hvor håbefuld er du omkring din fremtid.",
+          "subtitle": "den følelse, du har, når du tænker fremad, ikke det positive svar, du giver andre, når de spørger",
+          "lowLabel": "1 · INGEN",
+          "highLabel": "10 · DYBT"
+        },
+        "q10_3": {
+          "title": "Hvad ønsker du dig i hemmelighed mest.",
+          "subtitle": "det ønske, du endnu ikke helt har tilladt dig selv at udtale — det, der føles for stort, for risikabelt eller for pinligt",
+          "options": {
+            "to_be_understood": "At blive forstået",
+            "to_be_admired": "At blive beundret",
+            "to_feel_safe": "At føle sig tryg",
+            "to_be_desired": "At blive begæret",
+            "to_feel_important": "At føle sig vigtig",
+            "to_feel_free": "At føle sig fri",
+            "to_belong": "At høre til"
+          }
+        },
+        "q10_4": {
+          "title": "Beskriv dit ideelle fremtidige liv i detaljer.",
+          "subtitle": "de konkrete detaljer — hvor du er, hvem du er sammen med, hvordan dine morgener ser ud, arbejdet, lyset, rytmen"
+        },
+        "q10_5": {
+          "title": "Hvilken frygt kunne ødelægge den fremtid.",
+          "subtitle": "den ting — intern eller ekstern — der har stoppet dig før, og som kunne stoppe dig igen, hvis du lader den"
+        },
+        "q10_6": {
+          "title": "Hvilken del af dig selv forsøger du stadig at blive.",
+          "subtitle": "versionen af dig i horisonten — kvaliteterne, frihederne, den måde at være på, du langsomt bevæger dig hen imod"
+        },
+        "q10_7": {
+          "title": "Hvis ingen dømte dig, hvordan ville du så leve anderledes.",
+          "subtitle": "de valg, du ville træffe, hvis overvågningen stoppede — om arbejde, kærlighed, krop, tid, penge, stemme"
+        },
+        "q10_8": {
+          "title": "Hvad tror du, du i virkeligheden søger efter.",
+          "subtitle": "det dybere under alle dine tidligere svar — hvad ethvert valg og længsel i virkeligheden peger på"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "OPRINDELSE · UDVIKLINGSBETINGET PRÆGNING",
+        "headline": [
+          "Hvad det tidlige rum ",
+          "lærte dig",
+          "."
+        ],
+        "lede": "Den første sektion lytter efter følelsesmæssigt klima, sikkerhed og den rolle, du blev tildelt. Mønstre, der registreres her, danner grundlaget for alt, hvad der senere bygges på.",
+        "title": "Oprindelse",
+        "subtitle": "udviklingsbetinget prægning"
+      },
+      "attachment": {
+        "eyebrow": "TILKNYTNING · FAMILIESTRUKTUR",
+        "headline": [
+          "De første ",
+          "bånd",
+          ", og den form de efterlod."
+        ],
+        "lede": "Lokaliserer din tilknytningsstil, dit forhold til autoritet og den triangulering, du voksede op i. Formen af det første bånd bliver den skabelon, som alle senere måles imod.",
+        "title": "Tilknytning",
+        "subtitle": "familiestruktur"
+      },
+      "authority": {
+        "eyebrow": "AUTORITET · SYMBOLSK LOV",
+        "headline": [
+          "De stemmer du ",
+          "arvede",
+          "."
+        ],
+        "lede": "Afdækker de moralske koder, skyldstrukturer og den arvede identitet, der stadig kører i baggrunden. Stemmerne, du voksede op under, forsvinder sjældent; de bliver den stemme, der dømmer dig.",
+        "title": "Autoritet",
+        "subtitle": "symbolsk lov"
+      },
+      "belonging": {
+        "eyebrow": "TILHØRSFORHOLD · SOCIAL IDENTITET",
+        "headline": [
+          "Hvem der får lov til at ",
+          "se dig",
+          "."
+        ],
+        "lede": "Måler social afhængighed, identitetsmaskering og frygten for eksklusion. Tilhørsforhold er sjældent gratis; denne sektion spørger, hvad du bytter for det.",
+        "title": "Tilhørsforhold",
+        "subtitle": "social identitet"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · BEGÆR & DIGITALT SELV",
+        "headline": [
+          "Det selv du ",
+          "opfører",
+          "."
+        ],
+        "lede": "Aflæser det idealiserede selv, valideringssløjfen og den symbolske opførelse, du iscenesætter online. Personaen er ikke en løgn; det er et halvt afsløret ønske.",
+        "title": "Persona",
+        "subtitle": "begær & digitalt selv"
+      },
+      "desire": {
+        "eyebrow": "BEGÆR · INTIMITET & GENTAGELSE",
+        "headline": [
+          "Mønstret der ",
+          "bliver ved med at vende tilbage",
+          "."
+        ],
+        "lede": "Finder den tilbagevendende relationelle form, frygten for at blive forladt, modsætningen i begæret. Det, der gentages, er sjældent valgt; det er det, der beder om at blive set.",
+        "title": "Begær",
+        "subtitle": "intimitet & gentagelse"
+      },
+      "achievement": {
+        "eyebrow": "PRÆSTATION · ARBEJDE & ANERKENDELSE",
+        "headline": [
+          "Hvad du ",
+          "forsøger at bevise",
+          "."
+        ],
+        "lede": "Registrerer præstationsangst, anerkendelseshunger og dit forhold til autoritet på arbejdet. Under enhver ambition er der et publikum på en eller to personer.",
+        "title": "Præstation",
+        "subtitle": "arbejde & anerkendelse"
+      },
+      "escape": {
+        "eyebrow": "FLUGT · Nydelse & RITUAL",
+        "headline": [
+          "Hvor du går hen ",
+          "for ikke at være her",
+          "."
+        ],
+        "lede": "Identificerer undgåelsesmønstre, tvangshandlinger og de ritualer, der regulerer nydelse. Den udgang, du rækker ud efter, siger lige så meget som det rum, du forlader.",
+        "title": "Flugt",
+        "subtitle": "nydelse & ritual"
+      },
+      "self-relation": {
+        "eyebrow": "SELFORHOLD · INDRE DIALOG",
+        "headline": [
+          "Den stemme du ikke ",
+          "helt kan tie",
+          "."
+        ],
+        "lede": "Kortlægger superegoets grænse, skamstrukturerne og de internaliserede stemmer. Den måde, du taler til dig selv på i enerum, er den mest ærlige optegnelse over, hvem der opdrog dig.",
+        "title": "Self-relation",
+        "subtitle": "indre dialog"
+      },
+      "future-fantasy": {
+        "eyebrow": "FREMTID · FANTASI, FRYGT & BEGÆR",
+        "headline": [
+          "Hvad du ",
+          "virkelig søger",
+          "."
+        ],
+        "lede": "Det følelsesmæssige klimaks – den fremtid du forestiller dig, frygten der hjemsøger den, det underliggende kernebegær. Det sidste spørgsmål er det første, der returneres.",
+        "title": "Future-fantasy",
+        "subtitle": "fantasi, frygt & begær"
+      }
+    }
+  },
+  "common": {
+    "or": "eller",
+    "loading": "indlæser…",
+    "sending": "sender…",
+    "save": "Gem",
+    "saved": "gemt",
+    "cancel": "Annuller",
+    "close": "Luk",
+    "back": "Tilbage",
+    "continue": "Fortsæt",
+    "retry": "Prøv igen",
+    "more": "mere"
+  },
+  "nav": {
+    "room": "Rum",
+    "readings": "Læsninger",
+    "catchup": "Catchup",
+    "consulting": "Konsultation",
+    "caseFile": "Sagsmappe",
+    "settings": "Indstillinger",
+    "signIn": "Log ind",
+    "signOut": "Log ud",
+    "getStarted": "Kom i gang",
+    "language": "Sprog",
+    "method": "Metode",
+    "theWork": "Arbejdet",
+    "about": "Om",
+    "contact": "Kontakt",
+    "start": "Start"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Log ",
+      "titleItalic": "ind",
+      "titleAfter": ".",
+      "googleLabel": "Log ind med Google",
+      "or": "eller",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "ADGANGSKODE",
+      "forgotPassword": "Glemt adgangskode",
+      "submit": "Log ind",
+      "footPrompt": "Ny her? ",
+      "footLink": "Opret en konto"
+    },
+    "signUp": {
+      "titleBefore": "Opret en ",
+      "titleItalic": "konto",
+      "titleAfter": ".",
+      "googleLabel": "Fortsæt med Google",
+      "or": "eller",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "ADGANGSKODE",
+      "confirmPasswordLabel": "BEKRÆFT ADGANGSKODE",
+      "submit": "Opret konto",
+      "footPrompt": "Har du allerede en? ",
+      "footLink": "Log ind",
+      "resentNote": "Et nyt link er sendt.",
+      "resendConfirmation": "Send bekræftelse igen",
+      "pendingFootPrompt": "Forkert adresse? ",
+      "pendingFootLink": "Start forfra"
+    },
+    "forgot": {
+      "titleBefore": "Glemt din ",
+      "titleItalic": "adgangskode",
+      "titleAfter": ".",
+      "lede": "Indtast den adresse, du brugte til at oprette dig. Vi sender et link til at nulstille den.",
+      "emailLabel": "E-MAIL",
+      "submit": "Send nulstillingslink",
+      "footPrompt": "Kan du huske den? ",
+      "footLink": "Log ind",
+      "sentBackLink": "Tilbage til login"
+    },
+    "reset": {
+      "titleBefore": "Angiv en ",
+      "titleItalic": "ny adgangskode",
+      "titleAfter": ".",
+      "newPasswordLabel": "NY ADGANGSKODE",
+      "confirmPasswordLabel": "BEKRÆFT ADGANGSKODE",
+      "submit": "Opdater adgangskode",
+      "expiredTitleBefore": "Det link er ",
+      "expiredTitleItalic": "ikke længere gyldigt",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Anmod om et nyt link"
+    },
+    "errors": {
+      "invalid_credentials": "E-mail eller adgangskode stemmer ikke overens.",
+      "email_taken": "Den e-mail er allerede registreret. Prøv at logge ind.",
+      "weak_password": "Brug mindst 8 tegn.",
+      "passwords_dont_match": "Adgangskoder stemmer ikke overens.",
+      "email_invalid": "Det ligner ikke en gyldig e-mail.",
+      "rate_limited": "For mange forsøg. Prøv igen om et øjeblik.",
+      "unconfirmed_email": "Bekræft din e-mail først. Tjek din indbakke.",
+      "reset_link_expired": "Det link er udløbet. Anmod om et nyt.",
+      "reset_link_invalid": "Det link er ikke længere gyldigt. Anmod om et nyt.",
+      "oauth_failed": "Kunne ikke nå Google. Prøv igen.",
+      "callback_failed": "Kunne ikke fuldføre login.",
+      "generic": "Noget gik galt. Prøv igen.",
+      "no_session": "Log ind for at fortsætte."
+    },
+    "success": {
+      "checkInboxEyebrow": "TJEK DIN INDBAKKE",
+      "confirmationHeadlineBefore": "Vi har sendt et ",
+      "confirmationHeadlineItalic": "bekræftelseslink",
+      "confirmationHeadlineAfter": " til ",
+      "confirmationLede": "Klik på det for at færdiggøre oprettelsen af din konto.",
+      "resetSentEyebrow": "TJEK DIN INDBAKKE",
+      "resetSentHeadlineBefore": "Hvis den e-mail er ",
+      "resetSentHeadlineItalic": "registreret",
+      "resetSentHeadlineAfter": ", har vi sendt et nulstillingslink.",
+      "resetSentLede": "Linket virker én gang og udløber inden for en time. Intet link modtaget betyder ingen konto.",
+      "passwordUpdated": "Adgangskode opdateret. Logger dig ind."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONTO",
+      "headlineBefore": "Opsæt dit",
+      "headlineItalic": "stille rum",
+      "lede": "Et navn, et årstal og et ja. Så begynder arbejdet.",
+      "saveFailed": "Kunne ikke gemme det. Prøv igen om et øjeblik.",
+      "nameLabel": "NAVN",
+      "nameRequired": "Navn er påkrævet.",
+      "prefilledHint": "forududfyldt fra Google · kan redigeres",
+      "yearLabel": "FØDSELSÅR",
+      "yearRequired": "Vælg et årstal.",
+      "genderLabel": "KØN",
+      "genderRequired": "Vælg et.",
+      "gender": {
+        "male": "Mand",
+        "female": "Kvinde",
+        "nonBinary": "Ikke-binær",
+        "preferNotToSay": "Ønsker ikke at oplyse"
+      },
+      "languageLabel": "SPROG",
+      "termsBefore": "Jeg accepterer",
+      "termsLink": "vilkårene",
+      "termsAnd": "og",
+      "privacyLink": "privatlivspolitikken",
+      "termsAfter": ".",
+      "submit": "Opret konto"
+    },
+    "intro": {
+      "eyebrow": "INDTAG · INGEN FORKERTE SVAR",
+      "headlineBefore": "Der er ingen rigtige svar",
+      "headlineItalic": "her",
+      "headlineAfter": null
+    },
+    "brief": {
+      "title": "BRIEFINGEN",
+      "hint": "læs én gang, begynd derefter",
+      "opener": "De forkerte svar — tøven, tastefejl, udeladelser — taler lige så tydeligt som de rigtige.",
+      "privacy": "Alt, hvad du skriver, er privat. Intet forlader dette rum.",
+      "length": "Fordi arbejdet er dybt, er indtaget langt. Vi har opdelt det i ti dele. Det hele tager omkring to timer.",
+      "resume": "Gem og fortsæt en anden dag. Rediger enhver sektion, når du er færdig med den — profilen lytter fortsat.",
+      "begin": "Begynd indtag"
+    },
+    "saved": {
+      "eyebrow": "GEM & PAUSE",
+      "headlineItalic": "Gemt.",
+      "headlineAfter": "Kom tilbage, når du er klar.",
+      "body": "Alt, hvad du har skrevet, er i din sagsmappe. Rummet åbner til det samme sted næste gang.",
+      "keepGoing": "fortsæt",
+      "leaveRoom": "Forlad det stille rum"
+    },
+    "step": {
+      "label": "TRIN",
+      "of": "AF",
+      "min": "MIN",
+      "progressLabel": "Indtag fremskridt",
+      "finalEpigraph": "det sidste spørgsmål er altid det første igen.",
+      "backTo": "Trin {n}",
+      "continueTo": "Fortsæt til Trin {n}",
+      "submit": "Gem & indsend",
+      "submitReading": "læser…"
+    },
+    "questions": {
+      "closeTitle": "LUKKEDE SPØRGSMÅL",
+      "closeHint": "vælg hvad der er sandt",
+      "openTitle": "ÅBNE SPØRGSMÅL",
+      "openHint": "skriv hvad der dukker op",
+      "countLabel": "{count, plural, one {spørgsmål} other {spørgsmål}}"
+    },
+    "saveExit": {
+      "or": "eller",
+      "saveAndReturn": "gem og vend tilbage senere"
+    },
+    "saveIndicator": {
+      "saving": "gemmer…",
+      "saved": "gemt",
+      "saveFailed": "gem mislykkedes"
+    }
+  },
+  "readings": {
+    "whatThisIs": "hvad dette er →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "underbevidste sløjfer",
+        "definition": "Gentagne sekvenser af følelse, handling og resultat, der opstår uden for bevidst valg. At navngive sløjfen er den første afbrydelse af den.",
+        "seedReading": "nærmer sig intimitet og skaber derefter en lille fejl for at trække sig tilbage.",
+        "seedTakeaway": "tilbagetrækningen er sløjfen. ikke intimiteten."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "sproglig ubevidsthed",
+        "definition": "Den måde, hvorpå ubevidst materiale dukker op i ordvalg, gentagelser, fortalelser og talens struktur — Lacans påstand om, at det ubevidste er struktureret som et sprog.",
+        "seedReading": "talen fordobles på ordet “burde” — et sted for et arvet krav.",
+        "seedTakeaway": "en andens stemme taler stadig gennem dette ord."
+      },
+      "father-imago": {
+        "subtitle": "fader-imago",
+        "definition": "Det internaliserede billede af faderen, dannet tidligt og delvist mytisk. Det former, hvordan autoritet, ambition og dømmekraft mødes senere i livet.",
+        "seedReading": "dømmer fra oven, før han bliver dømt fra oven — positionen er identisk.",
+        "seedTakeaway": "sædet skifter. stolen gør ikke."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimitetstærskel",
+        "definition": "Det punkt, hvor nærhed begynder at føles som en risiko, og et defensivt træk følger. Forskelligt for hver person; overraskende stabilt på tværs af forhold.",
+        "seedReading": "holder godt, indtil den anden bliver læselig — trækker sig derefter tilbage.",
+        "seedTakeaway": "at blive kendt er grænsen, ikke at være tæt."
+      },
+      "desire-structure": {
+        "subtitle": "begærstruktur",
+        "definition": "Hvad brugeren faktisk ønsker, adskilt fra hvad de er blevet fortalt at ønske. Ofte opdaget ved negation — ved at bemærke, hvad de afviser.",
+        "seedReading": "navngiver mange ønsker, afviser to — afvisningen er signalet.",
+        "seedTakeaway": "hvad der skubbes væk, peger tydeligere end hvad der jages."
+      },
+      "professional-block": {
+        "subtitle": "professionel blokering",
+        "definition": "Hvor arbejdet stopper: starten, midten, afslutningen eller synligheden. Hvert sted har sin egen ubevidste kilde.",
+        "seedReading": "målstregen er der, hvor tvivlen opstår, aldrig starten.",
+        "seedTakeaway": "blokeringen er ved synlighed, ikke ved anstrengelse."
+      },
+      "mother-imago": {
+        "subtitle": "moder-imago",
+        "definition": "Det internaliserede billede af moderen — den første afstemning, den første adskillelse. Det informerer om afhængighedens og tilflugtens tekstur.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "tidlig afstemning efterlader en lang signatur."
+      },
+      "dream-logic": {
+        "subtitle": "drømmelogik",
+        "definition": "Kondensationen og forskydningen på arbejde i drømmemateriale. Læs for grammatikken, ikke symbolerne.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "drømmeindhold har sin egen grammatik."
+      },
+      "relational-pattern": {
+        "subtitle": "relationelt mønster",
+        "definition": "Den tilbagevendende holdning, der indtages i relationer — forfølger, tilbagetrækker, forælder, barn, ligeværdig. Stabilt på tværs af partnere mere end partnerne er stabile på tværs af brugeren.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "den samme form vises i forskellige rum."
+      },
+      "defenses": {
+        "subtitle": "forsvar",
+        "definition": "De karakteristiske træk, der bruges til at holde vanskeligt materiale ude af bevidstheden — intellektualisering, forskydning, reaktionsdannelse, splitting. Forsvar er ikke fejl; de er gamle løsninger.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "forsvaret navngiver det, der engang var ubærligt."
+      },
+      "shadow": {
+        "subtitle": "skygge",
+        "definition": "Hvad der er blevet fornægtet og tildelt andre — de kvaliteter, brugeren er mest sikker på, at de ikke er. Ofte vejen til vitalitet.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "hvad der fornægtes, virker stadig."
+      },
+      "transference": {
+        "subtitle": "overføring",
+        "definition": "Den måde, hvorpå gamle relationelle figurer projiceres over på nuværende — analytikeren, partneren, chefen. Mønsteret afslører imagoet.",
+        "seedReading": "for tidligt at sige med sikkerhed — formen er under dannelse.",
+        "seedTakeaway": "gamle figurer ankommer i nuværende rum."
+      }
+    },
+    "strip": {
+      "lastRefined": "sidst forfinet",
+      "readingDepth": "læsedybde"
+    },
+    "section": {
+      "eyebrow": "LÆSNING {index} · {subtitle}",
+      "strengthen": "styrk nøjagtigheden",
+      "requestReport": "anmod om en rapport"
+    },
+    "card": {
+      "reading": "Læsning {index}"
+    },
+    "report": {
+      "eyebrow": "KLINISK RAPPORT",
+      "heading": "Til din <it>analytiker.</it>",
+      "lede": "Et 12–18 siders dossier — de seks læsninger fuldt udviklet, plus yderligere seks, som dashboardet ikke viser: moder-imago, drømmelogik, relationelt mønster, forsvar, skygge, overføring. Oversat til det sprog, en kliniker arbejder i.",
+      "note": "rapporten vil afspejle den tilgængelige dybde. den kan genoprettes, når læsningen uddybes.",
+      "generate": "Generer klinisk rapport",
+      "request": "Anmod om klinisk rapport",
+      "footPrefix": "én rapport inkluderet hver måned for ",
+      "footLink": "abonnenter"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "SPØRGSMÅL {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Hvad blev hængende fra ugen?",
+        "framing": "en sætning, et billede, noget en sagde."
+      },
+      "closeness": {
+        "prompt": "Hvor tæt lod du nogen komme på?",
+        "options": {
+          "not_at_all": "slet ikke",
+          "briefly": "kortvarigt",
+          "with_hesitation": "med tøven",
+          "openly": "åbent",
+          "too_far": "for tæt på"
+        }
+      },
+      "loop": {
+        "prompt": "Fangede du dig selv i en velkendt *subconscious loop*?",
+        "framing": "hvor, og hvordan det endte."
+      },
+      "loudest_voice": {
+        "prompt": "Hvilken stemme var højest denne uge?",
+        "options": {
+          "demand": "kravet",
+          "doubt": "tvivlen",
+          "desire": "*desiret*",
+          "watcher": "observatøren",
+          "none": "ingen af disse"
+        }
+      },
+      "dream": {
+        "prompt": "Var der en drøm værd at skrive ned?",
+        "framing": "i så fald, det fragment der blev hængende."
+      },
+      "acted_on_desire": {
+        "prompt": "Hvor langt handlede du på det, du *faktisk* ønskede?",
+        "lowLabel": "slet ikke",
+        "highLabel": "fuldstændigt"
+      },
+      "work_catch": {
+        "prompt": "Hvor fangede arbejdet dig?",
+        "options": {
+          "start": "begyndelsen",
+          "middle": "midten",
+          "finish": "afslutningen",
+          "visibility": "synligheden",
+          "nowhere": "ingen steder"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Hvad er det spørgsmål, du ikke ønsker at besvare lige nu?",
+        "framing": "det der bliver ved med at smutte forbi."
+      }
+    },
+    "openHint": "længere svar uddyber *reading*",
+    "scaleLegend": "{low} til {high}",
+    "noValue": "ingen værdi valgt",
+    "valueOf": "{value} ud af {max}",
+    "weekLabel": "UGE {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Hvad blev hængende<it>?</it>",
+    "coverLede": "Otte korte spørgsmål. Ærlighed er bedre end længde. Svar forfiner *reading*; intet her bliver bedømt.",
+    "begin": "Begynd",
+    "back": "tilbage",
+    "next": "næste",
+    "submitting": "sender",
+    "closeTheWeek": "afslut ugen",
+    "previousQuestion": "forrige spørgsmål",
+    "processingLine": "<em>ugen bliver læst.</em>",
+    "summaryEyebrow": "{weekLabel} · TILBAGEBLIK",
+    "summaryTitle": "Ugen, <it>med dine egne ord.</it>",
+    "caseLabel": "sag · {week}",
+    "justRefined": "netop forfinet",
+    "readingsShifted": "*readings* forskudt",
+    "readingsCount": "{n} af 12",
+    "returnToRoom": "Vend tilbage til Room",
+    "readAgain": "læs den igen i Case File",
+    "somethingToHold": "NOGET AT HOLDE FAST I",
+    "enterConsultingRoom": "gå ind i Consulting Room",
+    "openConsultingRoom": "åbn Consulting Room",
+    "requestReport": "anmod om en klinisk rapport",
+    "errorSubmit": "kunne ikke indsende catchup",
+    "errorGeneric": "noget gik galt",
+    "errorFailed": "catchup er registreret. resuméet ankommer senere.",
+    "errorGiveUp": "Room er kortvarigt stille — din catchup er registreret. genindlæs om et minut.",
+    "summaryFallback": "Catchup er registreret. *Reading* er blevet opdateret diskret; det længere resumé ankommer ved næste gennemgang.",
+    "readBackTitle": "Ugen, <it>allerede inde.</it>",
+    "readBackEmpty": "catchup er registreret. resuméet vil være kort denne uge.",
+    "readBackFoot": "næste catchup åbner i starten af uge {n}."
+  },
+  "consulting": {
+    "sessionClose": "vores time er omme.",
+    "sayIt": "sig det →",
+    "closeSession": "afslut sessionen →",
+    "eyebrow": "KONSULTATIONSVÆRELSET",
+    "closing": "afslutter",
+    "closeSessionLabel": "afslut sessionen",
+    "timerAria": "sessionstid forløbet",
+    "chooseTopicAria": "vælg et emne",
+    "noTopic": "intet emne",
+    "justOpened": "lige åbnet",
+    "minutesIn": "{count} minutter inde",
+    "speakToAnalyst": "tal med analytikeren",
+    "send": "send",
+    "sessionClosedFoot": "sessionen er afsluttet. den er gemt i sagsmappen.",
+    "previewHeld": "hvilken del af dig bliver ved med at vælge dette?",
+    "previewTopicDreamingFuture": "Drømmer fremtid",
+    "previewTopicNightDream": "Nattedrøm",
+    "previewTopicRelations": "Relationer i mit liv",
+    "previewTopicProfessionalGrowth": "Professionel vækst",
+    "previewTurnAnalyst1": "Du navngiver et mønster, derefter fortæller du det som en fremmeds. Læg mærke til, når <em>tilbagetrækningen</em> begynder.",
+    "previewTurnUser1": "Jeg afslutter altid tingene den uge, de bliver seriøse.",
+    "previewTurnAnalyst2": "Morgenen er dommen, ikke retssagen. Din <em>intimitetstærskel</em> øvede sig på at forlade uger før samtalen.",
+    "sayItEllipsis": "sig det…",
+    "offerHeadline": "Konsultationsværelset",
+    "offerLede": "En længere konsultation med analytikeren, udført med samme stemme som dine læsninger. Sessioner er private, gemmes i sagsmappen og bidrager til læsningerne mellem konsultationerne.",
+    "offerPanelsAria": "hvad en session gør",
+    "offerPanel1Title": "navngivet, ikke fortalt",
+    "offerPanel1Body": "Analytikeren vil navngive, hvad der sker i din tale — forsnakkelsen, forbeholdet, det halvsagte — og holde det der, indtil du kan se det.",
+    "offerPanel2Title": "gemt i sagsmappen",
+    "offerPanel2Body": "Hver konsultation nedskrives. Den næste læsning læser den. Mønstre dukker op over uger, ikke omgange.",
+    "offerPanel3Title": "én stemme, ingen liste",
+    "offerPanel3Body": "Ikke en chatbot-rotation. En enkelt analytisk stemme, trænet på din indtagelse og forfinet af hver Catchup.",
+    "offerFootLine": "Abonnenter modtager én klinisk rapport hver måned.",
+    "offerPillCta": "Gå ind i konsultationsværelset",
+    "offerReturnToRoom": "vend tilbage til rummet",
+    "previewFigureLabel": "konsultationsværelset",
+    "previewFigureSubtitle": "en konsultation, forhåndsvist",
+    "previewRailAria": "sagsmappeområder analytikeren læser fra",
+    "previewReadingFrom": "LÆSER FRA",
+    "previewActive": "aktiv",
+    "previewRoleYou": "DU",
+    "previewRoleAnalyst": "ANALYTIKER",
+    "previewBubble1": "Jeg afslutter altid tingene den uge, de bliver seriøse. Jeg ved ikke, hvorfor jeg gør det.",
+    "previewAnalyst1": "Du navngiver et mønster, derefter fortæller du det som en fremmeds. Det <em>”jeg ved ikke”</em> udfører et arbejde — det holder handlingen på den fjerne side af intentionen. Læg mærke til, når <em>tilbagetrækningen</em> begynder. Ofte sker udelukkelsen tidligere end afskeden.",
+    "previewBubble2": "Tidligere hvordan? Sidste gang føltes det som om, jeg bare vågnede en morgen og vidste det.",
+    "previewAnalyst2": "Morgenen er dommen, ikke retssagen. Din <strong>intimitetstærskel</strong>-læsning fra uge 04 bemærkede den samme form — en stille øvelse i at forlade, to til tre uger før samtalen. Morgenen er, når kroppen endelig er enig i, hvad du allerede havde besluttet.",
+    "previewBubble3": "Det er den del, der skræmmer mig. At det allerede er besluttet.",
+    "previewAnalyst3": "<em>Besluttet</em> er ordet. Ikke <em>valgt</em>. Noget i strukturen foretrækker udelukkelsen frem for testen. Vi vil fortsætte derhen.",
+    "previewExampleMark": "EKSEMPEL · IKKE FRA DIN JOURNAL"
+  },
+  "caseFile": {
+    "silentWeek": "— stille uge —",
+    "eyebrow": "SAGSAKTE",
+    "headlineLead": "En optegnelse, ført",
+    "headlineItalic": "stille.",
+    "lede": "Hver Catchup, session og rapport — opbevaret i kronologisk rækkefølge. Hullerne er en del af optegnelsen.",
+    "filterAria": "Filter",
+    "filter": {
+      "all": "alle",
+      "catchups": "catchups",
+      "sessions": "sessioner",
+      "reports": "rapporter"
+    },
+    "subscriptionTitle": "Abonnement",
+    "emptyCatchups": "sagsakten er stadig tom — den første Catchup vil åbne den.",
+    "emptyCatchupsCta": "Gå til Catchup",
+    "emptySessions": "sagsakten er stadig tom — den første konsultationssession vil åbne den.",
+    "emptySessionsCta": "Gå til Konsultation",
+    "emptyReports": "sagsakten er stadig tom — den første genererede rapport vil åbne den.",
+    "open": "åbn",
+    "kindCatchup": "catchup",
+    "kindSession": "session",
+    "kindReport": "klinisk rapport",
+    "kindReading": "indtagelseslæsning",
+    "kindConnection": "forbindelsesbegivenhed",
+    "entryEyebrow": "SAGSAKTE · INDFØRSEL",
+    "entryBackToCaseFile": "tilbage til sagsakten",
+    "entryReturnToRoom": "vend tilbage til rummet",
+    "sessionStillOpen": "denne session er stadig åben. læsningen vises, når den lukker.",
+    "entryDetailComing": "detaljevisningen for denne indførsel kommer snart. indtil da indeholder sagsakten dato, type og titel — resten er stadig i rummet.",
+    "detailSummaryEyebrow": "RESUMÉ · DINE SVAR",
+    "detailRecommendationEyebrow": "VORES CATCHUP",
+    "preparingRead": "forbereder læsningen…",
+    "readNotAssembled": "læsningen kunne ikke samles lige nu.",
+    "tryAgain": "prøv igen",
+    "intakeClose": "luk",
+    "intakeEdit": "rediger",
+    "intakeSaving": "gemmer",
+    "intakeSave": "gem",
+    "intakeCancel": "annuller",
+    "intakeUnsupported": "dette spørgsmål redigeres indefra selve indtagelsen.",
+    "intakePickUpTo": "saml op til {count}.",
+    "intakeScaleSetTo": "Indstillet til {value}"
+  },
+  "settings": {
+    "eyebrow": "INDSTILLINGER",
+    "heading": "Rummet, <it>dets form.</it>",
+    "lede": "Intet her er permanent. Svar kan redigeres, præferencer ændres, og sagsmappen kan slettes fuldstændigt.",
+    "blocks": {
+      "account": "Konto",
+      "readingDepth": "Læse-dybde",
+      "notifications": "Notifikationer",
+      "subscription": "Abonnement",
+      "dangerZone": "Farezone"
+    },
+    "dangerZoneIntro": "den eneste handling i rummet, der ikke kan fortrydes.",
+    "depthSub": {
+      "intake": {
+        "title": "Dit intake",
+        "caption": "{answered} / {total} besvaret",
+        "ctaEmpty": "Gennemfør dit intake",
+        "ctaPartial": "Tilføj flere detaljer",
+        "ctaFull": "Gennemgå dit intake"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} inden for de sidste 8 uger",
+        "ctaEmpty": "Tilføj en catchup",
+        "ctaDue": "Gennemfør denne uges catchup",
+        "ctaFull": "Gennemgå tidligere catchups"
+      },
+      "sessions": {
+        "title": "Sessioner",
+        "caption": "{count} gennemført",
+        "ctaEmpty": "Start en konsultation",
+        "ctaPartial": "Fortsæt en konsultation",
+        "ctaFull": "Gennemgå tidligere sessioner"
+      },
+      "connections": {
+        "title": "Forbindelser",
+        "caption": "{count} aktive",
+        "ctaEmpty": "Tilføj en forbindelse",
+        "ctaSingle": "Tilføj endnu en forbindelse",
+        "ctaFull": "Gennemgå dine forbindelser"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "ugentlig catchup-påmindelse",
+        "sub": "en diskret note ved starten af den nye uge"
+      },
+      "consulting_session_reminder": {
+        "label": "konsultationspåmindelse",
+        "sub": "en påmindelse før din kommende konsultation"
+      },
+      "connection_requests": {
+        "label": "forbindelse accepteret",
+        "sub": "en note, når nogen accepterer din invitation"
+      }
+    },
+    "toggleOn": "til",
+    "toggleOff": "fra",
+    "quietHours": {
+      "label": "stille timer",
+      "sub": "ingen e-mail mellem disse timer, i din lokale tid",
+      "from": "fra",
+      "to": "til"
+    },
+    "saveFailed": "lagring mislykkedes",
+    "dangerZone": {
+      "trigger": "Slet konto",
+      "modalAria": "Bekræft sletning af konto",
+      "eyebrow": "FAREZONE",
+      "heading": "Slet <it>sagsmappen.</it>",
+      "body": "Dette fjerner alle læsninger, catchups, sessioner og rapporter fra journalen. Aktive forbindelser afsluttes; begge parter vil blive underrettet. Det kan ikke fortrydes.",
+      "instruction": "skriv <phrase></phrase> for at aktivere handlingen.",
+      "inputAria": "Skriv bekræftelsessætningen",
+      "cancel": "annuller",
+      "erasing": "sletter…",
+      "eraseConfirm": "slet sagsmappen",
+      "deleteFailed": "sletning mislykkedes"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "MEDLEMSADGANG",
+      "tagline": "Konsultationsrummet, åbnet. <em>En læsning, der bliver ved med at læse.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultationsrum",
+          "desc": "langvarige sessioner med the analyst."
+        },
+        "report": {
+          "title": "Månedlig klinisk rapport",
+          "desc": "et terapeut-klart kort hver kalendermåned."
+        },
+        "connections": {
+          "title": "{count} flere forbindelser",
+          "desc": "tilføj de personer, hvis tilstedeværelse former læsningen."
+        },
+        "depth": {
+          "title": "Fuld læse-dybde",
+          "desc": "hvert kapitel åbent, ingen grænse for detaljer."
+        }
+      },
+      "perMonth": "pr. måned",
+      "subscribe": "abonner",
+      "reassurance": "<em>ingen binding.</em> annuller når som helst fra indstillinger.",
+      "activeToday": "aktiv — fornyes i dag",
+      "activeRenews": "aktiv — fornyes om {days, plural, one {1 dag} other {# dage}}",
+      "cancel": "annuller abonnement",
+      "cancelled": "annulleret — adgang indtil {date}",
+      "resubscribe": "genabonner"
+    },
+    "resetPassword": {
+      "sent": "et nulstillingslink er sendt til {email}. tjek din indbakke",
+      "sending": "sender",
+      "action": "nulstil adgangskode",
+      "error": "kunne ikke sende. prøv igen"
+    }
+  },
+  "connections": {
+    "explainer": "Op til {limit, plural, one {# person, hvis tilstedeværelse former læsningen} other {# personer, hvis tilstedeværelse former læsningen}}. De ser ikke dine læsninger; du ser ikke deres. Hvad de siger om forholdet, fodrer den model, der producerer dine læsninger, og dit fodrer deres.",
+    "invite": {
+      "emailSubject": "{inviterName} ønsker dig i læsningen."
+    },
+    "form": {
+      "emailLabel": "E-MAIL",
+      "roleLabel": "ROLLE",
+      "rolePlaceholder": "vælg en",
+      "noteLabel": "EN SÆTNING DE VIL LÆSE FØRST",
+      "noteHint": "valgfrit. én linje er nok.",
+      "addMoreSub": "tilføj flere med et abonnement",
+      "missingNameLine": "dit navn er ikke registreret. tilføj det i indstillinger, send derefter anmodningen igen.",
+      "addYourName": "tilføj dit navn",
+      "noteLengthError": "noter er begrænset til én linje — omkring {max} tegn."
+    },
+    "list": {
+      "empty": "ingen forbindelser endnu. invitationsmuligheden er nedenfor.",
+      "active": "AKTIVE",
+      "pending": "VENTENDE",
+      "since": "siden",
+      "invited": "inviteret",
+      "received": "modtaget",
+      "resend": "send igen",
+      "cancel": "annuller",
+      "expiresIn": "udløber om {days, plural, one {# dag} other {# dage}}"
+    },
+    "lookup": {
+      "invalidEmail": "indtast venligst en gyldig e-mailadresse.",
+      "self": "du kan ikke oprette forbindelse med dig selv.",
+      "notMemberLine": "denne e-mail er endnu ikke medlem. inviter dem til at oprette en konto, så du kan oprette forbindelse.",
+      "copyHint": "del tilmeldingslinket",
+      "copied": "link kopieret",
+      "requestSent": "du har allerede sendt en anmodning til dette medlem.",
+      "requestReceivedLine": "dette medlem har sendt dig en anmodning — tjek dine invitationer.",
+      "inboxLabel": "åbn anmodningen",
+      "alreadyConnected": "du er allerede forbundet med dette medlem.",
+      "rateLimited": "for mange opslag inden for kort tid. vent et øjeblik, og prøv igen.",
+      "sent": "forbindelsesanmodning sendt.",
+      "sending": "sender…",
+      "send": "send anmodning",
+      "limitReached": "{limit, plural, one {# forbindelse er grænsen. afbryd den for at tilføje en anden.} other {# forbindelser er grænsen. afbryd en for at tilføje en anden.}}",
+      "limitReachedFree": "{limit, plural, one {# forbindelse er grænsen på gratisniveauet.} other {# forbindelser er grænsen på gratisniveauet.}}",
+      "generic": "kunne ikke sende anmodningen."
+    },
+    "incoming": {
+      "eyebrow": "AFVENTER DIG",
+      "empty": "ingen venter på dig.",
+      "accept": "accepter",
+      "decline": "afvis",
+      "limitReached": "{limit, plural, one {# forbindelse er grænsen. afbryd den for at acceptere denne.} other {# forbindelser er grænsen. afbryd en for at acceptere denne.}}",
+      "limitReachedFree": "{limit, plural, one {# forbindelse er grænsen på gratisniveauet.} other {# forbindelser er grænsen på gratisniveauet.}}",
+      "upsell": "abonnenter tilføjer flere",
+      "inviteExpired": "denne invitation er udløbet.",
+      "inviteEnded": "denne invitation er ikke længere ventende.",
+      "generic": "kunne ikke behandle denne anmodning."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "nærmeste ven",
+      "parent": "forælder",
+      "sibling": "søskende",
+      "co_parent": "medforælder"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "EN NOTE FRA ANALYST",
+    "noteAria": "En note fra analytikeren",
+    "lede": "dette er ud over, hvad rummet kan rumme.",
+    "body": {
+      "intake": "Noget i det, du skrev ved indtagelsen, peger på en tyngde, der kræver reel omsorg – ud over, hvad dette rum kan rumme. Overvej venligst at kontakte en læge, terapeut eller lokal kriselinje i dag. Læsningen vil være her, når du vender tilbage.",
+      "catchup": "Noget i denne uges Catchup peger på en tyngde, der kræver reel omsorg – ud over, hvad dette rum kan rumme. Overvej venligst at kontakte en læge, terapeut eller lokal kriselinje i dag. Læsningen vil vente.",
+      "session": "Det, du lige skrev, peger på en tyngde, der kræver reel omsorg – ud over, hvad dette rum kan rumme. Overvej venligst at kontakte en læge, terapeut eller lokal kriselinje i dag. Vi kan vende tilbage til rummet, når du er i sikkerhed."
+    },
+    "crisisResources": "KRISEHJÆLP",
+    "resources": {
+      "us": "USA",
+      "ukIe": "Storbritannien & Irland",
+      "europe": "Europa (de fleste lande)",
+      "everywhere": "Overalt",
+      "localEmergency": "lokale alarmtjenester"
+    },
+    "hintResources": "hvis du ikke kan finde en linje, er din nærmeste hospitals skadestue det rette rum.",
+    "hintLink": "krisehjælp er listet nederst på hver Room-side.",
+    "footerLine": "TwentyThird er ikke en erstatning for klinisk pleje. I krise, kontakt din lokale alarmtjeneste.",
+    "footerRoomLabel": "rummet"
+  }
+}

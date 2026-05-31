@@ -11,6 +11,7 @@ import { createClient } from "@/lib/supabase/server";
 type Body = Partial<{
   weekly_catchup: boolean;
   consulting_session_reminder: boolean;
+  connection_requests: boolean;
   quiet_hours_start: string;
   quiet_hours_end: string;
 }>;
@@ -18,6 +19,7 @@ type Body = Partial<{
 const BOOL_KEYS = [
   "weekly_catchup",
   "consulting_session_reminder",
+  "connection_requests",
 ] as const;
 
 const HHMM_RE = /^([01]\d|2[0-3]):([0-5]\d)$/;

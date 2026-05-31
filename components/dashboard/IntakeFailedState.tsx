@@ -1,19 +1,20 @@
+import { getTranslations } from "next-intl/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
 import RetryReadingButton from "@/components/dashboard/RetryReadingButton";
 
-export default function IntakeFailedState() {
+export default async function IntakeFailedState() {
+  const t = await getTranslations("room");
   return (
     <main className="dashboard-shell">
       <Reveal as="section" className="dashboard-head">
-        <Eyebrow>INTAKE — INCOMPLETE</Eyebrow>
+        <Eyebrow>{t("intake.failed.eyebrow")}</Eyebrow>
         <h1 className="serif dashboard-headline">
-          The reading was <em>not completed</em>.
+          {t.rich("intake.failed.headline", {
+            em: (chunks) => <em>{chunks}</em>,
+          })}
         </h1>
-        <p className="dashboard-lede">
-          Your intake is on file. The analysis that follows it did not
-          finish.
-        </p>
+        <p className="dashboard-lede">{t("intake.failed.lede")}</p>
       </Reveal>
 
       <div className="dashboard-cta">

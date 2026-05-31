@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "INTELIGENCJA PSYCHODYNAMICZNA",
+        "titleLine1": "Zaawansowana",
+        "titleLine2Pre": "Psychodynamiczna",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "dla",
+        "titleLine3It": "Samopoznania",
+        "ctaPrimary": "Rozpocznij odkrywanie",
+        "ctaGhostOr": "lub",
+        "ctaGhostText": "przeczytaj o nauce",
+        "scroll": "przewiń"
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIA PODSTAWOWA",
+        "titlePre": "5-minutowe poprawki nikogo nie",
+        "titleIt": "zmieniają",
+        "sub1": "Przeprowadzamy analizę przyczyn źródłowych. Łącząc fundamentalne spostrzeżenia Zygmunta Freuda z przełomami Jacquesa Lacana w lingwistyce, pożądaniu i tożsamości.",
+        "sub2": "Większość narzędzi działa na powierzchni. My pracujemy tam, gdzie to zostało zapisane — w architekturze języka, przejęzyczeniach, wzorcach, których jeszcze nie nazwałeś.",
+        "metaLineageLabel": "Linia",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metoda",
+        "metaMethodVal": "Strukturalna",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "Nieświadomość"
+      },
+      "privacy": {
+        "eyebrow": "POUFNOŚĆ",
+        "titlePre": "Prywatność danych to",
+        "titleIt": "najwyższy",
+        "titlePost": "priorytet.",
+        "lede": "Poufność nie jest tu cechą; jest warunkiem wstępnym głębi. Ludzie mówią swobodnie tylko tam, gdzie czują się bezpiecznie — dlatego pokój jest zbudowany tak, aby chronić to, co mówisz.",
+        "rowTag": "Zabezpieczenia",
+        "rowTitlePre": "Pokój zbudowany, by",
+        "rowTitleIt": "pomieścić",
+        "rowTitlePost": "to, co mówisz.",
+        "rowBody": "Praca wymaga Twoich najbardziej bezbronnych materiałów. Pokój jest zbudowany tak, aby przyjmować je w zaufaniu i chronić przed kimkolwiek, dla kogo nie były przeznaczone.",
+        "figLabel": "Obsługa danych",
+        "figSubtitle": "postawa stojąca",
+        "listProcessingKey": "przetwarzanie",
+        "listProcessingVal": "Każdy wpis jest przetwarzany potrójnie ślepo.",
+        "listEncryptionKey": "szyfrowanie",
+        "listEncryptionVal": "Wszystkie dane są szyfrowane.",
+        "listProtectionKey": "ochrona",
+        "listProtectionVal": "Chronione najwyższej klasy dostępnymi zabezpieczeniami.",
+        "footKey": "Cel",
+        "footVal": "ciche, bezpieczne miejsce do głębokiej rozmowy"
+      },
+      "process": {
+        "eyebrow": "JAK TO DZIAŁA",
+        "titlePre": "Cztery kroki,",
+        "titleIt": "jeden poszerzający się krąg",
+        "lede": "Komunikacja pogłębia się w czterech ruchach. Każdy z nich poszerza to, co system może odczytać — od pojedynczego przyjęcia do stałej rozmowy.",
+        "step1Sub": "profilowanie głęboko rdzeniowe",
+        "step1TitlePre": "10-etapowe",
+        "step1TitleIt": "przyjęcie",
+        "step1TitlePost": ".",
+        "step1Body": "Utwórz konto i wypełnij 10-etapowe przyjęcie. Jest to etap profilowania głęboko rdzeniowego; pierwsze czytanie jest w całości zbudowane z tego, co tutaj zapiszesz.",
+        "step2Sub": "pośredniczone, nigdy wzajemne",
+        "step2TitlePre": "Ludzie, którzy",
+        "step2TitleIt": "cię kształtują",
+        "step2Body": "Dodaj osoby, które cię kształtują, każdą według roli — partner, najbliższy przyjaciel, rodzic, rodzeństwo, współrodzic. To, co oni udostępniają, nigdy nie jest dla ciebie widoczne; to, co ty udostępniasz, nigdy nie jest dla nich widoczne. Tylko system odczytuje obie strony.",
+        "step3Sub": "cotygodniowe czytanie",
+        "step3TitlePre": "Niedzielny",
+        "step3TitleIt": "Catchup",
+        "step3Body": "W niedzielne wieczory opowiedz nam, co wydarzyło się w ciągu tygodnia i jak czułeś się, przeżywając to. Każdy Catchup udoskonala czytanie — obraz wyostrza się wraz z upływem tygodni.",
+        "step4Sub": "w pełni prywatne",
+        "step4TitlePre": "Pokój",
+        "step4TitleIt": "Konsultacyjny",
+        "step4Body": "Rozmawiaj w pełni prywatnej konsultacji z analitykiem — głosem, który zna cię lepiej niż ktokolwiek inny, wytrenowanym na 23 warstwach modeli sztucznej inteligencji."
+      },
+      "brain": {
+        "eyebrow": "PRACA",
+        "titleLine1": "Dekonstrukcja",
+        "titleLine2": "Twojej podświadomości",
+        "state1Tag": "Mapowanie wzorców",
+        "state1TitlePre": "Podświadome",
+        "state1TitleIt": "pętle",
+        "state1TitlePost": "i nawroty.",
+        "state1Body": "Śledzimy powtarzające się cykle w Twoich wyborach, lękach związanych z relacjami i wyzwalaczach emocjonalnych. Identyfikując te pętle, pokazujemy dokładnie, gdzie Twoje świadome intencje są przejmowane przez nieświadome programowanie.",
+        "state2Tag": "Profilowanie",
+        "state2TitlePre": "Głębokie",
+        "state2TitleIt": "profilowanie psychodynamiczne",
+        "state2TitlePost": ".",
+        "state2Body": "Porzuć powierzchowne quizy osobowości. To strukturalne skanowanie Twojej dynamiki psychologicznej — mapowanie, jak Twoje przeszłe doświadczenia kształtują Twoją obecną tożsamość, ego i mechanizmy obronne.",
+        "state3Tag": "Język",
+        "state3TitlePre": "Lingwistyczna",
+        "state3TitleIt": "nieświadomość",
+        "state3TitlePost": "eksploracja.",
+        "state3Body": "Zakorzeniona w teorii Lacana, nasza sztuczna inteligencja analizuje Twoje skojarzenia słowne, pauzy i wzorce mowy. Pomagamy Ci czytać między wierszami własnych myśli, aby uzyskać dostęp do ukrytych lęków i pragnień, których jeszcze nie byłeś w stanie wyrazić."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMACJA",
+        "titleLine1": "Przerwij cykl,",
+        "titleLine2": "Następnie napisz go na nowo.",
+        "lede": "Trzy ruchy w pracy. Trzy miejsca, gdzie wgląd staje się zmianą.",
+        "row1Tag": "Relacje",
+        "row1TitlePre": "Ulecz swoją",
+        "row1TitleIt": "relacyjną",
+        "row1TitlePost": "dynamikę.",
+        "row1Body": "Ten sam atraktor przyciąga cię do tego samego rodzaju osoby, tej samej kłótni, tego samego wycofania. Ujawniamy wzorzec na przestrzeni lat, nazywamy go i obserwujemy, jak traci swoją grawitację.",
+        "row1Link": "Przeczytaj studium przypadku",
+        "row1FigLabel": "Podmiot 1149-A",
+        "row1FigSubtitle": "wzorzec podłużny",
+        "row1Outcome": "wycofał się",
+        "row1SummaryRecurrenceKey": "nawrót",
+        "row1SummaryIntervalKey": "interwał",
+        "row1SummaryAttractorKey": "atraktor",
+        "row1SummaryAttractorVal": "próg intymności",
+        "row2Tag": "Praca ze snami",
+        "row2TitlePre": "Rozszyfruj",
+        "row2TitleIt": "logikę snu",
+        "row2TitlePost": ", dopasuj cele.",
+        "row2Body": "Twoje sny są próbami znaczenia. Śledzimy ich gramatykę — przemieszczenia, kondensacje, przejęzyczenia — z powrotem do decyzji, którą próbowały podjąć za ciebie na jawie.",
+        "row2Link": "Zobacz przykład z adnotacjami",
+        "row2FigLabel": "Sesja 06",
+        "row2FigSubtitle": "wpis snu, z adnotacjami",
+        "row2Dream1Pre": "Jestem z powrotem w domu moich rodziców",
+        "row2Ann1": "scena pierwotna",
+        "row2Dream1Mid": ", ale pokoje wciąż otwierają się na inne pokoje",
+        "row2Ann2": "granica ego",
+        "row2Dream2Pre": "Mężczyzna z głosem mojego ojca",
+        "row2Ann3": "ojciec-imago",
+        "row2Dream2Mid": "podaje mi klucz. Klucz zamienia się w wodę",
+        "row2Ann4": "przemieszczenie",
+        "row2Dream3Pre": "Budzę się, zanim zdążę otworzyć drzwi",
+        "row2Ann5": "pragnienie / brak",
+        "row2Key1": "scena pierwotna",
+        "row2Key2": "granica ego",
+        "row2Key3": "ojciec-imago",
+        "row2Key4": "przemieszczenie",
+        "row2Key5": "pragnienie / brak",
+        "row3Tag": "Powołanie",
+        "row3TitlePre": "Rozpuść",
+        "row3TitleIt": "zawodowe",
+        "row3TitlePost": "blokady.",
+        "row3Body": "Sufit, w który wciąż uderzasz, rzadko dotyczy umiejętności. To scenariusz — napisany wcześnie, cicho ćwiczony — który pomożemy ci przeczytać na głos i przepisać, zdanie po zdaniu.",
+        "row3Link": "Artykuł o metodzie",
+        "row3FigLabel": "Rewizja scenariusza",
+        "row3FigSubtitle": "roboczy szkic",
+        "row3Line1Prefix": "01 · Nie jestem",
+        "row3Line1Old": "jeszcze gotowy.",
+        "row3Line1New": "już mi wolno.",
+        "row3Line2Prefix": "02 · aby",
+        "row3Line2Old": "czekać na swoją kolej.",
+        "row3Line2New": "nazwać to, czego chcę.",
+        "row3Line3Prefix": "03 · ponieważ",
+        "row3Line3Old": "ktoś mógłby być rozczarowany.",
+        "row3Line3New": "rozczarowanie to także język.",
+        "row3MetaOriginalPre": "oryginał",
+        "row3MetaOriginalIt": "wiek 11",
+        "row3MetaRevisedPre": "zrewidowany",
+        "row3MetaRevisedIt": "sesja 06"
+      },
+      "outcomes": {
+        "eyebrow": "WYNIKI",
+        "titleLine1Pre": "Konkretne",
+        "titleLine1It": "wnioski",
+        "titleLine2": "Cicho mierzalne.",
+        "lede": "Samoświadomość oparta na danych, przedstawiona językiem klinicysty — nie testu.",
+        "row1Tag": "Przyspieszenie",
+        "row1TitlePre": "Ostateczne",
+        "row1TitleIt": "skróty",
+        "row1TitlePost": "dla terapii w świecie rzeczywistym.",
+        "row1Body": "To, co kiedyś wymagało wieloletniej relacji, teraz może rozpocząć się tygodniami przygotowań. Wejdź do gabinetu terapeuty, wiedząc, co chcesz powiedzieć.",
+        "row1Link": "Zobacz metodologię",
+        "row1FigSubtitle": "czas do pierwszego wglądu",
+        "row1TraditionalLabel": "Tradycyjna ścieżka",
+        "row1AxisYr1": "rok 1",
+        "row1AxisYr3": "rok 3",
+        "row1AxisYr6": "rok 6",
+        "row1AxisYr9": "rok 9",
+        "row1AxisYr12": "rok 12",
+        "row1TwentyThirdLabelPre": "Z",
+        "row1AxisWk1": "tydz. 1",
+        "row1AxisWk4": "tydz. 4",
+        "row1AxisWk8": "tydz. 8",
+        "row1AxisWk12": "tydz. 12",
+        "row1SummaryFaster": "szybciej",
+        "row1SummaryDesc": "czas do pierwszego wglądu",
+        "row2Tag": "Raport",
+        "row2TitlePre": "Gotowa dla terapeuty",
+        "row2TitleIt": "psychologiczna",
+        "row2TitlePost": "mapa.",
+        "row2Body": "Strukturalny diagram Ciebie — eksportowalny, możliwy do udostępnienia, głęboko zrozumiały dla wyszkolonego klinicysty. Nie test osobowości; robocza notatka.",
+        "row2Link": "Zobacz przykładowy raport",
+        "row2FigLabel": "Podmiot 1149-A",
+        "row2FigSubtitle": "profil strukturalny",
+        "row2RepCase": "sprawa 1149-A",
+        "row2RepPrepared": "przygotowano 04 · 26",
+        "row2MetricEgo": "Struktura ego",
+        "row2MetricObject": "Relacje obiektów",
+        "row2MetricDefense": "Złożoność obron",
+        "row2MetricDrive": "Organizacja popędów",
+        "row2MetricSymbolic": "Rejestr symboliczny",
+        "row2FootLabel": "Dominująca struktura",
+        "row2FootVal": "obsesyjna · ze śladami histerii",
+        "row3Tag": "Integracja",
+        "row3TitlePre": "Spersonalizowana",
+        "row3TitleIt": "integracja",
+        "row3TitlePost": "i plany pracy z cieniem.",
+        "row3Body": "Codzienne podpowiedzi i rytuały, które przenoszą wgląd ze strony do ciała. Małe, celowe. Zbudowane wokół Twojej struktury, nie ogólnego programu nauczania.",
+        "row3Link": "Jak plan się adaptuje",
+        "row3FigLabel": "Dzień 23",
+        "row3FigSubtitle": "codzienna podpowiedź",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Środa",
+        "row3PromptEyebrow": "dzisiejsza podpowiedź · praca z cieniem",
+        "row3PromptPre": "Gdzie dzisiaj wybrałeś",
+        "row3PromptIt": "nie",
+        "row3PromptPost": "być widzianym? I co chroniłeś, ukrywając się?",
+        "row3Stream1Label": "praca z oddechem",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "dziennik",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "podpowiedź cienia",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "passa",
+        "row3StreakVal": "{n, plural, one {# dzień} few {# dni} many {# dni} other {# dni}}"
+      },
+      "final": {
+        "eyebrow": "ROZPOCZNIJ",
+        "titlePre": "Twoja nieświadomość przemawia.",
+        "titleIt": "Czas posłuchać.",
+        "ctaPrimary": "Rozpocznij swoje odkrycie",
+        "ctaGhostOr": "lub",
+        "ctaGhostText": "przeczytaj o nauce"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Polityka prywatności — TwentyThird",
+        "metaDescription": "Jak TwentyThird przetwarza dane osobowe. Nic nie opuszcza UE. Nic nie jest sprzedawane.",
+        "eyebrow": "PRYWATNOŚĆ",
+        "headingLead": "Dane osobowe,",
+        "headingItalic": "traktowane z rozwagą.",
+        "lede": "TwentyThird przetwarza to, co udostępniasz, aby zapewnić precyzyjny wgląd psychodynamiczny. Nic nie opuszcza UE. Nic nie jest sprzedawane.",
+        "controls": {
+          "headingLead": "Kto",
+          "headingItalic": "kontroluje",
+          "headingTail": "Twoje dane",
+          "p1": "WelloWork AB, zarejestrowana w Szwecji (org. nr 559472-9997), działająca z Uppsali, jest administratorem danych osobowych gromadzonych na tej stronie internetowej i poprzez bezpośrednie zapytania.",
+          "p2": "W przypadku danych przetwarzanych na platformie TwentyThird w imieniu organizacji — kliniki, instytucji badawczej, pracodawcy — WelloWork AB działa jako podmiot przetwarzający, a organizacja klienta jest administratorem. Relacja ta jest regulowana odrębną Umową o Przetwarzaniu Danych."
+        },
+        "figure": {
+          "label": "kto kontroluje twoje dane",
+          "controller": "Administrator",
+          "directRelationship": "bezpośrednia relacja",
+          "websiteVisitor": "Odwiedzający stronę",
+          "you": "Ty",
+          "customerOrg": "Organizacja Klienta",
+          "viaDpa": "poprzez DPA",
+          "processor": "Podmiot przetwarzający",
+          "platformUser": "Użytkownik Platformy"
+        },
+        "collect": {
+          "headingLead": "Co",
+          "headingItalic": "zbieramy",
+          "contactStrong": "Dane kontaktowe i dane konta.",
+          "contactBody": "Imię i nazwisko, adres e-mail oraz wszelkie informacje podane podczas rejestracji lub korespondencji z nami. Podstawa prawna: wykonanie umowy (art. 6 ust. 1 lit. b RODO).",
+          "sessionStrong": "Dane sesji i platformy.",
+          "sessionBody": "Wpisy do dziennika, odpowiedzi, treść snów i wzorce językowe udostępniane w TwentyThird. Stanowi to podłoże analizy. Podstawa prawna: wyraźna zgoda (art. 9 ust. 2 lit. a RODO), udzielona podczas onboardingu i możliwa do odwołania w dowolnym momencie. Traktujemy te dane jako dane szczególnej kategorii, zbliżone do danych zdrowotnych, i stosujemy odpowiednie zabezpieczenia niezależnie od formalnej klasyfikacji.",
+          "technicalStrong": "Dane techniczne.",
+          "technicalBody": "Adres IP, typ przeglądarki, identyfikatory urządzenia i znaczniki czasu użytkowania — zbierane automatycznie podczas dostępu do platformy. Podstawa prawna: uzasadniony interes (art. 6 ust. 1 lit. f RODO) w celu utrzymania bezpieczeństwa i diagnozowania błędów.",
+          "p4": "Nie zbieramy danych dotyczących rasy, pochodzenia etnicznego, poglądów politycznych ani przekonań religijnych. Jeśli udostępniane treści przypadkowo ujawniają takie informacje, nie są one przetwarzane jako odrębna kategoria."
+        },
+        "use": {
+          "headingLead": "Jak go",
+          "headingItalic": "używamy",
+          "headingTail": "go",
+          "p1": "Używamy Twoich danych, aby dostarczać i ulepszać usługę TwentyThird, wysyłać żądane wiadomości transakcyjne, wykrywać i zapobiegać oszustwom lub nadużyciom oraz spełniać zobowiązania prawne.",
+          "p2": "Nie wykorzystujemy Twoich danych do profilowania reklamowego. Nie sprzedajemy ich, nie licencjonujemy ani nie udostępniamy brokerom danych. Nie używamy ich do szkolenia modeli AI ogólnego przeznaczenia obsługiwanych przez strony trzecie."
+        },
+        "sees": {
+          "headingLead": "Kto",
+          "headingItalic": "widzi",
+          "headingTail": "to",
+          "withinStrong": "W WelloWork AB:",
+          "withinBody": "Klinicyści i inżynierowie, którzy potrzebują dostępu do utrzymania usługi. Dostęp jest ograniczony rolami i rejestrowany.",
+          "infraStrong": "Dostawcy infrastruktury:",
+          "infraBody": "Supabase (baza danych i uwierzytelnianie, region UE), Vercel (hosting, krawędź UE) i Postmark (transakcyjna poczta elektroniczna). Każdy z nich jest związany Umową o Przetwarzaniu Danych i przetwarza dane wyłącznie zgodnie z naszymi udokumentowanymi instrukcjami.",
+          "legalStrong": "Obowiązek prawny:",
+          "legalBody": "Ujawniamy dane właściwym organom tylko wtedy, gdy jest to wymagane przez prawo, i tylko w zakresie wymaganym.",
+          "p4": "Żadne dane nie są przekazywane poza UE/EOG. Jeśli to się zmieni, zaktualizujemy tę politykę i uzyskamy nową zgodę tam, gdzie jest to wymagane."
+        },
+        "retention": {
+          "headingItalic": "Retencja",
+          "p1": "Dane konta i platformy są przechowywane tak długo, jak długo konto jest aktywne, plus 30 dni po usunięciu, aby umożliwić odzyskanie. Logi techniczne są przechowywane przez 90 dni. Zapytania kontaktowe są przechowywane przez 24 miesiące.",
+          "p2": "Po tych okresach dane są trwale usuwane lub nieodwracalnie anonimizowane."
+        },
+        "rights": {
+          "headingLead": "Twoje",
+          "headingItalic": "prawa",
+          "p1": "Masz prawo dostępu do danych, które o Tobie posiadamy, do korygowania nieścisłości, żądania usunięcia, ograniczenia lub sprzeciwu wobec przetwarzania oraz otrzymania kopii danych w formacie nadającym się do odczytu maszynowego w celu przeniesienia. W przypadku, gdy przetwarzanie opiera się na zgodzie, możesz ją wycofać w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania przed jej wycofaniem.",
+          "exerciseLead": "Aby skorzystać z dowolnego prawa:",
+          "exerciseTail": ". Odpowiadamy w ciągu 30 dni. Jeśli nie jesteś zadowolony z naszej odpowiedzi, możesz złożyć skargę do Integritetsskyddsmyndigheten (IMY), szwedzkiego organu ochrony danych."
+        },
+        "children": {
+          "headingItalic": "Dzieci",
+          "p1": "TwentyThird nie jest przeznaczony dla osób poniżej 18 roku życia. Nie zbieramy świadomie danych od nieletnich. Jeśli dowiemy się, że osoba nieletnia przesłała dane, niezwłocznie je usuwamy."
+        },
+        "changes": {
+          "headingItalic": "Zmiany",
+          "p1": "Aktualizujemy niniejszą politykę, gdy zmieniają się nasze praktyki. O istotnych zmianach powiadamiamy pocztą elektroniczną co najmniej 14 dni przed ich wejściem w życie. Data wersji znajduje się na dole tej strony.",
+          "effectivePrefix": "Obowiązuje od:",
+          "effectiveSuffix": "· Prawo właściwe: prawo szwedzkie i RODO"
+        }
+      },
+      "terms": {
+        "metaTitle": "Warunki świadczenia usług — TwentyThird",
+        "metaDescription": "Umowa regulująca korzystanie z TwentyThird. Napisana, aby ją czytać, a nie unikać.",
+        "eyebrow": "WARUNKI",
+        "headingLead": "Umowa,",
+        "headingItalic": "wyłożona jasno.",
+        "lede": "Niniejsze warunki regulują korzystanie z TwentyThird. Zostały napisane, aby je czytać, a nie unikać.",
+        "service": {
+          "headingLead": "Usługa",
+          "headingItalic": "TwentyThird",
+          "p1": "TwentyThird to psychodynamiczna platforma AI obsługiwana przez WelloWork AB. Dostarcza wglądu analitycznego opartego na udostępnionych przez Ciebie informacjach. Nie jest to urządzenie medyczne. Nie stanowi psychoterapii, diagnozy psychiatrycznej ani leczenia klinicznego. Jeśli znajdujesz się w kryzysie psychicznym, skontaktuj się z wykwalifikowanym klinicystą lub służbami ratunkowymi."
+        },
+        "account": {
+          "headingLead": "Twoje",
+          "headingItalic": "konto",
+          "p1": "Aby korzystać z TwentyThird, musisz mieć ukończone 18 lat. Odpowiadasz za zachowanie poufności swoich danych uwierzytelniających. Nie możesz udostępniać swojego konta ani korzystać z platformy w imieniu innej osoby bez jej wyraźnej zgody.",
+          "p2": "Jesteś właścicielem tworzonych treści — wpisów do dziennika, odpowiedzi. Przesyłając je, udzielasz WelloWork AB ograniczonej licencji na ich przetwarzanie w celach opisanych w Polityce Prywatności. Możesz eksportować lub usuwać swoje treści w dowolnym momencie."
+        },
+        "acceptableUse": {
+          "headingLead": "Dozwolone",
+          "headingItalic": "użycie",
+          "p1": "Możesz używać TwentyThird do zgodnej z prawem osobistej i zawodowej autoeksploracji. Nie możesz używać go do krzywdzenia siebie lub innych, do prób obejścia systemów bezpieczeństwa platformy, do inżynierii wstecznej podstawowych modeli ani do szkolenia konkurencyjnych systemów AI.",
+          "p2": "Zastrzegamy sobie prawo do zawieszenia lub zamknięcia kont naruszających niniejsze warunki, bez wcześniejszego powiadomienia, jeśli jest to wymagane ze względów bezpieczeństwa."
+        },
+        "liability": {
+          "headingLead": "Nasza",
+          "headingItalic": "odpowiedzialność",
+          "p1": "TwentyThird dostarcza wglądu, nie pewności. Nie gwarantujemy, że analiza jest dokładna, kompletna lub odpowiednia dla Twoich okoliczności. W zakresie dozwolonym przez prawo szwedzkie, nasza odpowiedzialność jest ograniczona do kwoty, którą zapłaciłeś w ciągu 3 miesięcy poprzedzających odpowiednie roszczenie.",
+          "p2": "Żadne z postanowień niniejszych warunków nie ogranicza odpowiedzialności za śmierć lub obrażenia ciała spowodowane naszym zaniedbaniem ani za oszustwo."
+        },
+        "disputes": {
+          "headingLead": "Prawo właściwe i",
+          "headingItalic": "spory",
+          "p1": "Niniejsze warunki podlegają prawu szwedzkiemu. Spory, których nie można rozwiązać bezpośrednio, są kierowane do sądów w Uppsali w Szwecji, jako sądu pierwszej instancji.",
+          "p2Lead": "Jeśli jesteś konsumentem w UE, masz również dostęp do unijnej platformy rozwiązywania sporów online pod adresem",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Zmiany",
+          "p1": "Możemy aktualizować niniejsze warunki. Dalsze korzystanie po dacie wejścia w życie istotnej zmiany oznacza jej akceptację. O istotnych zmianach powiadamiamy e-mailem z co najmniej 14-dniowym wyprzedzeniem.",
+          "effectivePrefix": "Obowiązuje od:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Polityka plików cookie — TwentyThird",
+        "metaDescription": "TwentyThird używa plików cookie wyłącznie do uwierzytelniania i zachowania preferencji. Brak reklamowych plików cookie. Brak trackerów stron trzecich.",
+        "eyebrow": "PLIKI COOKIE",
+        "headingLead": "Co przechowujemy",
+        "headingItalic": "w Twojej przeglądarce.",
+        "lede": "TwentyThird używa plików cookie do uwierzytelniania i zachowania preferencji. Nie używamy reklamowych plików cookie ani trackerów stron trzecich.",
+        "whatIs": {
+          "headingLead": "Czym plik cookie",
+          "headingItalic": "jest",
+          "p1": "Plik cookie to mały plik tekstowy przechowywany w Twojej przeglądarce. Używamy ich, aby utrzymać Cię zalogowanym i zapamiętać Twoje preferencje dotyczące motywu (ciemny lub jasny). To wszystko."
+        },
+        "weSet": {
+          "headingLead": "Pliki cookie",
+          "headingItalic": "które ustawiamy",
+          "authBody": "— Ustawione przez Supabase. Utrzymuje Twoją uwierzytelnioną sesję. Wygasa po wylogowaniu lub po 7 dniach braku aktywności. Ściśle niezbędne.",
+          "themeBody": "— Przechowuje Twoje preferencje trybu ciemnego/jasnego. Utrzymuje się do momentu wyczyszczenia. Funkcjonalne.",
+          "p3": "Nie ustawiamy reklamowych plików cookie. Nie ładujemy skryptów śledzących stron trzecich — żadnych Google Analytics, żadnych Meta Pixel, żadnych tagów marketingowych."
+        },
+        "choices": {
+          "headingLead": "Twoje",
+          "headingItalic": "wybory",
+          "p1Lead": "Możesz wyczyścić pliki cookie w dowolnym momencie za pomocą ustawień przeglądarki. Wyczyszczenie",
+          "p1Mid": "spowoduje wylogowanie. Wyczyszczenie",
+          "p1Tail": "spowoduje zresetowanie wyświetlania do ciemnego domyślnego.",
+          "p2": "Nie używamy banera zgody na pliki cookie dla plików ściśle niezbędnych lub funkcjonalnych zgodnie z dyrektywą ePrivacy, ponieważ nie wymagają one zgody. Jeśli w przyszłości wprowadzimy jakiekolwiek nieistotne pliki cookie, uzyskamy zgodę przed ich ustawieniem."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Pytania dotyczące plików cookie lub innych kwestii związanych z danymi:",
+          "effectivePrefix": "Obowiązuje od:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "NA TEJ STRONIE",
+        "privacyPolicy": "Polityka prywatności",
+        "termsOfService": "Warunki świadczenia usług",
+        "cookiePolicy": "Polityka plików cookie"
+      },
+      "layout": {
+        "eyebrow": "PRAWNE",
+        "headingLead": "Dokumenty prawne,",
+        "headingItalic": "wyrażone jasno.",
+        "lede": "Polityka prywatności, warunki świadczenia usług i polityka plików cookie — regulowane przez prawo szwedzkie i RODO."
+      }
+    },
+    "footer": {
+      "tagline": "Psychodynamiczna AI dla życia wewnętrznego. Cichy pokój do poważnych przemyśleń.",
+      "product": "Produkt",
+      "discovery": "Odkrycie",
+      "sampleReport": "Przykładowy raport",
+      "integrationPlan": "Plan integracji",
+      "company": "Firma",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Zasoby",
+      "science": "Nauka",
+      "methodology": "Metodologia",
+      "methodPaper": "Artykuł metodologiczny",
+      "caseStudy": "Studium przypadku",
+      "dreamExample": "Przykład snu",
+      "legal": "Prawne",
+      "privacy": "Prywatność",
+      "terms": "Warunki",
+      "cookies": "Ciasteczka",
+      "rights": "wszystkie prawa zastrzeżone"
+    },
+    "about": {
+      "metaTitle": "O nas — TwentyThird",
+      "metaDescription": "Pochodzenie, metoda i punkt zwrotny dwudziestego trzeciego dnia. Stworzone w CognitiveLab w WelloWork AB.",
+      "hero": {
+        "eyebrow": "O NAS",
+        "headingLead": "Pochodzenie, metoda i",
+        "headingItalic": "punkt zwrotny dwudziestego trzeciego dnia",
+        "lede": "TwentyThird to psychodynamiczna AI do samopoznania. Mapuje powtarzające się pętle i struktury leżące u podstaw symptomu — język, przywiązanie, powtórzenia — i zwraca roboczy brief, a nie quiz.",
+        "figure": {
+          "label": "dzień-23",
+          "subtitle": "metafora punktu zwrotnego",
+          "heading": "23-dniowy łuk",
+          "range": "ciekawość → świadomość",
+          "markerInflection": "punkt zwrotny",
+          "summaryLabel": "dzień, w którym pytanie\nzwraca się do wewnątrz"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIA",
+        "headingLead": "Korespondent Freuda. Liczba Fliessa.",
+        "headingItalic": "Nasza metafora",
+        "tag": "Pochodzenie",
+        "row": {
+          "headingPre": "A",
+          "headingItalic": "23-dniowy rytm",
+          "headingPost": "zaproponowany w liście, zachowany jako figura.",
+          "para1": "23-dniowy cykl był hipotezą Wilhelma Fliessa, omawianą w jego korespondencji z Freudem pod koniec XIX wieku. Współczesna nauka nie potwierdza istnienia stałych biorytmów.",
+          "para2": "Zachowujemy tę liczbę ze względu na to, co nazywa — próg, na którym ciekawość dojrzewa w świadomość. Dzień-23 to figura, nie biologia."
+        },
+        "figure": {
+          "label": "pochodzenie",
+          "subtitle": "cztery kotwice",
+          "row1Outcome": "propozycja",
+          "row2Duration": "Ego i Id",
+          "row2Outcome": "model strukturalny",
+          "row3Duration": "Dyskurs rzymski",
+          "row3Outcome": "zwrot lingwistyczny",
+          "row4Outcome": "synteza",
+          "summary1Key": "interwał",
+          "summary2Key": "nić",
+          "summary2Value": "struktura",
+          "summary3Key": "metoda",
+          "summary3Value": "psychodynamiczna"
+        }
+      },
+      "origin": {
+        "eyebrow": "POCHODZENIE",
+        "headingLead": "Stworzone w CognitiveLab.",
+        "headingItalic": "Odpowiedź na pytanie, które wciąż nam zadawano",
+        "tag": "Zespół",
+        "row": {
+          "headingLead": "Lekarze, pierwotnie budujący",
+          "headingItalic": "trening poznawczy",
+          "para1": "TwentyThird powstało w CognitiveLab w WelloWork AB, gdzie zespół opracowywał systemy treningu poznawczego. Przyjaciele i koledzy zaczęli przynosić osobiste pytania — lęk, powtarzające się wzorce, pętle, których nie potrafili nazwać.",
+          "para2": "Pomiędzy praktyką kliniczną jako lekarze, gromadzonymi danymi pilotażowymi i długą listą lektur z psychoanalizy i teorii lacanowskiej, mieliśmy coś do zaoferowania. TwentyThird jest tym, w co to się przekształciło."
+        },
+        "figure": {
+          "label": "zespół",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "przygotowano 05 · 26",
+          "row1Key": "Praktyka kliniczna",
+          "row2Key": "Wyniki badań",
+          "row3Key": "Uczestnicy pilotażu",
+          "row4Key": "Lekarze w zespole",
+          "footerLabel": "Profil",
+          "footerValue": "hybryda klinicysty-badacza"
+        }
+      },
+      "method": {
+        "eyebrow": "METODA",
+        "headingLead": "Co model",
+        "headingItalic": "faktycznie robi",
+        "tag": "Możliwości",
+        "row": {
+          "headingLead": "Pod symptomem, a",
+          "headingItalic": "struktura",
+          "para1": "TwentyThird wykonuje analizę przyczyn źródłowych. Mapuje <em>podświadomą pętlę</em> na przestrzeni lat, odczytuje <em>lingwistyczną nieświadomość</em> w wyborze słów i przejęzyczeniach, ujawnia <em>przywiązanie</em> na progu intymności i tworzy plan pracy nad <em>pracą z cieniem</em>.",
+          "para2": "Wynik jest gotowy dla terapeuty. Nazywa strukturę, a nie powierzchnię."
+        },
+        "figure": {
+          "label": "symptom → struktura",
+          "subtitle": "trzy przepisania",
+          "row1Prefix": "01 · powierzchnia",
+          "row1Old": "Odkładam ważną pracę na później.",
+          "row1Next": "Unikanie bycia postrzeganym jako ten, który wie.",
+          "row2Prefix": "02 · powierzchnia",
+          "row2Old": "Wciąż spotykam się z tą samą osobą.",
+          "row2Next": "Powtórzenie imago ojca na progu intymności.",
+          "row3Prefix": "03 · powierzchnia",
+          "row3Old": "Nie mogę niczego skończyć.",
+          "row3Next": "Odmowa zrzeczenia się pozycji potencjału.",
+          "metaLeftLabel": "prezentowana",
+          "metaLeftValue": "skarga",
+          "metaRightLabel": "strukturalna",
+          "metaRightValue": "leitura"
+        }
+      },
+      "final": {
+        "eyebrow": "KONTYNUUJ",
+        "headingLead": "Przeczytaj metodę,",
+        "headingItalic": "lub zacznij",
+        "ctaPrimary": "Przeczytaj metodę",
+        "ctaGhostPrefix": "lub",
+        "ctaGhostText": "napisz do nas"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Napisz do nas.",
+        "heroHeadlineItalic": "Czytamy wszystko",
+        "heroLede": "Na większość wiadomości odpowiadamy w ciągu 72 godzin. Zapytania kliniczne i partnerskie mają pierwszeństwo.",
+        "formCardLabel": "formularz",
+        "formCardSubtitle": "tylko zapytania merytoryczne",
+        "addressLabel": "ADRES",
+        "addressValue": "Rosendal, Uppsala, Szwecja",
+        "emailLabel": "E-MAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "ROZPOCZNIJ",
+        "finalHeadlineLead": "Albo po prostu",
+        "finalHeadlineItalic": "zacznij",
+        "finalCta": "Rozpocznij swoje odkrycie",
+        "finalGhostOr": "lub",
+        "finalGhostText": "przeczytaj o początkach",
+        "disclaimer": "W przypadku pilnych problemów ze zdrowiem psychicznym prosimy o kontakt z lokalnymi służbami ratunkowymi lub licencjonowanym klinicystą. TwentyThird nie jest usługą kryzysową."
+      },
+      "form": {
+        "successEyebrow": "OTRZYMANO",
+        "successHeadlineLead": "Twoja wiadomość jest",
+        "successHeadlineItalic": "u nas",
+        "successBody": "Odpowiemy w ciągu dwóch dni roboczych.",
+        "nameLabel": "Imię i nazwisko",
+        "emailLabel": "E-mail",
+        "messageLabel": "Wiadomość",
+        "submitSend": "Wyślij",
+        "submitSending": "Wysyłanie",
+        "errorMessage": "coś poszło nie tak · spróbuj ponownie",
+        "submittingStatus": "Wysyłanie wiadomości."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologia — TwentyThird",
+      "metaDescription": "Od pierwszej rozmowy do mapy gotowej dla terapeuty. Pięć etapów potoku TwentyThird.",
+      "hero": {
+        "eyebrow": "METODA",
+        "headingLead": "Tygodnie przygotowań,",
+        "headingItalic": "nie lata poszukiwań",
+        "lede": "Terapia działa. Wymaga jednak czasu, aby dowiedzieć się, po co się w niej jest. TwentyThird kompresuje przygotowania — część, w której uczysz się, co faktycznie mówisz — aby sama sesja mogła przebiegać szybciej."
+      },
+      "pipeline": {
+        "eyebrow": "POTOK",
+        "headingLead": "Pięć etapów, jeden",
+        "headingItalic": "krótki",
+        "lede": "Od próbki mowy do dokumentu roboczego, który klinicysta może przeczytać w osiem minut.",
+        "stageLabel": "ETAP",
+        "stage01": {
+          "name": "Próbkowanie",
+          "blurb": "Głos i tekst z sesji prowadzonych. Model słucha kształtu, nie treści.",
+          "label": "próbkowanie",
+          "subtitle": "objętość w kohorcie",
+          "fig": {
+            "wordsSampled": "słów próbkowanych",
+            "sessions": "sesji",
+            "elapsed": "czas upłynął",
+            "medianTurn": "mediana tury"
+          }
+        },
+        "stage02": {
+          "nameLead": "Ekstrakcja",
+          "nameEm": "językowa",
+          "blurb": "Cechy, które model wydobywa z transkrypcji — dyskretnie, przed jakąkolwiek interpretacją.",
+          "label": "ekstrakcja",
+          "subtitle": "klasy cech",
+          "fig": {
+            "qualifierDensity": "gęstość kwalifikatorów",
+            "modalVerbs": "czasowniki modalne",
+            "conditionalFrame": "ramy warunkowe",
+            "affectiveHedges": "afektywne zabezpieczenia",
+            "slipsMisnamings": "przejęzyczenia · błędne nazewnictwo",
+            "repetitionWindows": "okna powtórzeń"
+          }
+        },
+        "stage03": {
+          "nameLead": "Wykrywanie",
+          "nameEm": "nawrotów",
+          "blurb": "Wzorzec, który powraca w tej samej formie, w różnych dekadach. Sygnał, że coś jest strukturalne.",
+          "label": "nawrót",
+          "subtitle": "trzy kotwice jednego wzorca",
+          "fig": {
+            "row1": {
+              "durationLabel": "pierwsza praca",
+              "outcome": "sufit w 9. miesiącu"
+            },
+            "row2": {
+              "durationLabel": "druga",
+              "outcome": "sufit w 11. miesiącu"
+            },
+            "row3": {
+              "durationLabel": "trzecia",
+              "outcome": "sufit w 8. miesiącu"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Rekonstrukcja",
+          "nameEm": "skryptu",
+          "blurb": "Zdanie pod wzorcem. Stara linia, a następnie proponowana rewizja, którą podmiot może przećwiczyć.",
+          "label": "rekonstrukcja",
+          "subtitle": "projekt roboczy",
+          "fig": {
+            "row1": {
+              "prefix": "Jestem",
+              "old": "jeszcze niegotowy.",
+              "next": "już *dozwolone*."
+            },
+            "row2": {
+              "prefix": "aby",
+              "old": "czekać na wybór.",
+              "next": "nazwać to, czego *chcę*."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Mapa dla",
+          "nameEm": "klinicysty",
+          "blurb": "Trzy oznaczone mierniki i jednowierszowy odczyt strukturalny. Osiem minut na przeczytanie, tygodnie na użycie.",
+          "label": "przekazanie kliniczne",
+          "subtitle": "brief roboczy",
+          "fig": {
+            "casePrefix": "przypadek",
+            "preparedPrefix": "przygotowany",
+            "egoStructure": "Struktura Ego",
+            "objectRelations": "Relacje z obiektem",
+            "symbolicRegister": "Rejestr symboliczny",
+            "footerLabel": "Odczyt",
+            "footerValue": "obsesyjny · ze śladami histerycznymi"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "ZAKRES",
+        "headingLead": "Co mierzymy, a czego",
+        "headingItalic": "odmawiamy",
+        "headingTail": "mierzyć.",
+        "measureHead": "Co mierzymy",
+        "refuseHead": "Czego nie mierzymy",
+        "measure": {
+          "languagePatterns": {
+            "k": "wzorce językowe",
+            "gloss": "Gęstość kwalifikatorów, czasowniki modalne, zabezpieczenia, ramy warunkowe."
+          },
+          "recurrence": {
+            "k": "nawroty",
+            "gloss": "Wzorce, które powracają w tej samej formie przez lata."
+          },
+          "narrativeCoherence": {
+            "k": "spójność narracyjna",
+            "gloss": "Jak opowiadane jest życie, gdzie widoczne są szwy."
+          },
+          "attachmentMarkers": {
+            "k": "markery przywiązania",
+            "gloss": "Gdzie intymność przekracza próg, co następuje."
+          },
+          "linguisticSlips": {
+            "k": "przejęzyczenia językowe",
+            "gloss": "Błędne nazewnictwo, kondensacje, przemieszczenia."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "kategorie DSM / ICD",
+            "gloss": "Nozologia to osobny instrument, używany przez klinicystów."
+          },
+          "iqCognition": {
+            "k": "IQ lub poznanie",
+            "gloss": "Poza zakresem. Model jest psychodynamiczny, nie psychometryczny."
+          },
+          "personalityTypes": {
+            "k": "typy osobowości",
+            "gloss": "Pięcioczynnikowy i jego potomkowie nie są częścią briefu."
+          },
+          "riskScores": {
+            "k": "oceny ryzyka",
+            "gloss": "Ostre ryzyko to decyzja klinicysty, nie modelu."
+          },
+          "predictions": {
+            "k": "prognozy",
+            "gloss": "Struktura, nie prognoza. Nazywamy to, co jest, nie to, co nadejdzie."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompresja",
+        "headingLead": "Wejdź, wiedząc, co",
+        "headingItalic": "powiedzieć",
+        "body1": "Terapia nie jest miejscem na ustalanie pytania. Jest miejscem na życie z nim. Kompresja, którą oferujemy, dotyczy podejścia — miesięcy, które klinicysta zazwyczaj spędza na słuchaniu kształtu briefu.",
+        "body2": "W całej kohorcie pilotażowej, przygotowani pacjenci osiągnęli sojusz roboczy w mniejszej liczbie sesji. Odczyt był już dostępny.",
+        "figure": {
+          "label": "sojusz",
+          "subtitle": "mediana sesji do sojuszu roboczego",
+          "heading": "Czas do sojuszu roboczego",
+          "range": "mediana w kohorcie",
+          "markerUnprepared": "nieprzygotowany",
+          "markerPrepared": "przygotowany",
+          "summaryLabel": "mniej sesji do\nsojuszu roboczego"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "KONTYNUUJ",
+        "headingLead": "Rozpocznij,",
+        "headingItalic": "lub zobacz przykładowy raport",
+        "beginLabel": "Rozpocznij",
+        "or": "lub",
+        "ghostLabel": "zobacz przykładowy raport"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRACJA",
+        "headlineLead": "Wgląd, potem",
+        "headlineItalic": "nawyk",
+        "lede": "Nazwanie wzorca to dopiero pierwszy krok. Plan jest drugim — codzienne podpowiedzi i małe rytuały zbudowane wokół twojej struktury, a nie generycznego programu."
+      },
+      "week": {
+        "eyebrow": "TYDZIEŃ W PLANIE",
+        "headlineLead": "Siedem podpowiedzi,",
+        "headlineItalic": "jedna struktura",
+        "lede": "Refleksyjne, ucieleśnione, pisemne. Tydzień krąży wokół wzorca nazwanego w raporcie, a nie wokół programu nauczania.",
+        "days": {
+          "mon": {
+            "day": "PON",
+            "prompt": "„Gdzie dzisiaj wybrałeś, by <em>nie</em> być widzianym?”",
+            "stream": {
+              "journal": "dziennik",
+              "shadowPrompt": "podpowiedź cienia"
+            }
+          },
+          "tue": {
+            "day": "WT",
+            "prompt": "„Idź na spacer bez celu. Zauważ jedną rzecz, którą prawie powiedziałeś.”",
+            "stream": {
+              "walking": "spacer",
+              "note": "notatka"
+            }
+          },
+          "wed": {
+            "day": "ŚR",
+            "prompt": "„Co dzisiaj nadmiernie kwalifikowałeś i jakie było <em>niekwalifikowane</em> zdanie pod spodem?”",
+            "stream": {
+              "breathWork": "praca z oddechem",
+              "journal": "dziennik",
+              "shadowPrompt": "podpowiedź cienia"
+            }
+          },
+          "thu": {
+            "day": "CZW",
+            "prompt": "„Skan ciała od gardła w dół. Gdzie mieszka to, co zatrzymane?”",
+            "stream": {
+              "bodyScan": "skan ciała",
+              "note": "notatka"
+            }
+          },
+          "fri": {
+            "day": "PT",
+            "prompt": "„Napisz zdanie, które powiedziałbyś, gdybyś już miał na to pozwolenie.”",
+            "stream": {
+              "journal": "dziennik",
+              "rewrite": "przepisanie"
+            }
+          },
+          "sat": {
+            "day": "SOB",
+            "prompt": "„Długi spacer. Bez podpowiedzi. Zauważ, co przynosi cisza.”",
+            "stream": {
+              "walking": "spacer",
+              "rest": "odpoczynek"
+            }
+          },
+          "sun": {
+            "day": "NDZ",
+            "prompt": "„Przejrzyj tydzień. Która linia była już <em>prawdziwa</em>?”",
+            "stream": {
+              "review": "przegląd",
+              "note": "notatka"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTACJA",
+        "headlineLead": "Plan",
+        "headlineItalic": "zanika",
+        "tag": "Adaptacja",
+        "rowHeadingLead": "Nawrót z zeszłego tygodnia określa",
+        "rowHeadingItalic": "gęstość",
+        "body": "Gdy siła wzorca spada, podpowiedzi się przerzedzają. Gdy wzorzec narasta, podpowiedzi wracają. Celem nie jest przestrzeganie. Celem jest najmniejsze rusztowanie, którego struktura nadal potrzebuje.",
+        "figure": {
+          "label": "gęstość podpowiedzi",
+          "subtitle": "tygodnie 1–8",
+          "heading": "Liczba podpowiedzi · tygodniowo",
+          "range": "zanikanie w miarę słabnięcia nawrotów",
+          "markers": {
+            "wk1": "tydz. 1",
+            "wk3": "tydz. 3",
+            "wk5": "tydz. 5",
+            "wk8": "tydz. 8"
+          },
+          "summaryLabel": "mniej podpowiedzi\ndo tyg. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "PRACA Z CIENIEM",
+        "headlineLead": "Nie katharsis.",
+        "headlineItalic": "Mówienie",
+        "tag": "Cień",
+        "rowHeadingLead": "Celowa praktyka mówienia tego, co było",
+        "rowHeadingItalic": "niewypowiedziane",
+        "body": "Praca z cieniem, w tym kontekście, nie jest ekspozycją. Nie jest oczyszczeniem. Jest to powolna praktyka mówienia — najpierw sobie — tego, co nauczono trzymać w tajemnicy. Trzy linie przed/po, zaczerpnięte z prawdziwych planów.",
+        "figure": {
+          "label": "rewizje cienia",
+          "subtitle": "trzy linie, roboczy szkic",
+          "rows": {
+            "r1": {
+              "prefix": "01 · do siebie",
+              "old": "Nie zasługuję na to.",
+              "next": "Nie ćwiczyłem jeszcze głośnego wyrażania tego pragnienia."
+            },
+            "r2": {
+              "prefix": "02 · do siebie",
+              "old": "Powinienem już to przezwyciężyć.",
+              "next": "oś czasu, którą pożyczyłem, nie była dla tego rodzaju żałoby."
+            },
+            "r3": {
+              "prefix": "03 · do siebie",
+              "old": "Jestem za dużo.",
+              "next": "Jestem dokładnie taką objętością, na jaką pokój nie był zbudowany."
+            }
+          },
+          "metaLeft": {
+            "label": "wcześniej",
+            "value": "powiedziane o sobie"
+          },
+          "metaRight": {
+            "label": "teraz",
+            "value": "powiedziane do siebie"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RAMA",
+        "headlineLead": "Utrzymywane przez strukturę, a nie przez",
+        "headlineItalic": "program",
+        "body1": "Program to zestaw ruchów stworzonych przez obcego. Struktura to kształt, jaki przybiera twoje konkretne życie. Plan jest zbudowany w oparciu o to drugie. Każda podpowiedź jest zakotwiczona w linii twojego raportu — gdy linia się rozpuszcza, podpowiedź również.",
+        "body2": "Nic tutaj nie ma być trwałe. Plan jest wynajęty. Struktura jest twoja.",
+        "closeout": "struktura jest twoja · plan jest wynajęty"
+      },
+      "final": {
+        "eyebrow": "KONTYNUUJ",
+        "headlineLead": "Zacznij,",
+        "headlineItalic": "lub przeczytaj o nauce",
+        "beginCta": "Zacznij",
+        "or": "lub",
+        "readScience": "przeczytaj o nauce"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Nauka — TwentyThird",
+        "description": "Stulecie teorii psychoanalitycznej i cztery dekady badań empirycznych nad wzorcem, językiem i nieświadomością."
+      },
+      "hero": {
+        "eyebrow": "FUNDAMENT",
+        "headlineLead": "Nauka stojąca za",
+        "headlineItalic": "słuchaniem",
+        "headlineTail": ".",
+        "lede": "TwentyThird opiera się na stuleciu teorii psychoanalitycznej i czterech dekadach badań empirycznych nad wzorcem, językiem i nieświadomością. Oto co czytamy i dlaczego."
+      },
+      "lineages": {
+        "eyebrow": "DWIE LINIE",
+        "headlineLead": "Struktura Freuda. Lacanowska",
+        "headlineItalic": "litera",
+        "headlineTail": ".",
+        "lede": "Dwa odczytania nieświadomości, pół wieku różnicy. Razem tworzą kręgosłup metody.",
+        "freud": {
+          "headlineLead": "Nieświadomość",
+          "headlineItalic": "strukturalna",
+          "headlineTail": ".",
+          "body1": "Trwały wkład Freuda jest strukturalny, nie tematyczny. Dynamiczna nieświadomość nie jest piwnicą zapomnianych treści — jest działającym organem umysłu, ćwiczącym, powtarzającym, przenoszącym.",
+          "body2": "Czytamy go jako klinicystę powtórzeń. Ta sama scena pojawia się w różnych dekadach. To powtórzenie jest sygnałem, który model jest szkolony do odnajdywania.",
+          "figure": {
+            "label": "powtórzenie",
+            "subtitle": "pięć kotwic, jedna struktura",
+            "outcome": "wycofanie",
+            "rows": {
+              "anchor1": "wczesna adolescencja",
+              "anchor2": "pierwsza długa więź",
+              "anchor3": "druga długa więź",
+              "anchor4": "trzecia więź",
+              "anchor5": "czwarta więź"
+            },
+            "summary": {
+              "recurrenceLabel": "powtórzenie",
+              "intervalLabel": "interwał",
+              "attractorLabel": "atraktor",
+              "attractorValue": "próg intymności"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Nieświadomość jest ustrukturyzowana jak",
+          "headlineItalic": "język",
+          "headlineTail": ".",
+          "body1Lead": "Odczytanie Lacana zmienia pole. Znaczący się porusza; znaczenie ślizga się po łańcuchach metonimii i metafory. Stadium lustra nazywa fundamentalne błędne rozpoznanie.",
+          "body1Italic": "Pożądanie jest pożądaniem Innego.",
+          "body2": "W naszym potoku jest to konkretne. Czytamy sny i mowę na jawie jako tekst — przemieszczenia, kondensacje i pomyłki niosą strukturalną gramatykę.",
+          "figure": {
+            "label": "sygnał językowy",
+            "subtitle": "fragment snu, z adnotacjami",
+            "dreamLead": "„Pokój, w którym mieszkałem jako dziecko, ma inne drzwi, których nie pamiętam",
+            "ann1": "przemieszczenie",
+            "dreamMid1": ". Za nimi głos mojego przełożonego",
+            "ann2": "kondensacja",
+            "dreamMid2": "nazywa mnie złym imieniem",
+            "ann3": "pomyłka",
+            "dreamTail": ".”",
+            "key1": "przemieszczenie",
+            "key2": "kondensacja",
+            "key3": "pomyłka"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "KOTWICE EMPIRYCZNE",
+        "headlineLead": "Co dodają współczesne badania",
+        "headlineItalic": "naukowe",
+        "headlineTail": ".",
+        "lede": "Pięć zbieżnych nurtów z badań nad przywiązaniem, narracją i procesem. Nie jest to pełna bibliografia — to kotwice, na których faktycznie opiera się model.",
+        "figure": {
+          "label": "kotwice empiryczne",
+          "subtitle": "zbieżne dowody",
+          "caseLabel": "literatura · synteza",
+          "prepared": "aktualizacja 04 · 26",
+          "rows": {
+            "attachment": "Ciągłość przywiązania przez dekady",
+            "alliance": "Sojusz terapeutyczny jako predyktor wyniku",
+            "narrative": "Spójność narracyjna a dobrostan",
+            "relational": "Ukryta wiedza relacyjna",
+            "script": "Teoria skryptów w zawodowym zastoju"
+          },
+          "footerLabel": "Synteza",
+          "footerValue": "zbieżne dowody · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "CZEGO NIE TWIERDZIMY",
+        "headlineLead": "Uczciwe",
+        "headlineItalic": "granice",
+        "headlineTail": " pracy.",
+        "claim1Strong": "Nie jesteśmy substytutem terapeuty.",
+        "claim1Body": "Model przygotowuje rozmowę. Nie prowadzi jej.",
+        "claim2Strong": "Nie jesteśmy narzędziem diagnostycznym według DSM ani ICD.",
+        "claim2Body": "Kategorie, w których pracujemy, są strukturalne — obsesyjne, histeryczne, fobiczne — a nie nozologiczne. Nazywają one sposób organizacji osoby, a nie to, co ona ma.",
+        "claim3Strong": "23-dniowy cykl jest metaforą.",
+        "claim3Body": "Liczba pochodzi z korespondencji Wilhelma Fliessa z Freudem pod koniec XIX wieku. Współczesna nauka nie potwierdza stałych biorytmów. Zachowujemy tę liczbę ze względu na to, co nazywa — przejście od ciekawości do świadomości."
+      },
+      "reading": {
+        "eyebrow": "DALSZE CZYTANIE",
+        "headlineLead": "Półka",
+        "headlineItalic": "za",
+        "headlineTail": " modelem.",
+        "lede": "Książki, nie artykuły. Te, do których wracamy.",
+        "books": {
+          "book1": {
+            "title": "Poza zasadą przyjemności"
+          },
+          "book2": {
+            "title": "Objaśnianie snów"
+          },
+          "book4": {
+            "title": "Cztery podstawowe pojęcia psychoanalizy"
+          },
+          "book5": {
+            "title": "Przywiązanie"
+          },
+          "book6": {
+            "title": "Regulacja afektu i początki Ja"
+          },
+          "book7": {
+            "title": "Stanie w przestrzeniach"
+          },
+          "book8": {
+            "title": "Regulacja afektu, mentalizacja i rozwój Ja"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "KONTYNUUJ",
+        "headlineLead": "Rozpocznij profil",
+        "headlineItalic": "lub przeczytaj studium przypadku",
+        "headlineTail": ".",
+        "ctaPrimary": "Rozpocznij profil",
+        "ctaOr": "lub",
+        "ctaGhost": "przeczytaj studium przypadku"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "ponownie tutaj",
+      "greetingNamed": "ponownie tutaj, {name}.",
+      "strengthen": "Wzmocnij dokładność"
+    },
+    "reviewEdit": "Przejrzyj i edytuj",
+    "depth": {
+      "eyebrow": "GŁĘBOKOŚĆ ODCZYTU",
+      "overallEyebrow": "OGÓLNA GŁĘBOKOŚĆ ODCZYTU",
+      "band": {
+        "deep": "odczyt jest głęboki. stąd niewielkie korekty.",
+        "steady": "odczyt się utrzymuje. Catchupy go wyostrzą.",
+        "partial": "odczyt jest częściowy. jest jeszcze wiele do odkrycia.",
+        "thin": "odczyt jest płytki. nakreśli kształt, jeszcze nie strukturę."
+      },
+      "explainer": "Głębokość odczytu opisuje, w jakim stopniu odczyt miał do ciebie dostęp — z intake, z cotygodniowych Catchupów, z konsultacji oraz od osób, których obecność cię kształtuje. Głębszy odczyt nie oznacza lepszej osoby; oznacza osobę dokładniejszą. Możesz pogłębić go w dowolnym momencie lub pozostawić go takim, jaki jest.",
+      "status": {
+        "low": "Niska",
+        "moderate": "Umiarkowana",
+        "deep": "Dokładna"
+      },
+      "statusLine": {
+        "low": "odczyt jest płytki. nakreśli kształt, jeszcze nie strukturę.",
+        "moderate": "odczyt nabiera kształtu. może zawierać roboczą hipotezę.",
+        "deep": "odczyt jest wystarczająco pełny, by ugruntować pracę."
+      },
+      "source": {
+        "intake": "pytania, na które odpowiedziałeś na początku.",
+        "catchups": "cotygodniowe meldunki, które aktualizują odczyt.",
+        "sessions": "dłuższe konsultacje z the analyst.",
+        "connections": "osoby, których obecność kształtuje odczyt."
+      }
+    },
+    "latest": {
+      "eyebrow": "NAJNOWSZE ODCZYTY",
+      "heading": "Sześć odczytów <it>— i co się zmienia.</it>",
+      "lede": "Sześć odczytów jest obliczanych na podstawie Twojego intake i udoskonalanych przez każdy Catchup, konsultację oraz zaakceptowane połączenie. Struktura jest stała; tekstura się zmienia.",
+      "strengthen": "wzmocnij dane do analizy",
+      "open": "otwórz odczyty"
+    },
+    "six": {
+      "eyebrow": "SZEŚĆ ODCZYTÓW",
+      "heading": "Co jest odczytywane <it>w tobie, właśnie teraz.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPY",
+      "figSubtitle": "ostatnie tygodnie",
+      "timelineHeading": "okno",
+      "timelineRange": "ostatnie 4 tygodnie",
+      "timelineSummary": "catchupy w oknie",
+      "eyebrow": "TYGODNIOWY CATCHUP",
+      "heading": "Usiądź z tygodniem. <it>Potem patrzymy ponownie.</it>",
+      "lede": "Osiem krótkich pytań. Szczerość jest lepsza niż długość. Odpowiedzi udoskonalają odczyt.",
+      "completed": "ukończono — przeczytaj podsumowanie",
+      "cta": "Otwórz catchup z tego tygodnia",
+      "markerFirst": "pierwszy",
+      "markerWeek": "t{week}"
+    },
+    "consulting": {
+      "eyebrow": "GABINET KONSULTACYJNY",
+      "heading": "Godzina z <it>analitykiem.</it>",
+      "ledeSubscribed": "Otwarty, gdy tydzień naciska. Pokój pamięta, co już zostało powiedziane.",
+      "ledeUnsubscribed": "Abonenci mogą wejść do gabinetu konsultacyjnego — długiej sesji z analitykiem, prowadzonej tym samym głosem co Twoje odczyty.",
+      "cta": "Wejdź do gabinetu konsultacyjnego",
+      "figLabel": "OSTATNIA SESJA",
+      "figSubtitle": "powstrzymane pytanie",
+      "lastQuestion": "„sen z wtorku — czy chcesz do niego wrócić?”"
+    },
+    "subscribe": {
+      "eyebrow": "GABINET KONSULTACYJNY · POTWIERDŹ",
+      "title": "Wejście do gabinetu konsultacyjnego<it>.</it>",
+      "ledePrice": "Subskrypcja wynosi",
+      "ledePerMonth": "miesięcznie",
+      "ledeIncludes": ". Obejmuje gabinet konsultacyjny, możliwość zaproszenia do {count} {count, plural, one {połączenia} few {połączeń} many {połączeń} other {połączeń}} oraz jeden raport kliniczny każdego miesiąca kalendarzowego.",
+      "ledeBilling": "Rozliczenia obsługuje Stripe. Anuluj w dowolnym momencie w ustawieniach — dostęp trwa do końca okresu.",
+      "canceled": "<i>płatność została zamknięta.</i> nic nie zostało naliczone. możesz wrócić poniżej, gdy będziesz gotowy.",
+      "checkoutCta": "Przejdź do płatności",
+      "returnLink": "wróć do gabinetu konsultacyjnego"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "RAPORT KLINICZNY",
+        "subscribedTitle": "Już <it>uwzględniony.</it>",
+        "subscribedLede": "Subskrypcja obejmuje jeden raport kliniczny w każdym miesiącu kalendarzowym. Wygeneruj go z dołu strony odczytów — płatność nie jest wymagana.",
+        "eyebrow": "RAPORT KLINICZNY · POTWIERDŹ",
+        "title": "Raport kliniczny<it>.</it>",
+        "ledePrice": "Jednorazowy raport kliniczny kosztuje",
+        "ledeDossier": ". 12–18-stronicowe dossier wszystkich dwunastu odczytów, w języku, którym posługuje się klinicysta.",
+        "ledeBilling": "Rozliczenia obsługuje Stripe. Raporty można regenerować w miarę pogłębiania się odczytu; subskrybenci otrzymują jeden raport w każdym miesiącu kalendarzowym bez dodatkowych opłat.",
+        "depthNotice": "<i>raport odzwierciedli dostępną głębokość.</i> można go regenerować w miarę pogłębiania się odczytu.",
+        "canceled": "<i>płatność została anulowana.</i> nic nie zostało pobrane.",
+        "checkoutCta": "Przejdź do płatności",
+        "returnLink": "powrót do odczytów"
+      },
+      "status": {
+        "eyebrow": "RAPORT KLINICZNY",
+        "line": {
+          "queued": "twój raport jest przygotowywany.",
+          "generating": "raport jest pisany.",
+          "ready": "raport jest gotowy.",
+          "failed": "raport nie został ukończony. spróbujemy ponownie wkrótce."
+        },
+        "open": "otwórz raport",
+        "back": "powrót do odczytów"
+      },
+      "queued": {
+        "eyebrow": "RAPORT KLINICZNY",
+        "line": "twój raport jest przygotowywany — wyślemy ci e-mail, gdy będzie gotowy.",
+        "back": "powrót do odczytów"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAKE",
+        "title": "Intake, <it>temat po temacie.</it>",
+        "lede": "Dziesięć sekcji. Otwórz dowolną, aby przejrzeć lub pogłębić zawarte w niej odpowiedzi. Intake nie jest jednorazowym formularzem — odpowiedzi można zmieniać w dowolnym momencie."
+      },
+      "step": {
+        "eyebrow": "INTAKE",
+        "backToAll": "powrót do wszystkich sekcji"
+      },
+      "failed": {
+        "eyebrow": "INTAKE — NIEKOMPLETNY",
+        "headline": "Odczyt <em>nie został ukończony</em>.",
+        "lede": "Twój intake jest w aktach. Następująca po nim analiza nie została zakończona.",
+        "retry": "Wznów odczyt",
+        "retryPending": "Wznawianie"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · PRZETWARZANIE",
+      "headline": "Twój profil jest <em>czytany</em>.",
+      "lede": "obecnie przetwarzamy Twoje odpowiedzi przez modele psychodynamiczne. pierwsze przejście zazwyczaj trwa około 2 godzin. napiszemy, gdy praca będzie gotowa, a pokój zostanie otwarty.",
+      "figIntake": "WSTĘP",
+      "figSubmitted": "przesłano {date}",
+      "rowResponses": "Otrzymane odpowiedzi",
+      "rowPattern": "Ekstrakcja wzorców",
+      "rowSynthesis": "Synteza profilu",
+      "statusInProgress": "w toku",
+      "statusQueued": "w kolejce",
+      "foot": "napiszemy, gdy praca będzie gotowa",
+      "returnCta": "wróć do cichego pokoju",
+      "devPrefix": "dev",
+      "devOpening": "otwieranie…",
+      "devOpen": "otwórz pokój teraz",
+      "devError": "nie udało się otworzyć pokoju — sprawdź konsolę."
+    }
+  },
+  "invite": {
+    "eyebrow": "ZAPROSZENIE",
+    "safetyFooter": "TwentyThird nie zastępuje opieki klinicznej. W nagłych wypadkach skontaktuj się z lokalnym numerem alarmowym.",
+    "notReady": {
+      "headline": "System zaproszeń jest w trakcie <it>przygotowania.</it>",
+      "body": "Spróbuj ponownie za chwilę."
+    },
+    "notFound": {
+      "headline": "Ten link jest <it>nierozpoznany.</it>",
+      "body": "Jeśli link pochodzi z niedawnej wiadomości e-mail, zaproszenie mogło zostać wysłane ponownie. Otwórz najnowszą wiadomość e-mail, aby uzyskać aktywny link."
+    },
+    "alreadyDeclined": {
+      "headline": "To zaproszenie zostało <it>odrzucone.</it>",
+      "body": "Nic więcej nie jest od Ciebie wymagane. {name} nie zostanie powiadomiony ponad to, co już widzi."
+    },
+    "alreadyAccepted": {
+      "headline": "Już <it>zaakceptowano.</it>",
+      "body": "Jeśli kwestionariusz relacji nie został jeszcze ukończony, możesz kontynuować poniżej.",
+      "continueLink": "kontynuuj kwestionariusz relacji"
+    },
+    "ended": {
+      "headline": "To połączenie zostało <it>zakończone.</it>",
+      "body": "Link nie jest już aktywny. Zapis relacji pozostaje w aktach sprawy, ale nie wpływa już na odczyt."
+    },
+    "expired": {
+      "headline": "To zaproszenie <it>wygasło.</it>",
+      "body": "Zaproszenia wygasają czternaście dni po ich wysłaniu. Poproś {name} o wysłanie nowego, jeśli chcesz odpowiedzieć."
+    },
+    "declined": {
+      "headline": "To zostało <it>przyjęte.</it>",
+      "body": "Nic więcej nie jest od Ciebie wymagane. Zaproszenie jest zamknięte; zapraszający widzi cichą zmianę statusu. Możesz zamknąć to okno."
+    },
+    "live": {
+      "eyebrow": "ZAPROSZENIE DO POŁĄCZENIA",
+      "headline": "{name} zaprosił Cię do <it>swojej lektury.</it>",
+      "lede": "TwentyThird to redakcyjno-kliniczny instrument — cichy pokój, w którym struktura życia wewnętrznego jest czytana z uwagą i przedstawiana w języku użytecznym dla klinicysty.",
+      "explainerOne": "<em>Połączenie</em> nie jest współdzielonym kontem. {name} nie zobaczy Twoich lektur, sesji ani kartoteki. Ty nie zobaczysz jego/jej. To, co powiesz o relacji, zasila model, który tworzy lekturę {name}.",
+      "explainerTwo": "Jeśli chcesz mieć własną lekturę, pierwsza ścieżka poniżej również rozpoczyna Twoje własne konto. Środkowa ścieżka pozwala Ci przyczynić się do lektury {name} bez konta. Obie opcje są dozwolone.",
+      "metaSentTo": "wysłano do",
+      "metaInviteAs": "zaproś jako",
+      "metaReceived": "otrzymano",
+      "metaExpiresIn": "wygasa za {count, plural, one {# dzień} few {# dni} many {# dni} other {# dni}}"
+    },
+    "intake": {
+      "eyebrow": "PRZYJĘCIE ZWIĄZKU",
+      "notReady": {
+        "headline": "Przyjęcie jest <it>przygotowywane.</it>",
+        "body": "Proszę spróbować ponownie za chwilę."
+      },
+      "notFound": {
+        "headline": "Ten link jest <it>nierozpoznany.</it>",
+        "body": "Otwórz najnowszy e-mail z zaproszeniem, aby uzyskać aktywny link."
+      },
+      "notOpen": {
+        "headline": "Przyjęcie jest <it>zamknięte.</it>",
+        "body": "To zaproszenie nie zostało przyjęte, zostało odrzucone lub zakończone. Wróć do linku z zaproszeniem, aby wybrać ponownie.",
+        "backLink": "powrót do zaproszenia"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "tak — rozpocznij proces przyjęcia do relacji",
+      "acceptLabel": "tak — połącz bez konta",
+      "declineLabel": "nie, dziękuję",
+      "beginLabel": "rozpocznij",
+      "continueLabel": "kontynuuj",
+      "back": "wstecz",
+      "oneMoment": "chwileczkę…",
+      "declineConfirmLine": "spowoduje to zamknięcie zaproszenia. żadne dalsze informacje o Tobie nie zostaną wysłane ani zapisane.",
+      "declineClosing": "zamykanie…",
+      "declineConfirm": "odrzuć zaproszenie",
+      "firstNameLabel": "TWOJE IMIĘ",
+      "firstNameAria": "Twoje imię",
+      "firstNameSub": "{name} zobaczy tylko to imię na swojej liście połączeń.",
+      "errors": {
+        "missingFirstName": "imię pozwala analitykowi zwracać się do Ciebie poprawnie.",
+        "generic": "nie udało się wysłać.",
+        "notFound": "ten link zaproszenia nie jest rozpoznawany.",
+        "expired": "to zaproszenie wygasło. poproś zapraszającego o wysłanie nowego.",
+        "declined": "to zaproszenie zostało już odrzucone.",
+        "ended": "to zaproszenie nie jest już aktywne.",
+        "missingFirstNameRequired": "imię jest wymagane."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "ANALIZA ZWIĄZKU",
+      "begin": "zacznij",
+      "back": "wstecz",
+      "backToCover": "wróć do strony tytułowej",
+      "next": "dalej",
+      "finish": "zakończ",
+      "scaleAria": "skala {value}",
+      "cover": {
+        "headline": "To, co mówisz o <it>{name}</it>, pozostaje między tobą a analitykiem.",
+        "lede": "Dwanaście krótkich pytań. Około pięciu minut. Odpowiedzi zasilają odczyt {name}; nie zobaczą, co napisałeś, a ty nie zobaczysz, co to wytworzy."
+      },
+      "closing": {
+        "recording": "chwila — odpowiedzi są rejestrowane.",
+        "tryAgain": "spróbuj ponownie",
+        "headline": "To wystarczy <it>na teraz.</it>",
+        "lede": "To, co powiedziałeś o {name}, będzie informować ich odczyt od następnej sesji. Nie zobaczą tego; ty nie zobaczysz, co to wytworzy.",
+        "closeWindow": "możesz zamknąć to okno."
+      },
+      "errors": {
+        "unanswered": "chwila z tym, zanim przejdziesz dalej.",
+        "questionOpen": "pytanie jest nadal otwarte. chwila.",
+        "couldNotSave": "nie udało się zapisać",
+        "invalidAnswers": "coś nie zostało przetworzone — proszę sprawdzić odpowiedzi.",
+        "notAccepting": "to zaproszenie nie przyjmuje już odpowiedzi.",
+        "notFound": "ten link zaproszenia nie jest rozpoznany.",
+        "couldNotSaveAnswers": "nie udało się zapisać odpowiedzi."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Jak długo się znacie?",
+          "options": {
+            "under_one_year": "mniej niż rok",
+            "one_to_three": "jeden do trzech lat",
+            "four_to_ten": "cztery do dziesięciu lat",
+            "eleven_to_twenty": "jedenaście do dwudziestu lat",
+            "more_than_twenty": "ponad dwadzieścia lat"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Jak blisko czujecie się teraz ze sobą?",
+          "lowLabel": "na dystans",
+          "highLabel": "tak blisko, jak to tylko możliwe"
+        },
+        "repair_initiator": {
+          "prompt": "Kiedy się nie zgadzacie, kto zazwyczaj pierwszy dąży do naprawy?",
+          "options": {
+            "i_do": "prawie zawsze ja",
+            "usually_me": "zazwyczaj ja",
+            "evenly": "zbliżamy się do siebie równomiernie",
+            "usually_them": "zazwyczaj oni",
+            "they_do": "prawie zawsze oni"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kiedy coś jest trudne, dokąd zazwyczaj się udają?",
+          "options": {
+            "toward": "do ciebie, żeby porozmawiać",
+            "quiet": "w ciszę, potem wracają",
+            "work": "w pracę lub rozproszenie",
+            "alone": "całkowicie sami, za drzwiami",
+            "elsewhere": "najpierw do innych ludzi"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Co jest czymś, co chciałbyś, żeby zrozumieli o sobie?"
+        },
+        "what_you_offer": {
+          "prompt": "W jednym zdaniu, co robisz dla nich, czego oni nie potrafią zrobić dla siebie?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Który głos wydaje się najczęściej nimi kierować?",
+          "options": {
+            "demand": "żądanie — co powinno być zrobione",
+            "doubt": "wątpliwość — czy to wystarczy",
+            "desire": "pragnienie — czego naprawdę chcą",
+            "watcher": "obserwator — jak to zostanie odebrane",
+            "uncertain": "jeszcze nie wiem"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Gdzie zazwyczaj ich praca napotyka trudności?",
+          "options": {
+            "start": "początek — rozpoczęcie",
+            "middle": "środek — trwanie przy tym",
+            "finish": "koniec — odpuszczenie",
+            "visibility": "widoczność — pozwolenie, by to było widoczne",
+            "nowhere": "nigdy, z mojej perspektywy"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Czy jest temat, którego konsekwentnie unikają? Nazwij go delikatnie."
+        },
+        "they_at_their_best": {
+          "prompt": "Kiedy są najbardziej sobą?"
+        },
+        "what_youve_changed": {
+          "prompt": "Czy jest coś w nich, co po cichu zaakceptowałeś, że nie zmienisz?"
+        },
+        "future_together": {
+          "prompt": "Ile przyszłości, którą sobie wyobrażasz, obejmuje ich?",
+          "lowLabel": "bardzo niewiele",
+          "highLabel": "prawie cała"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "lub",
+      "fallbackPreamble": "wklej ten link do przeglądarki:",
+      "attendingInstitution": "INSTYTUCJA PROWADZĄCA",
+      "tagline": "Psychodynamiczna sztuczna inteligencja dla życia wewnętrznego.",
+      "automatedFooter": "Wysłano automatycznie · prosimy nie odpowiadać"
+    },
+    "intakeSubmitted": {
+      "subject": "twój profil jest analizowany.",
+      "preheader": "Pierwsze czytanie w toku. Pokój otworzy się, gdy praca będzie gotowa.",
+      "eyebrow": "ANALIZA PROFILU",
+      "titleText": "Twoje odpowiedzi są analizowane.",
+      "italicPhrase": "analizowane",
+      "lede": "Pierwsze czytanie przez modele psychodynamiczne jest w toku. Pokój otworzy się, gdy praca będzie gotowa.",
+      "figLeftItalic": "intake przyjęty",
+      "figRightLabel": "Pierwsze czytanie",
+      "figRightItalic": "w toku",
+      "text": "{salutation}\n\nTwoje odpowiedzi zostały przyjęte. Pierwsze czytanie przez modele psychodynamiczne jest w toku. Pokój otworzy się, gdy praca będzie gotowa.\n\nCognitiveLab, WelloWork AB\nINSTYTUCJA PROWADZĄCA"
+    },
+    "roomReady": {
+      "subject": "Twój Pokój jest otwarty.",
+      "preheader": "Dwanaście bloków gotowych do lektury. Praca udoskonala się, gdy do niej wracasz.",
+      "eyebrow": "POKÓJ GOTOWY",
+      "titleText": "Pierwsze czytanie jest otwarte.",
+      "italicPhrase": "pierwsze czytanie",
+      "lede": "Dwanaście bloków profilu psychodynamicznego, w Pokoju i gotowych do lektury. Praca udoskonala się, gdy do niej wracasz.",
+      "ctaLabel": "Wejdź do Pokoju",
+      "figLeftItalic": "pokój otwarty",
+      "figRightLabel": "Pierwsze czytanie",
+      "figRightItalic": "gotowe",
+      "text": "{salutation}\n\nPierwsze czytanie jest otwarte.\n\nDwanaście bloków profilu psychodynamicznego, w Pokoju i gotowych do lektury. Praca udoskonala się, gdy do niej wracasz.\n\nWejdź do Pokoju:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTYTUCJA PROWADZĄCA"
+    },
+    "invite": {
+      "subject": "{inviterName} zaprasza Cię do lektury.",
+      "preheader": "{inviterName} zaprasza Cię do lektury. Połączenie nie widzi Twoich lektur; Ty nie zobaczysz ich lektur.",
+      "eyebrow": "ZAPROSZENIE",
+      "titleText": "{inviterName} zaprasza Cię do lektury.",
+      "italicPhrase": "do lektury",
+      "lede": "TwentyThird to cichy pokój, w którym struktura życia wewnętrznego jest czytana z uwagą. Połączenie nie widzi lektur ani sesji zapraszającego, a Ty nie zobaczysz ich lektur.",
+      "ctaLabel": "Otwórz zaproszenie",
+      "figLeftItalic": "zaproszenie wystawione",
+      "figRightLabel": "Wygasa",
+      "figRightItalic": "czternaście dni",
+      "securityNote": "Jeśli to zaproszenie dotarło przez pomyłkę, wygaśnie samoistnie za czternaście dni.",
+      "textIntro": "{inviterName} zaprasza Cię do lektury w TwentyThird.",
+      "textBody": "TwentyThird to cichy pokój, w którym struktura życia wewnętrznego jest czytana z uwagą. Połączenie nie widzi lektur ani sesji zapraszającego, a Ty nie zobaczysz ich lektur.",
+      "textNote": "{inviterName} dodał(a) notatkę:\n  {note}",
+      "textOpen": "Otwórz zaproszenie:",
+      "textSecurity": "Jeśli to zaproszenie dotarło przez pomyłkę, wygaśnie samoistnie za czternaście dni.",
+      "textCloser": "CognitiveLab, WelloWork AB\nINSTYTUCJA PROWADZĄCA"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} zaakceptował(a) połączenie.",
+      "preheader": "{nameTitle} zaakceptował(a) połączenie. Wpływ na następną sesję.",
+      "eyebrow": "POŁĄCZENIE ZAAKCEPTOWANE",
+      "titleText": "{nameTitle} zaakceptował(a) połączenie.",
+      "italicPhrase": "zaakceptował(a) połączenie",
+      "lede": "Ich kwestionariusz relacji wpłynie na twoje czytanie od następnej sesji. Oni nie zobaczą twoich czytań; ty nie zobaczysz ich czytań.",
+      "ctaLabel": "Wróć do Pokoju",
+      "figLeftItalic": "połączenie zaakceptowane",
+      "figRightLabel": "Wpływ",
+      "figRightItalic": "od następnej sesji",
+      "text": "{salutation}\n\n{nameTitle} zaakceptował(a) połączenie.\n\nIch kwestionariusz relacji wpłynie na twoje czytanie od następnej sesji. Oni nie zobaczą twoich czytań; ty nie zobaczysz ich czytań.\n\nWróć do Pokoju:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} zakończył połączenie.",
+      "preheader": "{nameTitle} zakończył połączenie. Twoje odczytanie dostosuje się podczas następnej sesji.",
+      "eyebrow": "POŁĄCZENIE ZAKOŃCZONE",
+      "titleText": "{nameTitle} zakończył połączenie.",
+      "italicPhrase": "zakończył połączenie",
+      "lede": "Twoje odczytanie dostosuje się podczas następnej sesji. To, co zostało powiedziane o relacji, jest zachowane w aktach sprawy; nie wpływa już na aktywne odczytanie.",
+      "ctaLabel": "Wróć do Pokoju",
+      "figLeftItalic": "połączenie zakończone",
+      "figRightLabel": "Efekt",
+      "figRightItalic": "od następnej sesji",
+      "text": "{nameTitle} zakończył połączenie.\n\nTwoje odczytanie dostosuje się podczas następnej sesji. To, co zostało powiedziane o relacji, jest zachowane w aktach sprawy; nie wpływa już na aktywne odczytanie.\n\nWróć do Pokoju:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTYTUCJA PROWADZĄCA"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "cotygodniowy Catchup jest otwarty.",
+      "preheader": "Krótka refleksja. Pięć minut. Aktualizuje odczyt.",
+      "eyebrow": "TYGODNIOWY CATCHUP",
+      "titleText": "Minął tydzień *spokojnie*.",
+      "italicPhrase": "spokojnie",
+      "lede": "Krótka refleksja — co jest głośne, co pozostało ciche, co się zmieniło. Aktualizuje odczyt.",
+      "ctaLabel": "Otwórz Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "pięć minut",
+      "text": "{salutation}\n\nMinął tydzień spokojnie.\n\nKrótka refleksja — co jest głośne, co pozostało ciche, co się zmieniło. Aktualizuje odczyt.\n\nOtwórz Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "Twoje odpowiedzi są wstrzymane.",
+      "preheader": "Twój kwestionariusz wznowi się w miejscu, w którym go przerwałeś. Praca nie rozpocznie się, dopóki nie zostanie ukończony.",
+      "eyebrow": "KWESTIONARIUSZ WSTRZYMANY",
+      "titleText": "Kwestionariusz jest w miejscu, w którym go zostawiłeś.",
+      "italicPhrase": "gdzie go zostawiłeś",
+      "lede": "Twój kwestionariusz wznowi się w miejscu, w którym go przerwałeś. Praca nie rozpocznie się, dopóki nie zostanie ukończony.",
+      "ctaLabel": "Wróć do kwestionariusza",
+      "figLeftItalic": "kwestionariusz wstrzymany",
+      "figRightLabel": "Wznów",
+      "figRightItalic": "gdzie przerwałeś",
+      "text": "{salutation}\n\nKwestionariusz jest w miejscu, w którym go zostawiłeś.\n\nTwój kwestionariusz wznowi się w miejscu, w którym go przerwałeś. Praca nie rozpocznie się, dopóki nie zostanie ukończony.\n\nWróć do kwestionariusza:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nINSTYTUCJA PROWADZĄCA"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Które słowa najlepiej opisują dom, w którym dorastałeś/dorastałaś.",
+          "subtitle": "wybierz do trzech słów, które wydają się prawdziwe, nawet jeśli sobie przeczą — domy są zazwyczaj mieszanką",
+          "options": {
+            "calm": "Spokojny",
+            "strict": "Surowy",
+            "emotionally_distant": "Emocjonalnie zdystansowany",
+            "chaotic": "Chaotyczny",
+            "achievement_focused": "Nastawiony na osiągnięcia",
+            "protective": "Opiekuńczy",
+            "unpredictable": "Nieprzewidywalny",
+            "conflict_heavy": "Pełen konfliktów"
+          }
+        },
+        "q1_2": {
+          "title": "Jaką rolę naturalnie przyjmowałeś/przyjmowałaś jako dziecko.",
+          "subtitle": "pomyśl o roli, którą odgrywałeś/odgrywałaś w rodzinie bez niczyjego polecenia — rozjemca, pomocnik, cichy obserwator",
+          "options": {
+            "peacemaker": "Rozjemca",
+            "achiever": "Osiągający sukcesy",
+            "invisible_child": "Niewidzialne dziecko",
+            "caregiver": "Opiekun",
+            "rebel": "Buntownik",
+            "funny_one": "Żartowniś",
+            "responsible_one": "Odpowiedzialny",
+            "problem_child": "Trudne dziecko"
+          }
+        },
+        "q1_3": {
+          "title": "Na ile bezpiecznie emocjonalnie czułeś/czułaś się dorastając.",
+          "subtitle": "kieruj się intuicją dotyczącą domu, a nie wersją, którą rodzina opowiedziałaby obcemu",
+          "lowLabel": "1 · NIGDY BEZPIECZNIE",
+          "highLabel": "10 · W PEŁNI BEZPIECZNIE"
+        },
+        "q1_4": {
+          "title": "Czy emocje były otwarcie omawiane w domu.",
+          "subtitle": "nie tylko czy uczucia istniały, ale czy ktoś faktycznie je nazywał lub o nich głośno mówił",
+          "options": {
+            "frequently": "Często",
+            "sometimes": "Czasami",
+            "rarely": "Rzadko",
+            "never": "Nigdy"
+          }
+        },
+        "q1_5": {
+          "title": "Jedno wspomnienie z dzieciństwa, które wciąż jest emocjonalnie żywe.",
+          "subtitle": "opisz jedną konkretną scenę, która wciąż do ciebie wraca — gdzie byłeś/byłaś, kto tam był, co się stało, jak się czułeś/czułaś"
+        },
+        "q1_6": {
+          "title": "Czego nauczyłeś/nauczyłaś się, że musisz robić, aby otrzymać miłość lub aprobatę.",
+          "subtitle": "małe rzeczy, które zauważyłeś/zauważyłaś, że działały — bycie dobrym, bycie cichym, osiąganie sukcesów, trzymanie się z daleka — podziel się tym, co pamiętasz, że dostosowywałeś/dostosowywałaś"
+        },
+        "q1_7": {
+          "title": "Jakie emocje były trudne do wyrażenia w twoim domu.",
+          "subtitle": "które uczucia były ignorowane, lekceważone lub karane, gdy próbowałeś/próbowałaś je pokazać — złość, smutek, strach, radość, cokolwiek"
+        },
+        "q1_8": {
+          "title": "Kiedy myślisz o swoim młodszym ja, co do niego czujesz.",
+          "subtitle": "bądź szczery/szczera co do uczucia, które się pojawia — ciepło, smutek, dystans, frustracja, opiekuńczość — cokolwiek tam faktycznie jest"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Jak opisałbyś swoją matkę lub główną opiekunkę macierzyńską?",
+          "subtitle": "kilka zdań o tym, jaka była, jak się dla ciebie pojawiała i jak się przy niej czułeś",
+          "options": {
+            "warm": "Ciepła",
+            "controlling": "Kontrolująca",
+            "emotionally_unavailable": "Niedostępna emocjonalnie",
+            "sacrificing": "Poświęcająca się",
+            "critical": "Krytyczna",
+            "anxious": "Lękliwa",
+            "unpredictable": "Nieprzewidywalna",
+            "admired": "Podziwiana",
+            "fearful": "Bojaźliwa",
+            "not_applicable": "Nie dotyczy"
+          }
+        },
+        "q2_2": {
+          "title": "Jak opisałbyś swojego ojca lub głównego opiekuna ojcowskiego?",
+          "subtitle": "kilka zdań o tym, jaki był, jak się dla ciebie pojawiał i jak się przy nim czułeś",
+          "options": {
+            "supportive": "Wspierający",
+            "distant": "Dystansujący się",
+            "dominant": "Dominujący",
+            "passive": "Pasywny",
+            "ambitious": "Ambitny",
+            "emotionally_closed": "Zamknięty emocjonalnie",
+            "protective": "Opiekuńczy",
+            "critical": "Krytyczny",
+            "absent": "Nieobecny",
+            "not_applicable": "Nie dotyczy"
+          }
+        },
+        "q2_3": {
+          "title": "Twoja pozycja wśród rodzeństwa.",
+          "subtitle": "gdzie plasowałeś się w kolejności — najstarszy, środkowy, najmłodszy, jedynak, lub gdzieś pomiędzy",
+          "options": {
+            "oldest": "Najstarszy",
+            "middle": "Środkowy",
+            "youngest": "Najmłodszy",
+            "only_child": "Jedynak"
+          }
+        },
+        "q2_4": {
+          "title": "Jaka rola najlepiej pasuje do twojej pozycji wśród rodzeństwa?",
+          "subtitle": "poza kolejnością urodzenia, rola, którą ostatecznie odegrałeś — odpowiedzialny, buntownik, niewidzialny, ulubieniec",
+          "options": {
+            "responsible": "Odpowiedzialny",
+            "ignored": "Ignorowany",
+            "compared": "Porównywany z innymi",
+            "favored": "Faworyzowany",
+            "competitive": "Rywalizujący",
+            "protective": "Opiekuńczy",
+            "not_applicable": "Nie dotyczy"
+          }
+        },
+        "q2_5": {
+          "title": "Który rodzic rozumiał cię najlepiej?",
+          "subtitle": "nazwij go i powiedz, co widział w tobie, czego drugi rodzic nie dostrzegał lub źle interpretował"
+        },
+        "q2_6": {
+          "title": "Który rodzic najbardziej wpłynął na twoje lęki?",
+          "subtitle": "czyje obawy wchłonąłeś dorastając i jak te lęki nadal objawiają się w twoim życiu"
+        },
+        "q2_7": {
+          "title": "Jak wyglądał konflikt w twojej rodzinie?",
+          "subtitle": "opisz formę, jaką przybierały kłótnie — krzyki, cisza, trzaskanie drzwiami, zimne tygodnie, powtarzające się schematy — cokolwiek, co wydawało się znajome"
+        },
+        "q2_8": {
+          "title": "Jaki rodzaj uwagi było ci najtrudniej przyjąć?",
+          "subtitle": "rodzaj troski, który sprawiał ci dyskomfort — pochwały, zmartwienie, bliskość fizyczna, bycie widzianym — i dlaczego było to trudne"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Jak religijne lub duchowe było środowisko, w którym dorastałeś.",
+          "subtitle": "rzeczywista atmosfera domu — praktyki, zasady, przekonania obecne w powietrzu — nie to, w co wierzysz teraz jako dorosły",
+          "lowLabel": "1 · W OGÓLE NIE",
+          "highLabel": "10 · GŁĘBOKO"
+        },
+        "q3_2": {
+          "title": "Które przesłanie było najsilniejsze w okresie dorastania.",
+          "subtitle": "zasada lub oczekiwanie powtarzane tak często, że stało się tłem — dotyczące sukcesu, zachowania, wizerunku, obowiązku, rodziny",
+          "options": {
+            "success": "Sukces liczy się najbardziej",
+            "reputation": "Reputacja liczy się najbardziej",
+            "obedience": "Posłuszeństwo liczy się najbardziej",
+            "family_loyalty": "Lojalność rodzinna liczy się najbardziej",
+            "independence": "Niezależność liczy się najbardziej",
+            "sacrifice": "Poświęcenie liczy się najbardziej"
+          }
+        },
+        "q3_3": {
+          "title": "Jak silnie czujesz się oceniany przez społeczeństwo.",
+          "subtitle": "jak bardzo czujesz się obserwowany lub oceniany przez ludzi spoza twojego bliskiego kręgu — w pracy, online, publicznie",
+          "lowLabel": "1 · W OGÓLE NIE",
+          "highLabel": "10 · CIĄGLE"
+        },
+        "q3_4": {
+          "title": "Jakie przekonania z twojego wychowania nadal cię kształtują.",
+          "subtitle": "wartości, zasady lub założenia, które odziedziczyłeś i którymi nadal żyjesz, nawet jeśli nie myślałeś o nich od lat"
+        },
+        "q3_5": {
+          "title": "Jakim przekonaniom potajemnie się sprzeciwiasz.",
+          "subtitle": "tym, z którymi zgadzasz się publicznie, ale po cichu się nie zgadzasz — o pieniądzach, związkach, sukcesie, płci, czymkolwiek"
+        },
+        "q3_6": {
+          "title": "Co twoja rodzina lub społeczność najbardziej potępiłaby w twoim prawdziwym ja.",
+          "subtitle": "części siebie, swojego życia lub swoich wyborów, które przed nimi ukrywasz, i dlaczego je ukrywasz"
+        },
+        "q3_7": {
+          "title": "Jaką osobą miałeś się stać.",
+          "subtitle": "przyszłość, którą inni dla ciebie wyobrażali — kariera, rodzina, zachowanie, wizerunek — zanim miałeś na to jakikolwiek wpływ"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Ile osób naprawdę zna twoje prawdziwe ja.",
+          "subtitle": "osoby, które widziały twoją niezredagowaną wersję i nie byłyby zszokowane niczym w twoim wewnętrznym życiu",
+          "options": {
+            "none": "Żadna",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Wiele"
+          }
+        },
+        "q4_2": {
+          "title": "W grupach zazwyczaj stajesz się.",
+          "subtitle": "rolą, w którą wślizgujesz się bez zastanowienia — zabawnym, słuchaczem, liderem, obserwatorem, tym, który utrzymuje spokój",
+          "options": {
+            "leader": "Lider",
+            "observer": "Obserwator",
+            "entertainer": "Animator",
+            "mediator": "Mediator",
+            "intellectual": "Intelektualista",
+            "caregiver": "Opiekun",
+            "withdrawn": "Wycofany"
+          }
+        },
+        "q4_3": {
+          "title": "Jak bardzo boisz się rozczarować innych.",
+          "subtitle": "jak bardzo reakcja innej osoby — spojrzenie, westchnienie, cisza — może kształtować to, co mówisz lub robisz",
+          "lowLabel": "1 · W OGÓLE NIE",
+          "highLabel": "10 · CODZIENNIE"
+        },
+        "q4_4": {
+          "title": "Jakie części siebie ukrywasz społecznie.",
+          "subtitle": "myśli, uczucia, cechy lub fragmenty twojej historii, które trzymasz w ukryciu, gdy jesteś wśród innych ludzi"
+        },
+        "q4_5": {
+          "title": "Kiedy czujesz się najbardziej akceptowany.",
+          "subtitle": "sytuacje lub relacje, w których przestajesz grać i możesz po prostu być — opisz, co sprawia, że te przestrzenie są inne"
+        },
+        "q4_6": {
+          "title": "Jakie sytuacje społeczne najbardziej cię wyczerpują.",
+          "subtitle": "spotkania, dynamiki lub relacje, które męczą cię bardziej niż powinny — i co w nich jest wyczerpujące"
+        },
+        "q4_7": {
+          "title": "Jakim ludziom zazdrościsz.",
+          "subtitle": "zazdrość zazwyczaj wskazuje na coś, czego pragniesz, ale nie pozwoliłeś sobie na to otwarcie — opisz, kto ją wywołuje i dlaczego"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Z jakich platform aktywnie korzystasz.",
+          "subtitle": "aplikacje, które otwierasz z przyzwyczajenia, więcej niż raz dziennie, a nie te, na których technicznie masz konto",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Żadna"
+          }
+        },
+        "q5_2": {
+          "title": "Średnie dzienne użycie na platformę.",
+          "subtitle": "przybliżone oszacowanie, ile czasu faktycznie spędzasz na każdej z nich — minuty lub godziny, bez oceniania",
+          "unit": "MINUT DZIENNIE"
+        },
+        "q5_3": {
+          "title": "Do czego głównie ich używasz.",
+          "subtitle": "prawdziwy powód pod tym oczywistym — połączenie, rozproszenie, walidacja, ucieczka, porównanie, informacja",
+          "options": {
+            "validation": "Walidacja",
+            "learning": "Nauka",
+            "escapism": "Eskapizm",
+            "networking": "Networking",
+            "self_expression": "Autoekspresja",
+            "entertainment": "Rozrywka",
+            "comparison": "Porównanie",
+            "dating": "Randkowanie"
+          }
+        },
+        "q5_4": {
+          "title": "Jak często usuwasz lub edytujesz posty przed publikacją.",
+          "subtitle": "jak bardzo ćwiczysz, zastanawiasz się lub przepisujesz to, co udostępniasz, zanim pozwolisz innym to zobaczyć",
+          "options": {
+            "always": "Zawsze",
+            "often": "Często",
+            "sometimes": "Czasami",
+            "rarely": "Rzadko",
+            "never": "Nigdy"
+          }
+        },
+        "q5_5": {
+          "title": "Jak często porównujesz swoje życie do życia innych online.",
+          "subtitle": "ciche mierzenie, które ma miejsce podczas przewijania — dotyczące wyglądu, sukcesu, związków, stylu życia, czegokolwiek",
+          "lowLabel": "1 · NIGDY",
+          "highLabel": "10 · CIĄGLE"
+        },
+        "q5_6": {
+          "title": "Jaka wersja ciebie pojawia się online.",
+          "subtitle": "opisz postać, którą prezentujesz — wyselekcjonowaną wersję — i jak różni się ona od tego, kim jesteś, gdy nikt nie patrzy"
+        },
+        "q5_7": {
+          "title": "Czego szukasz emocjonalnie, otwierając media społecznościowe.",
+          "subtitle": "uczucie, po które sięgasz w momencie otwarcia aplikacji — rozproszenie, komfort, ekscytacja, odrętwienie, połączenie"
+        },
+        "q5_8": {
+          "title": "Jaki rodzaj treści sprawia, że czujesz się niekomfortowo.",
+          "subtitle": "posty lub filmy, które sprawiają, że chcesz szybko przewinąć, i co według ciebie naprawdę kryje się za tym dyskomfortem"
+        },
+        "q5_9": {
+          "title": "Jacy ludzie przyciągają twoją uwagę online.",
+          "subtitle": "konta, na których zatrzymujesz się i które obserwujesz — opisz cechy, które je łączą, i co cię do nich przyciąga"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Twój obecny status związku.",
+          "subtitle": "gdzie faktycznie jesteś teraz — singiel, randkujący, w związku, żonaty/zamężna, w separacji, skomplikowane — a nie gdzie chciałbyś być",
+          "options": {
+            "single": "Singiel",
+            "dating": "Randkujący",
+            "in_relationship": "W związku",
+            "engaged": "Zaręczony/a",
+            "married": "Żonaty/Zamężna",
+            "separated_divorced": "W separacji lub rozwiedziony/a",
+            "widowed": "Wdowiec/Wdowa",
+            "its_complicated": "Skomplikowane"
+          }
+        },
+        "q6_2": {
+          "title": "Ile poważnych związków miałeś/aś.",
+          "subtitle": "te, które miały znaczenie emocjonalne, niezależnie od tego, jak długo trwały lub jak oficjalne były",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Typowe konflikty w twoich związkach.",
+          "subtitle": "kłótnie, które pojawiają się w różnych formach u różnych partnerów — pieniądze, dystans, kontrola, komunikacja",
+          "options": {
+            "distance": "Dystans",
+            "jealousy": "Zazdrość",
+            "control": "Kontrola",
+            "emotional_unavailability": "Niedostępność emocjonalna",
+            "communication": "Komunikacja",
+            "trust": "Zaufanie",
+            "dependency": "Zależność"
+          }
+        },
+        "q6_4": {
+          "title": "W związkach masz tendencję do.",
+          "subtitle": "twoje domyślne zachowanie, gdy sprawy stają się trudne — zbliżanie się, oddalanie, przejmowanie kontroli, zamykanie się, próba naprawy",
+          "options": {
+            "pursue": "Dążenia",
+            "withdraw": "Wycofywania się",
+            "overgive": "Nadmiernego dawania",
+            "test_loyalty": "Testowania lojalności",
+            "avoid_vulnerability": "Unikania wrażliwości"
+          }
+        },
+        "q6_5": {
+          "title": "W jakich ludziach się powtarzalnie zakochujesz.",
+          "subtitle": "typ, który ciągle pojawia się w twoim życiu miłosnym — nie tylko wygląd, ale wzorce emocjonalne, temperament, sposób, w jaki cię traktują"
+        },
+        "q6_6": {
+          "title": "Co zazwyczaj kończy twoje związki.",
+          "subtitle": "prawdziwy powód, dla którego rzeczy się rozpadają, poza oficjalną historią, którą opowiadasz przyjaciołom lub rodzinie"
+        },
+        "q6_7": {
+          "title": "Jaką potrzebę emocjonalną najbardziej pragniesz zaspokoić.",
+          "subtitle": "potrzeba, o którą najtrudniej ci prosić bezpośrednio — bycie widzianym, bycie wybranym, bycie bezpiecznym, bycie wolnym, bycie pożądanym"
+        },
+        "q6_8": {
+          "title": "Czego najbardziej obawiasz się w intymności.",
+          "subtitle": "co bliskość naraża na ryzyko dla ciebie — bycie poznanym, bycie uwięzionym, bycie porzuconym, bycie zbyt wiele, bycie niewystarczającym"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Twój obecny status zatrudnienia.",
+          "subtitle": "kształt Twojego życia zawodowego w tej chwili — zatrudniony, samozatrudniony, między pracami, studiujący, opiekujący się, coś innego",
+          "options": {
+            "employed_full_time": "Zatrudniony, pełny etat",
+            "employed_part_time": "Zatrudniony, część etatu",
+            "self_employed": "Samozatrudniony lub założyciel",
+            "freelance": "Freelancer lub na kontrakcie",
+            "studying": "Studiujący",
+            "between_roles": "Między rolami",
+            "caregiving": "Opiekujący się w domu",
+            "retired": "Emeryt",
+            "not_working": "Niepracujący"
+          }
+        },
+        "q7_2": {
+          "title": "Jak bardzo jesteś zadowolony z kierunku swojej kariery.",
+          "subtitle": "dłuższy łuk, w którym zmierza Twoja praca, a nie to, jak czujesz się w tym konkretnym tygodniu",
+          "lowLabel": "1 · ZAGUBIONY",
+          "highLabel": "10 · DOKŁADNIE TAK"
+        },
+        "q7_3": {
+          "title": "W pracy zazwyczaj jesteś.",
+          "subtitle": "sposób, w jaki działasz zawodowo — rola, którą przyjmujesz, gdy nikt Ci jej nie przydziela",
+          "options": {
+            "perfectionistic": "Perfekcjonistyczny",
+            "avoidant": "Unikający",
+            "competitive": "Rywalizujący",
+            "cooperative": "Współpracujący",
+            "over_responsible": "Nadmiernie odpowiedzialny",
+            "detached": "Zdalny"
+          }
+        },
+        "q7_4": {
+          "title": "Twój największy stres w miejscu pracy.",
+          "subtitle": "źródło presji, które podąża za Tobą do domu — osoba, obciążenie pracą, strach, środowisko, wzorzec",
+          "options": {
+            "criticism": "Krytyka",
+            "failure": "Porażka",
+            "visibility": "Widoczność",
+            "authority": "Autorytet",
+            "uncertainty": "Niepewność",
+            "conflict": "Konflikt"
+          }
+        },
+        "q7_5": {
+          "title": "Co sukces emocjonalnie dla Ciebie oznacza.",
+          "subtitle": "uczucie, które wyobrażasz sobie, że nadejdzie, gdy w końcu to osiągniesz — ulga, duma, spokój, wolność, bycie wystarczającym"
+        },
+        "q7_6": {
+          "title": "Jaki rodzaj uznania najbardziej na Ciebie wpływa.",
+          "subtitle": "pochwała, która naprawdę trafia i zmienia Twoje samopoczucie, oraz ta, która odbija się, bez względu na to, ile jej otrzymasz"
+        },
+        "q7_7": {
+          "title": "Jaka porażka nadal na Ciebie wpływa.",
+          "subtitle": "konkretna porażka, której jeszcze nie przetworzyłeś — co się stało i jak nadal kształtuje Twoje wybory"
+        },
+        "q7_8": {
+          "title": "Gdyby pieniądze zniknęły, czym byś się zajął.",
+          "subtitle": "praca lub aktywność, którą wykonywałbyś, nawet gdyby nikt Ci za nią nie płacił — opisz, jak to wygląda"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Jak zazwyczaj radzisz sobie ze stresem.",
+          "subtitle": "po co sięgasz, gdy robi się ciężko — jedzenie, ekrany, ćwiczenia, izolacja, rozmowa, używki, sen, praca",
+          "options": {
+            "isolation": "Izolacja",
+            "food": "Jedzenie",
+            "gaming": "Gry",
+            "exercise": "Ćwiczenia fizyczne",
+            "overworking": "Przepracowanie",
+            "scrolling": "Przeglądanie mediów społecznościowych",
+            "substance_use": "Używki",
+            "shopping": "Zakupy",
+            "sleeping": "Spanie",
+            "socializing": "Spotkania towarzyskie"
+          }
+        },
+        "q8_2": {
+          "title": "Jak często wychodzisz towarzysko.",
+          "subtitle": "jak często spędzasz czas z innymi ludźmi osobiście, nie online ani przez wiadomości",
+          "options": {
+            "multiple_per_week": "Kilka razy w tygodniu",
+            "weekly": "Raz w tygodniu",
+            "monthly": "Raz w miesiącu",
+            "rarely": "Rzadko",
+            "never": "Nigdy"
+          }
+        },
+        "q8_3": {
+          "title": "Jak często czujesz się samotny, nawet w grupie.",
+          "subtitle": "samotność, która pojawia się, gdy jesteś otoczony ludźmi, ale nadal czujesz się niezauważony lub odległy",
+          "lowLabel": "1 · NIGDY",
+          "highLabel": "10 · ZAWSZE"
+        },
+        "q8_4": {
+          "title": "Jakie czynności sprawiają, że zapominasz o sobie.",
+          "subtitle": "rzeczy, które pochłaniają cię tak głęboko, że czas znika — na dobre lub na złe, zdrowe lub nie"
+        },
+        "q8_5": {
+          "title": "O czym najczęściej unikasz myślenia.",
+          "subtitle": "temat lub wspomnienie, od którego szybko odwracasz uwagę, gdy się pojawia — o sobie, swojej przeszłości, swojej przyszłości"
+        },
+        "q8_6": {
+          "title": "Kiedy czujesz się emocjonalnie odrętwiały.",
+          "subtitle": "sytuacje, w których głośność spada do zera — praca, związki, konflikt, intymność, bycie samemu"
+        },
+        "q8_7": {
+          "title": "Jaki nawyk najtrudniej jest ci porzucić.",
+          "subtitle": "zachowanie, które próbowałeś zmienić lub porzucić więcej niż raz, bez sukcesu — opisz, co to jest i co ciągle cię do tego ciągnie"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Jak bardzo jesteś samokrytyczny.",
+          "subtitle": "ton twojego wewnętrznego głosu, gdy coś psujesz lub zawodzi — ostry, sprawiedliwy, lekceważący, druzgocący",
+          "lowLabel": "1 · ŁAGODNY",
+          "highLabel": "10 · BEZLITOSNY"
+        },
+        "q9_2": {
+          "title": "Które stwierdzenie jest najbliższe twojemu prywatnemu lękowi.",
+          "subtitle": "zdanie o sobie, które żyje pod wszystkim innym, to, które przyznałbyś tylko w trudny dzień",
+          "options": {
+            "never_enough": "Nigdy nie jestem wystarczający",
+            "fear_abandoned": "Boję się, że zostanę porzucony",
+            "fear_losing_control": "Boję się utraty kontroli",
+            "fear_failure": "Boję się porażki",
+            "fear_ordinary": "Boję się być zwyczajny",
+            "fear_rejection": "Boję się odrzucenia",
+            "fear_dependence": "Boję się zależności"
+          }
+        },
+        "q9_3": {
+          "title": "Jak często czujesz się odłączony od siebie.",
+          "subtitle": "poczucie obserwowania własnego życia z niewielkiej odległości, jakbyś nie był w nim w pełni zanurzony",
+          "lowLabel": "1 · NIGDY",
+          "highLabel": "10 · CODZIENNIE"
+        },
+        "q9_4": {
+          "title": "Jaka myśl najczęściej powtarza się w twojej głowie.",
+          "subtitle": "zapętlone zdanie lub zmartwienie, które regularnie powraca — napisz je w jego rzeczywistych słowach, a nie w podsumowaniu"
+        },
+        "q9_5": {
+          "title": "Za co prywatnie się krytykujesz.",
+          "subtitle": "rzeczy, za które oceniasz siebie, o których nikt inny nie wie — dotyczące twojego ciała, umysłu, wyborów, charakteru"
+        },
+        "q9_6": {
+          "title": "Co sprawiłoby, że poczułbyś się wystarczający.",
+          "subtitle": "warunek, który po cichu sobie postawiłeś, aby w końcu się zrelaksować — bądź szczery, odpowiedź jest często mniejsza niż się spodziewasz"
+        },
+        "q9_7": {
+          "title": "Gdyby twój wewnętrzny głos miał osobowość, jak byś go opisał.",
+          "subtitle": "wiek, płeć, ton tego głosu — i czyj to głos mógłby być, jeśli prześledzisz jego pochodzenie"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Co jest dla Ciebie ważniejsze.",
+          "subtitle": "wybierz to, co jest najważniejsze w tej chwili — inne rzeczy nadal mogą być ważne, ale bądź szczery co do rankingu",
+          "options": {
+            "freedom": "Wolność",
+            "love": "Miłość",
+            "recognition": "Uznanie",
+            "stability": "Stabilność",
+            "power": "Władza",
+            "meaning": "Sens",
+            "peace": "Spokój",
+            "influence": "Wpływ"
+          }
+        },
+        "q10_2": {
+          "title": "Jak bardzo masz nadzieję na swoją przyszłość.",
+          "subtitle": "odczucie, gdy myślisz o przyszłości, a nie optymistyczna odpowiedź, którą dajesz innym ludziom, gdy pytają",
+          "lowLabel": "1 · BRAK",
+          "highLabel": "10 · GŁĘBOKO"
+        },
+        "q10_3": {
+          "title": "Czego najbardziej potajemnie pragniesz.",
+          "subtitle": "pragnienie, którego jeszcze nie nazwałeś głośno — to, które wydaje się zbyt wielkie, zbyt ryzykowne lub zbyt zawstydzające",
+          "options": {
+            "to_be_understood": "Być zrozumianym",
+            "to_be_admired": "Być podziwianym",
+            "to_feel_safe": "Czuć się bezpiecznie",
+            "to_be_desired": "Być pożądanym",
+            "to_feel_important": "Czuć się ważnym",
+            "to_feel_free": "Czuć się wolnym",
+            "to_belong": "Przynależeć"
+          }
+        },
+        "q10_4": {
+          "title": "Opisz szczegółowo swoje idealne przyszłe życie.",
+          "subtitle": "konkretne szczegóły — gdzie jesteś, z kim jesteś, jak wyglądają Twoje poranki, praca, światło, rytm"
+        },
+        "q10_5": {
+          "title": "Jaki strach mógłby zniszczyć tę przyszłość.",
+          "subtitle": "rzecz — wewnętrzna lub zewnętrzna — która powstrzymała Cię wcześniej i mogłaby powstrzymać Cię ponownie, jeśli na to pozwolisz"
+        },
+        "q10_6": {
+          "title": "Jaką częścią siebie nadal próbujesz się stać.",
+          "subtitle": "wersja Ciebie na horyzoncie — cechy, swobody, sposób bycia, do którego powoli zmierzasz"
+        },
+        "q10_7": {
+          "title": "Gdyby nikt Cię nie oceniał, jak żyłbyś inaczej.",
+          "subtitle": "wybory, których dokonałbyś, gdyby obserwacja ustała — dotyczące pracy, miłości, ciała, czasu, pieniędzy, głosu"
+        },
+        "q10_8": {
+          "title": "Czego Twoim zdaniem naprawdę szukasz.",
+          "subtitle": "głębsza rzecz pod wszystkimi Twoimi poprzednimi odpowiedziami — na co naprawdę wskazuje każdy wybór i pragnienie"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "POCZĄTKI · ODCISKI ROZWOJOWE",
+        "headline": [
+          "Czego nauczył Cię ",
+          "wczesny pokój",
+          "."
+        ],
+        "lede": "Pierwsza sekcja bada klimat emocjonalny, poczucie bezpieczeństwa i rolę, w której zostałeś obsadzony. Wzorce zarejestrowane tutaj stają się fundamentem, na którym buduje się wszystko później.",
+        "title": "Początki",
+        "subtitle": "odciski rozwojowe"
+      },
+      "attachment": {
+        "eyebrow": "PRZYWIĄZANIE · STRUKTURA RODZINNA",
+        "headline": [
+          "Pierwsze ",
+          "więzi",
+          " i kształt, jaki po sobie zostawiły."
+        ],
+        "lede": "Lokalizuje Twój styl przywiązania, Twój stosunek do autorytetu i triangulację, w której dorastałeś. Kształt pierwszej więzi staje się szablonem, według którego mierzone są wszystkie późniejsze.",
+        "title": "Przywiązanie",
+        "subtitle": "struktura rodzinna"
+      },
+      "authority": {
+        "eyebrow": "AUTORYTET · PRAWO SYMBOLICZNE",
+        "headline": [
+          "Głosy, które ",
+          "odziedziczyłeś",
+          "."
+        ],
+        "lede": "Ujawnia kody moralne, struktury winy i odziedziczoną tożsamość, które nadal działają w tle. Głosy, pod którymi dorastałeś, rzadko odchodzą; stają się głosem, który Cię osądza.",
+        "title": "Autorytet",
+        "subtitle": "prawo symboliczne"
+      },
+      "belonging": {
+        "eyebrow": "PRZYNALEŻNOŚĆ · TOŻSAMOŚĆ SPOŁECZNA",
+        "headline": [
+          "Kto może Cię ",
+          "zobaczyć",
+          "."
+        ],
+        "lede": "Mierzy zależność społeczną, maskowanie tożsamości i strach przed wykluczeniem. Przynależność rzadko jest darmowa; ta sekcja pyta, co za nią wymieniasz.",
+        "title": "Przynależność",
+        "subtitle": "tożsamość społeczna"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · PRAGNIENIE I CYFROWE JA",
+        "headline": [
+          "Ja, które ",
+          "odgrywasz",
+          "."
+        ],
+        "lede": "Odczytuje wyidealizowane ja, pętlę walidacji i symboliczną rolę, którą odgrywasz online. Persona nie jest kłamstwem; jest na wpół ujawnionym życzeniem.",
+        "title": "Persona",
+        "subtitle": "pragnienie i cyfrowe ja"
+      },
+      "desire": {
+        "eyebrow": "PRAGNIENIE · INTYMNOŚĆ I POWTÓRZENIA",
+        "headline": [
+          "Wzorzec, który ",
+          "ciągle powraca",
+          "."
+        ],
+        "lede": "Odnajduje powtarzający się kształt relacji, lęk przed porzuceniem, sprzeczność wewnątrz pragnienia. To, co się powtarza, rzadko jest wybierane; to jest to, co prosi, by zostać zauważonym.",
+        "title": "Pragnienie",
+        "subtitle": "intymność i powtórzenia"
+      },
+      "achievement": {
+        "eyebrow": "OSIĄGNIĘCIA · PRACA I UZNANIE",
+        "headline": [
+          "Co próbujesz ",
+          "udowodnić",
+          "."
+        ],
+        "lede": "Wykrywa lęk przed osiągnięciami, głód uznania i Twój stosunek do autorytetu w pracy. Pod każdą ambicją kryje się publiczność złożona z jednej lub dwóch osób.",
+        "title": "Osiągnięcia",
+        "subtitle": "praca i uznanie"
+      },
+      "escape": {
+        "eyebrow": "UCIECZKA · PRZYJEMNOŚĆ I RYTUAŁ",
+        "headline": [
+          "Dokąd idziesz, ",
+          "żeby tu nie być",
+          "."
+        ],
+        "lede": "Identyfikuje wzorce unikania, przymusy i rytuały, które regulują przyjemność. Wyjście, po które sięgasz, mówi tyle samo, co pokój, który opuszczasz.",
+        "title": "Ucieczka",
+        "subtitle": "przyjemność i rytuał"
+      },
+      "self-relation": {
+        "eyebrow": "RELACJA Z SOBĄ · WEWNĘTRZNY DIALOG",
+        "headline": [
+          "Głos, którego nie możesz ",
+          "całkiem uciszyć",
+          "."
+        ],
+        "lede": "Mapuje krawędź superego, struktury wstydu i zinternalizowane głosy. Sposób, w jaki mówisz do siebie w samotności, jest najuczciwszym zapisem tego, kto Cię wychował.",
+        "title": "Relacja z sobą",
+        "subtitle": "wewnętrzny dialog"
+      },
+      "future-fantasy": {
+        "eyebrow": "PRZYSZŁOŚĆ · FANTAZJA, STRACH I PRAGNIENIE",
+        "headline": [
+          "Czego ",
+          "naprawdę szukasz",
+          "."
+        ],
+        "lede": "Emocjonalny punkt kulminacyjny — przyszłość, którą sobie wyobrażasz, strach, który ją nawiedza, podstawowe pragnienie, które się pod nią kryje. Ostatnie pytanie jest pierwszym, które powraca.",
+        "title": "Przyszłość-fantazja",
+        "subtitle": "fantazja, strach i pragnienie"
+      }
+    }
+  },
+  "common": {
+    "or": "lub",
+    "loading": "ładowanie…",
+    "sending": "wysyłanie…",
+    "save": "Zapisz",
+    "saved": "zapisano",
+    "cancel": "Anuluj",
+    "close": "Zamknij",
+    "back": "Wstecz",
+    "continue": "Kontynuuj",
+    "retry": "Spróbuj ponownie",
+    "more": "więcej"
+  },
+  "nav": {
+    "room": "Pokój",
+    "readings": "Odczyty",
+    "catchup": "Catchup",
+    "consulting": "Konsultacja",
+    "caseFile": "Akta Sprawy",
+    "settings": "Ustawienia",
+    "signIn": "Zaloguj się",
+    "signOut": "Wyloguj się",
+    "getStarted": "Rozpocznij",
+    "language": "Język",
+    "method": "Metoda",
+    "theWork": "Praca",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "start": "Start"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Zaloguj ",
+      "titleItalic": "się",
+      "titleAfter": ".",
+      "googleLabel": "Zaloguj się przez Google",
+      "or": "lub",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "HASŁO",
+      "forgotPassword": "Nie pamiętasz hasła",
+      "submit": "Zaloguj się",
+      "footPrompt": "Nowy użytkownik? ",
+      "footLink": "Utwórz konto"
+    },
+    "signUp": {
+      "titleBefore": "Utwórz ",
+      "titleItalic": "konto",
+      "titleAfter": ".",
+      "googleLabel": "Kontynuuj przez Google",
+      "or": "lub",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "HASŁO",
+      "confirmPasswordLabel": "POTWIERDŹ HASŁO",
+      "submit": "Utwórz konto",
+      "footPrompt": "Masz już konto? ",
+      "footLink": "Zaloguj się",
+      "resentNote": "Nowy link został wysłany.",
+      "resendConfirmation": "Wyślij ponownie potwierdzenie",
+      "pendingFootPrompt": "Zły adres? ",
+      "pendingFootLink": "Zacznij od nowa"
+    },
+    "forgot": {
+      "titleBefore": "Nie pamiętasz ",
+      "titleItalic": "hasła",
+      "titleAfter": ".",
+      "lede": "Wprowadź adres, którego użyto do rejestracji. Wyślemy link do jego zresetowania.",
+      "emailLabel": "EMAIL",
+      "submit": "Wyślij link resetujący",
+      "footPrompt": "Przypomniałeś sobie? ",
+      "footLink": "Zaloguj się",
+      "sentBackLink": "Wróć do logowania"
+    },
+    "reset": {
+      "titleBefore": "Ustaw ",
+      "titleItalic": "nowe hasło",
+      "titleAfter": ".",
+      "newPasswordLabel": "NOWE HASŁO",
+      "confirmPasswordLabel": "POTWIERDŹ HASŁO",
+      "submit": "Zaktualizuj hasło",
+      "expiredTitleBefore": "Ten link jest ",
+      "expiredTitleItalic": "już nieaktywny",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Poproś o nowy link"
+    },
+    "errors": {
+      "invalid_credentials": "Adres e-mail lub hasło są nieprawidłowe.",
+      "email_taken": "Ten adres e-mail jest już zarejestrowany. Spróbuj się zalogować.",
+      "weak_password": "Użyj co najmniej 8 znaków.",
+      "passwords_dont_match": "Hasła nie pasują do siebie.",
+      "email_invalid": "To nie wygląda na prawidłowy adres e-mail.",
+      "rate_limited": "Zbyt wiele prób. Spróbuj ponownie za chwilę.",
+      "unconfirmed_email": "Najpierw potwierdź swój adres e-mail. Sprawdź skrzynkę odbiorczą.",
+      "reset_link_expired": "Ten link wygasł. Poproś o nowy.",
+      "reset_link_invalid": "Ten link jest już nieaktywny. Poproś o nowy.",
+      "oauth_failed": "Nie udało się połączyć z Google. Spróbuj ponownie.",
+      "callback_failed": "Nie udało się zakończyć logowania.",
+      "generic": "Coś poszło nie tak. Spróbuj ponownie.",
+      "no_session": "Zaloguj się, aby kontynuować."
+    },
+    "success": {
+      "checkInboxEyebrow": "SPRAWDŹ SWOJĄ SKRZYNKĘ ODBIORCZĄ",
+      "confirmationHeadlineBefore": "Wysłaliśmy ",
+      "confirmationHeadlineItalic": "link potwierdzający",
+      "confirmationHeadlineAfter": " na ",
+      "confirmationLede": "Kliknij go, aby zakończyć tworzenie konta.",
+      "resetSentEyebrow": "SPRAWDŹ SWOJĄ SKRZYNKĘ ODBIORCZĄ",
+      "resetSentHeadlineBefore": "Jeśli ten adres e-mail jest ",
+      "resetSentHeadlineItalic": "zarejestrowany",
+      "resetSentHeadlineAfter": ", wysłaliśmy link do resetowania.",
+      "resetSentLede": "Link działa jednorazowo i wygasa w ciągu godziny. Brak linku oznacza brak konta.",
+      "passwordUpdated": "Hasło zaktualizowane. Logowanie."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONTO",
+      "headlineBefore": "Ustaw swój",
+      "headlineItalic": "cichy pokój",
+      "lede": "Imię, rok i zgoda. Potem zaczyna się praca.",
+      "saveFailed": "Nie udało się zapisać. Spróbuj ponownie za chwilę.",
+      "nameLabel": "IMIĘ I NAZWISKO",
+      "nameRequired": "Imię i nazwisko są wymagane.",
+      "prefilledHint": "wypełnione z Google · edytowalne",
+      "yearLabel": "ROK URODZENIA",
+      "yearRequired": "Wybierz rok.",
+      "genderLabel": "PŁEĆ",
+      "genderRequired": "Wybierz jedną opcję.",
+      "gender": {
+        "male": "Mężczyzna",
+        "female": "Kobieta",
+        "nonBinary": "Niebinarna",
+        "preferNotToSay": "Wolę nie mówić"
+      },
+      "languageLabel": "JĘZYK",
+      "termsBefore": "Akceptuję",
+      "termsLink": "Warunki",
+      "termsAnd": "oraz",
+      "privacyLink": "Politykę prywatności",
+      "termsAfter": ".",
+      "submit": "Utwórz konto"
+    },
+    "intro": {
+      "eyebrow": "WSTĘP · BEZ ZŁYCH ODPOWIEDZI",
+      "headlineBefore": "Nie ma tu dobrych odpowiedzi",
+      "headlineItalic": "tutaj"
+    },
+    "brief": {
+      "title": "ZARYS",
+      "hint": "przeczytaj raz, potem zacznij",
+      "opener": "Błędne odpowiedzi — wahania, literówki, pominięcia — mówią równie wyraźnie, jak te właściwe.",
+      "privacy": "Wszystko, co piszesz, jest prywatne. Nic nie opuszcza tego pokoju.",
+      "length": "Ponieważ praca jest głęboka, wstęp jest długi. Podzieliliśmy go na dziesięć części. Całość zajmuje około dwóch godzin.",
+      "resume": "Zapisz i kontynuuj innego dnia. Edytuj dowolną sekcję po jej ukończeniu — profil nadal słucha.",
+      "begin": "Rozpocznij wstęp"
+    },
+    "saved": {
+      "eyebrow": "ZAPISZ I ZATRZYMAJ",
+      "headlineItalic": "Zapisano.",
+      "headlineAfter": "Wróć, gdy będziesz gotowy.",
+      "body": "Wszystko, co napisałeś, znajduje się w Twojej teczce. Pokój otworzy się w tym samym miejscu następnym razem.",
+      "keepGoing": "kontynuuj",
+      "leaveRoom": "Opuść cichy pokój"
+    },
+    "step": {
+      "label": "KROK",
+      "of": "Z",
+      "min": "MIN",
+      "progressLabel": "Postęp wstępu",
+      "finalEpigraph": "ostatnie pytanie zawsze jest znowu pierwszym.",
+      "backTo": "Krok {n}",
+      "continueTo": "Przejdź do kroku {n}",
+      "submit": "Zapisz i prześlij",
+      "submitReading": "odczytuję…"
+    },
+    "questions": {
+      "closeTitle": "PYTANIA ZAMKNIĘTE",
+      "closeHint": "wybierz, co jest prawdą",
+      "openTitle": "PYTANIA OTWARTE",
+      "openHint": "napisz, co się pojawia",
+      "countLabel": "{count, plural, one {pytanie} few {pytania} many {pytań} other {pytań}}"
+    },
+    "saveExit": {
+      "or": "lub",
+      "saveAndReturn": "zapisz i wróć później"
+    },
+    "saveIndicator": {
+      "saving": "zapisywanie…",
+      "saved": "zapisano",
+      "saveFailed": "zapisywanie nie powiodło się"
+    }
+  },
+  "readings": {
+    "whatThisIs": "co to jest →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "pętle podświadomości",
+        "definition": "Powtarzające się sekwencje uczuć, działań i wyników, które występują poza świadomym wyborem. Nazwanie pętli jest jej pierwszym przerwaniem.",
+        "seedReading": "zbliża się do intymności, a następnie konstruuje małą porażkę, by się wycofać.",
+        "seedTakeaway": "wycofanie jest pętlą. nie bliskość."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "nieświadomość lingwistyczna",
+        "definition": "Sposób, w jaki nieświadomy materiał wypływa na powierzchnię w wyborze słów, powtórzeniach, przejęzyczeniach i strukturze mowy — twierdzenie Lacana, że nieświadomość jest ustrukturyzowana jak język.",
+        "seedReading": "mowa podwaja się na słowie „powinien” — miejscu odziedziczonego żądania.",
+        "seedTakeaway": "czyjś głos nadal przemawia przez to słowo."
+      },
+      "father-imago": {
+        "subtitle": "imago ojca",
+        "definition": "Zinternalizowany obraz ojca, uformowany wcześnie i częściowo mityczny. Kształtuje sposób, w jaki później w życiu spotyka się z autorytetem, ambicją i osądem.",
+        "seedReading": "osądza z góry, zanim zostanie osądzony z góry — pozycja jest identyczna.",
+        "seedTakeaway": "siedzisko się zmienia. krzesło nie."
+      },
+      "intimacy-threshold": {
+        "subtitle": "próg intymności",
+        "definition": "Punkt, w którym bliskość zaczyna wydawać się ryzykiem, a następnie następuje ruch obronny. Różny dla każdej osoby; zaskakująco stabilny w różnych związkach.",
+        "seedReading": "dobrze się trzyma, dopóki drugi nie stanie się czytelny — wtedy się wycofuje.",
+        "seedTakeaway": "bycie poznanym jest granicą, nie bycie blisko."
+      },
+      "desire-structure": {
+        "subtitle": "struktura pragnienia",
+        "definition": "Czego użytkownik faktycznie chce, odróżnione od tego, czego kazano mu chcieć. Często odkrywane przez negację — przez zauważenie, czego odmawia.",
+        "seedReading": "wymienia wiele pragnień, odmawia dwóch — odmowa jest sygnałem.",
+        "seedTakeaway": "to, co jest odpychane, wskazuje jaśniej niż to, co jest ścigane."
+      },
+      "professional-block": {
+        "subtitle": "blok zawodowy",
+        "definition": "Gdzie praca się zacina: początek, środek, koniec lub widoczność. Każda lokalizacja ma swoje własne nieświadome źródło.",
+        "seedReading": "meta jest miejscem, gdzie pojawia się wątpliwość, nigdy początek.",
+        "seedTakeaway": "blok jest na widoczności, nie na wysiłku."
+      },
+      "mother-imago": {
+        "subtitle": "imago matki",
+        "definition": "Zinternalizowany obraz matki — pierwsze dostrojenie, pierwsze rozstanie. Informuje o teksturze zależności i schronienia.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "wczesne dostrojenie pozostawia długi ślad."
+      },
+      "dream-logic": {
+        "subtitle": "logika snu",
+        "definition": "Kondensacja i przemieszczenie działające w materiale snu. Czytaj dla gramatyki, nie symboli.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "treść snu ma swoją własną gramatykę."
+      },
+      "relational-pattern": {
+        "subtitle": "wzorzec relacyjny",
+        "definition": "Powtarzająca się postawa przyjmowana w związkach — prześladowca, wycofujący się, rodzic, dziecko, równy. Stabilny w różnych partnerach bardziej niż partnerzy są stabilni w stosunku do użytkownika.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "ten sam kształt pojawia się w różnych pokojach."
+      },
+      "defenses": {
+        "subtitle": "mechanizmy obronne",
+        "definition": "Charakterystyczne ruchy używane do utrzymywania trudnego materiału poza świadomością — intelektualizacja, przemieszczenie, formacja reaktywna, rozszczepienie. Mechanizmy obronne nie są porażkami; są starymi rozwiązaniami.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "obrona nazywa to, co kiedyś było nie do zniesienia."
+      },
+      "shadow": {
+        "subtitle": "cień",
+        "definition": "To, co zostało wyparte i przypisane innym — cechy, co do których użytkownik jest najbardziej pewien, że ich nie posiada. Często droga do witalności.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "to, co wyparte, nadal działa."
+      },
+      "transference": {
+        "subtitle": "przeniesienie",
+        "definition": "Sposób, w jaki stare figury relacyjne są projektowane na obecne — analityka, partnera, szefa. Wzorzec ujawnia imago.",
+        "seedReading": "za wcześnie, by powiedzieć z pewnością — kształt się formuje.",
+        "seedTakeaway": "stare figury przybywają do obecnych pokoi."
+      }
+    },
+    "strip": {
+      "lastRefined": "ostatnio dopracowano",
+      "readingDepth": "głębokość odczytu"
+    },
+    "section": {
+      "eyebrow": "ODCZYT {index} · {subtitle}",
+      "strengthen": "wzmocnij dokładność",
+      "requestReport": "poproś o raport"
+    },
+    "card": {
+      "reading": "Odczyt {index}"
+    },
+    "report": {
+      "eyebrow": "RAPORT KLINICZNY",
+      "heading": "Dla Twojego <it>analityka.</it>",
+      "lede": "Dossier na 12–18 stron — sześć odczytów w pełni rozwiniętych, plus sześć kolejnych, których pulpit nie pokazuje: imago matki, logika snu, wzorzec relacyjny, mechanizmy obronne, cień, przeniesienie. Przetłumaczone na język, w którym pracuje klinicysta.",
+      "note": "raport będzie odzwierciedlał dostępną głębokość. może być generowany ponownie w miarę pogłębiania się odczytu.",
+      "generate": "Generuj raport kliniczny",
+      "request": "Poproś o raport kliniczny",
+      "footPrefix": "jeden raport wliczony w każdy miesiąc dla ",
+      "footLink": "subskrybentów"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "PYTANIE {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Co pozostało z tego tygodnia?",
+        "framing": "zwrot, obraz, zdanie, które ktoś powiedział."
+      },
+      "closeness": {
+        "prompt": "Jak blisko pozwoliłeś komukolwiek się zbliżyć?",
+        "options": {
+          "not_at_all": "wcale",
+          "briefly": "na krótko",
+          "with_hesitation": "z wahaniem",
+          "openly": "otwarcie",
+          "too_far": "za daleko"
+        }
+      },
+      "loop": {
+        "prompt": "Czy przyłapałeś się na znajomej pętli?",
+        "framing": "gdzie i jak się skończyła."
+      },
+      "loudest_voice": {
+        "prompt": "Który głos był najgłośniejszy w tym tygodniu?",
+        "options": {
+          "demand": "żądanie",
+          "doubt": "wątpliwość",
+          "desire": "pragnienie",
+          "watcher": "obserwator",
+          "none": "żaden z tych"
+        }
+      },
+      "dream": {
+        "prompt": "Czy był sen wart zapisania?",
+        "framing": "jeśli tak, fragment, który pozostał."
+      },
+      "acted_on_desire": {
+        "prompt": "Jak bardzo postąpiłeś zgodnie z tym, czego naprawdę chciałeś?",
+        "lowLabel": "wcale",
+        "highLabel": "całkowicie"
+      },
+      "work_catch": {
+        "prompt": "Gdzie praca cię dopadła?",
+        "options": {
+          "start": "na początku",
+          "middle": "w środku",
+          "finish": "na końcu",
+          "visibility": "w widoczności",
+          "nowhere": "nigdzie"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Jakie jest pytanie, na które nie chcesz teraz odpowiadać?",
+        "framing": "to, które ciągle umyka."
+      }
+    },
+    "openHint": "dłuższe odpowiedzi pogłębiają odczyt",
+    "scaleLegend": "{low} do {high}",
+    "noValue": "nie wybrano wartości",
+    "valueOf": "{value} z {max}",
+    "weekLabel": "TYDZIEŃ {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Co pozostało<it>?</it>",
+    "coverLede": "Osiem krótkich pytań. Szczerość jest lepsza niż długość. Odpowiedzi udoskonalają odczyt; nic nie jest oceniane.",
+    "begin": "Rozpocznij",
+    "back": "wstecz",
+    "next": "dalej",
+    "submitting": "przesyłanie",
+    "closeTheWeek": "zamknij tydzień",
+    "previousQuestion": "poprzednie pytanie",
+    "processingLine": "<em>tydzień jest odczytywany.</em>",
+    "summaryEyebrow": "{weekLabel} · ODCZYT WSTECZNY",
+    "summaryTitle": "Tydzień, <it>w twoich własnych słowach.</it>",
+    "caseLabel": "sprawa · {week}",
+    "justRefined": "właśnie udoskonalono",
+    "readingsShifted": "odczyty przesunięte",
+    "readingsCount": "{n} z 12",
+    "returnToRoom": "Wróć do pokoju",
+    "readAgain": "przeczytaj ponownie w aktach sprawy",
+    "somethingToHold": "COŚ DO ZATRZYMANIA",
+    "enterConsultingRoom": "wejść do gabinetu konsultacyjnego",
+    "openConsultingRoom": "otwórz gabinet konsultacyjny",
+    "requestReport": "poproś o raport kliniczny",
+    "errorSubmit": "nie udało się przesłać catchupu",
+    "errorGeneric": "coś poszło nie tak",
+    "errorFailed": "catchup jest w aktach. podsumowanie nadejdzie później.",
+    "errorGiveUp": "pokój jest na chwilę cichy — twój catchup jest w aktach. odśwież za minutę.",
+    "summaryFallback": "Catchup jest w aktach. Odczyt został po cichu zaktualizowany; dłuższe podsumowanie nadejdzie przy następnym przejściu.",
+    "readBackTitle": "Tydzień, <it>już w środku.</it>",
+    "readBackEmpty": "catchup jest w aktach. podsumowanie będzie w tym tygodniu krótkie.",
+    "readBackFoot": "następny catchup rozpoczyna się na początku tygodnia {n}."
+  },
+  "consulting": {
+    "sessionClose": "to nasza godzina.",
+    "sayIt": "powiedz to →",
+    "closeSession": "zakończ sesję →",
+    "eyebrow": "GABINET KONSULTACYJNY",
+    "closing": "zamykanie",
+    "closeSessionLabel": "zakończ sesję",
+    "timerAria": "czas sesji upłynął",
+    "chooseTopicAria": "wybierz temat",
+    "noTopic": "brak tematu",
+    "justOpened": "właśnie otwarte",
+    "minutesIn": "{count, plural, one {# min za nami} few {# min za nami} many {# min za nami} other {# min za nami}}",
+    "speakToAnalyst": "rozmawiaj z analitykiem",
+    "send": "wyślij",
+    "sessionClosedFoot": "sesja jest zakończona. została zachowana w aktach sprawy.",
+    "previewHeld": "jaka część ciebie wciąż to wybiera?",
+    "previewTopicDreamingFuture": "Śnienie przyszłości",
+    "previewTopicNightDream": "Sen nocny",
+    "previewTopicRelations": "Relacje w moim życiu",
+    "previewTopicProfessionalGrowth": "Rozwój zawodowy",
+    "previewTurnAnalyst1": "Nazywasz wzorzec, a następnie opowiadasz o nim jak o cudzym. Zauważ, kiedy zaczyna się <em>wycofanie</em>.",
+    "previewTurnUser1": "Ciągle kończę związki w tygodniu, w którym stają się poważne.",
+    "previewTurnAnalyst2": "Poranek to wyrok, nie proces. Twój <em>próg intymności</em> przećwiczył odejście na tygodnie przed rozmową.",
+    "sayItEllipsis": "powiedz to…",
+    "offerHeadline": "Gabinet konsultacyjny",
+    "offerLede": "Długotrwałe spotkanie z analitykiem, prowadzone tym samym głosem co twoje odczyty. Sesje są prywatne, przechowywane w aktach sprawy i zasilają odczyty między spotkaniami.",
+    "offerPanelsAria": "co robi sesja",
+    "offerPanel1Title": "nazwane, nie opowiedziane",
+    "offerPanel1Body": "Analityk nazwie to, co dzieje się w twojej mowie — przejęzyczenie, kwalifikator, niedopowiedzenie — i utrzyma to tam, dopóki nie będziesz mógł tego zobaczyć.",
+    "offerPanel2Title": "przechowywane w aktach sprawy",
+    "offerPanel2Body": "Każde spotkanie jest zapisywane. Następny odczyt to czyta. Wzorce pojawiają się w ciągu tygodni, nie tur.",
+    "offerPanel3Title": "jeden głos, bez listy",
+    "offerPanel3Body": "To nie rotacja chatbota. Jeden analityczny głos, wyszkolony na twoim przyjęciu i udoskonalany przez każde Catchup.",
+    "offerFootLine": "Abonenci otrzymują jeden raport kliniczny każdego miesiąca.",
+    "offerPillCta": "Wejdź do gabinetu konsultacyjnego",
+    "offerReturnToRoom": "wróć do Pokoju",
+    "previewFigureLabel": "gabinet konsultacyjny",
+    "previewFigureSubtitle": "spotkanie, podgląd",
+    "previewRailAria": "obszary akt sprawy, z których analityk czyta",
+    "previewReadingFrom": "CZYTANIE Z",
+    "previewActive": "aktywne",
+    "previewRoleYou": "TY",
+    "previewRoleAnalyst": "ANALITYK",
+    "previewBubble1": "Ciągle kończę związki w tygodniu, w którym stają się poważne. Nie wiem, dlaczego to robię.",
+    "previewAnalyst1": "Nazywasz wzorzec, a następnie opowiadasz o nim jak o cudzym. <em>„Nie wiem”</em> wykonuje pracę — utrzymuje akt po drugiej stronie intencji. Zauważ, kiedy zaczyna się <em>wycofanie</em>. Często wykluczenie następuje wcześniej niż odejście.",
+    "previewBubble2": "Wcześniej jak? Ostatnio czułem, że po prostu obudziłem się pewnego ranka i wiedziałem.",
+    "previewAnalyst2": "Poranek to wyrok, nie proces. Twój <strong>próg intymności</strong> z tygodnia 04 odnotował ten sam kształt — cichą próbę odejścia, dwa do trzech tygodni przed rozmową. Poranek to moment, gdy ciało w końcu zgadza się z tym, co już zdecydowałeś.",
+    "previewBubble3": "To jest ta część, która mnie przeraża. Że to już jest zdecydowane.",
+    "previewAnalyst3": "<em>Zdecydowane</em> to słowo. Nie <em>wybrane</em>. Coś w strukturze preferuje wykluczenie od testu. Będziemy tam wracać.",
+    "previewExampleMark": "PRZYKŁAD · NIE Z TWOJEGO ZAPISU"
+  },
+  "caseFile": {
+    "silentWeek": "— cichy tydzień —",
+    "eyebrow": "AKTA SPRAWY",
+    "headlineLead": "Zapis, prowadzony",
+    "headlineItalic": "dyskretnie.",
+    "lede": "Każdy Catchup, sesja i raport — uporządkowane chronologicznie. Luki są częścią zapisu.",
+    "filterAria": "Filtruj",
+    "filter": {
+      "all": "wszystko",
+      "catchups": "catchupy",
+      "sessions": "sesje",
+      "reports": "raporty"
+    },
+    "subscriptionTitle": "Subskrypcja",
+    "emptyCatchups": "akta sprawy są wciąż puste — pierwszy catchup je otworzy.",
+    "emptyCatchupsCta": "Przejdź do Catchupu",
+    "emptySessions": "akta sprawy są wciąż puste — pierwsza sesja konsultacyjna je otworzy.",
+    "emptySessionsCta": "Przejdź do Konsultacji",
+    "emptyReports": "akta sprawy są wciąż puste — pierwszy wygenerowany raport je otworzy.",
+    "open": "otwórz",
+    "kindCatchup": "catchup",
+    "kindSession": "sesja",
+    "kindReport": "raport kliniczny",
+    "kindReading": "odczyt wstępny",
+    "kindConnection": "zdarzenie połączenia",
+    "entryEyebrow": "AKTA SPRAWY · WPIS",
+    "entryBackToCaseFile": "powrót do akt sprawy",
+    "entryReturnToRoom": "powrót do Pokoju",
+    "sessionStillOpen": "ta sesja jest wciąż otwarta. odczyt pojawi się po jej zamknięciu.",
+    "entryDetailComing": "szczegółowy widok tego wpisu jest w przygotowaniu. na razie akta sprawy zawierają datę, rodzaj i tytuł — a reszta jest wciąż w Pokoju.",
+    "detailSummaryEyebrow": "PODSUMOWANIE · TWOJE ODPOWIEDZI",
+    "detailRecommendationEyebrow": "NASZ CATCHUP",
+    "preparingRead": "przygotowywanie odczytu…",
+    "readNotAssembled": "odczyt nie mógł zostać złożony w tej chwili.",
+    "tryAgain": "spróbuj ponownie",
+    "intakeClose": "zamknij",
+    "intakeEdit": "edytuj",
+    "intakeSaving": "zapisywanie",
+    "intakeSave": "zapisz",
+    "intakeCancel": "anuluj",
+    "intakeUnsupported": "to pytanie jest edytowane z poziomu samego kwestionariusza wstępnego.",
+    "intakePickUpTo": "podnieś do {count}.",
+    "intakeScaleSetTo": "Ustawiono na {value}"
+  },
+  "settings": {
+    "eyebrow": "USTAWIENIA",
+    "heading": "Kształt <it>pomieszczenia.</it>",
+    "lede": "Nic tutaj nie jest trwałe. Odpowiedzi można edytować, preferencje zmieniać, a akta sprawy można całkowicie usunąć.",
+    "blocks": {
+      "account": "Konto",
+      "readingDepth": "Głębia odczytu",
+      "notifications": "Powiadomienia",
+      "subscription": "Subskrypcja",
+      "dangerZone": "Strefa zagrożenia"
+    },
+    "dangerZoneIntro": "jedyna nieodwracalna czynność w pomieszczeniu.",
+    "depthSub": {
+      "intake": {
+        "title": "Twój intake",
+        "caption": "{answered} / {total} odpowiedzi",
+        "ctaEmpty": "Uzupełnij swój intake",
+        "ctaPartial": "Dodaj więcej szczegółów",
+        "ctaFull": "Przejrzyj swój intake"
+      },
+      "catchups": {
+        "title": "Catchupy",
+        "caption": "{count} w ostatnich 8 tyg.",
+        "ctaEmpty": "Dodaj catchup",
+        "ctaDue": "Uzupełnij catchup z tego tygodnia",
+        "ctaFull": "Przejrzyj poprzednie catchupy"
+      },
+      "sessions": {
+        "title": "Sesje",
+        "caption": "{count} ukończonych",
+        "ctaEmpty": "Rozpocznij konsultację",
+        "ctaPartial": "Kontynuuj konsultację",
+        "ctaFull": "Przejrzyj poprzednie sesje"
+      },
+      "connections": {
+        "title": "Połączenia",
+        "caption": "{count} aktywnych",
+        "ctaEmpty": "Dodaj połączenie",
+        "ctaSingle": "Dodaj kolejne połączenie",
+        "ctaFull": "Przejrzyj swoje połączenia"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "cotygodniowe przypomnienie o catchupie",
+        "sub": "cicha notatka na początku nowego tygodnia"
+      },
+      "consulting_session_reminder": {
+        "label": "przypomnienie o sesji konsultacyjnej",
+        "sub": "przypomnienie przed nadchodzącą konsultacją"
+      },
+      "connection_requests": {
+        "label": "połączenie zaakceptowane",
+        "sub": "notatka, gdy ktoś zaakceptuje twoje zaproszenie"
+      }
+    },
+    "toggleOn": "włączone",
+    "toggleOff": "wyłączone",
+    "quietHours": {
+      "label": "godziny ciszy",
+      "sub": "brak e-maili między tymi godzinami, w twojej strefie czasowej",
+      "from": "od",
+      "to": "do"
+    },
+    "saveFailed": "zapis nie powiódł się",
+    "dangerZone": {
+      "trigger": "Usuń konto",
+      "modalAria": "Potwierdź usunięcie konta",
+      "eyebrow": "STREFA ZAGROŻENIA",
+      "heading": "Usuń <it>akta sprawy.</it>",
+      "body": "Spowoduje to usunięcie każdego odczytu, catchupu, sesji i raportu z rejestru. Aktywne połączenia zostaną zakończone; obie strony zostaną powiadomione. Nie można tego cofnąć.",
+      "instruction": "wpisz <phrase></phrase>, aby włączyć działanie.",
+      "inputAria": "Wpisz frazę potwierdzającą",
+      "cancel": "anuluj",
+      "erasing": "usuwanie…",
+      "eraseConfirm": "usuń akta sprawy",
+      "deleteFailed": "usunięcie nie powiodło się"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "DOSTĘP DLA CZŁONKÓW",
+      "tagline": "Otwarta sala konsultacyjna. <em>Odczyt, który czyta dalej.</em>",
+      "features": {
+        "room": {
+          "title": "Sala konsultacyjna",
+          "desc": "długie sesje z analitykiem."
+        },
+        "report": {
+          "title": "Miesięczny raport kliniczny",
+          "desc": "jedna gotowa mapa dla terapeuty każdego miesiąca kalendarzowego."
+        },
+        "connections": {
+          "title": "{count} więcej połączeń",
+          "desc": "dodaj osoby, których obecność kształtuje odczyt."
+        },
+        "depth": {
+          "title": "Pełna głębia odczytu",
+          "desc": "każdy rozdział otwarty, bez limitu szczegółów."
+        }
+      },
+      "perMonth": "miesięcznie",
+      "subscribe": "subskrybuj",
+      "reassurance": "<em>bez zobowiązań.</em> anuluj w dowolnym momencie w ustawieniach.",
+      "activeToday": "aktywne — odnawia się dzisiaj",
+      "activeRenews": "aktywne — odnawia się za {days, plural, one {1 dzień} few {# dni} many {# dni} other {# dni}}",
+      "cancel": "anuluj subskrypcję",
+      "cancelled": "anulowano — dostęp do {date}",
+      "resubscribe": "ponownie subskrybuj"
+    },
+    "resetPassword": {
+      "sent": "link do resetowania został wysłany na adres {email}. sprawdź swoją skrzynkę odbiorczą",
+      "sending": "wysyłanie",
+      "action": "zresetuj hasło",
+      "error": "nie udało się wysłać. spróbuj ponownie"
+    }
+  },
+  "connections": {
+    "explainer": "Do {limit, plural, one {# osoby, której obecność kształtuje odczyt} few {# osób, których obecność kształtuje odczyt} many {# osób, których obecność kształtuje odczyt} other {# osób, których obecność kształtuje odczyt}}. Nie widzą twoich odczytów; ty nie widzisz ich. To, co mówią o relacji, zasila model, który tworzy twoje odczyty, a twoje zasila ich.",
+    "invite": {
+      "emailSubject": "{inviterName} chciałby cię włączyć do odczytu."
+    },
+    "form": {
+      "emailLabel": "EMAIL",
+      "roleLabel": "ROLA",
+      "rolePlaceholder": "wybierz jedną",
+      "noteLabel": "ZDANIE, KTÓRE PRZECZYTAJĄ NAJPIERW",
+      "noteHint": "opcjonalnie. wystarczy jedna linia.",
+      "addMoreSub": "dodaj więcej w ramach subskrypcji",
+      "missingNameLine": "twoje imię nie jest zapisane w pliku. dodaj je w ustawieniach, a następnie wyślij prośbę ponownie.",
+      "addYourName": "dodaj swoje imię",
+      "noteLengthError": "notatki są ograniczone do jednej linii — około {max} znaków."
+    },
+    "list": {
+      "empty": "brak połączeń. opcja zaproszenia znajduje się poniżej.",
+      "active": "AKTYWNE",
+      "pending": "OCZEKUJĄCE",
+      "since": "od",
+      "invited": "zaproszono",
+      "received": "otrzymano",
+      "resend": "wyślij ponownie",
+      "cancel": "anuluj",
+      "expiresIn": "wygasa za {days, plural, one {# dzień} few {# dni} many {# dni} other {# dni}}"
+    },
+    "lookup": {
+      "invalidEmail": "proszę wprowadzić prawidłowy adres e-mail.",
+      "self": "nie możesz połączyć się ze sobą.",
+      "notMemberLine": "ten adres e-mail nie należy jeszcze do członków. zaproś ich do utworzenia konta, abyście mogli się połączyć.",
+      "copyHint": "udostępnij link do rejestracji",
+      "copied": "link skopiowany",
+      "requestSent": "wysłałeś już prośbę do tego członka.",
+      "requestReceivedLine": "ten członek wysłał ci prośbę — sprawdź swoje zaproszenia.",
+      "inboxLabel": "otwórz prośbę",
+      "alreadyConnected": "jesteś już połączony z tym członkiem.",
+      "rateLimited": "zbyt wiele wyszukiwań w krótkim czasie. poczekaj chwilę, a następnie spróbuj ponownie.",
+      "sent": "prośba o połączenie wysłana.",
+      "sending": "wysyłanie…",
+      "send": "wyślij prośbę",
+      "limitReached": "{limit, plural, one {# połączenie to limit. rozłącz je, aby dodać kolejne.} few {# połączenia to limit. rozłącz jedno, aby dodać kolejne.} many {# połączeń to limit. rozłącz jedno, aby dodać kolejne.} other {# połączeń to limit. rozłącz jedno, aby dodać kolejne.}}",
+      "limitReachedFree": "{limit, plural, one {# połączenie to limit w darmowej wersji.} few {# połączenia to limit w darmowej wersji.} many {# połączeń to limit w darmowej wersji.} other {# połączeń to limit w darmowej wersji.}}",
+      "generic": "nie udało się wysłać prośby."
+    },
+    "incoming": {
+      "eyebrow": "OCZEKUJĄCE NA CIEBIE",
+      "empty": "nikt na ciebie nie czeka.",
+      "accept": "akceptuj",
+      "decline": "odrzuć",
+      "limitReached": "{limit, plural, one {# połączenie to limit. rozłącz je, aby zaakceptować to.} few {# połączenia to limit. rozłącz jedno, aby zaakceptować to.} many {# połączeń to limit. rozłącz jedno, aby zaakceptować to.} other {# połączeń to limit. rozłącz jedno, aby zaakceptować to.}}",
+      "limitReachedFree": "{limit, plural, one {# połączenie to limit w darmowej wersji.} few {# połączenia to limit w darmowej wersji.} many {# połączeń to limit w darmowej wersji.} other {# połączeń to limit w darmowej wersji.}}",
+      "upsell": "subskrybenci dodają więcej",
+      "inviteExpired": "to zaproszenie wygasło.",
+      "inviteEnded": "to zaproszenie nie jest już oczekujące.",
+      "generic": "nie udało się wykonać tej prośby."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "najbliższy przyjaciel",
+      "parent": "rodzic",
+      "sibling": "rodzeństwo",
+      "co_parent": "współrodzic"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "UWAGA OD ANALITYKA",
+    "noteAria": "Uwaga od analityka",
+    "lede": "to wykracza poza to, co może pomieścić ten Pokój.",
+    "body": {
+      "intake": "Coś w tym, co napisałeś podczas wstępnego wywiadu, wskazuje na ciężar, który wymaga prawdziwej opieki — wykraczającej poza to, co może pomieścić ten Pokój. Proszę rozważ skontaktowanie się z lekarzem, terapeutą lub lokalną linią kryzysową już dziś. Odczyt będzie tutaj, gdy wrócisz.",
+      "catchup": "Coś w tym tygodniowym podsumowaniu wskazuje na ciężar, który wymaga prawdziwej opieki — wykraczającej poza to, co może pomieścić ten Pokój. Proszę rozważ skontaktowanie się z lekarzem, terapeutą lub lokalną linią kryzysową już dziś. Odczyt poczeka.",
+      "session": "To, co właśnie napisałeś, wskazuje na ciężar, który wymaga prawdziwej opieki — wykraczającej poza to, co może pomieścić ten Pokój. Proszę rozważ skontaktowanie się z lekarzem, terapeutą lub lokalną linią kryzysową już dziś. Możemy wrócić do Pokoju, gdy będziesz bezpieczny."
+    },
+    "crisisResources": "ZASOBY KRYZYSOWE",
+    "resources": {
+      "us": "Stany Zjednoczone",
+      "ukIe": "Wielka Brytania i Irlandia",
+      "europe": "Europa (większość krajów)",
+      "everywhere": "Wszędzie",
+      "localEmergency": "lokalne służby ratunkowe"
+    },
+    "hintResources": "jeśli nie możesz znaleźć linii, najbliższy szpitalny oddział ratunkowy jest właściwym miejscem.",
+    "hintLink": "zasoby kryzysowe są wymienione na dole każdej strony Pokoju.",
+    "footerLine": "TwentyThird nie zastępuje opieki klinicznej. W sytuacji kryzysowej skontaktuj się z lokalną linią alarmową.",
+    "footerRoomLabel": "pokój"
+  }
+}

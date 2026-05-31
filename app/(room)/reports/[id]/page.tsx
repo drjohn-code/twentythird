@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
@@ -49,30 +50,21 @@ export default async function ReportStatusPage({
     signedUrl = signed?.signedUrl ?? null;
   }
 
+  const t = await getTranslations("room");
+
   return (
     <section className="report-status">
-      <Eyebrow>CLINICAL REPORT</Eyebrow>
-      <p className="report-status-line">{lineFor(report.status)}</p>
+      <Eyebrow>{t("reports.status.eyebrow")}</Eyebrow>
+      <p className="report-status-line">
+        {t(`reports.status.line.${report.status}`)}
+      </p>
       {report.status === "ready" && signedUrl ? (
-        <RowLink href={signedUrl}>open the report</RowLink>
+        <RowLink href={signedUrl}>{t("reports.status.open")}</RowLink>
       ) : (
         <RowLink href="/readings" arrow="left">
-          back to the readings
+          {t("reports.status.back")}
         </RowLink>
       )}
     </section>
   );
-}
-
-function lineFor(status: ReportRow["status"]): string {
-  switch (status) {
-    case "queued":
-      return "your report is being prepared.";
-    case "generating":
-      return "the report is being written.";
-    case "ready":
-      return "the report is ready.";
-    case "failed":
-      return "the report did not complete. we'll try again shortly.";
-  }
 }

@@ -1,0 +1,2848 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSYCHODYNAMISCHE INTELLIGENTIE",
+        "titleLine1": "Geavanceerde",
+        "titleLine2Pre": "Psychodynamische",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "voor",
+        "titleLine3It": "Zelfontdekking",
+        "ctaPrimary": "Begin uw ontdekking",
+        "ctaGhostOr": "of",
+        "ctaGhostText": "lees de wetenschap",
+        "scroll": "scroll"
+      },
+      "philosophy": {
+        "eyebrow": "KERNFILOSOFIE",
+        "titlePre": "Oplossingen van 5 minuten",
+        "titleIt": "veranderen niemand",
+        "sub1": "Wij voeren een oorzaakanalyse uit. Door de fundamentele inzichten van Sigmund Freud te versmelten met Jacques Lacans doorbraken in linguïstiek, verlangen en identiteit.",
+        "sub2": "De meeste hulpmiddelen werken aan de oppervlakte. Wij werken waar het geschreven is — in de architectuur van taal, de versprekingen, de patronen die u nog niet benoemd heeft.",
+        "metaLineageLabel": "Afkomst",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Methode",
+        "metaMethodVal": "Structureel",
+        "metaFocusLabel": "Focus",
+        "metaFocusVal": "Het onbewuste"
+      },
+      "privacy": {
+        "eyebrow": "VERTROUWELIJKHEID",
+        "titlePre": "Gegevensprivacy is",
+        "titleIt": "de",
+        "titlePost": "prioriteit.",
+        "lede": "Vertrouwelijkheid is hier geen functie; het is de voorwaarde voor diepgang. Mensen spreken alleen vrijelijk waar zij zich veilig voelen — daarom is de Room gebouwd om uw uitspraken te beschermen.",
+        "rowTag": "Beveiliging",
+        "rowTitlePre": "Een Room gebouwd om",
+        "rowTitleIt": "te bewaren",
+        "rowTitlePost": "wat u zegt.",
+        "rowBody": "Het werk vraagt om uw meest onverdedigde materiaal. De Room is gebouwd om dit vertrouwelijk te ontvangen en gesloten te houden voor iedereen voor wie het niet bestemd was.",
+        "figLabel": "Gegevensverwerking",
+        "figSubtitle": "vaste houding",
+        "listProcessingKey": "verwerking",
+        "listProcessingVal": "Elke invoer wordt drievoudig blind verwerkt.",
+        "listEncryptionKey": "encryptie",
+        "listEncryptionVal": "Alle gegevens zijn versleuteld.",
+        "listProtectionKey": "bescherming",
+        "listProtectionVal": "Bewaard onder de hoogst beschikbare bescherming.",
+        "footKey": "Doel",
+        "footVal": "een stille, veilige plek om diepgaand te spreken"
+      },
+      "process": {
+        "eyebrow": "HOE HET WERKT",
+        "titlePre": "Vier stappen,",
+        "titleIt": "één groeiende cirkel",
+        "lede": "Communicatie verdiept zich in vier bewegingen. Elk verbreedt wat het systeem kan lezen — van een enkele intake tot een doorlopend gesprek.",
+        "step1Sub": "diepgaande profilering",
+        "step1TitlePre": "Een",
+        "step1TitleIt": "10-stappen",
+        "step1TitlePost": "intake.",
+        "step1Body": "Maak uw account aan en voltooi een intake van 10 stappen. Dit is de diepgaande profileringsfase; de eerste reading wordt volledig opgebouwd uit wat u hier vastlegt.",
+        "step2Sub": "gemedieerd, nooit wederzijds",
+        "step2TitlePre": "De mensen die",
+        "step2TitleIt": "u vormen",
+        "step2Body": "Voeg de mensen toe die u vormen, elk per rol — partner, beste vriend, ouder, broer/zus, co-ouder. Wat zij delen is nooit zichtbaar voor u; wat u deelt is nooit zichtbaar voor hen. Alleen het systeem leest beide.",
+        "step3Sub": "de wekelijkse reading",
+        "step3TitlePre": "De zondagse",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Vertel ons op zondagavond wat er deze week is gebeurd en hoe het voelde om het te beleven. Elke Catchup verfijnt de reading — het beeld wordt scherper naarmate de weken zich opstapelen.",
+        "step4Sub": "volledig privé",
+        "step4TitlePre": "De",
+        "step4TitleIt": "Consulting Room",
+        "step4Body": "Spreek in een volledig privéconsult met de analyst — een stem die u beter kent dan wie dan ook, getraind over 23 lagen van geavanceerde AI-modellen."
+      },
+      "brain": {
+        "eyebrow": "HET WERK",
+        "titleLine1": "Deconstructie van",
+        "titleLine2": "uw onderbewustzijn",
+        "state1Tag": "Patroonherkenning",
+        "state1TitlePre": "Onderbewuste",
+        "state1TitleIt": "lussen",
+        "state1TitlePost": "& herhaling.",
+        "state1Body": "Wij traceren de terugkerende cycli in uw keuzes, relatieangsten en emotionele triggers. Door deze lussen te identificeren, tonen wij u precies waar uw bewuste intenties worden gekaapt door onbewuste programmering.",
+        "state2Tag": "Profilering",
+        "state2TitlePre": "Diepgaande",
+        "state2TitleIt": "psychodynamische",
+        "state2TitlePost": "profilering.",
+        "state2Body": "Voorbij oppervlakkige persoonlijkheidsquizzen. Dit is een structurele scan van uw psychologische dynamiek — een kaart van hoe uw vroegere ervaringen uw huidige identiteit, ego en afweermechanismen vormen.",
+        "state3Tag": "Taal",
+        "state3TitlePre": "Linguïstisch",
+        "state3TitleIt": "onbewuste",
+        "state3TitlePost": "exploratie.",
+        "state3Body": "Geworteld in de Lacaniaanse theorie, analyseert onze AI uw woordassociaties, pauzes en spraakpatronen. Wij helpen u tussen de regels van uw eigen gedachten te lezen om toegang te krijgen tot de verborgen angsten en verlangens die u nog niet heeft kunnen uiten."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMEREN",
+        "titleLine1": "Verbreek de cyclus,",
+        "titleLine2": "Herschrijf hem dan.",
+        "lede": "Drie bewegingen in het werk. Drie plaatsen waar inzicht verandert in verandering.",
+        "row1Tag": "Relationeel",
+        "row1TitlePre": "Genees uw",
+        "row1TitleIt": "relationele",
+        "row1TitlePost": "dynamiek.",
+        "row1Body": "Dezelfde aantrekker trekt u naar hetzelfde type persoon, dezelfde ruzie, dezelfde terugtrekking. Wij brengen het patroon over jaren heen aan het licht, benoemen het, en zien hoe het zijn zwaartekracht verliest.",
+        "row1Link": "Lees de casestudy",
+        "row1FigLabel": "Subject 1149-A",
+        "row1FigSubtitle": "longitudinaal patroon",
+        "row1Outcome": "trok zich terug",
+        "row1SummaryRecurrenceKey": "herhaling",
+        "row1SummaryIntervalKey": "interval",
+        "row1SummaryAttractorKey": "aantrekker",
+        "row1SummaryAttractorVal": "intimiteitsdrempel",
+        "row2Tag": "Droomwerk",
+        "row2TitlePre": "Ontcijfer",
+        "row2TitleIt": "droomlogica",
+        "row2TitlePost": ", stem doelen af.",
+        "row2Body": "Uw dromen zijn repetities van betekenis. Wij volgen hun grammatica — de verschuivingen, de condensaties, de versprekingen — terug naar de wakkere beslissing die zij voor u probeerden te nemen.",
+        "row2Link": "Bekijk een geannoteerd voorbeeld",
+        "row2FigLabel": "Sessie 06",
+        "row2FigSubtitle": "droominvoer, geannoteerd",
+        "row2Dream1Pre": "Ik ben terug in het huis van mijn ouders",
+        "row2Ann1": "oerscène",
+        "row2Dream1Mid": ", maar de kamers blijven uitkomen op andere kamers",
+        "row2Ann2": "egogrens",
+        "row2Dream2Pre": "Een man met de stem van mijn vader",
+        "row2Ann3": "vader-imago",
+        "row2Dream2Mid": "geeft me een sleutel. De sleutel verandert in water",
+        "row2Ann4": "verschuiving",
+        "row2Dream3Pre": "Ik word wakker voordat ik de deur kan openen",
+        "row2Ann5": "verlangen / gebrek",
+        "row2Key1": "oerscène",
+        "row2Key2": "egogrens",
+        "row2Key3": "vader-imago",
+        "row2Key4": "verschuiving",
+        "row2Key5": "verlangen / gebrek",
+        "row3Tag": "Roeping",
+        "row3TitlePre": "Los",
+        "row3TitleIt": "professionele",
+        "row3TitlePost": "blokkades op.",
+        "row3Body": "Het plafond waar u steeds tegenaan loopt, gaat zelden over vaardigheid. Het is een script — vroeg geschreven, stil gerepeteerd — dat wij u zullen helpen hardop te lezen en te herschrijven, zin voor zin.",
+        "row3Link": "Het methodedocument",
+        "row3FigLabel": "Scriptrevisie",
+        "row3FigSubtitle": "werkversie",
+        "row3Line1Prefix": "01 · Ik ben",
+        "row3Line1Old": "nog niet klaar.",
+        "row3Line1New": "al toegestaan.",
+        "row3Line2Prefix": "02 · om",
+        "row3Line2Old": "op mijn beurt te wachten.",
+        "row3Line2New": "te benoemen wat ik wil.",
+        "row3Line3Prefix": "03 · omdat",
+        "row3Line3Old": "iemand teleurgesteld zou kunnen zijn.",
+        "row3Line3New": "teleurstelling ook taal is.",
+        "row3MetaOriginalPre": "origineel",
+        "row3MetaOriginalIt": "leeftijd 11",
+        "row3MetaRevisedPre": "herzien",
+        "row3MetaRevisedIt": "sessie 06"
+      },
+      "outcomes": {
+        "eyebrow": "RESULTATEN",
+        "titleLine1Pre": "Tastbare",
+        "titleLine1It": "inzichten",
+        "titleLine2": "Stil meetbaar.",
+        "lede": "Datagestuurde zelfkennis, geleverd in de taal van een clinicus — niet van een quiz.",
+        "row1Tag": "Versnelling",
+        "row1TitlePre": "De ultieme",
+        "row1TitleIt": "snelkoppeling",
+        "row1TitlePost": "voor therapie in de praktijk.",
+        "row1Body": "Wat voorheen jaren van relatieopbouw vergde, kan nu beginnen met weken van voorbereiding. Betreed de spreekkamer van uw therapeut met de wetenschap van wat u wilt zeggen.",
+        "row1Link": "Bekijk de methodologie",
+        "row1FigSubtitle": "tijd tot eerste inzicht",
+        "row1TraditionalLabel": "Traditioneel pad",
+        "row1AxisYr1": "jr 1",
+        "row1AxisYr3": "jr 3",
+        "row1AxisYr6": "jr 6",
+        "row1AxisYr9": "jr 9",
+        "row1AxisYr12": "jr 12",
+        "row1TwentyThirdLabelPre": "Met",
+        "row1AxisWk1": "wk 1",
+        "row1AxisWk4": "wk 4",
+        "row1AxisWk8": "wk 8",
+        "row1AxisWk12": "wk 12",
+        "row1SummaryFaster": "sneller",
+        "row1SummaryDesc": "tijd tot eerste inzicht",
+        "row2Tag": "Rapport",
+        "row2TitlePre": "Therapeut-klaar",
+        "row2TitleIt": "psychologisch",
+        "row2TitlePost": "overzicht.",
+        "row2Body": "Een structureel diagram van uzelf — exporteerbaar, deelbaar, diepgaand begrijpelijk voor een getrainde clinicus. Geen persoonlijkheidsquiz; een werkdocument.",
+        "row2Link": "Bekijk een voorbeeldrapport",
+        "row2FigLabel": "Subject 1149-A",
+        "row2FigSubtitle": "structureel profiel",
+        "row2RepCase": "casus 1149-A",
+        "row2RepPrepared": "opgesteld 04 · 26",
+        "row2MetricEgo": "Ego-structuur",
+        "row2MetricObject": "Objectrelaties",
+        "row2MetricDefense": "Defensiecomplexiteit",
+        "row2MetricDrive": "Driftorganisatie",
+        "row2MetricSymbolic": "Symbolisch register",
+        "row2FootLabel": "Dominante structuur",
+        "row2FootVal": "obsessioneel · met hysterische sporen",
+        "row3Tag": "Integratie",
+        "row3TitlePre": "Gepersonaliseerde",
+        "row3TitleIt": "integratie",
+        "row3TitlePost": "& schaduwwerkplannen.",
+        "row3Body": "Dagelijkse aanwijzingen en rituelen die het inzicht van de pagina naar het lichaam brengen. Klein, doelbewust. Gebouwd rond uw structuur, niet een generiek curriculum.",
+        "row3Link": "Hoe het plan zich aanpast",
+        "row3FigLabel": "Dag 23",
+        "row3FigSubtitle": "dagelijkse aanwijzing",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Woensdag",
+        "row3PromptEyebrow": "vandaag's aanwijzing · schaduwwerk",
+        "row3PromptPre": "Waar koos u er vandaag voor om",
+        "row3PromptIt": "niet",
+        "row3PromptPost": "gezien te worden? En wat hield u veilig door u te verbergen?",
+        "row3Stream1Label": "ademwerk",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "journaal",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "schaduwaanwijzing",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "reeks",
+        "row3StreakVal": "{n, plural, one {# dag} other {# dagen}}"
+      },
+      "final": {
+        "eyebrow": "BEGIN",
+        "titlePre": "Uw onbewuste spreekt.",
+        "titleIt": "Het is tijd om te luisteren.",
+        "ctaPrimary": "Begin uw ontdekking",
+        "ctaGhostOr": "of",
+        "ctaGhostText": "lees de wetenschap"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Privacybeleid — TwentyThird",
+        "metaDescription": "Hoe TwentyThird omgaat met persoonsgegevens. Niets verlaat de EU. Niets wordt verkocht.",
+        "eyebrow": "PRIVACY",
+        "headingItalic": "met zorg behandeld.",
+        "lede": "TwentyThird verwerkt wat u deelt om u accurate psychodynamische inzichten te bieden. Niets verlaat de EU. Niets wordt verkocht.",
+        "controls": {
+          "headingLead": "Wie",
+          "headingItalic": "controleert",
+          "headingTail": "uw gegevens",
+          "p1": "WelloWork AB, geregistreerd in Zweden (org. nr. 559472‑9997), opererend vanuit Uppsala, is de verwerkingsverantwoordelijke voor persoonsgegevens verzameld op deze website en via directe aanvragen.",
+          "p2": "Voor gegevens die binnen het TwentyThird-platform worden verwerkt namens een organisatie — een kliniek, een onderzoeksinstituut, een werkgever — treedt WelloWork AB op als verwerker en is de klantorganisatie de verwerkingsverantwoordelijke. Die relatie wordt beheerst door een afzonderlijke gegevensverwerkingsovereenkomst."
+        },
+        "figure": {
+          "label": "wie uw gegevens beheert",
+          "controller": "Verwerkingsverantwoordelijke",
+          "directRelationship": "directe relatie",
+          "websiteVisitor": "Websitebezoeker",
+          "you": "U",
+          "customerOrg": "Klantorganisatie",
+          "viaDpa": "via DPA",
+          "processor": "Verwerker",
+          "platformUser": "Platformgebruiker"
+        },
+        "collect": {
+          "headingLead": "Wat wij",
+          "headingItalic": "verzamelen",
+          "contactStrong": "Contact- en accountgegevens.",
+          "contactBody": "Naam, e-mailadres en alle informatie die u verstrekt bij aanmelding of correspondentie. Wettelijke basis: uitvoering van de overeenkomst (Art. 6(1)(b) AVG).",
+          "sessionStrong": "Sessie- en platformgegevens.",
+          "sessionBody": "Journaalnotities, reacties, droominhoud en linguïstische patronen die u deelt binnen TwentyThird. Dit vormt het substraat van de analyse. Wettelijke basis: expliciete toestemming (Art. 9(2)(a) AVG), gegeven bij onboarding en te allen tijde herroepbaar. Wij behandelen deze gegevens als bijzondere categorie gezondheidsgerelateerde gegevens en passen dienovereenkomstige waarborgen toe, ongeacht de formele classificatie.",
+          "technicalStrong": "Technische gegevens.",
+          "technicalBody": "IP-adres, browsertype, apparaatidentificatoren en gebruikstijdstempels – automatisch verzameld wanneer u het platform benadert. Wettelijke basis: gerechtvaardigd belang (Art. 6(1)(f) AVG) voor het handhaven van de beveiliging en het diagnosticeren van fouten.",
+          "p4": "Wij verzamelen geen gegevens over ras, etniciteit, politieke overtuiging of religieuze overtuiging. Indien inhoud die u deelt dergelijke informatie incidenteel onthult, wordt deze niet verwerkt als een afzonderlijke categorie."
+        },
+        "use": {
+          "headingLead": "Hoe wij het",
+          "headingItalic": "gebruiken",
+          "headingTail": "het",
+          "p1": "Wij gebruiken uw gegevens om de TwentyThird-dienst te leveren en te verbeteren, om transactionele berichten te verzenden die u hebt aangevraagd, om fraude of misbruik op te sporen en te voorkomen, en om te voldoen aan wettelijke verplichtingen.",
+          "p2": "Wij gebruiken uw gegevens niet voor reclameprofilering. Wij verkopen, licentiëren of delen deze niet met datamakelaars. Wij gebruiken deze niet om algemene AI-modellen van derden te trainen."
+        },
+        "sees": {
+          "headingLead": "Wie",
+          "headingItalic": "ziet",
+          "headingTail": "het",
+          "withinStrong": "Binnen WelloWork AB:",
+          "withinBody": "Klinische specialisten en ingenieurs die toegang nodig hebben voor onderhoud van de dienst. Toegang is rolbeperkt en wordt gelogd.",
+          "infraStrong": "Infrastructuurproviders:",
+          "infraBody": "Supabase (database en authenticatie, EU-regio), Vercel (hosting, EU-edge) en Postmark (transactionele e-mail). Elk is gebonden aan een gegevensverwerkingsovereenkomst en verwerkt gegevens uitsluitend op onze gedocumenteerde instructie.",
+          "legalStrong": "Wettelijke verplichting:",
+          "legalBody": "Wij verstrekken gegevens aan bevoegde autoriteiten alleen wanneer wettelijk vereist, en alleen voor zover vereist.",
+          "p4": "Geen gegevens worden buiten de EU/EER overgedragen. Indien dit verandert, zullen wij dit beleid bijwerken en waar nodig opnieuw toestemming verkrijgen."
+        },
+        "retention": {
+          "headingItalic": "Retentie",
+          "p1": "Account- en platformgegevens worden bewaard zolang uw account actief is, plus 30 dagen na verwijdering om herstel mogelijk te maken. Technische logs worden 90 dagen bewaard. Contactaanvragen worden 24 maanden bewaard.",
+          "p2": "Na deze perioden worden gegevens permanent verwijderd of onomkeerbaar geanonimiseerd."
+        },
+        "rights": {
+          "headingLead": "Uw",
+          "headingItalic": "rechten",
+          "p1": "U heeft het recht op toegang tot de gegevens die wij over u bewaren, om onjuistheden te corrigeren, verwijdering te verzoeken, de verwerking te beperken of daartegen bezwaar te maken, en om een machineleesbare kopie te ontvangen voor portabiliteit. Indien de verwerking gebaseerd is op toestemming, kunt u deze te allen tijde intrekken zonder de rechtmatigheid van de verwerking vóór intrekking aan te tasten.",
+          "exerciseLead": "Om een recht uit te oefenen:",
+          "exerciseTail": ". Wij reageren binnen 30 dagen. Indien u ontevreden bent met onze reactie, kunt u een klacht indienen bij de Integritetsskyddsmyndigheten (IMY), de Zweedse gegevensbeschermingsautoriteit."
+        },
+        "children": {
+          "headingItalic": "Kinderen",
+          "p1": "TwentyThird is niet gericht op personen onder de 18 jaar. Wij verzamelen niet bewust gegevens van minderjarigen. Indien wij vernemen dat een minderjarige gegevens heeft ingediend, verwijderen wij deze onmiddellijk."
+        },
+        "changes": {
+          "headingItalic": "Wijzigingen",
+          "p1": "Wij actualiseren dit beleid wanneer onze praktijken wijzigen. Materiële wijzigingen worden ten minste 14 dagen voordat zij van kracht worden per e-mail gemeld. De versiedatum staat onderaan deze pagina.",
+          "effectivePrefix": "Ingangsdatum:",
+          "effectiveSuffix": "· Toepasselijk recht: Zweeds recht en de AVG"
+        },
+        "headingLead": "Persoonsgegevens,"
+      },
+      "terms": {
+        "metaTitle": "Gebruiksvoorwaarden — TwentyThird",
+        "metaDescription": "De overeenkomst die uw gebruik van TwentyThird regelt. Geschreven om gelezen te worden, niet om vermeden te worden.",
+        "eyebrow": "VOORWAARDEN",
+        "headingLead": "De overeenkomst,",
+        "headingItalic": "duidelijk uiteengezet.",
+        "lede": "Deze voorwaarden regelen uw gebruik van TwentyThird. Ze zijn geschreven om gelezen te worden, niet om vermeden te worden.",
+        "service": {
+          "headingLead": "De",
+          "headingItalic": "dienst",
+          "p1": "TwentyThird is een psychodynamisch AI-platform dat wordt beheerd door WelloWork AB. Het biedt analytisch inzicht, afgeleid van wat u deelt. Het is geen medisch hulpmiddel. Het vormt geen psychotherapie, psychiatrische diagnose of klinische behandeling. Indien u psychisch lijdt, neem dan contact op met een gekwalificeerde clinicus of een hulpdienst."
+        },
+        "account": {
+          "headingLead": "Uw",
+          "headingItalic": "account",
+          "p1": "U moet 18 jaar of ouder zijn om TwentyThird te gebruiken. U bent verantwoordelijk voor het vertrouwelijk houden van uw inloggegevens. U mag uw account niet delen of het platform namens een andere persoon gebruiken zonder diens uitdrukkelijke toestemming.",
+          "p2": "U bent eigenaar van de inhoud die u creëert — uw dagboeknotities, uw antwoorden. Door deze in te dienen, verleent u WelloWork AB een beperkte licentie om deze te verwerken voor de doeleinden beschreven in het Privacybeleid. U kunt uw inhoud te allen tijde exporteren of verwijderen."
+        },
+        "acceptableUse": {
+          "headingLead": "Toegestaan",
+          "headingItalic": "gebruik",
+          "p1": "U mag TwentyThird gebruiken voor wettige persoonlijke en professionele zelfexploratie. U mag het niet gebruiken om uzelf of anderen schade te berokkenen, om te proberen de veiligheidssystemen van het platform te omzeilen, om de onderliggende modellen te reverse-engineeren, of om concurrerende AI-systemen te trainen.",
+          "p2": "Wij behouden ons het recht voor om accounts die deze voorwaarden schenden op te schorten of te beëindigen, zonder voorafgaande kennisgeving indien dit voor de veiligheid vereist is."
+        },
+        "liability": {
+          "headingLead": "Onze",
+          "headingItalic": "aansprakelijkheid",
+          "p1": "TwentyThird biedt inzicht, geen zekerheid. Wij garanderen niet dat de analyse accuraat, volledig of passend is voor uw omstandigheden. Voor zover toegestaan door de Zweedse wet, is onze aansprakelijkheid beperkt tot het bedrag dat u heeft betaald in de 3 maanden voorafgaand aan de relevante claim.",
+          "p2": "Niets in deze voorwaarden beperkt de aansprakelijkheid voor overlijden of persoonlijk letsel veroorzaakt door onze nalatigheid, of voor fraude."
+        },
+        "disputes": {
+          "headingLead": "Toepasselijk recht en",
+          "headingItalic": "geschillen",
+          "p1": "Deze voorwaarden worden beheerst door Zweeds recht. Geschillen die niet direct kunnen worden opgelost, worden voorgelegd aan de rechtbanken van Uppsala, Zweden, als de rechtbank van eerste aanleg.",
+          "p2Lead": "Indien u een consument bent in de EU, heeft u ook toegang tot het EU Online Geschillenbeslechtingsplatform op",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Wijzigingen",
+          "p1": "Wij kunnen deze voorwaarden bijwerken. Voortgezet gebruik na de ingangsdatum van een materiële wijziging houdt acceptatie in. Wij melden materiële wijzigingen ten minste 14 dagen van tevoren per e-mail.",
+          "effectivePrefix": "Ingangsdatum:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Cookiebeleid — TwentyThird",
+        "metaDescription": "TwentyThird gebruikt cookies uitsluitend voor authenticatie en het bewaren van voorkeuren. Geen advertentiecookies. Geen trackers van derden.",
+        "eyebrow": "COOKIES",
+        "headingLead": "Wat we opslaan",
+        "headingItalic": "in uw browser.",
+        "lede": "TwentyThird gebruikt cookies voor authenticatie en het bewaren van voorkeuren. Wij gebruiken geen advertentiecookies en geen trackers van derden.",
+        "whatIs": {
+          "headingLead": "Wat een cookie",
+          "headingItalic": "is",
+          "p1": "Een cookie is een klein tekstbestand dat in uw browser wordt opgeslagen. Wij gebruiken ze om u ingelogd te houden en om uw themavoorkeur (donker of licht) te onthouden. Dat is alles."
+        },
+        "weSet": {
+          "headingLead": "Cookies",
+          "headingItalic": "die we plaatsen",
+          "authBody": "— Geplaatst door Supabase. Behoudt uw geauthenticeerde sessie. Verloopt wanneer u uitlogt of na 7 dagen inactiviteit. Strikt noodzakelijk.",
+          "themeBody": "— Slaat uw voorkeur voor donkere/lichte modus op. Blijft bestaan totdat deze wordt gewist. Functioneel.",
+          "p3": "Wij plaatsen geen advertentiecookies. Wij laden geen tracking-scripts van derden — geen Google Analytics, geen Meta Pixel, geen marketingtags van welke aard dan ook."
+        },
+        "choices": {
+          "headingLead": "Uw",
+          "headingItalic": "keuzes",
+          "p1Lead": "U kunt cookies op elk moment wissen via uw browserinstellingen. Het wissen van",
+          "p1Mid": "zal u uitloggen. Het wissen van",
+          "p1Tail": "zal de weergave terugzetten naar de donkere standaard.",
+          "p2": "Wij gebruiken geen cookie-toestemmingsbanner voor strikt noodzakelijke of functionele cookies onder de ePrivacy-richtlijn, aangezien deze geen toestemming vereisen. Mochten wij in de toekomst niet-essentiële cookies introduceren, dan zullen wij voorafgaand aan het plaatsen daarvan toestemming verkrijgen."
+        },
+        "contact": {
+          "headingItalic": "Contact",
+          "p1Lead": "Vragen over cookies of andere gegevenszaken:",
+          "effectivePrefix": "Ingangsdatum:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "OP DEZE PAGINA",
+        "privacyPolicy": "Privacybeleid",
+        "termsOfService": "Servicevoorwaarden",
+        "cookiePolicy": "Cookiebeleid"
+      },
+      "layout": {
+        "eyebrow": "JURIDISCH",
+        "headingLead": "Juridische documenten,",
+        "headingItalic": "duidelijk uiteengezet.",
+        "lede": "Privacybeleid, servicevoorwaarden en cookiebeleid — beheerst door Zweeds recht en de AVG."
+      }
+    },
+    "footer": {
+      "tagline": "Psychodynamische AI voor het innerlijke leven. Een stille kamer voor serieuze overweging.",
+      "product": "Product",
+      "discovery": "Ontdekking",
+      "sampleReport": "Voorbeeldrapport",
+      "integrationPlan": "Integratieplan",
+      "company": "Bedrijf",
+      "about": "Over ons",
+      "contact": "Contact",
+      "manifesto": "Manifest",
+      "resources": "Bronnen",
+      "science": "De wetenschap",
+      "methodology": "Methodologie",
+      "methodPaper": "Methodologie paper",
+      "caseStudy": "Casestudy",
+      "dreamExample": "Droomvoorbeeld",
+      "legal": "Juridisch",
+      "privacy": "Privacy",
+      "terms": "Voorwaarden",
+      "cookies": "Cookies",
+      "rights": "alle rechten voorbehouden"
+    },
+    "about": {
+      "metaTitle": "Over — TwentyThird",
+      "metaDescription": "Oorsprong, methode en het omslagpunt op dag drieëntwintig. Ontwikkeld binnen CognitiveLab bij WelloWork AB.",
+      "hero": {
+        "eyebrow": "OVER",
+        "headingLead": "Oorsprong, methode en het",
+        "headingItalic": "omslagpunt op dag drieëntwintig",
+        "lede": "TwentyThird is een psychodynamische AI voor zelfontdekking. Het brengt de terugkerende lussen en structuren onder het symptoom in kaart — taal, hechting, herhaling — en levert een werkdocument op, geen quiz.",
+        "figure": {
+          "label": "dag-23",
+          "subtitle": "metafoor van het omslagpunt",
+          "heading": "De 23-dagenboog",
+          "range": "nieuwsgierigheid → bewustzijn",
+          "markerInflection": "omslagpunt",
+          "summaryLabel": "dag waarop de vraag\nnaar binnen keert"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFIE",
+        "headingLead": "Freuds correspondent. Fliess' getal.",
+        "headingItalic": "Onze metafoor",
+        "tag": "Afstamming",
+        "row": {
+          "headingPre": "Een",
+          "headingItalic": "23-dagenritme",
+          "headingPost": "voorgesteld in een brief, behouden als figuur.",
+          "para1": "De 23-daagse cyclus was de hypothese van Wilhelm Fliess, beargumenteerd in zijn correspondentie met Freud aan het einde van de negentiende eeuw. De hedendaagse wetenschap ondersteunt geen vaste bioritmen.",
+          "para2": "Wij behouden het getal voor wat het benoemt — de drempel waarop nieuwsgierigheid rijpt tot bewustzijn. Dag-23 is een figuur, geen biologie."
+        },
+        "figure": {
+          "label": "afkomst",
+          "subtitle": "vier ankers",
+          "row1Outcome": "voorstel",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "structureel model",
+          "row3Duration": "Romeins discours",
+          "row3Outcome": "linguïstische wending",
+          "row4Outcome": "synthese",
+          "summary1Key": "interval",
+          "summary2Key": "draad",
+          "summary2Value": "structuur",
+          "summary3Key": "methode",
+          "summary3Value": "psychodynamisch"
+        }
+      },
+      "origin": {
+        "eyebrow": "OORSPRONG",
+        "headingLead": "Gebouwd binnen CognitiveLab.",
+        "headingItalic": "Beantwoordde een vraag die ons steeds werd gesteld",
+        "tag": "Team",
+        "row": {
+          "headingLead": "Artsen, oorspronkelijk bezig met het bouwen van",
+          "headingItalic": "cognitieve training",
+          "para1": "TwentyThird begon binnen het CognitiveLab bij WelloWork AB, waar het team cognitieve trainingssystemen ontwikkelde. Vrienden en collega's begonnen persoonlijke vragen te stellen — angst, terugkerende patronen, de lussen die ze niet konden benoemen.",
+          "para2": "Tussen de klinische praktijk als artsen, de pilotgegevens die we verzamelden, en een lange leeslijst in psychoanalyse en Lacaniaanse theorie, hadden we iets te bieden. TwentyThird is wat daaruit voortkwam."
+        },
+        "figure": {
+          "label": "team",
+          "subtitle": "profiel",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "opgesteld 05 · 26",
+          "row1Key": "Klinische praktijk",
+          "row2Key": "Onderzoeksoutput",
+          "row3Key": "Proefpersonen in pilot",
+          "row4Key": "Artsen in team",
+          "footerLabel": "Profiel",
+          "footerValue": "clinicus-onderzoeker hybride"
+        }
+      },
+      "method": {
+        "eyebrow": "METHODE",
+        "headingLead": "Wat het model",
+        "headingItalic": "werkelijk doet",
+        "tag": "Mogelijkheden",
+        "row": {
+          "headingLead": "Onder het symptoom, een",
+          "headingItalic": "structuur",
+          "para1": "TwentyThird voert een oorzaakanalyse uit. Het brengt de <em>onbewuste lus</em> over jaren in kaart, leest het <em>linguïstische onbewuste</em> in woordkeuze en versprekingen, brengt <em>hechting</em> aan de intimiteitsdrempel naar boven, en schrijft een werkplan voor <em>schaduwwerk</em>.",
+          "para2": "De output is klaar voor de therapeut. Benoemt de structuur, niet het oppervlak."
+        },
+        "figure": {
+          "label": "symptoom → structuur",
+          "subtitle": "drie herzieningen",
+          "row1Prefix": "01 · oppervlak",
+          "row1Old": "Ik stel belangrijk werk uit.",
+          "row1Next": "Vermijding om gezien te worden als degene die weet.",
+          "row2Prefix": "02 · oppervlak",
+          "row2Old": "Ik blijf met dezelfde persoon daten.",
+          "row2Next": "Herhaling van het vader-imago op de intimiteitsdrempel.",
+          "row3Prefix": "03 · oppervlak",
+          "row3Old": "Ik kan niets afmaken.",
+          "row3Next": "Weigering om de positie van potentieel op te geven.",
+          "metaLeftLabel": "presenterende",
+          "metaLeftValue": "klacht",
+          "metaRightLabel": "structurele",
+          "metaRightValue": "lezing"
+        }
+      },
+      "final": {
+        "eyebrow": "VERDERGAAN",
+        "headingLead": "Lees de methode,",
+        "headingItalic": "of begin",
+        "ctaPrimary": "Lees de methode",
+        "ctaGhostPrefix": "of",
+        "ctaGhostText": "schrijf ons"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "CONTACT",
+        "heroHeadlineLead": "Schrijf ons.",
+        "heroHeadlineItalic": "Wij lezen alles",
+        "heroLede": "De meeste berichten worden binnen tweeënzeventig uur beantwoord. Klinische en partnerschapsaanvragen krijgen voorrang.",
+        "formCardLabel": "formulier",
+        "formCardSubtitle": "alleen inhoudelijke vragen",
+        "addressLabel": "ADRES",
+        "addressValue": "Rosendal, Uppsala, Zweden",
+        "emailLabel": "E-MAIL",
+        "phoneLabel": "TELEFOON",
+        "finalEyebrow": "BEGIN",
+        "finalHeadlineLead": "Of gewoon",
+        "finalHeadlineItalic": "begin",
+        "finalCta": "Begin uw ontdekking",
+        "finalGhostOr": "of",
+        "finalGhostText": "lees de oorsprong",
+        "disclaimer": "Voor urgente geestelijke gezondheidsproblemen, neem contact op met lokale hulpdiensten of een erkende clinicus. TwentyThird is geen crisishulpdienst."
+      },
+      "form": {
+        "successEyebrow": "ONTVANGEN",
+        "successHeadlineLead": "Uw bericht is",
+        "successHeadlineItalic": "bij ons",
+        "successBody": "Wij antwoorden binnen twee werkdagen.",
+        "nameLabel": "Naam",
+        "emailLabel": "E-mail",
+        "messageLabel": "Bericht",
+        "submitSend": "Verzenden",
+        "submitSending": "Verzenden",
+        "errorMessage": "er ging iets mis · probeer opnieuw",
+        "submittingStatus": "Uw bericht wordt verzonden."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Methodologie — TwentyThird",
+      "metaDescription": "Van het eerste gesprek tot een therapeut-klaar overzicht. Vijf stadia van de TwentyThird pijplijn.",
+      "hero": {
+        "eyebrow": "DE METHODE",
+        "headingLead": "Weken van voorbereiding,",
+        "headingItalic": "geen jaren van zoeken",
+        "lede": "Therapie werkt. Het vergt echter tijd om te weten waarvoor men komt. TwentyThird comprimeert de voorbereiding — het deel waarin men leert wat men werkelijk zegt — zodat de sessie zelf sneller kan verlopen."
+      },
+      "pipeline": {
+        "eyebrow": "DE PIJPLIJN",
+        "headingLead": "Vijf stadia, één",
+        "headingItalic": "kort",
+        "lede": "Van gesamplede spraak tot een werkdocument dat een clinicus in acht minuten kan lezen.",
+        "stageLabel": "STADIUM",
+        "stage01": {
+          "name": "Sampling",
+          "blurb": "Spraak en tekst uit begeleide sessies. Het model luistert naar vorm, niet naar inhoud.",
+          "label": "sampling",
+          "subtitle": "volume binnen het cohort",
+          "fig": {
+            "wordsSampled": "gesamplede woorden",
+            "sessions": "sessies",
+            "elapsed": "verstreken",
+            "medianTurn": "mediane beurt"
+          }
+        },
+        "stage02": {
+          "nameLead": "Linguïstische",
+          "nameEm": "extractie",
+          "blurb": "Kenmerken die het model uit het transcript haalt — stilzwijgend, vóór enige interpretatie.",
+          "label": "extractie",
+          "subtitle": "kenmerkklassen",
+          "fig": {
+            "qualifierDensity": "kwalificator dichtheid",
+            "modalVerbs": "modale werkwoorden",
+            "conditionalFrame": "conditioneel kader",
+            "affectiveHedges": "affectieve omheiningen",
+            "slipsMisnamings": "verschuivingen · misbenamingen",
+            "repetitionWindows": "herhalingsvensters"
+          }
+        },
+        "stage03": {
+          "nameLead": "Recurrentie",
+          "nameEm": "detectie",
+          "blurb": "Het patroon dat in dezelfde vorm terugkeert, in verschillende decennia. Het signaal dat iets structureel is.",
+          "label": "recurrentie",
+          "subtitle": "drie ankers van één patroon",
+          "fig": {
+            "row1": {
+              "durationLabel": "eerste baan",
+              "outcome": "plafond op maand 9"
+            },
+            "row2": {
+              "durationLabel": "tweede",
+              "outcome": "plafond op maand 11"
+            },
+            "row3": {
+              "durationLabel": "derde",
+              "outcome": "plafond op maand 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Script",
+          "nameEm": "reconstructie",
+          "blurb": "De zin onder het patroon. Oude zin, dan een voorgestelde revisie die het subject kan oefenen.",
+          "label": "reconstructie",
+          "subtitle": "werkconcept",
+          "fig": {
+            "row1": {
+              "prefix": "Ik ben",
+              "old": "nog niet klaar.",
+              "next": "reeds toegestaan."
+            },
+            "row2": {
+              "prefix": "om",
+              "old": "te wachten om gekozen te worden.",
+              "next": "te benoemen wat ik wil."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Overzicht voor de",
+          "nameEm": "clinicus",
+          "blurb": "Drie gelabelde meters en een éénregelige structurele lezing. Acht minuten om te lezen, weken om te gebruiken.",
+          "label": "klinische overdracht",
+          "subtitle": "werkbriefing",
+          "fig": {
+            "casePrefix": "casus",
+            "preparedPrefix": "voorbereid",
+            "egoStructure": "Ego structuur",
+            "objectRelations": "Objectrelaties",
+            "symbolicRegister": "Symbolisch register",
+            "footerLabel": "Lezing",
+            "footerValue": "obsessief · met hysterische sporen"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "BEREIK",
+        "headingLead": "Wat we meten, en wat we",
+        "headingItalic": "weigeren",
+        "headingTail": "te meten.",
+        "measureHead": "Wat we meten",
+        "refuseHead": "Wat we niet meten",
+        "measure": {
+          "languagePatterns": {
+            "k": "taalpatronen",
+            "gloss": "Kwalificator dichtheid, modale werkwoorden, omheiningen, conditionele kaders."
+          },
+          "recurrence": {
+            "k": "recurrentie",
+            "gloss": "Patronen die in dezelfde vorm over jaren terugkeren."
+          },
+          "narrativeCoherence": {
+            "k": "narratieve coherentie",
+            "gloss": "Hoe een leven wordt verteld, waar de naden zichtbaar zijn."
+          },
+          "attachmentMarkers": {
+            "k": "hechtingsmarkers",
+            "gloss": "Waar intimiteit een drempel overschrijdt, wat volgt."
+          },
+          "linguisticSlips": {
+            "k": "linguïstische versprekingen",
+            "gloss": "Misbenamingen, condensaties, verplaatsingen."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD categorieën",
+            "gloss": "Nosologie is een afzonderlijk instrument, gebruikt door clinici."
+          },
+          "iqCognition": {
+            "k": "IQ of cognitie",
+            "gloss": "Buiten bereik. Het model is psychodynamisch, niet psychometrisch."
+          },
+          "personalityTypes": {
+            "k": "persoonlijkheidstypes",
+            "gloss": "Vijf-factor en zijn afstammelingen maken geen deel uit van de briefing."
+          },
+          "riskScores": {
+            "k": "risicoscores",
+            "gloss": "Acuut risico is een beslissing van de clinicus, niet van een model."
+          },
+          "predictions": {
+            "k": "voorspellingen",
+            "gloss": "Structuur, geen prognose. Wij benoemen wat is, niet wat komt."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Compressie",
+        "headingLead": "Weet bij aanvang wat te",
+        "headingItalic": "zeggen",
+        "body1": "Therapie is niet de plek om de vraag te achterhalen. Het is de plek om ermee te leven. De compressie die wij bieden, betreft de benadering — de maanden die een clinicus gewoonlijk besteedt aan het luisteren naar de vorm van de briefing.",
+        "body2": "Binnen het pilotcohort bereikten voorbereide subjecten een werkalliantie in minder sessies. De lezing was reeds aanwezig.",
+        "figure": {
+          "label": "alliantie",
+          "subtitle": "mediane sessies tot werkalliantie",
+          "heading": "Tijd tot werkalliantie",
+          "range": "mediaan binnen cohort",
+          "markerUnprepared": "onvoorbereid",
+          "markerPrepared": "voorbereid",
+          "summaryLabel": "minder sessies tot\nwerkalliantie"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "VERDERGAAN",
+        "headingLead": "Begin,",
+        "headingItalic": "of bekijk een voorbeeldrapport",
+        "beginLabel": "Begin",
+        "or": "of",
+        "ghostLabel": "bekijk een voorbeeldrapport"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRATIE",
+        "headlineLead": "Inzicht, dan",
+        "headlineItalic": "gewoonte",
+        "lede": "Een patroon benoemen is slechts de eerste stap. Het plan is de tweede — dagelijkse aanwijzingen en kleine rituelen gebouwd rond uw structuur, niet een generiek curriculum."
+      },
+      "week": {
+        "eyebrow": "EEN WEEK IN HET PLAN",
+        "headlineLead": "Zeven aanwijzingen,",
+        "headlineItalic": "één structuur",
+        "lede": "Reflectief, belichaamd, geschreven. De week ademt rond het patroon dat het rapport benoemde, niet rond een curriculum.",
+        "days": {
+          "mon": {
+            "day": "MA",
+            "prompt": "“Waar koos u er vandaag voor <em>niet</em> gezien te worden?”",
+            "stream": {
+              "journal": "journaal",
+              "shadowPrompt": "schaduw-aanwijzing"
+            }
+          },
+          "tue": {
+            "day": "DI",
+            "prompt": "“Maak een wandeling zonder doel. Noteer één ding dat u bijna zei.”",
+            "stream": {
+              "walking": "wandelen",
+              "note": "notitie"
+            }
+          },
+          "wed": {
+            "day": "WO",
+            "prompt": "“Wat hebt u vandaag overgekwalificeerd, en wat was de <em>ongekwalificeerde</em> zin daaronder?”",
+            "stream": {
+              "breathWork": "ademwerk",
+              "journal": "journaal",
+              "shadowPrompt": "schaduw-aanwijzing"
+            }
+          },
+          "thu": {
+            "day": "DO",
+            "prompt": "“Een lichaamsscan van de keel naar beneden. Waar bevindt zich de spanning?”",
+            "stream": {
+              "bodyScan": "lichaamsscan",
+              "note": "notitie"
+            }
+          },
+          "fri": {
+            "day": "VR",
+            "prompt": "“Schrijf de zin die u gezegd zou hebben als het u al was toegestaan.”",
+            "stream": {
+              "journal": "journaal",
+              "rewrite": "herschrijven"
+            }
+          },
+          "sat": {
+            "day": "ZA",
+            "prompt": "“Een lange wandeling. Geen aanwijzingen. Merk op wat de stilte terugbrengt.”",
+            "stream": {
+              "walking": "wandelen",
+              "rest": "rust"
+            }
+          },
+          "sun": {
+            "day": "ZO",
+            "prompt": "“Lees de week terug. Welke zin was al <em>waar</em>?”",
+            "stream": {
+              "review": "overzicht",
+              "note": "notitie"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTATIE",
+        "headlineLead": "Het plan",
+        "headlineItalic": "vermindert",
+        "tag": "Adaptatie",
+        "rowHeadingLead": "De herhaling van vorige week bepaalt de",
+        "rowHeadingItalic": "dichtheid",
+        "body": "Wanneer de patroonsterkte afneemt, worden de aanwijzingen minder. Wanneer een patroon toeneemt, keren de aanwijzingen terug. Het doel is geen naleving. Het doel is de kleinste ondersteuning die de structuur nog nodig heeft.",
+        "figure": {
+          "label": "dichtheid van aanwijzingen",
+          "subtitle": "weken 1–8",
+          "heading": "Aantal aanwijzingen · per week",
+          "range": "afnemend naarmate de herhaling zwakker wordt",
+          "markers": {
+            "wk1": "wk 1",
+            "wk3": "wk 3",
+            "wk5": "wk 5",
+            "wk8": "wk 8"
+          },
+          "summaryLabel": "minder aanwijzingen\ntegen wk 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "SCHADUWWWERK",
+        "headlineLead": "Geen catharsis.",
+        "headlineItalic": "Spreken",
+        "tag": "Schaduw",
+        "rowHeadingLead": "De bewuste praktijk van het uitspreken van wat",
+        "rowHeadingItalic": "onuitsprekelijk",
+        "body": "Schaduwwerk is in deze context geen blootstelling. Het is geen zuivering. Het is de langzame praktijk van het zeggen – eerst tegen zichzelf – wat men geleerd had onuitgesproken te laten. Drie voor/na-regels, afkomstig uit echte plannen.",
+        "figure": {
+          "label": "schaduwrevisies",
+          "subtitle": "drie regels, werkversie",
+          "rows": {
+            "r1": {
+              "prefix": "01 · tegen zichzelf",
+              "old": "Ik verdien dit niet.",
+              "next": "Ik heb het verlangen ernaar nog niet hardop geoefend."
+            },
+            "r2": {
+              "prefix": "02 · tegen zichzelf",
+              "old": "Ik zou hier nu overheen moeten zijn.",
+              "next": "de tijdlijn die ik leende was niet voor dit soort verdriet."
+            },
+            "r3": {
+              "prefix": "03 · tegen zichzelf",
+              "old": "Ik ben te veel.",
+              "next": "Ik ben precies het volume waar de kamer niet voor gebouwd was."
+            }
+          },
+          "metaLeft": {
+            "label": "voorheen",
+            "value": "gezegd over zichzelf"
+          },
+          "metaRight": {
+            "label": "nu",
+            "value": "gezegd tegen zichzelf"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "KADER",
+        "headlineLead": "Vastgehouden door structuur, niet door",
+        "headlineItalic": "curriculum",
+        "body1": "Een curriculum is een reeks stappen die een vreemde heeft bedacht. Een structuur is de vorm die uw specifieke leven toevallig aanneemt. Het plan is gebouwd tegen het laatste. Elke aanwijzing is verankerd aan een regel in uw rapport — wanneer de regel verdwijnt, verdwijnt de aanwijzing ook.",
+        "body2": "Niets hier is bedoeld om permanent te zijn. Het plan is gehuurd. De structuur is van u.",
+        "closeout": "de structuur is van u · het plan is gehuurd"
+      },
+      "final": {
+        "eyebrow": "VERDERGAAN",
+        "headlineLead": "Begin,",
+        "headlineItalic": "of lees de wetenschap",
+        "beginCta": "Begin",
+        "or": "of",
+        "readScience": "lees de wetenschap"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "De wetenschap — TwentyThird",
+        "description": "Een eeuw psychoanalytische theorie en vier decennia empirisch onderzoek naar patronen, taal en het onbewuste."
+      },
+      "hero": {
+        "eyebrow": "DE FUNDERING",
+        "headlineLead": "De wetenschap achter het",
+        "headlineItalic": "luisteren",
+        "headlineTail": ".",
+        "lede": "TwentyThird is gebouwd op een eeuw psychoanalytische theorie en vier decennia empirisch onderzoek naar patronen, taal en het onbewuste. Dit is wat wij lezen, en waarom."
+      },
+      "lineages": {
+        "eyebrow": "TWEE LIJNEN",
+        "headlineLead": "Freuds structuur. Lacans",
+        "headlineItalic": "letter",
+        "headlineTail": ".",
+        "lede": "Twee lezingen van het onbewuste, een halve eeuw van elkaar verwijderd. Samen vormen zij de ruggengraat van de methode.",
+        "freud": {
+          "headlineLead": "Het",
+          "headlineItalic": "structurele",
+          "headlineTail": " onbewuste.",
+          "body1": "Freuds blijvende bijdrage is structureel, niet thematisch. Het dynamische onbewuste is geen kelder van vergeten inhoud — het is een werkend orgaan van de geest, dat repeteert, herhaalt, overdraagt.",
+          "body2": "Wij lezen hem als een clinicus van herhaling. Dezelfde scène verschijnt in verschillende decennia. Die herhaling is het signaal dat het model moet vinden.",
+          "figure": {
+            "label": "herhaling",
+            "subtitle": "vijf ankers, één structuur",
+            "outcome": "terugtrekking",
+            "rows": {
+              "anchor1": "vroege adolescentie",
+              "anchor2": "eerste langdurige band",
+              "anchor3": "tweede langdurige band",
+              "anchor4": "derde band",
+              "anchor5": "vierde band"
+            },
+            "summary": {
+              "recurrenceLabel": "herhaling",
+              "intervalLabel": "interval",
+              "attractorLabel": "aantrekker",
+              "attractorValue": "intimiteitsdrempel"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Het onbewuste is gestructureerd als een",
+          "headlineItalic": "taal",
+          "headlineTail": ".",
+          "body1Lead": "Lacans lezing verschuift het veld. De signifiant beweegt; betekenis glijdt langs ketens van metonymie en metafoor. Het spiegelstadium benoemt de funderende miskenning.",
+          "body1Italic": "Verlangen is het verlangen van de Ander.",
+          "body2": "In onze pijplijn is dit concreet. Wij lezen dromen en wakkere spraak als tekst — de verschuivingen, condensaties en versprekingen dragen de structurerende grammatica.",
+          "figure": {
+            "label": "linguïstisch signaal",
+            "subtitle": "droomfragment, geannoteerd",
+            "dreamLead": "“De kamer waarin ik als kind woonde heeft een andere deur die ik me niet herinner",
+            "ann1": "verschuiving",
+            "dreamMid1": ". Daarachter roept de stem van mijn supervisor",
+            "ann2": "condensatie",
+            "dreamMid2": "me bij de verkeerde naam",
+            "ann3": "verspreking",
+            "dreamTail": ".”",
+            "key1": "verschuiving",
+            "key2": "condensatie",
+            "key3": "verspreking"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRISCHE ANKERS",
+        "headlineLead": "Wat hedendaags onderzoek",
+        "headlineItalic": "toevoegt",
+        "headlineTail": ".",
+        "lede": "Vijf convergerende lijnen uit gehechtheids-, narratief- en procesonderzoek. Geen complete bibliografie — de ankers waarop het model daadwerkelijk rust.",
+        "figure": {
+          "label": "empirische ankers",
+          "subtitle": "convergerend bewijs",
+          "caseLabel": "literatuur · synthese",
+          "prepared": "bijgewerkt 04 · 26",
+          "rows": {
+            "attachment": "Gehechtheidscontinuïteit over decennia",
+            "alliance": "Therapeutische alliantie als uitkomstindicator",
+            "narrative": "Narratieve coherentie en welzijn",
+            "relational": "Impliciete relationele kennis",
+            "script": "Scripttheorie bij professionele blokkades"
+          },
+          "footerLabel": "Synthese",
+          "footerValue": "convergerend bewijs · n = 2.418"
+        }
+      },
+      "limits": {
+        "eyebrow": "WAT WIJ NIET BEWEREN",
+        "headlineLead": "De eerlijke",
+        "headlineItalic": "grenzen",
+        "headlineTail": " van het werk.",
+        "claim1Strong": "Wij zijn geen vervanging voor een therapeut.",
+        "claim1Body": "Het model bereidt het gesprek voor. Het voert het niet.",
+        "claim2Strong": "Wij zijn geen diagnostisch instrument volgens DSM of ICD.",
+        "claim2Body": "De categorieën waarmee wij werken zijn structureel — obsessioneel, hysterisch, fobisch — niet nosologisch. Ze benoemen hoe een persoon is georganiseerd, niet wat deze heeft.",
+        "claim3Strong": "De 23-daagse cyclus is een metafoor.",
+        "claim3Body": "Het getal komt uit de correspondentie van Wilhelm Fliess met Freud aan het einde van de negentiende eeuw. De hedendaagse wetenschap ondersteunt geen vaste bioritmen. Wij behouden het getal voor wat het benoemt — de overgang van nieuwsgierigheid naar bewustzijn."
+      },
+      "reading": {
+        "eyebrow": "VERDER LEZEN",
+        "headlineLead": "De plank",
+        "headlineItalic": "achter",
+        "headlineTail": " het model.",
+        "lede": "Boeken, geen artikelen. Degene waar we naar terugkeren.",
+        "books": {
+          "book1": {
+            "title": "Jenseits des Lustprinzips"
+          },
+          "book2": {
+            "title": "Die Traumdeutung"
+          },
+          "book4": {
+            "title": "De vier fundamentele concepten van de psychoanalyse"
+          },
+          "book5": {
+            "title": "Gehechtheid"
+          },
+          "book6": {
+            "title": "Affectregulatie en de oorsprong van het zelf"
+          },
+          "book7": {
+            "title": "Staan in de ruimtes"
+          },
+          "book8": {
+            "title": "Affectregulatie, mentalisatie en de ontwikkeling van het zelf"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "VERDERGAAN",
+        "headlineLead": "Begin een profiel,",
+        "headlineItalic": "of lees een casus",
+        "headlineTail": ".",
+        "ctaPrimary": "Begin een profiel",
+        "ctaOr": "of",
+        "ctaGhost": "lees een casestudy"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "hier opnieuw",
+      "greetingNamed": "hier opnieuw, {name}.",
+      "strengthen": "Versterk de nauwkeurigheid"
+    },
+    "reviewEdit": "Beoordelen & bewerken",
+    "depth": {
+      "eyebrow": "LEESDIEPTE",
+      "overallEyebrow": "ALGEMENE LEESDIEPTE",
+      "band": {
+        "deep": "de lezing is diep. kleine aanpassingen vanaf hier.",
+        "steady": "de lezing houdt stand. Catchups zullen deze verscherpen.",
+        "partial": "de lezing is partieel. er is meer te geven.",
+        "thin": "de lezing is dun. het zal een vorm schetsen, nog geen structuur."
+      },
+      "explainer": "Leesdiepte beschrijft hoeveel van u de lezing heeft kunnen benaderen — vanuit de intake, vanuit wekelijkse Catchups, vanuit consultaties, en vanuit de mensen wier aanwezigheid u vormt. Een diepere lezing is geen beter persoon; het is een accuratere. U kunt deze op elk moment verdiepen, of laten zoals deze is.",
+      "status": {
+        "low": "Laag",
+        "moderate": "Matig",
+        "deep": "Accuraat"
+      },
+      "statusLine": {
+        "low": "de lezing is dun. het zal een vorm schetsen, nog geen structuur.",
+        "moderate": "de lezing krijgt vorm. het kan een werkbare hypothese bevatten.",
+        "deep": "de lezing is vol genoeg om het werk te funderen."
+      },
+      "source": {
+        "intake": "de vragen die u beantwoordde om te beginnen.",
+        "catchups": "wekelijkse check-ins die de lezing actueel houden.",
+        "sessions": "langere consultaties met de analyst.",
+        "connections": "mensen wier aanwezigheid de lezing vormt."
+      }
+    },
+    "latest": {
+      "eyebrow": "LAATSTE LEZING",
+      "heading": "Zes lezingen <it>— en wat verschuift.</it>",
+      "lede": "De zes lezingen worden berekend op basis van uw intake en verfijnd door elke Catchup, consultatie en geaccepteerde connectie. De structuur is stabiel; de textuur beweegt.",
+      "strengthen": "versterk de gegevens voor analyse",
+      "open": "open de lezingen"
+    },
+    "six": {
+      "eyebrow": "DE ZES LEZINGEN",
+      "heading": "Wat er <it>in u gelezen wordt, op dit moment.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "recente weken",
+      "timelineHeading": "venster",
+      "timelineRange": "laatste 4 weken",
+      "timelineSummary": "catchups in venster",
+      "eyebrow": "WEKELIJKSE CATCHUP",
+      "heading": "Overdenk de week. <it>Dan kijken we opnieuw.</it>",
+      "lede": "Acht korte vragen. Eerlijk is beter dan lang. De antwoorden verfijnen de lezing.",
+      "completed": "voltooid — lees de samenvatting",
+      "cta": "Open de catchup van deze week",
+      "markerFirst": "eerste",
+      "markerWeek": "w{week}"
+    },
+    "consulting": {
+      "eyebrow": "CONSULTATIERUIMTE",
+      "heading": "Een uur met <it>de analist.</it>",
+      "ledeSubscribed": "Open wanneer de week drukt. De ruimte herinnert zich wat u reeds heeft gezegd.",
+      "ledeUnsubscribed": "Abonnees kunnen de consultatieruimte betreden — een langere sessie met de analist, in dezelfde stem als uw lezingen.",
+      "cta": "Betreed de consultatieruimte",
+      "figLabel": "LAATSTE SESSIE",
+      "figSubtitle": "vastgehouden vraag",
+      "lastQuestion": "“de droom van dinsdag — wilt u ernaar terugkeren?”"
+    },
+    "subscribe": {
+      "eyebrow": "CONSULTING ROOM · BEVESTIGEN",
+      "title": "Toegang tot de spreekkamer<it>.</it>",
+      "ledePrice": "Het abonnement is",
+      "ledePerMonth": "per maand",
+      "ledeIncludes": ". Het omvat de spreekkamer, de mogelijkheid om tot {count} {count, plural, one {verbinding} other {verbindingen}} uit te nodigen, en één klinisch rapport per kalendermaand.",
+      "ledeBilling": "De facturatie wordt afgehandeld door Stripe. Annuleer op elk moment via de instellingen — toegang blijft behouden tot het einde van de periode.",
+      "canceled": "<i>afrekenen is geannuleerd.</i> er is niets in rekening gebracht. u kunt hieronder terugkeren wanneer u klaar bent.",
+      "checkoutCta": "Verder naar afrekenen",
+      "returnLink": "terug naar de spreekkamer"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINISCH RAPPORT",
+        "subscribedTitle": "Reeds <it>inbegrepen.</it>",
+        "subscribedLede": "Het abonnement omvat één klinisch rapport per kalendermaand. Genereer het onderaan de leesrapportenpagina — geen betaling vereist.",
+        "eyebrow": "KLINISCH RAPPORT · BEVESTIGEN",
+        "title": "Het klinisch rapport<it>.</it>",
+        "ledePrice": "Een eenmalig klinisch rapport kost",
+        "ledeDossier": ". Een dossier van 12–18 pagina's met alle twaalf leesrapporten, in de taal die een clinicus hanteert.",
+        "ledeBilling": "De facturering wordt afgehandeld door Stripe. Rapporten kunnen opnieuw worden gegenereerd naarmate de lezing verdiept; abonnees ontvangen er één per kalendermaand zonder aparte kosten.",
+        "depthNotice": "<i>het rapport zal de beschikbare diepte weerspiegelen.</i> het kan opnieuw worden gegenereerd naarmate de lezing verdiept.",
+        "canceled": "<i>afrekenen is geannuleerd.</i> er is niets in rekening gebracht.",
+        "checkoutCta": "Verder naar afrekenen",
+        "returnLink": "terug naar de leesrapporten"
+      },
+      "status": {
+        "eyebrow": "KLINISCH RAPPORT",
+        "line": {
+          "queued": "uw rapport wordt voorbereid.",
+          "generating": "het rapport wordt geschreven.",
+          "ready": "het rapport is gereed.",
+          "failed": "het rapport is niet voltooid. we proberen het spoedig opnieuw."
+        },
+        "open": "open het rapport",
+        "back": "terug naar de leesrapporten"
+      },
+      "queued": {
+        "eyebrow": "KLINISCH RAPPORT",
+        "line": "uw rapport wordt voorbereid — we sturen u een e-mail wanneer het gereed is.",
+        "back": "terug naar de leesrapporten"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAKE",
+        "title": "De intake, <it>onderwerp per onderwerp.</it>",
+        "lede": "Tien secties. Open er een om de antwoorden te herzien of te verdiepen. De intake is geen eenmalig formulier — antwoorden kunnen op elk moment worden herzien."
+      },
+      "step": {
+        "eyebrow": "INTAKE",
+        "backToAll": "terug naar alle secties"
+      },
+      "failed": {
+        "eyebrow": "INTAKE — ONVOLLEDIG",
+        "headline": "De lezing is <em>niet voltooid</em>.",
+        "lede": "Uw intake is gearchiveerd. De analyse die erop volgt, is niet afgerond.",
+        "retry": "Hervat de lezing",
+        "retryPending": "Hervatten"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · VERWERKING",
+      "headline": "Uw profiel wordt <em>gelezen</em>.",
+      "lede": "wij voeren uw antwoorden nu door de psychodynamische modellen. de eerste analyse duurt gewoonlijk ongeveer 2 uur. wij schrijven u wanneer het werk gereed is en de kamer opent.",
+      "figIntake": "INTAKE",
+      "figSubmitted": "ingediend {date}",
+      "rowResponses": "Ontvangen antwoorden",
+      "rowPattern": "Patroonextractie",
+      "rowSynthesis": "Profielsynthese",
+      "statusInProgress": "bezig",
+      "statusQueued": "in wachtrij",
+      "foot": "wij schrijven u wanneer het werk gereed is",
+      "returnCta": "terug naar de stille kamer",
+      "devPrefix": "dev",
+      "devOpening": "opent…",
+      "devOpen": "open de kamer nu",
+      "devError": "kon de kamer niet openen — controleer de console."
+    }
+  },
+  "invite": {
+    "eyebrow": "UITNODIGING",
+    "safetyFooter": "TwentyThird is geen vervanging voor klinische zorg. Neem in geval van crisis contact op met uw lokale hulpdiensten.",
+    "notReady": {
+      "headline": "Het uitnodigingssysteem wordt <it>voorbereid.</it>",
+      "body": "Probeer het later opnieuw."
+    },
+    "notFound": {
+      "headline": "Deze link wordt <it>niet herkend.</it>",
+      "body": "Als de link recentelijk via e-mail is ontvangen, kan de uitnodiging opnieuw zijn verzonden. Open de meest recente e-mail voor de actieve link."
+    },
+    "alreadyDeclined": {
+      "headline": "Deze uitnodiging is <it>afgewezen.</it>",
+      "body": "Verdere actie van u is niet nodig. {name} ontvangt geen aanvullende meldingen."
+    },
+    "alreadyAccepted": {
+      "headline": "U heeft reeds <it>geaccepteerd.</it>",
+      "body": "Indien de relatie-intake nog niet is voltooid, kunt u hieronder verdergaan.",
+      "continueLink": "vervolg de relatie-intake"
+    },
+    "ended": {
+      "headline": "Deze connectie is <it>beëindigd.</it>",
+      "body": "De link is niet langer actief. Het relatieverslag blijft in het dossier, maar informeert de lezing niet langer."
+    },
+    "expired": {
+      "headline": "Deze uitnodiging is <it>verlopen.</it>",
+      "body": "Uitnodigingen verlopen veertien dagen na verzending. Vraag {name} om een nieuwe te sturen als u wilt reageren."
+    },
+    "declined": {
+      "headline": "Dat is <it>ontvangen.</it>",
+      "body": "Verdere actie van u is niet nodig. De uitnodiging is gesloten; de uitnodiger ziet de statuswijziging discreet. U kunt dit venster sluiten."
+    },
+    "live": {
+      "eyebrow": "VERBINDINGSVERZOEK",
+      "headline": "{name} heeft u uitgenodigd voor <it>hun lezing.</it>",
+      "lede": "TwentyThird is een redactioneel-klinisch instrument — een stille ruimte waar de structuur van iemands innerlijk leven zorgvuldig wordt gelezen en weergegeven in taal die een clinicus kan gebruiken.",
+      "explainerOne": "Een <em>verbinding</em> is geen gedeeld account. {name} zal uw lezingen, sessies of dossier niet zien. U zult de hunne niet zien. Wat u over de relatie zegt, voedt het model dat de lezing van {name} produceert.",
+      "explainerTwo": "Als u een eigen lezing wilt, begint het eerste pad hieronder ook uw eigen account. Het middelste pad stelt u in staat bij te dragen aan de lezing van {name} zonder account. Beide zijn toegestaan.",
+      "metaSentTo": "verzonden naar",
+      "metaInviteAs": "uitnodigen als",
+      "metaReceived": "ontvangen",
+      "metaExpiresIn": "verloopt over {count, plural, one {# dag} other {# dagen}}"
+    },
+    "intake": {
+      "eyebrow": "RELATIE INTAKE",
+      "notReady": {
+        "headline": "De intake wordt <it>voorbereid.</it>",
+        "body": "Probeer het zo dadelijk opnieuw."
+      },
+      "notFound": {
+        "headline": "Deze link wordt <it>niet herkend.</it>",
+        "body": "Open de meest recente uitnodigingsmail voor de actieve link."
+      },
+      "notOpen": {
+        "headline": "De intake is <it>niet geopend.</it>",
+        "body": "Deze uitnodiging is niet geaccepteerd, geweigerd of beëindigd. Keer terug naar de uitnodigingslink om opnieuw te kiezen.",
+        "backLink": "terug naar de uitnodiging"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "ja — begin de relatie-intake",
+      "acceptLabel": "ja — verbind zonder account",
+      "declineLabel": "nee, dank u",
+      "beginLabel": "begin",
+      "continueLabel": "verder",
+      "back": "terug",
+      "oneMoment": "een moment…",
+      "declineConfirmLine": "dit sluit de uitnodiging. er wordt niets meer over u verzonden of opgeslagen.",
+      "declineClosing": "sluit af…",
+      "declineConfirm": "uitnodiging afwijzen",
+      "firstNameLabel": "UW VOORNAAM",
+      "firstNameAria": "Uw voornaam",
+      "firstNameSub": "{name} ziet alleen deze voornaam op hun connectielijst.",
+      "errors": {
+        "missingFirstName": "een voornaam stelt de analyst in staat u correct aan te spreken.",
+        "generic": "kon niet indienen.",
+        "notFound": "deze uitnodigingslink wordt niet herkend.",
+        "expired": "deze uitnodiging is verlopen. vraag de uitnodiger een nieuwe te sturen.",
+        "declined": "deze uitnodiging is reeds afgewezen.",
+        "ended": "deze uitnodiging is niet langer actief.",
+        "missingFirstNameRequired": "een voornaam is vereist."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "RELATIE-INTAKE",
+      "begin": "begin",
+      "back": "terug",
+      "backToCover": "terug naar omslag",
+      "next": "volgende",
+      "finish": "voltooien",
+      "scaleAria": "schaal {value}",
+      "cover": {
+        "headline": "Wat u zegt over <it>{name}</it> blijft tussen u en de analyst.",
+        "lede": "Twaalf korte vragen. Ongeveer vijf minuten. De antwoorden voeden de reading van {name}; zij zullen niet zien wat u schreef, en u zult niet zien wat het produceert."
+      },
+      "closing": {
+        "recording": "een moment — de antwoorden worden vastgelegd.",
+        "tryAgain": "opnieuw proberen",
+        "headline": "Dat is genoeg <it>voor nu.</it>",
+        "lede": "Wat u zei over {name} zal hun reading vanaf de volgende sessie informeren. Zij zullen het niet zien; u zult niet zien wat het produceert.",
+        "closeWindow": "u kunt dit venster sluiten."
+      },
+      "errors": {
+        "unanswered": "een momentje hierbij voordat u verdergaat.",
+        "questionOpen": "een vraag staat nog open. een moment.",
+        "couldNotSave": "kon niet opslaan",
+        "invalidAnswers": "iets is niet geparseerd — controleer de antwoorden.",
+        "notAccepting": "deze uitnodiging accepteert geen antwoorden meer.",
+        "notFound": "deze uitnodigingslink wordt niet herkend.",
+        "couldNotSaveAnswers": "kon de antwoorden niet opslaan."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Hoe lang kennen jullie elkaar al?",
+          "options": {
+            "under_one_year": "minder dan een jaar",
+            "one_to_three": "één tot drie jaar",
+            "four_to_ten": "vier tot tien jaar",
+            "eleven_to_twenty": "elf tot twintig jaar",
+            "more_than_twenty": "meer dan twintig jaar"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Hoe dichtbij voelen jullie je nu tot elkaar?",
+          "lowLabel": "op afstand",
+          "highLabel": "zo dichtbij als maar kan"
+        },
+        "repair_initiator": {
+          "prompt": "Wanneer jullie het oneens zijn, wie zoekt dan meestal als eerste toenadering?",
+          "options": {
+            "i_do": "ik bijna altijd",
+            "usually_me": "meestal ik",
+            "evenly": "we bewegen gelijkmatig naar elkaar toe",
+            "usually_them": "meestal zij",
+            "they_do": "zij bijna altijd"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Wanneer iets moeilijk is, waar gaan zij dan meestal heen?",
+          "options": {
+            "toward": "naar u toe, om erover te praten",
+            "quiet": "in stilte, dan terug",
+            "work": "in werk of afleiding",
+            "alone": "helemaal alleen, achter een deur",
+            "elsewhere": "eerst naar andere mensen"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Wat is iets waarvan u wenst dat zij het over zichzelf begrepen?"
+        },
+        "what_you_offer": {
+          "prompt": "In één zin, wat doet u voor hen wat zij niet zelf kunnen doen?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Welke stem lijkt hen het vaakst te drijven?",
+          "options": {
+            "demand": "de eis — wat er gedaan moet worden",
+            "doubt": "de twijfel — of het genoeg is",
+            "desire": "het verlangen — wat zij werkelijk willen",
+            "watcher": "de waarnemer — hoe het gezien zal worden",
+            "uncertain": "ik weet het nog niet"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Waar stokt hun werk meestal?",
+          "options": {
+            "start": "de start — beginnen",
+            "middle": "het midden — ermee bezig blijven",
+            "finish": "de finish — het loslaten",
+            "visibility": "de zichtbaarheid — het laten zien",
+            "nowhere": "nergens wat ik van buitenaf kan zien"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Is er een onderwerp dat zij consequent vermijden? Benoem het voorzichtig."
+        },
+        "they_at_their_best": {
+          "prompt": "Wanneer zijn zij het meest zichzelf?"
+        },
+        "what_youve_changed": {
+          "prompt": "Is er iets aan hen dat u stilletjes heeft geaccepteerd dat u niet zult veranderen?"
+        },
+        "future_together": {
+          "prompt": "Hoeveel van de toekomst die u zich voorstelt, omvat hen?",
+          "lowLabel": "heel weinig",
+          "highLabel": "bijna alles"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "of",
+      "fallbackPreamble": "kopieer deze link in uw browser:",
+      "attendingInstitution": "DEELNEMENDE INSTELLING",
+      "tagline": "Psychodynamische AI voor het innerlijke leven.",
+      "automatedFooter": "Verzonden door een geautomatiseerd systeem · niet antwoorden"
+    },
+    "intakeSubmitted": {
+      "subject": "uw profiel wordt gelezen.",
+      "preheader": "Eerste analyse is begonnen. De Kamer opent wanneer het werk gereed is.",
+      "eyebrow": "PROFIEL GELEZEN",
+      "titleText": "Uw antwoorden worden gelezen.",
+      "italicPhrase": "worden gelezen",
+      "lede": "De eerste analyse door de psychodynamische modellen is begonnen. De Kamer opent wanneer het werk gereed is.",
+      "figLeftItalic": "intake ontvangen",
+      "figRightLabel": "Eerste analyse",
+      "figRightItalic": "begonnen",
+      "text": "{salutation}\n\nUw antwoorden zijn ontvangen. De eerste analyse door de psychodynamische modellen is begonnen. De Kamer opent wanneer het werk gereed is.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "uw kamer is open.",
+      "preheader": "Twaalf blokken klaar om te lezen. Het werk verfijnt naarmate u ernaar terugkeert.",
+      "eyebrow": "KAMER KLAAR",
+      "titleText": "De eerste lezing is open.",
+      "italicPhrase": "eerste lezing",
+      "lede": "Twaalf blokken van het psychodynamische profiel, in de kamer en klaar om te lezen. Het werk verfijnt naarmate u ernaar terugkeert.",
+      "ctaLabel": "Betreed de kamer",
+      "figLeftItalic": "kamer geopend",
+      "figRightLabel": "Eerste lezing",
+      "figRightItalic": "klaar",
+      "text": "{salutation}\n\nDe eerste lezing is open.\n\nTwaalf blokken van het psychodynamische profiel, in de kamer en klaar om te lezen. Het werk verfijnt naarmate u ernaar terugkeert.\n\nBetreed de kamer:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} nodigt u uit voor de lezing.",
+      "preheader": "{inviterName} nodigt u uit voor de lezing. Een connectie ziet uw lezingen niet; u ziet de hunne niet.",
+      "eyebrow": "UITNODIGING",
+      "titleText": "{inviterName} nodigt u uit voor de lezing.",
+      "italicPhrase": "voor de lezing",
+      "lede": "TwentyThird is een stille ruimte waar de structuur van iemands innerlijke leven zorgvuldig wordt gelezen. Een connectie ziet de lezingen of sessies van de uitnodiger niet, en u zult de hunne niet zien.",
+      "ctaLabel": "Open de uitnodiging",
+      "figLeftItalic": "uitnodiging verzonden",
+      "figRightLabel": "Verloopt",
+      "figRightItalic": "veertien dagen",
+      "securityNote": "Indien dit per abuis is ontvangen, verloopt de uitnodiging vanzelf binnen veertien dagen.",
+      "textIntro": "{inviterName} nodigt u uit voor de lezing bij TwentyThird.",
+      "textBody": "TwentyThird is een stille ruimte waar de structuur van iemands innerlijke leven zorgvuldig wordt gelezen. Een connectie ziet de lezingen of sessies van de uitnodiger niet, en u zult de hunne niet zien.",
+      "textNote": "{inviterName} voegde een notitie toe:\n  {note}",
+      "textOpen": "Open de uitnodiging:",
+      "textSecurity": "Indien dit per abuis is ontvangen, verloopt de uitnodiging vanzelf binnen veertien dagen.",
+      "textCloser": "CognitiveLab, WelloWork AB\nAANWEZIGE INSTELLING"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} heeft de connectie geaccepteerd.",
+      "preheader": "{nameTitle} heeft de connectie geaccepteerd. Effect op de volgende sessie.",
+      "eyebrow": "CONNECTIE GEACCEPTEERD",
+      "titleText": "{nameTitle} heeft de connectie geaccepteerd.",
+      "italicPhrase": "de connectie geaccepteerd",
+      "lede": "Hun relatie-intake zal uw lezing vanaf de volgende sessie informeren. Zij zullen uw lezingen niet zien; u zult de hunne niet zien.",
+      "ctaLabel": "Terug naar de Room",
+      "figLeftItalic": "connectie geaccepteerd",
+      "figRightLabel": "Effect",
+      "figRightItalic": "vanaf de volgende sessie",
+      "text": "{salutation}\n\n{nameTitle} heeft de connectie geaccepteerd.\n\nHun relatie-intake zal uw lezing vanaf de volgende sessie informeren. Zij zullen uw lezingen niet zien; u zult de hunne niet zien.\n\nTerug naar de Room:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} heeft de verbinding beëindigd.",
+      "preheader": "{nameTitle} heeft de verbinding beëindigd. Uw lezing zal zich aanpassen tijdens de volgende sessie.",
+      "eyebrow": "VERBINDING BEËINDIGD",
+      "titleText": "{nameTitle} heeft de verbinding beëindigd.",
+      "italicPhrase": "verbinding beëindigd",
+      "lede": "Uw lezing zal zich aanpassen tijdens de volgende sessie. Wat over de relatie is gezegd, blijft bewaard in het dossier; het beïnvloedt de actieve lezing niet langer.",
+      "ctaLabel": "Terug naar de Room",
+      "figLeftItalic": "verbinding beëindigd",
+      "figRightLabel": "Effect",
+      "figRightItalic": "vanaf volgende sessie",
+      "text": "{nameTitle} heeft de verbinding beëindigd.\n\nUw lezing zal zich aanpassen tijdens de volgende sessie. Wat over de relatie is gezegd, blijft bewaard in het dossier; het beïnvloedt de actieve lezing niet langer.\n\nTerug naar de Room:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "de Catchup van deze week is geopend.",
+      "preheader": "Een korte reflectie. Vijf minuten. Het actualiseert de lezing.",
+      "eyebrow": "WEKELIJKSE CATCHUP",
+      "titleText": "Een week is rustig voorbijgegaan.",
+      "italicPhrase": "rustig",
+      "lede": "Een korte reflectie — wat luid is, wat stil is gebleven, wat is verschoven. Het actualiseert de lezing.",
+      "ctaLabel": "Open de Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "vijf minuten",
+      "text": "{salutation}\n\nEen week is rustig voorbijgegaan.\n\nEen korte reflectie — wat luid is, wat stil is gebleven, wat is verschoven. Het actualiseert de lezing.\n\nOpen de Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "uw antwoorden zijn vastgelegd.",
+      "preheader": "Uw intake wordt hervat waar u gebleven was. Het werk begint pas als het voltooid is.",
+      "eyebrow": "INTAKE VASTGELEGD",
+      "titleText": "De intake is waar u hem achterliet.",
+      "italicPhrase": "waar u hem achterliet",
+      "lede": "Uw intake wordt hervat waar u gebleven was. Het werk begint pas als het voltooid is.",
+      "ctaLabel": "Keer terug naar de intake",
+      "figLeftItalic": "intake gepauzeerd",
+      "figRightLabel": "Hervatten",
+      "figRightItalic": "waar u gebleven was",
+      "text": "{salutation}\n\nDe intake is waar u hem achterliet.\n\nUw intake wordt hervat waar u gebleven was. Het werk begint pas als het voltooid is.\n\nKeer terug naar de intake:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Welke woorden beschrijven het best het huis waarin u opgroeide.",
+          "subtitle": "kies maximaal drie woorden die waar aanvoelen, zelfs als ze elkaar tegenspreken — huizen zijn meestal een mix",
+          "options": {
+            "calm": "Rustig",
+            "strict": "Streng",
+            "emotionally_distant": "Emotioneel afstandelijk",
+            "chaotic": "Chaotisch",
+            "achievement_focused": "Sterk gericht op prestatie",
+            "protective": "Beschermend",
+            "unpredictable": "Onvoorspelbaar",
+            "conflict_heavy": "Conflictenrijk"
+          }
+        },
+        "q1_2": {
+          "title": "Welke rol nam u als kind van nature aan.",
+          "subtitle": "denk aan de rol die u in uw familie speelde zonder dat iemand u dat zei — de vredestichter, de helper, de stille",
+          "options": {
+            "peacemaker": "Vredestichter",
+            "achiever": "Presteerder",
+            "invisible_child": "Onzichtbaar kind",
+            "caregiver": "Zorggever",
+            "rebel": "Rebel",
+            "funny_one": "De grappige",
+            "responsible_one": "De verantwoordelijke",
+            "problem_child": "Probleemkind"
+          }
+        },
+        "q1_3": {
+          "title": "Hoe emotioneel veilig voelde u zich tijdens het opgroeien.",
+          "subtitle": "ga af op uw onderbuikgevoel over het huis, niet de versie die de familie aan een vreemde zou vertellen",
+          "lowLabel": "1 · NOOIT VEILIG",
+          "highLabel": "10 · VOLLEDIG VEILIG"
+        },
+        "q1_4": {
+          "title": "Werden emoties openlijk besproken thuis.",
+          "subtitle": "niet alleen of er gevoelens waren, maar of iemand ze daadwerkelijk benoemde of er hardop over sprak",
+          "options": {
+            "frequently": "Vaak",
+            "sometimes": "Soms",
+            "rarely": "Zelden",
+            "never": "Nooit"
+          }
+        },
+        "q1_5": {
+          "title": "Eén herinnering uit de kindertijd die vandaag nog emotioneel levendig aanvoelt.",
+          "subtitle": "beschrijf één specifieke scène die u nog steeds bijblijft — waar u was, wie er was, wat er gebeurde, hoe het voelde"
+        },
+        "q1_6": {
+          "title": "Wat leerde u te doen om liefde of goedkeuring te ontvangen.",
+          "subtitle": "de kleine dingen waarvan u merkte dat ze werkten — braaf zijn, stil zijn, presteren, uit de weg blijven — deel wat u zich herinnert te hebben aangepast",
+          "options": null
+        },
+        "q1_7": {
+          "title": "Welke emoties waren moeilijk uit te drukken in uw huis.",
+          "subtitle": "welke gevoelens werden genegeerd, afgedaan of bestraft toen u ze probeerde te tonen — woede, verdriet, angst, vreugde, wat dan ook",
+          "options": null
+        },
+        "q1_8": {
+          "title": "Wanneer u aan uw jongere zelf denkt, wat voelt u dan voor hen.",
+          "subtitle": "wees eerlijk over het gevoel dat opkomt — warmte, verdriet, afstand, frustratie, bescherming — wat er ook daadwerkelijk is",
+          "options": null
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Hoe zou u uw moeder of primaire moederlijke verzorger beschrijven.",
+          "subtitle": "een paar zinnen over hoe zij was, hoe zij er voor u was, en hoe u zich bij haar voelde",
+          "options": {
+            "warm": "Warm",
+            "controlling": "Controlerend",
+            "emotionally_unavailable": "Emotioneel onbeschikbaar",
+            "sacrificing": "Zich opofferend",
+            "critical": "Kritisch",
+            "anxious": "Angstig",
+            "unpredictable": "Onvoorspelbaar",
+            "admired": "Bewonderd",
+            "fearful": "Angstaanjagend",
+            "not_applicable": "Niet van toepassing"
+          }
+        },
+        "q2_2": {
+          "title": "Hoe zou u uw vader of primaire vaderlijke verzorger beschrijven.",
+          "subtitle": "een paar zinnen over hoe hij was, hoe hij er voor u was, en hoe u zich bij hem voelde",
+          "options": {
+            "supportive": "Ondersteunend",
+            "distant": "Afstandelijk",
+            "dominant": "Dominant",
+            "passive": "Passief",
+            "ambitious": "Ambitieus",
+            "emotionally_closed": "Emotioneel gesloten",
+            "protective": "Beschermend",
+            "critical": "Kritisch",
+            "absent": "Afwezig",
+            "not_applicable": "Niet van toepassing"
+          }
+        },
+        "q2_3": {
+          "title": "Uw positie in het gezin.",
+          "subtitle": "waar u viel in de volgorde — oudste, middelste, jongste, enig kind, of ergens daartussenin",
+          "options": {
+            "oldest": "Oudste",
+            "middle": "Middelste",
+            "youngest": "Jongste",
+            "only_child": "Enig kind"
+          }
+        },
+        "q2_4": {
+          "title": "Welke rol past het best bij uw positie in het gezin.",
+          "subtitle": "voorbij de geboortevolgorde, de rol die u uiteindelijk speelde — de verantwoordelijke, de rebel, de onzichtbare, de favoriet",
+          "options": {
+            "responsible": "Verantwoordelijk",
+            "ignored": "Genegeerd",
+            "compared": "Vergeleken met anderen",
+            "favored": "Behulpzaam",
+            "competitive": "Competitief",
+            "protective": "Beschermend",
+            "not_applicable": "Niet van toepassing"
+          }
+        },
+        "q2_5": {
+          "title": "Welke ouder begreep u het best.",
+          "subtitle": "noem hen en zeg wat zij in u zagen dat de ander miste of verkeerd begreep"
+        },
+        "q2_6": {
+          "title": "Welke ouder beïnvloedde uw angsten het meest.",
+          "subtitle": "wiens zorgen u opgroeide, en hoe die angsten vandaag nog steeds in uw leven verschijnen"
+        },
+        "q2_7": {
+          "title": "Hoe zag conflict eruit in uw familie.",
+          "subtitle": "beschrijf de vorm die ruzies aannamen — schreeuwen, stilte, dichtslaande deuren, koude weken, herhaalde patronen — wat ook maar bekend voelde"
+        },
+        "q2_8": {
+          "title": "Welke soort aandacht was het moeilijkst te ontvangen.",
+          "subtitle": "de soort zorg die u ongemakkelijk maakte — lof, bezorgdheid, fysieke nabijheid, gezien worden — en waarom het moeilijk was"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Hoe religieus of spiritueel was de omgeving waarin u opgroeide.",
+          "subtitle": "de feitelijke sfeer thuis — praktijken, regels, overtuigingen die in de lucht hingen — niet wat u nu als volwassene gelooft",
+          "lowLabel": "1 · HELEMAAL NIET",
+          "highLabel": "10 · ZEER STERK"
+        },
+        "q3_2": {
+          "title": "Welke boodschap was het sterkst tijdens uw opvoeding.",
+          "subtitle": "de regel of verwachting die zo vaak werd herhaald dat het achtergrondruis werd — over succes, gedrag, imago, plicht, familie",
+          "options": {
+            "success": "Succes is het belangrijkst",
+            "reputation": "Reputatie is het belangrijkst",
+            "obedience": "Gehoorzaamheid is het belangrijkst",
+            "family_loyalty": "Familiebanden zijn het belangrijkst",
+            "independence": "Onafhankelijkheid is het belangrijkst",
+            "sacrifice": "Opoffering is het belangrijkst"
+          }
+        },
+        "q3_3": {
+          "title": "Hoe sterk voelt u zich beoordeeld door de maatschappij.",
+          "subtitle": "hoeveel u zich bekeken of geëvalueerd voelt door mensen buiten uw directe kring — op het werk, online, in het openbaar",
+          "lowLabel": "1 · HELEMAAL NIET",
+          "highLabel": "10 · CONSTANT"
+        },
+        "q3_4": {
+          "title": "Welke overtuigingen uit uw opvoeding vormen u nog steeds.",
+          "subtitle": "de waarden, regels of aannames die u hebt geërfd en waar u nog steeds naar leeft, zelfs als u er jarenlang niet over hebt nagedacht"
+        },
+        "q3_5": {
+          "title": "Welke overtuigingen verzet u zich in het geheim tegen.",
+          "subtitle": "de overtuigingen waarmee u publiekelijk instemt, maar waar u het stilletjes mee oneens bent — over geld, relaties, succes, gender, alles"
+        },
+        "q3_6": {
+          "title": "Waar zou uw familie of gemeenschap het meest afkeurend over zijn met betrekking tot uw ware zelf.",
+          "subtitle": "de delen van uzelf, uw leven of uw keuzes die u voor hen verborgen houdt, en waarom u ze verborgen houdt"
+        },
+        "q3_7": {
+          "title": "Wat voor persoon werd u verwacht te worden.",
+          "subtitle": "de toekomst die anderen voor u voorstelden — carrière, familie, gedrag, imago — voordat u er iets over te zeggen had"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Hoeveel mensen kennen uw ware zelf werkelijk.",
+          "subtitle": "de mensen die de onbewerkte versie van u hebben gezien en niet geschokt zouden zijn door iets in uw innerlijke leven",
+          "options": {
+            "none": "Geen",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Velen"
+          }
+        },
+        "q4_2": {
+          "title": "In groepen wordt u gewoonlijk.",
+          "subtitle": "de rol die u onbewust aanneemt — de grappenmaker, de luisteraar, de leider, de observator, degene die de zaken soepel laat verlopen",
+          "options": {
+            "leader": "Leider",
+            "observer": "Observator",
+            "entertainer": "Entertainer",
+            "mediator": "Mediator",
+            "intellectual": "Intellectueel",
+            "caregiver": "Verzorger",
+            "withdrawn": "Teruggetrokken"
+          }
+        },
+        "q4_3": {
+          "title": "Hoe bang bent u om anderen teleur te stellen.",
+          "subtitle": "hoezeer de reactie van een ander — een blik, een zucht, stilte — kan bepalen wat u zegt of doet",
+          "lowLabel": "1 · HELEMAAL NIET",
+          "highLabel": "10 · DAGELIJKS"
+        },
+        "q4_4": {
+          "title": "Welke delen van uzelf verbergt u in sociale situaties.",
+          "subtitle": "de gedachten, gevoelens, eigenschappen of delen van uw geschiedenis die u verborgen houdt wanneer u onder andere mensen bent"
+        },
+        "q4_5": {
+          "title": "Wanneer voelt u zich het meest geaccepteerd.",
+          "subtitle": "de situaties of relaties waarin u stopt met presteren en gewoon uzelf kunt zijn — beschrijf wat die ruimtes anders maakt"
+        },
+        "q4_6": {
+          "title": "Welke sociale situaties putten u het meest uit.",
+          "subtitle": "de bijeenkomsten, dynamieken of relaties die u vermoeider achterlaten dan ze zouden moeten — en wat daaraan uitputtend is"
+        },
+        "q4_7": {
+          "title": "Welk soort mensen benijdt u.",
+          "subtitle": "jaloezie wijst meestal op iets wat u wilt maar uzelf nog niet openlijk heeft toegestaan te willen — beschrijf wie het oproept en waarom"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Welke platforms gebruikt u actief.",
+          "subtitle": "de apps die u uit gewoonte meer dan eens per dag opent, niet die waarop u technisch gezien een account heeft",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Geen"
+          }
+        },
+        "q5_2": {
+          "title": "Gemiddeld dagelijks gebruik per platform.",
+          "subtitle": "een ruwe schatting van de tijd die u daadwerkelijk aan elk besteedt — minuten of uren, zonder oordeel",
+          "unit": "MINUTEN PER DAG"
+        },
+        "q5_3": {
+          "title": "Waarvoor u ze voornamelijk gebruikt.",
+          "subtitle": "de werkelijke reden onder de voor de hand liggende — verbinding, afleiding, validatie, ontsnapping, vergelijking, informatie",
+          "options": {
+            "validation": "Validatie",
+            "learning": "Leren",
+            "escapism": "Escapisme",
+            "networking": "Netwerken",
+            "self_expression": "Zelfexpressie",
+            "entertainment": "Vermaak",
+            "comparison": "Vergelijking",
+            "dating": "Daten"
+          }
+        },
+        "q5_4": {
+          "title": "Hoe vaak verwijdert of bewerkt u berichten vóór publicatie.",
+          "subtitle": "hoeveel u repeteert, twijfelt of herschrijft wat u deelt voordat u het anderen laat zien",
+          "options": {
+            "always": "Altijd",
+            "often": "Vaak",
+            "sometimes": "Soms",
+            "rarely": "Zelden",
+            "never": "Nooit"
+          }
+        },
+        "q5_5": {
+          "title": "Hoe vaak vergelijkt u uw leven met dat van anderen online.",
+          "subtitle": "de stille meting die plaatsvindt tijdens het scrollen — over uiterlijk, succes, relaties, levensstijl, alles",
+          "lowLabel": "1 · NOOIT",
+          "highLabel": "10 · CONSTANT"
+        },
+        "q5_6": {
+          "title": "Welke versie van uzelf verschijnt online.",
+          "subtitle": "beschrijf het karakter dat u presenteert — de gecureerde versie — en hoe dit verschilt van wie u bent wanneer niemand kijkt"
+        },
+        "q5_7": {
+          "title": "Wat zoekt u emotioneel wanneer u sociale media opent.",
+          "subtitle": "het gevoel waarnaar u reikt op het moment dat u de app opent — afleiding, comfort, opwinding, gevoelloosheid, verbinding"
+        },
+        "q5_8": {
+          "title": "Welke inhoud maakt u ongemakkelijk.",
+          "subtitle": "de berichten of video's die u snel wilt doorscrollen, en waar dat ongemak volgens u werkelijk over gaat"
+        },
+        "q5_9": {
+          "title": "Welke mensen trekken uw aandacht online.",
+          "subtitle": "de accounts waarbij u stopt en kijkt — beschrijf de kwaliteiten die zij delen en wat u aantrekt"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Uw huidige relatiestatus.",
+          "subtitle": "waar u zich nu feitelijk bevindt — single, aan het daten, een partner, getrouwd, gescheiden, ingewikkeld — niet waar u zou willen zijn",
+          "options": {
+            "single": "Single",
+            "dating": "Aan het daten",
+            "in_relationship": "In een relatie",
+            "engaged": "Verloofd",
+            "married": "Getrouwd",
+            "separated_divorced": "Gescheiden",
+            "widowed": "Weduwnaar/weduwe",
+            "its_complicated": "Het is ingewikkeld"
+          }
+        },
+        "q6_2": {
+          "title": "Aantal serieuze relaties waarin u bent geweest.",
+          "subtitle": "de relaties die emotioneel van belang waren, ongeacht de duur of officiële status",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Typische conflicten in uw relaties.",
+          "subtitle": "de argumenten die in verschillende vormen terugkeren bij verschillende partners — geld, afstand, controle, communicatie",
+          "options": {
+            "distance": "Afstand",
+            "jealousy": "Jaloezie",
+            "control": "Controle",
+            "emotional_unavailability": "Emotionele onbeschikbaarheid",
+            "communication": "Communicatie",
+            "trust": "Vertrouwen",
+            "dependency": "Afhankelijkheid"
+          }
+        },
+        "q6_4": {
+          "title": "In relaties heeft u de neiging om.",
+          "subtitle": "uw standaardreactie wanneer het moeilijk wordt — dichterbij komen, afstand nemen, de leiding nemen, afsluiten, proberen te repareren",
+          "options": {
+            "pursue": "Na te jagen",
+            "withdraw": "U terug te trekken",
+            "overgive": "Te veel te geven",
+            "test_loyalty": "Loyaliteit te testen",
+            "avoid_vulnerability": "Kwetsbaarheid te vermijden"
+          }
+        },
+        "q6_5": {
+          "title": "Op welk soort mensen valt u herhaaldelijk.",
+          "subtitle": "het type dat steeds in uw liefdesleven verschijnt — niet alleen uiterlijk, maar emotionele patronen, temperament, hoe ze u behandelen",
+          "options": null
+        },
+        "q6_6": {
+          "title": "Wat beëindigt gewoonlijk uw relaties.",
+          "subtitle": "de werkelijke reden waarom dingen uit elkaar vallen, voorbij het officiële verhaal dat u aan vrienden of familie vertelt",
+          "options": null
+        },
+        "q6_7": {
+          "title": "Welke emotionele behoefte wilt u het meest vervuld zien.",
+          "subtitle": "de behoefte die u het moeilijkst direct kunt vragen — gezien worden, gekozen worden, veilig zijn, vrij zijn, gewild zijn",
+          "options": null
+        },
+        "q6_8": {
+          "title": "Waar bent u het meest bang voor in intimiteit.",
+          "subtitle": "wat nabijheid voor u op het spel zet — gekend worden, gevangen zitten, verlaten worden, te veel zijn, niet genoeg zijn",
+          "options": null
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Uw huidige arbeidsstatus.",
+          "subtitle": "de aard van uw huidige werkleven — in loondienst, zelfstandig, tussen banen, studerend, mantelzorger, iets anders",
+          "options": {
+            "employed_full_time": "In loondienst, fulltime",
+            "employed_part_time": "In loondienst, parttime",
+            "self_employed": "Zelfstandige of oprichter",
+            "freelance": "Freelance of projectbasis",
+            "studying": "Studerend",
+            "between_roles": "Tussen banen",
+            "caregiving": "Mantelzorger thuis",
+            "retired": "Gepensioneerd",
+            "not_working": "Niet werkzaam"
+          }
+        },
+        "q7_2": {
+          "title": "Hoe tevreden bent u met uw loopbaanrichting.",
+          "subtitle": "de langere lijn van waar uw werk naartoe gaat, niet hoe u zich deze specifieke week voelt",
+          "lowLabel": "1 · VERLOREN",
+          "highLabel": "10 · PRECIES GOED"
+        },
+        "q7_3": {
+          "title": "Op het werk bent u meestal.",
+          "subtitle": "de manier waarop u professioneel opereert — de rol die u aanneemt wanneer niemand u een rol toewijst",
+          "options": {
+            "perfectionistic": "Perfectionistisch",
+            "avoidant": "Vermijdend",
+            "competitive": "Concurrerend",
+            "cooperative": "Coöperatief",
+            "over_responsible": "Oververantwoordelijk",
+            "detached": "Afstandelijk"
+          }
+        },
+        "q7_4": {
+          "title": "Uw grootste stressfactor op het werk.",
+          "subtitle": "de bron van druk die u mee naar huis neemt — een persoon, een werklast, een angst, een omgeving, een patroon",
+          "options": {
+            "criticism": "Kritiek",
+            "failure": "Mislukking",
+            "visibility": "Zichtbaarheid",
+            "authority": "Autoriteit",
+            "uncertainty": "Onzekerheid",
+            "conflict": "Conflict"
+          }
+        },
+        "q7_5": {
+          "title": "Wat betekent succes emotioneel voor u.",
+          "subtitle": "het gevoel dat u zich voorstelt wanneer u het eindelijk bereikt — opluchting, trots, vrede, vrijheid, genoeg zijn"
+        },
+        "q7_6": {
+          "title": "Welke vorm van erkenning raakt u het meest.",
+          "subtitle": "de lof die echt aankomt en uw gevoel verandert, en de lof die afketst, hoeveel u er ook van krijgt"
+        },
+        "q7_7": {
+          "title": "Welke mislukking beïnvloedt u vandaag de dag nog steeds.",
+          "subtitle": "een specifieke mislukking die u nog niet helemaal heeft verwerkt — wat er gebeurde, en hoe het nog steeds uw keuzes vormt"
+        },
+        "q7_8": {
+          "title": "Als geld zou verdwijnen, wat zou u dan nastreven.",
+          "subtitle": "het werk of de activiteit die u zou doen, zelfs als niemand u ervoor zou betalen — beschrijf hoe het eruitziet"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Hoe gaat u gewoonlijk om met stress.",
+          "subtitle": "waar u naar grijpt wanneer de zaken zwaar worden — eten, schermen, lichaamsbeweging, isolatie, praten, middelen, slaap, werk",
+          "options": {
+            "isolation": "Isolatie",
+            "food": "Eten",
+            "gaming": "Gamen",
+            "exercise": "Lichaamsbeweging",
+            "overworking": "Overwerken",
+            "scrolling": "Scrollen",
+            "substance_use": "Middelenmisbruik",
+            "shopping": "Winkelen",
+            "sleeping": "Slapen",
+            "socializing": "Socialiseren"
+          }
+        },
+        "q8_2": {
+          "title": "Hoe vaak gaat u sociaal uit.",
+          "subtitle": "hoe vaak u persoonlijk tijd doorbrengt met andere mensen, niet online of via berichten",
+          "options": {
+            "multiple_per_week": "Meerdere keren per week",
+            "weekly": "Wekelijks",
+            "monthly": "Maandelijks",
+            "rarely": "Zelden",
+            "never": "Nooit"
+          }
+        },
+        "q8_3": {
+          "title": "Hoe vaak voelt u zich eenzaam, zelfs in een groep.",
+          "subtitle": "de eenzaamheid die opkomt wanneer u omringd bent door mensen, maar u zich toch ongezien of ver weg voelt",
+          "lowLabel": "1 · NOOIT",
+          "highLabel": "10 · ALTIJD"
+        },
+        "q8_4": {
+          "title": "Welke activiteiten doen u uzelf vergeten.",
+          "subtitle": "de dingen die u zo diep meeslepen dat de tijd verdwijnt — ten goede of ten kwade, gezond of niet"
+        },
+        "q8_5": {
+          "title": "Waarover vermijdt u het meest te denken.",
+          "subtitle": "het onderwerp of de herinnering die u snel vermijdt wanneer deze ter sprake komt — over uzelf, uw verleden, uw toekomst"
+        },
+        "q8_6": {
+          "title": "Wanneer voelt u zich emotioneel verdoofd.",
+          "subtitle": "de situaties waarin het volume tot nul daalt — werk, relaties, conflict, intimiteit, alleen zijn"
+        },
+        "q8_7": {
+          "title": "Welke gewoonte is het moeilijkst te stoppen.",
+          "subtitle": "het gedrag dat u meer dan eens heeft geprobeerd te veranderen of te stoppen, zonder succes — beschrijf wat het is en wat u steeds terugtrekt"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Hoe zelfkritisch bent u.",
+          "subtitle": "de toon van uw innerlijke stem wanneer u faalt of tekortschiet — hard, eerlijk, afwijzend, verwoestend",
+          "lowLabel": "1 · ZACHT",
+          "highLabel": "10 · GENADELOOS"
+        },
+        "q9_2": {
+          "title": "Welke uitspraak komt het dichtst bij uw diepste angst.",
+          "subtitle": "de zin over uzelf die onder al het andere leeft, degene die u alleen op een moeilijke dag zou toegeven",
+          "options": {
+            "never_enough": "Ik ben nooit genoeg",
+            "fear_abandoned": "Ik ben bang om verlaten te worden",
+            "fear_losing_control": "Ik ben bang de controle te verliezen",
+            "fear_failure": "Ik ben bang om te falen",
+            "fear_ordinary": "Ik ben bang om gewoon te zijn",
+            "fear_rejection": "Ik ben bang voor afwijzing",
+            "fear_dependence": "Ik ben bang voor afhankelijkheid"
+          }
+        },
+        "q9_3": {
+          "title": "Hoe vaak voelt u zich losgekoppeld van uzelf.",
+          "subtitle": "het gevoel uw eigen leven van een kleine afstand te bekijken, alsof u er niet volledig in bent",
+          "lowLabel": "1 · NOOIT",
+          "highLabel": "10 · DAGELIJKS"
+        },
+        "q9_4": {
+          "title": "Welke gedachte herhaalt zich het vaakst in uw hoofd.",
+          "subtitle": "de herhalende zin of zorg die regelmatig terugkomt — schrijf het in de exacte bewoordingen, niet als een samenvatting"
+        },
+        "q9_5": {
+          "title": "Waar bekritiseert u uzelf privé voor.",
+          "subtitle": "de dingen waarop u uzelf beoordeelt en die niemand anders weet — over uw lichaam, geest, keuzes, karakter"
+        },
+        "q9_6": {
+          "title": "Wat zou u het gevoel geven dat u genoeg bent.",
+          "subtitle": "de voorwaarde die u stilletjes voor uzelf heeft gesteld om eindelijk te ontspannen — wees eerlijk, het antwoord is vaak kleiner dan u verwacht"
+        },
+        "q9_7": {
+          "title": "Als uw innerlijke stem een persoonlijkheid had, hoe zou u die dan beschrijven.",
+          "subtitle": "de leeftijd, het geslacht, de toon van die stem — en wiens stem het eigenlijk zou kunnen zijn, als u het terugvoert"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Wat voor u belangrijker is.",
+          "subtitle": "kies wat nu het belangrijkst is — de andere kunnen nog steeds belangrijk zijn, maar wees eerlijk over de rangschikking",
+          "options": {
+            "freedom": "Vrijheid",
+            "love": "Liefde",
+            "recognition": "Erkenning",
+            "stability": "Stabiliteit",
+            "power": "Macht",
+            "meaning": "Betekenis",
+            "peace": "Vrede",
+            "influence": "Invloed"
+          }
+        },
+        "q10_2": {
+          "title": "Hoe hoopvol bent u over uw toekomst.",
+          "subtitle": "het gevoelde wanneer u vooruitdenkt, niet het optimistische antwoord dat u anderen geeft wanneer zij ernaar vragen",
+          "lowLabel": "1 · GEEN",
+          "highLabel": "10 · ZEER"
+        },
+        "q10_3": {
+          "title": "Wat wilt u in het geheim het meest.",
+          "subtitle": "het verlangen dat u uzelf nog niet hardop heeft laten benoemen — het verlangen dat te groot, te riskant of te gênant voelt",
+          "options": {
+            "to_be_understood": "Begrepen worden",
+            "to_be_admired": "Bewonderd worden",
+            "to_feel_safe": "Veilig voelen",
+            "to_be_desired": "Verlangd worden",
+            "to_feel_important": "Belangrijk voelen",
+            "to_feel_free": "Vrij voelen",
+            "to_belong": "Ergens bij horen"
+          }
+        },
+        "q10_4": {
+          "title": "Beschrijf uw ideale toekomstige leven in detail.",
+          "subtitle": "de concrete details — waar u bent, met wie u bent, hoe uw ochtenden eruitzien, het werk, het licht, het ritme"
+        },
+        "q10_5": {
+          "title": "Welke angst zou die toekomst kunnen vernietigen.",
+          "subtitle": "het ding — intern of extern — dat u eerder heeft tegengehouden, en u opnieuw zou kunnen tegenhouden als u het toelaat"
+        },
+        "q10_6": {
+          "title": "Welk deel van uzelf probeert u nog steeds te worden.",
+          "subtitle": "de versie van uzelf aan de horizon — de kwaliteiten, de vrijheden, de manier van zijn waar u langzaam naartoe beweegt"
+        },
+        "q10_7": {
+          "title": "Als niemand u veroordeelde, hoe zou u dan anders leven.",
+          "subtitle": "de keuzes die u zou maken als het observeren stopte — over werk, liefde, lichaam, tijd, geld, stem"
+        },
+        "q10_8": {
+          "title": "Wat denkt u werkelijk te zoeken.",
+          "subtitle": "het diepere ding onder al uw eerdere antwoorden — waar elke keuze en elk verlangen werkelijk op wijst"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "OORSPRONG · ONTWIKKELINGSIMPRINTING",
+        "headline": [
+          "Wat de vroege kamer je ",
+          "leerde",
+          "."
+        ],
+        "lede": "Het eerste deel luistert naar het emotionele klimaat, veiligheid en de rol die u werd toebedeeld. Patronen die hier worden vastgelegd, vormen de basis waarop al het latere wordt gebouwd.",
+        "title": "Oorsprong",
+        "subtitle": "ontwikkelingsimprinting"
+      },
+      "attachment": {
+        "eyebrow": "HECHTING · FAMILIESTRUCTUUR",
+        "headline": [
+          "De eerste ",
+          "banden",
+          ", en de vorm die zij achterlieten."
+        ],
+        "lede": "Bepaalt uw hechtingsstijl, uw relatie tot autoriteit en de triangulatie waarin u opgroeide. De vorm van de eerste band wordt de sjabloon waartegen elke latere band wordt afgemeten.",
+        "title": "Hechting",
+        "subtitle": "familiestructuur"
+      },
+      "authority": {
+        "eyebrow": "AUTORITEIT · SYMBOLISCHE WET",
+        "headline": [
+          "De stemmen die u ",
+          "erfde",
+          "."
+        ],
+        "lede": "Brengt de morele codes, schuldstructuren en geërfde identiteit naar boven die nog steeds op de achtergrond meespelen. De stemmen waaronder u opgroeide, verdwijnen zelden; zij worden de stem die u beoordeelt.",
+        "title": "Autoriteit",
+        "subtitle": "symbolische wet"
+      },
+      "belonging": {
+        "eyebrow": "ERBIJ HOREN · SOCIALE IDENTITEIT",
+        "headline": [
+          "Wie u ",
+          "mag zien",
+          "."
+        ],
+        "lede": "Meet sociale afhankelijkheid, identiteitsmaskering en de angst voor uitsluiting. Erbij horen is zelden gratis; dit deel vraagt wat u ervoor inlevert.",
+        "title": "Erbij horen",
+        "subtitle": "sociale identiteit"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · VERLANGEN & DIGITALE ZELF",
+        "headline": [
+          "Het zelf dat u ",
+          "uitvoert",
+          "."
+        ],
+        "lede": "Leest het geïdealiseerde zelf, de validatielus en de symbolische prestatie die u online opvoert. De persona is geen leugen; het is een half onthulde wens.",
+        "title": "Persona",
+        "subtitle": "verlangen & digitale zelf"
+      },
+      "desire": {
+        "eyebrow": "VERLANGEN · INTIMITEIT & HERHALING",
+        "headline": [
+          "Het patroon dat ",
+          "blijft terugkeren",
+          "."
+        ],
+        "lede": "Vindt de terugkerende relationele vorm, de angst voor verlating, de tegenstrijdigheid binnen het verlangen. Wat zich herhaalt, is zelden gekozen; het is wat vraagt om gezien te worden.",
+        "title": "Verlangen",
+        "subtitle": "intimiteit & herhaling"
+      },
+      "achievement": {
+        "eyebrow": "PRESTATIE · WERK & ERKENNING",
+        "headline": [
+          "Wat u ",
+          "probeert te bewijzen",
+          "."
+        ],
+        "lede": "Detecteert prestatieangst, honger naar erkenning en uw relatie tot autoriteit op het werk. Onder elke ambitie bevindt zich een publiek van één of twee personen.",
+        "title": "Prestatie",
+        "subtitle": "werk & erkenning"
+      },
+      "escape": {
+        "eyebrow": "ONTSNAPPING · PLEZIER & RITUEEL",
+        "headline": [
+          "Waar u heen gaat ",
+          "om hier niet te zijn",
+          "."
+        ],
+        "lede": "Identificeert de vermijdingspatronen, de dwanghandelingen en de rituelen die plezier reguleren. De uitgang waar u naar reikt, zegt evenveel als de kamer die u verlaat.",
+        "title": "Ontsnapping",
+        "subtitle": "plezier & ritueel"
+      },
+      "self-relation": {
+        "eyebrow": "ZELFRELATIE · INTERNE DIALOOG",
+        "headline": [
+          "De stem die u niet ",
+          "helemaal stil krijgt",
+          "."
+        ],
+        "lede": "Brengt de grens van het superego, de schaamtestructuren en de geïnternaliseerde stemmen in kaart. De manier waarop u in privé met uzelf spreekt, is de meest eerlijke weergave van wie u heeft opgevoed.",
+        "title": "Zelfrelatie",
+        "subtitle": "interne dialoog"
+      },
+      "future-fantasy": {
+        "eyebrow": "TOEKOMST · FANTASIE, ANGST & VERLANGEN",
+        "headline": [
+          "Wat u ",
+          "werkelijk zoekt",
+          "."
+        ],
+        "lede": "Het emotionele hoogtepunt — de toekomst die u zich voorstelt, de angst die deze achtervolgt, het kernverlangen daaronder. De laatste vraag is de eerste die terugkeert.",
+        "title": "Toekomst-fantasie",
+        "subtitle": "fantasie, angst & verlangen"
+      }
+    }
+  },
+  "common": {
+    "or": "of",
+    "loading": "laden…",
+    "sending": "verzenden…",
+    "save": "Opslaan",
+    "saved": "opgeslagen",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "back": "Terug",
+    "continue": "Doorgaan",
+    "retry": "Opnieuw proberen",
+    "more": "meer"
+  },
+  "nav": {
+    "room": "Room",
+    "readings": "Lezingen",
+    "catchup": "Catchup",
+    "consulting": "Consult",
+    "caseFile": "Dossier",
+    "settings": "Instellingen",
+    "signIn": "Aanmelden",
+    "signOut": "Afmelden",
+    "getStarted": "Beginnen",
+    "language": "Taal",
+    "method": "Methode",
+    "theWork": "Het Werk",
+    "about": "Over",
+    "contact": "Contact",
+    "start": "Start"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Meld ",
+      "titleItalic": "u aan",
+      "titleAfter": ".",
+      "googleLabel": "Aanmelden met Google",
+      "or": "of",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "WACHTWOORD",
+      "forgotPassword": "Wachtwoord vergeten",
+      "submit": "Aanmelden",
+      "footPrompt": "Nieuw hier? ",
+      "footLink": "Maak een account aan"
+    },
+    "signUp": {
+      "titleBefore": "Maak een ",
+      "titleItalic": "account",
+      "titleAfter": ".",
+      "googleLabel": "Verdergaan met Google",
+      "or": "of",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "WACHTWOORD",
+      "confirmPasswordLabel": "BEVESTIG WACHTWOORD",
+      "submit": "Account aanmaken",
+      "footPrompt": "Heeft u al een account? ",
+      "footLink": "Meld u aan",
+      "resentNote": "Er is een nieuwe link verzonden.",
+      "resendConfirmation": "Bevestiging opnieuw verzenden",
+      "pendingFootPrompt": "Verkeerd adres? ",
+      "pendingFootLink": "Opnieuw beginnen"
+    },
+    "forgot": {
+      "titleBefore": "Wachtwoord ",
+      "titleItalic": "vergeten",
+      "titleAfter": ".",
+      "lede": "Voer het e-mailadres in waarmee u zich heeft aangemeld. Wij sturen een link om het wachtwoord opnieuw in te stellen.",
+      "emailLabel": "E-MAIL",
+      "submit": "Verzend resetlink",
+      "footPrompt": "Toch herinnerd? ",
+      "footLink": "Meld u aan",
+      "sentBackLink": "Terug naar aanmelden"
+    },
+    "reset": {
+      "titleBefore": "Stel een ",
+      "titleItalic": "nieuw wachtwoord",
+      "titleAfter": ".",
+      "newPasswordLabel": "NIEUW WACHTWOORD",
+      "confirmPasswordLabel": "BEVESTIG WACHTWOORD",
+      "submit": "Wachtwoord bijwerken",
+      "expiredTitleBefore": "Die link is ",
+      "expiredTitleItalic": "niet langer geldig",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Vraag een nieuwe link aan"
+    },
+    "errors": {
+      "invalid_credentials": "E-mail of wachtwoord komt niet overeen.",
+      "email_taken": "Dat e-mailadres is al geregistreerd. Probeer in te loggen.",
+      "weak_password": "Gebruik minimaal 8 tekens.",
+      "passwords_dont_match": "Wachtwoorden komen niet overeen.",
+      "email_invalid": "Dat lijkt geen geldig e-mailadres.",
+      "rate_limited": "Te veel pogingen. Probeer het over een moment opnieuw.",
+      "unconfirmed_email": "Bevestig eerst uw e-mailadres. Controleer uw inbox.",
+      "reset_link_expired": "Die link is verlopen. Vraag een nieuwe aan.",
+      "reset_link_invalid": "Die link is niet langer geldig. Vraag een nieuwe aan.",
+      "oauth_failed": "Kon Google niet bereiken. Probeer het opnieuw.",
+      "callback_failed": "Aanmelden kon niet worden voltooid.",
+      "generic": "Er is iets misgegaan. Probeer het opnieuw.",
+      "no_session": "Meld u aan om verder te gaan."
+    },
+    "success": {
+      "checkInboxEyebrow": "CONTROLEER UW INBOX",
+      "confirmationHeadlineBefore": "Wij hebben een ",
+      "confirmationHeadlineItalic": "bevestigingslink",
+      "confirmationHeadlineAfter": " verzonden naar ",
+      "confirmationLede": "Klik erop om het aanmaken van uw account te voltooien.",
+      "resetSentEyebrow": "CONTROLEER UW INBOX",
+      "resetSentHeadlineBefore": "Als dat e-mailadres ",
+      "resetSentHeadlineItalic": "geregistreerd",
+      "resetSentHeadlineAfter": " is, hebben wij een resetlink verzonden.",
+      "resetSentLede": "De link werkt eenmalig en verloopt binnen een uur. Geen link ontvangen betekent geen account.",
+      "passwordUpdated": "Wachtwoord bijgewerkt. U wordt aangemeld."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "ACCOUNT",
+      "headlineBefore": "Richt uw",
+      "headlineItalic": "stille kamer",
+      "lede": "Een naam, een jaar, en een ja. Dan begint het werk.",
+      "saveFailed": "Opslaan mislukt. Probeer het over een moment opnieuw.",
+      "nameLabel": "NAAM",
+      "nameRequired": "Naam is vereist.",
+      "prefilledHint": "vooraf ingevuld vanuit Google · bewerkbaar",
+      "yearLabel": "GEBOORTEJAAR",
+      "yearRequired": "Selecteer een jaar.",
+      "genderLabel": "GESLACHT",
+      "genderRequired": "Kies er één.",
+      "gender": {
+        "male": "Man",
+        "female": "Vrouw",
+        "nonBinary": "Non-binair",
+        "preferNotToSay": "Zeg ik liever niet"
+      },
+      "languageLabel": "TAAL",
+      "termsBefore": "Ik accepteer de",
+      "termsLink": "Voorwaarden",
+      "termsAnd": "en het",
+      "privacyLink": "Privacybeleid",
+      "termsAfter": ".",
+      "submit": "Account initiëren"
+    },
+    "intro": {
+      "eyebrow": "INTAKE · GEEN VERKEERDE ANTWOORDEN",
+      "headlineBefore": "Er zijn hier geen juiste antwoorden",
+      "headlineItalic": "hier"
+    },
+    "brief": {
+      "title": "DE OPDRACHT",
+      "hint": "één keer lezen, dan beginnen",
+      "opener": "De verkeerde antwoorden — de aarzelingen, de typefouten, de overslaan — spreken even duidelijk als de juiste.",
+      "privacy": "Alles wat u schrijft is privé. Niets verlaat deze kamer.",
+      "length": "Omdat het werk diepgaand is, is de intake lang. Wij hebben deze in tien delen gesplitst. Het geheel duurt ongeveer twee uur.",
+      "resume": "Opslaan en een andere dag verdergaan. Bewerk elke sectie nadat u deze heeft voltooid — het profiel blijft luisteren.",
+      "begin": "Begin intake"
+    },
+    "saved": {
+      "eyebrow": "OPSLAAN & PAUZEREN",
+      "headlineItalic": "Opgeslagen.",
+      "headlineAfter": "Kom terug wanneer u er klaar voor bent.",
+      "body": "Alles wat u heeft geschreven, bevindt zich in uw dossier. De kamer opent de volgende keer op dezelfde plek.",
+      "keepGoing": "doorgaan",
+      "leaveRoom": "Verlaat de stille kamer"
+    },
+    "step": {
+      "label": "STAP",
+      "of": "VAN",
+      "min": "MIN",
+      "progressLabel": "Intake voortgang",
+      "finalEpigraph": "de laatste vraag is altijd weer de eerste.",
+      "backTo": "Stap {n}",
+      "continueTo": "Verder naar Stap {n}",
+      "submit": "Opslaan & indienen",
+      "submitReading": "leest..."
+    },
+    "questions": {
+      "closeTitle": "GESLOTEN VRAGEN",
+      "closeHint": "kies wat waar is",
+      "openTitle": "OPEN VRAGEN",
+      "openHint": "schrijf wat naar boven komt",
+      "countLabel": "{count, plural, one {vraag} other {vragen}}"
+    },
+    "saveExit": {
+      "or": "of",
+      "saveAndReturn": "opslaan en later terugkeren"
+    },
+    "saveIndicator": {
+      "saving": "opslaan…",
+      "saved": "opgeslagen",
+      "saveFailed": "opslaan mislukt"
+    }
+  },
+  "readings": {
+    "whatThisIs": "wat dit is →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "onbewuste lussen",
+        "definition": "Terugkerende reeksen van gevoel, actie en uitkomst die buiten bewuste keuze plaatsvinden. Het benoemen van de lus is de eerste onderbreking ervan.",
+        "seedReading": "nadert intimiteit en creëert dan een kleine mislukking om terug te trekken.",
+        "seedTakeaway": "de terugtrekking is de lus. niet de intimiteit."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "linguïstisch onbewuste",
+        "definition": "De manier waarop onbewust materiaal naar boven komt in woordkeuze, herhaling, versprekingen en de structuur van spraak — Lacans bewering dat het onbewuste gestructureerd is als een taal.",
+        "seedReading": "spraak verdubbelt op het woord “moeten” — de plaats van een geërfde eis.",
+        "seedTakeaway": "de stem van iemand anders spreekt nog steeds door dit woord."
+      },
+      "father-imago": {
+        "subtitle": "vader-imago",
+        "definition": "Het geïnternaliseerde beeld van de vader, vroeg gevormd en deels mythisch. Het bepaalt hoe autoriteit, ambitie en oordeel later in het leven worden ervaren.",
+        "seedReading": "oordeelt van bovenaf voordat hij van bovenaf wordt geoordeeld — de positie is identiek.",
+        "seedTakeaway": "de zetel verandert. de stoel niet."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimiteitsdrempel",
+        "definition": "Het punt waarop nabijheid als een risico begint te voelen, gevolgd door een defensieve zet. Verschilt per persoon; verrassend stabiel over relaties heen.",
+        "seedReading": "houdt goed stand totdat de ander leesbaar wordt — trekt zich dan terug.",
+        "seedTakeaway": "gekend worden is de grens, niet nabijheid."
+      },
+      "desire-structure": {
+        "subtitle": "verlangensstructuur",
+        "definition": "Wat de gebruiker werkelijk wil, onderscheiden van wat hem is verteld te willen. Vaak ontdekt door negatie — door op te merken wat hij weigert.",
+        "seedReading": "noemt veel verlangens, weigert er twee — de weigering is het signaal.",
+        "seedTakeaway": "wat wordt weggeduwd, wijst duidelijker dan wat wordt nagejaagd."
+      },
+      "professional-block": {
+        "subtitle": "professionele blokkade",
+        "definition": "Waar werk stagneert: het begin, het midden, het einde, of de zichtbaarheid. Elke locatie heeft zijn eigen onbewuste bron.",
+        "seedReading": "de finishlijn is waar de twijfel arriveert, nooit het begin.",
+        "seedTakeaway": "de blokkade zit in de zichtbaarheid, niet in de inspanning."
+      },
+      "mother-imago": {
+        "subtitle": "moeder-imago",
+        "definition": "Het geïnternaliseerde beeld van de moeder — de eerste afstemming, de eerste scheiding. Het informeert de textuur van afhankelijkheid en toevlucht.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "vroege afstemming laat een lange handtekening achter."
+      },
+      "dream-logic": {
+        "subtitle": "droomlogica",
+        "definition": "De condensatie en verplaatsing die werkzaam zijn in droommateriaal. Lees de grammatica, niet de symbolen.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "droominhoud heeft zijn eigen grammatica."
+      },
+      "relational-pattern": {
+        "subtitle": "relationeel patroon",
+        "definition": "De terugkerende houding in relaties — achtervolger, terugtrekker, ouder, kind, gelijke. Stabieler over partners heen dan de partners stabiel zijn over de gebruiker.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "dezelfde vorm verschijnt in verschillende kamers."
+      },
+      "defenses": {
+        "subtitle": "verdedigingen",
+        "definition": "De karakteristieke bewegingen die worden gebruikt om moeilijk materiaal buiten het bewustzijn te houden — intellectualisatie, verplaatsing, reactieformatie, splitsing. Verdedigingen zijn geen mislukkingen; het zijn oude oplossingen.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "de verdediging benoemt wat ooit ondraaglijk was."
+      },
+      "shadow": {
+        "subtitle": "schaduw",
+        "definition": "Wat is afgewezen en aan anderen is toegewezen — de eigenschappen waarvan de gebruiker het meest zeker is dat hij ze niet bezit. Vaak de weg naar vitaliteit.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "wat wordt afgewezen, werkt nog steeds."
+      },
+      "transference": {
+        "subtitle": "overdracht",
+        "definition": "De manier waarop oude relationele figuren worden geprojecteerd op huidige figuren — de analist, de partner, de baas. Het patroon onthult het imago.",
+        "seedReading": "te vroeg om met zekerheid te zeggen — de vorm begint zich af te tekenen.",
+        "seedTakeaway": "oude figuren arriveren in huidige kamers."
+      }
+    },
+    "strip": {
+      "lastRefined": "laatst verfijnd",
+      "readingDepth": "leesdiepte"
+    },
+    "section": {
+      "eyebrow": "LEZING {index} · {subtitle}",
+      "strengthen": "versterk de nauwkeurigheid",
+      "requestReport": "rapport aanvragen"
+    },
+    "card": {
+      "reading": "Lezing {index}"
+    },
+    "report": {
+      "eyebrow": "KLINISCH RAPPORT",
+      "heading": "Voor uw <it>analist.</it>",
+      "lede": "Een dossier van 12–18 pagina's — de zes lezingen volledig uitgewerkt, plus zes die het dashboard niet toont: moeder-imago, droomlogica, relationeel patroon, verdedigingen, schaduw, overdracht. Vertaald in de taal waarin een clinicus werkt.",
+      "note": "het rapport zal de beschikbare diepte weerspiegelen. het kan opnieuw worden gegenereerd naarmate de lezing verdiept.",
+      "generate": "Klinisch rapport genereren",
+      "request": "Klinisch rapport aanvragen",
+      "footPrefix": "één rapport per maand inbegrepen voor ",
+      "footLink": "abonnees"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "VRAAG {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Wat is u bijgebleven van de week?",
+        "framing": "een zin, een beeld, een uitspraak van iemand."
+      },
+      "closeness": {
+        "prompt": "Hoe dichtbij liet u iemand komen?",
+        "options": {
+          "not_at_all": "helemaal niet",
+          "briefly": "kortstondig",
+          "with_hesitation": "met aarzeling",
+          "openly": "openlijk",
+          "too_far": "te ver"
+        }
+      },
+      "loop": {
+        "prompt": "Betrapte u zichzelf in een bekende lus?",
+        "framing": "waar, en hoe het eindigde."
+      },
+      "loudest_voice": {
+        "prompt": "Welke stem was het luidst deze week?",
+        "options": {
+          "demand": "de eis",
+          "doubt": "de twijfel",
+          "desire": "het *verlangen*",
+          "watcher": "de waarnemer",
+          "none": "geen van deze"
+        }
+      },
+      "dream": {
+        "prompt": "Was er een droom die het waard was om op te schrijven?",
+        "framing": "zo ja, het fragment dat bleef hangen."
+      },
+      "acted_on_desire": {
+        "prompt": "In hoeverre handelde u naar wat u werkelijk wilde?",
+        "lowLabel": "helemaal niet",
+        "highLabel": "volledig"
+      },
+      "work_catch": {
+        "prompt": "Waar raakte het werk u?",
+        "options": {
+          "start": "het begin",
+          "middle": "het midden",
+          "finish": "het einde",
+          "visibility": "de zichtbaarheid",
+          "nowhere": "nergens"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Wat is de vraag die u nu niet wilt beantwoorden?",
+        "framing": "degene die steeds ontsnapt."
+      }
+    },
+    "openHint": "langere antwoorden verdiepen de lezing",
+    "scaleLegend": "{low} tot {high}",
+    "noValue": "geen waarde geselecteerd",
+    "valueOf": "{value} van {max}",
+    "weekLabel": "WEEK {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Wat is u bijgebleven<it>?</it>",
+    "coverLede": "Acht korte vragen. Eerlijk is beter dan lang. Antwoorden verfijnen de lezing; niets hiervan wordt beoordeeld.",
+    "begin": "Begin",
+    "back": "terug",
+    "next": "volgende",
+    "submitting": "indienen",
+    "closeTheWeek": "sluit de week af",
+    "previousQuestion": "vorige vraag",
+    "processingLine": "<em>de week wordt gelezen.</em>",
+    "summaryEyebrow": "{weekLabel} · TERUGLEZEN",
+    "summaryTitle": "De week, <it>in uw eigen woorden.</it>",
+    "caseLabel": "casus · {week}",
+    "justRefined": "zojuist verfijnd",
+    "readingsShifted": "lezingen verschoven",
+    "readingsCount": "{n} van 12",
+    "returnToRoom": "Terug naar de Room",
+    "readAgain": "lees het opnieuw in het Case File",
+    "somethingToHold": "IETS OM VAST TE HOUDEN",
+    "enterConsultingRoom": "betreed de Consulting Room",
+    "openConsultingRoom": "open de Consulting Room",
+    "requestReport": "vraag een klinisch rapport aan",
+    "errorSubmit": "kon catchup niet indienen",
+    "errorGeneric": "er is iets misgegaan",
+    "errorFailed": "de catchup is gearchiveerd. de samenvatting volgt later.",
+    "errorGiveUp": "de Room is even stil — uw catchup is gearchiveerd. ververs over een minuut.",
+    "summaryFallback": "De catchup is gearchiveerd. De lezing is stilzwijgend bijgewerkt; de langere samenvatting volgt bij de volgende passage.",
+    "readBackTitle": "De week, <it>reeds opgenomen.</it>",
+    "readBackEmpty": "de catchup is gearchiveerd. de samenvatting zal deze week kort zijn.",
+    "readBackFoot": "de volgende catchup opent aan het begin van week {n}."
+  },
+  "consulting": {
+    "sessionClose": "dat is ons uur.",
+    "sayIt": "zeg het →",
+    "closeSession": "sluit de sessie af →",
+    "eyebrow": "CONSULTATIERUIMTE",
+    "closing": "afsluiting",
+    "closeSessionLabel": "sluit de sessie af",
+    "timerAria": "verstreken sessietijd",
+    "chooseTopicAria": "kies een onderwerp",
+    "noTopic": "geen onderwerp",
+    "justOpened": "zojuist geopend",
+    "minutesIn": "{count} min in",
+    "speakToAnalyst": "spreek met de analyst",
+    "send": "verstuur",
+    "sessionClosedFoot": "de sessie is afgesloten. deze is bewaard in het dossier.",
+    "previewHeld": "welk deel van u blijft dit kiezen?",
+    "previewTopicDreamingFuture": "Toekomst dromen",
+    "previewTopicNightDream": "Nachtdroom",
+    "previewTopicRelations": "Relaties in mijn leven",
+    "previewTopicProfessionalGrowth": "Professionele groei",
+    "previewTurnAnalyst1": "U benoemt een patroon en vertelt het vervolgens als dat van een vreemde. Merk op wanneer de <em>terugtrekking</em> begint.",
+    "previewTurnUser1": "Ik beëindig dingen altijd in de week dat ze serieus worden.",
+    "previewTurnAnalyst2": "De ochtend is het oordeel, niet de rechtszaak. Uw <em>intimiteitsdrempel</em> oefende het vertrek al weken vóór het gesprek.",
+    "sayItEllipsis": "zeg het…",
+    "offerHeadline": "De consultatieruimte",
+    "offerLede": "Een langdurige zitting met de analyst, gehouden in dezelfde stem als uw lezingen. Sessies zijn privé, worden bewaard in het dossier en voeden de lezingen tussen de zittingen door.",
+    "offerPanelsAria": "wat een sessie doet",
+    "offerPanel1Title": "benoemd, niet verteld",
+    "offerPanel1Body": "De analyst benoemt wat er in uw spraak gebeurt — de verspreking, de kwalificatie, het half-gezegde — en houdt het daar vast totdat u het kunt zien.",
+    "offerPanel2Title": "bewaard in het dossier",
+    "offerPanel2Body": "Elke zitting wordt opgeschreven. De volgende lezing leest het. Patronen komen naar boven over weken, niet over beurten.",
+    "offerPanel3Title": "één stem, geen rooster",
+    "offerPanel3Body": "Geen chatbot-rotatie. Eén enkele analytische stem, getraind op uw intake en verfijnd door elke Catchup.",
+    "offerFootLine": "Abonnees ontvangen maandelijks één klinisch rapport.",
+    "offerPillCta": "Betreed de consultatieruimte",
+    "offerReturnToRoom": "keer terug naar de ruimte",
+    "previewFigureLabel": "de consultatieruimte",
+    "previewFigureSubtitle": "een zitting, vooraf bekeken",
+    "previewRailAria": "dossiergebieden waaruit de analyst leest",
+    "previewReadingFrom": "LEEST UIT",
+    "previewActive": "actief",
+    "previewRoleYou": "U",
+    "previewRoleAnalyst": "ANALYST",
+    "previewBubble1": "Ik beëindig dingen altijd in de week dat ze serieus worden. Ik weet niet waarom ik het doe.",
+    "previewAnalyst1": "U benoemt een patroon en vertelt het vervolgens als dat van een vreemde. Het <em>“Ik weet het niet”</em> verricht werk — het houdt de handeling aan de verre kant van de intentie. Merk op wanneer de <em>terugtrekking</em> begint. Vaak vindt de uitsluiting eerder plaats dan het vertrek.",
+    "previewBubble2": "Eerder hoe? De laatste keer voelde het alsof ik op een ochtend wakker werd en het gewoon wist.",
+    "previewAnalyst2": "De ochtend is het oordeel, niet de rechtszaak. Uw <strong>intimiteitsdrempel</strong>-lezing van week 04 noteerde dezelfde vorm — een stille repetitie van vertrek, twee tot drie weken vóór het gesprek. De ochtend is wanneer het lichaam eindelijk instemt met wat u al had besloten.",
+    "previewBubble3": "Dat is het deel dat me bang maakt. Dat het al besloten is.",
+    "previewAnalyst3": "<em>Besloten</em> is het woord. Niet <em>gekozen</em>. Iets in de structuur geeft de voorkeur aan de uitsluiting boven de test. We zullen daar blijven komen.",
+    "previewExampleMark": "VOORBEELD · NIET UIT UW DOSSIER"
+  },
+  "caseFile": {
+    "silentWeek": "— stille week —",
+    "eyebrow": "DOSSIER",
+    "headlineLead": "Een dossier, bewaard",
+    "headlineItalic": "in stilte.",
+    "lede": "Elke Catchup, sessie en rapport — op datum bewaard. De hiaten maken deel uit van het dossier.",
+    "filterAria": "Filter",
+    "filter": {
+      "all": "alles",
+      "catchups": "catchups",
+      "sessions": "sessies",
+      "reports": "rapporten"
+    },
+    "subscriptionTitle": "Abonnement",
+    "emptyCatchups": "het dossier is nog leeg — de eerste Catchup opent het.",
+    "emptyCatchupsCta": "Ga naar Catchup",
+    "emptySessions": "het dossier is nog leeg — de eerste consultatiesessie opent het.",
+    "emptySessionsCta": "Ga naar Consulting",
+    "emptyReports": "het dossier is nog leeg — het eerste gegenereerde rapport opent het.",
+    "open": "openen",
+    "kindCatchup": "catchup",
+    "kindSession": "sessie",
+    "kindReport": "klinisch rapport",
+    "kindReading": "intake-lezing",
+    "kindConnection": "verbindingsgebeurtenis",
+    "entryEyebrow": "DOSSIER · INVOER",
+    "entryBackToCaseFile": "terug naar het dossier",
+    "entryReturnToRoom": "terug naar de Room",
+    "sessionStillOpen": "deze sessie is nog open. de lezing verschijnt zodra deze sluit.",
+    "entryDetailComing": "de detailweergave van deze invoer komt eraan. voor nu bewaart het dossier de datum, het type en de titel — de rest bevindt zich nog in de Room.",
+    "detailSummaryEyebrow": "SAMENVATTING · UW ANTWOORDEN",
+    "detailRecommendationEyebrow": "ONZE CATCHUP",
+    "preparingRead": "lezing wordt voorbereid…",
+    "readNotAssembled": "de lezing kon zojuist niet worden samengesteld.",
+    "tryAgain": "probeer opnieuw",
+    "intakeClose": "sluiten",
+    "intakeEdit": "bewerken",
+    "intakeSaving": "opslaan",
+    "intakeSave": "opslaan",
+    "intakeCancel": "annuleren",
+    "intakeUnsupported": "deze vraag wordt vanuit de intake zelf bewerkt.",
+    "intakePickUpTo": "oppakken tot {count}.",
+    "intakeScaleSetTo": "Ingesteld op {value}"
+  },
+  "settings": {
+    "eyebrow": "INSTELLINGEN",
+    "heading": "De vorm van <it>de kamer.</it>",
+    "lede": "Niets hier is permanent. Antwoorden kunnen worden bewerkt, voorkeuren omgedraaid, en het dossier kan volledig worden gewist.",
+    "blocks": {
+      "account": "Account",
+      "readingDepth": "Leesdiepte",
+      "notifications": "Meldingen",
+      "subscription": "Abonnement",
+      "dangerZone": "Gevarenzone"
+    },
+    "dangerZoneIntro": "de enige onomkeerbare actie in de kamer.",
+    "depthSub": {
+      "intake": {
+        "title": "Uw intake",
+        "caption": "{answered} / {total} beantwoord",
+        "ctaEmpty": "Voltooi uw intake",
+        "ctaPartial": "Voeg meer details toe",
+        "ctaFull": "Bekijk uw intake"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} in de laatste 8 weken",
+        "ctaEmpty": "Voeg een catchup toe",
+        "ctaDue": "Voltooi de catchup van deze week",
+        "ctaFull": "Bekijk eerdere catchups"
+      },
+      "sessions": {
+        "title": "Sessies",
+        "caption": "{count} voltooid",
+        "ctaEmpty": "Start een consultatie",
+        "ctaPartial": "Vervolg een consultatie",
+        "ctaFull": "Bekijk eerdere sessies"
+      },
+      "connections": {
+        "title": "Connecties",
+        "caption": "{count} actief",
+        "ctaEmpty": "Voeg een connectie toe",
+        "ctaSingle": "Voeg nog een connectie toe",
+        "ctaFull": "Bekijk uw connecties"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "wekelijkse catchup herinnering",
+        "sub": "een discrete melding aan het begin van de nieuwe week"
+      },
+      "consulting_session_reminder": {
+        "label": "consultatiesessie herinnering",
+        "sub": "een herinnering voor uw aanstaande consultatie"
+      },
+      "connection_requests": {
+        "label": "connectie geaccepteerd",
+        "sub": "een melding wanneer iemand uw uitnodiging accepteert"
+      }
+    },
+    "toggleOn": "aan",
+    "toggleOff": "uit",
+    "quietHours": {
+      "label": "stille uren",
+      "sub": "geen e-mail tussen deze uren, in uw lokale tijd",
+      "from": "van",
+      "to": "tot"
+    },
+    "saveFailed": "opslaan mislukt",
+    "dangerZone": {
+      "trigger": "Account verwijderen",
+      "modalAria": "Bevestig accountverwijdering",
+      "eyebrow": "GEVARENZONE",
+      "heading": "Wis het <it>dossier.</it>",
+      "body": "Dit verwijdert elke lezing, catchup, sessie en rapport uit het dossier. Actieve connecties worden beëindigd; beide partijen worden hiervan op de hoogte gesteld. Het kan niet ongedaan worden gemaakt.",
+      "instruction": "typ <phrase></phrase> om de actie in te schakelen.",
+      "inputAria": "Typ de bevestigingszin",
+      "cancel": "annuleren",
+      "erasing": "wissen…",
+      "eraseConfirm": "wis het dossier",
+      "deleteFailed": "verwijderen mislukt"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "LEDEN TOEGANG",
+      "tagline": "De consultatiekamer, geopend. <em>Een lezing die blijft lezen.</em>",
+      "features": {
+        "room": {
+          "title": "Consultatiekamer",
+          "desc": "langdurige sessies met de analyst."
+        },
+        "report": {
+          "title": "Maandelijks klinisch rapport",
+          "desc": "één therapeutenklaar overzicht per kalendermaand."
+        },
+        "connections": {
+          "title": "{count} meer connecties",
+          "desc": "voeg de personen toe wier aanwezigheid de lezing vormt."
+        },
+        "depth": {
+          "title": "Volledige leesdiepte",
+          "desc": "elk hoofdstuk open, geen plafond op detail."
+        }
+      },
+      "perMonth": "per maand",
+      "subscribe": "abonneren",
+      "reassurance": "<em>geen verplichting.</em> annuleer op elk moment via instellingen.",
+      "activeToday": "actief — wordt vandaag verlengd",
+      "activeRenews": "actief — wordt verlengd over {days, plural, one {1 dag} other {# dagen}}",
+      "cancel": "abonnement opzeggen",
+      "cancelled": "geannuleerd — toegang tot {date}",
+      "resubscribe": "opnieuw abonneren"
+    },
+    "resetPassword": {
+      "sent": "een resetlink is verzonden naar {email}. controleer uw inbox",
+      "sending": "verzenden",
+      "action": "wachtwoord resetten",
+      "error": "kon niet verzenden. probeer opnieuw"
+    }
+  },
+  "connections": {
+    "explainer": "Tot {limit, plural, one {# persoon wiens aanwezigheid de lezing vormt} other {# personen wier aanwezigheid de lezing vormt}}. Zij zien uw lezingen niet; u ziet de hunne niet. Wat zij over de relatie zeggen, voedt het model dat uw lezingen produceert, en het uwe voedt de hunne.",
+    "invite": {
+      "emailSubject": "{inviterName} wil u in de lezing betrekken."
+    },
+    "form": {
+      "emailLabel": "E-MAIL",
+      "roleLabel": "ROL",
+      "rolePlaceholder": "kies er een",
+      "noteLabel": "EEN ZIN DIE ZIJ EERST ZULLEN LEZEN",
+      "noteHint": "optioneel. één regel volstaat.",
+      "addMoreSub": "voeg meer toe met een abonnement",
+      "missingNameLine": "uw naam is niet geregistreerd. voeg deze toe in instellingen en verstuur de aanvraag opnieuw.",
+      "addYourName": "voeg uw naam toe",
+      "noteLengthError": "notities zijn beperkt tot één regel — ongeveer {max} tekens."
+    },
+    "list": {
+      "empty": "nog geen connecties. de uitnodigingsmogelijkheid bevindt zich hieronder.",
+      "active": "ACTIEF",
+      "pending": "IN AFWACHTING",
+      "since": "sinds",
+      "invited": "uitgenodigd",
+      "received": "ontvangen",
+      "resend": "opnieuw verzenden",
+      "cancel": "annuleren",
+      "expiresIn": "verloopt over {days, plural, one {# dag} other {# dagen}}"
+    },
+    "lookup": {
+      "invalidEmail": "voer een geldig e-mailadres in.",
+      "self": "u kunt geen connectie met uzelf maken.",
+      "notMemberLine": "dit e-mailadres behoort nog niet tot de leden. nodig hen uit om een account aan te maken zodat u een connectie kunt maken.",
+      "copyHint": "deel de aanmeldlink",
+      "copied": "link gekopieerd",
+      "requestSent": "u heeft al een verzoek naar dit lid gestuurd.",
+      "requestReceivedLine": "dit lid heeft u een verzoek gestuurd — controleer uw uitnodigingen.",
+      "inboxLabel": "open het verzoek",
+      "alreadyConnected": "u bent al verbonden met dit lid.",
+      "rateLimited": "te veel zoekopdrachten in korte tijd. wacht even en probeer het opnieuw.",
+      "sent": "connectieverzoek verzonden.",
+      "sending": "verzenden…",
+      "send": "verzoek verzenden",
+      "limitReached": "{limit, plural, one {# connectie is de limiet. verbreek deze om een andere toe te voegen.} other {# connecties is de limiet. verbreek er één om een andere toe te voegen.}}",
+      "limitReachedFree": "{limit, plural, one {# connectie is de limiet in de gratis versie.} other {# connecties is de limiet in de gratis versie.}}",
+      "generic": "kon het verzoek niet verzenden."
+    },
+    "incoming": {
+      "eyebrow": "WACHT OP U",
+      "empty": "niemand wacht op u.",
+      "accept": "accepteren",
+      "decline": "weigeren",
+      "limitReached": "{limit, plural, one {# connectie is de limiet. verbreek deze om dit te accepteren.} other {# connecties is de limiet. verbreek er één om dit te accepteren.}}",
+      "limitReachedFree": "{limit, plural, one {# connectie is de limiet in de gratis versie.} other {# connecties is de limiet in de gratis versie.}}",
+      "upsell": "abonnees voegen meer toe",
+      "inviteExpired": "deze uitnodiging is verlopen.",
+      "inviteEnded": "deze uitnodiging is niet langer in afwachting.",
+      "generic": "kon dit verzoek niet verwerken."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "beste vriend",
+      "parent": "ouder",
+      "sibling": "broer/zus",
+      "co_parent": "mede-ouder"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "EEN OPMERKING VAN DE ANALIST",
+    "noteAria": "Een opmerking van de analist",
+    "lede": "dit overstijgt wat de Kamer kan bevatten.",
+    "body": {
+      "intake": "Iets in wat u bij de intake schreef, wijst op een gewicht dat om echte zorg vraagt — meer dan deze Kamer kan bevatten. Overweeg vandaag nog contact op te nemen met een arts, therapeut of de lokale crisislijn. De lezing zal hier zijn wanneer u terugkeert.",
+      "catchup": "Iets in de Catchup van deze week wijst op een gewicht dat om echte zorg vraagt — meer dan deze Kamer kan bevatten. Overweeg vandaag nog contact op te nemen met een arts, therapeut of de lokale crisislijn. De lezing zal standhouden.",
+      "session": "Wat u zojuist schreef, wijst op een gewicht dat om echte zorg vraagt — meer dan deze Kamer kan bevatten. Overweeg vandaag nog contact op te nemen met een arts, therapeut of de lokale crisislijn. We kunnen terugkeren naar de Kamer wanneer u veilig bent."
+    },
+    "crisisResources": "CRISISBRONNEN",
+    "resources": {
+      "us": "Verenigde Staten",
+      "ukIe": "Verenigd Koninkrijk & Ierland",
+      "europe": "Europa (meeste landen)",
+      "everywhere": "Overal",
+      "localEmergency": "lokale hulpdiensten"
+    },
+    "hintResources": "als u geen lijn kunt vinden, is de dichtstbijzijnde spoedeisende hulp van een ziekenhuis de juiste Kamer.",
+    "hintLink": "crisisbronnen staan onderaan elke Kamerpagina vermeld.",
+    "footerLine": "TwentyThird is geen vervanging voor klinische zorg. Neem in geval van crisis contact op met uw lokale noodlijn.",
+    "footerRoomLabel": "de Kamer"
+  }
+}

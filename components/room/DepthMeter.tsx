@@ -1,14 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/layout/Reveal";
-import {
-  depthExplainer,
-  depthSourceSubtitle,
-  depthStatusLine,
-  depthStatusWord,
-  type DepthBand,
-  type DepthStatus,
-} from "@/lib/copy";
+import { type DepthBand, type DepthStatus } from "@/lib/copy";
 import {
   depthBand,
   depthStatusFromBand,
@@ -47,32 +41,33 @@ export default function DepthMeter(props: DepthMeterProps) {
   return <SettingsBlockMeter {...props} />;
 }
 
-function SettingsBlockMeter({ depth, subBlocks }: DepthMeterProps) {
+async function SettingsBlockMeter({ depth, subBlocks }: DepthMeterProps) {
+  const t = await getTranslations("room.depth");
   const band: DepthBand = depthBand(depth);
   const status: DepthStatus = depthStatusFromBand(band);
   const pctWidth = `${clamp01Pct(depth)}%`;
 
   return (
     <Reveal as="div" className="depth-block">
-      <p className="depth-block-intro">{depthExplainer}</p>
+      <p className="depth-block-intro">{t("explainer")}</p>
 
       <div className="depth-block-column">
         <div className="depth-block-overall">
           <div className="depth-block-overall-head">
-            <span className="depth-block-overall-label">OVERALL READING DEPTH</span>
+            <span className="depth-block-overall-label">{t("overallEyebrow")}</span>
             <span className="depth-status-word" data-status={status}>
-              {depthStatusWord[status]}
+              {t(`status.${status}`)}
             </span>
           </div>
           <div
             className="depth-meter-track"
             data-status={status}
             role="meter"
-            aria-label="Reading depth"
+            aria-label={t("eyebrow")}
             aria-valuemin={0}
             aria-valuemax={1}
             aria-valuenow={depth}
-            aria-valuetext={depthStatusLine[status]}
+            aria-valuetext={t(`statusLine.${status}`)}
           >
             <span
               className="depth-meter-fill"
@@ -81,7 +76,7 @@ function SettingsBlockMeter({ depth, subBlocks }: DepthMeterProps) {
               }
             />
           </div>
-          <p className="depth-block-line">{depthStatusLine[status]}</p>
+          <p className="depth-block-line">{t(`statusLine.${status}`)}</p>
         </div>
 
         <div className="depth-sub-grid">
@@ -94,14 +89,13 @@ function SettingsBlockMeter({ depth, subBlocks }: DepthMeterProps) {
   );
 }
 
-function SubBlockCard({ block }: { block: DepthSubBlock }) {
+async function SubBlockCard({ block }: { block: DepthSubBlock }) {
+  const t = await getTranslations("room.depth");
   return (
     <article className="depth-sub-block">
       <header className="depth-sub-block-head">
         <h3 className="depth-sub-block-title">{block.title}</h3>
-        <p className="depth-sub-block-subtitle">
-          {depthSourceSubtitle[block.source]}
-        </p>
+        <p className="depth-sub-block-subtitle">{t(`source.${block.source}`)}</p>
       </header>
       <div className="depth-sub-block-body">
         <DepthRing ratio={block.ratio} status={block.status} />
@@ -110,7 +104,7 @@ function SubBlockCard({ block }: { block: DepthSubBlock }) {
             className="depth-sub-block-status-word"
             data-status={block.status}
           >
-            {depthStatusWord[block.status]}
+            {t(`status.${block.status}`)}
           </span>
           {block.caption ? (
             <span className="depth-sub-block-status-caption">{block.caption}</span>

@@ -1,4 +1,5 @@
 import "server-only";
+import { getTranslations } from "next-intl/server";
 import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Weekly catchup reminder — sent once per ISO week from the
@@ -8,7 +9,12 @@ import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 //
 // `isoWeek` is rendered into the figure footer as the clinical date
 // stamp (Fig. 07 · 2026-W21) — the real ISO-8601 string from the
-// scheduling payload.
+// scheduling payload. It is data, not copy, so it is passed through
+// verbatim rather than read from the catalog.
+//
+// Localized: strings resolve from the "email" namespace via
+// getTranslations({ locale }) so the email renders in the recipient's
+// language. `locale` is required on the input.
 
 export type WeeklyCatchupReminderEmailInput = {
   to: string;
@@ -17,45 +23,53 @@ export type WeeklyCatchupReminderEmailInput = {
   catchupUrl: string;
   /** ISO-8601 week string from the scheduled_emails payload, e.g. "2026-W21". */
   isoWeek: string;
+  /** Recipient's locale — renders the email in their language. */
+  locale: string;
 };
 
-export function buildWeeklyCatchupReminderEmail(
+export async function buildWeeklyCatchupReminderEmail(
   input: WeeklyCatchupReminderEmailInput,
-): EmailPayload {
-  const { firstName, catchupUrl, isoWeek } = input;
+): Promise<EmailPayload> {
+  const { firstName, catchupUrl, isoWeek, locale } = input;
+  const t = await getTranslations({ locale, namespace: "email" });
+
   const salutation = firstName ? `${firstName},` : "you,";
 
-  const subject = "this week's catchup is open.";
+  const subject = t("weeklyCatchupReminder.subject");
 
-  const text = [
-    `${salutation}`,
-    ``,
-    `A week has passed quietly.`,
-    ``,
-    `A short reflection — what's loud, what's stayed quiet, what's shifted. It updates the reading.`,
-    ``,
-    `Open the catchup:`,
-    catchupUrl,
-    ``,
-    `CognitiveLab, WelloWork AB`,
-    `ATTENDING INSTITUTION`,
-  ].join("\n");
+  const text = t("weeklyCatchupReminder.text", { salutation, catchupUrl });
+
+  // ITALICPHRASE FALLBACK GUARD.
+  let titleText = t("weeklyCatchupReminder.titleText");
+  let italicPhrase = t("weeklyCatchupReminder.italicPhrase");
+  if (!titleText.includes(italicPhrase)) {
+    const tEn =
+      locale === "en"
+        ? t
+        : await getTranslations({ locale: "en", namespace: "email" });
+    titleText = tEn("weeklyCatchupReminder.titleText");
+    italicPhrase = tEn("weeklyCatchupReminder.italicPhrase");
+  }
 
   const html = brandEmailShell({
-    preheader: "A short reflection. Five minutes. It updates the reading.",
-    eyebrow: "WEEKLY CATCHUP",
-    title: {
-      text: "A week has passed quietly.",
-      italicPhrase: "quietly",
-    },
-    lede: "A short reflection — what's loud, what's stayed quiet, what's shifted. It updates the reading.",
-    cta: { label: "Open the catchup", href: catchupUrl },
+    preheader: t("weeklyCatchupReminder.preheader"),
+    eyebrow: t("weeklyCatchupReminder.eyebrow"),
+    title: { text: titleText, italicPhrase },
+    lede: t("weeklyCatchupReminder.lede"),
+    cta: { label: t("weeklyCatchupReminder.ctaLabel"), href: catchupUrl },
     fallbackUrl: catchupUrl,
     figureFooter: {
       figNumber: "07",
       leftItalic: isoWeek,
-      rightLabel: "Catchup",
-      rightItalic: "five minutes",
+      rightLabel: t("weeklyCatchupReminder.figRightLabel"),
+      rightItalic: t("weeklyCatchupReminder.figRightItalic"),
+    },
+    chrome: {
+      orWord: t("shell.orWord"),
+      fallbackPreamble: t("shell.fallbackPreamble"),
+      attendingInstitution: t("shell.attendingInstitution"),
+      tagline: t("shell.tagline"),
+      automatedFooter: t("shell.automatedFooter"),
     },
   });
 
@@ -65,6 +79,6 @@ export function buildWeeklyCatchupReminderEmail(
 export async function sendWeeklyCatchupReminderEmail(
   input: WeeklyCatchupReminderEmailInput,
 ) {
-  const payload = buildWeeklyCatchupReminderEmail(input);
+  const payload = await buildWeeklyCatchupReminderEmail(input);
   return sendEmail({ to: input.to, ...payload });
 }

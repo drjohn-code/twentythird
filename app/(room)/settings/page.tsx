@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -34,11 +35,13 @@ type UsersMetaRow = {
 const DEFAULT_EMAIL_PREFS: EmailPreferences = {
   weekly_catchup: true,
   consulting_session_reminder: true,
+  connection_requests: true,
   quiet_hours_start: "21:00",
   quiet_hours_end: "08:00",
 };
 
 export default async function SettingsPage() {
+  const t = await getTranslations("settings");
   const supabase = await createClient();
   const {
     data: { user },
@@ -68,7 +71,7 @@ export default async function SettingsPage() {
     .maybeSingle<{ reading_depth: number | null }>();
   const depth = depthRow?.reading_depth ?? 0;
 
-  const subBlocks = buildDepthSubBlocks(inputs, breakdown);
+  const subBlocks = buildDepthSubBlocks(inputs, breakdown, t);
 
   const profile = profileRes.data ?? {
     full_name: null,
@@ -94,29 +97,28 @@ export default async function SettingsPage() {
       <SettingsSaveStrip />
 
       <Reveal as="section" className="room-section settings-head">
-        <Eyebrow>SETTINGS</Eyebrow>
+        <Eyebrow>{t("eyebrow")}</Eyebrow>
         <h1 className="settings-h">
-          The shape of <span className="it">the room.</span>
+          {t.rich("heading", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
         </h1>
-        <p className="lede settings-lede">
-          Nothing here is permanent. Answers can be edited, preferences
-          flipped, and the case file can be erased entirely.
-        </p>
+        <p className="lede settings-lede">{t("lede")}</p>
       </Reveal>
 
       {/* Account */}
-      <SettingsBlock title="Account" wideBody>
+      <SettingsBlock title={t("blocks.account")} wideBody>
         <AccountFields
           fullName={profile.full_name ?? ""}
           email={profile.email ?? user.email ?? ""}
           birthYear={profile.birth_year}
+          locale={locale}
         />
-        {locale !== "en" ? null : null}
       </SettingsBlock>
 
       {/* Reading depth — consolidates the old per-source breakdown and
           the old standalone Connections section. */}
-      <SettingsBlock title="Reading depth" id="depth" wideBody>
+      <SettingsBlock title={t("blocks.readingDepth")} id="depth" wideBody>
         <DepthMeter
           variant="settings"
           depth={depth}
@@ -126,11 +128,11 @@ export default async function SettingsPage() {
 
       {/* Notifications + Subscription — two-column pair (stacks below 980px). */}
       <div className="settings-pair">
-        <SettingsBlock title="Notifications" id="notifications">
+        <SettingsBlock title={t("blocks.notifications")} id="notifications">
           <EmailToggles initial={emailPrefs} />
         </SettingsBlock>
 
-        <SettingsBlock title="Subscription" id="subscription">
+        <SettingsBlock title={t("blocks.subscription")} id="subscription">
           <SubscriptionCard subscription={subscription} />
         </SettingsBlock>
       </div>
@@ -138,11 +140,9 @@ export default async function SettingsPage() {
       {/* Danger zone — last section, no closing hairline. */}
       <section className="settings-block settings-block-danger">
         <header className="settings-block-head">
-          <h2 className="settings-block-h">Danger zone</h2>
+          <h2 className="settings-block-h">{t("blocks.dangerZone")}</h2>
           <p className="settings-block-intro">
-            <em className="serif-i">
-              the only undoable action in the room.
-            </em>
+            <em className="serif-i">{t("dangerZoneIntro")}</em>
           </p>
         </header>
         <DangerZone />
@@ -160,6 +160,7 @@ export default async function SettingsPage() {
 function buildDepthSubBlocks(
   inputs: DepthInputs,
   breakdown: DepthBreakdown[],
+  t: Awaited<ReturnType<typeof getTranslations<"settings">>>,
 ): DepthSubBlock[] {
   const byLabel = new Map(breakdown.map((b) => [b.label, b] as const));
   const ratioFor = (label: DepthBreakdown["label"]) => {
@@ -175,71 +176,82 @@ function buildDepthSubBlocks(
     inputs.onboardingClosedTotal + inputs.onboardingOpenTotal;
   const intakeRatio = ratioFor("intake");
   const intakeCta = (() => {
-    if (intakeAnswered === 0) return "Complete your intake";
-    if (intakeRatio < 0.66) return "Add more detail";
-    return "Review your intake";
+    if (intakeAnswered === 0) return t("depthSub.intake.ctaEmpty");
+    if (intakeRatio < 0.66) return t("depthSub.intake.ctaPartial");
+    return t("depthSub.intake.ctaFull");
   })();
 
   // Catchups — recent count + recency.
   const catchupsRatio = ratioFor("catchups");
   const catchupsCta = (() => {
-    if (inputs.recentCatchupCount === 0) return "Add a catchup";
+    if (inputs.recentCatchupCount === 0) return t("depthSub.catchups.ctaEmpty");
     if (
       inputs.daysSinceLastCatchup === null ||
       inputs.daysSinceLastCatchup >= 7
     ) {
-      return "Complete this week's catchup";
+      return t("depthSub.catchups.ctaDue");
     }
-    return "Review past catchups";
+    return t("depthSub.catchups.ctaFull");
   })();
 
   // Sessions — count of closed sessions.
   const sessionsRatio = ratioFor("sessions");
   const sessionsCta = (() => {
-    if (inputs.completedSessionCount === 0) return "Start a consultation";
-    if (sessionsRatio < 0.66) return "Continue a consultation";
-    return "Review past sessions";
+    if (inputs.completedSessionCount === 0) return t("depthSub.sessions.ctaEmpty");
+    if (sessionsRatio < 0.66) return t("depthSub.sessions.ctaPartial");
+    return t("depthSub.sessions.ctaFull");
   })();
 
   // Connections — count of active connections.
   const connectionsRatio = ratioFor("connections");
   const connectionsCta = (() => {
-    if (inputs.activeConnectionCount === 0) return "Add a connection";
-    if (inputs.activeConnectionCount === 1) return "Add another connection";
-    return "Review your connections";
+    if (inputs.activeConnectionCount === 0)
+      return t("depthSub.connections.ctaEmpty");
+    if (inputs.activeConnectionCount === 1)
+      return t("depthSub.connections.ctaSingle");
+    return t("depthSub.connections.ctaFull");
   })();
 
   return [
     {
       source: "intake",
-      title: "Your intake",
+      title: t("depthSub.intake.title"),
       ratio: intakeRatio,
       status: depthStatusFor(intakeRatio),
-      caption: `${intakeAnswered} / ${intakeTotal} answered`,
+      caption: t("depthSub.intake.caption", {
+        answered: intakeAnswered,
+        total: intakeTotal,
+      }),
       cta: { label: intakeCta, href: "/intake" },
     },
     {
       source: "catchups",
-      title: "Catchups",
+      title: t("depthSub.catchups.title"),
       ratio: catchupsRatio,
       status: depthStatusFor(catchupsRatio),
-      caption: `${inputs.recentCatchupCount} in last 8 wks`,
+      caption: t("depthSub.catchups.caption", {
+        count: inputs.recentCatchupCount,
+      }),
       cta: { label: catchupsCta, href: "/catchup" },
     },
     {
       source: "sessions",
-      title: "Sessions",
+      title: t("depthSub.sessions.title"),
       ratio: sessionsRatio,
       status: depthStatusFor(sessionsRatio),
-      caption: `${inputs.completedSessionCount} completed`,
+      caption: t("depthSub.sessions.caption", {
+        count: inputs.completedSessionCount,
+      }),
       cta: { label: sessionsCta, href: "/consulting" },
     },
     {
       source: "connections",
-      title: "Connections",
+      title: t("depthSub.connections.title"),
       ratio: connectionsRatio,
       status: depthStatusFor(connectionsRatio),
-      caption: `${inputs.activeConnectionCount} active`,
+      caption: t("depthSub.connections.caption", {
+        count: inputs.activeConnectionCount,
+      }),
       cta: { label: connectionsCta, href: "/connections" },
     },
   ];

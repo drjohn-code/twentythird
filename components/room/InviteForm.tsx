@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import Field from "@/components/ui/Field";
 import Input from "@/components/ui/Input";
 import Select from "@/components/ui/Select";
@@ -10,7 +11,6 @@ import Textarea from "@/components/ui/Textarea";
 import RowLink from "@/components/ui/RowLink";
 import { CONNECTION_ROLES, isLikelyEmail } from "@/lib/connections";
 import { NOTE_MAX_LENGTH } from "@/lib/emails/invite-constants";
-import { connectionLookupCopy } from "@/lib/copy";
 
 // Inline invite form — lives inside the Settings → Connections block.
 //
@@ -33,11 +33,6 @@ type Props = {
   effectiveLimit: number;
 };
 
-const ROLE_OPTIONS = CONNECTION_ROLES.map((r) => ({
-  value: r.value,
-  label: r.label,
-}));
-
 type FormStatus =
   | { kind: "idle" }
   | { kind: "format-error" }
@@ -55,6 +50,11 @@ type FormStatus =
 
 export default function InviteForm({ onSent, effectiveLimit }: Props) {
   const router = useRouter();
+  const t = useTranslations("connections");
+  const roleOptions = CONNECTION_ROLES.map((r) => ({
+    value: r.value,
+    label: t(`roles.${r.value}`),
+  }));
   const [email, setEmail] = useState("");
   const [role, setRole] = useState<string>("");
   const [note, setNote] = useState("");
@@ -176,7 +176,7 @@ export default function InviteForm({ onSent, effectiveLimit }: Props) {
   return (
     <form className="invite-form" onSubmit={submit} noValidate>
       <div className="invite-form-grid">
-        <Field id="invite-email" label="EMAIL">
+        <Field id="invite-email" label={t("form.emailLabel")}>
           <Input
             id="invite-email"
             type="email"
@@ -188,12 +188,12 @@ export default function InviteForm({ onSent, effectiveLimit }: Props) {
           />
         </Field>
 
-        <Field id="invite-role" label="ROLE">
+        <Field id="invite-role" label={t("form.roleLabel")}>
           <Select
             id="invite-role"
             required
-            options={ROLE_OPTIONS}
-            placeholder="choose one"
+            options={roleOptions}
+            placeholder={t("form.rolePlaceholder")}
             value={role}
             onChange={(e) => setRole(e.target.value)}
             disabled={isPending}
@@ -203,8 +203,8 @@ export default function InviteForm({ onSent, effectiveLimit }: Props) {
 
       <Field
         id="invite-note"
-        label="A SENTENCE THEY WILL READ FIRST"
-        hint="optional. one line is enough."
+        label={t("form.noteLabel")}
+        hint={t("form.noteHint")}
       >
         <Textarea
           id="invite-note"
@@ -219,7 +219,7 @@ export default function InviteForm({ onSent, effectiveLimit }: Props) {
         </div>
       </Field>
 
-      {renderStatus(status, effectiveLimit, copied, copySignupLink)}
+      {renderStatus(status, effectiveLimit, copied, copySignupLink, t)}
 
       <div className="invite-form-actions">
         <button
@@ -227,9 +227,7 @@ export default function InviteForm({ onSent, effectiveLimit }: Props) {
           className="invite-form-submit"
           disabled={isPending}
         >
-          <span>
-            {isPending ? connectionLookupCopy.sending : connectionLookupCopy.send}
-          </span>
+          <span>{isPending ? t("lookup.sending") : t("lookup.send")}</span>
           <span aria-hidden="true">→</span>
         </button>
       </div>
@@ -262,18 +260,24 @@ function mapInviteError(code: string | undefined): FormStatus {
   }
 }
 
+type Translator = (
+  key: string,
+  values?: Record<string, string | number>,
+) => string;
+
 function renderStatus(
   status: FormStatus,
   limit: number,
   copied: boolean,
   onCopy: () => void,
+  t: Translator,
 ) {
   if (status.kind === "idle") return null;
 
   if (status.kind === "sent") {
     return (
       <p className="invite-form-success" role="status">
-        {connectionLookupCopy.sent}
+        {t("lookup.sent")}
       </p>
     );
   }
@@ -281,17 +285,13 @@ function renderStatus(
   if (status.kind === "not-member") {
     return (
       <div className="invite-form-feedback" role="alert">
-        <p className="invite-form-error">{connectionLookupCopy.notMember.line}</p>
+        <p className="invite-form-error">{t("lookup.notMemberLine")}</p>
         <button
           type="button"
           className="invite-form-copylink"
           onClick={onCopy}
         >
-          <span>
-            {copied
-              ? connectionLookupCopy.notMember.copied
-              : connectionLookupCopy.notMember.copyHint}
-          </span>
+          <span>{copied ? t("lookup.copied") : t("lookup.copyHint")}</span>
           <span aria-hidden="true">→</span>
         </button>
       </div>
@@ -301,11 +301,9 @@ function renderStatus(
   if (status.kind === "request-received") {
     return (
       <div className="invite-form-feedback" role="alert">
-        <p className="invite-form-error">
-          {connectionLookupCopy.requestReceived.line}
-        </p>
+        <p className="invite-form-error">{t("lookup.requestReceivedLine")}</p>
         <RowLink href="/connections#incoming-requests">
-          {connectionLookupCopy.requestReceived.inboxLabel}
+          {t("lookup.inboxLabel")}
         </RowLink>
       </div>
     );
@@ -315,10 +313,10 @@ function renderStatus(
     return (
       <div className="invite-form-feedback" role="alert">
         <p className="invite-form-error">
-          {connectionLookupCopy.limitReached(limit)}
+          {t("lookup.limitReached", { limit })}
         </p>
         <Link href="/subscribe/confirm" className="invite-form-copylink">
-          <span>add more on a subscription</span>
+          <span>{t("form.addMoreSub")}</span>
           <span aria-hidden="true">→</span>
         </Link>
       </div>
@@ -328,11 +326,8 @@ function renderStatus(
   if (status.kind === "missing-inviter-name") {
     return (
       <div className="invite-form-feedback" role="alert">
-        <p className="invite-form-error">
-          your name is not on file. add it in settings, then send the
-          request again.
-        </p>
-        <RowLink href="/settings#account">add your name</RowLink>
+        <p className="invite-form-error">{t("form.missingNameLine")}</p>
+        <RowLink href="/settings#account">{t("form.addYourName")}</RowLink>
       </div>
     );
   }
@@ -340,23 +335,23 @@ function renderStatus(
   if (status.kind === "invalid-note-length") {
     return (
       <p className="invite-form-error" role="alert">
-        notes are limited to one line — about {NOTE_MAX_LENGTH} characters.
+        {t("form.noteLengthError", { max: NOTE_MAX_LENGTH })}
       </p>
     );
   }
 
   const message =
     status.kind === "format-error"
-      ? connectionLookupCopy.invalidEmail
+      ? t("lookup.invalidEmail")
       : status.kind === "self"
-        ? connectionLookupCopy.self
+        ? t("lookup.self")
         : status.kind === "request-sent"
-          ? connectionLookupCopy.requestSent
+          ? t("lookup.requestSent")
           : status.kind === "already-connected"
-            ? connectionLookupCopy.alreadyConnected
+            ? t("lookup.alreadyConnected")
             : status.kind === "rate-limited"
-              ? connectionLookupCopy.rateLimited
-              : connectionLookupCopy.generic;
+              ? t("lookup.rateLimited")
+              : t("lookup.generic");
 
   return (
     <p className="invite-form-error" role="alert">

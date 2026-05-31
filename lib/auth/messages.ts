@@ -45,42 +45,62 @@ export const AUTH_SUCCESS = {
   PASSWORD_UPDATED: "Password updated. Signing you in.",
 } as const;
 
+// Stable auth-error codes. These travel in the `?error=` URL param and
+// are resolved to localized copy on the page via the `auth.errors.<code>`
+// catalog (English values mirror AUTH_ERRORS above). Never put error TEXT
+// in the URL — it would be English inside a localized flow.
+export type AuthErrorCode =
+  | "invalid_credentials"
+  | "email_taken"
+  | "weak_password"
+  | "passwords_dont_match"
+  | "email_invalid"
+  | "rate_limited"
+  | "unconfirmed_email"
+  | "reset_link_expired"
+  | "reset_link_invalid"
+  | "oauth_failed"
+  | "callback_failed"
+  | "generic"
+  | "no_session";
+
 /**
- * Map a Supabase auth error message to our canonical message.
- * Supabase wording shifts between versions, so we match on substrings
- * and fall back to GENERIC. Keep this narrow — every branch added
- * here is a promise to keep the wording in two places consistent.
+ * Map a Supabase auth error message to a stable code. Supabase wording
+ * shifts between versions, so we match on substrings and fall back to
+ * "generic". The code is resolved to localized copy on the page.
  */
-export function mapSupabaseAuthError(raw: string | undefined | null): string {
-  if (!raw) return AUTH_ERRORS.GENERIC;
+export function mapSupabaseAuthError(
+  raw: string | undefined | null,
+): AuthErrorCode {
+  if (!raw) return "generic";
   const s = raw.toLowerCase();
 
   if (s.includes("invalid login") || s.includes("invalid credentials")) {
-    return AUTH_ERRORS.INVALID_CREDENTIALS;
+    return "invalid_credentials";
   }
   if (s.includes("email not confirmed") || s.includes("not confirmed")) {
-    return AUTH_ERRORS.UNCONFIRMED_EMAIL;
+    return "unconfirmed_email";
   }
   if (s.includes("already registered") || s.includes("user already")) {
-    return AUTH_ERRORS.EMAIL_TAKEN;
+    return "email_taken";
   }
   if (s.includes("rate limit") || s.includes("too many")) {
-    return AUTH_ERRORS.RATE_LIMITED;
+    return "rate_limited";
   }
   if (s.includes("password should be") || s.includes("weak password")) {
-    return AUTH_ERRORS.WEAK_PASSWORD;
+    return "weak_password";
   }
   if (s.includes("invalid email") || s.includes("email address")) {
-    return AUTH_ERRORS.EMAIL_INVALID;
+    return "email_invalid";
   }
   if (s.includes("expired") && s.includes("link")) {
-    return AUTH_ERRORS.RESET_LINK_EXPIRED;
+    return "reset_link_expired";
   }
   if (s.includes("token") && (s.includes("expired") || s.includes("invalid"))) {
-    return AUTH_ERRORS.RESET_LINK_INVALID;
+    return "reset_link_invalid";
   }
 
-  return AUTH_ERRORS.GENERIC;
+  return "generic";
 }
 
 export const PASSWORD_HINT = "At least 8 characters.";

@@ -2,6 +2,7 @@
 
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // Trigger that flushes the current step's autosave and routes the user
 // to /onboarding/saved — a real page, not a modal. The step the user
@@ -17,6 +18,7 @@ type Props = {
 
 export default function SaveExitTrigger({ onBeforeNavigate, step }: Props) {
   const router = useRouter();
+  const t = useTranslations("onboarding");
   const [pending, startTransition] = useTransition();
 
   function go() {
@@ -37,14 +39,14 @@ export default function SaveExitTrigger({ onBeforeNavigate, step }: Props) {
 
   return (
     <span className="cta-ghost">
-      <em className="cta-ghost-or">or</em>{" "}
+      <em className="cta-ghost-or">{t("saveExit.or")}</em>{" "}
       <button
         type="button"
         className="cta-ghost-link"
         onClick={go}
         disabled={pending}
       >
-        save and return later
+        {t("saveExit.saveAndReturn")}
       </button>
     </span>
   );

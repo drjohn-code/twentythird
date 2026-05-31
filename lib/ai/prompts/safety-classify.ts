@@ -24,6 +24,8 @@ Severity definitions — apply these strictly:
 - "critical": active plan, imminent risk to self or others, statements that indicate immediate danger (timeline, method, means), recent overdose, mention of weapons together with intent.
 
 Rules:
+- The text may be written in ANY language. Classify it on the same severity scale regardless of language — never downgrade or skip a rating because the text is not in English. Apply the same cultural-texture judgement (dark humor, metaphor) within that language.
+- The "excerpt" must be a verbatim excerpt in the text's ORIGINAL language (the receiving clinician needs the source words) — do not translate it.
 - Err toward "medium" over "low" if you are uncertain — the cost of missing is higher than the cost of flagging.
 - Cultural variation: dark humor, gallows humor, and metaphorical despair ("this kills me", "I'd rather die than do that meeting") are not automatic flags. Read the texture, not the keywords.
 - Self-disclosure of past suicidal ideation that has resolved is "low", not "high".

@@ -36,20 +36,24 @@ export type AITask =
   | "reading_lede"
   | "connection_summary"
   | "report_generation"
-  | "case_detail";
+  | "case_detail"
+  | "i18n_draft";
 
 const DEFAULT_MODELS: Record<AITask, string> = {
-  safety_classify: "anthropic/claude-haiku-4.5",
-  initial_readings: "anthropic/claude-sonnet-4.5",
-  catchup_summary: "anthropic/claude-haiku-4.5",
-  catchup_feedback: "anthropic/claude-sonnet-4.5",
-  catchup_refinement: "anthropic/claude-sonnet-4.5",
-  session_reply: "anthropic/claude-sonnet-4.5",
-  session_close: "anthropic/claude-haiku-4.5",
-  reading_lede: "anthropic/claude-sonnet-4.5",
-  connection_summary: "anthropic/claude-haiku-4.5",
-  report_generation: "anthropic/claude-opus-4.7",
-  case_detail: "anthropic/claude-haiku-4.5",
+  safety_classify: "google/gemini-2.5-flash",
+  initial_readings: "google/gemini-2.5-pro",
+  catchup_summary: "google/gemini-2.5-flash",
+  catchup_feedback: "google/gemini-2.5-pro",
+  catchup_refinement: "google/gemini-2.5-pro",
+  session_reply: "google/gemini-2.5-pro",
+  session_close: "google/gemini-2.5-flash",
+  reading_lede: "google/gemini-2.5-pro",
+  connection_summary: "google/gemini-2.5-flash",
+  report_generation: "google/gemini-2.5-pro", // gemini-2.5-ultra is NOT a valid OpenRouter model ID (400) — pro is the verified default.
+  case_detail: "google/gemini-2.5-flash",
+  // Dev/CI only — drafts message catalogs (scripts/i18n/draft-translations.ts).
+  // A strong general model; never invoked at request time.
+  i18n_draft: "anthropic/claude-sonnet-4.5",
 };
 function envKeyFor(task: AITask): string {
   return `AI_MODEL_${task.toUpperCase()}`;

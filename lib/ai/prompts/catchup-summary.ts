@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 
 export type CatchupAnswerInput = {
   question_key: string;
@@ -24,6 +24,7 @@ Rules:
 export function buildCatchupSummaryPrompt(input: {
   weekNumber: number;
   answers: CatchupAnswerInput[];
+  locale: string;
 }): { system: string; messages: ChatMessage[] } {
   const answerBlock = input.answers
     .map(
@@ -33,7 +34,7 @@ export function buildCatchupSummaryPrompt(input: {
     .join("\n\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

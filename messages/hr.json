@@ -1,0 +1,2897 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSIHODINAMIČKA INTELIGENCIJA",
+        "titleLine1": "Napredna",
+        "titleLine2Pre": "Psihodinamička",
+        "titleLine2It": "UI",
+        "titleLine3Pre": "za",
+        "titleLine3It": "Samootkrivanje",
+        "ctaPrimary": "Započnite svoje otkrivanje",
+        "ctaGhostOr": "ili",
+        "ctaGhostText": "pročitajte znanstveni rad",
+        "scroll": "pomaknite"
+      },
+      "philosophy": {
+        "eyebrow": "TEMELJNA FILOZOFIJA",
+        "titlePre": "Petominutna rješenja ne",
+        "titleIt": "mijenjaju nikoga",
+        "sub1": "Provodimo analizu temeljnih uzroka. Spajanjem temeljnih uvida Sigmunda Freuda s probojima Jacquesa Lacana u lingvistici, želji i identitetu.",
+        "sub2": "Većina alata radi na površini. Mi radimo tamo gdje je zapisano — u arhitekturi jezika, govornim pogreškama, obrascima koje još niste imenovali.",
+        "metaLineageLabel": "Loza",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metoda",
+        "metaMethodVal": "Strukturna",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "Nesvjesno"
+      },
+      "privacy": {
+        "eyebrow": "POVJERLJIVOST",
+        "titlePre": "Privatnost podataka je",
+        "titleIt": "glavni",
+        "titlePost": "prioritet.",
+        "lede": "Povjerljivost ovdje nije značajka; ona je preduvjet za dubinu. Ljudi govore slobodno samo tamo gdje se osjećaju sigurno — stoga je soba izgrađena da zaštiti ono što kažete.",
+        "rowTag": "Zaštitne mjere",
+        "rowTitlePre": "Soba izgrađena da",
+        "rowTitleIt": "čuva",
+        "rowTitlePost": "ono što kažete.",
+        "rowBody": "Rad zahtijeva vaš najnezaštićeniji materijal. Soba je izgrađena da ga primi s povjerenjem i drži zatvorenim za svakoga kome nije namijenjen.",
+        "figLabel": "Rukovanje podacima",
+        "figSubtitle": "stojeći položaj",
+        "listProcessingKey": "obrada",
+        "listProcessingVal": "Svaki unos obrađuje se trostruko slijepo.",
+        "listEncryptionKey": "šifriranje",
+        "listEncryptionVal": "Svi podaci su šifrirani.",
+        "listProtectionKey": "zaštita",
+        "listProtectionVal": "Čuva se pod najvišom dostupnom razinom zaštite.",
+        "footKey": "Svrha",
+        "footVal": "mirno, sigurno mjesto za duboki razgovor"
+      },
+      "process": {
+        "eyebrow": "KAKO RADI",
+        "titlePre": "Četiri koraka,",
+        "titleIt": "jedan krug koji se širi",
+        "lede": "Komunikacija se produbljuje u četiri poteza. Svaki proširuje ono što sustav može pročitati — od jednog unosa do stalnog razgovora.",
+        "step1Sub": "dubinsko profiliranje",
+        "step1TitlePre": "Unos u",
+        "step1TitleIt": "10 koraka",
+        "step1TitlePost": ".",
+        "step1Body": "Kreirajte svoj račun i ispunite unos u 10 koraka. Ovo je dubinsko profiliranje; prvo čitanje u potpunosti je izgrađeno na temelju onoga što ovdje unesete.",
+        "step2Sub": "posredovano, nikad uzajamno",
+        "step2TitlePre": "Ljudi koji",
+        "step2TitleIt": "vas oblikuju",
+        "step2Body": "Dodajte ljude koji vas oblikuju, svakoga po ulozi — partner, najbliži prijatelj, roditelj, brat/sestra, suroditelj. Ono što oni dijele nikada vam nije vidljivo; ono što vi dijelite nikada nije vidljivo njima. Samo sustav čita oboje.",
+        "step3Sub": "tjedno čitanje",
+        "step3TitlePre": "Nedjeljni",
+        "step3TitleIt": "Catchup",
+        "step3Body": "U nedjelju navečer, recite nam što se dogodilo tijekom vašeg tjedna i kako ste se osjećali. Svaki Catchup pročišćava čitanje — slika se izoštrava kako se tjedni gomilaju.",
+        "step4Sub": "potpuno privatno",
+        "step4TitlePre": "Soba za",
+        "step4TitleIt": "konzultacije",
+        "step4Body": "Razgovarajte u potpuno privatnoj konzultaciji s analitičarem — glasom koji vas poznaje bolje od ikoga, obučenim kroz 23 sloja graničnih AI modela."
+      },
+      "brain": {
+        "eyebrow": "RAD",
+        "titleLine1": "Dekonstruiranje",
+        "titleLine2": "vaše podsvijesti",
+        "state1Tag": "Mapiranje obrazaca",
+        "state1TitlePre": "Podsvjesne",
+        "state1TitleIt": "petlje",
+        "state1TitlePost": "i ponavljanja.",
+        "state1Body": "Pratimo ponavljajuće cikluse u vašim izborima, anksioznostima u odnosima i emocionalnim okidačima. Identificiranjem ovih petlji, pokazujemo vam točno gdje su vaše svjesne namjere otete nesvjesnim programiranjem.",
+        "state2Tag": "Profiliranje",
+        "state2TitlePre": "Dubinsko",
+        "state2TitleIt": "psihodinamičko",
+        "state2TitlePost": "profiliranje.",
+        "state2Body": "Pređite preko površnih testova osobnosti. Ovo je strukturno skeniranje vaše psihološke dinamike — mapiranje kako vaša prošla iskustva oblikuju vaš trenutni identitet, ego i obrambene mehanizme.",
+        "state3Tag": "Jezik",
+        "state3TitlePre": "Lingvističko",
+        "state3TitleIt": "nesvjesno",
+        "state3TitlePost": "istraživanje.",
+        "state3Body": "Utemeljen na Lacanovoj teoriji, naš AI analizira vaše asocijacije riječi, pauze i obrasce govora. Pomažemo vam čitati između redaka vlastitih misli kako biste pristupili skrivenim anksioznostima i željama koje još niste uspjeli izraziti."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMIRAJ",
+        "titleLine1": "Prekini ciklus,",
+        "titleLine2": "Zatim ga prepiši.",
+        "lede": "Tri pokreta u radu. Tri mjesta gdje uvid postaje promjena.",
+        "row1Tag": "Relacijski",
+        "row1TitlePre": "Izliječi svoju",
+        "row1TitleIt": "relacijsku",
+        "row1TitlePost": "dinamiku.",
+        "row1Body": "Isti atraktor privlači vas istoj vrsti osobe, istoj svađi, istom povlačenju. Mi otkrivamo obrazac kroz godine, imenujemo ga i promatramo kako gubi svoju gravitaciju.",
+        "row1Link": "Pročitaj studiju slučaja",
+        "row1FigLabel": "Subjekt 1149-A",
+        "row1FigSubtitle": "longitudinalni obrazac",
+        "row1Outcome": "povukao se",
+        "row1SummaryRecurrenceKey": "ponavljanje",
+        "row1SummaryIntervalKey": "interval",
+        "row1SummaryAttractorKey": "atraktor",
+        "row1SummaryAttractorVal": "prag intimnosti",
+        "row2Tag": "Rad na snovima",
+        "row2TitlePre": "Dekodiraj",
+        "row2TitleIt": "logiku snova",
+        "row2TitlePost": ", uskladi ciljeve.",
+        "row2Body": "Vaši snovi su probe značenja. Pratimo njihovu gramatiku — pomake, kondenzacije, pogreške — natrag do budne odluke koju su vam pokušavali donijeti.",
+        "row2Link": "Pogledaj anotirani primjer",
+        "row2FigLabel": "Sesija 06",
+        "row2FigSubtitle": "unos sna, anotiran",
+        "row2Dream1Pre": "Opet sam u roditeljskoj kući",
+        "row2Ann1": "prvobitna scena",
+        "row2Dream1Mid": ", ali sobe se stalno otvaraju u druge sobe",
+        "row2Ann2": "granica ega",
+        "row2Dream2Pre": "Čovjek s očevim glasom",
+        "row2Ann3": "očev-imago",
+        "row2Dream2Mid": "daje mi ključ. Ključ se pretvara u vodu",
+        "row2Ann4": "pomak",
+        "row2Dream3Pre": "Budim se prije nego što uspijem otvoriti vrata",
+        "row2Ann5": "želja / nedostatak",
+        "row2Key1": "prvobitna scena",
+        "row2Key2": "granica ega",
+        "row2Key3": "očev-imago",
+        "row2Key4": "pomak",
+        "row2Key5": "želja / nedostatak",
+        "row3Tag": "Zvanje",
+        "row3TitlePre": "Razriješi",
+        "row3TitleIt": "profesionalne",
+        "row3TitlePost": "blokade.",
+        "row3Body": "Plafon koji stalno udarate rijetko je povezan s vještinom. To je scenarij — rano napisan, tiho uvježban — koji ćemo vam pomoći pročitati naglas i prepisati, rečenicu po rečenicu.",
+        "row3Link": "Metodološki rad",
+        "row3FigLabel": "Revizija scenarija",
+        "row3FigSubtitle": "radna skica",
+        "row3Line1Prefix": "01 · Ja sam",
+        "row3Line1Old": "još nisam spreman.",
+        "row3Line1New": "već dopušteno.",
+        "row3Line2Prefix": "02 · da",
+        "row3Line2Old": "čekam svoj red.",
+        "row3Line2New": "imenujem što želim.",
+        "row3Line3Prefix": "03 · jer",
+        "row3Line3Old": "netko bi mogao biti razočaran.",
+        "row3Line3New": "razočaranje je također jezik.",
+        "row3MetaOriginalPre": "izvorno",
+        "row3MetaOriginalIt": "dob 11",
+        "row3MetaRevisedPre": "revidirano",
+        "row3MetaRevisedIt": "sesija 06"
+      },
+      "outcomes": {
+        "eyebrow": "ISHODI",
+        "titleLine1Pre": "Opipljivi",
+        "titleLine1It": "uvidi",
+        "titleLine2": "Tiho mjerljivi.",
+        "lede": "Samosvijest temeljena na podacima, isporučena jezikom kliničara — ne kviza.",
+        "row1Tag": "Ubrzanje",
+        "row1TitlePre": "Krajnji",
+        "row1TitleIt": "prečac",
+        "row1TitlePost": "za terapiju u stvarnom svijetu.",
+        "row1Body": "Ono što je nekada zahtijevalo dugogodišnji odnos sada može započeti tjednima pripreme. Uđite u ordinaciju svog terapeuta znajući što ćete reći.",
+        "row1Link": "Pogledajte metodologiju",
+        "row1FigSubtitle": "vrijeme do prvog uvida",
+        "row1TraditionalLabel": "Tradicionalni put",
+        "row1AxisYr1": "1. god",
+        "row1AxisYr3": "3. god",
+        "row1AxisYr6": "6. god",
+        "row1AxisYr9": "9. god",
+        "row1AxisYr12": "12. god",
+        "row1TwentyThirdLabelPre": "Uz",
+        "row1AxisWk1": "1. tj",
+        "row1AxisWk4": "4. tj",
+        "row1AxisWk8": "8. tj",
+        "row1AxisWk12": "12. tj",
+        "row1SummaryFaster": "brže",
+        "row1SummaryDesc": "vrijeme do prvog uvida",
+        "row2Tag": "Izvještaj",
+        "row2TitlePre": "Psihološka",
+        "row2TitleIt": "karta",
+        "row2TitlePost": "spremna za terapeuta.",
+        "row2Body": "Strukturni dijagram vas — izvoziv, dijeljiv, duboko razumljiv obučenom kliničaru. Nije kviz osobnosti; radni sažetak.",
+        "row2Link": "Pogledajte primjer izvještaja",
+        "row2FigLabel": "Subjekt 1149-A",
+        "row2FigSubtitle": "strukturni profil",
+        "row2RepCase": "slučaj 1149-A",
+        "row2RepPrepared": "pripremljeno 04 · 26",
+        "row2MetricEgo": "Struktura ega",
+        "row2MetricObject": "Objektni odnosi",
+        "row2MetricDefense": "Složenost obrane",
+        "row2MetricDrive": "Organizacija nagona",
+        "row2MetricSymbolic": "Simbolički registar",
+        "row2FootLabel": "Dominantna struktura",
+        "row2FootVal": "opsesivna · s histeričnim tragovima",
+        "row3Tag": "Integracija",
+        "row3TitlePre": "Personalizirana",
+        "row3TitleIt": "integracija",
+        "row3TitlePost": "& planovi rada sa sjenom.",
+        "row3Body": "Dnevni poticaji i rituali koji uvid prenose s papira u tijelo. Mali, namjerni. Izgrađeni oko vaše strukture, ne generičkog kurikuluma.",
+        "row3Link": "Kako se plan prilagođava",
+        "row3FigLabel": "Dan 23",
+        "row3FigSubtitle": "dnevni poticaj",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Srijeda",
+        "row3PromptEyebrow": "današnji poticaj · rad sa sjenom",
+        "row3PromptPre": "Gdje ste danas odabrali",
+        "row3PromptIt": "ne",
+        "row3PromptPost": "biti viđeni? I što ste čuvali skrivajući se?",
+        "row3Stream1Label": "vježbe disanja",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "dnevnik",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "poticaj sjene",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "niz",
+        "row3StreakVal": "{n, plural, one {# dan} few {# dana} other {# dana}}"
+      },
+      "final": {
+        "eyebrow": "POČETAK",
+        "titlePre": "Vaše nesvjesno govori.",
+        "titleIt": "Vrijeme je za slušanje.",
+        "ctaPrimary": "Započnite svoje otkriće",
+        "ctaGhostOr": "ili",
+        "ctaGhostText": "pročitajte znanstveni rad"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Pravila privatnosti — TwentyThird",
+        "metaDescription": "Kako TwentyThird postupa s osobnim podacima. Ništa ne napušta EU. Ništa se ne prodaje.",
+        "eyebrow": "PRIVATNOST",
+        "headingLead": "Osobni podaci,",
+        "headingItalic": "postupa se s pažnjom.",
+        "lede": "TwentyThird obrađuje ono što dijelite kako bi vam pružio precizan psihodinamički uvid. Ništa ne napušta EU. Ništa se ne prodaje.",
+        "controls": {
+          "headingLead": "Tko",
+          "headingItalic": "kontrolira",
+          "headingTail": "vaše podatke",
+          "p1": "WelloWork AB, registriran u Švedskoj (org. br. 559472‑9997), s poslovanjem iz Uppsale, voditelj je obrade osobnih podataka prikupljenih na ovoj web stranici i putem izravnih upita.",
+          "p2": "Za podatke obrađene unutar platforme TwentyThird u ime organizacije — klinike, istraživačke institucije, poslodavca — WelloWork AB djeluje kao obrađivač, a korisnička organizacija je voditelj obrade. Taj je odnos reguliran zasebnim Ugovorom o obradi podataka."
+        },
+        "figure": {
+          "label": "tko kontrolira vaše podatke",
+          "controller": "Voditelj obrade",
+          "directRelationship": "izravan odnos",
+          "websiteVisitor": "Posjetitelj web-stranice",
+          "you": "Vi",
+          "customerOrg": "Organizacija klijenta",
+          "viaDpa": "putem DPA",
+          "processor": "Izvršitelj obrade",
+          "platformUser": "Korisnik platforme"
+        },
+        "collect": {
+          "headingLead": "Što",
+          "headingItalic": "prikupljamo",
+          "contactStrong": "Podaci za kontakt i račun.",
+          "contactBody": "Ime, adresa e-pošte i sve informacije koje navedete prilikom prijave ili dopisivanja s nama. Pravna osnova: izvršenje ugovora (čl. 6(1)(b) GDPR).",
+          "sessionStrong": "Podaci o sesiji i platformi.",
+          "sessionBody": "Dnevnički zapisi, odgovori, sadržaj snova i jezični obrasci koje dijelite unutar TwentyThird. To je supstrat analize. Pravna osnova: izričita privola (čl. 9(2)(a) GDPR), dana prilikom registracije i opoziva u bilo kojem trenutku. Ove podatke tretiramo kao zdravstvene podatke posebne kategorije i primjenjujemo odgovarajuće zaštitne mjere bez obzira na formalnu klasifikaciju.",
+          "technicalStrong": "Tehnički podaci.",
+          "technicalBody": "IP adresa, vrsta preglednika, identifikatori uređaja i vremenske oznake korištenja — automatski prikupljeni prilikom pristupa platformi. Pravna osnova: legitimni interes (čl. 6(1)(f) GDPR) za održavanje sigurnosti i dijagnosticiranje pogrešaka.",
+          "p4": "Ne prikupljamo podatke o rasi, etničkoj pripadnosti, političkom mišljenju ili vjerskom uvjerenju. Ako sadržaj koji dijelite slučajno otkrije takve informacije, one se ne obrađuju kao zasebna kategorija."
+        },
+        "use": {
+          "headingLead": "Kako ga",
+          "headingItalic": "koristimo",
+          "headingTail": "ga",
+          "p1": "Vaše podatke koristimo za pružanje i poboljšanje usluge TwentyThird, slanje transakcijskih poruka koje ste zatražili, otkrivanje i sprječavanje prijevara ili zlouporaba te usklađivanje s pravnim obvezama.",
+          "p2": "Vaše podatke ne koristimo za oglašivačko profiliranje. Ne prodajemo ih, ne licenciramo ih niti ih dijelimo s posrednicima podataka. Ne koristimo ih za obuku AI modela opće namjene kojima upravljaju treće strane."
+        },
+        "sees": {
+          "headingLead": "Tko",
+          "headingItalic": "vidi",
+          "headingTail": "to",
+          "withinStrong": "Unutar WelloWork AB:",
+          "withinBody": "Kliničari i inženjeri kojima je pristup potreban za održavanje usluge. Pristup je ograničen ulogom i bilježi se.",
+          "infraStrong": "Pružatelji infrastrukture:",
+          "infraBody": "Supabase (baza podataka i autentifikacija, regija EU), Vercel (hosting, EU edge) i Postmark (transakcijska e-pošta). Svaki je vezan Ugovorom o obradi podataka i obrađuje podatke isključivo prema našim dokumentiranim uputama.",
+          "legalStrong": "Pravna obveza:",
+          "legalBody": "Podatke otkrivamo nadležnim tijelima samo kada to zahtijeva zakon, i to samo u mjeri u kojoj je to potrebno.",
+          "p4": "Nema prijenosa podataka izvan EU/EEA. Ako se to promijeni, ažurirat ćemo ovu politiku i po potrebi zatražiti novu suglasnost."
+        },
+        "retention": {
+          "headingItalic": "Zadržavanje",
+          "p1": "Podaci o računu i platformi zadržavaju se dok je vaš račun aktivan, plus 30 dana nakon brisanja kako bi se omogućio oporavak. Tehnički zapisi zadržavaju se 90 dana. Upiti za kontakt zadržavaju se 24 mjeseca.",
+          "p2": "Nakon tih razdoblja, podaci se trajno brišu ili nepovratno anonimiziraju."
+        },
+        "rights": {
+          "headingLead": "Vaša",
+          "headingItalic": "prava",
+          "p1": "Imate pravo pristupa podacima koje posjedujemo o vama, ispravljanja netočnosti, traženja brisanja, ograničavanja ili prigovora na obradu te primanja strojno čitljive kopije za prenosivost. Tamo gdje se obrada temelji na privoli, možete je povući u bilo kojem trenutku bez utjecaja na zakonitost obrade prije povlačenja.",
+          "exerciseLead": "Za ostvarivanje bilo kojeg prava:",
+          "exerciseTail": ". Odgovaramo u roku od 30 dana. Ako niste zadovoljni našim odgovorom, možete podnijeti pritužbu Integritetsskyddsmyndighetenu (IMY), švedskom tijelu za zaštitu podataka."
+        },
+        "children": {
+          "headingItalic": "Djeca",
+          "p1": "TwentyThird nije namijenjen osobama mlađim od 18 godina. Ne prikupljamo svjesno podatke od maloljetnika. Ako saznamo da je maloljetnik poslao podatke, odmah ih brišemo."
+        },
+        "changes": {
+          "headingItalic": "Izmjene",
+          "p1": "Ovu politiku ažuriramo kada se naše prakse promijene. O značajnim promjenama obavještavamo e-poštom najmanje 14 dana prije nego što stupe na snagu. Datum verzije nalazi se na dnu ove stranice.",
+          "effectivePrefix": "Na snazi od:",
+          "effectiveSuffix": "· Mjerodavno pravo: švedsko pravo i GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Uvjeti korištenja — TwentyThird",
+        "metaDescription": "Ugovor koji regulira vaše korištenje TwentyThird platforme. Napisano da se pročita, a ne izbjegne.",
+        "eyebrow": "UVJETI",
+        "headingLead": "Ugovor,",
+        "headingItalic": "jasno naveden.",
+        "lede": "Ovi uvjeti reguliraju vaše korištenje TwentyThird platforme. Napisani su da se pročitaju, a ne izbjegnu.",
+        "service": {
+          "headingLead": "Usluga",
+          "headingItalic": "usluga",
+          "p1": "TwentyThird je psihodinamička AI platforma kojom upravlja WelloWork AB. Pruža analitički uvid temeljen na onome što dijelite. Nije medicinski uređaj. Ne predstavlja psihoterapiju, psihijatrijsku dijagnozu niti kliničko liječenje. Ako ste u psihološkom stresu, obratite se kvalificiranom kliničaru ili hitnoj službi."
+        },
+        "account": {
+          "headingLead": "Vaš",
+          "headingItalic": "račun",
+          "p1": "Morate imati 18 ili više godina za korištenje TwentyThird platforme. Odgovorni ste za održavanje povjerljivosti svojih vjerodajnica. Ne smijete dijeliti svoj račun niti koristiti platformu u ime druge osobe bez njezine izričite suglasnosti.",
+          "p2": "Vi ste vlasnik sadržaja koji stvarate — svojih unosa u dnevnik, svojih odgovora. Njihovim podnošenjem dajete tvrtki WelloWork AB ograničenu licencu za obradu u svrhe opisane u Pravilima o privatnosti. Svoj sadržaj možete izvesti ili izbrisati u bilo kojem trenutku."
+        },
+        "acceptableUse": {
+          "headingLead": "Prihvatljiva",
+          "headingItalic": "upotreba",
+          "p1": "TwentyThird možete koristiti za zakonito osobno i profesionalno samoispitivanje. Ne smijete ga koristiti za nanošenje štete sebi ili drugima, za pokušaj zaobilaženja sigurnosnih sustava platforme, za obrnuti inženjering temeljnih modela ili za obuku konkurentskih AI sustava.",
+          "p2": "Zadržavamo pravo obustaviti ili ukinuti račune koji krše ove uvjete, bez prethodne obavijesti ako je to potrebno radi sigurnosti."
+        },
+        "liability": {
+          "headingLead": "Naša",
+          "headingItalic": "odgovornost",
+          "p1": "TwentyThird pruža uvid, a ne sigurnost. Ne jamčimo da je analiza točna, potpuna ili prikladna za vaše okolnosti. U mjeri dopuštenoj švedskim zakonom, naša odgovornost je ograničena na iznos koji ste platili u 3 mjeseca prije relevantnog zahtjeva.",
+          "p2": "Ništa u ovim uvjetima ne ograničava odgovornost za smrt ili osobnu ozljedu uzrokovanu našim nemarom, ili za prijevaru."
+        },
+        "disputes": {
+          "headingLead": "Mjerodavno pravo i",
+          "headingItalic": "sporovi",
+          "p1": "Ovi uvjeti regulirani su švedskim zakonom. Sporovi koji se ne mogu riješiti izravno upućuju se sudovima u Uppsali, Švedska, kao sudu prvog stupnja.",
+          "p2Lead": "Ako ste potrošač u EU, također imate pristup platformi EU za online rješavanje sporova na",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Promjene",
+          "p1": "Ove uvjete možemo ažurirati. Nastavak korištenja nakon datuma stupanja na snagu značajne promjene predstavlja prihvaćanje. O značajnim promjenama obavještavamo e-poštom najmanje 14 dana unaprijed.",
+          "effectivePrefix": "Na snazi od:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Pravila o kolačićima — TwentyThird",
+        "metaDescription": "TwentyThird koristi kolačiće isključivo za autentifikaciju i očuvanje postavki. Nema reklamnih kolačića. Nema praćenja trećih strana.",
+        "eyebrow": "KOLAČIĆI",
+        "headingLead": "Što pohranjujemo",
+        "headingItalic": "u vašem pregledniku.",
+        "lede": "TwentyThird koristi kolačiće za autentifikaciju i očuvanje postavki. Ne koristimo reklamne kolačiće niti pratitelje trećih strana.",
+        "whatIs": {
+          "headingLead": "Što je kolačić",
+          "headingItalic": "kolačić",
+          "p1": "Kolačić je mala tekstualna datoteka pohranjena u vašem pregledniku. Koristimo ih kako bismo vas održali prijavljenima i zapamtili vaše postavke teme (tamna ili svijetla). To je sve."
+        },
+        "weSet": {
+          "headingLead": "Kolačići",
+          "headingItalic": "koje postavljamo",
+          "authBody": "— Postavlja Supabase. Održava vašu autentificiranu sesiju. Istječe kada se odjavite ili nakon 7 dana neaktivnosti. Strogo nužno.",
+          "themeBody": "— Pohranjuje vašu postavku tamnog/svijetlog načina rada. Ostaje dok se ne obriše. Funkcionalno.",
+          "p3": "Ne postavljamo reklamne kolačiće. Ne učitavamo skripte za praćenje trećih strana — nema Google Analyticsa, nema Meta Pixela, nema marketinških oznaka bilo koje vrste."
+        },
+        "choices": {
+          "headingLead": "Vaši",
+          "headingItalic": "izbori",
+          "p1Lead": "Kolačiće možete obrisati u bilo kojem trenutku putem postavki preglednika. Brisanje",
+          "p1Mid": "će vas odjaviti. Brisanje",
+          "p1Tail": "će resetirati prikaz na tamnu zadanu postavku.",
+          "p2": "Ne koristimo banner za pristanak na kolačiće za strogo nužne ili funkcionalne kolačiće prema ePrivacy Direktivi, jer oni ne zahtijevaju pristanak. Ako u budućnosti uvedemo bilo kakve nebitne kolačiće, dobit ćemo pristanak prije njihovog postavljanja."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Pitanja o kolačićima ili bilo kojoj drugoj temi podataka:",
+          "effectivePrefix": "Na snazi od:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "NA OVOJ STRANICI",
+        "privacyPolicy": "Pravila privatnosti",
+        "termsOfService": "Uvjeti korištenja",
+        "cookiePolicy": "Pravila o kolačićima"
+      },
+      "layout": {
+        "eyebrow": "PRAVNO",
+        "headingLead": "Pravni dokumenti,",
+        "headingItalic": "jasno navedeni.",
+        "lede": "Politika privatnosti, uvjeti usluge i politika kolačića — regulirani švedskim zakonom i GDPR-om."
+      }
+    },
+    "footer": {
+      "tagline": "Psihodinamička umjetna inteligencija za unutarnji život. Tiha soba za ozbiljno promišljanje.",
+      "product": "Proizvod",
+      "discovery": "Otkriće",
+      "sampleReport": "Primjer izvješća",
+      "integrationPlan": "Plan integracije",
+      "company": "Tvrtka",
+      "about": "O nama",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Resursi",
+      "science": "Znanost",
+      "methodology": "Metodologija",
+      "methodPaper": "Metodološki rad",
+      "caseStudy": "Studija slučaja",
+      "dreamExample": "Primjer sna",
+      "legal": "Pravno",
+      "privacy": "Privatnost",
+      "terms": "Uvjeti",
+      "cookies": "Kolačići",
+      "rights": "sva prava pridržana"
+    },
+    "about": {
+      "metaTitle": "O nama — TwentyThird",
+      "metaDescription": "Podrijetlo, metoda i prekretnica na dvadeset trećem danu. Izgrađeno unutar CognitiveLaba pri WelloWork AB.",
+      "hero": {
+        "eyebrow": "O NAMA",
+        "headingLead": "Podrijetlo, metoda i",
+        "headingItalic": "prekretnica na dvadeset trećem danu",
+        "lede": "TwentyThird je psihodinamička umjetna inteligencija za samootkrivanje. Ona mapira ponavljajuće petlje i strukture ispod simptoma — jezik, privrženost, ponavljanje — i vraća radni sažetak, a ne kviz.",
+        "figure": {
+          "label": "dan-23",
+          "subtitle": "metafora prekretnice",
+          "heading": "Luk od 23 dana",
+          "range": "znatiželja → svijest",
+          "markerInflection": "prekretnica",
+          "summaryLabel": "dan kada se pitanje\nokreće unutra"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIJA",
+        "headingLead": "Freudov dopisnik. Fliessov broj.",
+        "headingItalic": "Naša metafora",
+        "tag": "Nasljeđe",
+        "row": {
+          "headingPre": "Ritam od",
+          "headingItalic": "23 dana",
+          "headingPost": "predložen u pismu, zadržan kao brojka.",
+          "para1": "Ciklus od 23 dana bio je hipoteza Wilhelma Fliessa, argumentirana kroz njegovu korespondenciju s Freudom krajem devetnaestog stoljeća. Suvremena znanost ne podržava fiksne bioritmove.",
+          "para2": "Zadržavamo broj zbog onoga što imenuje — prag na kojem znatiželja sazrijeva u svijest. Dan-23 je brojka, a ne biologija."
+        },
+        "figure": {
+          "label": "nasljeđe",
+          "subtitle": "četiri sidra",
+          "row1Outcome": "prijedlog",
+          "row2Duration": "Ego i Id",
+          "row2Outcome": "strukturni model",
+          "row3Duration": "Rimski diskurs",
+          "row3Outcome": "lingvistički zaokret",
+          "row4Outcome": "sinteza",
+          "summary1Key": "interval",
+          "summary2Key": "nit",
+          "summary2Value": "struktura",
+          "summary3Key": "metoda",
+          "summary3Value": "psihodinamička"
+        }
+      },
+      "origin": {
+        "eyebrow": "PODRIJETLO",
+        "headingLead": "Izgrađeno unutar CognitiveLaba.",
+        "headingItalic": "Odgovorili smo na pitanje koje nam je stalno postavljano",
+        "tag": "Tim",
+        "row": {
+          "headingLead": "Liječnici, izvorno gradeći",
+          "headingItalic": "kognitivnu obuku",
+          "para1": "TwentyThird je započeo unutar CognitiveLaba pri WelloWork AB, gdje je tim razvijao sustave kognitivne obuke. Prijatelji i kolege počeli su donositi osobna pitanja — anksioznost, ponavljajuće obrasce, petlje koje nisu mogli imenovati.",
+          "para2": "Između kliničke prakse kao liječnika, pilot podataka koje smo prikupljali i duge liste literature iz psihoanalize i Lacanove teorije, imali smo nešto za ponuditi. TwentyThird je ono što je iz toga proizašlo."
+        },
+        "figure": {
+          "label": "tim",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "pripremljeno 05 · 26",
+          "row1Key": "Klinička praksa",
+          "row2Key": "Istraživački rezultati",
+          "row3Key": "Ispitanici u pilot studiji",
+          "row4Key": "Liječnici u timu",
+          "footerLabel": "Profil",
+          "footerValue": "hibrid kliničara i istraživača"
+        }
+      },
+      "method": {
+        "eyebrow": "METODA",
+        "headingLead": "Što model",
+        "headingItalic": "zapravo radi",
+        "tag": "Mogućnosti",
+        "row": {
+          "headingLead": "Ispod simptoma, jedna",
+          "headingItalic": "struktura",
+          "para1": "TwentyThird provodi analizu temeljnog uzroka. Mapira <em>podsvesnu petlju</em> kroz godine, čita <em>lingvističko nesvjesno</em> u izboru riječi i govornim pogreškama, iznosi <em>privrženost</em> na pragu intimnosti i piše radni plan za <em>rad sa sjenom</em>.",
+          "para2": "Izlaz je spreman za terapeuta. Imenuje strukturu, a ne površinu."
+        },
+        "figure": {
+          "label": "simptom → struktura",
+          "subtitle": "tri prepravke",
+          "row1Prefix": "01 · površina",
+          "row1Old": "Odgađam važan posao.",
+          "row1Next": "Izbjegavanje da me se vidi kao onoga koji zna.",
+          "row2Prefix": "02 · površina",
+          "row2Old": "Stalno izlazim s istom osobom.",
+          "row2Next": "Ponavljanje oca-imaga na pragu intimnosti.",
+          "row3Prefix": "03 · površina",
+          "row3Old": "Ne mogu ništa završiti.",
+          "row3Next": "Odbijanje predaje pozicije potencijala.",
+          "metaLeftLabel": "predstavljanje",
+          "metaLeftValue": "pritužba",
+          "metaRightLabel": "strukturno",
+          "metaRightValue": "čitanje"
+        }
+      },
+      "final": {
+        "eyebrow": "NASTAVI",
+        "headingLead": "Pročitaj metodu,",
+        "headingItalic": "ili započni",
+        "ctaPrimary": "Pročitaj metodu",
+        "ctaGhostPrefix": "ili",
+        "ctaGhostText": "piši nam"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Pišite nam.",
+        "heroHeadlineItalic": "Čitamo sve",
+        "heroLede": "Na većinu poruka odgovaramo unutar sedamdeset i dva sata. Klinički i partnerski upiti imaju prednost.",
+        "formCardLabel": "obrazac",
+        "formCardSubtitle": "samo suštinski upiti",
+        "addressLabel": "ADRESA",
+        "addressValue": "Rosendal, Uppsala, Sweden",
+        "emailLabel": "E-MAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "POČNITE",
+        "finalHeadlineLead": "Ili samo",
+        "finalHeadlineItalic": "počnite",
+        "finalCta": "Započnite svoje otkrivanje",
+        "finalGhostOr": "ili",
+        "finalGhostText": "pročitajte o nastanku",
+        "disclaimer": "Za hitne probleme mentalnog zdravlja, molimo kontaktirajte lokalne hitne službe ili licenciranog kliničara. TwentyThird nije krizna služba."
+      },
+      "form": {
+        "successEyebrow": "PRIMLJENO",
+        "successHeadlineLead": "Vaša poruka je",
+        "successHeadlineItalic": "kod nas",
+        "successBody": "Odgovorit ćemo u roku od dva radna dana.",
+        "nameLabel": "Ime",
+        "emailLabel": "E-mail",
+        "messageLabel": "Poruka",
+        "submitSend": "Pošalji",
+        "submitSending": "Slanje",
+        "errorMessage": "nešto je pošlo po zlu · pokušajte ponovno",
+        "submittingStatus": "Slanje vaše poruke."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologija — TwentyThird",
+      "metaDescription": "Od prvog razgovora do karte spremne za terapeuta. Pet faza TwentyThird cjevovoda.",
+      "hero": {
+        "eyebrow": "METODA",
+        "headingLead": "Tjedni pripreme,",
+        "headingItalic": "ne godine traženja",
+        "lede": "Terapija djeluje. Također je potrebno vrijeme da se spozna svrha. TwentyThird komprimira pripremu — dio u kojem učite što zapravo govorite — kako bi sama soba mogla brže napredovati."
+      },
+      "pipeline": {
+        "eyebrow": "CJEVOVOD",
+        "headingLead": "Pet faza, jedan",
+        "headingItalic": "kratak",
+        "lede": "Od uzorkovanog govora do radnog dokumenta koji kliničar može pročitati za osam minuta.",
+        "stageLabel": "FAZA",
+        "stage01": {
+          "name": "Uzorkovanje",
+          "blurb": "Glas i tekst iz vođenih sesija. Model sluša oblik, ne sadržaj.",
+          "label": "uzorkovanje",
+          "subtitle": "volumen unutar kohorte",
+          "fig": {
+            "wordsSampled": "riječi uzorkovane",
+            "sessions": "sesije",
+            "elapsed": "proteklo",
+            "medianTurn": "medijan okreta"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistička",
+          "nameEm": "ekstrakcija",
+          "blurb": "Značajke koje model podiže iz transkripta — tiho, prije bilo kakve interpretacije.",
+          "label": "ekstrakcija",
+          "subtitle": "klase značajki",
+          "fig": {
+            "qualifierDensity": "gustoća kvalifikatora",
+            "modalVerbs": "modalni glagoli",
+            "conditionalFrame": "uvjetni okvir",
+            "affectiveHedges": "afektivne ograde",
+            "slipsMisnamings": "pogreške · pogrešna imenovanja",
+            "repetitionWindows": "prozori ponavljanja"
+          }
+        },
+        "stage03": {
+          "nameLead": "Otkrivanje",
+          "nameEm": "ponavljanja",
+          "blurb": "Obrazac koji se vraća u istom obliku, u različitim desetljećima. Signal da je nešto strukturno.",
+          "label": "ponavljanje",
+          "subtitle": "tri sidra jednog obrasca",
+          "fig": {
+            "row1": {
+              "durationLabel": "prvi posao",
+              "outcome": "plafon u 9. mjesecu"
+            },
+            "row2": {
+              "durationLabel": "drugi",
+              "outcome": "plafon u 11. mjesecu"
+            },
+            "row3": {
+              "durationLabel": "treći",
+              "outcome": "plafon u 8. mjesecu"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Rekonstrukcija",
+          "nameEm": "scenarija",
+          "blurb": "Rečenica ispod obrasca. Stari redak, zatim predložena revizija koju subjekt može uvježbati.",
+          "label": "rekonstrukcija",
+          "subtitle": "radni nacrt",
+          "fig": {
+            "row1": {
+              "prefix": "Ja sam",
+              "old": "još nisam spreman.",
+              "next": "već dopušteno."
+            },
+            "row2": {
+              "prefix": "da",
+              "old": "čekam da budem izabran.",
+              "next": "imenujem što želim."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Karta za",
+          "nameEm": "kliničara",
+          "blurb": "Tri označena mjerača i jednoredno strukturno čitanje. Osam minuta za čitanje, tjedni za korištenje.",
+          "label": "klinička predaja",
+          "subtitle": "radni sažetak",
+          "fig": {
+            "casePrefix": "slučaj",
+            "preparedPrefix": "pripremljen",
+            "egoStructure": "Struktura ega",
+            "objectRelations": "Objektni odnosi",
+            "symbolicRegister": "Simbolički registar",
+            "footerLabel": "Čitanje",
+            "footerValue": "opsesivno · s histeričnim tragovima"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "OPSEG",
+        "headingLead": "Što mjerimo, a što",
+        "headingItalic": "odbijamo",
+        "headingTail": "mjeriti.",
+        "measureHead": "Što mjerimo",
+        "refuseHead": "Što ne mjerimo",
+        "measure": {
+          "languagePatterns": {
+            "k": "jezični obrasci",
+            "gloss": "Gustoća kvalifikatora, modalni glagoli, ograde, uvjetni okviri."
+          },
+          "recurrence": {
+            "k": "ponavljanje",
+            "gloss": "Obrasci koji se vraćaju u istom obliku kroz godine."
+          },
+          "narrativeCoherence": {
+            "k": "narativna koherentnost",
+            "gloss": "Kako se priča život, gdje se vide šavovi."
+          },
+          "attachmentMarkers": {
+            "k": "markeri privrženosti",
+            "gloss": "Gdje intimnost prelazi prag, što slijedi."
+          },
+          "linguisticSlips": {
+            "k": "jezične pogreške",
+            "gloss": "Pogrešna imenovanja, kondenzacije, dislokacije."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD kategorije",
+            "gloss": "Nozologija je zaseban instrument, koriste ga kliničari."
+          },
+          "iqCognition": {
+            "k": "IQ ili kognicija",
+            "gloss": "Izvan opsega. Model je psihodinamičan, a ne psihometrijski."
+          },
+          "personalityTypes": {
+            "k": "tipovi osobnosti",
+            "gloss": "Petofaktorski model i njegovi derivati nisu dio sažetka."
+          },
+          "riskScores": {
+            "k": "rezultati rizika",
+            "gloss": "Akutni rizik je procjena kliničara, ne modela."
+          },
+          "predictions": {
+            "k": "predviđanja",
+            "gloss": "Struktura, ne prognoza. Imenujemo ono što jest, ne ono što dolazi."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompresija",
+        "headingLead": "Uđite znajući što",
+        "headingItalic": "reći",
+        "body1": "Terapija nije mjesto za shvaćanje pitanja. To je mjesto za življenje s njim. Kompresija koju nudimo odnosi se na pristup — mjesece koje kliničar obično provodi slušajući oblik sažetka.",
+        "body2": "U pilot kohorti, pripremljeni ispitanici postigli su radni savez u manje sesija. Čitanje je već bilo prisutno.",
+        "figure": {
+          "label": "savez",
+          "subtitle": "medijan sesija do radnog saveza",
+          "heading": "Vrijeme do radnog saveza",
+          "range": "medijan unutar kohorte",
+          "markerUnprepared": "nepripremljen",
+          "markerPrepared": "pripremljen",
+          "summaryLabel": "manje sesija do\nradnog saveza"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "NASTAVI",
+        "headingLead": "Započnite,",
+        "headingItalic": "ili pogledajte primjer izvješća",
+        "beginLabel": "Započnite",
+        "or": "ili",
+        "ghostLabel": "pogledajte primjer izvješća"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRACIJA",
+        "headlineLead": "Uvid, zatim",
+        "headlineItalic": "navika",
+        "lede": "Imenovanje obrasca samo je prvi korak. Plan je drugi — dnevni podsjetnici i mali rituali izgrađeni oko vaše strukture, a ne generički kurikulum."
+      },
+      "week": {
+        "eyebrow": "TJEDAN U PLANU",
+        "headlineLead": "Sedam podsjetnika,",
+        "headlineItalic": "jedna struktura",
+        "lede": "Reflektivno, utjelovljeno, napisano. Tjedan diše oko obrasca koji je izvještaj imenovao, a ne oko kurikuluma.",
+        "days": {
+          "mon": {
+            "day": "PON",
+            "prompt": "„Gdje danas niste odabrali biti <em>viđeni</em>?”",
+            "stream": {
+              "journal": "dnevnik",
+              "shadowPrompt": "podsjetnik sjene"
+            }
+          },
+          "tue": {
+            "day": "UTO",
+            "prompt": "„Prošećite bez obveze. Zabilježite jednu stvar koju ste skoro rekli.”",
+            "stream": {
+              "walking": "hodanje",
+              "note": "bilješka"
+            }
+          },
+          "wed": {
+            "day": "SRI",
+            "prompt": "„Što ste danas previše kvalificirali, i koja je bila <em>nekvalificirana</em> rečenica ispod toga?”",
+            "stream": {
+              "breathWork": "rad s dahom",
+              "journal": "dnevnik",
+              "shadowPrompt": "podsjetnik sjene"
+            }
+          },
+          "thu": {
+            "day": "ČET",
+            "prompt": "„Skeniranje tijela od grla prema dolje. Gdje se nalazi zadržavanje?”",
+            "stream": {
+              "bodyScan": "skeniranje tijela",
+              "note": "bilješka"
+            }
+          },
+          "fri": {
+            "day": "PET",
+            "prompt": "„Napišite rečenicu koju biste rekli da vam je već bilo dopušteno.”",
+            "stream": {
+              "journal": "dnevnik",
+              "rewrite": "prepravak"
+            }
+          },
+          "sat": {
+            "day": "SUB",
+            "prompt": "„Duga šetnja. Bez podsjetnika. Primijetite što tišina donosi natrag.”",
+            "stream": {
+              "walking": "hodanje",
+              "rest": "odmor"
+            }
+          },
+          "sun": {
+            "day": "NED",
+            "prompt": "„Pročitajte tjedan unatrag. Koja je rečenica već bila <em>istinita</em>?”",
+            "stream": {
+              "review": "pregled",
+              "note": "bilješka"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTACIJA",
+        "headlineLead": "Plan se",
+        "headlineItalic": "smanjuje",
+        "tag": "Adaptacija",
+        "rowHeadingLead": "Ponavljanje prošlog tjedna određuje sljedeći tjedan",
+        "rowHeadingItalic": "gustoću",
+        "body": "Kada snaga obrasca opadne, podsjetnici se prorjeđuju. Kada obrazac poraste, podsjetnici se vraćaju. Cilj nije pridržavanje. Cilj je najmanja skela koju struktura još treba.",
+        "figure": {
+          "label": "gustoća podsjetnika",
+          "subtitle": "tjedni 1–8",
+          "heading": "Broj podsjetnika · po tjednu",
+          "range": "smanjuje se kako slabi ponavljanje",
+          "markers": {
+            "wk1": "tj. 1",
+            "wk3": "tj. 3",
+            "wk5": "tj. 5",
+            "wk8": "tj. 8"
+          },
+          "summaryLabel": "manje podsjetnika\ndo tj. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "RAD SA SJENOM",
+        "headlineLead": "Nije katarza.",
+        "headlineItalic": "Govorenje",
+        "tag": "Sjena",
+        "rowHeadingLead": "Namjerna praksa govorenja onoga što je bilo",
+        "rowHeadingItalic": "neizrecivo",
+        "body": "Rad sa sjenom, u ovom kontekstu, nije izlaganje. Nije pročišćenje. To je spora praksa govorenja – najprije sebi – onoga što je netko bio naučen držati neizrečenim. Tri prije/poslije retka izvučena iz stvarnih planova.",
+        "figure": {
+          "label": "revidiranja sjene",
+          "subtitle": "tri retka, radna verzija",
+          "rows": {
+            "r1": {
+              "prefix": "01 · sebi",
+              "old": "Ne zaslužujem ovo.",
+              "next": "Još nisam vježbao glasno željeti to."
+            },
+            "r2": {
+              "prefix": "02 · sebi",
+              "old": "Trebao bih to već preboljeti.",
+              "next": "vremenska linija koju sam posudio nije bila za ovakvu tugu."
+            },
+            "r3": {
+              "prefix": "03 · sebi",
+              "old": "Previše sam.",
+              "next": "Ja sam točno onaj volumen za koji soba nije bila izgrađena."
+            }
+          },
+          "metaLeft": {
+            "label": "prethodno",
+            "value": "rečeno o sebi"
+          },
+          "metaRight": {
+            "label": "sada",
+            "value": "rečeno sebi"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "OKVIR",
+        "headlineLead": "Držano strukturom, a ne",
+        "headlineItalic": "kurikulumom",
+        "body1": "Kurikulum je skup poteza koje je izgradio stranac. Struktura je oblik koji vaš specifičan život poprima. Plan je izgrađen protiv potonjeg. Svaki podsjetnik je usidren na redak u vašem izvještaju — kada se redak raspadne, raspada se i podsjetnik.",
+        "body2": "Ništa ovdje ne bi trebalo biti trajno. Plan je unajmljen. Struktura je vaša.",
+        "closeout": "struktura je vaša · plan je unajmljen"
+      },
+      "final": {
+        "eyebrow": "NASTAVITE",
+        "headlineLead": "Započnite,",
+        "headlineItalic": "ili pročitajte znanost",
+        "beginCta": "Započnite",
+        "or": "ili",
+        "readScience": "pročitajte znanost"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Znanost — TwentyThird",
+        "description": "Stoljeće psihoanalitičke teorije i četiri desetljeća empirijskog istraživanja uzoraka, jezika i nesvjesnog."
+      },
+      "hero": {
+        "eyebrow": "TEMELJ",
+        "headlineLead": "Znanost iza",
+        "headlineItalic": "slušanja",
+        "headlineTail": ".",
+        "lede": "TwentyThird je izgrađen na stoljeću psihoanalitičke teorije i četiri desetljeća empirijskog istraživanja uzoraka, jezika i nesvjesnog. Ovo je ono što čitamo i zašto."
+      },
+      "lineages": {
+        "eyebrow": "DVIJE LOZE",
+        "headlineLead": "Freudova struktura. Lacanovo",
+        "headlineItalic": "slovo",
+        "headlineTail": ".",
+        "lede": "Dva čitanja nesvjesnog, razdvojena pola stoljeća. Zajedno čine okosnicu metode.",
+        "freud": {
+          "headlineLead": "Nesvjesno je",
+          "headlineItalic": "strukturno",
+          "headlineTail": ".",
+          "body1": "Freudov trajni doprinos je strukturalan, ne tematski. Dinamičko nesvjesno nije podrum zaboravljenog sadržaja – ono je radni organ uma, koji uvježbava, ponavlja, prenosi.",
+          "body2": "Čitamo ga kao kliničara ponavljanja. Ista scena stiže u različitim desetljećima. To ponavljanje je signal koji model traži.",
+          "figure": {
+            "label": "ponavljanje",
+            "subtitle": "pet sidara, jedna struktura",
+            "outcome": "povlačenje",
+            "rows": {
+              "anchor1": "rana adolescencija",
+              "anchor2": "prva duga veza",
+              "anchor3": "druga duga veza",
+              "anchor4": "treća veza",
+              "anchor5": "četvrta veza"
+            },
+            "summary": {
+              "recurrenceLabel": "ponavljanje",
+              "intervalLabel": "interval",
+              "attractorLabel": "atraktor",
+              "attractorValue": "prag intimnosti"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Nesvjesno je strukturirano poput",
+          "headlineItalic": "jezika",
+          "headlineTail": ".",
+          "body1Lead": "Lacanovo čitanje mijenja polje. Označitelj se pomiče; značenje klizi duž lanaca metonimije i metafore. Faza ogledala imenuje temeljno pogrešno prepoznavanje.",
+          "body1Italic": "Želja je želja Drugoga.",
+          "body2": "U našem cjevovodu to je konkretno. Snove i budni govor čitamo kao tekst – pomaci, kondenzacije i lapsusi nose strukturirajuću gramatiku.",
+          "figure": {
+            "label": "lingvistički signal",
+            "subtitle": "izvadak iz sna, s bilješkama",
+            "dreamLead": "„Soba u kojoj sam živio kao dijete ima još jedna vrata kojih se ne sjećam",
+            "ann1": "pomak",
+            "dreamMid1": ". Iza njih, glas mog nadzornika",
+            "ann2": "kondenzacija",
+            "dreamMid2": "me zove pogrešnim imenom",
+            "ann3": "lapsus",
+            "dreamTail": ".”",
+            "key1": "pomak",
+            "key2": "kondenzacija",
+            "key3": "lapsus"
+          }
+        }
+      },
+      "freud": {
+        "headlineLead": "Strukturno",
+        "headlineItalic": "nesvjesno",
+        "headlineTail": ".",
+        "body1": "Freudov trajni doprinos je strukturalan, a ne tematski. Dinamičko nesvjesno nije podrum zaboravljenog sadržaja — to je radni organ uma, koji uvježbava, ponavlja, prenosi.",
+        "body2": "Čitamo ga kao kliničara ponavljanja. Ista scena dolazi u različitim desetljećima. To ponavljanje je signal koji model treba pronaći.",
+        "figure": {
+          "label": "ponavljanje",
+          "subtitle": "pet sidara, jedna struktura",
+          "outcome": "povlačenje",
+          "rows": {
+            "anchor1": "rana adolescencija",
+            "anchor2": "prva duga veza",
+            "anchor3": "druga duga veza",
+            "anchor4": "treća veza",
+            "anchor5": "četvrta veza"
+          },
+          "summary": {
+            "recurrenceLabel": "ponavljanje",
+            "intervalLabel": "interval",
+            "attractorLabel": "atraktor",
+            "attractorValue": "prag intimnosti"
+          }
+        }
+      },
+      "lacan": {
+        "headlineLead": "Nesvjesno je strukturirano poput",
+        "headlineItalic": "jezika",
+        "headlineTail": ".",
+        "body1Lead": "Lacanovo čitanje mijenja polje. Označitelj se kreće; značenje klizi duž lanaca metonimije i metafore. Faza zrcala imenuje temeljno pogrešno prepoznavanje.",
+        "body1Italic": "Želja je želja Drugoga.",
+        "body2": "U našem cjevovodu to je konkretno. Snove i budni govor čitamo kao tekst — pomaci, kondenzacije i pogreške nose strukturnu gramatiku.",
+        "figure": {
+          "label": "lingvistički signal",
+          "subtitle": "izvadak iz sna, s bilješkama",
+          "dreamLead": "“Soba u kojoj sam živio kao dijete ima još jedna vrata kojih se ne sjećam",
+          "ann1": "pomak",
+          "dreamMid1": ". Iza njih, glas mog nadređenog",
+          "ann2": "kondenzacija",
+          "dreamMid2": "me zove pogrešnim imenom",
+          "ann3": "pogreška",
+          "dreamTail": ".”",
+          "key1": "pomak",
+          "key2": "kondenzacija",
+          "key3": "pogreška"
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRIJSKA SIDRA",
+        "headlineLead": "Što suvremeno istraživanje",
+        "headlineItalic": "dodaje",
+        "headlineTail": ".",
+        "lede": "Pet konvergentnih niti iz istraživanja privrženosti, narativa i procesa. Nije potpuna bibliografija — sidra na kojima se model zapravo temelji.",
+        "figure": {
+          "label": "empirijska sidra",
+          "subtitle": "konvergentni dokazi",
+          "caseLabel": "literatura · sinteza",
+          "prepared": "ažurirano 04 · 26",
+          "rows": {
+            "attachment": "Kontinuitet privrženosti kroz desetljeća",
+            "alliance": "Terapijski savez kao prediktor ishoda",
+            "narrative": "Narativna koherentnost i dobrobit",
+            "relational": "Implicitno relacijsko znanje",
+            "script": "Teorija scenarija u profesionalnoj zaglavljenosti"
+          },
+          "footerLabel": "Sinteza",
+          "footerValue": "konvergentni dokazi · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "ŠTO NE TVRDIMO",
+        "headlineLead": "Iskrene",
+        "headlineItalic": "granice",
+        "headlineTail": " rada.",
+        "claim1Strong": "Nismo zamjena za terapeuta.",
+        "claim1Body": "Model priprema razgovor. Ne vodi ga.",
+        "claim2Strong": "Nismo dijagnostički instrument prema DSM-u ili MKB-u.",
+        "claim2Body": "Kategorije u kojima radimo su strukturalne — opsesivne, histerične, fobične — a ne nozološke. One imenuju kako je osoba organizirana, a ne što ima.",
+        "claim3Strong": "23-dnevni ciklus je metafora.",
+        "claim3Body": "Broj potječe iz korespondencije Wilhelma Fliessa s Freudom krajem devetnaestog stoljeća. Suvremena znanost ne podržava fiksne bioritmove. Zadržavamo broj zbog onoga što imenuje — prijelaz iz znatiželje u svijest."
+      },
+      "reading": {
+        "eyebrow": "DALJNJE ČITANJE",
+        "headlineLead": "Polica",
+        "headlineItalic": "iza",
+        "headlineTail": " modela.",
+        "lede": "Knjige, ne radovi. One kojima se vraćamo.",
+        "books": {
+          "book1": {
+            "title": "S onu stranu načela ugode"
+          },
+          "book2": {
+            "title": "Tumačenje snova"
+          },
+          "book4": {
+            "title": "Četiri temeljna pojma psihoanalize"
+          },
+          "book5": {
+            "title": "Privrženost"
+          },
+          "book6": {
+            "title": "Regulacija afekta i podrijetlo jastva"
+          },
+          "book7": {
+            "title": "Stajanje u prostorima"
+          },
+          "book8": {
+            "title": "Regulacija afekta, mentalizacija i razvoj jastva"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "NASTAVI",
+        "headlineLead": "Započnite profil,",
+        "headlineItalic": "ili pročitajte studiju slučaja",
+        "headlineTail": ".",
+        "ctaPrimary": "Započnite profil",
+        "ctaOr": "ili",
+        "ctaGhost": "pročitajte studiju slučaja"
+      },
+      "terms": {
+        "service": {
+          "headingItalic": "usluge"
+        }
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "opet ovdje",
+      "greetingNamed": "opet ovdje, {name}.",
+      "strengthen": "Povećajte točnost"
+    },
+    "reviewEdit": "Pregled i uređivanje",
+    "depth": {
+      "eyebrow": "DUBINA OČITANJA",
+      "overallEyebrow": "UKUPNA DUBINA OČITANJA",
+      "band": {
+        "deep": "očitanje je duboko. odavde male prilagodbe.",
+        "steady": "očitanje se održava. Catchupi će ga izoštriti.",
+        "partial": "očitanje je djelomično. ima još toga za dati.",
+        "thin": "očitanje je tanko. skicirat će oblik, ali još ne strukturu."
+      },
+      "explainer": "Dubina očitanja opisuje koliko je očitanje imalo pristupa vama — iz unosa, iz tjednih Catchupa, iz konzultacija i od ljudi čija prisutnost vas oblikuje. Dublje očitanje nije bolja osoba; to je točnija osoba. Možete ga produbiti u bilo kojem trenutku ili ga ostaviti takvim kakvo jest.",
+      "status": {
+        "low": "Niska",
+        "moderate": "Umjerena",
+        "deep": "Točna"
+      },
+      "statusLine": {
+        "low": "očitanje je tanko. skicirat će oblik, ali još ne strukturu.",
+        "moderate": "očitanje poprima oblik. može zadržati radnu hipotezu.",
+        "deep": "očitanje je dovoljno puno da utemelji rad."
+      },
+      "source": {
+        "intake": "pitanja na koja ste odgovorili na početku.",
+        "catchups": "tjedne prijave koje održavaju očitanje aktualnim.",
+        "sessions": "dulje konzultacije s analitičarem.",
+        "connections": "ljudi čija prisutnost oblikuje očitanje."
+      }
+    },
+    "latest": {
+      "eyebrow": "NAJNOVIJE ČITANJE",
+      "heading": "Šest čitanja <it>— i što se mijenja.</it>",
+      "lede": "Šest čitanja izračunava se iz vašeg unosa i pročišćava svakim Catchupom, konzultacijom i prihvaćenom vezom. Struktura je stabilna; tekstura se mijenja.",
+      "strengthen": "ojačati podatke za analitiku",
+      "open": "otvoriti čitanja"
+    },
+    "six": {
+      "eyebrow": "ŠEST ČITANJA",
+      "heading": "Što se čita <it>u vama, upravo sada.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "nedavni tjedni",
+      "timelineHeading": "prozor",
+      "timelineRange": "zadnja 4 tjedna",
+      "timelineSummary": "catchupi u prozoru",
+      "eyebrow": "TJEDNI CATCHUP",
+      "heading": "Sjednite s tjednom. <it>Zatim ponovno pogledamo.</it>",
+      "lede": "Osam kratkih pitanja. Iskreno je bolje od dugog. Odgovori pročišćuju čitanje.",
+      "completed": "dovršeno — pročitajte sažetak",
+      "cta": "Otvorite ovotjedni catchup",
+      "markerFirst": "prvi",
+      "markerWeek": "t{week}"
+    },
+    "consulting": {
+      "eyebrow": "SOBA ZA KONZULTACIJE",
+      "heading": "Sat vremena s <it>analitičarem.</it>",
+      "ledeSubscribed": "Otvorena kad god tjedan pritisne. Soba pamti što ste već rekli.",
+      "ledeUnsubscribed": "Pretplatnici mogu ući u sobu za konzultacije — dugotrajnu sesiju s analitičarem, održanu istim glasom kao i vaša čitanja.",
+      "cta": "Uđite u sobu za konzultacije",
+      "figLabel": "POSLJEDNJA SESIJA",
+      "figSubtitle": "zadržano pitanje",
+      "lastQuestion": "“san od utorka — želite li mu se vratiti?”"
+    },
+    "subscribe": {
+      "eyebrow": "SOBA ZA KONSULTACIJE · POTVRDA",
+      "title": "Ulaz u sobu za konsultacije<it>.</it>",
+      "ledePrice": "Pretplata iznosi",
+      "ledePerMonth": "mjesečno",
+      "ledeIncludes": ". Uključuje sobu za konsultacije, mogućnost pozivanja do {count} {count, plural, one {veze} few {veze} other {veza}}, i jedno kliničko izvješće svakog kalendarskog mjeseca.",
+      "ledeBilling": "Naplatu obavlja Stripe. Otkažite u bilo kojem trenutku u postavkama — pristup se nastavlja do kraja razdoblja.",
+      "canceled": "<i>naplata je zatvorena.</i> ništa nije naplaćeno. možete se vratiti u nastavku kada budete spremni.",
+      "checkoutCta": "Nastavite na naplatu",
+      "returnLink": "povratak u sobu za konsultacije"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINIČKO IZVJEŠĆE",
+        "subscribedTitle": "Već <it>uključeno.</it>",
+        "subscribedLede": "Pretplata uključuje jedno kliničko izvješće svakog kalendarskog mjeseca. Generirajte ga s dna stranice s očitanjima — plaćanje nije potrebno.",
+        "eyebrow": "KLINIČKO IZVJEŠĆE · POTVRDA",
+        "title": "Kliničko izvješće<it>.</it>",
+        "ledePrice": "Jednokratno kliničko izvješće je",
+        "ledeDossier": ". Dosje od 12–18 stranica svih dvanaest očitanja, na jeziku kojim radi kliničar.",
+        "ledeBilling": "Naplatu obavlja Stripe. Izvješća se mogu ponovno generirati kako se očitanje produbljuje; pretplatnici primaju jedno svakog kalendarskog mjeseca bez zasebne naplate.",
+        "depthNotice": "<i>izvješće će odražavati dostupnu dubinu.</i> može se ponovno generirati kako se očitanje produbljuje.",
+        "canceled": "<i>naplata je zatvorena.</i> ništa nije naplaćeno.",
+        "checkoutCta": "Nastavi na naplatu",
+        "returnLink": "povratak na očitanja"
+      },
+      "status": {
+        "eyebrow": "KLINIČKO IZVJEŠĆE",
+        "line": {
+          "queued": "vaše izvješće se priprema.",
+          "generating": "izvješće se piše.",
+          "ready": "izvješće je spremno.",
+          "failed": "izvješće nije dovršeno. pokušat ćemo ponovno uskoro."
+        },
+        "open": "otvori izvješće",
+        "back": "natrag na očitanja"
+      },
+      "queued": {
+        "eyebrow": "KLINIČKO IZVJEŠĆE",
+        "line": "vaše izvješće se priprema — poslat ćemo vam e-poštu kada bude spremno.",
+        "back": "natrag na očitanja"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "UNOS",
+        "title": "Unos, <it>tema po tema.</it>",
+        "lede": "Deset odjeljaka. Otvorite bilo koji da biste pregledali ili produbili odgovore unutar njega. Unos nije jednokratni obrazac — odgovori se mogu revidirati u bilo kojem trenutku."
+      },
+      "step": {
+        "eyebrow": "UNOS",
+        "backToAll": "natrag na sve odjeljke"
+      },
+      "failed": {
+        "eyebrow": "UNOS — NEPOTPUNO",
+        "headline": "Čitanje <em>nije dovršeno</em>.",
+        "lede": "Vaš unos je u evidenciji. Analiza koja slijedi nije završena.",
+        "retry": "Nastavi čitanje",
+        "retryPending": "Nastavljam"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · OBRADA",
+      "headline": "Vaš profil je <em>u obradi</em>.",
+      "lede": "Vaše odgovore sada provlačimo kroz psihodinamičke modele. Prvi prolaz obično traje oko 2 sata. Javit ćemo vam kada rad bude spreman i soba će se otvoriti.",
+      "figIntake": "UNOS",
+      "figSubmitted": "poslano {date}",
+      "rowResponses": "Odgovori primljeni",
+      "rowPattern": "Ekstrakcija uzoraka",
+      "rowSynthesis": "Sinteza profila",
+      "statusInProgress": "u tijeku",
+      "statusQueued": "u redu čekanja",
+      "foot": "javit ćemo vam kada rad bude spreman",
+      "returnCta": "povratak u tihu sobu",
+      "devPrefix": "dev",
+      "devOpening": "otvaranje…",
+      "devOpen": "otvorite sobu sada",
+      "devError": "nije moguće otvoriti sobu — provjerite konzolu."
+    }
+  },
+  "invite": {
+    "eyebrow": "POZIVNICA",
+    "safetyFooter": "TwentyThird nije zamjena za kliničku skrb. U kriznim situacijama kontaktirajte svoju lokalnu hitnu službu.",
+    "notReady": {
+      "headline": "Sustav pozivnica se <it>priprema.</it>",
+      "body": "Molimo pokušajte ponovno uskoro."
+    },
+    "notFound": {
+      "headline": "Ova poveznica <it>nije prepoznata.</it>",
+      "body": "Ako je poveznica nedavno stigla e-poštom, pozivnica je možda ponovno poslana. Otvorite najnoviju e-poštu za aktivnu poveznicu."
+    },
+    "alreadyDeclined": {
+      "headline": "Ova pozivnica je <it>odbijena.</it>",
+      "body": "Ništa više se ne traži od vas. {name} neće biti obaviješten izvan onoga što već vidi."
+    },
+    "alreadyAccepted": {
+      "headline": "Već ste <it>prihvatili.</it>",
+      "body": "Ako unos podataka o vezi još nije dovršen, možete nastaviti u nastavku.",
+      "continueLink": "nastavite s unosom podataka o vezi"
+    },
+    "ended": {
+      "headline": "Ova je veza <it>okončana.</it>",
+      "body": "Poveznica više nije aktivna. Zapis o odnosu ostaje u spisu, ali više ne utječe na čitanje."
+    },
+    "expired": {
+      "headline": "Ova je pozivnica <it>istekla.</it>",
+      "body": "Pozivnice istječu četrnaest dana nakon slanja. Zamolite {name} da vam pošalje novu ako želite odgovoriti."
+    },
+    "declined": {
+      "headline": "To je <it>primljeno.</it>",
+      "body": "Ništa više nije potrebno od vas. Pozivnica je zatvorena; pozivatelj tiho vidi promjenu statusa. Možete zatvoriti ovaj prozor."
+    },
+    "live": {
+      "eyebrow": "ZAHTJEV ZA POVEZIVANJE",
+      "headline": "{name} vas je pozvao u <it>svoje čitanje.</it>",
+      "lede": "TwentyThird je uredničko-klinički instrument — tiha soba u kojoj se struktura nečijeg unutarnjeg života pažljivo čita i prikazuje jezikom koji kliničar može koristiti.",
+      "explainerOne": "<em>Veza</em> nije zajednički račun. {name} neće vidjeti vaša čitanja, sesije ili dosje. Vi nećete vidjeti njihove. Ono što kažete o odnosu hrani model koji proizvodi čitanje {name}.",
+      "explainerTwo": "Ako želite vlastito čitanje, prva opcija u nastavku također započinje vaš vlastiti račun. Srednja opcija omogućuje vam da doprinesete čitanju {name} bez računa. Obje su dopuštene.",
+      "metaSentTo": "poslano na",
+      "metaInviteAs": "pozovi kao",
+      "metaReceived": "primljeno",
+      "metaExpiresIn": "ističe za {count, plural, one {# dan} few {# dana} other {# dana}}"
+    },
+    "intake": {
+      "eyebrow": "UNOS PODATAKA O ODNOSU",
+      "notReady": {
+        "headline": "Unos se <it>priprema.</it>",
+        "body": "Pokušajte ponovo uskoro."
+      },
+      "notFound": {
+        "headline": "Ova poveznica <it>nije prepoznata.</it>",
+        "body": "Otvorite najnoviju pozivnicu e-poštom za aktivnu poveznicu."
+      },
+      "notOpen": {
+        "headline": "Unos <it>nije otvoren.</it>",
+        "body": "Ova pozivnica nije prihvaćena, odbijena je ili je istekla. Vratite se na poveznicu pozivnice kako biste ponovno odabrali.",
+        "backLink": "natrag na pozivnicu"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "da — započnite unos podataka o odnosu",
+      "acceptLabel": "da — povežite se bez računa",
+      "declineLabel": "ne, hvala",
+      "beginLabel": "započnite",
+      "continueLabel": "nastavite",
+      "back": "natrag",
+      "oneMoment": "trenutak…",
+      "declineConfirmLine": "ovo zatvara pozivnicu. ništa više o vama neće biti poslano niti pohranjeno.",
+      "declineClosing": "zatvaranje…",
+      "declineConfirm": "odbijte pozivnicu",
+      "firstNameLabel": "VAŠE IME",
+      "firstNameAria": "Vaše ime",
+      "firstNameSub": "{name} će vidjeti samo ovo ime na svom popisu veza.",
+      "errors": {
+        "missingFirstName": "ime omogućuje analitičaru da vam se ispravno obrati.",
+        "generic": "nije moguće poslati.",
+        "notFound": "ova poveznica za pozivnicu nije prepoznata.",
+        "expired": "ova pozivnica je istekla. zamolite pozivatelja da pošalje novu.",
+        "declined": "ova pozivnica je već odbijena.",
+        "ended": "ova pozivnica više nije aktivna.",
+        "missingFirstNameRequired": "ime je obavezno."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "UNOS PODATAKA O ODNOSU",
+      "begin": "započni",
+      "back": "natrag",
+      "backToCover": "natrag na naslovnicu",
+      "next": "sljedeće",
+      "finish": "završi",
+      "scaleAria": "ljestvica {value}",
+      "cover": {
+        "headline": "Ono što kažete o <it>{name}</it> ostaje između vas i analitičara.",
+        "lede": "Dvanaest kratkih pitanja. Oko pet minuta. Odgovori hrane {name}-ovo čitanje; oni neće vidjeti što ste napisali, a vi nećete vidjeti što ono proizvodi."
+      },
+      "closing": {
+        "recording": "trenutak — odgovori se bilježe.",
+        "tryAgain": "pokušajte ponovno",
+        "headline": "To je dovoljno <it>za sada.</it>",
+        "lede": "Ono što ste rekli o {name} informirat će njihovo čitanje od sljedeće sesije nadalje. Oni to neće vidjeti; vi nećete vidjeti što ono proizvodi.",
+        "closeWindow": "možete zatvoriti ovaj prozor."
+      },
+      "errors": {
+        "unanswered": "trenutak s ovim prije nego što nastavite.",
+        "questionOpen": "pitanje je još otvoreno. trenutak.",
+        "couldNotSave": "nije moguće spremiti",
+        "invalidAnswers": "nešto nije parsirano — provjerite odgovore.",
+        "notAccepting": "ova pozivnica više ne prihvaća odgovore.",
+        "notFound": "ova poveznica za pozivnicu nije prepoznata.",
+        "couldNotSaveAnswers": "nije moguće spremiti odgovore."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Koliko se dugo poznajete?",
+          "options": {
+            "under_one_year": "manje od godinu dana",
+            "one_to_three": "jedna do tri godine",
+            "four_to_ten": "četiri do deset godina",
+            "eleven_to_twenty": "jedanaest do dvadeset godina",
+            "more_than_twenty": "više od dvadeset godina"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Koliko se vas dvoje osjećate blisko sada?",
+          "lowLabel": "na distanci",
+          "highLabel": "najbliže što može biti"
+        },
+        "repair_initiator": {
+          "prompt": "Kada se ne slažete, tko obično prvi traži pomirenje?",
+          "options": {
+            "i_do": "gotovo uvijek ja",
+            "usually_me": "obično ja",
+            "evenly": "ravnomjerno se krećemo jedno prema drugome",
+            "usually_them": "obično oni",
+            "they_do": "gotovo uvijek oni"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kada je nešto teško, kamo se obično povlače?",
+          "options": {
+            "toward": "prema vama, da razgovaraju o tome",
+            "quiet": "u tišinu, pa natrag",
+            "work": "u posao ili distrakciju",
+            "alone": "potpuno sami, iza vrata",
+            "elsewhere": "prvo drugim ljudima"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Što je nešto što biste željeli da razumiju o sebi?"
+        },
+        "what_you_offer": {
+          "prompt": "U jednoj frazi, što činite za njih što oni ne mogu učiniti za sebe?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Koji ih glas najčešće pokreće?",
+          "options": {
+            "demand": "zahtjev — što bi trebalo učiniti",
+            "doubt": "sumnja — je li dovoljno",
+            "desire": "želja — što zapravo žele",
+            "watcher": "promatrač — kako će se to vidjeti",
+            "uncertain": "još ne znam"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Gdje se njihov rad obično zapinje?",
+          "options": {
+            "start": "početak — ulazak",
+            "middle": "sredina — ostanak uz to",
+            "finish": "završetak — puštanje",
+            "visibility": "vidljivost — dopuštanje da se vidi",
+            "nowhere": "nigjde što mogu vidjeti izvana"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Postoji li tema koju dosljedno izbjegavaju? Nazovite je lagano."
+        },
+        "they_at_their_best": {
+          "prompt": "Kada su najviše svoji?"
+        },
+        "what_youve_changed": {
+          "prompt": "Postoji li nešto o njima što ste tiho prihvatili da nećete promijeniti?"
+        },
+        "future_together": {
+          "prompt": "Koliko budućnosti koju zamišljate uključuje njih?",
+          "lowLabel": "vrlo malo",
+          "highLabel": "gotovo sve"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "ili",
+      "fallbackPreamble": "zalijepite ovu poveznicu u svoj preglednik:",
+      "attendingInstitution": "USTANOVA",
+      "tagline": "Psihodinamička UI za unutarnji život.",
+      "automatedFooter": "Poslano automatskim sustavom · ne odgovarajte"
+    },
+    "intakeSubmitted": {
+      "subject": "vaš se profil čita.",
+      "preheader": "Prvi prolaz je u tijeku. Soba se otvara kada je rad spreman.",
+      "eyebrow": "PROFIL PROČITAN",
+      "titleText": "Vaši se odgovori čitaju.",
+      "italicPhrase": "čitaju se",
+      "lede": "Prvi prolaz kroz psihodinamičke modele je u tijeku. Soba se otvara kada je rad spreman.",
+      "figLeftItalic": "unos primljen",
+      "figRightLabel": "Prvi prolaz",
+      "figRightItalic": "u tijeku",
+      "text": "{salutation}\n\nVaši su odgovori zaprimljeni. Prvi prolaz kroz psihodinamičke modele je u tijeku. Soba se otvara kada je rad spreman.\n\nCognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA SKRB"
+    },
+    "roomReady": {
+      "subject": "vaša soba je otvorena.",
+      "preheader": "Dvanaest blokova spremno za čitanje. Rad se pročišćava kako mu se vraćate.",
+      "eyebrow": "SOBA SPREMNA",
+      "titleText": "Prvo čitanje je otvoreno.",
+      "italicPhrase": "prvo čitanje",
+      "lede": "Dvanaest blokova psihodinamičkog profila, u sobi i spremno za čitanje. Rad se pročišćava kako mu se vraćate.",
+      "ctaLabel": "Uđite u sobu",
+      "figLeftItalic": "soba otvorena",
+      "figRightLabel": "Prvo čitanje",
+      "figRightItalic": "spremno",
+      "text": "{salutation}\n\nPrvo čitanje je otvoreno.\n\nDvanaest blokova psihodinamičkog profila, u sobi i spremno za čitanje. Rad se pročišćava kako mu se vraćate.\n\nUđite u sobu:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA USLUGE"
+    },
+    "invite": {
+      "subject": "{inviterName} želi da budete u čitanju.",
+      "preheader": "{inviterName} želi da budete u čitanju. Veza ne vidi vaša čitanja; vi nećete vidjeti njihova.",
+      "eyebrow": "POZIVNICA",
+      "titleText": "{inviterName} želi da budete u čitanju.",
+      "italicPhrase": "u čitanju",
+      "lede": "TwentyThird je tiha soba u kojoj se pažljivo čita struktura nečijeg unutarnjeg života. Veza ne vidi čitanja ili sesije pozivatelja, a vi nećete vidjeti njihova.",
+      "ctaLabel": "Otvori pozivnicu",
+      "figLeftItalic": "pozivnica izdana",
+      "figRightLabel": "Istječe",
+      "figRightItalic": "četrnaest dana",
+      "securityNote": "Ako je ovo stiglo greškom, pozivnica istječe sama od sebe za četrnaest dana.",
+      "textIntro": "{inviterName} želi da budete u čitanju na TwentyThirdu.",
+      "textBody": "TwentyThird je tiha soba u kojoj se pažljivo čita struktura nečijeg unutarnjeg života. Veza ne vidi čitanja ili sesije pozivatelja, a vi nećete vidjeti njihova.",
+      "textNote": "{inviterName} je dodao bilješku:\n  {note}",
+      "textOpen": "Otvori pozivnicu:",
+      "textSecurity": "Ako je ovo stiglo greškom, pozivnica istječe sama od sebe za četrnaest dana.",
+      "textCloser": "CognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA USLUGE"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} je prihvatio vezu.",
+      "preheader": "{nameTitle} je prihvatio vezu. Utjecaj na sljedeću seansu nadalje.",
+      "eyebrow": "VEZA PRIHVAĆENA",
+      "titleText": "{nameTitle} je prihvatio vezu.",
+      "italicPhrase": "prihvatio vezu",
+      "lede": "Njihov unos odnosa informirat će vaše čitanje od sljedeće seanse nadalje. Oni neće vidjeti vaša čitanja; vi nećete vidjeti njihova.",
+      "ctaLabel": "Povratak u sobu",
+      "figLeftItalic": "veza prihvaćena",
+      "figRightLabel": "Utjecaj",
+      "figRightItalic": "sljedeća seansa nadalje",
+      "text": "{salutation}\n\n{nameTitle} je prihvatio vezu.\n\nNjihov unos odnosa informirat će vaše čitanje od sljedeće seanse nadalje. Oni neće vidjeti vaša čitanja; vi nećete vidjeti njihova.\n\nPovratak u sobu:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA USLUGE"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} je prekinuo/la vezu.",
+      "preheader": "{nameTitle} je prekinuo/la vezu. Vaše će se čitanje prilagoditi tijekom sljedeće sesije.",
+      "eyebrow": "VEZA PREKINUTA",
+      "titleText": "{nameTitle} je prekinuo/la vezu.",
+      "italicPhrase": "prekinuo/la vezu",
+      "lede": "Vaše će se čitanje prilagoditi tijekom sljedeće sesije. Ono što je rečeno o odnosu zadržano je u spisu predmeta; više ne utječe na aktivno čitanje.",
+      "ctaLabel": "Povratak u sobu",
+      "figLeftItalic": "veza prekinuta",
+      "figRightLabel": "Učinak",
+      "figRightItalic": "od sljedeće sesije nadalje",
+      "text": "{nameTitle} je prekinuo/la vezu.\n\nVaše će se čitanje prilagoditi tijekom sljedeće sesije. Ono što je rečeno o odnosu zadržano je u spisu predmeta; više ne utječe na aktivno čitanje.\n\nPovratak u sobu:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nPRATEĆA INSTITUCIJA"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "ovotjedni Catchup je otvoren.",
+      "preheader": "Kratka refleksija. Pet minuta. Ažurira čitanje.",
+      "eyebrow": "TJEDNI CATCHUP",
+      "titleText": "Tjedan je prošao tiho.",
+      "italicPhrase": "tiho",
+      "lede": "Kratka refleksija — što je glasno, što je ostalo tiho, što se promijenilo. Ažurira čitanje.",
+      "ctaLabel": "Otvori Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "pet minuta",
+      "text": "{salutation}\n\nTjedan je prošao tiho.\n\nKratka refleksija — što je glasno, što je ostalo tiho, što se promijenilo. Ažurira čitanje.\n\nOtvori Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA USLUGE"
+    },
+    "onboardingResume": {
+      "subject": "vaši su odgovori zadržani.",
+      "preheader": "Vaš unos nastavlja se tamo gdje ste stali. Rad ne počinje dok nije dovršen.",
+      "eyebrow": "UNOS ZADRŽAN",
+      "titleText": "Unos je tamo gdje ste ga ostavili.",
+      "italicPhrase": "gdje ste ga ostavili",
+      "lede": "Vaš unos nastavlja se tamo gdje ste stali. Rad ne počinje dok nije dovršen.",
+      "ctaLabel": "Povratak na unos",
+      "figLeftItalic": "unos pauziran",
+      "figRightLabel": "Nastavi",
+      "figRightItalic": "gdje ste stali",
+      "text": "{salutation}\n\nUnos je tamo gdje ste ga ostavili.\n\nVaš unos nastavlja se tamo gdje ste stali. Rad ne počinje dok nije dovršen.\n\nPovratak na unos:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nUSTANOVA KOJA PRUŽA USLUGE"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Koje riječi najbolje opisuju dom u kojem ste odrasli.",
+          "subtitle": "odaberite do tri riječi koje vam se čine istinite, čak i ako su proturječne — domovi su obično mješavina",
+          "options": {
+            "calm": "Mirno",
+            "strict": "Strogo",
+            "emotionally_distant": "Emocionalno distancirano",
+            "chaotic": "Kaotično",
+            "achievement_focused": "Visoko usmjereno na postignuća",
+            "protective": "Zaštitnički",
+            "unpredictable": "Nepredvidivo",
+            "conflict_heavy": "Puno sukoba"
+          }
+        },
+        "q1_2": {
+          "title": "Koju ste ulogu prirodno preuzeli kao dijete.",
+          "subtitle": "razmislite o ulozi koju ste igrali u svojoj obitelji, a da vam nitko nije rekao — mirotvorac, pomagač, tihi",
+          "options": {
+            "peacemaker": "Mirotvorac",
+            "achiever": "Postizatelj",
+            "invisible_child": "Nevidljivo dijete",
+            "caregiver": "Skrbnik",
+            "rebel": "Pobunjenik",
+            "funny_one": "Smiješni",
+            "responsible_one": "Odgovorni",
+            "problem_child": "Problematično dijete"
+          }
+        },
+        "q1_3": {
+          "title": "Koliko ste se emocionalno sigurno osjećali odrastajući.",
+          "subtitle": "slijedite svoj instinkt o domu, a ne verziju koju bi obitelj ispričala strancu",
+          "lowLabel": "1 · NIKAD SIGURNO",
+          "highLabel": "10 · POTPUNO SIGURNO"
+        },
+        "q1_4": {
+          "title": "Jesu li se emocije otvoreno raspravljale kod kuće.",
+          "subtitle": "ne samo jesu li osjećaji postojali, već jesu li ih itko zapravo imenovao ili o njima naglas govorio",
+          "options": {
+            "frequently": "Često",
+            "sometimes": "Ponekad",
+            "rarely": "Rijetko",
+            "never": "Nikad"
+          }
+        },
+        "q1_5": {
+          "title": "Jedna uspomena iz djetinjstva koja se i danas čini emocionalno živom.",
+          "subtitle": "opišite jednu specifičnu scenu koja vam se i danas vraća — gdje ste bili, tko je bio tamo, što se dogodilo, kako ste se osjećali"
+        },
+        "q1_6": {
+          "title": "Što ste naučili da morate učiniti da biste dobili ljubav ili odobravanje.",
+          "subtitle": "male stvari koje ste primijetili da funkcioniraju — biti dobar, biti tih, postizati, ne smetati — podijelite što se sjećate da ste prilagođavali"
+        },
+        "q1_7": {
+          "title": "Koje je emocije bilo teško izraziti u vašem domu.",
+          "subtitle": "koji su osjećaji bili ignorirani, odbačeni ili kažnjeni kada ste ih pokušali pokazati — ljutnja, tuga, strah, radost, bilo što"
+        },
+        "q1_8": {
+          "title": "Kada razmišljate o svom mlađem ja, što osjećate prema njemu.",
+          "subtitle": "budite iskreni o osjećaju koji se javlja — toplina, tuga, distanca, frustracija, zaštitnički nagon — što god je zapravo prisutno"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Kako biste opisali svoju majku ili primarnog majčinskog skrbnika.",
+          "subtitle": "nekoliko rečenica o tome kakva je bila, kako se odnosila prema vama i kako ste se osjećali u njezinoj blizini",
+          "options": {
+            "warm": "Topla",
+            "controlling": "Kontrolirajuća",
+            "emotionally_unavailable": "Emocionalno nedostupna",
+            "sacrificing": "Požrtvovna",
+            "critical": "Kritična",
+            "anxious": "Anksiozna",
+            "unpredictable": "Nepredvidiva",
+            "admired": "Divljena",
+            "fearful": "Plašljiva",
+            "not_applicable": "Nije primjenjivo"
+          }
+        },
+        "q2_2": {
+          "title": "Kako biste opisali svog oca ili primarnog očinskog skrbnika.",
+          "subtitle": "nekoliko rečenica o tome kakav je bio, kako se odnosio prema vama i kako ste se osjećali u njegovoj blizini",
+          "options": {
+            "supportive": "Podržavajući",
+            "distant": "Udaljen",
+            "dominant": "Dominantan",
+            "passive": "Pasivan",
+            "ambitious": "Ambiciozan",
+            "emotionally_closed": "Emocionalno zatvoren",
+            "protective": "Zaštitnički",
+            "critical": "Kritičan",
+            "absent": "Odsutan",
+            "not_applicable": "Nije primjenjivo"
+          }
+        },
+        "q2_3": {
+          "title": "Vaš položaj među braćom i sestrama.",
+          "subtitle": "gdje ste se nalazili u redoslijedu – najstariji, srednji, najmlađi, jedinac ili negdje između",
+          "options": {
+            "oldest": "Najstariji",
+            "middle": "Srednji",
+            "youngest": "Najmlađi",
+            "only_child": "Jedinac"
+          }
+        },
+        "q2_4": {
+          "title": "Koja uloga najbolje odgovara vašem položaju među braćom i sestrama.",
+          "subtitle": "osim redoslijeda rođenja, uloga koju ste na kraju igrali – odgovorni, buntovnik, nevidljivi, miljenik",
+          "options": {
+            "responsible": "Odgovorni",
+            "ignored": "Ignorirani",
+            "compared": "Uspoređivani s drugima",
+            "favored": "Favorizirani",
+            "competitive": "Natjecateljski nastrojeni",
+            "protective": "Zaštitnički nastrojeni",
+            "not_applicable": "Nije primjenjivo"
+          }
+        },
+        "q2_5": {
+          "title": "Koji vas je roditelj najbolje razumio.",
+          "subtitle": "imenujte ih i recite što su vidjeli u vama što je drugi propustio ili pogrešno shvatio"
+        },
+        "q2_6": {
+          "title": "Koji je roditelj najviše utjecao na vaše strahove.",
+          "subtitle": "čije ste brige upijali odrastajući i kako se ti strahovi i danas manifestiraju u vašem životu"
+        },
+        "q2_7": {
+          "title": "Kako je izgledao sukob u vašoj obitelji.",
+          "subtitle": "opišite oblik koji su svađe poprimale – vikanje, tišina, zalupana vrata, hladni tjedni, ponavljajući obrasci – sve što je bilo poznato"
+        },
+        "q2_8": {
+          "title": "Koju je vrstu pažnje bilo najteže primiti.",
+          "subtitle": "vrsta brige koja vam je stvarala nelagodu – pohvala, briga, fizička bliskost, biti viđen – i zašto je to bilo teško"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Koliko je religiozno ili duhovno bilo okruženje u kojem ste odrasli.",
+          "subtitle": "stvarna atmosfera doma — prakse, pravila, uvjerenja u zraku — ne ono u što sada vjerujete kao odrasla osoba",
+          "lowLabel": "1 · NIKAKO",
+          "highLabel": "10 · DUBOKO"
+        },
+        "q3_2": {
+          "title": "Koja je poruka bila najsnažnija tijekom odrastanja.",
+          "subtitle": "pravilo ili očekivanje koje se ponavljalo toliko često da je postalo pozadinska buka — o uspjehu, ponašanju, imidžu, dužnosti, obitelji",
+          "options": {
+            "success": "Uspjeh je najvažniji",
+            "reputation": "Ugled je najvažniji",
+            "obedience": "Poslušnost je najvažnija",
+            "family_loyalty": "Obiteljska lojalnost je najvažnija",
+            "independence": "Neovisnost je najvažnija",
+            "sacrifice": "Žrtva je najvažnija"
+          }
+        },
+        "q3_3": {
+          "title": "Koliko se snažno osjećate osuđivano od strane društva.",
+          "subtitle": "koliko se osjećate promatrano ili procjenjivano od strane ljudi izvan vašeg bliskog kruga — na poslu, online, u javnosti",
+          "lowLabel": "1 · NIKAKO",
+          "highLabel": "10 · STALNO"
+        },
+        "q3_4": {
+          "title": "Koja vas uvjerenja iz odgoja još uvijek oblikuju.",
+          "subtitle": "vrijednosti, pravila ili pretpostavke koje ste naslijedili i po kojima još uvijek živite, čak i ako o njima niste razmišljali godinama"
+        },
+        "q3_5": {
+          "title": "Kojim se uvjerenjima potajno opirete.",
+          "subtitle": "onima s kojima se javno slažete, ali se potajno ne slažete — o novcu, vezama, uspjehu, spolu, bilo čemu"
+        },
+        "q3_6": {
+          "title": "Što bi vaša obitelj ili zajednica najviše neodobravala kod vašeg pravog ja.",
+          "subtitle": "dijelove sebe, svog života ili svojih izbora koje skrivate od njih, i zašto ih skrivate"
+        },
+        "q3_7": {
+          "title": "Kakva ste osoba trebali postati.",
+          "subtitle": "budućnost koju su drugi zamišljali za vas — karijera, obitelj, ponašanje, imidž — prije nego što ste imali ikakav utjecaj na to"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Koliko vas ljudi istinski poznaje.",
+          "subtitle": "ljudi koji su vidjeli vašu neuređenu verziju i koje ništa u vašem unutarnjem životu ne bi šokiralo",
+          "options": {
+            "none": "Nitko",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Mnogo"
+          }
+        },
+        "q4_2": {
+          "title": "U grupama obično postajete.",
+          "subtitle": "uloga u koju se ukliznete bez razmišljanja — šaljivac, slušatelj, vođa, promatrač, onaj koji održava stvari glatkima",
+          "options": {
+            "leader": "Vođa",
+            "observer": "Promatrač",
+            "entertainer": "Zabavljač",
+            "mediator": "Miritelj",
+            "intellectual": "Intelektualac",
+            "caregiver": "Skrbnik",
+            "withdrawn": "Povučeni"
+          }
+        },
+        "q4_3": {
+          "title": "Koliko se bojite razočarati druge.",
+          "subtitle": "koliko reakcija druge osobe — pogled, uzdah, tišina — može oblikovati ono što kažete ili učinite",
+          "lowLabel": "1 · NIKAKO",
+          "highLabel": "10 · SVAKODNEVNO"
+        },
+        "q4_4": {
+          "title": "Koje dijelove sebe skrivate u društvu.",
+          "subtitle": "misli, osjećaji, osobine ili dijelovi vaše povijesti koje držite skrivenima kada ste u blizini drugih ljudi"
+        },
+        "q4_5": {
+          "title": "Kada se osjećate najprihvaćenije.",
+          "subtitle": "situacije ili odnosi u kojima prestajete glumiti i možete jednostavno biti — opišite što te prostore čini drugačijima"
+        },
+        "q4_6": {
+          "title": "Koje vas društvene situacije najviše iscrpljuju.",
+          "subtitle": "okupljanja, dinamike ili odnosi koji vas ostavljaju umornijima nego što bi trebali — i što je u njima iscrpljujuće"
+        },
+        "q4_7": {
+          "title": "Kakve ljude zavidite.",
+          "subtitle": "zavist obično ukazuje na nešto što želite, ali si niste dopustili otvoreno željeti — opišite tko je izaziva i zašto"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Koje platforme aktivno koristite.",
+          "subtitle": "aplikacije koje otvarate iz navike, više puta dnevno, a ne one na kojima tehnički imate račun",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Nijednu"
+          }
+        },
+        "q5_2": {
+          "title": "Prosječna dnevna upotreba po platformi.",
+          "subtitle": "gruba procjena koliko vremena zapravo provodite na svakoj — minute ili sati, bez osude",
+          "unit": "MINUTA DNEVNO"
+        },
+        "q5_3": {
+          "title": "Za što ih uglavnom koristite.",
+          "subtitle": "pravi razlog ispod očitog — povezanost, distrakcija, validacija, bijeg, usporedba, informacije",
+          "options": {
+            "validation": "Validacija",
+            "learning": "Učenje",
+            "escapism": "Eskapizam",
+            "networking": "Umrežavanje",
+            "self_expression": "Samoizražavanje",
+            "entertainment": "Zabava",
+            "comparison": "Usporedba",
+            "dating": "Izlasci"
+          }
+        },
+        "q5_4": {
+          "title": "Koliko često brišete ili uređujete objave prije objavljivanja.",
+          "subtitle": "koliko se pripremate, preispitujete ili prepravljate ono što dijelite prije nego što to drugi vide",
+          "options": {
+            "always": "Uvijek",
+            "often": "Često",
+            "sometimes": "Ponekad",
+            "rarely": "Rijetko",
+            "never": "Nikad"
+          }
+        },
+        "q5_5": {
+          "title": "Koliko često uspoređujete svoj život s drugima na internetu.",
+          "subtitle": "tiho mjerenje koje se događa tijekom skrolanja — o izgledu, uspjehu, vezama, načinu života, bilo čemu",
+          "lowLabel": "1 · NIKAD",
+          "highLabel": "10 · STALNO"
+        },
+        "q5_6": {
+          "title": "Koja verzija vas se pojavljuje na internetu.",
+          "subtitle": "opišite lik koji predstavljate — kuriranu verziju — i kako se razlikuje od onoga tko ste kad vas nitko ne gleda"
+        },
+        "q5_7": {
+          "title": "Što emocionalno tražite kada otvorite društvene mreže.",
+          "subtitle": "osjećaj koji tražite u trenutku otvaranja aplikacije — distrakcija, utjeha, uzbuđenje, obamrlost, povezanost"
+        },
+        "q5_8": {
+          "title": "Kakav vas sadržaj čini nelagodnim.",
+          "subtitle": "objave ili videozapisi zbog kojih želite brzo skrolati, i o čemu mislite da je ta nelagoda zapravo"
+        },
+        "q5_9": {
+          "title": "Kakvi ljudi privlače vašu pažnju na internetu.",
+          "subtitle": "računi na kojima se zaustavljate i gledate — opišite osobine koje dijele i što vas privlači"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Vaš trenutni status veze.",
+          "subtitle": "gdje ste zapravo sada — slobodni, u vezi, partnerstvu, braku, razdvojeni, komplicirano — a ne gdje biste željeli biti",
+          "options": {
+            "single": "Slobodan/na",
+            "dating": "U vezi",
+            "in_relationship": "U vezi",
+            "engaged": "Zaručen/a",
+            "married": "U braku",
+            "separated_divorced": "Rastavljen/a",
+            "widowed": "Udovac/udovica",
+            "its_complicated": "Komplicirano je"
+          }
+        },
+        "q6_2": {
+          "title": "U koliko ste ozbiljnih veza bili.",
+          "subtitle": "one koje su emocionalno bile važne, bez obzira na to koliko su trajale ili koliko su bile službene",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tipični sukobi u vašim vezama.",
+          "subtitle": "svađe koje se stalno pojavljuju u različitim oblicima kod različitih partnera — novac, udaljenost, kontrola, komunikacija",
+          "options": {
+            "distance": "Udaljenost",
+            "jealousy": "Ljubomora",
+            "control": "Kontrola",
+            "emotional_unavailability": "Emocionalna nedostupnost",
+            "communication": "Komunikacija",
+            "trust": "Povjerenje",
+            "dependency": "Ovisnost"
+          }
+        },
+        "q6_4": {
+          "title": "U vezama obično težite.",
+          "subtitle": "vaš zadani potez kada stvari postanu teške — približiti se, udaljiti se, preuzeti kontrolu, povući se, pokušati popraviti",
+          "options": {
+            "pursue": "Progoniti",
+            "withdraw": "Povući se",
+            "Previše davati": "Previše davati",
+            "test_loyalty": "Testirati lojalnost",
+            "avoid_vulnerability": "Izbjegavati ranjivost",
+            "overgive": "Prepustiti se"
+          }
+        },
+        "q6_5": {
+          "title": "U kakve se ljude uvijek iznova zaljubljujete.",
+          "subtitle": "tip koji se stalno pojavljuje u vašem ljubavnom životu — ne samo izgled, već emocionalni obrasci, temperament, kako se odnose prema vama"
+        },
+        "q6_6": {
+          "title": "Što obično prekida vaše veze.",
+          "subtitle": "pravi razlog zašto se stvari raspadaju, izvan službene priče koju pričate prijateljima ili obitelji"
+        },
+        "q6_7": {
+          "title": "Koju emocionalnu potrebu najviše želite ispuniti.",
+          "subtitle": "potreba koju vam je najteže izravno tražiti — biti viđen/a, biti izabran/a, biti siguran/na, biti slobodan/na, biti željen/a"
+        },
+        "q6_8": {
+          "title": "Čega se najviše bojite u intimi.",
+          "subtitle": "što vam bliskost dovodi u opasnost — biti poznat/a, biti zarobljen/a, biti ostavljen/a, biti previše, biti nedovoljno"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Vaš trenutni radni status.",
+          "subtitle": "oblik vašeg radnog života trenutno — zaposleni, samozaposleni, između poslova, studiranje, skrb, nešto drugo",
+          "options": {
+            "employed_full_time": "Zaposlen, puno radno vrijeme",
+            "employed_part_time": "Zaposlen, nepuno radno vrijeme",
+            "self_employed": "Samozaposlen ili osnivač",
+            "freelance": "Freelancer ili na ugovor",
+            "studying": "Studiram",
+            "between_roles": "Između poslova",
+            "caregiving": "Skrb kod kuće",
+            "retired": "U mirovini",
+            "not_working": "Ne radim"
+          }
+        },
+        "q7_2": {
+          "title": "Koliko ste zadovoljni smjerom svoje karijere.",
+          "subtitle": "duži luk kamo ide vaš posao, a ne kako se osjećate ovaj tjedan",
+          "lowLabel": "1 · IZGUBLJEN",
+          "highLabel": "10 · POTPUNO ISPRAVNO"
+        },
+        "q7_3": {
+          "title": "Na poslu ste obično.",
+          "subtitle": "način na koji profesionalno funkcionirate — uloga koju preuzimate kada vam je nitko ne dodjeljuje",
+          "options": {
+            "perfectionistic": "Perfekcionistički",
+            "avoidant": "Izbjegavajući",
+            "competitive": "Natjecateljski",
+            "cooperative": "Kooperativan",
+            "over_responsible": "Pretjerano odgovoran",
+            "detached": "Odvojen"
+          }
+        },
+        "q7_4": {
+          "title": "Vaš najveći stres na radnom mjestu.",
+          "subtitle": "izvor pritiska koji vas prati kući — osoba, opterećenje, strah, okruženje, obrazac",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Neuspjeh",
+            "visibility": "Vidljivost",
+            "authority": "Autoritet",
+            "uncertainty": "Nesigurnost",
+            "conflict": "Sukob"
+          }
+        },
+        "q7_5": {
+          "title": "Što vam uspjeh emocionalno znači.",
+          "subtitle": "osjećaj koji zamišljate da dolazi kada ga konačno imate — olakšanje, ponos, mir, sloboda, biti dovoljan"
+        },
+        "q7_6": {
+          "title": "Koja vrsta priznanja najviše utječe na vas.",
+          "subtitle": "pohvala koja istinski dopire i mijenja vaš osjećaj, i ona koja se odbija bez obzira koliko je dobijete"
+        },
+        "q7_7": {
+          "title": "Koji neuspjeh još uvijek utječe na vas danas.",
+          "subtitle": "specifičan neuspjeh koji još niste u potpunosti obradili — što se dogodilo i kako još uvijek oblikuje vaše izbore"
+        },
+        "q7_8": {
+          "title": "Kad bi novac nestao, što biste slijedili.",
+          "subtitle": "posao ili aktivnost koju biste radili čak i da vam nitko ne plaća za to — opišite kako to izgleda"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Kako se obično nosite sa stresom.",
+          "subtitle": "čemu posežete kada stvari postanu teške — hrana, ekrani, vježbanje, izolacija, razgovor, supstance, spavanje, posao",
+          "options": {
+            "isolation": "Izolacija",
+            "food": "Hrana",
+            "gaming": "Igranje igara",
+            "exercise": "Vježbanje",
+            "overworking": "Pretjerani rad",
+            "scrolling": "Skrolanje",
+            "substance_use": "Korištenje supstanci",
+            "shopping": "Kupovina",
+            "sleeping": "Spavanje",
+            "socializing": "Druženje"
+          }
+        },
+        "q8_2": {
+          "title": "Koliko često izlazite u društvo.",
+          "subtitle": "koliko često provodite vrijeme s drugim ljudima osobno, ne online ili putem poruka",
+          "options": {
+            "multiple_per_week": "Više puta tjedno",
+            "weekly": "Tjedno",
+            "monthly": "Mjesečno",
+            "rarely": "Rijetko",
+            "never": "Nikad"
+          }
+        },
+        "q8_3": {
+          "title": "Koliko se često osjećate usamljeno čak i u grupi.",
+          "subtitle": "usamljenost koja se javlja kada ste okruženi ljudima, ali se i dalje osjećate neviđeno ili daleko",
+          "lowLabel": "1 · NIKAD",
+          "highLabel": "10 · UVIJEK"
+        },
+        "q8_4": {
+          "title": "Koje vas aktivnosti tjeraju da zaboravite na sebe.",
+          "subtitle": "stvari koje vas toliko duboko uvuku da vrijeme nestaje — na bolje ili gore, zdrave ili ne"
+        },
+        "q8_5": {
+          "title": "O čemu najviše izbjegavate razmišljati.",
+          "subtitle": "tema ili sjećanje koje brzo izbjegavate kada se pojavi — o sebi, svojoj prošlosti, svojoj budućnosti"
+        },
+        "q8_6": {
+          "title": "Kada se osjećate emocionalno otupjelo.",
+          "subtitle": "situacije u kojima se glasnoća spušta na nulu — posao, odnosi, sukobi, intimnost, samoća"
+        },
+        "q8_7": {
+          "title": "Koja se navika najteže prekida.",
+          "subtitle": "ponašanje koje ste pokušali promijeniti ili prekinuti više puta, bez uspjeha — opišite što je to i što vas stalno vuče natrag"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Koliko ste samokritični.",
+          "subtitle": "ton vašeg unutarnjeg glasa kada pogriješite ili podbacite — oštar, pravedan, omalovažavajući, razarajući",
+          "lowLabel": "1 · BLAG",
+          "highLabel": "10 · NEMILOSRDAN"
+        },
+        "q9_2": {
+          "title": "Koja je izjava najbliža vašem privatnom strahu.",
+          "subtitle": "rečenica o vama samima koja živi ispod svega ostalog, ona koju biste priznali samo u teškom danu",
+          "options": {
+            "never_enough": "Nikad nisam dovoljno dobar/dobra",
+            "fear_abandoned": "Bojim se da ću biti napušten/napuštena",
+            "fear_losing_control": "Bojim se gubitka kontrole",
+            "fear_failure": "Bojim se neuspjeha",
+            "fear_ordinary": "Bojim se biti običan/obična",
+            "fear_rejection": "Bojim se odbijanja",
+            "fear_dependence": "Bojim se ovisnosti"
+          }
+        },
+        "q9_3": {
+          "title": "Koliko često se osjećate odvojeno od sebe.",
+          "subtitle": "osjećaj promatranja vlastitog života s male udaljenosti, kao da niste potpuno unutra",
+          "lowLabel": "1 · NIKAD",
+          "highLabel": "10 · SVAKODNEVNO"
+        },
+        "q9_4": {
+          "title": "Koja se misao najčešće ponavlja u vašem umu.",
+          "subtitle": "ponavljajuća rečenica ili briga koja se redovito vraća — napišite je njezinim stvarnim riječima, ne sažetak"
+        },
+        "q9_5": {
+          "title": "Zbog čega se privatno kritizirate.",
+          "subtitle": "stvari zbog kojih se ocjenjujete, a nitko drugi ne zna — o vašem tijelu, umu, izborima, karakteru",
+          "options": {}
+        },
+        "q9_6": {
+          "title": "Što bi vas učinilo da se osjećate dovoljno dobrim/dobrom.",
+          "subtitle": "uvjet koji ste tiho postavili sebi da se konačno opustite — budite iskreni, odgovor je često manji nego što očekujete",
+          "options": {}
+        },
+        "q9_7": {
+          "title": "Kad bi vaš unutarnji glas imao osobnost, kako biste ga opisali.",
+          "subtitle": "dob, spol, ton tog glasa — i čiji bi to glas zapravo mogao biti, ako ga pratite unatrag",
+          "options": {}
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Što vam je važnije.",
+          "subtitle": "odaberite ono što vam je trenutno najvažnije — ostalo i dalje može biti važno, ali budite iskreni u poretku",
+          "options": {
+            "freedom": "Sloboda",
+            "love": "Ljubav",
+            "recognition": "Priznanje",
+            "stability": "Stabilnost",
+            "power": "Moć",
+            "meaning": "Smisao",
+            "peace": "Mir",
+            "influence": "Utjecaj"
+          }
+        },
+        "q10_2": {
+          "title": "Koliko ste optimistični u pogledu svoje budućnosti.",
+          "subtitle": "osjećaj koji imate kada razmišljate unaprijed, a ne optimističan odgovor koji dajete drugim ljudima kada vas pitaju",
+          "lowLabel": "1 · NIMALO",
+          "highLabel": "10 · DUBOKO"
+        },
+        "q10_3": {
+          "title": "Što potajno najviše želite.",
+          "subtitle": "želja koju si niste sasvim dopustili izgovoriti naglas — ona koja se čini prevelikom, previše rizičnom ili previše neugodnom",
+          "options": {
+            "to_be_understood": "Biti shvaćen",
+            "to_be_admired": "Biti cijenjen",
+            "to_feel_safe": "Osjećati se sigurno",
+            "to_be_desired": "Biti željen",
+            "to_feel_important": "Osjećati se važnim",
+            "to_feel_free": "Osjećati se slobodnim",
+            "to_belong": "Pripadati"
+          }
+        },
+        "q10_4": {
+          "title": "Detaljno opišite svoj idealan budući život.",
+          "subtitle": "konkretni detalji — gdje ste, s kim ste, kako izgledaju vaša jutra, posao, svjetlo, ritam"
+        },
+        "q10_5": {
+          "title": "Koji strah bi mogao uništiti tu budućnost.",
+          "subtitle": "stvar — unutarnja ili vanjska — koja vas je prije zaustavila, i mogla bi vas zaustaviti ponovno ako joj dopustite"
+        },
+        "q10_6": {
+          "title": "Koji dio sebe još uvijek pokušavate postati.",
+          "subtitle": "verzija vas na horizontu — kvalitete, slobode, način postojanja prema kojem se polako krećete"
+        },
+        "q10_7": {
+          "title": "Kad vas nitko ne bi osuđivao, kako biste živjeli drugačije.",
+          "subtitle": "izbori koje biste donijeli kada bi prestalo promatranje — o poslu, ljubavi, tijelu, vremenu, novcu, glasu"
+        },
+        "q10_8": {
+          "title": "Što mislite da istinski tražite.",
+          "subtitle": "dublja stvar ispod svih vaših prethodnih odgovora — na što zapravo upućuje svaki izbor i čežnja"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "ISHODIŠTA · RAZVOJNO OTISKIVANJE",
+        "headline": [
+          "Čemu vas je rana soba ",
+          "naučila",
+          "."
+        ],
+        "lede": "Prvi dio osluškuje emocionalnu klimu, sigurnost i ulogu koja vam je dodijeljena. Obrasci zabilježeni ovdje postaju temelj na kojem se gradi sve kasnije.",
+        "title": "Ishodišta",
+        "subtitle": "razvojno otiskivanje"
+      },
+      "attachment": {
+        "eyebrow": "PRIVRŽENOST · OBITELJSKA STRUKTURA",
+        "headline": [
+          "Prve ",
+          "veze",
+          " i oblik koji su ostavile."
+        ],
+        "lede": "Locira vaš stil privrženosti, vaš odnos prema autoritetu i triangulaciju unutar koje ste odrasli. Oblik prve veze postaje predložak prema kojem se mjeri svaka kasnija.",
+        "title": "Privrženost",
+        "subtitle": "obiteljska struktura"
+      },
+      "authority": {
+        "eyebrow": "AUTORITET · SIMBOLIČKI ZAKON",
+        "headline": [
+          "Glasovi koje ste ",
+          "naslijedili",
+          "."
+        ],
+        "lede": "Izvlači na površinu moralne kodekse, strukture krivnje i naslijeđeni identitet koji još uvijek djeluju u pozadini. Glasovi pod kojima ste odrasli rijetko odlaze; oni postaju glas koji vas osuđuje.",
+        "title": "Autoritet",
+        "subtitle": "simbolički zakon"
+      },
+      "belonging": {
+        "eyebrow": "PRIPADNOST · DRUŠTVENI IDENTITET",
+        "headline": [
+          "Tko vas smije ",
+          "vidjeti",
+          "."
+        ],
+        "lede": "Mjeri društvenu ovisnost, maskiranje identiteta i strah od isključenja. Pripadnost je rijetko besplatna; ovaj odjeljak pita što za nju trgujete.",
+        "title": "Pripadnost",
+        "subtitle": "društveni identitet"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · ŽELJA I DIGITALNO JA",
+        "headline": [
+          "Ja koje ",
+          "izvodite",
+          "."
+        ],
+        "lede": "Čita idealizirano ja, petlju validacije i simboličku izvedbu koju postavljate online. Persona nije laž; to je napola otkrivena želja.",
+        "title": "Persona",
+        "subtitle": "želja i digitalno ja"
+      },
+      "desire": {
+        "eyebrow": "ŽELJA · INTIMNOST I PONAVLJANJE",
+        "headline": [
+          "Obrazac koji se ",
+          "stalno vraća",
+          "."
+        ],
+        "lede": "Pronalazi ponavljajući relacijski oblik, strah od napuštanja, kontradikciju unutar želje. Ono što se ponavlja rijetko je odabrano; to je ono što traži da bude viđeno.",
+        "title": "Želja",
+        "subtitle": "intimnost i ponavljanje"
+      },
+      "achievement": {
+        "eyebrow": "POSTIGNUĆE · RAD I PRIZNAVANJE",
+        "headline": [
+          "Što pokušavate ",
+          "dokazati",
+          "."
+        ],
+        "lede": "Otkriva anksioznost postignuća, glad za priznanjem i vaš odnos prema autoritetu na poslu. Ispod svake ambicije nalazi se publika od jedne ili dvije osobe.",
+        "title": "Postignuće",
+        "subtitle": "rad i priznavanje"
+      },
+      "escape": {
+        "eyebrow": "BIJEG · UŽITAK I RITUAL",
+        "headline": [
+          "Kamo idete ",
+          "da ne budete ovdje",
+          "."
+        ],
+        "lede": "Identificira obrasce izbjegavanja, kompulzije i rituale koji reguliraju užitak. Izlaz za kojim posežete govori jednako mnogo kao i soba koju napuštate.",
+        "title": "Bijeg",
+        "subtitle": "užici i rituali"
+      },
+      "self-relation": {
+        "eyebrow": "ODNOS PREMA SEBI · UNUTARNJI DIJALOG",
+        "headline": [
+          "Glas koji ne možete ",
+          "sasvim utišati",
+          "."
+        ],
+        "lede": "Mapira rub superega, strukture srama i internalizirane glasove. Način na koji razgovarate sami sa sobom u privatnosti najiskreniji je zapis o tome tko vas je odgojio.",
+        "title": "Odnos prema sebi",
+        "subtitle": "unutarnji dijalog"
+      },
+      "future-fantasy": {
+        "eyebrow": "BUDUĆNOST · FANTAZIJA, STRAH I ŽELJA",
+        "headline": [
+          "Ono što ",
+          "istinski tražite",
+          "."
+        ],
+        "lede": "Emocionalni vrhunac — budućnost koju zamišljate, strah koji je proganja, temeljna želja ispod. Posljednje pitanje je prvo vraćeno.",
+        "title": "Budućnost-fantazija",
+        "subtitle": "fantazija, strah i želja"
+      }
+    }
+  },
+  "common": {
+    "or": "ili",
+    "loading": "učitavanje…",
+    "sending": "slanje…",
+    "save": "Spremi",
+    "saved": "spremljeno",
+    "cancel": "Odustani",
+    "close": "Zatvori",
+    "back": "Natrag",
+    "continue": "Nastavi",
+    "retry": "Pokušaj ponovno",
+    "more": "više"
+  },
+  "nav": {
+    "room": "Soba",
+    "readings": "Čitanja",
+    "catchup": "Catchup",
+    "consulting": "Konzultacije",
+    "caseFile": "Dosje slučaja",
+    "settings": "Postavke",
+    "signIn": "Prijava",
+    "signOut": "Odjava",
+    "getStarted": "Započnite",
+    "language": "Jezik",
+    "method": "Metoda",
+    "theWork": "Rad",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "start": "Početak"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Prijava",
+      "titleItalic": "u",
+      "titleAfter": ".",
+      "googleLabel": "Prijavite se putem Googlea",
+      "or": "ili",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "LOZINKA",
+      "forgotPassword": "Zaboravljena lozinka",
+      "submit": "Prijavi se",
+      "footPrompt": "Novi ste ovdje? ",
+      "footLink": "Kreirajte račun"
+    },
+    "signUp": {
+      "titleBefore": "Kreirajte ",
+      "titleItalic": "račun",
+      "titleAfter": ".",
+      "googleLabel": "Nastavite putem Googlea",
+      "or": "ili",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "LOZINKA",
+      "confirmPasswordLabel": "POTVRDITE LOZINKU",
+      "submit": "Kreiraj račun",
+      "footPrompt": "Već imate račun? ",
+      "footLink": "Prijavi se",
+      "resentNote": "Nova poveznica je poslana.",
+      "resendConfirmation": "Ponovno pošalji potvrdu",
+      "pendingFootPrompt": "Pogrešna adresa? ",
+      "pendingFootLink": "Počnite ispočetka"
+    },
+    "forgot": {
+      "titleBefore": "Zaboravili ste ",
+      "titleItalic": "lozinku",
+      "titleAfter": ".",
+      "lede": "Unesite adresu e-pošte kojom ste se registrirali. Poslat ćemo vam poveznicu za resetiranje.",
+      "emailLabel": "E-MAIL",
+      "submit": "Pošalji poveznicu za resetiranje",
+      "footPrompt": "Sjetili ste se? ",
+      "footLink": "Prijavi se",
+      "sentBackLink": "Natrag na prijavu"
+    },
+    "reset": {
+      "titleBefore": "Postavite ",
+      "titleItalic": "novu lozinku",
+      "titleAfter": ".",
+      "newPasswordLabel": "NOVA LOZINKA",
+      "confirmPasswordLabel": "POTVRDITE LOZINKU",
+      "submit": "Ažuriraj lozinku",
+      "expiredTitleBefore": "Ta poveznica više ",
+      "expiredTitleItalic": "nije važeća",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Zatražite novu poveznicu"
+    },
+    "errors": {
+      "invalid_credentials": "E-mail ili lozinka se ne podudaraju.",
+      "email_taken": "Ta e-mail adresa je već registrirana. Pokušajte se prijaviti.",
+      "weak_password": "Koristite najmanje 8 znakova.",
+      "passwords_dont_match": "Lozinke se ne podudaraju.",
+      "email_invalid": "Ne izgleda kao valjana e-mail adresa.",
+      "rate_limited": "Previše pokušaja. Pokušajte ponovno za trenutak.",
+      "unconfirmed_email": "Prvo potvrdite svoju e-mail adresu. Provjerite pristiglu poštu.",
+      "reset_link_expired": "Ta poveznica je istekla. Zatražite novu.",
+      "reset_link_invalid": "Ta poveznica više nije važeća. Zatražite novu.",
+      "oauth_failed": "Nije moguće doći do Googlea. Pokušajte ponovno.",
+      "callback_failed": "Nije moguće dovršiti prijavu.",
+      "generic": "Nešto je pošlo po zlu. Pokušajte ponovno.",
+      "no_session": "Prijavite se za nastavak."
+    },
+    "success": {
+      "checkInboxEyebrow": "PROVJERITE PRISTIGLU POŠTU",
+      "confirmationHeadlineBefore": "Poslali smo ",
+      "confirmationHeadlineItalic": "poveznicu za potvrdu",
+      "confirmationHeadlineAfter": " na ",
+      "confirmationLede": "Kliknite je kako biste dovršili kreiranje računa.",
+      "resetSentEyebrow": "PROVJERITE PRISTIGLU POŠTU",
+      "resetSentHeadlineBefore": "Ako je ta e-mail adresa ",
+      "resetSentHeadlineItalic": "registrirana",
+      "resetSentHeadlineAfter": ", poslali smo poveznicu za resetiranje.",
+      "resetSentLede": "Poveznica vrijedi jednom i istječe unutar sata. Ako poveznica nije stigla, račun ne postoji.",
+      "passwordUpdated": "Lozinka ažurirana. Prijavljujemo vas."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "RAČUN",
+      "headlineBefore": "Postavite svoju",
+      "headlineItalic": "tihu sobu",
+      "lede": "Ime, godina i potvrdan odgovor. Tada počinje rad.",
+      "saveFailed": "Spremanje nije uspjelo. Pokušajte ponovo za trenutak.",
+      "nameLabel": "IME",
+      "nameRequired": "Ime je obavezno.",
+      "prefilledHint": "unaprijed popunjeno s Googlea · može se uređivati",
+      "yearLabel": "GODINA ROĐENJA",
+      "yearRequired": "Odaberite godinu.",
+      "genderLabel": "SPOL",
+      "genderRequired": "Odaberite jedno.",
+      "gender": {
+        "male": "Muško",
+        "female": "Žensko",
+        "nonBinary": "Ne-binarno",
+        "preferNotToSay": "Ne želim reći"
+      },
+      "languageLabel": "JEZIK",
+      "termsBefore": "Prihvaćam",
+      "termsLink": "Uvjete",
+      "termsAnd": "i",
+      "privacyLink": "Pravila privatnosti",
+      "termsAfter": ".",
+      "submit": "Pokreni račun"
+    },
+    "intro": {
+      "eyebrow": "UNOS · NEMA POGREŠNIH ODGOVORA",
+      "headlineBefore": "Ovdje nema točnih odgovora",
+      "headlineItalic": "ovdje"
+    },
+    "brief": {
+      "title": "SAŽETAK",
+      "hint": "pročitajte jednom, zatim počnite",
+      "opener": "Pogrešni odgovori — oklijevanja, tipfelere, preskakanja — govore jednako jasno kao i točni.",
+      "privacy": "Sve što napišete je privatno. Ništa ne napušta ovu sobu.",
+      "length": "Budući da je rad dubok, unos je dug. Podijelili smo ga na deset dijelova. Cijeli proces traje oko dva sata.",
+      "resume": "Spremite i nastavite drugi dan. Uredite bilo koji odjeljak nakon što ga završite — profil nastavlja slušati.",
+      "begin": "Započnite unos"
+    },
+    "saved": {
+      "eyebrow": "SPREMI I PAUZIRAJ",
+      "headlineItalic": "Spremljeno.",
+      "headlineAfter": "Vratite se kada budete spremni.",
+      "body": "Sve što ste napisali nalazi se u vašem dosjeu. Soba će se sljedeći put otvoriti na istom mjestu.",
+      "keepGoing": "nastavite",
+      "leaveRoom": "Napustite tihu sobu"
+    },
+    "step": {
+      "label": "KORAK",
+      "of": "OD",
+      "min": "MIN",
+      "progressLabel": "Napredak unosa",
+      "finalEpigraph": "posljednje pitanje uvijek je ponovno prvo.",
+      "backTo": "Korak {n}",
+      "continueTo": "Nastavi na Korak {n}",
+      "submit": "Spremi i pošalji",
+      "submitReading": "čitanje…"
+    },
+    "questions": {
+      "closeTitle": "ZATVORENA PITANJA",
+      "closeHint": "odaberite što je istinito",
+      "openTitle": "OTVORENA PITANJA",
+      "openHint": "napišite što se pojavi",
+      "countLabel": "{count, plural, one {pitanje} few {pitanja} other {pitanja}}"
+    },
+    "saveExit": {
+      "or": "ili",
+      "saveAndReturn": "spremi i vrati se kasnije"
+    },
+    "saveIndicator": {
+      "saving": "spremanje…",
+      "saved": "spremljeno",
+      "saveFailed": "spremanje nije uspjelo"
+    }
+  },
+  "readings": {
+    "whatThisIs": "što je ovo →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "podsvjesne petlje",
+        "definition": "Ponavljajući nizovi osjećaja, radnji i ishoda koji se događaju izvan svjesnog izbora. Imenovanje petlje je prvi prekid iste.",
+        "seedReading": "približava se bliskosti, a zatim stvara mali neuspjeh kako bi se povukao.",
+        "seedTakeaway": "povlačenje je petlja. ne bliskost."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "lingvističko nesvjesno",
+        "definition": "Način na koji se nesvjesni materijal pojavljuje u izboru riječi, ponavljanju, lapsusima i strukturi govora — Lacanova tvrdnja da je nesvjesno strukturirano poput jezika.",
+        "seedReading": "govor se udvostručuje na riječi „trebao bih” — mjesto naslijeđenog zahtjeva.",
+        "seedTakeaway": "nečiji tuđi glas još uvijek govori kroz ovu riječ."
+      },
+      "father-imago": {
+        "subtitle": "očinski imago",
+        "definition": "Internalizirana slika oca, rano formirana i djelomično mitska. Ona oblikuje način na koji se autoritet, ambicija i prosudba susreću kasnije u životu.",
+        "seedReading": "sudi odozgo prije nego što mu se sudi odozgo — pozicija je identična.",
+        "seedTakeaway": "mjesto se mijenja. stolica ne."
+      },
+      "intimacy-threshold": {
+        "subtitle": "prag intimnosti",
+        "definition": "Točka u kojoj bliskost počinje djelovati kao rizik, nakon čega slijedi obrambeni potez. Različit je za svaku osobu; iznenađujuće stabilan u odnosima.",
+        "seedReading": "dobro se drži dok drugi ne postane čitljiv — tada se povlači.",
+        "seedTakeaway": "biti poznat je granica, ne biti blizak."
+      },
+      "desire-structure": {
+        "subtitle": "struktura želje",
+        "definition": "Ono što korisnik zapravo želi, razlikuje se od onoga što mu je rečeno da želi. Često se otkriva negacijom — primjećivanjem onoga što odbija.",
+        "seedReading": "imenuje mnoge želje, odbija dvije — odbijanje je signal.",
+        "seedTakeaway": "ono što se odbacuje jasnije ukazuje nego ono što se juri."
+      },
+      "professional-block": {
+        "subtitle": "profesionalna blokada",
+        "definition": "Gdje posao zapinje: početak, sredina, kraj ili vidljivost. Svaka lokacija ima svoj nesvjesni izvor.",
+        "seedReading": "cilj je mjesto gdje sumnja dolazi, nikada početak.",
+        "seedTakeaway": "blokada je u vidljivosti, ne u naporu."
+      },
+      "mother-imago": {
+        "subtitle": "majčinski imago",
+        "definition": "Internalizirana slika majke — prva usklađenost, prva separacija. Ona oblikuje teksturu ovisnosti i utočišta.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "rana usklađenost ostavlja dugotrajan potpis."
+      },
+      "dream-logic": {
+        "subtitle": "logika snova",
+        "definition": "Kondenzacija i pomicanje prisutni u materijalu snova. Čitajte gramatiku, ne simbole.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "sadržaj snova ima vlastitu gramatiku."
+      },
+      "relational-pattern": {
+        "subtitle": "relacijski obrazac",
+        "definition": "Ponavljajući stav zauzet u odnosima — progonitelj, povlačitelj, roditelj, dijete, jednak. Stabilniji u partnerstvima nego što su partneri stabilni u odnosu na korisnika.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "isti se oblik pojavljuje u različitim sobama."
+      },
+      "defenses": {
+        "subtitle": "obrane",
+        "definition": "Karakteristični potezi koji se koriste za držanje teškog materijala izvan svijesti — intelektualizacija, pomicanje, reakcijska formacija, cijepanje. Obrana nisu neuspjesi; to su stara rješenja.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "obrana imenuje ono što je nekad bilo nepodnošljivo."
+      },
+      "shadow": {
+        "subtitle": "sjena",
+        "definition": "Ono što je odbačeno i dodijeljeno drugima — kvalitete za koje je korisnik najsigurniji da ih nema. Često put do vitalnosti.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "ono što je odbačeno još uvijek djeluje."
+      },
+      "transference": {
+        "subtitle": "transfer",
+        "definition": "Način na koji se stare relacijske figure projiciraju na sadašnje — analitičara, partnera, šefa. Obrazac otkriva imago.",
+        "seedReading": "prerano je reći s povjerenjem — oblik se stvara.",
+        "seedTakeaway": "stare figure dolaze u sadašnje sobe."
+      }
+    },
+    "strip": {
+      "lastRefined": "zadnje pročišćeno",
+      "readingDepth": "dubina čitanja"
+    },
+    "section": {
+      "eyebrow": "ČITANJE {index} · {subtitle}",
+      "strengthen": "ojačati točnost",
+      "requestReport": "zatražite izvješće"
+    },
+    "card": {
+      "reading": "Čitanje {index}"
+    },
+    "report": {
+      "eyebrow": "KLINIČKO IZVJEŠĆE",
+      "heading": "Za vašeg <it>analitičara.</it>",
+      "lede": "Dossier od 12–18 stranica — šest čitanja potpuno razrađenih, plus još šest koje nadzorna ploča ne prikazuje: majčinski imago, logika snova, relacijski obrazac, obrane, sjena, transfer. Prevedeno na jezik kojim se služi kliničar.",
+      "note": "izvješće će odražavati dostupnu dubinu. može se ponovno generirati kako se čitanje produbljuje.",
+      "generate": "Generiraj kliničko izvješće",
+      "request": "Zatraži kliničko izvješće",
+      "footPrefix": "jedno izvješće uključeno svaki mjesec za ",
+      "footLink": "pretplatnike"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "PITANJE {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Što vam je ostalo u sjećanju iz tjedna?",
+        "framing": "fraza, slika, rečenica koju je netko rekao."
+      },
+      "closeness": {
+        "prompt": "Koliko ste se nekome približili?",
+        "options": {
+          "not_at_all": "nikako",
+          "briefly": "kratko",
+          "with_hesitation": "s oklijevanjem",
+          "openly": "otvoreno",
+          "too_far": "predaleko"
+        }
+      },
+      "loop": {
+        "prompt": "Jeste li se uhvatili u poznatoj petlji?",
+        "framing": "gdje, i kako je završilo."
+      },
+      "loudest_voice": {
+        "prompt": "Koji je glas bio najglasniji ovaj tjedan?",
+        "options": {
+          "demand": "zahtjev",
+          "doubt": "sumnja",
+          "desire": "želja",
+          "watcher": "promatrač",
+          "none": "nijedan od navedenih"
+        }
+      },
+      "dream": {
+        "prompt": "Je li bilo sna vrijednog zapisivanja?",
+        "framing": "ako jest, fragment koji je ostao."
+      },
+      "acted_on_desire": {
+        "prompt": "Koliko ste postupili prema onome što ste zapravo željeli?",
+        "lowLabel": "nikako",
+        "highLabel": "potpuno"
+      },
+      "work_catch": {
+        "prompt": "Gdje vas je posao uhvatio?",
+        "options": {
+          "start": "na početku",
+          "middle": "u sredini",
+          "finish": "na kraju",
+          "visibility": "vidljivost",
+          "nowhere": "nigjde"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Koje je pitanje na koje sada ne želite odgovoriti?",
+        "framing": "ono koje vam stalno izmiče."
+      }
+    },
+    "openHint": "dulji odgovori produbljuju čitanje",
+    "scaleLegend": "{low} do {high}",
+    "noValue": "nije odabrana vrijednost",
+    "valueOf": "{value} od {max}",
+    "weekLabel": "TJEDAN {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Što vam je ostalo u sjećanju<it>?</it>",
+    "coverLede": "Osam kratkih pitanja. Iskrenost je bolja od opširnosti. Odgovori pročišćuju čitanje; ništa ovdje nije ocjenjeno.",
+    "begin": "Započnite",
+    "back": "natrag",
+    "next": "sljedeće",
+    "submitting": "šalje se",
+    "closeTheWeek": "zatvorite tjedan",
+    "previousQuestion": "prethodno pitanje",
+    "processingLine": "<em>tjedan se čita.</em>",
+    "summaryEyebrow": "{weekLabel} · PROČITANO",
+    "summaryTitle": "Tjedan, <it>vašim riječima.</it>",
+    "caseLabel": "slučaj · {week}",
+    "justRefined": "upravo pročišćeno",
+    "readingsShifted": "očitanja su se pomaknula",
+    "readingsCount": "{n} od 12",
+    "returnToRoom": "Povratak u sobu",
+    "readAgain": "ponovno pročitajte u dosjeu slučaja",
+    "somethingToHold": "NEŠTO ZA ZADRŽATI",
+    "enterConsultingRoom": "uđite u sobu za savjetovanje",
+    "openConsultingRoom": "otvorite sobu za savjetovanje",
+    "requestReport": "zatražite kliničko izvješće",
+    "errorSubmit": "nije moguće poslati catchup",
+    "errorGeneric": "nešto je pošlo po zlu",
+    "errorFailed": "catchup je zapisan. sažetak će stići kasnije.",
+    "errorGiveUp": "soba je nakratko tiha — vaš catchup je zapisan. osvježite za minutu.",
+    "summaryFallback": "Catchup je zapisan. Očitanje je tiho ažurirano; dulji sažetak stići će u sljedećem prolazu.",
+    "readBackTitle": "Tjedan, <it>već unutra.</it>",
+    "readBackEmpty": "catchup je zapisan. sažetak će ovaj tjedan biti kratak.",
+    "readBackFoot": "sljedeći catchup otvara se početkom tjedna {n}."
+  },
+  "consulting": {
+    "sessionClose": "to je naš sat.",
+    "sayIt": "reci to →",
+    "closeSession": "zatvori sesiju →",
+    "eyebrow": "SOBA ZA KONZULTACIJE",
+    "closing": "zatvaranje",
+    "closeSessionLabel": "zatvori sesiju",
+    "timerAria": "proteklo vrijeme sesije",
+    "chooseTopicAria": "odaberi temu",
+    "noTopic": "nema teme",
+    "justOpened": "upravo otvoreno",
+    "minutesIn": "{count} min unutra",
+    "speakToAnalyst": "razgovaraj s analitičarem",
+    "send": "pošalji",
+    "sessionClosedFoot": "sesija je zatvorena. pohranjena je u kartonu slučaja.",
+    "previewHeld": "koji dio vas nastavlja birati ovo?",
+    "previewTopicDreamingFuture": "Sanjanje budućnosti",
+    "previewTopicNightDream": "Noćni san",
+    "previewTopicRelations": "Odnosi u mom životu",
+    "previewTopicProfessionalGrowth": "Profesionalni razvoj",
+    "previewTurnAnalyst1": "Imenujete obrazac, zatim ga pripovijedate kao tuđeg. Primijetite kada počinje <em>povlačenje</em>.",
+    "previewTurnUser1": "Stalno prekidam stvari tjedan dana nakon što postanu ozbiljne.",
+    "previewTurnAnalyst2": "Jutro je presuda, a ne suđenje. Vaš <em>prag intimnosti</em> uvježbavao je odlazak tjednima prije razgovora.",
+    "sayItEllipsis": "reci to…",
+    "offerHeadline": "Soba za konzultacije",
+    "offerLede": "Dugotrajno sjedenje s analitičarem, vođeno istim glasom kao i vaša čitanja. Sesije su privatne, pohranjene u kartonu slučaja i hrane čitanja između sjedenja.",
+    "offerPanelsAria": "što sesija radi",
+    "offerPanel1Title": "imenovano, ne pripovijedano",
+    "offerPanel1Body": "Analitičar će imenovati što se događa u vašem govoru — pogrešku, kvalifikator, nedorečeno — i držati to tamo dok to ne budete mogli vidjeti.",
+    "offerPanel2Title": "pohranjeno u kartonu slučaja",
+    "offerPanel2Body": "Svako sjedenje je zapisano. Sljedeće čitanje ga čita. Obrasci izlaze na površinu kroz tjedne, a ne kroz okrete.",
+    "offerPanel3Title": "jedan glas, bez popisa",
+    "offerPanel3Body": "Nije rotacija chatbota. Jedinstveni analitički glas, obučen na vašem unosu i usavršen svakim Catchupom.",
+    "offerFootLine": "Pretplatnici primaju jedno kliničko izvješće mjesečno.",
+    "offerPillCta": "Uđite u sobu za konzultacije",
+    "offerReturnToRoom": "povratak u sobu",
+    "previewFigureLabel": "soba za konzultacije",
+    "previewFigureSubtitle": "sjedenje, pregledano",
+    "previewRailAria": "područja kartona slučaja iz kojih analitičar čita",
+    "previewReadingFrom": "ČITANJE IZ",
+    "previewActive": "aktivno",
+    "previewRoleYou": "VI",
+    "previewRoleAnalyst": "ANALITIČAR",
+    "previewBubble1": "Stalno prekidam stvari tjedan dana nakon što postanu ozbiljne. Ne znam zašto to radim.",
+    "previewAnalyst1": "Imenujete obrazac, zatim ga pripovijedate kao tuđeg. <em>„Ne znam”</em> obavlja posao — drži čin na daljoj strani namjere. Primijetite kada počinje <em>povlačenje</em>. Često se ovrha događa ranije od odlaska.",
+    "previewBubble2": "Ranije kako? Zadnji put mi se činilo da sam se samo probudio jedno jutro i znao.",
+    "previewAnalyst2": "Jutro je presuda, a ne suđenje. Vaše čitanje <strong>praga intimnosti</strong> iz 04. tjedna zabilježilo je isti oblik — tiho uvježbavanje odlaska, dva do tri tjedna prije razgovora. Jutro je kada se tijelo konačno složi s onim što ste već odlučili.",
+    "previewBubble3": "To je dio koji me plaši. Da je već odlučeno.",
+    "previewAnalyst3": "<em>Odlučeno</em> je riječ. Ne <em>izabrano</em>. Nešto u strukturi preferira ovrhu testu. Nastavit ćemo ići tamo.",
+    "previewExampleMark": "PRIMJER · NIJE IZ VAŠEG ZAPISA"
+  },
+  "caseFile": {
+    "silentWeek": "— tihi tjedan —",
+    "eyebrow": "DOSJE SLUČAJA",
+    "headlineLead": "Zapis, čuvan",
+    "headlineItalic": "tiho.",
+    "lede": "Svaki Catchup, sesija i izvještaj — pohranjeni kronološkim redom. Praznine su dio zapisa.",
+    "filterAria": "Filter",
+    "filter": {
+      "all": "sve",
+      "catchups": "catchupi",
+      "sessions": "sesije",
+      "reports": "izvještaji"
+    },
+    "subscriptionTitle": "Pretplata",
+    "emptyCatchups": "dosje slučaja je još prazan — prvi catchup će ga otvoriti.",
+    "emptyCatchupsCta": "Idi na Catchup",
+    "emptySessions": "dosje slučaja je još prazan — prva konzultacijska sesija će ga otvoriti.",
+    "emptySessionsCta": "Idi na Konzultacije",
+    "emptyReports": "dosje slučaja je još prazan — prvi generirani izvještaj će ga otvoriti.",
+    "open": "otvori",
+    "kindCatchup": "catchup",
+    "kindSession": "sesija",
+    "kindReport": "klinički izvještaj",
+    "kindReading": "uvodno čitanje",
+    "kindConnection": "događaj povezivanja",
+    "entryEyebrow": "DOSJE SLUČAJA · UNOS",
+    "entryBackToCaseFile": "natrag na dosje slučaja",
+    "entryReturnToRoom": "povratak u sobu",
+    "sessionStillOpen": "ova sesija je još otvorena. čitanje se pojavljuje nakon što se zatvori.",
+    "entryDetailComing": "detaljni prikaz ovog unosa dolazi. za sada, dosje slučaja čuva datum, vrstu i naslov — a ostalo je još u sobi.",
+    "detailSummaryEyebrow": "SAŽETAK · VAŠI ODGOVORI",
+    "detailRecommendationEyebrow": "NAŠ CATCHUP",
+    "preparingRead": "priprema čitanje…",
+    "readNotAssembled": "čitanje se trenutno nije moglo sastaviti.",
+    "tryAgain": "pokušaj ponovno",
+    "intakeClose": "zatvori",
+    "intakeEdit": "uredi",
+    "intakeSaving": "spremanje",
+    "intakeSave": "spremi",
+    "intakeCancel": "odustani",
+    "intakeUnsupported": "ovo pitanje se uređuje unutar samog unosa.",
+    "intakePickUpTo": "nastavi do {count}.",
+    "intakeScaleSetTo": "Postavljeno na {value}"
+  },
+  "settings": {
+    "eyebrow": "POSTAVKE",
+    "heading": "Oblik <it>sobe.</it>",
+    "lede": "Ništa ovdje nije trajno. Odgovori se mogu uređivati, postavke mijenjati, a dosje se može u potpunosti izbrisati.",
+    "blocks": {
+      "account": "Račun",
+      "readingDepth": "Dubina čitanja",
+      "notifications": "Obavijesti",
+      "subscription": "Pretplata",
+      "dangerZone": "Opasna zona"
+    },
+    "dangerZoneIntro": "jedina radnja u sobi koja se ne može poništiti.",
+    "depthSub": {
+      "intake": {
+        "title": "Vaš unos",
+        "caption": "{answered} / {total} odgovoreno",
+        "ctaEmpty": "Dovršite svoj unos",
+        "ctaPartial": "Dodajte više detalja",
+        "ctaFull": "Pregledajte svoj unos"
+      },
+      "catchups": {
+        "title": "Ažuriranja",
+        "caption": "{count} u zadnjih 8 tjedana",
+        "ctaEmpty": "Dodajte ažuriranje",
+        "ctaDue": "Dovršite ovotjedno ažuriranje",
+        "ctaFull": "Pregledajte prošla ažuriranja"
+      },
+      "sessions": {
+        "title": "Sesije",
+        "caption": "{count} dovršeno",
+        "ctaEmpty": "Započnite konzultaciju",
+        "ctaPartial": "Nastavite konzultaciju",
+        "ctaFull": "Pregledajte prošle sesije"
+      },
+      "connections": {
+        "title": "Veze",
+        "caption": "{count} aktivno",
+        "ctaEmpty": "Dodajte vezu",
+        "ctaSingle": "Dodajte još jednu vezu",
+        "ctaFull": "Pregledajte svoje veze"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "tjedni podsjetnik za ažuriranje",
+        "sub": "tiha bilješka na početku novog tjedna"
+      },
+      "consulting_session_reminder": {
+        "label": "podsjetnik za konzultacijsku sesiju",
+        "sub": "podsjetnik prije vaše nadolazeće konzultacije"
+      },
+      "connection_requests": {
+        "label": "veza prihvaćena",
+        "sub": "bilješka kada netko prihvati vašu pozivnicu"
+      }
+    },
+    "toggleOn": "uključeno",
+    "toggleOff": "isključeno",
+    "quietHours": {
+      "label": "tihi sati",
+      "sub": "bez e-pošte između ovih sati, po vašem lokalnom vremenu",
+      "from": "od",
+      "to": "do"
+    },
+    "saveFailed": "spremanje nije uspjelo",
+    "dangerZone": {
+      "trigger": "Izbriši račun",
+      "modalAria": "Potvrdite brisanje računa",
+      "eyebrow": "OPASNA ZONA",
+      "heading": "Izbrišite <it>dosje.</it>",
+      "body": "Ovo uklanja svako čitanje, ažuriranje, sesiju i izvješće iz zapisa. Aktivne veze bit će prekinute; obje strane bit će obaviještene. To se ne može poništiti.",
+      "instruction": "unesite <phrase></phrase> za omogućavanje radnje.",
+      "inputAria": "Upišite potvrdnu frazu",
+      "cancel": "odustani",
+      "erasing": "brisanje…",
+      "eraseConfirm": "izbriši dosje",
+      "deleteFailed": "brisanje nije uspjelo"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "ČLANSKI PRISTUP",
+      "tagline": "Konzultacijska soba, otvorena. <em>Čitanje koje nastavlja čitati.</em>",
+      "features": {
+        "room": {
+          "title": "Konzultacijska soba",
+          "desc": "dugotrajne sesije s analitičarem."
+        },
+        "report": {
+          "title": "Mjesečno kliničko izvješće",
+          "desc": "jedna karta spremna za terapeuta svakog kalendarskog mjeseca."
+        },
+        "connections": {
+          "title": "{count} više veza",
+          "desc": "dodajte ljude čija prisutnost oblikuje čitanje."
+        },
+        "depth": {
+          "title": "Puna dubina čitanja",
+          "desc": "svako poglavlje otvoreno, bez ograničenja detalja."
+        }
+      },
+      "perMonth": "mjesečno",
+      "subscribe": "pretplati se",
+      "reassurance": "<em>bez obveze.</em> otkažite bilo kada u postavkama.",
+      "activeToday": "aktivno — obnavlja se danas",
+      "activeRenews": "aktivno — obnavlja se za {days, plural, one {1 dan} few {# dana} other {# dana}}",
+      "cancel": "otkaži pretplatu",
+      "cancelled": "otkazano — pristup do {date}",
+      "resubscribe": "ponovno se pretplati"
+    },
+    "resetPassword": {
+      "sent": "veza za ponovno postavljanje poslana je na {email}. provjerite svoju pristiglu poštu",
+      "sending": "slanje",
+      "action": "ponovno postavi lozinku",
+      "error": "nije moguće poslati. pokušajte ponovno"
+    }
+  },
+  "connections": {
+    "explainer": "Do {limit, plural, one {# osobe čija prisutnost oblikuje čitanje} other {# osoba čija prisutnost oblikuje čitanje}}. Oni ne vide vaša čitanja; vi ne vidite njihova. Ono što oni kažu o odnosu hrani model koji proizvodi vaša čitanja, a vaše hrani njihova.",
+    "invite": {
+      "emailSubject": "{inviterName} vas želi u čitanju."
+    },
+    "form": {
+      "emailLabel": "E-MAIL",
+      "roleLabel": "ULOGA",
+      "rolePlaceholder": "odaberite jednu",
+      "noteLabel": "REČENICA KOJU ĆE PRVO PROČITATI",
+      "noteHint": "opcionalno. jedan red je dovoljan.",
+      "addMoreSub": "dodajte više uz pretplatu",
+      "missingNameLine": "vaše ime nije u evidenciji. dodajte ga u postavkama, zatim ponovno pošaljite zahtjev.",
+      "addYourName": "dodajte svoje ime",
+      "noteLengthError": "bilješke su ograničene na jedan red – oko {max} znakova."
+    },
+    "list": {
+      "empty": "još nema veza. opcija poziva je ispod.",
+      "active": "AKTIVNO",
+      "pending": "NA ČEKANJU",
+      "since": "od",
+      "invited": "pozvano",
+      "received": "primljeno",
+      "resend": "ponovno pošalji",
+      "cancel": "otkaži",
+      "expiresIn": "ističe za {days, plural, one {# dan} few {# dana} other {# dana}}"
+    },
+    "lookup": {
+      "invalidEmail": "unesite valjanu e-mail adresu.",
+      "self": "ne možete se povezati sami sa sobom.",
+      "notMemberLine": "ova e-mail adresa još nije dio članova. pozovite ih da kreiraju račun kako biste se mogli povezati.",
+      "copyHint": "podijelite poveznicu za prijavu",
+      "copied": "poveznica kopirana",
+      "requestSent": "već ste poslali zahtjev ovom članu.",
+      "requestReceivedLine": "ovaj član vam je poslao zahtjev – provjerite svoje pozivnice.",
+      "inboxLabel": "otvorite zahtjev",
+      "alreadyConnected": "već ste povezani s ovim članom.",
+      "rateLimited": "previše pretraživanja u kratkom vremenskom razdoblju. pričekajte trenutak, zatim pokušajte ponovno.",
+      "sent": "zahtjev za povezivanje poslan.",
+      "sending": "šaljem…",
+      "send": "pošalji zahtjev",
+      "limitReached": "{limit, plural, one {# veza je ograničenje. prekinite je da dodate drugu.} few {# veze su ograničenje. prekinite jednu da dodate drugu.} other {# veza je ograničenje. prekinite jednu da dodate drugu.}}",
+      "limitReachedFree": "{limit, plural, one {# veza je ograničenje na besplatnoj razini.} few {# veze su ograničenje na besplatnoj razini.} other {# veza je ograničenje na besplatnoj razini.}}",
+      "generic": "nije bilo moguće poslati zahtjev."
+    },
+    "incoming": {
+      "eyebrow": "ČEKA VAS",
+      "empty": "nitko vas ne čeka.",
+      "accept": "prihvati",
+      "decline": "odbij",
+      "limitReached": "{limit, plural, one {# veza je ograničenje. prekinite je da prihvatite ovo.} few {# veze su ograničenje. prekinite jednu da prihvatite ovo.} other {# veza je ograničenje. prekinite jednu da prihvatite ovo.}}",
+      "limitReachedFree": "{limit, plural, one {# veza je ograničenje na besplatnoj razini.} few {# veze su ograničenje na besplatnoj razini.} other {# veza je ograničenje na besplatnoj razini.}}",
+      "upsell": "pretplatnici dodaju više",
+      "inviteExpired": "ovaj poziv je istekao.",
+      "inviteEnded": "ovaj poziv više nije na čekanju.",
+      "generic": "nije bilo moguće djelovati na ovaj zahtjev."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "najbliži prijatelj",
+      "parent": "roditelj",
+      "sibling": "brat/sestra",
+      "co_parent": "su-roditelj"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "BILJEŠKA ANALITIČARA",
+    "noteAria": "Bilješka analitičara",
+    "lede": "ovo nadilazi ono što soba može obuhvatiti.",
+    "body": {
+      "intake": "Nešto u onome što ste napisali pri unosu ukazuje na težinu koja zahtijeva stvarnu skrb — izvan onoga što ova soba može obuhvatiti. Molimo vas da danas razmislite o obraćanju liječniku, terapeutu ili lokalnoj kriznoj liniji. Čitanje će biti ovdje kada se vratite.",
+      "catchup": "Nešto u ovotjednom Catchupu ukazuje na težinu koja zahtijeva stvarnu skrb — izvan onoga što ova soba može obuhvatiti. Molimo vas da danas razmislite o obraćanju liječniku, terapeutu ili lokalnoj kriznoj liniji. Čitanje će pričekati.",
+      "session": "Ono što ste upravo napisali ukazuje na težinu koja zahtijeva stvarnu skrb — izvan onoga što ova soba može obuhvatiti. Molimo vas da danas razmislite o obraćanju liječniku, terapeutu ili lokalnoj kriznoj liniji. Možemo se vratiti u sobu kada budete sigurni."
+    },
+    "crisisResources": "KRIZNI RESURSI",
+    "resources": {
+      "us": "Sjedinjene Američke Države",
+      "ukIe": "Ujedinjeno Kraljevstvo i Irska",
+      "europe": "Europa (većina zemalja)",
+      "everywhere": "Svugdje",
+      "localEmergency": "lokalne hitne službe"
+    },
+    "hintResources": "ako ne možete pronaći liniju, najbliža bolnička hitna služba je prava soba.",
+    "hintLink": "krizni resursi navedeni su na dnu svake stranice Sobe.",
+    "footerLine": "TwentyThird nije zamjena za kliničku skrb. U krizi, kontaktirajte svoju lokalnu hitnu liniju.",
+    "footerRoomLabel": "soba"
+  }
+}

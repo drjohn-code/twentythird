@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 
 // Connection summary — generated once when a connection completes
 // relationship intake. Stored on connections.context_summary and
@@ -19,6 +19,7 @@ export type ConnectionSummaryInput = {
     question_text: string;
     answer: unknown;
   }>;
+  locale: string;
 };
 
 const SYSTEM_TAIL = `Task — connection context summary.
@@ -48,7 +49,7 @@ export function buildConnectionSummaryPrompt(input: ConnectionSummaryInput): {
   const connection = input.connectionFirstName ?? "the connection";
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

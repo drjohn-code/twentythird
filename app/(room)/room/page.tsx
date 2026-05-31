@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import CTA from "@/components/ui/CTA";
@@ -13,7 +14,6 @@ import SessionPreview from "@/components/room/SessionPreview";
 import StructureMap from "@/components/room/analytics/StructureMap";
 import ReadingDiagram from "@/components/room/analytics/ReadingDiagram";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
-import { blockSeeds } from "@/lib/copy";
 import { firstNameFrom } from "@/lib/connections";
 import {
   computeStructure,
@@ -54,6 +54,8 @@ type IntakeAnswerRow = {
 const ISO_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 export default async function RoomLandingPage() {
+  const t = await getTranslations("room");
+  const tr = await getTranslations("readings");
   const supabase = await createClient();
   const {
     data: { user },
@@ -149,21 +151,17 @@ export default async function RoomLandingPage() {
       <section className="room-section">
         <Reveal className="room-split">
           <div className="room-split-copy">
-            <Eyebrow>LATEST READING</Eyebrow>
+            <Eyebrow>{t("latest.eyebrow")}</Eyebrow>
             <h2>
-              Six readings <span className="it">— and what shifts.</span>
+              {t.rich("latest.heading", {
+                it: (chunks) => <span className="it">{chunks}</span>,
+              })}
             </h2>
-            <p className="lede">
-              The six readings are computed from your intake and refined
-              by each Catchup, consultation, and accepted connection. The
-              structure is steady; the texture moves.
-            </p>
+            <p className="lede">{t("latest.lede")}</p>
             {structure.isBlurred ? (
-              <RowLink href="/settings#depth">
-                strengthen the data for analytics
-              </RowLink>
+              <RowLink href="/settings#depth">{t("latest.strengthen")}</RowLink>
             ) : (
-              <RowLink href="/readings">open the readings</RowLink>
+              <RowLink href="/readings">{t("latest.open")}</RowLink>
             )}
           </div>
           <div className="room-split-figure">
@@ -177,20 +175,21 @@ export default async function RoomLandingPage() {
       {/* 3 — The six readings */}
       <section className="room-section">
         <Reveal as="div" className="room-section-head">
-          <Eyebrow>THE SIX READINGS</Eyebrow>
+          <Eyebrow>{t("six.eyebrow")}</Eyebrow>
           <h2 className="serif room-split-copy-h" style={{
             fontFamily: "var(--serif)",
             fontSize: "clamp(28px, 3vw, 38px)",
             letterSpacing: "-0.02em",
             lineHeight: 1.1,
           }}>
-            What is being read <span className="it">in you, right now.</span>
+            {t.rich("six.heading", {
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h2>
         </Reveal>
         <Reveal as="div" className="block-grid">
           {DASHBOARD_BLOCKS.map((b) => {
             const row = readingsBySlug.get(b.slug);
-            const seed = blockSeeds[b.slug];
             const diagramInput = computeReadingDiagramInput(
               b.slug,
               structureInputs,
@@ -200,9 +199,9 @@ export default async function RoomLandingPage() {
                 key={b.slug}
                 index={b.index}
                 slug={b.slug}
-                subtitle={b.subtitle}
-                reading={row?.reading ?? seed.reading}
-                takeaway={row?.takeaway ?? seed.takeaway}
+                subtitle={tr(`blocks.${b.slug}.subtitle`)}
+                reading={row?.reading ?? tr(`blocks.${b.slug}.seedReading`)}
+                takeaway={row?.takeaway ?? tr(`blocks.${b.slug}.seedTakeaway`)}
                 diagram={
                   diagramInput ? (
                     <ReadingDiagram input={diagramInput} size="card" />
@@ -221,37 +220,35 @@ export default async function RoomLandingPage() {
         <Reveal className="room-split reverse">
           <div className="room-split-figure">
             <FigureCard
-              label="CATCHUPS"
-              subtitle="recent weeks"
+              label={t("catchup.figLabel")}
+              subtitle={t("catchup.figSubtitle")}
               fig="Fig. 02"
             >
               <InsightTimeline
-                heading="window"
-                range="last 4 weeks"
+                heading={t("catchup.timelineHeading")}
+                range={t("catchup.timelineRange")}
                 markers={catchupMarkers(
                   catchupsRes.data as CatchupSummaryRow[] | null,
+                  t,
                 )}
                 summaryBig={`${(catchupsRes.data as CatchupSummaryRow[] | null)?.length ?? 0}`}
-                summaryLabel="catchups in window"
+                summaryLabel={t("catchup.timelineSummary")}
               />
             </FigureCard>
           </div>
           <div className="room-split-copy">
-            <Eyebrow>WEEKLY CATCHUP</Eyebrow>
+            <Eyebrow>{t("catchup.eyebrow")}</Eyebrow>
             <h2>
-              Sit with the week. <span className="it">Then we look again.</span>
+              {t.rich("catchup.heading", {
+                it: (chunks) => <span className="it">{chunks}</span>,
+              })}
             </h2>
-            <p className="lede">
-              Eight short questions. Honest is better than long. The
-              answers refine the reading.
-            </p>
+            <p className="lede">{t("catchup.lede")}</p>
             <div className="room-card-cta-row">
               {catchupWithinThisWeek ? (
-                <span className="room-card-foot">
-                  completed — read the summary
-                </span>
+                <span className="room-card-foot">{t("catchup.completed")}</span>
               ) : (
-                <CTA href="/catchup">Open this week&rsquo;s catchup</CTA>
+                <CTA href="/catchup">{t("catchup.cta")}</CTA>
               )}
             </div>
           </div>
@@ -264,28 +261,26 @@ export default async function RoomLandingPage() {
       <section className="room-section">
         <Reveal className="room-split">
           <div className="room-split-copy">
-            <Eyebrow>CONSULTING ROOM</Eyebrow>
+            <Eyebrow>{t("consulting.eyebrow")}</Eyebrow>
             <h2>
-              An hour with <span className="it">the analyst.</span>
+              {t.rich("consulting.heading", {
+                it: (chunks) => <span className="it">{chunks}</span>,
+              })}
             </h2>
             <p className="lede">
               {isSubscribed
-                ? "Open whenever the week presses. The room remembers what you have already said."
-                : "Subscribers can enter the consulting room — a long-form session with the analyst, held in the same voice as your readings."}
+                ? t("consulting.ledeSubscribed")
+                : t("consulting.ledeUnsubscribed")}
             </p>
             <div className="room-card-cta-row">
-              <CTA href="/consulting">
-                {isSubscribed
-                  ? "Enter the consulting room"
-                  : "Enter the consulting room"}
-              </CTA>
+              <CTA href="/consulting">{t("consulting.cta")}</CTA>
             </div>
           </div>
           <div className="room-split-figure">
             {isSubscribed ? (
               <FigureCard
-                label="LAST SESSION"
-                subtitle="held question"
+                label={t("consulting.figLabel")}
+                subtitle={t("consulting.figSubtitle")}
                 fig="Fig. 03"
               >
                 <p
@@ -298,8 +293,7 @@ export default async function RoomLandingPage() {
                     padding: "20px 0",
                   }}
                 >
-                  &ldquo;the dream from tuesday — do you want to return to
-                  it?&rdquo;
+                  {t("consulting.lastQuestion")}
                 </p>
               </FigureCard>
             ) : (
@@ -370,9 +364,10 @@ function gatherFreeText(
 
 function catchupMarkers(
   rows: CatchupSummaryRow[] | null,
+  t: Awaited<ReturnType<typeof getTranslations<"room">>>,
 ): { day: number; label?: string }[] {
   if (!rows || rows.length === 0) {
-    return [{ day: 23, label: "first" }];
+    return [{ day: 23, label: t("catchup.markerFirst") }];
   }
   // Map the last four catchups onto the timeline figure's 1..23 axis
   // as evenly-spaced markers — the timeline grammar is reused only
@@ -380,6 +375,6 @@ function catchupMarkers(
   const max = Math.max(rows.length, 4);
   return rows.slice(0, 4).map((r, i) => ({
     day: Math.round(((i + 1) / max) * 23),
-    label: `w${r.week_number}`,
+    label: t("catchup.markerWeek", { week: r.week_number }),
   }));
 }

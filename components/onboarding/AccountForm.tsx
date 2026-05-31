@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useFormStatus } from "react-dom";
+import { useTranslations } from "next-intl";
 import Checkbox from "@/components/ui/Checkbox";
 import Field from "@/components/ui/Field";
 import Input from "@/components/ui/Input";
@@ -10,22 +11,30 @@ import Select from "@/components/ui/Select";
 import InlineError from "@/components/ui/InlineError";
 import { initiateAccount } from "@/app/onboarding/account/actions";
 import { MAX_BIRTH_YEAR } from "@/lib/onboarding/schema";
+import { LOCALES } from "@/lib/i18n/locales";
 
 type Props = {
   defaultName: string;
   prefilledFromGoogle: boolean;
   defaultBirthYear: string;
   defaultGender: string;
+  /** Current resolved locale — the language field defaults to this. */
+  defaultLocale: string;
   errorField?: string;
   errorKind?: string;
 };
 
+const LOCALE_OPTIONS = LOCALES.map((l) => ({
+  value: l.code,
+  label: l.autonym,
+}));
+
 const GENDER_OPTIONS = [
-  { value: "male", label: "Male" },
-  { value: "female", label: "Female" },
-  { value: "non_binary", label: "Non-binary" },
-  { value: "prefer_not_to_say", label: "Prefer not to say" },
-];
+  { value: "male", labelKey: "account.gender.male" },
+  { value: "female", labelKey: "account.gender.female" },
+  { value: "non_binary", labelKey: "account.gender.nonBinary" },
+  { value: "prefer_not_to_say", labelKey: "account.gender.preferNotToSay" },
+] as const;
 
 const MIN_AGE_OFFSET = 13;
 const MAX_AGE_OFFSET = 100;
@@ -35,13 +44,22 @@ export default function AccountForm({
   prefilledFromGoogle,
   defaultBirthYear,
   defaultGender,
+  defaultLocale,
   errorField,
   errorKind,
 }: Props) {
+  const t = useTranslations("onboarding");
   const [name, setName] = useState(defaultName);
   const [year, setYear] = useState(defaultBirthYear);
   const [gender, setGender] = useState<string | null>(defaultGender || null);
+  const [locale, setLocale] = useState(defaultLocale);
   const [terms, setTerms] = useState(false);
+
+  const genderOptions = useMemo(
+    () =>
+      GENDER_OPTIONS.map((o) => ({ value: o.value, label: t(o.labelKey) })),
+    [t],
+  );
 
   const years = useMemo(() => {
     const out: { value: string; label: string }[] = [];
@@ -65,20 +83,20 @@ export default function AccountForm({
     <form action={initiateAccount} className="auth-form account-form" noValidate>
       {errorKind === "save_failed" ? (
         <InlineError>
-          Couldn&apos;t save that. Try again in a moment.
+          {t("account.saveFailed")}
         </InlineError>
       ) : null}
 
       <Field
         id="acc-name"
-        label="NAME"
+        label={t("account.nameLabel")}
         hint={
           prefilledFromGoogle ? (
-            <span className="mono">prefilled from Google · editable</span>
+            <span className="mono">{t("account.prefilledHint")}</span>
           ) : undefined
         }
         error={
-          showFieldError("full_name") ? "Name is required." : undefined
+          showFieldError("full_name") ? t("account.nameRequired") : undefined
         }
       >
         <Input
@@ -96,9 +114,9 @@ export default function AccountForm({
 
       <Field
         id="acc-year"
-        label="YEAR OF BIRTH"
+        label={t("account.yearLabel")}
         error={
-          showFieldError("birth_year") ? "Select a year." : undefined
+          showFieldError("birth_year") ? t("account.yearRequired") : undefined
         }
       >
         <Select
@@ -116,15 +134,15 @@ export default function AccountForm({
 
       <Field
         asFieldset
-        label="GENDER"
+        label={t("account.genderLabel")}
         error={
-          showFieldError("gender") ? "Pick one." : undefined
+          showFieldError("gender") ? t("account.genderRequired") : undefined
         }
       >
         <RadioGroup
           name="gender"
-          legend="Gender"
-          options={GENDER_OPTIONS}
+          legend={t("account.genderLabel")}
+          options={genderOptions}
           value={gender}
           onChange={setGender}
         />
@@ -133,31 +151,41 @@ export default function AccountForm({
         <input type="hidden" name="gender" value={gender ?? ""} />
       </Field>
 
+      <Field id="acc-locale" label={t("account.languageLabel")}>
+        <Select
+          id="acc-locale"
+          name="locale"
+          options={LOCALE_OPTIONS}
+          value={locale}
+          onChange={(e) => setLocale(e.target.value)}
+        />
+      </Field>
+
       <div className="auth-field onb-field terms-field">
         <Checkbox
           name="terms_accepted"
           checked={terms}
           onChange={setTerms}
         >
-          I accept the{" "}
+          {t("account.termsBefore")}{" "}
           <a
             href="/legal/terms"
             target="_blank"
             rel="noreferrer"
             className="auth-rowlink terms-link"
           >
-            Terms
+            {t("account.termsLink")}
           </a>{" "}
-          and{" "}
+          {t("account.termsAnd")}{" "}
           <a
             href="/legal/privacy"
             target="_blank"
             rel="noreferrer"
             className="auth-rowlink terms-link"
           >
-            Privacy Policy
+            {t("account.privacyLink")}
           </a>
-          .
+          {t("account.termsAfter")}
         </Checkbox>
       </div>
 
@@ -167,6 +195,7 @@ export default function AccountForm({
 }
 
 function SubmitButton({ disabled }: { disabled: boolean }) {
+  const t = useTranslations("onboarding");
   const { pending } = useFormStatus();
   return (
     <button
@@ -175,7 +204,7 @@ function SubmitButton({ disabled }: { disabled: boolean }) {
       disabled={disabled || pending}
       aria-busy={pending || undefined}
     >
-      <span>Initiate account</span>
+      <span>{t("account.submit")}</span>
       {pending ? (
         <em className="auth-submit-pending">…</em>
       ) : (

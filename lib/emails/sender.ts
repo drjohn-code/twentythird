@@ -133,6 +133,28 @@ export type BrandEmailShellInput = {
   };
   /** Optional Inter 13px paragraph below the figure footer. */
   securityNote?: string;
+  /**
+   * Optional localized overrides for the shell's own chrome — the few
+   * strings the shell hardcodes in English. Each field defaults to its
+   * current English value when absent, so the shell stays
+   * backward-compatible for any caller that omits `chrome`.
+   *
+   * The institution names ("CognitiveLab, WelloWork AB", "CognitiveLab ·
+   * WelloWork AB", "© TwentyThird · CognitiveLab") are NOT localizable —
+   * they are do-not-translate marks and stay hardcoded.
+   */
+  chrome?: {
+    /** Italic word before the fallback URL preamble (currently "or"). */
+    orWord?: string;
+    /** Preamble after the italic word (currently "paste this link into your browser:"). */
+    fallbackPreamble?: string;
+    /** Mono label under the institutional closer (currently "ATTENDING INSTITUTION"). */
+    attendingInstitution?: string;
+    /** Italic tagline in the footer (currently "Psychodynamic AI for the inner life."). */
+    tagline?: string;
+    /** Mono footer note (currently "Sent by automated system · do not reply"). */
+    automatedFooter?: string;
+  };
 };
 
 /**
@@ -171,6 +193,7 @@ export function brandEmailShell(input: BrandEmailShellInput): string {
     figureFooter,
     securityNote,
     note,
+    chrome,
   } = input;
 
   return `<!DOCTYPE html>
@@ -231,7 +254,7 @@ export function brandEmailShell(input: BrandEmailShellInput): string {
                 </tr>
                 ${note ? renderNote(note) : ""}
                 ${cta ? renderCta(cta) : ""}
-                ${fallbackUrl ? renderFallback(fallbackUrl) : ""}
+                ${fallbackUrl ? renderFallback(fallbackUrl, chrome) : ""}
                 <tr>
                   <td style="padding: 56px 0 32px 0; font-size:0; line-height:0;">
                     <div style="height:1px; background-color:#1a1a1c; line-height:1px; font-size:1px;">&nbsp;</div>
@@ -239,11 +262,11 @@ export function brandEmailShell(input: BrandEmailShellInput): string {
                 </tr>
                 ${renderFigureFooter(figureFooter)}
                 ${securityNote ? renderSecurityNote(securityNote) : ""}
-                ${renderInstitutionalCloser()}
+                ${renderInstitutionalCloser(chrome)}
               </table>
             </td>
           </tr>
-          ${renderFooter()}
+          ${renderFooter(chrome)}
         </table>
       </td>
     </tr>
@@ -343,11 +366,17 @@ function renderNote(note: { italicText: string }): string {
   </tr>`;
 }
 
-function renderFallback(url: string): string {
+function renderFallback(
+  url: string,
+  chrome?: BrandEmailShellInput["chrome"],
+): string {
+  const orWord = chrome?.orWord ?? "or";
+  const fallbackPreamble =
+    chrome?.fallbackPreamble ?? "paste this link into your browser:";
   return `<tr>
     <td style="padding-top: 24px; padding-bottom: 8px;">
       <div style="font-family: 'Inter', -apple-system, sans-serif; font-size:13px; line-height:1.6; color:#6a6a72;">
-        <span style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; color:#a0a0a6;">or</span> paste this link into your browser:
+        <span style="font-family:'Instrument Serif', Georgia, serif; font-style:italic; color:#a0a0a6;">${escapeHtml(orWord)}</span> ${escapeHtml(fallbackPreamble)}
       </div>
     </td>
   </tr>
@@ -381,17 +410,26 @@ function renderSecurityNote(note: string): string {
   </tr>`;
 }
 
-function renderInstitutionalCloser(): string {
-  // Always rendered. No prop. The institution signs every email.
+function renderInstitutionalCloser(
+  chrome?: BrandEmailShellInput["chrome"],
+): string {
+  // Always rendered. The institution signs every email. The institution
+  // NAME ("CognitiveLab, WelloWork AB") is do-not-translate and stays
+  // hardcoded; only the "ATTENDING INSTITUTION" label localizes.
+  const attendingInstitution =
+    chrome?.attendingInstitution ?? "ATTENDING INSTITUTION";
   return `<tr>
     <td style="padding-top: 40px;">
       <div style="font-family: 'Instrument Serif', Georgia, serif; font-style:italic; font-size:15px; line-height:1.5; color:#a0a0a6;">CognitiveLab, WelloWork AB</div>
-      <div style="padding-top: 8px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#6a6a72;">ATTENDING INSTITUTION</div>
+      <div style="padding-top: 8px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#6a6a72;">${escapeHtml(attendingInstitution)}</div>
     </td>
   </tr>`;
 }
 
-function renderFooter(): string {
+function renderFooter(chrome?: BrandEmailShellInput["chrome"]): string {
+  const tagline = chrome?.tagline ?? "Psychodynamic AI for the inner life.";
+  const automatedFooter =
+    chrome?.automatedFooter ?? "Sent by automated system · do not reply";
   return `<tr>
     <td style="padding: 0 40px 48px 40px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -413,7 +451,7 @@ function renderFooter(): string {
           </td>
         </tr>
         <tr>
-          <td style="padding-top: 14px; font-family: 'Instrument Serif', Georgia, serif; font-style:italic; font-size:15px; color:#a0a0a6; line-height:1.5;">Psychodynamic AI for the inner life.</td>
+          <td style="padding-top: 14px; font-family: 'Instrument Serif', Georgia, serif; font-style:italic; font-size:15px; color:#a0a0a6; line-height:1.5;">${escapeHtml(tagline)}</td>
         </tr>
         <tr>
           <td style="padding-top: 14px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.04em; color:#6a6a72; text-transform:uppercase;">CognitiveLab &nbsp;·&nbsp; WelloWork AB</td>
@@ -430,7 +468,7 @@ function renderFooter(): string {
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="footer-cols">
               <tr>
                 <td valign="top" style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.04em; color:#6a6a72; text-transform:uppercase; white-space:nowrap;">&copy; TwentyThird &nbsp;·&nbsp; CognitiveLab</td>
-                <td valign="top" align="right" style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.04em; color:#6a6a72; text-transform:uppercase; white-space:nowrap;">Sent by automated system &nbsp;·&nbsp; do not reply</td>
+                <td valign="top" align="right" style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size:11px; letter-spacing:0.04em; color:#6a6a72; text-transform:uppercase; white-space:nowrap;">${escapeHtml(automatedFooter)}</td>
               </tr>
             </table>
           </td>

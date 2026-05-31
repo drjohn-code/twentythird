@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // AcceptInviteActions — the three hairline-bordered selectable rows
 // shown on /invite/<token>. Each row reveals a small inline state to
@@ -20,6 +21,7 @@ type Props = {
 
 export default function AcceptInviteActions({ token, inviterFirstName }: Props) {
   const router = useRouter();
+  const t = useTranslations("invite");
   const [open, setOpen] = useState<Action | null>(null);
   const [firstName, setFirstName] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -29,7 +31,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
     setError(null);
 
     if (action !== "decline" && firstName.trim().length === 0) {
-      setError("a first name lets the analyst address you correctly.");
+      setError(t("actions.errors.missingFirstName"));
       return;
     }
 
@@ -47,7 +49,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
           const data = (await res.json().catch(() => null)) as
             | { error?: string }
             | null;
-          setError(humanError(data?.error));
+          setError(humanError(data?.error, t));
           return;
         }
         if (action === "decline") {
@@ -60,7 +62,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
         }
         router.refresh();
       } catch {
-        setError("could not submit.");
+        setError(t("actions.errors.generic"));
       }
     });
   }
@@ -75,7 +77,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
         onClick={() => setOpen("accept-account")}
       >
         <span className="invite-action-label">
-          yes — begin the relationship intake
+          {t("actions.acceptAccountLabel")}
         </span>
         <span aria-hidden="true">→</span>
       </button>
@@ -89,7 +91,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
             setOpen(null);
             setError(null);
           }}
-          submitLabel="begin"
+          submitLabel={t("actions.beginLabel")}
           isPending={isPending}
           error={error}
         />
@@ -103,7 +105,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
         onClick={() => setOpen("accept")}
       >
         <span className="invite-action-label">
-          yes — connect without an account
+          {t("actions.acceptLabel")}
         </span>
         <span aria-hidden="true">→</span>
       </button>
@@ -117,7 +119,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
             setOpen(null);
             setError(null);
           }}
-          submitLabel="continue"
+          submitLabel={t("actions.continueLabel")}
           isPending={isPending}
           error={error}
         />
@@ -128,14 +130,13 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
         className={"invite-action" + (open === "decline" ? " is-open" : "")}
         onClick={() => setOpen("decline")}
       >
-        <span className="invite-action-label">no, thank you</span>
+        <span className="invite-action-label">{t("actions.declineLabel")}</span>
         <span aria-hidden="true">→</span>
       </button>
       {open === "decline" ? (
         <div className="invite-action-confirm">
           <p className="invite-action-confirm-line">
-            this closes the invite. nothing further is sent or stored about
-            you.
+            {t("actions.declineConfirmLine")}
           </p>
           {error ? <p className="invite-action-error">{error}</p> : null}
           <div className="invite-action-actions">
@@ -148,7 +149,7 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
               }}
               disabled={isPending}
             >
-              back
+              {t("actions.back")}
             </button>
             <button
               type="button"
@@ -156,7 +157,11 @@ export default function AcceptInviteActions({ token, inviterFirstName }: Props) 
               onClick={() => submit("decline")}
               disabled={isPending}
             >
-              <span>{isPending ? "closing…" : "decline the invite"}</span>
+              <span>
+                {isPending
+                  ? t("actions.declineClosing")
+                  : t("actions.declineConfirm")}
+              </span>
               <span aria-hidden="true">→</span>
             </button>
           </div>
@@ -185,10 +190,11 @@ function NameForm({
   isPending: boolean;
   error: string | null;
 }) {
+  const t = useTranslations("invite");
   return (
     <div className="invite-action-confirm">
       <label className="invite-action-label-field" htmlFor="invite-first-name">
-        <span className="eyebrow">YOUR FIRST NAME</span>
+        <span className="eyebrow">{t("actions.firstNameLabel")}</span>
         <input
           id="invite-first-name"
           type="text"
@@ -198,12 +204,11 @@ function NameForm({
           onChange={(e) => onChange(e.target.value)}
           maxLength={60}
           autoFocus
-          aria-label="Your first name"
+          aria-label={t("actions.firstNameAria")}
         />
       </label>
       <p className="invite-action-confirm-sub">
-        {inviterFirstName} will only see this first name on their
-        connection list.
+        {t("actions.firstNameSub", { name: inviterFirstName })}
       </p>
       {error ? <p className="invite-action-error">{error}</p> : null}
       <div className="invite-action-actions">
@@ -213,7 +218,7 @@ function NameForm({
           onClick={onCancel}
           disabled={isPending}
         >
-          back
+          {t("actions.back")}
         </button>
         <button
           type="button"
@@ -221,7 +226,7 @@ function NameForm({
           onClick={onSubmit}
           disabled={isPending}
         >
-          <span>{isPending ? "one moment…" : submitLabel}</span>
+          <span>{isPending ? t("actions.oneMoment") : submitLabel}</span>
           <span aria-hidden="true">→</span>
         </button>
       </div>
@@ -229,19 +234,22 @@ function NameForm({
   );
 }
 
-function humanError(code: string | undefined | null): string {
+function humanError(
+  code: string | undefined | null,
+  t: (key: string) => string,
+): string {
   switch (code) {
     case "invite_not_found":
-      return "this invite link is not recognised.";
+      return t("actions.errors.notFound");
     case "invite_expired":
-      return "this invite has expired. ask the inviter to send a new one.";
+      return t("actions.errors.expired");
     case "invite_declined":
-      return "this invite was already declined.";
+      return t("actions.errors.declined");
     case "invite_ended":
-      return "this invite is no longer active.";
+      return t("actions.errors.ended");
     case "missing_first_name":
-      return "a first name is required.";
+      return t("actions.errors.missingFirstNameRequired");
     default:
-      return "could not submit.";
+      return t("actions.errors.generic");
   }
 }

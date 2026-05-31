@@ -1,38 +1,37 @@
+import { getTranslations } from "next-intl/server";
 import Glass from "@/components/ui/Glass";
 import CTA from "@/components/ui/CTA";
 import SaveExitModalTrigger from "@/components/onboarding/SaveExitModal";
 import { INTAKE_INTRO_PATH } from "@/lib/onboarding/routing";
 
 /** Screen 2 — the long-form brief panel before step 1. */
-export default function IntroPanel() {
+export default async function IntroPanel() {
+  const t = await getTranslations("onboarding");
   return (
     <Glass className="intro-panel">
       <div className="vh">
         <span className="lhs">
-          <span>THE BRIEF</span> <em>read once, then begin</em>
+          <span>{t("brief.title")}</span> <em>{t("brief.hint")}</em>
         </span>
         <span className="mono">Fig. 00</span>
       </div>
       <div className="intro-body">
         <p className="intro-opener serif-i">
-          The wrong answers — the hesitations, the typos, the skips —
-          speak as clearly as the right ones.
+          {t("brief.opener")}
         </p>
         <p className="intro-graf">
-          Everything you write is private. Nothing leaves this room.
+          {t("brief.privacy")}
         </p>
         <p className="intro-graf">
-          Because the work is deep, the intake is long. We have split
-          it into ten parts. The whole thing takes about two hours.
+          {t("brief.length")}
         </p>
         <p className="intro-graf">
-          Save and continue another day. Edit any section after you
-          finish it — the profile keeps listening.
+          {t("brief.resume")}
         </p>
       </div>
       <div className="intro-divider" aria-hidden="true" />
       <div className="intro-actions">
-        <CTA href={`${INTAKE_INTRO_PATH}/1`}>Begin intake</CTA>
+        <CTA href={`${INTAKE_INTRO_PATH}/1`}>{t("brief.begin")}</CTA>
         <SaveExitModalTrigger />
       </div>
     </Glass>

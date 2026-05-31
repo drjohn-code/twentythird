@@ -1,103 +1,83 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { LEGAL_EFFECTIVE_DATE } from "../../../lib/legal";
 
-export const metadata: Metadata = {
-  title: "Terms of Service — TwentyThird",
-  description:
-    "The agreement governing your use of TwentyThird. Written to be read, not avoided.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("marketing.legal.terms");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
-export default function TermsPage() {
+export default async function TermsPage() {
+  const t = await getTranslations("marketing.legal.terms");
   return (
     <article className="legal-article" id="terms">
       <section className="legal-section">
-        <div className="legal-eyebrow">TERMS</div>
+        <div className="legal-eyebrow">{t("eyebrow")}</div>
         <h2>
-          The agreement, <em>stated plainly.</em>
+          {t("headingLead")} <em>{t("headingItalic")}</em>
         </h2>
         <p className="legal-lede">
-          These terms govern your use of TwentyThird. They are written to be
-          read, not avoided.
+          {t("lede")}
         </p>
 
         <div className="legal-sub">
           <h3>
-            The <em>service</em>
+            {t("service.headingLead")} <em>{t("service.headingItalic")}</em>
           </h3>
           <p>
-            TwentyThird is a psychodynamic AI platform operated by WelloWork AB.
-            It provides analytical insight drawn from what you share. It is not
-            a medical device. It does not constitute psychotherapy, psychiatric
-            diagnosis, or clinical treatment. If you are in psychological
-            distress, please contact a qualified clinician or an emergency
-            service.
+            {t("service.p1")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Your <em>account</em>
+            {t("account.headingLead")} <em>{t("account.headingItalic")}</em>
           </h3>
           <p>
-            You must be 18 or older to use TwentyThird. You are responsible for
-            maintaining the confidentiality of your credentials. You may not
-            share your account or use the platform on behalf of another person
-            without their explicit consent.
+            {t("account.p1")}
           </p>
           <p>
-            You own the content you create — your journal entries, your
-            responses. By submitting them, you grant WelloWork AB a limited
-            licence to process them for the purposes described in the Privacy
-            Policy. You may export or delete your content at any time.
+            {t("account.p2")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Acceptable <em>use</em>
+            {t("acceptableUse.headingLead")}{" "}
+            <em>{t("acceptableUse.headingItalic")}</em>
           </h3>
           <p>
-            You may use TwentyThird for lawful personal and professional
-            self-exploration. You may not use it to harm yourself or others, to
-            attempt to circumvent the platform&rsquo;s safety systems, to
-            reverse-engineer the underlying models, or to train competing AI
-            systems.
+            {t("acceptableUse.p1")}
           </p>
           <p>
-            We reserve the right to suspend or terminate accounts that violate
-            these terms, without prior notice where required for safety.
+            {t("acceptableUse.p2")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Our <em>liability</em>
+            {t("liability.headingLead")} <em>{t("liability.headingItalic")}</em>
           </h3>
           <p>
-            TwentyThird provides insight, not certainty. We do not warrant that
-            the analysis is accurate, complete, or appropriate for your
-            circumstances. To the extent permitted by Swedish law, our liability
-            is limited to the amount you paid in the 3 months preceding the
-            relevant claim.
+            {t("liability.p1")}
           </p>
           <p>
-            Nothing in these terms limits liability for death or personal injury
-            caused by our negligence, or for fraud.
+            {t("liability.p2")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Governing law and <em>disputes</em>
+            {t("disputes.headingLead")} <em>{t("disputes.headingItalic")}</em>
           </h3>
           <p>
-            These terms are governed by Swedish law. Disputes that cannot be
-            resolved directly are referred to the courts of Uppsala, Sweden, as
-            the court of first instance.
+            {t("disputes.p1")}
           </p>
           <p>
-            If you are a consumer in the EU, you also have access to the EU
-            Online Dispute Resolution platform at{" "}
+            {t("disputes.p2Lead")}{" "}
             <a
               href="https://ec.europa.eu/consumers/odr"
               className="legal-link"
@@ -106,21 +86,19 @@ export default function TermsPage() {
             >
               ec.europa.eu/consumers/odr
             </a>
-            .
+            {t("disputes.p2Tail")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            <em>Changes</em>
+            <em>{t("changes.headingItalic")}</em>
           </h3>
           <p>
-            We may update these terms. Continued use after the effective date of
-            a material change constitutes acceptance. We notify material changes
-            by email at least 14 days in advance.
+            {t("changes.p1")}
           </p>
           <p className="legal-effective">
-            Effective: {LEGAL_EFFECTIVE_DATE}
+            {t("changes.effectivePrefix")} {LEGAL_EFFECTIVE_DATE}
           </p>
         </div>
       </section>

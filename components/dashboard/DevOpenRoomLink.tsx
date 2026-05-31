@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // TEMP: dev-only shortcut to open the Room without waiting for the
 // 2-hour cron. Remove before launch (along with /api/dev/open-room
@@ -9,6 +10,7 @@ import { useRouter } from "next/navigation";
 
 export default function DevOpenRoomLink() {
   const router = useRouter();
+  const t = useTranslations("room");
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState(false);
 
@@ -45,14 +47,12 @@ export default function DevOpenRoomLink() {
         disabled={pending}
         aria-busy={pending || undefined}
       >
-        <span className="dev-open-room-prefix mono">dev ·</span>
-        <span>{pending ? "opening…" : "open the room now"}</span>
+        <span className="dev-open-room-prefix mono">{t("pending.devPrefix")} ·</span>
+        <span>{pending ? t("pending.devOpening") : t("pending.devOpen")}</span>
         <span aria-hidden="true">→</span>
       </button>
       {error ? (
-        <p className="dev-open-room-error serif-i">
-          could not open the room — check the console.
-        </p>
+        <p className="dev-open-room-error serif-i">{t("pending.devError")}</p>
       ) : null}
     </div>
   );

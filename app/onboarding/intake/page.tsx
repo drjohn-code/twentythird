@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Reveal from "@/components/layout/Reveal";
 import ScrollToTop from "@/components/layout/ScrollToTop";
@@ -32,14 +33,16 @@ export default async function IntakeIntroPage() {
     redirect(`/onboarding/intake/${next}`);
   }
 
+  const t = await getTranslations("onboarding");
+
   return (
     <main className="intake-intro-shell">
       <ScrollToTop />
       <div className="intake-intro-inner">
         <Reveal as="div" className="intake-intro-head">
-          <Eyebrow>INTAKE · NO WRONG ANSWERS</Eyebrow>
+          <Eyebrow>{t("intro.eyebrow")}</Eyebrow>
           <h1 className="serif intake-intro-headline">
-            There are no right answers <em>here</em>.
+            {t("intro.headlineBefore")} <em>{t("intro.headlineItalic")}</em>.
           </h1>
         </Reveal>
         <Reveal as="div" className="intake-intro-panel-wrap">

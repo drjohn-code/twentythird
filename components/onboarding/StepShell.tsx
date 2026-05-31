@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/layout/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
 import StepProgress from "@/components/onboarding/StepProgress";
@@ -24,19 +25,28 @@ type StepShellProps = {
 };
 
 /** Two-column chrome around a single step. Server-rendered shell + client form island. */
-export default function StepShell({
+export default async function StepShell({
   step,
   initialPayload,
   completedThrough,
 }: StepShellProps) {
   const isLast = step.number === TOTAL_STEPS;
+  const t = await getTranslations("onboarding");
+  const ti = await getTranslations("intake");
+
+  // Localized display copy resolved by stable step slug. Structure (the
+  // italic flag + segment order) still comes from the lib `step.headline`;
+  // only the rendered text is pulled from the catalog.
+  const headlineText = ti.raw(`steps.${step.slug}.headline`) as string[];
+  const stepEyebrow = ti(`steps.${step.slug}.eyebrow`);
+  const stepLede = ti(`steps.${step.slug}.lede`);
 
   return (
     <main className="step-shell">
       <div className="step-shell-mobile-progress">
         <span className="mono">
-          STEP {String(step.number).padStart(2, "0")} / {TOTAL_STEPS} ·{" "}
-          {topicFromEyebrow(step.eyebrow)}
+          {t("step.label")} {String(step.number).padStart(2, "0")} /{" "}
+          {TOTAL_STEPS} · {topicFromEyebrow(stepEyebrow)}
         </span>
         <div className="step-shell-mobile-bar" aria-hidden="true">
           <div
@@ -58,13 +68,13 @@ export default function StepShell({
             completedThrough={completedThrough}
           />
           <div className="step-shell-side-meta mono">
-            STEP {String(step.number).padStart(2, "0")} OF {TOTAL_STEPS} ·{" "}
-            ~{step.estMinutes} MIN
+            {t("step.label")} {String(step.number).padStart(2, "0")}{" "}
+            {t("step.of")} {TOTAL_STEPS} · ~{step.estMinutes} {t("step.min")}
           </div>
         </aside>
 
         <Reveal as="section" className="step-shell-content">
-          <Eyebrow className="step-eyebrow">{step.eyebrow}</Eyebrow>
+          <Eyebrow className="step-eyebrow">{stepEyebrow}</Eyebrow>
           <h2
             className={[
               "serif step-headline",
@@ -75,18 +85,18 @@ export default function StepShell({
           >
             {step.headline.map((seg, i) =>
               seg.italic ? (
-                <em key={i}>{seg.text}</em>
+                <em key={i}>{headlineText[i] ?? seg.text}</em>
               ) : (
-                <span key={i}>{seg.text}</span>
+                <span key={i}>{headlineText[i] ?? seg.text}</span>
               ),
             )}
           </h2>
           {isLast ? (
             <p className="step-epigraph serif-i">
-              the last question is always the first one again.
+              {t("step.finalEpigraph")}
             </p>
           ) : null}
-          <p className="step-lede">{step.lede}</p>
+          <p className="step-lede">{stepLede}</p>
 
           <StepForm
             key={`${step.number}:${payloadFingerprint(initialPayload)}`}

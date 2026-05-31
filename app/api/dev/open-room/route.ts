@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 import { firstNameFrom } from "@/lib/connections";
 import { sendRoomReadyEmail } from "@/lib/emails/room-ready";
+import { localeForUser } from "@/lib/emails/locale";
 
 // POST /api/dev/open-room
 //
@@ -85,6 +86,7 @@ export async function POST(): Promise<NextResponse> {
     to: user.email!,
     firstName,
     roomUrl: `${siteUrl}/room`,
+    locale: await localeForUser(admin, user.id),
   });
 
   // Seal any pending room_ready scheduled_emails row for this user so

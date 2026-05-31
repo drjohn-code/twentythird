@@ -10,6 +10,7 @@ import {
   type KeyboardEvent,
 } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { sayItAffordance } from "@/lib/copy";
 
 // ────────────────────────────────────────────────────────────────────
@@ -60,6 +61,7 @@ export default function SessionView({
   softMaxSeconds,
 }: Props) {
   const router = useRouter();
+  const t = useTranslations("consulting");
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const transcriptRef = useRef<HTMLDivElement | null>(null);
   const inputId = useId();
@@ -315,7 +317,7 @@ export default function SessionView({
       <div className="session-topbar">
         <div
           className="session-timer"
-          aria-label="session time elapsed"
+          aria-label={t("timerAria")}
           aria-hidden={!session || undefined}
         >
           <span
@@ -330,7 +332,7 @@ export default function SessionView({
             onClick={() => void onClose()}
             disabled={closing}
           >
-            <span>{closing ? "closing" : "close the session"}</span>
+            <span>{closing ? t("closing") : t("closeSessionLabel")}</span>
             <span aria-hidden="true">→</span>
           </button>
         ) : null}
@@ -341,7 +343,7 @@ export default function SessionView({
 
       {/* Topic rows — selectable hairline-bordered options */}
       {!session ? (
-        <ul className="session-topics" aria-label="choose a topic">
+        <ul className="session-topics" aria-label={t("chooseTopicAria")}>
           {TOPICS.map((t) => (
             <li key={t}>
               <button
@@ -368,10 +370,10 @@ export default function SessionView({
           {topic ? (
             <span className="session-meta-topic">{topic.toLowerCase()}</span>
           ) : (
-            <span className="session-meta-topic">no topic</span>
+            <span className="session-meta-topic">{t("noTopic")}</span>
           )}
           <span className="session-meta-dot">·</span>
-          <span className="session-meta-time">{formatElapsed(elapsedSeconds)}</span>
+          <span className="session-meta-time">{formatElapsed(elapsedSeconds, t)}</span>
         </div>
       ) : null}
 
@@ -404,7 +406,7 @@ export default function SessionView({
             className="vh-legend"
             style={{ position: "absolute", left: -9999 }}
           >
-            speak to the analyst
+            {t("speakToAnalyst")}
           </label>
           <textarea
             id={inputId}
@@ -422,14 +424,14 @@ export default function SessionView({
             className="session-say"
             onClick={() => void onSubmit()}
             disabled={!draft.trim() || busy || closing}
-            aria-label="send"
+            aria-label={t("send")}
           >
             {sayItAffordance}
           </button>
         </div>
       ) : (
         <p className="session-closed-foot">
-          the session is closed. it has been kept in the case file.
+          {t("sessionClosedFoot")}
         </p>
       )}
     </div>
@@ -458,12 +460,15 @@ function TurnLine({ turn }: { turn: Turn }) {
 // Formatting helpers
 // ────────────────────────────────────────────────────────────────────
 
-function formatElapsed(totalSeconds: number): string {
+function formatElapsed(
+  totalSeconds: number,
+  t: (key: string, values?: Record<string, string>) => string,
+): string {
   const safe = Math.max(0, Math.floor(totalSeconds));
   const minutes = Math.floor(safe / 60);
-  if (minutes < 1) return "just opened";
-  if (minutes === 1) return "01 min in";
-  return `${String(minutes).padStart(2, "0")} min in`;
+  if (minutes < 1) return t("justOpened");
+  if (minutes === 1) return t("minutesIn", { count: "01" });
+  return t("minutesIn", { count: String(minutes).padStart(2, "0") });
 }
 
 // ────────────────────────────────────────────────────────────────────

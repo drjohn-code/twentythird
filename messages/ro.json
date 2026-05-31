@@ -1,0 +1,2900 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "INTELIGENȚĂ PSIHODINAMICĂ",
+        "titleLine1": "Avansat",
+        "titleLine2Pre": "AI",
+        "titleLine2It": "Psihodinamic",
+        "titleLine3Pre": "pentru",
+        "titleLine3It": "Auto-Descoperire",
+        "ctaPrimary": "Începeți-vă descoperirea",
+        "ctaGhostOr": "sau",
+        "ctaGhostText": "citiți studiul științific",
+        "scroll": "derulați"
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIE DE BAZĂ",
+        "titlePre": "Remediile de 5 minute nu",
+        "titleIt": "schimbă pe nimeni",
+        "sub1": "Efectuăm o analiză a cauzelor profunde. Prin fuzionarea perspectivelor fundamentale ale lui Sigmund Freud cu descoperirile lui Jacques Lacan în lingvistică, *dorință* și identitate.",
+        "sub2": "Majoritatea instrumentelor lucrează la suprafață. Noi lucrăm acolo unde a fost scris — în arhitectura limbajului, în lapsusurile vorbirii, în tiparele pe care nu le-ați numit încă.",
+        "metaLineageLabel": "Liniaj",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metodă",
+        "metaMethodVal": "Structurală",
+        "metaFocusLabel": "Focalizare",
+        "metaFocusVal": "Inconștientul"
+      },
+      "privacy": {
+        "eyebrow": "CONFIDENȚIALITATE",
+        "titlePre": "Confidențialitatea datelor este",
+        "titleIt": "prioritatea",
+        "titlePost": "principală.",
+        "lede": "Confidențialitatea nu este o funcționalitate aici; este precondiția pentru profunzime. Oamenii vorbesc liber doar acolo unde se simt în siguranță — așadar, camera este construită pentru a păstra protejat ceea ce spui.",
+        "rowTag": "Măsuri de siguranță",
+        "rowTitlePre": "O cameră construită pentru a",
+        "rowTitleIt": "păstra",
+        "rowTitlePost": "ceea ce spui.",
+        "rowBody": "Lucrarea solicită materialul tău cel mai puțin apărat. Camera este construită pentru a-l primi în confidențialitate și a-l păstra închis oricui nu i-a fost destinat.",
+        "figLabel": "Gestionarea datelor",
+        "figSubtitle": "poziție verticală",
+        "listProcessingKey": "procesare",
+        "listProcessingVal": "Fiecare intrare este procesată triplu-orb.",
+        "listEncryptionKey": "criptare",
+        "listEncryptionVal": "Toate datele sunt criptate.",
+        "listProtectionKey": "protecție",
+        "listProtectionVal": "Păstrate sub cea mai înaltă protecție disponibilă.",
+        "footKey": "Scop",
+        "footVal": "un loc liniștit și sigur pentru a vorbi profund"
+      },
+      "process": {
+        "eyebrow": "CUM FUNCȚIONEAZĂ",
+        "titlePre": "Patru pași,",
+        "titleIt": "un cerc în expansiune",
+        "lede": "Comunicarea se adâncește în patru mișcări. Fiecare lărgește ceea ce sistemul poate citi — de la o singură preluare la o conversație continuă.",
+        "step1Sub": "profilare profundă",
+        "step1TitlePre": "O",
+        "step1TitleIt": "preluare în 10 pași",
+        "step1TitlePost": ".",
+        "step1Body": "Creați-vă contul și completați o preluare în 10 pași. Aceasta este etapa de profilare profundă; prima lectură este construită în întregime din ceea ce ați consemnat aici.",
+        "step2Sub": "mediat, niciodată reciproc",
+        "step2TitlePre": "Persoanele care",
+        "step2TitleIt": "vă modelează",
+        "step2Body": "Adăugați persoanele care vă modelează, fiecare după rol — partener, cel mai bun prieten, părinte, frate, co-părinte. Ceea ce ei împărtășesc nu vă este niciodată vizibil; ceea ce dumneavoastră împărtășiți nu le este niciodată vizibil lor. Doar sistemul citește ambele.",
+        "step3Sub": "lectura săptămânală",
+        "step3TitlePre": "Catchup-ul",
+        "step3TitleIt": "de duminică",
+        "step3Body": "Duminică seara, spuneți-ne ce s-a întâmplat în timpul săptămânii și cum v-ați simțit trăind-o. Fiecare Catchup rafinează lectura — imaginea se clarifică pe măsură ce săptămânile se acumulează.",
+        "step4Sub": "complet privat",
+        "step4TitlePre": "Camera",
+        "step4TitleIt": "de Consultanță",
+        "step4Body": "Discutați într-o consultație complet privată cu analistul — o voce care vă cunoaște mai bine decât oricine, antrenată pe 23 de straturi de modele AI de frontieră."
+      },
+      "brain": {
+        "eyebrow": "MECANISMUL",
+        "titleLine1": "Deconstruirea",
+        "titleLine2": "subconștientului tău",
+        "state1Tag": "Cartografierea Tiparelor",
+        "state1TitlePre": "Bucle",
+        "state1TitleIt": "subconștiente",
+        "state1TitlePost": "și recurență.",
+        "state1Body": "Urmărim ciclurile recurente în alegerile tale, anxietățile relaționale și declanșatorii emoționali. Prin identificarea acestor bucle, îți arătăm exact unde intențiile tale conștiente sunt deturnate de programarea inconștientă.",
+        "state2Tag": "Profilare",
+        "state2TitlePre": "Profilare",
+        "state2TitleIt": "psihodinamică",
+        "state2TitlePost": "de profunzime.",
+        "state2Body": "Depășește testele superficiale de personalitate. Aceasta este o scanare structurală a dinamicii tale psihologice — cartografiind modul în care experiențele tale trecute îți modelează identitatea actuală, ego-ul și mecanismele de apărare.",
+        "state3Tag": "Limbaj",
+        "state3TitlePre": "Explorarea",
+        "state3TitleIt": "inconștientului lingvistic",
+        "state3TitlePost": ".",
+        "state3Body": "Înrădăcinată în teoria lacaniană, inteligența noastră artificială analizează asocierile tale de cuvinte, pauzele și tiparele de vorbire. Te ajutăm să citești printre rândurile propriilor gânduri pentru a accesa anxietățile și dorințele ascunse pe care nu le-ai putut încă exprima."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMĂ",
+        "titleLine1": "Rupe ciclul,",
+        "titleLine2": "Apoi rescrie-l.",
+        "lede": "Trei mișcări în lucrare. Trei locuri unde intuiția devine schimbare.",
+        "row1Tag": "Relațional",
+        "row1TitlePre": "Vindecă-ți",
+        "row1TitleIt": "dinamica relațională",
+        "row1TitlePost": ".",
+        "row1Body": "Același factor de atracție te trage spre același tip de persoană, aceeași ceartă, aceeași retragere. Scoatem la suprafață tiparul de-a lungul anilor, îl numim și îl privim cum își pierde gravitația.",
+        "row1Link": "Citește studiul de caz",
+        "row1FigLabel": "Subiect 1149-A",
+        "row1FigSubtitle": "tipar longitudinal",
+        "row1Outcome": "s-a retras",
+        "row1SummaryRecurrenceKey": "recurență",
+        "row1SummaryIntervalKey": "interval",
+        "row1SummaryAttractorKey": "atractor",
+        "row1SummaryAttractorVal": "prag de intimitate",
+        "row2Tag": "Lucrul cu visele",
+        "row2TitlePre": "Decodifică",
+        "row2TitleIt": "logica visului",
+        "row2TitlePost": ", aliniază obiectivele.",
+        "row2Body": "Visele tale sunt repetiții ale sensului. Urmărim gramatica lor — deplasările, condensările, lapsusurile — înapoi la decizia conștientă pe care încercau să o ia pentru tine.",
+        "row2Link": "Vezi un exemplu adnotat",
+        "row2FigLabel": "Sesiunea 06",
+        "row2FigSubtitle": "intrare vis, adnotată",
+        "row2Dream1Pre": "Sunt înapoi în casa părinților mei",
+        "row2Ann1": "scena primară",
+        "row2Dream1Mid": ", dar camerele continuă să se deschidă în alte camere",
+        "row2Ann2": "limita ego-ului",
+        "row2Dream2Pre": "Un bărbat cu vocea tatălui meu",
+        "row2Ann3": "imago-patern",
+        "row2Dream2Mid": "îmi întinde o cheie. Cheia se transformă în apă",
+        "row2Ann4": "deplasare",
+        "row2Dream3Pre": "Mă trezesc înainte să pot deschide ușa",
+        "row2Ann5": "dorință / lipsă",
+        "row2Key1": "scena primară",
+        "row2Key2": "limita ego-ului",
+        "row2Key3": "imago-patern",
+        "row2Key4": "deplasare",
+        "row2Key5": "dorință / lipsă",
+        "row3Tag": "Vocație",
+        "row3TitlePre": "Dizolvă",
+        "row3TitleIt": "blocajele profesionale",
+        "row3TitlePost": ".",
+        "row3Body": "Plafonul pe care îl tot atingi rareori ține de abilități. Este un scenariu — scris devreme, repetat în liniște — pe care te vom ajuta să-l citești cu voce tare și să-l rescrii, propoziție cu propoziție.",
+        "row3Link": "Lucrarea metodologică",
+        "row3FigLabel": "Revizuirea scenariului",
+        "row3FigSubtitle": "proiect de lucru",
+        "row3Line1Prefix": "01 · Nu sunt",
+        "row3Line1Old": "încă pregătit.",
+        "row3Line1New": "deja permis.",
+        "row3Line2Prefix": "02 · să",
+        "row3Line2Old": "îmi aștept rândul.",
+        "row3Line2New": "numesc ce vreau.",
+        "row3Line3Prefix": "03 · pentru că",
+        "row3Line3Old": "cineva ar putea fi dezamăgit.",
+        "row3Line3New": "dezamăgirea este și limbaj.",
+        "row3MetaOriginalPre": "original",
+        "row3MetaOriginalIt": "vârsta 11",
+        "row3MetaRevisedPre": "revizuit",
+        "row3MetaRevisedIt": "sesiunea 06"
+      },
+      "outcomes": {
+        "eyebrow": "REZULTATE",
+        "titleLine1Pre": "Intuiții",
+        "titleLine1It": "tangibile",
+        "titleLine2": "Măsurabile discret.",
+        "lede": "Conștientizare de sine bazată pe date, livrată în limbajul unui clinician — nu al unui chestionar.",
+        "row1Tag": "Accelerare",
+        "row1TitlePre": "Scurtătura",
+        "row1TitleIt": "supremă",
+        "row1TitlePost": "pentru terapia din lumea reală.",
+        "row1Body": "Ceea ce necesita o relație de mulți ani poate începe acum cu săptămâni de pregătire. Intrați în cabinetul terapeutului știind ce aveți de spus.",
+        "row1Link": "Vezi metodologia",
+        "row1FigSubtitle": "timp până la prima intuiție",
+        "row1TraditionalLabel": "Calea tradițională",
+        "row1AxisYr1": "an 1",
+        "row1AxisYr3": "an 3",
+        "row1AxisYr6": "an 6",
+        "row1AxisYr9": "an 9",
+        "row1AxisYr12": "an 12",
+        "row1TwentyThirdLabelPre": "Cu",
+        "row1AxisWk1": "săpt. 1",
+        "row1AxisWk4": "săpt. 4",
+        "row1AxisWk8": "săpt. 8",
+        "row1AxisWk12": "săpt. 12",
+        "row1SummaryFaster": "mai rapid",
+        "row1SummaryDesc": "timp până la prima intuiție",
+        "row2Tag": "Raport",
+        "row2TitlePre": "Hartă",
+        "row2TitleIt": "psihologică",
+        "row2TitlePost": "pentru terapeut.",
+        "row2Body": "O diagramă structurală a dumneavoastră — exportabilă, partajabilă, profund inteligibilă pentru un clinician antrenat. Nu un chestionar de personalitate; un rezumat de lucru.",
+        "row2Link": "Vezi un exemplu de raport",
+        "row2FigLabel": "Subiect 1149-A",
+        "row2FigSubtitle": "profil structural",
+        "row2RepCase": "cazul 1149-A",
+        "row2RepPrepared": "pregătit 04 · 26",
+        "row2MetricEgo": "Structura Eului",
+        "row2MetricObject": "Relații de obiect",
+        "row2MetricDefense": "Complexitatea apărărilor",
+        "row2MetricDrive": "Organizarea pulsiunilor",
+        "row2MetricSymbolic": "Registrul simbolic",
+        "row2FootLabel": "Structura dominantă",
+        "row2FootVal": "obsesională · cu urme isterice",
+        "row3Tag": "Integrare",
+        "row3TitlePre": "Integrare",
+        "row3TitleIt": "personalizată",
+        "row3TitlePost": "& planuri de lucru cu umbra.",
+        "row3Body": "Sugestii și ritualuri zilnice care transpun intuiția de pe pagină în corp. Mici, deliberate. Construite în jurul structurii dumneavoastră, nu al unui curriculum generic.",
+        "row3Link": "Cum se adaptează planul",
+        "row3FigLabel": "Ziua 23",
+        "row3FigSubtitle": "sugestie zilnică",
+        "row3FigPlan": "plan 04",
+        "row3Day": "Miercuri",
+        "row3PromptEyebrow": "sugestia de azi · lucru cu umbra",
+        "row3PromptPre": "Unde ați ales astăzi",
+        "row3PromptIt": "să nu",
+        "row3PromptPost": "fiți văzut? Și ce ați protejat ascunzându-vă?",
+        "row3Stream1Label": "exerciții de respirație",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "jurnal",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "sugestie umbră",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "serie",
+        "row3StreakVal": "{n, plural, one {# zi} few {# zile} other {# de zile}}"
+      },
+      "final": {
+        "eyebrow": "ÎNCEPEȚI",
+        "titlePre": "Inconștientul tău vorbește.",
+        "titleIt": "Este timpul să-l asculți.",
+        "ctaPrimary": "Începeți-vă descoperirea",
+        "ctaGhostOr": "sau",
+        "ctaGhostText": "citiți știința"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Politica de Confidențialitate — TwentyThird",
+        "metaDescription": "Cum gestionează TwentyThird datele personale. Nimic nu părăsește UE. Nimic nu este vândut.",
+        "eyebrow": "CONFIDENȚIALITATE",
+        "headingLead": "Date personale,",
+        "headingItalic": "gestionată cu grijă.",
+        "lede": "TwentyThird procesează ceea ce împărtășiți pentru a vă oferi o perspectivă psihodinamică precisă. Nimic nu părăsește UE. Nimic nu este vândut.",
+        "controls": {
+          "headingLead": "Cine",
+          "headingItalic": "controlează",
+          "headingTail": "datele dumneavoastră",
+          "p1": "WelloWork AB, înregistrată în Suedia (nr. org. 559472‑9997), operând din Uppsala, este operatorul de date pentru datele personale colectate pe acest site web și prin solicitări directe.",
+          "p2": "Pentru datele prelucrate în cadrul platformei TwentyThird în numele unei organizații — o clinică, o instituție de cercetare, un angajator — WelloWork AB acționează ca procesator, iar organizația client este operatorul. Această relație este guvernată de un Acord de Prelucrare a Datelor separat."
+        },
+        "figure": {
+          "label": "cine controlează datele dumneavoastră",
+          "controller": "Operator de date",
+          "directRelationship": "relație directă",
+          "websiteVisitor": "Vizitator al site-ului",
+          "you": "Dumneavoastră",
+          "customerOrg": "Organizația Client",
+          "viaDpa": "prin DPA",
+          "processor": "Persoană împuternicită de operator",
+          "platformUser": "Utilizator al platformei"
+        },
+        "collect": {
+          "headingLead": "Ce",
+          "headingItalic": "colectăm",
+          "contactStrong": "Date de contact și de cont.",
+          "contactBody": "Numele, adresa de e-mail și orice informații pe care le furnizați la înregistrare sau când ne scrieți. Temei juridic: executarea contractului (Art. 6(1)(b) GDPR).",
+          "sessionStrong": "Date de sesiune și de platformă.",
+          "sessionBody": "Înregistrări din jurnal, răspunsuri, conținut oniric și tipare lingvistice pe care le partajați în cadrul TwentyThird. Acesta este substratul analizei. Temei juridic: consimțământ explicit (Art. 9(2)(a) GDPR), acordat la înrolare și revocabil în orice moment. Tratăm aceste date ca date de categorie specială, adiacente sănătății, și aplicăm garanții corespunzătoare, indiferent de clasificarea formală.",
+          "technicalStrong": "Date tehnice.",
+          "technicalBody": "Adresa IP, tipul de browser, identificatorii dispozitivului și marcajele temporale de utilizare — colectate automat la accesarea platformei. Temei juridic: interes legitim (Art. 6(1)(f) GDPR) pentru menținerea securității și diagnosticarea erorilor.",
+          "p4": "Nu colectăm date privind rasa, etnia, opiniile politice sau convingerile religioase. Dacă conținutul pe care îl partajați dezvăluie incidental astfel de informații, acestea nu sunt prelucrate ca o categorie distinctă."
+        },
+        "use": {
+          "headingLead": "Cum o",
+          "headingItalic": "utilizăm",
+          "headingTail": "noi",
+          "p1": "Utilizăm datele dumneavoastră pentru a livra și îmbunătăți serviciul TwentyThird, pentru a trimite mesaje tranzacționale solicitate, pentru a detecta și preveni frauda sau abuzul și pentru a respecta obligațiile legale.",
+          "p2": "Nu utilizăm datele dumneavoastră pentru profilare publicitară. Nu le vindem, nu le licențiem și nu le partajăm cu brokeri de date. Nu le utilizăm pentru a antrena modele AI de uz general operate de terți."
+        },
+        "sees": {
+          "headingLead": "Cine",
+          "headingItalic": "vede",
+          "headingTail": "datele",
+          "withinStrong": "În cadrul WelloWork AB:",
+          "withinBody": "Clinicieni și ingineri care necesită acces pentru a menține serviciul. Accesul este restricționat pe roluri și înregistrat.",
+          "infraStrong": "Furnizori de infrastructură:",
+          "infraBody": "Supabase (bază de date și autentificare, regiunea UE), Vercel ( găzduire, margine UE) și Postmark (e-mail tranzacțional). Fiecare este legat de un Acord de Prelucrare a Datelor și prelucrează datele numai conform instrucțiunilor noastre documentate.",
+          "legalStrong": "Obligație legală:",
+          "legalBody": "Divulgăm date autorităților competente numai atunci când este cerut de lege și numai în măsura necesară.",
+          "p4": "Nicio dată nu este transferată în afara UE/SEE. Dacă acest lucru se modifică, vom actualiza această politică și vom obține un nou consimțământ acolo unde este necesar."
+        },
+        "retention": {
+          "headingItalic": "Retenție",
+          "p1": "Datele contului și ale platformei sunt reținute atâta timp cât contul dumneavoastră este activ, plus 30 de zile după ștergere pentru a permite recuperarea. Jurnalele tehnice sunt reținute timp de 90 de zile. Solicitările de contact sunt reținute timp de 24 de luni.",
+          "p2": "După aceste perioade, datele sunt șterse permanent sau anonimizate ireversibil."
+        },
+        "rights": {
+          "headingLead": "Drepturile",
+          "headingItalic": "dumneavoastră",
+          "p1": "Aveți dreptul de a accesa datele pe care le deținem despre dumneavoastră, de a corecta inexactitățile, de a solicita ștergerea, de a restricționa sau de a vă opune prelucrării și de a primi o copie lizibilă automat pentru portabilitate. Atunci când prelucrarea se bazează pe consimțământ, îl puteți retrage în orice moment, fără a afecta legalitatea prelucrării efectuate înainte de retragere.",
+          "exerciseLead": "Pentru a exercita orice drept:",
+          "exerciseTail": ". Răspundem în termen de 30 de zile. Dacă sunteți nemulțumit de răspunsul nostru, puteți depune o plângere la Integritetsskyddsmyndigheten (IMY), autoritatea suedeză pentru protecția datelor."
+        },
+        "children": {
+          "headingItalic": "Copii",
+          "p1": "TwentyThird nu se adresează persoanelor sub 18 ani. Nu colectăm cu bună știință date de la minori. Dacă aflăm că un minor a trimis date, le ștergem prompt."
+        },
+        "changes": {
+          "headingItalic": "Modificări",
+          "p1": "Actualizăm această politică atunci când practicile noastre se modifică. Modificările substanțiale sunt notificate prin e-mail cu cel puțin 14 zile înainte de a intra în vigoare. Data versiunii apare în partea de jos a acestei pagini.",
+          "effectivePrefix": "În vigoare de la:",
+          "effectiveSuffix": "· Legea aplicabilă: legislația suedeză și GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Termeni și condiții — TwentyThird",
+        "metaDescription": "Acordul care reglementează utilizarea TwentyThird. Scris pentru a fi citit, nu evitat.",
+        "eyebrow": "TERMENI",
+        "headingLead": "Acordul,",
+        "headingItalic": "expus clar.",
+        "lede": "Acești termeni guvernează utilizarea TwentyThird. Sunt scriși pentru a fi citiți, nu evitați.",
+        "service": {
+          "headingLead": "Serviciul",
+          "headingItalic": "serviciu",
+          "p1": "TwentyThird este o platformă AI psihodinamică operată de WelloWork AB. Oferă o perspectivă analitică derivată din ceea ce partajați. Nu este un dispozitiv medical. Nu constituie psihoterapie, diagnostic psihiatric sau tratament clinic. Dacă vă aflați în suferință psihologică, vă rugăm să contactați un clinician calificat sau un serviciu de urgență."
+        },
+        "account": {
+          "headingLead": "Contul",
+          "headingItalic": "dumneavoastră",
+          "p1": "Trebuie să aveți 18 ani sau mai mult pentru a utiliza TwentyThird. Sunteți responsabil pentru menținerea confidențialității credențialelor dumneavoastră. Nu puteți partaja contul dumneavoastră sau utiliza platforma în numele altei persoane fără consimțământul explicit al acesteia.",
+          "p2": "Dețineți conținutul pe care îl creați — înregistrările din jurnalul dumneavoastră, răspunsurile dumneavoastră. Prin trimiterea acestora, acordați WelloWork AB o licență limitată de a le prelucra în scopurile descrise în Politica de confidențialitate. Puteți exporta sau șterge conținutul dumneavoastră în orice moment."
+        },
+        "acceptableUse": {
+          "headingLead": "Utilizare",
+          "headingItalic": "acceptabilă",
+          "p1": "Puteți utiliza TwentyThird pentru autoexplorare personală și profesională legală. Nu îl puteți utiliza pentru a vă dăuna dumneavoastră sau altora, pentru a încerca să eludați sistemele de siguranță ale platformei, pentru a inversa ingineria modelelor subiacente sau pentru a antrena sisteme AI concurente.",
+          "p2": "Ne rezervăm dreptul de a suspenda sau de a rezilia conturile care încalcă acești termeni, fără notificare prealabilă, acolo unde este necesar pentru siguranță."
+        },
+        "liability": {
+          "headingLead": "Responsabilitatea",
+          "headingItalic": "noastră",
+          "p1": "TwentyThird oferă perspectivă, nu certitudine. Nu garantăm că analiza este exactă, completă sau adecvată circumstanțelor dumneavoastră. În măsura permisă de legislația suedeză, responsabilitatea noastră este limitată la suma pe care ați plătit-o în cele 3 luni premergătoare cererii relevante.",
+          "p2": "Nimic din acești termeni nu limitează responsabilitatea pentru deces sau vătămări corporale cauzate de neglijența noastră sau pentru fraudă."
+        },
+        "disputes": {
+          "headingLead": "Legislația aplicabilă și",
+          "headingItalic": "litigiile",
+          "p1": "Acești termeni sunt guvernați de legislația suedeză. Litigiile care nu pot fi soluționate direct sunt trimise instanțelor din Uppsala, Suedia, ca instanță de primă instanță.",
+          "p2Lead": "Dacă sunteți consumator în UE, aveți acces și la platforma UE de soluționare online a litigiilor la",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Modificări",
+          "p1": "Putem actualiza acești termeni. Utilizarea continuă după data intrării în vigoare a unei modificări materiale constituie acceptare. Notificăm modificările materiale prin e-mail cu cel puțin 14 zile în avans.",
+          "effectivePrefix": "În vigoare de la:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Politica privind cookie-urile — TwentyThird",
+        "metaDescription": "TwentyThird utilizează cookie-uri doar pentru autentificare și persistența preferințelor. Fără cookie-uri publicitare. Fără trackere de la terți.",
+        "eyebrow": "COOKIE-URI",
+        "headingLead": "Ce stocăm",
+        "headingItalic": "în browserul dumneavoastră.",
+        "lede": "TwentyThird utilizează cookie-uri pentru autentificare și persistența preferințelor. Nu folosim cookie-uri publicitare și nici trackere de la terți.",
+        "whatIs": {
+          "headingLead": "Ce este un",
+          "headingItalic": "cookie",
+          "p1": "Un cookie este un fișier text mic stocat în browserul dumneavoastră. Le folosim pentru a vă menține conectat și pentru a reține preferința de temă (întunecată sau deschisă). Asta este tot."
+        },
+        "weSet": {
+          "headingLead": "Cookie-uri",
+          "headingItalic": "pe care le setăm",
+          "authBody": "— Setat de Supabase. Menține sesiunea autentificată. Expiră la deconectare sau după 7 zile de inactivitate. Strict necesar.",
+          "themeBody": "— Stochează preferința dumneavoastră pentru modul întunecat/deschis. Persistă până la ștergere. Funcțional.",
+          "p3": "Nu setăm cookie-uri publicitare. Nu încărcăm scripturi de urmărire de la terți — fără Google Analytics, fără Meta Pixel, fără etichete de marketing de niciun fel."
+        },
+        "choices": {
+          "headingLead": "Alegerile",
+          "headingItalic": "dumneavoastră",
+          "p1Lead": "Puteți șterge cookie-urile oricând prin setările browserului. Ștergerea",
+          "p1Mid": "vă va deconecta. Ștergerea",
+          "p1Tail": "va reseta afișajul la setarea implicită întunecată.",
+          "p2": "Nu folosim un banner de consimțământ pentru cookie-uri strict necesare sau funcționale conform Directivei ePrivacy, deoarece acestea nu necesită consimțământ. Dacă vom introduce în viitor cookie-uri neesențiale, vom obține consimțământul înainte de a le seta."
+        },
+        "contact": {
+          "headingItalic": "Contact",
+          "p1Lead": "Întrebări despre cookie-uri sau orice altă chestiune legată de date:",
+          "effectivePrefix": "În vigoare de la:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "PE ACEASTĂ PAGINĂ",
+        "privacyPolicy": "Politica de confidențialitate",
+        "termsOfService": "Termeni și condiții",
+        "cookiePolicy": "Politica privind cookie-urile"
+      },
+      "layout": {
+        "eyebrow": "JURIDIC",
+        "headingLead": "Documente juridice,",
+        "headingItalic": "expuse clar.",
+        "lede": "Politica de confidențialitate, termenii și condițiile de utilizare și politica de cookie-uri — reglementate de legislația suedeză și de GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "AI psihodinamic pentru viața interioară. O cameră liniștită pentru gândire profundă.",
+      "product": "Produs",
+      "discovery": "Descoperire",
+      "sampleReport": "Raport exemplu",
+      "integrationPlan": "Plan de integrare",
+      "company": "Companie",
+      "about": "Despre noi",
+      "contact": "Contact",
+      "manifesto": "Manifest",
+      "resources": "Resurse",
+      "science": "Știința",
+      "methodology": "Metodologie",
+      "methodPaper": "Lucrare metodologică",
+      "caseStudy": "Studiu de caz",
+      "dreamExample": "Exemplu de vis",
+      "legal": "Legal",
+      "privacy": "Confidențialitate",
+      "terms": "Termeni",
+      "cookies": "Cookie-uri",
+      "rights": "toate drepturile rezervate"
+    },
+    "about": {
+      "metaTitle": "Despre — TwentyThird",
+      "metaDescription": "Origine, metodă și inflexiunea la a douăzeci și treia zi. Construit în CognitiveLab la WelloWork AB.",
+      "hero": {
+        "eyebrow": "DESPRE",
+        "headingLead": "Origine, metodă și",
+        "headingItalic": "inflexiunea la a douăzeci și treia zi",
+        "lede": "TwentyThird este o inteligență artificială psihodinamică pentru auto-descoperire. Cartografiază buclele și structurile recurente de sub simptom — limbaj, atașament, repetiție — și returnează un rezumat de lucru, nu un chestionar.",
+        "figure": {
+          "label": "ziua-23",
+          "subtitle": "metafora inflexiunii",
+          "heading": "Arcul de 23 de zile",
+          "range": "curiozitate → conștientizare",
+          "markerInflection": "inflexiune",
+          "summaryLabel": "ziua în care întrebarea\nse întoarce spre interior"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIE",
+        "headingLead": "Corespondentul lui Freud. Numărul lui Fliess.",
+        "headingItalic": "Metafora noastră",
+        "tag": "Descendență",
+        "row": {
+          "headingPre": "Un",
+          "headingItalic": "ritm de 23 de zile",
+          "headingPost": "propus într-o scrisoare, păstrat ca figură.",
+          "para1": "Ciclul de 23 de zile a fost ipoteza lui Wilhelm Fliess, argumentată prin corespondența sa cu Freud la sfârșitul secolului al XIX-lea. Știința contemporană nu susține bioritmuri fixe.",
+          "para2": "Păstrăm numărul pentru ceea ce denumește — pragul la care curiozitatea se maturizează în conștientizare. Ziua-23 este o figură, nu biologie."
+        },
+        "figure": {
+          "label": "descendență",
+          "subtitle": "patru ancore",
+          "row1Outcome": "propunere",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "model structural",
+          "row3Duration": "Discursul de la Roma",
+          "row3Outcome": "cotitura lingvistică",
+          "row4Outcome": "sinteză",
+          "summary1Key": "interval",
+          "summary2Key": "fir",
+          "summary2Value": "structură",
+          "summary3Key": "metodă",
+          "summary3Value": "psihodinamică"
+        }
+      },
+      "origin": {
+        "eyebrow": "ORIGINE",
+        "headingLead": "Construit în CognitiveLab.",
+        "headingItalic": "A răspuns unei întrebări pe care o primeam constant",
+        "tag": "Echipă",
+        "row": {
+          "headingLead": "Medici, construind inițial",
+          "headingItalic": "antrenament cognitiv",
+          "para1": "TwentyThird a început în CognitiveLab la WelloWork AB, unde echipa dezvolta sisteme de antrenament cognitiv. Prieteni și colegi au început să aducă întrebări personale — anxietate, tipare recurente, buclele pe care nu le puteau numi.",
+          "para2": "Între practica clinică ca medici, datele pilot pe care le acumulam și o lungă listă de lecturi în psihanaliză și teoria lacaniană, aveam ceva de oferit. TwentyThird este ceea ce a devenit acel ceva."
+        },
+        "figure": {
+          "label": "echipă",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "pregătit 05 · 26",
+          "row1Key": "Practică clinică",
+          "row2Key": "Rezultate de cercetare",
+          "row3Key": "Subiecți în studiu pilot",
+          "row4Key": "Medici în echipă",
+          "footerLabel": "Profil",
+          "footerValue": "hibrid clinician–cercetător"
+        }
+      },
+      "method": {
+        "eyebrow": "METODĂ",
+        "headingLead": "Ce face de fapt",
+        "headingItalic": "modelul",
+        "tag": "Capabilități",
+        "row": {
+          "headingLead": "Sub simptom, o",
+          "headingItalic": "structură",
+          "para1": "TwentyThird efectuează o analiză a cauzelor fundamentale. Cartografiază <em>bucla subconștientă</em> de-a lungul anilor, citește <em>inconștientul lingvistic</em> în alegerea cuvintelor și lapsusuri, scoate la suprafață <em>atașamentul</em> la pragul intimității și scrie un plan de lucru pentru <em>munca cu umbra</em>.",
+          "para2": "Rezultatul este pregătit pentru terapeut. Denumește structura, nu suprafața."
+        },
+        "figure": {
+          "label": "simptom → structură",
+          "subtitle": "trei rescrieri",
+          "row1Prefix": "01 · suprafață",
+          "row1Old": "Amân munca importantă.",
+          "row1Next": "Evitarea de a fi văzut ca cel care știe.",
+          "row2Prefix": "02 · suprafață",
+          "row2Old": "Continuu să mă întâlnesc cu aceeași persoană.",
+          "row2Next": "Repetarea imago-ului patern la pragul intimității.",
+          "row3Prefix": "03 · suprafață",
+          "row3Old": "Nu pot termina nimic.",
+          "row3Next": "Refuzul de a renunța la poziția de potențial.",
+          "metaLeftLabel": "plângere",
+          "metaLeftValue": "prezentată",
+          "metaRightLabel": "lectură",
+          "metaRightValue": "structurală"
+        }
+      },
+      "final": {
+        "eyebrow": "CONTINUĂ",
+        "headingLead": "Citește metoda,",
+        "headingItalic": "sau începe",
+        "ctaPrimary": "Citește metoda",
+        "ctaGhostPrefix": "sau",
+        "ctaGhostText": "scrie-ne"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "CONTACT",
+        "heroHeadlineLead": "Scrieți-ne.",
+        "heroHeadlineItalic": "Cităm totul",
+        "heroLede": "Majoritatea mesajelor primesc răspuns în șaptezeci și două de ore. Solicitările clinice și de parteneriat au prioritate.",
+        "formCardLabel": "formular",
+        "formCardSubtitle": "doar întrebări substanțiale",
+        "addressLabel": "ADRESĂ",
+        "addressValue": "Rosendal, Uppsala, Suedia",
+        "emailLabel": "EMAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "ÎNCEPEȚI",
+        "finalHeadlineLead": "Sau pur și simplu",
+        "finalHeadlineItalic": "începeți",
+        "finalCta": "Începeți-vă descoperirea",
+        "finalGhostOr": "sau",
+        "finalGhostText": "citiți originea",
+        "disclaimer": "Pentru probleme urgente de sănătate mintală, vă rugăm să contactați serviciile de urgență locale sau un clinician licențiat. TwentyThird nu este un serviciu de criză."
+      },
+      "form": {
+        "successEyebrow": "PRIMIT",
+        "successHeadlineLead": "Nota dumneavoastră este",
+        "successHeadlineItalic": "la noi",
+        "successBody": "Vă vom răspunde în două zile lucrătoare.",
+        "nameLabel": "Nume",
+        "emailLabel": "Email",
+        "messageLabel": "Mesaj",
+        "submitSend": "Trimite",
+        "submitSending": "Se trimite",
+        "errorMessage": "ceva nu a mers bine · încercați din nou",
+        "submittingStatus": "Se trimite mesajul dumneavoastră."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologie — TwentyThird",
+      "metaDescription": "De la prima conversație la harta pregătită pentru terapeut. Cinci etape ale procesului TwentyThird.",
+      "hero": {
+        "eyebrow": "METODA",
+        "headingLead": "Săptămâni de pregătire,",
+        "headingItalic": "nu ani de căutare",
+        "lede": "Terapia funcționează. De asemenea, necesită timp pentru a ști de ce ești acolo. TwentyThird comprimă pregătirea — partea în care înveți ce spui de fapt — astfel încât ședința în sine să poată decurge mai rapid."
+      },
+      "pipeline": {
+        "eyebrow": "PROCESUL",
+        "headingLead": "Cinci etape, una",
+        "headingItalic": "scurtă",
+        "lede": "De la vorbirea eșantionată la un document de lucru pe care un clinician îl poate citi în opt minute.",
+        "stageLabel": "ETAPA",
+        "stage01": {
+          "name": "Eșantionare",
+          "blurb": "Voce și text din sesiuni ghidate. Modelul ascultă forma, nu conținutul.",
+          "label": "eșantionare",
+          "subtitle": "volum în cadrul cohortei",
+          "fig": {
+            "wordsSampled": "cuvinte eșantionate",
+            "sessions": "sesiuni",
+            "elapsed": "timp scurs",
+            "medianTurn": "durată mediană a intervenției"
+          }
+        },
+        "stage02": {
+          "nameLead": "Extracție",
+          "nameEm": "lingvistică",
+          "blurb": "Caracteristici pe care modelul le extrage din transcriere — discret, înainte de orice interpretare.",
+          "label": "extracție",
+          "subtitle": "clase de caracteristici",
+          "fig": {
+            "qualifierDensity": "densitatea calificativelor",
+            "modalVerbs": "verbe modale",
+            "conditionalFrame": "cadru condițional",
+            "affectiveHedges": "atenuări afective",
+            "slipsMisnamings": "lapsusuri · denumiri greșite",
+            "repetitionWindows": "ferestre de repetiție"
+          }
+        },
+        "stage03": {
+          "nameLead": "Detecția",
+          "nameEm": "recurenței",
+          "blurb": "Modelul care revine cu aceeași formă, în decenii diferite. Semnalul că ceva este structural.",
+          "label": "recurență",
+          "subtitle": "trei ancore ale unui model",
+          "fig": {
+            "row1": {
+              "durationLabel": "primul loc de muncă",
+              "outcome": "plafon la luna 9"
+            },
+            "row2": {
+              "durationLabel": "al doilea",
+              "outcome": "plafon la luna 11"
+            },
+            "row3": {
+              "durationLabel": "al treilea",
+              "outcome": "plafon la luna 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Reconstrucția",
+          "nameEm": "scenariului",
+          "blurb": "Propoziția de sub model. Linia veche, apoi o revizuire candidată pe care subiectul o poate repeta.",
+          "label": "reconstrucție",
+          "subtitle": "proiect de lucru",
+          "fig": {
+            "row1": {
+              "prefix": "Sunt",
+              "old": "încă nu pregătit.",
+              "next": "deja permis."
+            },
+            "row2": {
+              "prefix": "să",
+              "old": "aștept să fiu ales.",
+              "next": "numesc ceea ce vreau."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Harta pentru",
+          "nameEm": "clinician",
+          "blurb": "Trei indicatori etichetați și o lectură structurală de o singură linie. Opt minute de citit, săptămâni de utilizat.",
+          "label": "predare clinică",
+          "subtitle": "rezumat de lucru",
+          "fig": {
+            "casePrefix": "cazul",
+            "preparedPrefix": "pregătit",
+            "egoStructure": "Structura Eului",
+            "objectRelations": "Relațiile de obiect",
+            "symbolicRegister": "Registrul simbolic",
+            "footerLabel": "Lectură",
+            "footerValue": "obsesional · cu urme isterice"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "DOMENIU",
+        "headingLead": "Ce măsurăm și ce",
+        "headingItalic": "refuzăm",
+        "headingTail": "să măsurăm.",
+        "measureHead": "Ce măsurăm",
+        "refuseHead": "Ce nu măsurăm",
+        "measure": {
+          "languagePatterns": {
+            "k": "modele lingvistice",
+            "gloss": "Densitatea calificativelor, verbe modale, atenuări, cadre condiționale."
+          },
+          "recurrence": {
+            "k": "recurență",
+            "gloss": "Modele care revin cu aceeași formă de-a lungul anilor."
+          },
+          "narrativeCoherence": {
+            "k": "coerența narativă",
+            "gloss": "Cum este povestită o viață, unde se văd fisurile."
+          },
+          "attachmentMarkers": {
+            "k": "markeri de atașament",
+            "gloss": "Unde intimitatea depășește un prag, ce urmează."
+          },
+          "linguisticSlips": {
+            "k": "lapsusuri lingvistice",
+            "gloss": "Denumiri greșite, condensări, deplasări."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "categorii DSM / ICD",
+            "gloss": "Nozologia este un instrument separat, utilizat de clinicieni."
+          },
+          "iqCognition": {
+            "k": "IQ sau cogniție",
+            "gloss": "În afara domeniului de aplicare. Modelul este psihodinamic, nu psihometric."
+          },
+          "personalityTypes": {
+            "k": "tipuri de personalitate",
+            "gloss": "Modelul celor cinci factori și descendenții săi nu fac parte din brief."
+          },
+          "riskScores": {
+            "k": "scoruri de risc",
+            "gloss": "Riscul acut este o decizie a clinicianului, nu a unui model."
+          },
+          "predictions": {
+            "k": "predicții",
+            "gloss": "Structură, nu prognoză. Numim ceea ce este, nu ceea ce va veni."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Compresie",
+        "headingLead": "Intră știind ce să",
+        "headingItalic": "spui",
+        "body1": "Terapia nu este locul unde să afli întrebarea. Este locul unde să trăiești cu ea. Compresia pe care o oferim este pe abordare — lunile pe care un clinician le petrece de obicei ascultând forma brief-ului.",
+        "body2": "În cadrul cohortei pilot, subiecții pregătiți au atins alianța de lucru în mai puține sesiuni. Lectura era deja acolo.",
+        "figure": {
+          "label": "alianță",
+          "subtitle": "sesiuni mediane până la alianța de lucru",
+          "heading": "Timp până la alianța de lucru",
+          "range": "mediană în cohortă",
+          "markerUnprepared": "nepregătit",
+          "markerPrepared": "pregătit",
+          "summaryLabel": "mai puține sesiuni până la\nalianța de lucru"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "CONTINUĂ",
+        "headingLead": "Începe,",
+        "headingItalic": "sau vizualizează un raport eșantion",
+        "beginLabel": "Începe",
+        "or": "sau",
+        "ghostLabel": "vizualizează un raport eșantion"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRARE",
+        "headlineLead": "Intuiție, apoi",
+        "headlineItalic": "obișnuință",
+        "lede": "Denumirea unui tipar este doar prima mișcare. Planul este a doua — îndemnuri zilnice și mici ritualuri construite în jurul structurii dumneavoastră, nu un curriculum generic."
+      },
+      "week": {
+        "eyebrow": "O SĂPTĂMÂNĂ ÎN PLAN",
+        "headlineLead": "Șapte îndemnuri,",
+        "headlineItalic": "o structură",
+        "lede": "Reflectiv, întrupat, scris. Săptămâna respiră în jurul tiparului numit în raport, nu în jurul unui curriculum.",
+        "days": {
+          "mon": {
+            "day": "LUN",
+            "prompt": "„Unde ai ales astăzi <em>să nu</em> fii văzut?”",
+            "stream": {
+              "journal": "jurnal",
+              "shadowPrompt": "prompt-umbră"
+            }
+          },
+          "tue": {
+            "day": "MAR",
+            "prompt": "„Fă o plimbare fără un scop. Notează un lucru pe care aproape l-ai spus.”",
+            "stream": {
+              "walking": "plimbare",
+              "note": "notă"
+            }
+          },
+          "wed": {
+            "day": "MIE",
+            "prompt": "„Ce ai supra-calificat astăzi și care a fost propoziția <em>necalificată</em> de dedesubt?”",
+            "stream": {
+              "breathWork": "exerciții de respirație",
+              "journal": "jurnal",
+              "shadowPrompt": "prompt-umbră"
+            }
+          },
+          "thu": {
+            "day": "JOI",
+            "prompt": "„O scanare corporală de la gât în jos. Unde se află reținerea?”",
+            "stream": {
+              "bodyScan": "scanare corporală",
+              "note": "notă"
+            }
+          },
+          "fri": {
+            "day": "VIN",
+            "prompt": "„Scrie propoziția pe care ai fi spus-o dacă ți-ar fi fost deja permis.”",
+            "stream": {
+              "journal": "jurnal",
+              "rewrite": "rescriere"
+            }
+          },
+          "sat": {
+            "day": "SÂM",
+            "prompt": "„O plimbare lungă. Fără prompturi. Observă ce aduce înapoi tăcerea.”",
+            "stream": {
+              "walking": "plimbare",
+              "rest": "odihnă"
+            }
+          },
+          "sun": {
+            "day": "DUM",
+            "prompt": "„Recitește săptămâna. Ce rând era deja <em>adevărat</em>?”",
+            "stream": {
+              "review": "revizuire",
+              "note": "notă"
+            }
+          }
+        }
+      },
+      "days": {
+        "mon": {
+          "day": "LUN",
+          "prompt": "„Unde, astăzi, ați ales <em>să nu</em> fiți văzut?”",
+          "stream": {
+            "journal": "jurnal",
+            "shadowPrompt": "îndemn umbră"
+          }
+        },
+        "tue": {
+          "day": "MAR",
+          "prompt": "„Faceți o plimbare fără un scop anume. Notați un lucru pe care aproape l-ați spus.”",
+          "stream": {
+            "walking": "plimbare",
+            "note": "notă"
+          }
+        },
+        "wed": {
+          "day": "MIE",
+          "prompt": "„Ce ați supra-calificat astăzi și care a fost propoziția <em>necalificată</em> de dedesubt?”",
+          "stream": {
+            "breathWork": "exerciții de respirație",
+            "journal": "jurnal",
+            "shadowPrompt": "îndemn umbră"
+          }
+        },
+        "thu": {
+          "day": "JOI",
+          "prompt": "„O scanare corporală de la gât în jos. Unde se află reținerea?”",
+          "stream": {
+            "bodyScan": "scanare corporală",
+            "note": "notă"
+          }
+        },
+        "fri": {
+          "day": "VIN",
+          "prompt": "„Scrieți propoziția pe care ați fi spus-o dacă v-ar fi fost deja permis.”",
+          "stream": {
+            "journal": "jurnal",
+            "rewrite": "rescriere"
+          }
+        },
+        "sat": {
+          "day": "SÂM",
+          "prompt": "„O plimbare lungă. Fără îndemnuri. Observați ce aduce înapoi tăcerea.”",
+          "stream": {
+            "walking": "plimbare",
+            "rest": "odihnă"
+          }
+        },
+        "sun": {
+          "day": "DUM",
+          "prompt": "„Recitiți săptămâna. Care rând era deja <em>adevărat</em>?”",
+          "stream": {
+            "review": "revizuire",
+            "note": "notă"
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTARE",
+        "headlineLead": "Planul",
+        "headlineItalic": "se diminuează",
+        "tag": "Adaptare",
+        "rowHeadingLead": "Recurența săptămânii trecute stabilește",
+        "rowHeadingItalic": "densitatea",
+        "body": "Când intensitatea tiparului scade, îndemnurile se răresc. Când un tipar crește, îndemnurile revin. Scopul nu este aderența. Scopul este cel mai mic schelet de care structura mai are nevoie.",
+        "figure": {
+          "label": "densitatea îndemnurilor",
+          "subtitle": "săptămânile 1–8",
+          "heading": "Număr de îndemnuri · pe săptămână",
+          "range": "diminuându-se pe măsură ce recurența slăbește",
+          "markers": {
+            "wk1": "spt. 1",
+            "wk3": "spt. 3",
+            "wk5": "spt. 5",
+            "wk8": "spt. 8"
+          },
+          "summaryLabel": "mai puține îndemnuri\npână în spt. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "LUCRUL CU UMBRA",
+        "headlineLead": "Nu catarsis.",
+        "headlineItalic": "Vorbire",
+        "tag": "Umbră",
+        "rowHeadingLead": "Practica deliberată de a rosti ceea ce era",
+        "rowHeadingItalic": "inexprimabil",
+        "body": "Lucrul cu umbra, în acest context, nu este expunere. Nu este o purjare. Este practica lentă de a spune — mai întâi sieși — ceea ce fusese învățat să fie ținut nespuns. Trei rânduri înainte/după extrase din planuri reale.",
+        "figure": {
+          "label": "revizuiri ale umbrei",
+          "subtitle": "trei rânduri, schiță de lucru",
+          "rows": {
+            "r1": {
+              "prefix": "01 · către sine",
+              "old": "Nu merit asta.",
+              "next": "Nu am exersat încă să-mi doresc asta cu voce tare."
+            },
+            "r2": {
+              "prefix": "02 · către sine",
+              "old": "Ar fi trebuit să trec peste asta până acum.",
+              "next": "cronologia pe care am împrumutat-o nu era pentru acest tip de durere."
+            },
+            "r3": {
+              "prefix": "03 · către sine",
+              "old": "Sunt prea mult.",
+              "next": "Sunt exact volumul pentru care camera nu a fost construită."
+            }
+          },
+          "metaLeft": {
+            "label": "anterior",
+            "value": "spus despre sine"
+          },
+          "metaRight": {
+            "label": "acum",
+            "value": "spus sieși"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "CADRU",
+        "headlineLead": "Susținut de structură, nu de",
+        "headlineItalic": "curriculum",
+        "body1": "Un curriculum este un set de mișcări construite de un străin. O structură este forma pe care viața dumneavoastră particulară o ia. Planul este construit în raport cu aceasta din urmă. Fiecare îndemn este ancorat la o linie din raportul dumneavoastră — când linia se dizolvă, și îndemnul o face.",
+        "body2": "Nimic aici nu este menit să fie permanent. Planul este închiriat. Structura este a dumneavoastră.",
+        "closeout": "structura este a dumneavoastră · planul este închiriat"
+      },
+      "final": {
+        "eyebrow": "CONTINUAȚI",
+        "headlineLead": "Începeți,",
+        "headlineItalic": "sau citiți știința",
+        "beginCta": "Începeți",
+        "or": "sau",
+        "readScience": "citiți știința"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Știința — TwentyThird",
+        "description": "Un secol de teorie psihanalitică și patru decenii de cercetare empirică asupra tiparului, limbajului și inconștientului."
+      },
+      "hero": {
+        "eyebrow": "FUNDAȚIA",
+        "headlineLead": "Știința din spatele",
+        "headlineItalic": "ascultării",
+        "headlineTail": ".",
+        "lede": "TwentyThird se bazează pe un secol de teorie psihanalitică și patru decenii de cercetare empirică asupra tiparului, limbajului și inconștientului. Iată ce citim și de ce."
+      },
+      "lineages": {
+        "eyebrow": "DOUĂ LINII",
+        "headlineLead": "Structura lui Freud. ",
+        "headlineItalic": "Litera",
+        "headlineTail": " lui Lacan.",
+        "lede": "Două lecturi ale inconștientului, la o jumătate de secol distanță. Împreună, ele formează coloana vertebrală a metodei.",
+        "freud": {
+          "headlineLead": "Inconștientul",
+          "headlineItalic": "structural",
+          "headlineTail": ".",
+          "body1": "Contribuția durabilă a lui Freud este structurală, nu tematică. Inconștientul dinamic nu este un subsol de conținut uitat — este un organ funcțional al minții, care repetă, reia, transferă.",
+          "body2": "Îl citim ca pe un clinician al repetiției. Aceeași scenă apare în decenii diferite. Această recurență este semnalul pe care modelul este antrenat să-l găsească.",
+          "figure": {
+            "label": "recurență",
+            "subtitle": "cinci ancore, o structură",
+            "outcome": "retragere",
+            "rows": {
+              "anchor1": "adolescență timpurie",
+              "anchor2": "prima legătură lungă",
+              "anchor3": "a doua legătură lungă",
+              "anchor4": "a treia legătură",
+              "anchor5": "a patra legătură"
+            },
+            "summary": {
+              "recurrenceLabel": "recurență",
+              "intervalLabel": "interval",
+              "attractorLabel": "atractor",
+              "attractorValue": "prag de intimitate"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Inconștientul este structurat ca o",
+          "headlineItalic": "limbă",
+          "headlineTail": ".",
+          "body1Lead": "Lectura lui Lacan schimbă domeniul. Semnificantul se mișcă; sensul alunecă de-a lungul lanțurilor de metonimie și metaforă. Stadiul oglinzii numește falsa recunoaștere fondatoare.",
+          "body1Italic": "Dorința este dorința Celuilalt.",
+          "body2": "În procesul nostru, acest lucru este concret. Citim visele și vorbirea conștientă ca text — deplasările, condensările și lapsusurile poartă gramatica structurantă.",
+          "figure": {
+            "label": "semnal lingvistic",
+            "subtitle": "fragment de vis, adnotat",
+            "dreamLead": "„Camera în care locuiam în copilărie are o altă ușă de care nu-mi amintesc",
+            "ann1": "deplasare",
+            "dreamMid1": ". În spatele ei, vocea supervizorului meu",
+            "ann2": "condensare",
+            "dreamMid2": "mă strigă cu un nume greșit",
+            "ann3": "lapsus",
+            "dreamTail": ".”",
+            "key1": "deplasare",
+            "key2": "condensare",
+            "key3": "lapsus"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "ANCORĂRI EMPIRICE",
+        "headlineLead": "Ce adaugă cercetarea",
+        "headlineItalic": "contemporană",
+        "headlineTail": ".",
+        "lede": "Cinci direcții convergente din cercetarea atașamentului, narativă și de proces. Nu o bibliografie completă — ancorele pe care se bazează de fapt modelul.",
+        "figure": {
+          "label": "ancore empirice",
+          "subtitle": "dovezi convergente",
+          "caseLabel": "literatură · sinteză",
+          "prepared": "actualizat 04 · 26",
+          "rows": {
+            "attachment": "Continuitatea atașamentului de-a lungul deceniilor",
+            "alliance": "Alianța terapeutică ca predictor al rezultatului",
+            "narrative": "Coerența narativă și bunăstarea",
+            "relational": "Cunoaștere relațională implicită",
+            "script": "Teoria scenariului în blocajul vocațional"
+          },
+          "footerLabel": "Sinteză",
+          "footerValue": "dovezi convergente · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "CE NU PRETINDEM",
+        "headlineLead": "Marginile",
+        "headlineItalic": "oneste",
+        "headlineTail": " ale muncii.",
+        "claim1Strong": "Nu suntem un substitut pentru un terapeut.",
+        "claim1Body": "Modelul pregătește conversația. Nu o susține.",
+        "claim2Strong": "Nu suntem un instrument de diagnostic conform DSM sau ICD.",
+        "claim2Body": "Categoriile în care lucrăm sunt structurale — obsesionale, isterice, fobice — nu nosologice. Ele denumesc modul în care o persoană este organizată, nu ceea ce are.",
+        "claim3Strong": "Ciclul de 23 de zile este o metaforă.",
+        "claim3Body": "Numărul provine din corespondența lui Wilhelm Fliess cu Freud la sfârșitul secolului al XIX-lea. Știința contemporană nu susține bioritmuri fixe. Păstrăm numărul pentru ceea ce denumește — inflexiunea de la curiozitate la conștientizare."
+      },
+      "reading": {
+        "eyebrow": "LECTURĂ SUPLIMENTARĂ",
+        "headlineLead": "Raftul",
+        "headlineItalic": "din spatele",
+        "headlineTail": " modelului.",
+        "lede": "Cărți, nu articole. Cele la care ne întoarcem.",
+        "books": {
+          "book1": {
+            "title": "Dincolo de principiul plăcerii"
+          },
+          "book2": {
+            "title": "Interpretarea viselor"
+          },
+          "book4": {
+            "title": "Cele patru concepte fundamentale ale psihanalizei"
+          },
+          "book5": {
+            "title": "Atașamentul"
+          },
+          "book6": {
+            "title": "Reglarea afectului și originea sinelui"
+          },
+          "book7": {
+            "title": "Stând în spații"
+          },
+          "book8": {
+            "title": "Reglarea afectului, mentalizarea și dezvoltarea sinelui"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "CONTINUĂ",
+        "headlineLead": "Începe un profil",
+        "headlineItalic": "sau citește un caz",
+        "headlineTail": ".",
+        "ctaPrimary": "Începe un profil",
+        "ctaOr": "sau",
+        "ctaGhost": "citește un studiu de caz"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "aici din nou",
+      "greetingNamed": "aici din nou, {name}.",
+      "strengthen": "Consolidați acuratețea"
+    },
+    "reviewEdit": "Revizuire și editare",
+    "depth": {
+      "eyebrow": "ADÂNCIMEA LECTURII",
+      "overallEyebrow": "ADÂNCIMEA GENERALĂ A LECTURII",
+      "band": {
+        "deep": "lectura este profundă. mici ajustări de aici.",
+        "steady": "lectura se menține. Catchup-urile o vor ascuți.",
+        "partial": "lectura este parțială. mai este de oferit.",
+        "thin": "lectura este superficială. va schița o formă, nu încă o structură."
+      },
+      "explainer": "Adâncimea lecturii descrie cât de mult din dumneavoastră a avut acces lectura — din chestionarul inițial, din Catchup-urile săptămânale, din consultații și de la persoanele a căror prezență vă modelează. O lectură mai profundă nu înseamnă o persoană mai bună; înseamnă una mai precisă. O puteți aprofunda oricând sau o puteți lăsa așa cum este.",
+      "status": {
+        "low": "Scăzută",
+        "moderate": "Moderată",
+        "deep": "Precisă"
+      },
+      "statusLine": {
+        "low": "lectura este superficială. va schița o formă, nu încă o structură.",
+        "moderate": "lectura prinde contur. poate susține o ipoteză de lucru.",
+        "deep": "lectura este suficient de completă pentru a fundamenta lucrarea."
+      },
+      "source": {
+        "intake": "întrebările la care ați răspuns pentru a începe.",
+        "catchups": "verificări săptămânale care mențin lectura actuală.",
+        "sessions": "consultații mai lungi cu analistul.",
+        "connections": "persoane a căror prezență modelează lectura."
+      }
+    },
+    "latest": {
+      "eyebrow": "ULTIMA LECTURĂ",
+      "heading": "Șase lecturi <it>— și ce se schimbă.</it>",
+      "lede": "Cele șase lecturi sunt calculate pe baza chestionarului inițial și rafinate de fiecare Catchup, consultație și conexiune acceptată. Structura este stabilă; textura se mișcă.",
+      "strengthen": "consolidați datele pentru analiză",
+      "open": "deschideți lecturile"
+    },
+    "six": {
+      "eyebrow": "CELE ȘASE LECTURI",
+      "heading": "Ce se citește <it>în tine, chiar acum.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUP-URI",
+      "figSubtitle": "săptămânile recente",
+      "timelineHeading": "fereastră",
+      "timelineRange": "ultimele 4 săptămâni",
+      "timelineSummary": "catchup-uri în fereastră",
+      "eyebrow": "CATCHUP SĂPTĂMÂNAL",
+      "heading": "Așează-te cu săptămâna. <it>Apoi privim din nou.</it>",
+      "lede": "Opt întrebări scurte. Sinceritatea este mai bună decât lungimea. Răspunsurile rafinează lectura.",
+      "completed": "finalizat — citește rezumatul",
+      "cta": "Deschide catchup-ul acestei săptămâni",
+      "markerFirst": "primul",
+      "markerWeek": "s{week}"
+    },
+    "consulting": {
+      "eyebrow": "CAMERA DE CONSULTAȚII",
+      "heading": "O oră cu <it>analistul.</it>",
+      "ledeSubscribed": "Deschisă oricând săptămâna apasă. Camera își amintește ce ați spus deja.",
+      "ledeUnsubscribed": "Abonații pot intra în camera de consultații — o sesiune extinsă cu analistul, menținută în același ton ca și lecturile dumneavoastră.",
+      "cta": "Intrați în camera de consultații",
+      "figLabel": "ULTIMA SESIUNE",
+      "figSubtitle": "întrebare reținută",
+      "lastQuestion": "„visul de marți — doriți să reveniți la el?”"
+    },
+    "subscribe": {
+      "eyebrow": "CONSULTING ROOM · CONFIRMĂ",
+      "title": "Acces în camera de consultații<it>.</it>",
+      "ledePrice": "Abonamentul este",
+      "ledePerMonth": "pe lună",
+      "ledeIncludes": ". Include camera de consultații, posibilitatea de a invita până la {count} {count, plural, one {conexiune} few {conexiuni} other {conexiuni}} și un raport clinic în fiecare lună calendaristică.",
+      "ledeBilling": "Facturarea este gestionată de Stripe. Anulează oricând din setări — accesul continuă până la sfârșitul perioadei.",
+      "canceled": "<i>plata a fost închisă.</i> nu a fost percepută nicio sumă. poți reveni mai jos când ești pregătit.",
+      "checkoutCta": "Continuă la plată",
+      "returnLink": "revino la camera de consultații"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "RAPORT CLINIC",
+        "subscribedTitle": "Deja <it>inclus.</it>",
+        "subscribedLede": "Abonamentul include un raport clinic în fiecare lună calendaristică. Generați-l din partea de jos a paginii de lecturi — nu este necesară plata.",
+        "eyebrow": "RAPORT CLINIC · CONFIRMARE",
+        "title": "Raportul clinic<it>.</it>",
+        "ledePrice": "Un raport clinic unic costă",
+        "ledeDossier": ". Un dosar de 12–18 pagini cu toate cele douăsprezece lecturi, în limbajul utilizat de un clinician.",
+        "ledeBilling": "Facturarea este gestionată de Stripe. Rapoartele pot fi regenerate pe măsură ce lectura se aprofundează; abonații primesc unul în fiecare lună calendaristică fără o taxă separată.",
+        "depthNotice": "<i>raportul va reflecta profunzimea disponibilă.</i> poate fi regenerat pe măsură ce lectura se aprofundează.",
+        "canceled": "<i>plata a fost închisă.</i> nu s-a perceput nicio taxă.",
+        "checkoutCta": "Continuă la plată",
+        "returnLink": "înapoi la lecturi"
+      },
+      "status": {
+        "eyebrow": "RAPORT CLINIC",
+        "line": {
+          "queued": "raportul dumneavoastră este în pregătire.",
+          "generating": "raportul este în curs de redactare.",
+          "ready": "raportul este gata.",
+          "failed": "raportul nu a fost finalizat. vom încerca din nou în scurt timp."
+        },
+        "open": "deschide raportul",
+        "back": "înapoi la lecturi"
+      },
+      "queued": {
+        "eyebrow": "RAPORT CLINIC",
+        "line": "raportul dumneavoastră este în pregătire — vă vom trimite un email când va fi gata.",
+        "back": "înapoi la lecturi"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAKE",
+        "title": "Intake-ul, <it>subiect cu subiect.</it>",
+        "lede": "Zece secțiuni. Deschide oricare pentru a revizui sau a aprofunda răspunsurile din ea. Intake-ul nu este un formular unic — răspunsurile pot fi revizuite oricând."
+      },
+      "step": {
+        "eyebrow": "INTAKE",
+        "backToAll": "înapoi la toate secțiunile"
+      },
+      "failed": {
+        "eyebrow": "INTAKE — INCOMPLET",
+        "headline": "Lectura <em>nu a fost finalizată</em>.",
+        "lede": "Intake-ul dumneavoastră este înregistrat. Analiza care a urmat nu s-a încheiat.",
+        "retry": "Reluați lectura",
+        "retryPending": "Se reia"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · ÎN PROCESARE",
+      "headline": "Profilul dumneavoastră este <em>în curs de lectură</em>.",
+      "lede": "rulam acum răspunsurile dumneavoastră prin modelele psihodinamice. prima trecere durează de obicei aproximativ 2 ore. vă vom scrie când lucrarea este gata, iar camera se va deschide.",
+      "figIntake": "INTAKE",
+      "figSubmitted": "trimis la {date}",
+      "rowResponses": "Răspunsuri primite",
+      "rowPattern": "Extracția tiparelor",
+      "rowSynthesis": "Sinteza profilului",
+      "statusInProgress": "în curs",
+      "statusQueued": "în așteptare",
+      "foot": "vă vom scrie când lucrarea este gata",
+      "returnCta": "reveniți la camera liniștită",
+      "devPrefix": "dev",
+      "devOpening": "se deschide…",
+      "devOpen": "deschide camera acum",
+      "devError": "nu s-a putut deschide camera — verificați consola."
+    }
+  },
+  "invite": {
+    "eyebrow": "INVITĂ",
+    "safetyFooter": "TwentyThird nu înlocuiește îngrijirea clinică. În caz de criză, contactați linia de urgență locală.",
+    "notReady": {
+      "headline": "Sistemul de invitații este în curs de <it>pregătire.</it>",
+      "body": "Vă rugăm să încercați din nou în scurt timp."
+    },
+    "notFound": {
+      "headline": "Acest link <it>nu este recunoscut.</it>",
+      "body": "Dacă linkul a venit recent dintr-un e-mail, invitația ar fi putut fi retrimisă. Deschideți cel mai recent e-mail pentru linkul activ."
+    },
+    "alreadyDeclined": {
+      "headline": "Această invitație a fost <it>refuzată.</it>",
+      "body": "Nu se mai solicită nimic de la dumneavoastră. {name} nu va fi notificat în plus față de ceea ce vede deja."
+    },
+    "alreadyAccepted": {
+      "headline": "Ați <it>acceptat deja.</it>",
+      "body": "Dacă chestionarul de relație nu este încă finalizat, puteți continua mai jos.",
+      "continueLink": "continuați chestionarul de relație"
+    },
+    "ended": {
+      "headline": "Această conexiune s-a <it>încheiat.</it>",
+      "body": "Linkul nu mai este activ. Înregistrarea relației rămâne în dosarul cazului, dar nu mai informează lectura."
+    },
+    "expired": {
+      "headline": "Această invitație a <it>expirat.</it>",
+      "body": "Invitațiile expiră la paisprezece zile după trimitere. Rugați-l pe {name} să vă trimită una nouă dacă doriți să răspundeți."
+    },
+    "declined": {
+      "headline": "A fost <it>primit.</it>",
+      "body": "Nu este necesar nimic altceva din partea dumneavoastră. Invitația este închisă; invitantul vede discret modificarea stării. Puteți închide această fereastră."
+    },
+    "live": {
+      "eyebrow": "CERERE DE CONEXIUNE",
+      "headline": "{name} v-a invitat în <it>lectura sa.</it>",
+      "lede": "TwentyThird este un instrument editorial-clinic — o cameră liniștită unde structura vieții interioare a cuiva este citită cu atenție și redată într-un limbaj pe care un clinician îl poate folosi.",
+      "explainerOne": "O <em>conexiune</em> nu este un cont partajat. {name} nu vă va vedea lecturile, sesiunile sau dosarul de caz. Dumneavoastră nu le veți vedea pe ale sale. Ceea ce spuneți despre relație alimentează modelul care produce lectura lui {name}.",
+      "explainerTwo": "Dacă doriți o lectură proprie, prima cale de mai jos inițiază și propriul dumneavoastră cont. Calea de mijloc vă permite să contribuiți la lectura lui {name} fără un cont. Ambele sunt permise.",
+      "metaSentTo": "trimis către",
+      "metaInviteAs": "invită ca",
+      "metaReceived": "primit",
+      "metaExpiresIn": "expiră în {count, plural, one {# zi} other {# zile}}"
+    },
+    "intake": {
+      "eyebrow": "CHESTIONAR DE RELAȚIE",
+      "notReady": {
+        "headline": "Chestionarul este în <it>pregătire.</it>",
+        "body": "Vă rugăm să încercați din nou în scurt timp."
+      },
+      "notFound": {
+        "headline": "Acest link <it>nu este recunoscut.</it>",
+        "body": "Deschideți cel mai recent e-mail de invitație pentru linkul activ."
+      },
+      "notOpen": {
+        "headline": "Chestionarul <it>nu este deschis.</it>",
+        "body": "Această invitație nu a fost acceptată, sau a fost refuzată ori încheiată. Reveniți la linkul de invitație pentru a alege din nou.",
+        "backLink": "înapoi la invitație"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "da — începeți înregistrarea relației",
+      "acceptLabel": "da — conectați-vă fără cont",
+      "declineLabel": "nu, mulțumesc",
+      "beginLabel": "începeți",
+      "continueLabel": "continuați",
+      "back": "înapoi",
+      "oneMoment": "un moment…",
+      "declineConfirmLine": "aceasta închide invitația. nimic altceva nu este trimis sau stocat despre dumneavoastră.",
+      "declineClosing": "se închide…",
+      "declineConfirm": "refuzați invitația",
+      "firstNameLabel": "PRENUMELE DUMNEAVOASTRĂ",
+      "firstNameAria": "Prenumele dumneavoastră",
+      "firstNameSub": "{name} va vedea doar acest prenume în lista sa de conexiuni.",
+      "errors": {
+        "missingFirstName": "un prenume permite analistului să vă adreseze corect.",
+        "generic": "nu s-a putut trimite.",
+        "notFound": "acest link de invitație nu este recunoscut.",
+        "expired": "această invitație a expirat. rugați-l pe invitant să trimită o nouă invitație.",
+        "declined": "această invitație a fost deja refuzată.",
+        "ended": "această invitație nu mai este activă.",
+        "missingFirstNameRequired": "este necesar un prenume."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "CHESTIONAR RELAȚIONAL",
+      "begin": "începe",
+      "back": "înapoi",
+      "backToCover": "înapoi la copertă",
+      "next": "următorul",
+      "finish": "finalizare",
+      "scaleAria": "scala {value}",
+      "cover": {
+        "headline": "Ceea ce spui despre <it>{name}</it> rămâne între tine și analist.",
+        "lede": "Douăsprezece întrebări scurte. Aproximativ cinci minute. Răspunsurile alimentează lectura lui {name}; ei nu vor vedea ce ai scris, iar tu nu vei vedea ce produce."
+      },
+      "closing": {
+        "recording": "un moment — răspunsurile sunt înregistrate.",
+        "tryAgain": "încearcă din nou",
+        "headline": "Este suficient <it>pentru acum.</it>",
+        "lede": "Ceea ce ai spus despre {name} va informa lectura lor începând cu următoarea sesiune. Ei nu o vor vedea; tu nu vei vedea ce produce.",
+        "closeWindow": "poți închide această fereastră."
+      },
+      "errors": {
+        "unanswered": "un moment cu aceasta înainte de a continua.",
+        "questionOpen": "o întrebare este încă deschisă. un moment.",
+        "couldNotSave": "nu s-a putut salva",
+        "invalidAnswers": "ceva nu a fost interpretat corect — te rugăm să verifici răspunsurile.",
+        "notAccepting": "această invitație nu mai acceptă răspunsuri.",
+        "notFound": "acest link de invitație nu este recunoscut.",
+        "couldNotSaveAnswers": "nu s-au putut salva răspunsurile."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "De cât timp vă cunoașteți?",
+          "options": {
+            "under_one_year": "mai puțin de un an",
+            "one_to_three": "unul până la trei ani",
+            "four_to_ten": "patru până la zece ani",
+            "eleven_to_twenty": "unsprezece până la douăzeci de ani",
+            "more_than_twenty": "mai mult de douăzeci de ani"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Cât de apropiați vă simțiți acum?",
+          "lowLabel": "la distanță",
+          "highLabel": "cât se poate de apropiați"
+        },
+        "repair_initiator": {
+          "prompt": "Când nu sunteți de acord, cine tinde să caute primul împăcarea?",
+          "options": {
+            "i_do": "aproape întotdeauna eu",
+            "usually_me": "de obicei eu",
+            "evenly": "ne apropiem reciproc în mod egal",
+            "usually_them": "de obicei ei",
+            "they_do": "aproape întotdeauna ei"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Când ceva este dificil, unde tind să se retragă?",
+          "options": {
+            "toward": "spre tine, pentru a discuta",
+            "quiet": "în liniște, apoi înapoi",
+            "work": "în muncă sau distragere",
+            "alone": "complet singuri, în spatele unei uși",
+            "elsewhere": "mai întâi la alte persoane"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Ce anume ți-ai dori să înțeleagă despre ei înșiși?"
+        },
+        "what_you_offer": {
+          "prompt": "Într-o singură frază, ce faci pentru ei ce nu pot face singuri?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Ce voce pare să-i conducă cel mai des?",
+          "options": {
+            "demand": "cerința — ce ar trebui făcut",
+            "doubt": "îndoiala — dacă este suficient",
+            "desire": "dorința — ce își doresc de fapt",
+            "watcher": "observatorul — cum va fi perceput",
+            "uncertain": "nu știu încă"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Unde se blochează de obicei munca lor?",
+          "options": {
+            "start": "începutul — pornirea",
+            "middle": "mijlocul — menținerea",
+            "finish": "finalul — renunțarea",
+            "visibility": "vizibilitatea — a lăsa să fie văzut",
+            "nowhere": "nicăieri, din perspectiva mea"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Există un subiect pe care îl evită în mod constant? Numește-l cu delicatețe."
+        },
+        "they_at_their_best": {
+          "prompt": "Când sunt cel mai mult ei înșiși?"
+        },
+        "what_youve_changed": {
+          "prompt": "Există ceva la ei ce ai acceptat în tăcere că nu vei schimba?"
+        },
+        "future_together": {
+          "prompt": "Cât de mult din viitorul pe care ți-l imaginezi îi include?",
+          "lowLabel": "foarte puțin",
+          "highLabel": "aproape totul"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "sau",
+      "fallbackPreamble": "copiați acest link în browser:",
+      "attendingInstitution": "INSTITUȚIA DE ÎNSOȚIRE",
+      "tagline": "AI psihodinamic pentru viața interioară.",
+      "automatedFooter": "Trimis de un sistem automat · nu răspundeți"
+    },
+    "intakeSubmitted": {
+      "subject": "profilul tău este în curs de lectură.",
+      "preheader": "Prima lectură este în desfășurare. Camera se deschide când lucrarea este gata.",
+      "eyebrow": "PROFIL CITIT",
+      "titleText": "Răspunsurile tale sunt în curs de lectură.",
+      "italicPhrase": "în curs de lectură",
+      "lede": "Prima lectură prin modelele psihodinamice este în desfășurare. Camera se deschide când lucrarea este gata.",
+      "figLeftItalic": "intake primit",
+      "figRightLabel": "Prima lectură",
+      "figRightItalic": "în desfășurare",
+      "text": "{salutation}\n\nRăspunsurile tale au fost primite. Prima lectură prin modelele psihodinamice este în desfășurare. Camera se deschide când lucrarea este gata.\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA DE ÎNGRIJIRE"
+    },
+    "roomReady": {
+      "subject": "camera dumneavoastră este deschisă.",
+      "preheader": "Douăsprezece blocuri gata de lectură. Lucrarea se rafinează pe măsură ce reveniți la ea.",
+      "eyebrow": "CAMERA GATA",
+      "titleText": "Prima lectură este deschisă.",
+      "italicPhrase": "prima lectură",
+      "lede": "Douăsprezece blocuri de profil psihodinamic, în cameră și gata de lectură. Lucrarea se rafinează pe măsură ce reveniți la ea.",
+      "ctaLabel": "Intră în cameră",
+      "figLeftItalic": "camera deschisă",
+      "figRightLabel": "Prima lectură",
+      "figRightItalic": "gata",
+      "text": "{salutation}\n\nPrima lectură este deschisă.\n\nDouăsprezece blocuri de profil psihodinamic, în cameră și gata de lectură. Lucrarea se rafinează pe măsură ce reveniți la ea.\n\nIntră în cameră:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA DE ÎNGRIJIRE"
+    },
+    "invite": {
+      "subject": "{inviterName} v-ar dori în lectură.",
+      "preheader": "{inviterName} v-ar dori în lectură. O conexiune nu vă vede lecturile; dumneavoastră nu le veți vedea pe ale lor.",
+      "eyebrow": "INVITAȚIE",
+      "titleText": "{inviterName} v-ar dori în lectură.",
+      "italicPhrase": "în lectură",
+      "lede": "TwentyThird este o cameră liniștită unde structura vieții interioare a cuiva este citită cu grijă. O conexiune nu vede lecturile sau sesiunile invitantului, iar dumneavoastră nu le veți vedea pe ale lor.",
+      "ctaLabel": "Deschide invitația",
+      "figLeftItalic": "invitație emisă",
+      "figRightLabel": "Expiră",
+      "figRightItalic": "în paisprezece zile",
+      "securityNote": "Dacă ați primit acest mesaj din greșeală, invitația expiră de la sine în paisprezece zile.",
+      "textIntro": "{inviterName} v-ar dori în lectură la TwentyThird.",
+      "textBody": "TwentyThird este o cameră liniștită unde structura vieții interioare a cuiva este citită cu grijă. O conexiune nu vede lecturile sau sesiunile invitantului, iar dumneavoastră nu le veți vedea pe ale lor.",
+      "textNote": "{inviterName} a adăugat o notă:\n  {note}",
+      "textOpen": "Deschide invitația:",
+      "textSecurity": "Dacă ați primit acest mesaj din greșeală, invitația expiră de la sine în paisprezece zile.",
+      "textCloser": "CognitiveLab, WelloWork AB\nINSTITUȚIA PARTICIPANTĂ"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} a acceptat conexiunea.",
+      "preheader": "{nameTitle} a acceptat conexiunea. Efect asupra următoarei sesiuni în continuare.",
+      "eyebrow": "CONEXIUNE ACCEPTATĂ",
+      "titleText": "{nameTitle} a acceptat conexiunea.",
+      "italicPhrase": "a acceptat conexiunea",
+      "lede": "Chestionarul lor de relație va informa lectura dumneavoastră de la următoarea sesiune în continuare. Ei nu vor vedea lecturile dumneavoastră; dumneavoastră nu le veți vedea pe ale lor.",
+      "ctaLabel": "Reveniți în Cameră",
+      "figLeftItalic": "conexiune acceptată",
+      "figRightLabel": "Efect",
+      "figRightItalic": "următoarea sesiune în continuare",
+      "text": "{salutation}\n\n{nameTitle} a acceptat conexiunea.\n\nChestionarul lor de relație va informa lectura dumneavoastră de la următoarea sesiune în continuare. Ei nu vor vedea lecturile dumneavoastră; dumneavoastră nu le veți vedea pe ale lor.\n\nReveniți în Cameră:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA PARTICIPANTĂ"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} a încheiat conexiunea.",
+      "preheader": "{nameTitle} a încheiat conexiunea. Lectura dumneavoastră se va ajusta în următoarea sesiune.",
+      "eyebrow": "CONEXIUNE ÎNCHEIATĂ",
+      "titleText": "{nameTitle} a încheiat conexiunea.",
+      "italicPhrase": "a încheiat conexiunea",
+      "lede": "Lectura dumneavoastră se va ajusta în următoarea sesiune. Ceea ce s-a spus despre relație este reținut în dosarul cazului; nu mai influențează lectura activă.",
+      "ctaLabel": "Reveniți în Cameră",
+      "figLeftItalic": "conexiune încheiată",
+      "figRightLabel": "Efect",
+      "figRightItalic": "de la următoarea sesiune",
+      "text": "{nameTitle} a încheiat conexiunea.\n\nLectura dumneavoastră se va ajusta în următoarea sesiune. Ceea ce s-a spus despre relație este reținut în dosarul cazului; nu mai influențează lectura activă.\n\nReveniți în Cameră:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA DE ÎNGRIJIRE"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "catchup-ul din această săptămână este deschis.",
+      "preheader": "O scurtă reflecție. Cinci minute. Actualizează lectura.",
+      "eyebrow": "CATCHUP SĂPTĂMÂNAL",
+      "titleText": "O săptămână a trecut liniștit.",
+      "italicPhrase": "liniștit",
+      "lede": "O scurtă reflecție — ce este zgomotos, ce a rămas tăcut, ce s-a schimbat. Actualizează lectura.",
+      "ctaLabel": "Deschide catchup-ul",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "cinci minute",
+      "text": "{salutation}\n\nO săptămână a trecut liniștit.\n\nO scurtă reflecție — ce este zgomotos, ce a rămas tăcut, ce s-a schimbat. Actualizează lectura.\n\nDeschide catchup-ul:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA PARTICIPANTĂ"
+    },
+    "onboardingResume": {
+      "subject": "răspunsurile dumneavoastră sunt reținute.",
+      "preheader": "Chestionarul dumneavoastră de inițiere reîncepe de unde ați rămas. Lucrarea nu începe până nu este completă.",
+      "eyebrow": "CHESTIONAR INIȚIERE REȚINUT",
+      "titleText": "Chestionarul de inițiere este unde l-ați lăsat.",
+      "italicPhrase": "unde l-ați lăsat",
+      "lede": "Chestionarul dumneavoastră de inițiere reîncepe de unde ați rămas. Lucrarea nu începe până nu este completă.",
+      "ctaLabel": "Reveniți la chestionarul de inițiere",
+      "figLeftItalic": "chestionar inițiere întrerupt",
+      "figRightLabel": "Reluați",
+      "figRightItalic": "unde ați rămas",
+      "text": "{salutation}\n\nChestionarul de inițiere este unde l-ați lăsat.\n\nChestionarul dumneavoastră de inițiere reîncepe de unde ați rămas. Lucrarea nu începe până nu este completă.\n\nReveniți la chestionarul de inițiere:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nINSTITUȚIA DE ÎNGRIJIRE"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Ce cuvinte descriu cel mai bine casa în care ai crescut.",
+          "subtitle": "alege până la trei cuvinte care ți se par adevărate, chiar dacă se contrazic — casele sunt de obicei un amestec",
+          "options": {
+            "calm": "Calmă",
+            "strict": "Strictă",
+            "emotionally_distant": "Distantă emoțional",
+            "chaotic": "Haotică",
+            "achievement_focused": "Orientată spre performanță",
+            "protective": "Protectoare",
+            "unpredictable": "Imprevizibilă",
+            "conflict_heavy": "Plină de conflicte"
+          }
+        },
+        "q1_2": {
+          "title": "În copilărie, ce rol ai adoptat în mod natural.",
+          "subtitle": "gândește-te la rolul pe care l-ai jucat în familia ta fără ca nimeni să-ți spună — pacificatorul, ajutorul, cel tăcut",
+          "options": {
+            "peacemaker": "Pacificatorul",
+            "achiever": "Ambițiosul",
+            "invisible_child": "Copilul invizibil",
+            "caregiver": "Îngrijitorul",
+            "rebel": "Rebelul",
+            "funny_one": "Amuzantul",
+            "responsible_one": "Responsabilul",
+            "problem_child": "Copilul-problemă"
+          }
+        },
+        "q1_3": {
+          "title": "Cât de în siguranță emoțională te-ai simțit crescând.",
+          "subtitle": "mergi pe intuiția ta despre casă, nu pe versiunea pe care familia ar spune-o unui străin",
+          "lowLabel": "1 · NICIODATĂ ÎN SIGURANȚĂ",
+          "highLabel": "10 · ÎN DEPLINĂ SIGURANȚĂ"
+        },
+        "q1_4": {
+          "title": "Erau emoțiile discutate deschis acasă.",
+          "subtitle": "nu doar dacă existau sentimente, ci dacă cineva le numea sau vorbea despre ele cu voce tare",
+          "options": {
+            "frequently": "Frecvent",
+            "sometimes": "Uneori",
+            "rarely": "Rar",
+            "never": "Niciodată"
+          }
+        },
+        "q1_5": {
+          "title": "O amintire din copilărie care încă se simte vie emoțional astăzi.",
+          "subtitle": "descrie o scenă specifică ce îți revine în minte — unde erai, cine era acolo, ce s-a întâmplat, cum te-ai simțit"
+        },
+        "q1_6": {
+          "title": "Ce ai învățat că trebuia să faci pentru a primi dragoste sau aprobare.",
+          "subtitle": "lucrurile mici pe care le-ai observat că funcționau — a fi cuminte, a fi tăcut, a realiza, a sta deoparte — împărtășește ce îți amintești că ai ajustat"
+        },
+        "q1_7": {
+          "title": "Ce emoții erau dificil de exprimat în casa ta.",
+          "subtitle": "ce sentimente erau ignorate, respinse sau pedepsite când încercai să le arăți — furie, tristețe, frică, bucurie, orice"
+        },
+        "q1_8": {
+          "title": "Când te gândești la sinele tău mai tânăr, ce simți față de el.",
+          "subtitle": "fii sincer cu privire la sentimentul care apare — căldură, tristețe, distanță, frustrare, protecție — orice este de fapt acolo"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Cum ați descrie-o pe mama dumneavoastră sau pe principalul îngrijitor matern.",
+          "subtitle": "câteva propoziții despre cum era, cum vă sprijinea și cum vă simțeați în preajma ei",
+          "options": {
+            "warm": "Calduroasă",
+            "controlling": "Controlatoare",
+            "emotionally_unavailable": "Indisponibilă emoțional",
+            "sacrificing": "Sacrificatoare",
+            "critical": "Critică",
+            "anxious": "Anxioasă",
+            "unpredictable": "Imprevizibilă",
+            "admired": "Admirată",
+            "fearful": "Temătoare",
+            "not_applicable": "Nu se aplică"
+          }
+        },
+        "q2_2": {
+          "title": "Cum ați descrie-l pe tatăl dumneavoastră sau pe principalul îngrijitor patern.",
+          "subtitle": "câteva propoziții despre cum era, cum vă sprijinea și cum vă simțeați în preajma lui",
+          "options": {
+            "supportive": "Susținător",
+            "distant": "Distant",
+            "dominant": "Dominant",
+            "passive": "Pasiv",
+            "ambitious": "Ambițios",
+            "emotionally_closed": "Închis emoțional",
+            "protective": "Protectiv",
+            "critical": "Critic",
+            "absent": "Absent",
+            "not_applicable": "Nu se aplică"
+          }
+        },
+        "q2_3": {
+          "title": "Poziția dumneavoastră în rândul fraților.",
+          "subtitle": "unde vă încadrați în ordine – cel mai mare, mijlociu, cel mai mic, singur la părinți sau undeva între",
+          "options": {
+            "oldest": "Cel mai mare",
+            "middle": "Mijlociu",
+            "youngest": "Cel mai mic",
+            "only_child": "Singur la părinți"
+          }
+        },
+        "q2_4": {
+          "title": "Ce rol se potrivește cel mai bine poziției dumneavoastră de frate.",
+          "subtitle": "dincolo de ordinea nașterii, rolul pe care l-ați jucat – cel responsabil, rebelul, cel invizibil, favoritul",
+          "options": {
+            "responsible": "Responsabil",
+            "ignored": "Ignorat",
+            "compared": "Comparat cu alții",
+            "favored": "Favorizat",
+            "competitive": "Competitiv",
+            "protective": "Protectiv",
+            "not_applicable": "Nu se aplică"
+          }
+        },
+        "q2_5": {
+          "title": "Care părinte v-a înțeles cel mai bine.",
+          "subtitle": "numiți-l și spuneți ce a văzut în dumneavoastră ce celălalt a ratat sau a înțeles greșit"
+        },
+        "q2_6": {
+          "title": "Care părinte v-a influențat cel mai mult temerile.",
+          "subtitle": "îngrijorările cui le-ați absorbit crescând și cum se manifestă acele temeri în viața dumneavoastră astăzi"
+        },
+        "q2_7": {
+          "title": "Cum arăta conflictul în familia dumneavoastră.",
+          "subtitle": "descrieți forma pe care o luau certurile – țipete, tăcere, uși trântite, săptămâni reci, tipare repetate – orice se simțea familiar"
+        },
+        "q2_8": {
+          "title": "Ce fel de atenție a fost cel mai greu de primit.",
+          "subtitle": "tipul de grijă care v-a făcut să vă simțiți inconfortabil – laudă, îngrijorare, apropiere fizică, a fi văzut – și de ce a fost dificil"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Cât de religios sau spiritual a fost mediul în care ați crescut.",
+          "subtitle": "atmosfera reală a casei — practici, reguli, credințe prezente — nu ceea ce credeți acum ca adult",
+          "lowLabel": "1 · DELOC",
+          "highLabel": "10 · PROFUND"
+        },
+        "q3_2": {
+          "title": "Care mesaj a fost cel mai puternic în timpul creșterii.",
+          "subtitle": "regula sau așteptarea repetată atât de des încât a devenit zgomot de fundal — despre succes, comportament, imagine, datorie, familie",
+          "options": {
+            "success": "Succesul contează cel mai mult",
+            "reputation": "Reputația contează cel mai mult",
+            "obedience": "Obediența contează cel mai mult",
+            "family_loyalty": "Loialitatea față de familie contează cel mai mult",
+            "independence": "Independența contează cel mai mult",
+            "sacrifice": "Sacrificiul contează cel mai mult"
+          }
+        },
+        "q3_3": {
+          "title": "Cât de puternic vă simțiți judecat de societate.",
+          "subtitle": "cât de mult vă simțiți observat sau evaluat de oameni din afara cercului dumneavoastră apropiat — la serviciu, online, în public",
+          "lowLabel": "1 · DELOC",
+          "highLabel": "10 · CONSTANT"
+        },
+        "q3_4": {
+          "title": "Ce credințe din educația dumneavoastră vă mai modelează încă.",
+          "subtitle": "valorile, regulile sau presupunerile pe care le-ați moștenit și după care trăiți încă, chiar dacă nu v-ați gândit la ele de ani de zile"
+        },
+        "q3_5": {
+          "title": "Ce credințe le rezistați în secret.",
+          "subtitle": "cele cu care sunteți de acord public, dar cu care sunteți în dezacord în secret — despre bani, relații, succes, gen, orice"
+        },
+        "q3_6": {
+          "title": "Ce ar dezaproba cel mai mult familia sau comunitatea dumneavoastră la adevăratul dumneavoastră eu.",
+          "subtitle": "părțile din dumneavoastră, din viața dumneavoastră sau din alegerile dumneavoastră pe care le țineți ascunse de ei și de ce le țineți ascunse"
+        },
+        "q3_7": {
+          "title": "Ce fel de persoană erați așteptat să deveniți.",
+          "subtitle": "viitorul pe care alții l-au imaginat pentru dumneavoastră — carieră, familie, comportament, imagine — înainte de a avea vreun cuvânt de spus"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Câte persoane te cunosc cu adevărat.",
+          "subtitle": "persoanele care au văzut versiunea ta nefiltrată și nu ar fi șocate de nimic din viața ta interioară",
+          "options": {
+            "none": "Niciuna",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Multe"
+          }
+        },
+        "q4_2": {
+          "title": "În grupuri, de obicei devii.",
+          "subtitle": "rolul în care aluneci fără să te gândești — cel amuzant, ascultătorul, liderul, observatorul, cel care menține armonia",
+          "options": {
+            "leader": "Lider",
+            "observer": "Observator",
+            "entertainer": "Animator",
+            "mediator": "Mediator",
+            "intellectual": "Intelectual",
+            "caregiver": "Îngrijitor",
+            "withdrawn": "Retras"
+          }
+        },
+        "q4_3": {
+          "title": "Cât de teamă îți este să dezamăgești pe alții.",
+          "subtitle": "cât de mult reacția unei alte persoane — o privire, un oftat, tăcerea — îți poate modela ceea ce spui sau faci",
+          "lowLabel": "1 · DELOC",
+          "highLabel": "10 · ZILNIC"
+        },
+        "q4_4": {
+          "title": "Ce părți din tine ascunzi în societate.",
+          "subtitle": "gândurile, sentimentele, trăsăturile sau fragmentele din istoria ta pe care le ții ascunse atunci când ești în preajma altor persoane"
+        },
+        "q4_5": {
+          "title": "Când te simți cel mai acceptat.",
+          "subtitle": "situațiile sau relațiile în care încetezi să mai joci un rol și poți fi pur și simplu tu — descrie ce face acele spații diferite"
+        },
+        "q4_6": {
+          "title": "Ce situații sociale te epuizează cel mai mult.",
+          "subtitle": "întâlnirile, dinamica sau relațiile care te lasă mai obosit decât ar trebui — și ce anume din ele este epuizant"
+        },
+        "q4_7": {
+          "title": "Ce fel de oameni invidiezi.",
+          "subtitle": "invidia indică de obicei ceva ce îți dorești, dar nu ți-ai permis să-ți dorești deschis — descrie cine o declanșează și de ce"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Ce platforme utilizați activ.",
+          "subtitle": "aplicațiile pe care le deschideți din obișnuință, de mai mult de o dată pe zi, nu cele la care aveți tehnic un cont",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Niciuna"
+          }
+        },
+        "q5_2": {
+          "title": "Utilizare zilnică medie pe platformă.",
+          "subtitle": "o estimare aproximativă a timpului petrecut efectiv pe fiecare — minute sau ore, fără judecată",
+          "unit": "MINUTE PE ZI"
+        },
+        "q5_3": {
+          "title": "Pentru ce le folosiți în principal.",
+          "subtitle": "motivul real sub cel evident — conexiune, distragere, validare, evadare, comparație, informație",
+          "options": {
+            "validation": "Validare",
+            "learning": "Învățare",
+            "escapism": "Evadare",
+            "networking": "Networking",
+            "self_expression": "Auto-exprimare",
+            "entertainment": "Divertisment",
+            "comparison": "Comparație",
+            "dating": "Întâlniri"
+          }
+        },
+        "q5_4": {
+          "title": "Cât de des ștergeți sau editați postări înainte de publicare.",
+          "subtitle": "cât de mult repetați, vă îndoiți sau rescrieți ceea ce distribuiți înainte de a permite altor persoane să vadă",
+          "options": {
+            "always": "Întotdeauna",
+            "often": "Des",
+            "sometimes": "Uneori",
+            "rarely": "Rar",
+            "never": "Niciodată"
+          }
+        },
+        "q5_5": {
+          "title": "Cât de des vă comparați viața cu a altora online.",
+          "subtitle": "măsurarea tăcută care are loc în timp ce derulați — despre aspect, succes, relații, stil de viață, orice",
+          "lowLabel": "1 · NICIODATĂ",
+          "highLabel": "10 · CONSTANT"
+        },
+        "q5_6": {
+          "title": "Ce versiune a dumneavoastră apare online.",
+          "subtitle": "descrieți personajul pe care îl prezentați — versiunea curată — și cum diferă de cine sunteți când nimeni nu se uită"
+        },
+        "q5_7": {
+          "title": "Ce căutați emoțional când deschideți rețelele sociale.",
+          "subtitle": "sentimentul pe care îl căutați în momentul în care deschideți aplicația — distragere, confort, emoție, amorțeală, conexiune"
+        },
+        "q5_8": {
+          "title": "Ce tip de conținut vă face să vă simțiți inconfortabil.",
+          "subtitle": "postările sau videoclipurile care vă fac să doriți să derulați rapid, și despre ce credeți că este cu adevărat acest disconfort"
+        },
+        "q5_9": {
+          "title": "Ce fel de oameni vă atrag atenția online.",
+          "subtitle": "conturile la care vă opriți și pe care le urmăriți — descrieți calitățile pe care le împărtășesc și ce vă atrage"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Statutul dumneavoastră relațional actual.",
+          "subtitle": "unde vă aflați de fapt acum — singur, la întâlniri, într-un parteneriat, căsătorit, separat, complicat — nu unde ați dori să fiți",
+          "options": {
+            "single": "Singur",
+            "dating": "La întâlniri",
+            "in_relationship": "Într-o relație",
+            "engaged": "Logodit",
+            "married": "Căsătorit",
+            "separated_divorced": "Separat sau divorțat",
+            "widowed": "Văduv",
+            "its_complicated": "Este complicat"
+          }
+        },
+        "q6_2": {
+          "title": "Câte relații serioase ați avut.",
+          "subtitle": "cele care au contat emoțional, indiferent de durata sau oficialitatea lor",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Conflicte tipice în relațiile dumneavoastră.",
+          "subtitle": "discuțiile care reapar sub diferite forme cu parteneri diferiți — bani, distanță, control, comunicare",
+          "options": {
+            "distance": "Distanță",
+            "jealousy": "Gelozie",
+            "control": "Control",
+            "emotional_unavailability": "Indisponibilitate emoțională",
+            "communication": "Comunicare",
+            "trust": "Încredere",
+            "dependency": "Dependență"
+          }
+        },
+        "q6_4": {
+          "title": "În relații tindeți să.",
+          "subtitle": "reacția dumneavoastră implicită atunci când lucrurile devin dificile — vă apropiați, vă îndepărtați, preluați controlul, vă închideți, încercați să reparați",
+          "options": {
+            "pursue": "Urmăriți",
+            "withdraw": "Vă retrageți",
+            "overgive": "Oferiți prea mult",
+            "test_loyalty": "Testați loialitatea",
+            "avoid_vulnerability": "Evitați vulnerabilitatea"
+          }
+        },
+        "q6_5": {
+          "title": "De ce fel de oameni vă îndrăgostiți în mod repetat.",
+          "subtitle": "tipul care continuă să apară în viața dumneavoastră amoroasă — nu doar aspectul, ci și tiparele emoționale, temperamentul, modul în care vă tratează"
+        },
+        "q6_6": {
+          "title": "Ce anume pune capăt de obicei relațiilor dumneavoastră.",
+          "subtitle": "adevăratul motiv pentru care lucrurile se destramă, dincolo de povestea oficială pe care o spuneți prietenilor sau familiei"
+        },
+        "q6_7": {
+          "title": "Ce nevoie emoțională doriți cel mai mult să vă fie îndeplinită.",
+          "subtitle": "nevoia pe care o găsiți cel mai greu de cerut direct — să fiți văzut, să fiți ales, să fiți în siguranță, să fiți liber, să fiți dorit"
+        },
+        "q6_8": {
+          "title": "De ce vă temeți cel mai mult în intimitate.",
+          "subtitle": "ce anume pune în pericol apropierea pentru dumneavoastră — să fiți cunoscut, să fiți prins în capcană, să fiți părăsit, să fiți prea mult, să nu fiți suficient"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Statutul dumneavoastră profesional actual.",
+          "subtitle": "forma vieții dumneavoastră profesionale în acest moment — angajat, liber profesionist, între locuri de muncă, student, îngrijitor, altceva",
+          "options": {
+            "employed_full_time": "Angajat, normă întreagă",
+            "employed_part_time": "Angajat, normă parțială",
+            "self_employed": "Liber profesionist sau fondator",
+            "freelance": "Freelancer sau pe bază de contract",
+            "studying": "Student",
+            "between_roles": "Între roluri",
+            "caregiving": "Îngrijitor la domiciliu",
+            "retired": "Pensionar",
+            "not_working": "Fără ocupație"
+          }
+        },
+        "q7_2": {
+          "title": "Cât de mulțumit sunteți de direcția carierei dumneavoastră.",
+          "subtitle": "arcul mai lung al direcției în care se îndreaptă munca dumneavoastră, nu cum vă simțiți în această săptămână anume",
+          "lowLabel": "1 · PIERDUT",
+          "highLabel": "10 · EXACT CE TREBUIE"
+        },
+        "q7_3": {
+          "title": "La locul de muncă sunteți de obicei.",
+          "subtitle": "modul în care operați profesional — rolul pe care îl asumați atunci când nimeni nu vi-l atribuie",
+          "options": {
+            "perfectionistic": "Perfecționist",
+            "avoidant": "Evitant",
+            "competitive": "Competitiv",
+            "cooperative": "Cooperant",
+            "over_responsible": "Supra-responsabil",
+            "detached": "Detașat"
+          }
+        },
+        "q7_4": {
+          "title": "Cel mai mare stres la locul de muncă.",
+          "subtitle": "sursa de presiune care vă urmărește acasă — o persoană, o sarcină, o teamă, un mediu, un tipar",
+          "options": {
+            "criticism": "Critica",
+            "failure": "Eșecul",
+            "visibility": "Vizibilitatea",
+            "authority": "Autoritatea",
+            "uncertainty": "Incertitudinea",
+            "conflict": "Conflictul"
+          }
+        },
+        "q7_5": {
+          "title": "Ce înseamnă succesul emoțional pentru dumneavoastră.",
+          "subtitle": "sentimentul pe care vi-l imaginați că apare atunci când îl aveți în sfârșit — ușurare, mândrie, pace, libertate, a fi suficient"
+        },
+        "q7_6": {
+          "title": "Ce tip de recunoaștere vă afectează cel mai mult.",
+          "subtitle": "lauda care vă atinge cu adevărat și vă schimbă modul în care vă simțiți, și cea care nu vă afectează, indiferent cât de mult o primiți"
+        },
+        "q7_7": {
+          "title": "Ce eșec vă mai influențează astăzi.",
+          "subtitle": "un eșec specific pe care nu l-ați procesat încă pe deplin — ce s-a întâmplat și cum vă modelează încă alegerile"
+        },
+        "q7_8": {
+          "title": "Dacă banii ar dispărea, ce ați urmări.",
+          "subtitle": "munca sau activitatea pe care ați face-o chiar dacă nimeni nu v-ar plăti pentru ea — descrieți cum ar arăta"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Cum faci față de obicei stresului.",
+          "subtitle": "ceea ce cauți când lucrurile devin grele — mâncare, ecrane, exerciții fizice, izolare, discuții, substanțe, somn, muncă",
+          "options": {
+            "isolation": "Izolare",
+            "food": "Mâncare",
+            "gaming": "Jocuri",
+            "exercise": "Exerciții fizice",
+            "overworking": "Muncă excesivă",
+            "scrolling": "Navigare pe rețele sociale",
+            "substance_use": "Consum de substanțe",
+            "shopping": "Cumpărături",
+            "sleeping": "Somn",
+            "socializing": "Socializare"
+          }
+        },
+        "q8_2": {
+          "title": "Cât de des ieși în societate.",
+          "subtitle": "cât de des petreci timp cu alte persoane fizic, nu online sau prin mesaje",
+          "options": {
+            "multiple_per_week": "De mai multe ori pe săptămână",
+            "weekly": "Săptămânal",
+            "monthly": "Lunar",
+            "rarely": "Rar",
+            "never": "Niciodată"
+          }
+        },
+        "q8_3": {
+          "title": "Cât de des te simți singur chiar și într-un grup.",
+          "subtitle": "singurătatea care apare atunci când ești înconjurat de oameni, dar te simți totuși nevăzut sau îndepărtat",
+          "lowLabel": "1 · NICIODATĂ",
+          "highLabel": "10 · ÎNTOTDEAUNA"
+        },
+        "q8_4": {
+          "title": "Ce activități te fac să te uiți pe tine însuți.",
+          "subtitle": "lucrurile care te absorb atât de profund încât timpul dispare — în bine sau în rău, sănătoase sau nu"
+        },
+        "q8_5": {
+          "title": "La ce eviți să te gândești cel mai mult.",
+          "subtitle": "subiectul sau amintirea de care te îndepărtezi rapid când apare — despre tine, trecutul tău, viitorul tău"
+        },
+        "q8_6": {
+          "title": "Când te simți amorțit emoțional.",
+          "subtitle": "situațiile în care volumul scade la zero — muncă, relații, conflict, intimitate, a fi singur"
+        },
+        "q8_7": {
+          "title": "Ce obicei îți este cel mai greu să-l oprești.",
+          "subtitle": "comportamentul pe care ai încercat de mai multe ori să-l schimbi sau să-l abandonezi, fără succes — descrie ce este și ce te trage înapoi"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Cât de autocritic sunteți.",
+          "subtitle": "tonul vocii interioare când greșiți sau nu reușiți — aspru, echitabil, disprețuitor, devastator",
+          "lowLabel": "1 · BLÂND",
+          "highLabel": "10 · FĂRĂ MILĂ"
+        },
+        "q9_2": {
+          "title": "Ce afirmație se apropie cel mai mult de teama dumneavoastră intimă.",
+          "subtitle": "propoziția despre dumneavoastră care trăiește sub toate celelalte, cea pe care ați admite-o doar într-o zi grea",
+          "options": {
+            "never_enough": "Nu sunt niciodată suficient de bun",
+            "fear_abandoned": "Mă tem să nu fiu abandonat",
+            "fear_losing_control": "Mă tem să nu pierd controlul",
+            "fear_failure": "Mă tem de eșec",
+            "fear_ordinary": "Mă tem să nu fiu obișnuit",
+            "fear_rejection": "Mă tem de respingere",
+            "fear_dependence": "Mă tem de dependență"
+          }
+        },
+        "q9_3": {
+          "title": "Cât de des vă simțiți deconectat de dumneavoastră înșivă.",
+          "subtitle": "senzația de a vă privi propria viață de la o mică distanță, ca și cum nu ați fi pe deplin în ea",
+          "lowLabel": "1 · NICIODATĂ",
+          "highLabel": "10 · ZILNIC"
+        },
+        "q9_4": {
+          "title": "Ce gând se repetă cel mai des în mintea dumneavoastră.",
+          "subtitle": "propoziția sau îngrijorarea recurentă care revine regulat — scrieți-o cu cuvintele ei reale, nu un rezumat"
+        },
+        "q9_5": {
+          "title": "Pentru ce vă criticați în secret.",
+          "subtitle": "lucrurile pentru care vă evaluați și pe care nimeni altcineva nu le știe — despre corpul, mintea, alegerile, caracterul dumneavoastră"
+        },
+        "q9_6": {
+          "title": "Ce v-ar face să vă simțiți suficient.",
+          "subtitle": "condiția pe care v-ați impus-o în liniște pentru a vă relaxa în sfârșit — fiți sincer, răspunsul este adesea mai mic decât vă așteptați"
+        },
+        "q9_7": {
+          "title": "Dacă vocea dumneavoastră interioară ar avea o personalitate, cum ați descrie-o.",
+          "subtitle": "vârsta, genul, tonul acelei voci — și a cui voce ar putea fi de fapt, dacă o urmăriți înapoi"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Ce contează mai mult pentru tine.",
+          "subtitle": "alege ceea ce contează cel mai mult acum — celelalte pot conta în continuare, dar fii sincer cu privire la clasament",
+          "options": {
+            "freedom": "Libertate",
+            "love": "Iubire",
+            "recognition": "Recunoaștere",
+            "stability": "Stabilitate",
+            "power": "Putere",
+            "meaning": "Sens",
+            "peace": "Pace",
+            "influence": "Influență"
+          }
+        },
+        "q10_2": {
+          "title": "Cât de plin de speranță ești în privința viitorului tău.",
+          "subtitle": "sentimentul resimțit atunci când te gândești la viitor, nu răspunsul optimist pe care îl dai altor oameni când te întreabă",
+          "lowLabel": "1 · DELOC",
+          "highLabel": "10 · PROFUND"
+        },
+        "q10_3": {
+          "title": "Ce îți dorești cel mai mult în secret.",
+          "subtitle": "dorința pe care nu ți-ai permis încă să o rostești cu voce tare — cea care pare prea mare, prea riscantă sau prea jenantă",
+          "options": {
+            "to_be_understood": "Să fii înțeles",
+            "to_be_admired": "Să fii admirat",
+            "to_feel_safe": "Să te simți în siguranță",
+            "to_be_desired": "Să fii dorit",
+            "to_feel_important": "Să te simți important",
+            "to_feel_free": "Să te simți liber",
+            "to_belong": "Să aparții"
+          }
+        },
+        "q10_4": {
+          "title": "Descrie-ți în detaliu viața ideală din viitor.",
+          "subtitle": "detaliile concrete — unde ești, cu cine ești, cum arată diminețile tale, munca, lumina, ritmul"
+        },
+        "q10_5": {
+          "title": "Ce frică ar putea distruge acel viitor.",
+          "subtitle": "lucrul — intern sau extern — care te-a oprit înainte și te-ar putea opri din nou dacă l-ai lăsa"
+        },
+        "q10_6": {
+          "title": "Ce parte din tine încerci încă să devii.",
+          "subtitle": "versiunea ta de la orizont — calitățile, libertățile, modul de a fi spre care te îndrepți încet"
+        },
+        "q10_7": {
+          "title": "Dacă nimeni nu te-ar judeca, cum ai trăi diferit.",
+          "subtitle": "alegerile pe care le-ai face dacă privirile s-ar opri — despre muncă, iubire, corp, timp, bani, voce"
+        },
+        "q10_8": {
+          "title": "Ce crezi că ești cu adevărat în căutarea.",
+          "subtitle": "lucrul mai profund de sub toate răspunsurile tale anterioare — spre ce indică cu adevărat fiecare alegere și dorință"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "ORIGINI · AMPRENTA DEZVOLTĂRII",
+        "headline": [
+          "Ce v-a ",
+          "învățat",
+          " camera timpurie."
+        ],
+        "lede": "Prima secțiune ascultă climatul emoțional, siguranța și rolul în care ați fost distribuit. Modelele înregistrate aici devin fundamentul pe care se construiește tot ce urmează.",
+        "title": "Origini",
+        "subtitle": "amprenta dezvoltării"
+      },
+      "attachment": {
+        "eyebrow": "ATAȘAMENT · STRUCTURA FAMILIALĂ",
+        "headline": [
+          "Primele ",
+          "legături",
+          ", și forma pe care au lăsat-o."
+        ],
+        "lede": "Localizează stilul dumneavoastră de atașament, relația cu autoritatea și triangulația în care ați crescut. Forma primei legături devine șablonul după care sunt măsurate toate cele ulterioare.",
+        "title": "Atașament",
+        "subtitle": "structura familială"
+      },
+      "authority": {
+        "eyebrow": "AUTORITATE · LEGE SIMBOLICĂ",
+        "headline": [
+          "Vocile pe care le-ați ",
+          "moștenit",
+          "."
+        ],
+        "lede": "Scoate la suprafață codurile morale, structurile de vinovăție și identitatea moștenită care încă rulează în fundal. Vocile sub care ați crescut rareori dispar; ele devin vocea care vă judecă.",
+        "title": "Autoritate",
+        "subtitle": "legea simbolică"
+      },
+      "belonging": {
+        "eyebrow": "APARTENENȚĂ · IDENTITATE SOCIALĂ",
+        "headline": [
+          "Cine are voie să vă ",
+          "vadă",
+          "."
+        ],
+        "lede": "Măsoară dependența socială, mascarea identității și frica de excludere. Apartenența este rareori gratuită; această secțiune întreabă ce sacrificați pentru ea.",
+        "title": "Apartenență",
+        "subtitle": "identitate socială"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · DORINȚĂ & EU-L DIGITAL",
+        "headline": [
+          "Eul pe care îl ",
+          "interpretați",
+          "."
+        ],
+        "lede": "Citește eul idealizat, bucla de validare și performanța simbolică pe care o puneți în scenă online. Persona nu este o minciună; este o dorință pe jumătate revelată.",
+        "title": "Persona",
+        "subtitle": "dorință & eu-l digital"
+      },
+      "desire": {
+        "eyebrow": "DORINȚĂ · INTIMITATE & REPETIȚIE",
+        "headline": [
+          "Tiparul care ",
+          "revine mereu",
+          "."
+        ],
+        "lede": "Găsește forma relațională recurentă, frica de abandon, contradicția din interiorul *dorinței*. Ceea ce se repetă este rareori ales; este ceea ce cere să fie văzut.",
+        "title": "Dorință",
+        "subtitle": "intimitate & repetiție"
+      },
+      "achievement": {
+        "eyebrow": "REALIZARE · MUNCĂ & RECUNOAȘTERE",
+        "headline": [
+          "Ce încercați să ",
+          "dovediți",
+          "."
+        ],
+        "lede": "Detectează anxietatea de realizare, foamea de recunoaștere și relația dumneavoastră cu autoritatea la locul de muncă. Sub fiecare ambiție se află o audiență de una sau două persoane.",
+        "title": "Realizare",
+        "subtitle": "muncă & recunoaștere"
+      },
+      "escape": {
+        "eyebrow": "EVADARE · PLĂCERE & RITUAL",
+        "headline": [
+          "Unde mergeți ",
+          "pentru a nu fi aici",
+          "."
+        ],
+        "lede": "Identifică tiparele de evitare, compulsiile și ritualurile care reglează plăcerea. Ieșirea la care apelați spune la fel de mult ca și camera pe care o părăsiți.",
+        "title": "Evadare",
+        "subtitle": "plăcere & ritual"
+      },
+      "self-relation": {
+        "eyebrow": "RELAȚIA CU SINELE · DIALOG INTERN",
+        "headline": [
+          "Vocea pe care nu o puteți ",
+          "liniști",
+          "."
+        ],
+        "lede": "Cartografiază marginea supraeului, structurile de rușine și vocile internalizate. Felul în care vă vorbiți în privat este cea mai sinceră înregistrare a celor care v-au crescut.",
+        "title": "Relația cu sinele",
+        "subtitle": "dialog intern"
+      },
+      "future-fantasy": {
+        "eyebrow": "VIITOR · FANTEZIE, FRICĂ & DORINȚĂ",
+        "headline": [
+          "Ce căutați ",
+          "cu adevărat",
+          "."
+        ],
+        "lede": "Climaxul emoțional — viitorul pe care vi-l imaginați, frica ce-l bântuie, *dorința* fundamentală de dedesubt. Ultima întrebare este prima revenită.",
+        "title": "Fantezia viitorului",
+        "subtitle": "fantezie, frică & dorință"
+      }
+    }
+  },
+  "common": {
+    "or": "sau",
+    "loading": "se încarcă…",
+    "sending": "se trimite…",
+    "save": "Salvați",
+    "saved": "salvat",
+    "cancel": "Anulați",
+    "close": "Închideți",
+    "back": "Înapoi",
+    "continue": "Continuați",
+    "retry": "Reîncercați",
+    "more": "mai mult"
+  },
+  "nav": {
+    "room": "Cameră",
+    "readings": "Lecturi",
+    "catchup": "Recapitulare",
+    "consulting": "Consultare",
+    "caseFile": "Dosar",
+    "settings": "Setări",
+    "signIn": "Autentificare",
+    "signOut": "Deconectare",
+    "getStarted": "Începeți",
+    "language": "Limbă",
+    "method": "Metodă",
+    "theWork": "Lucrarea",
+    "about": "Despre",
+    "contact": "Contact",
+    "start": "Start"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Conectați-vă",
+      "titleItalic": "în",
+      "titleAfter": ".",
+      "googleLabel": "Conectați-vă cu Google",
+      "or": "sau",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "PAROLĂ",
+      "forgotPassword": "Ați uitat parola",
+      "submit": "Conectați-vă",
+      "footPrompt": "Nou aici? ",
+      "footLink": "Creați un cont"
+    },
+    "signUp": {
+      "titleBefore": "Creați un ",
+      "titleItalic": "cont",
+      "titleAfter": ".",
+      "googleLabel": "Continuați cu Google",
+      "or": "sau",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "PAROLĂ",
+      "confirmPasswordLabel": "CONFIRMAȚI PAROLA",
+      "submit": "Creați cont",
+      "footPrompt": "Aveți deja unul? ",
+      "footLink": "Conectați-vă",
+      "resentNote": "Un nou link a fost trimis.",
+      "resendConfirmation": "Retrimiteți confirmarea",
+      "pendingFootPrompt": "Adresă greșită? ",
+      "pendingFootLink": "Începeți din nou"
+    },
+    "forgot": {
+      "titleBefore": "Ați uitat ",
+      "titleItalic": "parola",
+      "titleAfter": ".",
+      "lede": "Introduceți adresa cu care v-ați înregistrat. Vă vom trimite un link pentru a o reseta.",
+      "emailLabel": "EMAIL",
+      "submit": "Trimiteți linkul de resetare",
+      "footPrompt": "V-ați amintit-o? ",
+      "footLink": "Conectați-vă",
+      "sentBackLink": "Înapoi la conectare"
+    },
+    "reset": {
+      "titleBefore": "Setați o ",
+      "titleItalic": "parolă nouă",
+      "titleAfter": ".",
+      "newPasswordLabel": "PAROLĂ NOUĂ",
+      "confirmPasswordLabel": "CONFIRMAȚI PAROLA",
+      "submit": "Actualizați parola",
+      "expiredTitleBefore": "Acest link ",
+      "expiredTitleItalic": "nu mai este valid",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Solicitați un link nou"
+    },
+    "errors": {
+      "invalid_credentials": "Emailul sau parola nu se potrivesc.",
+      "email_taken": "Acest email este deja înregistrat. Încercați să vă conectați.",
+      "weak_password": "Folosiți cel puțin 8 caractere.",
+      "passwords_dont_match": "Parolele nu se potrivesc.",
+      "email_invalid": "Aceasta nu pare a fi o adresă de email validă.",
+      "rate_limited": "Prea multe încercări. Încercați din nou într-un moment.",
+      "unconfirmed_email": "Confirmați mai întâi emailul. Verificați-vă inboxul.",
+      "reset_link_expired": "Acest link a expirat. Solicitați unul nou.",
+      "reset_link_invalid": "Acest link nu mai este valid. Solicitați unul nou.",
+      "oauth_failed": "Nu s-a putut contacta Google. Încercați din nou.",
+      "callback_failed": "Nu s-a putut finaliza conectarea.",
+      "generic": "A apărut o eroare. Încercați din nou.",
+      "no_session": "Conectați-vă pentru a continua."
+    },
+    "success": {
+      "checkInboxEyebrow": "VERIFICAȚI-VĂ INBOXUL",
+      "confirmationHeadlineBefore": "Am trimis un ",
+      "confirmationHeadlineItalic": "link de confirmare",
+      "confirmationHeadlineAfter": " la ",
+      "confirmationLede": "Faceți clic pe el pentru a finaliza crearea contului.",
+      "resetSentEyebrow": "VERIFICAȚI-VĂ INBOXUL",
+      "resetSentHeadlineBefore": "Dacă acel email este ",
+      "resetSentHeadlineItalic": "înregistrat",
+      "resetSentHeadlineAfter": ", am trimis un link de resetare.",
+      "resetSentLede": "Linkul funcționează o singură dată și expiră în decurs de o oră. Lipsa linkului înseamnă lipsa contului.",
+      "passwordUpdated": "Parola a fost actualizată. Vă conectăm."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "CONT",
+      "headlineBefore": "Amenajează-ți",
+      "headlineItalic": "camera liniștită",
+      "lede": "Un nume, un an și un „da”. Apoi începe lucrul.",
+      "saveFailed": "Nu s-a putut salva. Încercați din nou într-un moment.",
+      "nameLabel": "NUME",
+      "nameRequired": "Numele este obligatoriu.",
+      "prefilledHint": "precompletat din Google · editabil",
+      "yearLabel": "ANUL NAȘTERII",
+      "yearRequired": "Selectați un an.",
+      "genderLabel": "GEN",
+      "genderRequired": "Alegeți unul.",
+      "gender": {
+        "male": "Masculin",
+        "female": "Feminin",
+        "nonBinary": "Non-binar",
+        "preferNotToSay": "Prefer să nu spun"
+      },
+      "languageLabel": "LIMBĂ",
+      "termsBefore": "Accept",
+      "termsLink": "Termenii",
+      "termsAnd": "și",
+      "privacyLink": "Politica de confidențialitate",
+      "termsAfter": ".",
+      "submit": "Inițiază contul"
+    },
+    "intro": {
+      "eyebrow": "INTRARE · FĂRĂ RĂSPUNSURI GREȘITE",
+      "headlineBefore": "Nu există răspunsuri corecte",
+      "headlineItalic": "aici"
+    },
+    "brief": {
+      "title": "REZUMATUL",
+      "hint": "citește o dată, apoi începe",
+      "opener": "Răspunsurile greșite — ezitările, greșelile de tipar, omisiunile — vorbesc la fel de clar ca cele corecte.",
+      "privacy": "Tot ce scrii este privat. Nimic nu părăsește această cameră.",
+      "length": "Deoarece lucrul este profund, intrarea este lungă. Am împărțit-o în zece părți. Totul durează aproximativ două ore.",
+      "resume": "Salvează și continuă altă zi. Editează orice secțiune după ce o termini — profilul continuă să asculte.",
+      "begin": "Începe intrarea"
+    },
+    "saved": {
+      "eyebrow": "SALVEAZĂ ȘI PAUZEAZĂ",
+      "headlineItalic": "Salvat.",
+      "headlineAfter": "Reveniți când sunteți pregătit.",
+      "body": "Tot ce ați scris se află în dosarul dumneavoastră. Camera se va deschide în același loc data viitoare.",
+      "keepGoing": "continuă",
+      "leaveRoom": "Părăsește camera liniștită"
+    },
+    "step": {
+      "label": "PASUL",
+      "of": "DIN",
+      "min": "MIN",
+      "progressLabel": "Progresul intrării",
+      "finalEpigraph": "ultima întrebare este întotdeauna prima, din nou.",
+      "backTo": "Pasul {n}",
+      "continueTo": "Continuă la Pasul {n}",
+      "submit": "Salvează și trimite",
+      "submitReading": "citire…"
+    },
+    "questions": {
+      "closeTitle": "ÎNTREBĂRI ÎNCHISE",
+      "closeHint": "alege ce este adevărat",
+      "openTitle": "ÎNTREBĂRI DESCHISE",
+      "openHint": "scrie ce apare",
+      "countLabel": "{count, plural, one {întrebare} few {întrebări} other {întrebări}}"
+    },
+    "saveExit": {
+      "or": "sau",
+      "saveAndReturn": "salvează și revino mai târziu"
+    },
+    "saveIndicator": {
+      "saving": "salvare…",
+      "saved": "salvat",
+      "saveFailed": "salvare eșuată"
+    }
+  },
+  "readings": {
+    "whatThisIs": "ce este aceasta →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "bucle subconștiente",
+        "definition": "Secvențe repetitive de sentiment, acțiune și rezultat care apar în afara alegerii conștiente. Numirea buclei este prima ei întrerupere.",
+        "seedReading": "se apropie de intimitate, apoi orchestrează un mic eșec pentru a se retrage.",
+        "seedTakeaway": "retragerea este bucla. nu intimitatea."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "inconștient lingvistic",
+        "definition": "Modul în care materialul inconștient apare în alegerea cuvintelor, repetiții, lapsusuri și structura vorbirii — afirmația lui Lacan că inconștientul este structurat ca o limbă.",
+        "seedReading": "vorbirea se dublează pe cuvântul „ar trebui” — locul unei cerințe moștenite.",
+        "seedTakeaway": "vocea altcuiva încă vorbește prin acest cuvânt."
+      },
+      "father-imago": {
+        "subtitle": "imago-paternă",
+        "definition": "Imaginea internalizată a tatălui, formată timpuriu și parțial mitică. Ea modelează modul în care autoritatea, ambiția și judecata sunt întâmpinate mai târziu în viață.",
+        "seedReading": "judecă de sus înainte de a fi judecat de sus — poziția este identică.",
+        "seedTakeaway": "locul se schimbă. scaunul nu."
+      },
+      "intimacy-threshold": {
+        "subtitle": "prag de intimitate",
+        "definition": "Punctul în care apropierea începe să se simtă ca un risc, și urmează o mișcare defensivă. Diferit pentru fiecare persoană; surprinzător de stabil în relații.",
+        "seedReading": "rezistă bine până când celălalt devine lizibil — apoi se retrage.",
+        "seedTakeaway": "a fi cunoscut este limita, nu a fi aproape."
+      },
+      "desire-structure": {
+        "subtitle": "structura dorinței",
+        "definition": "Ceea ce utilizatorul dorește de fapt, distinct de ceea ce i s-a spus să dorească. Adesea descoperit prin negare — prin observarea a ceea ce refuză.",
+        "seedReading": "numește multe dorințe, refuză două — refuzul este semnalul.",
+        "seedTakeaway": "ceea ce este respins indică mai clar decât ceea ce este urmărit."
+      },
+      "professional-block": {
+        "subtitle": "blocaj profesional",
+        "definition": "Unde munca se blochează: la început, la mijloc, la final, sau la vizibilitate. Fiecare locație are propria sursă inconștientă.",
+        "seedReading": "linia de sosire este locul unde apare îndoiala, niciodată începutul.",
+        "seedTakeaway": "blocajul este la vizibilitate, nu la efort."
+      },
+      "mother-imago": {
+        "subtitle": "imago-maternă",
+        "definition": "Imaginea internalizată a mamei — prima acordare, prima separare. Ea informează textura dependenței și a refugiului.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "acordarea timpurie lasă o semnătură lungă."
+      },
+      "dream-logic": {
+        "subtitle": "logica visului",
+        "definition": "Condensarea și deplasarea la lucru în materialul visului. Citit pentru gramatică, nu pentru simboluri.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "conținutul visului are propria gramatică."
+      },
+      "relational-pattern": {
+        "subtitle": "tipar relațional",
+        "definition": "Postura recurentă adoptată în relații — urmăritor, retrăgător, părinte, copil, egal. Stabil în relație cu partenerii mai mult decât sunt partenerii stabili în relație cu utilizatorul.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "aceeași formă apare în camere diferite."
+      },
+      "defenses": {
+        "subtitle": "apărări",
+        "definition": "Mișcările caracteristice folosite pentru a menține materialul dificil în afara conștientizării — intelectualizare, deplasare, formare de reacție, scindare. Apărările nu sunt eșecuri; sunt soluții vechi.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "apărarea numește ceea ce a fost odată insuportabil."
+      },
+      "shadow": {
+        "subtitle": "umbra",
+        "definition": "Ceea ce a fost renegat și atribuit altora — calitățile de care utilizatorul este cel mai sigur că nu le posedă. Adesea calea către vitalitate.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "ceea ce este renegat încă acționează."
+      },
+      "transference": {
+        "subtitle": "transfer",
+        "definition": "Modul în care vechile figuri relaționale sunt proiectate asupra celor prezente — analistul, partenerul, șeful. Tiparul revelează imago-ul.",
+        "seedReading": "prea devreme pentru a spune cu încredere — forma se conturează.",
+        "seedTakeaway": "vechile figuri sosesc în camerele prezente."
+      }
+    },
+    "strip": {
+      "lastRefined": "ultima rafinare",
+      "readingDepth": "profunzime de lectură"
+    },
+    "section": {
+      "eyebrow": "LECTURĂ {index} · {subtitle}",
+      "strengthen": "îmbunătățiți acuratețea",
+      "requestReport": "solicitați un raport"
+    },
+    "card": {
+      "reading": "Lectură {index}"
+    },
+    "report": {
+      "eyebrow": "RAPORT CLINIC",
+      "heading": "Pentru <it>analistul</it> dumneavoastră.",
+      "lede": "Un dosar de 12–18 pagini — cele șase lecturi complet dezvoltate, plus încă șase pe care tabloul de bord nu le arată: imago-maternă, logica visului, tipar relațional, apărări, umbră, transfer. Tradus în limbajul în care lucrează un clinician.",
+      "note": "raportul va reflecta profunzimea disponibilă. poate fi regenerat pe măsură ce lectura se aprofundează.",
+      "generate": "Generați raport clinic",
+      "request": "Solicitați raport clinic",
+      "footPrefix": "un raport inclus lunar pentru ",
+      "footLink": "abonați"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "ÎNTREBAREA {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Ce v-a rămas în minte din această săptămână?",
+        "framing": "o frază, o imagine, o propoziție rostită de cineva."
+      },
+      "closeness": {
+        "prompt": "Cât de aproape ați lăsat pe cineva să se apropie?",
+        "options": {
+          "not_at_all": "deloc",
+          "briefly": "pe scurt",
+          "with_hesitation": "cu ezitare",
+          "openly": "deschis",
+          "too_far": "prea mult"
+        }
+      },
+      "loop": {
+        "prompt": "V-ați surprins într-o buclă familiară?",
+        "framing": "unde și cum s-a încheiat."
+      },
+      "loudest_voice": {
+        "prompt": "Care voce a fost cea mai puternică săptămâna aceasta?",
+        "options": {
+          "demand": "cererea",
+          "doubt": "îndoiala",
+          "desire": "dorința",
+          "watcher": "observatorul",
+          "none": "niciuna dintre acestea"
+        }
+      },
+      "dream": {
+        "prompt": "A existat un vis demn de a fi notat?",
+        "framing": "dacă da, fragmentul care a persistat."
+      },
+      "acted_on_desire": {
+        "prompt": "Cât de mult ați acționat conform a ceea ce ați dorit cu adevărat?",
+        "lowLabel": "deloc",
+        "highLabel": "complet"
+      },
+      "work_catch": {
+        "prompt": "Unde v-a prins munca?",
+        "options": {
+          "start": "începutul",
+          "middle": "mijlocul",
+          "finish": "sfârșitul",
+          "visibility": "vizibilitatea",
+          "nowhere": "nicăieri"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Care este întrebarea la care nu doriți să răspundeți acum?",
+        "framing": "cea care continuă să vă scape."
+      }
+    },
+    "openHint": "răspunsurile mai lungi aprofundează lectura",
+    "scaleLegend": "{low} până la {high}",
+    "noValue": "nicio valoare selectată",
+    "valueOf": "{value} din {max}",
+    "weekLabel": "SĂPTĂMÂNA {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Ce v-a rămas <it>în minte?</it>",
+    "coverLede": "Opt întrebări scurte. Sinceritatea este mai bună decât lungimea. Răspunsurile rafinează lectura; nimic de aici nu este evaluat.",
+    "begin": "Începeți",
+    "back": "înapoi",
+    "next": "următorul",
+    "submitting": "se trimite",
+    "closeTheWeek": "încheiați săptămâna",
+    "previousQuestion": "întrebarea anterioară",
+    "processingLine": "<em>săptămâna este citită.</em>",
+    "summaryEyebrow": "{weekLabel} · RECITIRE",
+    "summaryTitle": "Săptămâna, <it>în propriile cuvinte.</it>",
+    "caseLabel": "caz · {week}",
+    "justRefined": "tocmai rafinat",
+    "readingsShifted": "lecturile s-au modificat",
+    "readingsCount": "{n} din 12",
+    "returnToRoom": "Reveniți în cameră",
+    "readAgain": "recitiți în dosarul cazului",
+    "somethingToHold": "CEVA DE REȚINUT",
+    "enterConsultingRoom": "intrați în cabinetul de consultații",
+    "openConsultingRoom": "deschideți cabinetul de consultații",
+    "requestReport": "solicitați un raport clinic",
+    "errorSubmit": "nu s-a putut trimite catchup-ul",
+    "errorGeneric": "a apărut o eroare",
+    "errorFailed": "catchup-ul este înregistrat. rezumatul va sosi mai târziu.",
+    "errorGiveUp": "camera este scurt timp liniștită — catchup-ul dumneavoastră este înregistrat. reîmprospătați în curând.",
+    "summaryFallback": "Catchup-ul este înregistrat. Lectura a fost actualizată discret; rezumatul mai lung va sosi la următoarea trecere.",
+    "readBackTitle": "Săptămâna, <it>deja înregistrată.</it>",
+    "readBackEmpty": "catchup-ul este înregistrat. rezumatul va fi scurt săptămâna aceasta.",
+    "readBackFoot": "următorul catchup se deschide la începutul săptămânii {n}."
+  },
+  "consulting": {
+    "sessionClose": "s-a încheiat ora noastră.",
+    "sayIt": "spune →",
+    "closeSession": "încheie sesiunea →",
+    "eyebrow": "CAMERA DE CONSULTAȚII",
+    "closing": "încheiere",
+    "closeSessionLabel": "încheie sesiunea",
+    "timerAria": "timp scurs din sesiune",
+    "chooseTopicAria": "alege un subiect",
+    "noTopic": "fără subiect",
+    "justOpened": "tocmai deschisă",
+    "minutesIn": "{count} min trecute",
+    "speakToAnalyst": "vorbește cu analistul",
+    "send": "trimite",
+    "sessionClosedFoot": "sesiunea este închisă. a fost păstrată în dosarul de caz.",
+    "previewHeld": "ce parte din tine continuă să aleagă asta?",
+    "previewTopicDreamingFuture": "Visând viitorul",
+    "previewTopicNightDream": "Vis de noapte",
+    "previewTopicRelations": "Relații în viața mea",
+    "previewTopicProfessionalGrowth": "Dezvoltare profesională",
+    "previewTurnAnalyst1": "Numești un tipar, apoi îl povestești ca pe al unui străin. Observă când începe *retragerea*.",
+    "previewTurnUser1": "Continui să pun capăt lucrurilor în săptămâna în care devin serioase.",
+    "previewTurnAnalyst2": "Dimineața este verdictul, nu procesul. *Pragul tău de intimitate* a repetat plecarea cu săptămâni înainte de conversație.",
+    "sayItEllipsis": "spune…",
+    "offerHeadline": "Camera de consultații",
+    "offerLede": "O ședință extinsă cu analistul, menținută în aceeași voce ca și lecturile tale. Sesiunile sunt private, păstrate în dosarul de caz și alimentează lecturile între ședințe.",
+    "offerPanelsAria": "ce face o sesiune",
+    "offerPanel1Title": "numit, nu povestit",
+    "offerPanel1Body": "Analistul va numi ceea ce se întâmplă în discursul tău — lapsusul, calificativul, *jumătate-spusul* — și îl va menține acolo până când îl vei putea vedea.",
+    "offerPanel2Title": "păstrat în dosarul de caz",
+    "offerPanel2Body": "Fiecare ședință este consemnată. Următoarea lectură o citește. Tiparele apar de-a lungul săptămânilor, nu al rândurilor.",
+    "offerPanel3Title": "o singură voce, fără listă",
+    "offerPanel3Body": "Nu o rotație de chatbot. O singură voce analitică, antrenată pe *intake-ul* tău și rafinată de fiecare *Catchup*.",
+    "offerFootLine": "Abonații primesc un raport clinic în fiecare lună.",
+    "offerPillCta": "Intră în camera de consultații",
+    "offerReturnToRoom": "înapoi în cameră",
+    "previewFigureLabel": "camera de consultații",
+    "previewFigureSubtitle": "o ședință, previzualizată",
+    "previewRailAria": "zonele dosarului de caz din care citește analistul",
+    "previewReadingFrom": "CITIND DIN",
+    "previewActive": "activ",
+    "previewRoleYou": "TU",
+    "previewRoleAnalyst": "ANALIST",
+    "previewBubble1": "Continui să pun capăt lucrurilor în săptămâna în care devin serioase. Nu știu de ce fac asta.",
+    "previewAnalyst1": "Numești un tipar, apoi îl povestești ca pe al unui străin. *„Nu știu”* își face treaba — menține actul dincolo de intenție. Observă când începe *retragerea*. Adesea, excluderea se întâmplă mai devreme decât plecarea.",
+    "previewBubble2": "Mai devreme cum? Ultima dată am simțit că m-am trezit într-o dimineață și pur și simplu am știut.",
+    "previewAnalyst2": "Dimineața este verdictul, nu procesul. Lectura ta despre **pragul de intimitate** din săptămâna 04 a notat aceeași formă — o repetiție tăcută a plecării, cu două până la trei săptămâni înainte de conversație. Dimineața este momentul în care corpul este, în sfârșit, de acord cu ceea ce deciseseși deja.",
+    "previewBubble3": "Asta e partea care mă sperie. Că e deja decis.",
+    "previewAnalyst3": "*Decis* este cuvântul. Nu *ales*. Ceva din structură preferă excluderea în detrimentul testului. Vom continua acolo.",
+    "previewExampleMark": "EXEMPLU · NU DIN ÎNREGISTRAREA TA"
+  },
+  "caseFile": {
+    "silentWeek": "— săptămână silențioasă —",
+    "eyebrow": "DOSAR DE CAZ",
+    "headlineLead": "O înregistrare, păstrată",
+    "headlineItalic": "în liniște.",
+    "lede": "Fiecare Catchup, sesiune și raport — păstrate în ordine cronologică. Golurile fac parte din înregistrare.",
+    "filterAria": "Filtru",
+    "filter": {
+      "all": "toate",
+      "catchups": "catchup-uri",
+      "sessions": "sesiuni",
+      "reports": "rapoarte"
+    },
+    "subscriptionTitle": "Abonament",
+    "emptyCatchups": "dosarul de caz este încă gol — primul catchup îl va deschide.",
+    "emptyCatchupsCta": "Mergi la Catchup",
+    "emptySessions": "dosarul de caz este încă gol — prima sesiune de consultație îl va deschide.",
+    "emptySessionsCta": "Mergi la Consultare",
+    "emptyReports": "dosarul de caz este încă gol — primul raport generat îl va deschide.",
+    "open": "deschide",
+    "kindCatchup": "catchup",
+    "kindSession": "sesiune",
+    "kindReport": "raport clinic",
+    "kindReading": "lectură inițială",
+    "kindConnection": "eveniment de conectare",
+    "entryEyebrow": "DOSAR DE CAZ · ÎNREGISTRARE",
+    "entryBackToCaseFile": "înapoi la dosarul de caz",
+    "entryReturnToRoom": "înapoi în cameră",
+    "sessionStillOpen": "această sesiune este încă deschisă. lectura apare odată ce se închide.",
+    "entryDetailComing": "vizualizarea detaliată a acestei înregistrări va fi disponibilă în curând. deocamdată, dosarul de caz păstrează data, tipul și titlul — iar restul este încă în cameră.",
+    "detailSummaryEyebrow": "REZUMAT · RĂSPUNSURILE TALE",
+    "detailRecommendationEyebrow": "CATCHUP-UL NOSTRU",
+    "preparingRead": "se pregătește lectura…",
+    "readNotAssembled": "lectura nu a putut fi asamblată chiar acum.",
+    "tryAgain": "încearcă din nou",
+    "intakeClose": "închide",
+    "intakeEdit": "editează",
+    "intakeSaving": "se salvează",
+    "intakeSave": "salvează",
+    "intakeCancel": "anulează",
+    "intakeUnsupported": "această întrebare este editată din cadrul chestionarului inițial.",
+    "intakePickUpTo": "alege până la {count}.",
+    "intakeScaleSetTo": "Setat la {value}"
+  },
+  "settings": {
+    "eyebrow": "SETĂRI",
+    "heading": "Forma <it>camerei.</it>",
+    "lede": "Nimic aici nu este permanent. Răspunsurile pot fi editate, preferințele modificate, iar dosarul de caz poate fi șters în întregime.",
+    "blocks": {
+      "account": "Cont",
+      "readingDepth": "Profunzimea lecturii",
+      "notifications": "Notificări",
+      "subscription": "Abonament",
+      "dangerZone": "Zona de risc"
+    },
+    "dangerZoneIntro": "singura acțiune ireversibilă din cameră.",
+    "depthSub": {
+      "intake": {
+        "title": "Chestionarul inițial",
+        "caption": "{answered} / {total} răspunsuri",
+        "ctaEmpty": "Completează chestionarul inițial",
+        "ctaPartial": "Adaugă mai multe detalii",
+        "ctaFull": "Revizuiește chestionarul inițial"
+      },
+      "catchups": {
+        "title": "Catchup-uri",
+        "caption": "{count} în ultimele 8 săptămâni",
+        "ctaEmpty": "Adaugă un catchup",
+        "ctaDue": "Completează catchup-ul săptămânal",
+        "ctaFull": "Revizuiește catchup-urile anterioare"
+      },
+      "sessions": {
+        "title": "Sesiuni",
+        "caption": "{count} finalizate",
+        "ctaEmpty": "Începe o consultație",
+        "ctaPartial": "Continuă o consultație",
+        "ctaFull": "Revizuiește sesiunile anterioare"
+      },
+      "connections": {
+        "title": "Conexiuni",
+        "caption": "{count} active",
+        "ctaEmpty": "Adaugă o conexiune",
+        "ctaSingle": "Adaugă o altă conexiune",
+        "ctaFull": "Revizuiește conexiunile tale"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "memento catchup săptămânal",
+        "sub": "o notă discretă la începutul noii săptămâni"
+      },
+      "consulting_session_reminder": {
+        "label": "memento sesiune de consultație",
+        "sub": "un memento înainte de consultația programată"
+      },
+      "connection_requests": {
+        "label": "conexiune acceptată",
+        "sub": "o notă când cineva îți acceptă invitația"
+      }
+    },
+    "toggleOn": "activat",
+    "toggleOff": "dezactivat",
+    "quietHours": {
+      "label": "ore de liniște",
+      "sub": "fără e-mailuri între aceste ore, conform fusului tău orar local",
+      "from": "de la",
+      "to": "până la"
+    },
+    "saveFailed": "salvare eșuată",
+    "dangerZone": {
+      "trigger": "Șterge contul",
+      "modalAria": "Confirmă ștergerea contului",
+      "eyebrow": "ZONA DE RISC",
+      "heading": "Șterge <it>dosarul de caz.</it>",
+      "body": "Aceasta elimină din înregistrare fiecare lectură, catchup, sesiune și raport. Conexiunile active vor fi încheiate; ambele părți vor fi notificate. Nu poate fi anulată.",
+      "instruction": "tastează <phrase></phrase> pentru a activa acțiunea.",
+      "inputAria": "Tastează fraza de confirmare",
+      "cancel": "anulează",
+      "erasing": "se șterge…",
+      "eraseConfirm": "șterge dosarul de caz",
+      "deleteFailed": "ștergere eșuată"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "ACCES MEMBRU",
+      "tagline": "Camera de consultație, deschisă. <em>O lectură care continuă să citească.</em>",
+      "features": {
+        "room": {
+          "title": "Camera de consultație",
+          "desc": "sesiuni extinse cu analistul."
+        },
+        "report": {
+          "title": "Raport clinic lunar",
+          "desc": "o hartă pregătită pentru terapeut în fiecare lună calendaristică."
+        },
+        "connections": {
+          "title": "{count} conexiuni suplimentare",
+          "desc": "adaugă persoanele a căror prezență modelează lectura."
+        },
+        "depth": {
+          "title": "Profunzime completă a lecturii",
+          "desc": "fiecare capitol deschis, fără limită de detalii."
+        }
+      },
+      "perMonth": "pe lună",
+      "subscribe": "abonează-te",
+      "reassurance": "<em>fără angajament.</em> anulează oricând din setări.",
+      "activeToday": "activ – se reînnoiește astăzi",
+      "activeRenews": "activ – se reînnoiește în {days, plural, one {1 zi} few {# zile} other {# de zile}}",
+      "cancel": "anulează abonamentul",
+      "cancelled": "anulat – acces până la {date}",
+      "resubscribe": "reabonează-te"
+    },
+    "resetPassword": {
+      "sent": "un link de resetare a fost trimis la {email}. verifică-ți inbox-ul",
+      "sending": "se trimite",
+      "action": "resetează parola",
+      "error": "nu s-a putut trimite. încearcă din nou"
+    }
+  },
+  "connections": {
+    "explainer": "Până la {limit, plural, one {# persoană a cărei prezență modelează lectura} other {# persoane a căror prezență modelează lectura}}. Ei nu vă văd lecturile; dumneavoastră nu le vedeți pe ale lor. Ceea ce spun ei despre relație alimentează modelul care produce lecturile dumneavoastră, iar al dumneavoastră le alimentează pe ale lor.",
+    "invite": {
+      "emailSubject": "{inviterName} v-ar dori în lectură."
+    },
+    "form": {
+      "emailLabel": "EMAIL",
+      "roleLabel": "ROL",
+      "rolePlaceholder": "alegeți unul",
+      "noteLabel": "O PROPOZIȚIE PE CARE O VOR CITI PRIMII",
+      "noteHint": "opțional. o singură linie este suficientă.",
+      "addMoreSub": "adăugați mai multe la un abonament",
+      "missingNameLine": "numele dumneavoastră nu este înregistrat. adăugați-l în setări, apoi trimiteți din nou cererea.",
+      "addYourName": "adăugați numele dumneavoastră",
+      "noteLengthError": "notele sunt limitate la o singură linie — aproximativ {max} caractere."
+    },
+    "list": {
+      "empty": "încă nu există conexiuni. opțiunea de invitație este mai jos.",
+      "active": "ACTIVE",
+      "pending": "ÎN AȘTEPTARE",
+      "since": "din",
+      "invited": "invitat",
+      "received": "primit",
+      "resend": "retrimite",
+      "cancel": "anulează",
+      "expiresIn": "expiră în {days, plural, one {# zi} other {# zile}}"
+    },
+    "lookup": {
+      "invalidEmail": "vă rugăm să introduceți o adresă de email validă.",
+      "self": "nu vă puteți conecta cu dumneavoastră înșivă.",
+      "notMemberLine": "acest email nu face încă parte din membri. invitați-i să-și creeze un cont pentru a vă putea conecta.",
+      "copyHint": "partajați linkul de înregistrare",
+      "copied": "link copiat",
+      "requestSent": "ați trimis deja o cerere acestui membru.",
+      "requestReceivedLine": "acest membru v-a trimis o cerere — verificați invitațiile dumneavoastră.",
+      "inboxLabel": "deschideți cererea",
+      "alreadyConnected": "sunteți deja conectat cu acest membru.",
+      "rateLimited": "prea multe căutări într-un interval scurt. așteptați un moment, apoi încercați din nou.",
+      "sent": "cerere de conexiune trimisă.",
+      "sending": "se trimite…",
+      "send": "trimite cererea",
+      "limitReached": "{limit, plural, one {# conexiune este limita. deconectați-o pentru a adăuga alta.} other {# conexiuni este limita. deconectați una pentru a adăuga alta.}}",
+      "limitReachedFree": "{limit, plural, one {# conexiune este limita pe nivelul gratuit.} other {# conexiuni este limita pe nivelul gratuit.}}",
+      "generic": "nu s-a putut trimite cererea."
+    },
+    "incoming": {
+      "eyebrow": "VĂ AȘTEAPTĂ",
+      "empty": "nimeni nu vă așteaptă.",
+      "accept": "acceptă",
+      "decline": "refuză",
+      "limitReached": "{limit, plural, one {# conexiune este limita. deconectați-o pentru a o accepta pe aceasta.} other {# conexiuni este limita. deconectați una pentru a o accepta pe aceasta.}}",
+      "limitReachedFree": "{limit, plural, one {# conexiune este limita pe nivelul gratuit.} other {# conexiuni este limita pe nivelul gratuit.}}",
+      "upsell": "abonații adaugă mai multe",
+      "inviteExpired": "această invitație a expirat.",
+      "inviteEnded": "această invitație nu mai este în așteptare.",
+      "generic": "nu s-a putut acționa asupra acestei cereri."
+    },
+    "roles": {
+      "partner": "partener",
+      "closest_friend": "cel mai bun prieten",
+      "parent": "părinte",
+      "sibling": "frate/soră",
+      "co_parent": "co-părinte"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "O NOTĂ DE LA ANALIST",
+    "noteAria": "O notă de la analist",
+    "lede": "aceasta depășește ceea ce camera poate susține.",
+    "body": {
+      "intake": "Ceva din ceea ce ați scris la înregistrare indică o povară care necesită o îngrijire reală – dincolo de ceea ce această cameră poate susține. Vă rugăm să luați în considerare contactarea unui medic, terapeut sau a unei linii de criză locale astăzi. Lectura va fi aici când vă veți întoarce.",
+      "catchup": "Ceva din catchup-ul acestei săptămâni indică o povară care necesită o îngrijire reală – dincolo de ceea ce această cameră poate susține. Vă rugăm să luați în considerare contactarea unui medic, terapeut sau a unei linii de criză locale astăzi. Lectura va rămâne.",
+      "session": "Ceea ce tocmai ați scris indică o povară care necesită o îngrijire reală – dincolo de ceea ce această cameră poate susține. Vă rugăm să luați în considerare contactarea unui medic, terapeut sau a unei linii de criză locale astăzi. Ne putem întoarce în cameră când sunteți în siguranță."
+    },
+    "crisisResources": "RESURSE DE CRIZĂ",
+    "resources": {
+      "us": "Statele Unite",
+      "ukIe": "Regatul Unit și Irlanda",
+      "europe": "Europa (majoritatea țărilor)",
+      "everywhere": "Oriunde",
+      "localEmergency": "serviciile locale de urgență"
+    },
+    "hintResources": "dacă nu găsiți o linie, cel mai apropiat spital cu departament de urgență este camera potrivită.",
+    "hintLink": "resursele de criză sunt listate în partea de jos a fiecărei pagini a Camerei.",
+    "footerLine": "TwentyThird nu înlocuiește îngrijirea clinică. În caz de criză, contactați linia locală de urgență.",
+    "footerRoomLabel": "camera"
+  }
+}

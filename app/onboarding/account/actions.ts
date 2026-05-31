@@ -5,6 +5,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { accountSchema } from "@/lib/onboarding/schema";
 import { INTAKE_INTRO_PATH } from "@/lib/onboarding/routing";
+import { setLocaleCookie } from "@/lib/i18n/locale";
+import { isSupportedLocale } from "@/lib/i18n/locales";
 
 function backToAccount(params: Record<string, string>): string {
   const sp = new URLSearchParams(params);
@@ -79,6 +81,18 @@ export async function initiateAccount(formData: FormData) {
         gender: parsed.data.gender,
       }),
     );
+  }
+
+  // Language chosen on this step becomes the authoritative system locale
+  // — persisted to users_meta and mirrored to the cookie. From here it
+  // overrides the IP/header guess across every page.
+  const localeRaw = formData.get("locale");
+  if (typeof localeRaw === "string" && isSupportedLocale(localeRaw)) {
+    await supabase
+      .from("users_meta")
+      .update({ locale: localeRaw })
+      .eq("user_id", user.id);
+    await setLocaleCookie(localeRaw);
   }
 
   revalidatePath("/onboarding", "layout");

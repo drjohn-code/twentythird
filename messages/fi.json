@@ -1,0 +1,2909 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSYKODYNAMINEN ÄLY",
+        "titleLine1": "Edistyksellinen",
+        "titleLine2Pre": "Psykodynaaminen",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "itse",
+        "titleLine3It": "löytämiseen",
+        "ctaPrimary": "Aloita löytöretkesi",
+        "ctaGhostOr": "tai",
+        "ctaGhostText": "lue tieteestä",
+        "scroll": "vieritä"
+      },
+      "philosophy": {
+        "eyebrow": "YDINFILOSOFIA",
+        "titlePre": "5 minuutin korjaukset eivät",
+        "titleIt": "muuta ketään",
+        "sub1": "Teemme perussyyanalyysin. Yhdistämällä Sigmund Freudin perustavanlaatuiset oivallukset Jacques Lacanin läpimurtoihin kielessä, halussa ja identiteetissä.",
+        "sub2": "Useimmat työkalut toimivat pinnalla. Me työskentelemme siellä, missä se kirjoitettiin – kielen arkkitehtuurissa, puheen lipsahduksissa, kuvioissa, joita et ole vielä nimennyt.",
+        "metaLineageLabel": "Linja",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metodi",
+        "metaMethodVal": "Rakenteellinen",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "Tiedostamaton"
+      },
+      "privacy": {
+        "eyebrow": "LUOTTAMUKSELLISUUS",
+        "titlePre": "Tietosuoja on",
+        "titleIt": "ensisijainen",
+        "titlePost": "prioriteetti.",
+        "lede": "Luottamuksellisuus ei ole ominaisuus; se on syvyyden edellytys. Ihmiset puhuvat vapaasti vain siellä, missä he tuntevat olonsa turvalliseksi – siksi huone on rakennettu suojaamaan sanomaasi.",
+        "rowTag": "Suojatoimet",
+        "rowTitlePre": "Huone, joka on rakennettu",
+        "rowTitleIt": "säilyttämään",
+        "rowTitlePost": "sanomasi.",
+        "rowBody": "Työ vaatii puolustuskyvyttömintä materiaaliasi. Huone on rakennettu vastaanottamaan se luottamuksellisesti ja pitämään sen suljettuna kaikilta, joille se ei ollut tarkoitettu.",
+        "figLabel": "Tietojen käsittely",
+        "figSubtitle": "vakaa asento",
+        "listProcessingKey": "käsittely",
+        "listProcessingVal": "Jokainen merkintä käsitellään kolminkertaisesti sokeana.",
+        "listEncryptionKey": "salaus",
+        "listEncryptionVal": "Kaikki tiedot on salattu.",
+        "listProtectionKey": "suojaus",
+        "listProtectionVal": "Säilytetään korkeimman saatavilla olevan suojauksen alaisena.",
+        "footKey": "Tarkoitus",
+        "footVal": "hiljainen, turvallinen paikka syvälliseen keskusteluun"
+      },
+      "process": {
+        "eyebrow": "MITEN SE TOIMII",
+        "titlePre": "Neljä askelta,",
+        "titleIt": "yksi laajeneva kehä",
+        "lede": "Viestintä syvenee neljässä vaiheessa. Jokainen laajentaa sitä, mitä järjestelmä voi lukea – yhdestä aloituksesta jatkuvaan keskusteluun.",
+        "step1Sub": "syväprofilointi",
+        "step1TitlePre": "Kymmenen",
+        "step1TitleIt": "vaiheen",
+        "step1TitlePost": "aloitus.",
+        "step1Body": "Luo tili ja suorita 10-vaiheinen aloitus. Tämä on syväprofilointivaihe; ensimmäinen lukema rakentuu kokonaan siitä, mitä tähän kirjaat.",
+        "step2Sub": "välitetty, ei koskaan molemminpuolinen",
+        "step2TitlePre": "Ihmiset, jotka",
+        "step2TitleIt": "muokkaavat sinua",
+        "step2Body": "Lisää ihmiset, jotka muokkaavat sinua, kukin roolinsa mukaan – kumppani, lähin ystävä, vanhempi, sisarus, toinen vanhempi. Se, mitä he jakavat, ei ole koskaan sinulle näkyvää; se, mitä sinä jaat, ei ole koskaan heille näkyvää. Vain järjestelmä lukee molemmat.",
+        "step3Sub": "viikoittainen lukema",
+        "step3TitlePre": "Sunnuntain",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Kerro sunnuntai-iltaisin, mitä viikollasi tapahtui ja miltä sen eläminen tuntui. Jokainen Catchup tarkentaa lukemaa – kuva terävöityy viikkojen kertyessä.",
+        "step4Sub": "täysin yksityinen",
+        "step4TitlePre": "Konsultaatio",
+        "step4TitleIt": "huone",
+        "step4Body": "Puhu täysin yksityisessä konsultaatiossa analyytikon kanssa – ääni, joka tuntee sinut paremmin kuin kukaan, koulutettu 23 kerroksen edistyneillä tekoälymalleilla."
+      },
+      "brain": {
+        "eyebrow": "TYÖ",
+        "titleLine1": "Alitajuntasi",
+        "titleLine2": "purkaminen",
+        "state1Tag": "MALLINNUS",
+        "state1TitlePre": "Alitajuiset",
+        "state1TitleIt": "silmukat",
+        "state1TitlePost": "ja toistuvuus.",
+        "state1Body": "Seuraamme toistuvia syklejä valinnoissasi, ihmissuhdeahdistuksissasi ja emotionaalisissa laukaisijoissasi. Tunnistamalla nämä silmukat näytämme sinulle tarkalleen, missä tietoiset aikomuksesi kaapataan tiedostamattoman ohjelmoinnin toimesta.",
+        "state2Tag": "PROFILOINTI",
+        "state2TitlePre": "Syväytiminen",
+        "state2TitleIt": "psykodynaaminen",
+        "state2TitlePost": "profilointi.",
+        "state2Body": "Ohita pinnalliset persoonallisuustestit. Tämä on psykologisten dynamiikkasi rakenteellinen skannaus – kartoittaa, miten menneet kokemuksesi muokkaavat nykyistä identiteettiäsi, egoasi ja puolustusmekanismejasi.",
+        "state3Tag": "KIELI",
+        "state3TitlePre": "Lingvistisen",
+        "state3TitleIt": "tiedostamattoman",
+        "state3TitlePost": "tutkimus.",
+        "state3Body": "Lacanilaiseen teoriaan juurtunut tekoälymme analysoi sanayhdistelmiäsi, taukojasi ja puhetyyliäsi. Autamme sinua lukemaan omien ajatustesi rivien välistä päästäksesi käsiksi piileviin ahdistuksiin ja toiveisiin, joita et ole vielä pystynyt ilmaisemaan."
+      },
+      "transform": {
+        "eyebrow": "MUUNNOS",
+        "titleLine1": "Katkaise kierre,",
+        "titleLine2": "Ja kirjoita se sitten uudelleen.",
+        "lede": "Kolme liikettä työssä. Kolme paikkaa, joissa oivalluksesta tulee muutos.",
+        "row1Tag": "Ihmissuhteet",
+        "row1TitlePre": "Paranna",
+        "row1TitleIt": "ihmissuhdedynamiikkasi",
+        "row1TitlePost": ".",
+        "row1Body": "Sama vetovoima vetää sinua kohti samanlaista ihmistä, samaa riitaa, samaa vetäytymistä. Tuomme esiin vuosia jatkuneen kaavan, nimeämme sen ja seuraamme, kuinka se menettää vetovoimansa.",
+        "row1Link": "Lue tapaustutkimus",
+        "row1FigLabel": "Kohde 1149-A",
+        "row1FigSubtitle": "pitkittäinen kaava",
+        "row1Outcome": "vetäytyi",
+        "row1SummaryRecurrenceKey": "toistuvuus",
+        "row1SummaryIntervalKey": "väli",
+        "row1SummaryAttractorKey": "vetovoima",
+        "row1SummaryAttractorVal": "intimacy threshold",
+        "row2Tag": "Unityöskentely",
+        "row2TitlePre": "Pura",
+        "row2TitleIt": "unilogiikka",
+        "row2TitlePost": ", kohdista tavoitteet.",
+        "row2Body": "Unesi ovat merkityksen harjoituksia. Seuraamme niiden kielioppia – siirtymiä, tiivistymiä, lipsahduksia – takaisin valveilla tehtyyn päätökseen, jonka ne yrittivät tehdä puolestasi.",
+        "row2Link": "Katso kommentoitu esimerkki",
+        "row2FigLabel": "Sessio 06",
+        "row2FigSubtitle": "unimerkintä, kommentoitu",
+        "row2Dream1Pre": "Olen takaisin vanhempieni talossa",
+        "row2Ann1": "primal scene",
+        "row2Dream1Mid": ", mutta huoneet avautuvat jatkuvasti muihin huoneisiin",
+        "row2Ann2": "ego boundary",
+        "row2Dream2Pre": "Mies isäni äänellä",
+        "row2Ann3": "father-imago",
+        "row2Dream2Mid": "ojentaa minulle avaimen. Avain muuttuu vedeksi",
+        "row2Ann4": "displacement",
+        "row2Dream3Pre": "Herään ennen kuin ehdin avata oven",
+        "row2Ann5": "desire / lack",
+        "row2Key1": "primal scene",
+        "row2Key2": "ego boundary",
+        "row2Key3": "father-imago",
+        "row2Key4": "displacement",
+        "row2Key5": "desire / lack",
+        "row3Tag": "Kutsumus",
+        "row3TitlePre": "Poista",
+        "row3TitleIt": "ammatilliset",
+        "row3TitlePost": "esteet.",
+        "row3Body": "Katto, johon jatkuvasti törmäät, liittyy harvoin taitoihin. Se on käsikirjoitus – varhain kirjoitettu, hiljaa harjoiteltu – jonka autamme sinua lukemaan ääneen ja kirjoittamaan uudelleen, lause lauseelta.",
+        "row3Link": "Menetelmäpaperi",
+        "row3FigLabel": "Käsikirjoituksen tarkistus",
+        "row3FigSubtitle": "työluonnos",
+        "row3Line1Prefix": "01 · En ole",
+        "row3Line1Old": "vielä valmis.",
+        "row3Line1New": "jo sallittu.",
+        "row3Line2Prefix": "02 · odottamaan",
+        "row3Line2Old": "vuoroani.",
+        "row3Line2New": "nimeämään mitä haluan.",
+        "row3Line3Prefix": "03 · koska",
+        "row3Line3Old": "joku saattaa pettyä.",
+        "row3Line3New": "pettymys on myös kieltä.",
+        "row3MetaOriginalPre": "alkuperäinen",
+        "row3MetaOriginalIt": "ikä 11",
+        "row3MetaRevisedPre": "tarkistettu",
+        "row3MetaRevisedIt": "sessio 06"
+      },
+      "outcomes": {
+        "eyebrow": "TULOKSET",
+        "titleLine1Pre": "Konkreettiset",
+        "titleLine1It": "oivallukset",
+        "titleLine2": "Hiljaisesti mitattavissa.",
+        "lede": "Tietopohjainen itsetuntemus, toimitettuna kliinikon kielellä — ei tietokilpailun.",
+        "row1Tag": "Nopeutuminen",
+        "row1TitlePre": "Perimmäinen",
+        "row1TitleIt": "oikotie",
+        "row1TitlePost": "todelliseen terapiaan.",
+        "row1Body": "Se, mikä ennen vaati monien vuosien suhteen, voi nyt alkaa viikkojen valmistelulla. Astu terapeutin vastaanotolle tietäen, mitä olet sanomassa.",
+        "row1Link": "Katso metodologia",
+        "row1FigSubtitle": "aika ensimmäiseen oivallukseen",
+        "row1TraditionalLabel": "Perinteinen polku",
+        "row1AxisYr1": "vuosi 1",
+        "row1AxisYr3": "vuosi 3",
+        "row1AxisYr6": "vuosi 6",
+        "row1AxisYr9": "vuosi 9",
+        "row1AxisYr12": "vuosi 12",
+        "row1TwentyThirdLabelPre": "TwentyThirdin",
+        "row1AxisWk1": "vk 1",
+        "row1AxisWk4": "vk 4",
+        "row1AxisWk8": "vk 8",
+        "row1AxisWk12": "vk 12",
+        "row1SummaryFaster": "nopeammin",
+        "row1SummaryDesc": "aika ensimmäiseen oivallukseen",
+        "row2Tag": "Raportti",
+        "row2TitlePre": "Terapeutille valmis",
+        "row2TitleIt": "psykologinen",
+        "row2TitlePost": "kartta.",
+        "row2Body": "Rakenteellinen kaavio sinusta — vietävissä, jaettavissa, syvästi ymmärrettävissä koulutetulle kliinikolle. Ei persoonallisuustesti; työdokumentti.",
+        "row2Link": "Katso esimerkkiraportti",
+        "row2FigLabel": "Kohde 1149-A",
+        "row2FigSubtitle": "rakenteellinen profiili",
+        "row2RepCase": "tapaus 1149-A",
+        "row2RepPrepared": "valmisteltu 04 · 26",
+        "row2MetricEgo": "Egon rakenne",
+        "row2MetricObject": "Objektisuhteet",
+        "row2MetricDefense": "Puolustuksen kompleksisuus",
+        "row2MetricDrive": "Vietin organisaatio",
+        "row2MetricSymbolic": "Symbolinen rekisteri",
+        "row2FootLabel": "Dominantti rakenne",
+        "row2FootVal": "obsessiivinen · hysteerisillä piirteillä",
+        "row3Tag": "Integraatio",
+        "row3TitlePre": "Personoitu",
+        "row3TitleIt": "integraatio",
+        "row3TitlePost": "& varjotyösuunnitelmat.",
+        "row3Body": "Päivittäiset kehotukset ja rituaalit, jotka siirtävät oivalluksen sivulta kehoon. Pieniä, harkittuja. Rakennettu oman rakenteesi ympärille, ei yleisen opetussuunnitelman.",
+        "row3Link": "Miten suunnitelma mukautuu",
+        "row3FigLabel": "Päivä 23",
+        "row3FigSubtitle": "päivittäinen kehotus",
+        "row3FigPlan": "suunnitelma 04",
+        "row3Day": "Keskiviikko",
+        "row3PromptEyebrow": "tämän päivän kehotus · varjotyö",
+        "row3PromptPre": "Missä tänään päätit",
+        "row3PromptIt": "olla",
+        "row3PromptPost": "näkemättä? Ja mitä suojelit piilottamalla?",
+        "row3Stream1Label": "hengitystyö",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "päiväkirja",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "varjokehotus",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "putki",
+        "row3StreakVal": "{n, plural, one {# päivä} other {# päivää}}"
+      },
+      "final": {
+        "eyebrow": "ALOITA",
+        "titlePre": "Alitajuntasi puhuu.",
+        "titleIt": "On aika kuunnella.",
+        "ctaPrimary": "Aloita löytöretkesi",
+        "ctaGhostOr": "tai",
+        "ctaGhostText": "lue tiede"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Tietosuojakäytäntö — TwentyThird",
+        "metaDescription": "Miten TwentyThird käsittelee henkilötietoja. Mikään ei poistu EU:sta. Mitään ei myydä.",
+        "eyebrow": "TIETOSUOJA",
+        "headingLead": "Henkilötiedot,",
+        "headingItalic": "käsitelty huolellisesti.",
+        "lede": "TwentyThird käsittelee jakamaasi tietoa antaakseen tarkkaa psykodynaamista oivallusta. Mikään ei poistu EU:sta. Mitään ei myydä.",
+        "controls": {
+          "headingLead": "Kuka",
+          "headingItalic": "hallinnoi",
+          "headingTail": "tietojasi",
+          "p1": "WelloWork AB, rekisteröity Ruotsissa (org. nr. 559472‑9997), toimipaikka Uppsalassa, on rekisterinpitäjä tällä verkkosivustolla ja suorien tiedustelujen kautta kerätyille henkilötiedoille.",
+          "p2": "Organisaation – klinikan, tutkimuslaitoksen, työnantajan – puolesta TwentyThird-alustalla käsiteltyjen tietojen osalta WelloWork AB toimii käsittelijänä ja asiakasorganisaatio on rekisterinpitäjä. Tätä suhdetta säätelee erillinen tietojenkäsittelysopimus."
+        },
+        "figure": {
+          "label": "kuka hallitsee tietojasi",
+          "controller": "Rekisterinpitäjä",
+          "directRelationship": "suora suhde",
+          "websiteVisitor": "Verkkosivuston kävijä",
+          "you": "Sinä",
+          "customerOrg": "Asiakasorganisaatio",
+          "viaDpa": "DPA:n kautta",
+          "processor": "Käsittelijä",
+          "platformUser": "Alustan käyttäjä"
+        },
+        "collect": {
+          "headingLead": "Mitä",
+          "headingItalic": "keräämme",
+          "contactStrong": "Yhteystiedot ja tilitiedot.",
+          "contactBody": "Nimi, sähköpostiosoite ja kaikki tiedot, jotka annat rekisteröityessäsi tai kirjoittaessasi meille. Oikeusperusta: sopimuksen täyttäminen (GDPR 6 artiklan 1 kohdan b alakohta).",
+          "sessionStrong": "Istunto- ja alustatiedot.",
+          "sessionBody": "Päiväkirjamerkinnät, vastaukset, unisisältö ja kielelliset mallit, jotka jaat TwentyThird-alustalla. Tämä on analyysin substraatti. Oikeusperusta: nimenomainen suostumus (GDPR 9 artiklan 2 kohdan a alakohta), joka annetaan käyttöönoton yhteydessä ja jonka voi peruuttaa milloin tahansa. Käsittelemme näitä tietoja erityiskategorian terveyteen liittyvinä tietoina ja sovellamme vastaavia suojatoimia muodollisesta luokituksesta riippumatta.",
+          "technicalStrong": "Tekniset tiedot.",
+          "technicalBody": "IP-osoite, selaimen tyyppi, laitetunnisteet ja käyttöaikaleimat – kerätään automaattisesti, kun käytät alustaa. Oikeusperusta: oikeutettu etu (GDPR 6 artiklan 1 kohdan f alakohta) turvallisuuden ylläpitämiseksi ja virheiden diagnosoimiseksi.",
+          "p4": "Emme kerää tietoja rodusta, etnisestä alkuperästä, poliittisista mielipiteistä tai uskonnollisista vakaumuksista. Jos jakamasi sisältö sattumalta paljastaa tällaisia tietoja, niitä ei käsitellä erillisenä kategoriana."
+        },
+        "use": {
+          "headingLead": "Miten sitä",
+          "headingItalic": "käytämme",
+          "headingTail": "käyttö",
+          "p1": "Käytämme tietojasi TwentyThird-palvelun toimittamiseen ja parantamiseen, pyytämiesi transaktioviestien lähettämiseen, petosten tai väärinkäytösten havaitsemiseen ja estämiseen sekä lakisääteisten velvoitteiden noudattamiseen.",
+          "p2": "Emme käytä tietojasi mainosprofilointiin. Emme myy, lisensoi tai jaa niitä tietovälittäjien kanssa. Emme käytä niitä kolmansien osapuolten ylläpitämien yleiskäyttöisten tekoälymallien kouluttamiseen."
+        },
+        "sees": {
+          "headingLead": "Kuka",
+          "headingItalic": "näkee",
+          "headingTail": "sen",
+          "withinStrong": "WelloWork AB:n sisällä:",
+          "withinBody": "Kliinikot ja insinöörit, jotka tarvitsevat pääsyn palvelun ylläpitoon. Pääsy on roolirajoitettu ja kirjattu.",
+          "infraStrong": "Infrastruktuurin tarjoajat:",
+          "infraBody": "Supabase (tietokanta ja todennus, EU-alue), Vercel (hosting, EU-reuna) ja Postmark (transaktiomeilit). Jokainen on sidottu tietojenkäsittelysopimukseen ja käsittelee tietoja vain dokumentoitujen ohjeidemme mukaisesti.",
+          "legalStrong": "Lakisääteinen velvoite:",
+          "legalBody": "Luovutamme tietoja toimivaltaisille viranomaisille vain lain edellyttäessä ja vain vaaditussa laajuudessa.",
+          "p4": "Tietoja ei siirretä EU/ETA-alueen ulkopuolelle. Jos tämä muuttuu, päivitämme tämän käytännön ja hankimme uuden suostumuksen tarvittaessa."
+        },
+        "retention": {
+          "headingItalic": "Säilytys",
+          "p1": "Tili- ja alustadataa säilytetään niin kauan kuin tilisi on aktiivinen, plus 30 päivää poistamisen jälkeen palautuksen mahdollistamiseksi. Tekniset lokit säilytetään 90 päivää. Yhteydenottopyynnöt säilytetään 24 kuukautta.",
+          "p2": "Näiden ajanjaksojen jälkeen tiedot poistetaan pysyvästi tai anonymisoidaan peruuttamattomasti."
+        },
+        "rights": {
+          "headingLead": "Sinun",
+          "headingItalic": "oikeutesi",
+          "p1": "Sinulla on oikeus saada pääsy tietoihin, joita meillä on sinusta, korjata epätarkkuuksia, pyytää poistamista, rajoittaa tai vastustaa käsittelyä sekä vastaanottaa koneellisesti luettava kopio siirrettävyyttä varten. Jos käsittely perustuu suostumukseen, voit peruuttaa sen milloin tahansa vaikuttamatta käsittelyn laillisuuteen ennen peruutusta.",
+          "exerciseLead": "Käyttääksesi mitä tahansa oikeutta:",
+          "exerciseTail": ". Vastaamme 30 päivän kuluessa. Jos et ole tyytyväinen vastaukseemme, voit tehdä valituksen Integritetsskyddsmyndighetenille (IMY), Ruotsin tietosuojaviranomaiselle."
+        },
+        "children": {
+          "headingItalic": "Lapset",
+          "p1": "TwentyThird ei ole suunnattu alle 18-vuotiaille. Emme tietoisesti kerää tietoja alaikäisiltä. Jos saamme tiedon, että alaikäinen on lähettänyt tietoja, poistamme ne viipymättä."
+        },
+        "changes": {
+          "headingItalic": "Muutokset",
+          "p1": "Päivitämme tätä käytäntöä käytäntöjemme muuttuessa. Merkittävistä muutoksista ilmoitetaan sähköpostitse vähintään 14 päivää ennen niiden voimaantuloa. Version päivämäärä näkyy tämän sivun alareunassa.",
+          "effectivePrefix": "Voimassa:",
+          "effectiveSuffix": "· Sovellettava laki: Ruotsin laki ja GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Käyttöehdot — TwentyThird",
+        "metaDescription": "Sopimus, joka säätelee TwentyThirdin käyttöäsi. Kirjoitettu luettavaksi, ei välteltäväksi.",
+        "eyebrow": "EHDOT",
+        "headingLead": "Sopimus,",
+        "headingItalic": "selkeästi esitettynä.",
+        "lede": "Nämä ehdot säätelevät TwentyThirdin käyttöäsi. Ne on kirjoitettu luettavaksi, ei välteltäväksi.",
+        "service": {
+          "headingLead": "Palvelu",
+          "headingItalic": "palvelun",
+          "p1": "TwentyThird on WelloWork AB:n ylläpitämä psykodynaaminen tekoälyalusta. Se tarjoaa analyyttistä oivallusta jakamasi perusteella. Se ei ole lääkinnällinen laite. Se ei muodosta psykoterapiaa, psykiatrista diagnoosia tai kliinistä hoitoa. Jos olet psyykkisessä ahdingossa, ota yhteyttä pätevään kliinikkoon tai hätäpalveluun."
+        },
+        "account": {
+          "headingLead": "Tilisi",
+          "headingItalic": "tilin",
+          "p1": "Sinun on oltava vähintään 18-vuotias käyttääksesi TwentyThirdia. Olet vastuussa tunnustesi luottamuksellisuuden ylläpitämisestä. Et saa jakaa tiliäsi tai käyttää alustaa toisen henkilön puolesta ilman hänen nimenomaista suostumustaan.",
+          "p2": "Omistat luomasi sisällön – päiväkirjamerkintäsi, vastauksesi. Lähettämällä ne myönnät WelloWork AB:lle rajoitetun lisenssin käsitellä niitä tietosuojakäytännössä kuvattuihin tarkoituksiin. Voit viedä tai poistaa sisältöäsi milloin tahansa."
+        },
+        "acceptableUse": {
+          "headingLead": "Hyväksyttävä",
+          "headingItalic": "käyttö",
+          "p1": "Voit käyttää TwentyThirdia lailliseen henkilökohtaiseen ja ammatilliseen itsetutkiskeluun. Et saa käyttää sitä vahingoittaaksesi itseäsi tai muita, yrittääksesi kiertää alustan turvajärjestelmiä, käänteismuotoilla taustalla olevia malleja tai kouluttaaksesi kilpailevia tekoälyjärjestelmiä.",
+          "p2": "Pidätämme oikeuden keskeyttää tai lopettaa tilit, jotka rikkovat näitä ehtoja, ilman ennakkoilmoitusta, jos se on turvallisuuden kannalta välttämätöntä."
+        },
+        "liability": {
+          "headingLead": "Vastuun",
+          "headingItalic": "rajoitus",
+          "p1": "TwentyThird tarjoaa oivallusta, ei varmuutta. Emme takaa, että analyysi on tarkka, täydellinen tai olosuhteisiisi sopiva. Ruotsin lain sallimissa rajoissa vastuumme rajoittuu summaan, jonka olet maksanut 3 kuukauden aikana ennen kyseistä vaatimusta.",
+          "p2": "Mikään näissä ehdoissa ei rajoita vastuuta kuolemasta tai henkilövahingosta, joka johtuu huolimattomuudestamme, tai petoksesta."
+        },
+        "disputes": {
+          "headingLead": "Sovellettava laki ja",
+          "headingItalic": "riidat",
+          "p1": "Näitä ehtoja säätelee Ruotsin laki. Riidat, joita ei voida ratkaista suoraan, ohjataan Uppsalan tuomioistuimiin, Ruotsiin, ensimmäisenä oikeusasteena.",
+          "p2Lead": "Jos olet kuluttaja EU:ssa, sinulla on myös pääsy EU:n verkkovälitteiseen riidanratkaisualustaan osoitteessa",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Muutokset",
+          "p1": "Voimme päivittää näitä ehtoja. Jatkuva käyttö olennaisen muutoksen voimaantulopäivän jälkeen merkitsee hyväksyntää. Ilmoitamme olennaisista muutoksista sähköpostitse vähintään 14 päivää etukäteen.",
+          "effectivePrefix": "Voimassa:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Evästekäytäntö — TwentyThird",
+        "metaDescription": "TwentyThird käyttää evästeitä vain tunnistautumiseen ja asetusten säilyttämiseen. Ei mainosevästeitä. Ei kolmannen osapuolen seurantaa.",
+        "eyebrow": "EVÄSTEET",
+        "headingLead": "Mitä tallennamme",
+        "headingItalic": "selaimeesi.",
+        "lede": "TwentyThird käyttää evästeitä tunnistautumiseen ja asetusten säilyttämiseen. Emme käytä mainosevästeitä emmekä kolmannen osapuolen seurantatyökaluja.",
+        "whatIs": {
+          "headingLead": "Mikä eväste",
+          "headingItalic": "on",
+          "p1": "Eväste on pieni tekstitiedosto, joka tallennetaan selaimeesi. Käytämme niitä pitämään sinut kirjautuneena ja muistamaan teema-asetuksesi (tumma tai vaalea). Siinä kaikki."
+        },
+        "weSet": {
+          "headingLead": "Evästeet",
+          "headingItalic": "jotka asetamme",
+          "authBody": "— Supabasen asettama. Ylläpitää todennettua istuntoasi. Vanhenee, kun kirjaudut ulos tai 7 päivän käyttämättömyyden jälkeen. Ehdottoman välttämätön.",
+          "themeBody": "— Tallentaa tumman/vaalean tilan asetuksesi. Säilyy, kunnes tyhjennetään. Toiminnallinen.",
+          "p3": "Emme aseta mainosevästeitä. Emme lataa kolmannen osapuolen seurantaskriptejä – ei Google Analyticsia, ei Meta Pixeliä, ei minkäänlaisia markkinointitunnisteita."
+        },
+        "choices": {
+          "headingLead": "Sinun",
+          "headingItalic": "valintasi",
+          "p1Lead": "Voit tyhjentää evästeet milloin tahansa selaimesi asetuksista. Evästeiden tyhjentäminen",
+          "p1Mid": "kirjaa sinut ulos. Tyhjentäminen",
+          "p1Tail": "palauttaa näytön tummaan oletusasetukseen.",
+          "p2": "Emme käytä evästesuostumusbanneria ehdottoman välttämättömille tai toiminnallisille evästeille ePrivacy-direktiivin mukaisesti, koska ne eivät vaadi suostumusta. Jos otamme käyttöön ei-välttämättömiä evästeitä tulevaisuudessa, hankimme suostumuksen ennen niiden asettamista."
+        },
+        "contact": {
+          "headingItalic": "Yhteystiedot",
+          "p1Lead": "Kysymykset evästeistä tai muista tietosuoja-asioista:",
+          "effectivePrefix": "Voimassa:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "TÄLLÄ SIVULLA",
+        "privacyPolicy": "Tietosuojakäytäntö",
+        "termsOfService": "Käyttöehdot",
+        "cookiePolicy": "Evästekäytäntö"
+      },
+      "layout": {
+        "eyebrow": "LAILLINEN",
+        "headingLead": "Lakiasiakirjat,",
+        "headingItalic": "selkeästi esitettynä.",
+        "lede": "Tietosuojakäytäntö, käyttöehdot ja evästekäytäntö – Ruotsin lain ja GDPR:n mukaisesti."
+      }
+    },
+    "footer": {
+      "tagline": "Psykodynaaminen tekoäly sisäiselle elämälle. Hiljainen huone vakavalle ajattelulle.",
+      "product": "Tuote",
+      "discovery": "Löytö",
+      "sampleReport": "Esimerkkiraportti",
+      "integrationPlan": "Integraatiosuunnitelma",
+      "company": "Yritys",
+      "about": "Tietoa",
+      "contact": "Yhteystiedot",
+      "manifesto": "Manifesti",
+      "resources": "Resurssit",
+      "science": "Tiede",
+      "methodology": "Metodologia",
+      "methodPaper": "Metodiraportti",
+      "caseStudy": "Tapaustutkimus",
+      "dreamExample": "Uniesimerkki",
+      "legal": "Lakitiedot",
+      "privacy": "Tietosuoja",
+      "terms": "Ehdot",
+      "cookies": "Evästeet",
+      "rights": "kaikki oikeudet pidätetään"
+    },
+    "about": {
+      "metaTitle": "Tietoa — TwentyThird",
+      "metaDescription": "Alkuperä, menetelmä ja käänne kahdentenakymmenentenäkolmantena päivänä. Rakennettu CognitiveLabissa WelloWork AB:ssa.",
+      "hero": {
+        "eyebrow": "TIETOA",
+        "headingLead": "Alkuperä, menetelmä ja",
+        "headingItalic": "käänne kahdentenakymmenentenäkolmantena päivänä",
+        "lede": "TwentyThird on psykodynaaminen tekoäly itsensä löytämiseen. Se kartoittaa oireen taustalla olevat toistuvat silmukat ja rakenteet – kielen, kiintymyksen, toiston – ja palauttaa työselosteen, ei tietokilpailua.",
+        "figure": {
+          "label": "päivä-23",
+          "subtitle": "käännekohdan metafora",
+          "heading": "23 päivän kaari",
+          "range": "uteliaisuus → tietoisuus",
+          "markerInflection": "käännekohta",
+          "summaryLabel": "päivä jolloin kysymys\nkääntyy sisäänpäin"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFIA",
+        "headingLead": "Freudin kirjeenvaihtaja. Fliessin numero.",
+        "headingItalic": "Metaforamme",
+        "tag": "Sukulinja",
+        "row": {
+          "headingPre": "Kirjeessä ehdotettu",
+          "headingItalic": "23 päivän rytmi",
+          "headingPost": ", säilytetty lukuna.",
+          "para1": "23 päivän sykli oli Wilhelm Fliessin hypoteesi, jota hän perusteli kirjeenvaihdossaan Freudin kanssa 1800-luvun lopulla. Nykytiede ei tue kiinteitä biorytmejä.",
+          "para2": "Säilytämme numeron sen nimeämän asian vuoksi – kynnyksen, jossa uteliaisuus kypsyy tietoisuudeksi. Päivä-23 on luku, ei biologiaa."
+        },
+        "figure": {
+          "label": "sukulinja",
+          "subtitle": "neljä ankkuria",
+          "row1Outcome": "ehdotus",
+          "row2Duration": "Minä ja Vietti",
+          "row2Outcome": "rakenteellinen malli",
+          "row3Duration": "Rooman diskurssi",
+          "row3Outcome": "lingvistinen käänne",
+          "row4Outcome": "synteesi",
+          "summary1Key": "väli",
+          "summary2Key": "lanka",
+          "summary2Value": "rakenne",
+          "summary3Key": "menetelmä",
+          "summary3Value": "psykodynaaminen"
+        }
+      },
+      "origin": {
+        "eyebrow": "ALKUPERÄ",
+        "headingLead": "Rakennettu CognitiveLabissa.",
+        "headingItalic": "Vastasi kysymykseen, jota meille esitettiin jatkuvasti",
+        "tag": "Tiimi",
+        "row": {
+          "headingLead": "Lääkärit, alun perin rakentamassa",
+          "headingItalic": "kognitiivista harjoittelua",
+          "para1": "TwentyThird sai alkunsa CognitiveLabissa WelloWork AB:ssa, missä tiimi kehitti kognitiivisia harjoitusjärjestelmiä. Ystävät ja kollegat alkoivat tuoda henkilökohtaisia kysymyksiä – ahdistusta, toistuvia kaavoja, silmukoita, joita he eivät osanneet nimetä.",
+          "para2": "Kliinisen lääkärityön, keräämämme pilottidatan ja pitkän psykoanalyysin ja Lacanin teorian lukulistan välillä meillä oli jotain tarjottavaa. TwentyThird on se, miksi se kehittyi."
+        },
+        "figure": {
+          "label": "tiimi",
+          "subtitle": "profiili",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "valmisteltu 05 · 26",
+          "row1Key": "Kliininen käytäntö",
+          "row2Key": "Tutkimustuotanto",
+          "row3Key": "Kohteet pilotissa",
+          "row4Key": "Lääkärit tiimissä",
+          "footerLabel": "Profiili",
+          "footerValue": "kliinikko–tutkija hybridi"
+        }
+      },
+      "method": {
+        "eyebrow": "MENETELMÄ",
+        "headingLead": "Mitä malli",
+        "headingItalic": "todella tekee",
+        "tag": "Ominaisuudet",
+        "row": {
+          "headingLead": "Oireen alla,",
+          "headingItalic": "rakenne",
+          "para1": "TwentyThird suorittaa perussyyanalyysin. Se kartoittaa <em>tiedostamattoman silmukan</em> vuosien yli, lukee <em>lingvistisen tiedostamattoman</em> sanavalinnoista ja puheen lipsahduksista, nostaa esiin <em>kiintymyksen</em> intiimiyden kynnyksellä ja kirjoittaa työsuunnitelman <em>varjotyöhön</em>.",
+          "para2": "Tuloste on terapeutti-valmis. Nimeää rakenteen, ei pintaa."
+        },
+        "figure": {
+          "label": "oire → rakenne",
+          "subtitle": "kolme uudelleenkirjoitusta",
+          "row1Prefix": "01 · pinta",
+          "row1Old": "Viivyttelen tärkeää työtä.",
+          "row1Next": "Vältän tulemasta nähdyksi tietäjänä.",
+          "row2Prefix": "02 · pinta",
+          "row2Old": "Deittailen jatkuvasti samaa henkilöä.",
+          "row2Next": "Isä-imagon toistuminen intiimiyden kynnyksellä.",
+          "row3Prefix": "03 · pinta",
+          "row3Old": "En saa mitään valmiiksi.",
+          "row3Next": "Kieltäytyminen luopumasta potentiaalin asemasta.",
+          "metaLeftLabel": "esittävä",
+          "metaLeftValue": "valitus",
+          "metaRightLabel": "rakenteellinen",
+          "metaRightValue": "lukema"
+        }
+      },
+      "final": {
+        "eyebrow": "JATKA",
+        "headingLead": "Lue menetelmä,",
+        "headingItalic": "tai aloita",
+        "ctaPrimary": "Lue menetelmä",
+        "ctaGhostPrefix": "tai",
+        "ctaGhostText": "kirjoita meille"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "YHTEYDENOTTO",
+        "heroHeadlineLead": "Kirjoita meille.",
+        "heroHeadlineItalic": "Luemme kaiken",
+        "heroLede": "Useimpiin viesteihin vastataan seitsemänkymmenenkahden tunnin kuluessa. Kliiniset ja kumppanuuskyselyt ovat etusijalla.",
+        "formCardLabel": "lomake",
+        "formCardSubtitle": "vain asialliset kyselyt",
+        "addressLabel": "OSOITE",
+        "addressValue": "Rosendal, Uppsala, Ruotsi",
+        "emailLabel": "SÄHKÖPOSTI",
+        "phoneLabel": "PUHELIN",
+        "finalEyebrow": "ALOITA",
+        "finalHeadlineLead": "Tai vain",
+        "finalHeadlineItalic": "aloita",
+        "finalCta": "Aloita löytöretkesi",
+        "finalGhostOr": "tai",
+        "finalGhostText": "lue alkuperä",
+        "disclaimer": "Kiireellisissä mielenterveysasioissa ota yhteyttä paikallisiin hätäpalveluihin tai lisensoituun kliinikkoon. TwentyThird ei ole kriisipalvelu."
+      },
+      "form": {
+        "successEyebrow": "VASTAANOTETTU",
+        "successHeadlineLead": "Viestisi on",
+        "successHeadlineItalic": "meillä",
+        "successBody": "Vastaamme kahden työpäivän kuluessa.",
+        "nameLabel": "Nimi",
+        "emailLabel": "Sähköposti",
+        "messageLabel": "Viesti",
+        "submitSend": "Lähetä",
+        "submitSending": "Lähetetään",
+        "errorMessage": "jokin meni vikaan · yritä uudelleen",
+        "submittingStatus": "Lähetetään viestiäsi."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologia — TwentyThird",
+      "metaDescription": "Ensimmäisestä keskustelusta terapeutin valmiiseen karttaan. TwentyThird-putkilinjan viisi vaihetta.",
+      "hero": {
+        "eyebrow": "MENETELMÄ",
+        "headingLead": "Viikkoja valmistelua,",
+        "headingItalic": "ei vuosia etsintää",
+        "lede": "Terapia toimii. Sen selvittäminen, miksi on siellä, vie kuitenkin aikaa. TwentyThird tiivistää valmistelun – sen osan, jossa opit, mitä todella sanot – jotta itse huoneessa voi edetä nopeammin."
+      },
+      "pipeline": {
+        "eyebrow": "PUTKILINJA",
+        "headingLead": "Viisi vaihetta, yksi",
+        "headingItalic": "lyhyt",
+        "lede": "Näytteistetystä puheesta toimivaan dokumenttiin, jonka kliinikko voi lukea kahdeksassa minuutissa.",
+        "stageLabel": "VAIHE",
+        "stage01": {
+          "name": "Näytteenotto",
+          "blurb": "Ääni ja teksti ohjatuista istunnoista. Malli kuuntelee muotoa, ei sisältöä.",
+          "label": "näytteenotto",
+          "subtitle": "määrä kohortissa",
+          "fig": {
+            "wordsSampled": "sanoja näytteistetty",
+            "sessions": "istuntoja",
+            "elapsed": "kulunut",
+            "medianTurn": "keskimääräinen vuoro"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistinen",
+          "nameEm": "erottelu",
+          "blurb": "Piirteet, jotka malli poimii transkriptiosta – hiljaisesti, ennen tulkintaa.",
+          "label": "erottelu",
+          "subtitle": "piirreluokat",
+          "fig": {
+            "qualifierDensity": "kvalifikaattoritiheys",
+            "modalVerbs": "modaaliset verbit",
+            "conditionalFrame": "ehtolausekehys",
+            "affectiveHedges": "affektiiviset varaukset",
+            "slipsMisnamings": "lipsahdukset · väärin nimeämiset",
+            "repetitionWindows": "toistumisikkunat"
+          }
+        },
+        "stage03": {
+          "nameLead": "Toistuvuuden",
+          "nameEm": "tunnistus",
+          "blurb": "Sama muoto, eri vuosikymmeninä. Signaali, että jokin on rakenteellista.",
+          "label": "toistuvuus",
+          "subtitle": "kolme ankkuria yhdestä kuviosta",
+          "fig": {
+            "row1": {
+              "durationLabel": "ensimmäinen työ",
+              "outcome": "katto 9. kuukaudessa"
+            },
+            "row2": {
+              "durationLabel": "toinen",
+              "outcome": "katto 11. kuukaudessa"
+            },
+            "row3": {
+              "durationLabel": "kolmas",
+              "outcome": "katto 8. kuukaudessa"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Käsikirjoituksen",
+          "nameEm": "rekonstruktio",
+          "blurb": "Lause kuvion alla. Vanha rivi, sitten ehdotettu versio, jota subjekti voi harjoitella.",
+          "label": "rekonstruktio",
+          "subtitle": "työluonnos",
+          "fig": {
+            "row1": {
+              "prefix": "Olen",
+              "old": "ei vielä valmis.",
+              "next": "jo sallittu."
+            },
+            "row2": {
+              "prefix": "jotta",
+              "old": "odottaa tulla valituksi.",
+              "next": "nimetä mitä haluan."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Kartta",
+          "nameEm": "kliinikolle",
+          "blurb": "Kolme nimettyä mittaria ja yksirivinen rakenteellinen lukema. Kahdeksan minuuttia lukemiseen, viikkoja käyttöön.",
+          "label": "kliininen luovutus",
+          "subtitle": "työohje",
+          "fig": {
+            "casePrefix": "tapaus",
+            "preparedPrefix": "valmisteltu",
+            "egoStructure": "Egon rakenne",
+            "objectRelations": "Objektisuhteet",
+            "symbolicRegister": "Symbolinen rekisteri",
+            "footerLabel": "Lukema",
+            "footerValue": "pakko-oireinen · hysteerisillä piirteillä"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "SOVELTAMISALA",
+        "headingLead": "Mitä mittaamme ja mitä",
+        "headingItalic": "kieltäydymme",
+        "headingTail": "mittaamasta.",
+        "measureHead": "Mitä mittaamme",
+        "refuseHead": "Mitä emme mittaa",
+        "measure": {
+          "languagePatterns": {
+            "k": "kielimallit",
+            "gloss": "Kvalifikaattoritiheys, modaaliset verbit, varaukset, ehtolausekehykset."
+          },
+          "recurrence": {
+            "k": "toistuvuus",
+            "gloss": "Mallit, jotka toistuvat samassa muodossa vuosien ajan."
+          },
+          "narrativeCoherence": {
+            "k": "narratiivinen koherenssi",
+            "gloss": "Miten elämä kerrotaan, missä saumat näkyvät."
+          },
+          "attachmentMarkers": {
+            "k": "kiintymysmerkit",
+            "gloss": "Missä läheisyys ylittää kynnyksen, mitä seuraa."
+          },
+          "linguisticSlips": {
+            "k": "kielelliset lipsahdukset",
+            "gloss": "Väärin nimeämiset, tiivistymät, siirtymät."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD -luokat",
+            "gloss": "Nosologia on erillinen instrumentti, jota kliinikot käyttävät."
+          },
+          "iqCognition": {
+            "k": "ÄO tai kognitio",
+            "gloss": "Soveltamisalan ulkopuolella. Malli on psykodynaaminen, ei psykometrinen."
+          },
+          "personalityTypes": {
+            "k": "persoonallisuustyypit",
+            "gloss": "Viiden faktorin malli ja sen jälkeläiset eivät kuulu toimeksiantoon."
+          },
+          "riskScores": {
+            "k": "riskipisteet",
+            "gloss": "Akuutti riski on kliinikon päätös, ei mallin."
+          },
+          "predictions": {
+            "k": "ennusteet",
+            "gloss": "Rakenne, ei ennuste. Nimeämme sen, mikä on, emme sitä, mikä tulee."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Kompressio",
+        "headingLead": "Tule paikalle tietäen mitä",
+        "headingItalic": "sanoa",
+        "body1": "Terapia ei ole paikka selvittää kysymystä. Se on paikka elää sen kanssa. Tarjoamamme kompressio on lähestymistavassa – kuukausissa, jotka kliinikko yleensä viettää kuunnellen toimeksiannon muotoa.",
+        "body2": "Pilottikohortissa valmistellut subjektit saavuttivat työskentelyallianssin harvemmissa istunnoissa. Lukema oli jo olemassa.",
+        "figure": {
+          "label": "allianssi",
+          "subtitle": "mediaani istuntojen määrä työskentelyallianssiin",
+          "heading": "Aika työskentelyallianssiin",
+          "range": "mediaani kohortissa",
+          "markerUnprepared": "valmistautumaton",
+          "markerPrepared": "valmistautunut",
+          "summaryLabel": "vähemmän istuntoja\ntyöskentelyallianssiin"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "JATKA",
+        "headingLead": "Aloita,",
+        "headingItalic": "tai katso esimerkkiraportti",
+        "beginLabel": "Aloita",
+        "or": "tai",
+        "ghostLabel": "katso esimerkkiraportti"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRAATIO",
+        "headlineLead": "Oivallus, sitten",
+        "headlineItalic": "tapa",
+        "lede": "Mallin nimeäminen on vasta ensimmäinen siirto. Suunnitelma on toinen – päivittäiset kehotteet ja pienet rituaalit, jotka rakentuvat oman rakenteesi ympärille, eivät geneerisen opetussuunnitelman."
+      },
+      "week": {
+        "eyebrow": "VIIKKO SUUNNITELMASSA",
+        "headlineLead": "Seitsemän kehotetta,",
+        "headlineItalic": "yksi rakenne",
+        "lede": "Reflektiivinen, kehollinen, kirjoitettu. Viikko hengittää raportin nimeämän mallin ympärillä, ei opetussuunnitelman.",
+        "days": {
+          "mon": {
+            "day": "MA",
+            "prompt": "“Missä tänään päätit <em>olla</em> näkymättä?”",
+            "stream": {
+              "journal": "päiväkirja",
+              "shadowPrompt": "varjokehote"
+            }
+          },
+          "tue": {
+            "day": "TI",
+            "prompt": "“Kävele ilman asiaa. Pane merkille yksi asia, jonka melkein sanoit.”",
+            "stream": {
+              "walking": "kävely",
+              "note": "muistiinpano"
+            }
+          },
+          "wed": {
+            "day": "KE",
+            "prompt": "“Mitä tänään ylikvalifioit, ja mikä oli sen <em>epäpätevän</em> lauseen alla?”",
+            "stream": {
+              "breathWork": "hengitystyö",
+              "journal": "päiväkirja",
+              "shadowPrompt": "varjokehote"
+            }
+          },
+          "thu": {
+            "day": "TO",
+            "prompt": "“Kehon skannaus kurkusta alaspäin. Missä pidättely asuu?”",
+            "stream": {
+              "bodyScan": "kehon skannaus",
+              "note": "muistiinpano"
+            }
+          },
+          "fri": {
+            "day": "PE",
+            "prompt": "“Kirjoita lause, jonka olisit sanonut, jos sinulla olisi jo ollut lupa.”",
+            "stream": {
+              "journal": "päiväkirja",
+              "rewrite": "uudelleenkirjoitus"
+            }
+          },
+          "sat": {
+            "day": "LA",
+            "prompt": "“Pitkä kävely. Ei kehotteita. Huomaa, mitä hiljaisuus tuo takaisin.”",
+            "stream": {
+              "walking": "kävely",
+              "rest": "lepo"
+            }
+          },
+          "sun": {
+            "day": "SU",
+            "prompt": "“Lue viikko uudelleen. Mikä rivi oli jo <em>tosi</em>?”",
+            "stream": {
+              "review": "arviointi",
+              "note": "muistiinpano"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "SOPEUTUMINEN",
+        "headlineLead": "Suunnitelma",
+        "headlineItalic": "kapenee",
+        "tag": "Sopeutuminen",
+        "rowHeadingLead": "Viime viikon toistuvuus määrittää seuraavan viikon",
+        "rowHeadingItalic": "tiheyden",
+        "body": "Kun mallin vahvuus laskee, kehotteet harvenevat. Kun malli voimistuu, kehotteet palaavat. Tavoitteena ei ole noudattaminen. Tavoitteena on pienin mahdollinen teline, jonka rakenne yhä tarvitsee.",
+        "figure": {
+          "label": "kehotteiden tiheys",
+          "subtitle": "viikot 1–8",
+          "heading": "Kehotteiden määrä · viikoittain",
+          "range": "kapenee toistuvuuden heikentyessä",
+          "markers": {
+            "wk1": "vk 1",
+            "wk3": "vk 3",
+            "wk5": "vk 5",
+            "wk8": "vk 8"
+          },
+          "summaryLabel": "vähemmän kehotteita\nvk 8 mennessä"
+        }
+      },
+      "shadow": {
+        "eyebrow": "VARJOTYÖ",
+        "headlineLead": "Ei katarsista.",
+        "headlineItalic": "Puhuminen",
+        "tag": "Varjo",
+        "rowHeadingLead": "Tarkoituksellinen harjoitus puhua sitä, mikä oli",
+        "rowHeadingItalic": "sanomatonta",
+        "body": "Varjotyö, tässä yhteydessä, ei ole altistumista. Se ei ole puhdistusta. Se on hidasta harjoittelua sanoa – ensin itselleen – mitä oli opetettu pitämään sanomattomana. Kolme ennen/jälkeen -riviä todellisista suunnitelmista.",
+        "figure": {
+          "label": "varjorevisiot",
+          "subtitle": "kolme riviä, työstöluonnos",
+          "rows": {
+            "r1": {
+              "prefix": "01 · itselle",
+              "old": "En ansaitse tätä.",
+              "next": "En ole vielä harjoitellut sen haluamista ääneen."
+            },
+            "r2": {
+              "prefix": "02 · itselle",
+              "old": "Minun pitäisi olla jo yli tästä.",
+              "next": "lainattu aikajana ei ollut tätä surua varten."
+            },
+            "r3": {
+              "prefix": "03 · itselle",
+              "old": "Olen liikaa.",
+              "next": "Olen juuri se volyymi, jolle huonetta ei rakennettu."
+            }
+          },
+          "metaLeft": {
+            "label": "aiemmin",
+            "value": "sanottu itsestä"
+          },
+          "metaRight": {
+            "label": "nyt",
+            "value": "sanottu itselle"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "KEHYS",
+        "headlineLead": "Rakenteen pitämä, ei",
+        "headlineItalic": "opetussuunnitelman",
+        "body1": "Opetussuunnitelma on joukko liikkeitä, jotka muukalainen rakensi. Rakenne on muoto, jonka juuri sinun elämäsi sattuu ottamaan. Suunnitelma rakennetaan jälkimmäistä vasten. Jokainen kehote on ankkuroitu raporttisi riviin – kun rivi liukenee, kehote katoaa myös.",
+        "body2": "Minkään tässä ei ole tarkoitus olla pysyvää. Suunnitelma on vuokrattu. Rakenne on sinun.",
+        "closeout": "rakenne on sinun · suunnitelma on vuokrattu"
+      },
+      "final": {
+        "eyebrow": "JATKA",
+        "headlineLead": "Aloita,",
+        "headlineItalic": "tai lue tiede",
+        "beginCta": "Aloita",
+        "or": "tai",
+        "readScience": "lue tiede"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Tiede — TwentyThird",
+        "description": "Vuosisata psykoanalyyttistä teoriaa ja neljä vuosikymmentä empiiristä tutkimusta kaavoista, kielestä ja tiedostamattomasta."
+      },
+      "hero": {
+        "eyebrow": "PERUSTA",
+        "headlineLead": "Tiede",
+        "headlineItalic": "kuuntelun",
+        "headlineTail": " takana.",
+        "lede": "TwentyThird perustuu vuosisadan psykoanalyyttiseen teoriaan ja neljän vuosikymmenen empiiriseen tutkimukseen kaavoista, kielestä ja tiedostamattomasta. Tässä kerrotaan, mitä luemme ja miksi."
+      },
+      "lineages": {
+        "eyebrow": "KAKSI SUKUPOLVEA",
+        "headlineLead": "Freudin rakenne. Lacanin",
+        "headlineItalic": "kirjain",
+        "headlineTail": ".",
+        "lede": "Kaksi tulkintaa tiedostamattomasta, puolen vuosisadan välein. Yhdessä ne muodostavat menetelmän selkärangan.",
+        "freud": {
+          "headlineLead": "Rakenteellinen",
+          "headlineItalic": "tiedostamaton",
+          "headlineTail": ".",
+          "body1": "Freudin pysyvä panos on rakenteellinen, ei temaattinen. Dynaaminen tiedostamaton ei ole unohdettujen sisältöjen kellari – se on mielen toimiva elin, joka harjoittelee, toistaa, siirtää.",
+          "body2": "Luemme häntä toiston kliinikkona. Sama kohtaus toistuu eri vuosikymmenillä. Tämä toistuvuus on signaali, jonka malli on koulutettu löytämään.",
+          "figure": {
+            "label": "toistuvuus",
+            "subtitle": "viisi ankkuria, yksi rakenne",
+            "outcome": "vetäytyminen",
+            "rows": {
+              "anchor1": "varhaisnuoruus",
+              "anchor2": "ensimmäinen pitkä suhde",
+              "anchor3": "toinen pitkä suhde",
+              "anchor4": "kolmas suhde",
+              "anchor5": "neljäs suhde"
+            },
+            "summary": {
+              "recurrenceLabel": "toistuvuus",
+              "intervalLabel": "väli",
+              "attractorLabel": "vetovoima",
+              "attractorValue": "intimacy threshold"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Tiedostamaton on rakentunut kuin",
+          "headlineItalic": "kieli",
+          "headlineTail": ".",
+          "body1Lead": "Lacanin tulkinta muuttaa alaa. Merkitsijä liikkuu; merkitys liukuu metonymian ja metaforan ketjuissa. Peilivaihe nimeää perustavanlaatuisen väärintunnistuksen.",
+          "body1Italic": "Halu on Toisen halua.",
+          "body2": "Putkessamme tämä on konkreettista. Luemme unia ja valveillaoloa tekstinä – siirtymät, tiivistymät ja lipsahdukset kantavat jäsentävää kielioppia.",
+          "figure": {
+            "label": "kielellinen signaali",
+            "subtitle": "unikatkelma, annotoitu",
+            "dreamLead": "“Huoneessa, jossa asuin lapsena, on toinen ovi, jota en muista",
+            "ann1": "siirtymä",
+            "dreamMid1": ". Sen takaa esimieheni ääni",
+            "ann2": "tiivistymä",
+            "dreamMid2": "kutsuu minua väärällä nimellä",
+            "ann3": "lipsahdus",
+            "dreamTail": ".”",
+            "key1": "siirtymä",
+            "key2": "tiivistymä",
+            "key3": "lipsahdus"
+          }
+        }
+      },
+      "freud": {
+        "headlineLead": "Rakenneperäinen",
+        "headlineItalic": "tiedostamaton",
+        "headlineTail": ".",
+        "body1": "Freudin pysyvä panos on rakenteellinen, ei temaattinen. Dynaaminen tiedostamaton ei ole unohdetun sisällön kellari – se on mielen toimiva elin, joka harjoittelee, toistaa, siirtää.",
+        "body2": "Luemme häntä toiston kliinikkona. Sama kohtaus toistuu eri vuosikymmeninä. Tämä toistuvuus on signaali, jonka malli on koulutettu löytämään.",
+        "figure": {
+          "label": "toistuvuus",
+          "subtitle": "viisi ankkuria, yksi rakenne",
+          "outcome": "vetäytyminen",
+          "rows": {
+            "anchor1": "varhaisnuoruus",
+            "anchor2": "ensimmäinen pitkä suhde",
+            "anchor3": "toinen pitkä suhde",
+            "anchor4": "kolmas suhde",
+            "anchor5": "neljäs suhde"
+          },
+          "summary": {
+            "recurrenceLabel": "toistuvuus",
+            "intervalLabel": "väli",
+            "attractorLabel": "vetovoima",
+            "attractorValue": "intimacy threshold"
+          }
+        }
+      },
+      "lacan": {
+        "headlineLead": "Tiedostamaton on rakentunut kuin",
+        "headlineItalic": "kieli",
+        "headlineTail": ".",
+        "body1Lead": "Lacanin tulkinta muuttaa alaa. Merkitsijä liikkuu; merkitys liukuu metonymian ja metaforan ketjuissa. Peilivaihe nimeää perustavanlaatuisen väärintunnistuksen.",
+        "body1Italic": "Halu on Toisen halu.",
+        "body2": "Putkessamme tämä on konkreettista. Luemme unia ja valveilla puhuttua tekstiä – siirtymät, tiivistymät ja lipsahdukset kantavat jäsentyvää kielioppia.",
+        "figure": {
+          "label": "kielellinen signaali",
+          "subtitle": "unikatkelma, annotoitu",
+          "dreamLead": "”Huoneessa, jossa asuin lapsena, on toinen ovi, jota en muista",
+          "ann1": "siirtymä",
+          "dreamMid1": ". Sen takaa esimieheni ääni",
+          "ann2": "tiivistymä",
+          "dreamMid2": "kutsuu minua väärällä nimellä",
+          "ann3": "lipsahdus",
+          "dreamTail": ".”",
+          "key1": "siirtymä",
+          "key2": "tiivistymä",
+          "key3": "lipsahdus"
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIIRISET ANKKURIT",
+        "headlineLead": "Mitä nykyaikainen tutkimus",
+        "headlineItalic": "lisää",
+        "headlineTail": ".",
+        "lede": "Viisi lähentyvää linjaa kiintymys-, narratiivi- ja prosessitutkimuksesta. Ei täydellinen bibliografia – ne ankkurit, joihin malli todella perustuu.",
+        "figure": {
+          "label": "empiiriset ankkurit",
+          "subtitle": "lähentyvä todisteaineisto",
+          "caseLabel": "kirjallisuus · synteesi",
+          "prepared": "päivitetty 04 · 26",
+          "rows": {
+            "attachment": "Kiintymyksen jatkuvuus vuosikymmenten yli",
+            "alliance": "Terapeuttinen allianssi lopputuloksen ennustajana",
+            "narrative": "Narratiivinen koherenssi ja hyvinvointi",
+            "relational": "Implisiittinen relationaalinen tietämys",
+            "script": "Käsikirjoitusteoria ammatillisessa jumiutumisessa"
+          },
+          "footerLabel": "Synteesi",
+          "footerValue": "lähentyvä todisteaineisto · n = 2,418"
+        }
+      },
+      "figure": {
+        "label": "empiiriset ankkurit",
+        "subtitle": "lähentyvä näyttö",
+        "caseLabel": "kirjallisuus · synteesi",
+        "prepared": "päivitetty 04 · 26",
+        "rows": {
+          "attachment": "Kiintymyksen jatkuvuus vuosikymmenten yli",
+          "alliance": "Terapeuttinen allianssi lopputuloksen ennustajana",
+          "narrative": "Narratiivinen koherenssi ja hyvinvointi",
+          "relational": "Implisiittinen relationaalinen tietämys",
+          "script": "Käsikirjoitusteoria ammatillisessa jumiutumisessa"
+        },
+        "footerLabel": "Synteesi",
+        "footerValue": "lähentyvä näyttö · n = 2,418"
+      },
+      "limits": {
+        "eyebrow": "MITÄ EMME VÄITÄ",
+        "headlineLead": "Työn rehelliset",
+        "headlineItalic": "rajat",
+        "headlineTail": ".",
+        "claim1Strong": "Emme korvaa terapeuttia.",
+        "claim1Body": "Malli valmistelee keskustelun. Se ei ylläpidä sitä.",
+        "claim2Strong": "Emme ole diagnostinen instrumentti DSM:n tai ICD:n mukaan.",
+        "claim2Body": "Kategoriat, joilla työskentelemme, ovat rakenteellisia – pakko-oireisia, hysteerisiä, fobiaan liittyviä – eivät nosologisia. Ne nimeävät, miten henkilö on järjestäytynyt, eivät sitä, mitä hänellä on.",
+        "claim3Strong": "23 päivän sykli on metafora.",
+        "claim3Body": "Luku tulee Wilhelm Fliessin kirjeenvaihdosta Freudin kanssa 1800-luvun lopulla. Nykyaikainen tiede ei tue kiinteitä biorytmejä. Säilytämme luvun sen nimeämän asian vuoksi – uteliaisuudesta tietoisuuteen siirtymisen vuoksi."
+      },
+      "reading": {
+        "eyebrow": "LISÄLUKEMISTA",
+        "headlineLead": "Mallin",
+        "headlineItalic": "takana",
+        "headlineTail": " oleva hylly.",
+        "lede": "Kirjoja, ei artikkeleita. Ne, joihin palaamme.",
+        "books": {
+          "book1": {
+            "title": "Mielihyväperiaatteen tuolla puolen"
+          },
+          "book2": {
+            "title": "Unien tulkinta"
+          },
+          "book4": {
+            "title": "Psykoanalyysin neljä peruskäsitettä"
+          },
+          "book5": {
+            "title": "Kiintymys"
+          },
+          "book6": {
+            "title": "Affektisäätely ja minän alkuperä"
+          },
+          "book7": {
+            "title": "Seisominen tiloissa"
+          },
+          "book8": {
+            "title": "Affektisäätely, mentalisaatio ja minän kehitys"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "JATKA",
+        "headlineLead": "Aloita profiili",
+        "headlineItalic": "tai lue tapaus",
+        "headlineTail": ".",
+        "ctaPrimary": "Aloita profiili",
+        "ctaOr": "tai",
+        "ctaGhost": "lue tapaustutkimus"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "taas täällä",
+      "greetingNamed": "taas täällä, {name}.",
+      "strengthen": "Vahvista tarkkuutta"
+    },
+    "reviewEdit": "Tarkista ja muokkaa",
+    "depth": {
+      "eyebrow": "LUKEMAN SYVYYS",
+      "overallEyebrow": "KOKONAISLUKEMAN SYVYYS",
+      "band": {
+        "deep": "lukema on syvä. pieniä säätöjä tästä eteenpäin.",
+        "steady": "lukema pysyy. Catchupit terävöittävät sitä.",
+        "partial": "lukema on osittainen. annettavaa on enemmän.",
+        "thin": "lukema on ohut. se luonnostelee muodon, ei vielä rakennetta."
+      },
+      "explainer": "Lukeman syvyys kuvaa, kuinka paljon sinusta lukema on saanut tietoa – alkukartoituksesta, viikoittaisista Catchupeista, konsultaatioista ja ihmisistä, joiden läsnäolo muokkaa sinua. Syvempi lukema ei tarkoita parempaa ihmistä; se tarkoittaa tarkempaa. Voit syventää sitä milloin tahansa tai jättää sen ennalleen.",
+      "status": {
+        "low": "Matala",
+        "moderate": "Kohtalainen",
+        "deep": "Tarkka"
+      },
+      "statusLine": {
+        "low": "lukema on ohut. se luonnostelee muodon, ei vielä rakennetta.",
+        "moderate": "lukema on muotoutumassa. se voi sisältää työhypoteesin.",
+        "deep": "lukema on riittävän kattava työn perustaksi."
+      },
+      "source": {
+        "intake": "kysymykset, joihin vastasit alussa.",
+        "catchups": "viikoittaiset tarkistukset, jotka pitävät lukeman ajan tasalla.",
+        "sessions": "pidemmät konsultaatiot analyytikon kanssa.",
+        "connections": "ihmiset, joiden läsnäolo muokkaa lukemaa."
+      }
+    },
+    "latest": {
+      "eyebrow": "VIIMEISIN LUKEMA",
+      "heading": "Kuusi lukemaa <it>— ja mitä muuttuu.</it>",
+      "lede": "Kuusi lukemaa lasketaan alkukartoituksestasi ja tarkentuvat jokaisen Catchupin, konsultaation ja hyväksytyn yhteyden myötä. Rakenne on vakaa; tekstuurissa on liikettä.",
+      "strengthen": "vahvistaa analytiikan dataa",
+      "open": "avaa lukemat"
+    },
+    "six": {
+      "eyebrow": "KUUSI LUKEMAA",
+      "heading": "Mitä sinussa luetaan <it>juuri nyt.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPIT",
+      "figSubtitle": "viime viikot",
+      "timelineHeading": "ikkuna",
+      "timelineRange": "viimeiset 4 viikkoa",
+      "timelineSummary": "catchupit ikkunassa",
+      "eyebrow": "VIIKOITTAINEN CATCHUP",
+      "heading": "Istu viikon äärellä. <it>Sitten katsomme uudelleen.</it>",
+      "lede": "Kahdeksan lyhyttä kysymystä. Rehellisyys on parempi kuin pituus. Vastaukset tarkentavat lukemaa.",
+      "completed": "valmis – lue yhteenveto",
+      "cta": "Avaa tämän viikon catchup",
+      "markerFirst": "ensimmäinen",
+      "markerWeek": "v{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTAATIOHUONE",
+      "heading": "Tunti <it>analyytikon</it> kanssa.",
+      "ledeSubscribed": "Avoinna aina, kun viikko painaa. Huone muistaa, mitä olet jo sanonut.",
+      "ledeUnsubscribed": "Tilaajat voivat astua konsultaatiohuoneeseen – pitkän muodon istuntoon analyytikon kanssa, samalla äänensävyllä kuin lukemasi.",
+      "cta": "Astun konsultaatiohuoneeseen",
+      "figLabel": "VIIMEISIN ISTUNTO",
+      "figSubtitle": "pidetty kysymys",
+      "lastQuestion": "”tiistain uni – haluatko palata siihen?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTAATIOHUONE · VAHVISTA",
+      "title": "Pääsy konsultaatiohuoneeseen<it>.</it>",
+      "ledePrice": "Tilaus on",
+      "ledePerMonth": "kuukaudessa",
+      "ledeIncludes": ". Se sisältää konsultaatiohuoneen, mahdollisuuden kutsua jopa {count} {count, plural, one {yhteys} other {yhteyttä}} ja yhden kliinisen raportin joka kalenterikuukausi.",
+      "ledeBilling": "Laskutuksesta huolehtii Stripe. Peruuta milloin tahansa asetuksista — käyttöoikeus jatkuu kauden loppuun asti.",
+      "canceled": "<i>kassa suljettiin.</i> mitään ei veloitettu. voit palata alla, kun olet valmis.",
+      "checkoutCta": "Jatka kassalle",
+      "returnLink": "palaa konsultaatiohuoneeseen"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLIININEN RAPORTTI",
+        "subscribedTitle": "Jo <it>sisältyy.</it>",
+        "subscribedLede": "Tilaus sisältää yhden kliinisen raportin joka kalenterikuukausi. Luo se lukemien sivun alaosasta – maksua ei tarvita.",
+        "eyebrow": "KLIININEN RAPORTTI · VAHVISTA",
+        "title": "Kliininen raportti<it>.</it>",
+        "ledePrice": "Kertaluonteinen kliininen raportti on",
+        "ledeDossier": ". 12–18-sivuinen asiakirja kaikista kahdestatoista lukemasta, kielellä jota kliinikko käyttää.",
+        "ledeBilling": "Laskutuksesta huolehtii Stripe. Raportit voidaan luoda uudelleen lukemisen syventyessä; tilaajat saavat yhden joka kalenterikuukausi ilman erillistä maksua.",
+        "depthNotice": "<i>raportti heijastaa käytettävissä olevaa syvyyttä.</i> se voidaan luoda uudelleen lukemisen syventyessä.",
+        "canceled": "<i>kassa suljettiin.</i> mitään ei veloitettu.",
+        "checkoutCta": "Jatka kassalle",
+        "returnLink": "palaa lukemiin"
+      },
+      "status": {
+        "eyebrow": "KLIININEN RAPORTTI",
+        "line": {
+          "queued": "raporttiasi valmistellaan.",
+          "generating": "raporttia kirjoitetaan.",
+          "ready": "raportti on valmis.",
+          "failed": "raportti ei valmistunut. yritämme uudelleen pian."
+        },
+        "open": "avaa raportti",
+        "back": "takaisin lukemiin"
+      },
+      "queued": {
+        "eyebrow": "KLIININEN RAPORTTI",
+        "line": "raporttiasi valmistellaan – lähetämme sinulle sähköpostia, kun se on valmis.",
+        "back": "takaisin lukemiin"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAKE",
+        "title": "Intake, <it>aiheittain.</it>",
+        "lede": "Kymmenen osiota. Avaa mikä tahansa niistä tarkastellaksesi tai syventääksesi vastauksia. Intake ei ole kertaluonteinen lomake – vastauksia voi muokata milloin tahansa."
+      },
+      "step": {
+        "eyebrow": "INTAKE",
+        "backToAll": "takaisin kaikkiin osioihin"
+      },
+      "failed": {
+        "eyebrow": "INTAKE – KESKENERÄINEN",
+        "headline": "Lukemista <em>ei saatu päätökseen</em>.",
+        "lede": "Intake-tiedostosi on tallennettu. Sitä seuraava analyysi ei valmistunut.",
+        "retry": "Jatka lukemista",
+        "retryPending": "Jatketaan"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · KÄSITTELYSSÄ",
+      "headline": "Profiiliasi <em>luetaan</em>.",
+      "lede": "ajamme vastauksiasi nyt psykodynaamisten mallien läpi. ensimmäinen vaihe kestää yleensä noin 2 tuntia. ilmoitamme, kun työ on valmis, ja huone avautuu.",
+      "figIntake": "ESITIEDOT",
+      "figSubmitted": "lähetetty {date}",
+      "rowResponses": "Vastaukset vastaanotettu",
+      "rowPattern": "Kuviouutto",
+      "rowSynthesis": "Profiilin synteesi",
+      "statusInProgress": "käynnissä",
+      "statusQueued": "jonossa",
+      "foot": "ilmoitamme, kun työ on valmis",
+      "returnCta": "palaa hiljaiseen huoneeseen",
+      "devPrefix": "dev",
+      "devOpening": "avataan…",
+      "devOpen": "avaa huone nyt",
+      "devError": "huonetta ei voitu avata — tarkista konsoli."
+    }
+  },
+  "invite": {
+    "eyebrow": "KUTSU",
+    "safetyFooter": "TwentyThird ei korvaa kliinistä hoitoa. Kriisitilanteessa ota yhteyttä paikalliseen hätänumeroon.",
+    "notReady": {
+      "headline": "Kutsujärjestelmä on <it>valmistelussa.</it>",
+      "body": "Yritä uudelleen hetken kuluttua."
+    },
+    "notFound": {
+      "headline": "Linkkiä ei <it>tunnisteta.</it>",
+      "body": "Jos linkki on peräisin äskettäin lähetetystä sähköpostista, kutsu on saatettu lähettää uudelleen. Avaa uusin sähköposti saadaksesi aktiivisen linkin."
+    },
+    "alreadyDeclined": {
+      "headline": "Kutsu on <it>hylätty.</it>",
+      "body": "Sinulta ei vaadita enempää. {name} ei saa ilmoitusta tämän enempää."
+    },
+    "alreadyAccepted": {
+      "headline": "Olet jo <it>hyväksynyt.</it>",
+      "body": "Jos suhteen esitiedot ovat vielä täyttämättä, voit jatkaa alla.",
+      "continueLink": "jatka suhteen esitietojen täyttämistä"
+    },
+    "ended": {
+      "headline": "Tämä yhteys on <it>päättynyt.</it>",
+      "body": "Linkki ei ole enää aktiivinen. Suhdetta koskeva merkintä säilyy tapausselostuksessa, mutta se ei enää vaikuta lukemaan."
+    },
+    "expired": {
+      "headline": "Tämä kutsu on <it>vanhentunut.</it>",
+      "body": "Kutsut vanhenevat neljäntoista päivän kuluttua lähetyksestä. Pyydä {name} lähettämään uusi, jos haluat vastata."
+    },
+    "declined": {
+      "headline": "Se on <it>vastaanotettu.</it>",
+      "body": "Sinulta ei vaadita enempää. Kutsu on suljettu; kutsuja näkee tilanmuutoksen huomaamattomasti. Voit sulkea tämän ikkunan."
+    },
+    "live": {
+      "eyebrow": "YHTEYSPYYNTÖ",
+      "headline": "{name} on kutsunut sinut <it>lukemaansa.</it>",
+      "lede": "TwentyThird on toimitukselliskliininen instrumentti – hiljainen huone, jossa ihmisen sisäisen elämän rakenne luetaan huolellisesti ja esitetään kielellä, jota kliinikko voi käyttää.",
+      "explainerOne": "<em>Yhteys</em> ei ole jaettu tili. {name} ei näe lukemuksiasi, istuntojasi tai tapaustiedostoasi. Et näe heidän. Se, mitä sanot suhteesta, syöttää mallia, joka tuottaa {name}n lukeman.",
+      "explainerTwo": "Jos haluat oman lukeman, ensimmäinen polku aloittaa myös oman tilisi. Keskimmäinen polku antaa sinun osallistua {name}n lukemaan ilman tiliä. Molemmat ovat sallittuja.",
+      "metaSentTo": "lähetetty kohteeseen",
+      "metaInviteAs": "kutsu nimellä",
+      "metaReceived": "vastaanotettu",
+      "metaExpiresIn": "vanhenee {count, plural, one {# päivässä} other {# päivässä}}"
+    },
+    "intake": {
+      "eyebrow": "SUHTEEN ALKUKARTOITUS",
+      "notReady": {
+        "headline": "Alkukartoitusta <it>valmistellaan.</it>",
+        "body": "Yritä uudelleen hetken kuluttua."
+      },
+      "notFound": {
+        "headline": "Tätä linkkiä <it>ei tunnisteta.</it>",
+        "body": "Avaa aktiivinen linkki viimeisimmästä kutsusähköpostista."
+      },
+      "notOpen": {
+        "headline": "Alkukartoitus <it>ei ole avoinna.</it>",
+        "body": "Tätä kutsua ei ole hyväksytty, tai se on hylätty tai päättynyt. Palaa kutsulinkkiin valitaksesi uudelleen.",
+        "backLink": "takaisin kutsuun"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "kyllä – aloita suhteen esitiedot",
+      "acceptLabel": "kyllä – yhdistä ilman tiliä",
+      "declineLabel": "ei kiitos",
+      "beginLabel": "aloita",
+      "continueLabel": "jatka",
+      "back": "takaisin",
+      "oneMoment": "hetkinen…",
+      "declineConfirmLine": "tämä sulkee kutsun. sinusta ei lähetetä tai tallenneta mitään tietoja.",
+      "declineClosing": "suljetaan…",
+      "declineConfirm": "hylkää kutsu",
+      "firstNameLabel": "ETUNIMESI",
+      "firstNameAria": "Etunimesi",
+      "firstNameSub": "{name} näkee tämän etunimen vain yhteysluettelossaan.",
+      "errors": {
+        "missingFirstName": "etunimi antaa analyytikolle mahdollisuuden puhutella sinua oikein.",
+        "generic": "lähetys epäonnistui.",
+        "notFound": "kutsua ei tunnisteta.",
+        "expired": "kutsu on vanhentunut. pyydä kutsujaa lähettämään uusi.",
+        "declined": "kutsu on jo hylätty.",
+        "ended": "kutsu ei ole enää aktiivinen.",
+        "missingFirstNameRequired": "etunimi vaaditaan."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "SUHTEEN ALKUKARTOITUS",
+      "begin": "aloita",
+      "back": "takaisin",
+      "backToCover": "takaisin kanteen",
+      "next": "seuraava",
+      "finish": "valmis",
+      "scaleAria": "asteikko {value}",
+      "cover": {
+        "headline": "Mitä sanot <it>{name}</it>-henkilöstä, pysyy sinun ja analyytikon välillä.",
+        "lede": "Kaksitoista lyhyttä kysymystä. Noin viisi minuuttia. Vastaukset syöttävät {name}-henkilön lukemaa; he eivät näe kirjoittamaasi, etkä sinä näe, mitä se tuottaa."
+      },
+      "closing": {
+        "recording": "hetki — vastaukset tallennetaan.",
+        "tryAgain": "yritä uudelleen",
+        "headline": "Se riittää <it>toistaiseksi.</it>",
+        "lede": "Sanomasi {name}-henkilöstä vaikuttaa heidän lukemaansa heidän seuraavasta istunnostaan eteenpäin. He eivät näe sitä; sinä et näe, mitä se tuottaa.",
+        "closeWindow": "voit sulkea tämän ikkunan."
+      },
+      "errors": {
+        "unanswered": "hetki tämän kanssa ennen eteenpäin siirtymistä.",
+        "questionOpen": "kysymys on vielä auki. hetki.",
+        "couldNotSave": "ei voitu tallentaa",
+        "invalidAnswers": "jokin ei jäsentynyt – tarkista vastaukset.",
+        "notAccepting": "tämä kutsu ei enää hyväksy vastauksia.",
+        "notFound": "tätä kutsulinkkiä ei tunnisteta.",
+        "couldNotSaveAnswers": "vastauksia ei voitu tallentaa."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Kuinka kauan olette tunteneet toisenne?",
+          "options": {
+            "under_one_year": "alle vuoden",
+            "one_to_three": "yhdestä kolmeen vuotta",
+            "four_to_ten": "neljästä kymmeneen vuotta",
+            "eleven_to_twenty": "yhdestätoista kahteenkymmeneen vuotta",
+            "more_than_twenty": "yli kaksikymmentä vuotta"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Kuinka läheisiksi tunnette toisenne juuri nyt?",
+          "lowLabel": "etäisyyden päässä",
+          "highLabel": "niin läheisiä kuin mahdollista"
+        },
+        "repair_initiator": {
+          "prompt": "Kun olette eri mieltä, kumpi pyrkii yleensä ensin korjaamaan tilanteen?",
+          "options": {
+            "i_do": "melkein aina minä",
+            "usually_me": "yleensä minä",
+            "evenly": "lähestymme toisiamme tasapuolisesti",
+            "usually_them": "yleensä he",
+            "they_do": "melkein aina he"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kun jokin on vaikeaa, minne he yleensä menevät?",
+          "options": {
+            "toward": "sinua kohti, puhumaan siitä",
+            "quiet": "hiljaisuuteen, sitten takaisin",
+            "work": "työhön tai häiriötekijöihin",
+            "alone": "täysin yksin, oven taakse",
+            "elsewhere": "muiden ihmisten luo ensin"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Mitä toivoisit heidän ymmärtävän itsestään?"
+        },
+        "what_you_offer": {
+          "prompt": "Mitä teet heidän puolestaan yhdellä lauseella, mitä he eivät voi tehdä itse?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Mikä ääni tuntuu ohjaavan heitä useimmin?",
+          "options": {
+            "demand": "vaatimus — mitä pitäisi tehdä",
+            "doubt": "epäilys — onko se tarpeeksi",
+            "desire": "halu — mitä he todella haluavat",
+            "watcher": "tarkkailija — miten se nähdään",
+            "uncertain": "en tiedä vielä"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Missä heidän työnsä yleensä takertuu?",
+          "options": {
+            "start": "alku — sisään pääseminen",
+            "middle": "keskikohta — sen kanssa pysyminen",
+            "finish": "loppu — irti päästäminen",
+            "visibility": "näkyvyys — sen antaminen näkyä",
+            "nowhere": "ei missään, mitä voin nähdä ulkopuolelta"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Onko jokin aihe, jota he johdonmukaisesti välttelevät? Nimeä se kevyesti."
+        },
+        "they_at_their_best": {
+          "prompt": "Milloin he ovat parhaimmillaan?"
+        },
+        "what_youve_changed": {
+          "prompt": "Onko heissä jotain, minkä olet hiljaisesti hyväksynyt, ettet voi muuttaa?"
+        },
+        "future_together": {
+          "prompt": "Kuinka paljon kuvittelemastasi tulevaisuudesta sisältää heidät?",
+          "lowLabel": "hyvin vähän",
+          "highLabel": "melkein kokonaan"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "tai",
+      "fallbackPreamble": "liitä tämä linkki selaimeesi:",
+      "attendingInstitution": "OSALLISTUVA INSTITUUTIO",
+      "tagline": "Psykodynaaminen tekoäly sisäiselle elämälle.",
+      "automatedFooter": "Lähetetty automaattisesta järjestelmästä · älä vastaa"
+    },
+    "intakeSubmitted": {
+      "subject": "profiiliasi luetaan.",
+      "preheader": "Ensimmäinen läpikäynti käynnissä. Huone avautuu, kun työ on valmis.",
+      "eyebrow": "PROFIILI LUETTU",
+      "titleText": "Vastauksiasi luetaan.",
+      "italicPhrase": "luetaan",
+      "lede": "Ensimmäinen läpikäynti psykodynaamisten mallien avulla on käynnissä. Huone avautuu, kun työ on valmis.",
+      "figLeftItalic": "vastaanotto vastaanotettu",
+      "figRightLabel": "Ensimmäinen läpikäynti",
+      "figRightItalic": "käynnissä",
+      "text": "{salutation}\n\nVastauksesi ovat saapuneet. Ensimmäinen läpikäynti psykodynaamisten mallien avulla on käynnissä. Huone avautuu, kun työ on valmis.\n\nCognitiveLab, WelloWork AB\nOSALLISTUVA INSTITUUTIO"
+    },
+    "roomReady": {
+      "subject": "huoneesi on avoinna.",
+      "preheader": "Kaksitoista lohkoa valmiina luettavaksi. Työ tarkentuu, kun palaat siihen.",
+      "eyebrow": "HUONE VALMIS",
+      "titleText": "Ensimmäinen lukema on avoinna.",
+      "italicPhrase": "ensimmäinen lukema",
+      "lede": "Kaksitoista psykodynaamisen profiilin lohkoa, huoneessa ja valmiina luettavaksi. Työ tarkentuu, kun palaat siihen.",
+      "ctaLabel": "Siirry huoneeseen",
+      "figLeftItalic": "huone avattu",
+      "figRightLabel": "Ensimmäinen lukema",
+      "figRightItalic": "valmis",
+      "text": "{salutation}\n\nEnsimmäinen lukema on avoinna.\n\nKaksitoista psykodynaamisen profiilin lohkoa, huoneessa ja valmiina luettavaksi. Työ tarkentuu, kun palaat siihen.\n\nSiirry huoneeseen:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nOSALLISTUVA INSTITUUTIO"
+    },
+    "invite": {
+      "subject": "{inviterName} kutsuu sinua lukemiseen.",
+      "preheader": "{inviterName} kutsuu sinua lukemiseen. Yhteys ei näe lukemuksiasi; sinä et näe heidän.",
+      "eyebrow": "KUTSU",
+      "titleText": "{inviterName} kutsuu sinua lukemiseen.",
+      "italicPhrase": "lukemiseen",
+      "lede": "TwentyThird on hiljainen huone, jossa ihmisen sisäisen elämän rakennetta luetaan huolellisesti. Yhteys ei näe kutsujan lukemuksia tai istuntoja, etkä sinä näe heidän.",
+      "ctaLabel": "Avaa kutsu",
+      "figLeftItalic": "kutsu lähetetty",
+      "figRightLabel": "Vanhenee",
+      "figRightItalic": "neljäntoista päivän kuluttua",
+      "securityNote": "Jos tämä saapui vahingossa, kutsu vanhenee itsestään neljäntoista päivän kuluttua.",
+      "textIntro": "{inviterName} kutsuu sinua lukemiseen TwentyThirdissä.",
+      "textBody": "TwentyThird on hiljainen huone, jossa ihmisen sisäisen elämän rakennetta luetaan huolellisesti. Yhteys ei näe kutsujan lukemuksia tai istuntoja, etkä sinä näe heidän.",
+      "textNote": "{inviterName} lisäsi muistiinpanon:\n  {note}",
+      "textOpen": "Avaa kutsu:",
+      "textSecurity": "Jos tämä saapui vahingossa, kutsu vanhenee itsestään neljäntoista päivän kuluttua.",
+      "textCloser": "CognitiveLab, WelloWork AB\nOSALLISTUVA INSTITUUTIO"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} on hyväksynyt yhteyden.",
+      "preheader": "{nameTitle} on hyväksynyt yhteyden. Vaikutus seuraavasta istunnosta eteenpäin.",
+      "eyebrow": "YHTEYS HYVÄKSYTTY",
+      "titleText": "{nameTitle} on hyväksynyt yhteyden.",
+      "italicPhrase": "hyväksynyt yhteyden",
+      "lede": "Heidän suhdetietonsa vaikuttavat lukemaasi seuraavasta istunnosta eteenpäin. He eivät näe lukemiasi; sinä et näe heidän.",
+      "ctaLabel": "Palaa huoneeseen",
+      "figLeftItalic": "yhteys hyväksytty",
+      "figRightLabel": "Vaikutus",
+      "figRightItalic": "seuraavasta istunnosta eteenpäin",
+      "text": "{salutation}\n\n{nameTitle} on hyväksynyt yhteyden.\n\nHeidän suhdetietonsa vaikuttavat lukemaasi seuraavasta istunnosta eteenpäin. He eivät näe lukemiasi; sinä et näe heidän.\n\nPalaa huoneeseen:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nOSALLISTUVA INSTITUUTIO"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} on päättänyt yhteyden.",
+      "preheader": "{nameTitle} on päättänyt yhteyden. Lukemasi mukautuu seuraavan istunnon aikana.",
+      "eyebrow": "YHTEYS PÄÄTTYNYT",
+      "titleText": "{nameTitle} on päättänyt yhteyden.",
+      "italicPhrase": "päättänyt yhteyden",
+      "lede": "Lukemasi mukautuu seuraavan istunnon aikana. Suhteesta sanottu säilyy tapausselostuksessa; se ei enää vaikuta aktiiviseen lukemaan.",
+      "ctaLabel": "Palaa huoneeseen",
+      "figLeftItalic": "yhteys päättyi",
+      "figRightLabel": "Vaikutus",
+      "figRightItalic": "seuraavasta istunnosta eteenpäin",
+      "text": "{nameTitle} on päättänyt yhteyden.\n\nLukemasi mukautuu seuraavan istunnon aikana. Suhteesta sanottu säilyy tapausselostuksessa; se ei enää vaikuta aktiiviseen lukemaan.\n\nPalaa huoneeseen:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nOSALLISTUVA INSTITUUTIO"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "tämän viikon Catchup on avoinna.",
+      "preheader": "Lyhyt pohdinta. Viisi minuuttia. Se päivittää lukeman.",
+      "eyebrow": "VIIKOITTAINEN CATCHUP",
+      "titleText": "Viikko on kulunut hiljaisesti.",
+      "italicPhrase": "hiljaisesti",
+      "lede": "Lyhyt pohdinta – mikä on äänekästä, mikä on pysynyt hiljaisena, mikä on muuttunut. Se päivittää lukeman.",
+      "ctaLabel": "Avaa Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "viisi minuuttia",
+      "text": "{salutation}\n\nViikko on kulunut hiljaisesti.\n\nLyhyt pohdinta – mikä on äänekästä, mikä on pysynyt hiljaisena, mikä on muuttunut. Se päivittää lukeman.\n\nAvaa Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "vastauksesi ovat tallessa.",
+      "preheader": "Esitietojen täyttö jatkuu siitä, mihin jäit. Työ alkaa vasta, kun se on valmis.",
+      "eyebrow": "ESITIETOJEN TÄYTTÖ KESKEYTETTY",
+      "titleText": "Esitietojen täyttö on siinä, mihin jäit.",
+      "italicPhrase": "mihin jäit",
+      "lede": "Esitietojen täyttö jatkuu siitä, mihin jäit. Työ alkaa vasta, kun se on valmis.",
+      "ctaLabel": "Palaa esitietoihin",
+      "figLeftItalic": "esitietojen täyttö keskeytetty",
+      "figRightLabel": "Jatka",
+      "figRightItalic": "mihin jäit",
+      "text": "{salutation}\n\nEsitietojen täyttö on siinä, mihin jäit.\n\nEsitietojen täyttö jatkuu siitä, mihin jäit. Työ alkaa vasta, kun se on valmis.\n\nPalaa esitietoihin:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Mitkä sanat kuvaavat parhaiten kotia, jossa kasvoit.",
+          "subtitle": "valitse enintään kolme sanaa, jotka tuntuvat tosilta, vaikka ne olisivat ristiriidassa keskenään — kodit ovat yleensä sekoitus",
+          "options": {
+            "calm": "Rauhallinen",
+            "strict": "Tiukka",
+            "emotionally_distant": "Emotionaalisesti etäinen",
+            "chaotic": "Kaaottinen",
+            "achievement_focused": "Erittäin suorituskeskeinen",
+            "protective": "Suojeleva",
+            "unpredictable": "Arvaamaton",
+            "conflict_heavy": "Ristiriitainen"
+          }
+        },
+        "q1_2": {
+          "title": "Minkä roolin omaksut luonnostaan lapsena.",
+          "subtitle": "ajattele roolia, jonka omaksut perheessäsi ilman, että kukaan käski sinua — sovittelija, auttaja, hiljainen",
+          "options": {
+            "peacemaker": "Sovittelija",
+            "achiever": "Suorittaja",
+            "invisible_child": "Näkymätön lapsi",
+            "caregiver": "Hoivaaja",
+            "rebel": "Kapinallinen",
+            "funny_one": "Hauska",
+            "responsible_one": "Vastuullinen",
+            "problem_child": "Ongelmalapsi"
+          }
+        },
+        "q1_3": {
+          "title": "Kuinka emotionaalisesti turvallisena tunsit itsesi kasvaessasi.",
+          "subtitle": "luota vaistoosi kodista, älä siihen versioon, jonka perhe kertoisi vieraalle",
+          "lowLabel": "1 · EI KOSKAAN TURVALLINEN",
+          "highLabel": "10 · TÄYSIN TURVALLINEN"
+        },
+        "q1_4": {
+          "title": "Keskusteltiinko tunteista avoimesti kotona.",
+          "subtitle": "ei vain se, oliko tunteita, vaan se, nimesikö tai puhuiko kukaan niistä ääneen",
+          "options": {
+            "frequently": "Usein",
+            "sometimes": "Joskus",
+            "rarely": "Harvoin",
+            "never": "Ei koskaan"
+          }
+        },
+        "q1_5": {
+          "title": "Yksi lapsuusmuisto, joka tuntuu edelleen emotionaalisesti elävältä.",
+          "subtitle": "kuvaile yksi tietty kohtaus, joka palaa mieleesi — missä olit, kuka oli paikalla, mitä tapahtui, miltä se tuntui"
+        },
+        "q1_6": {
+          "title": "Mitä opit tekemään saadaksesi rakkautta tai hyväksyntää.",
+          "subtitle": "pienet asiat, jotka huomasit toimivan — kiltteys, hiljaisuus, suorittaminen, poissa pysyminen — jaa, mitä muistat mukauttaneesi"
+        },
+        "q1_7": {
+          "title": "Mitä tunteita oli vaikea ilmaista kotona.",
+          "subtitle": "mitkä tunteet jätettiin huomiotta, torjuttiin tai rangaistiin, kun yritit näyttää niitä — viha, suru, pelko, ilo, mikä tahansa"
+        },
+        "q1_8": {
+          "title": "Mitä tunnet nuorempaa itseäsi kohtaan, kun ajattelet häntä.",
+          "subtitle": "ole rehellinen tunteesta, joka nousee esiin — lämpö, suru, etäisyys, turhautuminen, suojelevuus — mikä tahansa, mikä todella on läsnä"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Miten kuvailisit äitiäsi tai ensisijaista äitihahmoasi.",
+          "subtitle": "muutama lause siitä, millainen hän oli, miten hän oli läsnä elämässäsi ja miltä sinusta tuntui hänen seurassaan",
+          "options": {
+            "warm": "Lämmin",
+            "controlling": "Kontrolloiva",
+            "emotionally_unavailable": "Emotionaalisesti tavoittamaton",
+            "sacrificing": "Uhrautuva",
+            "critical": "Kriittinen",
+            "anxious": "Ahdistunut",
+            "unpredictable": "Arvaamaton",
+            "admired": "Ihailtu",
+            "fearful": "Pelokas",
+            "not_applicable": "Ei sovellettavissa"
+          }
+        },
+        "q2_2": {
+          "title": "Miten kuvailisit isääsi tai ensisijaista isähahmoasi.",
+          "subtitle": "muutama lause siitä, millainen hän oli, miten hän oli läsnä elämässäsi ja miltä sinusta tuntui hänen seurassaan",
+          "options": {
+            "supportive": "Kannustava",
+            "distant": "Etäinen",
+            "dominant": "Hallitseva",
+            "passive": "Passiivinen",
+            "ambitious": "Kunnianhimoinen",
+            "emotionally_closed": "Emotionaalisesti sulkeutunut",
+            "protective": "Suojeleva",
+            "critical": "Kriittinen",
+            "absent": "Poissaoleva",
+            "not_applicable": "Ei sovellettavissa"
+          }
+        },
+        "q2_3": {
+          "title": "Sisarussarjasi asema.",
+          "subtitle": "paikkasi järjestyksessä – vanhin, keskimmäinen, nuorin, ainoa lapsi tai jossain siltä väliltä",
+          "options": {
+            "oldest": "Vanhin",
+            "middle": "Keskimmäinen",
+            "youngest": "Nuorin",
+            "only_child": "Ainoa lapsi"
+          }
+        },
+        "q2_4": {
+          "title": "Mikä rooli sopii parhaiten sisarussarjasi asemaan.",
+          "subtitle": "syntymäjärjestyksen lisäksi rooli, jonka päädyit omaksumaan – vastuullinen, kapinallinen, näkymätön, suosikki",
+          "options": {
+            "responsible": "Vastuullinen",
+            "ignored": "Sivuutettu",
+            "compared": "Verrattu muihin",
+            "favored": "Suosittu",
+            "competitive": "Kilpailuhenkinen",
+            "protective": "Suojeleva",
+            "not_applicable": "Ei sovellettavissa"
+          }
+        },
+        "q2_5": {
+          "title": "Kumpi vanhempi ymmärsi sinua parhaiten.",
+          "subtitle": "nimeä hänet ja kerro, mitä hän näki sinussa, minkä toinen jätti huomaamatta tai ymmärsi väärin"
+        },
+        "q2_6": {
+          "title": "Kumpi vanhempi vaikutti eniten pelkoihisi.",
+          "subtitle": "kenen huolet imit lapsena, ja miten nuo pelot ilmenevät elämässäsi edelleen"
+        },
+        "q2_7": {
+          "title": "Miltä konflikti näytti perheessäsi.",
+          "subtitle": "kuvaile riitojen muotoa – huutamista, hiljaisuutta, ovien paiskomista, kylmiä viikkoja, toistuvia kaavoja – mikä tahansa tuntui tutulta"
+        },
+        "q2_8": {
+          "title": "Millaista huomiota oli vaikeinta vastaanottaa.",
+          "subtitle": "sellainen hoito, joka sai sinut tuntemaan olosi epämukavaksi – kehut, huoli, fyysinen läheisyys, nähdyksi tuleminen – ja miksi se oli vaikeaa"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Kuinka uskonnollinen tai henkinen kasvuympäristösi oli.",
+          "subtitle": "kodin todellinen ilmapiiri – käytännöt, säännöt, ilmassa olevat uskomukset – ei se, mihin nyt aikuisena uskot",
+          "lowLabel": "1 · EI YHTÄÄN",
+          "highLabel": "10 · SYVÄSTI"
+        },
+        "q3_2": {
+          "title": "Mikä viesti oli vahvin kasvaessasi.",
+          "subtitle": "sääntö tai odotus, joka toistettiin niin usein, että siitä tuli taustamelua – menestyksestä, käyttäytymisestä, imagosta, velvollisuudesta, perheestä",
+          "options": {
+            "success": "Menestys on tärkeintä",
+            "reputation": "Maine on tärkeintä",
+            "obedience": "Kuuliaisuus on tärkeintä",
+            "family_loyalty": "Perheen uskollisuus on tärkeintä",
+            "independence": "Itsenäisyys on tärkeintä",
+            "sacrifice": "Uhrautuminen on tärkeintä"
+          }
+        },
+        "q3_3": {
+          "title": "Kuinka voimakkaasti tunnet yhteiskunnan tuomitsevan sinua.",
+          "subtitle": "kuinka paljon tunnet ulkopuolisten – töissä, verkossa, julkisesti – tarkkailevan tai arvioivan sinua",
+          "lowLabel": "1 · EI YHTÄÄN",
+          "highLabel": "10 · JATKUVASTI"
+        },
+        "q3_4": {
+          "title": "Mitkä kasvatuksesi uskomukset muokkaavat sinua edelleen.",
+          "subtitle": "arvot, säännöt tai oletukset, jotka perit ja joiden mukaan yhä elät, vaikka et olisi ajatellut niitä vuosiin",
+          "highLabel": null
+        },
+        "q3_5": {
+          "title": "Mitä uskomuksia vastustat salaa.",
+          "subtitle": "ne, joihin julkisesti suostut mutta joista olet hiljaa eri mieltä – rahasta, suhteista, menestyksestä, sukupuolesta, mistä tahansa",
+          "highLabel": null
+        },
+        "q3_6": {
+          "title": "Mistä perheesi tai yhteisösi paheksuisi eniten todellista sinua.",
+          "subtitle": "ne osat itsestäsi, elämästäsi tai valinnoistasi, jotka pidät heiltä piilossa, ja miksi pidät ne piilossa",
+          "highLabel": null
+        },
+        "q3_7": {
+          "title": "Millainen henkilö sinusta odotettiin tulevan.",
+          "subtitle": "tulevaisuus, jonka toiset kuvittelivat sinulle – ura, perhe, käyttäytyminen, imago – ennen kuin sinulla oli siihen sananvaltaa",
+          "highLabel": null
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Kuinka moni ihminen todella tuntee sinut.",
+          "subtitle": "ihmiset, jotka ovat nähneet sinusta editoimattoman version ja joita mikään sisäisessä elämässäsi ei järkyttäisi",
+          "options": {
+            "none": "Ei kukaan",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Monta"
+          }
+        },
+        "q4_2": {
+          "title": "Ryhmissä sinusta tulee yleensä.",
+          "subtitle": "rooli, johon liu'ut ajattelematta – hauska, kuuntelija, johtaja, tarkkailija, se, joka pitää asiat sujuvina",
+          "options": {
+            "leader": "Johtaja",
+            "observer": "Tarkkailija",
+            "entertainer": "Viihdyttäjä",
+            "mediator": "Sovittelija",
+            "intellectual": "Intellektuelli",
+            "caregiver": "Hoivaaja",
+            "withdrawn": "Vetäytyvä"
+          }
+        },
+        "q4_3": {
+          "title": "Kuinka paljon pelkäät tuottaa pettymyksen muille.",
+          "subtitle": "kuinka paljon toisen ihmisen reaktio – katse, huokaus, hiljaisuus – voi muokata sitä, mitä sanot tai teet",
+          "lowLabel": "1 · EI YHTÄÄN",
+          "highLabel": "10 · PÄIVITTÄIN"
+        },
+        "q4_4": {
+          "title": "Mitä osia itsestäsi piilotat sosiaalisesti.",
+          "subtitle": "ajatukset, tunteet, piirteet tai osat historiastasi, jotka pidät piilossa ollessasi muiden ihmisten seurassa"
+        },
+        "q4_5": {
+          "title": "Milloin tunnet olosi hyväksytyimmäksi.",
+          "subtitle": "tilanteet tai suhteet, joissa lopetat esittämisen ja voit vain olla – kuvaile, mikä tekee näistä tiloista erilaisia"
+        },
+        "q4_6": {
+          "title": "Mitkä sosiaaliset tilanteet uuvuttavat sinua eniten.",
+          "subtitle": "kokoontumiset, dynamiikat tai suhteet, jotka jättävät sinut väsyneemmäksi kuin niiden pitäisi – ja mikä niissä on uuvuttavaa"
+        },
+        "q4_7": {
+          "title": "Minkälaisia ihmisiä kadehdit.",
+          "subtitle": "kateus osoittaa yleensä jotain, mitä haluat, mutta et ole sallinut itsesi haluta avoimesti – kuvaile, kuka sen laukaisee ja miksi"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Mitä alustoja käytät aktiivisesti.",
+          "subtitle": "sovellukset, jotka avaat tavasta, useammin kuin kerran päivässä, eivät ne, joissa sinulla on teknisesti tili",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Ei mitään"
+          }
+        },
+        "q5_2": {
+          "title": "Keskimääräinen päivittäinen käyttö alustaa kohden.",
+          "subtitle": "karkea arvio siitä, kuinka paljon aikaa todella vietät kullakin – minuutteja tai tunteja, ilman tuomitsemista",
+          "unit": "MINUUTTIA PÄIVÄSSÄ"
+        },
+        "q5_3": {
+          "title": "Mihin niitä pääasiassa käytät.",
+          "subtitle": "todellinen syy ilmeisen alla – yhteys, häiriötekijä, validointi, pako, vertailu, tieto",
+          "options": {
+            "validation": "Validointi",
+            "learning": "Oppiminen",
+            "escapism": "Pako todellisuudesta",
+            "networking": "Verkostoituminen",
+            "self_expression": "Itsensä ilmaiseminen",
+            "entertainment": "Viihde",
+            "comparison": "Vertailu",
+            "dating": "Treffailu"
+          }
+        },
+        "q5_4": {
+          "title": "Kuinka usein poistat tai muokkaat julkaisuja ennen julkaisua.",
+          "subtitle": "kuinka paljon harjoittelet, epäröit tai kirjoitat uudelleen jakamaasi ennen kuin annat muiden nähdä sen",
+          "options": {
+            "always": "Aina",
+            "often": "Usein",
+            "sometimes": "Joskus",
+            "rarely": "Harvoin",
+            "never": "Ei koskaan"
+          }
+        },
+        "q5_5": {
+          "title": "Kuinka usein vertaat elämääsi muiden elämään verkossa.",
+          "subtitle": "hiljainen mittaaminen, joka tapahtuu selatessa – ulkonäöstä, menestyksestä, suhteista, elämäntyylistä, mistä tahansa",
+          "lowLabel": "1 · EI KOSKAAN",
+          "highLabel": "10 · JATKUVASTI"
+        },
+        "q5_6": {
+          "title": "Mikä versio itsestäsi ilmestyy verkossa.",
+          "subtitle": "kuvaile esittämääsi hahmoa – kuratoitua versiota – ja miten se eroaa siitä, kuka olet, kun kukaan ei katso"
+        },
+        "q5_7": {
+          "title": "Mitä etsit emotionaalisesti avatessasi sosiaalisen median.",
+          "subtitle": "tunne, jota tavoittelet avatessasi sovelluksen – häiriötekijä, lohtu, jännitys, turtumus, yhteys"
+        },
+        "q5_8": {
+          "title": "Millainen sisältö saa sinut tuntemaan olosi epämukavaksi.",
+          "subtitle": "julkaisut tai videot, jotka saavat sinut haluamaan vierittää nopeasti ohi, ja mitä luulet tämän epämukavuuden todella tarkoittavan"
+        },
+        "q5_9": {
+          "title": "Millaiset ihmiset herättävät huomiosi verkossa.",
+          "subtitle": "tilit, joita pysähdyt katsomaan – kuvaile heidän yhteisiä ominaisuuksiaan ja mikä sinua vetää puoleensa"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Nykyinen parisuhdetilanteesi.",
+          "subtitle": "missä olet juuri nyt – sinkku, seurusteleva, parisuhteessa, naimisissa, eronnut, monimutkainen – ei se, missä toivoisit olevasi",
+          "options": {
+            "single": "Sinkku",
+            "dating": "Seurusteleva",
+            "in_relationship": "Parisuhteessa",
+            "engaged": "Kihloissa",
+            "married": "Naimisissa",
+            "separated_divorced": "Eronnut tai erossa",
+            "widowed": "Leski",
+            "its_complicated": "Se on monimutkaista"
+          }
+        },
+        "q6_2": {
+          "title": "Kuinka monessa vakavassa parisuhteessa olet ollut.",
+          "subtitle": "ne, joilla oli emotionaalista merkitystä, riippumatta siitä, kuinka kauan ne kestivät tai kuinka virallisia ne olivat",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tyypilliset konfliktit parisuhteissasi.",
+          "subtitle": "riidat, jotka ilmenevät toistuvasti eri muodoissa eri kumppaneiden kanssa – raha, etäisyys, kontrolli, kommunikaatio",
+          "options": {
+            "distance": "Etäisyys",
+            "jealousy": "Mustasukkaisuus",
+            "control": "Kontrolli",
+            "emotional_unavailability": "Emotionaalinen tavoittamattomuus",
+            "communication": "Kommunikaatio",
+            "trust": "Luottamus",
+            "dependency": "Riippuvuus"
+          }
+        },
+        "q6_4": {
+          "title": "Parisuhteissa sinulla on taipumus.",
+          "subtitle": "oletusreaktiosi, kun asiat vaikeutuvat – lähentyä, vetäytyä, ottaa ohjat, sulkeutua, yrittää korjata",
+          "options": {
+            "pursue": "Tavoitella",
+            "withdraw": "Vetäytyä",
+            "overgive": "Antaa liikaa",
+            "test_loyalty": "Testata uskollisuutta",
+            "avoid_vulnerability": "Välttää haavoittuvuutta"
+          }
+        },
+        "q6_5": {
+          "title": "Millaisiin ihmisiin rakastut toistuvasti.",
+          "subtitle": "tyyppi, joka ilmestyy jatkuvasti rakkauselämääsi – ei vain ulkonäkö, vaan emotionaaliset mallit, temperamentti, miten he kohtelevat sinua"
+        },
+        "q6_6": {
+          "title": "Mikä yleensä päättää parisuhteesi.",
+          "subtitle": "todellinen syy asioiden hajoamiseen, virallisen tarinan ulkopuolella, jonka kerrot ystäville tai perheelle"
+        },
+        "q6_7": {
+          "title": "Minkä emotionaalisen tarpeen haluat eniten täyttyvän.",
+          "subtitle": "tarve, jota sinun on vaikeinta pyytää suoraan – tulla nähdyksi, tulla valituksi, olla turvassa, olla vapaa, tulla halutuksi"
+        },
+        "q6_8": {
+          "title": "Mitä pelkäät eniten intiimiydessä.",
+          "subtitle": "mitä läheisyys asettaa sinulle riskiksi – tulla tunnetuksi, tulla loukkuun, tulla jätetyksi, olla liikaa, olla riittämätön"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Nykyinen työllisyystilanteesi.",
+          "subtitle": "työelämäsi muoto juuri nyt – työssäkäyvä, itsenäinen ammatinharjoittaja, töiden välissä, opiskelija, hoitaja, jotain muuta",
+          "options": {
+            "employed_full_time": "Työssäkäyvä, kokoaikainen",
+            "employed_part_time": "Työssäkäyvä, osa-aikainen",
+            "self_employed": "Itsenäinen ammatinharjoittaja tai perustaja",
+            "freelance": "Freelancer tai sopimustyöntekijä",
+            "studying": "Opiskelija",
+            "between_roles": "Roolien välissä",
+            "caregiving": "Hoitaja kotona",
+            "retired": "Eläkkeellä",
+            "not_working": "Työtön"
+          }
+        },
+        "q7_2": {
+          "title": "Kuinka tyytyväinen olet urasi suuntaan.",
+          "subtitle": "työsi pidempi kaari, ei se, miltä sinusta tuntuu tällä viikolla",
+          "lowLabel": "1 · EKSYKSISSÄ",
+          "highLabel": "10 · TÄYSIN OIKEIN"
+        },
+        "q7_3": {
+          "title": "Työssä olet yleensä.",
+          "subtitle": "tapa, jolla toimit ammatillisesti – rooli, jonka otat, kun kukaan ei sitä sinulle anna",
+          "options": {
+            "perfectionistic": "Perfektionistinen",
+            "avoidant": "Välttävä",
+            "competitive": "Kilpailuhenkinen",
+            "cooperative": "Yhteistyökykyinen",
+            "over_responsible": "Ylivastuullinen",
+            "detached": "Etäinen"
+          }
+        },
+        "q7_4": {
+          "title": "Suurin työpaikan stressisi.",
+          "subtitle": "kotiin seuraava paineen lähde – henkilö, työmäärä, pelko, ympäristö, kaava",
+          "options": {
+            "criticism": "Kritiikki",
+            "failure": "Epäonnistuminen",
+            "visibility": "Näkyvyys",
+            "authority": "Auktoriteetti",
+            "uncertainty": "Epävarmuus",
+            "conflict": "Konflikti"
+          }
+        },
+        "q7_5": {
+          "title": "Mitä menestys emotionaalisesti merkitsee sinulle.",
+          "subtitle": "tunne, jonka kuvittelet saapuvan, kun vihdoin saavutat sen – helpotus, ylpeys, rauha, vapaus, riittävyys"
+        },
+        "q7_6": {
+          "title": "Millainen tunnustus vaikuttaa sinuun eniten.",
+          "subtitle": "kehu, joka aidosti osuu ja muuttaa tunteitasi, ja sellainen, joka kimpoaa pois riippumatta siitä, kuinka paljon sitä saat"
+        },
+        "q7_7": {
+          "title": "Mikä epäonnistuminen vaikuttaa sinuun edelleen tänään.",
+          "subtitle": "tietty epäonnistuminen, jota et ole aivan saanut käsiteltyä – mitä tapahtui ja miten se edelleen muokkaa valintojasi"
+        },
+        "q7_8": {
+          "title": "Jos raha katoaisi, mitä tavoittelisit.",
+          "subtitle": "työ tai toiminta, jota tekisit, vaikka kukaan ei maksaisi siitä – kuvaile, miltä se näyttää"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Miten yleensä selviät stressistä.",
+          "subtitle": "mihin turvaudut, kun asiat käyvät raskaiksi – ruoka, ruudut, liikunta, eristäytyminen, puhuminen, päihteet, uni, työ",
+          "options": {
+            "isolation": "Eristäytyminen",
+            "food": "Ruoka",
+            "gaming": "Pelaaminen",
+            "exercise": "Liikunta",
+            "overworking": "Ylityöskentely",
+            "scrolling": "Selaaminen",
+            "substance_use": "Päihteiden käyttö",
+            "shopping": "Ostelu",
+            "sleeping": "Nukkuminen",
+            "socializing": "Seurustelu"
+          }
+        },
+        "q8_2": {
+          "title": "Kuinka usein tapaat ihmisiä sosiaalisesti.",
+          "subtitle": "kuinka usein vietät aikaa muiden ihmisten kanssa henkilökohtaisesti, ei verkossa tai viestien välityksellä",
+          "options": {
+            "multiple_per_week": "Useita kertoja viikossa",
+            "weekly": "Viikoittain",
+            "monthly": "Kuukausittain",
+            "rarely": "Harvoin",
+            "never": "Ei koskaan"
+          }
+        },
+        "q8_3": {
+          "title": "Kuinka usein tunnet olosi yksinäiseksi jopa ryhmässä.",
+          "subtitle": "yksinäisyys, joka ilmenee, kun olet ihmisten ympäröimänä mutta tunnet silti olevasi näkymätön tai kaukana",
+          "lowLabel": "1 · EI KOSKAAN",
+          "highLabel": "10 · AINA"
+        },
+        "q8_4": {
+          "title": "Mitkä toiminnot saavat sinut unohtamaan itsesi.",
+          "subtitle": "asiat, jotka vetävät sinut niin syvälle, että aika katoaa – hyvässä tai pahassa, terveellistä tai ei"
+        },
+        "q8_5": {
+          "title": "Mitä vältät ajattelemasta eniten.",
+          "subtitle": "aihe tai muisto, jota vältät nopeasti, kun se nousee esiin – itsestäsi, menneisyydestäsi, tulevaisuudestasi"
+        },
+        "q8_6": {
+          "title": "Milloin tunnet olosi emotionaalisesti tunnottomaksi.",
+          "subtitle": "tilanteet, joissa äänenvoimakkuus laskee nollaan – työ, ihmissuhteet, konflikti, läheisyys, yksin oleminen"
+        },
+        "q8_7": {
+          "title": "Minkä tavan lopettaminen tuntuu vaikeimmalta.",
+          "subtitle": "käyttäytyminen, jota olet yrittänyt muuttaa tai lopettaa useammin kuin kerran, onnistumatta – kuvaile, mikä se on ja mikä vetää sinua takaisin"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Kuinka itsekriittinen olet.",
+          "subtitle": "sisäisen äänesi sävy, kun epäonnistut tai jäädyt vajaaksi – ankara, oikeudenmukainen, vähättelevä, tuhoisa",
+          "lowLabel": "1 · HELLÄ",
+          "highLabel": "10 · ARMATON"
+        },
+        "q9_2": {
+          "title": "Mikä väittämä tuntuu lähimmältä yksityistä pelkoasi.",
+          "subtitle": "lause itsestäsi, joka elää kaiken muun alla, se jonka myöntäisit vain vaikeana päivänä",
+          "options": {
+            "never_enough": "En ole koskaan tarpeeksi",
+            "fear_abandoned": "Pelkään hylätyksi tulemista",
+            "fear_losing_control": "Pelkään menettäväni hallinnan",
+            "fear_failure": "Pelkään epäonnistumista",
+            "fear_ordinary": "Pelkään olevani tavallinen",
+            "fear_rejection": "Pelkään torjutuksi tulemista",
+            "fear_dependence": "Pelkään riippuvuutta"
+          }
+        },
+        "q9_3": {
+          "title": "Kuinka usein tunnet olevasi irrallaan itsestäsi.",
+          "subtitle": "tunne, että tarkkailet omaa elämääsi pieneltä etäisyydeltä, ikään kuin et olisi täysin sen sisällä",
+          "lowLabel": "1 · EI KOSKAAN",
+          "highLabel": "10 · PÄIVITTÄIN"
+        },
+        "q9_4": {
+          "title": "Mikä ajatus toistuu mielessäsi useimmin.",
+          "subtitle": "silmukoiva lause tai huoli, joka palaa säännöllisesti – kirjoita se todellisilla sanoillaan, ei tiivistelmänä"
+        },
+        "q9_5": {
+          "title": "Mistä kritisoit itseäsi yksityisesti.",
+          "subtitle": "asiat, joista arvostelet itseäsi ja joista kukaan muu ei tiedä – kehostasi, mielestäsi, valinnoistasi, luonteestasi",
+          "placeholder": "Esimerkiksi: 'Olen liian hidas', 'En ole tarpeeksi älykäs', 'En voi luottaa itseeni'"
+        },
+        "q9_6": {
+          "title": "Mikä saisi sinut tuntemaan itsesi tarpeeksi hyväksi.",
+          "subtitle": "ehto, jonka olet hiljaa asettanut itsellesi rentoutuaksesi lopulta – ole rehellinen, vastaus on usein pienempi kuin odotat"
+        },
+        "q9_7": {
+          "title": "Jos sisäisellä äänelläsi olisi persoonallisuus, miten kuvailisit sitä.",
+          "subtitle": "äänen ikä, sukupuoli, sävy – ja kenen ääni se todellisuudessa saattaa olla, jos jäljität sen takaisin"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Mikä on sinulle tärkeämpää.",
+          "subtitle": "valitse se, mikä on tärkeintä juuri nyt – muut voivat edelleen olla tärkeitä, mutta ole rehellinen järjestyksestä",
+          "options": {
+            "freedom": "Vapaus",
+            "love": "Rakkaus",
+            "recognition": "Tunnustus",
+            "stability": "Vakaus",
+            "power": "Valta",
+            "meaning": "Merkitys",
+            "peace": "Rauha",
+            "influence": "Vaikutusvalta"
+          }
+        },
+        "q10_2": {
+          "title": "Kuinka toiveikas olet tulevaisuutesi suhteen.",
+          "subtitle": "tunne, joka syntyy, kun ajattelet tulevaisuutta, ei se pirteä vastaus, jonka annat muille kysyttäessä",
+          "lowLabel": "1 · EI YHTÄÄN",
+          "highLabel": "10 · SYVÄSTI"
+        },
+        "q10_3": {
+          "title": "Mitä todella haluat salaa.",
+          "subtitle": "halu, jota et ole vielä uskaltanut nimetä ääneen – se, joka tuntuu liian suurelta, liian riskialttiilta tai liian kiusalliselta",
+          "options": {
+            "to_be_understood": "Tulla ymmärretyksi",
+            "to_be_admired": "Tulla ihailtuksi",
+            "to_feel_safe": "Tuntea olonsa turvalliseksi",
+            "to_be_desired": "Tulla halutuksi",
+            "to_feel_important": "Tuntea olonsa tärkeäksi",
+            "to_feel_free": "Tuntea olonsa vapaaksi",
+            "to_belong": "Kuulua joukkoon"
+          }
+        },
+        "q10_4": {
+          "title": "Kuvaile ihanteellista tulevaa elämääsi yksityiskohtaisesti.",
+          "subtitle": "konkreettiset yksityiskohdat – missä olet, kenen kanssa olet, miltä aamusi näyttävät, työ, valo, rytmi"
+        },
+        "q10_5": {
+          "title": "Mikä pelko voisi tuhota tuon tulevaisuuden.",
+          "subtitle": "asia – sisäinen tai ulkoinen – joka on pysäyttänyt sinut aiemmin ja voisi pysäyttää sinut uudelleen, jos annat sen"
+        },
+        "q10_6": {
+          "title": "Miksi osaksi itseäsi pyrit vielä tulemaan.",
+          "subtitle": "versio sinusta horisontissa – ominaisuudet, vapaudet, tapa olla, jota kohti olet hitaasti siirtymässä"
+        },
+        "q10_7": {
+          "title": "Jos kukaan ei tuomitsisi sinua, miten eläisit eri tavalla.",
+          "subtitle": "valinnat, jotka tekisit, jos tarkkailu loppuisi – työstä, rakkaudesta, kehosta, ajasta, rahasta, äänestä"
+        },
+        "q10_8": {
+          "title": "Mitä luulet todella etsiväsi.",
+          "subtitle": "syvempi asia kaikkien edellisten vastaustesi alla – mihin jokainen valinta ja kaipuu todella osoittaa"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "ALKUPERÄ · KEHITYKSELLINEN JÄLKI",
+        "headline": [
+          "Mitä varhainen tila ",
+          "opetti sinulle",
+          "."
+        ],
+        "lede": "Ensimmäinen osio kuuntelee emotionaalista ilmapiiriä, turvallisuutta ja roolia, johon sinut asetettiin. Tähän tallennetuista malleista tulee perusta kaikelle myöhemmälle.",
+        "title": "Alkuperä",
+        "subtitle": "kehityksellinen jälki"
+      },
+      "attachment": {
+        "eyebrow": "KIINTYMYS · PERHERAKENNE",
+        "headline": [
+          "Ensimmäiset ",
+          "siteet",
+          ", ja niiden jättämä muoto."
+        ],
+        "lede": "Määrittää kiintymystyylisi, suhteesi auktoriteettiin ja triangulaation, jonka sisällä kasvoit. Ensimmäisen siteen muoto on malli, jota vasten kaikki myöhemmät mitataan.",
+        "title": "Kiintymys",
+        "subtitle": "perherakenne"
+      },
+      "authority": {
+        "eyebrow": "AUKTORITEETTI · SYMBOLINEN LAKI",
+        "headline": [
+          "Äänet, jotka ",
+          "perit",
+          "."
+        ],
+        "lede": "Nostaa esiin moraalisäännöt, syyllisyysrakenteet ja perityn identiteetin, jotka yhä toimivat taustalla. Äänet, joiden alaisuudessa kasvoit, harvoin katoavat; niistä tulee ääni, joka tuomitsee sinua.",
+        "title": "Auktoriteetti",
+        "subtitle": "symbolinen laki"
+      },
+      "belonging": {
+        "eyebrow": "KUULUVUUS · SOSIAALINEN IDENTITEETTI",
+        "headline": [
+          "Kuka saa ",
+          "nähdä sinut",
+          "."
+        ],
+        "lede": "Mittaa sosiaalista riippuvuutta, identiteetin peittämistä ja ulkopuolelle jäämisen pelkoa. Kuuluvuus on harvoin ilmaista; tämä osio kysyy, mitä vaihdat siihen.",
+        "title": "Kuuluvuus",
+        "subtitle": "sosiaalinen identiteetti"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · HALU & DIGITAALINEN MINÄ",
+        "headline": [
+          "Minä, jonka ",
+          "esität",
+          "."
+        ],
+        "lede": "Lukee idealisoidun minän, validoinnin kierteen ja symbolisen esityksen, jonka lavastat verkossa. Persona ei ole valhe; se on puoliksi paljastettu toive.",
+        "title": "Persona",
+        "subtitle": "halu & digitaalinen minä"
+      },
+      "desire": {
+        "eyebrow": "HALU · INTIMITEETTI & TOISTO",
+        "headline": [
+          "Malli, joka ",
+          "palaa yhä",
+          "."
+        ],
+        "lede": "Löytää toistuvan relationaalisen muodon, hylkäämisen pelon, ristiriidan halun sisällä. Se, mikä toistuu, on harvoin valittua; se on sitä, mikä pyytää tulla nähdyksi.",
+        "title": "Halu",
+        "subtitle": "intimiteetti & toisto"
+      },
+      "achievement": {
+        "eyebrow": "SAAVUTUS · TYÖ & TUNNUSTUS",
+        "headline": [
+          "Mitä yrität ",
+          "todistaa",
+          "."
+        ],
+        "lede": "Havaitsee saavutusahdistuksen, tunnustuksen nälän ja suhteesi auktoriteettiin työssä. Jokaisen kunnianhimon alla on yhden tai kahden ihmisen yleisö.",
+        "title": "Saavutus",
+        "subtitle": "työ & tunnustus"
+      },
+      "escape": {
+        "eyebrow": "PAKO · NAUTINTO & RITUAALI",
+        "headline": [
+          "Minne menet ",
+          "välttääksesi olemasta täällä",
+          "."
+        ],
+        "lede": "Tunnistaa välttelymallit, pakkomielteet ja rituaalit, jotka säätelevät nautintoa. Uloskäynti, johon tartut, kertoo yhtä paljon kuin huone, jonka jätät.",
+        "title": "Pako",
+        "subtitle": "nautinto & rituaali"
+      },
+      "self-relation": {
+        "eyebrow": "MINÄSUHDE · SISÄINEN DIALOGI",
+        "headline": [
+          "Ääni, jota et ",
+          "saa vaiennettua",
+          "."
+        ],
+        "lede": "Kartoittaa superegon reunan, häpeärakenteet ja sisäistetyt äänet. Tapa, jolla puhut itsellesi yksityisesti, on rehellisin tallenne siitä, kuka sinut kasvatti.",
+        "title": "Minäsuhde",
+        "subtitle": "sisäinen dialogi"
+      },
+      "future-fantasy": {
+        "eyebrow": "TULEVAISUUS · FANTASIA, PELKO & HALU",
+        "headline": [
+          "Mitä todella ",
+          "etsit",
+          "."
+        ],
+        "lede": "Emotionaalinen kliimaksi – tulevaisuus, jonka kuvittelet, pelko, joka sitä kummittelee, ja sen alla oleva ydinhalu. Viimeinen kysymys on ensimmäinen, joka palautetaan.",
+        "title": "Tulevaisuus-fantasia",
+        "subtitle": "fantasia, pelko & halu"
+      }
+    }
+  },
+  "common": {
+    "or": "tai",
+    "loading": "lataa…",
+    "sending": "lähettää…",
+    "save": "Tallenna",
+    "saved": "tallennettu",
+    "cancel": "Peruuta",
+    "close": "Sulje",
+    "back": "Takaisin",
+    "continue": "Jatka",
+    "retry": "Yritä uudelleen",
+    "more": "lisää"
+  },
+  "nav": {
+    "room": "Huone",
+    "readings": "Luennat",
+    "catchup": "Catchup",
+    "consulting": "Konsultaatio",
+    "caseFile": "Asiakaskansio",
+    "settings": "Asetukset",
+    "signIn": "Kirjaudu sisään",
+    "signOut": "Kirjaudu ulos",
+    "getStarted": "Aloita",
+    "language": "Kieli",
+    "method": "Menetelmä",
+    "theWork": "Työ",
+    "about": "Tietoa",
+    "contact": "Yhteystiedot",
+    "start": "Aloita"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Kirjaudu ",
+      "titleItalic": "sisään",
+      "titleAfter": ".",
+      "googleLabel": "Kirjaudu sisään Googlella",
+      "or": "tai",
+      "emailLabel": "SÄHKÖPOSTI",
+      "passwordLabel": "SALASANA",
+      "forgotPassword": "Unohditko salasanasi",
+      "submit": "Kirjaudu sisään",
+      "footPrompt": "Uusi täällä? ",
+      "footLink": "Luo tili"
+    },
+    "signUp": {
+      "titleBefore": "Luo ",
+      "titleItalic": "tili",
+      "titleAfter": ".",
+      "googleLabel": "Jatka Googlella",
+      "or": "tai",
+      "emailLabel": "SÄHKÖPOSTI",
+      "passwordLabel": "SALASANA",
+      "confirmPasswordLabel": "VAHVISTA SALASANA",
+      "submit": "Luo tili",
+      "footPrompt": "Onko sinulla jo tili? ",
+      "footLink": "Kirjaudu sisään",
+      "resentNote": "Uusi linkki on lähetetty.",
+      "resendConfirmation": "Lähetä vahvistus uudelleen",
+      "pendingFootPrompt": "Väärä osoite? ",
+      "pendingFootLink": "Aloita alusta"
+    },
+    "forgot": {
+      "titleBefore": "Unohditko ",
+      "titleItalic": "salasanasi",
+      "titleAfter": ".",
+      "lede": "Anna sähköpostiosoite, jolla rekisteröidyit. Lähetämme linkin salasanan nollaamiseen.",
+      "emailLabel": "SÄHKÖPOSTI",
+      "submit": "Lähetä nollauslinkki",
+      "footPrompt": "Muistitko sittenkin? ",
+      "footLink": "Kirjaudu sisään",
+      "sentBackLink": "Takaisin kirjautumiseen"
+    },
+    "reset": {
+      "titleBefore": "Aseta ",
+      "titleItalic": "uusi salasana",
+      "titleAfter": ".",
+      "newPasswordLabel": "UUSI SALASANA",
+      "confirmPasswordLabel": "VAHVISTA SALASANA",
+      "submit": "Päivitä salasana",
+      "expiredTitleBefore": "Linkki on ",
+      "expiredTitleItalic": "vanhentunut",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Pyydä uusi linkki"
+    },
+    "errors": {
+      "invalid_credentials": "Sähköposti tai salasana ei täsmää.",
+      "email_taken": "Tämä sähköposti on jo rekisteröity. Yritä kirjautua sisään.",
+      "weak_password": "Käytä vähintään 8 merkkiä.",
+      "passwords_dont_match": "Salasanat eivät täsmää.",
+      "email_invalid": "Sähköposti ei näytä kelvolliselta.",
+      "rate_limited": "Liian monta yritystä. Yritä hetken kuluttua uudelleen.",
+      "unconfirmed_email": "Vahvista ensin sähköpostisi. Tarkista postilaatikkosi.",
+      "reset_link_expired": "Linkki on vanhentunut. Pyydä uusi.",
+      "reset_link_invalid": "Linkki ei ole enää kelvollinen. Pyydä uusi.",
+      "oauth_failed": "Googleen ei saatu yhteyttä. Yritä uudelleen.",
+      "callback_failed": "Kirjautuminen epäonnistui.",
+      "generic": "Jokin meni pieleen. Yritä uudelleen.",
+      "no_session": "Kirjaudu sisään jatkaaksesi."
+    },
+    "success": {
+      "checkInboxEyebrow": "TARKISTA POSTILAATIKKOSI",
+      "confirmationHeadlineBefore": "Olemme lähettäneet ",
+      "confirmationHeadlineItalic": "vahvistuslinkin",
+      "confirmationHeadlineAfter": " osoitteeseen ",
+      "confirmationLede": "Napsauta sitä viimeistelläksesi tilin luomisen.",
+      "resetSentEyebrow": "TARKISTA POSTILAATIKKOSI",
+      "resetSentHeadlineBefore": "Jos sähköposti on ",
+      "resetSentHeadlineItalic": "rekisteröity",
+      "resetSentHeadlineAfter": ", olemme lähettäneet nollauslinkin.",
+      "resetSentLede": "Linkki toimii kerran ja vanhenee tunnin kuluessa. Jos linkkiä ei saapunut, tiliä ei ole.",
+      "passwordUpdated": "Salasana päivitetty. Kirjaudutaan sisään."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "TILI",
+      "headlineBefore": "Perusta",
+      "headlineItalic": "hiljainen huoneesi",
+      "lede": "Nimi, vuosiluku ja kyllä. Sitten työ alkaa.",
+      "saveFailed": "Tallennus epäonnistui. Yritä hetken kuluttua uudelleen.",
+      "nameLabel": "NIMI",
+      "nameRequired": "Nimi vaaditaan.",
+      "prefilledHint": "esitäytetty Googlesta · muokattavissa",
+      "yearLabel": "SYNTYMÄVUOSI",
+      "yearRequired": "Valitse vuosi.",
+      "genderLabel": "SUKUPUOLI",
+      "genderRequired": "Valitse yksi.",
+      "gender": {
+        "male": "Mies",
+        "female": "Nainen",
+        "nonBinary": "Muunsukupuolinen",
+        "preferNotToSay": "En halua sanoa"
+      },
+      "languageLabel": "KIELI",
+      "termsBefore": "Hyväksyn",
+      "termsLink": "ehdot",
+      "termsAnd": "ja",
+      "privacyLink": "tietosuojakäytännön",
+      "termsAfter": ".",
+      "submit": "Aloita tilin luominen"
+    },
+    "intro": {
+      "eyebrow": "ALKUHASTATTELU · EI VÄÄRIÄ VASTAUKSIA",
+      "headlineBefore": "Täällä ei ole",
+      "headlineItalic": "oikeita vastauksia",
+      "headlineAfter": ""
+    },
+    "brief": {
+      "title": "OHJEISTUS",
+      "hint": "lue kerran, sitten aloita",
+      "opener": "Väärät vastaukset – epäröinnit, kirjoitusvirheet, ohitukset – puhuvat yhtä selkeästi kuin oikeat.",
+      "privacy": "Kaikki, mitä kirjoitat, on yksityistä. Mikään ei poistu tästä huoneesta.",
+      "length": "Koska työ on syvällistä, alkuhaastattelu on pitkä. Olemme jakaneet sen kymmeneen osaan. Koko prosessi kestää noin kaksi tuntia.",
+      "resume": "Tallenna ja jatka toisena päivänä. Muokkaa mitä tahansa osiota sen valmistuttua – profiili jatkaa kuuntelua.",
+      "begin": "Aloita alkuhaastattelu"
+    },
+    "saved": {
+      "eyebrow": "TALLENNA & KESKEYTÄ",
+      "headlineItalic": "Tallennettu.",
+      "headlineAfter": "Palaa, kun olet valmis.",
+      "body": "Kaikki kirjoittamasi on tapaustiedostossasi. Huone avautuu samaan kohtaan seuraavalla kerralla.",
+      "keepGoing": "jatka",
+      "leaveRoom": "Poistu hiljaisesta huoneesta"
+    },
+    "step": {
+      "label": "VAIHE",
+      "of": "/",
+      "min": "MIN",
+      "progressLabel": "Alkuhaastattelun edistyminen",
+      "finalEpigraph": "viimeinen kysymys on aina jälleen ensimmäinen.",
+      "backTo": "Vaihe {n}",
+      "continueTo": "Jatka vaiheeseen {n}",
+      "submit": "Tallenna ja lähetä",
+      "submitReading": "luetaan…"
+    },
+    "questions": {
+      "closeTitle": "SULJETUT KYSYMYKSET",
+      "closeHint": "valitse tosi",
+      "openTitle": "AVOIMET KYSYMYKSET",
+      "openHint": "kirjoita, mitä nousee mieleen",
+      "countLabel": "{count, plural, one {kysymys} other {kysymystä}}"
+    },
+    "saveExit": {
+      "or": "tai",
+      "saveAndReturn": "tallenna ja palaa myöhemmin"
+    },
+    "saveIndicator": {
+      "saving": "tallennetaan…",
+      "saved": "tallennettu",
+      "saveFailed": "tallennus epäonnistui"
+    }
+  },
+  "readings": {
+    "whatThisIs": "mikä tämä on →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "tiedostamattomat silmukat",
+        "definition": "Toistuvat tunteiden, toiminnan ja lopputulosten sarjat, jotka tapahtuvat tietoisen valinnan ulkopuolella. Silmukan nimeäminen on sen ensimmäinen keskeytys.",
+        "seedReading": "lähestyy läheisyyttä ja sitten suunnittelee pienen epäonnistumisen vetäytyäkseen.",
+        "seedTakeaway": "vetäytyminen on silmukka. ei läheisyys."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "kielellinen tiedostamaton",
+        "definition": "Tapa, jolla tiedostamaton materiaali nousee esiin sanavalinnoissa, toistoissa, lipsahduksissa ja puheen rakenteessa – Lacanin väite, että tiedostamaton on rakentunut kielen tavoin.",
+        "seedReading": "puhe tuplaa sanan ”pitäisi” – perityn vaatimuksen paikka.",
+        "seedTakeaway": "jonkun toisen ääni puhuu yhä tämän sanan kautta."
+      },
+      "father-imago": {
+        "subtitle": "isä-imago",
+        "definition": "Sisäistetty kuva isästä, muodostunut varhain ja osittain myyttinen. Se muokkaa sitä, miten auktoriteettiin, kunnianhimoon ja tuomitsemiseen suhtaudutaan myöhemmin elämässä.",
+        "seedReading": "tuomitsee ylhäältä ennen kuin häntä tuomitaan ylhäältä – asema on identtinen.",
+        "seedTakeaway": "istuin vaihtuu. tuoli ei."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimiteettikynnys",
+        "definition": "Piste, jossa läheisyys alkaa tuntua riskiltä, ja sitä seuraa puolustautuva liike. Jokaiselle henkilölle erilainen; yllättävän vakaa suhteesta toiseen.",
+        "seedReading": "pitää hyvin, kunnes toinen tulee luettavaksi – sitten vetäytyy.",
+        "seedTakeaway": "tuleminen tunnetuksi on raja, ei läheisyys."
+      },
+      "desire-structure": {
+        "subtitle": "halun rakenne",
+        "definition": "Mitä käyttäjä todella haluaa, erotettuna siitä, mitä hänelle on kerrottu haluavan. Usein löydetään kieltämisen kautta – huomaamalla, mitä hän kieltäytyy tekemästä.",
+        "seedReading": "nimeää monia haluja, kieltäytyy kahdesta – kieltäytyminen on signaali.",
+        "seedTakeaway": "se, mikä työnnetään pois, osoittaa selvemmin kuin se, mitä jahdataan."
+      },
+      "professional-block": {
+        "subtitle": "ammatillinen tukos",
+        "definition": "Missä työ takertuu: alkuun, keskelle, loppuun tai näkyvyyteen. Jokaisella paikalla on oma tiedostamaton lähteensä.",
+        "seedReading": "maaliviiva on se, mihin epäilys saapuu, ei koskaan alku.",
+        "seedTakeaway": "tukos on näkyvyydessä, ei ponnistelussa."
+      },
+      "mother-imago": {
+        "subtitle": "äiti-imago",
+        "definition": "Sisäistetty kuva äidistä – ensimmäinen virittyminen, ensimmäinen erottelu. Se vaikuttaa riippuvuuden ja turvapaikan rakenteeseen.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "varhainen virittyminen jättää pitkän jäljen."
+      },
+      "dream-logic": {
+        "subtitle": "uni-logiikka",
+        "definition": "Tiivistyminen ja siirtymä, jotka ovat työssä unimateriaalissa. Luetaan kielioppia, ei symboleja.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "unisisällöllä on oma kielioppinsa."
+      },
+      "relational-pattern": {
+        "subtitle": "suhdemalli",
+        "definition": "Toistuva asenne suhteissa – jahtaaja, vetäytyjä, vanhempi, lapsi, tasavertainen. Vakaampi kumppaneiden välillä kuin kumppanit ovat vakaita käyttäjän suhteen.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "sama muoto ilmestyy eri huoneissa."
+      },
+      "defenses": {
+        "subtitle": "puolustukset",
+        "definition": "Luonteenomaiset liikkeet, joita käytetään vaikean materiaalin pitämiseen poissa tietoisuudesta – intellektualisointi, siirtymä, reaktionmuodostus, halkaisu. Puolustukset eivät ole epäonnistumisia; ne ovat vanhoja ratkaisuja.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "puolustus nimeää sen, mikä oli kerran sietämätöntä."
+      },
+      "shadow": {
+        "subtitle": "varjo",
+        "definition": "Mitä on kielletty ja siirretty muille – ominaisuudet, joista käyttäjä on varmin, ettei hän ole. Usein reitti elinvoimaan.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "se, mikä on kielletty, toimii yhä."
+      },
+      "transference": {
+        "subtitle": "siirto",
+        "definition": "Tapa, jolla vanhat suhdehahmot projisoidaan nykyisiin – analyytikkoon, kumppaniin, pomoon. Malli paljastaa imagon.",
+        "seedReading": "liian aikaista sanoa varmuudella – muoto on muodostumassa.",
+        "seedTakeaway": "vanhat hahmot saapuvat nykyisiin huoneisiin."
+      }
+    },
+    "strip": {
+      "lastRefined": "viimeksi tarkennettu",
+      "readingDepth": "lukemisen syvyys"
+    },
+    "section": {
+      "eyebrow": "LUKEMA {index} · {subtitle}",
+      "strengthen": "vahvista tarkkuutta",
+      "requestReport": "pyydä raportti"
+    },
+    "card": {
+      "reading": "Lukema {index}"
+    },
+    "report": {
+      "eyebrow": "KLIININEN RAPORTTI",
+      "heading": "Analyytikollesi<it>.</it>",
+      "lede": "12–18-sivuinen asiakirja – kuusi lukemaa täysin kehitettynä, plus kuusi lisää, joita hallintapaneeli ei näytä: äiti-imago, unien logiikka, suhdemalli, puolustukset, varjo, siirto. Käännetty kielelle, jolla kliinikko työskentelee.",
+      "note": "raportti heijastaa käytettävissä olevaa syvyyttä. se voidaan luoda uudelleen lukeman syventyessä.",
+      "generate": "Luo kliininen raportti",
+      "request": "Pyydä kliininen raportti",
+      "footPrefix": "yksi raportti sisältyy kuukausittain ",
+      "footLink": "tilaajille"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "KYSYMYS {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Mikä jäi mieleesi viikosta?",
+        "framing": "lause, kuva, jonkun sanoma virke."
+      },
+      "closeness": {
+        "prompt": "Kuinka lähelle annoit kenenkään tulla?",
+        "options": {
+          "not_at_all": "ei lainkaan",
+          "briefly": "lyhyesti",
+          "with_hesitation": "epäröiden",
+          "openly": "avoimesti",
+          "too_far": "liian lähelle"
+        }
+      },
+      "loop": {
+        "prompt": "Tavoititko itsesi tutusta kehästä?",
+        "framing": "missä, ja miten se päättyi."
+      },
+      "loudest_voice": {
+        "prompt": "Mikä ääni oli kovin tällä viikolla?",
+        "options": {
+          "demand": "vaatimus",
+          "doubt": "epäilys",
+          "desire": "halu",
+          "watcher": "tarkkailija",
+          "none": "ei mikään näistä"
+        }
+      },
+      "dream": {
+        "prompt": "Oliko unelma, joka oli kirjoittamisen arvoinen?",
+        "framing": "jos oli, mikä fragmentti jäi mieleen."
+      },
+      "acted_on_desire": {
+        "prompt": "Kuinka pitkälle toimit sen mukaan, mitä todella halusit?",
+        "lowLabel": "ei lainkaan",
+        "highLabel": "täysin"
+      },
+      "work_catch": {
+        "prompt": "Missä työ tavoitti sinut?",
+        "options": {
+          "start": "alussa",
+          "middle": "keskellä",
+          "finish": "lopussa",
+          "visibility": "näkyvyydessä",
+          "nowhere": "ei missään"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Mikä on kysymys, johon et halua vastata juuri nyt?",
+        "framing": "se, joka jatkuvasti lipsahtaa ohi."
+      }
+    },
+    "openHint": "pidemmät vastaukset syventävät lukemaa",
+    "scaleLegend": "{low} – {high}",
+    "noValue": "ei arvoa valittu",
+    "valueOf": "{value} / {max}",
+    "weekLabel": "VIIKKO {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Mikä jäi mieleesi<it>?</it>",
+    "coverLede": "Kahdeksan lyhyttä kysymystä. Rehellisyys on parempi kuin pituus. Vastaukset tarkentavat lukemaa; mitään tässä ei arvioida.",
+    "begin": "Aloita",
+    "back": "takaisin",
+    "next": "seuraava",
+    "submitting": "lähetetään",
+    "closeTheWeek": "päätä viikko",
+    "previousQuestion": "edellinen kysymys",
+    "processingLine": "<em>viikkoa luetaan.</em>",
+    "summaryEyebrow": "{weekLabel} · LUE TAKAISIN",
+    "summaryTitle": "Viikko, <it>omin sanoin.</it>",
+    "caseLabel": "tapaus · {week}",
+    "justRefined": "juuri tarkistettu",
+    "readingsShifted": "lukemat siirtyivät",
+    "readingsCount": "{n} / 12",
+    "returnToRoom": "Palaa huoneeseen",
+    "readAgain": "lue se uudelleen tapaustiedostosta",
+    "somethingToHold": "JOTAIN PIDETTÄVÄÄ",
+    "enterConsultingRoom": "mene vastaanottohuoneeseen",
+    "openConsultingRoom": "avaa vastaanottohuone",
+    "requestReport": "pyydä kliininen raportti",
+    "errorSubmit": "catchupin lähettäminen epäonnistui",
+    "errorGeneric": "jotain meni pieleen",
+    "errorFailed": "catchup on tiedostossa. yhteenveto saapuu myöhemmin.",
+    "errorGiveUp": "huone on hetken hiljainen — catchupisi on tiedostossa. päivitä hetken kuluttua.",
+    "summaryFallback": "Catchup on tiedostossa. Lukema on päivitetty hiljaisesti; pidempi yhteenveto saapuu seuraavalla kierroksella.",
+    "readBackTitle": "Viikko, <it>jo sisällä.</it>",
+    "readBackEmpty": "catchup on tiedostossa. yhteenveto on lyhyt tällä viikolla.",
+    "readBackFoot": "seuraava catchup avautuu viikon {n} alussa."
+  },
+  "consulting": {
+    "sessionClose": "aikamme on päättynyt.",
+    "sayIt": "sano se →",
+    "closeSession": "päätä istunto →",
+    "eyebrow": "KONSULTAATIOHUONE",
+    "closing": "suljetaan",
+    "closeSessionLabel": "päätä istunto",
+    "timerAria": "istuntoaika kulunut",
+    "chooseTopicAria": "valitse aihe",
+    "noTopic": "ei aihetta",
+    "justOpened": "juuri avattu",
+    "minutesIn": "{count} min kulunut",
+    "speakToAnalyst": "puhua analyytikolle",
+    "send": "lähetä",
+    "sessionClosedFoot": "istunto on päättynyt. se on tallennettu potilaskansioon.",
+    "previewHeld": "mikä osa sinusta valitsee tämän yhä uudelleen?",
+    "previewTopicDreamingFuture": "Tulevaisuuden unelmointi",
+    "previewTopicNightDream": "Yöuni",
+    "previewTopicRelations": "Suhteet elämässäni",
+    "previewTopicProfessionalGrowth": "Ammatillinen kasvu",
+    "previewTurnAnalyst1": "Nimeät kaavan ja kerrot sen sitten kuin se olisi vieraan. Huomaa, milloin *vetäytyminen* alkaa.",
+    "previewTurnUser1": "Lopetan aina asiat sillä viikolla, kun ne muuttuvat vakaviksi.",
+    "previewTurnAnalyst2": "Aamu on tuomio, ei oikeudenkäynti. *Intiimiyskynnyksesi* harjoitteli lähtöä viikkoja ennen keskustelua.",
+    "sayItEllipsis": "sano se…",
+    "offerHeadline": "Konsultaatiohuone",
+    "offerLede": "Pitkäkestoinen istunto analyytikon kanssa, samalla äänellä kuin lukemasi. Istunnot ovat yksityisiä, tallennetaan potilaskansioon ja ruokkivat lukemiasi istuntojen välillä.",
+    "offerPanelsAria": "mitä istunto tekee",
+    "offerPanel1Title": "nimetty, ei kerrottu",
+    "offerPanel1Body": "Analyytikko nimeää puheessasi tapahtuvan – lipsahduksen, rajoituksen, *puoliksi sanotun* – ja pitää sen siinä, kunnes näet sen.",
+    "offerPanel2Title": "säilytetty potilaskansiossa",
+    "offerPanel2Body": "Jokainen istunto kirjataan ylös. Seuraava lukema lukee sen. Kaavat nousevat esiin viikkojen, eivät vuorojen, aikana.",
+    "offerPanel3Title": "yksi ääni, ei luetteloa",
+    "offerPanel3Body": "Ei chatbot-kiertoa. Yksi analyyttinen ääni, joka on koulutettu alkukyselysi perusteella ja jota jokainen Catchup tarkentaa.",
+    "offerFootLine": "Tilaajat saavat yhden kliinisen raportin kuukausittain.",
+    "offerPillCta": "Siirry konsultaatiohuoneeseen",
+    "offerReturnToRoom": "palaa huoneeseen",
+    "previewFigureLabel": "konsultaatiohuone",
+    "previewFigureSubtitle": "istunto, esikatselu",
+    "previewRailAria": "potilaskansion alueet, joista analyytikko lukee",
+    "previewReadingFrom": "LUKEE KOHTEESTA",
+    "previewActive": "aktiivinen",
+    "previewRoleYou": "SINÄ",
+    "previewRoleAnalyst": "ANALYYTIKKO",
+    "previewBubble1": "Lopetan aina asiat sillä viikolla, kun ne muuttuvat vakaviksi. En tiedä miksi teen niin.",
+    "previewAnalyst1": "Nimeät kaavan ja kerrot sen sitten kuin se olisi vieraan. *”En tiedä”* tekee työtä – se pitää teon tarkoituksen toisella puolella. Huomaa, milloin *vetäytyminen* alkaa. Usein estäminen tapahtuu aikaisemmin kuin lähteminen.",
+    "previewBubble2": "Aikaisemmin miten? Viimeksi tuntui, että heräsin vain eräänä aamuna ja tiesin.",
+    "previewAnalyst2": "Aamu on tuomio, ei oikeudenkäynti. *Intiimiyskynnyksesi* lukema viikolta 04 osoitti saman muodon – hiljaisen lähdön harjoittelun, kaksi tai kolme viikkoa ennen keskustelua. Aamu on se hetki, jolloin keho lopulta hyväksyy sen, minkä olit jo päättänyt.",
+    "previewBubble3": "Se on se osa, joka pelottaa minua. Että se on jo päätetty.",
+    "previewAnalyst3": "*Päätetty* on sana. Ei *valittu*. Jokin rakenteessa suosii estämistä testin sijaan. Jatkamme sinne.",
+    "previewExampleMark": "ESIMERKKI · EI OMISTA TIEDOISTASI"
+  },
+  "caseFile": {
+    "silentWeek": "— hiljainen viikko —",
+    "eyebrow": "TAPAUSKANSIO",
+    "headlineLead": "Taltiointi, pidetty",
+    "headlineItalic": "hiljaisuudessa.",
+    "lede": "Jokainen Catchup, istunto ja raportti — päivämääräjärjestyksessä. Aukot ovat osa taltiointia.",
+    "filterAria": "Suodatin",
+    "filter": {
+      "all": "kaikki",
+      "catchups": "catchupit",
+      "sessions": "istunnot",
+      "reports": "raportit"
+    },
+    "subscriptionTitle": "Tilaus",
+    "emptyCatchups": "tapauskansio on vielä tyhjä — ensimmäinen catchup avaa sen.",
+    "emptyCatchupsCta": "Siirry Catchupiin",
+    "emptySessions": "tapauskansio on vielä tyhjä — ensimmäinen konsultaatioistunto avaa sen.",
+    "emptySessionsCta": "Siirry Konsultointiin",
+    "emptyReports": "tapauskansio on vielä tyhjä — ensimmäinen luotu raportti avaa sen.",
+    "open": "avaa",
+    "kindCatchup": "catchup",
+    "kindSession": "istunto",
+    "kindReport": "kliininen raportti",
+    "kindReading": "alkukartoituslukema",
+    "kindConnection": "yhteystapahtuma",
+    "entryEyebrow": "TAPAUSKANSIO · MERKINTÄ",
+    "entryBackToCaseFile": "takaisin tapauskansioon",
+    "entryReturnToRoom": "takaisin huoneeseen",
+    "sessionStillOpen": "tämä istunto on vielä auki. lukema ilmestyy, kun se sulkeutuu.",
+    "entryDetailComing": "tämän merkinnän yksityiskohtainen näkymä on tulossa. toistaiseksi tapauskansio säilyttää päivämäärän, tyypin ja otsikon — ja loput ovat vielä huoneessa.",
+    "detailSummaryEyebrow": "YHTEENVETO · VASTAUKSESI",
+    "detailRecommendationEyebrow": "MEIDÄN CATCHUP",
+    "preparingRead": "valmistellaan lukemaa…",
+    "readNotAssembled": "lukemaa ei voitu koota juuri nyt.",
+    "tryAgain": "yritä uudelleen",
+    "intakeClose": "sulje",
+    "intakeEdit": "muokkaa",
+    "intakeSaving": "tallennetaan",
+    "intakeSave": "tallenna",
+    "intakeCancel": "peruuta",
+    "intakeUnsupported": "tätä kysymystä muokataan itse alkukartoituksesta.",
+    "intakePickUpTo": "valitse {count} asti.",
+    "intakeScaleSetTo": "Asetettu arvoon {value}"
+  },
+  "settings": {
+    "eyebrow": "ASETUKSET",
+    "heading": "Huoneen <it>muoto.</it>",
+    "lede": "Mikään tässä ei ole pysyvää. Vastauksia voi muokata, asetuksia vaihtaa ja tapausselosteen voi poistaa kokonaan.",
+    "blocks": {
+      "account": "Tili",
+      "readingDepth": "Lukemisen syvyys",
+      "notifications": "Ilmoitukset",
+      "subscription": "Tilaus",
+      "dangerZone": "Vaaravyöhyke"
+    },
+    "dangerZoneIntro": "ainoa peruuttamaton toimenpide huoneessa.",
+    "depthSub": {
+      "intake": {
+        "title": "Alkutilannekuvasi",
+        "caption": "{answered} / {total} vastattu",
+        "ctaEmpty": "Täydennä alkutilannekuva",
+        "ctaPartial": "Lisää yksityiskohtia",
+        "ctaFull": "Tarkastele alkutilannekuvaasi"
+      },
+      "catchups": {
+        "title": "Catchupit",
+        "caption": "{count} viimeisen 8 viikon aikana",
+        "ctaEmpty": "Lisää catchup",
+        "ctaDue": "Täydennä tämän viikon catchup",
+        "ctaFull": "Tarkastele aiempia catchupeja"
+      },
+      "sessions": {
+        "title": "Sessiot",
+        "caption": "{count} suoritettu",
+        "ctaEmpty": "Aloita konsultaatio",
+        "ctaPartial": "Jatka konsultaatiota",
+        "ctaFull": "Tarkastele aiempia sessioita"
+      },
+      "connections": {
+        "title": "Yhteydet",
+        "caption": "{count} aktiivinen",
+        "ctaEmpty": "Lisää yhteys",
+        "ctaSingle": "Lisää toinen yhteys",
+        "ctaFull": "Tarkastele yhteyksiäsi"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "viikoittainen catchup-muistutus",
+        "sub": "hiljainen huomautus uuden viikon alussa"
+      },
+      "consulting_session_reminder": {
+        "label": "konsultaatiosession muistutus",
+        "sub": "muistutus ennen tulevaa konsultaatiotasi"
+      },
+      "connection_requests": {
+        "label": "yhteys hyväksytty",
+        "sub": "ilmoitus, kun joku hyväksyy kutsusi"
+      }
+    },
+    "toggleOn": "päällä",
+    "toggleOff": "pois päältä",
+    "quietHours": {
+      "label": "hiljaiset tunnit",
+      "sub": "ei sähköposteja näiden tuntien välillä, paikallista aikaa",
+      "from": "alkaen",
+      "to": "asti"
+    },
+    "saveFailed": "tallennus epäonnistui",
+    "dangerZone": {
+      "trigger": "Poista tili",
+      "modalAria": "Vahvista tilin poistaminen",
+      "eyebrow": "VAARAVYÖHYKE",
+      "heading": "Poista <it>tapausseloste.</it>",
+      "body": "Tämä poistaa kaikki lukemat, catchupit, sessiot ja raportit tiedoista. Aktiiviset yhteydet päättyvät; molemmille osapuolille ilmoitetaan. Tätä ei voi peruuttaa.",
+      "instruction": "kirjoita <phrase></phrase> ottaaksesi toiminnon käyttöön.",
+      "inputAria": "Kirjoita vahvistuslause",
+      "cancel": "peruuta",
+      "erasing": "poistetaan…",
+      "eraseConfirm": "poista tapausseloste",
+      "deleteFailed": "poisto epäonnistui"
+    },
+    "subscription": {
+      "statusLabel": "TILA",
+      "badge": "JÄSENEN KÄYTTÖOIKEUS",
+      "tagline": "Konsultaatiohuone, avattu. <em>Lukema, joka jatkaa lukemista.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultaatiohuone",
+          "desc": "pitkäkestoiset sessiot analyytikon kanssa."
+        },
+        "report": {
+          "title": "Kuukausittainen kliininen raportti",
+          "desc": "yksi terapeutin valmis kartta joka kalenterikuukausi."
+        },
+        "connections": {
+          "title": "{count} lisää yhteyttä",
+          "desc": "lisää ihmiset, joiden läsnäolo muokkaa lukemaa."
+        },
+        "depth": {
+          "title": "Täysi lukemisen syvyys",
+          "desc": "jokainen luku avoinna, ei kattoa yksityiskohdille."
+        }
+      },
+      "perMonth": "kuukaudessa",
+      "subscribe": "tilaa",
+      "reassurance": "<em>ei sitoumuksia.</em> peruuta milloin tahansa asetuksista.",
+      "activeToday": "aktiivinen – uusitaan tänään",
+      "activeRenews": "aktiivinen – uusitaan {days, plural, one {1 päivän} other {# päivän}} kuluttua",
+      "cancel": "peruuta tilaus",
+      "cancelled": "peruutettu – käyttöoikeus {date} asti",
+      "resubscribe": "tilaa uudelleen"
+    },
+    "resetPassword": {
+      "sent": "salasanan nollauslinkki on lähetetty osoitteeseen {email}. tarkista sähköpostisi",
+      "sending": "lähetetään",
+      "action": "nollaa salasana",
+      "error": "lähetys epäonnistui. yritä uudelleen"
+    }
+  },
+  "connections": {
+    "explainer": "Enintään {limit, plural, one {# henkilö, jonka läsnäolo muokkaa lukemaa} other {# henkilöä, joiden läsnäolo muokkaa lukemaa}}. He eivät näe lukemiasi; sinä et näe heidän. Se, mitä he sanovat suhteesta, ruokkii mallia, joka tuottaa lukemasi, ja sinun ruokkii heidän.",
+    "invite": {
+      "emailSubject": "{inviterName} haluaisi sinut lukemaan."
+    },
+    "form": {
+      "emailLabel": "SÄHKÖPOSTI",
+      "roleLabel": "ROOLI",
+      "rolePlaceholder": "valitse yksi",
+      "noteLabel": "LAUSE, JONKA HE LUKEVAT ENSIN",
+      "noteHint": "valinnainen. yksi rivi riittää.",
+      "addMoreSub": "lisää tilauksella",
+      "missingNameLine": "nimeäsi ei ole tiedostossa. lisää se asetuksista ja lähetä pyyntö uudelleen.",
+      "addYourName": "lisää nimesi",
+      "noteLengthError": "muistiinpanot rajoitettu yhteen riviin – noin {max} merkkiä."
+    },
+    "list": {
+      "empty": "ei yhteyksiä vielä. kutsumismahdollisuus on alla.",
+      "active": "AKTIIVINEN",
+      "pending": "ODOTTAA",
+      "since": "alkaen",
+      "invited": "kutsuttu",
+      "received": "vastaanotettu",
+      "resend": "lähetä uudelleen",
+      "cancel": "peruuta",
+      "expiresIn": "vanhenee {days, plural, one {# päivän} other {# päivän}} kuluttua"
+    },
+    "lookup": {
+      "invalidEmail": "anna kelvollinen sähköpostiosoite.",
+      "self": "et voi muodostaa yhteyttä itseesi.",
+      "notMemberLine": "tämä sähköposti ei kuulu vielä jäseniin. kutsu heidät luomaan tili, jotta voit muodostaa yhteyden.",
+      "copyHint": "jaa rekisteröitymislinkki",
+      "copied": "linkki kopioitu",
+      "requestSent": "olet jo lähettänyt pyynnön tälle jäsenelle.",
+      "requestReceivedLine": "tämä jäsen on lähettänyt sinulle pyynnön – tarkista kutsusi.",
+      "inboxLabel": "avaa pyyntö",
+      "alreadyConnected": "olet jo yhteydessä tähän jäseneen.",
+      "rateLimited": "liian monta hakua lyhyessä ajassa. odota hetki ja yritä uudelleen.",
+      "sent": "yhteyspyyntö lähetetty.",
+      "sending": "lähetetään…",
+      "send": "lähetä pyyntö",
+      "limitReached": "{limit, plural, one {# yhteys on raja. katkaise se lisätäksesi toisen.} other {# yhteyttä on raja. katkaise yksi lisätäksesi toisen.}}",
+      "limitReachedFree": "{limit, plural, one {# yhteys on raja ilmaisella tasolla.} other {# yhteyttä on raja ilmaisella tasolla.}}",
+      "generic": "pyyntöä ei voitu lähettää."
+    },
+    "incoming": {
+      "eyebrow": "ODOTTAA SINUA",
+      "empty": "kukaan ei odota sinua.",
+      "accept": "hyväksy",
+      "decline": "hylkää",
+      "limitReached": "{limit, plural, one {# yhteys on raja. katkaise se hyväksyäksesi tämän.} other {# yhteyttä on raja. katkaise yksi hyväksyäksesi tämän.}}",
+      "limitReachedFree": "{limit, plural, one {# yhteys on raja ilmaisella tasolla.} other {# yhteyttä on raja ilmaisella tasolla.}}",
+      "upsell": "tilaajat lisäävät enemmän",
+      "inviteExpired": "tämä kutsu on vanhentunut.",
+      "inviteEnded": "tämä kutsu ei ole enää vireillä.",
+      "generic": "tätä pyyntöä ei voitu käsitellä."
+    },
+    "roles": {
+      "partner": "kumppani",
+      "closest_friend": "lähin ystävä",
+      "parent": "vanhempi",
+      "sibling": "sisarus",
+      "co_parent": "yhteishuoltaja"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "ANALYYSIN TEKIJÄN HUOMAUTUS",
+    "noteAria": "Analyysin tekijän huomautus",
+    "lede": "tämä ylittää sen, mitä huone voi sisältää.",
+    "body": {
+      "intake": "Jokin siinä, mitä kirjoitit alkukartoituksessa, viittaa painoon, joka vaatii todellista hoitoa – yli sen, mitä tämä huone voi sisältää. Harkitse yhteydenottoa lääkäriin, terapeuttiin tai paikalliseen kriisipuhelimeen tänään. Lukema on täällä, kun palaat.",
+      "catchup": "Jokin tämän viikon Catchupissa viittaa painoon, joka vaatii todellista hoitoa – yli sen, mitä tämä huone voi sisältää. Harkitse yhteydenottoa lääkäriin, terapeuttiin tai paikalliseen kriisipuhelimeen tänään. Lukema pysyy.",
+      "session": "Juuri kirjoittamasi viittaa painoon, joka vaatii todellista hoitoa – yli sen, mitä tämä huone voi sisältää. Harkitse yhteydenottoa lääkäriin, terapeuttiin tai paikalliseen kriisipuhelimeen tänään. Voimme palata huoneeseen, kun olet turvassa."
+    },
+    "crisisResources": "KRIISIAVUN RESURSSIT",
+    "resources": {
+      "us": "Yhdysvallat",
+      "ukIe": "Iso-Britannia ja Irlanti",
+      "europe": "Eurooppa (useimmat maat)",
+      "everywhere": "Kaikkialla",
+      "localEmergency": "paikalliset hätäpalvelut"
+    },
+    "hintResources": "jos et löydä linjaa, lähin sairaalan päivystyspoliklinikka on oikea huone.",
+    "hintLink": "kriisiavun resurssit on lueteltu jokaisen Huone-sivun alaosassa.",
+    "footerLine": "TwentyThird ei korvaa kliinistä hoitoa. Kriisitilanteessa ota yhteyttä paikalliseen hätänumeroon.",
+    "footerRoomLabel": "huone"
+  }
+}

@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import FigureCard from "@/components/figures/FigureCard";
 
 // ────────────────────────────────────────────────────────────────────
@@ -71,20 +72,21 @@ const AREAS: Area[] = [
   },
 ];
 
-export default function ConsultingPreview() {
+export default async function ConsultingPreview() {
+  const t = await getTranslations("consulting");
   return (
     <FigureCard
-      label="the consulting room"
-      subtitle="a sitting, previewed"
+      label={t("previewFigureLabel")}
+      subtitle={t("previewFigureSubtitle")}
       fig="Fig. 08"
       className="consulting-preview-figure"
     >
       <div className="consulting-preview-grid">
         <aside
           className="consulting-preview-rail"
-          aria-label="case file areas the analyst is reading from"
+          aria-label={t("previewRailAria")}
         >
-          <p className="consulting-preview-rail-eyebrow">READING FROM</p>
+          <p className="consulting-preview-rail-eyebrow">{t("previewReadingFrom")}</p>
           <ul className="consulting-preview-rail-list">
             {AREAS.map(({ title, active, snippets }) => (
               <li
@@ -99,7 +101,7 @@ export default function ConsultingPreview() {
                   {active ? (
                     <span
                       className="consulting-preview-rail-dot"
-                      aria-label="active"
+                      aria-label={t("previewActive")}
                     />
                   ) : null}
                 </div>
@@ -121,85 +123,78 @@ export default function ConsultingPreview() {
 
         <div className="consulting-preview-main">
           <p className="consulting-preview-held">
-            &ldquo;what part of you keeps choosing this?&rdquo;
+            &ldquo;{t("previewHeld")}&rdquo;
           </p>
 
           <div className="consulting-preview-turns">
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">YOU</span>
+              <span className="consulting-preview-role-label">{t("previewRoleYou")}</span>
               <div className="consulting-preview-bubble glass">
                 <p className="consulting-preview-bubble-text">
-                  I keep ending things the week they get serious. I don&rsquo;t
-                  know why I do it.
+                  {t("previewBubble1")}
                 </p>
               </div>
             </div>
 
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">ANALYST</span>
+              <span className="consulting-preview-role-label">{t("previewRoleAnalyst")}</span>
               <p className="consulting-preview-analyst">
-                You name a pattern, then narrate it as a stranger&rsquo;s. The{" "}
-                <em>&ldquo;I don&rsquo;t know&rdquo;</em> is doing work — it
-                keeps the act on the far side of intention. Notice when the{" "}
-                <em>withdrawal</em> begins. Often the foreclosure happens
-                earlier than the leaving.
+                {t.rich("previewAnalyst1", {
+                  em: (chunks) => <em>{chunks}</em>,
+                })}
               </p>
             </div>
 
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">YOU</span>
+              <span className="consulting-preview-role-label">{t("previewRoleYou")}</span>
               <div className="consulting-preview-bubble glass">
                 <p className="consulting-preview-bubble-text">
-                  Earlier how? Last time it felt like I just woke up one
-                  morning and knew.
+                  {t("previewBubble2")}
                 </p>
               </div>
             </div>
 
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">ANALYST</span>
+              <span className="consulting-preview-role-label">{t("previewRoleAnalyst")}</span>
               <p className="consulting-preview-analyst">
-                The morning is the verdict, not the trial. Your{" "}
-                <strong>intimacy threshold</strong> reading from week 04 noted
-                the same shape — a quiet rehearsal of leaving, two to three
-                weeks before the conversation. The morning is when the body
-                finally agrees with what you&rsquo;d already decided.
+                {t.rich("previewAnalyst2", {
+                  strong: (chunks) => <strong>{chunks}</strong>,
+                })}
               </p>
             </div>
 
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">YOU</span>
+              <span className="consulting-preview-role-label">{t("previewRoleYou")}</span>
               <div className="consulting-preview-bubble glass">
                 <p className="consulting-preview-bubble-text">
-                  That&rsquo;s the part that scares me. That it&rsquo;s already
-                  decided.
+                  {t("previewBubble3")}
                 </p>
               </div>
             </div>
 
             <div className="consulting-preview-turn">
-              <span className="consulting-preview-role-label">ANALYST</span>
+              <span className="consulting-preview-role-label">{t("previewRoleAnalyst")}</span>
               <p className="consulting-preview-analyst">
-                <em>Decided</em> is the word. Not <em>chosen</em>. Something in
-                the structure prefers the foreclosure to the test. We will keep
-                going there.
+                {t.rich("previewAnalyst3", {
+                  em: (chunks) => <em>{chunks}</em>,
+                })}
               </p>
             </div>
           </div>
 
           <div className="consulting-preview-faux-input" aria-hidden="true">
             <span className="consulting-preview-faux-input-prompt">
-              say it…
+              {t("sayItEllipsis")}
             </span>
             <span className="consulting-preview-faux-input-affordance">
-              say it →
+              {t("sayIt")}
             </span>
           </div>
         </div>
       </div>
 
       <p className="consulting-preview-mark">
-        EXAMPLE · NOT FROM YOUR RECORD
+        {t("previewExampleMark")}
       </p>
     </FigureCard>
   );

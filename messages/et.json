@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "common": {
+    "or": "või",
+    "loading": "laadib…",
+    "sending": "saadab…",
+    "save": "Salvesta",
+    "saved": "salvestatud",
+    "cancel": "Tühista",
+    "close": "Sulge",
+    "back": "Tagasi",
+    "continue": "Jätka",
+    "retry": "Proovi uuesti",
+    "more": "veel"
+  },
+  "nav": {
+    "room": "Ruum",
+    "readings": "Lugemised",
+    "catchup": "Catchup",
+    "consulting": "Konsultatsioon",
+    "caseFile": "Juhtumitoimik",
+    "settings": "Seaded",
+    "signIn": "Logi sisse",
+    "signOut": "Logi välja",
+    "getStarted": "Alusta",
+    "language": "Keel",
+    "method": "Meetod",
+    "theWork": "Töö",
+    "about": "Meist",
+    "contact": "Kontakt",
+    "start": "Alusta"
+  },
+  "marketing": {
+    "footer": {
+      "tagline": "Psühhودünaamiline tehisintellekt sisemaailmale. Vaikne ruum tõsiseks mõtlemiseks.",
+      "product": "Toode",
+      "discovery": "Avastamine",
+      "sampleReport": "Näidisraport",
+      "integrationPlan": "Integratsiooniplaan",
+      "company": "Ettevõte",
+      "about": "Meist",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Ressursid",
+      "science": "Teadus",
+      "methodology": "Metoodika",
+      "methodPaper": "Meetoditöö",
+      "caseStudy": "Juhtumiuuring",
+      "dreamExample": "Unenäonäide",
+      "legal": "Õiguslik",
+      "privacy": "Privaatsus",
+      "terms": "Tingimused",
+      "cookies": "Küpsised",
+      "rights": "kõik õigused kaitstud"
+    },
+    "about": {
+      "metaTitle": "Meist — TwentyThird",
+      "metaDescription": "Päritolu, meetod ja pöördepunkt päeval kakskümmend kolm. Loodud CognitiveLab'is, WelloWork AB.",
+      "hero": {
+        "eyebrow": "MEIST",
+        "headingLead": "Päritolu, meetod ja",
+        "headingItalic": "pöördepunkt päeval kakskümmend kolm",
+        "lede": "TwentyThird on psühhودünaamiline tehisintellekt eneseavastuseks. See kaardistab sümptomi all korduvad ahelad ja struktuurid — keel, kiindumus, kordus — ning tagastab töödokumendi, mitte viktoriini.",
+        "figure": {
+          "label": "päev-23",
+          "subtitle": "pöördepunkti metafoor",
+          "heading": "23-päevane kaar",
+          "range": "uudishimu → teadlikkus",
+          "markerInflection": "pöördepunkt",
+          "summaryLabel": "päev, mil küsimus\npöördub sissepoole"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOOFIA",
+        "headingLead": "Freudi kirjasaaja. Fliessi number.",
+        "headingItalic": "Meie metafoor",
+        "tag": "Päritolu",
+        "row": {
+          "headingPre": "A",
+          "headingItalic": "23-päevane rütm",
+          "headingPost": "kirjas välja pakutud, kujundina säilitatud.",
+          "para1": "23-päevane tsükkel oli Wilhelm Fliessi hüpotees, mida ta arutas kirjavahetuses Freudiga üheksateistkümnenda sajandi lõpus. Kaasaegne teadus ei toeta fikseeritud biorütme.",
+          "para2": "Me säilitame numbri selle pärast, mida see nimetab — lävi, kus uudishimu küpseb teadlikkuseks. Päev-23 on kujund, mitte bioloogia."
+        },
+        "figure": {
+          "label": "päritolu",
+          "subtitle": "neli ankrut",
+          "row1Outcome": "ettepanek",
+          "row2Duration": "Mina ja Id",
+          "row2Outcome": "struktuursne mudel",
+          "row3Duration": "Rooma diskursus",
+          "row3Outcome": "keeleline pööre",
+          "row4Outcome": "süntees",
+          "summary1Key": "intervall",
+          "summary2Key": "lõng",
+          "summary2Value": "struktuur",
+          "summary3Key": "meetod",
+          "summary3Value": "psühhودünaamiline"
+        }
+      },
+      "origin": {
+        "eyebrow": "PÄRITOLU",
+        "headingLead": "Loodud CognitiveLab'is.",
+        "headingItalic": "Vastas küsimusele, mida meilt pidevalt küsiti",
+        "tag": "Meeskond",
+        "row": {
+          "headingLead": "Arstid, kes algselt ehitasid",
+          "headingItalic": "kognitiivset treeningut",
+          "para1": "TwentyThird sai alguse CognitiveLab'is WelloWork AB juures, kus meeskond arendas kognitiivseid treeningsüsteeme. Sõbrad ja kolleegid hakkasid tooma isiklikke küsimusi — ärevus, korduvad mustrid, ahelad, mida nad ei osanud nimetada.",
+          "para2": "Kliinilise praktika vahel arstidena, pilootandmete vahel, mida kogusime, ja pika lugemisloendi vahel psühhoanalüüsis ja Lacani teooriast oli meil midagi pakkuda. TwentyThird on see, milleks see sai."
+        },
+        "figure": {
+          "label": "meeskond",
+          "subtitle": "profiil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "koostatud 05 · 26",
+          "row1Key": "Kliiniline praktika",
+          "row2Key": "Teadusväljund",
+          "row3Key": "Osalejaid pilootuuringus",
+          "row4Key": "Arste meeskonnas",
+          "footerLabel": "Profiil",
+          "footerValue": "kliiniku–teadlase hübriid"
+        }
+      },
+      "method": {
+        "eyebrow": "MEETOD",
+        "headingLead": "Mida mudel",
+        "headingItalic": "tegelikult teeb",
+        "tag": "Võimekused",
+        "row": {
+          "headingLead": "Sümptomi all on",
+          "headingItalic": "struktuur",
+          "para1": "TwentyThird teostab põhjuse-analüüsi. See kaardistab <em>alateadlikku ahelat</em> aastate lõikes, loeb <em>keelelist alateadvust</em> sõnavalikust ja kõnekäänetustest, toob esile <em>kiindumuse</em> intiimsuse lävel ning kirjutab tööplaani <em>varjutööks</em>.",
+          "para2": "Väljund on terapeudile valmis. Nimetab struktuuri, mitte pinda."
+        },
+        "figure": {
+          "label": "sümptom → struktuur",
+          "subtitle": "kolm ümbersõnastust",
+          "row1Prefix": "01 · pind",
+          "row1Old": "Ma viivitan olulise tööga.",
+          "row1Next": "Vältimine olla nähtud kui see, kes teab.",
+          "row2Prefix": "02 · pind",
+          "row2Old": "Ma kohtlen ikka sama inimest.",
+          "row2Next": "Isa-imago kordus intiimsuse lävel.",
+          "row3Prefix": "03 · pind",
+          "row3Old": "Ma ei suuda midagi lõpetada.",
+          "row3Next": "Keeldumine loovutada potentsiaali positsiooni.",
+          "metaLeftLabel": "esitatav",
+          "metaLeftValue": "kaebus",
+          "metaRightLabel": "strukturaalne",
+          "metaRightValue": "lugemine"
+        }
+      },
+      "final": {
+        "eyebrow": "JÄTKA",
+        "headingLead": "Loe meetodit",
+        "headingItalic": "või alusta",
+        "ctaPrimary": "Loe meetodit",
+        "ctaGhostPrefix": "või",
+        "ctaGhostText": "kirjuta meile"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Kirjutage meile.",
+        "heroHeadlineItalic": "Loeme kõike",
+        "heroLede": "Enamikule sõnumitele vastatakse seitsmekümne kahe tunni jooksul. Kliinilised ja partnerluspäringud on esmatähtsad.",
+        "formCardLabel": "vorm",
+        "formCardSubtitle": "ainult sisulised päringud",
+        "addressLabel": "AADRESS",
+        "addressValue": "Rosendal, Uppsala, Rootsi",
+        "emailLabel": "E‑POST",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "ALUSTA",
+        "finalHeadlineLead": "Või lihtsalt",
+        "finalHeadlineItalic": "alusta",
+        "finalCta": "Alusta oma avastamist",
+        "finalGhostOr": "või",
+        "finalGhostText": "loe päritolu",
+        "disclaimer": "Kiireloomuliste vaimse tervise murede korral pöörduge kohalike hädaabiteenuste või litsentseeritud kliiniku poole. TwentyThird ei ole kriisiteenistus."
+      },
+      "form": {
+        "successEyebrow": "KÄTTE SAADUD",
+        "successHeadlineLead": "Teie sõnum on",
+        "successHeadlineItalic": "meil",
+        "successBody": "Vastame kahe tööpäeva jooksul.",
+        "nameLabel": "Nimi",
+        "emailLabel": "E‑post",
+        "messageLabel": "Sõnum",
+        "submitSend": "Saada",
+        "submitSending": "Saadan",
+        "errorMessage": "midagi läks valesti · proovige uuesti",
+        "submittingStatus": "Saadan teie sõnumit."
+      }
+    },
+    "landing": {
+      "hero": {
+        "eyebrow": "PSÜHHودÜNAAMILINE INTELLIGENTSUS",
+        "titleLine1": "Täiustatud",
+        "titleLine2Pre": "psühhودünaamiline",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "eneseavaستamiseks",
+        "titleLine3It": "Eneseavastuseks",
+        "ctaPrimary": "Alusta avastamist",
+        "ctaGhostOr": "või",
+        "ctaGhostText": "loe teadust",
+        "scroll": "keri"
+      },
+      "philosophy": {
+        "eyebrow": "PÕHIFILOSOOFIA",
+        "titlePre": "5‑minutilised lahendused ei",
+        "titleIt": "muuda kedagi",
+        "sub1": "Teeme juurpõhjuste analüüsi. Ühendades Sigmund Freudi fundamentaalsed teadmised Jacques Lacani läbimurretega lingvistikas, ihade ja identiteedi vallas.",
+        "sub2": "Enamik tööriistu töötab pinnal. Meie töötame seal, kus see kirjutati — keele arhitektuuris, kõnekäänetustes, mustrites, mida sa pole veel nimetanud.",
+        "metaLineageLabel": "Päritolu",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Meetod",
+        "metaMethodVal": "Strukturaalne",
+        "metaFocusLabel": "Fookus",
+        "metaFocusVal": "Alateadvus"
+      },
+      "privacy": {
+        "eyebrow": "KONFIDENTSIAALSUS",
+        "titlePre": "Andmekaitse on",
+        "titleIt": "esmatähtis",
+        "titlePost": ".",
+        "lede": "Konfidentsiaalsus ei ole siin funktsioon — see on sügavuse eeldus. Inimesed räägivad vabalt ainult seal, kus nad tunnevad end turvaliselt — seega on ruum ehitatud nii, et hoida öeldu kaitstuna.",
+        "rowTag": "Kaitsemeetmed",
+        "rowTitlePre": "Ruum, mis on ehitatud",
+        "rowTitleIt": "hoidma",
+        "rowTitlePost": "seda, mida ütled.",
+        "rowBody": "Töö nõuab sinu kõige kaitsetumat materjali. Ruum on ehitatud seda konfidentsiaalselt vastu võtma ja hoidma suletuna kõigi eest, kellele see ei olnud mõeldud.",
+        "figLabel": "Andmekäitlus",
+        "figSubtitle": "põhimõtteline seisukoht",
+        "listProcessingKey": "töötlemine",
+        "listProcessingVal": "Iga sissekanne töödeldakse kolmekordse pimendusega.",
+        "listEncryptionKey": "krüpteerimine",
+        "listEncryptionVal": "Kõik andmed on krüpteeritud.",
+        "listProtectionKey": "kaitse",
+        "listProtectionVal": "Hoitakse kõrgeima saadaoleva kaitseastme all.",
+        "footKey": "Eesmärk",
+        "footVal": "vaikne, turvaline koht sügavaks kõnelemiseks"
+      },
+      "process": {
+        "eyebrow": "KUIDAS SEE TÖÖTAB",
+        "titlePre": "Neli sammu,",
+        "titleIt": "üks laienev ring",
+        "lede": "Suhtlus süveneb nelja käiguga. Igaüks laiendab seda, mida süsteem suudab lugeda — ühest sisseastumisest püsiva vestluseni.",
+        "step1Sub": "sügav-tuuma profileerimine",
+        "step1TitlePre": "A",
+        "step1TitleIt": "10‑sammuline",
+        "step1TitlePost": "sisseastumine.",
+        "step1Body": "Loo konto ja täida 10‑sammuline sisseastumine. See on sügav-tuuma profileerimise läbimine; esimene lugemine ehitatakse täielikult sellest, mida sa siia paned.",
+        "step2Sub": "vahendatud, mitte vastastikune",
+        "step2TitlePre": "Inimesed, kes",
+        "step2TitleIt": "kujundavad sind",
+        "step2Body": "Lisa inimesed, kes sind kujundavad, igaüks rolli järgi — partner, lähedane sõber, vanem, õde-vend, kaasvanem. See, mida nad jagavad, ei ole sulle kunagi nähtav; see, mida sina jagad, ei ole neile kunagi nähtav. Ainult süsteem loeb mõlemat.",
+        "step3Sub": "iganädalane lugemine",
+        "step3TitlePre": "Pühapäevane",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Pühapäeva õhtuti räägi meile, mis su nädala jooksul juhtus ja kuidas tundus seda elada. Iga Catchup täpsustab lugemist — pilt teravneb, kui nädalad kogunevad.",
+        "step4Sub": "täiesti privaatne",
+        "step4TitlePre": "The",
+        "step4TitleIt": "Konsultatsioonituba",
+        "step4Body": "Räägi täiesti privaatses konsultatsioonis analüütikuga — hääl, kes tunneb sind paremini kui keegi, treenitud üle 23 kihi piiriüleste AI mudelite."
+      },
+      "brain": {
+        "eyebrow": "TÖÖ",
+        "titleLine1": "Dekonstrueerime",
+        "titleLine2": "sinu alateadvust",
+        "state1Tag": "Mustrite kaardistamine",
+        "state1TitlePre": "Alateadlikud",
+        "state1TitleIt": "tsüklid",
+        "state1TitlePost": "ja korduvus.",
+        "state1Body": "Jälgime korduvaid tsükleid sinu valikutes, suhteärevuses ja emotsionaalsetes päästikutes. Neid tsükleid tuvastades näitame täpselt, kus sinu teadlikud kavatsused kaaperdatakse alateadliku programmeerimise poolt.",
+        "state2Tag": "Profileerimine",
+        "state2TitlePre": "Sügav",
+        "state2TitleIt": "psühhودünaamiline",
+        "state2TitlePost": "profileerimine.",
+        "state2Body": "Liigume kaugemale pealiskaudsetest isiksustestidest. See on sinu psühholoogiliste dünaamikate struktuurne skaneerimine — kaardistame, kuidas mineviku kogemused kujundavad praegust identiteeti, egot ja kaitsemehhanisme.",
+        "state3Tag": "Keel",
+        "state3TitlePre": "Keeleline",
+        "state3TitleIt": "alateadvus",
+        "state3TitlePost": "uurimine.",
+        "state3Body": "Lacani teooriast lähtuv AI analüüsib sinu sõnaassotsiatsioone, pause ja kõnemustreid. Aitame lugeda sinu enda mõtete ridade vahelt, et jõuda varjatud ärevuste ja igatsusteni, mida sa pole veel suutnud sõnastada."
+      },
+      "transform": {
+        "eyebrow": "MUUTUS",
+        "titleLine1": "Murra tsükkel,",
+        "titleLine2": "Seejärel kirjuta see ümber.",
+        "lede": "Kolm liikumist töös. Kolm kohta, kus arusaam muutub muutuseks.",
+        "row1Tag": "Suhteline",
+        "row1TitlePre": "Terenda oma",
+        "row1TitleIt": "suhtelist",
+        "row1TitlePost": "dünaamikat.",
+        "row1Body": "Sama atraktor tõmbab sind sama inimese, sama tüli, sama taganemise poole. Me toome mustri aastate lõikes pinnale, nimetame selle ja vaatame, kuidas see kaotab oma gravitatsiooni.",
+        "row1Link": "Loe juhtumiuuringut",
+        "row1FigLabel": "Subjekt 1149-A",
+        "row1FigSubtitle": "longitudinaalne muster",
+        "row1Outcome": "taganenud",
+        "row1SummaryRecurrenceKey": "kordumine",
+        "row1SummaryIntervalKey": "intervall",
+        "row1SummaryAttractorKey": "atraktor",
+        "row1SummaryAttractorVal": "läheduse lävi",
+        "row2Tag": "Unetöö",
+        "row2TitlePre": "Dekodeeri",
+        "row2TitleIt": "une loogika",
+        "row2TitlePost": ", viia eesmärgid vastavusse.",
+        "row2Body": "Sinu uned on tähenduse proovid. Me järgime nende grammatikat — nihkeid, kondensatsioone, libastumisi — tagasi ärkveloleku otsuse juurde, mida nad püüdsid sinu eest teha.",
+        "row2Link": "Vaata annoteeritud näidet",
+        "row2FigLabel": "Seanss 06",
+        "row2FigSubtitle": "unekirje, annoteeritud",
+        "row2Dream1Pre": "Olen tagasi vanemate majas",
+        "row2Ann1": "primaarstseen",
+        "row2Dream1Mid": ", kuid toad avanevad järjest teistesse tubadesse",
+        "row2Ann2": "ego piir",
+        "row2Dream2Pre": "Mees minu isa häälega",
+        "row2Ann3": "isa‑imago",
+        "row2Dream2Mid": "annab mulle võtme. Võti muutub veeks",
+        "row2Ann4": "nihutus",
+        "row2Dream3Pre": "Ärkan enne, kui jõuan ust avada",
+        "row2Ann5": "iha / puudus",
+        "row2Key1": "primaarstseen",
+        "row2Key2": "ego piir",
+        "row2Key3": "isa-imago",
+        "row2Key4": "nihutus",
+        "row2Key5": "iha / puudus",
+        "row3Tag": "Kutsumus",
+        "row3TitlePre": "Lahusta",
+        "row3TitleIt": "professionaalsed",
+        "row3TitlePost": "blokid.",
+        "row3Body": "Lagi, mille vastu sa ikka põrkad, on harva oskuste küsimus. See on stsenaarium — varakult kirjutatud, vaikselt harjutatud — mida me aitame sul valjusti lugeda ja lause-lauselt ümber kirjutada.",
+        "row3Link": "Meetodi artikkel",
+        "row3FigLabel": "Stsenaariumi ülevaatus",
+        "row3FigSubtitle": "tööversioon",
+        "row3Line1Prefix": "01 · Ma olen",
+        "row3Line1Old": "veel mitte valmis.",
+        "row3Line1New": "juba lubatud.",
+        "row3Line2Prefix": "02 · et",
+        "row3Line2Old": "oodata oma korda.",
+        "row3Line2New": "nimetada, mida ma tahan.",
+        "row3Line3Prefix": "03 · sest",
+        "row3Line3Old": "keegi võib olla pettunud.",
+        "row3Line3New": "pettumus on samuti keel.",
+        "row3MetaOriginalPre": "algne",
+        "row3MetaOriginalIt": "vanus 11",
+        "row3MetaRevisedPre": "ülevaadatud",
+        "row3MetaRevisedIt": "seanss 06"
+      },
+      "outcomes": {
+        "eyebrow": "TULEMUSED",
+        "titleLine1Pre": "Käegakatsutavad",
+        "titleLine1It": "arusaamad",
+        "titleLine2": "Vaikselt mõõdetavad.",
+        "lede": "Andmepõhine eneseteadvus, esitatud kliiniku keeles — mitte viktoriini.",
+        "row1Tag": "Kiirendus",
+        "row1TitlePre": "Ülim",
+        "row1TitleIt": "otsetee",
+        "row1TitlePost": "pärismaailma teraapiasse.",
+        "row1Body": "See, mis varem võttis aastaid kestvat suhet, võib nüüd alata nädalate ettevalmistusega. Astu terapeudi kabinetti teades, mida sa seal öelda tahad.",
+        "row1Link": "Vaata metoodikat",
+        "row1FigSubtitle": "aeg esimese arusaamani",
+        "row1TraditionalLabel": "Traditsiooniline tee",
+        "row1AxisYr1": "a 1",
+        "row1AxisYr3": "a 3",
+        "row1AxisYr6": "a 6",
+        "row1AxisYr9": "a 9",
+        "row1AxisYr12": "a 12",
+        "row1TwentyThirdLabelPre": "TwentyThird'iga",
+        "row1AxisWk1": "n 1",
+        "row1AxisWk4": "n 4",
+        "row1AxisWk8": "n 8",
+        "row1AxisWk12": "n 12",
+        "row1SummaryFaster": "kiirem",
+        "row1SummaryDesc": "aeg esimese arusaamani",
+        "row2Tag": "Aruanne",
+        "row2TitlePre": "Terapeutile valmis",
+        "row2TitleIt": "psühholoogiline",
+        "row2TitlePost": "kaart.",
+        "row2Body": "Sinu struktuurne diagramm — eksporditav, jagatav, väljaõppinud kliiniku jaoks sügavalt mõistetav. Mitte isiksuseviktoriini; töötav ülevaade.",
+        "row2Link": "Vaata näidisaruannet",
+        "row2FigLabel": "Subjekt 1149-A",
+        "row2FigSubtitle": "struktuurne profiil",
+        "row2RepCase": "juhtum 1149-A",
+        "row2RepPrepared": "koostatud 04 · 26",
+        "row2MetricEgo": "Mina struktuur",
+        "row2MetricObject": "Objektisuhted",
+        "row2MetricDefense": "Kaitse keerukus",
+        "row2MetricDrive": "Tunge organisatsioon",
+        "row2MetricSymbolic": "Sümboolne register",
+        "row2FootLabel": "Domineeriv struktuur",
+        "row2FootVal": "obsessiivne · hüsteerilistele jälgedele",
+        "row3Tag": "Integratsioon",
+        "row3TitlePre": "Isikupärastatud",
+        "row3TitleIt": "integratsiooni",
+        "row3TitlePost": "ja varjutöö plaanid.",
+        "row3Body": "Igapäevased vihjed ja rituaalid, mis viivad arusaama lehelt kehasse. Väikesed, tahtlikud. Ehitatud sinu struktuuri ümber, mitte üldise õppekava.",
+        "row3Link": "Kuidas plaan kohaneb",
+        "row3FigLabel": "Päev 23",
+        "row3FigSubtitle": "päevane viide",
+        "row3FigPlan": "plaan 04",
+        "row3Day": "Kolmapäev",
+        "row3PromptEyebrow": "tänane viide · varjutöö",
+        "row3PromptPre": "Kus täna valisid sa",
+        "row3PromptIt": "mitte",
+        "row3PromptPost": "nähtud olla? Ja mida sa hoidis ohutuna peites?",
+        "row3Stream1Label": "hingamistöö",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "päevik",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "varjuviide",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "seeria",
+        "row3StreakVal": "{n, plural, one {# päev} other {# päeva}}"
+      },
+      "final": {
+        "eyebrow": "ALUSTA",
+        "titlePre": "Sinu alateadvus räägib.",
+        "titleIt": "On aeg kuulata.",
+        "ctaPrimary": "Alusta oma avastust",
+        "ctaGhostOr": "või",
+        "ctaGhostText": "loe teadust"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Privaatsuspoliitika — TwentyThird",
+        "metaDescription": "Kuidas TwentyThird käsitleb isikuandmeid. Miski ei lahku EList. Midagi ei müüda.",
+        "eyebrow": "PRIVAATSUS",
+        "headingLead": "Isikuandmed,",
+        "headingItalic": "käsitletud hoolega.",
+        "lede": "TwentyThird töötleb seda, mida jagate, et anda teile täpset psühhrodünaamilist arusaama. Miski ei lahku EList. Midagi ei müüda.",
+        "controls": {
+          "headingLead": "Kes",
+          "headingItalic": "kontrollib",
+          "headingTail": "teie andmeid",
+          "p1": "WelloWork AB, registreeritud Rootsis (org. nr. 559472‑9997), tegutsedes Uppsalast, on isikuandmete vastutav töötleja, mida kogutakse sellel veebilehel ja otsepäringute kaudu.",
+          "p2": "Andmete puhul, mida töödeldakse TwentyThird platvormil organisatsiooni — kliiniku, teadusasutuse, tööandja — nimel, tegutseb WelloWork AB volitatud töötlejana ja kliendist organisatsioon on vastutav töötleja. Seda suhet reguleerib eraldi andmetöötluskokkulepe."
+        },
+        "figure": {
+          "label": "kes kontrollib teie andmeid",
+          "controller": "Vastutav töötleja",
+          "directRelationship": "otsene suhe",
+          "websiteVisitor": "Veebilehe külastaja",
+          "you": "Teie",
+          "customerOrg": "Kliendi organisatsioon",
+          "viaDpa": "andmetöötluslepingu alusel",
+          "processor": "Volitatud töötleja",
+          "platformUser": "Platvormi kasutaja"
+        },
+        "collect": {
+          "headingLead": "Mida me",
+          "headingItalic": "kogume",
+          "contactStrong": "Kontakt- ja kontoandmed.",
+          "contactBody": "Nimi, e-posti aadress ja kogu teave, mida esitate registreerumisel või meile kirjutades. Õiguslik alus: lepingu täitmine (GDPR art 6 lg 1 punkt b).",
+          "sessionStrong": "Seansi- ja platvormandmed.",
+          "sessionBody": "Päevikukanded, vastused, unenägude sisu ja keelelised mustrid, mida jagate TwentyThird'is. See on analüüsi substraat. Õiguslik alus: selgesõnaline nõusolek (GDPR art 9 lg 2 punkt a), antud kasutuselevõtul ja igal ajal tühistatav. Käsitleme neid andmeid tervisega seotud eriandmetena ja rakendame vastavaid kaitsemeetmeid sõltumata formaalsest klassifikatsioonist.",
+          "technicalStrong": "Tehnilised andmed.",
+          "technicalBody": "IP-aadress, brauseri tüüp, seadme identifikaatorid ja kasutuse ajatemplid — kogutakse automaatselt, kui platvormile sisenete. Õiguslik alus: õigustatud huvi (GDPR art 6 lg 1 punkt f) turvalisuse säilitamiseks ja vigade diagnoosimiseks.",
+          "p4": "Me ei kogu andmeid rassi, etnilise päritolu, poliitiliste vaadete või usulise veendumuse kohta. Kui teie jagatud sisu juhuslikult sellist teavet paljastab, ei töödelda seda eraldi kategooriana."
+        },
+        "use": {
+          "headingLead": "Kuidas me seda",
+          "headingItalic": "kasutame",
+          "headingTail": "seda",
+          "p1": "Kasutame teie andmeid TwentyThird teenuse osutamiseks ja täiustamiseks, teie poolt taotletud tehingusõnumite saatmiseks, pettuse või kuritarvitamise tuvastamiseks ja ennetamiseks ning seaduslike kohustuste täitmiseks.",
+          "p2": "Me ei kasuta teie andmeid reklaamiprofiilideks. Me ei müü, litsentseeri ega jaga neid andmemaakleritega. Me ei kasuta neid kolmandate osapoolte üldotstarbeliste tehisintellekti mudelite treenimiseks."
+        },
+        "sees": {
+          "headingLead": "Kes",
+          "headingItalic": "näeb",
+          "headingTail": "seda",
+          "withinStrong": "WelloWork AB sees:",
+          "withinBody": "Kliinilised töötajad ja insenerid, kes vajavad juurdepääsu teenuse haldamiseks. Juurdepääs on rollipõhiselt piiratud ja logitud.",
+          "infraStrong": "Infrastruktuuriteenuse pakkujad:",
+          "infraBody": "Supabase (andmebaas ja autentimine, EL regioon), Vercel (hosting, EL edge) ja Postmark (tehingupõhine e-post). Igaüks on seotud andmetöötluslepinguga ja töötleb andmeid ainult meie dokumenteeritud juhiste alusel.",
+          "legalStrong": "Õiguslik kohustus:",
+          "legalBody": "Avaldame andmeid pädevatele asutustele ainult seadusega nõutud juhul ja ainult nõutud ulatuses.",
+          "p4": "Andmeid ei edastata väljaspoole EL/EMP. Kui see muutub, uuendame seda poliitikat ja hankime vajadusel uue nõusoleku."
+        },
+        "retention": {
+          "headingItalic": "Säilitamine",
+          "p1": "Konto ja platvormi andmeid säilitatakse seni, kuni teie konto on aktiivne, pluss 30 päeva pärast kustutamist taastamise võimaldamiseks. Tehnilisi logisid säilitatakse 90 päeva. Kontaktpäringuid säilitatakse 24 kuud.",
+          "p2": "Pärast neid perioode kustutatakse andmed püsivalt või anonümiseeritakse pöördumatult."
+        },
+        "rights": {
+          "headingLead": "Teie",
+          "headingItalic": "õigused",
+          "p1": "Teil on õigus pääseda ligi andmetele, mida me teie kohta hoiame, parandada ebatäpsusi, taotleda kustutamist, piirata või vastuväiteid esitada töötlemisele ning saada masinloetav koopia ülekandmiseks. Kui töötlemine põhineb nõusolekul, võite selle igal ajal tagasi võtta, ilma et see mõjutaks enne tagasivõtmist toimunud töötlemise seaduslikkust.",
+          "exerciseLead": "Õiguse kasutamiseks:",
+          "exerciseTail": ". Vastame 30 päeva jooksul. Kui te ei ole meie vastusega rahul, võite esitada kaebuse Integritetsskyddsmyndigheten'ile (IMY), Rootsi andmekaitseasutusele."
+        },
+        "children": {
+          "headingItalic": "Lapsed",
+          "p1": "TwentyThird ei ole suunatud alla 18-aastastele isikutele. Me ei kogu teadlikult andmeid alaealiste käest. Kui saame teada, et alaealine on esitanud andmeid, kustutame need viivitamata."
+        },
+        "changes": {
+          "headingItalic": "Muudatused",
+          "p1": "Uuendame seda poliitikat, kui meie tavad muutuvad. Olulisest muudatusest teavitatakse e-posti teel vähemalt 14 päeva enne selle jõustumist. Versiooni kuupäev on näidatud selle lehe allosas.",
+          "effectivePrefix": "Jõustub:",
+          "effectiveSuffix": "· Kohaldatav õigus: Rootsi õigus ja isikuandmete kaitse üldmäärus"
+        }
+      },
+      "terms": {
+        "metaTitle": "Kasutustingimused — TwentyThird",
+        "metaDescription": "Leping, mis reguleerib TwentyThird'i kasutamist. Kirjutatud loetavaks, mitte vältimiseks.",
+        "eyebrow": "TINGIMUSED",
+        "headingLead": "Leping,",
+        "headingItalic": "selgelt sõnastatud.",
+        "lede": "Need tingimused reguleerivad TwentyThird'i kasutamist. Need on kirjutatud loetavaks, mitte vältimiseks.",
+        "service": {
+          "headingLead": "Teenus",
+          "headingItalic": "ise",
+          "p1": "TwentyThird on psühhودünaamiline AI-platvorm, mida haldab WelloWork AB. See pakub analüütilist ülevaadet sellest, mida jagate. See ei ole meditsiiniseade. See ei kujuta endast psühhoteraaپiat, psühhiaatrilist diagnoosi ega kliinilist ravi. Kui tunnete psühholoogilist häda, pöörduge kvalifitseeritud kliiniku või hädaabiteenuse poole."
+        },
+        "account": {
+          "headingLead": "Teie",
+          "headingItalic": "konto",
+          "p1": "TwentyThird'i kasutamiseks peate olema vähemalt 18-aastane. Teie ülesanne on hoida oma sisselogimisandmed konfidentsiaalsena. Te ei tohi jagada oma kontot ega kasutada platvormi teise isiku nimel ilma tema selgesõnalise nõusolekuta.",
+          "p2": "Teie loodud sisu — päevikukanded, vastused — kuulub teile. Esitades neid, annate WelloWork AB'le piiratud litsentsi nende töötlemiseks privaatsuspoliitיkas kirjeldatud eesmärkidel. Võite oma sisu igal ajal eksportida või kustutada."
+        },
+        "acceptableUse": {
+          "headingLead": "Lubatud",
+          "headingItalic": "kasutus",
+          "p1": "Võite kasutada TwentyThird'i seaduslikuks isiklikuks ja professionaalseks eneseavastuseks. Te ei tohi seda kasutada endale või teistele kahju tekitamiseks, platvormi turvalisussüsteemide ümbermängimiseks, alusmudelite pöördprojekteerimiseks ega konkureerivate AI-süsteemide treenimiseks.",
+          "p2": "Jätame endale õiguse peatada või lõpetada kontod, mis rikuvad neid tingimusi, ilma eelneva hoiatuseta, kui see on turvalisuse huvides vajalik."
+        },
+        "liability": {
+          "headingLead": "Meie",
+          "headingItalic": "vastutus",
+          "p1": "TwentyThird pakub ülevaadet, mitte kindlust. Me ei garanteeri, et analüüs on täpne, täielik või teie asjaoludele sobiv. Rootsi seadusega lubatud ulatuses on meie vastutus piiratud summaga, mille maksite asjaomast nõuet eelnenud 3 kuu jooksul.",
+          "p2": "Miski nendes tingimustes ei piira vastutust surma või kehavigastuse eest, mis on põhjustatud meie hooletusest, ega pettuse eest."
+        },
+        "disputes": {
+          "headingLead": "Kohaldatav õigus ja",
+          "headingItalic": "vaidlused",
+          "p1": "Neid tingimusi reguleerib Rootsi õigus. Vaidlused, mida ei saa otse lahendada, suunatakse esimese astme kohtuna Uppsala kohtutesse, Rootsis.",
+          "p2Lead": "Kui olete EL-i tarbija, on teil juurdepääs ka EL-i veebisel vaidluste lahendamise platvormile aadressil",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Muudatused",
+          "p1": "Võime neid tingimusi uuendada. Jätkuv kasutamine pärast olulise muudatuse jõustumiskuupäeva tähendab nõustumist. Teavitame olulistest muudatustest e-posti teel vähemalt 14 päeva ette.",
+          "effectivePrefix": "Jõustub:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Küpsiste eeskirjad — TwentyThird",
+        "metaDescription": "TwentyThird kasutab küpsiseid ainult autentimiseks ja eelistuste säilitamiseks. Reklaamiküpsiseid ei ole. Kolmandate osapoolte jälgijaid ei ole.",
+        "eyebrow": "KÜPSISED",
+        "headingLead": "Mida me salvestame",
+        "headingItalic": "teie brauserisse.",
+        "lede": "TwentyThird kasutab küpsiseid autentimiseks ja eelistuste säilitamiseks. Me ei kasuta reklaamiküpsiseid ega kolmandate osapoolte jälgijaid.",
+        "whatIs": {
+          "headingLead": "Mis on",
+          "headingItalic": "küpsis",
+          "p1": "Küpsis on väike tekstifail, mis salvestatakse teie brauserisse. Kasutame neid, et hoida teid sisselogituna ja meeles pidada teie teemaeelistust (tume või hele). See on kõik."
+        },
+        "weSet": {
+          "headingLead": "Küpsised,",
+          "headingItalic": "mida me seame",
+          "authBody": "— Seab Supabase. Säilitab teie autenditud sessiooni. Aegub, kui logite välja või pärast 7 päeva passiivsust. Rangelt vajalik.",
+          "themeBody": "— Salvestab teie tumeda/heleda režiimi eelistuse. Püsib kuni kustutamiseni. Funktsionaalne.",
+          "p3": "Me ei sea reklaamiküpsiseid. Me ei laadi kolmandate osapoolte jälgimisskripte — ei Google Analyticsi, ei Meta Pixelit, mitte mingit liiki turundusmärke."
+        },
+        "choices": {
+          "headingLead": "Teie",
+          "headingItalic": "valikud",
+          "p1Lead": "Võite küpsised igal ajal kustutada oma brauseri sätete kaudu. Kustutamine",
+          "p1Mid": "logib teid välja. Kustutamine",
+          "p1Tail": "lähtestab kuvamise tumedale vaikeväärtusele.",
+          "p2": "Me ei kasuta küpsiste nõusoleku bännerit rangelt vajalike või funktsionaalsete küpsiste jaoks vastavalt ePrivacy direktiivile, kuna need ei nõua nõusolekut. Kui me tulevikus lisame mõne mittevajaliku küpsise, hangime enne nende seadmist nõusoleku."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Küsimused küpsiste või mis tahes muu andmete küsimuse kohta:",
+          "effectivePrefix": "Kehtib alates:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "SELLEL LEHEL",
+        "privacyPolicy": "Privaatsuspoliitika",
+        "termsOfService": "Kasutustingimused",
+        "cookiePolicy": "Küpsisepoliitika"
+      },
+      "layout": {
+        "eyebrow": "ÕIGUSLIK",
+        "headingLead": "Õiguslikud dokumendid,",
+        "headingItalic": "selgelt sõnastatud.",
+        "lede": "Privaatsuspoliitika, teenuse tingimused ja küpsiste poliitika — reguleeritud Rootsi seaduse ja GDPR-i alusel."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metoodika — TwentyThird",
+      "metaDescription": "Esimesest vestlusest terapeudile valmis kaardini. Viis etappi TwentyThird töövoos.",
+      "hero": {
+        "eyebrow": "MEETOD",
+        "headingLead": "Nädalaid ettevalmistust,",
+        "headingItalic": "mitte aastaid otsingut",
+        "lede": "Teraapia toimib. Kuid kulub aega mõista, mille pärast seal ollakse. TwentyThird tihendab ettevalmistuse — osa, kus õpitakse, mida tegelikult öeldakse — et ruum ise saaks kiiremini liikuda."
+      },
+      "pipeline": {
+        "eyebrow": "TÖÖVOOG",
+        "headingLead": "Viis etappi, üks",
+        "headingItalic": "kokkuvõte",
+        "lede": "Proovitud kõnest töödokumendini, mida kliiniku saab lugeda kaheksa minutiga.",
+        "stageLabel": "ETAPP",
+        "stage01": {
+          "name": "Proovimine",
+          "blurb": "Hääl ja tekst juhitud seansside käigus. Mudel kuulab kuju, mitte sisu.",
+          "label": "proovimine",
+          "subtitle": "maht kogu kohordi ulatuses",
+          "fig": {
+            "wordsSampled": "sõna proovitud",
+            "sessions": "seanssi",
+            "elapsed": "möödunud",
+            "medianTurn": "mediaan voor"
+          }
+        },
+        "stage02": {
+          "nameLead": "Keeleline",
+          "nameEm": "eraldamine",
+          "blurb": "Tunnused, mida mudel tõstab transkriptsioonist — vaikselt, enne igasugust tõlgendust.",
+          "label": "eraldamine",
+          "subtitle": "tunnuste klassid",
+          "fig": {
+            "qualifierDensity": "täpsustajate tihedus",
+            "modalVerbs": "modaalverbid",
+            "conditionalFrame": "tingimuslik raam",
+            "affectiveHedges": "afektiivsed piiritlejad",
+            "slipsMisnamings": "komistused · valenimetused",
+            "repetitionWindows": "korduste aknad"
+          }
+        },
+        "stage03": {
+          "nameLead": "Korduvuse",
+          "nameEm": "tuvastamine",
+          "blurb": "Muster, mis naaseb samas kujus, eri kümnenditel. Signaal, et miski on struktuurne.",
+          "label": "korduvus",
+          "subtitle": "ühe mustri kolm ankrut",
+          "fig": {
+            "row1": {
+              "durationLabel": "esimene töö",
+              "outcome": "lagi kuues 9"
+            },
+            "row2": {
+              "durationLabel": "teine",
+              "outcome": "lagi kuues 11"
+            },
+            "row3": {
+              "durationLabel": "kolmas",
+              "outcome": "lagi kuues 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Stsenaariumi",
+          "nameEm": "rekonstrueerimine",
+          "blurb": "Lause mustri all. Vana rida, siis kandidaat-parandus, mida subjekt saab harjutada.",
+          "label": "rekonstrueerimine",
+          "subtitle": "töömustand",
+          "fig": {
+            "row1": {
+              "prefix": "Ma olen",
+              "old": "veel mitte valmis.",
+              "next": "juba lubatud."
+            },
+            "row2": {
+              "prefix": "ootama,",
+              "old": "et mind valitaks.",
+              "next": "nimetama, mida tahan."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Kaart",
+          "nameEm": "kliiniku jaoks",
+          "blurb": "Kolm märgistatud mõõdikut ja üherealine struktuurne lugemine. Kaheksa minutit lugeda, nädalaid kasutada.",
+          "label": "kliiniline üleandmine",
+          "subtitle": "töökokkuvõte",
+          "fig": {
+            "casePrefix": "juhtum",
+            "preparedPrefix": "ettevalmistatud",
+            "egoStructure": "Ego struktuur",
+            "objectRelations": "Objektisuhted",
+            "symbolicRegister": "Sümboolne register",
+            "footerLabel": "Lugemine",
+            "footerValue": "obsessiivne · hüsteerilistele jälgedele"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "ULATUS",
+        "headingLead": "Mida mõõdame ja mida",
+        "headingItalic": "keeldume",
+        "headingTail": "mõõtmast.",
+        "measureHead": "Mida mõõdame",
+        "refuseHead": "Mida ei mõõda",
+        "measure": {
+          "languagePatterns": {
+            "k": "keelilised mustrid",
+            "gloss": "Täpsustajate tihedus, modaalverbid, piiritlejad, tingimuslikud raamid."
+          },
+          "recurrence": {
+            "k": "korduvus",
+            "gloss": "Mustrid, mis naasevad samas kujus läbi aastate."
+          },
+          "narrativeCoherence": {
+            "k": "narratiivne sidusus",
+            "gloss": "Kuidas elu jutustatakse, kus õmblused nähtavad."
+          },
+          "attachmentMarkers": {
+            "k": "kiindumusmarkerid",
+            "gloss": "Kus lähedus ületab läve, mis järgneb."
+          },
+          "linguisticSlips": {
+            "k": "keelelised komistused",
+            "gloss": "Valenimetused, kondensatsioonid, nihked."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD kategooriad",
+            "gloss": "Nosoloogia on eraldi instrument, mida kasutavad kliinilised töötajad."
+          },
+          "iqCognition": {
+            "k": "IQ või kognitsioon",
+            "gloss": "Ulatusest väljas. Mudel on psühhhodünaamiline, mitte psühhomeetriline."
+          },
+          "personalityTypes": {
+            "k": "isiksuse tüübid",
+            "gloss": "Viie faktori mudel ja selle järglased ei kuulu kokkuvõttesse."
+          },
+          "riskScores": {
+            "k": "riskiskoorid",
+            "gloss": "Äge risk on kliiniku otsus, mitte mudeli."
+          },
+          "predictions": {
+            "k": "ennustused",
+            "gloss": "Struktuur, mitte prognoos. Nimetame, mis on, mitte mis tuleb."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Tihendus",
+        "headingLead": "Sisene teades, mida",
+        "headingItalic": "öelda",
+        "body1": "Teraapia ei ole koht küsimuse väljamõtlemiseks. See on koht sellega elamiseks. Tihendus, mida pakume, on lähenemises — kuudes, mida kliiniku tavaliselt kulutab kokkuvõtte kuju kuulamisele.",
+        "body2": "Pilootkohordi ulatuses jõudsid ettevalmistatud subjektid tööalliansini vähemate seansidega. Lugemine oli juba olemas.",
+        "figure": {
+          "label": "alliants",
+          "subtitle": "mediaan seansside arv tööalliansini",
+          "heading": "Aeg tööalliansini",
+          "range": "mediaan kohordi ulatuses",
+          "markerUnprepared": "ettevalmistamata",
+          "markerPrepared": "ettevalmistatud",
+          "summaryLabel": "vähem seanssi\ntööalliansini"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "JÄTKA",
+        "headingLead": "Alusta",
+        "headingItalic": "või vaata näidisaruannet",
+        "beginLabel": "Alusta",
+        "or": "või",
+        "ghostLabel": "vaata näidisaruannet"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRATSIOON",
+        "headlineLead": "Arusaam, siis",
+        "headlineItalic": "harjumus",
+        "lede": "Mustri nimetamine on vaid esimene samm. Plaan on teine – igapäevased vihjed ja väikesed rituaalid, mis on ehitatud teie struktuuri, mitte üldise õppekava ümber."
+      },
+      "week": {
+        "eyebrow": "NÄDAL PLAANIS",
+        "headlineLead": "Seitse vihjet,",
+        "headlineItalic": "üks struktuur",
+        "lede": "Reflektiivne, kehastunud, kirjalik. Nädal hingab aruandes nimetatud mustri, mitte õppekava ümber.",
+        "days": {
+          "mon": {
+            "day": "E",
+            "prompt": "„Kus täna otsustasite <em>mitte</em> nähtav olla?“",
+            "stream": {
+              "journal": "päevik",
+              "shadowPrompt": "varjuviip"
+            }
+          },
+          "tue": {
+            "day": "T",
+            "prompt": "„Minge jalutama ilma asjata. Pange tähele ühte asja, mida te peaaegu ütlesite.“",
+            "stream": {
+              "walking": "jalutamine",
+              "note": "märkus"
+            }
+          },
+          "wed": {
+            "day": "K",
+            "prompt": "„Mida te täna üle kvalifitseerisite ja mis oli selle all olev <em>kvalifitseerimata</em> lause?“",
+            "stream": {
+              "breathWork": "hingamistöö",
+              "journal": "päevik",
+              "shadowPrompt": "varjuviip"
+            }
+          },
+          "thu": {
+            "day": "N",
+            "prompt": "„Kehaskaneering kurgust allapoole. Kus elab hoidmine?“",
+            "stream": {
+              "bodyScan": "kehaskaneering",
+              "note": "märkus"
+            }
+          },
+          "fri": {
+            "day": "R",
+            "prompt": "„Kirjutage lause, mille oleksite öelnud, kui see oleks juba lubatud.“",
+            "stream": {
+              "journal": "päevik",
+              "rewrite": "ümberkirjutus"
+            }
+          },
+          "sat": {
+            "day": "L",
+            "prompt": "„Pikk jalutuskäik. Vihjeid pole. Pange tähele, mida vaikus tagasi toob.“",
+            "stream": {
+              "walking": "jalutamine",
+              "rest": "puhkus"
+            }
+          },
+          "sun": {
+            "day": "P",
+            "prompt": "„Lugege nädal uuesti läbi. Milline rida oli juba <em>tõene</em>?“",
+            "stream": {
+              "review": "ülevaade",
+              "note": "märkus"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "KOHANDAMINE",
+        "headlineLead": "Plaan",
+        "headlineItalic": "hääbub",
+        "tag": "Kohandamine",
+        "rowHeadingLead": "Eelmise nädala kordumine määrab järgmise nädala",
+        "rowHeadingItalic": "tiheduse",
+        "body": "Kui mustri tugevus langeb, vihjed hõrenevad. Kui muster tõuseb, vihjed naasevad. Eesmärk ei ole kinnipidamine. Eesmärk on väikseim telling, mida struktuur veel vajab.",
+        "figure": {
+          "label": "vihjete tihedus",
+          "subtitle": "nädalad 1–8",
+          "heading": "Vihjete arv · nädalas",
+          "range": "hääbub kordumise nõrgenedes",
+          "markers": {
+            "wk1": "1. näd",
+            "wk3": "3. näd",
+            "wk5": "5. näd",
+            "wk8": "8. näd"
+          },
+          "summaryLabel": "vähem vihjeid\n8. nädalaks"
+        }
+      },
+      "shadow": {
+        "eyebrow": "VARJUTÖÖ",
+        "headlineLead": "Mitte katarsis.",
+        "headlineItalic": "Rääkimine",
+        "tag": "Vari",
+        "rowHeadingLead": "Tahtlik harjutus rääkida seda, mis oli",
+        "rowHeadingItalic": "väljaütlemata",
+        "body": "Varjutöö, selles kontekstis, ei ole paljastamine. See ei ole puhastus. See on aeglane harjutus öelda – esmalt endale – seda, mida oli õpetatud varjatuna hoidma. Kolm enne/pärast rida, mis on võetud reaalsetest plaanidest.",
+        "figure": {
+          "label": "varjurevisjonid",
+          "subtitle": "kolm rida, tööversioon",
+          "rows": {
+            "r1": {
+              "prefix": "01 · endale",
+              "old": "Ma ei vääri seda.",
+              "next": "Ma pole veel harjutanud seda valjult tahtma."
+            },
+            "r2": {
+              "prefix": "02 · endale",
+              "old": "Ma peaksin sellest nüüdseks üle olema.",
+              "next": "laenatud ajajoon ei olnud sellise leina jaoks."
+            },
+            "r3": {
+              "prefix": "03 · endale",
+              "old": "Ma olen liiga palju.",
+              "next": "Ma olen täpselt see maht, mille jaoks ruumi ei ehitatud."
+            }
+          },
+          "metaLeft": {
+            "label": "varem",
+            "value": "öeldud enda kohta"
+          },
+          "metaRight": {
+            "label": "nüüd",
+            "value": "öeldud endale"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RAAM",
+        "headlineLead": "Struktuuri, mitte",
+        "headlineItalic": "õppekava poolt hoitud",
+        "body1": "Õppekava on võõra ehitatud liigutuste kogum. Struktuur on kuju, mille teie konkreetne elu juhtub võtma. Plaan on ehitatud viimase järgi. Iga vihje on ankurdatud teie aruande reale – kui rida kaob, kaob ka vihje.",
+        "body2": "Miski siin ei pea olema püsiv. Plaan on renditud. Struktuur on teie oma.",
+        "closeout": "struktuur on teie oma · plaan on renditud"
+      },
+      "final": {
+        "eyebrow": "JÄTKA",
+        "headlineLead": "Alusta,",
+        "headlineItalic": "või loe teadusest",
+        "beginCta": "Alusta",
+        "or": "või",
+        "readScience": "loe teadusest"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Teadus — TwentyThird",
+        "description": "Sajand psühhoanalüütilist teooriat ja neli aastakümmet empiirilist uurimist mustrite, keele ja alateadvuse kohta."
+      },
+      "hero": {
+        "eyebrow": "ALUS",
+        "headlineLead": "Teadus ",
+        "headlineItalic": "kuulamise",
+        "headlineTail": " taga.",
+        "lede": "TwentyThird on ehitatud sajandipikkusele psühhoanalüütilisele teooriale ja neljale aastakümnele empiirilisele uurimistööle mustrite, keele ja alateadvuse kohta. Seda me loeme ja seletame."
+      },
+      "lineages": {
+        "eyebrow": "KAKS PÄRITOLU",
+        "headlineLead": "Freudi struktuur. Lacani ",
+        "headlineItalic": "kiri",
+        "headlineTail": ".",
+        "lede": "Kaks alateadvuse lugemist, poole sajandi tagant. Koos moodustavad need meetodi selgroo.",
+        "freud": {
+          "headlineLead": "Struktuurne",
+          "headlineItalic": "teadvustamatu",
+          "headlineTail": ".",
+          "body1": "Freudi püsiv panus on struktuurne, mitte temaatiline. Dünaamiline teadvustamatu ei ole unustatud sisu kelder – see on vaimu töötav organ, mis harjutab, kordab, kannab üle.",
+          "body2": "Me loeme teda korduse kliinikuna. Sama stseen ilmub erinevatel aastakümnetel. See kordus on signaal, mida mudel on treenitud leidma.",
+          "figure": {
+            "label": "kordus",
+            "subtitle": "viis ankrut, üks struktuur",
+            "outcome": "tagasitõmbumine",
+            "rows": {
+              "anchor1": "varane noorukiiga",
+              "anchor2": "esimene pikk side",
+              "anchor3": "teine pikk side",
+              "anchor4": "kolmas side",
+              "anchor5": "neljas side"
+            },
+            "summary": {
+              "recurrenceLabel": "kordus",
+              "intervalLabel": "intervall",
+              "attractorLabel": "atraktor",
+              "attractorValue": "intiimsuse lävi"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Teadvustamatu on struktureeritud nagu",
+          "headlineItalic": "keel",
+          "headlineTail": ".",
+          "body1Lead": "Lacani lugemine nihutab valdkonda. Tähistaja liigub; tähendus libiseb mööda metonüümia ja metafoori ahelaid. Peegelstaadium nimetab asutavat väärtunnetust.",
+          "body1Italic": "Iha on Teise iha.",
+          "body2": "Meie süsteemis on see konkreetne. Me loeme unenägusid ja ärkveloleku kõnet tekstina – nihked, kondensatsioonid ja libastumised kannavad struktureerivat grammatikat.",
+          "figure": {
+            "label": "lingvistiline signaal",
+            "subtitle": "unenäo väljavõte, kommenteeritud",
+            "dreamLead": "“Tuba, kus ma lapsena elasin, on teise uksega, mida ma ei mäleta",
+            "ann1": "nihe",
+            "dreamMid1": ". Selle taga minu juhendaja hääl",
+            "ann2": "kondensatsioon",
+            "dreamMid2": "kutsub mind vale nimega",
+            "ann3": "libastumine",
+            "dreamTail": ".”",
+            "key1": "nihe",
+            "key2": "kondensatsioon",
+            "key3": "libastumine"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIIRILISED ANKRUD",
+        "headlineLead": "Mida kaasaegne uurimistöö ",
+        "headlineItalic": "lisab",
+        "headlineTail": ".",
+        "lede": "Viis lähenevat suunda kiindumuse, narratiivi ja protsessiuuringutest. Mitte täielik bibliograafia – need on ankrud, millele mudel tegelikult toetub.",
+        "figure": {
+          "label": "empiirilised ankrud",
+          "subtitle": "lähenevad tõendid",
+          "caseLabel": "kirjandus · süntees",
+          "prepared": "uuendatud 04 · 26",
+          "rows": {
+            "attachment": "Kiindumussuhe aastakümnete lõikes",
+            "alliance": "Terapeutiline allianss kui tulemuse ennustaja",
+            "narrative": "Narratiivne koherentsus ja heaolu",
+            "relational": "Impliitsed relatsioonilised teadmised",
+            "script": "Stsenaariumiteooria kutsealasises kinnijäämises"
+          },
+          "footerLabel": "Süntees",
+          "footerValue": "lähenevad tõendid · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "MIDA ME EI VÄIDA",
+        "headlineLead": "Töö ausad ",
+        "headlineItalic": "piirid",
+        "headlineTail": ".",
+        "claim1Strong": "Me ei asenda terapeuti.",
+        "claim1Body": "Mudel valmistab vestluse ette. See ei pea seda.",
+        "claim2Strong": "Me ei ole diagnostiline instrument DSM-i ega RHK alusel.",
+        "claim2Body": "Kategooriad, millega me töötame, on struktuursed – obsessiivsed, hüsteerilised, foobilised – mitte nosoloogilised. Need nimetavad seda, kuidas inimene on organiseeritud, mitte seda, mis tal on.",
+        "claim3Strong": "23-päevane tsükkel on metafoor.",
+        "claim3Body": "Number pärineb Wilhelm Fliess'i ja Freudi kirjavahetusest 19. sajandi lõpust. Kaasaegne teadus ei toeta fikseeritud biorütme. Me säilitame numbri selle pärast, mida see nimetab – üleminek uudishimust teadlikkuseks."
+      },
+      "reading": {
+        "eyebrow": "LISALUGEMINE",
+        "headlineLead": "Riiul ",
+        "headlineItalic": "mudeli taga",
+        "headlineTail": ".",
+        "lede": "Raamatud, mitte artiklid. Need, mille juurde me tagasi pöördume.",
+        "books": {
+          "book1": {
+            "title": "Väljaspool naudinguprintsiipi"
+          },
+          "book2": {
+            "title": "Unenägude tõlgendamine"
+          },
+          "book4": {
+            "title": "Psühhoanalüüsi neli põhimõistet"
+          },
+          "book5": {
+            "title": "Kiindumus"
+          },
+          "book6": {
+            "title": "Afekti regulatsioon ja mina teke"
+          },
+          "book7": {
+            "title": "Seisates ruumides"
+          },
+          "book8": {
+            "title": "Afekti regulatsioon, mentalisatsioon ja mina areng"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "JÄTKA",
+        "headlineLead": "Alusta profiili ",
+        "headlineItalic": "või loe juhtumit",
+        "headlineTail": ".",
+        "ctaPrimary": "Alusta profiili",
+        "ctaOr": "või",
+        "ctaGhost": "loe juhtumiuuringut"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "jälle siin",
+      "greetingNamed": "jälle siin, {name}.",
+      "strengthen": "Täpsuse tugevdamine"
+    },
+    "reviewEdit": "Ülevaata ja redigeeri",
+    "depth": {
+      "eyebrow": "LUGEMISE SÜGAVUS",
+      "overallEyebrow": "ÜLDINE LUGEMISE SÜGAVUS",
+      "band": {
+        "deep": "lugemine on sügav. siit edasi väikesed kohandused.",
+        "steady": "lugemine püsib. iganädalased kokkuvõtted teravdavad seda.",
+        "partial": "lugemine on osaline. on veel, mida anda.",
+        "thin": "lugemine on õhuke. see visandab kuju, mitte veel struktuuri."
+      },
+      "explainer": "Lugemise sügavus kirjeldab, kui palju sinust on lugemisele kättesaadav olnud – algsest küsimustikust, iganädalastest kokkuvõtetest, konsultatsioonidest ja inimestest, kelle kohalolek sind kujundab. Sügavam lugemine ei tähenda paremat inimest; see tähendab täpsemat. Saate seda igal ajal süvendada või jätta see selliseks, nagu see on.",
+      "status": {
+        "low": "Madal",
+        "moderate": "Mõõdukas",
+        "deep": "Täpne"
+      },
+      "statusLine": {
+        "low": "lugemine on õhuke. see visandab kuju, mitte veel struktuuri.",
+        "moderate": "lugemine hakkab kuju võtma. see suudab hoida tööversiooni hüpoteesi.",
+        "deep": "lugemine on piisavalt täielik, et tööd põhjendada."
+      },
+      "source": {
+        "intake": "küsimused, millele vastasite alustamiseks.",
+        "catchups": "iganädalased kontrollid, mis hoiavad lugemist ajakohasena.",
+        "sessions": "pikemad konsultatsioonid analüütikuga.",
+        "connections": "inimesed, kelle kohalolek kujundab lugemist."
+      }
+    },
+    "latest": {
+      "eyebrow": "VIIMANE LUGEMINE",
+      "heading": "Kuus lugemist <it>— ja mis muutub.</it>",
+      "lede": "Kuus lugemist arvutatakse teie vastuvõtu põhjal ja täpsustatakse iga Catchupi, konsultatsiooni ja aktsepteeritud ühendusega. Struktuur on stabiilne; tekstuur liigub.",
+      "strengthen": "tugevdada andmeid analüüsi jaoks",
+      "open": "avada lugemised"
+    },
+    "six": {
+      "eyebrow": "KUUS LUGEMIST",
+      "heading": "Mida loetakse <it>teie sees, just praegu.</it>"
+    },
+    "catchup": {
+      "figLabel": "KOKKUVÕTTED",
+      "figSubtitle": "viimased nädalad",
+      "timelineHeading": "aken",
+      "timelineRange": "viimased 4 nädalat",
+      "timelineSummary": "kokkuvõtted aknas",
+      "eyebrow": "NÄDALAKOKKUVÕTE",
+      "heading": "Istuge nädalaga. <it>Siis vaatame uuesti.</it>",
+      "lede": "Kaheksa lühikest küsimust. Ausus on parem kui pikkus. Vastused täpsustavad lugemist.",
+      "completed": "lõpetatud — lugege kokkuvõtet",
+      "cta": "Avage selle nädala kokkuvõte",
+      "markerFirst": "esimene",
+      "markerWeek": "n{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTATSIOONIRUUM",
+      "heading": "Tund <it>analüütikuga.</it>",
+      "ledeSubscribed": "Avatud alati, kui nädal peale surub. Ruum mäletab, mida olete juba öelnud.",
+      "ledeUnsubscribed": "Tellijad saavad siseneda konsultatsiooniruumi – pikaajalisele seansile analüütikuga, mis toimub sama häälega nagu teie lugemised.",
+      "cta": "Sisene konsultatsiooniruumi",
+      "figLabel": "VIIMANE SESSIOON",
+      "figSubtitle": "hoitud küsimus",
+      "lastQuestion": "„teisipäevane unenägu – kas soovite selle juurde tagasi pöörduda?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTATSIOONITUBA · KINNITA",
+      "title": "Sisenemine konsultatsioonituppa<it>.</it>",
+      "ledePrice": "Tellimus on",
+      "ledePerMonth": "kuus",
+      "ledeIncludes": ". See sisaldab konsultatsioonituba, võimalust kutsuda kuni {count} {count, plural, one {ühendus} other {ühendust}} ja ühe kliinilise aruande iga kalendrikuu kohta.",
+      "ledeBilling": "Arveldamist haldab Stripe. Tühistage igal ajal seadetest — ligipääs jätkub perioodi lõpuni.",
+      "canceled": "<i>makseprotsess suleti.</i> midagi ei võetud. võite allpool tagasi tulla, kui olete valmis.",
+      "checkoutCta": "Jätka maksmisega",
+      "returnLink": "naase konsultatsioonituppa"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLIINILINE ARUANNE",
+        "subscribedTitle": "Juba <it>kaasas.</it>",
+        "subscribedLede": "Tellimus sisaldab ühte kliinilist aruannet iga kalendrikuu kohta. Koostage see lugemiste lehe allservast — makset ei ole vaja.",
+        "eyebrow": "KLIINILINE ARUANNE · KINNITA",
+        "title": "Kliiniline aruanne<it>.</it>",
+        "ledePrice": "Ühekordne kliiniline aruanne on",
+        "ledeDossier": ". 12–18-leheküljeline toimik kõigist kaheteistkümnest lugemisest, keeles, milles kliinik töötab.",
+        "ledeBilling": "Arveldusega tegeleb Stripe. Aruandeid saab uuesti genereerida lugemise süvenedes; tellijad saavad ühe iga kalendrikuu kohta ilma eraldi tasuta.",
+        "depthNotice": "<i>aruanne kajastab olemasolevat sügavust.</i> seda saab uuesti genereerida lugemise süvenedes.",
+        "canceled": "<i>makseprotsess suleti.</i> midagi ei võetud.",
+        "checkoutCta": "Jätka maksmisega",
+        "returnLink": "tagasi lugemiste juurde"
+      },
+      "status": {
+        "eyebrow": "KLIINILINE ARUANNE",
+        "line": {
+          "queued": "teie aruannet valmistatakse ette.",
+          "generating": "aruannet kirjutatakse.",
+          "ready": "aruanne on valmis.",
+          "failed": "aruanne ei valminud. proovime varsti uuesti."
+        },
+        "open": "ava aruanne",
+        "back": "tagasi lugemiste juurde"
+      },
+      "queued": {
+        "eyebrow": "KLIINILINE ARUANNE",
+        "line": "teie aruannet valmistatakse ette — saadame teile meili, kui see on valmis.",
+        "back": "tagasi lugemiste juurde"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "SISSEVÕTT",
+        "title": "Sissevõtt, <it>teema teema haaval.</it>",
+        "lede": "Kümme jaotist. Avage mis tahes jaotis, et üle vaadata või süvendada selles olevaid vastuseid. Sissevõtt ei ole ühekordne vorm – vastuseid saab igal ajal muuta."
+      },
+      "step": {
+        "eyebrow": "SISSEVÕTT",
+        "backToAll": "tagasi kõikide jaotiste juurde"
+      },
+      "failed": {
+        "eyebrow": "SISSEVÕTT — PUUDULIK",
+        "headline": "Lugemist <em>ei lõpetatud</em>.",
+        "lede": "Teie sissevõtt on failis. Sellele järgnev analüüs ei lõppenud.",
+        "retry": "Jätka lugemist",
+        "retryPending": "Jätkamine"
+      }
+    },
+    "pending": {
+      "eyebrow": "STAATUS · TÖÖTLEMISEL",
+      "headline": "Teie profiili <em>loetakse</em>.",
+      "lede": "töötleme teie vastuseid nüüd psühhodünaamiliste mudelitega. esimene läbivaatus võtab tavaliselt umbes 2 tundi. kirjutame, kui töö on valmis, ja ruum avaneb.",
+      "figIntake": "SISSEVÕTT",
+      "figSubmitted": "esitatud {date}",
+      "rowResponses": "Vastused vastu võetud",
+      "rowPattern": "Mustrite eraldamine",
+      "rowSynthesis": "Profiili süntees",
+      "statusInProgress": "pooleli",
+      "statusQueued": "järjekorras",
+      "foot": "kirjutame, kui töö on valmis",
+      "returnCta": "naaske vaiksesse ruumi",
+      "devPrefix": "dev",
+      "devOpening": "avanemas…",
+      "devOpen": "ava ruum kohe",
+      "devError": "ruumi ei saanud avada — kontrollige konsooli."
+    }
+  },
+  "invite": {
+    "eyebrow": "KUTSE",
+    "safetyFooter": "TwentyThird ei asenda kliinilist ravi. Kriisiolukorras võtke ühendust kohaliku hädaabinumbriga.",
+    "notReady": {
+      "headline": "Kutsesüsteemi <it>valmistatakse ette.</it>",
+      "body": "Palun proovige varsti uuesti."
+    },
+    "notFound": {
+      "headline": "See link on <it>tundmatu.</it>",
+      "body": "Kui link tuli hiljuti e-kirjast, võidi kutse uuesti saata. Aktiivse lingi saamiseks avage kõige värskem e-kiri."
+    },
+    "alreadyDeclined": {
+      "headline": "See kutse <it>keelduti.</it>",
+      "body": "Teilt ei ole enam midagi vaja. {name}’i ei teavitata enam sellest, mida nad juba näevad."
+    },
+    "alreadyAccepted": {
+      "headline": "Olete juba <it>aktsepteerinud.</it>",
+      "body": "Kui suhte vastuvõtt ei ole veel lõpule viidud, saate jätkata allpool.",
+      "continueLink": "jätka suhte vastuvõttu"
+    },
+    "ended": {
+      "headline": "See ühendus on <it>lõppenud.</it>",
+      "body": "Link ei ole enam aktiivne. Suhte kirje jääb toimikusse, kuid ei mõjuta enam lugemist."
+    },
+    "expired": {
+      "headline": "See kutse on <it>aegunud.</it>",
+      "body": "Kutsed aeguvad neliteist päeva pärast nende saatmist. Paluge {name} saata uus, kui soovite vastata."
+    },
+    "declined": {
+      "headline": "See on <it>vastu võetud.</it>",
+      "body": "Teilt pole enam midagi vaja. Kutse on suletud; kutsuja näeb oleku muutust vaikselt. Võite selle akna sulgeda."
+    },
+    "live": {
+      "eyebrow": "ÜHENDUSE TAOTLUS",
+      "headline": "{name} on teid kutsunud <it>oma lugemisse.</it>",
+      "lede": "TwentyThird on toimetuslik-kliiniline instrument – vaikne ruum, kus kellegi sisemaailma struktuuri loetakse hoolega ja esitatakse keeles, mida kliinik saab kasutada.",
+      "explainerOne": "<em>Ühendus</em> ei ole jagatud konto. {name} ei näe teie lugemisi, seansse ega toimikut. Teie ei näe tema omi. See, mida te suhte kohta ütlete, toidab mudelit, mis loob {name} lugemise.",
+      "explainerTwo": "Kui soovite oma lugemist, alustab esimene tee ka teie enda kontot. Keskmine tee võimaldab teil panustada {name} lugemisse ilma kontota. Mõlemad on lubatud.",
+      "metaSentTo": "saadetud",
+      "metaInviteAs": "kutsu kui",
+      "metaReceived": "vastu võetud",
+      "metaExpiresIn": "{count, plural, one {# päev} other {# päeva}} pärast aegub"
+    },
+    "intake": {
+      "eyebrow": "SUHTE SISSEVÕTT",
+      "notReady": {
+        "headline": "Sissevõtt on <it>ettevalmistamisel.</it>",
+        "body": "Palun proovige varsti uuesti."
+      },
+      "notFound": {
+        "headline": "See link on <it>tundmatu.</it>",
+        "body": "Aktiivse lingi saamiseks avage viimane kutsemeil."
+      },
+      "notOpen": {
+        "headline": "Sissevõtt <it>ei ole avatud.</it>",
+        "body": "Seda kutset ei ole vastu võetud, see on tagasi lükatud või lõpetatud. Naaske kutselingi juurde, et uuesti valida.",
+        "backLink": "tagasi kutse juurde"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "jah — alusta suhte vastuvõttu",
+      "acceptLabel": "jah — loo ühendus ilma kontota",
+      "declineLabel": "ei, aitäh",
+      "beginLabel": "alusta",
+      "continueLabel": "jätka",
+      "back": "tagasi",
+      "oneMoment": "üks hetk…",
+      "declineConfirmLine": "see sulgeb kutse. midagi muud sinu kohta ei saadeta ega salvestata.",
+      "declineClosing": "sulgemine…",
+      "declineConfirm": "keeldu kutsest",
+      "firstNameLabel": "SINU EESNIMI",
+      "firstNameAria": "Sinu eesnimi",
+      "firstNameSub": "{name} näeb seda eesnime ainult oma ühenduste loendis.",
+      "errors": {
+        "missingFirstName": "eesnimi võimaldab analüütikul sinuga õigesti suhelda.",
+        "generic": "esitamine ebaõnnestus.",
+        "notFound": "seda kutselinki ei tuvastata.",
+        "expired": "see kutse on aegunud. palu kutsujal saata uus.",
+        "declined": "sellest kutsest on juba keeldutud.",
+        "ended": "see kutse ei ole enam aktiivne.",
+        "missingFirstNameRequired": "eesnimi on kohustuslik."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "SUHTE SISSEVÕTT",
+      "begin": "alusta",
+      "back": "tagasi",
+      "backToCover": "tagasi kaanele",
+      "next": "järgmine",
+      "finish": "lõpeta",
+      "scaleAria": "skaala {value}",
+      "cover": {
+        "headline": "Mida te <it>{name}</it> kohta ütlete, jääb teie ja analüütiku vahele.",
+        "lede": "Kaksteist lühikest küsimust. Umbes viis minutit. Vastused toidavad {name}'i lugemist; nemad ei näe, mida te kirjutasite, ja teie ei näe, mida see toodab."
+      },
+      "closing": {
+        "recording": "hetk – vastuseid salvestatakse.",
+        "tryAgain": "proovi uuesti",
+        "headline": "Sellest piisab <it>praeguseks.</it>",
+        "lede": "Mida te {name} kohta ütlesite, annab teavet nende lugemisele alates järgmisest sessioonist. Nemad seda ei näe; teie ei näe, mida see toodab.",
+        "closeWindow": "võite selle akna sulgeda."
+      },
+      "errors": {
+        "unanswered": "hetk sellega enne edasiminekut.",
+        "questionOpen": "küsimus on endiselt avatud. üks hetk.",
+        "couldNotSave": "ei saanud salvestada",
+        "invalidAnswers": "midagi ei parsinud – palun kontrollige vastuseid.",
+        "notAccepting": "see kutse ei aktsepteeri enam vastuseid.",
+        "notFound": "seda kutselinki ei tunta ära.",
+        "couldNotSaveAnswers": "ei saanud vastuseid salvestada."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Kui kaua olete teineteist tundnud?",
+          "options": {
+            "under_one_year": "alla ühe aasta",
+            "one_to_three": "üks kuni kolm aastat",
+            "four_to_ten": "neli kuni kümme aastat",
+            "eleven_to_twenty": "üksteist kuni kakskümmend aastat",
+            "more_than_twenty": "üle kahekümne aasta"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Kui lähedased te praegu teineteisele tundute?",
+          "lowLabel": "kauguses",
+          "highLabel": "nii lähedal kui võimalik"
+        },
+        "repair_initiator": {
+          "prompt": "Kui te ei nõustu, kes kipub esimesena lepitust otsima?",
+          "options": {
+            "i_do": "peaaegu alati mina",
+            "usually_me": "tavaliselt mina",
+            "evenly": "liigume teineteise poole ühtlaselt",
+            "usually_them": "tavaliselt nemad",
+            "they_do": "peaaegu alati nemad"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Kui midagi on raske, kuhu nad kipuvad minema?",
+          "options": {
+            "toward": "teie poole, et läbi rääkida",
+            "quiet": "vaikusesse, siis tagasi",
+            "work": "töösse või segamisse",
+            "alone": "täiesti üksi, ukse taha",
+            "elsewhere": "kõigepealt teiste inimeste juurde"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Mida te soovite, et nad enda kohta mõistaksid?"
+        },
+        "what_you_offer": {
+          "prompt": "Ühe fraasiga, mida te nende heaks teete, mida nad ise teha ei suuda?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Milline hääl näib neid kõige sagedamini juhtivat?",
+          "options": {
+            "demand": "nõudmine – mida tuleks teha",
+            "doubt": "kahtlus – kas sellest piisab",
+            "desire": "ihalus – mida nad tegelikult tahavad",
+            "watcher": "jälgija – kuidas seda nähakse",
+            "uncertain": "ma ei tea veel"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Kus nende töö tavaliselt takerdub?",
+          "options": {
+            "start": "algus – sisseelamine",
+            "middle": "keskpaik – sellega jätkamine",
+            "finish": "lõpp – sellest lahti laskmine",
+            "visibility": "nähtavus – selle nähtavaks laskmine",
+            "nowhere": "väljastpoolt ei näe ma kusagil"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Kas on teema, mida nad järjekindlalt väldivad? Nimetage see kergelt."
+        },
+        "they_at_their_best": {
+          "prompt": "Millal nad on kõige rohkem nemad ise?"
+        },
+        "what_youve_changed": {
+          "prompt": "Kas on midagi nende juures, millega olete vaikselt leppinud, et te ei muuda?"
+        },
+        "future_together": {
+          "prompt": "Kui suur osa tulevikust, mida te ette kujutate, hõlmab neid?",
+          "lowLabel": "väga vähe",
+          "highLabel": "peaaegu kõik"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "või",
+      "fallbackPreamble": "kleepige see link oma brauserisse:",
+      "attendingInstitution": "OSALEV INSTITUTSIOON",
+      "tagline": "Psühhodünaamiline tehisintellekt sisemaailma jaoks.",
+      "automatedFooter": "Saadetud automaatse süsteemi poolt · ärge vastake"
+    },
+    "intakeSubmitted": {
+      "subject": "teie profiili loetakse.",
+      "preheader": "Esimene läbivaatus käib. Tuba avaneb, kui töö on valmis.",
+      "eyebrow": "PROFIIL LOETUD",
+      "titleText": "Teie vastuseid loetakse.",
+      "italicPhrase": "loetakse",
+      "lede": "Esimene läbivaatus psühhodünaamiliste mudelite kaudu on käimas. Tuba avaneb, kui töö on valmis.",
+      "figLeftItalic": "vastuvõtt saadud",
+      "figRightLabel": "Esimene läbivaatus",
+      "figRightItalic": "käimas",
+      "text": "{salutation}\n\nTeie vastused on käes. Esimene läbivaatus psühhodünaamiliste mudelite kaudu on käimas. Tuba avaneb, kui töö on valmis.\n\nCognitiveLab, WelloWork AB\nOSALEV INSTITUTSIOON"
+    },
+    "roomReady": {
+      "subject": "Teie tuba on avatud.",
+      "preheader": "Kaksteist plokki lugemiseks valmis. Töö täiustub, kui te selle juurde naasete.",
+      "eyebrow": "TUBA VALMIS",
+      "titleText": "Esimene lugemine on avatud.",
+      "italicPhrase": "esimene lugemine",
+      "lede": "Kaksteist plokki psühhodünaamilist profiili, toas ja lugemiseks valmis. Töö täiustub, kui te selle juurde naasete.",
+      "ctaLabel": "Sisene tuppa",
+      "figLeftItalic": "tuba avatud",
+      "figRightLabel": "Esimene lugemine",
+      "figRightItalic": "valmis",
+      "text": "{salutation}\n\nEsimene lugemine on avatud.\n\nKaksteist plokki psühhodünaamilist profiili, toas ja lugemiseks valmis. Töö täiustub, kui te selle juurde naasete.\n\nSisene tuppa:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nOSALENUD INSTITUTSIOON"
+    },
+    "invite": {
+      "subject": "{inviterName} soovib teid lugemisse.",
+      "preheader": "{inviterName} soovib teid lugemisse. Ühendus ei näe teie lugemisi; teie ei näe nende omi.",
+      "eyebrow": "KUTSE",
+      "titleText": "{inviterName} soovib teid lugemisse.",
+      "italicPhrase": "lugemisse",
+      "lede": "TwentyThird on vaikne ruum, kus kellegi sisemaailma struktuuri loetakse hoolega. Ühendus ei näe kutsuja lugemisi ega seansse ja teie ei näe nende omi.",
+      "ctaLabel": "Ava kutse",
+      "figLeftItalic": "kutse väljastatud",
+      "figRightLabel": "Aegub",
+      "figRightItalic": "neljateistkümne päeva pärast",
+      "securityNote": "Kui see saabus ekslikult, aegub kutse iseenesest neljateistkümne päeva pärast.",
+      "textIntro": "{inviterName} soovib teid TwentyThirdi lugemisse.",
+      "textBody": "TwentyThird on vaikne ruum, kus kellegi sisemaailma struktuuri loetakse hoolega. Ühendus ei näe kutsuja lugemisi ega seansse ja teie ei näe nende omi.",
+      "textNote": "{inviterName} lisas märkuse:\n  {note}",
+      "textOpen": "Ava kutse:",
+      "textSecurity": "Kui see saabus ekslikult, aegub kutse iseenesest neljateistkümne päeva pärast.",
+      "textCloser": "CognitiveLab, WelloWork AB\nOSALENUD INSTITUTSIOON"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} on ühenduse vastu võtnud.",
+      "preheader": "{nameTitle} on ühenduse vastu võtnud. Mõju järgmisele seansile edasi.",
+      "eyebrow": "ÜHENDUS VASTU VÕETUD",
+      "titleText": "{nameTitle} on ühenduse vastu võtnud.",
+      "italicPhrase": "võttis ühenduse vastu",
+      "lede": "Nende suhte sissevõtt teavitab teie lugemist järgmisest seansist alates. Nemad ei näe teie lugemisi; teie ei näe nende omi.",
+      "ctaLabel": "Naaske tuppa",
+      "figLeftItalic": "ühendus vastu võetud",
+      "figRightLabel": "Mõju",
+      "figRightItalic": "järgmisele seansile edasi",
+      "text": "{salutation}\n\n{nameTitle} on ühenduse vastu võtnud.\n\nNende suhte sissevõtt teavitab teie lugemist järgmisest seansist alates. Nemad ei näe teie lugemisi; teie ei näe nende omi.\n\nNaaske tuppa:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} on ühenduse lõpetanud.",
+      "preheader": "{nameTitle} on ühenduse lõpetanud. Teie lugem kohandub järgmise seansi jooksul.",
+      "eyebrow": "ÜHENDUS LÕPETATUD",
+      "titleText": "{nameTitle} on ühenduse lõpetanud.",
+      "italicPhrase": "lõpetas ühenduse",
+      "lede": "Teie lugem kohandub järgmise seansi jooksul. See, mis suhte kohta öeldi, säilitatakse toimikus; see ei mõjuta enam aktiivset lugemit.",
+      "ctaLabel": "Naaske tuppa",
+      "figLeftItalic": "ühendus lõpetatud",
+      "figRightLabel": "Mõju",
+      "figRightItalic": "järgmise seansi edasi",
+      "text": "{nameTitle} on ühenduse lõpetanud.\n\nTeie lugem kohandub järgmise seansi jooksul. See, mis suhte kohta öeldi, säilitatakse toimikus; see ei mõjuta enam aktiivset lugemit.\n\nNaaske tuppa:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nOSALEV INSTITUTSIOON"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "selle nädala Catchup on avatud.",
+      "preheader": "Lühike refleksioon. Viis minutit. See värskendab lugemist.",
+      "eyebrow": "NÄDALANE CATCHUP",
+      "titleText": "Nädal on möödunud vaikselt.",
+      "italicPhrase": "vaikselt",
+      "lede": "Lühike refleksioon — mis on vali, mis on jäänud vaikseks, mis on muutunud. See värskendab lugemist.",
+      "ctaLabel": "Ava Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "viis minutit",
+      "text": "{salutation}\n\nNädal on möödunud vaikselt.\n\nLühike refleksioon — mis on vali, mis on jäänud vaikseks, mis on muutunud. See värskendab lugemist.\n\nAva Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nOSALEV INSTITUTSIOON"
+    },
+    "onboardingResume": {
+      "subject": "teie vastused on hoitud.",
+      "preheader": "Teie sissevõtt jätkub sealt, kus pooleli jäite. Töö ei alga enne, kui see on lõpetatud.",
+      "eyebrow": "SISSEVÕTT PEATATUD",
+      "titleText": "Sissevõtt on seal, kus te selle jätsite.",
+      "italicPhrase": "kus te selle jätsite",
+      "lede": "Teie sissevõtt jätkub sealt, kus pooleli jäite. Töö ei alga enne, kui see on lõpetatud.",
+      "ctaLabel": "Naaske sissevõtu juurde",
+      "figLeftItalic": "sissevõtt peatatud",
+      "figRightLabel": "Jätka",
+      "figRightItalic": "sealt, kus pooleli jäite",
+      "text": "{salutation}\n\nSissevõtt on seal, kus te selle jätsite.\n\nTeie sissevõtt jätkub sealt, kus pooleli jäite. Töö ei alga enne, kui see on lõpetatud.\n\nNaaske sissevõtu juurde:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nOSALEV INSTITUTSIOON"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Millised sõnad kirjeldavad kõige paremini kodu, kus te kasvasite.",
+          "subtitle": "valige kuni kolm sõna, mis tunduvad õiged, isegi kui need üksteisele vastu räägivad – kodud on tavaliselt segu",
+          "options": {
+            "calm": "Rahulik",
+            "strict": "Range",
+            "emotionally_distant": "Emotsionaalselt kauge",
+            "chaotic": "Käiteline",
+            "achievement_focused": "Väga saavutustele keskendunud",
+            "protective": "Kaitsev",
+            "unpredictable": "Ettearvamatu",
+            "conflict_heavy": "Konfliktiderohke"
+          }
+        },
+        "q1_2": {
+          "title": "Millise rolli te lapsena loomulikult võtsite.",
+          "subtitle": "mõelge osale, mida te oma perekonnas mängisite, ilma et keegi teile seda ütleks – rahuvalvaja, abistaja, vaikne",
+          "options": {
+            "peacemaker": "Rahuvalvaja",
+            "achiever": "Saavutaja",
+            "invisible_child": "Nähtamatu laps",
+            "caregiver": "Hooldaja",
+            "rebel": "Mässaja",
+            "funny_one": "Naljakas",
+            "responsible_one": "Vastutustundlik",
+            "problem_child": "Probleemne laps"
+          }
+        },
+        "q1_3": {
+          "title": "Kui emotsionaalselt turvaliselt te end kasvades tundsite.",
+          "subtitle": "järgige oma sisetunnet kodu kohta, mitte seda versiooni, mida perekond võõrale räägiks",
+          "lowLabel": "1 · MITTE KUNAGI TURVALINE",
+          "highLabel": "10 · TÄIELIKULT TURVALINE"
+        },
+        "q1_4": {
+          "title": "Kas emotsioone arutati kodus avatult.",
+          "subtitle": "mitte ainult see, kas tunded olid olemas, vaid kas keegi neid tegelikult nimetas või neist valjuhäälselt rääkis",
+          "options": {
+            "frequently": "Sageli",
+            "sometimes": "Mõnikord",
+            "rarely": "Harva",
+            "never": "Mitte kunagi"
+          }
+        },
+        "q1_5": {
+          "title": "Üks lapsepõlvemälestus, mis tundub tänaseni emotsionaalselt elav.",
+          "subtitle": "kirjeldage ühte konkreetset stseeni, mis teile ikka meelde tuleb – kus te olite, kes seal oli, mis juhtus, kuidas see tundus"
+        },
+        "q1_6": {
+          "title": "Mida te õppisite tegema, et saada armastust või heakskiitu.",
+          "subtitle": "väikesed asjad, mis teie arvates toimisid – hea olemine, vaikne olemine, saavutamine, eemale hoidmine – jagage, mida te mäletate kohandamas"
+        },
+        "q1_7": {
+          "title": "Milliseid emotsioone oli teie kodus raske väljendada.",
+          "subtitle": "milliseid tundeid ignoreeriti, eirati või karistati, kui te neid näidata proovisite – viha, kurbus, hirm, rõõm, mis iganes"
+        },
+        "q1_8": {
+          "title": "Mida te tunnete oma noorema mina vastu, kui te temale mõtlete.",
+          "subtitle": "olge aus tunde suhtes, mis tekib – soojus, kurbus, distants, frustratsioon, kaitsvus – mis iganes seal tegelikult on"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Kuidas kirjeldaksite oma ema või peamist emapoolset hooldajat?",
+          "subtitle": "mõned laused sellest, milline ta oli, kuidas ta teie eest hoolitses ja kuidas te end tema läheduses tundsite",
+          "options": {
+            "warm": "Soe",
+            "controlling": "Kontrolliv",
+            "emotionally_unavailable": "Emotsionaalselt kättesaamatu",
+            "sacrificing": "Ohverdav",
+            "critical": "Kriitiline",
+            "anxious": "Ärev",
+            "unpredictable": "Ettearvamatu",
+            "admired": "Imetletud",
+            "fearful": "Kartlik",
+            "not_applicable": "Ei kohaldu"
+          }
+        },
+        "q2_2": {
+          "title": "Kuidas kirjeldaksite oma isa või peamist isapoolset hooldajat?",
+          "subtitle": "mõned laused sellest, milline ta oli, kuidas ta teie eest hoolitses ja kuidas te end tema läheduses tundsite",
+          "options": {
+            "supportive": "Toetav",
+            "distant": "Kauge",
+            "dominant": "Domineeriv",
+            "passive": "Passiivne",
+            "ambitious": "Ambitsioonikas",
+            "emotionally_closed": "Emotsionaalselt suletud",
+            "protective": "Kaitsev",
+            "critical": "Kriitiline",
+            "absent": "Puuduv",
+            "not_applicable": "Ei kohaldu"
+          }
+        },
+        "q2_3": {
+          "title": "Teie õdede-vendade positsioon.",
+          "subtitle": "kus te järjekorras olite – vanim, keskmine, noorim, ainus laps või kusagil vahepeal",
+          "options": {
+            "oldest": "Vanim",
+            "middle": "Keskmine",
+            "youngest": "Noorim",
+            "only_child": "Ainus laps"
+          }
+        },
+        "q2_4": {
+          "title": "Milline roll sobib teie õdede-vendade positsiooniga kõige paremini?",
+          "subtitle": "lisaks sünnijärjekorrale, roll, mida te lõpuks mängisite – vastutustundlik, mässaja, nähtamatu, lemmik",
+          "options": {
+            "responsible": "Vastutustundlik",
+            "ignored": "Eiratud",
+            "compared": "Võrreldud teistega",
+            "favored": "Eelistatud",
+            "competitive": "Konkurentsivõimeline",
+            "protective": "Kaitsev",
+            "not_applicable": "Ei kohaldu"
+          }
+        },
+        "q2_5": {
+          "title": "Milline vanem mõistis teid kõige paremini?",
+          "subtitle": "nimetage nad ja öelge, mida nad teis nägid, mida teine vanem mööda pani või valesti mõistis"
+        },
+        "q2_6": {
+          "title": "Milline vanem mõjutas teie hirme kõige rohkem?",
+          "subtitle": "kelle muresid te lapsepõlves omandasite ja kuidas need hirmud teie elus tänapäeval ikka veel avalduvad"
+        },
+        "q2_7": {
+          "title": "Milline nägi välja konflikt teie perekonnas?",
+          "subtitle": "kirjeldage vaidluste kuju – karjumine, vaikus, paugutatud uksed, külmad nädalad, korduvad mustrid – mis iganes tundus tuttav"
+        },
+        "q2_8": {
+          "title": "Millist tähelepanu oli kõige raskem vastu võtta?",
+          "subtitle": "selline hoolitsus, mis tegi teid ebamugavaks – kiitus, mure, füüsiline lähedus, nähtavaks olemine – ja miks see raske oli"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Kui religioosne või vaimne oli keskkond, milles te üles kasvasite.",
+          "subtitle": "kodu tegelik atmosfäär – tavad, reeglid, õhus olevad uskumused – mitte see, mida te täiskasvanuna praegu usute",
+          "lowLabel": "1 · ÜLDSE MITTE",
+          "highLabel": "10 · VÄGA SÜGAVALT"
+        },
+        "q3_2": {
+          "title": "Milline sõnum oli üles kasvades kõige tugevam.",
+          "subtitle": "reegel või ootus, mida korrati nii tihti, et see muutus taustamüraks – edu, käitumise, kuvandi, kohustuse, perekonna kohta",
+          "options": {
+            "success": "Edu on kõige tähtsam",
+            "reputation": "Maine on kõige tähtsam",
+            "obedience": "Kuulekus on kõige tähtsam",
+            "family_loyalty": "Perekonna lojaalsus on kõige tähtsam",
+            "independence": "Sõltumatus on kõige tähtsam",
+            "sacrifice": "Ohverdus on kõige tähtsam"
+          }
+        },
+        "q3_3": {
+          "title": "Kui tugevalt tunnete end ühiskonna poolt hinnatuna.",
+          "subtitle": "kui palju tunnete end jälgituna või hinnatuna inimeste poolt väljaspool teie lähedast ringi – tööl, internetis, avalikkuses",
+          "lowLabel": "1 · ÜLDSE MITTE",
+          "highLabel": "10 · PIDEVALT"
+        },
+        "q3_4": {
+          "title": "Millised lapsepõlve uskumused teid siiani kujundavad.",
+          "subtitle": "väärtused, reeglid või eeldused, mille te pärisite ja mille järgi te siiani elate, isegi kui te pole neile aastaid mõelnud"
+        },
+        "q3_5": {
+          "title": "Millistele uskumustele te salaja vastu panete.",
+          "subtitle": "need, millega te avalikult nõustute, kuid millega te vaikselt ei nõustu – raha, suhete, edu, soo või millegi muu kohta"
+        },
+        "q3_6": {
+          "title": "Mida teie perekond või kogukond teie tegeliku mina juures kõige rohkem heaks ei kiidaks.",
+          "subtitle": "osad endast, oma elust või valikutest, mida te nende eest varjate, ja miks te neid varjate"
+        },
+        "q3_7": {
+          "title": "Milliseks inimeseks teid oodati saavat.",
+          "subtitle": "tulevik, mille teised teile ette kujutasid – karjäär, perekond, käitumine, kuvand – enne kui teil oli selles sõnaõigust"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Kui paljud inimesed tunnevad sind tõeliselt.",
+          "subtitle": "inimesed, kes on näinud sinu toimetamata versiooni ja keda miski sinu sisemaailmas ei šokeeriks",
+          "options": {
+            "none": "Mitte keegi",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Paljud"
+          }
+        },
+        "q4_2": {
+          "title": "Gruppides muutud sa tavaliselt.",
+          "subtitle": "roll, millesse sa mõtlemata libised – naljakas, kuulaja, juht, vaatleja, see, kes hoiab asjad sujuvana",
+          "options": {
+            "leader": "Juht",
+            "observer": "Vaatleja",
+            "entertainer": "Meelelahutaja",
+            "mediator": "Vahendaja",
+            "intellectual": "Intellektuaal",
+            "caregiver": "Hooldaja",
+            "withdrawn": "Eemaletõmbunud"
+          }
+        },
+        "q4_3": {
+          "title": "Kui väga sa kardad teistele pettumust valmistada.",
+          "subtitle": "kui palju teise inimese reaktsioon – pilk, ohke, vaikus – võib kujundada seda, mida sa ütled või teed",
+          "lowLabel": "1 · ÜLDSE MITTE",
+          "highLabel": "10 · IGAPÄEVASELT"
+        },
+        "q4_4": {
+          "title": "Milliseid osi endast sa sotsiaalselt varjad.",
+          "subtitle": "mõtted, tunded, iseloomujooned või tükid sinu ajaloost, mida sa hoiad peidus, kui oled teiste inimeste läheduses"
+        },
+        "q4_5": {
+          "title": "Millal tunned end kõige aktsepteeritumana.",
+          "subtitle": "olukorrad või suhted, kus sa lõpetad esinemise ja saad lihtsalt olla – kirjelda, mis teeb need ruumid erinevaks"
+        },
+        "q4_6": {
+          "title": "Millised sotsiaalsed olukorrad kurnavad sind kõige rohkem.",
+          "subtitle": "koosviibimised, dünaamika või suhted, mis väsitavad sind rohkem kui peaks – ja mis neis on kurnav"
+        },
+        "q4_7": {
+          "title": "Milliseid inimesi sa kadestad.",
+          "subtitle": "kadedus viitab tavaliselt millelegi, mida sa tahad, kuid mida sa pole endale lubanud avalikult tahta – kirjelda, kes seda esile kutsub ja miks"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Milliseid platvorme te aktiivselt kasutate.",
+          "subtitle": "rakendused, mida avate harjumusest, rohkem kui korra päevas, mitte need, millel teil tehniliselt konto on",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Mitte ühtegi"
+          }
+        },
+        "q5_2": {
+          "title": "Keskmine päevane kasutus platvormi kohta.",
+          "subtitle": "ligikaudne hinnang sellele, kui palju aega te tegelikult igal platvormil veedate — minutid või tunnid, ilma hinnanguta",
+          "unit": "MINUTIT PÄEVAS"
+        },
+        "q5_3": {
+          "title": "Milleks te neid peamiselt kasutate.",
+          "subtitle": "tegelik põhjus ilmse taga — ühendus, tähelepanu hajutamine, valideerimine, põgenemine, võrdlus, informatsioon",
+          "options": {
+            "validation": "Valideerimine",
+            "learning": "Õppimine",
+            "escapism": "Põgenemine",
+            "networking": "Võrgustumine",
+            "self_expression": "Eneseväljendus",
+            "entertainment": "Meelelahutus",
+            "comparison": "Võrdlus",
+            "dating": "Kohtingud"
+          }
+        },
+        "q5_4": {
+          "title": "Kui tihti te kustutate või muudate postitusi enne avaldamist.",
+          "subtitle": "kui palju te harjutate, kahtlete või kirjutate ümber seda, mida jagate, enne kui teised seda näevad",
+          "options": {
+            "always": "Alati",
+            "often": "Tihti",
+            "sometimes": "Mõnikord",
+            "rarely": "Harva",
+            "never": "Mitte kunagi"
+          }
+        },
+        "q5_5": {
+          "title": "Kui tihti te võrdlete oma elu teiste omaga internetis.",
+          "subtitle": "vaikne mõõtmine, mis toimub kerides — välimuse, edu, suhete, elustiili, kõige kohta",
+          "lowLabel": "1 · MITTE KUNAGI",
+          "highLabel": "10 · PIDEVALT"
+        },
+        "q5_6": {
+          "title": "Milline versioon endast ilmub internetis.",
+          "subtitle": "kirjeldage tegelast, keda te esitate — kureeritud versiooni — ja kuidas see erineb sellest, kes te olete, kui keegi ei vaata"
+        },
+        "q5_7": {
+          "title": "Mida te emotsionaalselt otsite, kui avate sotsiaalmeedia.",
+          "subtitle": "tunne, mida te püüdlete hetkel, mil avate rakenduse — tähelepanu hajutamine, lohutus, põnevus, tuimus, ühendus"
+        },
+        "q5_8": {
+          "title": "Milline sisu teeb teid ebamugavaks.",
+          "subtitle": "postitused või videod, mis panevad teid kiiresti edasi kerima, ja mida te arvate, et see ebamugavustunne tegelikult tähendab"
+        },
+        "q5_9": {
+          "title": "Millised inimesed köidavad teie tähelepanu internetis.",
+          "subtitle": "kontod, mille juures te peatute ja mida jälgite — kirjeldage omadusi, mida nad jagavad ja mis teid ligi tõmbab"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Teie praegune suhtestaatus.",
+          "subtitle": "kus te tegelikult praegu olete – vallaline, kohtamas, suhtes, abielus, lahus, keeruline – mitte see, kus te sooviksite olla",
+          "options": {
+            "single": "Vallaline",
+            "dating": "Kohtamas",
+            "in_relationship": "Suhtes",
+            "engaged": "Kihlatud",
+            "married": "Abielus",
+            "separated_divorced": "Lahus või lahutatud",
+            "widowed": "Lesk",
+            "its_complicated": "See on keeruline"
+          }
+        },
+        "q6_2": {
+          "title": "Mitu tõsist suhet teil on olnud.",
+          "subtitle": "need, mis olid emotsionaalselt olulised, olenemata nende kestusest või ametlikkusest",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tüüpilised konfliktid teie suhetes.",
+          "subtitle": "vaidlused, mis korduvad erinevates vormides erinevate partneritega – raha, distants, kontroll, suhtlus",
+          "options": {
+            "distance": "Distants",
+            "jealousy": "Armukadedus",
+            "control": "Kontroll",
+            "emotional_unavailability": "Emotsionaalne kättesaamatus",
+            "communication": "Suhtlus",
+            "trust": "Usaldus",
+            "dependency": "Sõltuvus"
+          }
+        },
+        "q6_4": {
+          "title": "Suhetes kipute te.",
+          "subtitle": "teie vaikimisi käitumine, kui asjad lähevad raskeks – lähenema, eemalduma, ohje haarama, sulguma, proovima parandada",
+          "options": {
+            "pursue": "Taga ajama",
+            "withdraw": "Tagasi tõmbuma",
+            "overgive": "Üle andma",
+            "test_loyalty": "Truudust proovile panema",
+            "avoid_vulnerability": "Vältima haavatavust"
+          }
+        },
+        "q6_5": {
+          "title": "Millistesse inimestesse te korduvalt armute.",
+          "subtitle": "tüüp, mis teie armuelus pidevalt ilmub – mitte ainult välimus, vaid emotsionaalsed mustrid, temperament, kuidas nad teid kohtlevad"
+        },
+        "q6_6": {
+          "title": "Mis teie suhted tavaliselt lõpetab.",
+          "subtitle": "tegelik põhjus, miks asjad lagunevad, lisaks ametlikule loole, mida te sõpradele või perele räägite"
+        },
+        "q6_7": {
+          "title": "Millist emotsionaalset vajadust te kõige enam täidetuna soovite.",
+          "subtitle": "vajadus, mida teil on kõige raskem otse küsida – nähtud olemine, valituks osutumine, turvalisus, vabadus, tahetud olemine"
+        },
+        "q6_8": {
+          "title": "Mida te intiimsuses kõige enam kardate.",
+          "subtitle": "mida lähedus teie jaoks riskib – tuntud olemine, lõksu jäämine, mahajätmine, liiga palju olemine, ebapiisav olemine"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Teie praegune tööalane staatus.",
+          "subtitle": "teie tööelu kuju praegu – palgatöötaja, füüsilisest isikust ettevõtja, töökohtade vahel, õppimine, hooldamine, midagi muud",
+          "options": {
+            "employed_full_time": "Täistööajaga töötaja",
+            "employed_part_time": "Osalise tööajaga töötaja",
+            "self_employed": "Füüsilisest isikust ettevõtja või asutaja",
+            "freelance": "Vabakutseline või lepinguline",
+            "studying": "Õppimine",
+            "between_roles": "Rollide vahel",
+            "caregiving": "Hooldamine kodus",
+            "retired": "Pensionil",
+            "not_working": "Ei tööta"
+          }
+        },
+        "q7_2": {
+          "title": "Kui rahul olete oma karjäärisuunaga.",
+          "subtitle": "töö pikem kaar, mitte see, kuidas te end konkreetsel nädalal tunnete",
+          "lowLabel": "1 · KADUNUD",
+          "highLabel": "10 · TÄPSELT ÕIGE"
+        },
+        "q7_3": {
+          "title": "Tööl olete tavaliselt.",
+          "subtitle": "viis, kuidas te professionaalselt tegutsete – roll, mille te võtate, kui keegi teile seda ei määra",
+          "options": {
+            "perfectionistic": "Perfektsionistlik",
+            "avoidant": "Vältiv",
+            "competitive": "Konkurentsivõimeline",
+            "cooperative": "Koostööaldis",
+            "over_responsible": "Üle vastutav",
+            "detached": "Eraldatud"
+          }
+        },
+        "q7_4": {
+          "title": "Teie suurim tööalane stress.",
+          "subtitle": "surve allikas, mis teid koju järgneb – inimene, töökoormus, hirm, keskkond, muster",
+          "options": {
+            "criticism": "Kriitika",
+            "failure": "Ebaõnnestumine",
+            "visibility": "Nähtavus",
+            "authority": "Autoriteet",
+            "uncertainty": "Ebakindlus",
+            "conflict": "Konflikt"
+          }
+        },
+        "q7_5": {
+          "title": "Mida edu teile emotsionaalselt tähendab.",
+          "subtitle": "tunne, mida te ette kujutate saabuvat, kui see teil lõpuks on – kergendus, uhkus, rahu, vabadus, piisav olemine"
+        },
+        "q7_6": {
+          "title": "Milline tunnustus teid kõige rohkem mõjutab.",
+          "subtitle": "kiitus, mis tõeliselt kohale jõuab ja muudab teie enesetunnet, ning see, mis põrkub tagasi, olenemata sellest, kui palju te seda saate"
+        },
+        "q7_7": {
+          "title": "Milline ebaõnnestumine teid tänapäeval veel mõjutab.",
+          "subtitle": "konkreetne ebaõnnestumine, mida te pole veel päriselt läbi töötanud – mis juhtus ja kuidas see teie valikuid ikka veel kujundab"
+        },
+        "q7_8": {
+          "title": "Kui raha kaoks, mida te teeksite.",
+          "subtitle": "töö või tegevus, mida te teeksite isegi siis, kui keegi teile selle eest ei maksaks – kirjeldage, milline see välja näeb"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Kuidas te tavaliselt stressiga toime tulete.",
+          "subtitle": "mille poole te pöördute, kui asjad raskeks lähevad – toit, ekraanid, trenn, isolatsioon, rääkimine, ained, uni, töö",
+          "options": {
+            "isolation": "Isolatsioon",
+            "food": "Toit",
+            "gaming": "Mängimine",
+            "exercise": "Trenn",
+            "overworking": "Ületöötamine",
+            "scrolling": "Kerimine",
+            "substance_use": "Ainete tarvitamine",
+            "shopping": "Ostlemine",
+            "sleeping": "Magamine",
+            "socializing": "Suhtlemine"
+          }
+        },
+        "q8_2": {
+          "title": "Kui tihti te sotsiaalselt väljas käite.",
+          "subtitle": "kui tihti te veedate aega teiste inimestega isiklikult, mitte veebis või sõnumite kaudu",
+          "options": {
+            "multiple_per_week": "Mitu korda nädalas",
+            "weekly": "Iganädalaselt",
+            "monthly": "Igakuuliselt",
+            "rarely": "Harva",
+            "never": "Mitte kunagi"
+          }
+        },
+        "q8_3": {
+          "title": "Kui tihti tunnete end üksikuna isegi grupis.",
+          "subtitle": "üksindus, mis tekib siis, kui olete inimestega ümbritsetud, kuid tunnete end siiski nähtamatuna või kaugena",
+          "lowLabel": "1 · MITTE KUNAGI",
+          "highLabel": "10 · ALATI"
+        },
+        "q8_4": {
+          "title": "Millised tegevused panevad teid ennast unustama.",
+          "subtitle": "asjad, mis haaravad teid nii sügavalt, et aeg kaob – paremuse või halvemuse poole, tervislikult või mitte"
+        },
+        "q8_5": {
+          "title": "Millele te kõige rohkem mõtlemist väldite.",
+          "subtitle": "teema või mälestus, millest te kiiresti eemale hoiate, kui see esile kerkib – endast, oma minevikust, oma tulevikust"
+        },
+        "q8_6": {
+          "title": "Millal tunnete end emotsionaalselt tuimana.",
+          "subtitle": "olukorrad, kus helitugevus langeb nulli – töö, suhted, konflikt, intiimsus, üksi olemine"
+        },
+        "q8_7": {
+          "title": "Millist harjumust on kõige raskem lõpetada.",
+          "subtitle": "käitumine, mida olete püüdnud rohkem kui korra muuta või lõpetada, edutult – kirjeldage, mis see on ja mis teid tagasi tõmbab"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Kui enesekriitiline te olete.",
+          "subtitle": "teie sisehääle toon, kui te ebaõnnestute või puudu jääte – karm, õiglane, halvustav, laastav",
+          "lowLabel": "1 · LEEBE",
+          "highLabel": "10 · HALASTAMATU"
+        },
+        "q9_2": {
+          "title": "Milline väide on teie salajasele hirmule kõige lähemal.",
+          "subtitle": "lause teie enda kohta, mis elab kõige muu all, see, mida te tunnistaksite vaid raskel päeval",
+          "options": {
+            "never_enough": "Minust ei piisa kunagi",
+            "fear_abandoned": "Kardan, et mind hüljatakse",
+            "fear_losing_control": "Kardan kontrolli kaotada",
+            "fear_failure": "Kardan ebaõnnestumist",
+            "fear_ordinary": "Kardan olla tavaline",
+            "fear_rejection": "Kardan tagasilükkamist",
+            "fear_dependence": "Kardan sõltuvust"
+          }
+        },
+        "q9_3": {
+          "title": "Kui tihti tunnete end endast lahti ühendatuna.",
+          "subtitle": "tunne, et vaatate oma elu väikese distantsilt, nagu te ei oleks selles täielikult sees",
+          "lowLabel": "1 · MITTE KUNAGI",
+          "highLabel": "10 · IGAPÄEVASELT"
+        },
+        "q9_4": {
+          "title": "Milline mõte kordub teie peas kõige sagedamini.",
+          "subtitle": "korduv lause või mure, mis regulaarselt tagasi tuleb – kirjutage see tegelike sõnadega, mitte kokkuvõttena"
+        },
+        "q9_5": {
+          "title": "Mille eest te ennast salaja kritiseerite.",
+          "subtitle": "asjad, mille eest te ennast hindate ja millest keegi teine ei tea – teie keha, meele, valikute, iseloomu kohta"
+        },
+        "q9_6": {
+          "title": "Mis paneks teid tundma, et teist piisab.",
+          "subtitle": "tingimus, mille olete endale vaikselt seadnud, et lõpuks lõõgastuda – olge aus, vastus on sageli väiksem, kui ootate"
+        },
+        "q9_7": {
+          "title": "Kui teie sisehäälel oleks isiksus, kuidas te seda kirjeldaksite.",
+          "subtitle": "selle hääle vanus, sugu, toon – ja kelle hääl see tegelikult olla võiks, kui te seda tagasi jälgite"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Mis on teile olulisem.",
+          "subtitle": "valige see, mis on praegu kõige olulisem – teised võivad endiselt olulised olla, kuid olge ausad järjestuse osas",
+          "options": {
+            "freedom": "Vabadus",
+            "love": "Armastus",
+            "recognition": "Tunnustus",
+            "stability": "Stabiilsus",
+            "power": "Võim",
+            "meaning": "Tähendus",
+            "peace": "Rahu",
+            "influence": "Mõju"
+          }
+        },
+        "q10_2": {
+          "title": "Kui lootusrikas olete oma tuleviku suhtes.",
+          "subtitle": "tunne, mis tekib tulevikule mõeldes, mitte see optimistlik vastus, mida annate teistele küsimisel",
+          "lowLabel": "1 · PUUDUB",
+          "highLabel": "10 · SÜGAVALT"
+        },
+        "q10_3": {
+          "title": "Mida te salaja kõige rohkem soovite.",
+          "subtitle": "soov, mida te pole endale veel lubanud valjusti nimetada – see, mis tundub liiga suur, liiga riskantne või liiga piinlik",
+          "options": {
+            "to_be_understood": "Et teid mõistetaks",
+            "to_be_admired": "Et teid imetletaks",
+            "to_feel_safe": "Et tunda end turvaliselt",
+            "to_be_desired": "Et teid ihaldataks",
+            "to_feel_important": "Et tunda end olulisena",
+            "to_feel_free": "Et tunda end vabana",
+            "to_belong": "Et kuhugi kuuluda"
+          }
+        },
+        "q10_4": {
+          "title": "Kirjeldage oma ideaalset tuleviku elu üksikasjalikult.",
+          "subtitle": "konkreetsed detailid – kus te olete, kellega te olete, millised on teie hommikud, töö, valgus, rütm"
+        },
+        "q10_5": {
+          "title": "Milline hirm võiks selle tuleviku hävitada.",
+          "subtitle": "asi – sisemine või väline – mis on teid varem peatanud ja võiks teid uuesti peatada, kui te seda lubate"
+        },
+        "q10_6": {
+          "title": "Milliseks osaks endast te veel püüate saada.",
+          "subtitle": "versioon teist silmapiiril – omadused, vabadused, olemise viis, mille poole te aeglaselt liigute"
+        },
+        "q10_7": {
+          "title": "Kui keegi teid ei arvustaks, kuidas te elaksite teisiti.",
+          "subtitle": "valikud, mida te teeksite, kui jälgimine lõppeks – töö, armastuse, keha, aja, raha, hääle osas"
+        },
+        "q10_8": {
+          "title": "Mida te arvate, et te tegelikult otsite.",
+          "subtitle": "sügavam asi kõigi teie eelnevate vastuste all – millele iga valik ja igatsus tegelikult viitab"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "PÄRITOLU · ARENGULINE JÄLG",
+        "headline": [
+          "Mida varajane ruum ",
+          "teile õpetas",
+          "."
+        ],
+        "lede": "Esimene osa kuulab emotsionaalset kliimat, turvalisust ja rolli, millesse teid valati. Siia salvestatud mustrid moodustavad aluse kõigele hilisemale.",
+        "title": "Päritolu",
+        "subtitle": "arenguline jälg"
+      },
+      "attachment": {
+        "eyebrow": "KIINDUMUS · PEREKONNA STRUKTUUR",
+        "headline": [
+          "Esimesed ",
+          "sidemed",
+          " ja kuju, mille nad jätsid."
+        ],
+        "lede": "Määrab teie kiindumusstiili, suhte autoriteediga ja triangulatsiooni, milles te kasvasite. Esimese sideme kuju saab malliks, mille järgi kõiki hilisemaid mõõdetakse.",
+        "title": "Kiindumus",
+        "subtitle": "perekonna struktuur"
+      },
+      "authority": {
+        "eyebrow": "AUTORITEET · SÜMBOLILINE SEADUS",
+        "headline": [
+          "Hääled, mille te ",
+          "pärisite",
+          "."
+        ],
+        "lede": "Toob esile moraalsed koodeksid, süüstruktuurid ja päritud identiteedi, mis taustal endiselt toimivad. Hääled, mille all te kasvasite, lahkuvad harva; neist saab hääl, mis teid hindab.",
+        "title": "Autoriteet",
+        "subtitle": "sümbooliline seadus"
+      },
+      "belonging": {
+        "eyebrow": "KUULUVUS · SOTSIAALNE IDENTITEET",
+        "headline": [
+          "Kes teid ",
+          "näha saab",
+          "."
+        ],
+        "lede": "Mõõdab sotsiaalset sõltuvust, identiteedi maskeerimist ja välistamise hirmu. Kuuluvus on harva tasuta; see osa küsib, millega te selle eest kauplete.",
+        "title": "Kuuluvus",
+        "subtitle": "sotsiaalne identiteet"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · IHAD JA DIGITAALNE MINA",
+        "headline": [
+          "Mina, mida te ",
+          "esitate",
+          "."
+        ],
+        "lede": "Loeb idealiseeritud mina, valideerimissilmust ja sümboolset etendust, mida te võrgus lavastate. Persona ei ole vale; see on pooleldi avaldatud soov.",
+        "title": "Persona",
+        "subtitle": "ihad ja digitaalne mina"
+      },
+      "desire": {
+        "eyebrow": "IHAD · LÄHEDUS JA KORDUVUS",
+        "headline": [
+          "Muster, mis ",
+          "kordub",
+          "."
+        ],
+        "lede": "Leiab korduva suhtelise kuju, hülgamishirmu, vastuolu iha sees. See, mis kordub, on harva valitud; see on see, mis palub end näha.",
+        "title": "Ihad",
+        "subtitle": "lähedus ja korduvus"
+      },
+      "achievement": {
+        "eyebrow": "SAAVUTUS · TÖÖ JA TUNNUSTUS",
+        "headline": [
+          "Mida te ",
+          "tõestada püüate",
+          "."
+        ],
+        "lede": "Tuvastab saavutusärevuse, tunnustusnälja ja teie suhte autoriteediga tööl. Iga ambitsiooni taga on üks või kaks inimest publikus.",
+        "title": "Saavutus",
+        "subtitle": "töö ja tunnustus"
+      },
+      "escape": {
+        "eyebrow": "PÕGENEMINE · NAUDING JA RITUAAL",
+        "headline": [
+          "Kuhu te lähete, ",
+          "et mitte siin olla",
+          "."
+        ],
+        "lede": "Identifitseerib vältimismustrid, sundmõtted ja rituaalid, mis reguleerivad naudingut. Väljapääs, mille poole te sirutate, ütleb sama palju kui ruum, mille te maha jätate.",
+        "title": "Põgenemine",
+        "subtitle": "nauding ja rituaal"
+      },
+      "self-relation": {
+        "eyebrow": "ENESE SUHE · SISEMINE DIALOOG",
+        "headline": [
+          "Hääl, mida te ",
+          "päriselt vaigistada ei suuda",
+          "."
+        ],
+        "lede": "Kaardistab super-ego piiri, häbistruktuurid ja internaliseeritud hääled. See, kuidas te endaga privaatselt räägite, on kõige ausam ülestähendus sellest, kes teid kasvatas.",
+        "title": "Enese suhe",
+        "subtitle": "sisemine dialoog"
+      },
+      "future-fantasy": {
+        "eyebrow": "TULEVIK · FANTASY, HIRM JA IHAD",
+        "headline": [
+          "Mida te ",
+          "tõeliselt otsite",
+          "."
+        ],
+        "lede": "Emotsionaalne kulminatsioon — tulevik, mida te ette kujutate, hirm, mis seda kummitab, põhiihu, mis selle all on. Viimane küsimus on esimene, mis tagastati.",
+        "title": "Tulevik-fantaasia",
+        "subtitle": "fantaasia, hirm ja ihad"
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Logi ",
+      "titleItalic": "sisse",
+      "titleAfter": ".",
+      "googleLabel": "Logi sisse Google'iga",
+      "or": "või",
+      "emailLabel": "E-POST",
+      "passwordLabel": "PAROOL",
+      "forgotPassword": "Unustasid parooli",
+      "submit": "Logi sisse",
+      "footPrompt": "Uus siin? ",
+      "footLink": "Loo konto"
+    },
+    "signUp": {
+      "titleBefore": "Loo ",
+      "titleItalic": "konto",
+      "titleAfter": ".",
+      "googleLabel": "Jätka Google'iga",
+      "or": "või",
+      "emailLabel": "E-POST",
+      "passwordLabel": "PAROOL",
+      "confirmPasswordLabel": "KINNITA PAROOL",
+      "submit": "Loo konto",
+      "footPrompt": "Juba on konto? ",
+      "footLink": "Logi sisse",
+      "resentNote": "Uus link on saadetud.",
+      "resendConfirmation": "Saada kinnitus uuesti",
+      "pendingFootPrompt": "Vale aadress? ",
+      "pendingFootLink": "Alusta uuesti"
+    },
+    "forgot": {
+      "titleBefore": "Unustasid oma ",
+      "titleItalic": "parooli",
+      "titleAfter": ".",
+      "lede": "Sisesta aadress, millega registreerusid. Saadame lingi selle lähtestamiseks.",
+      "emailLabel": "E-POST",
+      "submit": "Saada lähtestamise link",
+      "footPrompt": "Mäletasid? ",
+      "footLink": "Logi sisse",
+      "sentBackLink": "Tagasi sisselogimisse"
+    },
+    "reset": {
+      "titleBefore": "Määra ",
+      "titleItalic": "uus parool",
+      "titleAfter": ".",
+      "newPasswordLabel": "UUS PAROOL",
+      "confirmPasswordLabel": "KINNITA PAROOL",
+      "submit": "Uuenda parooli",
+      "expiredTitleBefore": "See link ",
+      "expiredTitleItalic": "ei kehti enam",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Taotle uus link"
+    },
+    "errors": {
+      "invalid_credentials": "E-post või parool ei klapi.",
+      "email_taken": "See e-post on juba registreeritud. Proovi sisse logida.",
+      "weak_password": "Kasuta vähemalt 8 märki.",
+      "passwords_dont_match": "Paroolid ei klapi.",
+      "email_invalid": "See ei näe välja kehtiv e-post.",
+      "rate_limited": "Liiga palju katseid. Proovi mõne aja pärast uuesti.",
+      "unconfirmed_email": "Kinnita esmalt oma e-post. Kontrolli postkasti.",
+      "reset_link_expired": "See link on aegunud. Taotle uus.",
+      "reset_link_invalid": "See link ei kehti enam. Taotle uus.",
+      "oauth_failed": "Google'iga ei õnnestunud ühendust saada. Proovi uuesti.",
+      "callback_failed": "Sisselogimist ei õnnestunud lõpule viia.",
+      "generic": "Midagi läks valesti. Proovi uuesti.",
+      "no_session": "Sisselogimiseks jätka."
+    },
+    "success": {
+      "checkInboxEyebrow": "KONTROLLI OMA POSTKASTI",
+      "confirmationHeadlineBefore": "Oleme saatnud ",
+      "confirmationHeadlineItalic": "kinnituslingi",
+      "confirmationHeadlineAfter": " aadressile ",
+      "confirmationLede": "Konto loomise lõpetamiseks klõpsa sellel.",
+      "resetSentEyebrow": "KONTROLLI OMA POSTKASTI",
+      "resetSentHeadlineBefore": "Kui see e-post on ",
+      "resetSentHeadlineItalic": "registreeritud",
+      "resetSentHeadlineAfter": ", oleme saatnud lähtestamise lingi.",
+      "resetSentLede": "Link töötab ühe korra ja aegub tunni jooksul. Lingi puudumine tähendab konto puudumist.",
+      "passwordUpdated": "Parool uuendatud. Logime teid sisse."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONTO",
+      "headlineBefore": "Seadistage oma",
+      "headlineItalic": "vaikne tuba",
+      "lede": "Nimi, aasta ja jaatav vastus. Seejärel algab töö.",
+      "saveFailed": "Salvestamine ebaõnnestus. Proovige mõne aja pärast uuesti.",
+      "nameLabel": "NIMI",
+      "nameRequired": "Nimi on kohustuslik.",
+      "prefilledHint": "eeltäidetud Google'ist · muudetav",
+      "yearLabel": "SÜNNIAASTA",
+      "yearRequired": "Valige aasta.",
+      "genderLabel": "SUGU",
+      "genderRequired": "Valige üks.",
+      "gender": {
+        "male": "Mees",
+        "female": "Naine",
+        "nonBinary": "Mittebinaarne",
+        "preferNotToSay": "Ei soovi öelda"
+      },
+      "languageLabel": "KEEL",
+      "termsBefore": "Nõustun",
+      "termsLink": "tingimustega",
+      "termsAnd": "ja",
+      "privacyLink": "privaatsuspoliitikaga",
+      "termsAfter": ".",
+      "submit": "Konto loomine"
+    },
+    "intro": {
+      "eyebrow": "SISSEVÕTT · VALEID VASTUSEID EI OLE",
+      "headlineBefore": "Siin ei ole",
+      "headlineItalic": "õigeid vastuseid"
+    },
+    "brief": {
+      "title": "ÜLEVAADE",
+      "hint": "lugege üks kord, siis alustage",
+      "opener": "Valed vastused – kõhklused, trükivead, vahelejätmised – räägivad sama selgelt kui õiged.",
+      "privacy": "Kõik, mida kirjutate, on privaatne. Midagi ei lahku sellest ruumist.",
+      "length": "Kuna töö on sügav, on sissevõtt pikk. Oleme selle jaganud kümneks osaks. Kogu protsess võtab aega umbes kaks tundi.",
+      "resume": "Salvestage ja jätkake teisel päeval. Muutke mis tahes osa pärast selle lõpetamist – profiil kuulab edasi.",
+      "begin": "Alusta sissevõttu"
+    },
+    "saved": {
+      "eyebrow": "SALVESTA JA PEATA",
+      "headlineItalic": "Salvestatud.",
+      "headlineAfter": "Tulge tagasi, kui olete valmis.",
+      "body": "Kõik, mida olete kirjutanud, on teie juhtumitoimikus. Tuba avaneb järgmisel korral samasse kohta.",
+      "keepGoing": "jätka",
+      "leaveRoom": "Lahku vaikselt toast"
+    },
+    "step": {
+      "label": "SAMM",
+      "of": "/",
+      "min": "MIN",
+      "progressLabel": "Sissevõtu edenemine",
+      "finalEpigraph": "viimane küsimus on alati jälle esimene.",
+      "backTo": "Samm {n}",
+      "continueTo": "Jätka sammuga {n}",
+      "submit": "Salvesta ja esita",
+      "submitReading": "lugemine…"
+    },
+    "questions": {
+      "closeTitle": "SULETUD KÜSIMUSED",
+      "closeHint": "valige, mis on tõsi",
+      "openTitle": "AVATUD KÜSIMUSED",
+      "openHint": "kirjutage, mis pinnale kerkib",
+      "countLabel": "{count, plural, one {küsimus} other {küsimust}}"
+    },
+    "saveExit": {
+      "or": "või",
+      "saveAndReturn": "salvesta ja naase hiljem"
+    },
+    "saveIndicator": {
+      "saving": "salvestamine…",
+      "saved": "salvestatud",
+      "saveFailed": "salvestamine ebaõnnestus"
+    }
+  },
+  "readings": {
+    "whatThisIs": "mis see on →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "alateadvuslikud kordused",
+        "definition": "Korduvad tunnete, tegude ja tulemuste jad, mis toimuvad väljaspool teadlikku valikut. Korduse nimetamine on selle esimene katkestus.",
+        "seedReading": "läheneb lähedusele, seejärel tekitab väikese ebaõnnestumise, et tagasi tõmbuda.",
+        "seedTakeaway": "tagasitõmbumine on kordus. mitte lähedus."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "lingvistiline alateadvus",
+        "definition": "Viis, kuidas alateadvuslik materjal ilmneb sõnavalus, kordustes, libastumistes ja kõne struktuuris — Lacani väide, et alateadvus on struktureeritud nagu keel.",
+        "seedReading": "kõne kahekordistub sõnal „peaks” — päritud nõudmise koht.",
+        "seedTakeaway": "kellegi teise hääl räägib endiselt läbi selle sõna."
+      },
+      "father-imago": {
+        "subtitle": "isa-imago",
+        "definition": "Internaliseeritud isa kujutis, mis on varakult moodustunud ja osaliselt müütiline. See kujundab, kuidas autoriteedi, ambitsioonide ja hinnangutega hilisemas elus suhestutakse.",
+        "seedReading": "hindab ülalt, enne kui teda ülalt hinnatakse — positsioon on identne.",
+        "seedTakeaway": "iste muutub. tool mitte."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intiimsuse lävi",
+        "definition": "Punkt, kus lähedus hakkab tunduma riskina ja järgneb kaitsev liigutus. Iga inimese jaoks erinev; üllatavalt stabiilne suhetes.",
+        "seedReading": "hoiab hästi, kuni teine muutub loetavaks — siis tõmbub tagasi.",
+        "seedTakeaway": "tuntud olemine on piir, mitte lähedus."
+      },
+      "desire-structure": {
+        "subtitle": "ihastruktuur",
+        "definition": "Mida kasutaja tegelikult tahab, eristatuna sellest, mida talle on öeldud, et ta tahab. Sageli avastatakse eituse kaudu — märgates, mida ta keeldub.",
+        "seedReading": "nimetab palju soove, keeldub kahest — keeldumine on signaal.",
+        "seedTakeaway": "see, mis eemale lükatakse, osutab selgemalt kui see, mida taga aetakse."
+      },
+      "professional-block": {
+        "subtitle": "professionaalne blokaad",
+        "definition": "Kus töö takerdub: alguses, keskel, lõpus või nähtavuses. Igal asukohal on oma alateadvuslik allikas.",
+        "seedReading": "finishing line on see, kuhu kahtlus saabub, mitte kunagi algus.",
+        "seedTakeaway": "blokaad on nähtavuses, mitte pingutuses."
+      },
+      "mother-imago": {
+        "subtitle": "ema-imago",
+        "definition": "Internaliseeritud ema kujutis — esimene häälestus, esimene eraldumine. See annab teavet sõltuvuse ja varjupaiga tekstuuri kohta.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "varajane häälestus jätab pika jälje."
+      },
+      "dream-logic": {
+        "subtitle": "unenäo loogika",
+        "definition": "Kondensatsioon ja nihkumine, mis toimuvad unenäomaterjalis. Lugege grammatika, mitte sümbolite järgi.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "unenäosisul on oma grammatika."
+      },
+      "relational-pattern": {
+        "subtitle": "suhtemuster",
+        "definition": "Korduv hoiak suhetes — tagaajaja, tagasitõmbuja, vanem, laps, võrdne. Stabiilne partnerite vahel rohkem kui partnerid on stabiilsed kasutaja vahel.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "sama kuju ilmub erinevates ruumides."
+      },
+      "defenses": {
+        "subtitle": "kaitsed",
+        "definition": "Iseloomulikud liigutused, mida kasutatakse raske materjali teadvusest eemal hoidmiseks — intellektualiseerimine, nihutamine, reaktsioonimoodustamine, lõhestamine. Kaitsed ei ole ebaõnnestumised; need on vanad lahendused.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "kaitse nimetab seda, mis oli kunagi talumatu."
+      },
+      "shadow": {
+        "subtitle": "vari",
+        "definition": "See, mis on lahti öeldud ja teistele omistatud — omadused, milles kasutaja on kõige kindlam, et ta ei ole. Sageli tee elujõulisuse juurde.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "see, mis on lahti öeldud, tegutseb endiselt."
+      },
+      "transference": {
+        "subtitle": "ülekandumine",
+        "definition": "Viis, kuidas vanad suhtefiguurid projitseeritakse praegustele — analüütikule, partnerile, ülemusele. Muster paljastab imago.",
+        "seedReading": "liiga vara enesekindlalt öelda — kuju on moodustumas.",
+        "seedTakeaway": "vanad figuurid saabuvad praegustesse ruumidesse."
+      }
+    },
+    "strip": {
+      "lastRefined": "viimati täpsustatud",
+      "readingDepth": "lugemise sügavus"
+    },
+    "section": {
+      "eyebrow": "LUGEMINE {index} · {subtitle}",
+      "strengthen": "tugevdada täpsust",
+      "requestReport": "taotle aruannet"
+    },
+    "card": {
+      "reading": "Lugemine {index}"
+    },
+    "report": {
+      "eyebrow": "KLIINILINE ARUANNE",
+      "heading": "Teie <it>analüütikule.</it>",
+      "lede": "12–18-leheküljeline toimik — kuus lugemist täielikult arendatud, pluss veel kuus, mida armatuurlaud ei näita: ema-imago, unenäo loogika, suhtemuster, kaitsed, vari, ülekandumine. Tõlgitud keelde, milles kliinik töötab.",
+      "note": "aruanne kajastab saadaolevat sügavust. seda saab uuesti genereerida, kui lugemine süveneb.",
+      "generate": "Genereeri kliiniline aruanne",
+      "request": "Taotle kliinilist aruannet",
+      "footPrefix": "üks aruanne sisaldub iga kuu ",
+      "footLink": "tellijatele"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "KÜSIMUS {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Mis jäi nädalast meelde?",
+        "framing": "fraas, pilt, kellegi öeldud lause."
+      },
+      "closeness": {
+        "prompt": "Kui lähedale sa kedagi lasid?",
+        "options": {
+          "not_at_all": "üldse mitte",
+          "briefly": "põgusalt",
+          "with_hesitation": "kahtlevalt",
+          "openly": "avameelselt",
+          "too_far": "liiga lähedale"
+        }
+      },
+      "loop": {
+        "prompt": "Kas tabasid end tuttavast *subconscious loop*’ist?",
+        "framing": "kus ja kuidas see lõppes."
+      },
+      "loudest_voice": {
+        "prompt": "Milline hääl oli sel nädalal kõige valjem?",
+        "options": {
+          "demand": "nõudmine",
+          "doubt": "kahtlus",
+          "desire": "ihalus",
+          "watcher": "jälgija",
+          "none": "mitte ükski neist"
+        }
+      },
+      "dream": {
+        "prompt": "Kas oli unenägu, mis vääris üleskirjutamist?",
+        "framing": "kui jah, siis fragment, mis jäi kummitama."
+      },
+      "acted_on_desire": {
+        "prompt": "Kui kaugele sa tegelikult tahetu järgi tegutsesid?",
+        "lowLabel": "üldse mitte",
+        "highLabel": "täielikult"
+      },
+      "work_catch": {
+        "prompt": "Kus töö sind tabas?",
+        "options": {
+          "start": "alguses",
+          "middle": "keskel",
+          "finish": "lõpus",
+          "visibility": "nähtavuses",
+          "nowhere": "mitte kusagil"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Mis on küsimus, millele sa praegu vastata ei taha?",
+        "framing": "see, mis pidevalt mööda libiseb."
+      }
+    },
+    "openHint": "pikemad vastused süvendavad lugemist",
+    "scaleLegend": "{low} kuni {high}",
+    "noValue": "väärtust pole valitud",
+    "valueOf": "{value} {max}st",
+    "weekLabel": "NÄDAL {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Mis jäi meelde<it>?</it>",
+    "coverLede": "Kaheksa lühikest küsimust. Ausus on parem kui pikkus. Vastused täpsustavad lugemist; siin ei hinnata midagi.",
+    "begin": "Alusta",
+    "back": "tagasi",
+    "next": "edasi",
+    "submitting": "esitan",
+    "closeTheWeek": "lõpeta nädal",
+    "previousQuestion": "eelmine küsimus",
+    "processingLine": "<em>nädalat loetakse.</em>",
+    "summaryEyebrow": "{weekLabel} · TAGASILUGEMINE",
+    "summaryTitle": "Nädal, <it>sinu enda sõnadega.</it>",
+    "caseLabel": "juhtum · {week}",
+    "justRefined": "just täpsustatud",
+    "readingsShifted": "lugemised nihkusid",
+    "readingsCount": "{n} 12st",
+    "returnToRoom": "Naase ruumi",
+    "readAgain": "loe seda uuesti toimikust",
+    "somethingToHold": "MIDAGI HOIDA",
+    "enterConsultingRoom": "sisene konsultatsiooniruumi",
+    "openConsultingRoom": "ava konsultatsiooniruum",
+    "requestReport": "taotle kliinilist aruannet",
+    "errorSubmit": "catchup'i ei saanud esitada",
+    "errorGeneric": "midagi läks valesti",
+    "errorFailed": "catchup on failis. kokkuvõte saabub hiljem.",
+    "errorGiveUp": "ruum on korraks vaikne — sinu catchup on failis. värskenda minuti pärast.",
+    "summaryFallback": "Catchup on failis. Lugemist on vaikselt uuendatud; pikem kokkuvõte saabub järgmisel korral.",
+    "readBackTitle": "Nädal, <it>juba sees.</it>",
+    "readBackEmpty": "catchup on failis. kokkuvõte on sel nädalal lühike.",
+    "readBackFoot": "järgmine catchup avaneb nädala {n} alguses."
+  },
+  "consulting": {
+    "sessionClose": "meie tund on läbi.",
+    "sayIt": "ütle see →",
+    "closeSession": "lõpeta seanss →",
+    "eyebrow": "KONSULTATSIOONIRUUM",
+    "closing": "lõpetamine",
+    "closeSessionLabel": "lõpeta seanss",
+    "timerAria": "seansi aeg on möödunud",
+    "chooseTopicAria": "vali teema",
+    "noTopic": "teemat pole",
+    "justOpened": "just avatud",
+    "minutesIn": "{count} min möödunud",
+    "speakToAnalyst": "räägi analüütikuga",
+    "send": "saada",
+    "sessionClosedFoot": "seanss on lõppenud. see on hoitud toimikus.",
+    "previewHeld": "milline osa sinust valib seda ikka ja jälle?",
+    "previewTopicDreamingFuture": "Tuleviku unistamine",
+    "previewTopicNightDream": "Öine unenägu",
+    "previewTopicRelations": "Suhted minu elus",
+    "previewTopicProfessionalGrowth": "Professionaalne areng",
+    "previewTurnAnalyst1": "Nimetate mustri, seejärel jutustate seda kui võõra oma. Pange tähele, millal <em>tagasitõmbumine</em> algab.",
+    "previewTurnUser1": "Ma lõpetan asjad alati nädalal, mil need tõsiseks lähevad.",
+    "previewTurnAnalyst2": "Hommik on otsus, mitte kohtuprotsess. Teie <em>intiimsuslävi</em> harjutas lahkumist nädalaid enne vestlust.",
+    "sayItEllipsis": "ütle see…",
+    "offerHeadline": "Konsultatsiooniruum",
+    "offerLede": "Pikk istung analüütikuga, mis toimub sama häälega nagu teie lugemised. Seansid on privaatsed, hoitakse toimikus ja toidavad lugemisi istungite vahel.",
+    "offerPanelsAria": "mida seanss teeb",
+    "offerPanel1Title": "nimetatud, mitte jutustatud",
+    "offerPanel1Body": "Analüütik nimetab, mis teie kõnes toimub – libastumise, täpsustuse, pooliku ütlemise – ja hoiab seda seal, kuni te seda näete.",
+    "offerPanel2Title": "hoitud toimikus",
+    "offerPanel2Body": "Iga istung kirjutatakse üles. Järgmine lugemine loeb seda. Mustrid ilmnevad nädalate, mitte kordade lõikes.",
+    "offerPanel3Title": "üks hääl, mitte nimekiri",
+    "offerPanel3Body": "Mitte vestlusrobotite rotatsioon. Üks analüütiline hääl, mis on treenitud teie sissevõtu põhjal ja täpsustatud iga Catchupiga.",
+    "offerFootLine": "Tellijad saavad iga kuu ühe kliinilise aruande.",
+    "offerPillCta": "Sisene konsultatsiooniruumi",
+    "offerReturnToRoom": "naase ruumi",
+    "previewFigureLabel": "konsultatsiooniruum",
+    "previewFigureSubtitle": "istung, eelvaade",
+    "previewRailAria": "toimiku alad, mida analüütik loeb",
+    "previewReadingFrom": "LOEB ALATES",
+    "previewActive": "aktiivne",
+    "previewRoleYou": "SINA",
+    "previewRoleAnalyst": "ANALÜÜTIK",
+    "previewBubble1": "Ma lõpetan asjad alati nädalal, mil need tõsiseks lähevad. Ma ei tea, miks ma seda teen.",
+    "previewAnalyst1": "Nimetate mustri, seejärel jutustate seda kui võõra oma. <em>„Ma ei tea“</em> teeb tööd – see hoiab teo kavatsuse kaugemal. Pange tähele, millal <em>tagasitõmbumine</em> algab. Sageli toimub ennetähtaegne lõpetamine varem kui lahkumine.",
+    "previewBubble2": "Varem kuidas? Eelmisel korral tundus, et ma lihtsalt ärkasin ühel hommikul ja teadsin.",
+    "previewAnalyst2": "Hommik on otsus, mitte kohtuprotsess. Teie <strong>intiimsusläve</strong> lugemine 04. nädalast märkis sama kuju – vaikne lahkumise harjutamine, kaks kuni kolm nädalat enne vestlust. Hommik on see, kui keha lõpuks nõustub sellega, mille olete juba otsustanud.",
+    "previewBubble3": "See on osa, mis mind hirmutab. Et see on juba otsustatud.",
+    "previewAnalyst3": "<em>Otsustatud</em> on sõna. Mitte <em>valitud</em>. Midagi struktuuris eelistab ennetähtaegset lõpetamist proovile. Me jätkame sinna minemist.",
+    "previewExampleMark": "NÄIDE · MITTE TEIE ANDMETEST"
+  },
+  "caseFile": {
+    "silentWeek": "— vaikne nädal —",
+    "eyebrow": "HAIGUSLUGU",
+    "headlineLead": "Kirje, hoitud",
+    "headlineItalic": "*vaikselt*.",
+    "lede": "Iga Catchup, seanss ja aruanne — hoitud kuupäevade järjekorras. Lüngad on osa registrist.",
+    "filterAria": "Filtreeri",
+    "filter": {
+      "all": "kõik",
+      "catchups": "Catchupid",
+      "sessions": "seansid",
+      "reports": "aruanded"
+    },
+    "subscriptionTitle": "Tellimus",
+    "emptyCatchups": "haiguslugu on veel tühi — esimene Catchup avab selle.",
+    "emptyCatchupsCta": "Mine Catchupi juurde",
+    "emptySessions": "haiguslugu on veel tühi — esimene konsultatsiooniseanss avab selle.",
+    "emptySessionsCta": "Mine Konsultatsiooniruumi",
+    "emptyReports": "haiguslugu on veel tühi — esimene genereeritud aruanne avab selle.",
+    "open": "ava",
+    "kindCatchup": "Catchup",
+    "kindSession": "seanss",
+    "kindReport": "kliiniline aruanne",
+    "kindReading": "vastuvõtu lugem",
+    "kindConnection": "ühenduse sündmus",
+    "entryEyebrow": "HAIGUSLUGU · SISSEKANNE",
+    "entryBackToCaseFile": "tagasi haigusloosse",
+    "entryReturnToRoom": "tagasi ruumi",
+    "sessionStillOpen": "see seanss on veel avatud. lugem ilmub pärast selle sulgemist.",
+    "entryDetailComing": "selle sissekande detailvaade on tulemas. praegu sisaldab haiguslugu kuupäeva, tüüpi ja pealkirja — ning ülejäänu on veel ruumis.",
+    "detailSummaryEyebrow": "KOKKUVÕTE · TEIE VASTUSED",
+    "detailRecommendationEyebrow": "MEIE CATCHUP",
+    "preparingRead": "valmistame lugemit ette…",
+    "readNotAssembled": "lugemit ei õnnestunud praegu kokku panna.",
+    "tryAgain": "proovi uuesti",
+    "intakeClose": "sulge",
+    "intakeEdit": "muuda",
+    "intakeSaving": "salvestamine",
+    "intakeSave": "salvesta",
+    "intakeCancel": "tühista",
+    "intakeUnsupported": "seda küsimust redigeeritakse vastuvõtu sees.",
+    "intakePickUpTo": "jätka kuni {count}.",
+    "intakeScaleSetTo": "Määratud väärtusele {value}"
+  },
+  "settings": {
+    "eyebrow": "SEADED",
+    "heading": "Ruumi <it>kuju.</it>",
+    "lede": "Miski siin ei ole püsiv. Vastuseid saab muuta, eelistusi vahetada ja toimiku saab täielikult kustutada.",
+    "blocks": {
+      "account": "Konto",
+      "readingDepth": "Lugemissügavus",
+      "notifications": "Teavitused",
+      "subscription": "Tellimus",
+      "dangerZone": "Ohutsoon"
+    },
+    "dangerZoneIntro": "ainus tagasivõtmatu tegevus ruumis.",
+    "depthSub": {
+      "intake": {
+        "title": "Teie vastuvõtt",
+        "caption": "{answered} / {total} vastatud",
+        "ctaEmpty": "Lõpetage vastuvõtt",
+        "ctaPartial": "Lisage detaile",
+        "ctaFull": "Vaadake vastuvõtt üle"
+      },
+      "catchups": {
+        "title": "Järelkontrollid",
+        "caption": "{count} viimase 8 nädala jooksul",
+        "ctaEmpty": "Lisage järelkontroll",
+        "ctaDue": "Lõpetage selle nädala järelkontroll",
+        "ctaFull": "Vaadake varasemad järelkontrollid üle"
+      },
+      "sessions": {
+        "title": "Sessioonid",
+        "caption": "{count} lõpetatud",
+        "ctaEmpty": "Alustage konsultatsiooni",
+        "ctaPartial": "Jätkake konsultatsiooni",
+        "ctaFull": "Vaadake varasemad sessioonid üle"
+      },
+      "connections": {
+        "title": "Ühendused",
+        "caption": "{count} aktiivset",
+        "ctaEmpty": "Lisage ühendus",
+        "ctaSingle": "Lisage veel üks ühendus",
+        "ctaFull": "Vaadake oma ühendused üle"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "iganädalane järelkontrolli meeldetuletus",
+        "sub": "vaikne märkus uue nädala alguses"
+      },
+      "consulting_session_reminder": {
+        "label": "konsultatsioonisessiooni meeldetuletus",
+        "sub": "meeldetuletus enne eelseisvat konsultatsiooni"
+      },
+      "connection_requests": {
+        "label": "ühendus aktsepteeritud",
+        "sub": "märkus, kui keegi teie kutse vastu võtab"
+      }
+    },
+    "toggleOn": "sees",
+    "toggleOff": "väljas",
+    "quietHours": {
+      "label": "vaiksed tunnid",
+      "sub": "selle aja jooksul ei saadeta e-kirju, teie kohaliku aja järgi",
+      "from": "alates",
+      "to": "kuni"
+    },
+    "saveFailed": "salvestamine ebaõnnestus",
+    "dangerZone": {
+      "trigger": "Kustuta konto",
+      "modalAria": "Kinnita konto kustutamine",
+      "eyebrow": "OHUTSOON",
+      "heading": "Kustuta <it>toimik.</it>",
+      "body": "See eemaldab kõik lugemised, järelkontrollid, sessioonid ja aruanded registrist. Aktiivsed ühendused lõpetatakse; mõlemat osapoolt teavitatakse. Seda ei saa tagasi võtta.",
+      "instruction": "sisestage <phrase></phrase>, et toiming lubada.",
+      "inputAria": "Sisestage kinnitusfraas",
+      "cancel": "tühista",
+      "erasing": "kustutamine…",
+      "eraseConfirm": "kustuta toimik",
+      "deleteFailed": "kustutamine ebaõnnestus"
+    },
+    "subscription": {
+      "statusLabel": "STAATUS",
+      "badge": "LIIKME LIGIPÄÄS",
+      "tagline": "Konsultatsiooniruum, avatud. <em>Lugemine, mis jätkab lugemist.</em>",
+      "features": {
+        "room": {
+          "title": "Konsultatsiooniruum",
+          "desc": "pikaajalised sessioonid analüütikuga."
+        },
+        "report": {
+          "title": "Igakuine kliiniline aruanne",
+          "desc": "üks terapeudile sobiv kaart iga kalendrikuu kohta."
+        },
+        "connections": {
+          "title": "{count} ühendust rohkem",
+          "desc": "lisage inimesed, kelle kohalolek kujundab lugemist."
+        },
+        "depth": {
+          "title": "Täielik lugemissügavus",
+          "desc": "iga peatükk avatud, detailidele piiranguteta."
+        }
+      },
+      "perMonth": "kuus",
+      "subscribe": "telli",
+      "reassurance": "<em>kohustuseta.</em> tühista igal ajal seadetest.",
+      "activeToday": "aktiivne – uueneb täna",
+      "activeRenews": "aktiivne – uueneb {days, plural, one {1 päeva} other {# päeva}} pärast",
+      "cancel": "tühista tellimus",
+      "cancelled": "tühistatud – ligipääs kuni {date}",
+      "resubscribe": "uutesti tellima"
+    },
+    "resetPassword": {
+      "sent": "lähtestamise link on saadetud aadressile {email}. kontrollige oma postkasti",
+      "sending": "saatmine",
+      "action": "lähtesta parool",
+      "error": "ei saanud saata. proovige uuesti"
+    }
+  },
+  "connections": {
+    "explainer": "Kuni {limit, plural, one {# isik, kelle kohalolek kujundab lugemist} other {# isikut, kelle kohalolek kujundab lugemist}}. Nemad ei näe teie lugemisi; teie ei näe nende omi. See, mida nad suhtest ütlevad, toidab mudelit, mis toodab teie lugemisi, ja teie oma toidab nende omi.",
+    "invite": {
+      "emailSubject": "{inviterName} soovib teid lugemisse."
+    },
+    "form": {
+      "emailLabel": "E-POST",
+      "roleLabel": "ROLL",
+      "rolePlaceholder": "vali üks",
+      "noteLabel": "LAUSE, MIDA NAD ESIMESENA LOEVAD",
+      "noteHint": "valikuline. piisab ühest reast.",
+      "addMoreSub": "lisa tellimusega rohkem",
+      "missingNameLine": "teie nime pole failis. lisage see seadetes, seejärel saatke taotlus uuesti.",
+      "addYourName": "lisage oma nimi",
+      "noteLengthError": "märkused on piiratud ühe reaga – umbes {max} tähemärgiga."
+    },
+    "list": {
+      "empty": "ühendusi veel pole. kutse võimalus on allpool.",
+      "active": "AKTIIVNE",
+      "pending": "OOTEL",
+      "since": "alates",
+      "invited": "kutsutud",
+      "received": "vastu võetud",
+      "resend": "saada uuesti",
+      "cancel": "tühista",
+      "expiresIn": "aegub {days, plural, one {# päeva} other {# päeva}} pärast"
+    },
+    "lookup": {
+      "invalidEmail": "palun sisestage kehtiv e-posti aadress.",
+      "self": "te ei saa endaga ühendust luua.",
+      "notMemberLine": "see e-post ei kuulu veel liikmete hulka. kutsuge nad kontot looma, et saaksite ühendust luua.",
+      "copyHint": "jaga registreerumislinki",
+      "copied": "link kopeeritud",
+      "requestSent": "olete sellele liikmele juba taotluse saatnud.",
+      "requestReceivedLine": "see liige on teile taotluse saatnud – kontrollige oma kutseid.",
+      "inboxLabel": "ava taotlus",
+      "alreadyConnected": "olete selle liikmega juba ühenduses.",
+      "rateLimited": "liiga palju otsinguid lühikese aja jooksul. oodake hetk, seejärel proovige uuesti.",
+      "sent": "ühenduse taotlus saadetud.",
+      "sending": "saadan…",
+      "send": "saada taotlus",
+      "limitReached": "{limit, plural, one {# ühendus on piirang. ühenduse lisamiseks katkestage see.} other {# ühendust on piirang. ühenduse lisamiseks katkestage üks.}}",
+      "limitReachedFree": "{limit, plural, one {# ühendus on tasuta taseme piirang.} other {# ühendust on tasuta taseme piirang.}}",
+      "generic": "taotlust ei saanud saata."
+    },
+    "incoming": {
+      "eyebrow": "OOTAB TEID",
+      "empty": "keegi ei oota teid.",
+      "accept": "aktsepteeri",
+      "decline": "keeldu",
+      "limitReached": "{limit, plural, one {# ühendus on piirang. selle aktsepteerimiseks katkestage see.} other {# ühendust on piirang. selle aktsepteerimiseks katkestage üks.}}",
+      "limitReachedFree": "{limit, plural, one {# ühendus on tasuta taseme piirang.} other {# ühendust on tasuta taseme piirang.}}",
+      "upsell": "tellijad lisavad rohkem",
+      "inviteExpired": "see kutse on aegunud.",
+      "inviteEnded": "see kutse ei ole enam ootel.",
+      "generic": "seda taotlust ei saanud täita."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "lähim sõber",
+      "parent": "lapsevanem",
+      "sibling": "õde-vend",
+      "co_parent": "kaasvanem"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "MÄRKUS ANALÜÜTIKULT",
+    "noteAria": "Märkus analüütikult",
+    "lede": "see ületab ruumi mahutavuse.",
+    "body": {
+      "intake": "Miski teie vastustes viitab koormusele, mis vajab tõelist hoolt – see ületab selle ruumi mahutavuse. Palun kaaluge täna arsti, terapeudi või kohaliku kriisiliiniga ühenduse võtmist. Lugemine on siin, kui te tagasi tulete.",
+      "catchup": "Miski selle nädala kokkuvõttes viitab koormusele, mis vajab tõelist hoolt – see ületab selle ruumi mahutavuse. Palun kaaluge täna arsti, terapeudi või kohaliku kriisiliiniga ühenduse võtmist. Lugemine jääb alles.",
+      "session": "See, mida te just kirjutasite, viitab koormusele, mis vajab tõelist hoolt – see ületab selle ruumi mahutavuse. Palun kaaluge täna arsti, terapeudi või kohaliku kriisiliiniga ühenduse võtmist. Saame ruumi tagasi tulla, kui olete ohutus kohas."
+    },
+    "crisisResources": "KRIISIRESSURSID",
+    "resources": {
+      "us": "Ameerika Ühendriigid",
+      "ukIe": "Ühendkuningriik ja Iirimaa",
+      "europe": "Euroopa (enamik riike)",
+      "everywhere": "Kõikjal",
+      "localEmergency": "kohalikud hädaabiteenused"
+    },
+    "hintResources": "kui te liini ei leia, on teie lähim haigla erakorralise meditsiini osakond õige ruum.",
+    "hintLink": "kriisiressursid on loetletud iga Ruumi lehe allosas.",
+    "footerLine": "TwentyThird ei asenda kliinilist ravi. Kriisi korral võtke ühendust kohaliku hädaabiliiniga.",
+    "footerRoomLabel": "ruum"
+  }
+}

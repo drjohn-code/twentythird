@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import Field from "../ui/Field";
 import Input from "../ui/Input";
 import Textarea from "../ui/Textarea";
@@ -8,6 +9,7 @@ import Textarea from "../ui/Textarea";
 type Status = "idle" | "submitting" | "success" | "error";
 
 export default function ContactForm() {
+  const t = useTranslations("marketing.contact");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -51,11 +53,11 @@ export default function ContactForm() {
         role="status"
         aria-live="polite"
       >
-        <span className="eyebrow">RECEIVED</span>
+        <span className="eyebrow">{t("form.successEyebrow")}</span>
         <h3>
-          Your note is <em>with us</em>.
+          {t("form.successHeadlineLead")} <em>{t("form.successHeadlineItalic")}</em>.
         </h3>
-        <p>We&apos;ll reply within two working days.</p>
+        <p>{t("form.successBody")}</p>
       </div>
     );
   }
@@ -65,7 +67,7 @@ export default function ContactForm() {
   return (
     <form className="contact-form" onSubmit={onSubmit} noValidate>
       <div className="field-group">
-        <Field id="contact-name" label="Name">
+        <Field id="contact-name" label={t("form.nameLabel")}>
           <Input
             id="contact-name"
             name="name"
@@ -79,7 +81,7 @@ export default function ContactForm() {
           />
         </Field>
 
-        <Field id="contact-email" label="Email">
+        <Field id="contact-email" label={t("form.emailLabel")}>
           <Input
             id="contact-email"
             name="email"
@@ -93,7 +95,7 @@ export default function ContactForm() {
           />
         </Field>
 
-        <Field id="contact-message" label="Message">
+        <Field id="contact-message" label={t("form.messageLabel")}>
           <Textarea
             id="contact-message"
             name="message"
@@ -108,18 +110,18 @@ export default function ContactForm() {
 
         <div className="contact-submit">
           <button type="submit" className="cta" disabled={submitting}>
-            <span>{submitting ? "Sending" : "Send"}</span>
+            <span>{submitting ? t("form.submitSending") : t("form.submitSend")}</span>
             <span className="arrow" aria-hidden="true">
               →
             </span>
           </button>
           {status === "error" ? (
-            <p className="contact-error">something went wrong · try again</p>
+            <p className="contact-error">{t("form.errorMessage")}</p>
           ) : null}
         </div>
 
         <span className="contact-status-vh" aria-live="polite">
-          {submitting ? "Sending your message." : ""}
+          {submitting ? t("form.submittingStatus") : ""}
         </span>
       </div>
     </form>

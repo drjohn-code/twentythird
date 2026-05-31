@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   CATCHUP_QUESTIONS,
   type CatchupAnswers,
@@ -12,7 +13,7 @@ import CTA from "@/components/ui/CTA";
 import RowLink from "@/components/ui/RowLink";
 import ReportMock from "@/components/figures/ReportMock";
 import SafetyResponse from "@/components/room/SafetyResponse";
-import { getBlock, type BlockSlug } from "@/lib/blocks";
+import { type BlockSlug } from "@/lib/blocks";
 
 type Shifted = { slug: BlockSlug; weight: number; deltaWeight: number };
 
@@ -41,6 +42,7 @@ type Phase = "cover" | "question" | "submitting" | "processing" | "summary";
 
 export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
   const router = useRouter();
+  const t = useTranslations("catchup");
   const [phase, setPhase] = useState<Phase>("cover");
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Partial<CatchupAnswers>>({});
@@ -51,7 +53,9 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
   const total = CATCHUP_QUESTIONS.length;
   const current: Question = CATCHUP_QUESTIONS[index];
   const isLast = index === total - 1;
-  const weekLabel = `WEEK ${String(weekNumber).padStart(2, "0")}`;
+  const weekLabel = t("weekLabel", {
+    n: String(weekNumber).padStart(2, "0"),
+  });
 
   const progress = useMemo(() => {
     if (phase === "cover") return 0;
@@ -97,13 +101,13 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
         const body = (await res.json().catch(() => ({}))) as {
           error?: string;
         };
-        throw new Error(body.error ?? "could not submit catchup");
+        throw new Error(body.error ?? t("errorSubmit"));
       }
       const data = (await res.json()) as { catchup_id: string };
       setPhase("processing");
       startPolling(data.catchup_id);
     } catch (e) {
-      setError(e instanceof Error ? e.message : "something went wrong");
+      setError(e instanceof Error ? e.message : t("errorGeneric"));
       setPhase("question");
     }
   }
@@ -123,15 +127,13 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
             return;
           }
           if (data.status === "failed") {
-            setError("the catchup is on file. the summary will arrive later.");
+            setError(t("errorFailed"));
             setResult({
               ...data,
               summary:
                 data.summary.length > 0
                   ? data.summary
-                  : [
-                      "The catchup is on file. The reading has been updated quietly; the longer summary will arrive on the next pass.",
-                    ],
+                  : [t("summaryFallback")],
               feedback: data.feedback,
               shifted: data.shifted ?? [],
             });
@@ -145,9 +147,7 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
       }
       if (attempts > 60) {
         // Give up after ~2 minutes; the page can be reloaded.
-        setError(
-          "the room is briefly quiet — your catchup is on file. refresh in a minute.",
-        );
+        setError(t("errorGiveUp"));
         setPhase("question");
         return;
       }
@@ -185,6 +185,8 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
         <div className="catchup-stage">
           <CatchupQuestion
             question={current}
+            index={index}
+            total={total}
             value={(answers[current.key] as string | number | null) ?? null}
             onChange={setCurrentAnswer}
           />
@@ -200,10 +202,10 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
               type="button"
               className="catchup-back"
               onClick={onBack}
-              aria-label="previous question"
+              aria-label={t("previousQuestion")}
             >
               <span aria-hidden="true">←</span>
-              <span>back</span>
+              <span>{t("back")}</span>
             </button>
 
             <button
@@ -219,10 +221,10 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
             >
               <span>
                 {phase === "submitting"
-                  ? "submitting"
+                  ? t("submitting")
                   : isLast
-                    ? "close the week"
-                    : "next"}
+                    ? t("closeTheWeek")
+                    : t("next")}
               </span>
               <span aria-hidden="true">→</span>
             </button>
@@ -233,7 +235,7 @@ export default function CatchupRunner({ weekNumber, isSubscribed }: Props) {
       {phase === "processing" ? (
         <div className="catchup-processing">
           <p className="catchup-processing-line">
-            <em>the week is being read.</em>
+            {t.rich("processingLine", { em: (c) => <em>{c}</em> })}
           </p>
         </div>
       ) : null}
@@ -258,19 +260,21 @@ function CoverScreen({
   weekLabel: string;
   onBegin: () => void;
 }) {
+  const t = useTranslations("catchup");
   return (
     <div className="catchup-cover">
-      <div className="catchup-cover-eyebrow">CATCHUP · {weekLabel}</div>
+      <div className="catchup-cover-eyebrow">
+        {t("coverEyebrow", { weekLabel })}
+      </div>
       <h1 className="catchup-cover-h">
-        What stayed with you<span className="it">?</span>
+        {t.rich("coverTitle", {
+          it: (c) => <span className="it">{c}</span>,
+        })}
       </h1>
-      <p className="catchup-cover-lede">
-        Eight short questions. Honest is better than long. Answers refine
-        the reading; nothing in here is graded.
-      </p>
+      <p className="catchup-cover-lede">{t("coverLede")}</p>
       <div className="catchup-cover-cta">
         <button type="button" className="cta" onClick={onBegin}>
-          <span>Begin</span>
+          <span>{t("begin")}</span>
           <span className="arrow" aria-hidden="true">
             →
           </span>
@@ -293,11 +297,12 @@ function SummaryScreen({
   feedback: CatchupFeedback | null;
   isSubscribed: boolean;
 }) {
+  const t = useTranslations("catchup");
+  const tr = useTranslations("readings");
   const rows = shifted.slice(0, 5).map((s) => {
-    const block = getBlock(s.slug);
     const pct = Math.round(s.weight * 100);
     return {
-      k: block.subtitle,
+      k: tr(`blocks.${s.slug}.subtitle`),
       pct: `.${String(Math.max(0, Math.min(99, pct))).padStart(2, "0")}`,
       width: pct,
     };
@@ -307,9 +312,13 @@ function SummaryScreen({
 
   return (
     <div className="catchup-summary">
-      <div className="catchup-summary-eyebrow">{weekLabel} · READ BACK</div>
+      <div className="catchup-summary-eyebrow">
+        {t("summaryEyebrow", { weekLabel })}
+      </div>
       <h2 className="catchup-summary-h">
-        The week, <span className="it">in your own words.</span>
+        {t.rich("summaryTitle", {
+          it: (c) => <span className="it">{c}</span>,
+        })}
       </h2>
       <div className="catchup-summary-body">
         {summary.map((para, i) => (
@@ -320,11 +329,11 @@ function SummaryScreen({
       {rows.length > 0 ? (
         <div className="catchup-summary-figure">
           <ReportMock
-            caseLabel={`case · ${weekLabel.toLowerCase()}`}
-            prepared="just refined"
+            caseLabel={t("caseLabel", { week: weekLabel.toLowerCase() })}
+            prepared={t("justRefined")}
             rows={rows}
-            footerLabel="readings shifted"
-            footerValue={`${shifted.length} of 12`}
+            footerLabel={t("readingsShifted")}
+            footerValue={t("readingsCount", { n: shifted.length })}
           />
         </div>
       ) : null}
@@ -338,8 +347,8 @@ function SummaryScreen({
       ) : null}
 
       <div className="catchup-summary-cta">
-        <CTA href="/room">Return to the room</CTA>
-        <RowLink href="/case-file">read it again in the case file</RowLink>
+        <CTA href="/room">{t("returnToRoom")}</CTA>
+        <RowLink href="/case-file">{t("readAgain")}</RowLink>
       </div>
     </div>
   );
@@ -352,13 +361,14 @@ function FeedbackBlock({
   feedback: CatchupFeedback;
   isSubscribed: boolean;
 }) {
+  const t = useTranslations("catchup");
   if (!feedback.consider && !feedback.recommend) return null;
 
   return (
     <div className="catchup-feedback">
       {feedback.consider ? (
         <div className="catchup-feedback-consider">
-          <div className="eyebrow">SOMETHING TO HOLD</div>
+          <div className="eyebrow">{t("somethingToHold")}</div>
           <p className="serif-i">{feedback.consider}</p>
         </div>
       ) : null}
@@ -372,14 +382,14 @@ function FeedbackBlock({
       {feedback.recommend === "session" ? (
         <RowLink href={isSubscribed ? "/consulting" : "/subscribe/confirm"}>
           {isSubscribed
-            ? "enter the consulting room"
-            : "open the consulting room"}
+            ? t("enterConsultingRoom")
+            : t("openConsultingRoom")}
         </RowLink>
       ) : null}
 
       {feedback.recommend === "report" ? (
         <RowLink href={isSubscribed ? "/readings#report" : "/reports/confirm"}>
-          request a clinical report
+          {t("requestReport")}
         </RowLink>
       ) : null}
     </div>

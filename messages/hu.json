@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSZICHODINAMIKUS INTELLIGENCIA",
+        "titleLine1": "Fejlett",
+        "titleLine2Pre": "Pszichodinamikus",
+        "titleLine2It": "MI",
+        "titleLine3Pre": "az",
+        "titleLine3It": "Önfelfedezéshez",
+        "ctaPrimary": "Kezdje meg a felfedezést",
+        "ctaGhostOr": "vagy",
+        "ctaGhostText": "olvassa el a tudományos hátteret",
+        "scroll": "görgetés"
+      },
+      "philosophy": {
+        "eyebrow": "ALAPFILOZÓFIA",
+        "titlePre": "Az 5 perces megoldások nem",
+        "titleIt": "változtatnak senkin",
+        "sub1": "Gyökérok-elemzést végzünk. Sigmund Freud alapvető felismeréseit Jacques Lacan nyelvészet, vágy és identitás terén elért áttöréseivel ötvözzük.",
+        "sub2": "A legtöbb eszköz a felszínen dolgozik. Mi ott dolgozunk, ahol az íródott – a nyelv architektúrájában, a nyelvi elszólásokban, azokban a mintákban, amelyeket még nem nevezett meg.",
+        "metaLineageLabel": "Leszármazás",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Módszer",
+        "metaMethodVal": "Strukturális",
+        "metaFocusLabel": "Fókusz",
+        "metaFocusVal": "A tudattalan"
+      },
+      "privacy": {
+        "eyebrow": "TITOKTARTÁS",
+        "titlePre": "Az adatvédelem",
+        "titleIt": "az",
+        "titlePost": "első.",
+        "lede": "A titoktartás itt nem egy funkció; ez a mélység előfeltétele. Az emberek csak ott beszélnek szabadon, ahol biztonságban érzik magukat – ezért a szoba úgy épült, hogy megvédje azt, amit mond.",
+        "rowTag": "Védőintézkedések",
+        "rowTitlePre": "Egy szoba, amely",
+        "rowTitleIt": "megtartja",
+        "rowTitlePost": "azt, amit mond.",
+        "rowBody": "A munka az Ön legvédtelenebb anyagát kéri. A szoba úgy épült, hogy bizalmasan fogadja, és elzárva tartsa mindenki elől, akinek nem szánták.",
+        "figLabel": "Adatkezelés",
+        "figSubtitle": "álló testtartás",
+        "listProcessingKey": "feldolgozás",
+        "listProcessingVal": "Minden bejegyzés hármas vakon kerül feldolgozásra.",
+        "listEncryptionKey": "titkosítás",
+        "listEncryptionVal": "Minden adat titkosított.",
+        "listProtectionKey": "védelem",
+        "listProtectionVal": "A legmagasabb szintű elérhető védelem alatt tartva.",
+        "footKey": "Cél",
+        "footVal": "egy csendes, biztonságos hely a mély beszélgetésekhez"
+      },
+      "process": {
+        "eyebrow": "MŰKÖDÉS",
+        "titlePre": "Négy lépés,",
+        "titleIt": "egy táguló kör",
+        "lede": "A kommunikáció négy lépésben mélyül el. Mindegyik tágítja azt, amit a rendszer olvasni tud – az egyszeri bevitelből az állandó beszélgetésig.",
+        "step1Sub": "mélyreható profilalkotás",
+        "step1TitlePre": "Egy",
+        "step1TitleIt": "10 lépéses",
+        "step1TitlePost": "intake.",
+        "step1Body": "Hozzon létre fiókot, és töltsön ki egy 10 lépéses intake-et. Ez a mélyreható profilalkotási fázis; az első reading teljes egészében abból épül fel, amit itt rögzít.",
+        "step2Sub": "közvetített, sosem kölcsönös",
+        "step2TitlePre": "Azok az emberek, akik",
+        "step2TitleIt": "formálnak téged",
+        "step2Body": "Adja hozzá azokat az embereket, akik formálják Önt, mindegyiket szerep szerint – partner, legközelebbi barát, szülő, testvér, társszülő. Amit ők megosztanak, az sosem látható Önnek; amit Ön megoszt, az sosem látható nekik. Csak a rendszer olvassa mindkettőt.",
+        "step3Sub": "a heti reading",
+        "step3TitlePre": "A vasárnapi",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Vasárnap esténként mondja el nekünk, mi történt a héten, és milyen érzés volt megélni. Minden Catchup finomítja a readinget – a kép élesedik, ahogy a hetek telnek.",
+        "step4Sub": "teljesen privát",
+        "step4TitlePre": "A",
+        "step4TitleIt": "Consulting Room",
+        "step4Body": "Beszéljen egy teljesen privát konzultáción az analyst-tel – egy hanggal, amely jobban ismeri Önt, mint bárki más, és 23 rétegnyi élvonalbeli AI modell alapján képzett."
+      },
+      "brain": {
+        "eyebrow": "A MUNKA",
+        "titleLine1": "A tudatalatti",
+        "titleLine2": "dekonstrukciója",
+        "state1Tag": "Minta feltérképezés",
+        "state1TitlePre": "Tudatalatti",
+        "state1TitleIt": "hurkok",
+        "state1TitlePost": "és ismétlődések.",
+        "state1Body": "Nyomon követjük a választásaiban, kapcsolati szorongásaiban és érzelmi kiváltó okaiban ismétlődő ciklusokat. E hurkok azonosításával pontosan megmutatjuk, hol térítik el tudatos szándékait a tudattalan programozások.",
+        "state2Tag": "Profilalkotás",
+        "state2TitlePre": "Mélyreható",
+        "state2TitleIt": "pszichodinamikai",
+        "state2TitlePost": "profilalkotás.",
+        "state2Body": "Lépjen túl a felszínes személyiségteszteken. Ez a pszichológiai dinamikáinak strukturális vizsgálata – feltérképezi, hogyan alakítják múltbeli tapasztalatai jelenlegi identitását, egóját és védekezési mechanizmusait.",
+        "state3Tag": "Nyelv",
+        "state3TitlePre": "Nyelvi",
+        "state3TitleIt": "tudattalan",
+        "state3TitlePost": "feltárása.",
+        "state3Body": "A lacani elméletben gyökerező MI-nk elemzi a szóasszociációit, szüneteit és beszédmintáit. Segítünk olvasni a saját gondolatai sorai között, hogy hozzáférjen a rejtett szorongásokhoz és vágyakhoz, amelyeket még nem tudott kimondani."
+      },
+      "transform": {
+        "eyebrow": "TRANSZFORMÁCIÓ",
+        "titleLine1": "Törje meg a ciklust,",
+        "titleLine2": "Aztán írja újra.",
+        "lede": "Három mozdulat a munkában. Három hely, ahol a belátás változássá válik.",
+        "row1Tag": "Kapcsolati",
+        "row1TitlePre": "Gyógyítsa meg",
+        "row1TitleIt": "kapcsolati",
+        "row1TitlePost": "dinamikáit.",
+        "row1Body": "Ugyanaz a vonzás ugyanahhoz a típusú emberhez, ugyanahhoz a harchoz, ugyanahhoz a visszavonuláshoz vonzza. Felszínre hozzuk az évek során kialakult mintázatot, megnevezzük, és figyeljük, ahogy elveszíti a gravitációját.",
+        "row1Link": "Olvassa el az esettanulmányt",
+        "row1FigLabel": "Alany 1149-A",
+        "row1FigSubtitle": "hosszútávú mintázat",
+        "row1Outcome": "visszavonult",
+        "row1SummaryRecurrenceKey": "ismétlődés",
+        "row1SummaryIntervalKey": "intervallum",
+        "row1SummaryAttractorKey": "vonzó",
+        "row1SummaryAttractorVal": "intimitásküszöb",
+        "row2Tag": "Álommunkák",
+        "row2TitlePre": "Fejtse meg az",
+        "row2TitleIt": "álomlogikát",
+        "row2TitlePost": ", igazítsa céljait.",
+        "row2Body": "Álmai a jelentés próbái. Követjük a nyelvtanukat — az eltolódásokat, a sűrítéseket, a tévedéseket — vissza ahhoz az ébrenléti döntéshez, amelyet megpróbáltak meghozni Önnek.",
+        "row2Link": "Lásd a jegyzetekkel ellátott példát",
+        "row2FigLabel": "06. ülés",
+        "row2FigSubtitle": "álombejegyzés, jegyzetekkel",
+        "row2Dream1Pre": "Vissza vagyok a szüleim házában",
+        "row2Ann1": "ősszíntér",
+        "row2Dream1Mid": ", de a szobák folyamatosan más szobákba nyílnak",
+        "row2Ann2": "egohatár",
+        "row2Dream2Pre": "Egy férfi apám hangjával",
+        "row2Ann3": "apa-imágó",
+        "row2Dream2Mid": "átad nekem egy kulcsot. A kulcs vízzé válik",
+        "row2Ann4": "eltolódás",
+        "row2Dream3Pre": "Felébredek, mielőtt kinyithatnám az ajtót",
+        "row2Ann5": "vágy / hiány",
+        "row2Key1": "ősszíntér",
+        "row2Key2": "egohatár",
+        "row2Key3": "apa-imágó",
+        "row2Key4": "eltolódás",
+        "row2Key5": "vágy / hiány",
+        "row3Tag": "Hivatás",
+        "row3TitlePre": "Oldja fel a",
+        "row3TitleIt": "szakmai",
+        "row3TitlePost": "blokkokat.",
+        "row3Body": "A plafon, amit folyamatosan elér, ritkán a képességekről szól. Ez egy forgatókönyv — korán megírva, csendesen elpróbálva — amelyet segítünk hangosan felolvasni és újraírni, mondatról mondatra.",
+        "row3Link": "A módszertani tanulmány",
+        "row3FigLabel": "Forgatókönyv-felülvizsgálat",
+        "row3FigSubtitle": "munkavázlat",
+        "row3Line1Prefix": "01 · Még",
+        "row3Line1Old": "nem állok készen.",
+        "row3Line1New": "már megengedett.",
+        "row3Line2Prefix": "02 · hogy",
+        "row3Line2Old": "kivárjam a soromat.",
+        "row3Line2New": "megnevezzem, amit akarok.",
+        "row3Line3Prefix": "03 · mert",
+        "row3Line3Old": "valaki csalódhat.",
+        "row3Line3New": "a csalódás is nyelv.",
+        "row3MetaOriginalPre": "eredeti",
+        "row3MetaOriginalIt": "11 évesen",
+        "row3MetaRevisedPre": "átdolgozott",
+        "row3MetaRevisedIt": "06. ülés"
+      },
+      "outcomes": {
+        "eyebrow": "EREDMÉNYEK",
+        "titleLine1Pre": "Kézzelfogható",
+        "titleLine1It": "betekintések",
+        "titleLine2": "Csendesen mérhető.",
+        "lede": "Adatvezérelt önismeret, klinikus nyelvezetén – nem kvíz formájában.",
+        "row1Tag": "Gyorsulás",
+        "row1TitlePre": "A végső",
+        "row1TitleIt": "rövidítés",
+        "row1TitlePost": "a valós terápiához.",
+        "row1Body": "Ami korábban sokéves kapcsolatot igényelt, az most hetekig tartó előkészülettel kezdődhet. Lépjen be terapeutája rendelőjébe, tudva, mit akar mondani.",
+        "row1Link": "Lásd a módszertant",
+        "row1FigSubtitle": "az első belátásig eltelt idő",
+        "row1TraditionalLabel": "Hagyományos út",
+        "row1AxisYr1": "1. év",
+        "row1AxisYr3": "3. év",
+        "row1AxisYr6": "6. év",
+        "row1AxisYr9": "9. év",
+        "row1AxisYr12": "12. év",
+        "row1TwentyThirdLabelPre": "A TwentyThird-del",
+        "row1AxisWk1": "1. hét",
+        "row1AxisWk4": "4. hét",
+        "row1AxisWk8": "8. hét",
+        "row1AxisWk12": "12. hét",
+        "row1SummaryFaster": "gyorsabb",
+        "row1SummaryDesc": "az első belátásig eltelt idő",
+        "row2Tag": "Jelentés",
+        "row2TitlePre": "Terapeuta-kész",
+        "row2TitleIt": "pszichológiai",
+        "row2TitlePost": "térkép.",
+        "row2Body": "Strukturális diagram Önről – exportálható, megosztható, egy képzett klinikus számára mélyen érthető. Nem személyiségteszt; egy munkavázlat.",
+        "row2Link": "Minta jelentés megtekintése",
+        "row2FigLabel": "1149-A alany",
+        "row2FigSubtitle": "strukturális profil",
+        "row2RepCase": "1149-A eset",
+        "row2RepPrepared": "készült 04 · 26",
+        "row2MetricEgo": "Én-struktúra",
+        "row2MetricObject": "Tárgykapcsolatok",
+        "row2MetricDefense": "Védekezés komplexitása",
+        "row2MetricDrive": "Ösztön szerveződés",
+        "row2MetricSymbolic": "Szimbolikus regiszter",
+        "row2FootLabel": "Domináns struktúra",
+        "row2FootVal": "obszesszív · hisztériás nyomokkal",
+        "row3Tag": "Integráció",
+        "row3TitlePre": "Személyre szabott",
+        "row3TitleIt": "integráció",
+        "row3TitlePost": "és árnyékmunka tervek.",
+        "row3Body": "Napi felszólítások és rituálék, amelyek a belátást a lapról a testbe viszik. Kicsi, szándékos. Az Ön struktúrájára épül, nem egy általános tananyagra.",
+        "row3Link": "Hogyan alkalmazkodik a terv",
+        "row3FigLabel": "23. nap",
+        "row3FigSubtitle": "napi felszólítás",
+        "row3FigPlan": "terv 04",
+        "row3Day": "Szerda",
+        "row3PromptEyebrow": "mai felszólítás · árnyékmunka",
+        "row3PromptPre": "Hol döntött ma úgy, hogy",
+        "row3PromptIt": "nem",
+        "row3PromptPost": "mutatkozik meg? És mit óvott a rejtőzködéssel?",
+        "row3Stream1Label": "légzőgyakorlat",
+        "row3Stream1Dur": "6 perc",
+        "row3Stream2Label": "napló",
+        "row3Stream2Dur": "12 perc",
+        "row3Stream3Label": "árnyék felszólítás",
+        "row3Stream3Dur": "8 perc",
+        "row3StreakLabel": "sorozat",
+        "row3StreakVal": "{n, plural, one {# nap} other {# nap}}"
+      },
+      "final": {
+        "eyebrow": "KEZDET",
+        "titlePre": "Tudattalanja beszél.",
+        "titleIt": "Ideje meghallgatni.",
+        "ctaPrimary": "Kezdje el a felfedezést",
+        "ctaGhostOr": "vagy",
+        "ctaGhostText": "olvassa el a tudományos hátteret"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Adatvédelmi irányelvek — TwentyThird",
+        "metaDescription": "Hogyan kezeli a TwentyThird a személyes adatokat. Semmi sem hagyja el az EU-t. Semmi sem kerül értékesítésre.",
+        "eyebrow": "ADATVÉDELEM",
+        "headingLead": "Személyes adatok,",
+        "headingItalic": "gondosan kezelve.",
+        "lede": "A TwentyThird feldolgozza az Ön által megosztott információkat, hogy pontos pszichodinamikai betekintést nyújtson. Semmi sem hagyja el az EU-t. Semmi sem kerül értékesítésre.",
+        "controls": {
+          "headingLead": "Ki",
+          "headingItalic": "kezeli",
+          "headingTail": "az adatait",
+          "p1": "A WelloWork AB, Svédországban bejegyzett vállalat (cégjegyzékszám: 559472‑9997), amely Uppsalából működik, az adatkezelője az ezen a weboldalon és közvetlen megkereséseken keresztül gyűjtött személyes adatoknak.",
+          "p2": "Azoknak az adatoknak az esetében, amelyeket a TwentyThird platformon belül egy szervezet – klinika, kutatóintézet, munkáltató – nevében dolgoznak fel, a WelloWork AB adatfeldolgozóként jár el, és az ügyfélszervezet az adatkezelő. Ezt a kapcsolatot külön Adatfeldolgozási Megállapodás szabályozza."
+        },
+        "figure": {
+          "label": "ki ellenőrzi az adatait",
+          "controller": "Adatkezelő",
+          "directRelationship": "közvetlen kapcsolat",
+          "websiteVisitor": "Weboldal látogató",
+          "you": "Ön",
+          "customerOrg": "Ügyfélszervezet",
+          "viaDpa": "adatfeldolgozási megállapodás útján",
+          "processor": "Adatfeldolgozó",
+          "platformUser": "Platformfelhasználó"
+        },
+        "collect": {
+          "headingLead": "Amit",
+          "headingItalic": "gyűjtünk",
+          "contactStrong": "Kapcsolattartási és fiókadatok.",
+          "contactBody": "Név, e-mail cím és minden olyan információ, amelyet a regisztrációkor vagy nekünk írva ad meg. Jogalap: szerződés teljesítése (GDPR 6. cikk (1) bekezdés b) pont).",
+          "sessionStrong": "Munkamenet- és platformadatok.",
+          "sessionBody": "Naplóbejegyzések, válaszok, álomtartalom és nyelvi minták, amelyeket megoszt a TwentyThird-ban. Ez az elemzés alapanyaga. Jogalap: kifejezett hozzájárulás (GDPR 9. cikk (2) bekezdés a) pont), amelyet a bevezetéskor ad meg, és bármikor visszavonható. Ezeket az adatokat különleges kategóriájú, egészséggel kapcsolatos adatként kezeljük, és a formális besorolástól függetlenül megfelelő biztosítékokat alkalmazunk.",
+          "technicalStrong": "Technikai adatok.",
+          "technicalBody": "IP-cím, böngésző típusa, eszközazonosítók és használati időbélyegek – automatikusan gyűjtve, amikor hozzáfér a platformhoz. Jogalap: jogos érdek (GDPR 6. cikk (1) bekezdés f) pont) a biztonság fenntartása és a hibák diagnosztizálása érdekében.",
+          "p4": "Nem gyűjtünk adatokat fajra, etnikai hovatartozásra, politikai véleményre vagy vallási meggyőződésre vonatkozóan. Ha az Ön által megosztott tartalom véletlenül ilyen információkat tár fel, azokat nem dolgozzuk fel külön kategóriaként."
+        },
+        "use": {
+          "headingLead": "Hogyan",
+          "headingItalic": "használjuk",
+          "headingTail": "azt",
+          "p1": "Adatait a TwentyThird szolgáltatás nyújtására és fejlesztésére, az Ön által kért tranzakciós üzenetek küldésére, csalás vagy visszaélés észlelésére és megelőzésére, valamint jogi kötelezettségeink teljesítésére használjuk.",
+          "p2": "Adatait nem használjuk fel hirdetési profilalkotásra. Nem adjuk el, nem licenceljük, és nem osztjuk meg adatbrókerekkel. Nem használjuk fel harmadik felek által üzemeltetett általános célú AI-modellek képzésére."
+        },
+        "sees": {
+          "headingLead": "Ki",
+          "headingItalic": "látja",
+          "headingTail": "azt",
+          "withinStrong": "A WelloWork AB-n belül:",
+          "withinBody": "Klinikusok és mérnökök, akiknek hozzáférésre van szükségük a szolgáltatás fenntartásához. A hozzáférés szerepkörhöz kötött és naplózott.",
+          "infraStrong": "Infrastruktúra-szolgáltatók:",
+          "infraBody": "Supabase (adatbázis és hitelesítés, EU régió), Vercel (tárhely, EU edge) és Postmark (tranzakciós e-mail). Mindegyikre adatfeldolgozási megállapodás vonatkozik, és kizárólag dokumentált utasításaink alapján dolgozza fel az adatokat.",
+          "legalStrong": "Jogi kötelezettség:",
+          "legalBody": "Adatokat csak akkor adunk ki az illetékes hatóságoknak, ha azt törvény írja elő, és csak a szükséges mértékben.",
+          "p4": "Az EU/EGT-n kívülre nem továbbítunk adatokat. Amennyiben ez változik, frissítjük ezt a szabályzatot, és szükség esetén új hozzájárulást kérünk."
+        },
+        "retention": {
+          "headingItalic": "Adatmegőrzés",
+          "p1": "A fiók- és platformadatokat mindaddig megőrizzük, amíg fiókja aktív, plusz 30 napig a törlés után a helyreállítás lehetővé tétele érdekében. A technikai naplókat 90 napig őrizzük meg. A kapcsolatfelvételi megkereséseket 24 hónapig tároljuk.",
+          "p2": "Ezen időszakok után az adatok véglegesen törlésre vagy visszafordíthatatlanul anonimizálásra kerülnek."
+        },
+        "rights": {
+          "headingLead": "Az Ön",
+          "headingItalic": "jogai",
+          "p1": "Ön jogosult hozzáférni az Önre vonatkozó adatokhoz, amelyeket tárolunk, javítani a pontatlanságokat, kérni a törlést, korlátozni vagy kifogásolni az adatkezelést, és géppel olvasható másolatot kapni az adathordozhatóság céljából. Amennyiben az adatkezelés hozzájáruláson alapul, azt bármikor visszavonhatja anélkül, hogy ez befolyásolná a visszavonás előtti adatkezelés jogszerűségét.",
+          "exerciseLead": "Jogainak gyakorlásához:",
+          "exerciseTail": ". 30 napon belül válaszolunk. Ha nem elégedett válaszunkkal, panaszt tehet az Integritetsskyddsmyndigheten (IMY) svéd adatvédelmi hatóságnál."
+        },
+        "children": {
+          "headingItalic": "Gyermekek",
+          "p1": "A TwentyThird nem 18 éven aluli személyeknek szól. Tudatosan nem gyűjtünk adatokat kiskorúaktól. Ha tudomásunkra jut, hogy kiskorú adatokat nyújtott be, azokat azonnal töröljük."
+        },
+        "changes": {
+          "headingItalic": "Változások",
+          "p1": "Ezt a szabályzatot gyakorlataink változásakor frissítjük. A lényeges változásokról e-mailben értesítést küldünk legalább 14 nappal azok hatályba lépése előtt. A verzió dátuma az oldal alján található.",
+          "effectivePrefix": "Hatályos:",
+          "effectiveSuffix": "· Irányadó jog: svéd jog és a GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Szolgáltatási feltételek — TwentyThird",
+        "metaDescription": "A TwentyThird használatára vonatkozó megállapodás. Úgy íródott, hogy elolvassák, ne elkerüljék.",
+        "eyebrow": "FELTÉTELEK",
+        "headingLead": "A megállapodás,",
+        "headingItalic": "világosan megfogalmazva.",
+        "lede": "Ezek a feltételek szabályozzák a TwentyThird használatát. Úgy íródtak, hogy elolvassák, ne elkerüljék.",
+        "service": {
+          "headingLead": "A",
+          "headingItalic": "szolgáltatás",
+          "p1": "A TwentyThird egy pszichodinamikus AI platform, amelyet a WelloWork AB üzemeltet. Az Ön által megosztott információkból elemző betekintést nyújt. Nem orvosi eszköz. Nem minősül pszichoterápiának, pszichiátriai diagnózisnak vagy klinikai kezelésnek. Ha pszichológiai distresszben szenved, kérjük, forduljon képzett klinikushoz vagy sürgősségi szolgálathoz."
+        },
+        "account": {
+          "headingLead": "Az Ön",
+          "headingItalic": "fiókja",
+          "p1": "A TwentyThird használatához 18 évesnek vagy idősebbnek kell lennie. Ön felelős a hitelesítő adatai titkosságának megőrzéséért. Nem oszthatja meg fiókját, és nem használhatja a platformot más személy nevében az ő kifejezett beleegyezése nélkül.",
+          "p2": "Ön a tulajdonosa az Ön által létrehozott tartalomnak – a naplóbejegyzéseinek, a válaszainak. Ezek beküldésével Ön korlátozott engedélyt ad a WelloWork AB-nek azok feldolgozására az Adatvédelmi irányelvekben leírt célokra. Tartalmát bármikor exportálhatja vagy törölheti."
+        },
+        "acceptableUse": {
+          "headingLead": "Elfogadható",
+          "headingItalic": "használat",
+          "p1": "A TwentyThird-et jogszerű személyes és szakmai önfeltárásra használhatja. Nem használhatja önmaga vagy mások bántalmazására, a platform biztonsági rendszereinek megkerülésére, az alapul szolgáló modellek visszafejtésére, vagy versengő AI rendszerek képzésére.",
+          "p2": "Fenntartjuk a jogot a jelen feltételeket megsértő fiókok felfüggesztésére vagy megszüntetésére, előzetes értesítés nélkül, ha azt a biztonság megköveteli."
+        },
+        "liability": {
+          "headingLead": "A mi",
+          "headingItalic": "felelősségünk",
+          "p1": "A TwentyThird betekintést nyújt, nem bizonyosságot. Nem garantáljuk, hogy az elemzés pontos, teljes vagy az Ön körülményeinek megfelelő. A svéd jog által megengedett mértékben felelősségünk az Ön által a releváns igényt megelőző 3 hónapban fizetett összegre korlátozódik.",
+          "p2": "Jelen feltételek egyike sem korlátozza a halálért vagy személyi sérülésért, amelyet a mi gondatlanságunk okozott, vagy a csalásért való felelősséget."
+        },
+        "disputes": {
+          "headingLead": "Irányadó jog és",
+          "headingItalic": "viták",
+          "p1": "Ezeket a feltételeket a svéd jog szabályozza. Azokat a vitákat, amelyeket nem lehet közvetlenül rendezni, az uppsalai (Svédország) bíróságok elé terjesztik, mint elsőfokú bíróság elé.",
+          "p2Lead": "Ha Ön fogyasztó az EU-ban, akkor hozzáférhet az EU online vitarendezési platformjához is a következő címen:",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Változások",
+          "p1": "Ezeket a feltételeket frissíthetjük. Az anyagi változás hatálybalépése utáni folyamatos használat elfogadást jelent. Az anyagi változásokról e-mailben értesítjük legalább 14 nappal előre.",
+          "effectivePrefix": "Hatályos:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Süti Szabályzat — TwentyThird",
+        "metaDescription": "A TwentyThird sütiket kizárólag hitelesítésre és preferenciák megőrzésére használ. Nincsenek hirdetési sütik. Nincsenek harmadik féltől származó nyomkövetők.",
+        "eyebrow": "SÜTIK",
+        "headingLead": "Amit tárolunk",
+        "headingItalic": "a böngészőjében.",
+        "lede": "A TwentyThird sütiket kizárólag hitelesítésre és preferenciák megőrzésére használ. Nem alkalmazunk hirdetési sütiket és harmadik féltől származó nyomkövetőket.",
+        "whatIs": {
+          "headingLead": "Mi a süti",
+          "headingItalic": "lényege",
+          "p1": "A süti egy kis szöveges fájl, amelyet a böngészője tárol. Ezeket arra használjuk, hogy bejelentkezve tartsa Önt, és emlékezzen a téma preferenciájára (sötét vagy világos). Ennyi."
+        },
+        "weSet": {
+          "headingLead": "Sütik",
+          "headingItalic": "amiket beállítunk",
+          "authBody": "— A Supabase állítja be. Fenntartja a hitelesített munkamenetet. Kijelentkezéskor vagy 7 nap inaktivitás után lejár. Feltétlenül szükséges.",
+          "themeBody": "— Tárolja a sötét/világos mód preferenciáját. Törlésig megmarad. Funkcionális.",
+          "p3": "Nem állítunk be hirdetési sütiket. Nem töltünk be harmadik féltől származó nyomkövető szkripteket — sem Google Analytics, sem Meta Pixel, semmilyen marketingcímke."
+        },
+        "choices": {
+          "headingLead": "Az Ön",
+          "headingItalic": "választásai",
+          "p1Lead": "A sütiket bármikor törölheti a böngészője beállításaiban. A törlés",
+          "p1Mid": "kijelentkezteti Önt. A törlés",
+          "p1Tail": "visszaállítja a megjelenítést a sötét alapértelmezettre.",
+          "p2": "Nem használunk süti hozzájárulási bannert a feltétlenül szükséges vagy funkcionális sütikhez az ePrivacy irányelv értelmében, mivel ezek nem igényelnek hozzájárulást. Ha a jövőben bevezetünk bármilyen nem alapvető sütit, azok beállítása előtt hozzájárulást kérünk."
+        },
+        "contact": {
+          "headingItalic": "Kapcsolat",
+          "p1Lead": "Kérdések a sütikkel vagy bármely más adatkezelési kérdéssel kapcsolatban:",
+          "effectivePrefix": "Hatályos:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "Ezen az oldalon",
+        "privacyPolicy": "Adatvédelmi irányelvek",
+        "termsOfService": "Szolgáltatási feltételek",
+        "cookiePolicy": "Süti-szabályzat"
+      },
+      "layout": {
+        "eyebrow": "JOGI",
+        "headingLead": "Jogi dokumentumok,",
+        "headingItalic": "világosan megfogalmazva.",
+        "lede": "Adatvédelmi irányelvek, szolgáltatási feltételek és sütikezelési szabályzat – a svéd jog és a GDPR szabályozása szerint."
+      }
+    },
+    "footer": {
+      "tagline": "Pszichodinamikus MI a belső élethez. Egy csendes szoba a komoly gondolkodáshoz.",
+      "product": "Termék",
+      "discovery": "Felfedezés",
+      "sampleReport": "Példa jelentés",
+      "integrationPlan": "Integrációs terv",
+      "company": "Vállalat",
+      "about": "Rólunk",
+      "contact": "Kapcsolat",
+      "manifesto": "Manifesztó",
+      "resources": "Források",
+      "science": "A tudomány",
+      "methodology": "Metodológia",
+      "methodPaper": "Módszertani tanulmány",
+      "caseStudy": "Esettanulmány",
+      "dreamExample": "Álom példa",
+      "legal": "Jogi",
+      "privacy": "Adatvédelem",
+      "terms": "Feltételek",
+      "cookies": "Sütik",
+      "rights": "minden jog fenntartva"
+    },
+    "about": {
+      "metaTitle": "Rólunk — TwentyThird",
+      "metaDescription": "Eredet, módszer és a fordulópont a huszonharmadik napon. A CognitiveLabban, a WelloWork AB-nál fejlesztve.",
+      "hero": {
+        "eyebrow": "RÓLUNK",
+        "headingLead": "Eredet, módszer és a",
+        "headingItalic": "huszonharmadik nap fordulópontja",
+        "lede": "A TwentyThird egy pszichodinamikus MI az önfelfedezéshez. Feltérképezi a tünetek mögötti ismétlődő hurkokat és struktúrákat — nyelv, kötődés, ismétlés — és egy munkatervet ad, nem egy kvízt.",
+        "figure": {
+          "label": "nap-23",
+          "subtitle": "fordulópont metafora",
+          "heading": "A 23 napos ív",
+          "range": "kíváncsiság → tudatosság",
+          "markerInflection": "fordulópont",
+          "summaryLabel": "nap, amikor a kérdés\nbefelé fordul"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZÓFIA",
+        "headingLead": "Freud levelezőpartnere. Fliess száma.",
+        "headingItalic": "Metaforánk",
+        "tag": "Leszármazás",
+        "row": {
+          "headingPre": "Egy",
+          "headingItalic": "23 napos ritmus",
+          "headingPost": "egy levélben javasolva, számként megőrizve.",
+          "para1": "A 23 napos ciklus Wilhelm Fliess hipotézise volt, amelyet a Freuddal folytatott levelezésében érvelt a tizenkilencedik század végén. A kortárs tudomány nem támasztja alá a rögzített bioritmusokat.",
+          "para2": "Megtartjuk a számot azért, amit megnevez — azt a küszöböt, ahol a kíváncsiság tudatossággá érik. A 23. nap egy szám, nem biológia."
+        },
+        "figure": {
+          "label": "leszármazás",
+          "subtitle": "négy horgony",
+          "row1Outcome": "javaslat",
+          "row2Duration": "Én és az Ösztönén",
+          "row2Outcome": "strukturális modell",
+          "row3Duration": "Római diskurzus",
+          "row3Outcome": "nyelvi fordulat",
+          "row4Outcome": "szintézis",
+          "summary1Key": "intervallum",
+          "summary2Key": "szál",
+          "summary2Value": "struktúra",
+          "summary3Key": "módszer",
+          "summary3Value": "pszichodinamikus"
+        }
+      },
+      "origin": {
+        "eyebrow": "EREDET",
+        "headingLead": "A CognitiveLabban fejlesztve.",
+        "headingItalic": "Megválaszolt egy kérdést, amit folyamatosan feltettek nekünk",
+        "tag": "Csapat",
+        "row": {
+          "headingLead": "Orvosok, eredetileg",
+          "headingItalic": "kognitív tréninget",
+          "para1": "A TwentyThird a WelloWork AB CognitiveLabjában kezdődött, ahol a csapat kognitív tréningrendszereket fejlesztett. Barátok és kollégák személyes kérdésekkel kezdtek fordulni hozzánk — szorongás, ismétlődő minták, a hurkok, amelyeket nem tudtak megnevezni.",
+          "para2": "Az orvosi klinikai gyakorlat, az általunk gyűjtött pilot adatok, valamint a pszichoanalízis és a lacani elmélet hosszú olvasmánylistája között volt valami, amit felajánlhattunk. A TwentyThird ebből lett."
+        },
+        "figure": {
+          "label": "csapat",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "készült 05 · 26",
+          "row1Key": "Klinikai gyakorlat",
+          "row2Key": "Kutatási eredmények",
+          "row3Key": "Alanyok a pilotban",
+          "row4Key": "Orvosok a csapatban",
+          "footerLabel": "Profil",
+          "footerValue": "klinikus–kutató hibrid"
+        }
+      },
+      "method": {
+        "eyebrow": "MÓDSZER",
+        "headingLead": "Amit a modell",
+        "headingItalic": "valójában tesz",
+        "tag": "Képességek",
+        "row": {
+          "headingLead": "A tünet alatt egy",
+          "headingItalic": "struktúra",
+          "para1": "A TwentyThird gyökérok-elemzést végez. Feltérképezi az <em>öntudatlan hurkot</em> éveken át, olvassa a <em>nyelvi tudattalant</em> a szóválasztásban és a nyelvbotlásokban, felszínre hozza a <em>kötődést</em> az intimitás küszöbén, és munkatervet ír az <em>árnyékmunkához</em>.",
+          "para2": "Az eredmény terapeuta-kész. Megnevezi a struktúrát, nem a felszínt."
+        },
+        "figure": {
+          "label": "tünet → struktúra",
+          "subtitle": "három átírás",
+          "row1Prefix": "01 · felszín",
+          "row1Old": "Halogatom a fontos munkát.",
+          "row1Next": "Az elkerülés, hogy olyannak lássanak, aki tudja.",
+          "row2Prefix": "02 · felszín",
+          "row2Old": "Mindig ugyanazzal az emberrel randizom.",
+          "row2Next": "Az apa-imágó ismétlése az intimitás küszöbén.",
+          "row3Prefix": "03 · felszín",
+          "row3Old": "Nem tudok semmit befejezni.",
+          "row3Next": "A potenciál pozíciójának feladásának megtagadása.",
+          "metaLeftLabel": "előadott",
+          "metaLeftValue": "panasz",
+          "metaRightLabel": "strukturális",
+          "metaRightValue": "olvasat"
+        }
+      },
+      "final": {
+        "eyebrow": "FOLYTATÁS",
+        "headingLead": "Olvassa el a módszert,",
+        "headingItalic": "vagy kezdje el",
+        "ctaPrimary": "Olvassa el a módszert",
+        "ctaGhostPrefix": "vagy",
+        "ctaGhostText": "írjon nekünk"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KAPCSOLAT",
+        "heroHeadlineLead": "Írjon nekünk.",
+        "heroHeadlineItalic": "Mindent elolvasunk",
+        "heroLede": "A legtöbb üzenetre hetvenkét órán belül válaszolunk. A klinikai és partneri megkeresések elsőbbséget élveznek.",
+        "formCardLabel": "űrlap",
+        "formCardSubtitle": "csak érdemi megkeresések",
+        "addressLabel": "CÍM",
+        "addressValue": "Rosendal, Uppsala, Svédország",
+        "emailLabel": "E-MAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "KEZDET",
+        "finalHeadlineLead": "Vagy csak",
+        "finalHeadlineItalic": "kezdje el",
+        "finalCta": "Kezdje el a felfedezést",
+        "finalGhostOr": "vagy",
+        "finalGhostText": "olvassa el az eredetét",
+        "disclaimer": "Sürgős mentális egészségügyi problémák esetén forduljon a helyi sürgősségi szolgálathoz vagy engedéllyel rendelkező szakemberhez. A TwentyThird nem krízisszolgálat."
+      },
+      "form": {
+        "successEyebrow": "MEGKAPVA",
+        "successHeadlineLead": "Üzenete",
+        "successHeadlineItalic": "megérkezett",
+        "successBody": "Két munkanapon belül válaszolunk.",
+        "nameLabel": "Név",
+        "emailLabel": "E-mail",
+        "messageLabel": "Üzenet",
+        "submitSend": "Küldés",
+        "submitSending": "Küldés folyamatban",
+        "errorMessage": "valami hiba történt · próbálja újra",
+        "submittingStatus": "Üzenet küldése."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodológia — TwentyThird",
+      "metaDescription": "Az első beszélgetéstől a terapeuta számára kész térképig. A TwentyThird folyamatának öt szakasza.",
+      "hero": {
+        "eyebrow": "A METÓDUS",
+        "headingLead": "Hetei előkészítés,",
+        "headingItalic": "nem évekig tartó keresés",
+        "lede": "A terápia működik. De időbe telik, mire az ember rájön, miért is van ott. A TwentyThird tömöríti az előkészítést – azt a részt, ahol megtanulja, mit is mond valójában –, így maga a szoba gyorsabban haladhat."
+      },
+      "pipeline": {
+        "eyebrow": "A FOLYAMAT",
+        "headingLead": "Öt szakasz, egy",
+        "headingItalic": "rövid",
+        "lede": "A mintavételezett beszédből egy működő dokumentum, amelyet egy klinikus nyolc perc alatt elolvashat.",
+        "stageLabel": "SZAKASZ",
+        "stage01": {
+          "name": "Mintavételezés",
+          "blurb": "Hang és szöveg irányított ülésekből. A modell a formát figyeli, nem a tartalmat.",
+          "label": "mintavételezés",
+          "subtitle": "mennyiség a kohorszban",
+          "fig": {
+            "wordsSampled": "mintavételezett szavak",
+            "sessions": "ülések",
+            "elapsed": "eltelt",
+            "medianTurn": "medián forduló"
+          }
+        },
+        "stage02": {
+          "nameLead": "Nyelvi",
+          "nameEm": "extrakció",
+          "blurb": "A modell által a leiratból kiemelt jellemzők – csendesen, bármilyen értelmezés előtt.",
+          "label": "extrakció",
+          "subtitle": "jellemzőosztályok",
+          "fig": {
+            "qualifierDensity": "minősítő sűrűség",
+            "modalVerbs": "modális igék",
+            "conditionalFrame": "feltételes keret",
+            "affectiveHedges": "affektív hedzsek",
+            "slipsMisnamings": "elírások · téves elnevezések",
+            "repetitionWindows": "ismétlődési ablakok"
+          }
+        },
+        "stage03": {
+          "nameLead": "Ismétlődés",
+          "nameEm": "észlelése",
+          "blurb": "Az a minta, amely ugyanabban a formában tér vissza, különböző évtizedekben. A jel, hogy valami strukturális.",
+          "label": "ismétlődés",
+          "subtitle": "egy minta három horgonya",
+          "fig": {
+            "row1": {
+              "durationLabel": "első munka",
+              "outcome": "plafon a 9. hónapban"
+            },
+            "row2": {
+              "durationLabel": "második",
+              "outcome": "plafon a 11. hónapban"
+            },
+            "row3": {
+              "durationLabel": "harmadik",
+              "outcome": "plafon a 8. hónapban"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Forgatókönyv",
+          "nameEm": "rekonstrukció",
+          "blurb": "A minta alatti mondat. Régi sor, majd egy lehetséges felülvizsgálat, amelyet a páciens gyakorolhat.",
+          "label": "rekonstrukció",
+          "subtitle": "munkavázlat",
+          "fig": {
+            "row1": {
+              "prefix": "Én",
+              "old": "még nem állok készen.",
+              "next": "már megengedett."
+            },
+            "row2": {
+              "prefix": "arra, hogy",
+              "old": "várjak, hogy kiválasszanak.",
+              "next": "megnevezzem, amit akarok."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Térkép a",
+          "nameEm": "klinikusnak",
+          "blurb": "Három címkézett mérő és egy egysoros strukturális olvasat. Nyolc perc olvasni, hetekig használni.",
+          "label": "klinikai átadás",
+          "subtitle": "munkavázlat",
+          "fig": {
+            "casePrefix": "eset",
+            "preparedPrefix": "előkészítve",
+            "egoStructure": "Én-struktúra",
+            "objectRelations": "Tárgykapcsolatok",
+            "symbolicRegister": "Szimbolikus regiszter",
+            "footerLabel": "Olvasat",
+            "footerValue": "obszesszív · hisztériás nyomokkal"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "HATÓKÖR",
+        "headingLead": "Amit mérünk, és amit",
+        "headingItalic": "elutasítunk",
+        "headingTail": ".",
+        "measureHead": "Amit mérünk",
+        "refuseHead": "Amit nem",
+        "measure": {
+          "languagePatterns": {
+            "k": "nyelvi mintázatok",
+            "gloss": "Minősítő sűrűség, modális igék, hedzsek, feltételes keretek."
+          },
+          "recurrence": {
+            "k": "ismétlődés",
+            "gloss": "Mintázatok, amelyek ugyanabban a formában térnek vissza évek során."
+          },
+          "narrativeCoherence": {
+            "k": "narratív koherencia",
+            "gloss": "Hogyan mesélnek el egy életet, hol látszanak a varratok."
+          },
+          "attachmentMarkers": {
+            "k": "kötődési markerek",
+            "gloss": "Hol lépi át az intimitás a küszöböt, mi következik."
+          },
+          "linguisticSlips": {
+            "k": "nyelvi elírások",
+            "gloss": "Téves elnevezések, kondenzációk, eltolódások."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD kategóriák",
+            "gloss": "A nozológia külön eszköz, amelyet klinikusok használnak."
+          },
+          "iqCognition": {
+            "k": "IQ vagy kogníció",
+            "gloss": "Kívül esik a hatókörön. A modell pszichodinamikus, nem pszichometriai."
+          },
+          "personalityTypes": {
+            "k": "személyiségtípusok",
+            "gloss": "Az ötfaktoros modell és leszármazottai nem részei a feladatnak."
+          },
+          "riskScores": {
+            "k": "kockázati pontszámok",
+            "gloss": "Az akut kockázat a klinikus döntése, nem a modellé."
+          },
+          "predictions": {
+            "k": "előrejelzések",
+            "gloss": "Struktúra, nem előrejelzés. Azt nevezzük meg, ami van, nem azt, ami jön."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Tömörítés",
+        "headingLead": "Úgy lépjen be, hogy tudja, mit",
+        "headingItalic": "mondjon",
+        "body1": "A terápia nem az a hely, ahol kitaláljuk a kérdést. Hanem az a hely, ahol együtt élünk vele. Az általunk kínált tömörítés a megközelítésre vonatkozik – azokra a hónapokra, amelyeket egy klinikus általában a feladat formájának meghallgatásával tölt.",
+        "body2": "A pilot kohorszban az előkészített alanyok kevesebb ülésen érték el a működő szövetséget. Az olvasat már ott volt.",
+        "figure": {
+          "label": "szövetség",
+          "subtitle": "medián ülésszám a működő szövetségig",
+          "heading": "Idő a működő szövetségig",
+          "range": "medián a kohorszban",
+          "markerUnprepared": "felkészületlen",
+          "markerPrepared": "felkészült",
+          "summaryLabel": "kevesebb ülés a\nműködő szövetségig"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "FOLYTATÁS",
+        "headingLead": "Kezdje el,",
+        "headingItalic": "vagy tekintsen meg egy mintajelentést",
+        "beginLabel": "Kezdje el",
+        "or": "vagy",
+        "ghostLabel": "mintajelentés megtekintése"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRÁCIÓ",
+        "headlineLead": "Betekintés, majd",
+        "headlineItalic": "szokás",
+        "lede": "Egy minta megnevezése csupán az első lépés. A terv a második – napi felszólítások és apró rituálék, amelyek az Ön struktúrája köré épülnek, nem egy általános tanterv köré."
+      },
+      "week": {
+        "eyebrow": "EGY HÉT A TERVBEN",
+        "headlineLead": "Hét felszólítás,",
+        "headlineItalic": "egy struktúra",
+        "lede": "Reflektív, megtestesült, írott. A hét a jelentésben megnevezett minta körül lélegzik, nem egy tanterv körül.",
+        "days": {
+          "mon": {
+            "day": "HÉTFŐ",
+            "prompt": "„Hol döntött úgy ma, hogy <em>nem</em> mutatkozik meg?”",
+            "stream": {
+              "journal": "napló",
+              "shadowPrompt": "árnyék-felszólítás"
+            }
+          },
+          "tue": {
+            "day": "KEDD",
+            "prompt": "„Sétáljon céltalanul. Jegyezzen fel egy dolgot, amit majdnem kimondott.”",
+            "stream": {
+              "walking": "séta",
+              "note": "jegyzet"
+            }
+          },
+          "wed": {
+            "day": "SZERDA",
+            "prompt": "„Mit minősített túl ma, és mi volt az <em>minősítetlen</em> mondat alatta?”",
+            "stream": {
+              "breathWork": "légzésgyakorlat",
+              "journal": "napló",
+              "shadowPrompt": "árnyék-felszólítás"
+            }
+          },
+          "thu": {
+            "day": "CSÜTÖRTÖK",
+            "prompt": "„Testpásztázás a toroktól lefelé. Hol lakozik a feszültség?”",
+            "stream": {
+              "bodyScan": "testpásztázás",
+              "note": "jegyzet"
+            }
+          },
+          "fri": {
+            "day": "PÉNTEK",
+            "prompt": "„Írja le azt a mondatot, amit akkor mondott volna, ha már <em>megengedett</em> lett volna.”",
+            "stream": {
+              "journal": "napló",
+              "rewrite": "átírás"
+            }
+          },
+          "sat": {
+            "day": "SZOMBAT",
+            "prompt": "„Hosszú séta. Nincsenek felszólítások. Figyelje meg, mit hoz vissza a csend.”",
+            "stream": {
+              "walking": "séta",
+              "rest": "pihenés"
+            }
+          },
+          "sun": {
+            "day": "VASÁRNAP",
+            "prompt": "„Olvassa vissza a hetet. Melyik sor volt már <em>igaz</em>?”",
+            "stream": {
+              "review": "áttekintés",
+              "note": "jegyzet"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTÁCIÓ",
+        "headlineLead": "A terv",
+        "headlineItalic": "csökken",
+        "tag": "Adaptáció",
+        "rowHeadingLead": "Az előző heti ismétlődés határozza meg a következő heti",
+        "rowHeadingItalic": "sűrűséget",
+        "body": "Amikor a mintázat ereje csökken, a felszólítások ritkulnak. Amikor egy mintázat felerősödik, a felszólítások visszatérnek. A cél nem a ragaszkodás. A cél a legkisebb állványzat, amire a struktúrának még szüksége van.",
+        "figure": {
+          "label": "felszólítási sűrűség",
+          "subtitle": "1–8. hét",
+          "heading": "Felszólítások száma · hetenként",
+          "range": "csökken, ahogy az ismétlődés gyengül",
+          "markers": {
+            "wk1": "1. hét",
+            "wk3": "3. hét",
+            "wk5": "5. hét",
+            "wk8": "8. hét"
+          },
+          "summaryLabel": "kevesebb felszólítás\na 8. hétre"
+        }
+      },
+      "shadow": {
+        "eyebrow": "ÁRNYÉKMUNKA",
+        "headlineLead": "Nem katarzis.",
+        "headlineItalic": "Kimondás",
+        "tag": "Árnyék",
+        "rowHeadingLead": "Az elmondhatatlan kimondásának tudatos gyakorlata",
+        "rowHeadingItalic": "elmondhatatlan",
+        "body": "Az árnyékmunka ebben a kontextusban nem leleplezés. Nem tisztítótűz. Ez a lassú gyakorlata annak, hogy – először önmagunknak – elmondjuk azt, amit megtanultunk elhallgatni. Három előtte/utána sor valós tervekből.",
+        "figure": {
+          "label": "árnyék-revíziók",
+          "subtitle": "három sor, munkavázlat",
+          "rows": {
+            "r1": {
+              "prefix": "01 · önmagamnak",
+              "old": "Nem érdemlem meg ezt.",
+              "next": "Még nem gyakoroltam, hogy hangosan akarjam."
+            },
+            "r2": {
+              "prefix": "02 · önmagamnak",
+              "old": "Már túl kellene lennem ezen.",
+              "next": "a kölcsönzött idővonal nem ilyen gyászra készült."
+            },
+            "r3": {
+              "prefix": "03 · önmagamnak",
+              "old": "Túl sok vagyok.",
+              "next": "Pontosan az a hangerő vagyok, amire a szoba nem épült."
+            }
+          },
+          "metaLeft": {
+            "label": "korábban",
+            "value": "önmagamról mondott"
+          },
+          "metaRight": {
+            "label": "most",
+            "value": "önmagamnak mondott"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "KERET",
+        "headlineLead": "Struktúra tartja, nem",
+        "headlineItalic": "tanterv",
+        "body1": "A tanterv egy idegen által kialakított lépéssorozat. A struktúra az a forma, amelyet az Ön saját élete felvesz. A terv az utóbbihoz igazodik. Minden felszólítás a jelentés egy sorához kapcsolódik – amikor a sor feloldódik, a felszólítás is eltűnik.",
+        "body2": "Semmi sem állandó itt. A terv bérelt. A struktúra az Öné.",
+        "closeout": "a struktúra az Öné · a terv bérelt"
+      },
+      "final": {
+        "eyebrow": "FOLYTATÁS",
+        "headlineLead": "Kezdje el,",
+        "headlineItalic": "vagy olvassa el a tudományt",
+        "beginCta": "Kezdje el",
+        "or": "vagy",
+        "readScience": "olvassa el a tudományt"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "A tudomány — TwentyThird",
+        "description": "Egy évszázad pszichoanalitikus elmélete és négy évtized empirikus kutatása a mintázatok, a nyelv és a tudattalan terén."
+      },
+      "hero": {
+        "eyebrow": "AZ ALAP",
+        "headlineLead": "A tudomány a",
+        "headlineItalic": "hallgatás",
+        "headlineTail": " mögött.",
+        "lede": "A TwentyThird egy évszázad pszichoanalitikus elméletére és négy évtized empirikus kutatására épül, amely a mintázatokat, a nyelvet és a tudattalant vizsgálja. Ezt olvassuk, és ezért."
+      },
+      "lineages": {
+        "eyebrow": "KÉT VONAL",
+        "headlineLead": "Freud struktúrája. Lacan",
+        "headlineItalic": "levele",
+        "headlineTail": ".",
+        "lede": "A tudattalan két olvasata, fél évszázad különbséggel. Együtt alkotják a módszer gerincét.",
+        "freud": {
+          "headlineLead": "A",
+          "headlineItalic": "strukturális",
+          "headlineTail": " tudattalan.",
+          "body1": "Freud maradandó hozzájárulása strukturális, nem tematikus. A dinamikus tudattalan nem elfeledett tartalmak pincéje – a lélek működő szerve, amely próbál, ismétel, áttesz.",
+          "body2": "Az ismétlés klinikusaként olvassuk őt. Ugyanaz a jelenet különböző évtizedekben tér vissza. Ez az ismétlődés az a jel, amelyet a modell megtanul megtalálni.",
+          "figure": {
+            "label": "ismétlődés",
+            "subtitle": "öt horgony, egy struktúra",
+            "outcome": "visszahúzódás",
+            "rows": {
+              "anchor1": "korai serdülőkor",
+              "anchor2": "első hosszú kötelék",
+              "anchor3": "második hosszú kötelék",
+              "anchor4": "harmadik kötelék",
+              "anchor5": "negyedik kötelék"
+            },
+            "summary": {
+              "recurrenceLabel": "ismétlődés",
+              "intervalLabel": "intervallum",
+              "attractorLabel": "attraktor",
+              "attractorValue": "intimitásküszöb"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "A tudattalan úgy épül fel, mint egy",
+          "headlineItalic": "nyelv",
+          "headlineTail": ".",
+          "body1Lead": "Lacan olvasata eltolja a mezőt. A jelölő mozog; a jelentés metonímia és metafora láncain csúszik. A tükörstádium nevezi meg az alapító téves felismerést.",
+          "body1Italic": "A vágy a Másik vágya.",
+          "body2": "A mi folyamatunkban ez konkrét. Az álmokat és az éber beszédet szövegként olvassuk – az eltolódások, sűrítések és elszólások hordozzák a strukturáló nyelvtant.",
+          "figure": {
+            "label": "nyelvi jel",
+            "subtitle": "álomrészlet, jegyzetekkel",
+            "dreamLead": "„A szoba, ahol gyermekkoromban laktam, egy másik ajtóval rendelkezik, amire nem emlékszem",
+            "ann1": "eltolódás",
+            "dreamMid1": ". Mögötte a felügyelőm hangja",
+            "ann2": "sűrítés",
+            "dreamMid2": "rossz néven szólít",
+            "ann3": "elszólás",
+            "dreamTail": ".”",
+            "key1": "eltolódás",
+            "key2": "sűrítés",
+            "key3": "elszólás"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRIKUS HORGONYOK",
+        "headlineLead": "Amit a kortárs kutatás",
+        "headlineItalic": "hozzátesz",
+        "headlineTail": ".",
+        "lede": "Öt konvergáló szál a kötődés-, narratíva- és folyamatkutatásból. Nem teljes bibliográfia – azok a horgonyok, amelyeken a modell ténylegesen nyugszik.",
+        "figure": {
+          "label": "empirikus horgonyok",
+          "subtitle": "konvergáló bizonyítékok",
+          "caseLabel": "irodalom · szintézis",
+          "prepared": "frissítve 04 · 26",
+          "rows": {
+            "attachment": "A kötődés folytonossága évtizedeken át",
+            "alliance": "A terápiás szövetség mint kimeneteli előrejelző",
+            "narrative": "Narratív koherencia és jólét",
+            "relational": "Implicit relációs tudás",
+            "script": "Forgatókönyv-elmélet a szakmai elakadásban"
+          },
+          "footerLabel": "Szintézis",
+          "footerValue": "konvergáló bizonyítékok · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "AMIT NEM ÁLLÍTUNK",
+        "headlineLead": "A munka őszinte",
+        "headlineItalic": "határai",
+        "headlineTail": ".",
+        "claim1Strong": "Nem helyettesítjük a terapeutát.",
+        "claim1Body": "A modell előkészíti a beszélgetést. Nem tartja azt.",
+        "claim2Strong": "Nem vagyunk diagnosztikai eszköz a DSM vagy ICD szerint.",
+        "claim2Body": "Azok a kategóriák, amelyekben dolgozunk, strukturálisak – obszesszív, hisztérikus, fóbiás – nem nozológiaiak. Azt nevezik meg, hogyan szerveződik egy személy, nem azt, hogy mi van neki.",
+        "claim3Strong": "A 23 napos ciklus metafora.",
+        "claim3Body": "A szám Wilhelm Fliess Freudnak írt levelezéséből származik a tizenkilencedik század végéről. A kortárs tudomány nem támasztja alá a rögzített bioritmusokat. Megtartjuk a számot azért, amit megnevez – a kíváncsiságból a tudatosságba való átmenetet."
+      },
+      "reading": {
+        "eyebrow": "TOVÁBBI OLVASMÁNYOK",
+        "headlineLead": "A polc a modell",
+        "headlineItalic": "mögött",
+        "headlineTail": ".",
+        "lede": "Könyvek, nem tanulmányok. Amelyekhez visszatérünk.",
+        "books": {
+          "book1": {
+            "title": "A gyönyör elvén túl"
+          },
+          "book2": {
+            "title": "Álomfejtés"
+          },
+          "book4": {
+            "title": "A pszichoanalízis négy alapfogalma"
+          },
+          "book5": {
+            "title": "Kötődés"
+          },
+          "book6": {
+            "title": "Affektusreguláció és az én eredete"
+          },
+          "book7": {
+            "title": "Állni a terekben"
+          },
+          "book8": {
+            "title": "Affektusreguláció, mentalizáció és az én fejlődése"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "FOLYTATÁS",
+        "headlineLead": "Kezdjen el egy profilt,",
+        "headlineItalic": "vagy olvasson el egy esetet",
+        "headlineTail": ".",
+        "ctaPrimary": "Profil létrehozása",
+        "ctaOr": "vagy",
+        "ctaGhost": "esettanulmány olvasása"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "ismét itt",
+      "greetingNamed": "ismét itt, {name}.",
+      "strengthen": "Pontosítás"
+    },
+    "reviewEdit": "Áttekintés és szerkesztés",
+    "depth": {
+      "eyebrow": "OLVASAT MÉLYSÉGE",
+      "overallEyebrow": "ÁLTALÁNOS OLVASAT MÉLYSÉGE",
+      "band": {
+        "deep": "az olvasat mély. innen már csak apróbb módosítások szükségesek.",
+        "steady": "az olvasat stabil. a Catchupok élesíteni fogják.",
+        "partial": "az olvasat részleges. még többet lehetne adni.",
+        "thin": "az olvasat felületes. egy alakzatot vázol fel, de még nem egy struktúrát."
+      },
+      "explainer": "Az olvasat mélysége azt írja le, hogy az olvasat mennyire fért hozzá Önhöz – a felvételiből, a heti Catchupokból, a konzultációkból és azoktól az emberektől, akiknek a jelenléte formálja Önt. Egy mélyebb olvasat nem jobb embert jelent; hanem pontosabbat. Bármikor elmélyítheti, vagy hagyhatja úgy, ahogy van.",
+      "status": {
+        "low": "Alacsony",
+        "moderate": "Mérsékelt",
+        "deep": "Pontos"
+      },
+      "statusLine": {
+        "low": "az olvasat felületes. egy alakzatot vázol fel, de még nem egy struktúrát.",
+        "moderate": "az olvasat kezd formát ölteni. egy működő hipotézist tarthat fenn.",
+        "deep": "az olvasat elég teljes ahhoz, hogy megalapozza a munkát."
+      },
+      "source": {
+        "intake": "a kérdések, amelyekre válaszolt a kezdéshez.",
+        "catchups": "heti ellenőrzések, amelyek naprakészen tartják az olvasatot.",
+        "sessions": "hosszabb konzultációk az analysttel.",
+        "connections": "emberek, akiknek a jelenléte formálja az olvasatot."
+      }
+    },
+    "latest": {
+      "eyebrow": "LEGÚJABB OLVASAT",
+      "heading": "Hat olvasat <it>— és ami elmozdul.</it>",
+      "lede": "A hat olvasat a felvételiből számítódik, és minden Catchup, konzultáció és elfogadott kapcsolat finomítja. A szerkezet állandó; a textúra mozog.",
+      "strengthen": "erősítse az adatok elemzését",
+      "open": "nyissa meg az olvasatokat"
+    },
+    "six": {
+      "eyebrow": "A HAT OLVASAT",
+      "heading": "Mi olvasható <it>Önben, éppen most.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUP-OK",
+      "figSubtitle": "utóbbi hetek",
+      "timelineHeading": "időablak",
+      "timelineRange": "utolsó 4 hét",
+      "timelineSummary": "catchup-ok az időablakban",
+      "eyebrow": "HETI CATCHUP",
+      "heading": "Üljön le a héttel. <it>Aztán újra megvizsgáljuk.</it>",
+      "lede": "Nyolc rövid kérdés. Az őszinteség jobb, mint a terjengősség. A válaszok finomítják az olvasatot.",
+      "completed": "befejezve — olvassa el az összefoglalót",
+      "cta": "Nyissa meg az e heti catchupot",
+      "markerFirst": "első",
+      "markerWeek": "{week}. hét"
+    },
+    "consulting": {
+      "eyebrow": "KONZULTÁCIÓS SZOBÁBAN",
+      "heading": "Egy óra <it>az analitikussal.</it>",
+      "ledeSubscribed": "Nyitva áll, amikor a hét nyomasztóvá válik. A szoba emlékszik arra, amit már elmondott.",
+      "ledeUnsubscribed": "Az előfizetők beléphetnek a konzultációs szobába — egy hosszabb, az analitikussal folytatott ülésre, amely ugyanabban a hangnemben zajlik, mint az olvasatai.",
+      "cta": "Belépés a konzultációs szobába",
+      "figLabel": "UTOLSÓ ÜLÉS",
+      "figSubtitle": "visszatartott kérdés",
+      "lastQuestion": "„a keddi álom — vissza akar térni rá?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONZULTÁCIÓS SZOBÁK · MEGERŐSÍTÉS",
+      "title": "Belépés a konzultációs szobába<it>.</it>",
+      "ledePrice": "Az előfizetés",
+      "ledePerMonth": "havonta",
+      "ledeIncludes": ". Tartalmazza a konzultációs szobát, lehetőséget legfeljebb {count} {count, plural, one {kapcsolat} other {kapcsolat}} meghívására, és egy klinikai jelentést minden naptári hónapban.",
+      "ledeBilling": "A számlázást a Stripe kezeli. Bármikor lemondható a beállításokból — a hozzáférés az időszak végéig fennmarad.",
+      "canceled": "<i>a fizetés megszakadt.</i> semmi sem került felszámolásra. alább visszatérhet, amikor készen áll.",
+      "checkoutCta": "Tovább a fizetéshez",
+      "returnLink": "vissza a konzultációs szobába"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINIKAI JELENTÉS",
+        "subscribedTitle": "Már <it>tartalmazza.</it>",
+        "subscribedLede": "Az előfizetés naptári hónaponként egy klinikai jelentést tartalmaz. Generálja a felolvasások oldalának aljáról – fizetés nem szükséges.",
+        "eyebrow": "KLINIKAI JELENTÉS · MEGERŐSÍTÉS",
+        "title": "A klinikai jelentés<it>.</it>",
+        "ledePrice": "Egy egyszeri klinikai jelentés ára",
+        "ledeDossier": ". Egy 12–18 oldalas dosszié mind a tizenkét felolvasásról, azon a nyelven, amelyen egy klinikus dolgozik.",
+        "ledeBilling": "A számlázást a Stripe kezeli. A jelentések újra generálhatók, ahogy a felolvasás mélyül; az előfizetők naptári hónaponként egyet kapnak külön díj nélkül.",
+        "depthNotice": "<i>a jelentés a rendelkezésre álló mélységet tükrözi.</i> újra generálható, ahogy a felolvasás mélyül.",
+        "canceled": "<i>a fizetés megszakadt.</i> semmi sem került felszámolásra.",
+        "checkoutCta": "Tovább a fizetéshez",
+        "returnLink": "vissza a felolvasásokhoz"
+      },
+      "status": {
+        "eyebrow": "KLINIKAI JELENTÉS",
+        "line": {
+          "queued": "jelentése előkészítés alatt áll.",
+          "generating": "a jelentés íródik.",
+          "ready": "a jelentés elkészült.",
+          "failed": "a jelentés nem készült el. hamarosan újra megpróbáljuk."
+        },
+        "open": "jelentés megnyitása",
+        "back": "vissza a felolvasásokhoz"
+      },
+      "queued": {
+        "eyebrow": "KLINIKAI JELENTÉS",
+        "line": "jelentése előkészítés alatt áll – e-mailben értesítjük, amint elkészült.",
+        "back": "vissza a felolvasásokhoz"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "FELMÉRÉS",
+        "title": "A felmérés, <it>témakörönként.</it>",
+        "lede": "Tíz szakasz. Bármelyik megnyitható a válaszok áttekintéséhez vagy elmélyítéséhez. A felmérés nem egyszeri űrlap – a válaszok bármikor módosíthatók."
+      },
+      "step": {
+        "eyebrow": "FELMÉRÉS",
+        "backToAll": "vissza az összes szakaszhoz"
+      },
+      "failed": {
+        "eyebrow": "FELMÉRÉS – HIÁNYOS",
+        "headline": "Az olvasás <em>nem fejeződött be</em>.",
+        "lede": "A felmérés rögzítve. Az azt követő elemzés nem fejeződött be.",
+        "retry": "Az olvasás folytatása",
+        "retryPending": "Folytatás"
+      }
+    },
+    "pending": {
+      "eyebrow": "ÁLLAPOT · FELDOLGOZÁS ALATT",
+      "headline": "Profilja <em>olvasás alatt</em>.",
+      "lede": "válaszait jelenleg futtatjuk a pszichodinamikus modelleken. az első átfutás általában körülbelül 2 órát vesz igénybe. írunk, amint a munka elkészült, és a szoba megnyílik.",
+      "figIntake": "FELVÉTEL",
+      "figSubmitted": "beküldve {date}",
+      "rowResponses": "Válaszok beérkeztek",
+      "rowPattern": "Minta kinyerése",
+      "rowSynthesis": "Profil szintézis",
+      "statusInProgress": "folyamatban",
+      "statusQueued": "sorban áll",
+      "foot": "írni fogunk, amint a munka elkészült",
+      "returnCta": "vissza a csendes szobába",
+      "devPrefix": "dev",
+      "devOpening": "nyitás…",
+      "devOpen": "nyissa meg a szobát most",
+      "devError": "nem sikerült megnyitni a szobát — ellenőrizze a konzolt."
+    }
+  },
+  "invite": {
+    "eyebrow": "MEGHÍVÁS",
+    "safetyFooter": "A TwentyThird nem helyettesíti a klinikai ellátást. Krízis esetén lépjen kapcsolatba a helyi segélyhívó vonallal.",
+    "notReady": {
+      "headline": "A meghívórendszer előkészítés alatt áll.",
+      "body": "Kérjük, próbálja meg később."
+    },
+    "notFound": {
+      "headline": "Ez a hivatkozás <it>nem ismert.</it>",
+      "body": "Ha a hivatkozás nemrég érkezett e-mailben, az ismételt meghívás lehetséges. Nyissa meg a legutóbbi e-mailt az aktív hivatkozásért."
+    },
+    "alreadyDeclined": {
+      "headline": "Ez a meghívó <it>elutasításra került.</it>",
+      "body": "Nincs további teendője. {name} nem kap értesítést azon felül, amit már lát."
+    },
+    "alreadyAccepted": {
+      "headline": "Már <it>elfogadta.</it>",
+      "body": "Ha a kapcsolati bevitel még nem teljes, alább folytathatja.",
+      "continueLink": "folytassa a kapcsolati bevitelt"
+    },
+    "ended": {
+      "headline": "Ez a kapcsolat <it>megszakadt.</it>",
+      "body": "A hivatkozás már nem aktív. A kapcsolati rekord megmarad az esetnaplóban, de már nem befolyásolja az olvasatot."
+    },
+    "expired": {
+      "headline": "Ez a meghívó <it>lejárt.</it>",
+      "body": "A meghívók tizennégy nappal az elküldésük után lejárnak. Kérje meg {name} nevű felhasználót, hogy küldjön újat, ha válaszolni szeretne."
+    },
+    "declined": {
+      "headline": "Ez <it>megérkezett.</it>",
+      "body": "Nincs szükség további lépésekre. A meghívó lezárult; a meghívó fél csendben látja az állapotváltozást. Bezárhatja ezt az ablakot."
+    },
+    "live": {
+      "eyebrow": "KAPCSOLATKÉRÉS",
+      "headline": "{name} meghívta Önt <it>az olvasatába.</it>",
+      "lede": "A TwentyThird egy szerkesztői-klinikai eszköz – egy csendes szoba, ahol valaki belső életének szerkezetét gondosan olvassák, és olyan nyelven adják vissza, amelyet egy klinikus is használhat.",
+      "explainerOne": "A <em>kapcsolat</em> nem megosztott fiók. {name} nem fogja látni az Ön olvasatait, üléseit vagy esetnaplóját. Ön sem fogja látni az övét. Amit a kapcsolatról mond, az táplálja azt a modellt, amely {name} olvasatát készíti.",
+      "explainerTwo": "Ha saját olvasatot szeretne, az alábbi első út a saját fiókját is elindítja. A középső út lehetővé teszi, hogy fiók nélkül hozzájáruljon {name} olvasatához. Bármelyik megengedett.",
+      "metaSentTo": "küldve ide",
+      "metaInviteAs": "meghívás mint",
+      "metaReceived": "érkezett",
+      "metaExpiresIn": "{count, plural, one {# nap múlva jár le} other {# nap múlva jár le}}"
+    },
+    "intake": {
+      "eyebrow": "KAPCSOLATI BEVITEL",
+      "notReady": {
+        "headline": "A bevitel <it>előkészítés alatt áll.</it>",
+        "body": "Kérjük, próbálja meg újra rövidesen."
+      },
+      "notFound": {
+        "headline": "Ez a link <it>nem felismerhető.</it>",
+        "body": "Az aktív linkért nyissa meg a legutóbbi meghívó e-mailt."
+      },
+      "notOpen": {
+        "headline": "A bevitel <it>nem nyitott.</it>",
+        "body": "Ezt a meghívót nem fogadták el, vagy elutasították, illetve lejárt. Térjen vissza a meghívó linkjéhez a választáshoz.",
+        "backLink": "vissza a meghívóhoz"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "igen — kezdje meg a kapcsolati felvételt",
+      "acceptLabel": "igen — csatlakozzon fiók nélkül",
+      "declineLabel": "nem, köszönöm",
+      "beginLabel": "kezdés",
+      "continueLabel": "folytatás",
+      "back": "vissza",
+      "oneMoment": "egy pillanat…",
+      "declineConfirmLine": "ezzel lezárja a meghívót. semmi további információt nem küldünk vagy tárolunk Önről.",
+      "declineClosing": "lezárás…",
+      "declineConfirm": "meghívó elutasítása",
+      "firstNameLabel": "AZ ÖN KERESZTNEVE",
+      "firstNameAria": "Az Ön keresztneve",
+      "firstNameSub": "{name} csak ezt a keresztnevet látja majd a kapcsolatlistáján.",
+      "errors": {
+        "missingFirstName": "a keresztnév lehetővé teszi az analitikus számára, hogy helyesen szólítsa meg Önt.",
+        "generic": "nem sikerült elküldeni.",
+        "notFound": "ez a meghívó link nem felismerhető.",
+        "expired": "ez a meghívó lejárt. kérje meg a meghívót, hogy küldjön újat.",
+        "declined": "ezt a meghívót már elutasították.",
+        "ended": "ez a meghívó már nem aktív.",
+        "missingFirstNameRequired": "keresztnév megadása kötelező."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "KAPCSOLATI FELMÉRÉS",
+      "begin": "kezdés",
+      "back": "vissza",
+      "backToCover": "vissza a borítóra",
+      "next": "következő",
+      "finish": "befejezés",
+      "scaleAria": "skála {value}",
+      "cover": {
+        "headline": "Amit <it>{name}</it>ről mond, az Ön és az analitikus között marad.",
+        "lede": "Tizenkét rövid kérdés. Körülbelül öt perc. A válaszok táplálják {name} olvasatát; ők nem látják, amit írt, és Ön sem látja, amit az eredményez."
+      },
+      "closing": {
+        "recording": "egy pillanat – a válaszok rögzítésre kerülnek.",
+        "tryAgain": "próbálja újra",
+        "headline": "Ennyi elég <it>egyelőre.</it>",
+        "lede": "Amit {name}ről mondott, az a következő ülésüktől kezdve befolyásolja az olvasatukat. Ők nem látják; Ön sem látja, amit az eredményez.",
+        "closeWindow": "bezárhatja ezt az ablakot."
+      },
+      "errors": {
+        "unanswered": "egy pillanat ezzel, mielőtt továbbmegy.",
+        "questionOpen": "egy kérdés még nyitva van. egy pillanat.",
+        "couldNotSave": "nem sikerült menteni",
+        "invalidAnswers": "valami nem értelmezhető – ellenőrizze a válaszokat.",
+        "notAccepting": "ez a meghívó már nem fogad válaszokat.",
+        "notFound": "ez a meghívó link nem ismert.",
+        "couldNotSaveAnswers": "nem sikerült menteni a válaszokat."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Mióta ismerik egymást?",
+          "options": {
+            "under_one_year": "kevesebb mint egy éve",
+            "one_to_three": "egy-három éve",
+            "four_to_ten": "négy-tíz éve",
+            "eleven_to_twenty": "tizenegy-húsz éve",
+            "more_than_twenty": "több mint húsz éve"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Mennyire érzik most közel magukat egymáshoz?",
+          "lowLabel": "távolságtartóan",
+          "highLabel": "a lehető legközelebb"
+        },
+        "repair_initiator": {
+          "prompt": "Amikor nem értenek egyet, ki kezdeményezi általában a békülést először?",
+          "options": {
+            "i_do": "szinte mindig én",
+            "usually_me": "általában én",
+            "evenly": "egyenlően közelítünk egymáshoz",
+            "usually_them": "általában ők",
+            "they_do": "szinte mindig ők"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Amikor valami nehéz, hová húzódnak vissza?",
+          "options": {
+            "toward": "Önhöz, hogy megbeszéljék",
+            "quiet": "csendbe, majd visszatérnek",
+            "work": "munkába vagy figyelemelterelésbe",
+            "alone": "teljesen egyedül, egy ajtó mögé",
+            "elsewhere": "először másokhoz"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Mi az, amit Ön szerint nem értenek meg magukról?"
+        },
+        "what_you_offer": {
+          "prompt": "Egy mondatban: mit tesz értük, amit ők nem tudnak megtenni magukért?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Melyik hang vezérli őket a leggyakrabban?",
+          "options": {
+            "demand": "a követelés – mit kellene tenni",
+            "doubt": "a kétség – vajon elég-e",
+            "desire": "a vágy – mit akarnak valójában",
+            "watcher": "a megfigyelő – hogyan fogják látni",
+            "uncertain": "még nem tudom"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Hol akad el általában a munkájuk?",
+          "options": {
+            "start": "a kezdet – belevágni",
+            "middle": "a közép – kitartani mellette",
+            "finish": "a befejezés – elengedni",
+            "visibility": "a láthatóság – megmutatni",
+            "nowhere": "kívülről nem látom, hogy elakadna"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Van olyan téma, amit következetesen elkerülnek? Nevezze meg finoman."
+        },
+        "they_at_their_best": {
+          "prompt": "Mikor a leginkább önmaguk?"
+        },
+        "what_youve_changed": {
+          "prompt": "Van valami bennük, amit csendben elfogadott, hogy nem fog megváltoztatni?"
+        },
+        "future_together": {
+          "prompt": "Mennyit tartalmaz az Ön által elképzelt jövő belőlük?",
+          "lowLabel": "nagyon keveset",
+          "highLabel": "szinte az egészet"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "vagy",
+      "fallbackPreamble": "illessze be ezt a hivatkozást a böngészőjébe:",
+      "attendingInstitution": "RÉSZTVEVŐ INTÉZMÉNY",
+      "tagline": "Pszichodinamikus MI a belső élethez.",
+      "automatedFooter": "Automatikus rendszer küldte · ne válaszoljon"
+    },
+    "intakeSubmitted": {
+      "subject": "profilja feldolgozás alatt.",
+      "preheader": "Az első elemzés folyamatban. A szoba akkor nyílik meg, amikor a munka elkészült.",
+      "eyebrow": "PROFIL ELEMZÉS ALATT",
+      "titleText": "Válaszait elemezzük.",
+      "italicPhrase": "elemzés alatt",
+      "lede": "Az első elemzés a pszichodinamikus modelleken keresztül folyamatban van. A szoba akkor nyílik meg, amikor a munka elkészült.",
+      "figLeftItalic": "felvétel beérkezett",
+      "figRightLabel": "Első elemzés",
+      "figRightItalic": "folyamatban",
+      "text": "{salutation}\n\nVálaszai beérkeztek. Az első elemzés a pszichodinamikus modelleken keresztül folyamatban van. A szoba akkor nyílik meg, amikor a munka elkészült.\n\nCognitiveLab, WelloWork AB\nELLÁTÓ INTÉZMÉNY"
+    },
+    "roomReady": {
+      "subject": "szobája nyitva áll.",
+      "preheader": "Tizenkét blokk készen áll az olvasásra. A munka finomodik, ahogy visszatér hozzá.",
+      "eyebrow": "SZABÁLYOSÍTOTT SZOBÁK",
+      "titleText": "Az első olvasat nyitva áll.",
+      "italicPhrase": "első olvasat",
+      "lede": "Tizenkét blokk pszichodinamikai profil, a szobában, készen az olvasásra. A munka finomodik, ahogy visszatér hozzá.",
+      "ctaLabel": "Lépjen be a szobába",
+      "figLeftItalic": "szoba megnyílt",
+      "figRightLabel": "Első olvasat",
+      "figRightItalic": "kész",
+      "text": "{salutation}\n\nAz első olvasat nyitva áll.\n\nTizenkét blokk pszichodinamikai profil, a szobában, készen az olvasásra. A munka finomodik, ahogy visszatér hozzá.\n\nLépjen be a szobába:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} szeretné, ha részt venne az olvasásban.",
+      "preheader": "{inviterName} szeretné, ha részt venne az olvasásban. Egy kapcsolat nem látja az Ön olvasásait; Ön sem fogja látni az övéiket.",
+      "eyebrow": "MEGHÍVÓ",
+      "titleText": "{inviterName} szeretné, ha részt venne az olvasásban.",
+      "italicPhrase": "az olvasásban",
+      "lede": "A TwentyThird egy csendes szoba, ahol valakinek a belső életének szerkezetét gondosan olvassák. Egy kapcsolat nem látja a meghívó olvasásait vagy konzultációit, és Ön sem fogja látni az övéiket.",
+      "ctaLabel": "Meghívó megnyitása",
+      "figLeftItalic": "meghívó kiadva",
+      "figRightLabel": "Lejár",
+      "figRightItalic": "tizennégy nap",
+      "securityNote": "Ha tévedésből érkezett, a meghívó tizennégy napon belül magától lejár.",
+      "textIntro": "{inviterName} szeretné, ha részt venne az olvasásban a TwentyThird-nél.",
+      "textBody": "A TwentyThird egy csendes szoba, ahol valakinek a belső életének szerkezetét gondosan olvassák. Egy kapcsolat nem látja a meghívó olvasásait vagy konzultációit, és Ön sem fogja látni az övéiket.",
+      "textNote": "{inviterName} megjegyzést fűzött hozzá:\n  {note}",
+      "textOpen": "Nyissa meg a meghívót:",
+      "textSecurity": "Ha tévedésből érkezett, a meghívó tizennégy napon belül magától lejár.",
+      "textCloser": "CognitiveLab, WelloWork AB\nINTÉZMÉNY"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} elfogadta a kapcsolatot.",
+      "preheader": "{nameTitle} elfogadta a kapcsolatot. Hatás a következő konzultációtól kezdve.",
+      "eyebrow": "KAPCSOLAT ELFOGADVA",
+      "titleText": "{nameTitle} elfogadta a kapcsolatot.",
+      "italicPhrase": "elfogadta a kapcsolatot",
+      "lede": "Kapcsolati felmérésük a következő konzultációtól kezdve befolyásolja az Ön olvasatát. Ők nem látják az Ön olvasatait; Ön nem látja az övéiket.",
+      "ctaLabel": "Vissza a Roomba",
+      "figLeftItalic": "kapcsolat elfogadva",
+      "figRightLabel": "Hatás",
+      "figRightItalic": "a következő konzultációtól kezdve",
+      "text": "{salutation}\n\n{nameTitle} elfogadta a kapcsolatot.\n\nKapcsolati felmérésük a következő konzultációtól kezdve befolyásolja az Ön olvasatát. Ők nem látják az Ön olvasatait; Ön nem látja az övéiket.\n\nVissza a Roomba:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} megszakította a kapcsolatot.",
+      "preheader": "{nameTitle} megszakította a kapcsolatot. Az olvasat a következő konzultáció során módosul.",
+      "eyebrow": "KAPCSOLAT MEGSZAKÍTVA",
+      "titleText": "{nameTitle} megszakította a kapcsolatot.",
+      "italicPhrase": "megszakította a kapcsolatot",
+      "lede": "Az olvasat a következő konzultáció során módosul. Ami a kapcsolatról elhangzott, az megmarad az Esetaktában; többé nem befolyásolja az aktív olvasatot.",
+      "ctaLabel": "Vissza a Roomba",
+      "figLeftItalic": "kapcsolat megszakítva",
+      "figRightLabel": "Hatás",
+      "figRightItalic": "a következő konzultációtól kezdve",
+      "text": "{nameTitle} megszakította a kapcsolatot.\n\nAz olvasat a következő konzultáció során módosul. Ami a kapcsolatról elhangzott, az megmarad az Esetaktában; többé nem befolyásolja az aktív olvasatot.\n\nVissza a Roomba:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nELLÁTÓ INTÉZMÉNY"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "e heti Catchup nyitva van.",
+      "preheader": "Rövid reflexió. Öt perc. Frissíti az olvasatot.",
+      "eyebrow": "HETI CATCHUP",
+      "titleText": "Egy hét csendesen telt el.",
+      "italicPhrase": "csendesen",
+      "lede": "Rövid reflexió – mi hangos, mi maradt csendben, mi mozdult el. Frissíti az olvasatot.",
+      "ctaLabel": "Catchup megnyitása",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "öt perc",
+      "text": "{salutation}\n\nEgy hét csendesen telt el.\n\nRövid reflexió – mi hangos, mi maradt csendben, mi mozdult el. Frissíti az olvasatot.\n\nNyissa meg a Catchupot:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "válaszai rögzítve.",
+      "preheader": "Az adatfelvétel ott folytatódik, ahol abbahagyta. A munka csak a befejezés után kezdődik el.",
+      "eyebrow": "ADATFELVÉTEL FELFÜGGESZTVE",
+      "titleText": "Az adatfelvétel ott van, ahol abbahagyta.",
+      "italicPhrase": "ahol abbahagyta",
+      "lede": "Az adatfelvétel ott folytatódik, ahol abbahagyta. A munka csak a befejezés után kezdődik el.",
+      "ctaLabel": "Vissza az adatfelvételhez",
+      "figLeftItalic": "adatfelvétel szünetel",
+      "figRightLabel": "Folytatás",
+      "figRightItalic": "ahol abbahagyta",
+      "text": "{salutation}\n\nAz adatfelvétel ott van, ahol abbahagyta.\n\nAz adatfelvétel ott folytatódik, ahol abbahagyta. A munka csak a befejezés után kezdődik el.\n\nVissza az adatfelvételhez:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nELLÁTÓ INTÉZMÉNY"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Mely szavak írják le legjobban azt az otthont, ahol felnőtt.",
+          "subtitle": "válasszon legfeljebb három szót, amely igaznak tűnik, még ha ellentmondanak is egymásnak – az otthonok általában vegyesek",
+          "options": {
+            "calm": "Nyugodt",
+            "strict": "Szigorú",
+            "emotionally_distant": "Érzelmileg távoli",
+            "chaotic": "Káotikus",
+            "achievement_focused": "Erősen teljesítményorientált",
+            "protective": "Védelmező",
+            "unpredictable": "Kiszámíthatatlan",
+            "conflict_heavy": "Konfliktusokkal terhelt"
+          }
+        },
+        "q1_2": {
+          "title": "Gyermekként milyen szerepet töltött be természetesen.",
+          "subtitle": "gondoljon arra a szerepre, amelyet a családjában játszott anélkül, hogy bárki mondta volna – a béketeremtő, a segítő, a csendes",
+          "options": {
+            "peacemaker": "Béketeremtő",
+            "achiever": "Teljesítő",
+            "invisible_child": "Láthatatlan gyermek",
+            "caregiver": "Gondoskodó",
+            "rebel": "Lázadó",
+            "funny_one": "Vicces",
+            "responsible_one": "Felelősségteljes",
+            "problem_child": "Problémás gyermek"
+          }
+        },
+        "q1_3": {
+          "title": "Mennyire érezte magát érzelmileg biztonságban felnőve.",
+          "subtitle": "hallgasson a belső megérzésére az otthonnal kapcsolatban, ne arra a változatra, amit a család mondana egy idegennek",
+          "lowLabel": "1 · SOHA NEM BIZTONSÁGOS",
+          "highLabel": "10 · TELJESEN BIZTONSÁGOS"
+        },
+        "q1_4": {
+          "title": "Nyíltan megvitatták az érzelmeket otthon.",
+          "subtitle": "nem csak az, hogy voltak-e érzések, hanem az, hogy valaki ténylegesen megnevezte vagy beszélt-e róluk hangosan",
+          "options": {
+            "frequently": "Gyakran",
+            "sometimes": "Néha",
+            "rarely": "Ritkán",
+            "never": "Soha"
+          }
+        },
+        "q1_5": {
+          "title": "Egy gyermekkori emlék, amely ma is érzelmileg élénk.",
+          "subtitle": "írjon le egy konkrét jelenetet, amely még mindig visszatér – hol volt, ki volt ott, mi történt, hogyan érezte magát"
+        },
+        "q1_6": {
+          "title": "Mit tanult meg, mit kell tennie ahhoz, hogy szeretetet vagy elismerést kapjon.",
+          "subtitle": "az apró dolgok, amelyekről észrevette, hogy működnek – jónak lenni, csendben lenni, teljesíteni, távol maradni – ossza meg, mire emlékszik, hogy alkalmazkodott"
+        },
+        "q1_7": {
+          "title": "Milyen érzelmeket volt nehéz kifejezni otthonában.",
+          "subtitle": "mely érzéseket hagyták figyelmen kívül, utasították el vagy büntették, amikor megpróbálta kimutatni őket – harag, szomorúság, félelem, öröm, bármi"
+        },
+        "q1_8": {
+          "title": "Amikor a fiatalabb énjére gondol, mit érez iránta.",
+          "subtitle": "legyen őszinte azzal az érzéssel kapcsolatban, ami felmerül – melegség, szomorúság, távolság, frusztráció, védelmezés – bármi, ami valójában ott van"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Hogyan jellemezné anyját vagy elsődleges anyai gondozóját?",
+          "subtitle": "néhány mondat arról, milyen volt, hogyan volt jelen az életében, és hogyan érezte magát mellette",
+          "options": {
+            "warm": "Melegszívű",
+            "controlling": "Kontrolláló",
+            "emotionally_unavailable": "Érzelmileg elérhetetlen",
+            "sacrificing": "Önfeláldozó",
+            "critical": "Kritikus",
+            "anxious": "Szorongó",
+            "unpredictable": "Kiszámíthatatlan",
+            "admired": "Csodált",
+            "fearful": "Félénk",
+            "not_applicable": "Nem alkalmazható"
+          }
+        },
+        "q2_2": {
+          "title": "Hogyan jellemezné apját vagy elsődleges apai gondozóját?",
+          "subtitle": "néhány mondat arról, milyen volt, hogyan volt jelen az életében, és hogyan érezte magát mellette",
+          "options": {
+            "supportive": "Támogató",
+            "distant": "Távoli",
+            "dominant": "Domináns",
+            "passive": "Passzív",
+            "ambitious": "Ambiciózus",
+            "emotionally_closed": "Érzelmileg zárkózott",
+            "protective": "Védelmező",
+            "critical": "Kritikus",
+            "absent": "Hiányzó",
+            "not_applicable": "Nem alkalmazható"
+          }
+        },
+        "q2_3": {
+          "title": "Testvéri pozíciója.",
+          "subtitle": "hol helyezkedett el a sorban – legidősebb, középső, legfiatalabb, egyke, vagy valahol a kettő között",
+          "options": {
+            "oldest": "Legidősebb",
+            "middle": "Középső",
+            "youngest": "Legfiatalabb",
+            "only_child": "Egyke"
+          }
+        },
+        "q2_4": {
+          "title": "Melyik szerep illik leginkább testvéri pozíciójához?",
+          "subtitle": "a születési sorrenden túl, az a szerep, amit végül játszott – a felelősségteljes, a lázadó, a láthatatlan, a kedvenc",
+          "options": {
+            "responsible": "Felelősségteljes",
+            "ignored": "Figyelmen kívül hagyott",
+            "compared": "Másokhoz hasonlított",
+            "favored": "Kedvelt",
+            "competitive": "Versengő",
+            "protective": "Védelmező",
+            "not_applicable": "Nem alkalmazható"
+          }
+        },
+        "q2_5": {
+          "title": "Melyik szülő értette meg a legjobban?",
+          "subtitle": "nevezze meg őket, és mondja el, mit láttak önben, amit a másik elvétett vagy rosszul értelmezett"
+        },
+        "q2_6": {
+          "title": "Melyik szülő befolyásolta leginkább a félelmeit?",
+          "subtitle": "kinek a gondjait szívta magába felnőve, és hogyan jelennek meg ezek a félelmek ma is az életében"
+        },
+        "q2_7": {
+          "title": "Milyen volt a konfliktus a családjában?",
+          "subtitle": "írja le, milyen formát öltöttek a viták – kiabálás, csend, becsapott ajtók, hideg hetek, ismétlődő minták – bármi, ami ismerősnek tűnt"
+        },
+        "q2_8": {
+          "title": "Milyen fajta figyelem esett a legnehezebben?",
+          "subtitle": "az a fajta gondoskodás, ami kényelmetlenül érintette – dicséret, aggodalom, fizikai közelség, észrevétel – és miért volt nehéz"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Mennyire volt vallásos vagy spirituális az a környezet, amelyben felnőtt.",
+          "subtitle": "az otthon tényleges légköre – gyakorlatok, szabályok, hiedelmek a levegőben – nem az, amit felnőttként hisz most",
+          "lowLabel": "1 · EGYÁLTALÁN NEM",
+          "highLabel": "10 · MÉLYEN"
+        },
+        "q3_2": {
+          "title": "Melyik üzenet volt a legerősebb felnőve.",
+          "subtitle": "az a szabály vagy elvárás, amelyet olyan gyakran ismételtek, hogy háttérzajjá vált – a sikerről, viselkedésről, képről, kötelességről, családról",
+          "options": {
+            "success": "A siker a legfontosabb",
+            "reputation": "A hírnév a legfontosabb",
+            "obedience": "Az engedelmesség a legfontosabb",
+            "family_loyalty": "A családi hűség a legfontosabb",
+            "independence": "A függetlenség a legfontosabb",
+            "sacrifice": "Az áldozat a legfontosabb"
+          }
+        },
+        "q3_3": {
+          "title": "Mennyire érzi magát megítélve a társadalom által.",
+          "subtitle": "mennyire érzi magát figyeltenek vagy értékelnek a szűk körén kívüli emberek – munkahelyen, online, nyilvánosan",
+          "lowLabel": "1 · EGYÁLTALÁN NEM",
+          "highLabel": "10 · FOLYAMATOSAN"
+        },
+        "q3_4": {
+          "title": "Milyen hiedelmek formálják még mindig a neveltetéséből.",
+          "subtitle": "azok az értékek, szabályok vagy feltételezések, amelyeket örökölt és még mindig él, még akkor is, ha évek óta nem gondolt rájuk"
+        },
+        "q3_5": {
+          "title": "Mely hiedelmeknek áll ellen titokban.",
+          "subtitle": "azok, amelyekkel nyilvánosan egyetért, de csendesen ellenkezik – pénzről, kapcsolatokról, sikerről, nemről, bármiről"
+        },
+        "q3_6": {
+          "title": "Mit helytelenítene leginkább a családja vagy közössége az igazi énjében.",
+          "subtitle": "önmaga, élete vagy döntései azon részeit, amelyeket elrejt előlük, és miért rejti el őket"
+        },
+        "q3_7": {
+          "title": "Milyen emberré kellett volna válnia.",
+          "subtitle": "az a jövő, amelyet mások elképzeltek önnek – karrier, család, viselkedés, imázs – mielőtt bármi beleszólása lett volna"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Hány ember ismeri igazán az igazi énjét.",
+          "subtitle": "azok az emberek, akik látták az Ön vágatlan verzióját, és akiket semmi sem sokkolna belső életében",
+          "options": {
+            "none": "Egy sem",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Sok"
+          }
+        },
+        "q4_2": {
+          "title": "Csoportokban általában azzá válik.",
+          "subtitle": "az a szerep, amibe gondolkodás nélkül belecsúszik — a vicces, a hallgató, a vezető, a megfigyelő, az, aki simán tartja a dolgokat",
+          "options": {
+            "leader": "Vezető",
+            "observer": "Megfigyelő",
+            "entertainer": "Szórakoztató",
+            "mediator": "Közvetítő",
+            "intellectual": "Intellektuális",
+            "caregiver": "Gondoskodó",
+            "withdrawn": "Visszahúzódó"
+          }
+        },
+        "q4_3": {
+          "title": "Mennyire fél attól, hogy másokat csalódást okoz.",
+          "subtitle": "mennyire befolyásolhatja egy másik személy reakciója — egy pillantás, egy sóhaj, a csend — azt, amit mond vagy tesz",
+          "lowLabel": "1 · EGYÁLTALÁN NEM",
+          "highLabel": "10 · NAPONTA"
+        },
+        "q4_4": {
+          "title": "Mely részeit rejti el társaságban.",
+          "subtitle": "azok a gondolatok, érzések, tulajdonságok vagy élettörténetének darabjai, amelyeket elrejt, amikor mások társaságában van"
+        },
+        "q4_5": {
+          "title": "Mikor érzi magát a leginkább elfogadottnak.",
+          "subtitle": "azok a helyzetek vagy kapcsolatok, ahol abbahagyja a szereplést, és önmaga lehet — írja le, mi teszi ezeket a tereket mássá"
+        },
+        "q4_6": {
+          "title": "Mely társas helyzetek merítik ki a legjobban.",
+          "subtitle": "azok az összejövetelek, dinamikák vagy kapcsolatok, amelyek a kelleténél jobban kifárasztják — és mi az, ami kimerítő bennük"
+        },
+        "q4_7": {
+          "title": "Milyen embereket irigyel.",
+          "subtitle": "az irigység általában olyan dologra mutat, amit Ön akar, de még nem engedte meg magának, hogy nyíltan akarja — írja le, ki váltja ki, és miért"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Mely platformokat használja aktívan.",
+          "subtitle": "azok az alkalmazások, amelyeket naponta többször, megszokásból nyit meg, nem azok, amelyeken technikailag van fiókja",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Egyik sem"
+          }
+        },
+        "q5_2": {
+          "title": "Átlagos napi használat platformonként.",
+          "subtitle": "durva becslés arról, mennyi időt tölt valójában mindegyiken — percek vagy órák, ítélkezés nélkül",
+          "unit": "PERC NAPONTA"
+        },
+        "q5_3": {
+          "title": "Mire használja őket főként.",
+          "subtitle": "a nyilvánvaló ok mögötti valódi indok — kapcsolat, figyelemelterelés, megerősítés, menekülés, összehasonlítás, információ",
+          "options": {
+            "validation": "Megerősítés",
+            "learning": "Tanulás",
+            "escapism": "Menekülés",
+            "networking": "Hálózatépítés",
+            "self_expression": "Önkifejezés",
+            "entertainment": "Szórakozás",
+            "comparison": "Összehasonlítás",
+            "dating": "Ismerkedés"
+          }
+        },
+        "q5_4": {
+          "title": "Milyen gyakran törli vagy szerkeszti a bejegyzéseket publikálás előtt.",
+          "subtitle": "mennyit gyakorol, bizonytalankodik vagy újraírja azt, amit megoszt, mielőtt mások láthatnák",
+          "options": {
+            "always": "Mindig",
+            "often": "Gyakran",
+            "sometimes": "Néha",
+            "rarely": "Ritkán",
+            "never": "Soha"
+          }
+        },
+        "q5_5": {
+          "title": "Milyen gyakran hasonlítja össze életét másokéval online.",
+          "subtitle": "a csendes mérés, ami görgetés közben történik — a külsőre, sikerre, kapcsolatokra, életmódra, bármire vonatkozóan",
+          "lowLabel": "1 · SOHA",
+          "highLabel": "10 · FOLYAMATOSAN"
+        },
+        "q5_6": {
+          "title": "Milyen verziója jelenik meg online.",
+          "subtitle": "írja le a bemutatott karaktert — a gondosan összeállított verziót — és hogyan különbözik attól, aki akkor, amikor senki sem figyel"
+        },
+        "q5_7": {
+          "title": "Mit keres érzelmileg, amikor megnyitja a közösségi médiát.",
+          "subtitle": "az az érzés, amit elérni prób abban a pillanatban, amikor megnyitja az alkalmazást — figyelemelterelés, kényelem, izgalom, zsibbadtság, kapcsolat"
+        },
+        "q5_8": {
+          "title": "Milyen tartalom teszi kényelmetlenné.",
+          "subtitle": "azok a bejegyzések vagy videók, amelyek miatt gyorsan tovább szeretne görgetni, és mit gondol, miről szól valójában ez a kényelmetlenség"
+        },
+        "q5_9": {
+          "title": "Milyen típusú emberek vonzzák a figyelmét online.",
+          "subtitle": "azok a fiókok, amelyeknél megáll és figyel — írja le a közös tulajdonságaikat és azt, ami vonzza"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Jelenlegi párkapcsolati státusza.",
+          "subtitle": "ahol valójában most tart – egyedülálló, randevúzik, párkapcsolatban él, házas, különél, bonyolult – nem az, ahol lenni szeretne",
+          "options": {
+            "single": "Egyedülálló",
+            "dating": "Randevúzik",
+            "in_relationship": "Párkapcsolatban él",
+            "engaged": "Eljegyezve",
+            "married": "Házas",
+            "separated_divorced": "Különél vagy elvált",
+            "widowed": "Özvegy",
+            "its_complicated": "Bonyolult"
+          }
+        },
+        "q6_2": {
+          "title": "Hány komoly párkapcsolata volt.",
+          "subtitle": "azok, amelyek érzelmileg fontosak voltak, függetlenül attól, hogy mennyi ideig tartottak, vagy mennyire voltak hivatalosak",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Tipikus konfliktusok a kapcsolataiban.",
+          "subtitle": "azok a viták, amelyek különböző formákban, különböző partnerekkel újra és újra megjelennek – pénz, távolság, kontroll, kommunikáció",
+          "options": {
+            "distance": "Távolság",
+            "jealousy": "Féltékenység",
+            "control": "Kontroll",
+            "emotional_unavailability": "Érzelmi elérhetetlenség",
+            "communication": "Kommunikáció",
+            "trust": "Bizalom",
+            "dependency": "Függőség"
+          }
+        },
+        "q6_4": {
+          "title": "Kapcsolataiban hajlamos.",
+          "subtitle": "alapértelmezett reakciója, amikor a dolgok nehézzé válnak – közelebb húzódik, eltávolodik, átveszi az irányítást, bezárkózik, megpróbálja rendbe hozni",
+          "options": {
+            "pursue": "Üldöz",
+            "withdraw": "Visszahúzódik",
+            "overgive": "Túlad",
+            "test_loyalty": "Hűséget tesztel",
+            "avoid_vulnerability": "Kerüli a sebezhetőséget"
+          }
+        },
+        "q6_5": {
+          "title": "Milyen típusú emberekbe szeret bele újra és újra.",
+          "subtitle": "az a típus, amely folyamatosan megjelenik szerelmi életében – nem csak a külső, hanem az érzelmi minták, a temperamentum, ahogyan bánnak Önnel"
+        },
+        "q6_6": {
+          "title": "Mi vet véget általában a kapcsolatainak.",
+          "subtitle": "az igazi ok, amiért a dolgok szétesnek, túl azon a hivatalos történeten, amit barátainak vagy családjának mesél"
+        },
+        "q6_7": {
+          "title": "Melyik érzelmi szükségletét szeretné a leginkább beteljesíteni.",
+          "subtitle": "az a szükséglet, amelyet a legnehezebben tud közvetlenül kérni – látva lenni, kiválasztottnak lenni, biztonságban lenni, szabadnak lenni, akartnak lenni"
+        },
+        "q6_8": {
+          "title": "Mitől fél a legjobban az intimitásban.",
+          "subtitle": "mit veszélyeztet az Ön számára a közelség – ismertnek lenni, csapdába esni, elhagyatottnak lenni, túl soknak lenni, nem elégnek lenni"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Jelenlegi foglalkoztatási státusza.",
+          "subtitle": "munkaélete jelenlegi formája – alkalmazott, önálló vállalkozó, állások között, tanuló, gondozó, valami más",
+          "options": {
+            "employed_full_time": "Alkalmazott, teljes munkaidőben",
+            "employed_part_time": "Alkalmazott, részmunkaidőben",
+            "self_employed": "Önálló vállalkozó vagy alapító",
+            "freelance": "Szabadúszó vagy szerződéses",
+            "studying": "Tanuló",
+            "between_roles": "Állások között",
+            "caregiving": "Otthoni gondozás",
+            "retired": "Nyugdíjas",
+            "not_working": "Nem dolgozik"
+          }
+        },
+        "q7_2": {
+          "title": "Mennyire elégedett karrierje irányával.",
+          "subtitle": "munkájának hosszabb távú íve, nem az, hogy érzi magát ezen a héten",
+          "lowLabel": "1 · ELVESZETT",
+          "highLabel": "10 · PONTOSAN JÓ"
+        },
+        "q7_3": {
+          "title": "Munkájában általában.",
+          "subtitle": "ahogyan szakmailag működik – az a szerep, amit akkor vállal, ha senki sem jelöl ki egyet Önnek",
+          "options": {
+            "perfectionistic": "Perfekcionista",
+            "avoidant": "Elkerülő",
+            "competitive": "Versengő",
+            "cooperative": "Együttműködő",
+            "over_responsible": "Túlzottan felelősségteljes",
+            "detached": "Közönyös"
+          }
+        },
+        "q7_4": {
+          "title": "Legnagyobb munkahelyi stressze.",
+          "subtitle": "a nyomás forrása, amely hazáig követi – egy személy, egy munkaterhelés, egy félelem, egy környezet, egy minta",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Kudarc",
+            "visibility": "Láthatóság",
+            "authority": "Tekintély",
+            "uncertainty": "Bizonytalanság",
+            "conflict": "Konfliktus"
+          }
+        },
+        "q7_5": {
+          "title": "Mit jelent Önnek érzelmileg a siker.",
+          "subtitle": "az az érzés, amit elképzel, hogy megérkezik, amikor végre eléri – megkönnyebbülés, büszkeség, béke, szabadság, elegendőnek lenni"
+        },
+        "q7_6": {
+          "title": "Milyen elismerés hat Önre a leginkább.",
+          "subtitle": "az a dicséret, ami valóban eljut Önhöz és megváltoztatja az érzéseit, és az a fajta, ami lepattan, függetlenül attól, hogy mennyit kap belőle"
+        },
+        "q7_7": {
+          "title": "Milyen kudarc befolyásolja Önt még ma is.",
+          "subtitle": "egy konkrét kudarc, amit még nem dolgozott fel teljesen – mi történt, és hogyan alakítja még mindig a döntéseit"
+        },
+        "q7_8": {
+          "title": "Ha a pénz eltűnne, mit folytatna.",
+          "subtitle": "az a munka vagy tevékenység, amit akkor is végezne, ha senki sem fizetne érte – írja le, hogyan nézne ki"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Hogyan kezeli általában a stresszt.",
+          "subtitle": "mihez nyúl, amikor a dolgok súlyossá válnak – étel, képernyők, testmozgás, elszigetelődés, beszélgetés, szerek, alvás, munka",
+          "options": {
+            "isolation": "Elkülönülés",
+            "food": "Étel",
+            "gaming": "Játék",
+            "exercise": "Testmozgás",
+            "overworking": "Túlhajszoltság",
+            "scrolling": "Görgetés",
+            "substance_use": "Szerhasználat",
+            "shopping": "Vásárlás",
+            "sleeping": "Alvás",
+            "socializing": "Társasági élet"
+          }
+        },
+        "q8_2": {
+          "title": "Milyen gyakran jár társaságba.",
+          "subtitle": "milyen gyakran tölt időt személyesen másokkal, nem online vagy üzeneteken keresztül",
+          "options": {
+            "multiple_per_week": "Többször hetente",
+            "weekly": "Hetente",
+            "monthly": "Havonta",
+            "rarely": "Ritkán",
+            "never": "Soha"
+          }
+        },
+        "q8_3": {
+          "title": "Milyen gyakran érzi magát magányosnak még csoportban is.",
+          "subtitle": "az a magány, amely akkor jelentkezik, amikor emberek veszik körül, de mégis láthatatlannak vagy távolinak érzi magát",
+          "lowLabel": "1 · SOHA",
+          "highLabel": "10 · MINDIG"
+        },
+        "q8_4": {
+          "title": "Milyen tevékenységek feledtetik el önmagát.",
+          "subtitle": "azok a dolgok, amelyek annyira elmerítik, hogy az idő eltűnik – jóban vagy rosszban, egészségesen vagy sem"
+        },
+        "q8_5": {
+          "title": "Miről nem szeret a leginkább gondolkodni.",
+          "subtitle": "az a téma vagy emlék, amit gyorsan elkerül, ha felmerül – önmagáról, múltjáról, jövőjéről"
+        },
+        "q8_6": {
+          "title": "Mikor érzi magát érzelmileg zsibbadtnak.",
+          "subtitle": "azok a helyzetek, amikor a hangerő nullára csökken – munka, kapcsolatok, konfliktus, intimitás, egyedüllét"
+        },
+        "q8_7": {
+          "title": "Melyik szokását a legnehezebb abbahagyni.",
+          "subtitle": "az a viselkedés, amelyet többször is megpróbált megváltoztatni vagy abbahagyni, sikertelenül – írja le, mi az, és mi húzza vissza"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Mennyire önkritikus.",
+          "subtitle": "belső hangjának tónusa, amikor hibázik vagy elmarad – szigorú, igazságos, elutasító, pusztító",
+          "lowLabel": "1 · GYENGÉD",
+          "highLabel": "10 · KÖNYÖRTELEN"
+        },
+        "q9_2": {
+          "title": "Melyik állítás áll legközelebb a titkos félelméhez.",
+          "subtitle": "az önmagáról szóló mondat, amely minden más alatt él, az, amit csak egy nehéz napon vallana be",
+          "options": {
+            "never_enough": "Soha nem vagyok elég jó",
+            "fear_abandoned": "Félek, hogy elhagynak",
+            "fear_losing_control": "Félek, hogy elveszítem az irányítást",
+            "fear_failure": "Félek a kudarctól",
+            "fear_ordinary": "Félek, hogy átlagos vagyok",
+            "fear_rejection": "Félek az elutasítástól",
+            "fear_dependence": "Félek a függőségtől"
+          }
+        },
+        "q9_3": {
+          "title": "Milyen gyakran érzi magát elszakítva önmagától.",
+          "subtitle": "az az érzés, mintha kis távolságból figyelné saját életét, mintha nem lenne teljesen benne",
+          "lowLabel": "1 · SOHA",
+          "highLabel": "10 · NAPONTA"
+        },
+        "q9_4": {
+          "title": "Milyen gondolat ismétlődik a leggyakrabban az elméjében.",
+          "subtitle": "a visszatérő mondat vagy aggodalom, amely rendszeresen visszatér – írja le a tényleges szavaival, ne összefoglalva"
+        },
+        "q9_5": {
+          "title": "Miért kritizálja magát titokban.",
+          "subtitle": "azok a dolgok, amelyekért önmagát bírálja, és amiről senki más nem tud – a testéről, elméjéről, döntéseiről, jelleméről"
+        },
+        "q9_6": {
+          "title": "Mi tenne eléggé elégedetté.",
+          "subtitle": "az a feltétel, amelyet csendben szabott magának, hogy végre megnyugodjon – legyen őszinte, a válasz gyakran kisebb, mint gondolná"
+        },
+        "q9_7": {
+          "title": "Ha belső hangjának személyisége lenne, hogyan írná le.",
+          "subtitle": "annak a hangnak a kora, neme, tónusa – és kinek a hangja lehet valójában, ha visszavezeti"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Mi a fontosabb Önnek.",
+          "subtitle": "válassza ki azt, ami most a legfontosabb – a többi is számíthat, de legyen őszinte a rangsorral kapcsolatban",
+          "options": {
+            "freedom": "Szabadság",
+            "love": "Szerelem",
+            "recognition": "Elismerés",
+            "stability": "Stabilitás",
+            "power": "Hatalom",
+            "meaning": "Értelem",
+            "peace": "Béke",
+            "influence": "Befolyás"
+          }
+        },
+        "q10_2": {
+          "title": "Mennyire reménykedik a jövőjével kapcsolatban.",
+          "subtitle": "az érzés, amikor előretekint, nem az a derűs válasz, amit másoknak ad, amikor kérdezik",
+          "lowLabel": "1 · SEMENNYIRE",
+          "highLabel": "10 · MÉLYEN"
+        },
+        "q10_3": {
+          "title": "Mit szeretne titokban a legjobban.",
+          "subtitle": "az a vágy, amit még nem engedett meg magának, hogy kimondjon – az, ami túl nagynak, túl kockázatosnak vagy túl kínosnak tűnik",
+          "options": {
+            "to_be_understood": "Megértést",
+            "to_be_admired": "Csodálatot",
+            "to_feel_safe": "Biztonságot",
+            "to_be_desired": "Vágyat",
+            "to_feel_important": "Fontosságot",
+            "to_feel_free": "Szabadságot",
+            "to_belong": "Valahova tartozást"
+          }
+        },
+        "q10_4": {
+          "title": "Írja le részletesen ideális jövőbeli életét.",
+          "subtitle": "a konkrét részletek – hol van, kivel van, milyenek a reggelei, a munka, a fény, a ritmus"
+        },
+        "q10_5": {
+          "title": "Milyen félelem rombolhatná le ezt a jövőt.",
+          "subtitle": "az a dolog – belső vagy külső –, ami már megállította, és újra megállíthatja, ha hagyja"
+        },
+        "q10_6": {
+          "title": "Melyik részévé próbál még válni önmagának.",
+          "subtitle": "az önmaga azon változata a horizonton – a tulajdonságok, a szabadságok, a létezés módja, ami felé lassan halad"
+        },
+        "q10_7": {
+          "title": "Ha senki sem ítélné meg, hogyan élne másképp.",
+          "subtitle": "azok a döntések, amelyeket meghozna, ha a figyelés megszűnne – a munkáról, a szerelemről, a testről, az időről, a pénzről, a hangról"
+        },
+        "q10_8": {
+          "title": "Mit gondol, mit keres valójában.",
+          "subtitle": "a mélyebb dolog az összes korábbi válasza alatt – amire minden választás és vágy valójában rámutat"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "EREDET · FEJLŐDÉSI LENYOMAT",
+        "headline": [
+          "Amit a korai szoba ",
+          "tanított neked",
+          "."
+        ],
+        "lede": "Az első rész az érzelmi klímát, a biztonságot és a neked szánt szerepet vizsgálja. Az itt rögzített minták képezik az alapot, amire minden későbbi épül.",
+        "title": "Eredet",
+        "subtitle": "fejlődési lenyomat"
+      },
+      "attachment": {
+        "eyebrow": "KÖTŐDÉS · CSALÁDI STRUKTÚRA",
+        "headline": [
+          "Az első ",
+          "kötődések",
+          ", és az általuk hagyott forma."
+        ],
+        "lede": "Meghatározza a kötődési stílusodat, a tekintélyhez való viszonyodat és a triangulációt, amelyben felnőttél. Az első kötődés formája lesz az a sablon, amihez minden későbbi mérve lesz.",
+        "title": "Kötődés",
+        "subtitle": "családi struktúra"
+      },
+      "authority": {
+        "eyebrow": "TEKINTÉLY · SZIMBOLIKUS TÖRVÉNY",
+        "headline": [
+          "Az örökölt ",
+          "hangok",
+          "."
+        ],
+        "lede": "Feltárja az erkölcsi kódokat, a bűntudat struktúráit és az örökölt identitást, amelyek még mindig a háttérben futnak. Azok a hangok, amelyek alatt felnőttél, ritkán távoznak; ők válnak azzá a hanggá, amelyik megítél téged.",
+        "title": "Tekintély",
+        "subtitle": "szimbolikus törvény"
+      },
+      "belonging": {
+        "eyebrow": "VALAHOWÁ TARTOZÁS · TÁRSADALMI IDENTITÁS",
+        "headline": [
+          "Ki ",
+          "láthat téged",
+          "."
+        ],
+        "lede": "Méri a társadalmi függőséget, az identitás elfedését és a kirekesztéstől való félelmet. A valahová tartozás ritkán ingyenes; ez a szakasz azt kérdezi, mit adsz érte cserébe.",
+        "title": "Valahová tartozás",
+        "subtitle": "társadalmi identitás"
+      },
+      "persona": {
+        "eyebrow": "PERSZÓNA · VÁGY ÉS DIGITÁLIS ÉN",
+        "headline": [
+          "Az az én, amit ",
+          "előadsz",
+          "."
+        ],
+        "lede": "Elemzi az idealizált ént, a validációs hurkot és a szimbolikus előadást, amelyet online színre viszel. A perszóna nem hazugság; egy félig feltárt kívánság.",
+        "title": "Perszóna",
+        "subtitle": "vágy és digitális én"
+      },
+      "desire": {
+        "eyebrow": "VÁGY · INTIMITÁS ÉS ISMÉTLÉS",
+        "headline": [
+          "Az a minta, ami ",
+          "folyton visszatér",
+          "."
+        ],
+        "lede": "Megtalálja az ismétlődő kapcsolati formát, az elhagyatottságtól való félelmet, a vágyon belüli ellentmondást. Ami ismétlődik, azt ritkán választják; az az, ami látni akarja magát.",
+        "title": "Vágy",
+        "subtitle": "intimitás és ismétlés"
+      },
+      "achievement": {
+        "eyebrow": "TELJESÍTMÉNY · MUNKA ÉS ELISMERÉS",
+        "headline": [
+          "Amit ",
+          "bizonyítani próbálsz",
+          "."
+        ],
+        "lede": "Felismeri a teljesítmény szorongását, az elismerés iránti éhséget és a munkahelyi tekintélyhez való viszonyodat. Minden ambíció mögött egy vagy két emberből álló közönség áll.",
+        "title": "Teljesítmény",
+        "subtitle": "munka és elismerés"
+      },
+      "escape": {
+        "eyebrow": "MENEKÜLÉS · ÖRÖM ÉS RITUÁLÉ",
+        "headline": [
+          "Ahová ",
+          "elmész, hogy ne legyél itt",
+          "."
+        ],
+        "lede": "Azonosítja az elkerülési mintákat, a kényszereket és az örömöt szabályozó rituálékat. Az a kijárat, amiért nyúlsz, legalább annyit mond el, mint az a szoba, amit elhagysz.",
+        "title": "Menekülés",
+        "subtitle": "öröm és rituálé"
+      },
+      "self-relation": {
+        "eyebrow": "ÖNMAGUNKHOZ VALÓ VISZONY · BELSŐ PÁRBESZÉD",
+        "headline": [
+          "Az a hang, amit nem ",
+          "tudsz elhallgattatni",
+          "."
+        ],
+        "lede": "Feltérképezi a szuperego határát, a szégyenstruktúrákat és a belsővé vált hangokat. Az, ahogyan magadhoz beszélsz magánéletedben, a legőszintébb feljegyzés arról, ki nevelt téged.",
+        "title": "Önmagunkhoz való viszony",
+        "subtitle": "belső párbeszéd"
+      },
+      "future-fantasy": {
+        "eyebrow": "JÖVŐ · FANTÁZIA, FÉLELEM ÉS VÁGY",
+        "headline": [
+          "Amit ",
+          "valójában keresel",
+          "."
+        ],
+        "lede": "Az érzelmi csúcspont – a jövő, amit elképzelsz, a félelem, ami kísérti, az alatta rejlő alapvető vágy. Az utolsó kérdés az első, ami visszatér.",
+        "title": "Jövő-fantázia",
+        "subtitle": "fantázia, félelem és vágy"
+      }
+    }
+  },
+  "common": {
+    "or": "vagy",
+    "loading": "betöltés…",
+    "sending": "küldés…",
+    "save": "Mentés",
+    "saved": "mentve",
+    "cancel": "Mégse",
+    "close": "Bezárás",
+    "back": "Vissza",
+    "continue": "Folytatás",
+    "retry": "Újra",
+    "more": "több"
+  },
+  "nav": {
+    "room": "Szoba",
+    "readings": "Olvasatok",
+    "catchup": "Catchup",
+    "consulting": "Konzultáció",
+    "caseFile": "Esetakták",
+    "settings": "Beállítások",
+    "signIn": "Bejelentkezés",
+    "signOut": "Kijelentkezés",
+    "getStarted": "Kezdés",
+    "language": "Nyelv",
+    "method": "Módszer",
+    "theWork": "A munka",
+    "about": "Rólunk",
+    "contact": "Kapcsolat",
+    "start": "Indítás"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Bejelentkezés",
+      "titleItalic": "be",
+      "titleAfter": ".",
+      "googleLabel": "Bejelentkezés Google-fiókkal",
+      "or": "vagy",
+      "emailLabel": "E-MAIL CÍM",
+      "passwordLabel": "JELSZÓ",
+      "forgotPassword": "Elfelejtett jelszó",
+      "submit": "Bejelentkezés",
+      "footPrompt": "Új felhasználó? ",
+      "footLink": "Fiók létrehozása"
+    },
+    "signUp": {
+      "titleBefore": "Fiók ",
+      "titleItalic": "létrehozása",
+      "titleAfter": ".",
+      "googleLabel": "Folytatás Google-fiókkal",
+      "or": "vagy",
+      "emailLabel": "E-MAIL CÍM",
+      "passwordLabel": "JELSZÓ",
+      "confirmPasswordLabel": "JELSZÓ MEGERŐSÍTÉSE",
+      "submit": "Fiók létrehozása",
+      "footPrompt": "Már van fiókja? ",
+      "footLink": "Bejelentkezés",
+      "resentNote": "Új link elküldve.",
+      "resendConfirmation": "Megerősítés újraküldése",
+      "pendingFootPrompt": "Rossz cím? ",
+      "pendingFootLink": "Újrakezdés"
+    },
+    "forgot": {
+      "titleBefore": "Elfelejtette ",
+      "titleItalic": "jelszavát",
+      "titleAfter": ".",
+      "lede": "Adja meg a regisztrációkor használt e-mail címet. Elküldünk egy linket a jelszó visszaállításához.",
+      "emailLabel": "E-MAIL CÍM",
+      "submit": "Visszaállító link küldése",
+      "footPrompt": "Emlékszik rá? ",
+      "footLink": "Bejelentkezés",
+      "sentBackLink": "Vissza a bejelentkezéshez"
+    },
+    "reset": {
+      "titleBefore": "Új jelszó ",
+      "titleItalic": "beállítása",
+      "titleAfter": ".",
+      "newPasswordLabel": "ÚJ JELSZÓ",
+      "confirmPasswordLabel": "JELSZÓ MEGERŐSÍTÉSE",
+      "submit": "Jelszó frissítése",
+      "expiredTitleBefore": "Ez a link ",
+      "expiredTitleItalic": "már nem érvényes",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Új link kérése"
+    },
+    "errors": {
+      "invalid_credentials": "Az e-mail cím vagy a jelszó nem egyezik.",
+      "email_taken": "Ez az e-mail cím már regisztrálva van. Próbáljon bejelentkezni.",
+      "weak_password": "Használjon legalább 8 karaktert.",
+      "passwords_dont_match": "A jelszavak nem egyeznek.",
+      "email_invalid": "Ez nem tűnik érvényes e-mail címnek.",
+      "rate_limited": "Túl sok próbálkozás. Próbálja meg később.",
+      "unconfirmed_email": "Először erősítse meg az e-mail címét. Ellenőrizze a beérkező leveleket.",
+      "reset_link_expired": "Ez a link lejárt. Kérjen újat.",
+      "reset_link_invalid": "Ez a link már nem érvényes. Kérjen újat.",
+      "oauth_failed": "Nem sikerült elérni a Google-t. Próbálja újra.",
+      "callback_failed": "Nem sikerült befejezni a bejelentkezést.",
+      "generic": "Hiba történt. Próbálja újra.",
+      "no_session": "Jelentkezzen be a folytatáshoz."
+    },
+    "success": {
+      "checkInboxEyebrow": "ELLENŐRIZZE A BEÉRKEZŐ LEVELEIT",
+      "confirmationHeadlineBefore": "Elküldtünk egy ",
+      "confirmationHeadlineItalic": "megerősítő linket",
+      "confirmationHeadlineAfter": " ide: ",
+      "confirmationLede": "Kattintson rá a fiók létrehozásának befejezéséhez.",
+      "resetSentEyebrow": "ELLENŐRIZZE A BEÉRKEZŐ LEVELEIT",
+      "resetSentHeadlineBefore": "Ha az e-mail cím ",
+      "resetSentHeadlineItalic": "regisztrálva van",
+      "resetSentHeadlineAfter": ", elküldtünk egy visszaállító linket.",
+      "resetSentLede": "A link egyszer használható, és egy órán belül lejár. Ha nem érkezett link, nincs fiók.",
+      "passwordUpdated": "Jelszó frissítve. Bejelentkezés folyamatban."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "FIÓK",
+      "headlineBefore": "Állítsa be a",
+      "headlineItalic": "csendes szobáját",
+      "lede": "Egy név, egy év, és egy igen. A munka ezután kezdődik.",
+      "saveFailed": "Nem sikerült menteni. Próbálja újra egy pillanat múlva.",
+      "nameLabel": "NÉV",
+      "nameRequired": "Név megadása kötelező.",
+      "prefilledHint": "előre kitöltve a Google-ból · szerkeszthető",
+      "yearLabel": "SZÜLETÉSI ÉV",
+      "yearRequired": "Válasszon évet.",
+      "genderLabel": "NEM",
+      "genderRequired": "Válasszon egyet.",
+      "gender": {
+        "male": "Férfi",
+        "female": "Nő",
+        "nonBinary": "Nem bináris",
+        "preferNotToSay": "Nem szeretném megmondani"
+      },
+      "languageLabel": "NYELV",
+      "termsBefore": "Elfogadom a",
+      "termsLink": "Felhasználási feltételeket",
+      "termsAnd": "és az",
+      "privacyLink": "Adatvédelmi irányelveket",
+      "termsAfter": ".",
+      "submit": "Fiók indítása"
+    },
+    "intro": {
+      "eyebrow": "BEVEZETÉS · NINCS ROSSZ VÁLASZ",
+      "headlineBefore": "Nincsenek jó válaszok",
+      "headlineItalic": "itt"
+    },
+    "brief": {
+      "title": "A TÁJÉKOZTATÓ",
+      "hint": "olvassa el egyszer, majd kezdje el",
+      "opener": "A rossz válaszok — a habozások, az elgépelések, a kihagyások — éppoly tisztán beszélnek, mint a helyesek.",
+      "privacy": "Minden, amit ír, privát. Semmi sem hagyja el ezt a szobát.",
+      "length": "Mivel a munka mélyreható, a bevezetés hosszú. Tíz részre osztottuk. Az egész körülbelül két órát vesz igénybe.",
+      "resume": "Mentse el, és folytassa egy másik napon. Bármelyik szakaszt szerkesztheti, miután befejezte – a profil továbbra is figyel.",
+      "begin": "Bevezetés indítása"
+    },
+    "saved": {
+      "eyebrow": "MENTÉS ÉS SZÜNET",
+      "headlineItalic": "Mentve.",
+      "headlineAfter": "Térjen vissza, amikor készen áll.",
+      "body": "Minden, amit írt, az esetfájljában található. A szoba legközelebb ugyanazon a helyen nyílik meg.",
+      "keepGoing": "folytatás",
+      "leaveRoom": "Hagyja el a csendes szobát"
+    },
+    "step": {
+      "label": "LÉPÉS",
+      "of": "/",
+      "min": "PERC",
+      "progressLabel": "Bevezetési folyamat",
+      "finalEpigraph": "az utolsó kérdés mindig az első újra.",
+      "backTo": "{n}. lépés",
+      "continueTo": "Folytatás a {n}. lépéssel",
+      "submit": "Mentés és beküldés",
+      "submitReading": "olvasás…"
+    },
+    "questions": {
+      "closeTitle": "ZÁRT KÉRDÉSEK",
+      "closeHint": "válassza ki, ami igaz",
+      "openTitle": "NYITOTT KÉRDÉSEK",
+      "openHint": "írja le, ami felmerül",
+      "countLabel": "{count, plural, one {kérdés} other {kérdés}}"
+    },
+    "saveExit": {
+      "or": "vagy",
+      "saveAndReturn": "mentés és visszatérés később"
+    },
+    "saveIndicator": {
+      "saving": "mentés…",
+      "saved": "mentve",
+      "saveFailed": "mentés sikertelen"
+    }
+  },
+  "readings": {
+    "whatThisIs": "mi ez →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "tudatalatti hurkok",
+        "definition": "Érzések, cselekvések és kimenetelek ismétlődő sorozatai, amelyek tudatos választáson kívül jelentkeznek. A hurok megnevezése az első megszakítása.",
+        "seedReading": "közeledik a meghittséghez, majd egy apró hibát generál, hogy visszalépjen.",
+        "seedTakeaway": "a visszavonulás a hurok. nem a meghittség."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "nyelvi tudattalan",
+        "definition": "Ahogyan a tudattalan anyag a szóválasztásban, ismétlésekben, elszólásokban és a beszéd szerkezetében felszínre tör – Lacan állítása, miszerint a tudattalan úgy strukturált, mint egy nyelv.",
+        "seedReading": "a beszéd megduplázódik a „kell” szónál – egy örökölt követelés helye.",
+        "seedTakeaway": "valaki más hangja még mindig ezen a szón keresztül szól."
+      },
+      "father-imago": {
+        "subtitle": "apa-imágó",
+        "definition": "Az apa internalizált képe, korán kialakult és részben mitikus. Meghatározza, hogyan találkozik a tekintély, az ambíció és az ítélet az élet későbbi szakaszában.",
+        "seedReading": "felülről ítél, mielőtt felülről ítélnék – a pozíció azonos.",
+        "seedTakeaway": "a szék változik. a szék nem."
+      },
+      "intimacy-threshold": {
+        "subtitle": "intimitásküszöb",
+        "definition": "Az a pont, amikor a közelség kockázatnak tűnik, és védekező lépés következik. Mindenkinél más; meglepően stabil a kapcsolatokban.",
+        "seedReading": "jól tartja magát, amíg a másik olvashatóvá nem válik – aztán visszavonul.",
+        "seedTakeaway": "az ismeretség a határ, nem a közelség."
+      },
+      "desire-structure": {
+        "subtitle": "vágystruktúra",
+        "definition": "Amit a felhasználó valójában akar, megkülönböztetve attól, amit elmondtak neki, hogy akarnia kell. Gyakran tagadással fedezik fel – azáltal, hogy észreveszik, mit utasítanak el.",
+        "seedReading": "sok vágyat nevez meg, kettőt elutasít – az elutasítás a jel.",
+        "seedTakeaway": "amit eltolnak, az tisztábban mutat, mint amit kergetnek."
+      },
+      "professional-block": {
+        "subtitle": "szakmai blokk",
+        "definition": "Ahol a munka elakad: az elején, a közepén, a végén vagy a láthatóságban. Minden helynek megvan a maga tudattalan forrása.",
+        "seedReading": "a célvonalnál érkezik a kétség, soha nem az elején.",
+        "seedTakeaway": "a blokk a láthatóságnál van, nem az erőfeszítésnél."
+      },
+      "mother-imago": {
+        "subtitle": "anya-imágó",
+        "definition": "Az anya internalizált képe – az első ráhangolódás, az első elszakadás. Ez határozza meg a függőség és a menedék textúráját.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "a korai ráhangolódás hosszú nyomot hagy."
+      },
+      "dream-logic": {
+        "subtitle": "álomlogika",
+        "definition": "Az álomanyagban működő kondenzáció és eltolás. Az álom nyelvtana, nem a szimbólumai alapján olvasandó.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "az álomtartalomnak saját nyelvtana van."
+      },
+      "relational-pattern": {
+        "subtitle": "kapcsolati minta",
+        "definition": "A kapcsolatokban felvett ismétlődő testtartás – üldöző, visszavonuló, szülő, gyermek, egyenlő. Stabilabb a partnerek között, mint amennyire a partnerek stabilak a felhasználó számára.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "ugyanaz az alakzat jelenik meg különböző szobákban."
+      },
+      "defenses": {
+        "subtitle": "védekezések",
+        "definition": "A jellemző mozdulatok, amelyeket a nehéz anyag tudatból való távol tartására használnak – intellektualizáció, eltolás, reakcióképzés, hasítás. A védekezések nem kudarcok; régi megoldások.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "a védekezés megnevezi, ami egykor elviselhetetlen volt."
+      },
+      "shadow": {
+        "subtitle": "árnyék",
+        "definition": "Amit megtagadtak és másoknak tulajdonítottak – azok a tulajdonságok, amelyekről a felhasználó a legbiztosabb, hogy nem ő. Gyakran a vitalitáshoz vezető út.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "amit megtagadnak, az még mindig hat."
+      },
+      "transference": {
+        "subtitle": "transzferencia",
+        "definition": "Ahogyan a régi kapcsolati alakok a jelenlegiekre vetülnek – az elemzőre, a partnerre, a főnökre. A minta feltárja az imágót.",
+        "seedReading": "túl korai még magabiztosan kijelenteni – az alakzat formálódik.",
+        "seedTakeaway": "régi alakok érkeznek a jelenlegi szobákba."
+      }
+    },
+    "strip": {
+      "lastRefined": "utoljára finomítva",
+      "readingDepth": "olvasási mélység"
+    },
+    "section": {
+      "eyebrow": "OLVASAT {index} · {subtitle}",
+      "strengthen": "pontosság megerősítése",
+      "requestReport": "jelentés kérése"
+    },
+    "card": {
+      "reading": "Olvasat {index}"
+    },
+    "report": {
+      "eyebrow": "KLINIKAI JELENTÉS",
+      "heading": "Az Ön <it>elemzőjének.</it>",
+      "lede": "Egy 12–18 oldalas dosszié – a hat olvasat teljesen kidolgozva, plusz hat további, amit a műszerfal nem mutat: anya-imágó, álomlogika, kapcsolati minta, védekezések, árnyék, transzferencia. A klinikus munkanyelvére fordítva.",
+      "note": "a jelentés a rendelkezésre álló mélységet tükrözi. újra generálható, ahogy az olvasat mélyül.",
+      "generate": "Klinikai jelentés generálása",
+      "request": "Klinikai jelentés kérése",
+      "footPrefix": "havonta egy jelentés jár a ",
+      "footLink": "előfizetőknek"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "KÉRDÉS {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Mi maradt meg a hétből?",
+        "framing": "egy kifejezés, egy kép, egy mondat, amit valaki mondott."
+      },
+      "closeness": {
+        "prompt": "Mennyire engedett közel bárkit is?",
+        "options": {
+          "not_at_all": "egyáltalán nem",
+          "briefly": "rövid ideig",
+          "with_hesitation": "habozva",
+          "openly": "nyíltan",
+          "too_far": "túl messzire"
+        }
+      },
+      "loop": {
+        "prompt": "Elkapta magát egy ismerős *hurokban*?",
+        "framing": "hol, és hogyan ért véget."
+      },
+      "loudest_voice": {
+        "prompt": "Melyik hang volt a leghangosabb ezen a héten?",
+        "options": {
+          "demand": "a követelés",
+          "doubt": "a kétség",
+          "desire": "a *vágy*",
+          "watcher": "a megfigyelő",
+          "none": "egyik sem"
+        }
+      },
+      "dream": {
+        "prompt": "Volt olyan álom, amit érdemes volt leírni?",
+        "framing": "ha igen, az a töredék, ami megmaradt."
+      },
+      "acted_on_desire": {
+        "prompt": "Mennyire cselekedett aszerint, amit valójában akart?",
+        "lowLabel": "egyáltalán nem",
+        "highLabel": "teljesen"
+      },
+      "work_catch": {
+        "prompt": "Hol kapta el a munka?",
+        "options": {
+          "start": "az elején",
+          "middle": "középen",
+          "finish": "a végén",
+          "visibility": "a láthatóság",
+          "nowhere": "sehol"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Mi az a kérdés, amire most nem akar válaszolni?",
+        "framing": "az, ami mindig elsuhan."
+      }
+    },
+    "openHint": "a hosszabb válaszok elmélyítik az olvasatot",
+    "scaleLegend": "{low} és {high} között",
+    "noValue": "nincs kiválasztott érték",
+    "valueOf": "{value} a(z) {max} értékből",
+    "weekLabel": "HÉT {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Mi maradt meg<it>?</it>",
+    "coverLede": "Nyolc rövid kérdés. Az őszinteség jobb, mint a terjengősség. A válaszok finomítják az olvasatot; semmi sem kerül osztályozásra.",
+    "begin": "Kezdés",
+    "back": "vissza",
+    "next": "következő",
+    "submitting": "küldés",
+    "closeTheWeek": "a hét lezárása",
+    "previousQuestion": "előző kérdés",
+    "processingLine": "<em>a hét olvasása folyamatban.</em>",
+    "summaryEyebrow": "{weekLabel} · VISSZAOLVASÁS",
+    "summaryTitle": "A hét, <it>az Ön szavaival.</it>",
+    "caseLabel": "eset · {week}",
+    "justRefined": "épp most finomítva",
+    "readingsShifted": "olvasatok eltolódtak",
+    "readingsCount": "{n} a 12-ből",
+    "returnToRoom": "Vissza a Szobába",
+    "readAgain": "olvassa el újra az esetfájlban",
+    "somethingToHold": "VALAMI, AMIBE KAPASZKODNI",
+    "enterConsultingRoom": "belépés a Konzultációs Szobába",
+    "openConsultingRoom": "Konzultációs Szoba megnyitása",
+    "requestReport": "klinikai jelentés kérése",
+    "errorSubmit": "nem sikerült elküldeni a Catchupot",
+    "errorGeneric": "valami hiba történt",
+    "errorFailed": "a Catchup rögzítve van. az összefoglaló később érkezik.",
+    "errorGiveUp": "a Szoba rövid ideig csendes – a Catchup rögzítve van. frissítse egy perc múlva.",
+    "summaryFallback": "A Catchup rögzítve van. Az olvasat csendben frissült; a hosszabb összefoglaló a következő alkalommal érkezik.",
+    "readBackTitle": "A hét, <it>már bent.</it>",
+    "readBackEmpty": "a Catchup rögzítve van. az összefoglaló rövid lesz ezen a héten.",
+    "readBackFoot": "a következő Catchup a(z) {n}. hét elején nyílik meg."
+  },
+  "consulting": {
+    "sessionClose": "lejárt az időnk.",
+    "sayIt": "mondja →",
+    "closeSession": "munkamenet bezárása →",
+    "eyebrow": "KONZULTÁCIÓS SZOBÁBAN",
+    "closing": "lezárás",
+    "closeSessionLabel": "munkamenet bezárása",
+    "timerAria": "eltelt munkamenet idő",
+    "chooseTopicAria": "válasszon témát",
+    "noTopic": "nincs téma",
+    "justOpened": "épp most nyílt meg",
+    "minutesIn": "{count} perc eltelt",
+    "speakToAnalyst": "beszéljen az analitikussal",
+    "send": "küldés",
+    "sessionClosedFoot": "a munkamenet lezárult. bekerült az esetfájlba.",
+    "previewHeld": "melyik része önnek választja ezt újra és újra?",
+    "previewTopicDreamingFuture": "Jövő álmodása",
+    "previewTopicNightDream": "Éjszakai álom",
+    "previewTopicRelations": "Kapcsolatok az életemben",
+    "previewTopicProfessionalGrowth": "Szakmai fejlődés",
+    "previewTurnAnalyst1": "Nevezzen meg egy mintát, majd mesélje el, mintha egy idegené lenne. Figyelje meg, mikor kezdődik a <em>visszavonulás</em>.",
+    "previewTurnUser1": "Mindig véget vetek a dolgoknak azon a héten, amikor komolyra fordulnak.",
+    "previewTurnAnalyst2": "A reggel az ítélet, nem a tárgyalás. Az ön <em>intimitásküszöbe</em> hetekkel a beszélgetés előtt begyakorolta a távozást.",
+    "sayItEllipsis": "mondja…",
+    "offerHeadline": "A konzultációs szoba",
+    "offerLede": "Hosszú ülés az analitikussal, ugyanabban a hangnemben, mint az olvasatai. A munkamenetek privátak, az esetfájlban tárolódnak, és az ülések között táplálják az olvasatokat.",
+    "offerPanelsAria": "mit tesz egy munkamenet",
+    "offerPanel1Title": "megnevezve, nem elmesélve",
+    "offerPanel1Body": "Az analitikus megnevezi, mi történik a beszédében – a nyelvbotlást, a minősítést, a félig kimondottat –, és ott tartja, amíg ön meg nem látja.",
+    "offerPanel2Title": "az esetfájlban tárolva",
+    "offerPanel2Body": "Minden ülést leírnak. A következő olvasat elolvassa. A minták hetek, nem fordulatok során bukkannak fel.",
+    "offerPanel3Title": "egy hang, nincs névsor",
+    "offerPanel3Body": "Nem chatbot rotáció. Egyetlen analitikus hang, amely az ön bevitelén képzett, és minden Catchup által finomított.",
+    "offerFootLine": "Az előfizetők havonta egy klinikai jelentést kapnak.",
+    "offerPillCta": "Lépjen be a konzultációs szobába",
+    "offerReturnToRoom": "vissza a szobába",
+    "previewFigureLabel": "a konzultációs szoba",
+    "previewFigureSubtitle": "egy ülés, előnézetben",
+    "previewRailAria": "esetfájl területek, amelyekből az analitikus olvas",
+    "previewReadingFrom": "OLVASÁS INNEN",
+    "previewActive": "aktív",
+    "previewRoleYou": "ÖN",
+    "previewRoleAnalyst": "ANALITIKUS",
+    "previewBubble1": "Mindig véget vetek a dolgoknak azon a héten, amikor komolyra fordulnak. Nem tudom, miért teszem.",
+    "previewAnalyst1": "Nevezzen meg egy mintát, majd mesélje el, mintha egy idegené lenne. Az <em>„nem tudom”</em> dolgozik – a tettet a szándék távoli oldalán tartja. Figyelje meg, mikor kezdődik a <em>visszavonulás</em>. Gyakran a kizárás hamarabb megtörténik, mint a távozás.",
+    "previewBubble2": "Hogyan hamarabb? Legutóbb úgy éreztem, egy reggel felébredtem, és tudtam.",
+    "previewAnalyst2": "A reggel az ítélet, nem a tárgyalás. Az ön <strong>intimitásküszöbe</strong> a 04. hétről szóló olvasatban ugyanazt a formát mutatta – a távozás csendes próbája, két-három héttel a beszélgetés előtt. A reggel az, amikor a test végre egyetért azzal, amit ön már eldöntött.",
+    "previewBubble3": "Ez az, ami megijeszt. Hogy már eldöntötték.",
+    "previewAnalyst3": "A <em>döntött</em> a szó. Nem a <em>választott</em>. Valami a struktúrában a kizárást részesíti előnyben a teszttel szemben. Folytatjuk ott.",
+    "previewExampleMark": "PÉLDA · NEM AZ ÖN FELJEGYZÉSÉBŐL"
+  },
+  "caseFile": {
+    "silentWeek": "— néma hét —",
+    "eyebrow": "ESETTANULMÁNY",
+    "headlineLead": "Egy feljegyzés, vezetve",
+    "headlineItalic": "csendesen.",
+    "lede": "Minden Catchup, ülés és jelentés – dátum szerint rendezve. A hiányok a feljegyzés részét képezik.",
+    "filterAria": "Szűrő",
+    "filter": {
+      "all": "mind",
+      "catchups": "Catchupok",
+      "sessions": "ülések",
+      "reports": "jelentések"
+    },
+    "subscriptionTitle": "Előfizetés",
+    "emptyCatchups": "az esettanulmány még üres – az első Catchup nyitja meg.",
+    "emptyCatchupsCta": "Ugrás a Catchuphoz",
+    "emptySessions": "az esettanulmány még üres – az első konzultációs ülés nyitja meg.",
+    "emptySessionsCta": "Ugrás a Konzultációs Szobába",
+    "emptyReports": "az esettanulmány még üres – az első generált jelentés nyitja meg.",
+    "open": "megnyitás",
+    "kindCatchup": "Catchup",
+    "kindSession": "ülés",
+    "kindReport": "klinikai jelentés",
+    "kindReading": "felvételi olvasat",
+    "kindConnection": "kapcsolódási esemény",
+    "entryEyebrow": "ESETTANULMÁNY · BEJEGYZÉS",
+    "entryBackToCaseFile": "vissza az esettanulmányhoz",
+    "entryReturnToRoom": "vissza a Szobába",
+    "sessionStillOpen": "ez az ülés még nyitva van. az olvasat az ülés lezárása után jelenik meg.",
+    "entryDetailComing": "ennek a bejegyzésnek a részletes nézete hamarosan érkezik. egyelőre az esettanulmány a dátumot, a típust és a címet őrzi – a többi még a Szobában van.",
+    "detailSummaryEyebrow": "ÖSSZEFOGLALÁS · AZ ÖN VÁLASZAI",
+    "detailRecommendationEyebrow": "A MI CATCHUPUNK",
+    "preparingRead": "az olvasat előkészítése…",
+    "readNotAssembled": "az olvasatot most nem sikerült összeállítani.",
+    "tryAgain": "próbálja újra",
+    "intakeClose": "bezárás",
+    "intakeEdit": "szerkesztés",
+    "intakeSaving": "mentés",
+    "intakeSave": "mentés",
+    "intakeCancel": "mégse",
+    "intakeUnsupported": "ez a kérdés magán a felvételi űrlapon belül szerkeszthető.",
+    "intakePickUpTo": "folytatás {count} elemig.",
+    "intakeScaleSetTo": "Beállítva: {value}"
+  },
+  "settings": {
+    "eyebrow": "BEÁLLÍTÁSOK",
+    "heading": "A <it>szoba</it> formája.",
+    "lede": "Semmi sem állandó. A válaszok szerkeszthetők, a preferenciák módosíthatók, és az esetnapló teljesen törölhető.",
+    "blocks": {
+      "account": "Fiók",
+      "readingDepth": "Olvasási mélység",
+      "notifications": "Értesítések",
+      "subscription": "Előfizetés",
+      "dangerZone": "Veszélyzóna"
+    },
+    "dangerZoneIntro": "az egyetlen visszavonhatatlan művelet a szobában.",
+    "depthSub": {
+      "intake": {
+        "title": "Az Ön felmérése",
+        "caption": "{answered} / {total} megválaszolva",
+        "ctaEmpty": "Töltse ki a felmérést",
+        "ctaPartial": "Adjon meg további részleteket",
+        "ctaFull": "Tekintse át a felmérését"
+      },
+      "catchups": {
+        "title": "Catchupok",
+        "caption": "{count} az elmúlt 8 hétben",
+        "ctaEmpty": "Catchup hozzáadása",
+        "ctaDue": "Töltse ki a heti catchupot",
+        "ctaFull": "Tekintse át a korábbi catchupokat"
+      },
+      "sessions": {
+        "title": "Konzultációk",
+        "caption": "{count} befejezve",
+        "ctaEmpty": "Konzultáció indítása",
+        "ctaPartial": "Konzultáció folytatása",
+        "ctaFull": "Tekintse át a korábbi konzultációkat"
+      },
+      "connections": {
+        "title": "Kapcsolatok",
+        "caption": "{count} aktív",
+        "ctaEmpty": "Kapcsolat hozzáadása",
+        "ctaSingle": "További kapcsolat hozzáadása",
+        "ctaFull": "Tekintse át a kapcsolatait"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "heti catchup emlékeztető",
+        "sub": "egy diszkrét értesítés az új hét elején"
+      },
+      "consulting_session_reminder": {
+        "label": "konzultációs emlékeztető",
+        "sub": "emlékeztető a közelgő konzultáció előtt"
+      },
+      "connection_requests": {
+        "label": "kapcsolat elfogadva",
+        "sub": "értesítés, ha valaki elfogadja a meghívását"
+      }
+    },
+    "toggleOn": "be",
+    "toggleOff": "ki",
+    "quietHours": {
+      "label": "csendes órák",
+      "sub": "nincs e-mail ezek között az órák között, az Ön helyi ideje szerint",
+      "from": "ettől",
+      "to": "eddig"
+    },
+    "saveFailed": "mentés sikertelen",
+    "dangerZone": {
+      "trigger": "Fiók törlése",
+      "modalAria": "Fiók törlésének megerősítése",
+      "eyebrow": "VESZÉLYZÓNA",
+      "heading": "Az <it>esetnapló</it> törlése.",
+      "body": "Ez eltávolít minden olvasatot, catchupot, konzultációt és jelentést a nyilvántartásból. Az aktív kapcsolatok megszakadnak; mindkét fél értesítést kap. Ez nem vonható vissza.",
+      "instruction": "írja be a <phrase></phrase> kifejezést a művelet engedélyezéséhez.",
+      "inputAria": "Írja be a megerősítő kifejezést",
+      "cancel": "mégse",
+      "erasing": "törlés…",
+      "eraseConfirm": "esetnapló törlése",
+      "deleteFailed": "törlés sikertelen"
+    },
+    "subscription": {
+      "statusLabel": "ÁLLAPOT",
+      "badge": "TAGI HOZZÁFÉRÉS",
+      "tagline": "A konzultációs szoba megnyílt. <em>Egy olvasat, amely folyamatosan olvas.</em>",
+      "features": {
+        "room": {
+          "title": "Konzultációs szoba",
+          "desc": "hosszú formátumú konzultációk az analitikussal."
+        },
+        "report": {
+          "title": "Havi klinikai jelentés",
+          "desc": "egy terapeutának szánt térkép minden naptári hónapban."
+        },
+        "connections": {
+          "title": "{count} további kapcsolat",
+          "desc": "adja hozzá azokat az embereket, akiknek jelenléte formálja az olvasatot."
+        },
+        "depth": {
+          "title": "Teljes olvasási mélység",
+          "desc": "minden fejezet nyitva, nincs korlát a részletekre."
+        }
+      },
+      "perMonth": "havonta",
+      "subscribe": "előfizetés",
+      "reassurance": "<em>nincs kötelezettség.</em> bármikor lemondható a beállításokban.",
+      "activeToday": "aktív – ma megújul",
+      "activeRenews": "aktív – megújul {days, plural, one {1 nap múlva} other {# nap múlva}}",
+      "cancel": "előfizetés lemondása",
+      "cancelled": "lemondva – hozzáférés {date} dátumig",
+      "resubscribe": "újra előfizetés"
+    },
+    "resetPassword": {
+      "sent": "egy jelszó-visszaállító linket küldtünk a(z) {email} címre. ellenőrizze a beérkező leveleket",
+      "sending": "küldés",
+      "action": "jelszó visszaállítása",
+      "error": "nem sikerült elküldeni. próbálja újra"
+    }
+  },
+  "connections": {
+    "explainer": "Akár {limit, plural, one {# személy, akinek a jelenléte alakítja az olvasatot} other {# személy, akinek a jelenléte alakítja az olvasatot}}. Ők nem látják az Ön olvasatait; Ön nem látja az övéiket. Amit a kapcsolatról mondanak, az táplálja az Ön olvasatait előállító modellt, és az Ön mondandója táplálja az övéiket.",
+    "invite": {
+      "emailSubject": "{inviterName} szeretné, ha részt venne az olvasatban."
+    },
+    "form": {
+      "emailLabel": "E-MAIL",
+      "roleLabel": "SZEREP",
+      "rolePlaceholder": "válasszon egyet",
+      "noteLabel": "EGY MONDAT, AMIT ELSŐKÉNT FOGNAK OLVASNI",
+      "noteHint": "opcionális. egy sor is elegendő.",
+      "addMoreSub": "továbbiak hozzáadása előfizetéssel",
+      "missingNameLine": "az Ön neve nincs a nyilvántartásban. adja hozzá a beállításokban, majd küldje el újra a kérést.",
+      "addYourName": "adja hozzá a nevét",
+      "noteLengthError": "a jegyzetek egy sorra korlátozódnak – körülbelül {max} karakterre."
+    },
+    "list": {
+      "empty": "még nincsenek kapcsolatok. a meghívási lehetőség alább található.",
+      "active": "AKTÍV",
+      "pending": "FÜGGŐBEN",
+      "since": "óta",
+      "invited": "meghívva",
+      "received": "fogadva",
+      "resend": "újraküldés",
+      "cancel": "lemondás",
+      "expiresIn": "{days, plural, one {# nap múlva jár le} other {# nap múlva jár le}}"
+    },
+    "lookup": {
+      "invalidEmail": "érvényes e-mail címet adjon meg.",
+      "self": "nem kapcsolódhat önmagával.",
+      "notMemberLine": "ez az e-mail cím még nem tagja a tagoknak. hívja meg őket, hogy hozzanak létre fiókot, így kapcsolódhatnak.",
+      "copyHint": "ossza meg a regisztrációs linket",
+      "copied": "link másolva",
+      "requestSent": "már küldött kérést ennek a tagnak.",
+      "requestReceivedLine": "ez a tag küldött Önnek egy kérést – ellenőrizze a meghívóit.",
+      "inboxLabel": "nyissa meg a kérést",
+      "alreadyConnected": "már kapcsolódik ehhez a taghoz.",
+      "rateLimited": "túl sok keresés rövid időn belül. várjon egy pillanatot, majd próbálja újra.",
+      "sent": "kapcsolódási kérés elküldve.",
+      "sending": "küldés…",
+      "send": "kérés küldése",
+      "limitReached": "{limit, plural, one {# kapcsolat a limit. válassza le, hogy hozzáadhasson egy másikat.} other {# kapcsolat a limit. válassza le az egyiket, hogy hozzáadhasson egy másikat.}}",
+      "limitReachedFree": "{limit, plural, one {# kapcsolat a limit az ingyenes szinten.} other {# kapcsolat a limit az ingyenes szinten.}}",
+      "generic": "nem sikerült elküldeni a kérést."
+    },
+    "incoming": {
+      "eyebrow": "ÖNRE VÁR",
+      "empty": "senki sem vár Önre.",
+      "accept": "elfogadás",
+      "decline": "elutasítás",
+      "limitReached": "{limit, plural, one {# kapcsolat a limit. válassza le, hogy elfogadhassa ezt.} other {# kapcsolat a limit. válassza le az egyiket, hogy elfogadhassa ezt.}}",
+      "limitReachedFree": "{limit, plural, one {# kapcsolat a limit az ingyenes szinten.} other {# kapcsolat a limit az ingyenes szinten.}}",
+      "upsell": "az előfizetők többet adhatnak hozzá",
+      "inviteExpired": "ez a meghívó lejárt.",
+      "inviteEnded": "ez a meghívó már nem függőben lévő.",
+      "generic": "nem sikerült végrehajtani a kérést."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "legközelebbi barát",
+      "parent": "szülő",
+      "sibling": "testvér",
+      "co_parent": "társ-szülő"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "MEGJEGYZÉS AZ ANALITIKUSTÓL",
+    "noteAria": "Megjegyzés az analitikustól",
+    "lede": "ez meghaladja azt, amit a szoba képes befogadni.",
+    "body": {
+      "intake": "Amit az *intake* során írt, súlyos terhekre utal, amelyek valódi gondoskodást igényelnek – többet, mint amit ez a szoba képes befogadni. Kérjük, fontolja meg, hogy még ma felkeres egy orvost, terapeutát vagy egy helyi krízisvonalat. Az olvasat itt lesz, amikor visszatér.",
+      "catchup": "Az e heti *Catchup* során írtak súlyos terhekre utalnak, amelyek valódi gondoskodást igényelnek – többet, mint amit ez a szoba képes befogadni. Kérjük, fontolja meg, hogy még ma felkeres egy orvost, terapeutát vagy egy helyi krízisvonalat. Az olvasat megőrzi érvényét.",
+      "session": "Amit most írt, súlyos terhekre utal, amelyek valódi gondoskodást igényelnek – többet, mint amit ez a szoba képes befogadni. Kérjük, fontolja meg, hogy még ma felkeres egy orvost, terapeutát vagy egy helyi krízisvonalat. Visszatérhetünk a szobába, amikor biztonságban van."
+    },
+    "crisisResources": "KRÍZISFORRÁSOK",
+    "resources": {
+      "us": "Egyesült Államok",
+      "ukIe": "Egyesült Királyság és Írország",
+      "europe": "Európa (legtöbb ország)",
+      "everywhere": "Mindenhol",
+      "localEmergency": "helyi sürgősségi szolgálatok"
+    },
+    "hintResources": "ha nem talál vonalat, a legközelebbi kórház sürgősségi osztálya a megfelelő hely.",
+    "hintLink": "a krízisforrások minden Szoba oldal alján fel vannak sorolva.",
+    "footerLine": "A TwentyThird nem helyettesíti a klinikai ellátást. Krízis esetén lépjen kapcsolatba a helyi sürgősségi vonallal.",
+    "footerRoomLabel": "a szoba"
+  }
+}

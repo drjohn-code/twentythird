@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -8,7 +9,6 @@ import IntakeAnswersList from "@/components/room/IntakeAnswersList";
 import { STEPS } from "@/lib/onboarding/steps";
 import {
   buildIntakeAnswers,
-  titleForStep,
   type IntakeAnswerRow,
   type IntakeResponseRow,
 } from "@/lib/intake/answers";
@@ -49,19 +49,23 @@ export default async function IntakeStepPage({ params }: Props) {
     (answersRes.data as IntakeAnswerRow[] | null) ?? [],
   );
   const items = allItems.filter((i) => i.stepNumber === step.number);
+  const t = await getTranslations("room");
+  const ti = await getTranslations("intake");
 
   return (
     <>
       <Reveal as="section" className="room-section settings-head">
-        <Eyebrow>INTAKE · {String(step.number).padStart(2, "0")}</Eyebrow>
+        <Eyebrow>
+          {t("intake.step.eyebrow")} · {String(step.number).padStart(2, "0")}
+        </Eyebrow>
         <h1 className="settings-h">
-          {titleForStep(step)}
+          {ti(`steps.${step.slug}.title`)}
           <span className="it">.</span>
         </h1>
-        <p className="lede settings-lede">{step.lede}</p>
+        <p className="lede settings-lede">{ti(`steps.${step.slug}.lede`)}</p>
         <p className="depth-block-intro">
           <Link href="/intake" className="auth-rowlink">
-            <span>back to all sections</span>
+            <span>{t("intake.step.backToAll")}</span>
             <span aria-hidden="true">→</span>
           </Link>
         </p>

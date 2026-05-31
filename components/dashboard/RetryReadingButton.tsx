@@ -2,9 +2,11 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function RetryReadingButton() {
   const router = useRouter();
+  const t = useTranslations("room");
   const [pending, setPending] = useState(false);
 
   async function onClick() {
@@ -30,7 +32,7 @@ export default function RetryReadingButton() {
       disabled={pending}
       aria-busy={pending}
     >
-      <span>{pending ? "Resuming" : "Resume the reading"}</span>
+      <span>{pending ? t("intake.failed.retryPending") : t("intake.failed.retry")}</span>
       <span className="arrow" aria-hidden="true">
         →
       </span>

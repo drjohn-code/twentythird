@@ -1,9 +1,14 @@
 import "server-only";
+import { getTranslations } from "next-intl/server";
 import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Sent to the other party when one side disconnects (and on account
 // deletion, one per active connection). Transactional — no preference
 // gate. The line the Today line uses.
+//
+// Localized: strings resolve from the "email" namespace via
+// getTranslations({ locale }) so the email renders in the recipient's
+// language. `locale` is required on the input.
 
 export type ConnectionEndedEmailInput = {
   /** Recipient — the party that did NOT initiate the disconnect. */
@@ -12,47 +17,56 @@ export type ConnectionEndedEmailInput = {
   enderFirstName: string;
   /** Absolute URL back to /room. */
   roomUrl: string;
+  /** Recipient's locale — renders the email in their language. */
+  locale: string;
 };
 
-export function buildConnectionEndedEmail(
+export async function buildConnectionEndedEmail(
   input: ConnectionEndedEmailInput,
-): EmailPayload {
-  const { enderFirstName, roomUrl } = input;
+): Promise<EmailPayload> {
+  const { enderFirstName, roomUrl, locale } = input;
+  const t = await getTranslations({ locale, namespace: "email" });
 
   // Locale-aware casings so non-ASCII names (Turkish "İ", Lithuanian,
   // German ß, etc.) round-trip correctly.
   const nameLower = enderFirstName.trim().toLocaleLowerCase();
   const nameTitle = capitalizeFirst(enderFirstName.trim());
-  const subject = `${nameLower} has ended the connection.`;
-  const titleText = `${nameTitle} has ended the connection.`;
 
-  const text = [
-    `${nameTitle} has ended the connection.`,
-    ``,
-    `Your reading will adjust over the next session. What was said about the relationship is retained in the case file; it no longer factors into the active reading.`,
-    ``,
-    `Return to the room:`,
-    roomUrl,
-    ``,
-    `CognitiveLab, WelloWork AB`,
-    `ATTENDING INSTITUTION`,
-  ].join("\n");
+  const subject = t("connectionEnded.subject", { nameLower });
+
+  const text = t("connectionEnded.text", { nameTitle, roomUrl });
+
+  // ITALICPHRASE FALLBACK GUARD.
+  let titleText = t("connectionEnded.titleText", { nameTitle });
+  let italicPhrase = t("connectionEnded.italicPhrase");
+  if (!titleText.includes(italicPhrase)) {
+    const tEn =
+      locale === "en"
+        ? t
+        : await getTranslations({ locale: "en", namespace: "email" });
+    titleText = tEn("connectionEnded.titleText", { nameTitle });
+    italicPhrase = tEn("connectionEnded.italicPhrase");
+  }
 
   const html = brandEmailShell({
-    preheader: `${nameTitle} has ended the connection. Your reading will adjust over the next session.`,
-    eyebrow: "CONNECTION ENDED",
-    title: {
-      text: titleText,
-      italicPhrase: "ended the connection",
-    },
-    lede: "Your reading will adjust over the next session. What was said about the relationship is retained in the case file; it no longer factors into the active reading.",
-    cta: { label: "Return to the room", href: roomUrl },
+    preheader: t("connectionEnded.preheader", { nameTitle }),
+    eyebrow: t("connectionEnded.eyebrow"),
+    title: { text: titleText, italicPhrase },
+    lede: t("connectionEnded.lede"),
+    cta: { label: t("connectionEnded.ctaLabel"), href: roomUrl },
     fallbackUrl: roomUrl,
     figureFooter: {
       figNumber: "06",
-      leftItalic: "connection ended",
-      rightLabel: "Effect",
-      rightItalic: "next session forward",
+      leftItalic: t("connectionEnded.figLeftItalic"),
+      rightLabel: t("connectionEnded.figRightLabel"),
+      rightItalic: t("connectionEnded.figRightItalic"),
+    },
+    chrome: {
+      orWord: t("shell.orWord"),
+      fallbackPreamble: t("shell.fallbackPreamble"),
+      attendingInstitution: t("shell.attendingInstitution"),
+      tagline: t("shell.tagline"),
+      automatedFooter: t("shell.automatedFooter"),
     },
   });
 
@@ -62,7 +76,7 @@ export function buildConnectionEndedEmail(
 export async function sendConnectionEndedEmail(
   input: ConnectionEndedEmailInput,
 ) {
-  const payload = buildConnectionEndedEmail(input);
+  const payload = await buildConnectionEndedEmail(input);
   return sendEmail({ to: input.to, ...payload });
 }
 

@@ -4,17 +4,19 @@ import InlineEditField, {
   type SaveResult,
 } from "@/components/room/settings/InlineEditField";
 import ResetPasswordRow from "@/components/room/settings/ResetPasswordRow";
+import LocaleSelectField from "@/components/room/settings/LocaleSelectField";
 
 // AccountFields — the four-cell horizontal row inside the Account
 // SettingsBlock. Holds the validate/onSave closures so the parent
 // server page only has to pass serialisable strings. Name and Birth
-// year inline-edit; Email triggers a recovery email; Language is
-// inert pending more locales.
+// year inline-edit; Email triggers a recovery email; Language is a
+// live dropdown of every supported locale.
 
 type Props = {
   fullName: string;
   email: string;
   birthYear: number | null;
+  locale: string;
 };
 
 const NAME_MAX = 80;
@@ -76,6 +78,7 @@ export default function AccountFields({
   fullName,
   email,
   birthYear,
+  locale,
 }: Props) {
   return (
     <dl className="account-row-horizontal">
@@ -101,17 +104,7 @@ export default function AccountFields({
         validate={validateBirthYear}
         onSave={(v) => saveAccountField("birth_year", v.trim())}
       />
-      <div className="account-cell">
-        <dt>language</dt>
-        <dd>
-          <span>english</span>
-        </dd>
-        <div className="account-cell-foot">
-          <span className="account-row-note">
-            more locales arrive in next version.
-          </span>
-        </div>
-      </div>
+      <LocaleSelectField locale={locale} />
     </dl>
   );
 }

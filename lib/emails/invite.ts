@@ -1,6 +1,6 @@
 import "server-only";
+import { getTranslations } from "next-intl/server";
 import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
-import { inviteEmail } from "@/lib/copy";
 import { NOTE_MAX_LENGTH } from "./invite-constants";
 
 export { NOTE_MAX_LENGTH };
@@ -24,6 +24,10 @@ export { NOTE_MAX_LENGTH };
 // form layer (InviteForm `maxLength`) and the server layer
 // (handleInvite validation). The template does NOT enforce it.
 //
+// Localized: strings resolve from the "email" namespace via
+// getTranslations({ locale }) so the email renders in the recipient's
+// language. `locale` is required on the input.
+//
 // TODO: promote profiles.first_name to a real column, backfill from
 // full_name, then read it directly in the route.
 
@@ -34,61 +38,79 @@ export type InviteEmailInput = {
   note: string | null;
   /** Full URL to /invite/<token>. */
   acceptUrl: string;
+  /** Recipient's locale — renders the email in their language. */
+  locale: string;
 };
 
-export function buildInviteEmail(input: InviteEmailInput): EmailPayload {
-  const { inviterFirstName, note, acceptUrl } = input;
+export async function buildInviteEmail(
+  input: InviteEmailInput,
+): Promise<EmailPayload> {
+  const { inviterFirstName, note, acceptUrl, locale } = input;
+  const t = await getTranslations({ locale, namespace: "email" });
 
-  const subject = inviteEmail.subject(inviterFirstName);
-  const titleText = `${inviterFirstName} would like you in the reading.`;
+  const subject = t("invite.subject", { inviterName: inviterFirstName });
+
+  // ITALICPHRASE FALLBACK GUARD.
+  let titleText = t("invite.titleText", { inviterName: inviterFirstName });
+  let italicPhrase = t("invite.italicPhrase");
+  if (!titleText.includes(italicPhrase)) {
+    const tEn =
+      locale === "en"
+        ? t
+        : await getTranslations({ locale: "en", namespace: "email" });
+    titleText = tEn("invite.titleText", { inviterName: inviterFirstName });
+    italicPhrase = tEn("invite.italicPhrase");
+  }
 
   // Null = absent (don't render the blockquote). Anything non-null is
   // assumed already trimmed + length-checked by the route.
   const noteForShell = note !== null ? { italicText: note } : undefined;
 
+  // Plain-text body. Blank lines are dropped (filter) so the assembled
+  // string matches the original layout: content lines joined by "\n",
+  // the optional note line inserted between body and the "open" line.
   const text = [
-    `${inviterFirstName} would like you in the reading at TwentyThird.`,
-    ``,
-    `TwentyThird is a quiet room where the structure of someone's inner life is read with care. A connection does not see the inviter's readings or sessions, and you will not see theirs.`,
-    ``,
-    note !== null ? `${inviterFirstName} added a note:\n  ${note}` : ``,
-    note !== null ? `` : ``,
-    `Open the invite:`,
+    t("invite.textIntro", { inviterName: inviterFirstName }),
+    t("invite.textBody"),
+    note !== null
+      ? t("invite.textNote", { inviterName: inviterFirstName, note })
+      : ``,
+    t("invite.textOpen"),
     acceptUrl,
-    ``,
-    `If this arrived in error, the invite expires on its own in fourteen days.`,
-    ``,
-    `CognitiveLab, WelloWork AB`,
-    `ATTENDING INSTITUTION`,
+    t("invite.textSecurity"),
+    t("invite.textCloser"),
   ]
     .filter((l) => l !== ``)
     .join("\n");
 
   const html = brandEmailShell({
-    preheader: `${inviterFirstName} would like you in the reading. A connection does not see your readings; you will not see theirs.`,
-    eyebrow: "INVITATION",
-    title: {
-      text: titleText,
-      italicPhrase: "in the reading",
-    },
-    lede: "TwentyThird is a quiet room where the structure of someone's inner life is read with care. A connection does not see the inviter's readings or sessions, and you will not see theirs.",
+    preheader: t("invite.preheader", { inviterName: inviterFirstName }),
+    eyebrow: t("invite.eyebrow"),
+    title: { text: titleText, italicPhrase },
+    lede: t("invite.lede"),
     note: noteForShell,
-    cta: { label: "Open the invite", href: acceptUrl },
+    cta: { label: t("invite.ctaLabel"), href: acceptUrl },
     fallbackUrl: acceptUrl,
     figureFooter: {
       figNumber: "04",
-      leftItalic: "invitation issued",
-      rightLabel: "Expires",
-      rightItalic: "fourteen days",
+      leftItalic: t("invite.figLeftItalic"),
+      rightLabel: t("invite.figRightLabel"),
+      rightItalic: t("invite.figRightItalic"),
     },
-    securityNote:
-      "If this arrived in error, the invite expires on its own in fourteen days.",
+    securityNote: t("invite.securityNote"),
+    chrome: {
+      orWord: t("shell.orWord"),
+      fallbackPreamble: t("shell.fallbackPreamble"),
+      attendingInstitution: t("shell.attendingInstitution"),
+      tagline: t("shell.tagline"),
+      automatedFooter: t("shell.automatedFooter"),
+    },
   });
 
   return { subject, text, html };
 }
 
 export async function sendInviteEmail(input: InviteEmailInput) {
-  const payload = buildInviteEmail(input);
+  const payload = await buildInviteEmail(input);
   return sendEmail({ to: input.to, ...payload });
 }

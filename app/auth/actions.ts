@@ -6,10 +6,12 @@ import { headers } from "next/headers";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { resolveDestinationForUser } from "@/lib/auth/post-auth";
+import { syncLocaleOnAuth } from "@/lib/i18n/locale";
 import {
   AUTH_ERRORS,
   MIN_PASSWORD_LENGTH,
   mapSupabaseAuthError,
+  type AuthErrorCode,
 } from "@/lib/auth/messages";
 
 const emailSchema = z.string().trim().toLowerCase().email();
@@ -50,14 +52,13 @@ async function siteOrigin(): Promise<string> {
   );
 }
 
-function firstZodMessage(err: z.ZodError): string {
+function firstZodMessage(err: z.ZodError): AuthErrorCode {
   const issue = err.issues[0];
-  if (!issue) return AUTH_ERRORS.GENERIC;
-  if (issue.path[0] === "email") return AUTH_ERRORS.EMAIL_INVALID;
-  if (issue.path[0] === "password") return AUTH_ERRORS.WEAK_PASSWORD;
-  if (issue.path[0] === "confirmPassword")
-    return AUTH_ERRORS.PASSWORDS_DONT_MATCH;
-  return issue.message || AUTH_ERRORS.GENERIC;
+  if (!issue) return "generic";
+  if (issue.path[0] === "email") return "email_invalid";
+  if (issue.path[0] === "password") return "weak_password";
+  if (issue.path[0] === "confirmPassword") return "passwords_dont_match";
+  return "generic";
 }
 
 function backTo(path: string, params: Record<string, string>): string {
@@ -90,6 +91,9 @@ export async function signIn(formData: FormData) {
       }),
     );
   }
+
+  // Carry the anonymous locale choice into the account on first sign-in.
+  await syncLocaleOnAuth(supabase, data.session.user.id);
 
   const destination = await resolveDestinationForUser(
     supabase,
@@ -134,6 +138,7 @@ export async function signUp(formData: FormData) {
   // If email confirmation is disabled in the project, Supabase
   // returns a session immediately. Route through the helper.
   if (data.session) {
+    await syncLocaleOnAuth(supabase, data.session.user.id);
     const destination = await resolveDestinationForUser(
       supabase,
       data.session.user.id,
@@ -181,7 +186,7 @@ export async function forgotPassword(formData: FormData) {
   if (!parsed.success) {
     redirect(
       backTo("/auth/forgot-password", {
-        error: AUTH_ERRORS.EMAIL_INVALID,
+        error: "email_invalid",
       }),
     );
   }
@@ -224,7 +229,7 @@ export async function resetPassword(formData: FormData) {
   if (!user) {
     redirect(
       backTo("/auth/reset-password", {
-        error: AUTH_ERRORS.RESET_LINK_INVALID,
+        error: "reset_link_invalid",
       }),
     );
   }

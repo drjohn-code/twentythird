@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { useTranslations } from "next-intl";
 import type {
   AnyQuestion,
   AnswerValue,
@@ -36,6 +37,8 @@ type IntakeAnswersListProps = {
 };
 
 export default function IntakeAnswersList({ items }: IntakeAnswersListProps) {
+  const t = useTranslations("caseFile");
+  const ti = useTranslations("intake");
   // Local copy so we can mutate after save without re-fetching.
   const [rows, setRows] = useState(items);
   const [openKey, setOpenKey] = useState<string | null>(null);
@@ -52,17 +55,21 @@ export default function IntakeAnswersList({ items }: IntakeAnswersListProps) {
       {Array.from(groups.entries()).map(([step, group]) => (
         <section key={step} className="intake-answers-group">
           <div className="intake-answers-group-eyebrow">
-            {String(step).padStart(2, "0")} · {group[0].stepEyebrow}
+            {String(step).padStart(2, "0")} ·{" "}
+            {ti(`steps.${group[0].stepSlug}.eyebrow`)}
           </div>
           <ol className="intake-answers-list">
             {group.map((row) => {
               const key = row.question.id;
               const isOpen = openKey === key;
+              const slug = row.stepSlug;
               return (
                 <li key={key} className="intake-answers-row">
                   <div className="intake-answers-row-head">
                     <p className="intake-answers-q">
-                      {stripTrailingPeriod(row.question.title)}
+                      {stripTrailingPeriod(
+                        ti(`questions.${slug}.${row.question.id}.title`),
+                      )}
                     </p>
                     <div className="intake-answers-row-actions">
                       <button
@@ -71,17 +78,18 @@ export default function IntakeAnswersList({ items }: IntakeAnswersListProps) {
                         onClick={() => setOpenKey(isOpen ? null : key)}
                         aria-expanded={isOpen}
                       >
-                        <span>{isOpen ? "close" : "edit"}</span>
+                        <span>{isOpen ? t("intakeClose") : t("intakeEdit")}</span>
                         <span aria-hidden="true">→</span>
                       </button>
                     </div>
                   </div>
                   <p className="intake-answers-a">
-                    {formatAnswer(row.question, row.answer)}
+                    {formatAnswer(ti, slug, row.question, row.answer)}
                   </p>
 
                   {isOpen ? (
                     <InlineEditor
+                      slug={slug}
                       question={row.question}
                       initial={row.answer}
                       onCancel={() => setOpenKey(null)}
@@ -111,6 +119,7 @@ export default function IntakeAnswersList({ items }: IntakeAnswersListProps) {
 // ────────────────────────────────────────────────────────────────────
 
 type InlineEditorProps = {
+  slug: string;
   question: AnyQuestion;
   initial: AnswerValue | null;
   onCancel: () => void;
@@ -118,11 +127,14 @@ type InlineEditorProps = {
 };
 
 function InlineEditor({
+  slug,
   question,
   initial,
   onCancel,
   onSaved,
 }: InlineEditorProps) {
+  const t = useTranslations("caseFile");
+  const ti = useTranslations("intake");
   const [value, setValue] = useState<AnswerValue | null>(initial);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -167,8 +179,11 @@ function InlineEditor({
 
   return (
     <div className="intake-answers-editor">
-      <p className="intake-answers-editor-sub">{question.subtitle}</p>
+      <p className="intake-answers-editor-sub">
+        {ti(`questions.${slug}.${question.id}.subtitle`)}
+      </p>
       <EditorControl
+        slug={slug}
         question={question}
         value={value}
         onChange={setValue}
@@ -181,7 +196,7 @@ function InlineEditor({
           onClick={submit}
           disabled={isPending}
         >
-          <span>{isPending ? "saving" : "save"}</span>
+          <span>{isPending ? t("intakeSaving") : t("intakeSave")}</span>
           <span aria-hidden="true">→</span>
         </button>
         <button
@@ -190,7 +205,7 @@ function InlineEditor({
           onClick={onCancel}
           disabled={isPending}
         >
-          cancel
+          {t("intakeCancel")}
         </button>
       </div>
     </div>
@@ -198,18 +213,22 @@ function InlineEditor({
 }
 
 function EditorControl({
+  slug,
   question,
   value,
   onChange,
 }: {
+  slug: string;
   question: AnyQuestion;
   value: AnswerValue | null;
   onChange: (v: AnswerValue | null) => void;
 }) {
+  const t = useTranslations("caseFile");
   switch (question.kind) {
     case "single":
       return (
         <SingleEditor
+          slug={slug}
           q={question}
           value={typeof value === "string" ? value : null}
           onChange={(v) => onChange(v)}
@@ -218,6 +237,7 @@ function EditorControl({
     case "multi":
       return (
         <MultiEditor
+          slug={slug}
           q={question}
           value={Array.isArray(value) ? (value as string[]) : []}
           onChange={(v) => onChange(v)}
@@ -226,6 +246,7 @@ function EditorControl({
     case "scale":
       return (
         <ScaleEditor
+          slug={slug}
           q={question}
           value={typeof value === "number" ? value : null}
           onChange={(v) => onChange(v)}
@@ -234,6 +255,7 @@ function EditorControl({
     case "number":
       return (
         <NumberEditor
+          slug={slug}
           q={question}
           value={typeof value === "number" ? value : null}
           onChange={(v) => onChange(v)}
@@ -242,6 +264,7 @@ function EditorControl({
     case "open":
       return (
         <OpenEditor
+          slug={slug}
           q={question}
           value={typeof value === "string" ? value : ""}
           onChange={(v) => onChange(v)}
@@ -250,21 +273,24 @@ function EditorControl({
     case "per_option_number":
       return (
         <p className="intake-answers-editor-unsupported">
-          this question is edited from within the intake itself.
+          {t("intakeUnsupported")}
         </p>
       );
   }
 }
 
 function SingleEditor({
+  slug,
   q,
   value,
   onChange,
 }: {
+  slug: string;
   q: SingleQuestion;
   value: string | null;
   onChange: (v: string) => void;
 }) {
+  const ti = useTranslations("intake");
   return (
     <ul className="intake-edit-choices">
       {q.options.map((opt) => {
@@ -279,7 +305,7 @@ function SingleEditor({
               onClick={() => onChange(opt.value)}
               aria-pressed={selected}
             >
-              {opt.label}
+              {ti(`questions.${slug}.${q.id}.options.${opt.value}`)}
             </button>
           </li>
         );
@@ -289,14 +315,18 @@ function SingleEditor({
 }
 
 function MultiEditor({
+  slug,
   q,
   value,
   onChange,
 }: {
+  slug: string;
   q: MultiQuestion;
   value: string[];
   onChange: (v: string[]) => void;
 }) {
+  const t = useTranslations("caseFile");
+  const ti = useTranslations("intake");
   const limit = q.maxSelections ?? q.options.length;
   return (
     <>
@@ -321,41 +351,45 @@ function MultiEditor({
                 aria-pressed={selected}
                 disabled={wouldExceed}
               >
-                {opt.label}
+                {ti(`questions.${slug}.${q.id}.options.${opt.value}`)}
               </button>
             </li>
           );
         })}
       </ul>
       {q.maxSelections ? (
-        <p className="intake-edit-hint">pick up to {q.maxSelections}.</p>
+        <p className="intake-edit-hint">{t("intakePickUpTo", { count: q.maxSelections })}</p>
       ) : null}
     </>
   );
 }
 
 function ScaleEditor({
+  slug,
   q,
   value,
   onChange,
 }: {
+  slug: string;
   q: ScaleQuestion;
   value: number | null;
   onChange: (v: number) => void;
 }) {
+  const t = useTranslations("caseFile");
+  const ti = useTranslations("intake");
   const ticks = Array.from({ length: q.max - q.min + 1 }, (_, i) => q.min + i);
   return (
     <div className="intake-edit-scale">
       <div className="intake-edit-scale-ticks">
-        {ticks.map((t) => (
+        {ticks.map((tick) => (
           <button
             type="button"
-            key={t}
+            key={tick}
             className={
-              "intake-edit-scale-tick" + (value === t ? " is-on" : "")
+              "intake-edit-scale-tick" + (value === tick ? " is-on" : "")
             }
-            onClick={() => onChange(t)}
-            aria-label={`Set to ${t}`}
+            onClick={() => onChange(tick)}
+            aria-label={t("intakeScaleSetTo", { value: tick })}
           />
         ))}
         <span className="intake-edit-scale-value">
@@ -363,22 +397,25 @@ function ScaleEditor({
         </span>
       </div>
       <div className="intake-edit-scale-ends">
-        <span>{q.lowLabel}</span>
-        <span>{q.highLabel}</span>
+        <span>{ti(`questions.${slug}.${q.id}.lowLabel`)}</span>
+        <span>{ti(`questions.${slug}.${q.id}.highLabel`)}</span>
       </div>
     </div>
   );
 }
 
 function NumberEditor({
+  slug,
   q,
   value,
   onChange,
 }: {
+  slug: string;
   q: NumberQuestion;
   value: number | null;
   onChange: (v: number | null) => void;
 }) {
+  const ti = useTranslations("intake");
   return (
     <div className="intake-edit-number">
       <input
@@ -397,20 +434,25 @@ function NumberEditor({
           if (Number.isFinite(n)) onChange(n);
         }}
       />
-      <span className="intake-edit-number-unit">{q.unit.toLowerCase()}</span>
+      <span className="intake-edit-number-unit">
+        {ti(`questions.${slug}.${q.id}.unit`).toLowerCase()}
+      </span>
     </div>
   );
 }
 
 function OpenEditor({
+  slug,
   q,
   value,
   onChange,
 }: {
+  slug: string;
   q: OpenQuestion;
   value: string;
   onChange: (v: string) => void;
 }) {
+  const ti = useTranslations("intake");
   return (
     <textarea
       className="intake-edit-open"
@@ -418,7 +460,7 @@ function OpenEditor({
       rows={5}
       onChange={(e) => onChange(e.target.value)}
       placeholder=""
-      aria-label={q.title}
+      aria-label={ti(`questions.${slug}.${q.id}.title`)}
     />
   );
 }
@@ -427,25 +469,36 @@ function OpenEditor({
 // Read-side formatting
 // ────────────────────────────────────────────────────────────────────
 
-function formatAnswer(q: AnyQuestion, v: AnswerValue | null): string {
+function formatAnswer(
+  ti: ReturnType<typeof useTranslations>,
+  slug: string,
+  q: AnyQuestion,
+  v: AnswerValue | null,
+): string {
   if (v === null || v === undefined) return "—";
   switch (q.kind) {
     case "single": {
       const opt = q.options.find((o) => o.value === v);
-      return opt?.label ?? String(v);
+      return opt
+        ? ti(`questions.${slug}.${q.id}.options.${opt.value}`)
+        : String(v);
     }
     case "multi": {
       if (!Array.isArray(v)) return "—";
       if (v.length === 0) return "—";
-      const labels = v.map(
-        (val) => q.options.find((o) => o.value === val)?.label ?? val,
+      const labels = v.map((val) =>
+        q.options.some((o) => o.value === val)
+          ? ti(`questions.${slug}.${q.id}.options.${val}`)
+          : val,
       );
       return labels.join(" · ");
     }
     case "scale":
       return typeof v === "number" ? `${v} / ${q.max}` : "—";
     case "number":
-      return typeof v === "number" ? `${v} ${q.unit.toLowerCase()}` : "—";
+      return typeof v === "number"
+        ? `${v} ${ti(`questions.${slug}.${q.id}.unit`).toLowerCase()}`
+        : "—";
     case "open":
       return typeof v === "string" && v.length > 0 ? v : "—";
     case "per_option_number":

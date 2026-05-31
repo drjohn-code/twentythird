@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 import type { CatchupAnswerInput } from "./catchup-summary";
 
 export type SafetySeverity =
@@ -23,6 +23,7 @@ export type CatchupFeedbackInput = {
   depthBand: "thin" | "partial" | "steady" | "deep";
   isSubscribed: boolean;
   highestSafetySeverity: SafetySeverity;
+  locale: string;
 };
 
 export type CatchupFeedbackResponse = {
@@ -67,7 +68,7 @@ export function buildCatchupFeedbackPrompt(input: CatchupFeedbackInput): {
   messages: ChatMessage[];
 } {
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

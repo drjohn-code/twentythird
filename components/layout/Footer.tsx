@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import LogoMark from "../brand/LogoMark";
 
 export default function Footer() {
+  const t = useTranslations("marketing.footer");
   return (
     <footer className="footer">
       <div className="container">
@@ -11,40 +15,37 @@ export default function Footer() {
               <LogoMark size={34} />
               <span>TwentyThird</span>
             </Link>
-            <p>
-              Psychodynamic AI for the inner life. A quiet room for serious
-              thinking.
-            </p>
+            <p>{t("tagline")}</p>
           </div>
           <div className="footer-col">
-            <span className="label">Product</span>
-            <Link href="/auth/sign-up">Discovery</Link>
-            <Link href="/reports/sample">Sample report</Link>
-            <Link href="/plan">Integration plan</Link>
+            <span className="label">{t("product")}</span>
+            <Link href="/auth/sign-up">{t("discovery")}</Link>
+            <Link href="/reports/sample">{t("sampleReport")}</Link>
+            <Link href="/plan">{t("integrationPlan")}</Link>
           </div>
           <div className="footer-col">
-            <span className="label">Company</span>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/about">Manifesto</Link>
+            <span className="label">{t("company")}</span>
+            <Link href="/about">{t("about")}</Link>
+            <Link href="/contact">{t("contact")}</Link>
+            <Link href="/about">{t("manifesto")}</Link>
           </div>
           <div className="footer-col">
-            <span className="label">Resources</span>
-            <Link href="/science">The science</Link>
-            <Link href="/methodology">Methodology</Link>
-            <Link href="/papers/professional-blocks">Method paper</Link>
-            <Link href="/case-studies/relational-attractor">Case study</Link>
-            <Link href="/examples/dream-interpretation">Dream example</Link>
+            <span className="label">{t("resources")}</span>
+            <Link href="/science">{t("science")}</Link>
+            <Link href="/methodology">{t("methodology")}</Link>
+            <Link href="/papers/professional-blocks">{t("methodPaper")}</Link>
+            <Link href="/case-studies/relational-attractor">{t("caseStudy")}</Link>
+            <Link href="/examples/dream-interpretation">{t("dreamExample")}</Link>
           </div>
           <div className="footer-col">
-            <span className="label">Legal</span>
-            <Link href="/legal/privacy">Privacy</Link>
-            <Link href="/legal/terms">Terms</Link>
-            <Link href="/legal/cookies">Cookies</Link>
+            <span className="label">{t("legal")}</span>
+            <Link href="/legal/privacy">{t("privacy")}</Link>
+            <Link href="/legal/terms">{t("terms")}</Link>
+            <Link href="/legal/cookies">{t("cookies")}</Link>
           </div>
         </div>
         <div className="footer-bot">
-          <span>© 2026 WelloWork AB · all rights reserved</span>
+          <span>© 2026 WelloWork AB · {t("rights")}</span>
         </div>
       </div>
     </footer>

@@ -1,14 +1,11 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import InlineError from "@/components/ui/InlineError";
 import AuthSubmit from "@/components/ui/AuthSubmit";
 import { resetPassword } from "../actions";
 import { createClient } from "@/lib/supabase/server";
-import {
-  AUTH_ERRORS,
-  PASSWORD_HINT,
-  MIN_PASSWORD_LENGTH,
-} from "@/lib/auth/messages";
+import { PASSWORD_HINT, MIN_PASSWORD_LENGTH } from "@/lib/auth/messages";
 
 type SearchParams = Promise<{
   error?: string;
@@ -21,6 +18,7 @@ export default async function ResetPasswordPage({
   searchParams: SearchParams;
 }) {
   const { error, code } = await searchParams;
+  const t = await getTranslations("auth");
 
   // Defensive fallback: Supabase's /auth/v1/verify endpoint sometimes
   // ignores redirectTo and uses the project's Site URL instead, which
@@ -44,12 +42,14 @@ export default async function ResetPasswordPage({
       <main className="auth-shell">
         <div className="auth-card glass">
           <h1 className="serif">
-            That link is <em>no longer valid</em>.
+            {t("reset.expiredTitleBefore")}
+            <em>{t("reset.expiredTitleItalic")}</em>
+            {t("reset.expiredTitleAfter")}
           </h1>
-          <p className="auth-lede">{AUTH_ERRORS.RESET_LINK_EXPIRED}</p>
+          <p className="auth-lede">{t("errors.reset_link_expired")}</p>
           <p className="auth-foot">
             <Link href="/auth/forgot-password" className="auth-rowlink">
-              Request a new link<span aria-hidden="true">→</span>
+              {t("reset.requestNewLink")}<span aria-hidden="true">→</span>
             </Link>
           </p>
         </div>
@@ -61,15 +61,21 @@ export default async function ResetPasswordPage({
     <main className="auth-shell">
       <div className="auth-card glass">
         <h1 className="serif">
-          Set a <em>new password</em>.
+          {t("reset.titleBefore")}
+          <em>{t("reset.titleItalic")}</em>
+          {t("reset.titleAfter")}
         </h1>
 
-        {error ? <InlineError>{error}</InlineError> : null}
+        {error ? (
+          <InlineError>
+            {t.has(`errors.${error}`) ? t(`errors.${error}`) : t("errors.generic")}
+          </InlineError>
+        ) : null}
 
         <form action={resetPassword} className="auth-form" noValidate>
           <div className="auth-field">
             <label className="eyebrow" htmlFor="reset-password">
-              NEW PASSWORD
+              {t("reset.newPasswordLabel")}
             </label>
             <input
               id="reset-password"
@@ -88,7 +94,7 @@ export default async function ResetPasswordPage({
 
           <div className="auth-field">
             <label className="eyebrow" htmlFor="reset-confirm">
-              CONFIRM PASSWORD
+              {t("reset.confirmPasswordLabel")}
             </label>
             <input
               id="reset-confirm"
@@ -101,7 +107,7 @@ export default async function ResetPasswordPage({
             />
           </div>
 
-          <AuthSubmit>Update password</AuthSubmit>
+          <AuthSubmit>{t("reset.submit")}</AuthSubmit>
         </form>
       </div>
     </main>

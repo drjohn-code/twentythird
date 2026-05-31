@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 import { firstNameOrEmailLocal } from "@/lib/connections";
 import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
+import { localeForUser } from "@/lib/emails/locale";
+import { DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 // DELETE /api/settings/delete
 //
@@ -123,6 +125,9 @@ export async function DELETE(req: Request) {
         to: otherEmail,
         enderFirstName,
         roomUrl: `${siteUrl}/room`,
+        locale: otherUserId
+          ? await localeForUser(admin, otherUserId)
+          : DEFAULT_LOCALE,
       });
     } catch (e) {
       console.error("[delete-account] connection-ended send threw:", e);

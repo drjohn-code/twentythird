@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
 import Reveal from "@/components/layout/Reveal";
@@ -49,22 +50,23 @@ export default async function ReportsConfirmPage({
 
   const isSubscribed = subRes.data?.status === "active";
   const depth = metaRes.data?.reading_depth ?? 0;
+  const t = await getTranslations("room");
 
   if (isSubscribed) {
     return (
       <Reveal as="section" className="room-section consulting-offer">
-        <Eyebrow>CLINICAL REPORT</Eyebrow>
+        <Eyebrow>{t("reports.confirm.subscribedEyebrow")}</Eyebrow>
         <h1 className="consulting-offer-h">
-          Already <span className="it">included.</span>
+          {t.rich("reports.confirm.subscribedTitle", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
         </h1>
         <p className="consulting-offer-lede">
-          The subscription includes one clinical report each calendar
-          month. Generate it from the bottom of the readings page — no
-          payment is needed.
+          {t("reports.confirm.subscribedLede")}
         </p>
         <div className="consulting-offer-cta">
           <RowLink href="/readings#clinical-report">
-            return to the readings
+            {t("reports.confirm.returnLink")}
           </RowLink>
         </div>
       </Reveal>
@@ -73,34 +75,34 @@ export default async function ReportsConfirmPage({
 
   return (
     <Reveal as="section" className="room-section consulting-offer">
-      <Eyebrow>CLINICAL REPORT · CONFIRM</Eyebrow>
+      <Eyebrow>{t("reports.confirm.eyebrow")}</Eyebrow>
       <h1 className="consulting-offer-h">
-        The clinical report<span className="it">.</span>
+        {t.rich("reports.confirm.title", {
+          it: (chunks) => <span className="it">{chunks}</span>,
+        })}
       </h1>
       <p className="consulting-offer-lede">
-        A one-off clinical report is{" "}
-        <span className="serif-i">€11.11</span>. A 12&ndash;18 page dossier
-        of all twelve readings, in the language a clinician works in.
+        {t("reports.confirm.ledePrice")}{" "}
+        <span className="serif-i">€11.11</span>
+        {t("reports.confirm.ledeDossier")}
       </p>
       <p className="consulting-offer-lede consulting-offer-lede-second">
-        Billing is handled by Stripe. Reports are regeneratable as the
-        reading deepens; subscribers receive one each calendar month
-        without a separate charge.
+        {t("reports.confirm.ledeBilling")}
       </p>
 
       {depth < 0.5 ? (
         <p className="consulting-offer-lede consulting-offer-lede-second">
-          <span className="serif-i">
-            the report will reflect the depth available.
-          </span>{" "}
-          it can be regenerated as the reading deepens.
+          {t.rich("reports.confirm.depthNotice", {
+            i: (chunks) => <span className="serif-i">{chunks}</span>,
+          })}
         </p>
       ) : null}
 
       {canceled ? (
         <p className="consulting-offer-lede consulting-offer-lede-second">
-          <span className="serif-i">checkout was closed.</span> nothing was
-          charged.
+          {t.rich("reports.confirm.canceled", {
+            i: (chunks) => <span className="serif-i">{chunks}</span>,
+          })}
         </p>
       ) : null}
 
@@ -111,13 +113,13 @@ export default async function ReportsConfirmPage({
       >
         <input type="hidden" name="kind" value="report" />
         <button type="submit" className="cta">
-          <span>Continue to checkout</span>
+          <span>{t("reports.confirm.checkoutCta")}</span>
           <span className="arrow" aria-hidden="true">
             →
           </span>
         </button>
         <RowLink href="/readings#clinical-report" arrow="left">
-          return to the readings
+          {t("reports.confirm.returnLink")}
         </RowLink>
       </form>
     </Reveal>

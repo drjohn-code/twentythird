@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Reveal from "../../components/layout/Reveal";
 import FigureCard from "../../components/figures/FigureCard";
 import InsightTimeline from "../../components/figures/InsightTimeline";
@@ -45,7 +46,8 @@ function DayCard({ day, num, prompt, stream, pips }: DayCardProps) {
   );
 }
 
-export default function PlanPage() {
+export default async function PlanPage() {
+  const t = await getTranslations("marketing.plan");
   return (
     <main className="page-shell">
       {/* HERO */}
@@ -53,15 +55,13 @@ export default function PlanPage() {
         <div className="container">
           <div>
             <div className="eyebrow" style={{ marginBottom: "28px" }}>
-              INTEGRATION
+              {t("hero.eyebrow")}
             </div>
             <h1>
-              Insight, then <span className="it">habit</span>.
+              {t("hero.headlineLead")} <span className="it">{t("hero.headlineItalic")}</span>.
             </h1>
             <p className="lede">
-              Naming a pattern is only the first move. The plan is the second —
-              daily prompts and small rituals built around your structure, not
-              a generic curriculum.
+              {t("hero.lede")}
             </p>
           </div>
         </div>
@@ -71,87 +71,92 @@ export default function PlanPage() {
       <section className="page-section">
         <div className="container">
           <Reveal className="section-head">
-            <div className="eyebrow">A WEEK IN THE PLAN</div>
+            <div className="eyebrow">{t("week.eyebrow")}</div>
             <h2 className="head-h2">
-              Seven prompts,{" "}
-              <span className="it">one structure</span>.
+              {t("week.headlineLead")}{" "}
+              <span className="it">{t("week.headlineItalic")}</span>.
             </h2>
             <p className="lede">
-              Reflective, embodied, written. The week breathes around the
-              pattern the report named, not around a curriculum.
+              {t("week.lede")}
             </p>
           </Reveal>
 
           <Reveal>
             <div className="week-grid">
               <DayCard
-                day="MON"
+                day={t("week.days.mon.day")}
                 num="01"
-                prompt={<>&ldquo;Where today did you choose <em>not</em> to be seen?&rdquo;</>}
+                prompt={t.rich("week.days.mon.prompt", {
+                  em: (chunks) => <em>{chunks}</em>,
+                })}
                 stream={[
-                  { label: "journal", time: "07:10", done: true },
-                  { label: "shadow prompt", time: "20:00" },
+                  { label: t("week.days.mon.stream.journal"), time: "07:10", done: true },
+                  { label: t("week.days.mon.stream.shadowPrompt"), time: "20:00" },
                 ]}
                 pips={[true, true, true, false, false, false, false]}
               />
               <DayCard
-                day="TUE"
+                day={t("week.days.tue.day")}
                 num="02"
-                prompt={<>&ldquo;Take a walk without an errand. Note one thing you almost said.&rdquo;</>}
+                prompt={t("week.days.tue.prompt")}
                 stream={[
-                  { label: "walking", time: "08:30", done: true },
-                  { label: "note", time: "09:10", done: true },
+                  { label: t("week.days.tue.stream.walking"), time: "08:30", done: true },
+                  { label: t("week.days.tue.stream.note"), time: "09:10", done: true },
                 ]}
                 pips={[true, true, true, true, false, false, false]}
               />
               <DayCard
-                day="WED"
+                day={t("week.days.wed.day")}
                 num="03"
-                prompt={<>&ldquo;What did you over-qualify today, and what was the <em>unqualified</em> sentence underneath?&rdquo;</>}
+                prompt={t.rich("week.days.wed.prompt", {
+                  em: (chunks) => <em>{chunks}</em>,
+                })}
                 stream={[
-                  { label: "breath-work", time: "06:30", done: true },
-                  { label: "journal", time: "12:45", done: true },
-                  { label: "shadow prompt", time: "20:00" },
+                  { label: t("week.days.wed.stream.breathWork"), time: "06:30", done: true },
+                  { label: t("week.days.wed.stream.journal"), time: "12:45", done: true },
+                  { label: t("week.days.wed.stream.shadowPrompt"), time: "20:00" },
                 ]}
                 pips={[true, true, true, true, true, false, false]}
               />
               <DayCard
-                day="THU"
+                day={t("week.days.thu.day")}
                 num="04"
-                prompt={<>&ldquo;A body scan from the throat down. Where does the holding live?&rdquo;</>}
+                prompt={t("week.days.thu.prompt")}
                 stream={[
-                  { label: "body scan", time: "07:00", done: true },
-                  { label: "note", time: "07:20", done: true },
+                  { label: t("week.days.thu.stream.bodyScan"), time: "07:00", done: true },
+                  { label: t("week.days.thu.stream.note"), time: "07:20", done: true },
                 ]}
                 pips={[true, true, true, true, true, true, false]}
               />
               <DayCard
-                day="FRI"
+                day={t("week.days.fri.day")}
                 num="05"
-                prompt={<>&ldquo;Write the sentence you would have said if you were already allowed.&rdquo;</>}
+                prompt={t("week.days.fri.prompt")}
                 stream={[
-                  { label: "journal", time: "08:00", done: true },
-                  { label: "rewrite", time: "20:30" },
+                  { label: t("week.days.fri.stream.journal"), time: "08:00", done: true },
+                  { label: t("week.days.fri.stream.rewrite"), time: "20:30" },
                 ]}
                 pips={[true, true, true, true, true, true, true]}
               />
               <DayCard
-                day="SAT"
+                day={t("week.days.sat.day")}
                 num="06"
-                prompt={<>&ldquo;A long walk. No prompts. Notice what the silence brings back.&rdquo;</>}
+                prompt={t("week.days.sat.prompt")}
                 stream={[
-                  { label: "walking", time: "10:00" },
-                  { label: "rest", time: "—" },
+                  { label: t("week.days.sat.stream.walking"), time: "10:00" },
+                  { label: t("week.days.sat.stream.rest"), time: "—" },
                 ]}
                 pips={[true, true, true, true, true, true, true]}
               />
               <DayCard
-                day="SUN"
+                day={t("week.days.sun.day")}
                 num="07"
-                prompt={<>&ldquo;Read the week back. Which line was already <em>true</em>?&rdquo;</>}
+                prompt={t.rich("week.days.sun.prompt", {
+                  em: (chunks) => <em>{chunks}</em>,
+                })}
                 stream={[
-                  { label: "review", time: "19:00" },
-                  { label: "note", time: "19:30" },
+                  { label: t("week.days.sun.stream.review"), time: "19:00" },
+                  { label: t("week.days.sun.stream.note"), time: "19:30" },
                 ]}
                 pips={[true, true, true, true, true, true, true]}
               />
@@ -164,9 +169,9 @@ export default function PlanPage() {
       <section className="page-section split-section">
         <div className="container">
           <Reveal className="section-head">
-            <div className="eyebrow">ADAPTATION</div>
+            <div className="eyebrow">{t("adaptation.eyebrow")}</div>
             <h2 className="head-h2">
-              The plan <span className="it">tapers</span>.
+              {t("adaptation.headlineLead")} <span className="it">{t("adaptation.headlineItalic")}</span>.
             </h2>
           </Reveal>
 
@@ -176,37 +181,34 @@ export default function PlanPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Adaptation
+                    {t("adaptation.tag")}
                   </span>
                 </div>
                 <h3>
-                  Last week&apos;s recurrence sets next week&apos;s{" "}
-                  <span className="it">density</span>.
+                  {t("adaptation.rowHeadingLead")}{" "}
+                  <span className="it">{t("adaptation.rowHeadingItalic")}</span>.
                 </h3>
                 <p>
-                  When the pattern strength drops, the prompts thin. When a
-                  pattern surges, the prompts return. The aim is not adherence.
-                  The aim is the smallest scaffolding the structure still
-                  needs.
+                  {t("adaptation.body")}
                 </p>
               </Reveal>
               <Reveal>
                 <FigureCard
-                  label="prompt density"
-                  subtitle="weeks 1–8"
+                  label={t("adaptation.figure.label")}
+                  subtitle={t("adaptation.figure.subtitle")}
                   fig="Fig. 01"
                 >
                   <InsightTimeline
-                    heading="Prompt count · per week"
-                    range="tapering as recurrence weakens"
+                    heading={t("adaptation.figure.heading")}
+                    range={t("adaptation.figure.range")}
                     markers={[
-                      { day: 1, label: "wk 1" },
-                      { day: 7, label: "wk 3" },
-                      { day: 14, label: "wk 5" },
-                      { day: 23, label: "wk 8", inflection: true },
+                      { day: 1, label: t("adaptation.figure.markers.wk1") },
+                      { day: 7, label: t("adaptation.figure.markers.wk3") },
+                      { day: 14, label: t("adaptation.figure.markers.wk5") },
+                      { day: 23, label: t("adaptation.figure.markers.wk8"), inflection: true },
                     ]}
                     summaryBig="~38%"
-                    summaryLabel={"fewer prompts\nby wk 8"}
+                    summaryLabel={t("adaptation.figure.summaryLabel")}
                   />
                 </FigureCard>
               </Reveal>
@@ -219,9 +221,9 @@ export default function PlanPage() {
       <section className="page-section split-section">
         <div className="container">
           <Reveal className="section-head">
-            <div className="eyebrow">SHADOW WORK</div>
+            <div className="eyebrow">{t("shadow.eyebrow")}</div>
             <h2 className="head-h2">
-              Not catharsis. <span className="it">Speaking</span>.
+              {t("shadow.headlineLead")} <span className="it">{t("shadow.headlineItalic")}</span>.
             </h2>
           </Reveal>
 
@@ -231,46 +233,43 @@ export default function PlanPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Shadow
+                    {t("shadow.tag")}
                   </span>
                 </div>
                 <h3>
-                  The deliberate practice of speaking what was{" "}
-                  <span className="it">unspeakable</span>.
+                  {t("shadow.rowHeadingLead")}{" "}
+                  <span className="it">{t("shadow.rowHeadingItalic")}</span>.
                 </h3>
                 <p>
-                  Shadow work, in this context, is not exposure. It is not a
-                  purge. It is the slow practice of saying — to oneself, first
-                  — what one had been taught to keep unsaid. Three before /
-                  after lines drawn from real plans.
+                  {t("shadow.body")}
                 </p>
               </Reveal>
               <Reveal>
                 <FigureCard
-                  label="shadow revisions"
-                  subtitle="three lines, working draft"
+                  label={t("shadow.figure.label")}
+                  subtitle={t("shadow.figure.subtitle")}
                   fig="Fig. 02"
                 >
                   <ScriptRevision
                     rows={[
                       {
-                        prefix: "01 · to self",
-                        old: "I do not deserve this.",
-                        next: "I have not yet practised wanting it aloud.",
+                        prefix: t("shadow.figure.rows.r1.prefix"),
+                        old: t("shadow.figure.rows.r1.old"),
+                        next: t("shadow.figure.rows.r1.next"),
                       },
                       {
-                        prefix: "02 · to self",
-                        old: "I should be over this by now.",
-                        next: "the timeline I borrowed was not for this kind of grief.",
+                        prefix: t("shadow.figure.rows.r2.prefix"),
+                        old: t("shadow.figure.rows.r2.old"),
+                        next: t("shadow.figure.rows.r2.next"),
                       },
                       {
-                        prefix: "03 · to self",
-                        old: "I am too much.",
-                        next: "I am exactly the volume the room was not built for.",
+                        prefix: t("shadow.figure.rows.r3.prefix"),
+                        old: t("shadow.figure.rows.r3.old"),
+                        next: t("shadow.figure.rows.r3.next"),
                       },
                     ]}
-                    metaLeft={{ label: "previously", value: "said about self" }}
-                    metaRight={{ label: "now", value: "said to self" }}
+                    metaLeft={{ label: t("shadow.figure.metaLeft.label"), value: t("shadow.figure.metaLeft.value") }}
+                    metaRight={{ label: t("shadow.figure.metaRight.label"), value: t("shadow.figure.metaRight.value") }}
                   />
                 </FigureCard>
               </Reveal>
@@ -283,29 +282,25 @@ export default function PlanPage() {
       <section className="page-section">
         <div className="container">
           <Reveal className="section-head">
-            <div className="eyebrow">FRAME</div>
+            <div className="eyebrow">{t("frame.eyebrow")}</div>
             <h2 className="head-h2">
-              Held by structure, not by{" "}
-              <span className="it">curriculum</span>.
+              {t("frame.headlineLead")}{" "}
+              <span className="it">{t("frame.headlineItalic")}</span>.
             </h2>
           </Reveal>
 
           <Reveal className="mono-prose">
             <p>
-              A curriculum is a set of moves a stranger built. A structure is
-              the shape your particular life happens to take. The plan is
-              built against the latter. Every prompt is anchored to a line in
-              your report — when the line dissolves, the prompt does too.
+              {t("frame.body1")}
             </p>
             <p>
-              Nothing here is supposed to be permanent. The plan is rented.
-              The structure is yours.
+              {t("frame.body2")}
             </p>
           </Reveal>
 
           <Reveal>
             <div className="closeout-italic">
-              the structure is yours · the plan is rented
+              {t("frame.closeout")}
             </div>
           </Reveal>
         </div>
@@ -315,20 +310,20 @@ export default function PlanPage() {
       <Reveal as="section" className="page-final">
         <div className="container">
           <div className="eyebrow" style={{ marginBottom: "28px" }}>
-            CONTINUE
+            {t("final.eyebrow")}
           </div>
           <h2>
-            Begin, <span className="it">or read the science</span>.
+            {t("final.headlineLead")} <span className="it">{t("final.headlineItalic")}</span>.
           </h2>
           <div className="cta-row">
             <Link href="/auth/sign-up" className="cta">
-              Begin <span className="arrow">→</span>
+              {t("final.beginCta")} <span className="arrow">→</span>
             </Link>
             <Link href="/science" className="cta-ghost">
               <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
-                or
+                {t("final.or")}
               </span>{" "}
-              read the science
+              {t("final.readScience")}
             </Link>
           </div>
         </div>

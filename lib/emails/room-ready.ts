@@ -1,4 +1,5 @@
 import "server-only";
+import { getTranslations } from "next-intl/server";
 import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 
 // Room-ready email — sent once intake_status flips from 'processing'
@@ -8,6 +9,10 @@ import { brandEmailShell, sendEmail, type EmailPayload } from "./sender";
 // 'processing'). Dev manual trigger remains at /api/dev/open-room.
 //
 // One-time per user; no preference gate. CTA points at /room.
+//
+// Localized: strings resolve from the "email" namespace via
+// getTranslations({ locale }) so the email renders in the recipient's
+// language. `locale` is required on the input.
 
 export type RoomReadyEmailInput = {
   to: string;
@@ -15,44 +20,53 @@ export type RoomReadyEmailInput = {
   firstName: string | null;
   /** Fully composed URL to /room. Caller resolves NEXT_PUBLIC_SITE_URL. */
   roomUrl: string;
+  /** Recipient's locale — renders the email in their language. */
+  locale: string;
 };
 
-export function buildRoomReadyEmail(input: RoomReadyEmailInput): EmailPayload {
-  const { firstName, roomUrl } = input;
+export async function buildRoomReadyEmail(
+  input: RoomReadyEmailInput,
+): Promise<EmailPayload> {
+  const { firstName, roomUrl, locale } = input;
+  const t = await getTranslations({ locale, namespace: "email" });
+
   const salutation = firstName ? `${firstName},` : "you,";
 
-  const subject = "your room is open.";
+  const subject = t("roomReady.subject");
 
-  const text = [
-    `${salutation}`,
-    ``,
-    `The first reading is open.`,
-    ``,
-    `Twelve blocks of psychodynamic profile, in the room and ready to read. The work refines as you return to it.`,
-    ``,
-    `Enter the room:`,
-    roomUrl,
-    ``,
-    `CognitiveLab, WelloWork AB`,
-    `ATTENDING INSTITUTION`,
-  ].join("\n");
+  const text = t("roomReady.text", { salutation, roomUrl });
+
+  // ITALICPHRASE FALLBACK GUARD.
+  let titleText = t("roomReady.titleText");
+  let italicPhrase = t("roomReady.italicPhrase");
+  if (!titleText.includes(italicPhrase)) {
+    const tEn =
+      locale === "en"
+        ? t
+        : await getTranslations({ locale: "en", namespace: "email" });
+    titleText = tEn("roomReady.titleText");
+    italicPhrase = tEn("roomReady.italicPhrase");
+  }
 
   const html = brandEmailShell({
-    preheader:
-      "Twelve blocks ready to read. The work refines as you return to it.",
-    eyebrow: "ROOM READY",
-    title: {
-      text: "The first reading is open.",
-      italicPhrase: "first reading",
-    },
-    lede: "Twelve blocks of psychodynamic profile, in the room and ready to read. The work refines as you return to it.",
-    cta: { label: "Enter the room", href: roomUrl },
+    preheader: t("roomReady.preheader"),
+    eyebrow: t("roomReady.eyebrow"),
+    title: { text: titleText, italicPhrase },
+    lede: t("roomReady.lede"),
+    cta: { label: t("roomReady.ctaLabel"), href: roomUrl },
     fallbackUrl: roomUrl,
     figureFooter: {
       figNumber: "03",
-      leftItalic: "room opened",
-      rightLabel: "First reading",
-      rightItalic: "ready",
+      leftItalic: t("roomReady.figLeftItalic"),
+      rightLabel: t("roomReady.figRightLabel"),
+      rightItalic: t("roomReady.figRightItalic"),
+    },
+    chrome: {
+      orWord: t("shell.orWord"),
+      fallbackPreamble: t("shell.fallbackPreamble"),
+      attendingInstitution: t("shell.attendingInstitution"),
+      tagline: t("shell.tagline"),
+      automatedFooter: t("shell.automatedFooter"),
     },
   });
 
@@ -60,6 +74,6 @@ export function buildRoomReadyEmail(input: RoomReadyEmailInput): EmailPayload {
 }
 
 export async function sendRoomReadyEmail(input: RoomReadyEmailInput) {
-  const payload = buildRoomReadyEmail(input);
+  const payload = await buildRoomReadyEmail(input);
   return sendEmail({ to: input.to, ...payload });
 }

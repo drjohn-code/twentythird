@@ -14,6 +14,10 @@ import {
 } from "@/lib/connections";
 import { sendInviteEmail, NOTE_MAX_LENGTH } from "@/lib/emails/invite";
 import { sendConnectionEndedEmail } from "@/lib/emails/connection-ended";
+import { sendConnectionAcceptedEmail } from "@/lib/emails/connection-accepted";
+import { emailPreferenceEnabled } from "@/lib/emails/preferences";
+import { localeForUser } from "@/lib/emails/locale";
+import { DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 // /api/connections — every write side of the Connections feature.
 //
@@ -307,6 +311,9 @@ async function handleInvite(req: Request, body: Record<string, unknown>) {
     inviterFirstName: inviterName,
     note,
     acceptUrl,
+    // Invite goes in the inviter's language — the note is theirs, and the
+    // invite landing lets the recipient switch.
+    locale: await localeForUser(admin, user.id),
   });
 
   return NextResponse.json({ ok: true, id: inserted.id, expiresAt });
@@ -380,6 +387,9 @@ async function handleAccept(
 
   // Recompute the inviter's depth — accepted connection contributes.
   await recomputeDepthFor(conn.inviter_user_id, admin);
+
+  // Notify the inviter (Fig. 05), gated on their preference.
+  await notifyInviterAccepted(admin, conn.inviter_user_id, firstName);
 
   return NextResponse.json({
     ok: true,
@@ -508,6 +518,9 @@ async function handleAcceptIncoming(body: Record<string, unknown>) {
     recomputeDepthFor(conn.inviter_user_id, admin),
     recomputeDepthFor(user.id, admin),
   ]);
+
+  // Notify the inviter (Fig. 05), gated on their preference.
+  await notifyInviterAccepted(admin, conn.inviter_user_id, firstName);
 
   return NextResponse.json({ ok: true, connection_id: conn.id });
 }
@@ -730,11 +743,18 @@ async function handleDisconnect(body: Record<string, unknown>) {
     otherEmail = row?.email ?? null;
   }
 
+  const recipientUserId =
+    user.id === conn.inviter_user_id
+      ? conn.connection_user_id
+      : conn.inviter_user_id;
   if (otherEmail && enderFirstName) {
     await sendConnectionEndedEmail({
       to: otherEmail,
       enderFirstName,
       roomUrl: `${siteOriginFromEnv()}/room`,
+      locale: recipientUserId
+        ? await localeForUser(admin, recipientUserId)
+        : DEFAULT_LOCALE,
     });
   }
 
@@ -828,6 +848,7 @@ async function handleResend(body: Record<string, unknown>) {
     inviterFirstName: inviterName,
     note: conn.note,
     acceptUrl,
+    locale: await localeForUser(admin, user.id),
   });
 
   return NextResponse.json({ ok: true, expiresAt: newExpiry });
@@ -917,6 +938,39 @@ async function loadFirstName(
     .eq("id", userId)
     .maybeSingle<{ full_name: string | null; email: string | null }>();
   return firstNameFrom(data?.full_name) ?? firstNameFrom(data?.email);
+}
+
+// Notify the inviter that their invitation was accepted — gated on the
+// inviter's connection_requests email preference, sent in the inviter's
+// locale (Fig. 05). Best-effort: never blocks or fails the accept.
+async function notifyInviterAccepted(
+  admin: AdminClient,
+  inviterUserId: string,
+  connectionFirstName: string,
+): Promise<void> {
+  try {
+    const enabled = await emailPreferenceEnabled(
+      admin,
+      inviterUserId,
+      "connection_requests",
+    );
+    if (!enabled) return;
+    const { data: inviter } = await admin
+      .from("profiles")
+      .select("email, full_name")
+      .eq("id", inviterUserId)
+      .maybeSingle<{ email: string | null; full_name: string | null }>();
+    if (!inviter?.email) return;
+    await sendConnectionAcceptedEmail({
+      to: inviter.email,
+      inviterFirstName: firstNameFrom(inviter.full_name),
+      connectionFirstName,
+      roomUrl: `${siteOriginFromEnv()}/room`,
+      locale: await localeForUser(admin, inviterUserId),
+    });
+  } catch {
+    // best-effort — a failed notification never blocks the accept.
+  }
 }
 
 // Resolve the absolute origin to use in user-facing URLs.

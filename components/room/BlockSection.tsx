@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { getTranslations } from "next-intl/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
 import Reveal from "@/components/layout/Reveal";
@@ -26,7 +27,7 @@ type BlockSectionProps = {
  * reverse based on parity of `index`. The `split-section` class lets
  * the inner figure bars / meters fill when the section reveals.
  */
-export default function BlockSection({
+export default async function BlockSection({
   index,
   slug,
   subtitle,
@@ -35,6 +36,7 @@ export default function BlockSection({
   hasPriorReadings,
   figure,
 }: BlockSectionProps) {
+  const t = await getTranslations("readings");
   const reverse = index % 2 === 0;
 
   return (
@@ -50,7 +52,10 @@ export default function BlockSection({
         >
           <div className="split-copy reading-copy">
             <Eyebrow>
-              READING {String(index).padStart(2, "0")} · {subtitle.toUpperCase()}
+              {t("section.eyebrow", {
+                index: String(index).padStart(2, "0"),
+                subtitle: subtitle.toUpperCase(),
+              })}
             </Eyebrow>
             <h2 className="reading-h2">
               <span className="it">{subtitle}.</span>
@@ -64,13 +69,13 @@ export default function BlockSection({
             {hasPriorReadings ? (
               <div className="reading-actions-row">
                 <RowLink href="/settings#depth">
-                  strengthen the accuracy
+                  {t("section.strengthen")}
                 </RowLink>
                 <span className="reading-actions-sep" aria-hidden="true">
                   ·
                 </span>
                 <RowLink href="/readings#clinical-report">
-                  request a report
+                  {t("section.requestReport")}
                 </RowLink>
               </div>
             ) : null}

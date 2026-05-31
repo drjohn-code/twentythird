@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 type BlockCardProps = {
   /** 1..6 catalogue index (rendered as "Reading 0N"). */
@@ -16,7 +17,7 @@ type BlockCardProps = {
   diagram: ReactNode;
 };
 
-export default function BlockCard({
+export default async function BlockCard({
   index,
   slug,
   subtitle,
@@ -24,7 +25,8 @@ export default function BlockCard({
   takeaway,
   diagram,
 }: BlockCardProps) {
-  const num = `Reading ${String(index).padStart(2, "0")}`;
+  const t = await getTranslations("readings");
+  const num = t("card.reading", { index: String(index).padStart(2, "0") });
   return (
     <div className="block-card glass">
       <div className="block-card-head">
@@ -44,8 +46,7 @@ export default function BlockCard({
         href={`/readings#${slug}`}
         className="block-card-trigger"
       >
-        <span>what this is</span>
-        <span aria-hidden="true">→</span>
+        <span>{t("whatThisIs")}</span>
       </Link>
     </div>
   );

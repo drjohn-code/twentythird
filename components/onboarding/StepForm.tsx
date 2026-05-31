@@ -9,6 +9,7 @@ import {
   useTransition,
 } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import MultiSelect from "@/components/ui/MultiSelect";
 import QuestionRow from "@/components/ui/QuestionRow";
 import RadioGroup from "@/components/ui/RadioGroup";
@@ -71,6 +72,31 @@ export default function StepForm({
   isLast,
 }: StepFormProps) {
   const router = useRouter();
+  const t = useTranslations("onboarding");
+  const ti = useTranslations("intake");
+  const slug = step.slug;
+
+  // Resolve the localized display label for a question field by its stable
+  // id. Storage keys, option values, validation and the lib data are
+  // untouched — only the rendered text comes from the catalog.
+  const qTitle = useCallback(
+    (id: string) => ti(`questions.${slug}.${id}.title`),
+    [ti, slug],
+  );
+  const qSubtitle = useCallback(
+    (id: string) => ti(`questions.${slug}.${id}.subtitle`),
+    [ti, slug],
+  );
+  // Same option `value`s, localized labels.
+  const localizedOptions = useCallback(
+    (id: string, options: { value: string; label: string }[]) =>
+      options.map((o) => ({
+        value: o.value,
+        label: ti(`questions.${slug}.${id}.options.${o.value}`),
+      })),
+    [ti, slug],
+  );
+
   const all: (CloseQuestion | OpenQuestion)[] = useMemo(
     () => [...step.closeQuestions, ...step.openQuestions],
     [step],
@@ -221,8 +247,8 @@ export default function StepForm({
       return (
         <RadioGroup
           name={q.id}
-          legend={q.title}
-          options={q.options}
+          legend={qTitle(q.id)}
+          options={localizedOptions(q.id, q.options)}
           value={v}
           onChange={(val) => setValue(q.id, val)}
           layout={q.layout ?? "vertical"}
@@ -233,8 +259,8 @@ export default function StepForm({
       const v = (values[q.id] ?? []) as string[];
       return (
         <MultiSelect
-          legend={q.title}
-          options={q.options}
+          legend={qTitle(q.id)}
+          options={localizedOptions(q.id, q.options)}
           value={v}
           onChange={(next) => setValue(q.id, next)}
           max={q.maxSelections}
@@ -245,12 +271,12 @@ export default function StepForm({
       const v = (values[q.id] ?? null) as number | null;
       return (
         <Scale
-          legend={q.title}
+          legend={qTitle(q.id)}
           value={v}
           min={q.min}
           max={q.max}
-          lowLabel={q.lowLabel}
-          highLabel={q.highLabel}
+          lowLabel={ti(`questions.${slug}.${q.id}.lowLabel`)}
+          highLabel={ti(`questions.${slug}.${q.id}.highLabel`)}
           onChange={(n) => setValue(q.id, n)}
         />
       );
@@ -278,7 +304,9 @@ export default function StepForm({
             }}
             className="number-input"
           />
-          <span className="number-unit mono">{q.unit}</span>
+          <span className="number-unit mono">
+            {ti(`questions.${slug}.${q.id}.unit`)}
+          </span>
         </div>
       );
     }
@@ -290,7 +318,7 @@ export default function StepForm({
         value={v}
         onChange={(e) => setValue(q.id, e.target.value)}
         placeholder=""
-        aria-label={q.title}
+        aria-label={qTitle(q.id)}
       />
     );
   }
@@ -304,11 +332,12 @@ export default function StepForm({
       <section className="question-group">
         <header className="vh question-group-head">
           <span className="lhs">
-            <span>CLOSE QUESTIONS</span>{" "}
-            <em>pick what&apos;s true</em>
+            <span>{t("questions.closeTitle")}</span>{" "}
+            <em>{t("questions.closeHint")}</em>
           </span>
           <span className="mono">
-            {String(step.closeQuestions.length).padStart(2, "0")} questions
+            {String(step.closeQuestions.length).padStart(2, "0")}{" "}
+            {t("questions.countLabel", { count: step.closeQuestions.length })}
           </span>
         </header>
         <div className="question-group-body">
@@ -317,8 +346,8 @@ export default function StepForm({
               key={q.id}
               id={q.id}
               number={q.number}
-              title={q.title}
-              subtitle={q.subtitle}
+              title={qTitle(q.id)}
+              subtitle={qSubtitle(q.id)}
               skipped={!!skipped[q.id]}
               onToggleSkip={() => toggleSkip(q.id)}
             >
@@ -332,11 +361,12 @@ export default function StepForm({
         <section className="question-group">
           <header className="vh question-group-head">
             <span className="lhs">
-              <span>OPEN QUESTIONS</span>{" "}
-              <em>write what surfaces</em>
+              <span>{t("questions.openTitle")}</span>{" "}
+              <em>{t("questions.openHint")}</em>
             </span>
             <span className="mono">
-              {String(step.openQuestions.length).padStart(2, "0")} questions
+              {String(step.openQuestions.length).padStart(2, "0")}{" "}
+              {t("questions.countLabel", { count: step.openQuestions.length })}
             </span>
           </header>
           <div className="question-group-body">
@@ -345,8 +375,8 @@ export default function StepForm({
                 key={q.id}
                 id={q.id}
                 number={q.number}
-                title={q.title}
-                subtitle={q.subtitle}
+                title={qTitle(q.id)}
+                subtitle={qSubtitle(q.id)}
                 skipped={!!skipped[q.id]}
                 onToggleSkip={() => toggleSkip(q.id)}
               >
@@ -379,7 +409,7 @@ export default function StepForm({
                 }}
                 className="step-back-btn"
               >
-                Step {step.number - 1}
+                {t("step.backTo", { n: step.number - 1 })}
               </button>
             </RowLink>
           ) : (
@@ -395,10 +425,10 @@ export default function StepForm({
               aria-busy={submitting || undefined}
             >
               {submitLabel === "reading" ? (
-                <em className="serif-i">reading…</em>
+                <em className="serif-i">{t("step.submitReading")}</em>
               ) : (
                 <>
-                  <span>Save &amp; submit</span>
+                  <span>{t("step.submit")}</span>
                   <span aria-hidden="true" className="serif-i">
                     →
                   </span>
@@ -413,7 +443,7 @@ export default function StepForm({
               disabled={saveState === "saving"}
               aria-busy={saveState === "saving" || undefined}
             >
-              <span>Continue to Step {step.number + 1}</span>
+              <span>{t("step.continueTo", { n: step.number + 1 })}</span>
               <span aria-hidden="true" className="serif-i">
                 →
               </span>

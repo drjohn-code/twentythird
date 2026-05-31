@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -38,19 +39,18 @@ export default async function IntakeBlocksPage() {
     (answersRes.data as IntakeAnswerRow[] | null) ?? [],
   );
   const completions = computeStepCompletions(items);
+  const t = await getTranslations("room");
 
   return (
     <>
       <Reveal as="section" className="room-section settings-head">
-        <Eyebrow>INTAKE</Eyebrow>
+        <Eyebrow>{t("intake.index.eyebrow")}</Eyebrow>
         <h1 className="settings-h">
-          The intake, <span className="it">topic by topic.</span>
+          {t.rich("intake.index.title", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
         </h1>
-        <p className="lede settings-lede">
-          Ten sections. Open any one to review or deepen the answers
-          within it. The intake is not a one-time form — answers can
-          be revised at any time.
-        </p>
+        <p className="lede settings-lede">{t("intake.index.lede")}</p>
       </Reveal>
 
       <IntakeBlocksGrid completions={completions} />

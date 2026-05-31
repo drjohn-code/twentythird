@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "INTELLIĠENZA PSIKODINAMIKA",
+        "titleLine1": "AI Psikodinamika",
+        "titleLine2Pre": "Avvanzata",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "għall-",
+        "titleLine3It": "Awto-Skoperta",
+        "ctaPrimary": "Ibda l-iskoperta tiegħek",
+        "ctaGhostOr": "jew",
+        "ctaGhostText": "aqra x-xjenza",
+        "scroll": "iskrollja"
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFIJA EWLENIJA",
+        "titlePre": "Soluzzjonijiet ta' 5 minuti ma",
+        "titleIt": "jbiddlux lil ħadd",
+        "sub1": "Aħna nagħmlu analiżi tal-kawża ewlenija. Billi ngħaqqdu l-għarfien fundamentali ta' Sigmund Freud mal-avvanzi ta' Jacques Lacan fil-lingwistika, ix-xewqa, u l-identità.",
+        "sub2": "Ħafna għodod jaħdmu fil-wiċċ. Aħna naħdmu fejn inkitbet — fl-arkitettura tal-lingwa, fl-iżbalji tad-diskors, fil-mudelli li għadek ma semmejtx.",
+        "metaLineageLabel": "Nisel",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metodu",
+        "metaMethodVal": "Strutturali",
+        "metaFocusLabel": "Fokus",
+        "metaFocusVal": "L-inkonxju"
+      },
+      "privacy": {
+        "eyebrow": "KUNFIDENZJALITÀ",
+        "titlePre": "Il-privatezza tad-data hija",
+        "titleIt": "il-",
+        "titlePost": "prijorità.",
+        "lede": "Il-kunfidenzjalità mhijiex karatteristika hawnhekk; hija l-prekundizzjoni għall-fond. In-nies jitkellmu liberament biss fejn iħossuhom sikuri — għalhekk il-kamra hija mibnija biex iżżomm dak li tgħid protett.",
+        "rowTag": "Salvagwardji",
+        "rowTitlePre": "Kamra mibnija biex",
+        "rowTitleIt": "iżżomm",
+        "rowTitlePost": "dak li tgħid.",
+        "rowBody": "Ix-xogħol jitlob l-aktar materjal mhux difiż tiegħek. Il-kamra hija mibnija biex tirċevih b'kunfidenza u żżommu magħluq għal kull min ma kienx maħsub għalih.",
+        "figLabel": "Immaniġġjar tad-data",
+        "figSubtitle": "qagħda wieqfa",
+        "listProcessingKey": "ipproċessar",
+        "listProcessingVal": "Kull dħul huwa pproċessat triple‑blind.",
+        "listEncryptionKey": "kriptaġġ",
+        "listEncryptionVal": "Id-data kollha hija kriptata.",
+        "listProtectionKey": "protezzjoni",
+        "listProtectionVal": "Miżmuma taħt l-ogħla grad ta' protezzjoni disponibbli.",
+        "footKey": "Għan",
+        "footVal": "post kwiet u sigur biex titkellem fil-fond"
+      },
+      "process": {
+        "eyebrow": "KIF TAĦDEM",
+        "titlePre": "Erba' passi,",
+        "titleIt": "ċirku wieħed li jitwessa'",
+        "lede": "Il-komunikazzjoni tapprofondixxi f'erba' mossi. Kull waħda twessa' dak li s-sistema tista' taqra — minn intake waħda għal konverżazzjoni kontinwa.",
+        "step1Sub": "profiling tal-qalba profonda",
+        "step1TitlePre": "Intake ta'",
+        "step1TitleIt": "10 passi",
+        "step1TitlePost": ".",
+        "step1Body": "Oħloq il-kont tiegħek u imla intake ta' 10 passi. Dan huwa l-pass tal-profiling tal-qalba profonda; l-ewwel reading tinbena kompletament minn dak li tniżżel hawn.",
+        "step2Sub": "medjat, qatt reċiproku",
+        "step2TitlePre": "Il-persuni li",
+        "step2TitleIt": "jsawruk",
+        "step2Body": "Żid il-persuni li jsawruk, kull wieħed skont ir-rwol — sieħeb, ħabib l-aktar qrib, ġenitur, aħwa, ko-ġenitur. Dak li jaqsmu qatt mhu viżibbli għalik; dak li taqsam qatt mhu viżibbli għalihom. Is-sistema biss taqra t-tnejn.",
+        "step3Sub": "il-reading ta' kull ġimgħa",
+        "step3TitlePre": "Il-Catchup",
+        "step3TitleIt": "tal-Ħadd",
+        "step3Body": "Nhar il-Ħadd filgħaxija, għidilna x'ġara matul il-ġimgħa tiegħek u kif ħassejtek tgħixha. Kull Catchup tirfina l-reading — l-istampa tiffoka hekk kif il-ġimgħat jakkumulaw.",
+        "step4Sub": "kompletament privat",
+        "step4TitlePre": "Il-",
+        "step4TitleIt": "Consulting Room",
+        "step4Body": "Kellem f'konsultazzjoni kompletament privata mal-analyst — vuċi li tafek aħjar minn ħadd, imħarrġa fuq 23 saff ta' mudelli ta' AI avvanzati."
+      },
+      "brain": {
+        "eyebrow": "IX-XOGĦOL",
+        "titleLine1": "Id-dekostruzzjoni",
+        "titleLine2": "tas-subkonxju tiegħek",
+        "state1Tag": "Mappa tal-Mudelli",
+        "state1TitlePre": "Ċikli",
+        "state1TitleIt": "subkonxji",
+        "state1TitlePost": "u rikorrenza.",
+        "state1Body": "Nintraċċaw iċ-ċikli rikorrenti fl-għażliet tiegħek, l-ansjetajiet fir-relazzjonijiet, u l-iskattaturi emozzjonali. Billi nidentifikaw dawn iċ-ċikli, nuruk eżattament fejn l-intenzjonijiet konxji tiegħek qed jiġu maħtufa minn programmazzjoni inkoxja.",
+        "state2Tag": "Profilaġġ",
+        "state2TitlePre": "Profilaġġ",
+        "state2TitleIt": "psikodinamiku",
+        "state2TitlePost": "tal-qalba profonda.",
+        "state2Body": "Tgħaddi minn testijiet superfiċjali tal-personalità. Din hija skan strutturali tad-dinamika psikoloġika tiegħek — timmappja kif l-esperjenzi tal-passat tiegħek jiffurmaw l-identità, l-ego, u l-mekkaniżmi ta' difiża attwali tiegħek.",
+        "state3Tag": "Lingwa",
+        "state3TitlePre": "Esplorazzjoni tal-",
+        "state3TitleIt": "inkonxju lingwistiku",
+        "state3TitlePost": ".",
+        "state3Body": "Ibbażat fuq it-teorija Lacanjana, l-AI tagħna tanalizza l-assoċjazzjonijiet tal-kliem tiegħek, il-pawżi, u l-mudelli tad-diskors. Ngħinuk taqra bejn il-linji tal-ħsibijiet tiegħek stess biex taċċessa l-ansjetajiet u x-xewqat moħbija li għad ma stajtx tesprimi."
+      },
+      "transform": {
+        "eyebrow": "ITTRASFORMA",
+        "titleLine1": "Ikser iċ-ċiklu,",
+        "titleLine2": "Imbagħad iktbu mill-ġdid.",
+        "lede": "Tliet movimenti fix-xogħol. Tliet postijiet fejn l-għarfien isir bidla.",
+        "row1Tag": "Relazzjonali",
+        "row1TitlePre": "Fejjaq id-dinamika",
+        "row1TitleIt": "relazzjonali",
+        "row1TitlePost": "tiegħek.",
+        "row1Body": "L-istess attrazzjoni tiġbdek lejn l-istess tip ta’ persuna, l-istess ġlieda, l-istess irtirar. Aħna nidentifikaw il-mudell tul is-snin, insejħulu b’ismu, u narawh jitlef il-gravità tiegħu.",
+        "row1Link": "Aqra l-istudju tal-każ",
+        "row1FigLabel": "Suġġett 1149-A",
+        "row1FigSubtitle": "mudell lonġitudinali",
+        "row1Outcome": "irtira",
+        "row1SummaryRecurrenceKey": "rikorrenza",
+        "row1SummaryIntervalKey": "intervall",
+        "row1SummaryAttractorKey": "attrazzjoni",
+        "row1SummaryAttractorVal": "limitu tal-intimità",
+        "row2Tag": "Ħidma fuq il-Ħolm",
+        "row2TitlePre": "Iddeċifra l-loġika",
+        "row2TitleIt": "tal-ħolm",
+        "row2TitlePost": ", allinja l-għanijiet.",
+        "row2Body": "Il-ħolm tiegħek huwa provi ta' tifsira. Aħna nsegwu l-grammatika tagħhom — l-ispostamenti, il-kondensazzjonijiet, iż-żlieq — lura lejn id-deċiżjoni tal-qawmien li kienu qed jippruvaw jieħdu għalik.",
+        "row2Link": "Ara eżempju annotat",
+        "row2FigLabel": "Sessjoni 06",
+        "row2FigSubtitle": "dħul tal-ħolm, annotat",
+        "row2Dream1Pre": "Jien lura fid-dar tal-ġenituri tiegħi",
+        "row2Ann1": "xena primarja",
+        "row2Dream1Mid": ", iżda l-kmamar jibqgħu jinfetħu f'kmamar oħra",
+        "row2Ann2": "konfini tal-ego",
+        "row2Dream2Pre": "Raġel bil-vuċi ta' missieri",
+        "row2Ann3": "immaġni tal-missier",
+        "row2Dream2Mid": "jtini ċavetta. Iċ-ċavetta tinbidel f'ilma",
+        "row2Ann4": "spostament",
+        "row2Dream3Pre": "Nqum qabel nista' niftaħ il-bieb",
+        "row2Ann5": "xewqa / nuqqas",
+        "row2Key1": "xena primarja",
+        "row2Key2": "konfini tal-ego",
+        "row2Key3": "immaġni tal-missier",
+        "row2Key4": "spostament",
+        "row2Key5": "xewqa / nuqqas",
+        "row3Tag": "Vokazzjoni",
+        "row3TitlePre": "Ħoll il-blokki",
+        "row3TitleIt": "professjonali",
+        "row3TitlePost": ".",
+        "row3Body": "Il-limitu li tibqa' tolqot rari jkun dwar il-ħila. Huwa skript — miktub kmieni, ippruvat bil-kwiet — li aħna ngħinuk taqra b'leħen għoli u tikteb mill-ġdid, sentenza b'sentenza.",
+        "row3Link": "Il-karta tal-metodu",
+        "row3FigLabel": "Reviżjoni tal-iskript",
+        "row3FigSubtitle": "abbozz tax-xogħol",
+        "row3Line1Prefix": "01 · Jien",
+        "row3Line1Old": "għadni mhux lest.",
+        "row3Line1New": "diġà permess.",
+        "row3Line2Prefix": "02 · biex",
+        "row3Line2Old": "nistenna min-naħa tiegħi.",
+        "row3Line2New": "insejjaħ dak li rrid.",
+        "row3Line3Prefix": "03 · għax",
+        "row3Line3Old": "xi ħadd jista' jkun diżappuntat.",
+        "row3Line3New": "id-diżappunt huwa wkoll lingwa.",
+        "row3MetaOriginalPre": "oriġinali",
+        "row3MetaOriginalIt": "età 11",
+        "row3MetaRevisedPre": "revedut",
+        "row3MetaRevisedIt": "sessjoni 06"
+      },
+      "outcomes": {
+        "eyebrow": "RIŻULTATI",
+        "titleLine1Pre": "Għarfien",
+        "titleLine1It": "tanġibbli",
+        "titleLine2": "Mkejjel bil-kwiet.",
+        "lede": "Għarfien personali mmexxi mid-data, mogħti bil-lingwa ta' kliniku — mhux ta' kwizz.",
+        "row1Tag": "Aċċelerazzjoni",
+        "row1TitlePre": "L-aħħar",
+        "row1TitleIt": "shortcut",
+        "row1TitlePost": "għat-terapija fid-dinja reali.",
+        "row1Body": "Dak li qabel kien jieħu relazzjoni ta' ħafna snin issa jista' jibda bi ġimgħat ta' preparazzjoni. Idħol fl-uffiċċju tat-terapista tiegħek taf x'int hemm biex tgħid.",
+        "row1Link": "Ara l-metodoloġija",
+        "row1FigSubtitle": "ħin għall-ewwel għarfien",
+        "row1TraditionalLabel": "Triq tradizzjonali",
+        "row1AxisYr1": "sena 1",
+        "row1AxisYr3": "sena 3",
+        "row1AxisYr6": "sena 6",
+        "row1AxisYr9": "sena 9",
+        "row1AxisYr12": "sena 12",
+        "row1TwentyThirdLabelPre": "Ma'",
+        "row1AxisWk1": "ġimgħa 1",
+        "row1AxisWk4": "ġimgħa 4",
+        "row1AxisWk8": "ġimgħa 8",
+        "row1AxisWk12": "ġimgħa 12",
+        "row1SummaryFaster": "aktar malajr",
+        "row1SummaryDesc": "ħin għall-ewwel għarfien",
+        "row2Tag": "Rapport",
+        "row2TitlePre": "Mappa psikoloġika",
+        "row2TitleIt": "lesta għat-terapista",
+        "row2TitlePost": ".",
+        "row2Body": "Dijagramma strutturali tiegħek — esportabbli, kondiviżibbli, intelliġibbli ħafna għal kliniku mħarreġ. Mhux kwizz tal-personalità; brief tax-xogħol.",
+        "row2Link": "Ara rapport kampjun",
+        "row2FigLabel": "Suġġett 1149-A",
+        "row2FigSubtitle": "profil strutturali",
+        "row2RepCase": "każ 1149-A",
+        "row2RepPrepared": "ippreparat 04 · 26",
+        "row2MetricEgo": "Struttura tal-Ego",
+        "row2MetricObject": "Relazzjonijiet tal-oġġett",
+        "row2MetricDefense": "Kumplessità tad-difiża",
+        "row2MetricDrive": "Organizzazzjoni tal-ispinta",
+        "row2MetricSymbolic": "Reġistru simboliku",
+        "row2FootLabel": "Struttura dominanti",
+        "row2FootVal": "ossessiva · bi traċċi isterikali",
+        "row3Tag": "Integrazzjoni",
+        "row3TitlePre": "Integrazzjoni",
+        "row3TitleIt": "personalizzata",
+        "row3TitlePost": "u pjanijiet ta' xogħol fid-dell.",
+        "row3Body": "Prompts u ritwali ta' kuljum li jieħdu l-għarfien mill-paġna u fil-ġisem. Żgħar, intenzjonati. Mibnija madwar l-istruttura tiegħek, mhux kurrikulu ġeneriku.",
+        "row3Link": "Kif jadatta l-pjan",
+        "row3FigLabel": "Jum 23",
+        "row3FigSubtitle": "prompt ta' kuljum",
+        "row3FigPlan": "pjan 04",
+        "row3Day": "L-Erbgħa",
+        "row3PromptEyebrow": "prompt tal-lum · xogħol fid-dell",
+        "row3PromptPre": "Fejn illum għażilt",
+        "row3PromptIt": "li ma",
+        "row3PromptPost": "tidhirx? U x'kont qed iżżomm sigur billi tinħeba?",
+        "row3Stream1Label": "xogħol tan-nifs",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "ġurnal",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "prompt tad-dell",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "sensiela",
+        "row3StreakVal": "{n, plural, one {# jum} few {# ijiem} many {# ġurnata} other {# ijiem}}"
+      },
+      "final": {
+        "eyebrow": "IBDA",
+        "titlePre": "L-inkonxju tiegħek qed jitkellem.",
+        "titleIt": "Wasal iż-żmien li tisma'.",
+        "ctaPrimary": "Ibda l-iskoperta tiegħek",
+        "ctaGhostOr": "jew",
+        "ctaGhostText": "aqra x-xjenza"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Politika ta' Privatezza — TwentyThird",
+        "metaDescription": "Kif TwentyThird jimmaniġġja d-data personali. Xejn ma joħroġ mill-UE. Xejn ma jinbiegħ.",
+        "eyebrow": "PRIVATEZZA",
+        "headingLead": "Dejta personali,",
+        "headingItalic": "immaniġġjat b'attenzjoni.",
+        "lede": "TwentyThird jipproċessa dak li taqsam biex jagħtik għarfien psikodinamiku preċiż. Xejn ma joħroġ mill-UE. Xejn ma jinbiegħ.",
+        "controls": {
+          "headingLead": "Min",
+          "headingItalic": "jikkontrolla",
+          "headingTail": "id-data tiegħek",
+          "p1": "WelloWork AB, irreġistrata fl-Isvezja (org. nr. 559472‑9997), li topera minn Uppsala, hija l-kontrollur tad-data għad-data personali miġbura fuq din il-websajt u permezz ta' inkjesti diretti.",
+          "p2": "Għad-data proċessata ġewwa l-pjattaforma TwentyThird f'isem organizzazzjoni — klinika, istituzzjoni ta' riċerka, min iħaddem — WelloWork AB taġixxi bħala proċessur u l-organizzazzjoni tal-klijent hija l-kontrollur. Dik ir-relazzjoni hija rregolata minn Ftehim Separat dwar l-Ipproċessar tad-Data."
+        },
+        "figure": {
+          "label": "min jikkontrolla d-data tiegħek",
+          "controller": "Kontrollur",
+          "directRelationship": "relazzjoni diretta",
+          "websiteVisitor": "Viżitatur tal-Websajt",
+          "you": "Int",
+          "customerOrg": "Organizzazzjoni tal-Klijent",
+          "viaDpa": "permezz ta' DPA",
+          "processor": "Proċessur",
+          "platformUser": "Utent tal-Pjattaforma"
+        },
+        "collect": {
+          "headingLead": "X'aħna",
+          "headingItalic": "niġbru",
+          "contactStrong": "Dejta ta' kuntatt u kont.",
+          "contactBody": "Isem, indirizz elettroniku, u kwalunkwe informazzjoni li tipprovdi meta tirreġistra jew tikteb lilna. Bażi legali: eżekuzzjoni tal-kuntratt (Art. 6(1)(b) GDPR).",
+          "sessionStrong": "Dejta tas-sessjoni u tal-pjattaforma.",
+          "sessionBody": "Djarji, tweġibiet, kontenut tal-ħolm, u mudelli lingwistiċi li taqsam fi ħdan TwentyThird. Dan huwa s-sottostrat tal-analiżi. Bażi legali: kunsens espliċitu (Art. 9(2)(a) GDPR), mogħti waqt l-onboarding u revokabbli fi kwalunkwe ħin. Aħna nittrattaw din id-dejta bħala dejta ta' kategorija speċjali relatata mas-saħħa u napplikaw salvagwardji korrispondenti irrispettivament mill-klassifikazzjoni formali.",
+          "technicalStrong": "Dejta teknika.",
+          "technicalBody": "Indirizz IP, tip ta' browser, identifikaturi tal-apparat, u timbri tal-ħin tal-użu — miġbura awtomatikament meta taċċessa l-pjattaforma. Bażi legali: interess leġittimu (Art. 6(1)(f) GDPR) biex tinżamm is-sigurtà u jiġu djanjostikati l-iżbalji.",
+          "p4": "Aħna ma niġbrux dejta dwar ir-razza, l-etniċità, l-opinjoni politika, jew it-twemmin reliġjuż. Jekk kontenut li taqsam inċidentalment jiżvela tali informazzjoni, ma jiġix ipproċessat bħala kategorija distinta."
+        },
+        "use": {
+          "headingLead": "Kif nużaw",
+          "headingItalic": "data",
+          "headingTail": "tiegħek",
+          "p1": "Aħna nużaw id-data tiegħek biex nipprovdu u ntejbu s-servizz TwentyThird, nibagħtu messaġġi transazzjonali li tlabt, niskopru u nipprevjenu frodi jew abbuż, u nikkonformaw ma' obbligi legali.",
+          "p2": "Aħna ma nużawx id-data tiegħek għal profilazzjoni ta' reklamar. Ma nbigħuhiex, ma nliċenzjawhiex, u ma naqsmuhiex ma' sensara tad-data. Ma nużawhiex biex inħarrġu mudelli ta' AI għal skopijiet ġenerali operati minn partijiet terzi."
+        },
+        "sees": {
+          "headingLead": "Min",
+          "headingItalic": "jaraha",
+          "headingTail": "dan",
+          "withinStrong": "Fi ħdan WelloWork AB:",
+          "withinBody": "Kliniċisti u inġiniera li jeħtieġu aċċess biex iżommu s-servizz. L-aċċess huwa ristrett skont ir-rwol u rreġistrat.",
+          "infraStrong": "Fornituri tal-infrastruttura:",
+          "infraBody": "Supabase (database u awtentikazzjoni, reġjun tal-UE), Vercel (hosting, tarf tal-UE), u Postmark (email transazzjonali). Kull wieħed huwa marbut bi Ftehim dwar l-Ipproċessar tad-Data u jipproċessa d-data biss fuq l-istruzzjoni dokumentata tagħna.",
+          "legalStrong": "Obbligu legali:",
+          "legalBody": "Aħna niżvelaw id-data lill-awtoritajiet kompetenti biss meta meħtieġ mil-liġi, u sal-punt meħtieġ biss.",
+          "p4": "L-ebda data ma tiġi trasferita barra mill-UE/ŻEE. Jekk dan jinbidel, aħna naġġornaw din il-politika u niksbu kunsens ġdid fejn meħtieġ."
+        },
+        "retention": {
+          "headingItalic": "Żamma",
+          "p1": "Id-dejta tal-kont u tal-pjattaforma tinżamm sakemm il-kont tiegħek ikun attiv, flimkien ma' 30 jum wara t-tħassir biex tippermetti l-irkupru. Il-logs tekniċi jinżammu għal 90 jum. Il-mistoqsijiet ta' kuntatt jinżammu għal 24 xahar.",
+          "p2": "Wara dawn il-perjodi, id-dejta titħassar b'mod permanenti jew tiġi anonimizzata b'mod irriversibbli."
+        },
+        "rights": {
+          "headingLead": "Id-drittijiet",
+          "headingItalic": "tiegħek",
+          "p1": "Għandek id-dritt li taċċessa d-data li nżommu dwarek, tikkoreġi ineżattezzi, titlob tħassir, tirrestrinġi jew toġġezzjona għall-ipproċessar, u tirċievi kopja li tinqara mill-magni għall-portabbiltà. Fejn l-ipproċessar huwa bbażat fuq kunsens, tista' tirtirah fi kwalunkwe ħin mingħajr ma taffettwa l-legalità tal-ipproċessar qabel l-irtirar.",
+          "exerciseLead": "Biex teżerċita kwalunkwe dritt:",
+          "exerciseTail": ". Nirrispondu fi żmien 30 jum. Jekk ma tkunx sodisfatt bir-rispons tagħna, tista' tippreżenta ilment mal-Integritetsskyddsmyndigheten (IMY), l-awtorità Svediża għall-protezzjoni tad-data."
+        },
+        "children": {
+          "headingItalic": "Tfal",
+          "p1": "TwentyThird mhuwiex dirett lejn persuni taħt it-18-il sena. Aħna ma niġbrux data minn minuri b'mod konxju. Jekk insiru nafu li minuri ssottometta data, aħna nħassruha fil-pront."
+        },
+        "changes": {
+          "headingItalic": "Bidliet",
+          "p1": "Aħna naġġornaw din il-politika meta jinbidlu l-prattiki tagħna. Bidliet materjali jiġu nnotifikati bl-email mill-inqas 14-il jum qabel ma jidħlu fis-seħħ. Id-data tal-verżjoni tidher fil-qiegħ ta' din il-paġna.",
+          "effectivePrefix": "Effettiv minn:",
+          "effectiveSuffix": "· Liġi governattiva: Liġi Svediża u l-GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Termini ta' Servizz — TwentyThird",
+        "metaDescription": "Il-ftehim li jirregola l-użu tiegħek ta' TwentyThird. Miktub biex jinqara, mhux biex jiġi evitat.",
+        "eyebrow": "TERMINI",
+        "headingLead": "Il-ftehim,",
+        "headingItalic": "iddikjarat b'mod ċar.",
+        "lede": "Dawn it-termini jirregolaw l-użu tiegħek ta' TwentyThird. Huma miktuba biex jinqraw, mhux biex jiġu evitati.",
+        "service": {
+          "headingLead": "Is-",
+          "headingItalic": "servizz",
+          "p1": "TwentyThird hija pjattaforma ta' AI psikodinamika operata minn WelloWork AB. Tipprovdi għarfien analitiku miġbud minn dak li taqsam. Mhijiex apparat mediku. Ma tikkostitwixxix psikoterapija, dijanjosi psikjatrika, jew trattament kliniku. Jekk tinsab f'diffikultà psikoloġika, jekk jogħġbok ikkuntattja kliniku kwalifikat jew servizz ta' emerġenza."
+        },
+        "account": {
+          "headingLead": "Il-",
+          "headingItalic": "kont tiegħek",
+          "p1": "Trid tkun ta' 18-il sena jew aktar biex tuża TwentyThird. Int responsabbli biex iżżomm il-kunfidenzjalità tal-kredenzjali tiegħek. Ma tistax taqsam il-kont tiegħek jew tuża l-pjattaforma f'isem persuna oħra mingħajr il-kunsens espliċitu tagħha.",
+          "p2": "Int sid il-kontenut li toħloq — l-entrati tal-ġurnal tiegħek, ir-risposti tiegħek. Billi tissottomettihom, tagħti lil WelloWork AB liċenzja limitata biex tipproċessahom għall-iskopijiet deskritti fil-Politika ta' Privatezza. Tista' tesporta jew tħassar il-kontenut tiegħek fi kwalunkwe ħin."
+        },
+        "acceptableUse": {
+          "headingLead": "Użu",
+          "headingItalic": "aċċettabbli",
+          "p1": "Tista' tuża TwentyThird għal esplorazzjoni personali u professjonali legali. Ma tistax tużaha biex tagħmel ħsara lilek innifsek jew lil ħaddieħor, biex tipprova tevita s-sistemi ta' sigurtà tal-pjattaforma, biex tirriversja l-inġinerija tal-mudelli sottostanti, jew biex tħarreġ sistemi ta' AI kompetituri.",
+          "p2": "Aħna nirriżervaw id-dritt li nissospendu jew inwaqqfu kontijiet li jiksru dawn it-termini, mingħajr avviż minn qabel fejn meħtieġ għas-sigurtà."
+        },
+        "liability": {
+          "headingLead": "Ir-",
+          "headingItalic": "responsabbiltà tagħna",
+          "p1": "TwentyThird tipprovdi għarfien, mhux ċertezza. Ma niggarantixxux li l-analiżi hija preċiża, kompluta, jew xierqa għaċ-ċirkostanzi tiegħek. Sal-limitu permess mil-liġi Svediża, ir-responsabbiltà tagħna hija limitata għall-ammont li ħallast fit-3 xhur qabel it-talba rilevanti.",
+          "p2": "Xejn f'dawn it-termini ma jillimita r-responsabbiltà għall-mewt jew korriment personali kkawżat min-negliġenza tagħna, jew għall-frodi."
+        },
+        "disputes": {
+          "headingLead": "Liġi applikabbli u",
+          "headingItalic": "tilwim",
+          "p1": "Dawn it-termini huma rregolati mil-liġi Svediża. Tilwim li ma jistax jiġi solvut direttament jiġi riferut lill-qrati ta' Uppsala, l-Isvezja, bħala l-qorti tal-ewwel istanza.",
+          "p2Lead": "Jekk int konsumatur fl-UE, għandek ukoll aċċess għall-pjattaforma tal-UE għas-Soluzzjoni ta' Tilwim Online fuq",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Bidliet",
+          "p1": "Nistgħu naġġornaw dawn it-termini. L-użu kontinwu wara d-data effettiva ta' bidla materjali jikkostitwixxi aċċettazzjoni. Aħna ninnotifikaw bidliet materjali bl-email mill-inqas 14-il jum bil-quddiem.",
+          "effectivePrefix": "Effettiv minn:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Politika tal-Cookies — TwentyThird",
+        "metaDescription": "TwentyThird juża cookies għall-awtentikazzjoni u l-persistenza tal-preferenzi biss. L-ebda cookies tar-reklamar. L-ebda trackers ta' partijiet terzi.",
+        "eyebrow": "COOKIES",
+        "headingLead": "Dak li naħżnu",
+        "headingItalic": "fil-browser tiegħek.",
+        "lede": "TwentyThird juża cookies għall-awtentikazzjoni u l-persistenza tal-preferenzi. Ma nużaw l-ebda cookies tar-reklamar u l-ebda trackers ta' partijiet terzi.",
+        "whatIs": {
+          "headingLead": "X'inhi cookie",
+          "headingItalic": "hi",
+          "p1": "Cookie hija fajl żgħir ta' test maħżun fil-browser tiegħek. Nużawhom biex inżommuk illoggjat u biex niftakru l-preferenza tat-tema tiegħek (skura jew ċara). Dak hu kollox."
+        },
+        "weSet": {
+          "headingLead": "Cookies",
+          "headingItalic": "li nwaqqfu",
+          "authBody": "— Imwaqqfa minn Supabase. Iżżomm is-sessjoni awtentikata tiegħek. Tiskadi meta tilloggja jew wara 7 ijiem ta' inattività. Strettament meħtieġa.",
+          "themeBody": "— Taħżen il-preferenza tiegħek għall-modalità skura/ċara. Tipperisti sakemm titneħħa. Funzjonali.",
+          "p3": "Ma nwaqqfu l-ebda cookies tar-reklamar. Ma nitgħabbew l-ebda skripts ta' traċċar ta' partijiet terzi — l-ebda Google Analytics, l-ebda Meta Pixel, l-ebda tags ta' kummerċjalizzazzjoni ta' kwalunkwe tip."
+        },
+        "choices": {
+          "headingLead": "L-għażliet",
+          "headingItalic": "tiegħek",
+          "p1Lead": "Tista' tneħħi l-cookies fi kwalunkwe ħin permezz tas-settings tal-browser tiegħek. It-tneħħija",
+          "p1Mid": "twaqqaflek is-sessjoni. It-tneħħija",
+          "p1Tail": "tirrisettja l-wiri għall-default skur.",
+          "p2": "Ma nużawx banner tal-kunsens għall-cookies għal cookies strettament meħtieġa jew funzjonali taħt id-Direttiva dwar il-Privatezza Elettronika, peress li ma jeħtiġux kunsens. Jekk nintroduċu xi cookies mhux essenzjali fil-futur, niksbu kunsens qabel ma nwaqqfuhom."
+        },
+        "contact": {
+          "headingItalic": "Kuntatt",
+          "p1Lead": "Mistoqsijiet dwar cookies jew kwalunkwe kwistjoni oħra tad-data:",
+          "effectivePrefix": "Effettiv minn:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "F'DIN IL-PAĠNA",
+        "privacyPolicy": "Politika dwar il-Privatezza",
+        "termsOfService": "Termini tas-Servizz",
+        "cookiePolicy": "Politika dwar il-Cookies"
+      },
+      "layout": {
+        "eyebrow": "LEGALI",
+        "headingLead": "Dokumenti legali,",
+        "headingItalic": "iddikjarati b'mod ċar.",
+        "lede": "Politika tal-privatezza, termini tas-servizz, u politika tal-cookies — regolati mil-liġi Svediża u l-GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "AI Psikodinamika għall-ħajja ta' ġewwa. Kamra kwieta għal ħsieb serju.",
+      "product": "Prodott",
+      "discovery": "Skoperta",
+      "sampleReport": "Rapport kampjun",
+      "integrationPlan": "Pjan ta' integrazzjoni",
+      "company": "Kumpanija",
+      "about": "Dwarna",
+      "contact": "Kuntatt",
+      "manifesto": "Manifest",
+      "resources": "Riżorsi",
+      "science": "Ix-xjenza",
+      "methodology": "Metodoloġija",
+      "methodPaper": "Dokument tal-metodu",
+      "caseStudy": "Studju tal-każ",
+      "dreamExample": "Eżempju ta' ħolma",
+      "legal": "Legali",
+      "privacy": "Privatezza",
+      "terms": "Termini",
+      "cookies": "Cookies",
+      "rights": "id-drittijiet kollha riżervati"
+    },
+    "about": {
+      "metaTitle": "Dwar — TwentyThird",
+      "metaDescription": "Oriġini, metodu, u l-inflessjoni fil-jum tlieta u għoxrin. Mibni ġewwa CognitiveLab f'WelloWork AB.",
+      "hero": {
+        "eyebrow": "DWARNA",
+        "headingLead": "Oriġini, metodu, u l-",
+        "headingItalic": "inflessjoni fil-jum tlieta u għoxrin",
+        "lede": "TwentyThird huwa AI psikodinamiku għall-iskoperta personali. Huwa jimmappja l-loops u l-istrutturi rikorrenti taħt is-sintomu — lingwa, twaħħil, ripetizzjoni — u jirritorna brief tax-xogħol, mhux kwizz.",
+        "figure": {
+          "label": "day-23",
+          "subtitle": "metafora ta' inflessjoni",
+          "heading": "L-arkata ta' 23 jum",
+          "range": "kurżità → għarfien",
+          "markerInflection": "inflessjoni",
+          "summaryLabel": "jum li l-mistoqsija\ntiddawwar 'il ġewwa"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOSOFIJA",
+        "headingLead": "Il-korrispondent ta' Freud. In-numru ta' Fliess.",
+        "headingItalic": "Il-metafora tagħna",
+        "tag": "Nisel",
+        "row": {
+          "headingPre": "Ritmu ta'",
+          "headingItalic": "23 jum",
+          "headingPost": "propost f'ittra, miżmum bħala figura.",
+          "para1": "Iċ-ċiklu ta' 23 jum kien l-ipoteżi ta' Wilhelm Fliess, diskussa permezz tal-korrispondenza tiegħu ma' Freud fl-aħħar tas-seklu dsatax. Ix-xjenza kontemporanja ma tappoġġjax bijoritmi fissi.",
+          "para2": "Aħna nżommu n-numru għal dak li jsemmi — il-limitu fejn il-kurżità timmatura f'għarfien. Day‑23 hija figura, mhux bijoloġija."
+        },
+        "figure": {
+          "label": "nisel",
+          "subtitle": "erba' ankri",
+          "row1Outcome": "proposta",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "mudell strutturali",
+          "row3Duration": "Diskors ta' Ruma",
+          "row3Outcome": "bidla lingwistika",
+          "row4Outcome": "sinteżi",
+          "summary1Key": "intervall",
+          "summary2Key": "ħajta",
+          "summary2Value": "struttura",
+          "summary3Key": "metodu",
+          "summary3Value": "psikodinamiku"
+        }
+      },
+      "origin": {
+        "eyebrow": "ORIĠINI",
+        "headingLead": "Mibni ġewwa CognitiveLab.",
+        "headingItalic": "Wieġeb mistoqsija li baqgħu jistaqsuna",
+        "tag": "Tim",
+        "row": {
+          "headingLead": "Tobba, oriġinarjament jibnu",
+          "headingItalic": "taħriġ konjittiv",
+          "para1": "TwentyThird beda ġewwa l-CognitiveLab f'WelloWork AB, fejn it-tim kien qed jiżviluppa sistemi ta' taħriġ konjittiv. Ħbieb u kollegi bdew iġibu mistoqsijiet personali — ansjetà, mudelli rikorrenti, il-loops li ma setgħux isemmu.",
+          "para2": "Bejn il-prattika klinika bħala tobba, id-dejta pilota li konna qed niġbru, u lista twila ta' qari fil-psikoanaliżi u t-teorija Lacanjana, kellna xi ħaġa x'noffru. TwentyThird huwa dak li sar minnha."
+        },
+        "figure": {
+          "label": "tim",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "ippreparat 05 · 26",
+          "row1Key": "Prattika klinika",
+          "row2Key": "Riżultat tar-riċerka",
+          "row3Key": "Suġġetti fil-pilota",
+          "row4Key": "Tobba fit-tim",
+          "footerLabel": "Profil",
+          "footerValue": "ibridu kliniku-riċerkatur"
+        }
+      },
+      "method": {
+        "eyebrow": "METODU",
+        "headingLead": "Dak li l-mudell",
+        "headingItalic": "fil-fatt jagħmel",
+        "tag": "Kapaċitajiet",
+        "row": {
+          "headingLead": "Taħt is-sintomu, hemm",
+          "headingItalic": "struttura",
+          "para1": "TwentyThird iwettaq analiżi tal-kawża ewlenija. Huwa jimmappja l-<em>loop subkonxju</em> tul is-snin, jaqra l-<em>inkonxju lingwistiku</em> fl-għażla tal-kliem u żbalji fid-diskors, juri t-<em>twaħħil</em> fil-limitu tal-intimità, u jikteb pjan ta' ħidma għax-<em>xogħol tad-dell</em>.",
+          "para2": "L-output huwa lest għat-terapista. Issemmi l-istruttura, mhux il-wiċċ."
+        },
+        "figure": {
+          "label": "sintomu → struttura",
+          "subtitle": "tliet kitbiet mill-ġdid",
+          "row1Prefix": "01 · wiċċ",
+          "row1Old": "Nipprokrastina fuq xogħol importanti.",
+          "row1Next": "Evitar li wieħed jidher bħala dak li jaf.",
+          "row2Prefix": "02 · wiċċ",
+          "row2Old": "Nibqa' noħroġ mal-istess persuna.",
+          "row2Next": "Ripetizzjoni tal-imago tal-missier fil-limitu tal-intimità.",
+          "row3Prefix": "03 · wiċċ",
+          "row3Old": "Ma nistax inlesti xejn.",
+          "row3Next": "Rifjut li wieħed iċedi l-pożizzjoni tal-potenzjal.",
+          "metaLeftLabel": "preżentazzjoni",
+          "metaLeftValue": "ilment",
+          "metaRightLabel": "strutturali",
+          "metaRightValue": "qari"
+        }
+      },
+      "final": {
+        "eyebrow": "KOMPLI",
+        "headingLead": "Aqra l-metodu,",
+        "headingItalic": "jew ibda",
+        "ctaPrimary": "Aqra l-metodu",
+        "ctaGhostPrefix": "jew",
+        "ctaGhostText": "iktbilna"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KUNTATT",
+        "heroHeadlineLead": "Ikteb lilna.",
+        "heroHeadlineItalic": "Naqraw kollox",
+        "heroLede": "Ħafna messaġġi jiġu mwieġba fi żmien tlieta u sebgħin siegħa. Inkjesti kliniċi u ta’ sħubija jingħataw preċedenza.",
+        "formCardLabel": "formola",
+        "formCardSubtitle": "inkjesti sostanzjali biss",
+        "addressLabel": "INDIRIZZ",
+        "addressValue": "Rosendal, Uppsala, l-Isvezja",
+        "emailLabel": "EMAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "IBDA",
+        "finalHeadlineLead": "Jew sempliċement",
+        "finalHeadlineItalic": "ibda",
+        "finalCta": "Ibda l-iskoperta tiegħek",
+        "finalGhostOr": "jew",
+        "finalGhostText": "aqra l-oriġini",
+        "disclaimer": "Għal tħassib urġenti dwar is-saħħa mentali, jekk jogħġbok ikkuntattja s-servizzi ta’ emerġenza lokali jew kliniku liċenzjat. TwentyThird mhuwiex servizz ta’ kriżi."
+      },
+      "form": {
+        "successEyebrow": "RIĊEVUT",
+        "successHeadlineLead": "In-nota tiegħek hija",
+        "successHeadlineItalic": "magħna",
+        "successBody": "Aħna nwieġbu fi żmien jumejn tax-xogħol.",
+        "nameLabel": "Isem",
+        "emailLabel": "Email",
+        "messageLabel": "Messaġġ",
+        "submitSend": "Ibgħat",
+        "submitSending": "Qed tibgħat",
+        "errorMessage": "xi ħaġa marret ħażin · erġa' pprova",
+        "submittingStatus": "Qed tibgħat il-messaġġ tiegħek."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodoloġija — TwentyThird",
+      "metaDescription": "Mill-ewwel konverżazzjoni sal-mappa lesta għat-terapista. Ħames stadji tal-pipeline ta' TwentyThird.",
+      "hero": {
+        "eyebrow": "IL-METODU",
+        "headingLead": "Ġimgħat ta' preparazzjoni,",
+        "headingItalic": "mhux snin ta' tfittxija",
+        "lede": "It-terapija taħdem. Tieħu wkoll żmien biex tkun taf għalxiex qiegħed hemm. TwentyThird tikkompressa l-preparazzjoni — il-parti fejn titgħallem x'qed tgħid attwalment — sabiex il-kamra nnifisha tkun tista' timxi aktar malajr."
+      },
+      "pipeline": {
+        "eyebrow": "IL-PIPELINE",
+        "headingLead": "Ħames stadji, wieħed",
+        "headingItalic": "qasir",
+        "lede": "Minn diskors kampjunat għal dokument tax-xogħol li kliniku jista' jaqra fi tmien minuti.",
+        "stageLabel": "STADJU",
+        "stage01": {
+          "name": "Kampjunar",
+          "blurb": "Vuċi u test minn sessjonijiet iggwidati. Il-mudell jisma' għall-forma, mhux għall-kontenut.",
+          "label": "kampjunar",
+          "subtitle": "volum madwar il-koorti",
+          "fig": {
+            "wordsSampled": "kliem kampjunat",
+            "sessions": "sessjonijiet",
+            "elapsed": "għadda",
+            "medianTurn": "dawra medjana"
+          }
+        },
+        "stage02": {
+          "nameLead": "Estrazzjoni",
+          "nameEm": "lingwistika",
+          "blurb": "Karatteristiċi li l-mudell jneħħi mit-traskrizzjoni — bil-kwiet, qabel kwalunkwe interpretazzjoni.",
+          "label": "estrazzjoni",
+          "subtitle": "klassijiet ta' karatteristiċi",
+          "fig": {
+            "qualifierDensity": "densità tal-kwalifikaturi",
+            "modalVerbs": "verbi modali",
+            "conditionalFrame": "qafas kondizzjonali",
+            "affectiveHedges": "hedges affettivi",
+            "slipsMisnamings": "żbalji · ismijiet żbaljati",
+            "repetitionWindows": "twieqi ta' ripetizzjoni"
+          }
+        },
+        "stage03": {
+          "nameLead": "Sejbien",
+          "nameEm": "ta' rikorrenza",
+          "blurb": "Il-mudell li jirritorna bl-istess forma, f'għexieren ta' snin differenti. Is-sinjal li xi ħaġa hija strutturali.",
+          "label": "rikorrenza",
+          "subtitle": "tliet ankri ta' mudell wieħed",
+          "fig": {
+            "row1": {
+              "durationLabel": "ewwel xogħol",
+              "outcome": "limitu massimu fid-9 xahar"
+            },
+            "row2": {
+              "durationLabel": "tieni",
+              "outcome": "limitu massimu fil-11-il xahar"
+            },
+            "row3": {
+              "durationLabel": "tielet",
+              "outcome": "limitu massimu fit-8 xahar"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Rikostruzzjoni",
+          "nameEm": "tal-iskript",
+          "blurb": "Is-sentenza taħt il-mudell. Linja antika, imbagħad reviżjoni kandidata li s-suġġett jista' jipprattika.",
+          "label": "rikostruzzjoni",
+          "subtitle": "abbozz tax-xogħol",
+          "fig": {
+            "row1": {
+              "prefix": "Jiena",
+              "old": "għadni mhux lest.",
+              "next": "diġà permess."
+            },
+            "row2": {
+              "prefix": "biex",
+              "old": "nistenna li nintgħażel.",
+              "next": "insejjaħ dak li rrid."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Mappa għall-",
+          "nameEm": "kliniku",
+          "blurb": "Tliet miters ittikkettjati u qari strutturali ta' linja waħda. Tmien minuti biex taqra, ġimgħat biex tuża.",
+          "label": "għoti kliniku",
+          "subtitle": "brief tax-xogħol",
+          "fig": {
+            "casePrefix": "każ",
+            "preparedPrefix": "ippreparat",
+            "egoStructure": "Struttura tal-Ego",
+            "objectRelations": "Relazzjonijiet tal-Oġġett",
+            "symbolicRegister": "Reġistru Simboliku",
+            "footerLabel": "Qari",
+            "footerValue": "ossessiv · bi traċċi isterikali"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "SKOP",
+        "headingLead": "Dak li nkejlu, u dak li",
+        "headingItalic": "nirrifjutaw",
+        "headingTail": "li.",
+        "measureHead": "Dak li nkejlu",
+        "refuseHead": "Dak li ma nkejlux",
+        "measure": {
+          "languagePatterns": {
+            "k": "mudelli tal-lingwa",
+            "gloss": "Densità tal-kwalifikaturi, verbi modali, hedges, frames kondizzjonali."
+          },
+          "recurrence": {
+            "k": "rikorrenza",
+            "gloss": "Mudelli li jirritornaw bl-istess forma matul is-snin."
+          },
+          "narrativeCoherence": {
+            "k": "koerenza narrattiva",
+            "gloss": "Kif tinqata' ħajja, fejn jidhru l-ħjatat."
+          },
+          "attachmentMarkers": {
+            "k": "markaturi ta' twaħħil",
+            "gloss": "Fejn l-intimità taqsam limitu, dak li jsegwi."
+          },
+          "linguisticSlips": {
+            "k": "żbalji lingwistiċi",
+            "gloss": "Ismijiet żbaljati, kondensazzjonijiet, spjazzamenti."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "kategoriji DSM / ICD",
+            "gloss": "In-nosoloġija hija strument separat, użat mill-kliniċi."
+          },
+          "iqCognition": {
+            "k": "IQ jew konjizzjoni",
+            "gloss": "Barra mill-iskop. Il-mudell huwa psikodinamiku, mhux psikometriku."
+          },
+          "personalityTypes": {
+            "k": "tipi ta' personalità",
+            "gloss": "Il-ħames fatturi u d-dixxendenti tagħhom mhumiex parti mill-brief."
+          },
+          "riskScores": {
+            "k": "punteġġi ta' riskju",
+            "gloss": "Riskju akut huwa deċiżjoni ta' kliniku, mhux ta' mudell."
+          },
+          "predictions": {
+            "k": "tbassir",
+            "gloss": "Struttura, mhux tbassir. Insemmu dak li hu, mhux dak li ġej."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Komprensjoni",
+        "headingLead": "Idħol taf x'għandek",
+        "headingItalic": "tgħid",
+        "body1": "It-terapija mhix il-post fejn issib il-mistoqsija. Huwa l-post fejn tgħix magħha. Il-kompressjoni li noffru hija fuq l-approċċ — ix-xhur li kliniku normalment iqatta' jisma' għall-forma tal-brief.",
+        "body2": "Fil-koorti pilota, is-suġġetti ppreparati laħqu alleanza tax-xogħol f'inqas sessjonijiet. Il-qari kien diġà hemm.",
+        "figure": {
+          "label": "alleanza",
+          "subtitle": "sessjonijiet medjani għal alleanza tax-xogħol",
+          "heading": "Ħin għal alleanza tax-xogħol",
+          "range": "medjan madwar il-koorti",
+          "markerUnprepared": "mhux ippreparat",
+          "markerPrepared": "ippreparat",
+          "summaryLabel": "inqas sessjonijiet għal\nalleanza tax-xogħol"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "KOMPLI",
+        "headingLead": "Ibda,",
+        "headingItalic": "jew ara rapport kampjun",
+        "beginLabel": "Ibda",
+        "or": "jew",
+        "ghostLabel": "ara rapport kampjun"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRAZZJONI",
+        "headlineLead": "Fehim, imbagħad",
+        "headlineItalic": "drawwa",
+        "lede": "Li ssemmi mudell huwa biss l-ewwel pass. Il-pjan huwa t-tieni — prompts ta' kuljum u ritwali żgħar mibnija madwar l-istruttura tiegħek, mhux kurrikulu ġeneriku."
+      },
+      "week": {
+        "eyebrow": "ĠIMGĦA FIL-PJANI",
+        "headlineLead": "Sebgħa prompts,",
+        "headlineItalic": "struttura waħda",
+        "lede": "Riflettivi, inkarnati, miktuba. Il-ġimgħa tieħu n-nifs madwar il-mudell li semma r-rapport, mhux madwar kurrikulu.",
+        "days": {
+          "mon": {
+            "day": "TNE",
+            "prompt": "“Fejn illum għażilt <em>li ma tidhirx</em>?”",
+            "stream": {
+              "journal": "ġurnal",
+              "shadowPrompt": "prompt tad-dell"
+            }
+          },
+          "tue": {
+            "day": "TUL",
+            "prompt": "“Mur mixja mingħajr xogħol. Innota ħaġa waħda li kważi għedt.”",
+            "stream": {
+              "walking": "mixi",
+              "note": "nota"
+            }
+          },
+          "wed": {
+            "day": "ARA",
+            "prompt": "“X’kwalifikajt iżżejjed illum, u x’kienet is-sentenza <em>mhux kwalifikata</em> taħt?”",
+            "stream": {
+              "breathWork": "xogħol tan-nifs",
+              "journal": "ġurnal",
+              "shadowPrompt": "prompt tad-dell"
+            }
+          },
+          "thu": {
+            "day": "ĦAM",
+            "prompt": "“Skan tal-ġisem mill-gerżuma 'l isfel. Fejn tgħix iż-żamma?”",
+            "stream": {
+              "bodyScan": "skan tal-ġisem",
+              "note": "nota"
+            }
+          },
+          "fri": {
+            "day": "ĠIM",
+            "prompt": "“Ikteb is-sentenza li kont tgħid kieku kont diġà permess.”",
+            "stream": {
+              "journal": "ġurnal",
+              "rewrite": "ikteb mill-ġdid"
+            }
+          },
+          "sat": {
+            "day": "SIB",
+            "prompt": "“Mixja twila. Ebda prompts. Innota x’iġib lura s-skiet.”",
+            "stream": {
+              "walking": "mixi",
+              "rest": "mistrieħ"
+            }
+          },
+          "sun": {
+            "day": "ĦAD",
+            "prompt": "“Aqra l-ġimgħa lura. Liema linja kienet diġà <em>vera</em>?”",
+            "stream": {
+              "review": "reviżjoni",
+              "note": "nota"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADATTAMENT",
+        "headlineLead": "Il-pjan",
+        "headlineItalic": "jonqos",
+        "tag": "Adattament",
+        "rowHeadingLead": "Ir-rikorrenza tal-ġimgħa l-oħra tistabbilixxi d-",
+        "rowHeadingItalic": "densità",
+        "body": "Meta s-saħħa tal-mudell tonqos, il-prompts irqaq. Meta mudell jiżdied, il-prompts jerġgħu lura. L-għan mhuwiex l-aderenza. L-għan huwa l-iżgħar scaffolding li l-istruttura għadha teħtieġ.",
+        "figure": {
+          "label": "densità tal-prompt",
+          "subtitle": "ġimgħat 1–8",
+          "heading": "Għadd ta' prompts · fil-ġimgħa",
+          "range": "jonqos hekk kif iddgħajjef ir-rikorrenza",
+          "markers": {
+            "wk1": "ġimgħa 1",
+            "wk3": "ġimgħa 3",
+            "wk5": "ġimgħa 5",
+            "wk8": "ġimgħa 8"
+          },
+          "summaryLabel": "inqas prompts\nsa ġimgħa 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "XOGĦOL TAD-DELL",
+        "headlineLead": "Mhux katarsi.",
+        "headlineItalic": "Tkellem",
+        "tag": "Dell",
+        "rowHeadingLead": "Il-prattika deliberata li tgħid dak li kien",
+        "rowHeadingItalic": "ma jistax jingħad",
+        "body": "Ix-xogħol tad-dell, f'dan il-kuntest, mhuwiex espożizzjoni. Mhuwiex purifikazzjoni. Hija l-prattika bil-mod li tgħid — lilek innifsek, l-ewwel — dak li kont mgħallem iżżomm mhux mitkellem. Tliet linji qabel / wara meħuda minn pjanijiet reali.",
+        "figure": {
+          "label": "reviżjonijiet tad-dell",
+          "subtitle": "tliet linji, abbozz tax-xogħol",
+          "rows": {
+            "r1": {
+              "prefix": "01 · lilek innifsek",
+              "old": "Ma jistħoqqlix dan.",
+              "next": "Għadni ma pprattikajtx li rridu b'leħen għoli."
+            },
+            "r2": {
+              "prefix": "02 · lilek innifsek",
+              "old": "Issa suppost li għaddejt minn dan.",
+              "next": "il-kronoloġija li sselleft ma kinitx għal dan it-tip ta' niket."
+            },
+            "r3": {
+              "prefix": "03 · lilek innifsek",
+              "old": "Jiena wisq.",
+              "next": "Jiena eżattament il-volum li l-kamra ma kinitx mibnija għalih."
+            }
+          },
+          "metaLeft": {
+            "label": "qabel",
+            "value": "qal dwaru nnifsu"
+          },
+          "metaRight": {
+            "label": "issa",
+            "value": "qal lilu nnifsu"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "QAFAS",
+        "headlineLead": "Miżmum minn struttura, mhux minn",
+        "headlineItalic": "kurrikulu",
+        "body1": "Kurrikulu huwa sett ta' mossi mibnija minn barrani. Struttura hija l-għamla li ħajtek partikolari tieħu. Il-pjan huwa mibni kontra dan tal-aħħar. Kull prompt huwa ankrata ma' linja fir-rapport tiegħek — meta l-linja tinħall, il-prompt ukoll jinħall.",
+        "body2": "Xejn hawn mhu suppost li jkun permanenti. Il-pjan huwa mikri. L-istruttura hija tiegħek.",
+        "closeout": "l-istruttura hija tiegħek · il-pjan huwa mikri"
+      },
+      "final": {
+        "eyebrow": "KOMPLI",
+        "headlineLead": "Ibda,",
+        "headlineItalic": "jew aqra x-xjenza",
+        "beginCta": "Ibda",
+        "or": "jew",
+        "readScience": "aqra x-xjenza"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Ix-xjenza — TwentyThird",
+        "description": "Seklu ta' teorija psikoanalitika u erba' deċennji ta' riċerka empirika dwar il-mudell, il-lingwa, u l-inkonxju."
+      },
+      "hero": {
+        "eyebrow": "IL-FONDAMENT",
+        "headlineLead": "Ix-xjenza wara s-",
+        "headlineItalic": "smigħ",
+        "headlineTail": ".",
+        "lede": "TwentyThird hija mibnija fuq seklu ta' teorija psikoanalitika u erba' deċennji ta' riċerka empirika dwar il-mudell, il-lingwa, u l-inkonxju. Dan huwa dak li naqraw, u għaliex."
+      },
+      "lineages": {
+        "eyebrow": "ŻEWĠ LINIJI",
+        "headlineLead": "L-istruttura ta' Freud. Il-",
+        "headlineItalic": "ittra",
+        "headlineTail": " ta' Lacan.",
+        "lede": "Żewġ qari tal-inkonxju, nofs seklu 'l bogħod minn xulxin. Flimkien jiffurmaw is-sinsla tal-metodu.",
+        "freud": {
+          "headlineLead": "L-inkonxju",
+          "headlineItalic": "strutturali",
+          "headlineTail": ".",
+          "body1": "Il-kontribut dejjiemi ta' Freud huwa strutturali, mhux tematiku. L-inkonxju dinamiku mhuwiex kantina ta' kontenut minsija — huwa organu tax-xogħol tal-moħħ, li jipprova, jirrepeti, jittrasferixxi.",
+          "body2": "Naqrawh bħala kliniku tar-ripetizzjoni. L-istess xena tasal f'deċennji differenti. Dik ir-rikorrenza hija s-sinjal li l-mudell huwa mħarreġ biex isib.",
+          "figure": {
+            "label": "rikorrenza",
+            "subtitle": "ħames ankri, struttura waħda",
+            "outcome": "irtirar",
+            "rows": {
+              "anchor1": "adolexxenza bikrija",
+              "anchor2": "l-ewwel rabta twila",
+              "anchor3": "it-tieni rabta twila",
+              "anchor4": "it-tielet rabta",
+              "anchor5": "ir-raba' rabta"
+            },
+            "summary": {
+              "recurrenceLabel": "rikorrenza",
+              "intervalLabel": "intervall",
+              "attractorLabel": "attraktur",
+              "attractorValue": "limitu tal-intimità"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "L-inkonxju huwa strutturat bħal",
+          "headlineItalic": "lingwa",
+          "headlineTail": ".",
+          "body1Lead": "Il-qari ta' Lacan ibiddel il-qasam. Is-sinifikant jiċċaqlaq; it-tifsira tiżloq tul ktajjen ta' metonimija u metafora. L-istadju tal-mera jsemmi l-iżball fundatur.",
+          "body1Italic": "Ix-xewqa hija x-xewqa tal-Oħra.",
+          "body2": "Fil-pipeline tagħna dan huwa konkret. Naqraw il-ħolm u d-diskors tal-qawmien bħala test — l-ispostamenti, il-kondensazzjonijiet, u l-iżbalji jġorru l-grammatika strutturali.",
+          "figure": {
+            "label": "sinjal lingwistiku",
+            "subtitle": "silta tal-ħolm, annotata",
+            "dreamLead": "“Il-kamra li għext fiha bħala tifel għandha bieb ieħor li ma niftakarx",
+            "ann1": "spostament",
+            "dreamMid1": ". Warajh, il-vuċi tas-superviżur tiegħi",
+            "ann2": "kondensazzjoni",
+            "dreamMid2": "issejjaħli b'isem ħażin",
+            "ann3": "żball",
+            "dreamTail": ".”",
+            "key1": "spostament",
+            "key2": "kondensazzjoni",
+            "key3": "żball"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "ANKRI EMPIRIĊI",
+        "headlineLead": "Dak li żżid ir-riċerka kontemporanja",
+        "headlineItalic": "iżżid",
+        "headlineTail": ".",
+        "lede": "Ħames linji konverġenti mir-riċerka dwar it-twaħħil, in-narrattiva, u l-proċess. Mhux biblijografija kompluta — l-ankri li l-mudell fil-fatt jistrieħ fuqhom.",
+        "figure": {
+          "label": "ankri empiriċi",
+          "subtitle": "evidenza konverġenti",
+          "caseLabel": "letteratura · sinteżi",
+          "prepared": "aġġornata 04 · 26",
+          "rows": {
+            "attachment": "Kontinwità tat-twaħħil tul deċennji",
+            "alliance": "Alleanza terapewtika bħala predittur tar-riżultat",
+            "narrative": "Koerenza narrattiva u benesseri",
+            "relational": "Għarfien relazzjonali impliċitu",
+            "script": "Teorija tal-iskript fl-istaġnar vokazzjonali"
+          },
+          "footerLabel": "Sinteżi",
+          "footerValue": "evidenza konverġenti · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "DAK LI MA NIPPRETENDUX",
+        "headlineLead": "It-truf",
+        "headlineItalic": "onesti",
+        "headlineTail": " tax-xogħol.",
+        "claim1Strong": "M'aħniex sostitut għal terapista.",
+        "claim1Body": "Il-mudell jipprepara l-konverżazzjoni. Ma jżommhiex.",
+        "claim2Strong": "M'aħniex strument dijanjostiku taħt DSM jew ICD.",
+        "claim2Body": "Il-kategoriji li naħdmu fihom huma strutturali — ossessivi, isterici, fobiċi — mhux nosoloġiċi. Huma jsemmu kif persuna hija organizzata, mhux dak li għandha.",
+        "claim3Strong": "Iċ-ċiklu ta' 23 jum huwa metafora.",
+        "claim3Body": "In-numru ġej mill-korrispondenza ta' Wilhelm Fliess ma' Freud fl-aħħar tas-seklu dsatax. Ix-xjenza kontemporanja ma tappoġġjax bijoritmi fissi. Aħna nżommu n-numru għal dak li jsemmi — l-inflessjoni mill-kurżità għall-għarfien."
+      },
+      "reading": {
+        "eyebrow": "QARI ADDIZZJONALI",
+        "headlineLead": "L-ixkaffa",
+        "headlineItalic": "wara",
+        "headlineTail": " il-mudell.",
+        "lede": "Kotba, mhux karti. Dawk li nerġgħu lura għalihom.",
+        "books": {
+          "book1": {
+            "title": "Lil Hinn mill-Prinċipju tal-Pjaċir"
+          },
+          "book2": {
+            "title": "L-Interpretazzjoni tal-Ħolm"
+          },
+          "book4": {
+            "title": "L-Erba' Kunċetti Fundamentali tal-Psikoanaliżi"
+          },
+          "book5": {
+            "title": "Twaħħil"
+          },
+          "book6": {
+            "title": "Regolazzjoni tal-Affett u l-Oriġini tal-Awto"
+          },
+          "book7": {
+            "title": "Wieqaf fl-Ispazji"
+          },
+          "book8": {
+            "title": "Regolazzjoni tal-Affett, Mentalizzazzjoni, u l-Iżvilupp tal-Awto"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "KOMPLI",
+        "headlineLead": "Ibda profil,",
+        "headlineItalic": "jew aqra każ",
+        "headlineTail": ".",
+        "ctaPrimary": "Ibda profil",
+        "ctaOr": "jew",
+        "ctaGhost": "aqra studju ta' każ"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "hawnhekk mill-ġdid",
+      "greetingNamed": "hawnhekk mill-ġdid, {name}.",
+      "strengthen": "Saħħaħ l-eżattezza"
+    },
+    "reviewEdit": "Irrevedi u editja",
+    "depth": {
+      "eyebrow": "FOND TAL-QARI",
+      "overallEyebrow": "FOND ĠENERALI TAL-QARI",
+      "band": {
+        "deep": "il-qari huwa profond. aġġustamenti żgħar minn hawn.",
+        "steady": "il-qari jżomm. il-Catchups se jsaħħuh.",
+        "partial": "il-qari huwa parzjali. hemm aktar x'jingħata.",
+        "thin": "il-qari huwa rqiq. se jpinġi forma, mhux struttura għadha."
+      },
+      "explainer": "Il-fond tal-qari jiddeskrivi kemm il-qari kellu aċċess għalik — mill-intake, mill-Catchups ta' kull ġimgħa, mill-konsultazzjonijiet, u min-nies li l-preżenza tagħhom tifforma lilek. Qari aktar profond mhuwiex persuna aħjar; huwa wieħed aktar preċiż. Tista' tapprofondih fi kwalunkwe ħin, jew tħallih fejn hu.",
+      "status": {
+        "low": "Baxx",
+        "moderate": "Moderata",
+        "deep": "Preċiża"
+      },
+      "statusLine": {
+        "low": "il-qari huwa rqiq. se jpinġi forma, mhux struttura għadha.",
+        "moderate": "il-qari qed jieħu forma. jista' jżomm ipoteżi ta' ħidma.",
+        "deep": "il-qari huwa sħiħ biżżejjed biex isostni x-xogħol."
+      },
+      "source": {
+        "intake": "il-mistoqsijiet li weġibt biex tibda.",
+        "catchups": "kontrolli ta' kull ġimgħa li jżommu l-qari aġġornat.",
+        "sessions": "konsultazzjonijiet itwal mal-analista.",
+        "connections": "nies li l-preżenza tagħhom tifforma l-qari."
+      }
+    },
+    "latest": {
+      "eyebrow": "L-AĦĦAR QARI",
+      "heading": "Sitt qari <it>— u x'jiċċaqlaq.</it>",
+      "lede": "Is-sitt qari huma kkalkulati mill-intake tiegħek u rfinuti minn kull Catchup, konsultazzjoni, u konnessjoni aċċettata. L-istruttura hija stabbli; in-nisġa tiċċaqlaq.",
+      "strengthen": "issaħħaħ id-data għall-analitika",
+      "open": "iftaħ il-qari"
+    },
+    "six": {
+      "eyebrow": "IS-SITT QARIJIET",
+      "heading": "X’qed jinqara <it>fik, bħalissa.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "ġimgħat reċenti",
+      "timelineHeading": "tieqa",
+      "timelineRange": "l-aħħar 4 ġimgħat",
+      "timelineSummary": "catchups fit-tieqa",
+      "eyebrow": "CATCHUP TA' KULL ĠIMGĦA",
+      "heading": "Oqgħod mal-ġimgħa. <it>Imbagħad nerġgħu nħarsu.</it>",
+      "lede": "Tmien mistoqsijiet qosra. Onest huwa aħjar minn twil. It-tweġibiet jirfinaw il-qari.",
+      "completed": "tlestiet — aqra s-sommarju",
+      "cta": "Iftaħ il-catchup ta' din il-ġimgħa",
+      "markerFirst": "l-ewwel",
+      "markerWeek": "ġ{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONSULTAZZJONI",
+      "heading": "Siegħa mal-<it>analista.</it>",
+      "ledeSubscribed": "Miftuħa kull meta l-ġimgħa tagħfas. Il-kamra tiftakar dak li diġà għidt.",
+      "ledeUnsubscribed": "L-abbonati jistgħu jidħlu fil-kamra tal-konsultazzjoni — sessjoni fit-tul mal-analista, miżmuma bl-istess vuċi bħall-qari tiegħek.",
+      "cta": "Idħol fil-kamra tal-konsultazzjoni",
+      "figLabel": "L-AĦĦAR SESSJONI",
+      "figSubtitle": "mistoqsija miżmuma",
+      "lastQuestion": "“il-ħolma tat-Tlieta — trid terġa’ lura għaliha?”"
+    },
+    "subscribe": {
+      "eyebrow": "KONSULTORJU · IKKONFERMA",
+      "title": "Dħul fil-konsultorju<it>.</it>",
+      "ledePrice": "L-abbonament huwa",
+      "ledePerMonth": "fix-xahar",
+      "ledeIncludes": ". Jinkludi l-konsultorju, il-ħila li tistieden sa {count} {count, plural, one {konnessjoni} other {konnessjonijiet}}, u rapport kliniku wieħed kull xahar kalendarju.",
+      "ledeBilling": "Il-kontijiet huma ġestiti minn Stripe. Ikkanċella fi kwalunkwe ħin mis-settings — l-aċċess ikompli sal-aħħar tal-perjodu.",
+      "canceled": "<i>il-checkout ingħalaq.</i> xejn ma ġie ċċarġjat. tista' tirritorna hawn taħt meta tkun lest.",
+      "checkoutCta": "Kompli għall-checkout",
+      "returnLink": "ritorna għall-konsultorju"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "RAPPORT KLINIKU",
+        "subscribedTitle": "Diġà <it>inkluż.</it>",
+        "subscribedLede": "L-abbonament jinkludi rapport kliniku wieħed kull xahar kalendarju. Iġġenerah minn qiegħ il-paġna tal-qari — m'hemmx bżonn ta' ħlas.",
+        "eyebrow": "RAPPORT KLINIKU · IKKONFERMA",
+        "title": "Ir-rapport kliniku<it>.</it>",
+        "ledePrice": "Rapport kliniku ta' darba huwa",
+        "ledeDossier": ". Dossier ta' 12–18-il paġna tal-ħdax-il qari kollha, bil-lingwa li jaħdem fiha kliniku.",
+        "ledeBilling": "Il-kontijiet jiġu mmaniġġjati minn Stripe. Ir-rapporti jistgħu jerġgħu jiġu ġġenerati hekk kif il-qari japprofondixxi; l-abbonati jirċievu wieħed kull xahar kalendarju mingħajr ħlas separat.",
+        "depthNotice": "<i>ir-rapport jirrifletti l-fond disponibbli.</i> jista' jerġa' jiġi ġġenerat hekk kif il-qari japprofondixxi.",
+        "canceled": "<i>il-checkout ingħalaq.</i> xejn ma ġie ċċarġjat.",
+        "checkoutCta": "Kompli għall-checkout",
+        "returnLink": "ritorna għall-qari"
+      },
+      "status": {
+        "eyebrow": "RAPPORT KLINIKU",
+        "line": {
+          "queued": "ir-rapport tiegħek qed jiġi ppreparat.",
+          "generating": "ir-rapport qed jinkiteb.",
+          "ready": "ir-rapport huwa lest.",
+          "failed": "ir-rapport ma tlestiex. nerġgħu nippruvaw dalwaqt."
+        },
+        "open": "iftaħ ir-rapport",
+        "back": "lura għall-qari"
+      },
+      "queued": {
+        "eyebrow": "RAPPORT KLINIKU",
+        "line": "ir-rapport tiegħek qed jiġi ppreparat — nibagħtulek email meta jkun lest.",
+        "back": "lura għall-qari"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INTAKE",
+        "title": "L-intake, <it>suġġett b'suġġett.</it>",
+        "lede": "Għaxar sezzjonijiet. Iftaħ kwalunkwe waħda biex tirrevedi jew tapprofondixxi t-tweġibiet fiha. L-intake mhuwiex formola ta' darba — it-tweġibiet jistgħu jiġu riveduti fi kwalunkwe ħin."
+      },
+      "step": {
+        "eyebrow": "INTAKE",
+        "backToAll": "lura għas-sezzjonijiet kollha"
+      },
+      "failed": {
+        "eyebrow": "INTAKE — INKOMPLET",
+        "headline": "Il-qari ġie <em>mhux komplut</em>.",
+        "lede": "L-intake tiegħek jinsab fil-fajl. L-analiżi li ssegwih ma spiċċatx.",
+        "retry": "Erġa' ibda l-qari",
+        "retryPending": "Qed jerġa' jibda"
+      }
+    },
+    "pending": {
+      "eyebrow": "STATUS · IPPROĊESSAR",
+      "headline": "Il-profil tiegħek <em>qiegħed jinqara</em>.",
+      "lede": "qegħdin inħaddmu r-risposti tiegħek permezz tal-mudelli psikodinamiċi issa. l-ewwel pass normalment jieħu madwar 2 sigħat. niktbu meta x-xogħol ikun lest, u l-kamra tinfetaħ.",
+      "figIntake": "INTAKE",
+      "figSubmitted": "issottomettiet {date}",
+      "rowResponses": "Risposti rċevuti",
+      "rowPattern": "Estrazzjoni tal-mudell",
+      "rowSynthesis": "Sinteżi tal-profil",
+      "statusInProgress": "għaddej",
+      "statusQueued": "fil-kju",
+      "foot": "niktbu meta x-xogħol ikun lest",
+      "returnCta": "mur lura fil-kamra kwieta",
+      "devPrefix": "dev",
+      "devOpening": "qiegħed jinfetaħ…",
+      "devOpen": "iftaħ il-kamra issa",
+      "devError": "ma setgħetx tinfetaħ il-kamra — iċċekkja l-console."
+    }
+  },
+  "invite": {
+    "eyebrow": "STIEDEN",
+    "safetyFooter": "TwentyThird mhuwiex sostitut għall-kura klinika. F'każ ta' kriżi, ikkuntattja l-linja ta' emerġenza lokali tiegħek.",
+    "notReady": {
+      "headline": "Is-sistema ta' stediniet qed tiġi <it>ppreparata.</it>",
+      "body": "Jekk jogħġbok erġa' pprova ftit wara."
+    },
+    "notFound": {
+      "headline": "Din il-link <it>mhix rikonoxxuta.</it>",
+      "body": "Jekk il-link ġiet minn email reċentement, l-istedina setgħet intbagħtet mill-ġdid. Iftaħ l-aktar email reċenti għal-link attiva."
+    },
+    "alreadyDeclined": {
+      "headline": "Din l-istedina ġiet <it>irrifjutata.</it>",
+      "body": "M'hemmx bżonn aktar mingħandek. {name} mhux se jiġi notifikat lil hinn minn dak li diġà jara."
+    },
+    "alreadyAccepted": {
+      "headline": "Intlaqt diġà <it>aċċettajt.</it>",
+      "body": "Jekk l-intake tar-relazzjoni għadu mhux komplut, tista' tkompli hawn taħt.",
+      "continueLink": "kompli bl-intake tar-relazzjoni"
+    },
+    "ended": {
+      "headline": "Din il-konnessjoni <it>spiċċat.</it>",
+      "body": "Il-link m’għadux attiv. Ir-rekord tar-relazzjoni jibqa’ fil-fajl tal-każ, iżda m’għadux jinforma l-qari."
+    },
+    "expired": {
+      "headline": "Din l-istedina <it>skadiet.</it>",
+      "body": "L-istediniet jiskadu erbatax-il jum wara li jintbagħtu. Staqsi lil {name} biex jibgħat waħda ġdida jekk tixtieq tirrispondi."
+    },
+    "declined": {
+      "headline": "Dan hu <it>riċevut.</it>",
+      "body": "M'hemmx bżonn aktar minnek. L-istedina hija magħluqa; l-istieden jara l-bidla fl-istatus bil-kwiet. Tista' tagħlaq din it-tieqa."
+    },
+    "live": {
+      "eyebrow": "TALBA TA' KONNESSJONI",
+      "headline": "{name} stiednek fil-<it>qari tagħhom.</it>",
+      "lede": "TwentyThird huwa strument editorjali-kliniku — kamra kwieta fejn l-istruttura tal-ħajja interjuri ta' xi ħadd tinqara b'attenzjoni, u tiġi ppreżentata b'lingwa li kliniku jista' juża.",
+      "explainerOne": "<em>Konnessjoni</em> mhijiex kont maqsum. {name} mhux se jara l-qari, is-sessjonijiet, jew il-Case File tiegħek. Inti mhux se tara tagħhom. Dak li tgħid dwar ir-relazzjoni jitma' l-mudell li jipproduċi l-qari ta' {name}.",
+      "explainerTwo": "Jekk tixtieq qari tiegħek stess, l-ewwel triq hawn taħt tibda wkoll il-kont tiegħek stess. It-triq tan-nofs tħallik tikkontribwixxi għall-qari ta' {name} mingħajr kont. It-tnejn huma permessi.",
+      "metaSentTo": "mibgħuta lil",
+      "metaInviteAs": "stieden bħala",
+      "metaReceived": "riċevut",
+      "metaExpiresIn": "jiskadi fi żmien {count, plural, one {# jum} few {# ijiem} many {# ġurnata} other {# ijiem}}"
+    },
+    "intake": {
+      "eyebrow": "INTAKE TAR-RELATJONIJIET",
+      "notReady": {
+        "headline": "L-intake qed jiġi <it>ppreparat.</it>",
+        "body": "Jekk jogħġbok erġa' pprova dalwaqt."
+      },
+      "notFound": {
+        "headline": "Din il-link <it>mhix rikonoxxuta.</it>",
+        "body": "Iftaħ l-aktar email ta' stedina riċenti għal-link attiva."
+      },
+      "notOpen": {
+        "headline": "L-intake <it>mhux miftuħ.</it>",
+        "body": "Din l-istedina ma ġietx aċċettata, jew ġiet irrifjutata jew intemmet. Erġa' lura għal-link tal-istedina biex terġa' tagħżel.",
+        "backLink": "lura għall-istedina"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "iva — ibda l-intake tar-relazzjoni",
+      "acceptLabel": "iva — qabbad mingħajr kont",
+      "declineLabel": "le, grazzi",
+      "beginLabel": "ibda",
+      "continueLabel": "kompli",
+      "back": "lura",
+      "oneMoment": "mument żgħir…",
+      "declineConfirmLine": "dan jagħlaq l-istedina. xejn aktar ma jintbagħat jew jinħażen dwarek.",
+      "declineClosing": "qiegħed jagħlaq…",
+      "declineConfirm": "irrifjuta l-istedina",
+      "firstNameLabel": "ISEMK",
+      "firstNameAria": "Ismek",
+      "firstNameSub": "{name} se jara biss dan l-isem fil-lista tal-konnessjonijiet tiegħu.",
+      "errors": {
+        "missingFirstName": "isem jippermetti lill-analyst jindirizzak b'mod korrett.",
+        "generic": "ma setax jintbagħat.",
+        "notFound": "din il-link tal-istedina mhix rikonoxxuta.",
+        "expired": "din l-istedina skadiet. staqsi lill-mistieden biex jibgħat waħda ġdida.",
+        "declined": "din l-istedina diġà ġiet irrifjutata.",
+        "ended": "din l-istedina m'għadhiex attiva.",
+        "missingFirstNameRequired": "isem huwa meħtieġ."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "TEĦID TA' RELAZZJONIJIET",
+      "begin": "ibda",
+      "back": "lura",
+      "backToCover": "lura għall-qoxra",
+      "next": "li jmiss",
+      "finish": "spiċċa",
+      "scaleAria": "skala {value}",
+      "cover": {
+        "headline": "Dak li tgħid dwar <it>{name}</it> jibqa' bejnek u l-analista.",
+        "lede": "Tnax-il mistoqsija qosra. Madwar ħames minuti. It-tweġibiet jitimgħu l-qari ta' {name}; huma ma jarawx dak li ktibt, u int ma tarax dak li tipproduċi."
+      },
+      "closing": {
+        "recording": "mument — it-tweġibiet qed jiġu rreġistrati.",
+        "tryAgain": "erġa' pprova",
+        "headline": "Dan huwa biżżejjed <it>għalissa.</it>",
+        "lede": "Dak li għedt dwar {name} se jinforma l-qari tagħhom mis-sessjoni li jmiss 'il quddiem. Huma ma jarawhx; int ma tarax dak li tipproduċi.",
+        "closeWindow": "tista' tagħlaq din it-tieqa."
+      },
+      "errors": {
+        "unanswered": "mument ma' din qabel ma tkompli.",
+        "questionOpen": "mistoqsija għadha miftuħa. mument.",
+        "couldNotSave": "ma setax jiġi ssejvjat",
+        "invalidAnswers": "xi ħaġa ma ġietx analizzata — jekk jogħġbok iċċekkja t-tweġibiet.",
+        "notAccepting": "din l-istedina m'għadhiex taċċetta tweġibiet.",
+        "notFound": "din il-link tal-istedina mhix rikonoxxuta.",
+        "couldNotSaveAnswers": "ma setgħux jiġu ssejvjati t-tweġibiet."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Kemm ilek tafu lil xulxin?",
+          "options": {
+            "under_one_year": "inqas minn sena",
+            "one_to_three": "sena sa tliet snin",
+            "four_to_ten": "erba' sa għaxar snin",
+            "eleven_to_twenty": "ħdax sa għoxrin sena",
+            "more_than_twenty": "aktar minn għoxrin sena"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Kemm tħossukom qrib xulxin bħalissa?",
+          "lowLabel": "f'distanza",
+          "highLabel": "qrib kemm jista' jkun"
+        },
+        "repair_initiator": {
+          "prompt": "Meta ma taqblux, min għandu t-tendenza li jfittex ir-rikonċiljazzjoni l-ewwel?",
+          "options": {
+            "i_do": "kważi dejjem jien",
+            "usually_me": "ġeneralment jien",
+            "evenly": "nimxu lejn xulxin b'mod indaqs",
+            "usually_them": "ġeneralment huma",
+            "they_do": "kważi dejjem huma"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Meta xi ħaġa tkun diffiċli, fejn għandhom it-tendenza li jmorru?",
+          "options": {
+            "toward": "lejk, biex titkellem dwarha",
+            "quiet": "fis-skiet, imbagħad lura",
+            "work": "fix-xogħol jew distrazzjoni",
+            "alone": "kompletament waħedhom, wara bieb",
+            "elsewhere": "għand nies oħra l-ewwel"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "X'inhi xi ħaġa li tixtieq li jifhmu dwarhom infushom?"
+        },
+        "what_you_offer": {
+          "prompt": "Fi frażi waħda, x'tagħmel għalihom li ma jistgħux jagħmlu għalihom infushom?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Liema vuċi tidher li tmexxihom l-aktar spiss?",
+          "options": {
+            "demand": "id-domanda — x'għandu jsir",
+            "doubt": "id-dubju — jekk hux biżżejjed",
+            "desire": "ix-xewqa — dak li verament iridu",
+            "watcher": "l-osservatur — kif se tidher",
+            "uncertain": "għadni ma nafx"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Fejn ġeneralment jinqabad ix-xogħol tagħhom?",
+          "options": {
+            "start": "il-bidu — tidħol fih",
+            "middle": "nofs — tibqa' miegħu",
+            "finish": "it-tmiem — tħallih imur",
+            "visibility": "il-viżibbiltà — tħallih jidher",
+            "nowhere": "mkien li nista' nara minn barra"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Hemm suġġett li kontinwament jevitaw? Semmih bil-mod."
+        },
+        "they_at_their_best": {
+          "prompt": "Meta jkunu l-aktar huma nfushom?"
+        },
+        "what_youve_changed": {
+          "prompt": "Hemm xi ħaġa dwarhom li bil-kwiet aċċettajt li ma tibdilx?"
+        },
+        "future_together": {
+          "prompt": "Kemm mill-futur li timmaġina jinkludihom?",
+          "lowLabel": "ftit ħafna",
+          "highLabel": "kważi kollu"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "jew",
+      "fallbackPreamble": "pejstja din il-link fil-browser tiegħek:",
+      "attendingInstitution": "ISTITUT LI JATTENDI",
+      "tagline": "AI Psikodinamika għall-ħajja ta' ġewwa.",
+      "automatedFooter": "Mibgħut minn sistema awtomatizzata · twieġebx"
+    },
+    "intakeSubmitted": {
+      "subject": "il-profil tiegħek qed jinqara.",
+      "preheader": "L-ewwel pass għaddej. Il-kamra tiftaħ meta x-xogħol ikun lest.",
+      "eyebrow": "PROFIL QED JINQARA",
+      "titleText": "It-tweġibiet tiegħek qed jinqraw.",
+      "italicPhrase": "qed jinqara",
+      "lede": "L-ewwel pass permezz tal-mudelli psikodinamiċi għaddej. Il-kamra tiftaħ meta x-xogħol ikun lest.",
+      "figLeftItalic": "intake riċevut",
+      "figRightLabel": "L-ewwel pass",
+      "figRightItalic": "għaddej",
+      "text": "{salutation}\n\nIt-tweġibiet tiegħek waslu. L-ewwel pass permezz tal-mudelli psikodinamiċi għaddej. Il-kamra tiftaħ meta x-xogħol ikun lest.\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "roomReady": {
+      "subject": "il-kamra tiegħek hija miftuħa.",
+      "preheader": "Tnax-il blokka lesti biex jinqraw. Ix-xogħol jirfina hekk kif terġa' lura għalih.",
+      "eyebrow": "KAMRA LESTA",
+      "titleText": "L-ewwel qari huwa miftuħ.",
+      "italicPhrase": "l-ewwel qari",
+      "lede": "Tnax-il blokka ta' profil psikodinamiku, fil-kamra u lesti biex jinqraw. Ix-xogħol jirfina hekk kif terġa' lura għalih.",
+      "ctaLabel": "Idħol fil-kamra",
+      "figLeftItalic": "kamra miftuħa",
+      "figRightLabel": "L-ewwel qari",
+      "figRightItalic": "lest",
+      "text": "{salutation}\n\nL-ewwel qari huwa miftuħ.\n\nTnax-il blokka ta' profil psikodinamiku, fil-kamra u lesti biex jinqraw. Ix-xogħol jirfina hekk kif terġa' lura għalih.\n\nIdħol fil-kamra:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "invite": {
+      "subject": "{inviterName} jixtieqek fil-qari.",
+      "preheader": "{inviterName} jixtieqek fil-qari. Konnessjoni ma tarax il-qari tiegħek; int ma tarax tagħhom.",
+      "eyebrow": "STEDINA",
+      "titleText": "{inviterName} jixtieqek fil-qari.",
+      "italicPhrase": "fil-qari",
+      "lede": "TwentyThird hija kamra kwieta fejn l-istruttura tal-ħajja interjuri ta' xi ħadd tinqara b'attenzjoni. Konnessjoni ma tarax il-qari jew is-sessjonijiet tal-mistieden, u int ma tarax tagħhom.",
+      "ctaLabel": "Iftaħ l-istedina",
+      "figLeftItalic": "stedina maħruġa",
+      "figRightLabel": "Tiskadi",
+      "figRightItalic": "erbatax-il jum",
+      "securityNote": "Jekk dan wasal bi żball, l-istedina tiskadi waħedha f'erbatax-il jum.",
+      "textIntro": "{inviterName} jixtieqek fil-qari f'TwentyThird.",
+      "textBody": "TwentyThird hija kamra kwieta fejn l-istruttura tal-ħajja interjuri ta' xi ħadd tinqara b'attenzjoni. Konnessjoni ma tarax il-qari jew is-sessjonijiet tal-mistieden, u int ma tarax tagħhom.",
+      "textNote": "{inviterName} żied nota:\n  {note}",
+      "textOpen": "Iftaħ l-istedina:",
+      "textSecurity": "Jekk dan wasal bi żball, l-istedina tiskadi waħedha f'erbatax-il jum.",
+      "textCloser": "CognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} aċċetta l-konnessjoni.",
+      "preheader": "{nameTitle} aċċetta l-konnessjoni. Effett mis-sessjoni li jmiss 'il quddiem.",
+      "eyebrow": "KONNESSJONI AĊĊETTATA",
+      "titleText": "{nameTitle} aċċetta l-konnessjoni.",
+      "italicPhrase": "aċċetta l-konnessjoni",
+      "lede": "L-intake tar-relazzjoni tagħhom se jinforma l-qari tiegħek mis-sessjoni li jmiss 'il quddiem. Huma mhux se jaraw il-qari tiegħek; int mhux se tara tagħhom.",
+      "ctaLabel": "Mur lura fil-Kamra",
+      "figLeftItalic": "konnessjoni aċċettata",
+      "figRightLabel": "Effett",
+      "figRightItalic": "mis-sessjoni li jmiss 'il quddiem",
+      "text": "{salutation}\n\n{nameTitle} aċċetta l-konnessjoni.\n\nL-intake tar-relazzjoni tagħhom se jinforma l-qari tiegħek mis-sessjoni li jmiss 'il quddiem. Huma mhux se jaraw il-qari tiegħek; int mhux se tara tagħhom.\n\nMur lura fil-Kamra:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} temm il-konnessjoni.",
+      "preheader": "{nameTitle} temm il-konnessjoni. Il-qari tiegħek se jaġġusta matul is-sessjoni li jmiss.",
+      "eyebrow": "KONNESSJONI TEMMUTA",
+      "titleText": "{nameTitle} temm il-konnessjoni.",
+      "italicPhrase": "temm il-konnessjoni",
+      "lede": "Il-qari tiegħek se jaġġusta matul is-sessjoni li jmiss. Dak li ntqal dwar ir-relazzjoni jinżamm fil-Case File; ma jibqax jidħol fil-qari attiv.",
+      "ctaLabel": "Mur lura fil-Room",
+      "figLeftItalic": "konnessjoni temmuta",
+      "figRightLabel": "Effett",
+      "figRightItalic": "mis-sessjoni li jmiss 'il quddiem",
+      "text": "{nameTitle} temm il-konnessjoni.\n\nIl-qari tiegħek se jaġġusta matul is-sessjoni li jmiss. Dak li ntqal dwar ir-relazzjoni jinżamm fil-Case File; ma jibqax jidħol fil-qari attiv.\n\nMur lura fil-Room:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "il-Catchup ta' din il-ġimgħa huwa miftuħ.",
+      "preheader": "Riflessjoni qasira. Ħames minuti. Jaġġorna l-qari.",
+      "eyebrow": "CATCHUP TA' KULL ĠIMGĦA",
+      "titleText": "Għaddiet ġimgħa bil-kwiet.",
+      "italicPhrase": "bil-kwiet",
+      "lede": "Riflessjoni qasira — x'inhu qawwi, x'baqa' sieket, x'inbidel. Jaġġorna l-qari.",
+      "ctaLabel": "Iftaħ il-Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "ħames minuti",
+      "text": "{salutation}\n\nGħaddiet ġimgħa bil-kwiet.\n\nRiflessjoni qasira — x'inhu qawwi, x'baqa' sieket, x'inbidel. Jaġġorna l-qari.\n\nIftaħ il-Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    },
+    "onboardingResume": {
+      "subject": "it-tweġibiet tiegħek huma miżmuma.",
+      "preheader": "It-teħid tiegħek jerġa' jibda minn fejn waqaft. Ix-xogħol ma jibdiex qabel ma jitlesta.",
+      "eyebrow": "TEĦID MIŻMUM",
+      "titleText": "It-teħid jinsab fejn ħallejtu.",
+      "italicPhrase": "fejn ħallejtu",
+      "lede": "It-teħid tiegħek jerġa' jibda minn fejn waqaft. Ix-xogħol ma jibdiex qabel ma jitlesta.",
+      "ctaLabel": "Erġa' lura għat-teħid",
+      "figLeftItalic": "teħid imwaqqaf",
+      "figRightLabel": "Kompli",
+      "figRightItalic": "minn fejn waqaft",
+      "text": "{salutation}\n\nIt-teħid jinsab fejn ħallejtu.\n\nIt-teħid tiegħek jerġa' jibda minn fejn waqaft. Ix-xogħol ma jibdiex qabel ma jitlesta.\n\nErġa' lura għat-teħid:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nISTITUT LI JATTENDI"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Liema kliem jiddeskrivi l-aħjar id-dar li trabbiet fiha.",
+          "subtitle": "agħżel sa tliet kelmiet li jħossuhom veri, anke jekk jikkontradixxu lil xulxin — id-djar ġeneralment huma taħlita",
+          "options": {
+            "calm": "Kalma",
+            "strict": "Stretta",
+            "emotionally_distant": "Emozjonalment distanti",
+            "chaotic": "Kaotika",
+            "achievement_focused": "Iffukata ħafna fuq il-kisbiet",
+            "protective": "Protettiva",
+            "unpredictable": "Imprevedibbli",
+            "conflict_heavy": "Mimlija kunflitti"
+          }
+        },
+        "q1_2": {
+          "title": "Bħala tifel, liema rwol ħadt b'mod naturali.",
+          "subtitle": "aħseb dwar il-parti li lgħabt fil-familja tiegħek mingħajr ma ħadd qallek — dak li jġib il-paċi, dak li jgħin, dak kwiet",
+          "options": {
+            "peacemaker": "Dak li jġib il-paċi",
+            "achiever": "Dak li jikseb",
+            "invisible_child": "Tifel inviżibbli",
+            "caregiver": "Dak li jieħu ħsieb",
+            "rebel": "Ribellu",
+            "funny_one": "Dak umoristiku",
+            "responsible_one": "Dak responsabbli",
+            "problem_child": "Tifel problematiku"
+          }
+        },
+        "q1_3": {
+          "title": "Kemm ħassejtek sigur emozzjonalment hekk kif trabbiet.",
+          "subtitle": "mur bil-ħsieb istintiv tiegħek dwar id-dar, mhux il-verżjoni li l-familja tgħid lil barrani",
+          "lowLabel": "1 · QATT SIGUR",
+          "highLabel": "10 · KOMPLETAMENT SIGUR"
+        },
+        "q1_4": {
+          "title": "L-emozzjonijiet kienu diskussi apertament id-dar.",
+          "subtitle": "mhux biss jekk kienx hemm sentimenti, iżda jekk xi ħadd fil-fatt semmiehom jew tkellem dwarhom b'leħen għoli",
+          "options": {
+            "frequently": "Frekwentement",
+            "sometimes": "Kultant",
+            "rarely": "Rarament",
+            "never": "Qatt"
+          }
+        },
+        "q1_5": {
+          "title": "Memorja waħda mit-tfulija li għadha tħossha emozzjonalment ħajja llum.",
+          "subtitle": "iddeskrivi xena speċifika waħda li għadha tiġi f'moħħok — fejn kont, min kien hemm, x'ġara, kif ħassejtha"
+        },
+        "q1_6": {
+          "title": "X'tgħallimt li kellek tagħmel biex tirċievi mħabba jew approvazzjoni.",
+          "subtitle": "l-affarijiet żgħar li ndunajt li ħadmu — li tkun tajjeb, li tkun kwiet, li tikseb, li tibqa' barra mit-triq — aqsam dak li tiftakar li aġġustajt"
+        },
+        "q1_7": {
+          "title": "Liema emozzjonijiet kienu diffiċli biex tesprimi f'darek.",
+          "subtitle": "liema sentimenti ġew injorati, miċħuda, jew ikkastigati meta ppruvajt turihom — rabja, dwejjaq, biża', ferħ, kwalunkwe ħaġa"
+        },
+        "q1_8": {
+          "title": "Meta taħseb dwar lilek innifsek iżgħar, x'tħoss lejhom.",
+          "subtitle": "kun onest dwar is-sentiment li jitla' — sħana, dwejjaq, distanza, frustrazzjoni, protettività — kwalunkwe ħaġa li fil-fatt tkun hemm"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Kif tiddeskrivi lil ommok jew lill-persuna li kienet tieħu ħsiebek bħala omm primarja.",
+          "subtitle": "ftit sentenzi dwar kif kienet, kif kienet tidher għalik, u kif kont tħossok madwarha",
+          "options": {
+            "warm": "Sħuna",
+            "controlling": "Kontrollanti",
+            "emotionally_unavailable": "Emozjonalment mhux disponibbli",
+            "sacrificing": "Sagrifiċċjuża",
+            "critical": "Kritika",
+            "anxious": "Anzjuża",
+            "unpredictable": "Mhux prevedibbli",
+            "admired": "Ammirata",
+            "fearful": "Biża'",
+            "not_applicable": "Mhux applikabbli"
+          }
+        },
+        "q2_2": {
+          "title": "Kif tiddeskrivi lil missierek jew lill-persuna li kienet tieħu ħsiebek bħala missier primarju.",
+          "subtitle": "ftit sentenzi dwar kif kien, kif kien jidher għalik, u kif kont tħossok madwaru",
+          "options": {
+            "supportive": "Appoġġiv",
+            "distant": "Distant",
+            "dominant": "Dominanti",
+            "passive": "Passiv",
+            "ambitious": "Ambizzjuż",
+            "emotionally_closed": "Emozjonalment magħluq",
+            "protective": "Protettiv",
+            "critical": "Kritiku",
+            "absent": "Assenti",
+            "not_applicable": "Mhux applikabbli"
+          }
+        },
+        "q2_3": {
+          "title": "Il-pożizzjoni tiegħek fost l-aħwa.",
+          "subtitle": "fejn kont taqa' fl-ordni — l-eqdem, tan-nofs, l-iżgħar, wild uniku, jew xi mkien bejniethom",
+          "options": {
+            "oldest": "L-eqdem",
+            "middle": "Tan-nofs",
+            "youngest": "L-iżgħar",
+            "only_child": "Wild uniku"
+          }
+        },
+        "q2_4": {
+          "title": "Liema rwol jaqbel l-aħjar mal-pożizzjoni tiegħek fost l-aħwa.",
+          "subtitle": "lil hinn mill-ordni tat-twelid, ir-rwol li spiċċajt tilgħab — dak responsabbli, ir-ribellu, dak inviżibbli, il-favorit",
+          "options": {
+            "responsible": "Responsabbli",
+            "ignored": "Injora",
+            "compared": "Imqabbel ma' oħrajn",
+            "favored": "Iffavorit",
+            "competitive": "Kompetittiv",
+            "protective": "Protettiv",
+            "not_applicable": "Mhux applikabbli"
+          }
+        },
+        "q2_5": {
+          "title": "Liema ġenitur fehmek l-aħjar.",
+          "subtitle": "semmihom u għid x'raw fik li l-ieħor tilef jew fehem ħażin"
+        },
+        "q2_6": {
+          "title": "Liema ġenitur influwenza l-aktar il-biżgħat tiegħek.",
+          "subtitle": "il-biżgħat ta' min assorbejt meta kont qed tikber, u kif dawk il-biżgħat għadhom jidhru f'ħajtek illum"
+        },
+        "q2_7": {
+          "title": "Kif kien jidher il-kunflitt fil-familja tiegħek.",
+          "subtitle": "iddeskrivi l-forma li ħadu l-argumenti — għajjat, silenzju, bibien imwaqqgħin, ġimgħat kesħin, mudelli ripetuti — kull ma kien familjari"
+        },
+        "q2_8": {
+          "title": "Liema tip ta' attenzjoni kienet l-aktar diffiċli biex tirċievi.",
+          "subtitle": "it-tip ta' kura li ġiegħlek tħossok skomdu — tifħir, tħassib, qrubija fiżika, li tkun innutat — u għaliex kienet diffiċli"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Kemm kien reliġjuż jew spiritwali l-ambjent li trabbejt fih.",
+          "subtitle": "l-atmosfera attwali tad-dar — prattiċi, regoli, twemmin fl-arja — mhux dak li temmen issa bħala adult",
+          "lowLabel": "1 · XEJN",
+          "highLabel": "10 · FIL-FOND"
+        },
+        "q3_2": {
+          "title": "Liema messaġġ kien l-aktar b'saħħtu waqt li kont qed tikber.",
+          "subtitle": "ir-regola jew l-aspettattiva ripetuta tant spiss li saret ħsejjes fl-isfond — dwar is-suċċess, l-imġieba, l-immaġni, id-dmir, il-familja",
+          "options": {
+            "success": "Is-suċċess huwa l-aktar importanti",
+            "reputation": "Ir-reputazzjoni hija l-aktar importanti",
+            "obedience": "L-ubbidjenza hija l-aktar importanti",
+            "family_loyalty": "Il-lealtà tal-familja hija l-aktar importanti",
+            "independence": "L-indipendenza hija l-aktar importanti",
+            "sacrifice": "Is-sagrifiċċju huwa l-aktar importanti"
+          }
+        },
+        "q3_3": {
+          "title": "Kemm tħossok iġġudikat mis-soċjetà.",
+          "subtitle": "kemm tħossok osservat jew evalwat minn nies barra ċ-ċirku qrib tiegħek — fuq ix-xogħol, online, fil-pubbliku",
+          "lowLabel": "1 · XEJN",
+          "highLabel": "10 · KOSTANTEMENT"
+        },
+        "q3_4": {
+          "title": "Liema twemmin minn tfulitek għadu jsawrek.",
+          "subtitle": "il-valuri, ir-regoli, jew is-suppożizzjonijiet li wirt u għadek tgħix bihom, anke jekk ma ħsibtx dwarhom għal snin sħaħ"
+        },
+        "q3_5": {
+          "title": "Liema twemmin tirreżisti bil-moħbi.",
+          "subtitle": "dawk li taqbel magħhom pubblikament iżda bil-kwiet ma taqbilx magħhom — dwar il-flus, ir-relazzjonijiet, is-suċċess, is-sess, kwalunkwe ħaġa"
+        },
+        "q3_6": {
+          "title": "X'kienet ma taqbilx l-aktar il-familja jew il-komunità tiegħek dwar il-persuna vera tiegħek.",
+          "subtitle": "il-partijiet minnek innifsek, ħajtek, jew l-għażliet tiegħek li żżomm moħbija minnhom, u għaliex iżżommhom moħbija"
+        },
+        "q3_7": {
+          "title": "X'tip ta' persuna kont mistenni ssir.",
+          "subtitle": "il-futur li oħrajn immaġinaw għalik — karriera, familja, imġieba, immaġni — qabel ma kellek xi tgħid fih"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Kemm-il persuna verament tafek int min int.",
+          "subtitle": "il-persuni li raw il-verżjoni mhux editjata tiegħek u ma jkunux ixxukkjati minn xi ħaġa fil-ħajja ta' ġewwa tiegħek",
+          "options": {
+            "none": "Ħadd",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Ħafna"
+          }
+        },
+        "q4_2": {
+          "title": "Fi gruppi, normalment issir.",
+          "subtitle": "ir-rwol li tiżloq fih mingħajr ma taħseb — dak umoristiku, is-semmiegħ, il-mexxej, l-osservatur, dak li jżomm l-affarijiet bla xkiel",
+          "options": {
+            "leader": "Mexxej",
+            "observer": "Osservatur",
+            "entertainer": "Divertiment",
+            "mediator": "Medjatur",
+            "intellectual": "Intellettwali",
+            "caregiver": "Min jieħu ħsieb",
+            "withdrawn": "Irtirat"
+          }
+        },
+        "q4_3": {
+          "title": "Kemm tibża' li tiddiżappunta lil ħaddieħor.",
+          "subtitle": "kemm ir-reazzjoni ta' persuna oħra — ħarsa, daqqa ta' serħan, silenzju — tista' tifforma dak li tgħid jew tagħmel",
+          "lowLabel": "1 · XEJN",
+          "highLabel": "10 · KULJUM"
+        },
+        "q4_4": {
+          "title": "Liema partijiet minnek innifsek taħbi soċjalment.",
+          "subtitle": "il-ħsibijiet, is-sentimenti, il-karatteristiċi, jew biċċiet mill-istorja tiegħek li żżomm moħbija meta tkun madwar nies oħra"
+        },
+        "q4_5": {
+          "title": "Meta tħossok l-aktar aċċettat.",
+          "subtitle": "is-sitwazzjonijiet jew ir-relazzjonijiet fejn tieqaf taġixxi u tista' tkun int — iddeskrivi x'jagħmel dawk l-ispazji differenti"
+        },
+        "q4_6": {
+          "title": "Liema sitwazzjonijiet soċjali jixxottawk l-aktar.",
+          "subtitle": "il-laqgħat, id-dinamiki, jew ir-relazzjonijiet li jħalluk aktar għajjien milli suppost — u x'inhu eżawrjenti fihom"
+        },
+        "q4_7": {
+          "title": "X'tip ta' nies tgħir għalihom.",
+          "subtitle": "l-għira normalment tindika xi ħaġa li trid imma ma ħallejtx lilek innifsek tridha fil-miftuħ — iddeskrivi min iqanqalha u għaliex"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Liema pjattaformi tuża b'mod attiv.",
+          "subtitle": "l-apps li tiftaħ minn drawwa, aktar minn darba kuljum, mhux dawk li teknikament għandek kont fuqhom",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Xejn"
+          }
+        },
+        "q5_2": {
+          "title": "Użu medju ta' kuljum għal kull pjattaforma.",
+          "subtitle": "stima approssimattiva ta' kemm ħin tqatta' fuq kull waħda — minuti jew sigħat, mingħajr ġudizzju",
+          "unit": "MINUTI KULJUM"
+        },
+        "q5_3": {
+          "title": "Għal xiex tużahom prinċipalment.",
+          "subtitle": "ir-raġuni vera taħt dik ovvja — konnessjoni, distrazzjoni, validazzjoni, ħarba, paragun, informazzjoni",
+          "options": {
+            "validation": "Validazzjoni",
+            "learning": "Tagħlim",
+            "escapism": "Ħarba",
+            "networking": "Netwerking",
+            "self_expression": "Espressjoni personali",
+            "entertainment": "Divertiment",
+            "comparison": "Paragun",
+            "dating": "Dating"
+          }
+        },
+        "q5_4": {
+          "title": "Kemm-il darba tħassar jew teditja posts qabel ma tippubblika.",
+          "subtitle": "kemm tipprova, tiddubita, jew terġa' tikteb dak li taqsam qabel ma tħalli nies oħra jarawh",
+          "options": {
+            "always": "Dejjem",
+            "often": "Spiss",
+            "sometimes": "Kultant",
+            "rarely": "Rarament",
+            "never": "Qatt"
+          }
+        },
+        "q5_5": {
+          "title": "Kemm-il darba tqabbel ħajtek ma' oħrajn online.",
+          "subtitle": "il-kejl kwiet li jiġri waqt li tiskrollja — dwar id-dehra, is-suċċess, ir-relazzjonijiet, l-istil ta' ħajja, kull ħaġa",
+          "lowLabel": "1 · QATT",
+          "highLabel": "10 · KOSTANTEMENT"
+        },
+        "q5_6": {
+          "title": "Liema verżjoni tiegħek tidher online.",
+          "subtitle": "iddeskrivi l-karattru li tippreżenta — il-verżjoni kkurata — u kif din tvarja minn min int meta ħadd ma jkun qed jara"
+        },
+        "q5_7": {
+          "title": "X'tfittex emozzjonalment meta tiftaħ il-midja soċjali.",
+          "subtitle": "is-sensazzjoni li qed tfittex fil-mument li tiftaħ l-app — distrazzjoni, kumdità, eċċitament, tnemnim, konnessjoni"
+        },
+        "q5_8": {
+          "title": "X'tip ta' kontenut iġiegħlek tħossok skomdu.",
+          "subtitle": "il-posts jew vidjows li jġiegħlek trid tiskrollja malajr, u x'taħseb li hu verament dwar dan l-iskumdità"
+        },
+        "q5_9": {
+          "title": "X'tip ta' nies jiġbdu l-attenzjoni tiegħek online.",
+          "subtitle": "il-kontijiet li tieqaf u tara — iddeskrivi l-kwalitajiet li jaqsmu u x'jiġbdek"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "L-istatus attwali tar-relazzjoni tiegħek.",
+          "subtitle": "fejn attwalment tinsab bħalissa — waħdek, qed toħroġ, f'relazzjoni, miżżewweġ, separat, ikkumplikat — mhux fejn tixtieq tkun",
+          "options": {
+            "single": "Waħdek",
+            "dating": "Qed toħroġ",
+            "in_relationship": "F'relazzjoni",
+            "engaged": "Imqabbad",
+            "married": "Miżżewweġ",
+            "separated_divorced": "Separat jew divorzjat",
+            "widowed": "Armel/Armla",
+            "its_complicated": "Ikkumplikat"
+          }
+        },
+        "q6_2": {
+          "title": "Kemm kellek relazzjonijiet serji.",
+          "subtitle": "dawk li kienu importanti emozzjonalment, irrispettivament minn kemm damu jew kemm kienu uffiċjali",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Kunflitti tipiċi fir-relazzjonijiet tiegħek.",
+          "subtitle": "l-argumenti li jibqgħu jitfaċċaw f'forom differenti ma' sħab differenti — flus, distanza, kontroll, komunikazzjoni",
+          "options": {
+            "distance": "Distanza",
+            "jealousy": "Għira",
+            "control": "Kontroll",
+            "emotional_unavailability": "Indisponibbiltà emozzjonali",
+            "communication": "Komunikazzjoni",
+            "trust": "Fiduċja",
+            "dependency": "Dipendenza"
+          }
+        },
+        "q6_4": {
+          "title": "Fir-relazzjonijiet għandek tendenza li.",
+          "subtitle": "il-mossa awtomatika tiegħek meta l-affarijiet isiru diffiċli — tersaq eqreb, titbiegħed, tieħu f'idejk, tagħlaq, tipprova tirranġa",
+          "options": {
+            "pursue": "Tsegwi",
+            "withdraw": "Tirtira",
+            "overgive": "Tagħti żżejjed",
+            "test_loyalty": "Tittestja l-lealtà",
+            "avoid_vulnerability": "Teħles mill-vulnerabbiltà"
+          }
+        },
+        "q6_5": {
+          "title": "X'tip ta' nies terġa' taqa' għalihom ripetutament.",
+          "subtitle": "it-tip li jibqa' jidher fil-ħajja ta' mħabba tiegħek — mhux biss id-dehra, iżda mudelli emozzjonali, temperament, kif jittrattawk"
+        },
+        "q6_6": {
+          "title": "X'inhu s-soltu jtemm ir-relazzjonijiet tiegħek.",
+          "subtitle": "ir-raġuni vera għaliex l-affarijiet ifarrku, lil hinn mill-istorja uffiċjali li tgħid lill-ħbieb jew lill-familja"
+        },
+        "q6_7": {
+          "title": "Liema bżonn emozzjonali tixtieq l-aktar li jiġi sodisfatt.",
+          "subtitle": "il-bżonn li ssib l-aktar diffiċli biex titlob direttament — li tkun meqjus, li tkun magħżul, li tkun sigur, li tkun liberu, li tkun mixtieq"
+        },
+        "q6_8": {
+          "title": "X'tibża' l-aktar fl-intimità.",
+          "subtitle": "x'tpoġġi fil-periklu l-qrubija għalik — li tkun magħruf, li tkun maqbud, li tkun abbandunat, li tkun wisq, li tkun mhux biżżejjed"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "L-istatus attwali tal-impjieg tiegħek.",
+          "subtitle": "il-forma tal-ħajja tax-xogħol tiegħek bħalissa — impjegat, self-employed, bejn impjiegi, qed tistudja, qed tieħu ħsieb, xi ħaġa oħra",
+          "options": {
+            "employed_full_time": "Impjegat, full-time",
+            "employed_part_time": "Impjegat, part-time",
+            "self_employed": "Self-employed jew fundatur",
+            "freelance": "Freelance jew b'kuntratt",
+            "studying": "Qed nistudja",
+            "between_roles": "Bejn irwoli",
+            "caregiving": "Qed nieħu ħsieb id-dar",
+            "retired": "Irtirat",
+            "not_working": "Mhux qed naħdem"
+          }
+        },
+        "q7_2": {
+          "title": "Kemm int sodisfatt bid-direzzjoni tal-karriera tiegħek.",
+          "subtitle": "l-ark itwal ta' fejn sejjer ix-xogħol tiegħek, mhux kif tħossok dwar din il-ġimgħa partikolari",
+          "lowLabel": "1 · MITLUF",
+          "highLabel": "10 · EŻATTAMENT SEW"
+        },
+        "q7_3": {
+          "title": "Fuq ix-xogħol inti s-soltu.",
+          "subtitle": "il-mod kif topera professjonalment — ir-rwol li tieħu meta ħadd ma jkun qed jassenjak wieħed",
+          "options": {
+            "perfectionistic": "Perfezzjonista",
+            "avoidant": "Evitanti",
+            "competitive": "Kompetittiv",
+            "cooperative": "Kooperattiv",
+            "over_responsible": "Responsabbli żżejjed",
+            "detached": "Skonnettjat"
+          }
+        },
+        "q7_4": {
+          "title": "L-akbar stress tiegħek fuq il-post tax-xogħol.",
+          "subtitle": "is-sors ta' pressjoni li ssegwik id-dar — persuna, ammont ta' xogħol, biża', ambjent, mudell",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Falliment",
+            "visibility": "Viżibbiltà",
+            "authority": "Awtorità",
+            "uncertainty": "Inċertezza",
+            "conflict": "Kunflitt"
+          }
+        },
+        "q7_5": {
+          "title": "Xi jfisser is-suċċess emozzjonalment għalik.",
+          "subtitle": "is-sensazzjoni li timmaġina li tasal meta fl-aħħar ikollok — serħan, kburija, paċi, libertà, li tkun biżżejjed"
+        },
+        "q7_6": {
+          "title": "X'tip ta' rikonoxximent jaffettwak l-aktar.",
+          "subtitle": "it-tifħir li verament jasal u jibdel kif tħossok, u t-tip li jmur lura irrispettivament minn kemm tieħu minnu"
+        },
+        "q7_7": {
+          "title": "Liema falliment għadu jinfluwenzak illum.",
+          "subtitle": "falliment speċifiku li għadek ma lestejtx tipproċessa — x'ġara, u kif għadu jsawwar l-għażliet tiegħek"
+        },
+        "q7_8": {
+          "title": "Jekk il-flus jisparixxu, x'kont issegwi.",
+          "subtitle": "ix-xogħol jew l-attività li kont tagħmel anke jekk ħadd ma jħallsek għaliha — iddeskrivi kif tidher"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Kif tlaħħaq normalment mal-istress.",
+          "subtitle": "x'tfittex meta l-affarijiet isiru tqal — ikel, skrins, eżerċizzju, iżolament, titkellem, sustanzi, irqad, xogħol",
+          "options": {
+            "isolation": "Iżolament",
+            "food": "Ikel",
+            "gaming": "Logħob",
+            "exercise": "Eżerċizzju",
+            "overworking": "Xogħol żejjed",
+            "scrolling": "Scrolling",
+            "substance_use": "Użu ta' sustanzi",
+            "shopping": "Xiri",
+            "sleeping": "Irqad",
+            "socializing": "Soċjalizzazzjoni"
+          }
+        },
+        "q8_2": {
+          "title": "Kemm-il darba toħroġ soċjalment.",
+          "subtitle": "kemm-il darba tqatta' ħin ma' nies oħra personalment, mhux online jew permezz ta' messaġġi",
+          "options": {
+            "multiple_per_week": "Diversi drabi fil-ġimgħa",
+            "weekly": "Kull ġimgħa",
+            "monthly": "Kull xahar",
+            "rarely": "Rari",
+            "never": "Qatt"
+          }
+        },
+        "q8_3": {
+          "title": "Kemm-il darba tħossok waħdek anke fi grupp.",
+          "subtitle": "is-solitudni li tidher meta tkun imdawwar b'nies iżda xorta tħossok mhux innutat jew imbiegħed",
+          "lowLabel": "1 · QATT",
+          "highLabel": "10 · DEJJEM"
+        },
+        "q8_4": {
+          "title": "Liema attivitajiet iġagħluk tinsa lilek innifsek.",
+          "subtitle": "l-affarijiet li jiġbduk tant fil-fond li l-ħin jisparixxi — għall-aħjar jew għall-agħar, b'saħħithom jew le"
+        },
+        "q8_5": {
+          "title": "X'tevita li taħseb dwaru l-aktar.",
+          "subtitle": "is-suġġett jew il-memorja li titbiegħed minnha malajr meta titfaċċa — dwarek innifsek, il-passat tiegħek, il-futur tiegħek"
+        },
+        "q8_6": {
+          "title": "Meta tħossok emozzjonalment imnaqqas.",
+          "subtitle": "is-sitwazzjonijiet fejn il-volum jinżel għal żero — xogħol, relazzjonijiet, kunflitt, intimità, li tkun waħdek"
+        },
+        "q8_7": {
+          "title": "Liema drawwa tħoss li hija l-aktar diffiċli biex twaqqaf.",
+          "subtitle": "l-imġieba li ppruvajt aktar minn darba tibdel jew twaqqaf, mingħajr suċċess — iddeskrivi x'inhi u x'jibqa' jiġbdek lura"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Kemm int awtokritiku.",
+          "subtitle": "it-ton tal-vuċi ta' ġewwa tiegħek meta tiżbalja jew tonqos — aħrax, ġust, indifferenti, devastanti",
+          "lowLabel": "1 · ĦANIN",
+          "highLabel": "10 · BLA ĦNARA"
+        },
+        "q9_2": {
+          "title": "Liema stqarrija tħossha l-eqreb tal-biża' privata tiegħek.",
+          "subtitle": "is-sentenza dwarek innifsek li tgħix taħt kull ħaġa oħra, dik li tammetti biss f'ġurnata diffiċli",
+          "options": {
+            "never_enough": "Qatt m'jien biżżejjed",
+            "fear_abandoned": "Nibża' li niġi abbandunat",
+            "fear_losing_control": "Nibża' li nitlef il-kontroll",
+            "fear_failure": "Nibża' mill-falliment",
+            "fear_ordinary": "Nibża' li nkun ordinarju",
+            "fear_rejection": "Nibża' mir-rifjut",
+            "fear_dependence": "Nibża' mid-dipendenza"
+          }
+        },
+        "q9_3": {
+          "title": "Kemm-il darba tħossok skonnettjat minnek innifsek.",
+          "subtitle": "is-sens li qed tara ħajtek minn distanza żgħira, bħallikieku m'intix kompletament fiha",
+          "lowLabel": "1 · QATT",
+          "highLabel": "10 · KULJUM"
+        },
+        "q9_4": {
+          "title": "Liema ħsieb jirrepeti f'moħħok l-aktar spiss.",
+          "subtitle": "is-sentenza jew l-inkwiet li jirrepeti ruħu regolarment — iktibha bil-kliem attwali tagħha, mhux sommarju"
+        },
+        "q9_5": {
+          "title": "Għal xiex tikkritika lilek innifsek privatament.",
+          "subtitle": "l-affarijiet li għalihom tiġġudika lilek innifsek u li ħadd ieħor ma jaf bihom — dwar ġismek, moħħok, l-għażliet tiegħek, il-karattru tiegħek"
+        },
+        "q9_6": {
+          "title": "X'jagħmlek tħossok biżżejjed.",
+          "subtitle": "il-kundizzjoni li ssettjajt bil-kwiet għalik innifsek biex fl-aħħar tirrilassa — kun onest, it-tweġiba spiss hija iżgħar milli tistenna"
+        },
+        "q9_7": {
+          "title": "Jekk il-vuċi ta' ġewwa tiegħek kellha personalità, kif tiddeskriviha.",
+          "subtitle": "l-età, is-sess, it-ton ta' dik il-vuċi — u ta' min tista' tkun fil-fatt, jekk tirrintraċċaha"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Liema hija l-aktar importanti għalik.",
+          "subtitle": "agħżel dik li hija l-aktar importanti bħalissa — l-oħrajn xorta jistgħu jkunu importanti, iżda kun onest dwar il-klassifikazzjoni",
+          "options": {
+            "freedom": "Libertà",
+            "love": "Imħabba",
+            "recognition": "Rikonoxximent",
+            "stability": "Stabbiltà",
+            "power": "Poter",
+            "meaning": "Tifsira",
+            "peace": "Paċi",
+            "influence": "Influwenza"
+          }
+        },
+        "q10_2": {
+          "title": "Kemm int bit-tama dwar il-futur tiegħek.",
+          "subtitle": "is-sens li tħoss meta taħseb 'il quddiem, mhux it-tweġiba pożittiva li tagħti lil nies oħra meta jistaqsuk",
+          "lowLabel": "1 · XEJN",
+          "highLabel": "10 · FIL-FOND"
+        },
+        "q10_3": {
+          "title": "X'tixtieq l-aktar bil-moħbi.",
+          "subtitle": "ix-xewqa li għadek ma ħallejtx lilek innifsek issemmi b'leħen għoli — dik li tħossha kbira wisq, riskjuża wisq, jew imbarazzanti wisq",
+          "options": {
+            "to_be_understood": "Li tkun mifhum",
+            "to_be_admired": "Li tkun ammirat",
+            "to_feel_safe": "Li tħossok sigur",
+            "to_be_desired": "Li tkun mixtieq",
+            "to_feel_important": "Li tħossok importanti",
+            "to_feel_free": "Li tħossok liberu",
+            "to_belong": "Li tappartjeni"
+          }
+        },
+        "q10_4": {
+          "title": "Iddeskrivi l-ħajja futura ideali tiegħek fid-dettall.",
+          "subtitle": "id-dettalji konkreti — fejn int, ma' min int, kif ikunu filgħodu tiegħek, ix-xogħol, id-dawl, ir-ritmu"
+        },
+        "q10_5": {
+          "title": "Liema biża' tista' teqred dak il-futur.",
+          "subtitle": "il-ħaġa — interna jew esterna — li waqqfitek qabel, u tista' twaqqfek mill-ġdid jekk tħalliha"
+        },
+        "q10_6": {
+          "title": "Liema parti minnek innifsek għadek qed tipprova ssir.",
+          "subtitle": "il-verżjoni tiegħek fuq l-orizzont — il-kwalitajiet, il-libertajiet, il-mod ta' kif tkun li bil-mod il-mod qed timxi lejh"
+        },
+        "q10_7": {
+          "title": "Kieku ħadd ma jiġġudikak, kif tgħix b'mod differenti.",
+          "subtitle": "l-għażliet li tagħmel kieku l-osservazzjoni tieqaf — dwar ix-xogħol, l-imħabba, il-ġisem, il-ħin, il-flus, il-vuċi"
+        },
+        "q10_8": {
+          "title": "X'taħseb li qed tfittex tassew.",
+          "subtitle": "il-ħaġa aktar profonda taħt it-tweġibiet preċedenti kollha tiegħek — x'qed tindika tassew kull għażla u xewqa"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "ORIĠINI · IMPRINTING TA' ŻVILUPP",
+        "headline": [
+          "Dak li l-kamra bikrija ",
+          "għallmitek",
+          "."
+        ],
+        "lede": "L-ewwel sezzjoni tisma' għall-klima emozzjonali, is-sigurtà, u r-rwol li ġejt mitfugħ fih. Il-mudelli rreġistrati hawn isiru l-pedament li fuqu jinbena kull ħaġa oħra aktar tard.",
+        "title": "Oriġini",
+        "subtitle": "imprinting ta' żvilupp"
+      },
+      "attachment": {
+        "eyebrow": "TQABBIJA · STRUTTURA TAL-FAMILJA",
+        "headline": [
+          "L-ewwel ",
+          "rabtiet",
+          ", u l-forma li ħallew."
+        ],
+        "lede": "Tidentifika l-istil ta' tqabbid tiegħek, ir-relazzjoni tiegħek mal-awtorità, u t-trijangulazzjoni li fiha trabbiet. Il-forma tal-ewwel rabta ssir il-mudell li kontra tiegħu jitkejjel kull rabta oħra aktar tard.",
+        "title": "Tqabbid",
+        "subtitle": "struttura tal-familja"
+      },
+      "authority": {
+        "eyebrow": "AWTORITÀ · LIĠI SIMBOLIKA",
+        "headline": [
+          "Il-vuċijiet li ",
+          "wirt",
+          "."
+        ],
+        "lede": "Turi l-kodiċijiet morali, l-istrutturi tal-ħtija, u l-identità wirt li għadhom jaħdmu fl-isfond. Il-vuċijiet li trabbiet taħthom rari jitilqu; isiru l-vuċi li tiġġudikak.",
+        "title": "Awtorità",
+        "subtitle": "liġi simbolika"
+      },
+      "belonging": {
+        "eyebrow": "APPARTEJENZA · IDENTITÀ SOĊJALI",
+        "headline": [
+          "Min jista' ",
+          "jarak",
+          "."
+        ],
+        "lede": "Tkejjel id-dipendenza soċjali, il-maskra tal-identità, u l-biża' ta' esklużjoni. L-appartenenza rari hija bla ħlas; din is-sezzjoni tistaqsi x'tiskambja għaliha.",
+        "title": "Appartenenza",
+        "subtitle": "identità soċjali"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · XEWQA U SELF DIĠITALI",
+        "headline": [
+          "Is-self li ",
+          "twettaq",
+          "."
+        ],
+        "lede": "Taħseb is-self idealizzat, iċ-ċiklu ta' validazzjoni, u l-prestazzjoni simbolika li twettaq online. Il-persona mhix gidba; hija xewqa nofsha żvelata.",
+        "title": "Persona",
+        "subtitle": "xewqa u self diġitali"
+      },
+      "desire": {
+        "eyebrow": "XEWQA · INTIMITÀ U RIPETIZZJONI",
+        "headline": [
+          "Il-mudell li ",
+          "jibqa' jirritorna",
+          "."
+        ],
+        "lede": "Isib il-forma relazzjonali rikorrenti, il-biża' ta' abbandun, il-kontradizzjoni ġewwa x-xewqa. Dak li jirrepeti rari jintgħażel; huwa dak li jitlob li jidher.",
+        "title": "Xewqa",
+        "subtitle": "intimità u ripetizzjoni"
+      },
+      "achievement": {
+        "eyebrow": "KISBA · XOGĦOL U RIKONOXXIMENT",
+        "headline": [
+          "Dak li qed ",
+          "tipprova tipprova",
+          "."
+        ],
+        "lede": "Tikxef l-ansjetà tal-kisba, il-ġuħ għar-rikonoxximent, u r-relazzjoni tiegħek mal-awtorità fuq ix-xogħol. Taħt kull ambizzjoni hemm udjenza ta' persuna jew tnejn.",
+        "title": "Kisba",
+        "subtitle": "xogħol u rikonoxximent"
+      },
+      "escape": {
+        "eyebrow": "ĦARBA · PJAĊIR U RITWAL",
+        "headline": [
+          "Fejn tmur ",
+          "biex ma tkunx hawn",
+          "."
+        ],
+        "lede": "Tidentifika l-mudelli ta' evitament, il-kompulsjonijiet, u r-ritwali li jirregolaw il-pjaċir. Il-ħruġ li tilħaq għalih jgħid daqs il-kamra li tħalli.",
+        "title": "Ħarba",
+        "subtitle": "pjaċir u ritwal"
+      },
+      "self-relation": {
+        "eyebrow": "SELF-RELAZZJONI · DIJALOGU INTERN",
+        "headline": [
+          "Il-vuċi li ma tistax ",
+          "tikkalma għal kollox",
+          "."
+        ],
+        "lede": "Tpinġi t-tarf tas-superego, l-istrutturi tal-mistħija, u l-vuċijiet internalizzati. Il-mod kif titkellem lilek innifsek fil-privat huwa l-aktar rekord onest ta' min rabbiek.",
+        "title": "Self-relazzjoni",
+        "subtitle": "djalogu intern"
+      },
+      "future-fantasy": {
+        "eyebrow": "FUTUR · FANTASJA, BIŻA' U XEWQA",
+        "headline": [
+          "Dak li qed ",
+          "verament tfittex",
+          "."
+        ],
+        "lede": "Il-qofol emozzjonali — il-futur li timmaġina, il-biża' li tħawwdu, ix-xewqa ewlenija taħt. L-aħħar mistoqsija hija l-ewwel waħda li tiġi rritornata.",
+        "title": "Futur-fantasija",
+        "subtitle": "fantasija, biża' u xewqa"
+      }
+    }
+  },
+  "common": {
+    "or": "jew",
+    "loading": "qiegħed jgħabbi…",
+    "sending": "qiegħed jibgħat…",
+    "save": "Ħlief",
+    "saved": "salvat",
+    "cancel": "Ikkanċella",
+    "close": "Agħlaq",
+    "back": "Lura",
+    "continue": "Kompli",
+    "retry": "Erġa' pprova",
+    "more": "aktar"
+  },
+  "nav": {
+    "room": "Room",
+    "readings": "Qari",
+    "catchup": "Catchup",
+    "consulting": "Konsultazzjoni",
+    "caseFile": "Fajl tal-Każ",
+    "settings": "Settings",
+    "signIn": "Idħol",
+    "signOut": "Oħroġ",
+    "getStarted": "Ibda",
+    "language": "Lingwa",
+    "method": "Metodu",
+    "theWork": "Ix-Xogħol",
+    "about": "Dwar",
+    "contact": "Kuntatt",
+    "start": "Ibda"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Idħol ",
+      "titleItalic": "ġewwa",
+      "titleAfter": ".",
+      "googleLabel": "Idħol ma' Google",
+      "or": "jew",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "PASSWORD",
+      "forgotPassword": "Insejt il-password",
+      "submit": "Idħol",
+      "footPrompt": "Ġdid hawn? ",
+      "footLink": "Oħloq kont"
+    },
+    "signUp": {
+      "titleBefore": "Oħloq ",
+      "titleItalic": "kont",
+      "titleAfter": ".",
+      "googleLabel": "Kompli ma' Google",
+      "or": "jew",
+      "emailLabel": "EMAIL",
+      "passwordLabel": "PASSWORD",
+      "confirmPasswordLabel": "IKKONFERMA L-PASSWORD",
+      "submit": "Oħloq kont",
+      "footPrompt": "Diġà għandek wieħed? ",
+      "footLink": "Idħol",
+      "resentNote": "Intbagħat link ġdid.",
+      "resendConfirmation": "Erġa' ibgħat il-konferma",
+      "pendingFootPrompt": "Indirizz żbaljat? ",
+      "pendingFootLink": "Ibda mill-ġdid"
+    },
+    "forgot": {
+      "titleBefore": "Insejt il-",
+      "titleItalic": "password",
+      "titleAfter": " tiegħek.",
+      "lede": "Daħħal l-indirizz li rreġistrajt bih. Nibagħtulek link biex tirrisettjaha.",
+      "emailLabel": "EMAIL",
+      "submit": "Ibgħat link tar-reset",
+      "footPrompt": "Ftakartha? ",
+      "footLink": "Idħol",
+      "sentBackLink": "Lura għad-dħul"
+    },
+    "reset": {
+      "titleBefore": "Issettja ",
+      "titleItalic": "password ġdida",
+      "titleAfter": ".",
+      "newPasswordLabel": "PASSWORD ĠDIDA",
+      "confirmPasswordLabel": "IKKONFERMA L-PASSWORD",
+      "submit": "Aġġorna l-password",
+      "expiredTitleBefore": "Dak il-link m'għadux ",
+      "expiredTitleItalic": "validu",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Itlob link ġdid"
+    },
+    "errors": {
+      "invalid_credentials": "L-email jew il-password ma jaqblux.",
+      "email_taken": "Dik l-email diġà hija rreġistrata. Ipprova idħol.",
+      "weak_password": "Uża mill-inqas 8 karattri.",
+      "passwords_dont_match": "Il-passwords ma jaqblux.",
+      "email_invalid": "Dan ma jidhirx bħala email validu.",
+      "rate_limited": "Wisq tentattivi. Erġa' pprova f'mument.",
+      "unconfirmed_email": "Ikkonferma l-email tiegħek l-ewwel. Iċċekkja l-inbox tiegħek.",
+      "reset_link_expired": "Dak il-link skada. Itlob wieħed ġdid.",
+      "reset_link_invalid": "Dak il-link m'għadux validu. Itlob wieħed ġdid.",
+      "oauth_failed": "Ma setax jintlaħaq Google. Erġa' pprova.",
+      "callback_failed": "Ma setax jitlesta d-dħul.",
+      "generic": "Xi ħaġa marret ħażin. Erġa' pprova.",
+      "no_session": "Idħol biex tkompli."
+    },
+    "success": {
+      "checkInboxEyebrow": "IĊĊEKKJA L-INBOX TIEGĦEK",
+      "confirmationHeadlineBefore": "Bgħatna ",
+      "confirmationHeadlineItalic": "link ta' konferma",
+      "confirmationHeadlineAfter": " lil ",
+      "confirmationLede": "Ikklikkja fuqu biex tispiċċa toħloq il-kont tiegħek.",
+      "resetSentEyebrow": "IĊĊEKKJA L-INBOX TIEGĦEK",
+      "resetSentHeadlineBefore": "Jekk dik l-email hija ",
+      "resetSentHeadlineItalic": "irreġistrata",
+      "resetSentHeadlineAfter": ", bgħatna link tar-reset.",
+      "resetSentLede": "Il-link jaħdem darba u jiskadi fi żmien siegħa. L-ebda link ma wasal ifisser l-ebda kont.",
+      "passwordUpdated": "Password aġġornata. Qed nidħluk."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "KONT",
+      "headlineBefore": "Waħħal il-",
+      "headlineItalic": "kamra kwieta",
+      "lede": "Isem, sena, u iva. Imbagħad jibda x-xogħol.",
+      "saveFailed": "Ma setax isalva dan. Erġa' pprova ftit ieħor.",
+      "nameLabel": "ISEM",
+      "nameRequired": "L-isem huwa meħtieġ.",
+      "prefilledHint": "mimli minn Google · editjabbli",
+      "yearLabel": "SENA TAT-TWELID",
+      "yearRequired": "Agħżel sena.",
+      "genderLabel": "SESS",
+      "genderRequired": "Agħżel wieħed.",
+      "gender": {
+        "male": "Raġel",
+        "female": "Mara",
+        "nonBinary": "Mhux binarju",
+        "preferNotToSay": "Preferibbilment ma ngħidx"
+      },
+      "languageLabel": "LINGWA",
+      "termsBefore": "Naċċetta t-",
+      "termsLink": "Termini",
+      "termsAnd": "u l-",
+      "privacyLink": "Politika ta' Privatezza",
+      "termsAfter": ".",
+      "submit": "Ibda l-kont"
+    },
+    "intro": {
+      "eyebrow": "INTAKE · EBDA TWEĠIBIET ŻBALJATI",
+      "headlineBefore": "M'hemmx tweġibiet tajbin",
+      "headlineItalic": "hawn"
+    },
+    "brief": {
+      "title": "IL-BRIEF",
+      "hint": "aqra darba, imbagħad ibda",
+      "opener": "It-tweġibiet żbaljati — l-eżitazzjonijiet, l-iżbalji tat-tajpjar, il-qbiż — jitkellmu b'mod ċar daqs dawk it-tajbin.",
+      "privacy": "Dak kollu li tikteb huwa privat. Xejn ma joħroġ minn din il-kamra.",
+      "length": "Minħabba li x-xogħol huwa profond, l-intake huwa twil. Qsajnieh f'għaxar partijiet. Il-ħaġa sħiħa tieħu madwar sagħtejn.",
+      "resume": "Issejvja u kompli ġurnata oħra. Editja kwalunkwe sezzjoni wara li tispiċċaha — il-profil jibqa' jisma'.",
+      "begin": "Ibda l-intake"
+    },
+    "saved": {
+      "eyebrow": "ISSEJVJA U PAWŻA",
+      "headlineItalic": "Issejvjat.",
+      "headlineAfter": "Erġa' ejja meta tkun lest.",
+      "body": "Dak kollu li ktibt jinsab fil-fajl tal-każ tiegħek. Il-kamra tiftaħ fl-istess post id-darba li jmiss.",
+      "keepGoing": "kompli",
+      "leaveRoom": "Ħalli l-kamra kwieta"
+    },
+    "step": {
+      "label": "PASS",
+      "of": "MINN",
+      "min": "MIN",
+      "progressLabel": "Progress tal-intake",
+      "finalEpigraph": "l-aħħar mistoqsija hija dejjem l-ewwel waħda mill-ġdid.",
+      "backTo": "Pass {n}",
+      "continueTo": "Kompli għal Pass {n}",
+      "submit": "Issejvja u ibgħat",
+      "submitReading": "qari…"
+    },
+    "questions": {
+      "closeTitle": "MISTOQSIJIET MAGĦLUQA",
+      "closeHint": "agħżel dak li hu veru",
+      "openTitle": "MISTOQSIJIET MIFTUĦA",
+      "openHint": "ikteb dak li jitfaċċa",
+      "countLabel": "{count, plural, one {mistoqsija} few {mistoqsijiet} many {mistoqsijiet} other {mistoqsijiet}}"
+    },
+    "saveExit": {
+      "or": "jew",
+      "saveAndReturn": "issejvja u erġa' lura aktar tard"
+    },
+    "saveIndicator": {
+      "saving": "qiegħed isalva…",
+      "saved": "issejvjat",
+      "saveFailed": "is-salvataġġ falla"
+    }
+  },
+  "readings": {
+    "whatThisIs": "x'inhu dan →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "ċikli subkonxji",
+        "definition": "Sekwenzi ripetuti ta' sentiment, azzjoni, u riżultat li jseħħu barra mill-għażla konxja. Li ssemmi ċ-ċiklu huwa l-ewwel interruzzjoni tiegħu.",
+        "seedReading": "jersaq lejn il-qrubija imbagħad joħloq falliment żgħir biex jirtira.",
+        "seedTakeaway": "l-irtirar huwa ċ-ċiklu. mhux il-qrubija."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "inkonxju lingwistiku",
+        "definition": "Il-mod kif il-materjal inkonxju jitfaċċa fl-għażla tal-kliem, ir-ripetizzjoni, l-iżbalji, u l-istruttura tad-diskors — l-affermazzjoni ta' Lacan li l-inkonxju huwa strutturat bħal lingwa.",
+        "seedReading": "id-diskors jirdoppja fuq il-kelma “għandu” — sit ta' talba wirtata.",
+        "seedTakeaway": "il-vuċi ta' xi ħadd ieħor għadha titkellem permezz ta' din il-kelma."
+      },
+      "father-imago": {
+        "subtitle": "imago tal-missier",
+        "definition": "L-immaġni internalizzata tal-missier, iffurmata kmieni u parzjalment mitika. Din tifforma kif l-awtorità, l-ambizzjoni, u l-ġudizzju jintlaħqu aktar tard fil-ħajja.",
+        "seedReading": "jiġġudika minn fuq qabel ma jiġi ġġudikat minn fuq — il-pożizzjoni hija identika.",
+        "seedTakeaway": "is-siġġu jinbidel. is-siġġu ma jinbidilx."
+      },
+      "intimacy-threshold": {
+        "subtitle": "limitu tal-intimità",
+        "definition": "Il-punt fejn il-qrubija tibda tħossha bħala riskju, u ssegwi mossa difensiva. Differenti għal kull persuna; sorprendentement stabbli fir-relazzjonijiet.",
+        "seedReading": "iżomm tajjeb sakemm l-ieħor isir leġibbli — imbagħad jirtira.",
+        "seedTakeaway": "li tkun magħruf huwa t-tarf, mhux li tkun qrib."
+      },
+      "desire-structure": {
+        "subtitle": "struttura tax-xewqa",
+        "definition": "Dak li l-utent verament irid, distint minn dak li qallulu li jrid. Spiss skopert bin-negazzjoni — billi tinnota dak li jirrifjuta.",
+        "seedReading": "isemmi ħafna xewqat, jirrifjuta tnejn — ir-rifjut huwa s-sinjal.",
+        "seedTakeaway": "dak li jintwaddab 'il bogħod jindika aktar ċar minn dak li jiġi mfittex."
+      },
+      "professional-block": {
+        "subtitle": "blokk professjonali",
+        "definition": "Fejn ix-xogħol jaqbad: il-bidu, in-nofs, it-tmiem, jew il-viżibilità. Kull post għandu s-sors inkonxju tiegħu stess.",
+        "seedReading": "il-linja tal-finitura hija fejn jasal id-dubju, qatt il-bidu.",
+        "seedTakeaway": "il-blokk huwa fil-viżibilità, mhux fl-isforz."
+      },
+      "mother-imago": {
+        "subtitle": "imago tal-omm",
+        "definition": "L-immaġni internalizzata tal-omm — l-ewwel attunement, l-ewwel separazzjoni. Din tinforma n-nisġa tad-dipendenza u r-refuġju.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "l-attunement bikri jħalli firma twila."
+      },
+      "dream-logic": {
+        "subtitle": "loġika tal-ħolm",
+        "definition": "Il-kondensazzjoni u l-ispostament li jaħdmu fil-materjal tal-ħolm. Aqra għall-grammatika, mhux għas-simboli.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "il-kontenut tal-ħolm għandu l-grammatika tiegħu stess."
+      },
+      "relational-pattern": {
+        "subtitle": "mudell relazzjonali",
+        "definition": "Il-qagħda rikorrenti meħuda fir-relazzjonijiet — min jiġri warajh, min jirtira, ġenitur, tifel, ugwali. Stabbli bejn l-imsieħba aktar milli l-imsieħba huma stabbli bejn l-utent.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "l-istess forma tidher f'kmamar differenti."
+      },
+      "defenses": {
+        "subtitle": "difiżi",
+        "definition": "Il-movimenti karatteristiċi użati biex iżommu materjal diffiċli barra mill-kuxjenza — intellettwalizzazzjoni, spostament, formazzjoni ta' reazzjoni, qsim. Id-difiżi mhumiex fallimenti; huma soluzzjonijiet qodma.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "id-difiża ssemmi dak li darba kien insupportabbli."
+      },
+      "shadow": {
+        "subtitle": "dell",
+        "definition": "Dak li ġie miċħud u assenjat lil oħrajn — il-kwalitajiet li l-utent huwa l-aktar ċert li mhuwiex. Spiss ir-rotta għall-vitalità.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "dak li hu miċħud għadu jaġixxi."
+      },
+      "transference": {
+        "subtitle": "trasferiment",
+        "definition": "Il-mod kif figuri relazzjonali qodma huma proġettati fuq dawk preżenti — l-analista, is-sieħeb, il-kap. Il-mudell juri l-imago.",
+        "seedReading": "kmieni wisq biex ngħidu b'kunfidenza — il-forma qed tifforma.",
+        "seedTakeaway": "figuri qodma jaslu f'kmamar preżenti."
+      }
+    },
+    "strip": {
+      "lastRefined": "l-aħħar irfinut",
+      "readingDepth": "fond tal-qari"
+    },
+    "section": {
+      "eyebrow": "QARI {index} · {subtitle}",
+      "strengthen": "issaħħaħ l-eżattezza",
+      "requestReport": "itlob rapport"
+    },
+    "card": {
+      "reading": "Qari {index}"
+    },
+    "report": {
+      "eyebrow": "RAPPORT KLINIKU",
+      "heading": "Għall-<it>analista</it> tiegħek.",
+      "lede": "Dossier ta' 12–18-il paġna — is-sitt qari żviluppati bis-sħiħ, flimkien ma' sitt oħrajn li d-dashboard ma jurix: imago tal-omm, loġika tal-ħolm, mudell relazzjonali, difiżi, dell, trasferiment. Tradott fil-lingwa li fiha jaħdem kliniku.",
+      "note": "ir-rapport se jirrifletti l-fond disponibbli. jista' jerġa' jiġi ġġenerat hekk kif il-qari japprofondixxi.",
+      "generate": "Iġġenera rapport kliniku",
+      "request": "Itlob rapport kliniku",
+      "footPrefix": "rapport wieħed inkluż kull xahar għal ",
+      "footLink": "abbonati"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "MISTOQSIJA {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "X’baqa’ miegħek minn din il-ġimgħa?",
+        "framing": "frażi, immaġni, sentenza li qal xi ħadd."
+      },
+      "closeness": {
+        "prompt": "Kemm ħallejt lil xi ħadd jersaq qrib tiegħek?",
+        "options": {
+          "not_at_all": "xejn",
+          "briefly": "fil-qosor",
+          "with_hesitation": "b’eżitazzjoni",
+          "openly": "bil-miftuħ",
+          "too_far": "wisq"
+        }
+      },
+      "loop": {
+        "prompt": "Qbadt lilek innifsek f’ċiklu familjari?",
+        "framing": "fejn, u kif intemm."
+      },
+      "loudest_voice": {
+        "prompt": "Liema vuċi kienet l-aktar qawwija din il-ġimgħa?",
+        "options": {
+          "demand": "id-domanda",
+          "doubt": "id-dubju",
+          "desire": "ix-xewqa",
+          "watcher": "l-osservatur",
+          "none": "ħadd minn dawn"
+        }
+      },
+      "dream": {
+        "prompt": "Kien hemm ħolma li ta’ min tikteb?",
+        "framing": "jekk iva, il-framment li baqa’ jdur f’moħħok."
+      },
+      "acted_on_desire": {
+        "prompt": "Kemm aġixxejt fuq dak li verament ridt?",
+        "lowLabel": "xejn",
+        "highLabel": "kompletament"
+      },
+      "work_catch": {
+        "prompt": "Fejn qabdek ix-xogħol?",
+        "options": {
+          "start": "il-bidu",
+          "middle": "nofs",
+          "finish": "it-tmiem",
+          "visibility": "il-viżibilità",
+          "nowhere": "mkien"
+        }
+      },
+      "avoided_question": {
+        "prompt": "X’inhi l-mistoqsija li ma tridx twieġeb bħalissa?",
+        "framing": "dik li tibqa’ tiżloq."
+      }
+    },
+    "openHint": "tweġibiet itwal japprofondixxu l-qari",
+    "scaleLegend": "{low} sa {high}",
+    "noValue": "l-ebda valur magħżul",
+    "valueOf": "{value} minn {max}",
+    "weekLabel": "ĠIMGĦA {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "X’baqa’ miegħek<it>?</it>",
+    "coverLede": "Tmien mistoqsijiet qosra. Onest huwa aħjar minn twil. It-tweġibiet jirfinaw il-qari; xejn hawn mhu gradat.",
+    "begin": "Ibda",
+    "back": "lura",
+    "next": "li jmiss",
+    "submitting": "qiegħed jintbagħat",
+    "closeTheWeek": "agħlaq il-ġimgħa",
+    "previousQuestion": "mistoqsija preċedenti",
+    "processingLine": "<em>il-ġimgħa qiegħda tinqara.</em>",
+    "summaryEyebrow": "{weekLabel} · QARI LURA",
+    "summaryTitle": "Il-ġimgħa, <it>fi kliemek stess.</it>",
+    "caseLabel": "każ · {week}",
+    "justRefined": "għadu kif ġie rfinat",
+    "readingsShifted": "qari mċaqlaq",
+    "readingsCount": "{n} minn 12",
+    "returnToRoom": "Erġa' lura fil-kamra",
+    "readAgain": "erġa' aqra fil-fajl tal-każ",
+    "somethingToHold": "XI ĦAĠA X’ŻOMM",
+    "enterConsultingRoom": "idħol fil-kamra tal-konsultazzjoni",
+    "openConsultingRoom": "iftaħ il-kamra tal-konsultazzjoni",
+    "requestReport": "itlob rapport kliniku",
+    "errorSubmit": "ma setax jintbagħat il-catchup",
+    "errorGeneric": "ġrat xi ħaġa ħażina",
+    "errorFailed": "il-catchup jinsab fil-fajl. is-sommarju jasal aktar tard.",
+    "errorGiveUp": "il-kamra hija kwieta fil-qosor — il-catchup tiegħek jinsab fil-fajl. aġġorna f'minuta.",
+    "summaryFallback": "Il-catchup jinsab fil-fajl. Il-qari ġie aġġornat bil-kwiet; is-sommarju itwal jasal fil-pass li jmiss.",
+    "readBackTitle": "Il-ġimgħa, <it>diġà ġewwa.</it>",
+    "readBackEmpty": "il-catchup jinsab fil-fajl. is-sommarju se jkun qasir din il-ġimgħa.",
+    "readBackFoot": "il-catchup li jmiss jiftaħ fil-bidu tal-ġimgħa {n}."
+  },
+  "consulting": {
+    "sessionClose": "dak il-ħin tagħna.",
+    "sayIt": "għidha →",
+    "closeSession": "agħlaq is-sessjoni →",
+    "eyebrow": "KONSULTORJU",
+    "closing": "qiegħed jingħalaq",
+    "closeSessionLabel": "agħlaq is-sessjoni",
+    "timerAria": "ħin tas-sessjoni li għadda",
+    "chooseTopicAria": "agħżel suġġett",
+    "noTopic": "ebda suġġett",
+    "justOpened": "għadu kif infetaħ",
+    "minutesIn": "{count} min ilu",
+    "speakToAnalyst": "kellem lill-analista",
+    "send": "ibgħat",
+    "sessionClosedFoot": "is-sessjoni hija magħluqa. inżammet fil-fajl tal-każ.",
+    "previewHeld": "liema parti minnek tibqa' tagħżel dan?",
+    "previewTopicDreamingFuture": "Ħolm tal-futur",
+    "previewTopicNightDream": "Ħolma bil-lejl",
+    "previewTopicRelations": "Relazzjonijiet f'ħajti",
+    "previewTopicProfessionalGrowth": "Tkabbir professjonali",
+    "previewTurnAnalyst1": "Int issemmi mudell, imbagħad tirrakkontah bħala ta' barrani. Innota meta jibda l-<em>irtirar</em>.",
+    "previewTurnUser1": "Nibqa' ntemm l-affarijiet il-ġimgħa li fiha jsiru serji.",
+    "previewTurnAnalyst2": "Filgħodu huwa l-verdett, mhux il-proċess. L-<em>intimacy threshold</em> tiegħek ipprattika t-tluq ġimgħat qabel il-konverżazzjoni.",
+    "sayItEllipsis": "għidha…",
+    "offerHeadline": "Il-konsultorju",
+    "offerLede": "Seduta twila mal-analista, miżmuma bl-istess vuċi bħall-qari tiegħek. Is-sessjonijiet huma privati, miżmuma fil-fajl tal-każ, u jalimentaw il-qari bejn is-seduti.",
+    "offerPanelsAria": "x'tagħmel sessjoni",
+    "offerPanel1Title": "imsemmi, mhux irrakkontat",
+    "offerPanel1Body": "L-analista se jsemmi dak li qed jiġri fid-diskors tiegħek — iż-żball, il-kwalifikatur, il-half-said — u jżommu hemm sakemm tkun tista' tarah.",
+    "offerPanel2Title": "miżmum fil-fajl tal-każ",
+    "offerPanel2Body": "Kull seduta tinkiteb. Il-qari li jmiss jaqrah. Il-mudelli jitfaċċaw matul il-ġimgħat, mhux id-dawriet.",
+    "offerPanel3Title": "vuċi waħda, ebda lista",
+    "offerPanel3Body": "Mhux rotazzjoni ta' chatbot. Vuċi analitika waħda, imħarrġa fuq l-intake tiegħek u rfinuta minn kull catchup.",
+    "offerFootLine": "L-abbonati jirċievu rapport kliniku wieħed kull xahar.",
+    "offerPillCta": "Idħol fil-konsultorju",
+    "offerReturnToRoom": "erġa' lura fil-kamra",
+    "previewFigureLabel": "il-konsultorju",
+    "previewFigureSubtitle": "seduta, preview",
+    "previewRailAria": "oqsma tal-fajl tal-każ li l-analista qed jaqra minnhom",
+    "previewReadingFrom": "QARI MINN",
+    "previewActive": "attiv",
+    "previewRoleYou": "INT",
+    "previewRoleAnalyst": "ANALISTA",
+    "previewBubble1": "Nibqa' ntemm l-affarijiet il-ġimgħa li fiha jsiru serji. Ma nafx għaliex nagħmel hekk.",
+    "previewAnalyst1": "Int issemmi mudell, imbagħad tirrakkontah bħala ta' barrani. Il-<em>“Ma nafx”</em> qed jagħmel xogħol — iżomm l-att fuq in-naħa l-bogħod tal-intenzjoni. Innota meta jibda l-<em>irtirar</em>. Spiss il-preklużjoni sseħħ qabel it-tluq.",
+    "previewBubble2": "Qabel kif? L-aħħar darba ħassejtni li qomt filgħodu u kont naf.",
+    "previewAnalyst2": "Filgħodu huwa l-verdett, mhux il-proċess. Il-qari tal-<strong>intimacy threshold</strong> tiegħek mill-ġimgħa 04 innota l-istess forma — prova kwieta ta' tluq, tnejn sa tliet ġimgħat qabel il-konverżazzjoni. Filgħodu huwa meta l-ġisem fl-aħħar jaqbel ma' dak li kont diġà ddeċidejt.",
+    "previewBubble3": "Dik hija l-parti li tibżagħni. Li hija diġà deċiża.",
+    "previewAnalyst3": "<em>Deċiża</em> hija l-kelma. Mhux <em>magħżula</em>. Xi ħaġa fl-istruttura tippreferi l-preklużjoni mit-test. Se nkomplu mmorru hemmhekk.",
+    "previewExampleMark": "EŻEMPJU · MHUX MIR-REKORD TIEGĦEK"
+  },
+  "caseFile": {
+    "silentWeek": "— ġimgħa siekta —",
+    "eyebrow": "IL-KAŻ",
+    "headlineLead": "Rekord, miżmum",
+    "headlineItalic": "bil-kwiet.",
+    "lede": "Kull Catchup, sessjoni, u rapport — miżmuma f'ordni kronoloġika. Il-lakuni huma parti mir-rekord.",
+    "filterAria": "Filtra",
+    "filter": {
+      "all": "kollha",
+      "catchups": "catchups",
+      "sessions": "sessjonijiet",
+      "reports": "rapporti"
+    },
+    "subscriptionTitle": "Abbonament",
+    "emptyCatchups": "il-każ għadu vojt — l-ewwel Catchup se jiftħu.",
+    "emptyCatchupsCta": "Mur għal Catchup",
+    "emptySessions": "il-każ għadu vojt — l-ewwel sessjoni ta' konsultazzjoni se tiftaħu.",
+    "emptySessionsCta": "Mur għall-Kamra tal-Konsultazzjoni",
+    "emptyReports": "il-każ għadu vojt — l-ewwel rapport iġġenerat se jiftħu.",
+    "open": "iftah",
+    "kindCatchup": "catchup",
+    "kindSession": "sessjoni",
+    "kindReport": "rapport kliniku",
+    "kindReading": "qari tal-intake",
+    "kindConnection": "avveniment ta' konnessjoni",
+    "entryEyebrow": "IL-KAŻ · DĦUL",
+    "entryBackToCaseFile": "lura għall-każ",
+    "entryReturnToRoom": "lura għall-kamra",
+    "sessionStillOpen": "din is-sessjoni għadha miftuħa. il-qari jidher ladarba tagħlaq.",
+    "entryDetailComing": "id-dettalji ta' din id-dħul ġejjin. għalissa, il-każ iżomm id-data, it-tip, u t-titlu — u l-bqija għadha fil-kamra.",
+    "detailSummaryEyebrow": "SOMMARJU · IT-TWEĠIBIET TIEGĦEK",
+    "detailRecommendationEyebrow": "IL-CATCHUP TAGĦNA",
+    "preparingRead": "qiegħed inħejji l-qari…",
+    "readNotAssembled": "il-qari ma setax jiġi assemblat bħalissa.",
+    "tryAgain": "erġa' pprova",
+    "intakeClose": "agħlaq",
+    "intakeEdit": "editja",
+    "intakeSaving": "qiegħed nissejvja",
+    "intakeSave": "issejvja",
+    "intakeCancel": "ikkanċella",
+    "intakeUnsupported": "din il-mistoqsija hija editjata minn ġewwa l-intake stess.",
+    "intakePickUpTo": "agħżel sa {count}.",
+    "intakeScaleSetTo": "Issettjat għal {value}"
+  },
+  "settings": {
+    "eyebrow": "SETTINGS",
+    "heading": "Il-forma tal-<it>kamra.</it>",
+    "lede": "Xejn hawn mhu permanenti. Ir-risposti jistgħu jiġu editjati, il-preferenzi jinbidlu, u l-fajl tal-każ jista' jitħassar għal kollox.",
+    "blocks": {
+      "account": "Kont",
+      "readingDepth": "Profondità tal-qari",
+      "notifications": "Notifiki",
+      "subscription": "Abbonament",
+      "dangerZone": "Żona ta' periklu"
+    },
+    "dangerZoneIntro": "l-unika azzjoni li ma tistax titneħħa fil-kamra.",
+    "depthSub": {
+      "intake": {
+        "title": "L-intake tiegħek",
+        "caption": "{answered} / {total} imwieġba",
+        "ctaEmpty": "Imla l-intake tiegħek",
+        "ctaPartial": "Żid aktar dettall",
+        "ctaFull": "Irrevedi l-intake tiegħek"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} fl-aħħar 8 ġimgħat",
+        "ctaEmpty": "Żid catchup",
+        "ctaDue": "Imla l-catchup ta' din il-ġimgħa",
+        "ctaFull": "Irrevedi l-catchups tal-passat"
+      },
+      "sessions": {
+        "title": "Sessjonijiet",
+        "caption": "{count} kompluti",
+        "ctaEmpty": "Ibda konsultazzjoni",
+        "ctaPartial": "Kompli konsultazzjoni",
+        "ctaFull": "Irrevedi s-sessjonijiet tal-passat"
+      },
+      "connections": {
+        "title": "Konnessjonijiet",
+        "caption": "{count} attivi",
+        "ctaEmpty": "Żid konnessjoni",
+        "ctaSingle": "Żid konnessjoni oħra",
+        "ctaFull": "Irrevedi l-konnessjonijiet tiegħek"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "tfakkira ta' catchup ta' kull ġimgħa",
+        "sub": "nota kwieta fil-bidu tal-ġimgħa l-ġdida"
+      },
+      "consulting_session_reminder": {
+        "label": "tfakkira ta' sessjoni ta' konsultazzjoni",
+        "sub": "tfakkira qabel il-konsultazzjoni li jmiss tiegħek"
+      },
+      "connection_requests": {
+        "label": "konnessjoni aċċettata",
+        "sub": "nota meta xi ħadd jaċċetta l-istedina tiegħek"
+      }
+    },
+    "toggleOn": "mixgħul",
+    "toggleOff": "mitfi",
+    "quietHours": {
+      "label": "sigħat kwieti",
+      "sub": "l-ebda email bejn dawn is-sigħat, fil-ħin lokali tiegħek",
+      "from": "minn",
+      "to": "sa"
+    },
+    "saveFailed": "il-ħażna falliet",
+    "dangerZone": {
+      "trigger": "Ħassar il-kont",
+      "modalAria": "Ikkonferma t-tħassir tal-kont",
+      "eyebrow": "ŻONA TA' PERIKLU",
+      "heading": "Ħassar il-<it>fajl tal-każ.</it>",
+      "body": "Dan ineħħi kull qari, catchup, sessjoni, u rapport mir-rekord. Il-konnessjonijiet attivi se jintemmu; iż-żewġ partijiet se jiġu notifikati. Ma jistax jitneħħa.",
+      "instruction": "ittajpja <phrase></phrase> biex tippermetti l-azzjoni.",
+      "inputAria": "Ittajpja l-frażi ta' konferma",
+      "cancel": "ikkanċella",
+      "erasing": "qiegħed jitħassar…",
+      "eraseConfirm": "ħassar il-fajl tal-każ",
+      "deleteFailed": "it-tħassir falliet"
+    },
+    "subscription": {
+      "statusLabel": "STATUS",
+      "badge": "AĊĊESS TA' MEMBRU",
+      "tagline": "Il-kamra tal-konsultazzjoni, miftuħa. <em>Qari li jibqa' jaqra.</em>",
+      "features": {
+        "room": {
+          "title": "Kamra tal-konsultazzjoni",
+          "desc": "sessjonijiet fit-tul mal-analista."
+        },
+        "report": {
+          "title": "Rapport kliniku ta' kull xahar",
+          "desc": "mappa waħda lesta għat-terapista kull xahar kalendarju."
+        },
+        "connections": {
+          "title": "{count} konnessjonijiet oħra",
+          "desc": "żid il-persuni li l-preżenza tagħhom tifforma l-qari."
+        },
+        "depth": {
+          "title": "Profondità sħiħa tal-qari",
+          "desc": "kull kapitlu miftuħ, l-ebda limitu fuq id-dettall."
+        }
+      },
+      "perMonth": "kull xahar",
+      "subscribe": "abbona",
+      "reassurance": "<em>l-ebda impenn.</em> ikkanċella f'kull ħin mis-settings.",
+      "activeToday": "attiv — jiġġedded illum",
+      "activeRenews": "attiv — jiġġedded fi {days, plural, one {ġurnata} few {# ijiem} many {# ijiem} other {# ijiem}}",
+      "cancel": "ikkanċella l-abbonament",
+      "cancelled": "ikkanċellat — aċċess sa {date}",
+      "resubscribe": "erġa' abbona"
+    },
+    "resetPassword": {
+      "sent": "link għall-reset intbagħtet lil {email}. iċċekkja l-inbox tiegħek",
+      "sending": "qiegħed jintbagħat",
+      "action": "reset password",
+      "error": "ma setax jintbagħat. erġa' pprova"
+    }
+  },
+  "connections": {
+    "explainer": "Sa {limit, plural, one {# persuna li l-preżenza tagħha tifforma l-qari} other {# persuni li l-preżenza tagħhom tifforma l-qari}}. Huma ma jarawx il-qari tiegħek; int ma tarax tagħhom. Dak li jgħidu dwar ir-relazzjoni jalimenta l-mudell li jipproduċi l-qari tiegħek, u tiegħek jalimenta tagħhom.",
+    "invite": {
+      "emailSubject": "{inviterName} jixtieqek fil-qari."
+    },
+    "form": {
+      "emailLabel": "EMAIL",
+      "roleLabel": "RWOL",
+      "rolePlaceholder": "agħżel wieħed",
+      "noteLabel": "SENTENZA LI JAQRAW L-EWWEL",
+      "noteHint": "mhux obbligatorju. linja waħda hija biżżejjed.",
+      "addMoreSub": "żid aktar fuq abbonament",
+      "missingNameLine": "ismek mhuwiex fil-fajl. żidu fis-settings, imbagħad ibgħat it-talba mill-ġdid.",
+      "addYourName": "żid ismek",
+      "noteLengthError": "in-noti huma limitati għal linja waħda — madwar {max} karattri."
+    },
+    "list": {
+      "empty": "l-ebda konnessjoni s'issa. il-possibbiltà ta' stedina tinsab hawn taħt.",
+      "active": "ATTIV",
+      "pending": "PENDENTI",
+      "since": "minn",
+      "invited": "mistieden",
+      "received": "riċevut",
+      "resend": "erġa' ibgħat",
+      "cancel": "ikkanċella",
+      "expiresIn": "jiskadi fi żmien {days, plural, one {# jum} other {# ijiem}}"
+    },
+    "lookup": {
+      "invalidEmail": "jekk jogħġbok daħħal indirizz elettroniku validu.",
+      "self": "ma tistax tikkonnettja miegħek innifsek.",
+      "notMemberLine": "dan l-indirizz elettroniku għadu mhux parti mill-membri. stidinhom joħolqu kont sabiex tkun tista' tikkonnettja.",
+      "copyHint": "aqsam il-link tal-reġistrazzjoni",
+      "copied": "link ikkupjata",
+      "requestSent": "diġà bgħatt talba lil dan il-membru.",
+      "requestReceivedLine": "dan il-membru bagħatlek talba — iċċekkja l-istediniet tiegħek.",
+      "inboxLabel": "iftaħ it-talba",
+      "alreadyConnected": "diġà konness ma' dan il-membru.",
+      "rateLimited": "wisq tfittxijiet f'perjodu qasir. stenna ftit, imbagħad erġa' pprova.",
+      "sent": "talba ta' konnessjoni mibgħuta.",
+      "sending": "qiegħed jibgħat…",
+      "send": "ibgħat talba",
+      "limitReached": "{limit, plural, one {# konnessjoni hija l-limitu. skonnettjaha biex iżżid oħra.} other {# konnessjonijiet huwa l-limitu. skonnettja waħda biex iżżid oħra.}}",
+      "limitReachedFree": "{limit, plural, one {# konnessjoni hija l-limitu fuq il-livell b'xejn.} other {# konnessjonijiet huwa l-limitu fuq il-livell b'xejn.}}",
+      "generic": "ma setgħetx tintbagħat it-talba."
+    },
+    "incoming": {
+      "eyebrow": "QED JISTENNEWK",
+      "empty": "ħadd ma qed jistenna lilek.",
+      "accept": "aċċetta",
+      "decline": "irrifjuta",
+      "limitReached": "{limit, plural, one {# konnessjoni hija l-limitu. skonnettjaha biex taċċetta din.} other {# konnessjonijiet huwa l-limitu. skonnettja waħda biex taċċetta din.}}",
+      "limitReachedFree": "{limit, plural, one {# konnessjoni hija l-limitu fuq il-livell b'xejn.} other {# konnessjonijiet huwa l-limitu fuq il-livell b'xejn.}}",
+      "upsell": "l-abbonati jżidu aktar",
+      "inviteExpired": "din l-istedina skadiet.",
+      "inviteEnded": "din l-istedina m'għadhiex pendenti.",
+      "generic": "ma setgħetx tittieħed azzjoni fuq din it-talba."
+    },
+    "roles": {
+      "partner": "sieħeb",
+      "closest_friend": "ħabib intimu",
+      "parent": "ġenitur",
+      "sibling": "aħwa",
+      "co_parent": "ko-ġenitur"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "NOTA MILL-ANALISTA",
+    "noteAria": "Nota mill-analista",
+    "lede": "dan huwa lil hinn minn dak li l-kamra tista’ żżomm.",
+    "body": {
+      "intake": "Xi ħaġa f’dak li ktibt fl-intake tindika piż li jitlob kura vera — lil hinn minn dak li din il-kamra tista’ żżomm. Jekk jogħġbok ikkunsidra li tikkuntattja tabib, terapista, jew linja ta’ kriżi lokali llum. Il-qari se jkun hawn meta terġa’ lura.",
+      "catchup": "Xi ħaġa fil-Catchup ta’ din il-ġimgħa tindika piż li jitlob kura vera — lil hinn minn dak li din il-kamra tista’ żżomm. Jekk jogħġbok ikkunsidra li tikkuntattja tabib, terapista, jew linja ta’ kriżi lokali llum. Il-qari se jżomm.",
+      "session": "Dak li ktibt bħalissa jindika piż li jitlob kura vera — lil hinn minn dak li din il-kamra tista’ żżomm. Jekk jogħġbok ikkunsidra li tikkuntattja tabib, terapista, jew linja ta’ kriżi lokali llum. Nistgħu nerġgħu lura fil-kamra meta tkun fis-sigurtà."
+    },
+    "crisisResources": "RIŻORSI TA’ KRIŻI",
+    "resources": {
+      "us": "Stati Uniti",
+      "ukIe": "Renju Unit u Irlanda",
+      "europe": "Ewropa (ħafna pajjiżi)",
+      "everywhere": "Kullimkien",
+      "localEmergency": "servizzi ta’ emerġenza lokali"
+    },
+    "hintResources": "jekk ma tistax issib linja, id-dipartiment tal-emerġenza tal-isptar l-eqreb tiegħek huwa l-kamra t-tajba.",
+    "hintLink": "riżorsi ta’ kriżi huma elenkati fil-qiegħ ta’ kull paġna tal-Kamra.",
+    "footerLine": "TwentyThird mhuwiex sostitut għall-kura klinika. F’każ ta’ kriżi, ikkuntattja l-linja ta’ emerġenza lokali tiegħek.",
+    "footerRoomLabel": "il-kamra"
+  }
+}

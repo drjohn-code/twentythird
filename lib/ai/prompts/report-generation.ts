@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 
 // Report generation — the clinical dossier. The most expensive call
@@ -51,6 +51,7 @@ export type ReportGenerationInput = {
     summary: string | null;
   }>;
   safetyFlags: ReportSafetyFlagInput[];
+  locale: string;
 };
 
 export type ReportBlockSection = {
@@ -181,7 +182,7 @@ export function buildReportGenerationPrompt(input: ReportGenerationInput): {
           .join("\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

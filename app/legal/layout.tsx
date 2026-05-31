@@ -1,20 +1,25 @@
 import type { ReactNode } from "react";
+import { getTranslations } from "next-intl/server";
 import LegalSidebar from "../../components/legal/LegalSidebar";
 
-export default function LegalLayout({ children }: { children: ReactNode }) {
+export default async function LegalLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  const t = await getTranslations("marketing.legal.layout");
   return (
     <main className="page-shell">
       <section className="page-hero no-figure">
         <div className="container">
           <div className="eyebrow" style={{ marginBottom: "28px" }}>
-            LEGAL
+            {t("eyebrow")}
           </div>
           <h1>
-            Legal documents, <em className="it">stated plainly.</em>
+            {t("headingLead")} <em className="it">{t("headingItalic")}</em>
           </h1>
           <p className="lede">
-            Privacy policy, terms of service, and cookie policy — governed by
-            Swedish law and the GDPR.
+            {t("lede")}
           </p>
         </div>
       </section>

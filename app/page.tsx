@@ -1,6 +1,8 @@
+import { getTranslations } from "next-intl/server";
 import LandingInteractions from "./landing-interactions";
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const t = await getTranslations("marketing.landing");
   return (
     <main className="shell">
       {/* HERO */}
@@ -20,33 +22,33 @@ export default function LandingPage() {
             className="eyebrow"
             style={{ marginBottom: "32px", fontSize: "1px" }}
           >
-            PSYCHODYNAMIC INTELLIGENCE{" "}
+            {t("hero.eyebrow")}{" "}
           </div>
           <h1>
-            Advanced
+            {t("hero.titleLine1")}
             <br />
-            Psychodynamic <span className="it">AI</span>,
+            {t("hero.titleLine2Pre")} <span className="it">{t("hero.titleLine2It")}</span>,
             <span className="break">
-              for <span className="it">Self‑Discovery</span>
+              {t("hero.titleLine3Pre")} <span className="it">{t("hero.titleLine3It")}</span>
             </span>
           </h1>
           <div className="cta-row">
             <a href="/auth/sign-up" className="cta">
-              Start your discovery
+              {t("hero.ctaPrimary")}
               <span className="arrow">→</span>
             </a>
             <a href="/science" className="cta-ghost">
               <span
                 style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}
               >
-                or
+                {t("hero.ctaGhostOr")}
               </span>{" "}
-              read the science
+              {t("hero.ctaGhostText")}
             </a>
           </div>
         </div>
         <div className="scroll-hint">
-          <span>scroll</span>
+          <span>{t("hero.scroll")}</span>
           <span className="line"></span>
         </div>
       </section>
@@ -55,34 +57,30 @@ export default function LandingPage() {
       <section className="philosophy" id="philosophy">
         <div className="philo-copy reveal">
           <div className="eyebrow" style={{ fontSize: "1px" }}>
-            CORE PHILOSOPHY
+            {t("philosophy.eyebrow")}
           </div>
           <h2>
-            5‑minute fixes don&apos;t{" "}
-            <span className="it">change anyone</span>.
+            {t("philosophy.titlePre")}{" "}
+            <span className="it">{t("philosophy.titleIt")}</span>.
           </h2>
           <p className="sub">
-            We do root‑cause analysis. By fusing the foundational insights of
-            Sigmund Freud with Jacques Lacan&apos;s breakthroughs in
-            linguistics, desire, and identity.
+            {t("philosophy.sub1")}
           </p>
           <p className="sub">
-            Most tools work on the surface. We work where it was written — in
-            the architecture of language, the slips of speech, the patterns
-            you have not yet named.
+            {t("philosophy.sub2")}
           </p>
           <div className="philo-meta">
             <div>
-              <span className="label">Lineage</span>
-              <span className="val">Freud · Lacan</span>
+              <span className="label">{t("philosophy.metaLineageLabel")}</span>
+              <span className="val">{t("philosophy.metaLineageVal")}</span>
             </div>
             <div>
-              <span className="label">Method</span>
-              <span className="val">Structural</span>
+              <span className="label">{t("philosophy.metaMethodLabel")}</span>
+              <span className="val">{t("philosophy.metaMethodVal")}</span>
             </div>
             <div>
-              <span className="label">Focus</span>
-              <span className="val">The unconscious</span>
+              <span className="label">{t("philosophy.metaFocusLabel")}</span>
+              <span className="val">{t("philosophy.metaFocusVal")}</span>
             </div>
           </div>
         </div>
@@ -103,15 +101,13 @@ export default function LandingPage() {
         <div className="container">
           <div className="section-head reveal">
             <div className="eyebrow" style={{ fontSize: "16px" }}>
-              CONFIDENTIALITY
+              {t("privacy.eyebrow")}
             </div>
             <h2>
-              Data privacy is <span className="it">the</span> priority.
+              {t("privacy.titlePre")} <span className="it">{t("privacy.titleIt")}</span> {t("privacy.titlePost")}
             </h2>
             <p className="lede">
-              Confidentiality is not a feature here; it is the precondition
-              for depth. People speak freely only where they feel safe — so
-              the room is built to keep what you say protected.
+              {t("privacy.lede")}
             </p>
           </div>
 
@@ -121,49 +117,46 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Safeguards
+                    {t("privacy.rowTag")}
                   </span>
                 </div>
                 <h3>
-                  A room built to <span className="it">hold</span> what you
-                  say.
+                  {t("privacy.rowTitlePre")} <span className="it">{t("privacy.rowTitleIt")}</span> {t("privacy.rowTitlePost")}
                 </h3>
                 <p>
-                  The work asks for your most undefended material. The room is
-                  built to receive it in confidence and keep it closed to
-                  anyone it was not meant for.
+                  {t("privacy.rowBody")}
                 </p>
               </div>
               <div className="split-visual glass reveal">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Data handling</span> <em>standing posture</em>
+                    <span>{t("privacy.figLabel")}</span> <em>{t("privacy.figSubtitle")}</em>
                   </span>
                   <span>Fig. 02</span>
                 </div>
                 <div className="vb">
                   <ul className="privacy-list">
                     <li>
-                      <span className="k">processing</span>
+                      <span className="k">{t("privacy.listProcessingKey")}</span>
                       <span className="v">
-                        Every entry is processed triple‑blind.
+                        {t("privacy.listProcessingVal")}
                       </span>
                     </li>
                     <li>
-                      <span className="k">encryption</span>
-                      <span className="v">All data is encrypted.</span>
+                      <span className="k">{t("privacy.listEncryptionKey")}</span>
+                      <span className="v">{t("privacy.listEncryptionVal")}</span>
                     </li>
                     <li>
-                      <span className="k">protection</span>
+                      <span className="k">{t("privacy.listProtectionKey")}</span>
                       <span className="v">
-                        Held under the highest‑grade protection available.
+                        {t("privacy.listProtectionVal")}
                       </span>
                     </li>
                   </ul>
                   <div className="privacy-foot">
-                    <span className="k">Purpose</span>
+                    <span className="k">{t("privacy.footKey")}</span>
                     <span className="v">
-                      a quiet, secure place to speak deeply
+                      {t("privacy.footVal")}
                     </span>
                   </div>
                 </div>
@@ -178,15 +171,13 @@ export default function LandingPage() {
         <div className="container">
           <div className="section-head reveal">
             <div className="eyebrow" style={{ fontSize: "16px" }}>
-              HOW IT WORKS
+              {t("process.eyebrow")}
             </div>
             <h2>
-              Four steps, <span className="it">one widening circle</span>.
+              {t("process.titlePre")} <span className="it">{t("process.titleIt")}</span>.
             </h2>
             <p className="lede">
-              Communication deepens in four moves. Each one widens what the
-              system can read — from a single intake to a standing
-              conversation.
+              {t("process.lede")}
             </p>
           </div>
 
@@ -194,61 +185,52 @@ export default function LandingPage() {
             <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 01</span>
-                <span className="story-sub">deep‑core profiling</span>
+                <span className="story-sub">{t("process.step1Sub")}</span>
               </div>
               <h3>
-                A <span className="it">10‑step</span> intake.
+                {t("process.step1TitlePre")} <span className="it">{t("process.step1TitleIt")}</span> {t("process.step1TitlePost")}
               </h3>
               <p>
-                Create your account and complete a 10‑step intake. This is
-                the deep‑core profiling pass; the first reading is built
-                entirely from what you set down here.
+                {t("process.step1Body")}
               </p>
             </article>
 
             <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 02</span>
-                <span className="story-sub">mediated, never mutual</span>
+                <span className="story-sub">{t("process.step2Sub")}</span>
               </div>
               <h3>
-                The people who <span className="it">shape you</span>.
+                {t("process.step2TitlePre")} <span className="it">{t("process.step2TitleIt")}</span>.
               </h3>
               <p>
-                Add the people who shape you, each by role — partner, closest
-                friend, parent, sibling, co‑parent. What they share is never
-                visible to you; what you share is never visible to them. Only
-                the system reads both.
+                {t("process.step2Body")}
               </p>
             </article>
 
             <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 03</span>
-                <span className="story-sub">the weekly reading</span>
+                <span className="story-sub">{t("process.step3Sub")}</span>
               </div>
               <h3>
-                The Sunday <span className="it">Catchup</span>.
+                {t("process.step3TitlePre")} <span className="it">{t("process.step3TitleIt")}</span>.
               </h3>
               <p>
-                On Sunday evenings, tell us what happened during your week and
-                how it felt to live it. Each Catchup refines the reading — the
-                picture sharpens as the weeks accumulate.
+                {t("process.step3Body")}
               </p>
             </article>
 
             <article className="story-step glass reveal">
               <div className="story-head">
                 <span className="story-num">STEP 04</span>
-                <span className="story-sub">fully private</span>
+                <span className="story-sub">{t("process.step4Sub")}</span>
               </div>
               <h3>
-                The <span className="it">Consulting Room</span>.
+                {t("process.step4TitlePre")} <span className="it">{t("process.step4TitleIt")}</span>.
               </h3>
               <p>
-                Speak in a fully private consultation with the analyst — a
-                voice that knows you better than anyone, trained across 23
-                layers of frontier AI models.
+                {t("process.step4Body")}
               </p>
             </article>
           </div>
@@ -270,58 +252,47 @@ export default function LandingPage() {
           </div>
           <div className="brain-copy">
             <div className="eyebrow" style={{ fontSize: "16px" }}>
-              THE WORK
+              {t("brain.eyebrow")}
             </div>
             <h2>
-              Deconstructing
+              {t("brain.titleLine1")}
               <br />
-              your subconscious
+              {t("brain.titleLine2")}
             </h2>
             <div className="brain-states">
               <div className="brain-state active" data-state="0">
                 <div className="tag">
-                  <span className="num"></span> Pattern Mapping
+                  <span className="num"></span> {t("brain.state1Tag")}
                 </div>
                 <h3>
-                  Subconscious <span className="it">loops</span> &amp;
-                  recurrence.
+                  {t("brain.state1TitlePre")} <span className="it">{t("brain.state1TitleIt")}</span> {t("brain.state1TitlePost")}
                 </h3>
                 <p>
-                  We track the recurring cycles in your choices, relationship
-                  anxieties, and emotional triggers. By identifying these
-                  loops, we show you exactly where your conscious intentions
-                  are being hijacked by unconscious programming.
+                  {t("brain.state1Body")}
                 </p>
               </div>
               <div className="brain-state" data-state="1">
                 <div className="tag">
-                  <span className="num"></span> Profiling
+                  <span className="num"></span> {t("brain.state2Tag")}
                 </div>
                 <h3>
-                  Deep‑core <span className="it">psychodynamic</span>{" "}
-                  profiling.
+                  {t("brain.state2TitlePre")} <span className="it">{t("brain.state2TitleIt")}</span>{" "}
+                  {t("brain.state2TitlePost")}
                 </h3>
                 <p>
-                  Move past superficial personality quizzes. This is a
-                  structural scan of your psychological dynamics — mapping
-                  how your past experiences shape your current identity, ego,
-                  and defense mechanisms.
+                  {t("brain.state2Body")}
                 </p>
               </div>
               <div className="brain-state" data-state="2">
                 <div className="tag">
-                  <span className="num"></span> Language
+                  <span className="num"></span> {t("brain.state3Tag")}
                 </div>
                 <h3>
-                  Linguistic <span className="it">unconscious</span>{" "}
-                  exploration.
+                  {t("brain.state3TitlePre")} <span className="it">{t("brain.state3TitleIt")}</span>{" "}
+                  {t("brain.state3TitlePost")}
                 </h3>
                 <p>
-                  Rooted in Lacanian theory, our AI analyzes your word
-                  associations, pauses, and speech patterns. We help you read
-                  between the lines of your own thoughts to access the hidden
-                  anxieties and desires you haven&apos;t yet been able to
-                  voice.
+                  {t("brain.state3Body")}
                 </p>
               </div>
             </div>
@@ -342,16 +313,15 @@ export default function LandingPage() {
         <div className="container">
           <div className="section-head reveal">
             <div className="eyebrow" style={{ fontSize: "16px" }}>
-              TRANSFORM
+              {t("transform.eyebrow")}
             </div>
             <h2>
-              Break the cycle,
+              {t("transform.titleLine1")}
               <br />
-              Then rewrite it.
+              {t("transform.titleLine2")}
             </h2>
             <p className="lede">
-              Three movements in the work. Three places where insight becomes
-              change.
+              {t("transform.lede")}
             </p>
           </div>
 
@@ -362,27 +332,24 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Relational
+                    {t("transform.row1Tag")}
                   </span>
                 </div>
                 <h3>
-                  Heal your <span className="it">relational</span> dynamics.
+                  {t("transform.row1TitlePre")} <span className="it">{t("transform.row1TitleIt")}</span> {t("transform.row1TitlePost")}
                 </h3>
                 <p>
-                  The same attractor draws you toward the same kind of
-                  person, the same fight, the same withdrawal. We surface the
-                  pattern across years, name it, and watch it lose its
-                  gravity.
+                  {t("transform.row1Body")}
                 </p>
                 <a href="/case-studies/relational-attractor" className="row-link">
-                  Read the case study <span className="ar">→</span>
+                  {t("transform.row1Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Subject 1149-A</span>{" "}
-                    <em>longitudinal pattern</em>
+                    <span>{t("transform.row1FigLabel")}</span>{" "}
+                    <em>{t("transform.row1FigSubtitle")}</em>
                   </span>
                   <span>Fig. 03</span>
                 </div>
@@ -394,7 +361,7 @@ export default function LandingPage() {
                         <span className="bar"></span>
                         <span className="bar-label">14 wks</span>
                       </span>
-                      <span className="out">withdrew</span>
+                      <span className="out">{t("transform.row1Outcome")}</span>
                     </li>
                     <li>
                       <span className="year">2021</span>
@@ -402,7 +369,7 @@ export default function LandingPage() {
                         <span className="bar"></span>
                         <span className="bar-label">13 wks</span>
                       </span>
-                      <span className="out">withdrew</span>
+                      <span className="out">{t("transform.row1Outcome")}</span>
                     </li>
                     <li>
                       <span className="year">2023</span>
@@ -410,7 +377,7 @@ export default function LandingPage() {
                         <span className="bar"></span>
                         <span className="bar-label">15 wks</span>
                       </span>
-                      <span className="out">withdrew</span>
+                      <span className="out">{t("transform.row1Outcome")}</span>
                     </li>
                     <li>
                       <span className="year">2025</span>
@@ -418,21 +385,21 @@ export default function LandingPage() {
                         <span className="bar"></span>
                         <span className="bar-label">14 wks</span>
                       </span>
-                      <span className="out">withdrew</span>
+                      <span className="out">{t("transform.row1Outcome")}</span>
                     </li>
                   </ul>
                   <div className="pattern-summary">
                     <div className="ps-row">
-                      <span className="k">recurrence</span>
+                      <span className="k">{t("transform.row1SummaryRecurrenceKey")}</span>
                       <span className="v">4 / 4</span>
                     </div>
                     <div className="ps-row">
-                      <span className="k">interval</span>
+                      <span className="k">{t("transform.row1SummaryIntervalKey")}</span>
                       <span className="v">~14 wks</span>
                     </div>
                     <div className="ps-row">
-                      <span className="k">attractor</span>
-                      <span className="v it">intimacy threshold</span>
+                      <span className="k">{t("transform.row1SummaryAttractorKey")}</span>
+                      <span className="v it">{t("transform.row1SummaryAttractorVal")}</span>
                     </div>
                   </div>
                 </div>
@@ -445,58 +412,55 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Dreamwork
+                    {t("transform.row2Tag")}
                   </span>
                 </div>
                 <h3>
-                  Decode <span className="it">dream logic</span>, align goals.
+                  {t("transform.row2TitlePre")} <span className="it">{t("transform.row2TitleIt")}</span>{t("transform.row2TitlePost")}
                 </h3>
                 <p>
-                  Your dreams are rehearsals of meaning. We follow their
-                  grammar — the displacements, the condensations, the slips —
-                  back to the waking decision they were trying to make for
-                  you.
+                  {t("transform.row2Body")}
                 </p>
                 <a href="/examples/dream-interpretation" className="row-link">
-                  See an annotated example <span className="ar">→</span>
+                  {t("transform.row2Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Session 06</span>{" "}
-                    <em>dream entry, annotated</em>
+                    <span>{t("transform.row2FigLabel")}</span>{" "}
+                    <em>{t("transform.row2FigSubtitle")}</em>
                   </span>
                   <span>Fig. 04</span>
                 </div>
                 <div className="vb">
                   <div className="dream-text">
                     <p>
-                      &ldquo;I am back in my parents&apos; house{" "}
+                      &ldquo;{t("transform.row2Dream1Pre")}{" "}
                       <span className="ann">
-                        <sup>01</sup>primal scene
+                        <sup>01</sup>{t("transform.row2Ann1")}
                       </span>
-                      , but the rooms keep opening into other rooms{" "}
+                      {t("transform.row2Dream1Mid")}{" "}
                       <span className="ann">
-                        <sup>02</sup>ego boundary
+                        <sup>02</sup>{t("transform.row2Ann2")}
                       </span>
                       .&rdquo;
                     </p>
                     <p>
-                      &ldquo;A man with my father&apos;s voice{" "}
+                      &ldquo;{t("transform.row2Dream2Pre")}{" "}
                       <span className="ann">
-                        <sup>03</sup>father‑imago
+                        <sup>03</sup>{t("transform.row2Ann3")}
                       </span>{" "}
-                      hands me a key. The key turns into water{" "}
+                      {t("transform.row2Dream2Mid")}{" "}
                       <span className="ann">
-                        <sup>04</sup>displacement
+                        <sup>04</sup>{t("transform.row2Ann4")}
                       </span>
                       .&rdquo;
                     </p>
                     <p>
-                      &ldquo;I wake before I can open the door{" "}
+                      &ldquo;{t("transform.row2Dream3Pre")}{" "}
                       <span className="ann">
-                        <sup>05</sup>desire / lack
+                        <sup>05</sup>{t("transform.row2Ann5")}
                       </span>
                       .&rdquo;
                     </p>
@@ -504,23 +468,23 @@ export default function LandingPage() {
                   <div className="dream-key">
                     <div className="dk-item">
                       <span className="dk-num">01</span>
-                      <span className="dk-label">primal scene</span>
+                      <span className="dk-label">{t("transform.row2Key1")}</span>
                     </div>
                     <div className="dk-item">
                       <span className="dk-num">02</span>
-                      <span className="dk-label">ego boundary</span>
+                      <span className="dk-label">{t("transform.row2Key2")}</span>
                     </div>
                     <div className="dk-item">
                       <span className="dk-num">03</span>
-                      <span className="dk-label">father-imago</span>
+                      <span className="dk-label">{t("transform.row2Key3")}</span>
                     </div>
                     <div className="dk-item">
                       <span className="dk-num">04</span>
-                      <span className="dk-label">displacement</span>
+                      <span className="dk-label">{t("transform.row2Key4")}</span>
                     </div>
                     <div className="dk-item">
                       <span className="dk-num">05</span>
-                      <span className="dk-label">desire / lack</span>
+                      <span className="dk-label">{t("transform.row2Key5")}</span>
                     </div>
                   </div>
                 </div>
@@ -533,54 +497,52 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Vocation
+                    {t("transform.row3Tag")}
                   </span>
                 </div>
                 <h3>
-                  Dissolve <span className="it">professional</span> blocks.
+                  {t("transform.row3TitlePre")} <span className="it">{t("transform.row3TitleIt")}</span> {t("transform.row3TitlePost")}
                 </h3>
                 <p>
-                  The ceiling you keep hitting is rarely about skill. It is
-                  a script — written early, rehearsed quietly — that we will
-                  help you read aloud and rewrite, sentence by sentence.
+                  {t("transform.row3Body")}
                 </p>
                 <a href="/papers/professional-blocks" className="row-link">
-                  The method paper <span className="ar">→</span>
+                  {t("transform.row3Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Script revision</span> <em>working draft</em>
+                    <span>{t("transform.row3FigLabel")}</span> <em>{t("transform.row3FigSubtitle")}</em>
                   </span>
                   <span>Fig. 05</span>
                 </div>
                 <div className="vb script-revision">
                   <div className="sr-line">
-                    <span className="sr-prefix">01 · I am</span>
-                    <span className="sr-old">not yet ready.</span>
-                    <span className="sr-new">already allowed.</span>
+                    <span className="sr-prefix">{t("transform.row3Line1Prefix")}</span>
+                    <span className="sr-old">{t("transform.row3Line1Old")}</span>
+                    <span className="sr-new">{t("transform.row3Line1New")}</span>
                   </div>
                   <div className="sr-line">
-                    <span className="sr-prefix">02 · to</span>
-                    <span className="sr-old">wait my turn.</span>
-                    <span className="sr-new">name what I want.</span>
+                    <span className="sr-prefix">{t("transform.row3Line2Prefix")}</span>
+                    <span className="sr-old">{t("transform.row3Line2Old")}</span>
+                    <span className="sr-new">{t("transform.row3Line2New")}</span>
                   </div>
                   <div className="sr-line">
-                    <span className="sr-prefix">03 · because</span>
+                    <span className="sr-prefix">{t("transform.row3Line3Prefix")}</span>
                     <span className="sr-old">
-                      someone might be disappointed.
+                      {t("transform.row3Line3Old")}
                     </span>
                     <span className="sr-new">
-                      disappointment is also language.
+                      {t("transform.row3Line3New")}
                     </span>
                   </div>
                   <div className="sr-meta">
                     <span>
-                      original <em>age 11</em>
+                      {t("transform.row3MetaOriginalPre")} <em>{t("transform.row3MetaOriginalIt")}</em>
                     </span>
                     <span>
-                      revised <em>session 06</em>
+                      {t("transform.row3MetaRevisedPre")} <em>{t("transform.row3MetaRevisedIt")}</em>
                     </span>
                   </div>
                 </div>
@@ -595,16 +557,15 @@ export default function LandingPage() {
         <div className="container">
           <div className="section-head reveal">
             <div className="eyebrow" style={{ fontSize: "16px" }}>
-              OUTCOMES
+              {t("outcomes.eyebrow")}
             </div>
             <h2>
-              Tangible <span className="it">insights</span>.
+              {t("outcomes.titleLine1Pre")} <span className="it">{t("outcomes.titleLine1It")}</span>.
               <br />
-              Quietly measurable.
+              {t("outcomes.titleLine2")}
             </h2>
             <p className="lede">
-              Data-driven self-awareness, delivered in the language of a
-              clinician — not a quiz.
+              {t("outcomes.lede")}
             </p>
           </div>
 
@@ -615,34 +576,30 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Acceleration
+                    {t("outcomes.row1Tag")}
                   </span>
                 </div>
                 <h3>
-                  The ultimate <span className="it">shortcut</span> for
-                  real-world therapy.
+                  {t("outcomes.row1TitlePre")} <span className="it">{t("outcomes.row1TitleIt")}</span> {t("outcomes.row1TitlePost")}
                 </h3>
                 <p>
-                  What used to take a relationship of many years can now
-                  begin with weeks of preparation. Walk into your
-                  therapist&apos;s office knowing what you&apos;re there to
-                  say.
+                  {t("outcomes.row1Body")}
                 </p>
                 <a href="/methodology" className="row-link">
-                  See the methodology <span className="ar">→</span>
+                  {t("outcomes.row1Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Fig. 01</span> <em>time to first insight</em>
+                    <span>Fig. 01</span> <em>{t("outcomes.row1FigSubtitle")}</em>
                   </span>
                   <span>n = 2,418</span>
                 </div>
                 <div className="vb insight-timeline">
                   <div className="tl-row">
                     <div className="tl-head">
-                      <span className="k">Traditional path</span>
+                      <span className="k">{t("outcomes.row1TraditionalLabel")}</span>
                       <span className="v">8–12 years</span>
                     </div>
                     <div className="tl-bar">
@@ -650,16 +607,16 @@ export default function LandingPage() {
                       <div className="endcap"></div>
                     </div>
                     <div className="tl-axis">
-                      <span>yr 1</span>
-                      <span>yr 3</span>
-                      <span>yr 6</span>
-                      <span>yr 9</span>
-                      <span>yr 12</span>
+                      <span>{t("outcomes.row1AxisYr1")}</span>
+                      <span>{t("outcomes.row1AxisYr3")}</span>
+                      <span>{t("outcomes.row1AxisYr6")}</span>
+                      <span>{t("outcomes.row1AxisYr9")}</span>
+                      <span>{t("outcomes.row1AxisYr12")}</span>
                     </div>
                   </div>
                   <div className="tl-row">
                     <div className="tl-head">
-                      <span className="k">With TwentyThird</span>
+                      <span className="k">{t("outcomes.row1TwentyThirdLabelPre")} TwentyThird</span>
                       <span className="v">6–12 weeks</span>
                     </div>
                     <div className="tl-bar">
@@ -670,10 +627,10 @@ export default function LandingPage() {
                       ></div>
                     </div>
                     <div className="tl-axis">
-                      <span>wk 1</span>
-                      <span>wk 4</span>
-                      <span>wk 8</span>
-                      <span>wk 12</span>
+                      <span>{t("outcomes.row1AxisWk1")}</span>
+                      <span>{t("outcomes.row1AxisWk4")}</span>
+                      <span>{t("outcomes.row1AxisWk8")}</span>
+                      <span>{t("outcomes.row1AxisWk12")}</span>
                     </div>
                   </div>
                   <div className="tl-summary">
@@ -681,9 +638,9 @@ export default function LandingPage() {
                       37<span style={{ fontSize: "0.55em" }}>×</span>
                     </span>
                     <span className="big-label">
-                      faster
+                      {t("outcomes.row1SummaryFaster")}
                       <br />
-                      time to first insight
+                      {t("outcomes.row1SummaryDesc")}
                     </span>
                   </div>
                 </div>
@@ -696,65 +653,63 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Report
+                    {t("outcomes.row2Tag")}
                   </span>
                 </div>
                 <h3>
-                  Therapist-ready <span className="it">psychological</span>{" "}
-                  map.
+                  {t("outcomes.row2TitlePre")} <span className="it">{t("outcomes.row2TitleIt")}</span>{" "}
+                  {t("outcomes.row2TitlePost")}
                 </h3>
                 <p>
-                  A structural diagram of you — exportable, shareable, deeply
-                  intelligible to a trained clinician. Not a personality
-                  quiz; a working brief.
+                  {t("outcomes.row2Body")}
                 </p>
                 <a href="/reports/sample" className="row-link">
-                  View a sample report <span className="ar">→</span>
+                  {t("outcomes.row2Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Subject 1149-A</span> <em>structural profile</em>
+                    <span>{t("outcomes.row2FigLabel")}</span> <em>{t("outcomes.row2FigSubtitle")}</em>
                   </span>
                   <span>04 / 26</span>
                 </div>
                 <div className="vb report-mock">
                   <div className="rep-head">
-                    <span>case 1149-A</span>
-                    <span>prepared 04 · 26</span>
+                    <span>{t("outcomes.row2RepCase")}</span>
+                    <span>{t("outcomes.row2RepPrepared")}</span>
                   </div>
                   <div className="rep-section">
                     <div className="rep-row">
-                      <span className="k">Ego structure</span>
+                      <span className="k">{t("outcomes.row2MetricEgo")}</span>
                       <span className="meter">
                         <i style={{ ["--w" as string]: "72%" } as React.CSSProperties}></i>
                       </span>
                       <span className="pct">.72</span>
                     </div>
                     <div className="rep-row">
-                      <span className="k">Object relations</span>
+                      <span className="k">{t("outcomes.row2MetricObject")}</span>
                       <span className="meter">
                         <i style={{ ["--w" as string]: "48%" } as React.CSSProperties}></i>
                       </span>
                       <span className="pct">.48</span>
                     </div>
                     <div className="rep-row">
-                      <span className="k">Defense complexity</span>
+                      <span className="k">{t("outcomes.row2MetricDefense")}</span>
                       <span className="meter">
                         <i style={{ ["--w" as string]: "81%" } as React.CSSProperties}></i>
                       </span>
                       <span className="pct">.81</span>
                     </div>
                     <div className="rep-row">
-                      <span className="k">Drive organisation</span>
+                      <span className="k">{t("outcomes.row2MetricDrive")}</span>
                       <span className="meter">
                         <i style={{ ["--w" as string]: "54%" } as React.CSSProperties}></i>
                       </span>
                       <span className="pct">.54</span>
                     </div>
                     <div className="rep-row">
-                      <span className="k">Symbolic register</span>
+                      <span className="k">{t("outcomes.row2MetricSymbolic")}</span>
                       <span className="meter">
                         <i style={{ ["--w" as string]: "67%" } as React.CSSProperties}></i>
                       </span>
@@ -762,9 +717,9 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div className="rep-foot">
-                    <div className="rf-label">Dominant structure</div>
+                    <div className="rf-label">{t("outcomes.row2FootLabel")}</div>
                     <div className="rf-val">
-                      obsessional · with hysterical traces
+                      {t("outcomes.row2FootVal")}
                     </div>
                   </div>
                 </div>
@@ -777,66 +732,62 @@ export default function LandingPage() {
                 <div className="row-meta">
                   <span className="num"></span>
                   <span className="tag" style={{ fontSize: "16px" }}>
-                    Integration
+                    {t("outcomes.row3Tag")}
                   </span>
                 </div>
                 <h3>
-                  Personalised <span className="it">integration</span> &amp;
-                  shadow work plans.
+                  {t("outcomes.row3TitlePre")} <span className="it">{t("outcomes.row3TitleIt")}</span> {t("outcomes.row3TitlePost")}
                 </h3>
                 <p>
-                  Daily prompts and rituals that take the insight off the
-                  page and into the body. Small, deliberate. Built around
-                  your structure, not a generic curriculum.
+                  {t("outcomes.row3Body")}
                 </p>
                 <a href="/plan" className="row-link">
-                  How the plan adapts <span className="ar">→</span>
+                  {t("outcomes.row3Link")} <span className="ar">→</span>
                 </a>
               </div>
               <div className="split-visual glass">
                 <div className="vh">
                   <span className="lhs">
-                    <span>Day 23</span> <em>daily prompt</em>
+                    <span>{t("outcomes.row3FigLabel")}</span> <em>{t("outcomes.row3FigSubtitle")}</em>
                   </span>
-                  <span>plan 04</span>
+                  <span>{t("outcomes.row3FigPlan")}</span>
                 </div>
                 <div className="vb prompt-card">
                   <div className="pc-head">
-                    <span className="pc-day">Wednesday</span>
+                    <span className="pc-day">{t("outcomes.row3Day")}</span>
                     <span className="pc-date">07 · 24 · 26</span>
                   </div>
                   <div className="pc-prompt">
                     <span className="pc-eyebrow">
-                      today&apos;s prompt · shadow work
+                      {t("outcomes.row3PromptEyebrow")}
                     </span>
                     <p className="pc-q">
-                      &ldquo;Where today did you choose <em>not</em> to be
-                      seen? And what were you keeping safe by hiding?&rdquo;
+                      &ldquo;{t("outcomes.row3PromptPre")} <em>{t("outcomes.row3PromptIt")}</em> {t("outcomes.row3PromptPost")}&rdquo;
                     </p>
                   </div>
                   <div className="pc-stream">
                     <div className="pc-stream-row">
                       <span className="dot done"></span>
                       <span className="time">06 : 30</span>
-                      <span className="label">breath-work</span>
-                      <span className="dur">6 min</span>
+                      <span className="label">{t("outcomes.row3Stream1Label")}</span>
+                      <span className="dur">{t("outcomes.row3Stream1Dur")}</span>
                     </div>
                     <div className="pc-stream-row">
                       <span className="dot done"></span>
                       <span className="time">12 : 45</span>
-                      <span className="label">journal</span>
-                      <span className="dur">12 min</span>
+                      <span className="label">{t("outcomes.row3Stream2Label")}</span>
+                      <span className="dur">{t("outcomes.row3Stream2Dur")}</span>
                     </div>
                     <div className="pc-stream-row">
                       <span className="dot"></span>
                       <span className="time">20 : 00</span>
-                      <span className="label">shadow prompt</span>
-                      <span className="dur">8 min</span>
+                      <span className="label">{t("outcomes.row3Stream3Label")}</span>
+                      <span className="dur">{t("outcomes.row3Stream3Dur")}</span>
                     </div>
                   </div>
                   <div className="pc-streak">
-                    <span className="streak-label">streak</span>
-                    <span className="streak-val">23 days</span>
+                    <span className="streak-label">{t("outcomes.row3StreakLabel")}</span>
+                    <span className="streak-val">{t("outcomes.row3StreakVal", { n: 23 })}</span>
                     <span className="streak-mini">
                       {Array.from({ length: 28 }).map((_, i) => (
                         <i key={i}></i>
@@ -861,21 +812,21 @@ export default function LandingPage() {
             className="eyebrow"
             style={{ marginBottom: "32px", fontSize: "16px" }}
           >
-            BEGIN
+            {t("final.eyebrow")}
           </div>
           <h2>
-            Your unconscious is speaking.
-            <span className="it">It&apos;s time to listen.</span>
+            {t("final.titlePre")}
+            <span className="it">{t("final.titleIt")}</span>
           </h2>
           <div className="cta-row">
             <a href="/auth/sign-up" className="cta">
-              Start your discovery <span className="arrow">→</span>
+              {t("final.ctaPrimary")} <span className="arrow">→</span>
             </a>
             <a href="/science" className="cta-ghost">
               <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
-                or
+                {t("final.ctaGhostOr")}
               </span>{" "}
-              read the science
+              {t("final.ctaGhostText")}
             </a>
           </div>
         </div>

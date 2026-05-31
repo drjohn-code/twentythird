@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -44,6 +45,7 @@ export default async function CaseFilePage({
   const params = (await searchParams) ?? {};
   const filter: Filter = isFilter(params.filter) ? params.filter : "all";
 
+  const t = await getTranslations("caseFile");
   const supabase = await createClient();
   const {
     data: { user },
@@ -100,17 +102,16 @@ export default async function CaseFilePage({
     <>
       <Reveal as="section" className="room-section">
         <div className="room-section-head">
-          <Eyebrow>CASE FILE</Eyebrow>
+          <Eyebrow>{t("eyebrow")}</Eyebrow>
           <h2 className="case-file-h">
-            A record, kept <span className="it">quietly.</span>
+            {t("headlineLead")} <span className="it">{t("headlineItalic")}</span>
           </h2>
           <p className="lede">
-            Every catchup, session, and report — kept in date order.
-            The gaps are part of the record.
+            {t("lede")}
           </p>
         </div>
 
-        <nav className="case-file-filters" aria-label="Filter">
+        <nav className="case-file-filters" aria-label={t("filterAria")}>
           {FILTERS.map((f) => (
             <Link
               key={f}
@@ -120,13 +121,13 @@ export default async function CaseFilePage({
               }
               aria-current={f === filter ? "page" : undefined}
             >
-              {f}
+              {t(`filter.${f}`)}
             </Link>
           ))}
         </nav>
 
         {isEmpty ? (
-          <CaseFileEmpty {...emptyStateFor(filter)} />
+          <CaseFileEmpty {...emptyStateFor(filter, t)} />
         ) : (
           <CaseFileList entries={entries} filter={filter} />
         )}
@@ -134,12 +135,12 @@ export default async function CaseFilePage({
 
       {filter === "sessions" ? (
         isSubscribed ? (
-          <SettingsBlock title="Subscription" id="subscription">
+          <SettingsBlock title={t("subscriptionTitle")} id="subscription">
             <SubscriptionCard subscription={subscription} />
           </SettingsBlock>
         ) : (
           <div className="mx-auto max-w-[480px] text-center">
-            <SettingsBlock title="Subscription" id="subscription">
+            <SettingsBlock title={t("subscriptionTitle")} id="subscription">
               <SubscriptionCard subscription={subscription} />
             </SettingsBlock>
           </div>
@@ -165,24 +166,23 @@ function isFilter(v: string | undefined): v is Filter {
 // be willed into existence by the user.
 function emptyStateFor(
   filter: Filter,
+  t: (key: string) => string,
 ): { text: string; cta?: { label: string; href: string } } {
   switch (filter) {
     case "all":
     case "catchups":
       return {
-        text: "the case file is still empty — the first catchup will open it.",
-        cta: { label: "Go to Catchup", href: "/catchup" },
+        text: t("emptyCatchups"),
+        cta: { label: t("emptyCatchupsCta"), href: "/catchup" },
       };
     case "sessions":
       return {
-        text:
-          "the case file is still empty — the first consultation session will open it.",
-        cta: { label: "Go to Consulting", href: "/consulting" },
+        text: t("emptySessions"),
+        cta: { label: t("emptySessionsCta"), href: "/consulting" },
       };
     case "reports":
       return {
-        text:
-          "the case file is still empty — the first generated report will open it.",
+        text: t("emptyReports"),
       };
   }
 }

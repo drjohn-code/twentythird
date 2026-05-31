@@ -12,6 +12,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 // Which senders gate on which preference is documented in ROOM.md
 // under the Email System section. As of this revision:
 //   invite                     → no gate (recipient may have no account)
+//   connection-accepted        → connection_requests (inviter opts in/out)
 //   connection-ended           → no gate (transactional)
 //   room-ready                 → no gate (transactional, one-time per user)
 //   intake-submitted           → no gate (transactional, one-time per user)
@@ -21,7 +22,8 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 
 export type EmailPreferenceKey =
   | "weekly_catchup"
-  | "consulting_session_reminder";
+  | "consulting_session_reminder"
+  | "connection_requests";
 
 export async function emailPreferenceEnabled(
   admin: SupabaseClient,

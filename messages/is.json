@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "SÁLARFRÆÐILEG GREIND",
+        "titleLine1": "Háþróuð",
+        "titleLine2Pre": "sálfræðileg",
+        "titleLine2It": "gervigreind",
+        "titleLine3Pre": "fyrir",
+        "titleLine3It": "sjálfsuppgötvun",
+        "ctaPrimary": "Hefja uppgötvun þína",
+        "ctaGhostOr": "eða",
+        "ctaGhostText": "lesa um vísindin",
+        "scroll": "fletta"
+      },
+      "philosophy": {
+        "eyebrow": "GRUNNHUGMYNDAFRÆÐI",
+        "titlePre": "5 mínútna skyndilausnir",
+        "titleIt": "breyta engum",
+        "sub1": "Við gerum rótargreiningu. Með því að sameina grundvallarþekkingu Sigmunds Freuds og byltingarkenndar uppgötvanir Jacques Lacans í málvísindum, löngun og sjálfsmynd.",
+        "sub2": "Flest verkfæri vinna á yfirborðinu. Við vinnum þar sem það var skrifað — í arkitektúr tungumálsins, í misfellum ræðunnar, í mynstrunum sem þú hefur ekki enn nefnt.",
+        "metaLineageLabel": "Ættbálkur",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Aðferð",
+        "metaMethodVal": "Byggingarleg",
+        "metaFocusLabel": "Áhersla",
+        "metaFocusVal": "Hið ómeðvitaða"
+      },
+      "privacy": {
+        "eyebrow": "TRÚNAÐUR",
+        "titlePre": "Gagnavernd er",
+        "titleIt": "forgangurinn",
+        "titlePost": ".",
+        "lede": "Trúnaður er ekki eiginleiki hér; hann er forsenda dýptar. Fólk talar frjálslega aðeins þar sem því líður örugglega — svo herbergið er byggt til að halda því sem þú segir vernduðu.",
+        "rowTag": "Verndarráðstafanir",
+        "rowTitlePre": "Herbergi byggt til að",
+        "rowTitleIt": "halda",
+        "rowTitlePost": "því sem þú segir.",
+        "rowBody": "Verkið kallar á þitt óvarðasta efni. Herbergið er byggt til að taka á móti því í trúnaði og halda því lokuðu fyrir öllum sem það var ekki ætlað.",
+        "figLabel": "Gagnahöndlun",
+        "figSubtitle": "stöðug afstaða",
+        "listProcessingKey": "vinnsla",
+        "listProcessingVal": "Öllum færslum er þrefaldur blindaður.",
+        "listEncryptionKey": "dulritun",
+        "listEncryptionVal": "Öll gögn eru dulrituð.",
+        "listProtectionKey": "vernd",
+        "listProtectionVal": "Haldið undir hæstu mögulegu vernd.",
+        "footKey": "Tilgangur",
+        "footVal": "rólegur, öruggur staður til að tala djúpt"
+      },
+      "process": {
+        "eyebrow": "HVERNIG ÞAÐ VIRKAR",
+        "titlePre": "Fjögur skref,",
+        "titleIt": "einn víkkandi hringur",
+        "lede": "Samskipti dýpka í fjórum skrefum. Hvert skref víkkar það sem kerfið getur lesið — frá einni inntöku til stöðugs samtals.",
+        "step1Sub": "djúpkjarna prófílgreining",
+        "step1TitlePre": "Tíu",
+        "step1TitleIt": "skrefa",
+        "step1TitlePost": "inntaka.",
+        "step1Body": "Búðu til reikning og ljúktu 10 skrefa inntöku. Þetta er djúpkjarna prófílgreiningin; fyrsta lesturinn er byggður alfarið á því sem þú setur fram hér.",
+        "step2Sub": "miðlað, aldrei gagnkvæmt",
+        "step2TitlePre": "Fólkið sem",
+        "step2TitleIt": "mótar þig",
+        "step2Body": "Bættu við fólkinu sem mótar þig, hvert eftir hlutverki — maka, nánasta vini, foreldri, systkini, meðforeldri. Það sem þau deila er aldrei sýnilegt þér; það sem þú deilir er aldrei sýnilegt þeim. Aðeins kerfið les bæði.",
+        "step3Sub": "vikulegur lestur",
+        "step3TitlePre": "Sunnudags",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Á sunnudagskvöldum, segðu okkur hvað gerðist í vikunni þinni og hvernig það var að upplifa hana. Hvert Catchup betrumbætir lesturinn — myndin skerpist eftir því sem vikurnar safnast upp.",
+        "step4Sub": "algjörlega persónulegt",
+        "step4TitlePre": "Ráðgjafar",
+        "step4TitleIt": "herbergið",
+        "step4Body": "Talaðu í algjörlega persónulegri ráðgjöf við the analyst — rödd sem þekkir þig betur en nokkur annar, þjálfuð yfir 23 lög af nýjustu gervigreindarlíkönum."
+      },
+      "brain": {
+        "eyebrow": "VERKIÐ",
+        "titleLine1": "Að greina",
+        "titleLine2": "undirmeðvitund þína",
+        "state1Tag": "Kortlagning mynstra",
+        "state1TitlePre": "Undirmeðvituð",
+        "state1TitleIt": "lykkjur",
+        "state1TitlePost": "og endurtekning.",
+        "state1Body": "Við rekjum endurteknar hringrásir í vali þínu, sambandsáhyggjum og tilfinningalegum kveikjum. Með því að bera kennsl á þessar lykkjur sýnum við þér nákvæmlega hvar meðvitaðar áætlanir þínar eru teknar yfir af ómeðvitaðri forritun.",
+        "state2Tag": "Prófíll",
+        "state2TitlePre": "Djúp-kjarna",
+        "state2TitleIt": "sálfræðilegt",
+        "state2TitlePost": "prófílgerð.",
+        "state2Body": "Farðu framhjá yfirborðskenndum persónuleikaprófum. Þetta er skipulagsrannsókn á sálfræðilegri gangverki þinni — kortlagning á því hvernig fyrri reynsla þín mótar núverandi sjálfsmynd þína, egó og varnarkerfi.",
+        "state3Tag": "Tungumál",
+        "state3TitlePre": "Málfræðileg",
+        "state3TitleIt": "undirmeðvitund",
+        "state3TitlePost": "könnun.",
+        "state3Body": "Með rætur í Lacanískri kenningu greinir gervigreind okkar orðasambönd þín, hlé og talmynstur. Við hjálpum þér að lesa á milli lína eigin hugsunar til að fá aðgang að falnum áhyggjum og löngunum sem þú hefur ekki enn getað tjáð."
+      },
+      "transform": {
+        "eyebrow": "UMBREYTING",
+        "titleLine1": "Rjúfðu hringrásina,",
+        "titleLine2": "Skrifaðu hana síðan upp á nýtt.",
+        "lede": "Þrjár hreyfingar í verkinu. Þrír staðir þar sem innsýn verður að breytingu.",
+        "row1Tag": "TENGSL",
+        "row1TitlePre": "Græddu þína",
+        "row1TitleIt": "tengsladynamík",
+        "row1TitlePost": ".",
+        "row1Body": "Sama aðdráttaraflið dregur þig að sömu tegund fólks, sama rifrildinu, sömu undanhaldinu. Við greinum mynstrið í gegnum árin, nefnum það og horfum á það missa þyngdarafl sitt.",
+        "row1Link": "Lestu dæmisöguna",
+        "row1FigLabel": "Viðfangsefni 1149-A",
+        "row1FigSubtitle": "langtímamynstur",
+        "row1Outcome": "dró sig til baka",
+        "row1SummaryRecurrenceKey": "endurtekning",
+        "row1SummaryIntervalKey": "bil",
+        "row1SummaryAttractorKey": "aðdráttarafl",
+        "row1SummaryAttractorVal": "nálægðarþröskuldur",
+        "row2Tag": "DRAUMATÚLKUN",
+        "row2TitlePre": "Túlkaðu",
+        "row2TitleIt": "draumalógík",
+        "row2TitlePost": ", samræmdu markmið.",
+        "row2Body": "Draumar þínir eru æfingar í merkingu. Við fylgjum málfræði þeirra — tilfærslunum, þéttingunum, skyssunum — aftur að þeirri vökuákvörðun sem þeir voru að reyna að taka fyrir þig.",
+        "row2Link": "Sjáðu skýrt dæmi",
+        "row2FigLabel": "Fundur 06",
+        "row2FigSubtitle": "draumafærsla, skýrð",
+        "row2Dream1Pre": "Ég er aftur í húsi foreldra minna",
+        "row2Ann1": "frummynd",
+        "row2Dream1Mid": ", en herbergin opnast stöðugt inn í önnur herbergi",
+        "row2Ann2": "sjálfsmyndarmörk",
+        "row2Dream2Pre": "Maður með rödd föður míns",
+        "row2Ann3": "föðurímynd",
+        "row2Dream2Mid": "réttir mér lykil. Lykillinn breytist í vatn",
+        "row2Ann4": "tilfærsla",
+        "row2Dream3Pre": "Ég vakna áður en ég get opnað dyrnar",
+        "row2Ann5": "þrá / skortur",
+        "row2Key1": "frummynd",
+        "row2Key2": "sjálfsmyndarmörk",
+        "row2Key3": "föðurímynd",
+        "row2Key4": "tilfærsla",
+        "row2Key5": "þrá / skortur",
+        "row3Tag": "STARF",
+        "row3TitlePre": "Leystu upp",
+        "row3TitleIt": "faglega",
+        "row3TitlePost": "hindranir.",
+        "row3Body": "Þakið sem þú lendir í er sjaldan vegna færni. Það er handrit — skrifað snemma, æft í kyrrþey — sem við munum hjálpa þér að lesa upphátt og endurskrifa, setningu fyrir setningu.",
+        "row3Link": "Aðferðarritið",
+        "row3FigLabel": "Endurskoðun handrits",
+        "row3FigSubtitle": "vinnudrög",
+        "row3Line1Prefix": "01 · Ég er",
+        "row3Line1Old": "ekki enn tilbúinn.",
+        "row3Line1New": "þegar leyfilegt.",
+        "row3Line2Prefix": "02 · að",
+        "row3Line2Old": "bíða eftir minni röð.",
+        "row3Line2New": "nefna hvað ég vil.",
+        "row3Line3Prefix": "03 · vegna þess að",
+        "row3Line3Old": "einhver gæti orðið fyrir vonbrigðum.",
+        "row3Line3New": "vonbrigði eru líka tungumál.",
+        "row3MetaOriginalPre": "upprunalegt",
+        "row3MetaOriginalIt": "11 ára",
+        "row3MetaRevisedPre": "endurskoðað",
+        "row3MetaRevisedIt": "fundur 06"
+      },
+      "outcomes": {
+        "eyebrow": "NIÐURSTÖÐUR",
+        "titleLine1Pre": "Áþreifanleg",
+        "titleLine1It": "innsýn",
+        "titleLine2": "Hljóðlát mælanleg.",
+        "lede": "Gagnadrifin sjálfsvitund, afhent á tungumáli klíníkers — ekki spurningalista.",
+        "row1Tag": "HRÖÐUN",
+        "row1TitlePre": "Fullkomnasta",
+        "row1TitleIt": "flýtileiðin",
+        "row1TitlePost": "fyrir raunverulega meðferð.",
+        "row1Body": "Það sem áður tók margra ára samband getur nú hafist með vikna undirbúningi. Gakktu inn á skrifstofu meðferðaraðila þíns vitandi hvað þú ætlar að segja.",
+        "row1Link": "Sjá aðferðafræðina",
+        "row1FigSubtitle": "tími til fyrstu innsýnar",
+        "row1TraditionalLabel": "Hefðbundin leið",
+        "row1AxisYr1": "ár 1",
+        "row1AxisYr3": "ár 3",
+        "row1AxisYr6": "ár 6",
+        "row1AxisYr9": "ár 9",
+        "row1AxisYr12": "ár 12",
+        "row1TwentyThirdLabelPre": "Með",
+        "row1AxisWk1": "vika 1",
+        "row1AxisWk4": "vika 4",
+        "row1AxisWk8": "vika 8",
+        "row1AxisWk12": "vika 12",
+        "row1SummaryFaster": "hraðar",
+        "row1SummaryDesc": "tími til fyrstu innsýnar",
+        "row2Tag": "SKÝRSLA",
+        "row2TitlePre": "Sálfræðilegt",
+        "row2TitleIt": "kort",
+        "row2TitlePost": "tilbúið fyrir meðferðaraðila.",
+        "row2Body": "Uppbyggingarmynd af þér — útflutt, deilanleg, djúpt skiljanleg fyrir þjálfaðan klíníker. Ekki persónuleikapróf; vinnuskýrsla.",
+        "row2Link": "Skoða dæmi um skýrslu",
+        "row2FigLabel": "Viðfangsefni 1149-A",
+        "row2FigSubtitle": "byggingarprófíll",
+        "row2RepCase": "mál 1149-A",
+        "row2RepPrepared": "undirbúið 04 · 26",
+        "row2MetricEgo": "Egó uppbygging",
+        "row2MetricObject": "Hlutatengsl",
+        "row2MetricDefense": "Flækjustig varnarhátta",
+        "row2MetricDrive": "Skipulag hvata",
+        "row2MetricSymbolic": "Táknrænt skrá",
+        "row2FootLabel": "Ráðandi uppbygging",
+        "row2FootVal": "þráhyggjufullur · með hysterískum ummerkjum",
+        "row3Tag": "SAMÞÆTTING",
+        "row3TitlePre": "Sérsniðin",
+        "row3TitleIt": "samþætting",
+        "row3TitlePost": "& áætlun um skuggavinnu.",
+        "row3Body": "Daglegar ábendingar og helgisiðir sem færa innsýnina af blaðinu og inn í líkamann. Smátt, markvisst. Byggt á uppbyggingu þinni, ekki almennri námskrá.",
+        "row3Link": "Hvernig áætlunin aðlagast",
+        "row3FigLabel": "Dagur 23",
+        "row3FigSubtitle": "dagleg ábending",
+        "row3FigPlan": "áætlun 04",
+        "row3Day": "Miðvikudagur",
+        "row3PromptEyebrow": "ábending dagsins · skuggavinna",
+        "row3PromptPre": "Hvar í dag kaustu",
+        "row3PromptIt": "að vera ekki",
+        "row3PromptPost": "séð/séður? Og hvað varstu að vernda með því að fela þig?",
+        "row3Stream1Label": "öndunaræfingar",
+        "row3Stream1Dur": "6 mín",
+        "row3Stream2Label": "dagbók",
+        "row3Stream2Dur": "12 mín",
+        "row3Stream3Label": "skuggaábending",
+        "row3Stream3Dur": "8 mín",
+        "row3StreakLabel": "samfella",
+        "row3StreakVal": "{n, plural, one {# dagur} other {# dagar}}"
+      },
+      "final": {
+        "eyebrow": "UPPHAF",
+        "titlePre": "Undirmeðvitund þín talar.",
+        "titleIt": "Það er kominn tími til að hlusta.",
+        "ctaPrimary": "Hefja uppgötvun þína",
+        "ctaGhostOr": "eða",
+        "ctaGhostText": "lesa vísindin"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Persónuverndarstefna — TwentyThird",
+        "metaDescription": "Hvernig TwentyThird meðhöndlar persónuupplýsingar. Ekkert fer út fyrir ESB. Ekkert er selt.",
+        "eyebrow": "PERSÓNUVERND",
+        "headingLead": "Persónuupplýsingar,",
+        "headingItalic": "meðhöndlað af varfærni.",
+        "lede": "TwentyThird vinnur úr því sem þú deilir til að veita nákvæma sálfræðilega innsýn. Ekkert fer út fyrir ESB. Ekkert er selt.",
+        "controls": {
+          "headingLead": "Hver",
+          "headingItalic": "stýrir",
+          "headingTail": "gögnum þínum",
+          "p1": "WelloWork AB, skráð í Svíþjóð (org. nr. 559472‑9997), starfandi frá Uppsölum, er ábyrgðaraðili persónuupplýsinga sem safnað er á þessari vefsíðu og með beinum fyrirspurnum.",
+          "p2": "Fyrir gögn sem unnin eru innan TwentyThird vettvangsins fyrir hönd stofnunar – heilsugæslustöðvar, rannsóknarstofnunar, vinnuveitanda – starfar WelloWork AB sem vinnsluaðili og viðskiptavinastofnunin er ábyrgðaraðili. Það samband er stýrt af sérstöku gagnafrágangssamkomulagi."
+        },
+        "figure": {
+          "label": "hver stýrir gögnum þínum",
+          "controller": "Ábyrgðaraðili",
+          "directRelationship": "beint samband",
+          "websiteVisitor": "Vefsíðugestur",
+          "you": "Þú",
+          "customerOrg": "Viðskiptavinur",
+          "viaDpa": "með gagnaverndarsamningi",
+          "processor": "Vinnsluaðili",
+          "platformUser": "Vettvangsnothafi"
+        },
+        "collect": {
+          "headingLead": "Hvað við",
+          "headingItalic": "söfnum",
+          "contactStrong": "Tengiliða- og reikningsgögn.",
+          "contactBody": "Nafn, netfang og allar upplýsingar sem þú gefur upp þegar þú skráir þig eða skrifar okkur. Lagagrundvöllur: framkvæmd samnings (6. gr. (1)(b) GDPR).",
+          "sessionStrong": "Lotu- og vettvangsgögn.",
+          "sessionBody": "Dagbókarfærslur, svör, draumainnihald og málfræðileg mynstur sem þú deilir innan TwentyThird. Þetta er undirlag greiningarinnar. Lagagrundvöllur: skýrt samþykki (9. gr. (2)(a) GDPR), gefið við skráningu og afturkallanlegt hvenær sem er. Við meðhöndlum þessi gögn sem sérstök heilsutengd gögn og beitum samsvarandi öryggisráðstöfunum óháð formlegri flokkun.",
+          "technicalStrong": "Tæknileg gögn.",
+          "technicalBody": "IP-tala, tegund vafra, auðkenni tækis og tímastimpill notkunar — safnað sjálfkrafa þegar þú opnar vettvanginn. Lagagrundvöllur: lögmætir hagsmunir (6. gr. (1)(f) GDPR) til að viðhalda öryggi og greina villur.",
+          "p4": "Við söfnum ekki gögnum um kynþátt, þjóðerni, pólitískar skoðanir eða trúarbrögð. Ef efni sem þú deilir af tilviljun leiðir í ljós slíkar upplýsingar, er það ekki unnið sem sérstakur flokkur."
+        },
+        "use": {
+          "headingLead": "Hvernig við",
+          "headingItalic": "notum",
+          "headingTail": "það",
+          "p1": "Við notum gögnin þín til að veita og bæta TwentyThird þjónustuna, senda viðskiptaskilaboð sem þú hefur beðið um, greina og koma í veg fyrir svik eða misnotkun og uppfylla lagalegar skyldur.",
+          "p2": "Við notum ekki gögnin þín til auglýsingasniðgervingar. Við seljum þau ekki, leyfum þau ekki eða deilum þeim með gagnaverðbréfamiðlurum. Við notum þau ekki til að þjálfa almenn gervigreindarlíkön sem rekin eru af þriðju aðilum."
+        },
+        "sees": {
+          "headingLead": "Hver",
+          "headingItalic": "sér",
+          "headingTail": "það",
+          "withinStrong": "Innan WelloWork AB:",
+          "withinBody": "Læknar og verkfræðingar sem þurfa aðgang til að viðhalda þjónustunni. Aðgangur er takmarkaður við hlutverk og skráður.",
+          "infraStrong": "Innviðafyrirtæki:",
+          "infraBody": "Supabase (gagnagrunnur og auðkenning, ESB-svæði), Vercel (hýsing, ESB-jaðar) og Postmark (viðskiptatölvupóstur). Hvert þeirra er bundið af gagnaverkunarsamningi og vinnur gögn aðeins samkvæmt skjalfestum fyrirmælum okkar.",
+          "legalStrong": "Lagaleg skylda:",
+          "legalBody": "Við gefum upp gögn til lögbærra yfirvalda aðeins þegar lög krefjast þess, og aðeins að því marki sem krafist er.",
+          "p4": "Engin gögn eru flutt utan ESB/EES. Ef það breytist munum við uppfæra þessa stefnu og afla nýs samþykkis þar sem þess er krafist."
+        },
+        "retention": {
+          "headingItalic": "Varðveisla",
+          "p1": "Reiknings- og vettvangsgögn eru varðveitt svo lengi sem reikningurinn þinn er virkur, auk 30 daga eftir eyðingu til að leyfa endurheimt. Tæknileg annálsgögn eru varðveitt í 90 daga. Fyrirspurnir eru varðveittar í 24 mánuði.",
+          "p2": "Eftir þessi tímabil eru gögn varanlega eytt eða óafturkræft nafnlaus."
+        },
+        "rights": {
+          "headingLead": "Þín",
+          "headingItalic": "réttindi",
+          "p1": "Þú hefur rétt til að fá aðgang að gögnum sem við höfum um þig, leiðrétta ónákvæmni, óska eftir eyðingu, takmarka eða mótmæla vinnslu og fá tölvulesanlegt afrit til flutnings. Þar sem vinnsla byggir á samþykki getur þú afturkallað það hvenær sem er án þess að hafa áhrif á lögmæti vinnslunnar fyrir afturköllun.",
+          "exerciseLead": "Til að nýta réttindi þín:",
+          "exerciseTail": ". Við svörum innan 30 daga. Ef þú ert óánægð/ur með svar okkar getur þú lagt fram kvörtun hjá Integritetsskyddsmyndigheten (IMY), persónuverndarstofnun Svíþjóðar."
+        },
+        "children": {
+          "headingItalic": "Börn",
+          "p1": "TwentyThird er ekki ætlað einstaklingum yngri en 18 ára. Við söfnum ekki meðvitað gögnum frá ólögráða einstaklingum. Ef við verðum vör við að ólögráða einstaklingur hafi sent inn gögn, eyðum við þeim tafarlaust."
+        },
+        "changes": {
+          "headingItalic": "Breytingar",
+          "p1": "Við uppfærum þessa stefnu þegar starfshættir okkar breytast. Verulegar breytingar eru tilkynntar með tölvupósti að minnsta kosti 14 dögum áður en þær taka gildi. Útgáfudagsetning birtist neðst á þessari síðu.",
+          "effectivePrefix": "Gildir frá:",
+          "effectiveSuffix": "· Gildandi lög: Sænsk lög og GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Þjónustuskilmálar — TwentyThird",
+        "metaDescription": "Samningurinn sem stýrir notkun þinni á TwentyThird. Skrifaður til að vera lesinn, ekki forðast.",
+        "eyebrow": "SKILMÁLAR",
+        "headingLead": "Samningurinn,",
+        "headingItalic": "skýrt fram settur.",
+        "lede": "Þessir skilmálar stýra notkun þinni á TwentyThird. Þeir eru skrifaðir til að vera lesnir, ekki forðast.",
+        "service": {
+          "headingLead": "Þjónustan",
+          "headingItalic": "sjálf",
+          "p1": "TwentyThird er sálfræðilegur gervigreindarvettvangur rekinn af WelloWork AB. Hann veitir greiningarupplýsingar sem dregnar eru af því sem þú deilir. Hann er ekki lækningatæki. Hann telst ekki til sálfræðimeðferðar, geðgreiningar eða klínískrar meðferðar. Ef þú ert í sálrænum vanda, vinsamlegast hafðu samband við hæfan sérfræðing eða neyðarþjónustu."
+        },
+        "account": {
+          "headingLead": "Reikningurinn",
+          "headingItalic": "þinn",
+          "p1": "Þú verður að vera 18 ára eða eldri til að nota TwentyThird. Þú berð ábyrgð á að halda skilríkjum þínum trúnaðarmálum. Þú mátt ekki deila reikningi þínum eða nota vettvanginn fyrir hönd annars án skýrs samþykkis þeirra.",
+          "p2": "Þú átt efnið sem þú býrð til — dagbókarfærslur þínar, svör þín. Með því að senda þau inn veitir þú WelloWork AB takmarkað leyfi til að vinna úr þeim í þeim tilgangi sem lýst er í persónuverndarstefnunni. Þú getur flutt út eða eytt efni þínu hvenær sem er."
+        },
+        "acceptableUse": {
+          "headingLead": "Viðunandi",
+          "headingItalic": "notkun",
+          "p1": "Þú mátt nota TwentyThird til lögmætrar persónulegrar og faglegrar sjálfskoðunar. Þú mátt ekki nota hann til að skaða sjálfan þig eða aðra, til að reyna að sniðganga öryggiskerfi vettvangsins, til að öfugverkfræða undirliggjandi líkön, eða til að þjálfa samkeppnishæf gervigreindarkerfi.",
+          "p2": "Við áskiljum okkur rétt til að stöðva eða loka reikningum sem brjóta gegn þessum skilmálum, án fyrirvara þar sem öryggi krefst þess."
+        },
+        "liability": {
+          "headingLead": "Ábyrgð",
+          "headingItalic": "okkar",
+          "p1": "TwentyThird veitir innsýn, ekki vissu. Við ábyrgjumst ekki að greiningin sé nákvæm, fullkomin eða viðeigandi fyrir aðstæður þínar. Að því marki sem sænsk lög leyfa, er ábyrgð okkar takmörkuð við þá upphæð sem þú greiddir á 3 mánuðum á undan viðkomandi kröfu.",
+          "p2": "Ekkert í þessum skilmálum takmarkar ábyrgð á dauða eða líkamstjóni af völdum vanrækslu okkar, eða vegna svika."
+        },
+        "disputes": {
+          "headingLead": "Gildandi lög og",
+          "headingItalic": "ágreiningur",
+          "p1": "Þessir skilmálar lúta sænskum lögum. Ágreiningur sem ekki er hægt að leysa beint er vísað til dómstóla í Uppsölum, Svíþjóð, sem fyrsta dómstigs.",
+          "p2Lead": "Ef þú ert neytandi í ESB hefur þú einnig aðgang að netvettvangi ESB fyrir lausn deilumála á",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Breytingar",
+          "p1": "Við kunnum að uppfæra þessa skilmála. Áframhaldandi notkun eftir gildistökudag efnislegrar breytingar telst samþykki. Við tilkynnum um efnislegar breytingar með tölvupósti að minnsta kosti 14 dögum fyrirfram.",
+          "effectivePrefix": "Gildistaka:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Vafrakökustefna — TwentyThird",
+        "metaDescription": "TwentyThird notar vafrakökur eingöngu til auðkenningar og varðveislu stillinga. Engar auglýsingakökur. Engir rakningarforrit frá þriðja aðila.",
+        "eyebrow": "VAFRAKÖKUR",
+        "headingLead": "Hvað við geymum",
+        "headingItalic": "í vafranum þínum.",
+        "lede": "TwentyThird notar vafrakökur til auðkenningar og varðveislu stillinga. Við notum engar auglýsingakökur og enga rakningarforrit frá þriðja aðila.",
+        "whatIs": {
+          "headingLead": "Hvað vafrakaka",
+          "headingItalic": "er",
+          "p1": "Vafrakaka er lítil textaskrá sem geymd er í vafranum þínum. Við notum þær til að halda þér innskráðum og til að muna þemað þitt (dökkt eða ljóst). Það er allt og sumt."
+        },
+        "weSet": {
+          "headingLead": "Vafrakökur",
+          "headingItalic": "sem við setjum",
+          "authBody": "— Sett af Supabase. Heldur utan um auðkennda lotu þína. Rennur út þegar þú skráir þig út eða eftir 7 daga óvirkni. Algjörlega nauðsynlegt.",
+          "themeBody": "— Geymir stillingu þína fyrir dökkan/ljósan ham. Heldur sér þar til henni er eytt. Virknikaka.",
+          "p3": "Við setjum engar auglýsingakökur. Við hleðum engum rakningarforritum frá þriðja aðila — engin Google Analytics, engin Meta Pixel, engin markaðsmerki af neinu tagi."
+        },
+        "choices": {
+          "headingLead": "Valmöguleikar",
+          "headingItalic": "þínir",
+          "p1Lead": "Þú getur hreinsað vafrakökur hvenær sem er í gegnum stillingar vafrans þíns. Að hreinsa",
+          "p1Mid": "mun skrá þig út. Að hreinsa",
+          "p1Tail": "mun endurstilla skjáinn í sjálfgefna dökka stillingu.",
+          "p2": "Við notum ekki samþykkisborða fyrir vafrakökur sem eru algjörlega nauðsynlegar eða virknikökur samkvæmt ePrivacy tilskipuninni, þar sem þær krefjast ekki samþykkis. Ef við tökum upp einhverjar óþarfar vafrakökur í framtíðinni munum við afla samþykkis áður en þær eru settar."
+        },
+        "contact": {
+          "headingItalic": "Hafðu samband",
+          "p1Lead": "Spurningar um vafrakökur eða önnur gagnaatriði:",
+          "effectivePrefix": "Gildandi frá:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "Á ÞESSARI SÍÐU",
+        "privacyPolicy": "Persónuverndarstefna",
+        "termsOfService": "Þjónustuskilmálar",
+        "cookiePolicy": "Vefkökustefna"
+      },
+      "layout": {
+        "eyebrow": "LÖGGILDIR SKJÖL",
+        "headingLead": "Löggildir skjöl,",
+        "headingItalic": "skýrt fram sett.",
+        "lede": "Persónuverndarstefna, þjónustuskilmálar og vafrakökustefna — undir stjórn sænskra laga og GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "Sálfræðilegt gervigreind fyrir innra lífið. Róað herbergi fyrir alvarlega hugsun.",
+      "product": "Vara",
+      "discovery": "Uppgötvun",
+      "sampleReport": "Sýnisskýrsla",
+      "integrationPlan": "Samþættingaráætlun",
+      "company": "Fyrirtæki",
+      "about": "Um okkur",
+      "contact": "Tengiliður",
+      "manifesto": "Stefnuyfirlýsing",
+      "resources": "Auðlindir",
+      "science": "Vísindin",
+      "methodology": "Aðferðafræði",
+      "methodPaper": "Aðferðafræðiritgerð",
+      "caseStudy": "Dæmisaga",
+      "dreamExample": "Draumadæmi",
+      "legal": "Lögfræði",
+      "privacy": "Persónuvernd",
+      "terms": "Skilmálar",
+      "cookies": "Vafrakökur",
+      "rights": "allur réttur áskilinn"
+    },
+    "about": {
+      "metaTitle": "Um — TwentyThird",
+      "metaDescription": "Uppruni, aðferð og vendipunkturinn á degi tuttugu og þrjú. Þróað innan CognitiveLab hjá WelloWork AB.",
+      "hero": {
+        "eyebrow": "UM OKKUR",
+        "headingLead": "Uppruni, aðferð og",
+        "headingItalic": "vendipunkturinn á degi tuttugu og þrjú",
+        "lede": "TwentyThird er sálfræðilegt gervigreindartól til sjálfsuppgötvunar. Það kortleggur endurtekin mynstur og undirliggjandi byggingar einkenna — tungumál, tengsl, endurtekningu — og skilar vinnuskjali, ekki spurningalista.",
+        "figure": {
+          "label": "dagur-23",
+          "subtitle": "vendipunktur sem myndlíking",
+          "heading": "23 daga ferillinn",
+          "range": "forvitni → vitund",
+          "markerInflection": "vendipunktur",
+          "summaryLabel": "dagurinn sem spurningin\nsnúr inn á við"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "HEIMSPEKI",
+        "headingLead": "Bréfaskiptavinur Freuds. Tala Fliess.",
+        "headingItalic": "Myndlíking okkar",
+        "tag": "Ættartré",
+        "row": {
+          "headingPre": "23 daga",
+          "headingItalic": "taktur",
+          "headingPost": "lagður fram í bréfi, varð að tölu.",
+          "para1": "23 daga hringrásin var tilgáta Wilhelms Fliess, sem hann rökstuddi í bréfaskiptum sínum við Freud í lok nítjándu aldar. Samtíma vísindi styðja ekki fasta lífræna takta.",
+          "para2": "Við höldum tölunni fyrir það sem hún nefnir — þröskuldinn þar sem forvitni þroskast í vitund. Dagur-23 er tala, ekki líffræði."
+        },
+        "figure": {
+          "label": "ættartré",
+          "subtitle": "fjórir akkeri",
+          "row1Outcome": "tillaga",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "byggingarlíkan",
+          "row3Duration": "Rómarræða",
+          "row3Outcome": "málfræðileg beygja",
+          "row4Outcome": "samþætting",
+          "summary1Key": "bil",
+          "summary2Key": "þráður",
+          "summary2Value": "bygging",
+          "summary3Key": "aðferð",
+          "summary3Value": "sálfræðileg"
+        }
+      },
+      "origin": {
+        "eyebrow": "UPPRUNI",
+        "headingLead": "Þróað innan CognitiveLab.",
+        "headingItalic": "Svaraði spurningu sem við fengum ítrekað",
+        "tag": "Teymi",
+        "row": {
+          "headingLead": "Læknar, upphaflega að þróa",
+          "headingItalic": "hugræna þjálfun",
+          "para1": "TwentyThird hófst innan CognitiveLab hjá WelloWork AB, þar sem teymið var að þróa hugræna þjálfunarkerfi. Vinir og samstarfsmenn fóru að koma með persónulegar spurningar — kvíða, endurtekin mynstur, hringrásir sem þeir gátu ekki nefnt.",
+          "para2": "Milli klínískrar starfsemi sem læknar, tilraunagagna sem við söfnuðum og langrar leslistu í sálgreiningu og Lacanískri kenningu, höfðum við eitthvað að bjóða. TwentyThird er það sem það varð."
+        },
+        "figure": {
+          "label": "teymi",
+          "subtitle": "prófíll",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "undirbúið 05 · 26",
+          "row1Key": "Klínísk starfsemi",
+          "row2Key": "Rannsóknarútkoma",
+          "row3Key": "Þátttakendur í tilraun",
+          "row4Key": "Læknar í teymi",
+          "footerLabel": "Prófíll",
+          "footerValue": "blönduð klínísk-rannsóknarhlutverk"
+        }
+      },
+      "method": {
+        "eyebrow": "AÐFERÐ",
+        "headingLead": "Hvað líkanið",
+        "headingItalic": "raunverulega gerir",
+        "tag": "Hæfileikar",
+        "row": {
+          "headingLead": "Undir einkenninu, er",
+          "headingItalic": "bygging",
+          "para1": "TwentyThird framkvæmir rótargreiningu. Það kortleggur <em>undirvitundarhringrásina</em> í gegnum árin, les <em>málfræðilega undirvitundina</em> í orðavali og málvillum, afhjúpar <em>tengsl</em> við nándarþröskuldinn og skrifar vinnuáætlun fyrir <em>skuggavinnu</em>.",
+          "para2": "Útkoman er tilbúin fyrir meðferðaraðila. Nefnir bygginguna, ekki yfirborðið."
+        },
+        "figure": {
+          "label": "einkenni → bygging",
+          "subtitle": "þrjár endurskrifanir",
+          "row1Prefix": "01 · yfirborð",
+          "row1Old": "Ég fresta mikilvægri vinnu.",
+          "row1Next": "Forðast að vera séð/ur sem sá/sú sem veit.",
+          "row2Prefix": "02 · yfirborð",
+          "row2Old": "Ég er alltaf að deita sömu manneskjuna.",
+          "row2Next": "Endurtekning föðurímyndar við nándarþröskuldinn.",
+          "row3Prefix": "03 · yfirborð",
+          "row3Old": "Ég get ekki klárað neitt.",
+          "row3Next": "Neitun að gefast upp á stöðu möguleika.",
+          "metaLeftLabel": "framsett",
+          "metaLeftValue": "kvörtun",
+          "metaRightLabel": "byggingarlæs",
+          "metaRightValue": "lestur"
+        }
+      },
+      "final": {
+        "eyebrow": "HALDA ÁFRAM",
+        "headingLead": "Lestu um aðferðina,",
+        "headingItalic": "eða byrjaðu",
+        "ctaPrimary": "Lestu um aðferðina",
+        "ctaGhostPrefix": "eða",
+        "ctaGhostText": "skrifaðu okkur"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "SAMBAND",
+        "heroHeadlineLead": "Skrifaðu okkur.",
+        "heroHeadlineItalic": "Við lesum allt",
+        "heroLede": "Flestum skilaboðum er svarað innan sjötíu og tveggja klukkustunda. Klínískar fyrirspurnir og samstarfsfyrirspurnir hafa forgang.",
+        "formCardLabel": "eyðublað",
+        "formCardSubtitle": "aðeins efnislegar fyrirspurnir",
+        "addressLabel": "HEMILISFANG",
+        "addressValue": "Rosendal, Uppsala, Svíþjóð",
+        "emailLabel": "TÖLVUPÓSTUR",
+        "phoneLabel": "SÍMI",
+        "finalEyebrow": "BYRJA",
+        "finalHeadlineLead": "Eða bara",
+        "finalHeadlineItalic": "byrja",
+        "finalCta": "Hefðu uppgötvun þína",
+        "finalGhostOr": "eða",
+        "finalGhostText": "lestu um upprunann",
+        "disclaimer": "Fyrir brýn geðheilbrigðismál, vinsamlegast hafðu samband við neyðarþjónustu á staðnum eða löggiltan sérfræðing. TwentyThird er ekki neyðarþjónusta."
+      },
+      "form": {
+        "successEyebrow": "MÓTTAKIÐ",
+        "successHeadlineLead": "Skilaboðin þín eru",
+        "successHeadlineItalic": "hjá okkur",
+        "successBody": "Við svörum innan tveggja virkra daga.",
+        "nameLabel": "Nafn",
+        "emailLabel": "Tölvupóstur",
+        "messageLabel": "Skilaboð",
+        "submitSend": "Senda",
+        "submitSending": "Sendir",
+        "errorMessage": "eitthvað fór úrskeiðis · reyndu aftur",
+        "submittingStatus": "Sendir skilaboðin þín."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Aðferðafræði — TwentyThird",
+      "metaDescription": "Frá fyrsta samtali til meðferðarfræðilegs korts. Fimm stig TwentyThird ferlisins.",
+      "hero": {
+        "eyebrow": "AÐFERÐIN",
+        "headingLead": "Vikur undirbúnings,",
+        "headingItalic": "ekki ára leit",
+        "lede": "Meðferð virkar. Það tekur líka tíma að vita til hvers maður er þar. TwentyThird þjappar undirbúningnum saman — þeim hluta þar sem þú lærir hvað þú ert raunverulega að segja — svo herbergið sjálft geti gengið hraðar."
+      },
+      "pipeline": {
+        "eyebrow": "FERLIÐ",
+        "headingLead": "Fimm stig, ein",
+        "headingItalic": "stutt",
+        "lede": "Frá sýndu tali til vinnuskjals sem klíníkus getur lesið á átta mínútum.",
+        "stageLabel": "STIG",
+        "stage01": {
+          "name": "Sýnataka",
+          "blurb": "Rödd og texti úr leiðbeindum lotum. Líkanið hlustar eftir lögun, ekki innihaldi.",
+          "label": "sýnataka",
+          "subtitle": "magn yfir hópinn",
+          "fig": {
+            "wordsSampled": "orð tekin",
+            "sessions": "lotur",
+            "elapsed": "liðinn tími",
+            "medianTurn": "miðgildisviðbrögð"
+          }
+        },
+        "stage02": {
+          "nameLead": "Málfræðileg",
+          "nameEm": "útdráttur",
+          "blurb": "Eiginleikar sem líkanið lyftir úr afritinu — hljóðlega, áður en nokkur túlkun fer fram.",
+          "label": "útdráttur",
+          "subtitle": "flokkar eiginleika",
+          "fig": {
+            "qualifierDensity": "þéttleiki lýsingarorða",
+            "modalVerbs": "háttaragnir",
+            "conditionalFrame": "skilyrðisrammi",
+            "affectiveHedges": "tilfinningalegar varnir",
+            "slipsMisnamings": "skekkjur · rangnefningar",
+            "repetitionWindows": "endurtekningargluggar"
+          }
+        },
+        "stage03": {
+          "nameLead": "Endurtekninga-",
+          "nameEm": "greining",
+          "blurb": "Mynstrið sem snýr aftur í sömu lögun, á mismunandi áratugum. Merkið um að eitthvað sé byggingarbundið.",
+          "label": "endurtekning",
+          "subtitle": "þrír akkerar eins mynsturs",
+          "fig": {
+            "row1": {
+              "durationLabel": "fyrsta starf",
+              "outcome": "þak á mánuði 9"
+            },
+            "row2": {
+              "durationLabel": "annað",
+              "outcome": "þak á mánuði 11"
+            },
+            "row3": {
+              "durationLabel": "þriðja",
+              "outcome": "þak á mánuði 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Handrits-",
+          "nameEm": "endurgerð",
+          "blurb": "Setningin undir mynstrinu. Gömul lína, síðan endurskoðunartillaga sem viðfangsefnið getur æft.",
+          "label": "endurgerð",
+          "subtitle": "vinnudrög",
+          "fig": {
+            "row1": {
+              "prefix": "Ég er",
+              "old": "ekki enn tilbúinn.",
+              "next": "nú þegar leyft."
+            },
+            "row2": {
+              "prefix": "að",
+              "old": "bíða eftir að vera valinn.",
+              "next": "nefna hvað ég vil."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Kort fyrir",
+          "nameEm": "klíníkusinn",
+          "blurb": "Þrír merktir mælar og einnar línu byggingarlestur. Átta mínútur til að lesa, vikur til að nota.",
+          "label": "klínísk afhending",
+          "subtitle": "vinnusamantekt",
+          "fig": {
+            "casePrefix": "mál",
+            "preparedPrefix": "undirbúið",
+            "egoStructure": "Egó-bygging",
+            "objectRelations": "Hlutatengsl",
+            "symbolicRegister": "Táknrænt skrá",
+            "footerLabel": "Lestur",
+            "footerValue": "þráhyggjulegur · með hysterískum ummerkjum"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "VIÐFANGSEFNI",
+        "headingLead": "Hvað við mælum, og hvað við",
+        "headingItalic": "neitum",
+        "headingTail": "að.",
+        "measureHead": "Hvað við mælum",
+        "refuseHead": "Hvað við mælum ekki",
+        "measure": {
+          "languagePatterns": {
+            "k": "málfræðileg mynstur",
+            "gloss": "Þéttleiki lýsingarorða, háttaragnir, varnir, skilyrðisrammar."
+          },
+          "recurrence": {
+            "k": "endurtekning",
+            "gloss": "Mynstur sem snúa aftur í sömu lögun í gegnum árin."
+          },
+          "narrativeCoherence": {
+            "k": "frásagnarheild",
+            "gloss": "Hvernig líf er sagt, hvar saumarnir sjást."
+          },
+          "attachmentMarkers": {
+            "k": "viðhengismerki",
+            "gloss": "Hvar nánd fer yfir þröskuld, hvað fylgir."
+          },
+          "linguisticSlips": {
+            "k": "málfræðilegar skekkjur",
+            "gloss": "Rangnefningar, samþjöppun, tilfærsla."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "DSM / ICD flokkar",
+            "gloss": "Sjúkdómafræði er sérstakt tæki, notað af klíníkusum."
+          },
+          "iqCognition": {
+            "k": "greindarvísitala eða vitsmuni",
+            "gloss": "Utan viðfangsefnis. Líkanið er sálfræðilegt, ekki sálfræðilegt mælitæki."
+          },
+          "personalityTypes": {
+            "k": "persónuleikagerðir",
+            "gloss": "Fimm þátta líkanið og afkomendur þess eru ekki hluti af samantektinni."
+          },
+          "riskScores": {
+            "k": "áhættustig",
+            "gloss": "Bráð áhætta er ákvörðun klíníkusar, ekki líkans."
+          },
+          "predictions": {
+            "k": "spár",
+            "gloss": "Uppbygging, ekki spá. Við nefnum það sem er, ekki það sem kemur."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Samþjöppun",
+        "headingLead": "Gakktu inn vitandi hvað þú átt að",
+        "headingItalic": "segja",
+        "body1": "Meðferð er ekki staðurinn til að finna út spurninguna. Hún er staðurinn til að lifa með henni. Samþjöppunin sem við bjóðum er á nálguninni — mánuðina sem klíníkus eyðir venjulega í að hlusta eftir lögun samantektarinnar.",
+        "body2": "Yfir tilraunahópinn náðu undirbúnir einstaklingar vinnubandalagi á færri lotum. Lesturinn var þegar til staðar.",
+        "figure": {
+          "label": "bandalag",
+          "subtitle": "miðgildis fjöldi lota til vinnubandalags",
+          "heading": "Tími til vinnubandalags",
+          "range": "miðgildi yfir hópinn",
+          "markerUnprepared": "óundirbúinn",
+          "markerPrepared": "undirbúinn",
+          "summaryLabel": "færri lotur til\nvinnubandalags"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "HALDA ÁFRAM",
+        "headingLead": "Byrja,",
+        "headingItalic": "eða skoða dæmi um skýrslu",
+        "beginLabel": "Byrja",
+        "or": "eða",
+        "ghostLabel": "skoða dæmi um skýrslu"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "SAMÞÆTTING",
+        "headlineLead": "Innsýn, svo",
+        "headlineItalic": "vani",
+        "lede": "Að nefna mynstur er aðeins fyrsta skrefið. Áætlunin er annað — daglegar hvatningar og litlir helgisiðir byggðir í kringum þína eigin uppbyggingu, ekki almenna námskrá."
+      },
+      "week": {
+        "eyebrow": "VIKA Í ÁÆTLUNINNI",
+        "headlineLead": "Sjö hvatningar,",
+        "headlineItalic": "ein uppbygging",
+        "lede": "Hugleiðandi, líkamleg, skrifuð. Vikan andar í kringum mynstrið sem skýrslan nefndi, ekki í kringum námskrá.",
+        "days": {
+          "mon": {
+            "day": "MÁN",
+            "prompt": "„Hvar í dag valdir þú að <em>ekki</em> sjást?“",
+            "stream": {
+              "journal": "dagbók",
+              "shadowPrompt": "skugga hvatning"
+            }
+          },
+          "tue": {
+            "day": "ÞRI",
+            "prompt": "„Farðu í göngutúr án erindis. Taktu eftir einu sem þú sagðir næstum því.“",
+            "stream": {
+              "walking": "ganga",
+              "note": "athugasemd"
+            }
+          },
+          "wed": {
+            "day": "MIÐ",
+            "prompt": "„Hvað of-hæfðir þú í dag, og hver var <em>óhæfa</em> setningin undir?“",
+            "stream": {
+              "breathWork": "öndunaræfing",
+              "journal": "dagbók",
+              "shadowPrompt": "skugga hvatning"
+            }
+          },
+          "thu": {
+            "day": "FIM",
+            "prompt": "„Líkamskönnun frá hálsi og niður. Hvar býr haldið?“",
+            "stream": {
+              "bodyScan": "líkamskönnun",
+              "note": "athugasemd"
+            }
+          },
+          "fri": {
+            "day": "FÖS",
+            "prompt": "„Skrifaðu setninguna sem þú hefðir sagt ef þér hefði þegar verið leyft.“",
+            "stream": {
+              "journal": "dagbók",
+              "rewrite": "endurskrifa"
+            }
+          },
+          "sat": {
+            "day": "LAU",
+            "prompt": "„Langur göngutúr. Engar hvatningar. Taktu eftir því hvað þögnin skilar.“",
+            "stream": {
+              "walking": "ganga",
+              "rest": "hvíld"
+            }
+          },
+          "sun": {
+            "day": "SUN",
+            "prompt": "„Lestu vikuna aftur. Hvaða lína var þegar <em>sönn</em>?“",
+            "stream": {
+              "review": "yfirferð",
+              "note": "athugasemd"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "AÐLÖGUN",
+        "headlineLead": "Áætlunin",
+        "headlineItalic": "minnkar",
+        "tag": "Aðlögun",
+        "rowHeadingLead": "Endurtekning síðustu viku setur þéttleika",
+        "rowHeadingItalic": "næstu viku",
+        "body": "Þegar styrkur mynstursins minnkar, þynnast hvatningarnar. Þegar mynstur eykst, snúa hvatningarnar aftur. Markmiðið er ekki fylgni. Markmiðið er minnsti stuðningurinn sem uppbyggingin þarfnast enn.",
+        "figure": {
+          "label": "þéttleiki hvatninga",
+          "subtitle": "vikur 1–8",
+          "heading": "Fjöldi hvatninga · á viku",
+          "range": "minnkandi eftir því sem endurtekning veikist",
+          "markers": {
+            "wk1": "vika 1",
+            "wk3": "vika 3",
+            "wk5": "vika 5",
+            "wk8": "vika 8"
+          },
+          "summaryLabel": "færri hvatningar\nvið viku 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "SKUGGA VINNA",
+        "headlineLead": "Ekki útrás.",
+        "headlineItalic": "Tala",
+        "tag": "Skuggi",
+        "rowHeadingLead": "Meðvitað æfing að segja það sem var",
+        "rowHeadingItalic": "ósegjanlegt",
+        "body": "Skuggavinna, í þessu samhengi, er ekki afhjúpun. Hún er ekki hreinsun. Hún er hæg æfing þess að segja — við sjálfan sig, fyrst — það sem manni hafði verið kennt að halda ósagt. Þrjár fyrir / eftir línur dregnar úr raunverulegum áætlunum.",
+        "figure": {
+          "label": "skugga endurskoðanir",
+          "subtitle": "þrjár línur, vinnudrög",
+          "rows": {
+            "r1": {
+              "prefix": "01 · við sjálfan sig",
+              "old": "Ég á þetta ekki skilið.",
+              "next": "Ég hef ekki enn æft mig í að vilja það upphátt."
+            },
+            "r2": {
+              "prefix": "02 · við sjálfan sig",
+              "old": "Ég ætti að vera búinn að jafna mig á þessu núna.",
+              "next": "tímalínan sem ég lánaði mér var ekki fyrir svona sorg."
+            },
+            "r3": {
+              "prefix": "03 · við sjálfan sig",
+              "old": "Ég er of mikið.",
+              "next": "Ég er nákvæmlega það rúmmál sem herbergið var ekki byggt fyrir."
+            }
+          },
+          "metaLeft": {
+            "label": "áður",
+            "value": "sagt um sjálfan sig"
+          },
+          "metaRight": {
+            "label": "nú",
+            "value": "sagt við sjálfan sig"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RAMMI",
+        "headlineLead": "Haldið af uppbyggingu, ekki af",
+        "headlineItalic": "námskrá",
+        "body1": "Námskrá er safn aðgerða sem ókunnugur byggði. Uppbygging er lögunin sem þitt sérstaka líf tekur. Áætlunin er byggð gegn því síðarnefnda. Sérhver hvatning er fest við línu í skýrslunni þinni — þegar línan leysist upp, gerir hvatningin það líka.",
+        "body2": "Ekkert hér á að vera varanlegt. Áætlunin er leigð. Uppbyggingin er þín.",
+        "closeout": "uppbyggingin er þín · áætlunin er leigð"
+      },
+      "final": {
+        "eyebrow": "HALDA ÁFRAM",
+        "headlineLead": "Byrja,",
+        "headlineItalic": "eða lesa vísindin",
+        "beginCta": "Byrja",
+        "or": "eða",
+        "readScience": "lesa vísindin"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Vísindin — TwentyThird",
+        "description": "Aldar af sálgreiningarkenningum og fjórum áratugum af raunvísindarannsóknum á mynstri, tungumáli og hinu ómeðvitaða."
+      },
+      "hero": {
+        "eyebrow": "GRUNNURINN",
+        "headlineLead": "Vísindin á bak við",
+        "headlineItalic": "hlustunina",
+        "headlineTail": ".",
+        "lede": "TwentyThird byggir á aldar af sálgreiningarkenningum og fjórum áratugum af raunvísindarannsóknum á mynstri, tungumáli og hinu ómeðvitaða. Þetta er það sem við lesum, og hvers vegna."
+      },
+      "lineages": {
+        "eyebrow": "TVÆR ÆTTIR",
+        "headlineLead": "Uppbygging Freuds. ",
+        "headlineItalic": "Bókstafur",
+        "headlineTail": " Lacans.",
+        "lede": "Tvær lesningar á hinu ómeðvitaða, hálfri öld í sundur. Saman mynda þær burðarás aðferðarinnar.",
+        "freud": {
+          "headlineLead": "Hið",
+          "headlineItalic": "byggingarlega",
+          "headlineTail": " ómeðvitaða.",
+          "body1": "Varanlegt framlag Freuds er byggingarlega, ekki þematískt. Hið dýnamíska ómeðvitaða er ekki kjallari gleymds efnis — það er starfandi líffæri hugans, sem æfir, endurtekur, flytur.",
+          "body2": "Við lesum hann sem klíníkus endurtekningarinnar. Sama sena birtist á mismunandi áratugum. Sú endurtekning er merkið sem líkanið er þjálfað til að finna.",
+          "figure": {
+            "label": "endurtekning",
+            "subtitle": "fimm akkeri, ein uppbygging",
+            "outcome": "afturköllun",
+            "rows": {
+              "anchor1": "snemma á unglingsárum",
+              "anchor2": "fyrsta langa tengsl",
+              "anchor3": "annað langt tengsl",
+              "anchor4": "þriðja tengsl",
+              "anchor5": "fjórða tengsl"
+            },
+            "summary": {
+              "recurrenceLabel": "endurtekning",
+              "intervalLabel": "bil",
+              "attractorLabel": "aðdráttarafl",
+              "attractorValue": "nándarþröskuldur"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Hið ómeðvitaða er byggt upp eins og",
+          "headlineItalic": "tungumál",
+          "headlineTail": ".",
+          "body1Lead": "Lesning Lacans færir sviðið. Merkingarberinn hreyfist; merking rennur eftir keðjum metonymíu og myndlíkingar. Spegilstigið nefnir upphaflega misskilninginn.",
+          "body1Italic": "Löngun er löngun Hins.",
+          "body2": "Í okkar vinnuferli er þetta áþreifanlegt. Við lesum drauma og vöku tal sem texta — tilfærslurnar, þéttingarnar og skekkjurnar bera uppbyggjandi málfræði.",
+          "figure": {
+            "label": "málfræðilegt merki",
+            "subtitle": "draumabrot, skýrt",
+            "dreamLead": "„Herbergið sem ég bjó í sem barn hefur aðra hurð sem ég man ekki eftir",
+            "ann1": "tilfærsla",
+            "dreamMid1": ". Á bak við hana kallar rödd yfirmanns míns",
+            "ann2": "þétting",
+            "dreamMid2": "mig röngu nafni",
+            "ann3": "skekkja",
+            "dreamTail": ".”",
+            "key1": "tilfærsla",
+            "key2": "þétting",
+            "key3": "skekkja"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "RAUNVÍSINDALEG AKKERI",
+        "headlineLead": "Hvað samtímarannsóknir",
+        "headlineItalic": "bæta við",
+        "headlineTail": ".",
+        "lede": "Fimm samleitnar greinar úr rannsóknum á tengslum, frásögn og ferlum. Ekki fullkominn heimildalisti — akkerin sem líkanið byggir í raun á.",
+        "figure": {
+          "label": "raunvísindaleg akkeri",
+          "subtitle": "samleitnar vísbendingar",
+          "caseLabel": "bókmenntir · samantekt",
+          "prepared": "uppfært 04 · 26",
+          "rows": {
+            "attachment": "Samfella tengsla í gegnum áratugi",
+            "alliance": "Meðferðarbandalag sem forspá um árangur",
+            "narrative": "Frásagnarheild og vellíðan",
+            "relational": "Óbeinn tengslalegur skilningur",
+            "script": "Handritakenning í starfslegri stöðnun"
+          },
+          "footerLabel": "Samantekt",
+          "footerValue": "samleitnar vísbendingar · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "HVAÐ VIÐ GERUM EKKI KRÖFU UM",
+        "headlineLead": "Heiðarleg",
+        "headlineItalic": "mörk",
+        "headlineTail": " verksins.",
+        "claim1Strong": "Við erum ekki staðgengill meðferðaraðila.",
+        "claim1Body": "Líkanið undirbýr samtalið. Það heldur því ekki.",
+        "claim2Strong": "Við erum ekki greiningartæki samkvæmt DSM eða ICD.",
+        "claim2Body": "Flokkarnir sem við vinnum með eru byggingarlega — áráttukenndir, hysterískir, fælnir — ekki sjúkdómafræðilegir. Þeir nefna hvernig einstaklingur er skipulagður, ekki hvað þeir hafa.",
+        "claim3Strong": "23 daga hringrásin er myndlíking.",
+        "claim3Body": "Talan kemur frá bréfaskiptum Wilhelm Fliess við Freud í lok nítjándu aldar. Samtímavísindi styðja ekki fasta lífræna takta. Við höldum tölunni fyrir það sem hún nefnir — umskiptin frá forvitni yfir í meðvitund."
+      },
+      "reading": {
+        "eyebrow": "FREKARI LESNING",
+        "headlineLead": "Hillan",
+        "headlineItalic": "fyrir aftan",
+        "headlineTail": " líkanið.",
+        "lede": "Bækur, ekki greinar. Þær sem við snúum aftur til.",
+        "books": {
+          "book1": {
+            "title": "Handan vellíðunarlögmálsins"
+          },
+          "book2": {
+            "title": "Draumaráðningar"
+          },
+          "book4": {
+            "title": "Fjórar grundvallarhugmyndir sálgreiningar"
+          },
+          "book5": {
+            "title": "Tengsl"
+          },
+          "book6": {
+            "title": "Tilfinningastjórnun og uppruni sjálfsins"
+          },
+          "book7": {
+            "title": "Að standa í rýmunum"
+          },
+          "book8": {
+            "title": "Tilfinningastjórnun, hugrækt og þróun sjálfsins"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "HALDA ÁFRAM",
+        "headlineLead": "Byrjaðu prófíl,",
+        "headlineItalic": "eða lestu mál",
+        "headlineTail": ".",
+        "ctaPrimary": "Byrjaðu prófíl",
+        "ctaOr": "eða",
+        "ctaGhost": "lestu dæmisögu"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "aftur hér",
+      "greetingNamed": "aftur hér, {name}.",
+      "strengthen": "Styrkja nákvæmni"
+    },
+    "reviewEdit": "Yfirfara og breyta",
+    "depth": {
+      "eyebrow": "LESANDI DÝPT",
+      "overallEyebrow": "HEILDAR LESANDI DÝPT",
+      "band": {
+        "deep": "lesturinn er djúpur. litlar aðlaganir héðan í frá.",
+        "steady": "lesturinn heldur. vikulegar Catchups munu skerpa hann.",
+        "partial": "lesturinn er ófullnægjandi. meira er hægt að gefa.",
+        "thin": "lesturinn er þunnur. hann mun teikna upp lögun, ekki enn uppbyggingu."
+      },
+      "explainer": "Lesandi dýpt lýsir því hversu mikinn aðgang lesturinn hefur haft að þér — frá inntöku, frá vikulegum Catchups, frá samráðum og frá þeim sem móta þig. Dýpri lestur er ekki betri manneskja; hann er nákvæmari. Þú getur dýpkað hann hvenær sem er, eða látið hann vera eins og hann er.",
+      "status": {
+        "low": "Lág",
+        "moderate": "Miðlungs",
+        "deep": "Nákvæm"
+      },
+      "statusLine": {
+        "low": "lesturinn er þunnur. hann mun teikna upp lögun, ekki enn uppbyggingu.",
+        "moderate": "lesturinn er að taka á sig mynd. hann getur haldið vinnuhugmynd.",
+        "deep": "lesturinn er nægilega fullur til að grundvalla verkið."
+      },
+      "source": {
+        "intake": "spurningarnar sem þú svaraðir til að byrja.",
+        "catchups": "vikulegar innritanir sem halda lestrinum uppfærðum.",
+        "sessions": "lengri samráð við the analyst.",
+        "connections": "fólk sem mótar lesturinn."
+      }
+    },
+    "latest": {
+      "eyebrow": "NÝJASTA GREINING",
+      "heading": "Sex greiningar <it>— og hvað breytist.</it>",
+      "lede": "Sex greiningarnar eru reiknaðar út frá upphafsgögnum þínum og fínpússaðar með hverri Catchup, samráði og samþykktri tengingu. Uppbyggingin er stöðug; áferðin hreyfist.",
+      "strengthen": "styrkja gögnin fyrir greiningar",
+      "open": "opna greiningarnar"
+    },
+    "six": {
+      "eyebrow": "SEX LESEFNI",
+      "heading": "Hvað er lesið <it>í þér, einmitt núna.</it>"
+    },
+    "catchup": {
+      "figLabel": "VIKULEG YFIRFERÐ",
+      "figSubtitle": "undanfarnar vikur",
+      "timelineHeading": "gluggi",
+      "timelineRange": "síðustu 4 vikur",
+      "timelineSummary": "vikulegar yfirferðir í glugga",
+      "eyebrow": "VIKULEG YFIRFERÐ",
+      "heading": "Sestu niður með vikuna. <it>Síðan skoðum við aftur.</it>",
+      "lede": "Átta stuttar spurningar. Heiðarleiki er betri en langar útskýringar. Svörin skerpa lesturinn.",
+      "completed": "lokið — lestu samantektina",
+      "cta": "Opna vikulega yfirferð þessarar viku",
+      "markerFirst": "fyrsta",
+      "markerWeek": "v{week}"
+    },
+    "consulting": {
+      "eyebrow": "RÁÐGJAFARHERBERGI",
+      "heading": "Klukkustund með <it>greinandanum.</it>",
+      "ledeSubscribed": "Opið hvenær sem vikan þrýstir á. Herbergið man hvað þú hefur þegar sagt.",
+      "ledeUnsubscribed": "Áskrifendur geta farið inn í ráðgjafarherbergið — langa lotu með greinandanum, haldið í sama tóni og lestur þinn.",
+      "cta": "Fara inn í ráðgjafarherbergið",
+      "figLabel": "SÍÐASTA LOTA",
+      "figSubtitle": "haldið spurning",
+      "lastQuestion": "„draumurinn frá þriðjudegi — viltu snúa aftur að honum?“"
+    },
+    "subscribe": {
+      "eyebrow": "RÁÐGJAFARHERBERGI · STAÐFESTA",
+      "title": "Aðgangur að ráðgjafarherberginu<it>.</it>",
+      "ledePrice": "Áskriftin er",
+      "ledePerMonth": "á mánuði",
+      "ledeIncludes": ". Hún felur í sér ráðgjafarherbergið, möguleikann á að bjóða allt að {count} {count, plural, one {tengingu} other {tengingum}}, og eina klíníska skýrslu í hverjum almanaksmánuði.",
+      "ledeBilling": "Reikningsfærsla er meðhöndluð af Stripe. Hægt er að segja upp hvenær sem er í stillingum — aðgangur heldur áfram þar til tímabilinu lýkur.",
+      "canceled": "<i>útskráningu var lokað.</i> ekkert var rukkað. þú getur snúið aftur hér að neðan þegar þú ert tilbúinn.",
+      "checkoutCta": "Halda áfram í útskráningu",
+      "returnLink": "snúa aftur í ráðgjafarherbergið"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLÍNÍSK SKÝRSLA",
+        "subscribedTitle": "Nú þegar <it>innifalið.</it>",
+        "subscribedLede": "Áskriftin inniheldur eina klíníska skýrslu í hverjum almanaksmánuði. Búðu hana til neðst á lestrar síðunni — engin greiðsla er nauðsynleg.",
+        "eyebrow": "KLÍNÍSK SKÝRSLA · STAÐFESTA",
+        "title": "Klíníska skýrslan<it>.</it>",
+        "ledePrice": "Ein klínísk skýrsla er",
+        "ledeDossier": ". 12–18 blaðsíðna skjalasafn allra tólf lestranna, á því tungumáli sem klíníkus vinnur á.",
+        "ledeBilling": "Reikningsfærsla er meðhöndluð af Stripe. Hægt er að endurgera skýrslur eftir því sem lesturinn dýpkar; áskrifendur fá eina í hverjum almanaksmánuði án sérstaks gjalds.",
+        "depthNotice": "<i>skýrslan mun endurspegla þá dýpt sem er í boði.</i> hægt er að endurgera hana eftir því sem lesturinn dýpkar.",
+        "canceled": "<i>útskráningu var lokað.</i> ekkert var rukkað.",
+        "checkoutCta": "Halda áfram að greiða",
+        "returnLink": "aftur á lestrar síðuna"
+      },
+      "status": {
+        "eyebrow": "KLÍNÍSK SKÝRSLA",
+        "line": {
+          "queued": "skýrslan þín er í undirbúningi.",
+          "generating": "skýrslan er í vinnslu.",
+          "ready": "skýrslan er tilbúin.",
+          "failed": "skýrslan kláraðist ekki. við reynum aftur eftir stutta stund."
+        },
+        "open": "opna skýrsluna",
+        "back": "aftur á lestrar síðuna"
+      },
+      "queued": {
+        "eyebrow": "KLÍNÍSK SKÝRSLA",
+        "line": "skýrslan þín er í undirbúningi — við sendum þér tölvupóst þegar hún er tilbúin.",
+        "back": "aftur á lestrar síðuna"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "INNTÖKULÝSING",
+        "title": "Inntökulýsingin, <it>efni fyrir efni.</it>",
+        "lede": "Tíu hlutar. Opnaðu hvaða hluta sem er til að fara yfir eða dýpka svörin í honum. Inntökulýsingin er ekki eingöngu eyðublað sem fyllt er út einu sinni — svörum má breyta hvenær sem er."
+      },
+      "step": {
+        "eyebrow": "INNTÖKULÝSING",
+        "backToAll": "til baka í alla hluta"
+      },
+      "failed": {
+        "eyebrow": "INNTÖKULÝSING — ÓKLÁRUÐ",
+        "headline": "Lesturinn <em>kláraðist ekki</em>.",
+        "lede": "Inntökulýsingin þín er skráð. Greiningin sem fylgir henni kláraðist ekki.",
+        "retry": "Halda áfram lestri",
+        "retryPending": "Er að halda áfram"
+      }
+    },
+    "pending": {
+      "eyebrow": "STAÐA · VINNSLA",
+      "headline": "Prófíllinn þinn er <em>í lestri</em>.",
+      "lede": "við keyrum svörin þín í gegnum sálfræðilegu líkönin núna. fyrsta yfirferð tekur venjulega um 2 klukkustundir. við sendum tilkynningu þegar verkið er tilbúið og herbergið opnast.",
+      "figIntake": "INNTÖKUSKOÐUN",
+      "figSubmitted": "sent inn {date}",
+      "rowResponses": "Svör móttekin",
+      "rowPattern": "Úrvinnsla mynstra",
+      "rowSynthesis": "Samþætting prófíls",
+      "statusInProgress": "í vinnslu",
+      "statusQueued": "í biðröð",
+      "foot": "við sendum tilkynningu þegar verkið er tilbúið",
+      "returnCta": "aftur í rólega herbergið",
+      "devPrefix": "dev",
+      "devOpening": "opnast…",
+      "devOpen": "opna herbergið núna",
+      "devError": "gat ekki opnað herbergið — athugaðu stjórnborðið."
+    }
+  },
+  "invite": {
+    "eyebrow": "BOÐ",
+    "safetyFooter": "TwentyThird kemur ekki í stað klínískrar umönnunar. Í neyð, hafðu samband við neyðarlínu á þínu svæði.",
+    "notReady": {
+      "headline": "Boðkerfið er í <it>undirbúningi.</it>",
+      "body": "Vinsamlegast reyndu aftur eftir stutta stund."
+    },
+    "notFound": {
+      "headline": "Þessi hlekkur er <it>ekki þekktur.</it>",
+      "body": "Ef hlekkurinn kom úr tölvupósti nýlega gæti boðinu hafa verið endursent. Opnaðu nýjasta tölvupóstinn til að finna virka hlekkinn."
+    },
+    "alreadyDeclined": {
+      "headline": "Þessu boði var <it>hafnað.</it>",
+      "body": "Ekkert meira er krafist af þér. {name} verður ekki tilkynnt umfram það sem þau sjá nú þegar."
+    },
+    "alreadyAccepted": {
+      "headline": "Þú hefur nú þegar <it>samþykkt.</it>",
+      "body": "Ef inntaka sambandsins er ekki enn lokið getur þú haldið áfram hér fyrir neðan.",
+      "continueLink": "halda áfram með inntöku sambandsins"
+    },
+    "ended": {
+      "headline": "Þessi tenging hefur <it>lokið.</it>",
+      "body": "Tengillinn er ekki lengur virkur. Sambandsskránni er haldið í sjúkraskránni, en hún hefur ekki lengur áhrif á lesturinn."
+    },
+    "expired": {
+      "headline": "Þetta boð hefur <it>runnið út.</it>",
+      "body": "Boð renna út fjórtán dögum eftir að þau eru send. Biddu {name} um að senda nýtt ef þú vilt svara."
+    },
+    "declined": {
+      "headline": "Það er <it>móttekið.</it>",
+      "body": "Ekkert frekar er krafist af þér. Boðinu er lokað; sá sem bauð sér stöðubreytinguna hljóðlega. Þú getur lokað þessum glugga."
+    },
+    "live": {
+      "eyebrow": "TENGINGARBEIÐNI",
+      "headline": "{name} hefur boðið þér inn í <it>lestur sinn.</it>",
+      "lede": "TwentyThird er ritstjórnar-klínískt tæki — hljóðlátt herbergi þar sem innra líf einstaklings er lesið af varfærni og sett fram á tungumáli sem klínískur sérfræðingur getur notað.",
+      "explainerOne": "<em>Tenging</em> er ekki sameiginlegur reikningur. {name} mun ekki sjá lestur þinn, fundi eða málaskrá. Þú munt ekki sjá þeirra. Það sem þú segir um sambandið nærir líkanið sem framleiðir lestur {name}.",
+      "explainerTwo": "Ef þú vilt fá þinn eigin lestur, þá hefst fyrri leiðin hér að neðan einnig með þínum eigin reikningi. Miðleiðin gerir þér kleift að leggja þitt af mörkum til lesturs {name} án reiknings. Hvort tveggja er leyfilegt.",
+      "metaSentTo": "sent til",
+      "metaInviteAs": "bjóða sem",
+      "metaReceived": "móttekið",
+      "metaExpiresIn": "rennur út eftir {count, plural, one {# dag} other {# daga}}"
+    },
+    "intake": {
+      "eyebrow": "TENGSLASAMBAND INNTAK",
+      "notReady": {
+        "headline": "Inntakið er í <it>undirbúningi.</it>",
+        "body": "Vinsamlegast reynið aftur eftir stutta stund."
+      },
+      "notFound": {
+        "headline": "Þessi tengill er <it>ekki þekktur.</it>",
+        "body": "Opnaðu nýjasta boðspóstinn fyrir virka tengilinn."
+      },
+      "notOpen": {
+        "headline": "Inntakið er <it>ekki opið.</it>",
+        "body": "Þessu boði hefur ekki verið tekið, eða því hefur verið hafnað eða því lokið. Farðu aftur á boðstengilinn til að velja aftur.",
+        "backLink": "aftur í boðið"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "já — hefja tengslainntöku",
+      "acceptLabel": "já — tengjast án reiknings",
+      "declineLabel": "nei, takk",
+      "beginLabel": "hefja",
+      "continueLabel": "áfram",
+      "back": "til baka",
+      "oneMoment": "eitt augnablik…",
+      "declineConfirmLine": "þetta lokar boðinu. ekkert frekar er sent eða geymt um þig.",
+      "declineClosing": "lokar…",
+      "declineConfirm": "hafna boðinu",
+      "firstNameLabel": "FORNAFN ÞITT",
+      "firstNameAria": "Fornafn þitt",
+      "firstNameSub": "{name} mun aðeins sjá þetta fornafn á tengilista sínum.",
+      "errors": {
+        "missingFirstName": "fornafn gerir greinandanum kleift að ávarpa þig rétt.",
+        "generic": "ekki tókst að senda inn.",
+        "notFound": "þessi boðstengill er ekki þekktur.",
+        "expired": "þetta boð er útrunnið. biddu þann sem bauð að senda nýtt.",
+        "declined": "þessu boði var þegar hafnað.",
+        "ended": "þetta boð er ekki lengur virkt.",
+        "missingFirstNameRequired": "fornafn er nauðsynlegt."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "TENGSLAMAT",
+      "begin": "hefja",
+      "back": "til baka",
+      "backToCover": "til baka á forsíðu",
+      "next": "áfram",
+      "finish": "ljúka",
+      "scaleAria": "kvarði {value}",
+      "cover": {
+        "headline": "Það sem þú segir um <it>{name}</it> helst milli þín og sálgreinandans.",
+        "lede": "Tólf stuttar spurningar. Um fimm mínútur. Svörin fæða lestur {name}; þau munu ekki sjá hvað þú skrifaðir, og þú munt ekki sjá hvað það framleiðir."
+      },
+      "closing": {
+        "recording": "augnablik — svörin eru skráð.",
+        "tryAgain": "reyna aftur",
+        "headline": "Það er nóg <it>í bili.</it>",
+        "lede": "Það sem þú sagðir um {name} mun upplýsa lestur þeirra frá næstu lotu og áfram. Þau munu ekki sjá það; þú munt ekki sjá hvað það framleiðir.",
+        "closeWindow": "þú getur lokað þessum glugga."
+      },
+      "errors": {
+        "unanswered": "augnablik með þessari áður en haldið er áfram.",
+        "questionOpen": "spurning er enn opin. augnablik.",
+        "couldNotSave": "gat ekki vistað",
+        "invalidAnswers": "eitthvað var ekki rétt — vinsamlegast athugaðu svörin.",
+        "notAccepting": "þetta boð tekur ekki lengur við svörum.",
+        "notFound": "þessi boðstengill er ekki þekktur.",
+        "couldNotSaveAnswers": "gat ekki vistað svörin."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Hversu lengi hafið þið þekkt hvort annað?",
+          "options": {
+            "under_one_year": "innan við eitt ár",
+            "one_to_three": "eitt til þrjú ár",
+            "four_to_ten": "fjögur til tíu ár",
+            "eleven_to_twenty": "ellefu til tuttugu ár",
+            "more_than_twenty": "meira en tuttugu ár"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Hversu nálægt finnst ykkur vera hvort öðru núna?",
+          "lowLabel": "í fjarlægð",
+          "highLabel": "eins nálægt og hægt er"
+        },
+        "repair_initiator": {
+          "prompt": "Þegar þið eruð ósammála, hver hefur tilhneigingu til að leita sátta fyrst?",
+          "options": {
+            "i_do": "ég geri það næstum alltaf",
+            "usually_me": "yfirleitt ég",
+            "evenly": "við nálgumst hvort annað jafnt",
+            "usually_them": "yfirleitt þau",
+            "they_do": "þau gera það næstum alltaf"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Þegar eitthvað er erfitt, hvert hafa þau tilhneigingu til að fara?",
+          "options": {
+            "toward": "í átt að þér, til að ræða það",
+            "quiet": "í þögn, svo til baka",
+            "work": "í vinnu eða afþreyingu",
+            "alone": "alveg ein, á bak við hurð",
+            "elsewhere": "til annarra fyrst"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Hvað er eitthvað sem þú vilt að þau skildu um sjálf sig?"
+        },
+        "what_you_offer": {
+          "prompt": "Í einni setningu, hvað gerir þú fyrir þau sem þau geta ekki gert fyrir sjálf sig?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Hvaða rödd virðist drífa þau oftast áfram?",
+          "options": {
+            "demand": "krafan — hvað ætti að gera",
+            "doubt": "efinn — hvort það sé nóg",
+            "desire": "löngunin — hvað þau vilja í raun",
+            "watcher": "vaktarinn — hvernig það mun líta út",
+            "uncertain": "ég veit það ekki enn"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Hvar stoppar vinna þeirra venjulega?",
+          "options": {
+            "start": "upphafið — að byrja",
+            "middle": "miðjan — að halda áfram",
+            "finish": "endirinn — að sleppa takinu",
+            "visibility": "sýnileikinn — að láta það sjást",
+            "nowhere": "hvergi sem ég sé utan frá"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Er til umræðuefni sem þau forðast stöðugt? Nefndu það léttilega."
+        },
+        "they_at_their_best": {
+          "prompt": "Hvenær eru þau mest sjálf?"
+        },
+        "what_youve_changed": {
+          "prompt": "Er eitthvað við þau sem þú hefur í kyrrþey sætt þig við að þú munt ekki breyta?"
+        },
+        "future_together": {
+          "prompt": "Hversu mikið af framtíðinni sem þú ímyndar þér inniheldur þau?",
+          "lowLabel": "mjög lítið",
+          "highLabel": "næstum allt"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "eða",
+      "fallbackPreamble": "límaðu þennan hlekk í vafrann þinn:",
+      "attendingInstitution": "VIÐVERANDI STOFNUN",
+      "tagline": "Sálfræðilegt gervigreind fyrir innra lífið.",
+      "automatedFooter": "Sent frá sjálfvirku kerfi · vinsamlegast svaraðu ekki"
+    },
+    "intakeSubmitted": {
+      "subject": "prófíllinn þinn er í lestri.",
+      "preheader": "Fyrsta yfirferð er hafin. Herbergið opnast þegar verkið er tilbúið.",
+      "eyebrow": "PRÓFÍLL LESINN",
+      "titleText": "Svörin þín eru í lestri.",
+      "italicPhrase": "í lestri",
+      "lede": "Fyrsta yfirferðin í gegnum sálfræðilegu líkönin er hafin. Herbergið opnast þegar verkið er tilbúið.",
+      "figLeftItalic": "inntaka móttekin",
+      "figRightLabel": "Fyrsta yfirferð",
+      "figRightItalic": "í vinnslu",
+      "text": "{salutation}\n\nSvörin þín eru komin inn. Fyrsta yfirferðin í gegnum sálfræðilegu líkönin er hafin. Herbergið opnast þegar verkið er tilbúið.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "herbergið þitt er opið.",
+      "preheader": "Tólf einingar tilbúnar til lestrar. Verkið skerpir sig eftir því sem þú snýrð aftur að því.",
+      "eyebrow": "HERBERGI TILBÚIÐ",
+      "titleText": "Fyrsti lesturinn er opinn.",
+      "italicPhrase": "fyrsti lestur",
+      "lede": "Tólf einingar af sálfræðilegri prófíl, í herberginu og tilbúnar til lestrar. Verkið skerpir sig eftir því sem þú snýrð aftur að því.",
+      "ctaLabel": "Ganga inn í herbergið",
+      "figLeftItalic": "herbergi opnað",
+      "figRightLabel": "Fyrsti lestur",
+      "figRightItalic": "tilbúinn",
+      "text": "{salutation}\n\nFyrsti lesturinn er opinn.\n\nTólf einingar af sálfræðilegri prófíl, í herberginu og tilbúnar til lestrar. Verkið skerpir sig eftir því sem þú snýrð aftur að því.\n\nGakktu inn í herbergið:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} vill hafa þig með í lestrinum.",
+      "preheader": "{inviterName} vill hafa þig með í lestrinum. Tenging sér ekki lestur þinn; þú munt ekki sjá þeirra.",
+      "eyebrow": "BOÐ",
+      "titleText": "{inviterName} vill hafa þig með í lestrinum.",
+      "italicPhrase": "í lestrinum",
+      "lede": "TwentyThird er rólegt herbergi þar sem uppbygging innra lífs einstaklings er lesin af natni. Tenging sér ekki lestur eða fundi bjóðanda, og þú munt ekki sjá þeirra.",
+      "ctaLabel": "Opna boðið",
+      "figLeftItalic": "boð sent",
+      "figRightLabel": "Rennur út",
+      "figRightItalic": "fjórtán dögum",
+      "securityNote": "Ef þetta barst fyrir mistök, rennur boðið út af sjálfu sér eftir fjórtán daga.",
+      "textIntro": "{inviterName} vill hafa þig með í lestrinum hjá TwentyThird.",
+      "textBody": "TwentyThird er rólegt herbergi þar sem uppbygging innra lífs einstaklings er lesin af natni. Tenging sér ekki lestur eða fundi bjóðanda, og þú munt ekki sjá þeirra.",
+      "textNote": "{inviterName} bætti við athugasemd:\n  {note}",
+      "textOpen": "Opna boðið:",
+      "textSecurity": "Ef þetta barst fyrir mistök, rennur boðið út af sjálfu sér eftir fjórtán daga.",
+      "textCloser": "CognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} hefur samþykkt tenginguna.",
+      "preheader": "{nameTitle} hefur samþykkt tenginguna. Áhrif á næstu lotu fram á við.",
+      "eyebrow": "TENGING SAMÞYKKT",
+      "titleText": "{nameTitle} hefur samþykkt tenginguna.",
+      "italicPhrase": "samþykkt tenginguna",
+      "lede": "Tengslainntaka þeirra mun upplýsa lestur þinn frá næstu lotu fram á við. Þau munu ekki sjá lestur þinn; þú munt ekki sjá þeirra.",
+      "ctaLabel": "Fara aftur í herbergið",
+      "figLeftItalic": "tenging samþykkt",
+      "figRightLabel": "Áhrif",
+      "figRightItalic": "næstu lotu fram á við",
+      "text": "{salutation}\n\n{nameTitle} hefur samþykkt tenginguna.\n\nTengslainntaka þeirra mun upplýsa lestur þinn frá næstu lotu fram á við. Þau munu ekki sjá lestur þinn; þú munt ekki sjá þeirra.\n\nFara aftur í herbergið:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} hefur slitið tengingunni.",
+      "preheader": "{nameTitle} hefur slitið tengingunni. Lestur þinn mun aðlagast á næstu lotu.",
+      "eyebrow": "TENGINGU SLITIÐ",
+      "titleText": "{nameTitle} hefur slitið tengingunni.",
+      "italicPhrase": "slitið tengingunni",
+      "lede": "Lestur þinn mun aðlagast á næstu lotu. Það sem sagt var um sambandið er varðveitt í málasafninu; það hefur ekki lengur áhrif á virkan lestur.",
+      "ctaLabel": "Fara aftur í herbergið",
+      "figLeftItalic": "tengingu slitið",
+      "figRightLabel": "Áhrif",
+      "figRightItalic": "frá næstu lotu",
+      "text": "{nameTitle} hefur slitið tengingunni.\n\nLestur þinn mun aðlagast á næstu lotu. Það sem sagt var um sambandið er varðveitt í málasafninu; það hefur ekki lengur áhrif á virkan lestur.\n\nFara aftur í herbergið:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "vikuleg upprifjun er opin.",
+      "preheader": "Stutt íhugun. Fimm mínútur. Hún uppfærir lesturinn.",
+      "eyebrow": "VIKULEG UPPRYFJUN",
+      "titleText": "Vika hefur liðið hljóðlega.",
+      "italicPhrase": "hljóðlega",
+      "lede": "Stutt íhugun — hvað er hávært, hvað hefur haldist hljótt, hvað hefur breyst. Hún uppfærir lesturinn.",
+      "ctaLabel": "Opna upprifjun",
+      "figRightLabel": "Upprifjun",
+      "figRightItalic": "fimm mínútur",
+      "text": "{salutation}\n\nVika hefur liðið hljóðlega.\n\nStutt íhugun — hvað er hávært, hvað hefur haldist hljótt, hvað hefur breyst. Hún uppfærir lesturinn.\n\nOpna upprifjun:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "svör þín eru geymd.",
+      "preheader": "Inntakan þín heldur áfram þar sem þú hættir. Verkið hefst ekki fyrr en því er lokið.",
+      "eyebrow": "INNTÖKU HÆTT",
+      "titleText": "Inntakan er þar sem þú skildir hana eftir.",
+      "italicPhrase": "þar sem þú skildir hana eftir",
+      "lede": "Inntakan þín heldur áfram þar sem þú hættir. Verkið hefst ekki fyrr en því er lokið.",
+      "ctaLabel": "Fara aftur í inntökuna",
+      "figLeftItalic": "inntöku hlé",
+      "figRightLabel": "Halda áfram",
+      "figRightItalic": "þar sem þú hættir",
+      "text": "{salutation}\n\nInntakan er þar sem þú skildir hana eftir.\n\nInntakan þín heldur áfram þar sem þú hættir. Verkið hefst ekki fyrr en því er lokið.\n\nFara aftur í inntökuna:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Hvaða orð lýsa best heimilinu sem þú ólst upp á.",
+          "subtitle": "veldu allt að þrjú orð sem þér finnst rétt, jafnvel þótt þau stangist á — heimili eru yfirleitt blanda",
+          "options": {
+            "calm": "Rólegt",
+            "strict": "Strangt",
+            "emotionally_distant": "Tilfinningalega fjarlægt",
+            "chaotic": "Óreiðukennt",
+            "achievement_focused": "Mjög árangursmiðað",
+            "protective": "Verndandi",
+            "unpredictable": "Ófyrirsjáanlegt",
+            "conflict_heavy": "Átakaþrungið"
+          }
+        },
+        "q1_2": {
+          "title": "Hvaða hlutverki tókstu náttúrulega sem barn.",
+          "subtitle": "hugsaðu um það hlutverk sem þú lékst í fjölskyldunni án þess að nokkur segði þér það — friðarsinninn, hjálparinn, sá hljóðláti",
+          "options": {
+            "peacemaker": "Friðarsinni",
+            "achiever": "Árangursmiðaður",
+            "invisible_child": "Ósýnilegt barn",
+            "caregiver": "Umönnunaraðili",
+            "rebel": "Uppreisnarmaður",
+            "funny_one": "Fyndinn",
+            "responsible_one": "Ábyrgur",
+            "problem_child": "Vandamálabarn"
+          }
+        },
+        "q1_3": {
+          "title": "Hversu tilfinningalega öruggur fannst þér þú vera þegar þú ólst upp.",
+          "subtitle": "farðu eftir innsæi þínu varðandi heimilið, ekki þeirri útgáfu sem fjölskyldan myndi segja ókunnugum",
+          "lowLabel": "1 · ALDREI ÖRUGGUR",
+          "highLabel": "10 · ALVEG ÖRUGGUR"
+        },
+        "q1_4": {
+          "title": "Var opinskátt rætt um tilfinningar heima.",
+          "subtitle": "ekki bara hvort tilfinningar væru til staðar, heldur hvort einhver nefndi þær eða talaði um þær upphátt",
+          "options": {
+            "frequently": "Oft",
+            "sometimes": "Stundum",
+            "rarely": "Sjaldan",
+            "never": "Aldrei"
+          }
+        },
+        "q1_5": {
+          "title": "Ein minning frá æsku sem enn er tilfinningalega lifandi í dag.",
+          "subtitle": "lýstu einni ákveðinni senu sem enn kemur upp í hugann — hvar þú varst, hverjir voru þar, hvað gerðist, hvernig það leið"
+        },
+        "q1_6": {
+          "title": "Hvað lærðir þú að þú þurftir að gera til að fá ást eða samþykki.",
+          "subtitle": "litlu hlutirnir sem þú tókst eftir að virkuðu — að vera góður, að vera hljóður, að ná árangri, að halda sig frá — deildu því sem þú manst eftir að hafa aðlagað"
+        },
+        "q1_7": {
+          "title": "Hvaða tilfinningar var erfitt að tjá á heimilinu þínu.",
+          "subtitle": "hvaða tilfinningar voru hunsaðar, vísað frá eða refsað fyrir þegar þú reyndir að sýna þær — reiði, sorg, ótta, gleði, hvað sem er"
+        },
+        "q1_8": {
+          "title": "Þegar þú hugsar um yngra sjálf þitt, hvað finnur þú til þess.",
+          "subtitle": "vertu heiðarlegur um tilfinninguna sem kemur upp — hlýju, sorg, fjarlægð, gremju, verndarhvöt — hvað sem er raunverulega til staðar"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Hvernig myndir þú lýsa móður þinni eða aðaluppalanda í móðurhlutverki?",
+          "subtitle": "nokkrar setningar um hvernig hún var, hvernig hún kom fram við þig og hvernig þér leið í kringum hana",
+          "options": {
+            "warm": "Hlý",
+            "controlling": "Stjórnsöm",
+            "emotionally_unavailable": "Tilfinningalega ófáanleg",
+            "sacrificing": "Fórnfús",
+            "critical": "Gagnrýnin",
+            "anxious": "Kvíðin",
+            "unpredictable": "Ófyrirsjáanleg",
+            "admired": "Dáð",
+            "fearful": "Hrædd",
+            "not_applicable": "Á ekki við"
+          }
+        },
+        "q2_2": {
+          "title": "Hvernig myndir þú lýsa föður þínum eða aðaluppalanda í föðurhlutverki?",
+          "subtitle": "nokkrar setningar um hvernig hann var, hvernig hann kom fram við þig og hvernig þér leið í kringum hann",
+          "options": {
+            "supportive": "Styðjandi",
+            "distant": "Fjarlægur",
+            "dominant": "Ráðríkur",
+            "passive": "Aðgerðalaus",
+            "ambitious": "Metnaðarfullur",
+            "emotionally_closed": "Tilfinningalega lokaður",
+            "protective": "Verndandi",
+            "critical": "Gagnrýninn",
+            "absent": "Fjarverandi",
+            "not_applicable": "Á ekki við"
+          }
+        },
+        "q2_3": {
+          "title": "Staða þín meðal systkina.",
+          "subtitle": "hvar þú varst í röðinni — elstur, miðjubarn, yngstur, einkabarn, eða eitthvað þar á milli",
+          "options": {
+            "oldest": "Elstur",
+            "middle": "Miðjubarn",
+            "youngest": "Yngstur",
+            "only_child": "Einkabarn"
+          }
+        },
+        "q2_4": {
+          "title": "Hvaða hlutverk lýsir best stöðu þinni meðal systkina?",
+          "subtitle": "fyrir utan fæðingarröð, hlutverkið sem þú endaðir á að leika — sá ábyrgi, uppreisnarseggurinn, sá ósýnilegi, uppáhaldið",
+          "options": {
+            "responsible": "Ábyrgur",
+            "ignored": "Hunsaður",
+            "compared": "Borinn saman við aðra",
+            "favored": "Uppáhald",
+            "competitive": "Samkeppnishæfur",
+            "protective": "Verndandi",
+            "not_applicable": "Á ekki við"
+          }
+        },
+        "q2_5": {
+          "title": "Hvor foreldri skildi þig best?",
+          "subtitle": "nefndu þau og segðu hvað þau sáu í þér sem hitt foreldrið missti af eða misskildi"
+        },
+        "q2_6": {
+          "title": "Hvor foreldri hafði mest áhrif á ótta þinn?",
+          "subtitle": "hvers áhyggjur þú tókst upp á uppvaxtarárum, og hvernig sá ótti birtist enn í lífi þínu í dag"
+        },
+        "q2_7": {
+          "title": "Hvernig leit ágreiningur út í fjölskyldu þinni?",
+          "subtitle": "lýstu hvernig rifrildi fóru fram — öskur, þögn, skelltum hurðum, köldum vikum, endurteknum mynstrum — hvað sem fannst kunnuglegt"
+        },
+        "q2_8": {
+          "title": "Hvers konar athygli fannst erfiðast að taka við?",
+          "subtitle": "hvers konar umhyggja gerði þig óþægilegan — hrós, áhyggjur, líkamleg nánd, að vera séður — og hvers vegna það var erfitt"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Hversu trúarlegt eða andlegt var umhverfið sem þú ólst upp í.",
+          "subtitle": "raunverulegt andrúmsloft heimilisins — venjur, reglur, viðhorf í loftinu — ekki það sem þú trúir núna sem fullorðinn",
+          "lowLabel": "1 · ALLS EKKI",
+          "highLabel": "10 · MJÖG MIKIÐ"
+        },
+        "q3_2": {
+          "title": "Hvaða skilaboð voru sterkust í uppvextinum.",
+          "subtitle": "reglan eða væntingin sem var endurtekin svo oft að hún varð að bakgrunnshljóði — um árangur, hegðun, ímynd, skyldur, fjölskyldu",
+          "options": {
+            "success": "Árangur skiptir mestu máli",
+            "reputation": "Orðspor skiptir mestu máli",
+            "obedience": "Hlýðni skiptir mestu máli",
+            "family_loyalty": "Fjölskylduhollusta skiptir mestu máli",
+            "independence": "Sjálfstæði skiptir mestu máli",
+            "sacrifice": "Fórnfýsi skiptir mestu máli"
+          }
+        },
+        "q3_3": {
+          "title": "Hversu sterkt finnur þú fyrir því að vera dæmdur af samfélaginu.",
+          "subtitle": "hversu mikið þér finnst þú vera undir eftirliti eða metinn af fólki utan þíns nánasta hrings — í vinnu, á netinu, opinberlega",
+          "lowLabel": "1 · ALLS EKKI",
+          "highLabel": "10 · STÖÐUGT"
+        },
+        "q3_4": {
+          "title": "Hvaða viðhorf úr uppvextinum móta þig enn.",
+          "subtitle": "gildin, reglurnar eða forsendurnar sem þú erfðir og lifir enn eftir, jafnvel þótt þú hafir ekki hugsað um þau í mörg ár"
+        },
+        "q3_5": {
+          "title": "Hvaða viðhorfum mótmælir þú leynilega.",
+          "subtitle": "þau sem þú samþykkir opinberlega en ert ósammála í hljóði — um peninga, sambönd, árangur, kyn, hvað sem er"
+        },
+        "q3_6": {
+          "title": "Hvað myndi fjölskylda þín eða samfélag mislíka mest við þig eins og þú ert í raun.",
+          "subtitle": "þá hluta af sjálfum þér, lífi þínu eða vali þínu sem þú heldur leyndum fyrir þeim, og hvers vegna þú heldur þeim leyndum"
+        },
+        "q3_7": {
+          "title": "Hvers konar manneskja var búist við að þú yrðir.",
+          "subtitle": "framtíðin sem aðrir sáu fyrir þér — ferill, fjölskylda, hegðun, ímynd — áður en þú hafðir nokkuð um það að segja"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Hversu margir þekkja þig í raun og veru.",
+          "subtitle": "fólkið sem hefur séð óklipptu útgáfuna af þér og myndi ekki bregða við neinu í innra lífi þínu",
+          "options": {
+            "none": "Enginn",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Margir"
+          }
+        },
+        "q4_2": {
+          "title": "Í hópum verður þú venjulega.",
+          "subtitle": "hlutverkið sem þú rennur inn í án þess að hugsa — sá fyndni, hlustandinn, leiðtoginn, athugandinn, sá sem heldur hlutunum sléttum",
+          "options": {
+            "leader": "Leiðtogi",
+            "observer": "Athugandi",
+            "entertainer": "Skemmtikraftur",
+            "mediator": "Sáttasemjari",
+            "intellectual": "Vitsmunalegur",
+            "caregiver": "Umönnunaraðili",
+            "withdrawn": "Einangraður"
+          }
+        },
+        "q4_3": {
+          "title": "Hversu hræddur ertu við að valda öðrum vonbrigðum.",
+          "subtitle": "hversu mikið viðbrögð annarrar manneskju — augnaráð, andvarp, þögn — geta mótað það sem þú segir eða gerir",
+          "lowLabel": "1 · ALLS EKKI",
+          "highLabel": "10 · DAGLEGA"
+        },
+        "q4_4": {
+          "title": "Hvaða hluta af sjálfum þér felur þú félagslega.",
+          "subtitle": "hugsanirnar, tilfinningarnar, eiginleikana eða brot úr sögu þinni sem þú heldur falin þegar þú ert með öðru fólki"
+        },
+        "q4_5": {
+          "title": "Hvenær líður þér best samþykkt/ur.",
+          "subtitle": "aðstæðurnar eða samböndin þar sem þú hættir að leika og getur bara verið — lýstu því sem gerir þessi rými öðruvísi"
+        },
+        "q4_6": {
+          "title": "Hvaða félagslegar aðstæður tæma þig mest.",
+          "subtitle": "samkomurnar, gangverkin eða samböndin sem skilja þig eftir þreyttari en þau ættu að gera — og hvað við þau er þreytandi"
+        },
+        "q4_7": {
+          "title": "Hvers konar fólk öfundar þú.",
+          "subtitle": "öfund bendir venjulega á eitthvað sem þú vilt en hefur ekki leyft þér að vilja opinskátt — lýstu hver kveikir hana og hvers vegna"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Hvaða kerfi notar þú virkan.",
+          "subtitle": "forritin sem þú opnar af vana, oftar en einu sinni á dag, ekki þau sem þú átt tæknilega séð aðgang að",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Ekkert"
+          }
+        },
+        "q5_2": {
+          "title": "Meðal dagleg notkun á hverju kerfi.",
+          "subtitle": "gróf áætlun um hversu miklum tíma þú eyðir í hvert þeirra — mínútur eða klukkustundir, án dóms",
+          "unit": "MÍNÚTUR Á DAG"
+        },
+        "q5_3": {
+          "title": "Hvað notar þú þau aðallega í.",
+          "subtitle": "raunverulega ástæðan undir þeirri augljósu — tengsl, afþreying, staðfesting, flótti, samanburður, upplýsingar",
+          "options": {
+            "validation": "Staðfesting",
+            "learning": "Nám",
+            "escapism": "Flótti",
+            "networking": "Netkerfi",
+            "self_expression": "Sjálfstjáning",
+            "entertainment": "Afþreying",
+            "comparison": "Samanburður",
+            "dating": "Stefnumót"
+          }
+        },
+        "q5_4": {
+          "title": "Hversu oft eyðir þú eða breytir færslum áður en þú birtir.",
+          "subtitle": "hversu mikið þú æfir, efast um eða endurskrifar það sem þú deilir áður en þú leyfir öðrum að sjá það",
+          "options": {
+            "always": "Alltaf",
+            "often": "Oft",
+            "sometimes": "Stundum",
+            "rarely": "Sjaldan",
+            "never": "Aldrei"
+          }
+        },
+        "q5_5": {
+          "title": "Hversu oft berðu líf þitt saman við annarra á netinu.",
+          "subtitle": "hinn hljóði samanburður sem á sér stað við flettingu — um útlit, árangur, sambönd, lífsstíl, hvað sem er",
+          "lowLabel": "1 · ALDRI",
+          "highLabel": "10 · STÖÐUGT"
+        },
+        "q5_6": {
+          "title": "Hvaða útgáfa af sjálfum þér birtist á netinu.",
+          "subtitle": "lýstu persónunni sem þú sýnir — hinni sýndu útgáfu — og hvernig hún er frábrugðin því hver þú ert þegar enginn er að horfa"
+        },
+        "q5_7": {
+          "title": "Hvað leitar þú eftir tilfinningalega þegar þú opnar samfélagsmiðla.",
+          "subtitle": "tilfinningin sem þú sækist eftir í því augnabliki sem þú opnar forritið — afþreying, huggun, spenna, dofi, tengsl"
+        },
+        "q5_8": {
+          "title": "Hvers konar efni gerir þig óþægilegan.",
+          "subtitle": "færslurnar eða myndböndin sem fá þig til að vilja fletta hratt framhjá, og hvað þú heldur að þessi óþægindi snúist raunverulega um"
+        },
+        "q5_9": {
+          "title": "Hvers konar fólk vekur athygli þína á netinu.",
+          "subtitle": "reikningarnir sem þú stoppar og fylgist með — lýstu eiginleikunum sem þeir deila og hvað dregur þig að"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Núverandi sambandsstaða þín.",
+          "subtitle": "hvar þú ert í raun og veru núna — einhleyp/ur, í deitum, í sambandi, gift/ur, í skilnaði, flókið — ekki hvar þú vilt vera",
+          "options": {
+            "single": "Einhleyp/ur",
+            "dating": "Í deitum",
+            "in_relationship": "Í sambandi",
+            "engaged": "Trúlofuð/aður",
+            "married": "Gift/ur",
+            "separated_divorced": "Í skilnaði eða fráskilin/n",
+            "widowed": "Ekkja/Ekkill",
+            "its_complicated": "Þetta er flókið"
+          }
+        },
+        "q6_2": {
+          "title": "Hversu mörg alvarleg sambönd hefur þú verið í.",
+          "subtitle": "þau sem skiptu máli tilfinningalega, óháð því hversu lengi þau stóðu eða hversu opinber þau voru",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Dæmigerðir ágreiningar í samböndum þínum.",
+          "subtitle": "rökin sem halda áfram að birtast í mismunandi myndum hjá mismunandi samstarfsaðilum — peningar, fjarlægð, stjórn, samskipti",
+          "options": {
+            "distance": "Fjarlægð",
+            "jealousy": "Afbrýðisemi",
+            "control": "Stjórn",
+            "emotional_unavailability": "Tilfinningalegt óaðgengi",
+            "communication": "Samskipti",
+            "trust": "Traust",
+            "dependency": "Fíkn"
+          }
+        },
+        "q6_4": {
+          "title": "Í samböndum hefur þú tilhneigingu til að.",
+          "subtitle": "sjálfgefin viðbrögð þín þegar hlutirnir verða erfiðir — draga nær, draga frá, taka stjórn, loka á þig, reyna að laga",
+          "options": {
+            "pursue": "Sækja eftir",
+            "withdraw": "Draga þig til baka",
+            "overgive": "Gefa of mikið",
+            "test_loyalty": "Prófa hollustu",
+            "avoid_vulnerability": "Forðast varnarleysi"
+          }
+        },
+        "q6_5": {
+          "title": "Hvers konar fólk fellur þú ítrekað fyrir.",
+          "subtitle": "sú tegund sem heldur áfram að birtast í ástarlífi þínu — ekki bara útlit, heldur tilfinningaleg mynstur, skapgerð, hvernig þau koma fram við þig"
+        },
+        "q6_6": {
+          "title": "Hvað endar venjulega sambönd þín.",
+          "subtitle": "raunverulega ástæðan fyrir því að hlutirnir falla í sundur, fyrir utan opinberu söguna sem þú segir vinum eða fjölskyldu"
+        },
+        "q6_7": {
+          "title": "Hvaða tilfinningalegu þörf viltu helst fá uppfyllta.",
+          "subtitle": "þörfin sem þér finnst erfiðast að biðja beint um — að vera séð/ur, að vera valin/n, að vera örugg/ur, að vera frjáls, að vera eftirsótt/ur"
+        },
+        "q6_8": {
+          "title": "Hvað óttast þú mest í nánd.",
+          "subtitle": "hvað nánd setur í hættu fyrir þig — að vera þekkt/ur, að vera föst/ur, að vera yfirgefin/n, að vera of mikið, að vera ekki nóg"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Núverandi atvinnustaða þín.",
+          "subtitle": "lögun vinnulífs þíns núna — í vinnu, sjálfstætt starfandi, á milli starfa, í námi, í umönnun, eitthvað annað",
+          "options": {
+            "employed_full_time": "Í vinnu, fullt starf",
+            "employed_part_time": "Í vinnu, hlutastarf",
+            "self_employed": "Sjálfstætt starfandi eða stofnandi",
+            "freelance": "Verktaki eða samningsbundinn",
+            "studying": "Í námi",
+            "between_roles": "Á milli starfa",
+            "caregiving": "Í umönnun heima",
+            "retired": "Hættur störfum",
+            "not_working": "Ekki í vinnu"
+          }
+        },
+        "q7_2": {
+          "title": "Hversu ánægð/ur ertu með starfsferil þinn.",
+          "subtitle": "lengri ferill þess hvert vinnan þín er að fara, ekki hvernig þér líður þessa tilteknu viku",
+          "lowLabel": "1 · VILLA",
+          "highLabel": "10 · ALGERLEGA RÉTT"
+        },
+        "q7_3": {
+          "title": "Í vinnu ertu yfirleitt.",
+          "subtitle": "hvernig þú starfar faglega — hlutverkið sem þú tekur þegar enginn úthlutar þér því",
+          "options": {
+            "perfectionistic": "Fullkomnunarsinni",
+            "avoidant": "Forðandi",
+            "competitive": "Samkeppnishæfur",
+            "cooperative": "Samvinnuþýður",
+            "over_responsible": "Of ábyrgur",
+            "detached": "Óháður"
+          }
+        },
+        "q7_4": {
+          "title": "Mesta streita þín á vinnustað.",
+          "subtitle": "uppspretta þrýstings sem fylgir þér heim — einstaklingur, vinnuálag, ótti, umhverfi, mynstur",
+          "options": {
+            "criticism": "Gagnrýni",
+            "failure": "Mistök",
+            "visibility": "Sýnileiki",
+            "authority": "Vald",
+            "uncertainty": "Óvissa",
+            "conflict": "Átök"
+          }
+        },
+        "q7_5": {
+          "title": "Hvað þýðir árangur tilfinningalega fyrir þig.",
+          "subtitle": "tilfinningin sem þú ímyndar þér að komi þegar þú hefur loksins náð honum — léttir, stolt, friður, frelsi, að vera nóg"
+        },
+        "q7_6": {
+          "title": "Hvers konar viðurkenning hefur mest áhrif á þig.",
+          "subtitle": "lofið sem raunverulega nær til þín og breytir því hvernig þér líður, og það sem skoppar af sama hversu mikið þú færð af því"
+        },
+        "q7_7": {
+          "title": "Hvaða mistök hafa enn áhrif á þig í dag.",
+          "subtitle": "ákveðin mistök sem þú hefur ekki alveg lokið við að vinna úr — hvað gerðist, og hvernig það mótar enn val þitt"
+        },
+        "q7_8": {
+          "title": "Ef peningar hurfu, hvað myndir þú sækjast eftir.",
+          "subtitle": "vinnan eða athöfnin sem þú myndir stunda jafnvel þótt enginn borgaði þér fyrir hana — lýstu því hvernig það lítur út"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Hvernig tekst þú venjulega á við streitu.",
+          "subtitle": "hvað þú grípur til þegar álagið verður mikið — matur, skjáir, hreyfing, einangrun, samtal, vímuefni, svefn, vinna",
+          "options": {
+            "isolation": "Einangrun",
+            "food": "Matur",
+            "gaming": "Tölvuleikir",
+            "exercise": "Hreyfing",
+            "overworking": "Ofvinna",
+            "scrolling": "Skrun",
+            "substance_use": "Vímuefnanotkun",
+            "shopping": "Innkaup",
+            "sleeping": "Svefn",
+            "socializing": "Félagsmótun"
+          }
+        },
+        "q8_2": {
+          "title": "Hversu oft ferðu út í félagslegum tilgangi.",
+          "subtitle": "hversu oft þú eyðir tíma með öðru fólki í eigin persónu, ekki á netinu eða í gegnum skilaboð",
+          "options": {
+            "multiple_per_week": "Oft í viku",
+            "weekly": "Vikulega",
+            "monthly": "Mánaðarlega",
+            "rarely": "Sjaldan",
+            "never": "Aldrei"
+          }
+        },
+        "q8_3": {
+          "title": "Hversu oft finnst þér þú vera einn jafnvel í hópi.",
+          "subtitle": "einmanaleikinn sem kemur fram þegar þú ert umkringdur fólki en finnst þér samt óséður eða fjarlægur",
+          "lowLabel": "1 · ALDRI",
+          "highLabel": "10 · ALLTAF"
+        },
+        "q8_4": {
+          "title": "Hvaða athafnir láta þig gleyma þér.",
+          "subtitle": "það sem dregur þig svo djúpt inn að tíminn hverfur — til góðs eða ills, heilbrigt eða ekki"
+        },
+        "q8_5": {
+          "title": "Hvað forðast þú mest að hugsa um.",
+          "subtitle": "umræðuefnið eða minningin sem þú forðast fljótt þegar hún kemur upp — um sjálfan þig, fortíð þína, framtíð þína"
+        },
+        "q8_6": {
+          "title": "Hvenær finnst þér þú vera tilfinningalega dofinn.",
+          "subtitle": "aðstæðurnar þar sem hljóðið fer niður í núll — vinna, sambönd, átök, nánd, að vera einn"
+        },
+        "q8_7": {
+          "title": "Hvaða vana finnst þér erfiðast að hætta.",
+          "subtitle": "hegðunin sem þú hefur reynt oftar en einu sinni að breyta eða hætta, án árangurs — lýstu því hvað það er og hvað heldur þér aftur"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Hversu sjálfsgagnrýn/n ertu.",
+          "subtitle": "tónn innri raddar þinnar þegar þú klúðrar eða bregst — harkalegur, sanngjarn, afskiptalaus, eyðileggjandi",
+          "lowLabel": "1 · MILD/UR",
+          "highLabel": "10 · MISKUNNARLAUS"
+        },
+        "q9_2": {
+          "title": "Hvaða fullyrðing er næst einkahrollinum þínum.",
+          "subtitle": "setningin um sjálfan þig sem býr undir öllu öðru, sú sem þú myndir aðeins viðurkenna á erfiðum degi",
+          "options": {
+            "never_enough": "Ég er aldrei nóg",
+            "fear_abandoned": "Ég óttast að verða yfirgefinn",
+            "fear_losing_control": "Ég óttast að missa stjórn",
+            "fear_failure": "Ég óttast mistök",
+            "fear_ordinary": "Ég óttast að vera venjuleg/ur",
+            "fear_rejection": "Ég óttast höfnun",
+            "fear_dependence": "Ég óttast ósjálfstæði"
+          }
+        },
+        "q9_3": {
+          "title": "Hversu oft finnst þér þú vera aftengd/ur sjálfum þér.",
+          "subtitle": "tilfinningin að fylgjast með eigin lífi úr smá fjarlægð, eins og þú sért ekki alveg inni í því",
+          "lowLabel": "1 · ALDREI",
+          "highLabel": "10 · DAGLEGA"
+        },
+        "q9_4": {
+          "title": "Hvaða hugsun endurtekur sig oftast í huga þínum.",
+          "subtitle": "endurtekin setning eða áhyggja sem kemur reglulega aftur — skrifaðu hana með eigin orðum, ekki samantekt"
+        },
+        "q9_5": {
+          "title": "Fyrir hvað gagnrýnir þú sjálfan þig í einrúmi.",
+          "subtitle": "það sem þú dæmir sjálfan þig fyrir sem enginn annar veit um — um líkama þinn, huga, val, karakter"
+        },
+        "q9_6": {
+          "title": "Hvað myndi láta þér líða nóg.",
+          "subtitle": "skilyrðið sem þú hefur í kyrrþey sett þér til að slaka loksins á — vertu heiðarleg/ur, svarið er oft minna en þú býst við"
+        },
+        "q9_7": {
+          "title": "Ef innri rödd þín hefði persónuleika, hvernig myndir þú lýsa honum.",
+          "subtitle": "aldur, kyn, tónn þeirrar raddar — og hverrar rödd hún gæti í raun verið, ef þú rekur hana aftur"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Hvað skiptir þig meira máli.",
+          "subtitle": "veldu það sem skiptir mestu máli núna — hitt getur samt skipt máli, en vertu heiðarlegur varðandi röðunina",
+          "options": {
+            "freedom": "Frelsi",
+            "love": "Ást",
+            "recognition": "Viðurkenning",
+            "stability": "Stöðugleiki",
+            "power": "Völd",
+            "meaning": "Merkingu",
+            "peace": "Frið",
+            "influence": "Áhrif"
+          }
+        },
+        "q10_2": {
+          "title": "Hversu vongóður ertu um framtíð þína.",
+          "subtitle": "tilfinningin sem þú finnur þegar þú hugsar fram á við, ekki jákvæða svarið sem þú gefur öðrum þegar þeir spyrja",
+          "lowLabel": "1 · ENGIN",
+          "highLabel": "10 · MJÖG"
+        },
+        "q10_3": {
+          "title": "Hvað viltu leynilega mest.",
+          "subtitle": "löngunin sem þú hefur ekki alveg leyft þér að nefna upphátt — sú sem finnst of stór, of áhættusöm eða of vandræðaleg",
+          "options": {
+            "to_be_understood": "Að vera skilinn",
+            "to_be_admired": "Að vera dáður",
+            "to_feel_safe": "Að finna til öryggis",
+            "to_be_desired": "Að vera eftirsóttur",
+            "to_feel_important": "Að finna til mikilvægis",
+            "to_feel_free": "Að finna til frelsis",
+            "to_belong": "Að tilheyra"
+          }
+        },
+        "q10_4": {
+          "title": "Lýstu hugsjónaframtíð þinni í smáatriðum.",
+          "subtitle": "áþreifanlegu smáatriðin — hvar þú ert, með hverjum þú ert, hvernig morgnarnir þínir líta út, vinnan, ljósið, takturinn"
+        },
+        "q10_5": {
+          "title": "Hvaða ótti gæti eyðilagt þá framtíð.",
+          "subtitle": "það — innra eða ytra — sem hefur stöðvað þig áður, og gæti stöðvað þig aftur ef þú leyfir því"
+        },
+        "q10_6": {
+          "title": "Hvaða hluta af sjálfum þér ertu enn að reyna að verða.",
+          "subtitle": "útgáfan af þér á sjóndeildarhringnum — eiginleikarnir, frelsið, sú leið til að vera sem þú ert hægt og rólega að færast í átt að"
+        },
+        "q10_7": {
+          "title": "Ef enginn dæmdi þig, hvernig myndirðu lifa öðruvísi.",
+          "subtitle": "valin sem þú myndir taka ef eftirlitið hætti — varðandi vinnu, ást, líkama, tíma, peninga, rödd"
+        },
+        "q10_8": {
+          "title": "Hvað heldurðu að þú sért í raun að leita að.",
+          "subtitle": "það dýpra sem liggur undir öllum fyrri svörum þínum — hvað hvert val og hver löngun er í raun að benda á"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "UPPRUNI · ÞROUNARLEGT MÓT",
+        "headline": [
+          "Hvað fyrsta herbergið ",
+          "kenndi þér",
+          "."
+        ],
+        "lede": "Fyrsti hlutinn hlustar eftir tilfinningalegu loftslagi, öryggi og hlutverkinu sem þér var úthlutað. Mynstur sem skráð eru hér verða grunnurinn sem allt síðara byggir á.",
+        "title": "Uppruni",
+        "subtitle": "þróunarlegt mót"
+      },
+      "attachment": {
+        "eyebrow": "TENGSL · FJÖLSKYLDUBYGGING",
+        "headline": [
+          "Fyrstu ",
+          "tengslin",
+          ", og lögunin sem þau skildu eftir."
+        ],
+        "lede": "Staðsetur tengslastíl þinn, samband þitt við yfirvald og þríhyrninginn sem þú ólst upp í. Lögun fyrstu tengslanna verður sniðmátið sem öll síðari eru mæld eftir.",
+        "title": "Tengsl",
+        "subtitle": "fjölskyldubygging"
+      },
+      "authority": {
+        "eyebrow": "YFIRVALD · TÁKNRÆN LÖG",
+        "headline": [
+          "Raddirnar sem þú ",
+          "erfðir",
+          "."
+        ],
+        "lede": "Sýnir siðferðisreglur, sektarkennd og erfðaauðkenni sem enn eru í gangi í bakgrunni. Raddirnar sem þú ólst upp við hverfa sjaldan; þær verða röddin sem dæmir þig.",
+        "title": "Yfirvald",
+        "subtitle": "táknræn lög"
+      },
+      "belonging": {
+        "eyebrow": "TILHEYRSLU · FÉLAGSLEG SJÁLFSMYND",
+        "headline": [
+          "Hver fær að ",
+          "sjá þig",
+          "."
+        ],
+        "lede": "Mælir félagslega háð, sjálfsmyndarfeluleik og ótta við útilokun. Tilheyrslu er sjaldan ókeypis; þessi hluti spyr hvað þú fórnar fyrir hana.",
+        "title": "Tilheyrslu",
+        "subtitle": "félagsleg sjálfsmynd"
+      },
+      "persona": {
+        "eyebrow": "PERSÓNA · ÞRÁ & STAfrænt SJÁLF",
+        "headline": [
+          "Sjálfið sem þú ",
+          "sýnir",
+          "."
+        ],
+        "lede": "Les hið hugsjónaða sjálf, staðfestingarlykkjuna og táknræna frammistöðu sem þú setur upp á netinu. Persónan er ekki lygi; hún er hálf-opinberuð ósk.",
+        "title": "Persóna",
+        "subtitle": "þrá & stafrænt sjálf"
+      },
+      "desire": {
+        "eyebrow": "ÞRÁ · NÁINLEIKI & ENDURTEKNING",
+        "headline": [
+          "Mynstrið sem ",
+          "heldur áfram að koma aftur",
+          "."
+        ],
+        "lede": "Finnur endurtekið tengslalögun, óttann við yfirgefningu, mótsögnina innan þráar. Það sem endurtekur sig er sjaldan valið; það er það sem biður um að vera séð.",
+        "title": "Þrá",
+        "subtitle": "náinleiki & endurtekning"
+      },
+      "achievement": {
+        "eyebrow": "ÁRANGUR · VINNA & VIÐURKENNING",
+        "headline": [
+          "Hvað þú ert ",
+          "að reyna að sanna",
+          "."
+        ],
+        "lede": "Greinir árangurskvíða, hungur í viðurkenningu og samband þitt við yfirvald í vinnu. Undir hverjum metnaði er áhorfendur einn eða tveir einstaklingar.",
+        "title": "Árangur",
+        "subtitle": "vinna & viðurkenning"
+      },
+      "escape": {
+        "eyebrow": "FLÓTTI · NÁNAÐUR & HELGIATHÖFN",
+        "headline": [
+          "Hvert þú ferð ",
+          "til að vera ekki hér",
+          "."
+        ],
+        "lede": "Auðkennir forðunarmynstur, þráhyggjur og helgiathafnir sem stjórna ánægju. Útgangan sem þú leitar eftir segir jafnmikið og herbergið sem þú yfirgefur.",
+        "title": "Flótti",
+        "subtitle": "ánægja & helgiathöfn"
+      },
+      "self-relation": {
+        "eyebrow": "SJÁLFSSAMBAND · INNRI SAMRÆÐA",
+        "headline": [
+          "Röddin sem þú getur ",
+          "ekki alveg þaggað niður í",
+          "."
+        ],
+        "lede": "Kortleggur jaðar ofur-egósins, skammbyggingar og innri raddir. Hvernig þú talar við sjálfan þig í einrúmi er heiðarlegasta skráin yfir þá sem ólu þig upp.",
+        "title": "Sjálfssamband",
+        "subtitle": "innri samræða"
+      },
+      "future-fantasy": {
+        "eyebrow": "FRAMTÍÐ · FANTASÍA, ÓTTI & ÞRÁ",
+        "headline": [
+          "Hvað þú ert ",
+          "í raun að leita að",
+          "."
+        ],
+        "lede": "Tilfinningalegur hápunktur — framtíðin sem þú ímyndar þér, óttinn sem eltir hana, kjarnaþráin undir. Síðasta spurningin er sú fyrsta sem kemur aftur.",
+        "title": "Framtíðar-fantasía",
+        "subtitle": "fantasía, ótti & þrá"
+      }
+    }
+  },
+  "common": {
+    "or": "eða",
+    "loading": "hleður…",
+    "sending": "sendir…",
+    "save": "Vista",
+    "saved": "vistað",
+    "cancel": "Hætta við",
+    "close": "Loka",
+    "back": "Til baka",
+    "continue": "Halda áfram",
+    "retry": "Reyna aftur",
+    "more": "meira"
+  },
+  "nav": {
+    "room": "Herbergi",
+    "readings": "Greiningar",
+    "catchup": "Vikuuppgjör",
+    "consulting": "Ráðgjöf",
+    "caseFile": "Málaskrá",
+    "settings": "Stillingar",
+    "signIn": "Innskráning",
+    "signOut": "Útskráning",
+    "getStarted": "Hefja",
+    "language": "Tungumál",
+    "method": "Aðferð",
+    "theWork": "Verkið",
+    "about": "Um okkur",
+    "contact": "Tengiliðir",
+    "start": "Hefja"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Skrá ",
+      "titleItalic": "inn",
+      "titleAfter": ".",
+      "googleLabel": "Skrá inn með Google",
+      "or": "eða",
+      "emailLabel": "NETFANG",
+      "passwordLabel": "LYKILORÐ",
+      "forgotPassword": "Gleymt lykilorð",
+      "submit": "Skrá inn",
+      "footPrompt": "Nýr hér? ",
+      "footLink": "Stofna aðgang"
+    },
+    "signUp": {
+      "titleBefore": "Stofna ",
+      "titleItalic": "aðgang",
+      "titleAfter": ".",
+      "googleLabel": "Halda áfram með Google",
+      "or": "eða",
+      "emailLabel": "NETFANG",
+      "passwordLabel": "LYKILORÐ",
+      "confirmPasswordLabel": "STAÐFESTA LYKILORÐ",
+      "submit": "Stofna aðgang",
+      "footPrompt": "Ertu nú þegar með aðgang? ",
+      "footLink": "Skrá inn",
+      "resentNote": "Nýr tengill hefur verið sendur.",
+      "resendConfirmation": "Endursenda staðfestingu",
+      "pendingFootPrompt": "Rangt netfang? ",
+      "pendingFootLink": "Byrja upp á nýtt"
+    },
+    "forgot": {
+      "titleBefore": "Gleymt ",
+      "titleItalic": "lykilorð",
+      "titleAfter": ".",
+      "lede": "Sláðu inn netfangið sem þú skráðir þig með. Við sendum tengil til að endurstilla það.",
+      "emailLabel": "NETFANG",
+      "submit": "Senda endurstillingartengil",
+      "footPrompt": "Manstu það? ",
+      "footLink": "Skrá inn",
+      "sentBackLink": "Til baka til innskráningar"
+    },
+    "reset": {
+      "titleBefore": "Stilltu ",
+      "titleItalic": "nýtt lykilorð",
+      "titleAfter": ".",
+      "newPasswordLabel": "NÝTT LYKILORÐ",
+      "confirmPasswordLabel": "STAÐFESTA LYKILORÐ",
+      "submit": "Uppfæra lykilorð",
+      "expiredTitleBefore": "Þessi tengill er ",
+      "expiredTitleItalic": "ekki lengur gildur",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Biðja um nýjan tengil"
+    },
+    "errors": {
+      "invalid_credentials": "Netfang eða lykilorð passar ekki.",
+      "email_taken": "Þetta netfang er þegar skráð. Reyndu að skrá þig inn.",
+      "weak_password": "Notaðu að minnsta kosti 8 stafi.",
+      "passwords_dont_match": "Lykilorð passa ekki.",
+      "email_invalid": "Þetta virðist ekki vera gilt netfang.",
+      "rate_limited": "Of margar tilraunir. Reyndu aftur eftir smá stund.",
+      "unconfirmed_email": "Staðfestu netfangið þitt fyrst. Athugaðu pósthólfið þitt.",
+      "reset_link_expired": "Þessi tengill er útrunninn. Biðja um nýjan.",
+      "reset_link_invalid": "Þessi tengill er ekki lengur gildur. Biðja um nýjan.",
+      "oauth_failed": "Náði ekki sambandi við Google. Reyndu aftur.",
+      "callback_failed": "Gat ekki lokið innskráningu.",
+      "generic": "Eitthvað fór úrskeiðis. Reyndu aftur.",
+      "no_session": "Skráðu þig inn til að halda áfram."
+    },
+    "success": {
+      "checkInboxEyebrow": "ATHUGAÐU PÓSTHÓLFIÐ ÞITT",
+      "confirmationHeadlineBefore": "Við höfum sent ",
+      "confirmationHeadlineItalic": "staðfestingartengil",
+      "confirmationHeadlineAfter": " á ",
+      "confirmationLede": "Smelltu á hann til að ljúka við að stofna aðganginn þinn.",
+      "resetSentEyebrow": "ATHUGAÐU PÓSTHÓLFIÐ ÞITT",
+      "resetSentHeadlineBefore": "Ef þetta netfang er ",
+      "resetSentHeadlineItalic": "skráð",
+      "resetSentHeadlineAfter": ", höfum við sent endurstillingartengil.",
+      "resetSentLede": "Tengillinn virkar einu sinni og rennur út innan klukkustundar. Ef enginn tengill barst þýðir það að enginn aðgangur er til.",
+      "passwordUpdated": "Lykilorð uppfært. Skrái þig inn."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "AÐGANGUR",
+      "headlineBefore": "Settu upp þitt",
+      "headlineItalic": "rólega herbergi",
+      "lede": "Nafn, ár og já. Þá hefst verkið.",
+      "saveFailed": "Gat ekki vistað þetta. Reyndu aftur eftir smá stund.",
+      "nameLabel": "NAFN",
+      "nameRequired": "Nafn er nauðsynlegt.",
+      "prefilledHint": "fyllt út frá Google · breytanlegt",
+      "yearLabel": "FÆÐINGARÁR",
+      "yearRequired": "Veldu ár.",
+      "genderLabel": "KYN",
+      "genderRequired": "Veldu eitt.",
+      "gender": {
+        "male": "Karl",
+        "female": "Kona",
+        "nonBinary": "Kynsegin",
+        "preferNotToSay": "Vil ekki gefa upp"
+      },
+      "languageLabel": "TUNGUMÁL",
+      "termsBefore": "Ég samþykki",
+      "termsLink": "skilmálana",
+      "termsAnd": "og",
+      "privacyLink": "persónuverndarstefnuna",
+      "termsAfter": ".",
+      "submit": "Virkja aðgang"
+    },
+    "intro": {
+      "eyebrow": "INNTÖKUSAMTAL · ENGIN RÖNG SVÖR",
+      "headlineBefore": "Það eru engin rétt svör",
+      "headlineItalic": "hér"
+    },
+    "brief": {
+      "title": "YFIRLIT",
+      "hint": "lesið einu sinni, byrjið svo",
+      "opener": "Röngu svörin — hikin, innsláttarvillurnar, sleppurnar — tala jafn skýrt og þau réttu.",
+      "privacy": "Allt sem þú skrifar er persónulegt. Ekkert fer út úr þessu herbergi.",
+      "length": "Vegna þess að verkið er djúpt, er inntökusamtalið langt. Við höfum skipt því í tíu hluta. Allt ferlið tekur um tvo tíma.",
+      "resume": "Vistaðu og haltu áfram annan dag. Breyttu hvaða hluta sem er eftir að þú klárar hann — prófíllinn heldur áfram að hlusta.",
+      "begin": "Hefja inntökusamtal"
+    },
+    "saved": {
+      "eyebrow": "VISTA & HLÉ",
+      "headlineItalic": "Vistað.",
+      "headlineAfter": "Komdu aftur þegar þú ert tilbúinn.",
+      "body": "Allt sem þú hefur skrifað er í málsgögnum þínum. Herbergið opnast á sama stað næst.",
+      "keepGoing": "halda áfram",
+      "leaveRoom": "Yfirgefa rólega herbergið"
+    },
+    "step": {
+      "label": "SKREF",
+      "of": "AF",
+      "min": "MÍN",
+      "progressLabel": "Framvinda inntökusamtals",
+      "finalEpigraph": "síðasta spurningin er alltaf sú fyrsta aftur.",
+      "backTo": "Skref {n}",
+      "continueTo": "Halda áfram á skref {n}",
+      "submit": "Vista & senda",
+      "submitReading": "lestur…"
+    },
+    "questions": {
+      "closeTitle": "LOKAÐAR SPURNINGAR",
+      "closeHint": "veldu það sem er satt",
+      "openTitle": "OPNAR SPURNINGAR",
+      "openHint": "skrifaðu það sem kemur upp á yfirborðið",
+      "countLabel": "{count, plural, one {spurning} other {spurningar}}"
+    },
+    "saveExit": {
+      "or": "eða",
+      "saveAndReturn": "vista og snúa aftur síðar"
+    },
+    "saveIndicator": {
+      "saving": "vistar…",
+      "saved": "vistað",
+      "saveFailed": "mistókst að vista"
+    }
+  },
+  "readings": {
+    "whatThisIs": "hvað þetta er →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "undirmeðvitaðar lykkjur",
+        "definition": "Endurteknar raðir tilfinninga, athafna og útkoma sem eiga sér stað utan meðvitaðs vals. Að nefna lykkjuna er fyrsta truflun hennar.",
+        "seedReading": "nálgast nánd og býr svo til smá mistök til að hörfa.",
+        "seedTakeaway": "hörfunin er lykkjan. ekki nándin."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "málfræðilegt dulvitund",
+        "definition": "Hvernig dulvitað efni kemur upp í orðavali, endurtekningum, skyssum og uppbyggingu máls — fullyrðing Lacans um að dulvitundin sé byggð upp eins og tungumál.",
+        "seedReading": "tal tvöfaldast á orðinu „ætti“ — staður erfðrar kröfu.",
+        "seedTakeaway": "rödd einhvers annars talar enn í gegnum þetta orð."
+      },
+      "father-imago": {
+        "subtitle": "föðurímynd",
+        "definition": "Innbyrð mynd af föðurnum, mynduð snemma og að hluta til goðsagnakennd. Hún mótar hvernig tekist er á við vald, metnað og dómgreind síðar á ævinni.",
+        "seedReading": "dæmir ofan frá áður en hann er dæmdur ofan frá — staðan er sú sama.",
+        "seedTakeaway": "sætið breytist. stóllinn ekki."
+      },
+      "intimacy-threshold": {
+        "subtitle": "nándarþröskuldur",
+        "definition": "Punkturinn þar sem nánd byrjar að líða eins og áhætta, og varnarviðbrögð fylgja í kjölfarið. Mismunandi fyrir hvern einstakling; ótrúlega stöðugur í gegnum sambönd.",
+        "seedReading": "heldur vel þar til hinn verður læsilegur — dregur sig svo til baka.",
+        "seedTakeaway": "að vera þekktur er jaðarinn, ekki að vera náinn."
+      },
+      "desire-structure": {
+        "subtitle": "þráaruppbygging",
+        "definition": "Það sem notandinn raunverulega vill, aðgreint frá því sem honum hefur verið sagt að vilja. Oft uppgötvað með neitun — með því að taka eftir því sem hann neitar.",
+        "seedReading": "nefnir margar óskir, neitar tveimur — neitunin er merkið.",
+        "seedTakeaway": "það sem er ýtt frá bendir skýrar en það sem er elt."
+      },
+      "professional-block": {
+        "subtitle": "fagleg stífla",
+        "definition": "Þar sem vinnan festist: upphafið, miðjan, endirinn eða sýnileikinn. Hver staðsetning hefur sína eigin dulvitaða uppsprettu.",
+        "seedReading": "marklínan er þar sem efa kemur, aldrei upphafið.",
+        "seedTakeaway": "stíflan er við sýnileika, ekki við áreynslu."
+      },
+      "mother-imago": {
+        "subtitle": "móðurímynd",
+        "definition": "Innbyrð mynd af móðurinni — fyrsta samstillingin, fyrsti aðskilnaðurinn. Hún upplýsir áferð háðs og skjóls.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "snemma samstilling skilur eftir sig langa undirskrift."
+      },
+      "dream-logic": {
+        "subtitle": "draumalógík",
+        "definition": "Þétting og tilfærsla í draumefni. Lesið eftir málfræðinni, ekki táknunum.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "draumainnihald hefur sína eigin málfræði."
+      },
+      "relational-pattern": {
+        "subtitle": "sambandsmynstur",
+        "definition": "Endurtekin staða í samböndum — eltir, dregur sig til baka, foreldri, barn, jafningi. Stöðugt yfir maka frekar en makarnir eru stöðugir yfir notandann.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "sama lögunin birtist í mismunandi herbergjum."
+      },
+      "defenses": {
+        "subtitle": "varnir",
+        "definition": "Einkennandi hreyfingar sem notaðar eru til að halda erfiðu efni utan meðvitundar — vitsmunavæðing, tilfærsla, viðbragðsmyndun, klofningur. Varnir eru ekki mistök; þær eru gamlar lausnir.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "vörnin nefnir það sem var einu sinni óbærilegt."
+      },
+      "shadow": {
+        "subtitle": "skuggi",
+        "definition": "Það sem hefur verið afneitað og úthlutað öðrum — eiginleikarnir sem notandinn er vissastur um að hann sé ekki. Oft leiðin til lífskraftar.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "það sem er afneitað virkar enn."
+      },
+      "transference": {
+        "subtitle": "yfirfærsla",
+        "definition": "Hvernig gamlar sambandsmyndir eru varpaðar á núverandi — sálfræðinginn, maka, yfirmann. Mynstrið sýnir ímyndina.",
+        "seedReading": "of snemmt að segja með vissu — lögunin er að myndast.",
+        "seedTakeaway": "gamlar myndir koma í núverandi herbergi."
+      }
+    },
+    "strip": {
+      "lastRefined": "síðast betrumbætt",
+      "readingDepth": "lestrardýpt"
+    },
+    "section": {
+      "eyebrow": "LESTUR {index} · {subtitle}",
+      "strengthen": "styrkja nákvæmni",
+      "requestReport": "óska eftir skýrslu"
+    },
+    "card": {
+      "reading": "Lestur {index}"
+    },
+    "report": {
+      "eyebrow": "KLÍNÍSK SKÝRSLA",
+      "heading": "Fyrir <it>sálfræðinginn þinn.</it>",
+      "lede": "12–18 blaðsíðna skjal — sex lestrar að fullu þróaðir, auk sex til viðbótar sem mælaborðið sýnir ekki: móðurímynd, draumalógík, sambandsmynstur, varnir, skuggi, yfirfærsla. Þýtt á það tungumál sem klíníkus vinnur á.",
+      "note": "skýrslan mun endurspegla þá dýpt sem er í boði. Hægt er að endurgera hana eftir því sem lesturinn dýpkar.",
+      "generate": "Búa til klíníska skýrslu",
+      "request": "Óska eftir klínískri skýrslu",
+      "footPrefix": "ein skýrsla innifalin í hverjum mánuði fyrir ",
+      "footLink": "áskrifendur"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "SPURNING {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Hvað sat eftir hjá þér frá vikunni?",
+        "framing": "setning, mynd, orð sem einhver sagði."
+      },
+      "closeness": {
+        "prompt": "Hversu nálægt leyfðir þú einhverjum að komast?",
+        "options": {
+          "not_at_all": "alls ekki",
+          "briefly": "í stutta stund",
+          "with_hesitation": "með hik",
+          "openly": "opinskátt",
+          "too_far": "of langt"
+        }
+      },
+      "loop": {
+        "prompt": "Náðir þú þér í kunnuglegri lykkju?",
+        "framing": "hvar, og hvernig því lauk."
+      },
+      "loudest_voice": {
+        "prompt": "Hvaða rödd var háværust þessa viku?",
+        "options": {
+          "demand": "krafan",
+          "doubt": "efinn",
+          "desire": "löngunin",
+          "watcher": "vörðurinn",
+          "none": "engin þessara"
+        }
+      },
+      "dream": {
+        "prompt": "Var draumur þess virði að skrifa niður?",
+        "framing": "ef svo er, brotið sem sat eftir."
+      },
+      "acted_on_desire": {
+        "prompt": "Hversu langt gekkst þú í því sem þú raunverulega vildir?",
+        "lowLabel": "alls ekki",
+        "highLabel": "algjörlega"
+      },
+      "work_catch": {
+        "prompt": "Hvar náði vinnan þér?",
+        "options": {
+          "start": "í upphafi",
+          "middle": "í miðjunni",
+          "finish": "í lokin",
+          "visibility": "í sýnileikanum",
+          "nowhere": "hvergi"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Hver er spurningin sem þú vilt ekki svara núna?",
+        "framing": "sú sem heldur áfram að sleppa framhjá."
+      }
+    },
+    "openHint": "lengri svör dýpka lesturinn",
+    "scaleLegend": "{low} til {high}",
+    "noValue": "ekkert gildi valið",
+    "valueOf": "{value} af {max}",
+    "weekLabel": "VIKA {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Hvað sat eftir hjá þér<it>?</it>",
+    "coverLede": "Átta stuttar spurningar. Heiðarleiki er betri en lengd. Svörin betrumbæta lesturinn; ekkert hér er metið.",
+    "begin": "Byrja",
+    "back": "til baka",
+    "next": "áfram",
+    "submitting": "sendi inn",
+    "closeTheWeek": "ljúka vikunni",
+    "previousQuestion": "fyrri spurning",
+    "processingLine": "<em>vikan er í lestri.</em>",
+    "summaryEyebrow": "{weekLabel} · LESIÐ TIL BAKA",
+    "summaryTitle": "Vikan, <it>með þínum eigin orðum.</it>",
+    "caseLabel": "mál · {week}",
+    "justRefined": "nýlega betrumbætt",
+    "readingsShifted": "lestrar færðust",
+    "readingsCount": "{n} af 12",
+    "returnToRoom": "Fara aftur í herbergið",
+    "readAgain": "lesa það aftur í málsgögnum",
+    "somethingToHold": "EITTHVAÐ TIL AÐ HALDA Í",
+    "enterConsultingRoom": "fara inn í ráðgjafarherbergið",
+    "openConsultingRoom": "opna ráðgjafarherbergið",
+    "requestReport": "óska eftir klínískri skýrslu",
+    "errorSubmit": "gat ekki sent inn catchup",
+    "errorGeneric": "eitthvað fór úrskeiðis",
+    "errorFailed": "catchup er skráð. samantektin kemur síðar.",
+    "errorGiveUp": "herbergið er stutt hljótt — catchup þinn er skráður. endurnýjaðu eftir eina mínútu.",
+    "summaryFallback": "Catchup er skráð. Lesturinn hefur verið uppfærður hljóðlega; lengri samantektin kemur í næstu umferð.",
+    "readBackTitle": "Vikan, <it>þegar komin inn.</it>",
+    "readBackEmpty": "catchup er skráð. samantektin verður stutt þessa viku.",
+    "readBackFoot": "næsta catchup opnar í byrjun viku {n}."
+  },
+  "consulting": {
+    "sessionClose": "klukkustundinni er lokið.",
+    "sayIt": "segðu það →",
+    "closeSession": "ljúka setu →",
+    "eyebrow": "RÁÐGJAFARHERBERGI",
+    "closing": "lokun",
+    "closeSessionLabel": "ljúka setu",
+    "timerAria": "liðinn tími setu",
+    "chooseTopicAria": "velja umræðuefni",
+    "noTopic": "ekkert umræðuefni",
+    "justOpened": "nýopnað",
+    "minutesIn": "{count} mínútur liðnar",
+    "speakToAnalyst": "tala við sálgreinanda",
+    "send": "senda",
+    "sessionClosedFoot": "setu er lokið. hún hefur verið vistuð í málsgögnum.",
+    "previewHeld": "hvaða hluti þín heldur áfram að velja þetta?",
+    "previewTopicDreamingFuture": "Að dreyma framtíðina",
+    "previewTopicNightDream": "Næturdraumur",
+    "previewTopicRelations": "Sambönd í lífi mínu",
+    "previewTopicProfessionalGrowth": "Faglegur vöxtur",
+    "previewTurnAnalyst1": "Þú nefnir mynstur, segir því svo frá sem væri það ókunnugs. Taktu eftir hvenær <em>afturköllunin</em> hefst.",
+    "previewTurnUser1": "Ég hætti alltaf með fólki vikuna sem sambandið verður alvarlegt.",
+    "previewTurnAnalyst2": "Morguninn er dómurinn, ekki réttarhöldin. <em>Nándarþröskuldur</em> þinn æfði brottför vikum áður en samtalið átti sér stað.",
+    "sayItEllipsis": "segðu það…",
+    "offerHeadline": "Ráðgjafarherbergið",
+    "offerLede": "Langtímafundur með sálgreinandanum, haldinn í sama tón og lestrar þínir. Setur eru persónulegar, varðveittar í málsgögnum og næra lesturinn milli funda.",
+    "offerPanelsAria": "hvað seta gerir",
+    "offerPanel1Title": "nefnt, ekki sagt frá",
+    "offerPanel1Body": "Sálgreinandinn mun nefna það sem er að gerast í tali þínu — misgripin, takmarkanirnar, það hálf-sagða — og halda því þar þar til þú sérð það.",
+    "offerPanel2Title": "varðveitt í málsgögnum",
+    "offerPanel2Body": "Hver fundur er skráður. Næsti lestur les hann. Mynstur koma fram yfir vikur, ekki umferðir.",
+    "offerPanel3Title": "ein rödd, enginn listi",
+    "offerPanel3Body": "Ekki spjallbotnaflokkur. Ein sálgreiningarrödd, þjálfuð á upphafsgögnum þínum og fínpússuð með hverri Catchup.",
+    "offerFootLine": "Áskrifendur fá eina klíníska skýrslu í hverjum mánuði.",
+    "offerPillCta": "Gakktu inn í ráðgjafarherbergið",
+    "offerReturnToRoom": "fara aftur í herbergið",
+    "previewFigureLabel": "ráðgjafarherbergið",
+    "previewFigureSubtitle": "seta, forskoðuð",
+    "previewRailAria": "svæði málsgagna sem sálgreinandinn les úr",
+    "previewReadingFrom": "LESTUR FRÁ",
+    "previewActive": "virkur",
+    "previewRoleYou": "ÞÚ",
+    "previewRoleAnalyst": "SÁLGREINANDI",
+    "previewBubble1": "Ég hætti alltaf með fólki vikuna sem sambandið verður alvarlegt. Ég veit ekki af hverju ég geri það.",
+    "previewAnalyst1": "Þú nefnir mynstur, segir því svo frá sem væri það ókunnugs. <em>„Ég veit það ekki“</em> er að vinna vinnu sína — það heldur athöfninni hinum megin við ásetning. Taktu eftir hvenær <em>afturköllunin</em> hefst. Oft gerist útilokunin fyrr en brottförin.",
+    "previewBubble2": "Fyrr hvernig? Síðast leið mér eins og ég vaknaði bara einn morguninn og vissi það.",
+    "previewAnalyst2": "Morguninn er dómurinn, ekki réttarhöldin. Lestur á <strong>nándarþröskuldi</strong> þínum frá viku 04 benti á sama form — hljóðlát æfing í brottför, tveimur til þremur vikum fyrir samtalið. Morguninn er þegar líkaminn samþykkir loksins það sem þú hafðir þegar ákveðið.",
+    "previewBubble3": "Það er það sem hræðir mig. Að það sé þegar ákveðið.",
+    "previewAnalyst3": "<em>Ákveðið</em> er orðið. Ekki <em>valið</em>. Eitthvað í uppbyggingunni kýs útilokunina fram yfir prófið. Við munum halda áfram þangað.",
+    "previewExampleMark": "DÆMI · EKKI ÚR ÞÍNUM GÖGNUM"
+  },
+  "caseFile": {
+    "silentWeek": "— hljóðlát vika —",
+    "eyebrow": "MÁLASKRÁ",
+    "headlineLead": "Skrá, varðveitt",
+    "headlineItalic": "í kyrrþey.",
+    "lede": "Öll Catchup, fundir og skýrslur — varðveitt í tímaröð. Bilin eru hluti af skránni.",
+    "filterAria": "Sía",
+    "filter": {
+      "all": "allt",
+      "catchups": "catchup-fundir",
+      "sessions": "fundir",
+      "reports": "skýrslur"
+    },
+    "subscriptionTitle": "Áskrift",
+    "emptyCatchups": "málaskráin er enn tóm — fyrsti catchup-fundurinn mun opna hana.",
+    "emptyCatchupsCta": "Fara í Catchup",
+    "emptySessions": "málaskráin er enn tóm — fyrsti samráðsfundurinn mun opna hana.",
+    "emptySessionsCta": "Fara í ráðgjafarrýmið",
+    "emptyReports": "málaskráin er enn tóm — fyrsta útbúna skýrslan mun opna hana.",
+    "open": "opna",
+    "kindCatchup": "catchup",
+    "kindSession": "fundur",
+    "kindReport": "klínísk skýrsla",
+    "kindReading": "inntöku-lestur",
+    "kindConnection": "tengingarviðburður",
+    "entryEyebrow": "MÁLASKRÁ · FÆRSLA",
+    "entryBackToCaseFile": "aftur í málaskrána",
+    "entryReturnToRoom": "aftur í herbergið",
+    "sessionStillOpen": "þessi fundur er enn opinn. lesturinn birtist þegar honum lýkur.",
+    "entryDetailComing": "smáatriðin fyrir þessa færslu eru væntanleg. í bili heldur málaskráin dagsetningu, tegund og titli — og afgangurinn er enn í herberginu.",
+    "detailSummaryEyebrow": "SAMANTEKT · SVÖR ÞÍN",
+    "detailRecommendationEyebrow": "OKKAR CATCHUP",
+    "preparingRead": "undirbý lesturinn…",
+    "readNotAssembled": "ekki tókst að setja saman lesturinn núna.",
+    "tryAgain": "reyna aftur",
+    "intakeClose": "loka",
+    "intakeEdit": "breyta",
+    "intakeSaving": "vistar",
+    "intakeSave": "vista",
+    "intakeCancel": "hætta við",
+    "intakeUnsupported": "þessari spurningu er breytt innan inntökunnar sjálfrar.",
+    "intakePickUpTo": "halda áfram upp að {count}.",
+    "intakeScaleSetTo": "Stillt á {value}"
+  },
+  "settings": {
+    "eyebrow": "STILLINGAR",
+    "heading": "Lögun <it>herbergisins.</it>",
+    "lede": "Ekkert hér er varanlegt. Hægt er að breyta svörum, snúa við óskum og eyða málasafninu alveg.",
+    "blocks": {
+      "account": "Aðgangur",
+      "readingDepth": "Lestrarvídd",
+      "notifications": "Tilkynningar",
+      "subscription": "Áskrift",
+      "dangerZone": "Hættusvæði"
+    },
+    "dangerZoneIntro": "eina óafturkræfa aðgerðin í herberginu.",
+    "depthSub": {
+      "intake": {
+        "title": "Inntaka þín",
+        "caption": "{answered} / {total} svarað",
+        "ctaEmpty": "Ljúka inntöku",
+        "ctaPartial": "Bæta við frekari upplýsingum",
+        "ctaFull": "Fara yfir inntöku þína"
+      },
+      "catchups": {
+        "title": "Catchups",
+        "caption": "{count} síðustu 8 vikur",
+        "ctaEmpty": "Bæta við catchup",
+        "ctaDue": "Ljúka catchup þessarar viku",
+        "ctaFull": "Fara yfir fyrri catchups"
+      },
+      "sessions": {
+        "title": "Fundir",
+        "caption": "{count} lokið",
+        "ctaEmpty": "Hefja samráð",
+        "ctaPartial": "Halda áfram samráði",
+        "ctaFull": "Fara yfir fyrri fundi"
+      },
+      "connections": {
+        "title": "Tengingar",
+        "caption": "{count} virkar",
+        "ctaEmpty": "Bæta við tengingu",
+        "ctaSingle": "Bæta við annarri tengingu",
+        "ctaFull": "Fara yfir tengingar þínar"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "vikuleg catchup áminning",
+        "sub": "hljóðlát athugasemd í upphafi nýrrar viku"
+      },
+      "consulting_session_reminder": {
+        "label": "áminning um samráðsfund",
+        "sub": "áminning fyrir væntanlegt samráð þitt"
+      },
+      "connection_requests": {
+        "label": "tenging samþykkt",
+        "sub": "athugasemd þegar einhver samþykkir boð þitt"
+      }
+    },
+    "toggleOn": "á",
+    "toggleOff": "af",
+    "quietHours": {
+      "label": "rólegir tímar",
+      "sub": "enginn tölvupóstur milli þessara tíma, á þínum staðartíma",
+      "from": "frá",
+      "to": "til"
+    },
+    "saveFailed": "ekki tókst að vista",
+    "dangerZone": {
+      "trigger": "Eyða aðgangi",
+      "modalAria": "Staðfesta eyðingu aðgangs",
+      "eyebrow": "HÆTTUSVÆÐI",
+      "heading": "Eyða <it>málasafninu.</it>",
+      "body": "Þetta fjarlægir allar lestrar, catchups, fundi og skýrslur úr skránni. Virkum tengingum verður slitið; báðir aðilar verða látnir vita. Þessu er ekki hægt að afturkalla.",
+      "instruction": "sláðu inn <phrase></phrase> til að virkja aðgerðina.",
+      "inputAria": "Sláðu inn staðfestingarsetninguna",
+      "cancel": "hætta við",
+      "erasing": "eyði…",
+      "eraseConfirm": "eyða málasafninu",
+      "deleteFailed": "ekki tókst að eyða"
+    },
+    "subscription": {
+      "statusLabel": "STAÐA",
+      "badge": "AÐGANGUR MEÐLIMA",
+      "tagline": "Samráðsherbergið, opnað. <em>Lestur sem heldur áfram að lesa.</em>",
+      "features": {
+        "room": {
+          "title": "Samráðsherbergi",
+          "desc": "löng fundur með greinandanum."
+        },
+        "report": {
+          "title": "Mánaðarleg klínísk skýrsla",
+          "desc": "eitt kort tilbúið fyrir meðferðaraðila í hverjum almanaksmánuði."
+        },
+        "connections": {
+          "title": "{count} fleiri tengingar",
+          "desc": "bættu við fólkinu sem hefur áhrif á lesturinn."
+        },
+        "depth": {
+          "title": "Full lestrarvídd",
+          "desc": "hver kafli opinn, engin takmörk á smáatriðum."
+        }
+      },
+      "perMonth": "á mánuði",
+      "subscribe": "áskrift",
+      "reassurance": "<em>enginn skuldbinding.</em> hætta við hvenær sem er í stillingum.",
+      "activeToday": "virk — endurnýjast í dag",
+      "activeRenews": "virk — endurnýjast eftir {days, plural, one {1 dag} other {# daga}}",
+      "cancel": "hætta áskrift",
+      "cancelled": "hætt við — aðgangur til {date}",
+      "resubscribe": "endurnýja áskrift"
+    },
+    "resetPassword": {
+      "sent": "endurstillingartengill hefur verið sendur á {email}. athugaðu pósthólfið þitt",
+      "sending": "sendi",
+      "action": "endurstilla lykilorð",
+      "error": "ekki tókst að senda. reyndu aftur"
+    }
+  },
+  "connections": {
+    "explainer": "Allt að {limit, plural, one {# manneskja sem hefur áhrif á lesturinn} other {# manneskjur sem hafa áhrif á lesturinn}}. Þau sjá ekki þína lestur; þú sérð ekki þeirra. Það sem þau segja um sambandið nærir líkanið sem framleiðir þína lestur, og þitt nærir þeirra.",
+    "invite": {
+      "emailSubject": "{inviterName} vill hafa þig með í lestrinum."
+    },
+    "form": {
+      "emailLabel": "NETFANG",
+      "roleLabel": "HLUTVERK",
+      "rolePlaceholder": "veldu eitt",
+      "noteLabel": "SETNING SEM ÞAU MUNA LESA FYRST",
+      "noteHint": "valfrjálst. ein lína er nóg.",
+      "addMoreSub": "bæta við fleirum með áskrift",
+      "missingNameLine": "nafn þitt er ekki skráð. bættu því við í stillingum, sendu svo beiðnina aftur.",
+      "addYourName": "bæta við nafni þínu",
+      "noteLengthError": "athugasemdir takmarkast við eina línu — um {max} stafi."
+    },
+    "list": {
+      "empty": "engar tengingar ennþá. boðsmöguleikinn er hér fyrir neðan.",
+      "active": "VIRK",
+      "pending": "Í BIÐ",
+      "since": "síðan",
+      "invited": "boðið",
+      "received": "móttekið",
+      "resend": "senda aftur",
+      "cancel": "hætta við",
+      "expiresIn": "rennur út eftir {days, plural, one {# dag} other {# daga}}"
+    },
+    "lookup": {
+      "invalidEmail": "vinsamlegast sláðu inn gilt netfang.",
+      "self": "þú getur ekki tengst sjálfum þér.",
+      "notMemberLine": "þetta netfang er ekki hluti af meðlimum ennþá. bjóddu þeim að stofna reikning svo þú getir tengst.",
+      "copyHint": "deila skráningartenglinum",
+      "copied": "tengill afritaður",
+      "requestSent": "þú hefur þegar sent beiðni til þessa meðlims.",
+      "requestReceivedLine": "þessi meðlimur hefur sent þér beiðni — athugaðu boðin þín.",
+      "inboxLabel": "opna beiðnina",
+      "alreadyConnected": "þú ert nú þegar tengdur þessum meðlimi.",
+      "rateLimited": "of margar uppflettingar á stuttum tíma. bíddu augnablik, reyndu svo aftur.",
+      "sent": "tengingarbeiðni send.",
+      "sending": "sendi…",
+      "send": "senda beiðni",
+      "limitReached": "{limit, plural, one {# tenging er hámarkið. aftengdu hana til að bæta við annarri.} other {# tengingar er hámarkið. aftengdu eina til að bæta við annarri.}}",
+      "limitReachedFree": "{limit, plural, one {# tenging er hámarkið á ókeypis áskriftinni.} other {# tengingar er hámarkið á ókeypis áskriftinni.}}",
+      "generic": "gat ekki sent beiðnina."
+    },
+    "incoming": {
+      "eyebrow": "BÍÐUR ÞÍN",
+      "empty": "enginn bíður eftir þér.",
+      "accept": "samþykkja",
+      "decline": "hafna",
+      "limitReached": "{limit, plural, one {# tenging er hámarkið. aftengdu hana til að samþykkja þetta.} other {# tengingar er hámarkið. aftengdu eina til að samþykkja þetta.}}",
+      "limitReachedFree": "{limit, plural, one {# tenging er hámarkið á ókeypis áskriftinni.} other {# tengingar er hámarkið á ókeypis áskriftinni.}}",
+      "upsell": "áskrifendur bæta við fleirum",
+      "inviteExpired": "þetta boð er útrunnið.",
+      "inviteEnded": "þetta boð er ekki lengur í bið.",
+      "generic": "gat ekki brugðist við þessari beiðni."
+    },
+    "roles": {
+      "partner": "maki",
+      "closest_friend": "nánasti vinur",
+      "parent": "foreldri",
+      "sibling": "systkini",
+      "co_parent": "meðforeldri"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "ATHUGASEMDIR FRÁ SÁLFRÆÐINGI",
+    "noteAria": "Athugasemd frá sálfræðingi",
+    "lede": "þetta er umfram það sem herbergið getur rúmað.",
+    "body": {
+      "intake": "Eitthvað í því sem þú skrifaðir við inntöku bendir til þyngdar sem kallar á raunverulega umönnun — umfram það sem þetta herbergi getur rúmað. Vinsamlegast íhugaðu að leita til læknis, meðferðaraðila eða neyðarlínu í dag. Lesturinn verður hér þegar þú snýrð aftur.",
+      "catchup": "Eitthvað í vikulegri yfirferð bendir til þyngdar sem kallar á raunverulega umönnun — umfram það sem þetta herbergi getur rúmað. Vinsamlegast íhugaðu að leita til læknis, meðferðaraðila eða neyðarlínu í dag. Lesturinn mun halda.",
+      "session": "Það sem þú skrifaðir núna bendir til þyngdar sem kallar á raunverulega umönnun — umfram það sem þetta herbergi getur rúmað. Vinsamlegast íhugaðu að leita til læknis, meðferðaraðila eða neyðarlínu í dag. Við getum snúið aftur í herbergið þegar þú ert öruggur."
+    },
+    "crisisResources": "NEYÐARÚRRÆÐI",
+    "resources": {
+      "us": "Bandaríkin",
+      "ukIe": "Bretland og Írland",
+      "europe": "Evrópa (flest lönd)",
+      "everywhere": "Alls staðar",
+      "localEmergency": "neyðarþjónusta á staðnum"
+    },
+    "hintResources": "ef þú finnur ekki línu er næsta bráðamóttaka sjúkrahúss rétta herbergið.",
+    "hintLink": "neyðarúrræði eru skráð neðst á hverri herbergissíðu.",
+    "footerLine": "TwentyThird kemur ekki í stað klínískrar umönnunar. Í neyð, hafðu samband við neyðarlínu á staðnum.",
+    "footerRoomLabel": "herbergið"
+  }
+}

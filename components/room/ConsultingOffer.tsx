@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Pill from "@/components/ui/Pill";
 import RowLink from "@/components/ui/RowLink";
@@ -14,56 +15,51 @@ import ConsultingPreview from "@/components/room/ConsultingPreview";
 // Subscribed users skip this entirely — see app/(room)/consulting/page.tsx.
 // ────────────────────────────────────────────────────────────────────
 
-export default function ConsultingOffer() {
+export default async function ConsultingOffer() {
+  const t = await getTranslations("consulting");
   return (
     <Reveal as="section" className="room-section consulting-offer">
-      <Eyebrow>CONSULTING ROOM</Eyebrow>
+      <Eyebrow>{t("eyebrow")}</Eyebrow>
       <h1 className="consulting-offer-h">
-        The consulting room<span className="it">.</span>
+        {t("offerHeadline")}<span className="it">.</span>
       </h1>
       <p className="consulting-offer-lede">
-        A long-form sitting with the analyst, held in the same voice as your
-        readings. Sessions are private, kept in the case file, and feed the
-        readings between sittings.
+        {t("offerLede")}
       </p>
 
       <ConsultingPreview />
 
       <Hairline className="consulting-preview-divider" />
 
-      <div className="consulting-offer-panels" aria-label="what a session does">
+      <div className="consulting-offer-panels" aria-label={t("offerPanelsAria")}>
         <article className="consulting-offer-panel glass">
-          <p className="consulting-offer-panel-title">named, not narrated</p>
+          <p className="consulting-offer-panel-title">{t("offerPanel1Title")}</p>
           <p className="consulting-offer-panel-body">
-            The analyst will name what&rsquo;s happening in your speech — the
-            slip, the qualifier, the half-said — and hold it there until you
-            can see it.
+            {t("offerPanel1Body")}
           </p>
         </article>
         <article className="consulting-offer-panel glass">
-          <p className="consulting-offer-panel-title">kept in the case file</p>
+          <p className="consulting-offer-panel-title">{t("offerPanel2Title")}</p>
           <p className="consulting-offer-panel-body">
-            Every sitting is written down. The next reading reads it. Patterns
-            surface across weeks, not turns.
+            {t("offerPanel2Body")}
           </p>
         </article>
         <article className="consulting-offer-panel glass">
-          <p className="consulting-offer-panel-title">one voice, no roster</p>
+          <p className="consulting-offer-panel-title">{t("offerPanel3Title")}</p>
           <p className="consulting-offer-panel-body">
-            Not a chatbot rotation. A single analytic voice, trained on your
-            intake and refined by every catchup.
+            {t("offerPanel3Body")}
           </p>
         </article>
       </div>
 
       <div className="consulting-offer-footer">
         <p className="consulting-offer-foot-line">
-          Subscribers receive one clinical report each month.
+          {t("offerFootLine")}
         </p>
         <Pill href="/subscribe/confirm" arrow className="consulting-offer-pill">
-          Enter the consulting room
+          {t("offerPillCta")}
         </Pill>
-        <RowLink href="/room">return to the room</RowLink>
+        <RowLink href="/room">{t("offerReturnToRoom")}</RowLink>
       </div>
     </Reveal>
   );

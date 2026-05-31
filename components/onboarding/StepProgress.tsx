@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { STEPS, TOTAL_STEPS } from "@/lib/onboarding/steps";
 
 type StepProgressProps = {
@@ -10,12 +11,13 @@ type StepProgressProps = {
  * below, the parent flips this into a single horizontal mono row via
  * the .step-progress.is-mobile selector.
  */
-export default function StepProgress({
+export default async function StepProgress({
   current,
   completedThrough,
 }: StepProgressProps) {
+  const t = await getTranslations("onboarding");
   return (
-    <ol className="step-progress" aria-label="Intake progress">
+    <ol className="step-progress" aria-label={t("step.progressLabel")}>
       {STEPS.map((step) => {
         const isDone = step.number <= completedThrough;
         const isActive = step.number === current;

@@ -7,19 +7,22 @@
 // this*. We render them as <em> spans, plain text otherwise — no
 // dependency on a markdown library.
 
+import { useTranslations } from "next-intl";
+
 type Detail = { summary: string; recommendation: string };
 
 type Props = { detail: Detail };
 
 export default function CaseDetailSections({ detail }: Props) {
+  const t = useTranslations("caseFile");
   return (
     <div className="case-file-detail">
       <section className="case-file-detail-section">
-        <div className="eyebrow">SUMMARY · YOUR ANSWERS</div>
+        <div className="eyebrow">{t("detailSummaryEyebrow")}</div>
         <p className="case-file-detail-body">{renderItalics(detail.summary)}</p>
       </section>
       <section className="case-file-detail-section">
-        <div className="eyebrow">OUR CATCHUP</div>
+        <div className="eyebrow">{t("detailRecommendationEyebrow")}</div>
         <p className="case-file-detail-body">
           {renderItalics(detail.recommendation)}
         </p>

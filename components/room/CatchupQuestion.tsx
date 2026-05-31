@@ -1,10 +1,13 @@
 "use client";
 
 import { useId, type ChangeEvent, type KeyboardEvent } from "react";
+import { useTranslations } from "next-intl";
 import type { CatchupQuestion } from "@/lib/catchup-questions";
 
 type Props = {
   question: CatchupQuestion;
+  index: number;
+  total: number;
   value: string | number | null;
   onChange: (next: string | number) => void;
 };
@@ -18,19 +21,31 @@ function wordCount(s: string): number {
 }
 
 /** A single Catchup question. Renders one of three shapes (open / closed / scale). */
-export default function CatchupQuestion({ question, value, onChange }: Props) {
+export default function CatchupQuestion({
+  question,
+  index,
+  total,
+  value,
+  onChange,
+}: Props) {
   const titleId = useId();
+  const t = useTranslations("catchup");
 
   return (
     <div className="catchup-question" aria-labelledby={titleId}>
-      <div className="catchup-q-eyebrow">{question.eyebrow}</div>
+      <div className="catchup-q-eyebrow">
+        {t("questionEyebrow", {
+          n: String(index + 1).padStart(2, "0"),
+          total: String(total).padStart(2, "0"),
+        })}
+      </div>
       <h2 id={titleId} className="catchup-q-prompt">
-        {question.prompt}
+        {t(`questions.${question.key}.prompt`)}
       </h2>
 
       {question.type === "open" ? (
         <OpenInput
-          framing={question.italicFraming}
+          framing={t(`questions.${question.key}.framing`)}
           value={typeof value === "string" ? value : ""}
           onChange={onChange}
         />
@@ -39,6 +54,7 @@ export default function CatchupQuestion({ question, value, onChange }: Props) {
       {question.type === "closed" ? (
         <ClosedChoice
           name={question.key}
+          questionKey={question.key}
           options={question.options}
           value={typeof value === "string" ? value : null}
           onChange={onChange}
@@ -49,8 +65,8 @@ export default function CatchupQuestion({ question, value, onChange }: Props) {
         <ScaleInput
           min={question.min}
           max={question.max}
-          lowLabel={question.lowLabel}
-          highLabel={question.highLabel}
+          lowLabel={t(`questions.${question.key}.lowLabel`)}
+          highLabel={t(`questions.${question.key}.highLabel`)}
           value={typeof value === "number" ? value : null}
           onChange={onChange}
         />
@@ -73,6 +89,7 @@ function OpenInput({
   onChange: (s: string) => void;
 }) {
   const id = useId();
+  const t = useTranslations("catchup");
   const words = wordCount(value);
   const showHint = words < RICHNESS_HINT_THRESHOLD_WORDS;
 
@@ -97,7 +114,7 @@ function OpenInput({
         aria-hidden={!showHint}
         data-visible={showHint || undefined}
       >
-        longer answers deepen the reading
+        {t("openHint")}
       </div>
     </div>
   );
@@ -109,15 +126,18 @@ function OpenInput({
 
 function ClosedChoice({
   name,
+  questionKey,
   options,
   value,
   onChange,
 }: {
   name: string;
+  questionKey: string;
   options: { value: string; label: string }[];
   value: string | null;
   onChange: (v: string) => void;
 }) {
+  const t = useTranslations("catchup");
   return (
     <ul className="catchup-closed" role="radiogroup" aria-label={name}>
       {options.map((opt) => {
@@ -143,7 +163,7 @@ function ClosedChoice({
               onClick={() => onChange(opt.value)}
               onKeyDown={onKey}
             >
-              <span>{opt.label}</span>
+              <span>{t(`questions.${questionKey}.options.${opt.value}`)}</span>
             </button>
           </li>
         );
@@ -172,6 +192,7 @@ function ScaleInput({
   onChange: (n: number) => void;
 }) {
   const labelId = useId();
+  const t = useTranslations("catchup");
   const ticks: number[] = [];
   for (let i = min; i <= max; i++) ticks.push(i);
 
@@ -198,7 +219,7 @@ function ScaleInput({
   return (
     <div className="catchup-scale" aria-labelledby={labelId}>
       <span id={labelId} className="vh-legend">
-        {lowLabel} to {highLabel}
+        {t("scaleLegend", { low: lowLabel, high: highLabel })}
       </span>
       <div className="catchup-scale-row">
         <div
@@ -210,8 +231,8 @@ function ScaleInput({
           aria-valuenow={value ?? undefined}
           aria-valuetext={
             value === null
-              ? "no value selected"
-              : `${value} out of ${max}`
+              ? t("noValue")
+              : t("valueOf", { value, max })
           }
           onKeyDown={onKey}
         >

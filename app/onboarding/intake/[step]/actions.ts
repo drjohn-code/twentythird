@@ -11,6 +11,7 @@ import {
 import { normaliseStepPayload } from "@/lib/onboarding/schema";
 import { firstNameFrom } from "@/lib/connections";
 import { sendIntakeSubmittedEmail } from "@/lib/emails/intake-submitted";
+import { localeForUser } from "@/lib/emails/locale";
 
 export type SaveStepResult =
   | { ok: true; savedAt: string; completedThrough: number }
@@ -126,6 +127,7 @@ export async function submitIntake(): Promise<SubmitIntakeResult> {
       const res = await sendIntakeSubmittedEmail({
         to: user.email,
         firstName,
+        locale: await localeForUser(supabase, user.id),
       });
       if (!res.ok) {
         console.error(

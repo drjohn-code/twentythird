@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 // CaseFileList — the chronological dossier.
 //
@@ -28,7 +29,8 @@ type CaseFileListProps = {
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
 
-export default function CaseFileList({ entries, filter }: CaseFileListProps) {
+export default async function CaseFileList({ entries, filter }: CaseFileListProps) {
+  const t = await getTranslations("caseFile");
   // Empty state is rendered by the page so it can vary per active tab
   // (different wording, different CTA, sometimes a Subscription block
   // beneath instead of the Clinical Report).
@@ -59,14 +61,14 @@ export default function CaseFileList({ entries, filter }: CaseFileListProps) {
       {nodes.map((n) =>
         n.kind === "silent" ? (
           <li key={n.key} className="case-file-silent" aria-hidden="true">
-            <span>— silent week —</span>
+            <span>{t("silentWeek")}</span>
           </li>
         ) : (
           <li key={n.entry.entry_id} className="case-file-row">
             <span className="case-file-date">
               {formatDate(n.entry.occurred_at)}
             </span>
-            <span className="case-file-kind">{kindLabel(n.entry.entry_kind)}</span>
+            <span className="case-file-kind">{kindLabel(n.entry.entry_kind, t)}</span>
             <div className="case-file-body">
               <h3 className="case-file-title">{n.entry.entry_title}</h3>
               {n.entry.entry_summary ? (
@@ -76,7 +78,7 @@ export default function CaseFileList({ entries, filter }: CaseFileListProps) {
                 href={`/case-file/${n.entry.entry_id}`}
                 className="auth-rowlink case-file-link"
               >
-                <span>open</span>
+                <span>{t("open")}</span>
                 <span aria-hidden="true">→</span>
               </Link>
             </div>
@@ -98,18 +100,18 @@ function formatDate(iso: string): string {
     .toUpperCase();
 }
 
-function kindLabel(kind: string): string {
+function kindLabel(kind: string, t: (key: string) => string): string {
   switch (kind) {
     case "catchup":
-      return "catchup";
+      return t("kindCatchup");
     case "session":
-      return "session";
+      return t("kindSession");
     case "report":
-      return "clinical report";
+      return t("kindReport");
     case "reading":
-      return "intake reading";
+      return t("kindReading");
     case "connection":
-      return "connection event";
+      return t("kindConnection");
     default:
       return kind;
   }

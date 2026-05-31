@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { AUTH_ERRORS } from "@/lib/auth/messages";
 
 // Recovery callback. The path itself carries the "this is a password
 // reset" signal — encoding it in the path instead of a ?type=recovery
@@ -24,7 +23,7 @@ export async function GET(request: NextRequest) {
   if (!code) {
     console.log("[auth/callback/recovery] no code — redirecting to forgot-password");
     return NextResponse.redirect(
-      `${origin}/auth/forgot-password?error=${encodeURIComponent(AUTH_ERRORS.RESET_LINK_INVALID)}`,
+      `${origin}/auth/forgot-password?error=reset_link_invalid`,
     );
   }
 
@@ -50,7 +49,7 @@ export async function GET(request: NextRequest) {
       Boolean(data?.session),
     );
     return NextResponse.redirect(
-      `${origin}/auth/forgot-password?error=${encodeURIComponent(AUTH_ERRORS.RESET_LINK_EXPIRED)}`,
+      `${origin}/auth/forgot-password?error=reset_link_expired`,
     );
   }
 

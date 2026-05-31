@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 import Reveal from "@/components/layout/Reveal";
@@ -53,25 +54,26 @@ export default async function OnboardingSavedPage({
   // 'skipped_completed' rather than sending the email.
   await scheduleOnboardingResume(user.id);
 
+  const t = await getTranslations("onboarding");
+
   return (
     <main className="intake-intro-shell">
       <div className="intake-intro-inner">
         <Reveal as="div" className="intake-intro-panel-wrap">
           <Glass className="intro-panel">
-            <Eyebrow>SAVE &amp; PAUSE</Eyebrow>
+            <Eyebrow>{t("saved.eyebrow")}</Eyebrow>
             <h1 className="serif intake-intro-headline saved-headline">
-              <em>Saved.</em> Come back when you&apos;re ready.
+              <em>{t("saved.headlineItalic")}</em> {t("saved.headlineAfter")}
             </h1>
             <p className="intro-graf saved-body">
-              Everything you&apos;ve written is in your case file. The
-              room will open to the same place next time.
+              {t("saved.body")}
             </p>
             <div className="intro-divider" aria-hidden="true" />
             <div className="saved-actions">
               <RowLink href={keepGoingHref} arrow="left">
-                keep going
+                {t("saved.keepGoing")}
               </RowLink>
-              <SignOutLink>Leave the quiet room</SignOutLink>
+              <SignOutLink>{t("saved.leaveRoom")}</SignOutLink>
             </div>
           </Glass>
         </Reveal>

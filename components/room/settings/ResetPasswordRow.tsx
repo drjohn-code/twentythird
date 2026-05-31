@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 // ResetPasswordRow — Settings → Account email cell action.
 //
@@ -16,6 +17,7 @@ type Props = {
 };
 
 export default function ResetPasswordRow({ email }: Props) {
+  const t = useTranslations("settings");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
@@ -42,7 +44,7 @@ export default function ResetPasswordRow({ email }: Props) {
     return (
       <div className="account-cell-foot">
         <span className="reset-password-confirm">
-          a reset link has been sent to {email}. check your inbox
+          {t("resetPassword.sent", { email })}
         </span>
       </div>
     );
@@ -56,11 +58,17 @@ export default function ResetPasswordRow({ email }: Props) {
         onClick={send}
         disabled={state === "sending"}
       >
-        <span>{state === "sending" ? "sending" : "reset password"}</span>
+        <span>
+          {state === "sending"
+            ? t("resetPassword.sending")
+            : t("resetPassword.action")}
+        </span>
         <span aria-hidden="true">→</span>
       </button>
       {state === "error" ? (
-        <span className="reset-password-error">could not send. try again</span>
+        <span className="reset-password-error">
+          {t("resetPassword.error")}
+        </span>
       ) : null}
     </div>
   );

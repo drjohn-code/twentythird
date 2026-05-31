@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
@@ -46,6 +47,7 @@ export default async function CaseFileEntryPage({
   params: Params;
 }) {
   const { id } = await params;
+  const t = await getTranslations("caseFile");
   const supabase = await createClient();
   const {
     data: { user },
@@ -61,11 +63,11 @@ export default async function CaseFileEntryPage({
 
   if (!data) notFound();
 
-  const detailBlock = await renderDetail(supabase, user.id, data);
+  const detailBlock = await renderDetail(supabase, user.id, data, t);
 
   return (
     <Reveal as="section" className="room-section case-file-entry">
-      <Eyebrow>CASE FILE · ENTRY</Eyebrow>
+      <Eyebrow>{t("entryEyebrow")}</Eyebrow>
       <div className="case-file-entry-meta">
         <span className="case-file-date">{formatDate(data.occurred_at)}</span>
         <span className="case-file-kind">{data.entry_kind}</span>
@@ -76,10 +78,10 @@ export default async function CaseFileEntryPage({
 
       <div className="case-file-entry-actions">
         <RowLink href="/case-file" arrow="left">
-          back to the case file
+          {t("entryBackToCaseFile")}
         </RowLink>
         <Link href="/room" className="auth-rowlink">
-          <span>return to the room</span>
+          <span>{t("entryReturnToRoom")}</span>
           <span aria-hidden="true">→</span>
         </Link>
       </div>
@@ -91,6 +93,7 @@ async function renderDetail(
   supabase: Awaited<ReturnType<typeof createClient>>,
   userId: string,
   entry: CaseEntryRow,
+  t: (key: string) => string,
 ): Promise<React.ReactNode> {
   if (entry.entry_kind === "catchup") {
     const { data: row } = await supabase
@@ -126,7 +129,7 @@ async function renderDetail(
     if (!row?.closed_at) {
       return (
         <p className="case-file-entry-line">
-          this session is still open. the read appears once it closes.
+          {t("sessionStillOpen")}
         </p>
       );
     }
@@ -150,9 +153,7 @@ async function renderDetail(
   return (
     <>
       <p className="case-file-entry-line">
-        this entry&rsquo;s detail view is coming. for now, the case file
-        keeps the date, the kind, and the title — and the rest is still
-        in the room.
+        {t("entryDetailComing")}
       </p>
       {entry.entry_summary ? (
         <p className="case-file-entry-summary">{entry.entry_summary}</p>

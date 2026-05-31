@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 
 export type SessionReplyInput = {
   topic: string | null;
@@ -12,6 +12,7 @@ export type SessionReplyInput = {
   connectionContexts: Array<{ role: string; firstName: string | null; summary: string }>;
   /** When safety severity is "medium", we inject extra guidance. */
   mediumSafetyDistress: boolean;
+  locale: string;
 };
 
 const BASE_SYSTEM_TAIL = `Task — single analyst reply during a Consulting Room session.
@@ -40,7 +41,7 @@ export function buildSessionReplyPrompt(input: SessionReplyInput): {
   messages: ChatMessage[];
 } {
   const system =
-    `${ANALYST_VOICE}\n\n${BASE_SYSTEM_TAIL}` +
+    `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${BASE_SYSTEM_TAIL}` +
     (input.mediumSafetyDistress ? MEDIUM_SAFETY_ADD : "");
 
   const messages: ChatMessage[] = [];

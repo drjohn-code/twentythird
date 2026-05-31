@@ -1,11 +1,12 @@
 import "server-only";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { adminClient } from "@/lib/supabase/admin";
 import AcceptInviteActions from "@/components/room/AcceptInviteActions";
+import LocaleSwitcher from "@/components/i18n/LocaleSwitcher";
 import {
   firstNameFrom,
   firstNameOrEmailLocal,
-  roleLabel,
   formatShortDate,
   daysUntil,
 } from "@/lib/connections";
@@ -55,19 +56,18 @@ export default async function InvitePage({
 }) {
   const { token } = await params;
   const admin = adminClient();
+  const t = await getTranslations("invite");
+  const tc = await getTranslations("connections");
 
   if (!admin) {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              The invite system is being{" "}
-              <span className="it">prepared.</span>
-            </>
-          }
-          body="Please try again shortly."
+          eyebrow={t("eyebrow")}
+          headline={t.rich("notReady.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("notReady.body")}
         />
       </InviteShell>
     );
@@ -83,15 +83,13 @@ export default async function InvitePage({
 
   if (!conn) {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              This link is <span className="it">not recognised.</span>
-            </>
-          }
-          body="If the link came from an email recently, the invite may have been resent. Open the most recent email for the active link."
+          eyebrow={t("eyebrow")}
+          headline={t.rich("notFound.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("notFound.body")}
         />
       </InviteShell>
     );
@@ -112,15 +110,13 @@ export default async function InvitePage({
   // Status branches.
   if (conn.status === "declined") {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              This invite was <span className="it">declined.</span>
-            </>
-          }
-          body={`Nothing more is needed from you. ${inviterFirstName} will not be notified beyond what they already see.`}
+          eyebrow={t("eyebrow")}
+          headline={t.rich("alreadyDeclined.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("alreadyDeclined.body", { name: inviterFirstName })}
         />
       </InviteShell>
     );
@@ -128,21 +124,19 @@ export default async function InvitePage({
 
   if (conn.status === "active") {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              You have already <span className="it">accepted.</span>
-            </>
-          }
-          body="If the relationship intake is not yet complete, you can continue below."
+          eyebrow={t("eyebrow")}
+          headline={t.rich("alreadyAccepted.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("alreadyAccepted.body")}
           footer={
             <Link
               href={`/invite/${token}/intake`}
               className="auth-rowlink invite-cta-link"
             >
-              <span>continue the relationship intake</span>
+              <span>{t("alreadyAccepted.continueLink")}</span>
               <span aria-hidden="true">→</span>
             </Link>
           }
@@ -153,15 +147,13 @@ export default async function InvitePage({
 
   if (conn.status === "ended") {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              This connection has <span className="it">ended.</span>
-            </>
-          }
-          body="The link is no longer active. The relationship record remains in the case file, but no longer informs the reading."
+          eyebrow={t("eyebrow")}
+          headline={t.rich("ended.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("ended.body")}
         />
       </InviteShell>
     );
@@ -173,15 +165,13 @@ export default async function InvitePage({
 
   if (expired) {
     return (
-      <InviteShell>
+      <InviteShell safetyFooter={t("safetyFooter")}>
         <QuietState
-          eyebrow="INVITE"
-          headline={
-            <>
-              This invite has <span className="it">expired.</span>
-            </>
-          }
-          body={`Invites expire fourteen days after they are sent. Ask ${inviterFirstName} to send a new one if you would like to respond.`}
+          eyebrow={t("eyebrow")}
+          headline={t.rich("expired.headline", {
+            it: (chunks) => <span className="it">{chunks}</span>,
+          })}
+          body={t("expired.body", { name: inviterFirstName })}
         />
       </InviteShell>
     );
@@ -192,35 +182,27 @@ export default async function InvitePage({
   const sentTo = firstNameOrEmailLocal(null, conn.connection_email);
 
   return (
-    <InviteShell>
+    <InviteShell safetyFooter={t("safetyFooter")}>
       <section className="invite-page">
         <header className="invite-page-head">
-          <p className="eyebrow">CONNECTION REQUEST</p>
+          <p className="eyebrow">{t("live.eyebrow")}</p>
           <h1 className="invite-page-h">
-            {inviterFirstName} has invited you into{" "}
-            <span className="it">their reading.</span>
+            {t.rich("live.headline", {
+              name: inviterFirstName,
+              it: (chunks) => <span className="it">{chunks}</span>,
+            })}
           </h1>
-          <p className="invite-page-lede">
-            TwentyThird is an editorial-clinical instrument — a quiet room
-            where the structure of someone&apos;s inner life is read with
-            care, and rendered in language a clinician can use.
-          </p>
+          <p className="invite-page-lede">{t("live.lede")}</p>
         </header>
 
         <div className="invite-page-explainer">
           <p>
-            A <em className="serif-i">connection</em> is not a shared
-            account. {inviterFirstName} will not see your readings,
-            sessions, or case file. You will not see theirs. What you say
-            about the relationship feeds the model that produces{" "}
-            {inviterFirstName}&apos;s reading.
+            {t.rich("live.explainerOne", {
+              name: inviterFirstName,
+              em: (chunks) => <em className="serif-i">{chunks}</em>,
+            })}
           </p>
-          <p>
-            If you would like a reading of your own, the first path below
-            also begins your own account. The middle path lets you
-            contribute to {inviterFirstName}&apos;s reading without an
-            account. Either is allowed.
-          </p>
+          <p>{t("live.explainerTwo", { name: inviterFirstName })}</p>
         </div>
 
         {conn.note ? (
@@ -239,21 +221,21 @@ export default async function InvitePage({
 
         <footer className="invite-page-meta">
           <span>
-            sent to{" "}
+            {t("live.metaSentTo")}{" "}
             <em className="serif-i">{sentTo.toLowerCase()}</em>{" "}
           </span>
           <span>·</span>
           <span>
-            invite as{" "}
-            <em className="serif-i">{roleLabel(conn.role)}</em>
+            {t("live.metaInviteAs")}{" "}
+            <em className="serif-i">{tc(`roles.${conn.role}`)}</em>
           </span>
           <span>·</span>
           <span>
-            received {formatShortDate(conn.created_at)}
+            {t("live.metaReceived")} {formatShortDate(conn.created_at)}
           </span>
           <span>·</span>
           <span>
-            expires in {daysLeft} {daysLeft === 1 ? "day" : "days"}
+            {t("live.metaExpiresIn", { count: daysLeft })}
           </span>
         </footer>
       </section>
@@ -266,19 +248,25 @@ export default async function InvitePage({
 // (no Room nav, no marketing nav, no Today line).
 // ────────────────────────────────────────────────────────────────────
 
-function InviteShell({ children }: { children: React.ReactNode }) {
+function InviteShell({
+  children,
+  safetyFooter,
+}: {
+  children: React.ReactNode;
+  safetyFooter: string;
+}) {
   return (
     <main className="invite-shell">
+      <div className="absolute right-9 top-9 z-10">
+        <LocaleSwitcher />
+      </div>
       <header className="invite-shell-head">
         <Link href="/" className="invite-shell-wordmark">
           TwentyThird
         </Link>
       </header>
       {children}
-      <footer className="invite-shell-foot">
-        TwentyThird is not a substitute for clinical care. In crisis,
-        contact your local emergency line.
-      </footer>
+      <footer className="invite-shell-foot">{safetyFooter}</footer>
     </main>
   );
 }

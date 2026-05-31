@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LogoMark from "@/components/brand/LogoMark";
+import LocaleSwitcher from "@/components/i18n/LocaleSwitcher";
 
 type RoomNavProps = {
   /** First name for the right-side caption. Falls back to nothing when null. */
@@ -50,6 +51,7 @@ export default function RoomNav({ firstName }: RoomNavProps) {
       </div>
 
       <div className="room-nav-right">
+        <LocaleSwitcher />
         {/*
           id="themeToggle" reuses the global handler in SiteInteractions —
           a single toggle implementation lives on the page at a time, and

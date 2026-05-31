@@ -1,0 +1,2896 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "PSYCHODYNAMICKÁ INTELIGENCE",
+        "titleLine1": "Pokročilá",
+        "titleLine2Pre": "Psychodynamická",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "pro",
+        "titleLine3It": "Sebepoznání",
+        "ctaPrimary": "Začněte své objevování",
+        "ctaGhostOr": "nebo",
+        "ctaGhostText": "přečtěte si vědecké poznatky",
+        "scroll": "posunout"
+      },
+      "philosophy": {
+        "eyebrow": "ZÁKLADNÍ FILOZOFIE",
+        "titlePre": "Pětiminutové opravy nikoho",
+        "titleIt": "nezmění",
+        "sub1": "Provádíme analýzu kořenových příčin. Spojením základních poznatků Sigmunda Freuda s průlomy Jacquese Lacana v lingvistice, touze a identitě.",
+        "sub2": "Většina nástrojů pracuje na povrchu. My pracujeme tam, kde to bylo napsáno – v architektuře jazyka, v přeřeknutích, ve vzorcích, které jste dosud nepojmenovali.",
+        "metaLineageLabel": "Původ",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Metoda",
+        "metaMethodVal": "Strukturální",
+        "metaFocusLabel": "Zaměření",
+        "metaFocusVal": "Nevědomí"
+      },
+      "privacy": {
+        "eyebrow": "DŮVĚRNOST",
+        "titlePre": "Ochrana dat je",
+        "titleIt": "prioritou",
+        "titlePost": ".",
+        "lede": "Důvěrnost zde není funkcí; je to předpoklad hloubky. Lidé mluví svobodně jen tam, kde se cítí bezpečně – proto je místnost postavena tak, aby chránila to, co říkáte.",
+        "rowTag": "Záruky",
+        "rowTitlePre": "Místnost postavená tak, aby",
+        "rowTitleIt": "udržela",
+        "rowTitlePost": "to, co říkáte.",
+        "rowBody": "Práce vyžaduje váš nejméně bráněný materiál. Místnost je postavena tak, aby jej přijala důvěrně a udržela jej uzavřený před kýmkoli, komu nebyl určen.",
+        "figLabel": "Nakládání s daty",
+        "figSubtitle": "pevný postoj",
+        "listProcessingKey": "zpracování",
+        "listProcessingVal": "Každý záznam je zpracován trojitě slepě.",
+        "listEncryptionKey": "šifrování",
+        "listEncryptionVal": "Všechna data jsou šifrována.",
+        "listProtectionKey": "ochrana",
+        "listProtectionVal": "Udržováno pod nejvyšší dostupnou ochranou.",
+        "footKey": "Účel",
+        "footVal": "klidné, bezpečné místo pro hlubokou promluvu"
+      },
+      "process": {
+        "eyebrow": "JAK TO FUNGUJE",
+        "titlePre": "Čtyři kroky,",
+        "titleIt": "jeden rozšiřující se kruh",
+        "lede": "Komunikace se prohlubuje ve čtyřech krocích. Každý z nich rozšiřuje to, co systém dokáže přečíst – od jediného intake až po trvalou konverzaci.",
+        "step1Sub": "hloubková profilace",
+        "step1TitlePre": "A",
+        "step1TitleIt": "10krokový",
+        "step1TitlePost": "intake.",
+        "step1Body": "Vytvořte si účet a dokončete 10krokový intake. Toto je hloubková profilace; první reading je zcela sestaven z toho, co zde uvedete.",
+        "step2Sub": "zprostředkované, nikdy vzájemné",
+        "step2TitlePre": "Lidé, kteří vás",
+        "step2TitleIt": "formují",
+        "step2Body": "Přidejte lidi, kteří vás formují, každého podle role – partner, nejbližší přítel, rodič, sourozenec, spolu-rodič. To, co sdílejí, vám nikdy není viditelné; to, co sdílíte vy, jim nikdy není viditelné. Pouze systém čte obojí.",
+        "step3Sub": "týdenní reading",
+        "step3TitlePre": "Nedělní",
+        "step3TitleIt": "Catchup",
+        "step3Body": "V neděli večer nám řekněte, co se stalo během vašeho týdne a jaké to bylo prožít. Každý Catchup upřesňuje reading – obraz se zostřuje s přibývajícími týdny.",
+        "step4Sub": "zcela soukromé",
+        "step4TitlePre": "Konzultační",
+        "step4TitleIt": "místnost",
+        "step4Body": "Mluvte v plně soukromé konzultaci s analyst – hlasem, který vás zná lépe než kdokoli jiný, trénovaným napříč 23 vrstvami špičkových AI modelů."
+      },
+      "brain": {
+        "eyebrow": "PRÁCE",
+        "titleLine1": "Dekonstrukce",
+        "titleLine2": "vašeho podvědomí",
+        "state1Tag": "Mapování vzorců",
+        "state1TitlePre": "Podvědomé",
+        "state1TitleIt": "smyčky",
+        "state1TitlePost": "a opakování.",
+        "state1Body": "Sledujeme opakující se cykly ve vašich volbách, úzkostech ve vztazích a emočních spouštěčích. Identifikací těchto smyček vám přesně ukážeme, kde jsou vaše vědomé záměry unášeny nevědomým programováním.",
+        "state2Tag": "Profilování",
+        "state2TitlePre": "Hluboké",
+        "state2TitleIt": "psychodynamické",
+        "state2TitlePost": "profilování.",
+        "state2Body": "Překročte povrchní osobnostní kvízy. Jedná se o strukturální sken vaší psychologické dynamiky — mapování toho, jak vaše minulé zkušenosti formují vaši současnou identitu, ego a obranné mechanismy.",
+        "state3Tag": "Jazyk",
+        "state3TitlePre": "Jazykové",
+        "state3TitleIt": "nevědomí",
+        "state3TitlePost": "zkoumání.",
+        "state3Body": "Naše AI, zakořeněná v Lacanově teorii, analyzuje vaše slovní asociace, pauzy a řečové vzorce. Pomáháme vám číst mezi řádky vašich vlastních myšlenek, abyste získali přístup ke skrytým úzkostem a touhám, které jste dosud nedokázali vyjádřit."
+      },
+      "transform": {
+        "eyebrow": "TRANSFORMACE",
+        "titleLine1": "Přerušte cyklus,",
+        "titleLine2": "Pak jej přepište.",
+        "lede": "Tři pohyby v práci. Tři místa, kde se vhled stává změnou.",
+        "row1Tag": "Vztahové",
+        "row1TitlePre": "Uzdravte svou",
+        "row1TitleIt": "vztahovou",
+        "row1TitlePost": "dynamiku.",
+        "row1Body": "Stejný atraktor vás přitahuje ke stejnému typu člověka, ke stejné hádce, ke stejnému stažení. Odhalíme vzorec napříč lety, pojmenujeme ho a sledujeme, jak ztrácí svou gravitaci.",
+        "row1Link": "Přečtěte si případovou studii",
+        "row1FigLabel": "Subjekt 1149-A",
+        "row1FigSubtitle": "longitudinální vzorec",
+        "row1Outcome": "stáhl se",
+        "row1SummaryRecurrenceKey": "opakování",
+        "row1SummaryIntervalKey": "interval",
+        "row1SummaryAttractorKey": "atraktor",
+        "row1SummaryAttractorVal": "práh intimity",
+        "row2Tag": "Práce se sny",
+        "row2TitlePre": "Dekódujte",
+        "row2TitleIt": "logiku snů",
+        "row2TitlePost": ", slaďte cíle.",
+        "row2Body": "Vaše sny jsou zkouškami významu. Sledujeme jejich gramatiku — posuny, kondenzace, přeřeknutí — zpět k bdělému rozhodnutí, které se pro vás snažily učinit.",
+        "row2Link": "Viz anotovaný příklad",
+        "row2FigLabel": "Sezení 06",
+        "row2FigSubtitle": "záznam snu, anotovaný",
+        "row2Dream1Pre": "Jsem zpět v domě svých rodičů",
+        "row2Ann1": "prvotní scéna",
+        "row2Dream1Mid": ", ale pokoje se stále otevírají do dalších pokojů",
+        "row2Ann2": "hranice ega",
+        "row2Dream2Pre": "Muž s hlasem mého otce",
+        "row2Ann3": "otcovský imago",
+        "row2Dream2Mid": "mi podává klíč. Klíč se mění ve vodu",
+        "row2Ann4": "posun",
+        "row2Dream3Pre": "Probudím se, než stihnu otevřít dveře",
+        "row2Ann5": "touha / nedostatek",
+        "row2Key1": "prvotní scéna",
+        "row2Key2": "hranice ega",
+        "row2Key3": "otcovský imago",
+        "row2Key4": "posun",
+        "row2Key5": "touha / nedostatek",
+        "row3Tag": "Povolání",
+        "row3TitlePre": "Rozpusťte",
+        "row3TitleIt": "profesní",
+        "row3TitlePost": "bloky.",
+        "row3Body": "Strop, do kterého neustále narážíte, se zřídka týká dovedností. Je to scénář — napsaný brzy, tiše nacvičovaný — který vám pomůžeme přečíst nahlas a přepsat, větu po větě.",
+        "row3Link": "Metodický dokument",
+        "row3FigLabel": "Revize scénáře",
+        "row3FigSubtitle": "pracovní návrh",
+        "row3Line1Prefix": "01 · Nejsem",
+        "row3Line1Old": "ještě připraven.",
+        "row3Line1New": "již mi bylo dovoleno.",
+        "row3Line2Prefix": "02 · abych",
+        "row3Line2Old": "čekal na svůj tah.",
+        "row3Line2New": "pojmenoval, co chci.",
+        "row3Line3Prefix": "03 · protože",
+        "row3Line3Old": "někdo by mohl být zklamán.",
+        "row3Line3New": "zklamání je také jazyk.",
+        "row3MetaOriginalPre": "originál",
+        "row3MetaOriginalIt": "věk 11",
+        "row3MetaRevisedPre": "revidováno",
+        "row3MetaRevisedIt": "sezení 06"
+      },
+      "outcomes": {
+        "eyebrow": "VÝSLEDKY",
+        "titleLine1Pre": "Hmatatelné",
+        "titleLine1It": "poznatky",
+        "titleLine2": "Tiše měřitelné.",
+        "lede": "Sebepoznání založené na datech, podané jazykem klinického lékaře – nikoli kvízu.",
+        "row1Tag": "Akcelerace",
+        "row1TitlePre": "Dokonalá",
+        "row1TitleIt": "zkratka",
+        "row1TitlePost": "pro reálnou terapii.",
+        "row1Body": "Co dříve vyžadovalo mnohaletý vztah, může nyní začít týdny přípravy. Vstupte do ordinace svého terapeuta s vědomím, co tam chcete říct.",
+        "row1Link": "Viz metodologie",
+        "row1FigSubtitle": "čas k prvnímu vhledu",
+        "row1TraditionalLabel": "Tradiční cesta",
+        "row1AxisYr1": "rok 1",
+        "row1AxisYr3": "rok 3",
+        "row1AxisYr6": "rok 6",
+        "row1AxisYr9": "rok 9",
+        "row1AxisYr12": "rok 12",
+        "row1TwentyThirdLabelPre": "S",
+        "row1AxisWk1": "týd. 1",
+        "row1AxisWk4": "týd. 4",
+        "row1AxisWk8": "týd. 8",
+        "row1AxisWk12": "týd. 12",
+        "row1SummaryFaster": "rychleji",
+        "row1SummaryDesc": "čas k prvnímu vhledu",
+        "row2Tag": "Zpráva",
+        "row2TitlePre": "Psychologická",
+        "row2TitleIt": "mapa",
+        "row2TitlePost": "připravená pro terapeuta.",
+        "row2Body": "Strukturální diagram vás – exportovatelný, sdílitelný, hluboce srozumitelný pro vyškoleného klinického lékaře. Ne osobnostní kvíz; pracovní shrnutí.",
+        "row2Link": "Zobrazit ukázkovou zprávu",
+        "row2FigLabel": "Subjekt 1149-A",
+        "row2FigSubtitle": "strukturální profil",
+        "row2RepCase": "případ 1149-A",
+        "row2RepPrepared": "připraveno 04 · 26",
+        "row2MetricEgo": "Struktura ega",
+        "row2MetricObject": "Objektové vztahy",
+        "row2MetricDefense": "Složitost obrany",
+        "row2MetricDrive": "Organizace pudů",
+        "row2MetricSymbolic": "Symbolický registr",
+        "row2FootLabel": "Dominantní struktura",
+        "row2FootVal": "obsedantní · s hysterickými stopami",
+        "row3Tag": "Integrace",
+        "row3TitlePre": "Personalizovaná",
+        "row3TitleIt": "integrace",
+        "row3TitlePost": "a plány práce se stínem.",
+        "row3Body": "Denní podněty a rituály, které přenášejí vhled z papíru do těla. Malé, záměrné. Postavené na vaší struktuře, nikoli na obecném kurikulu.",
+        "row3Link": "Jak se plán přizpůsobuje",
+        "row3FigLabel": "Den 23",
+        "row3FigSubtitle": "denní podnět",
+        "row3FigPlan": "plán 04",
+        "row3Day": "Středa",
+        "row3PromptEyebrow": "dnešní podnět · práce se stínem",
+        "row3PromptPre": "Kde jste se dnes rozhodli",
+        "row3PromptIt": "nebýt",
+        "row3PromptPost": "viděni? A co jste skrýváním chránili?",
+        "row3Stream1Label": "dechová cvičení",
+        "row3Stream1Dur": "6 min",
+        "row3Stream2Label": "deník",
+        "row3Stream2Dur": "12 min",
+        "row3Stream3Label": "podnět stínu",
+        "row3Stream3Dur": "8 min",
+        "row3StreakLabel": "řada",
+        "row3StreakVal": "{n, plural, one {# den} few {# dny} many {# dní} other {# dní}}"
+      },
+      "final": {
+        "eyebrow": "ZAČÍT",
+        "titlePre": "Vaše nevědomí promlouvá.",
+        "titleIt": "Je čas naslouchat.",
+        "ctaPrimary": "Začněte své objevování",
+        "ctaGhostOr": "nebo",
+        "ctaGhostText": "přečtěte si vědecké poznatky"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Zásady ochrany osobních údajů — TwentyThird",
+        "metaDescription": "Jak TwentyThird nakládá s osobními údaji. Nic neopouští EU. Nic se neprodává.",
+        "eyebrow": "SOUKROMÍ",
+        "headingLead": "Osobní údaje,",
+        "headingItalic": "nakládáno s péčí.",
+        "lede": "TwentyThird zpracovává to, co sdílíte, aby vám poskytl přesný psychodynamický vhled. Nic neopouští EU. Nic se neprodává.",
+        "controls": {
+          "headingLead": "Kdo",
+          "headingItalic": "kontroluje",
+          "headingTail": "vaše data",
+          "p1": "WelloWork AB, registrovaná ve Švédsku (org. č. 559472‑9997), působící z Uppsaly, je správcem osobních údajů shromážděných na této webové stránce a prostřednictvím přímých dotazů.",
+          "p2": "Pro data zpracovávaná v rámci platformy TwentyThird jménem organizace – kliniky, výzkumné instituce, zaměstnavatele – WelloWork AB jedná jako zpracovatel a zákaznická organizace je správcem. Tento vztah se řídí samostatnou Smlouvou o zpracování dat."
+        },
+        "figure": {
+          "label": "kdo kontroluje vaše data",
+          "controller": "Správce",
+          "directRelationship": "přímý vztah",
+          "websiteVisitor": "Návštěvník webu",
+          "you": "Vy",
+          "customerOrg": "Zákaznická organizace",
+          "viaDpa": "prostřednictvím DPA",
+          "processor": "Zpracovatel",
+          "platformUser": "Uživatel platformy"
+        },
+        "collect": {
+          "headingLead": "Co",
+          "headingItalic": "shromažďujeme",
+          "contactStrong": "Kontaktní a účetní údaje.",
+          "contactBody": "Jméno, e-mailová adresa a veškeré informace, které nám poskytnete při registraci nebo korespondenci. Právní základ: plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR).",
+          "sessionStrong": "Údaje o sezení a platformě.",
+          "sessionBody": "Záznamy z deníku, odpovědi, obsah snů a jazykové vzorce, které sdílíte v rámci TwentyThird. Toto je substrát analýzy. Právní základ: výslovný souhlas (čl. 9 odst. 2 písm. a) GDPR), udělený při nástupu a kdykoli odvolatelný. S těmito údaji nakládáme jako se zvláštní kategorií údajů souvisejících se zdravím a uplatňujeme odpovídající záruky bez ohledu na formální klasifikaci.",
+          "technicalStrong": "Technické údaje.",
+          "technicalBody": "IP adresa, typ prohlížeče, identifikátory zařízení a časová razítka použití – shromažďovány automaticky při přístupu k platformě. Právní základ: oprávněný zájem (čl. 6 odst. 1 písm. f) GDPR) na udržení bezpečnosti a diagnostice chyb.",
+          "p4": "Neshromažďujeme údaje o rase, etnickém původu, politickém názoru ani náboženském přesvědčení. Pokud obsah, který sdílíte, náhodně odhalí takové informace, nejsou zpracovávány jako samostatná kategorie."
+        },
+        "use": {
+          "headingLead": "Jak jej",
+          "headingItalic": "používáme",
+          "headingTail": "jej",
+          "p1": "Vaše data používáme k poskytování a zlepšování služby TwentyThird, k zasílání transakčních zpráv, které jste si vyžádali, k odhalování a prevenci podvodů nebo zneužití a k plnění právních závazků.",
+          "p2": "Vaše data nepoužíváme k profilování pro reklamní účely. Neprodáváme je, nelicencujeme je ani je nesdílíme s datovými makléři. Nepoužíváme je k trénování AI modelů pro obecné účely provozovaných třetími stranami."
+        },
+        "sees": {
+          "headingLead": "Kdo",
+          "headingItalic": "vidí",
+          "headingTail": "to",
+          "withinStrong": "V rámci WelloWork AB:",
+          "withinBody": "Klinici a inženýři, kteří potřebují přístup k udržování služby. Přístup je omezen rolí a zaznamenáván.",
+          "infraStrong": "Poskytovatelé infrastruktury:",
+          "infraBody": "Supabase (databáze a autentizace, region EU), Vercel (hosting, okraj EU) a Postmark (transakční e-mail). Každý je vázán Smlouvou o zpracování dat a zpracovává data pouze na základě našich zdokumentovaných pokynů.",
+          "legalStrong": "Zákonná povinnost:",
+          "legalBody": "Údaje sdělujeme příslušným orgánům pouze tehdy, je-li to vyžadováno zákonem, a pouze v nezbytném rozsahu.",
+          "p4": "Žádná data nejsou přenášena mimo EU/EHP. Pokud se to změní, aktualizujeme tyto zásady a v případě potřeby získáme nový souhlas."
+        },
+        "retention": {
+          "headingItalic": "Uchovávání dat",
+          "p1": "Údaje o účtu a platformě jsou uchovávány po dobu aktivity vašeho účtu, plus 30 dní po smazání pro případ obnovy. Technické protokoly jsou uchovávány po dobu 90 dnů. Kontaktní dotazy jsou uchovávány po dobu 24 měsíců.",
+          "p2": "Po uplynutí těchto období jsou data trvale smazána nebo nevratně anonymizována."
+        },
+        "rights": {
+          "headingLead": "Vaše",
+          "headingItalic": "práva",
+          "p1": "Máte právo na přístup k údajům, které o vás uchováváme, na opravu nepřesností, na vyžádání jejich vymazání, na omezení nebo námitku proti zpracování a na obdržení strojově čitelné kopie pro přenositelnost. Pokud je zpracování založeno na souhlasu, můžete jej kdykoli odvolat, aniž by to ovlivnilo zákonnost zpracování před odvoláním.",
+          "exerciseLead": "Pro uplatnění jakéhokoli práva",
+          "exerciseTail": ". Odpovíme do 30 dnů. Pokud nejste spokojeni s naší odpovědí, můžete podat stížnost u Integritetsskyddsmyndigheten (IMY), švédského úřadu pro ochranu údajů."
+        },
+        "children": {
+          "headingItalic": "Děti",
+          "p1": "TwentyThird není určen osobám mladším 18 let. Vědomě neshromažďujeme údaje od nezletilých. Pokud zjistíme, že nezletilá osoba odeslala údaje, neprodleně je smažeme."
+        },
+        "changes": {
+          "headingItalic": "Změny",
+          "p1": "Tuto zásadu aktualizujeme, když se změní naše postupy. Podstatné změny jsou oznámeny e-mailem nejméně 14 dní předtím, než vstoupí v platnost. Datum verze je uvedeno na konci této stránky.",
+          "effectivePrefix": "V platnosti od:",
+          "effectiveSuffix": "· Rozhodné právo: švédské právo a GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Podmínky služby — TwentyThird",
+        "metaDescription": "Smlouva upravující vaše používání TwentyThird. Napsáno tak, aby se četlo, ne aby se obcházelo.",
+        "eyebrow": "PODMÍNKY",
+        "headingLead": "Smlouva,",
+        "headingItalic": "jasně uvedená.",
+        "lede": "Tyto podmínky upravují vaše používání TwentyThird. Jsou napsány tak, aby se četly, ne aby se obcházely.",
+        "service": {
+          "headingLead": "Služba",
+          "headingItalic": "služby",
+          "p1": "TwentyThird je psychodynamická AI platforma provozovaná společností WelloWork AB. Poskytuje analytický vhled čerpaný z toho, co sdílíte. Není to zdravotnický prostředek. Nepředstavuje psychoterapii, psychiatrickou diagnózu ani klinickou léčbu. Pokud jste v psychické tísni, obraťte se na kvalifikovaného klinického lékaře nebo na pohotovostní službu."
+        },
+        "account": {
+          "headingLead": "Váš",
+          "headingItalic": "účet",
+          "p1": "Pro používání TwentyThird musíte být starší 18 let. Jste zodpovědní za zachování důvěrnosti svých přihlašovacích údajů. Nesmíte sdílet svůj účet ani používat platformu jménem jiné osoby bez jejího výslovného souhlasu.",
+          "p2": "Vlastníte obsah, který vytváříte – své deníkové záznamy, své odpovědi. Jejich odesláním udělujete společnosti WelloWork AB omezenou licenci k jejich zpracování pro účely popsané v Zásadách ochrany osobních údajů. Svůj obsah můžete kdykoli exportovat nebo smazat."
+        },
+        "acceptableUse": {
+          "headingLead": "Přijatelné",
+          "headingItalic": "použití",
+          "p1": "TwentyThird můžete používat pro zákonné osobní a profesionální sebepoznávání. Nesmíte jej používat k poškození sebe nebo jiných, k pokusu o obcházení bezpečnostních systémů platformy, k reverznímu inženýrství základních modelů nebo k trénování konkurenčních systémů AI.",
+          "p2": "Vyhrazujeme si právo pozastavit nebo ukončit účty, které porušují tyto podmínky, bez předchozího upozornění, je-li to nezbytné pro bezpečnost."
+        },
+        "liability": {
+          "headingLead": "Naše",
+          "headingItalic": "odpovědnost",
+          "p1": "TwentyThird poskytuje vhled, nikoli jistotu. Nezaručujeme, že analýza je přesná, úplná nebo vhodná pro vaše okolnosti. V rozsahu povoleném švédským právem je naše odpovědnost omezena na částku, kterou jste zaplatili za 3 měsíce předcházející příslušnému nároku.",
+          "p2": "Nic v těchto podmínkách neomezuje odpovědnost za smrt nebo zranění způsobené naší nedbalostí nebo za podvod."
+        },
+        "disputes": {
+          "headingLead": "Rozhodné právo a",
+          "headingItalic": "spory",
+          "p1": "Tyto podmínky se řídí švédským právem. Spory, které nelze vyřešit přímo, se předkládají soudům v Uppsale ve Švédsku jako soudu prvního stupně.",
+          "p2Lead": "Pokud jste spotřebitel v EU, máte také přístup k platformě EU pro řešení sporů online na adrese",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Změny",
+          "p1": "Tyto podmínky můžeme aktualizovat. Pokračující používání po datu účinnosti podstatné změny představuje přijetí. O podstatných změnách informujeme e-mailem nejméně 14 dní předem.",
+          "effectivePrefix": "Účinnost:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Zásady používání souborů cookie — TwentyThird",
+        "metaDescription": "TwentyThird používá soubory cookie pouze pro ověřování a zachování preferencí. Žádné reklamní soubory cookie. Žádné sledovací nástroje třetích stran.",
+        "eyebrow": "SOUBORY COOKIE",
+        "headingLead": "Co ukládáme",
+        "headingItalic": "ve vašem prohlížeči.",
+        "lede": "TwentyThird používá soubory cookie pro ověřování a zachování preferencí. Nepoužíváme žádné reklamní soubory cookie ani sledovací nástroje třetích stran.",
+        "whatIs": {
+          "headingLead": "Co je to",
+          "headingItalic": "cookie",
+          "p1": "Cookie je malý textový soubor uložený ve vašem prohlížeči. Používáme je k tomu, abychom vás udrželi přihlášené a zapamatovali si vaši preferenci motivu (tmavý nebo světlý). To je vše."
+        },
+        "weSet": {
+          "headingLead": "Soubory cookie",
+          "headingItalic": "které nastavujeme",
+          "authBody": "— Nastaveno Supabase. Udržuje vaši ověřenou relaci. Vyprší, když se odhlásíte nebo po 7 dnech neaktivity. Nezbytně nutné.",
+          "themeBody": "— Ukládá vaši preferenci tmavého/světlého režimu. Přetrvává, dokud není vymazáno. Funkční.",
+          "p3": "Nenastavujeme žádné reklamní soubory cookie. Nenačítáme žádné sledovací skripty třetích stran — žádné Google Analytics, žádné Meta Pixel, žádné marketingové značky jakéhokoli druhu."
+        },
+        "choices": {
+          "headingLead": "Vaše",
+          "headingItalic": "volby",
+          "p1Lead": "Soubory cookie můžete kdykoli vymazat prostřednictvím nastavení prohlížeče. Vymazání",
+          "p1Mid": "vás odhlásí. Vymazání",
+          "p1Tail": "resetuje zobrazení na tmavé výchozí nastavení.",
+          "p2": "Nepoužíváme banner pro souhlas se soubory cookie pro nezbytně nutné nebo funkční soubory cookie podle směrnice ePrivacy, protože nevyžadují souhlas. Pokud v budoucnu zavedeme jakékoli nepodstatné soubory cookie, získáme souhlas před jejich nastavením."
+        },
+        "contact": {
+          "headingItalic": "Kontakt",
+          "p1Lead": "Dotazy ohledně souborů cookie nebo jakékoli jiné záležitosti týkající se dat:",
+          "effectivePrefix": "Účinnost od:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "NA TÉTO STRÁNCE",
+        "privacyPolicy": "Zásady ochrany osobních údajů",
+        "termsOfService": "Podmínky služby",
+        "cookiePolicy": "Zásady používání souborů cookie"
+      },
+      "layout": {
+        "eyebrow": "PRÁVNÍ",
+        "headingLead": "Právní dokumenty,",
+        "headingItalic": "jasně formulované.",
+        "lede": "Zásady ochrany osobních údajů, podmínky služby a zásady používání souborů cookie — řízené švédským právem a GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "Psychodynamická AI pro vnitřní život. Tichá místnost pro vážné myšlení.",
+      "product": "Produkt",
+      "discovery": "Objevování",
+      "sampleReport": "Vzorová zpráva",
+      "integrationPlan": "Integrační plán",
+      "company": "Společnost",
+      "about": "O nás",
+      "contact": "Kontakt",
+      "manifesto": "Manifest",
+      "resources": "Zdroje",
+      "science": "Věda",
+      "methodology": "Metodologie",
+      "methodPaper": "Metodický dokument",
+      "caseStudy": "Případová studie",
+      "dreamExample": "Příklad snu",
+      "legal": "Právní",
+      "privacy": "Soukromí",
+      "terms": "Podmínky",
+      "cookies": "Cookies",
+      "rights": "všechna práva vyhrazena"
+    },
+    "about": {
+      "metaTitle": "O nás — TwentyThird",
+      "metaDescription": "Původ, metoda a inflexe v den dvacet tři. Vytvořeno v CognitiveLab u WelloWork AB.",
+      "hero": {
+        "eyebrow": "O NÁS",
+        "headingLead": "Původ, metoda a",
+        "headingItalic": "inflexe v den dvacet tři",
+        "lede": "TwentyThird je psychodynamická AI pro sebepoznání. Mapuje opakující se smyčky a struktury pod symptomem — jazyk, připoutanost, opakování — a vrací pracovní shrnutí, nikoli kvíz.",
+        "figure": {
+          "label": "den-23",
+          "subtitle": "metafora inflexe",
+          "heading": "23denní oblouk",
+          "range": "zvědavost → uvědomění",
+          "markerInflection": "inflexe",
+          "summaryLabel": "den, kdy se otázka\nobrací dovnitř"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FILOZOFIE",
+        "headingLead": "Freudův korespondent. Fliessovo číslo.",
+        "headingItalic": "Naše metafora",
+        "tag": "Původ",
+        "row": {
+          "headingPre": "A",
+          "headingItalic": "23denní rytmus",
+          "headingPost": "navržený v dopise, zachovaný jako číslo.",
+          "para1": "23denní cyklus byl hypotézou Wilhelma Fliesse, kterou obhajoval ve své korespondenci s Freudem na konci devatenáctého století. Současná věda pevné biorytmy nepodporuje.",
+          "para2": "Číslo si ponecháváme pro to, co pojmenovává — práh, na kterém zvědavost dozrává v uvědomění. Den‑23 je číslo, nikoli biologie."
+        },
+        "figure": {
+          "label": "původ",
+          "subtitle": "čtyři kotvy",
+          "row1Outcome": "návrh",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "strukturální model",
+          "row3Duration": "Římský diskurz",
+          "row3Outcome": "jazykový obrat",
+          "row4Outcome": "syntéza",
+          "summary1Key": "interval",
+          "summary2Key": "vlákno",
+          "summary2Value": "struktura",
+          "summary3Key": "metoda",
+          "summary3Value": "psychodynamická"
+        }
+      },
+      "origin": {
+        "eyebrow": "PŮVOD",
+        "headingLead": "Vytvořeno v CognitiveLab.",
+        "headingItalic": "Odpověděli jsme na otázku, která nám byla stále kladena",
+        "tag": "Tým",
+        "row": {
+          "headingLead": "Lékaři, původně budující",
+          "headingItalic": "kognitivní trénink",
+          "para1": "TwentyThird začal v CognitiveLab u WelloWork AB, kde tým vyvíjel systémy kognitivního tréninku. Přátelé a kolegové začali přinášet osobní otázky — úzkost, opakující se vzorce, smyčky, které nedokázali pojmenovat.",
+          "para2": "Mezi klinickou praxí lékařů, pilotními daty, která jsme shromažďovali, a dlouhým seznamem četby z psychoanalýzy a lacanovské teorie, jsme měli co nabídnout. TwentyThird je to, čím se to stalo."
+        },
+        "figure": {
+          "label": "tým",
+          "subtitle": "profil",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "připraveno 05 · 26",
+          "row1Key": "Klinická praxe",
+          "row2Key": "Výzkumné výstupy",
+          "row3Key": "Subjekty v pilotní studii",
+          "row4Key": "Lékaři v týmu",
+          "footerLabel": "Profil",
+          "footerValue": "hybrid klinika–výzkumník"
+        }
+      },
+      "method": {
+        "eyebrow": "METODA",
+        "headingLead": "Co model",
+        "headingItalic": "skutečně dělá",
+        "tag": "Schopnosti",
+        "row": {
+          "headingLead": "Pod symptomem, a",
+          "headingItalic": "struktura",
+          "para1": "TwentyThird provádí analýzu kořenových příčin. Mapuje <em>podvědomou smyčku</em> napříč lety, čte <em>lingvistické nevědomí</em> ve výběru slov a přeřeknutích, odhaluje <em>připoutanost</em> na prahu intimity a píše pracovní plán pro <em>práci se stínem</em>.",
+          "para2": "Výstup je připraven pro terapeuta. Pojmenovává strukturu, nikoli povrch."
+        },
+        "figure": {
+          "label": "symptom → struktura",
+          "subtitle": "tři přepisy",
+          "row1Prefix": "01 · povrch",
+          "row1Old": "Odkládám důležitou práci.",
+          "row1Next": "Vyhýbání se tomu, aby byl viděn jako ten, kdo ví.",
+          "row2Prefix": "02 · povrch",
+          "row2Old": "Stále chodím se stejnou osobou.",
+          "row2Next": "Opakování otcovského imága na prahu intimity.",
+          "row3Prefix": "03 · povrch",
+          "row3Old": "Nic nedokážu dokončit.",
+          "row3Next": "Odmítnutí vzdát se pozice potenciálu.",
+          "metaLeftLabel": "prezentující",
+          "metaLeftValue": "stížnost",
+          "metaRightLabel": "strukturální",
+          "metaRightValue": "čtení"
+        }
+      },
+      "final": {
+        "eyebrow": "POKRAČOVAT",
+        "headingLead": "Přečtěte si metodu,",
+        "headingItalic": "nebo začněte",
+        "ctaPrimary": "Přečtěte si metodu",
+        "ctaGhostPrefix": "nebo",
+        "ctaGhostText": "napište nám"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "KONTAKT",
+        "heroHeadlineLead": "Napište nám.",
+        "heroHeadlineItalic": "Čteme vše",
+        "heroLede": "Většina zpráv je zodpovězena do sedmdesáti dvou hodin. Klinické a partnerské dotazy mají přednost.",
+        "formCardLabel": "formulář",
+        "formCardSubtitle": "pouze věcné dotazy",
+        "addressLabel": "ADRESA",
+        "addressValue": "Rosendal, Uppsala, Švédsko",
+        "emailLabel": "EMAIL",
+        "phoneLabel": "TELEFON",
+        "finalEyebrow": "ZAČÍT",
+        "finalHeadlineLead": "Nebo prostě",
+        "finalHeadlineItalic": "začněte",
+        "finalCta": "Začněte své objevování",
+        "finalGhostOr": "nebo",
+        "finalGhostText": "přečtěte si o původu",
+        "disclaimer": "Pro naléhavé duševní zdravotní problémy kontaktujte místní záchranné služby nebo licencovaného klinického lékaře. TwentyThird není krizová služba."
+      },
+      "form": {
+        "successEyebrow": "PŘIJATO",
+        "successHeadlineLead": "Vaše zpráva je",
+        "successHeadlineItalic": "u nás",
+        "successBody": "Odpovíme do dvou pracovních dnů.",
+        "nameLabel": "Jméno",
+        "emailLabel": "E-mail",
+        "messageLabel": "Zpráva",
+        "submitSend": "Odeslat",
+        "submitSending": "Odesílání",
+        "errorMessage": "něco se pokazilo · zkuste to znovu",
+        "submittingStatus": "Odesílání vaší zprávy."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Metodologie — TwentyThird",
+      "metaDescription": "Od prvního rozhovoru po mapu připravenou pro terapeuta. Pět fází pipeline TwentyThird.",
+      "hero": {
+        "eyebrow": "METODA",
+        "headingLead": "Týdny přípravy,",
+        "headingItalic": "ne roky hledání",
+        "lede": "Terapie funguje. Trvá však také, než zjistíte, proč tam jste. TwentyThird zkracuje přípravu – tu část, kde se učíte, co vlastně říkáte – aby samotná místnost mohla probíhat rychleji."
+      },
+      "pipeline": {
+        "eyebrow": "PIPELINE",
+        "headingLead": "Pět fází, jeden",
+        "headingItalic": "stručný",
+        "lede": "Od vzorkované řeči po pracovní dokument, který si klinický lékař přečte za osm minut.",
+        "stageLabel": "FÁZE",
+        "stage01": {
+          "name": "Vzorkování",
+          "blurb": "Hlas a text z řízených sezení. Model naslouchá tvaru, nikoli obsahu.",
+          "label": "vzorkování",
+          "subtitle": "objem napříč kohortou",
+          "fig": {
+            "wordsSampled": "vzorkovaných slov",
+            "sessions": "sezení",
+            "elapsed": "uplynulo",
+            "medianTurn": "medián tahu"
+          }
+        },
+        "stage02": {
+          "nameLead": "Lingvistická",
+          "nameEm": "extrakce",
+          "blurb": "Charakteristiky, které model získává z přepisu – tiše, před jakoukoli interpretací.",
+          "label": "extrakce",
+          "subtitle": "třídy rysů",
+          "fig": {
+            "qualifierDensity": "hustota kvalifikátorů",
+            "modalVerbs": "modální slovesa",
+            "conditionalFrame": "podmíněný rámec",
+            "affectiveHedges": "afektivní zábrany",
+            "slipsMisnamings": "přeřeknutí · chybná pojmenování",
+            "repetitionWindows": "okna opakování"
+          }
+        },
+        "stage03": {
+          "nameLead": "Detekce",
+          "nameEm": "opakování",
+          "blurb": "Vzor, který se vrací ve stejném tvaru, v různých desetiletích. Signál, že něco je strukturální.",
+          "label": "opakování",
+          "subtitle": "tři kotvy jednoho vzoru",
+          "fig": {
+            "row1": {
+              "durationLabel": "první práce",
+              "outcome": "strop v 9. měsíci"
+            },
+            "row2": {
+              "durationLabel": "druhá",
+              "outcome": "strop v 11. měsíci"
+            },
+            "row3": {
+              "durationLabel": "třetí",
+              "outcome": "strop v 8. měsíci"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Rekonstrukce",
+          "nameEm": "scénáře",
+          "blurb": "Věta pod vzorem. Starý řádek, pak navrhovaná revize, kterou si subjekt může nacvičit.",
+          "label": "rekonstrukce",
+          "subtitle": "pracovní návrh",
+          "fig": {
+            "row1": {
+              "prefix": "Jsem",
+              "old": "ještě nepřipraven.",
+              "next": "již povoleno."
+            },
+            "row2": {
+              "prefix": "abych",
+              "old": "čekal, až si mě vyberou.",
+              "next": "pojmenoval, co chci."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Mapa pro",
+          "nameEm": "klinického lékaře",
+          "blurb": "Tři označené metry a jednořádkové strukturální čtení. Osm minut na přečtení, týdny na použití.",
+          "label": "klinické předání",
+          "subtitle": "pracovní shrnutí",
+          "fig": {
+            "casePrefix": "případ",
+            "preparedPrefix": "připraveno",
+            "egoStructure": "Struktura ega",
+            "objectRelations": "Objektové vztahy",
+            "symbolicRegister": "Symbolický registr",
+            "footerLabel": "Čtení",
+            "footerValue": "obsedantní · s hysterickými stopami"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "ROZSAH",
+        "headingLead": "Co měříme a co",
+        "headingItalic": "odmítáme",
+        "headingTail": "měřit.",
+        "measureHead": "Co měříme",
+        "refuseHead": "Co neměříme",
+        "measure": {
+          "languagePatterns": {
+            "k": "jazykové vzorce",
+            "gloss": "Hustota kvalifikátorů, modální slovesa, zábrany, podmíněné rámce."
+          },
+          "recurrence": {
+            "k": "opakování",
+            "gloss": "Vzorce, které se vrací ve stejném tvaru napříč lety."
+          },
+          "narrativeCoherence": {
+            "k": "narativní koherence",
+            "gloss": "Jak je vyprávěn život, kde se projevují švy."
+          },
+          "attachmentMarkers": {
+            "k": "markery připoutání",
+            "gloss": "Kde intimita překračuje práh, co následuje."
+          },
+          "linguisticSlips": {
+            "k": "lingvistické přeřeknutí",
+            "gloss": "Chybná pojmenování, kondenzace, přesuny."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "kategorie DSM / ICD",
+            "gloss": "Nozologie je samostatný nástroj, používaný klinickými lékaři."
+          },
+          "iqCognition": {
+            "k": "IQ nebo kognice",
+            "gloss": "Mimo rozsah. Model je psychodynamický, nikoli psychometrický."
+          },
+          "personalityTypes": {
+            "k": "typy osobnosti",
+            "gloss": "Pětifaktorový model a jeho potomci nejsou součástí zadání."
+          },
+          "riskScores": {
+            "k": "riziková skóre",
+            "gloss": "Akutní riziko je rozhodnutím klinického lékaře, nikoli modelu."
+          },
+          "predictions": {
+            "k": "předpovědi",
+            "gloss": "Struktura, nikoli prognóza. Pojmenováváme to, co je, nikoli to, co přijde."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Komprese",
+        "headingLead": "Vstupte s vědomím, co",
+        "headingItalic": "říci",
+        "body1": "Terapie není místem, kde se má přijít na otázku. Je to místo, kde se s ní má žít. Komprese, kterou nabízíme, se týká přístupu – měsíců, které klinický lékař obvykle stráví nasloucháním tvaru zadání.",
+        "body2": "Napříč pilotní kohortou dosáhli připravení subjekty pracovní aliance v menším počtu sezení. Čtení již bylo k dispozici.",
+        "figure": {
+          "label": "aliance",
+          "subtitle": "medián sezení k pracovní alianci",
+          "heading": "Čas k pracovní alianci",
+          "range": "medián napříč kohortou",
+          "markerUnprepared": "nepřipraveno",
+          "markerPrepared": "připraveno",
+          "summaryLabel": "méně sezení k\npracovní alianci"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "POKRAČOVAT",
+        "headingLead": "Začněte,",
+        "headingItalic": "nebo si prohlédněte vzorovou zprávu",
+        "beginLabel": "Začněte",
+        "or": "nebo",
+        "ghostLabel": "prohlédnout vzorovou zprávu"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "INTEGRACE",
+        "headlineLead": "Vhled, pak",
+        "headlineItalic": "návyk",
+        "lede": "Pojmenování vzorce je pouze prvním krokem. Plán je druhý – denní podněty a malé rituály postavené kolem vaší struktury, nikoli generické kurikulum."
+      },
+      "week": {
+        "eyebrow": "TÝDEN V PLÁNU",
+        "headlineLead": "Sedm podnětů,",
+        "headlineItalic": "jedna struktura",
+        "lede": "Reflektivní, ztělesněné, psané. Týden dýchá kolem vzorce, který zpráva pojmenovala, nikoli kolem kurikula.",
+        "days": {
+          "mon": {
+            "day": "PO",
+            "prompt": "„Kde jste se dnes rozhodli <em>nebýt</em> viděni?“",
+            "stream": {
+              "journal": "deník",
+              "shadowPrompt": "stínový podnět"
+            }
+          },
+          "tue": {
+            "day": "ÚT",
+            "prompt": "„Jděte se projít bez úkolu. Poznamenejte si jednu věc, kterou jste málem řekli.“",
+            "stream": {
+              "walking": "chůze",
+              "note": "poznámka"
+            }
+          },
+          "wed": {
+            "day": "ST",
+            "prompt": "„Co jste dnes příliš kvalifikovali a jaká byla <em>nekvalifikovaná</em> věta pod tím?“",
+            "stream": {
+              "breathWork": "dechová cvičení",
+              "journal": "deník",
+              "shadowPrompt": "stínový podnět"
+            }
+          },
+          "thu": {
+            "day": "ČT",
+            "prompt": "„Sken těla od krku dolů. Kde sídlí zadržování?“",
+            "stream": {
+              "bodyScan": "sken těla",
+              "note": "poznámka"
+            }
+          },
+          "fri": {
+            "day": "PÁ",
+            "prompt": "„Napište větu, kterou byste řekli, kdyby vám to už bylo dovoleno.“",
+            "stream": {
+              "journal": "deník",
+              "rewrite": "přepsat"
+            }
+          },
+          "sat": {
+            "day": "SO",
+            "prompt": "„Dlouhá procházka. Žádné podněty. Všimněte si, co ticho přináší zpět.“",
+            "stream": {
+              "walking": "chůze",
+              "rest": "odpočinek"
+            }
+          },
+          "sun": {
+            "day": "NE",
+            "prompt": "„Přečtěte si týden zpět. Která věta byla už <em>pravdivá</em>?“",
+            "stream": {
+              "review": "recenze",
+              "note": "poznámka"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "ADAPTACE",
+        "headlineLead": "Plán",
+        "headlineItalic": "se zužuje",
+        "tag": "Adaptace",
+        "rowHeadingLead": "Opakování z minulého týdne určuje hustotu",
+        "rowHeadingItalic": "příštího týdne",
+        "body": "Když síla vzorce klesá, podněty se ztenčují. Když vzorec narůstá, podněty se vracejí. Cílem není dodržování. Cílem je nejmenší lešení, které struktura stále potřebuje.",
+        "figure": {
+          "label": "hustota podnětů",
+          "subtitle": "týdny 1–8",
+          "heading": "Počet podnětů · za týden",
+          "range": "zužování s oslabováním opakování",
+          "markers": {
+            "wk1": "týd. 1",
+            "wk3": "týd. 3",
+            "wk5": "týd. 5",
+            "wk8": "týd. 8"
+          },
+          "summaryLabel": "méně podnětů\ndo týd. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "PRÁCE SE STÍNEM",
+        "headlineLead": "Ne katarze.",
+        "headlineItalic": "Mluvení",
+        "tag": "Stín",
+        "rowHeadingLead": "Záměrná praxe mluvení toho, co bylo",
+        "rowHeadingItalic": "nevyslovitelné",
+        "body": "Práce se stínem v tomto kontextu není expozice. Není to očista. Je to pomalá praxe říkání – nejprve sobě – toho, co se člověk naučil držet nevyslovené. Tři před/po řádky čerpané ze skutečných plánů.",
+        "figure": {
+          "label": "revidované stíny",
+          "subtitle": "tři řádky, pracovní návrh",
+          "rows": {
+            "r1": {
+              "prefix": "01 · k sobě",
+              "old": "Tohle si nezasloužím.",
+              "next": "Ještě jsem necvičil nahlas si to přát."
+            },
+            "r2": {
+              "prefix": "02 · k sobě",
+              "old": "Už bych to měl mít za sebou.",
+              "next": "časová osa, kterou jsem si vypůjčil, nebyla pro tento druh zármutku."
+            },
+            "r3": {
+              "prefix": "03 · k sobě",
+              "old": "Jsem příliš mnoho.",
+              "next": "Jsem přesně ten objem, pro který místnost nebyla postavena."
+            }
+          },
+          "metaLeft": {
+            "label": "dříve",
+            "value": "řečeno o sobě"
+          },
+          "metaRight": {
+            "label": "nyní",
+            "value": "řečeno sobě"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "RÁMEC",
+        "headlineLead": "Drženo strukturou, nikoli",
+        "headlineItalic": "kurikulem",
+        "body1": "Kurikulum je soubor kroků, které vytvořil cizinec. Struktura je tvar, který váš konkrétní život náhodou nabývá. Plán je postaven proti tomu druhému. Každý podnět je ukotven k řádku ve vaší zprávě – když se řádek rozpustí, rozpustí se i podnět.",
+        "body2": "Nic zde nemá být trvalé. Plán je pronajatý. Struktura je vaše.",
+        "closeout": "struktura je vaše · plán je pronajatý"
+      },
+      "final": {
+        "eyebrow": "POKRAČOVAT",
+        "headlineLead": "Začít,",
+        "headlineItalic": "nebo číst vědu",
+        "beginCta": "Začít",
+        "or": "nebo",
+        "readScience": "číst vědu"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "Věda — TwentyThird",
+        "description": "Století psychoanalytické teorie a čtyři desetiletí empirického výzkumu vzorců, jazyka a nevědomí."
+      },
+      "hero": {
+        "eyebrow": "ZÁKLAD",
+        "headlineLead": "Věda za",
+        "headlineItalic": "nasloucháním",
+        "headlineTail": ".",
+        "lede": "TwentyThird je postaven na století psychoanalytické teorie a čtyřech desetiletích empirického výzkumu vzorců, jazyka a nevědomí. Toto čteme a proč."
+      },
+      "lineages": {
+        "eyebrow": "DVA PŮVODY",
+        "headlineLead": "Freudova struktura. Lacanův",
+        "headlineItalic": "dopis",
+        "headlineTail": ".",
+        "lede": "Dvě čtení nevědomí, půl století od sebe. Společně tvoří páteř metody.",
+        "freud": {
+          "headlineLead": "Strukturální",
+          "headlineItalic": "nevědomí",
+          "headlineTail": ".",
+          "body1": "Freudův trvalý přínos je strukturální, nikoli tematický. Dynamické nevědomí není sklep zapomenutého obsahu — je to fungující orgán mysli, který zkouší, opakuje, přenáší.",
+          "body2": "Čteme ho jako klinika opakování. Stejná scéna přichází v různých desetiletích. Tato rekurence je signálem, který je model trénován najít.",
+          "figure": {
+            "label": "rekurence",
+            "subtitle": "pět kotev, jedna struktura",
+            "outcome": "stažení",
+            "rows": {
+              "anchor1": "raná adolescence",
+              "anchor2": "první dlouhý vztah",
+              "anchor3": "druhý dlouhý vztah",
+              "anchor4": "třetí vztah",
+              "anchor5": "čtvrtý vztah"
+            },
+            "summary": {
+              "recurrenceLabel": "rekurence",
+              "intervalLabel": "interval",
+              "attractorLabel": "atraktor",
+              "attractorValue": "intimacy threshold"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Nevědomí je strukturováno jako",
+          "headlineItalic": "jazyk",
+          "headlineTail": ".",
+          "body1Lead": "Lacanovo čtení posouvá pole. Signifikant se pohybuje; význam klouže po řetězcích metonymie a metafory. Zrcadlové stádium pojmenovává zakládající chybné rozpoznání.",
+          "body1Italic": "Touha je touhou Druhého.",
+          "body2": "V našem pipeline je to konkrétní. Čteme sny a bdělou řeč jako text — posuny, kondenzace a přeřeknutí nesou strukturující gramatiku.",
+          "figure": {
+            "label": "lingvistický signál",
+            "subtitle": "úryvek snu, anotovaný",
+            "dreamLead": "„Místnost, ve které jsem žil jako dítě, má další dveře, na které si nepamatuji",
+            "ann1": "posun",
+            "dreamMid1": ". Za nimi hlas mého nadřízeného",
+            "ann2": "kondenzace",
+            "dreamMid2": "mě volá špatným jménem",
+            "ann3": "přeřeknutí",
+            "dreamTail": ".”",
+            "key1": "posun",
+            "key2": "kondenzace",
+            "key3": "přeřeknutí"
+          }
+        }
+      },
+      "freud": {
+        "headlineLead": "To",
+        "headlineItalic": "strukturální",
+        "headlineTail": " nevědomí.",
+        "body1": "Freudův trvalý přínos je strukturální, nikoli tematický. Dynamické nevědomí není suterén zapomenutého obsahu – je to fungující orgán mysli, který zkouší, opakuje, přenáší.",
+        "body2": "Čteme ho jako klinika opakování. Stejná scéna se objevuje v různých desetiletích. Tato rekurence je signálem, který je model trénován najít.",
+        "figure": {
+          "label": "rekurence",
+          "subtitle": "pět kotev, jedna struktura",
+          "outcome": "stažení",
+          "rows": {
+            "anchor1": "raná adolescence",
+            "anchor2": "první dlouhé pouto",
+            "anchor3": "druhé dlouhé pouto",
+            "anchor4": "třetí pouto",
+            "anchor5": "čtvrté pouto"
+          },
+          "summary": {
+            "recurrenceLabel": "rekurence",
+            "intervalLabel": "interval",
+            "attractorLabel": "atraktor",
+            "attractorValue": "práh intimity"
+          }
+        }
+      },
+      "lacan": {
+        "headlineLead": "Nevědomí je strukturováno jako",
+        "headlineItalic": "jazyk",
+        "headlineTail": ".",
+        "body1Lead": "Lacanovo čtení posouvá pole. Signifikant se pohybuje; význam klouže po řetězcích metonymie a metafory. Zrcadlové stadium pojmenovává zakládající chybné rozpoznání.",
+        "body1Italic": "Touha je touhou Druhého.",
+        "body2": "V našem potrubí je to konkrétní. Sny a bdělou řeč čteme jako text – posuny, kondenzace a přeřeknutí nesou strukturující gramatiku.",
+        "figure": {
+          "label": "lingvistický signál",
+          "subtitle": "úryvek snu, anotovaný",
+          "dreamLead": "„Pokoj, ve kterém jsem žil jako dítě, má další dveře, na které si nepamatuji",
+          "ann1": "posun",
+          "dreamMid1": ". Za nimi hlas mého nadřízeného",
+          "ann2": "kondenzace",
+          "dreamMid2": "mě volá špatným jménem",
+          "ann3": "přeřeknutí",
+          "dreamTail": ".”",
+          "key1": "posun",
+          "key2": "kondenzace",
+          "key3": "přeřeknutí"
+        }
+      },
+      "research": {
+        "eyebrow": "EMPIRICKÉ KOTVY",
+        "headlineLead": "Co současný výzkum",
+        "headlineItalic": "přidává",
+        "headlineTail": ".",
+        "lede": "Pět konvergujících směrů z výzkumu attachmentu, narativu a procesu. Nejedná se o kompletní bibliografii – pouze o kotvy, na kterých model skutečně spočívá.",
+        "figure": {
+          "label": "empirické kotvy",
+          "subtitle": "konvergující důkazy",
+          "caseLabel": "literatura · syntéza",
+          "prepared": "aktualizováno 04 · 26",
+          "rows": {
+            "attachment": "Kontinuita attachmentu napříč desetiletími",
+            "alliance": "Terapeutická aliance jako prediktor výsledku",
+            "narrative": "Narativní koherence a pohoda",
+            "relational": "Implicitní relační poznání",
+            "script": "Teorie skriptů v profesní stagnaci"
+          },
+          "footerLabel": "Syntéza",
+          "footerValue": "konvergující důkazy · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "CO NETVRDÍME",
+        "headlineLead": "Čestné",
+        "headlineItalic": "hranice",
+        "headlineTail": " práce.",
+        "claim1Strong": "Nejsme náhradou terapeuta.",
+        "claim1Body": "Model připravuje konverzaci. Nedrží ji.",
+        "claim2Strong": "Nejsme diagnostický nástroj podle DSM nebo ICD.",
+        "claim2Body": "Kategorie, ve kterých pracujeme, jsou strukturální – obsesivní, hysterické, fobické – nikoli nozologické. Pojmenovávají, jak je člověk organizován, nikoli co má.",
+        "claim3Strong": "23denní cyklus je metafora.",
+        "claim3Body": "Číslo pochází z korespondence Wilhelma Fliesse s Freudem na konci devatenáctého století. Současná věda nepodporuje pevné biorytmy. Číslo si ponecháváme pro to, co pojmenovává – přechod od zvědavosti k uvědomění."
+      },
+      "reading": {
+        "eyebrow": "DALŠÍ ČTENÍ",
+        "headlineLead": "Police",
+        "headlineItalic": "za",
+        "headlineTail": " modelem.",
+        "lede": "Knihy, ne články. Ty, ke kterým se vracíme.",
+        "books": {
+          "book1": {
+            "title": "Mimo princip slasti"
+          },
+          "book2": {
+            "title": "Výklad snů"
+          },
+          "book4": {
+            "title": "Čtyři základní pojmy psychoanalýzy"
+          },
+          "book5": {
+            "title": "Attachment"
+          },
+          "book6": {
+            "title": "Regulace afektu a vznik Já"
+          },
+          "book7": {
+            "title": "Stojící v prostorech"
+          },
+          "book8": {
+            "title": "Regulace afektu, mentalizace a vývoj Já"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "POKRAČOVAT",
+        "headlineLead": "Zahajte profil,",
+        "headlineItalic": "nebo si přečtěte případ",
+        "headlineTail": ".",
+        "ctaPrimary": "Zahajte profil",
+        "ctaOr": "nebo",
+        "ctaGhost": "přečtěte si případovou studii"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "opět zde",
+      "greetingNamed": "opět zde, {name}.",
+      "strengthen": "Zpřesněte přesnost"
+    },
+    "reviewEdit": "Zkontrolovat a upravit",
+    "depth": {
+      "eyebrow": "HLOUBKA ČTENÍ",
+      "overallEyebrow": "CELKOVÁ HLOUBKA ČTENÍ",
+      "band": {
+        "deep": "čtení je hluboké. odtud jen drobné úpravy.",
+        "steady": "čtení se drží. Catchupy ho zostří.",
+        "partial": "čtení je částečné. je toho víc, co lze dát.",
+        "thin": "čtení je tenké. načrtne tvar, ještě ne strukturu."
+      },
+      "explainer": "Hloubka čtení popisuje, k jak velké části vás mělo čtení přístup – z úvodního dotazníku, z týdenních Catchupů, z konzultací a od lidí, jejichž přítomnost vás formuje. Hlubší čtení neznamená lepší osobu; znamená přesnější. Můžete ho kdykoli prohloubit, nebo ho nechat tak, jak je.",
+      "status": {
+        "low": "Nízká",
+        "moderate": "Střední",
+        "deep": "Přesná"
+      },
+      "statusLine": {
+        "low": "čtení je tenké. načrtne tvar, ještě ne strukturu.",
+        "moderate": "čtení se formuje. může pojmout pracovní hypotézu.",
+        "deep": "čtení je dostatečně úplné, aby podložilo práci."
+      },
+      "source": {
+        "intake": "otázky, na které jste odpověděli na začátku.",
+        "catchups": "týdenní kontroly, které udržují čtení aktuální.",
+        "sessions": "delší konzultace s analytikem.",
+        "connections": "lidé, jejichž přítomnost formuje čtení."
+      }
+    },
+    "latest": {
+      "eyebrow": "NEJNOVĚJŠÍ ČTENÍ",
+      "heading": "Šest čtení <it>— a co se mění.</it>",
+      "lede": "Šest čtení je vypočítáno z vašeho úvodního dotazníku a zpřesňováno každým Catchupem, konzultací a přijatým spojením. Struktura je stálá; textura se pohybuje.",
+      "strengthen": "posílit data pro analýzu",
+      "open": "otevřít čtení"
+    },
+    "six": {
+      "eyebrow": "ŠEST ČTENÍ",
+      "heading": "Co je čteno <it>ve vás, právě teď.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "poslední týdny",
+      "timelineHeading": "okno",
+      "timelineRange": "poslední 4 týdny",
+      "timelineSummary": "catchupy v okně",
+      "eyebrow": "TÝDENNÍ CATCHUP",
+      "heading": "Posaďte se s týdnem. <it>Pak se podíváme znovu.</it>",
+      "lede": "Osm krátkých otázek. Upřímnost je lepší než délka. Odpovědi zpřesňují čtení.",
+      "completed": "dokončeno – přečtěte si shrnutí",
+      "cta": "Otevřít catchup tohoto týdne",
+      "markerFirst": "první",
+      "markerWeek": "t{week}"
+    },
+    "consulting": {
+      "eyebrow": "KONZULTAČNÍ MÍSTNOST",
+      "heading": "Hodina s <it>analytikem.</it>",
+      "ledeSubscribed": "Otevřeno, kdykoli týden naléhá. Místnost si pamatuje, co jste již řekli.",
+      "ledeUnsubscribed": "Předplatitelé mohou vstoupit do konzultační místnosti — dlouhé sezení s analytikem, vedené stejným hlasem jako vaše čtení.",
+      "cta": "Vstoupit do konzultační místnosti",
+      "figLabel": "POSLEDNÍ SEZENÍ",
+      "figSubtitle": "držená otázka",
+      "lastQuestion": "„sen z úterý — chcete se k němu vrátit?“"
+    },
+    "subscribe": {
+      "eyebrow": "KONZULTAČNÍ MÍSTNOST · POTVRZENÍ",
+      "title": "Vstup do konzultační místnosti<it>.</it>",
+      "ledePrice": "Předplatné je",
+      "ledePerMonth": "měsíčně",
+      "ledeIncludes": ". Zahrnuje konzultační místnost, možnost pozvat až {count} {count, plural, one {spojení} few {spojení} many {spojení} other {spojení}} a jednu klinickou zprávu každý kalendářní měsíc.",
+      "ledeBilling": "Fakturaci zajišťuje Stripe. Zrušit můžete kdykoli v nastavení — přístup pokračuje až do konce období.",
+      "canceled": "<i>platba byla zrušena.</i> nic nebylo účtováno. můžete se vrátit níže, až budete připraveni.",
+      "checkoutCta": "Pokračovat k platbě",
+      "returnLink": "zpět do konzultační místnosti"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "KLINICKÁ ZPRÁVA",
+        "subscribedTitle": "Již <it>zahrnuto.</it>",
+        "subscribedLede": "Předplatné zahrnuje jednu klinickou zprávu každý kalendářní měsíc. Vygenerujte ji ze spodní části stránky s četbami — platba není nutná.",
+        "eyebrow": "KLINICKÁ ZPRÁVA · POTVRZENÍ",
+        "title": "Klinická zpráva<it>.</it>",
+        "ledePrice": "Jednorázová klinická zpráva je",
+        "ledeDossier": ". Dvanácti až osmnáctistránkové dossier všech dvanácti četeb, v jazyce, ve kterém pracuje klinický lékař.",
+        "ledeBilling": "Fakturaci zajišťuje Stripe. Zprávy lze regenerovat s prohlubováním četby; předplatitelé obdrží jednu každý kalendářní měsíc bez dodatečného poplatku.",
+        "depthNotice": "<i>zpráva bude odrážet dostupnou hloubku.</i> lze ji regenerovat s prohlubováním četby.",
+        "canceled": "<i>pokladna byla zavřena.</i> nic nebylo účtováno.",
+        "checkoutCta": "Pokračovat k pokladně",
+        "returnLink": "zpět k četbám"
+      },
+      "status": {
+        "eyebrow": "KLINICKÁ ZPRÁVA",
+        "line": {
+          "queued": "vaše zpráva se připravuje.",
+          "generating": "zpráva se píše.",
+          "ready": "zpráva je připravena.",
+          "failed": "zpráva se nedokončila. brzy to zkusíme znovu."
+        },
+        "open": "otevřít zprávu",
+        "back": "zpět k četbám"
+      },
+      "queued": {
+        "eyebrow": "KLINICKÁ ZPRÁVA",
+        "line": "vaše zpráva se připravuje — pošleme vám e-mail, až bude hotová.",
+        "back": "zpět k četbám"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "PŘÍJEM",
+        "title": "Příjem, <it>téma po tématu.</it>",
+        "lede": "Deset sekcí. Otevřete kteroukoli z nich a zkontrolujte nebo prohloubte odpovědi. Příjem není jednorázový formulář – odpovědi lze kdykoli upravit."
+      },
+      "step": {
+        "eyebrow": "PŘÍJEM",
+        "backToAll": "zpět na všechny sekce"
+      },
+      "failed": {
+        "eyebrow": "PŘÍJEM — NEKOMPLETNÍ",
+        "headline": "Čtení <em>nebylo dokončeno</em>.",
+        "lede": "Váš příjem je v evidenci. Následná analýza nebyla dokončena.",
+        "retry": "Pokračovat ve čtení",
+        "retryPending": "Pokračování"
+      }
+    },
+    "pending": {
+      "eyebrow": "STAV · ZPRACOVÁNÍ",
+      "headline": "Váš profil je <em>zpracováván</em>.",
+      "lede": "Vaše odpovědi nyní procházejí psychodynamickými modely. První průchod obvykle trvá přibližně 2 hodiny. Až bude práce hotova, napíšeme Vám a místnost se otevře.",
+      "figIntake": "PŘÍJEM",
+      "figSubmitted": "odesláno {date}",
+      "rowResponses": "Odpovědi přijaty",
+      "rowPattern": "Extrakce vzorců",
+      "rowSynthesis": "Syntéza profilu",
+      "statusInProgress": "probíhá",
+      "statusQueued": "ve frontě",
+      "foot": "až bude práce hotova, napíšeme Vám",
+      "returnCta": "návrat do tiché místnosti",
+      "devPrefix": "dev",
+      "devOpening": "otevírání…",
+      "devOpen": "otevřít místnost nyní",
+      "devError": "nepodařilo se otevřít místnost — zkontrolujte konzoli."
+    }
+  },
+  "invite": {
+    "eyebrow": "POZVÁNKA",
+    "safetyFooter": "TwentyThird nenahrazuje klinickou péči. V případě krize kontaktujte svou místní tísňovou linku.",
+    "notReady": {
+      "headline": "Systém pozvánek se <it>připravuje.</it>",
+      "body": "Zkuste to prosím znovu za chvíli."
+    },
+    "notFound": {
+      "headline": "Tento odkaz <it>nebyl rozpoznán.</it>",
+      "body": "Pokud odkaz pochází z nedávného e-mailu, pozvánka mohla být odeslána znovu. Otevřete nejnovější e-mail pro aktivní odkaz."
+    },
+    "alreadyDeclined": {
+      "headline": "Toto pozvání bylo <it>odmítnuto.</it>",
+      "body": "Nic víc se od vás nevyžaduje. {name} nebude upozorněn nad rámec toho, co již vidí."
+    },
+    "alreadyAccepted": {
+      "headline": "Již jste <it>přijal/a.</it>",
+      "body": "Pokud příjem vztahu ještě není dokončen, můžete pokračovat níže.",
+      "continueLink": "pokračovat v příjmu vztahu"
+    },
+    "ended": {
+      "headline": "Toto spojení <it>bylo ukončeno.</it>",
+      "body": "Odkaz již není aktivní. Záznam vztahu zůstává v Souboru případů, ale již neovlivňuje čtení."
+    },
+    "expired": {
+      "headline": "Toto pozvání <it>vypršelo.</it>",
+      "body": "Pozvání vyprší čtrnáct dní po odeslání. Požádejte uživatele {name}, aby vám poslal nové, pokud chcete odpovědět."
+    },
+    "declined": {
+      "headline": "To je <it>přijato.</it>",
+      "body": "Nic dalšího od vás není potřeba. Pozvánka je uzavřena; zvací strana tiše vidí změnu stavu. Toto okno můžete zavřít."
+    },
+    "live": {
+      "eyebrow": "ŽÁDOST O SPOJENÍ",
+      "headline": "{name} vás pozval(a) do <it>svého čtení.</it>",
+      "lede": "TwentyThird je redakčně-klinický nástroj — tichá místnost, kde je struktura vnitřního života jedince pečlivě čtena a převedena do jazyka, který může klinický lékař použít.",
+      "explainerOne": "<em>Spojení</em> není sdílený účet. {name} neuvidí vaše čtení, sezení ani spis. Vy neuvidíte jejich. To, co řeknete o vztahu, napájí model, který vytváří čtení {name}.",
+      "explainerTwo": "Pokud byste chtěli své vlastní čtení, první cesta níže také zahájí váš vlastní účet. Střední cesta vám umožní přispět ke čtení {name} bez účtu. Obojí je povoleno.",
+      "metaSentTo": "odesláno na",
+      "metaInviteAs": "pozvat jako",
+      "metaReceived": "přijato",
+      "metaExpiresIn": "vyprší za {count, plural, one {# den} few {# dny} many {# dní} other {# dní}}"
+    },
+    "intake": {
+      "eyebrow": "PŘÍJEM VZTAHU",
+      "notReady": {
+        "headline": "Příjem se <it>připravuje.</it>",
+        "body": "Zkuste to prosím znovu za chvíli."
+      },
+      "notFound": {
+        "headline": "Tento odkaz <it>není rozpoznán.</it>",
+        "body": "Otevřete nejnovější e-mail s pozvánkou pro aktivní odkaz."
+      },
+      "notOpen": {
+        "headline": "Příjem <it>není otevřen.</it>",
+        "body": "Tato pozvánka nebyla přijata, nebo byla odmítnuta či ukončena. Vraťte se k odkazu pozvánky a vyberte znovu.",
+        "backLink": "zpět na pozvánku"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "ano – zahájit příjem vztahu",
+      "acceptLabel": "ano – připojit se bez účtu",
+      "declineLabel": "ne, děkuji",
+      "beginLabel": "začít",
+      "continueLabel": "pokračovat",
+      "back": "zpět",
+      "oneMoment": "moment…",
+      "declineConfirmLine": "tímto se pozvánka uzavře. nic dalšího o vás nebude odesláno ani uloženo.",
+      "declineClosing": "zavírám…",
+      "declineConfirm": "odmítnout pozvánku",
+      "firstNameLabel": "VAŠE KŘESTNÍ JMÉNO",
+      "firstNameAria": "Vaše křestní jméno",
+      "firstNameSub": "{name} uvidí toto křestní jméno pouze ve svém seznamu spojení.",
+      "errors": {
+        "missingFirstName": "křestní jméno umožní analytikovi oslovit vás správně.",
+        "generic": "nepodařilo se odeslat.",
+        "notFound": "tento odkaz na pozvánku není rozpoznán.",
+        "expired": "platnost této pozvánky vypršela. požádejte odesílatele, aby poslal novou.",
+        "declined": "tato pozvánka již byla odmítnuta.",
+        "ended": "tato pozvánka již není aktivní.",
+        "missingFirstNameRequired": "křestní jméno je povinné."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "PŘÍJEM VZTAHU",
+      "begin": "začít",
+      "back": "zpět",
+      "backToCover": "zpět na úvodní stránku",
+      "next": "další",
+      "finish": "dokončit",
+      "scaleAria": "škála {value}",
+      "cover": {
+        "headline": "Co řeknete o <it>{name}</it>, zůstane mezi vámi a analytikem.",
+        "lede": "Dvanáct krátkých otázek. Asi pět minut. Odpovědi ovlivní čtení {name}; neuvidí, co jste napsali, a vy neuvidíte, co to vytvoří."
+      },
+      "closing": {
+        "recording": "moment — odpovědi se zaznamenávají.",
+        "tryAgain": "zkusit znovu",
+        "headline": "To pro <it>zatím</it> stačí.",
+        "lede": "Co jste řekli o {name}, bude informovat jejich čtení od jejich další sezení. Neuvidí to; vy neuvidíte, co to vytvoří.",
+        "closeWindow": "můžete zavřít toto okno."
+      },
+      "errors": {
+        "unanswered": "chvíli se nad tím zamyslete, než půjdete dál.",
+        "questionOpen": "otázka je stále otevřená. moment.",
+        "couldNotSave": "nepodařilo se uložit",
+        "invalidAnswers": "něco se nepodařilo analyzovat — zkontrolujte prosím odpovědi.",
+        "notAccepting": "tato pozvánka již nepřijímá odpovědi.",
+        "notFound": "tento odkaz na pozvánku není rozpoznán.",
+        "couldNotSaveAnswers": "nepodařilo se uložit odpovědi."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Jak dlouho se znáte?",
+          "options": {
+            "under_one_year": "méně než rok",
+            "one_to_three": "jeden až tři roky",
+            "four_to_ten": "čtyři až deset let",
+            "eleven_to_twenty": "jedenáct až dvacet let",
+            "more_than_twenty": "více než dvacet let"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Jak blízko se teď cítíte jeden druhému?",
+          "lowLabel": "v odstupu",
+          "highLabel": "tak blízko, jak to jen jde"
+        },
+        "repair_initiator": {
+          "prompt": "Když se neshodnete, kdo má tendenci jako první hledat nápravu?",
+          "options": {
+            "i_do": "téměř vždy já",
+            "usually_me": "většinou já",
+            "evenly": "pohybujeme se k sobě rovnoměrně",
+            "usually_them": "většinou oni",
+            "they_do": "téměř vždy oni"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Když je něco těžké, kam mají tendenci jít?",
+          "options": {
+            "toward": "k vám, aby si promluvili",
+            "quiet": "do ticha, pak zpět",
+            "work": "do práce nebo rozptýlení",
+            "alone": "úplně sami, za dveře",
+            "elsewhere": "nejprve k jiným lidem"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Co si přejete, aby o sobě pochopili?"
+        },
+        "what_you_offer": {
+          "prompt": "Jednou větou, co pro ně děláte, co oni sami nedokážou?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Který hlas je nejčastěji pohání?",
+          "options": {
+            "demand": "požadavek — co by se mělo udělat",
+            "doubt": "pochybnost — zda je to dost",
+            "desire": "touha — co skutečně chtějí",
+            "watcher": "pozorovatel — jak to bude vnímáno",
+            "uncertain": "ještě nevím"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Kde se jejich práce obvykle zadrhne?",
+          "options": {
+            "start": "začátek — pustit se do toho",
+            "middle": "střed — vydržet u toho",
+            "finish": "konec — nechat to jít",
+            "visibility": "viditelnost — nechat to být vidět",
+            "nowhere": "nikde, co bych mohl/a vidět zvenčí"
+          }
+        },
+        "they_avoid": {
+          "prompt": "Existuje téma, kterému se důsledně vyhýbají? Lehce ho pojmenujte."
+        },
+        "they_at_their_best": {
+          "prompt": "Kdy jsou nejvíce sami sebou?"
+        },
+        "what_youve_changed": {
+          "prompt": "Existuje něco na nich, co jste tiše přijali, že nezměníte?"
+        },
+        "future_together": {
+          "prompt": "Kolik z budoucnosti, kterou si představujete, je zahrnuje?",
+          "lowLabel": "velmi málo",
+          "highLabel": "téměř vše"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "nebo",
+      "fallbackPreamble": "vložte tento odkaz do svého prohlížeče:",
+      "attendingInstitution": "PŘÍSLUŠNÁ INSTITUCE",
+      "tagline": "Psychodynamická AI pro vnitřní život.",
+      "automatedFooter": "Odesláno automatickým systémem · neodpovídejte"
+    },
+    "intakeSubmitted": {
+      "subject": "váš profil je čten.",
+      "preheader": "Probíhá první průchod. Místnost se otevře, až bude práce hotová.",
+      "eyebrow": "PROFIL ČTEN",
+      "titleText": "Vaše odpovědi jsou čteny.",
+      "italicPhrase": "čteny",
+      "lede": "Probíhá první průchod psychodynamickými modely. Místnost se otevře, až bude práce hotová.",
+      "figLeftItalic": "příjem dotazníku",
+      "figRightLabel": "První průchod",
+      "figRightItalic": "probíhá",
+      "text": "{salutation}\n\nVaše odpovědi jsou přijaty. Probíhá první průchod psychodynamickými modely. Místnost se otevře, až bude práce hotová.\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "roomReady": {
+      "subject": "váš pokoj je otevřen.",
+      "preheader": "Dvanáct bloků připravených ke čtení. Práce se zpřesňuje, jak se k ní vracíte.",
+      "eyebrow": "POKOJ PŘIPRAVEN",
+      "titleText": "První čtení je otevřeno.",
+      "italicPhrase": "první čtení",
+      "lede": "Dvanáct bloků psychodynamického profilu, v pokoji a připravených ke čtení. Práce se zpřesňuje, jak se k ní vracíte.",
+      "ctaLabel": "Vstoupit do pokoje",
+      "figLeftItalic": "pokoj otevřen",
+      "figRightLabel": "První čtení",
+      "figRightItalic": "připraveno",
+      "text": "{salutation}\n\nPrvní čtení je otevřeno.\n\nDvanáct bloků psychodynamického profilu, v pokoji a připravených ke čtení. Práce se zpřesňuje, jak se k ní vracíte.\n\nVstoupit do pokoje:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "invite": {
+      "subject": "{inviterName} by vás rád viděl ve čtení.",
+      "preheader": "{inviterName} by vás rád viděl ve čtení. Spojení nevidí vaše čtení; vy neuvidíte jejich.",
+      "eyebrow": "POZVÁNKA",
+      "titleText": "{inviterName} by vás rád viděl ve čtení.",
+      "italicPhrase": "ve čtení",
+      "lede": "TwentyThird je tichá místnost, kde je pečlivě čtena struktura vnitřního života jedince. Spojení nevidí čtení ani sezení zvaného, a vy neuvidíte jejich.",
+      "ctaLabel": "Otevřít pozvánku",
+      "figLeftItalic": "pozvánka vydána",
+      "figRightLabel": "Platnost vyprší",
+      "figRightItalic": "za čtrnáct dní",
+      "securityNote": "Pokud tato zpráva dorazila omylem, pozvánka sama vyprší za čtrnáct dní.",
+      "textIntro": "{inviterName} by vás rád viděl ve čtení na TwentyThird.",
+      "textBody": "TwentyThird je tichá místnost, kde je pečlivě čtena struktura vnitřního života jedince. Spojení nevidí čtení ani sezení zvaného, a vy neuvidíte jejich.",
+      "textNote": "{inviterName} přidal poznámku:\n  {note}",
+      "textOpen": "Otevřít pozvánku:",
+      "textSecurity": "Pokud tato zpráva dorazila omylem, pozvánka sama vyprší za čtrnáct dní.",
+      "textCloser": "CognitiveLab, WelloWork AB\nDOCHÁZEJÍCÍ INSTITUCE"
+    },
+    "connectionAccepted": {
+      "subject": "{nameLower} přijal/a spojení.",
+      "preheader": "{nameTitle} přijal/a spojení. Vliv na další seanci.",
+      "eyebrow": "SPOJENÍ PŘIJATO",
+      "titleText": "{nameTitle} přijal/a spojení.",
+      "italicPhrase": "přijal/a spojení",
+      "lede": "Jejich vstupní dotazník o vztahu ovlivní vaše čtení od příští seance. Oni neuvidí vaše čtení; vy neuvidíte jejich.",
+      "ctaLabel": "Zpět do Místnosti",
+      "figLeftItalic": "spojení přijato",
+      "figRightLabel": "Vliv",
+      "figRightItalic": "od příští seance",
+      "text": "{salutation}\n\n{nameTitle} přijal/a spojení.\n\nJejich vstupní dotazník o vztahu ovlivní vaše čtení od příští seance. Oni neuvidí vaše čtení; vy neuvidíte jejich.\n\nZpět do Místnosti:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "connectionEnded": {
+      "subject": "{nameLower} ukončil/a spojení.",
+      "preheader": "{nameTitle} ukončil/a spojení. Vaše čtení se upraví během příští seance.",
+      "eyebrow": "SPOJENÍ UKONČENO",
+      "titleText": "{nameTitle} ukončil/a spojení.",
+      "italicPhrase": "ukončil/a spojení",
+      "lede": "Vaše čtení se upraví během příští seance. To, co bylo řečeno o vztahu, zůstává v Case File; již se nepromítá do aktivního čtení.",
+      "ctaLabel": "Zpět do Room",
+      "figLeftItalic": "spojení ukončeno",
+      "figRightLabel": "Efekt",
+      "figRightItalic": "od příští seance",
+      "text": "{nameTitle} ukončil/a spojení.\n\nVaše čtení se upraví během příští seance. To, co bylo řečeno o vztahu, zůstává v Case File; již se nepromítá do aktivního čtení.\n\nZpět do Room:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "týdenní Catchup je otevřen.",
+      "preheader": "Krátká reflexe. Pět minut. Aktualizuje čtení.",
+      "eyebrow": "TÝDENNÍ CATCHUP",
+      "titleText": "Týden uplynul tiše.",
+      "italicPhrase": "tiše",
+      "lede": "Krátká reflexe — co je hlasité, co zůstalo tiché, co se změnilo. Aktualizuje čtení.",
+      "ctaLabel": "Otevřít Catchup",
+      "figRightLabel": "Catchup",
+      "figRightItalic": "pět minut",
+      "text": "{salutation}\n\nTýden uplynul tiše.\n\nKrátká reflexe — co je hlasité, co zůstalo tiché, co se změnilo. Aktualizuje čtení.\n\nOtevřít Catchup:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "onboardingResume": {
+      "subject": "vaše odpovědi jsou uchovány.",
+      "preheader": "Váš vstupní dotazník pokračuje tam, kde jste skončili. Práce nezačne, dokud není dokončen.",
+      "eyebrow": "VSTUPNÍ DOTAZNÍK POZASTAVEN",
+      "titleText": "Vstupní dotazník je tam, kde jste ho opustili.",
+      "italicPhrase": "kde jste ho opustili",
+      "lede": "Váš vstupní dotazník pokračuje tam, kde jste skončili. Práce nezačne, dokud není dokončen.",
+      "ctaLabel": "Pokračovat ve vstupním dotazníku",
+      "figLeftItalic": "vstupní dotazník pozastaven",
+      "figRightLabel": "Pokračovat",
+      "figRightItalic": "kde jste skončili",
+      "text": "{salutation}\n\nVstupní dotazník je tam, kde jste ho opustili.\n\nVáš vstupní dotazník pokračuje tam, kde jste skončili. Práce nezačne, dokud není dokončen.\n\nPokračovat ve vstupním dotazníku:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Která slova nejlépe popisují domov, ve kterém jste vyrůstali.",
+          "subtitle": "vyberte až tři slova, která se zdají pravdivá, i když si navzájem odporují — domovy jsou obvykle směs",
+          "options": {
+            "calm": "Klidný",
+            "strict": "Přísný",
+            "emotionally_distant": "Emocionálně vzdálený",
+            "chaotic": "Chaotický",
+            "achievement_focused": "Silně zaměřený na výkon",
+            "protective": "Ochranný",
+            "unpredictable": "Nepředvídatelný",
+            "conflict_heavy": "Plný konfliktů"
+          }
+        },
+        "q1_2": {
+          "title": "Jakou roli jste jako dítě přirozeně zaujímali.",
+          "subtitle": "zamyslete se nad rolí, kterou jste hráli ve své rodině, aniž by vám to kdokoli řekl — mírotvorce, pomocník, tichý",
+          "options": {
+            "peacemaker": "Mírotvorce",
+            "achiever": "Ten, kdo dosahuje úspěchů",
+            "invisible_child": "Neviditelné dítě",
+            "caregiver": "Pečovatel",
+            "rebel": "Rebel",
+            "funny_one": "Vtipálek",
+            "responsible_one": "Zodpovědný",
+            "problem_child": "Problémové dítě"
+          }
+        },
+        "q1_3": {
+          "title": "Jak emocionálně bezpečně jste se cítili během dospívání.",
+          "subtitle": "řiďte se svým instinktem ohledně domova, ne verzí, kterou by rodina vyprávěla cizinci",
+          "lowLabel": "1 · NIKDY BEZPEČNĚ",
+          "highLabel": "10 · PLNĚ BEZPEČNĚ"
+        },
+        "q1_4": {
+          "title": "Byly emoce doma otevřeně diskutovány.",
+          "subtitle": "nejen zda emoce existovaly, ale zda je někdo skutečně pojmenoval nebo o nich nahlas mluvil",
+          "options": {
+            "frequently": "Často",
+            "sometimes": "Někdy",
+            "rarely": "Zřídka",
+            "never": "Nikdy"
+          }
+        },
+        "q1_5": {
+          "title": "Jedna vzpomínka z dětství, která se dodnes zdá emocionálně živá.",
+          "subtitle": "popište jednu konkrétní scénu, která se vám stále vrací — kde jste byli, kdo tam byl, co se stalo, jak jste se cítili"
+        },
+        "q1_6": {
+          "title": "Co jste se naučili, že musíte dělat, abyste získali lásku nebo schválení.",
+          "subtitle": "malé věci, které jste si všimli, že fungovaly — být hodný, být tichý, dosahovat úspěchů, nepřekážet — podělte se o to, co si pamatujete, že jste přizpůsobili"
+        },
+        "q1_7": {
+          "title": "Jaké emoce bylo obtížné vyjádřit ve vašem domově.",
+          "subtitle": "které pocity byly ignorovány, odmítány nebo trestány, když jste se je pokusili projevit — hněv, smutek, strach, radost, cokoli"
+        },
+        "q1_8": {
+          "title": "Když přemýšlíte o svém mladším já, co k němu cítíte.",
+          "subtitle": "buďte upřímní ohledně pocitu, který se objeví — vřelost, smutek, odstup, frustrace, ochranitelskost — cokoli, co tam skutečně je"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Jak byste popsali svou matku nebo primární mateřskou pečovatelku.",
+          "subtitle": "několik vět o tom, jaká byla, jak se k vám chovala a jak jste se v její přítomnosti cítili",
+          "options": {
+            "warm": "Vřelá",
+            "controlling": "Kontrolující",
+            "emotionally_unavailable": "Emocionálně nedostupná",
+            "sacrificing": "Obětavá",
+            "critical": "Kritická",
+            "anxious": "Úzkostná",
+            "unpredictable": "Nepředvídatelná",
+            "admired": "Obdivovaná",
+            "fearful": "Bojácná",
+            "not_applicable": "Neaplikovatelné"
+          }
+        },
+        "q2_2": {
+          "title": "Jak byste popsali svého otce nebo primárního otcovského pečovatele.",
+          "subtitle": "několik vět o tom, jaký byl, jak se k vám choval a jak jste se v jeho přítomnosti cítili",
+          "options": {
+            "supportive": "Podporující",
+            "distant": "Odtažitý",
+            "dominant": "Dominantní",
+            "passive": "Pasivní",
+            "ambitious": "Ambiciózní",
+            "emotionally_closed": "Emocionálně uzavřený",
+            "protective": "Ochranný",
+            "critical": "Kritický",
+            "absent": "Nepřítomný",
+            "not_applicable": "Neaplikovatelné"
+          }
+        },
+        "q2_3": {
+          "title": "Vaše pořadí mezi sourozenci.",
+          "subtitle": "kde jste se nacházeli v pořadí – nejstarší, prostřední, nejmladší, jedináček, nebo někde mezi",
+          "options": {
+            "oldest": "Nejstarší",
+            "middle": "Prostřední",
+            "youngest": "Nejmladší",
+            "only_child": "Jedináček"
+          }
+        },
+        "q2_4": {
+          "title": "Která role nejlépe odpovídá vašemu pořadí mezi sourozenci.",
+          "subtitle": "kromě pořadí narození, role, kterou jste nakonec hráli – ten zodpovědný, rebel, neviditelný, oblíbený",
+          "options": {
+            "responsible": "Zodpovědný",
+            "ignored": "Ignorovaný",
+            "compared": "Srovnávaný s ostatními",
+            "favored": "Upřednostňovaný",
+            "competitive": "Soutěživý",
+            "protective": "Ochranný",
+            "not_applicable": "Neaplikovatelné"
+          }
+        },
+        "q2_5": {
+          "title": "Který rodič vám nejlépe rozuměl.",
+          "subtitle": "pojmenujte je a řekněte, co ve vás viděli, co ten druhý přehlédl nebo pochopil špatně"
+        },
+        "q2_6": {
+          "title": "Který rodič nejvíce ovlivnil vaše obavy.",
+          "subtitle": "čí starosti jste v dětství vstřebávali a jak se tyto obavy projevují ve vašem životě dnes"
+        },
+        "q2_7": {
+          "title": "Jak vypadal konflikt ve vaší rodině.",
+          "subtitle": "popište formu, jakou hádky nabývaly – křik, ticho, bouchání dveřmi, chladné týdny, opakující se vzorce – cokoli, co bylo známé"
+        },
+        "q2_8": {
+          "title": "Jaký druh pozornosti bylo nejtěžší přijmout.",
+          "subtitle": "druh péče, která vám byla nepříjemná – chvála, starost, fyzická blízkost, být viděn – a proč to bylo těžké"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Jak náboženské nebo duchovní bylo prostředí, ve kterém jste vyrůstali.",
+          "subtitle": "skutečná atmosféra domova — praktiky, pravidla, víra ve vzduchu — nikoli to, čemu věříte nyní jako dospělí",
+          "lowLabel": "1 · VŮBEC NE",
+          "highLabel": "10 · HLUBOCE"
+        },
+        "q3_2": {
+          "title": "Která zpráva byla v dětství nejsilnější.",
+          "subtitle": "pravidlo nebo očekávání opakované tak často, že se stalo součástí pozadí — o úspěchu, chování, image, povinnosti, rodině",
+          "options": {
+            "success": "Na úspěchu záleží nejvíce",
+            "reputation": "Na pověsti záleží nejvíce",
+            "obedience": "Na poslušnosti záleží nejvíce",
+            "family_loyalty": "Na rodinné loajalitě záleží nejvíce",
+            "independence": "Na nezávislosti záleží nejvíce",
+            "sacrifice": "Na oběti záleží nejvíce"
+          }
+        },
+        "q3_3": {
+          "title": "Jak silně se cítíte souzeni společností.",
+          "subtitle": "nakolik se cítíte sledováni nebo hodnoceni lidmi mimo váš blízký kruh — v práci, online, na veřejnosti",
+          "lowLabel": "1 · VŮBEC NE",
+          "highLabel": "10 · NEUSTÁLE"
+        },
+        "q3_4": {
+          "title": "Jaké přesvědčení z vaší výchovy vás stále formuje.",
+          "subtitle": "hodnoty, pravidla nebo předpoklady, které jste zdědili a stále podle nich žijete, i když jste o nich roky nepřemýšleli",
+          "lowLabel": null,
+          "highLabel": null
+        },
+        "q3_5": {
+          "title": "Jakým přesvědčením tajně vzdorujete.",
+          "subtitle": "těm, se kterými veřejně souhlasíte, ale tiše s nimi nesouhlasíte — o penězích, vztazích, úspěchu, pohlaví, čemkoli",
+          "lowLabel": null,
+          "highLabel": null
+        },
+        "q3_6": {
+          "title": "Co by vaše rodina nebo komunita nejvíce neschvalovala na vašem skutečném já.",
+          "subtitle": "části sebe sama, svého života nebo svých rozhodnutí, které před nimi skrýváte, a proč je skrýváte",
+          "lowLabel": null,
+          "highLabel": null
+        },
+        "q3_7": {
+          "title": "Jakým člověkem jste se měli stát.",
+          "subtitle": "budoucnost, kterou si pro vás představovali ostatní — kariéra, rodina, chování, image — než jste do toho mohli zasáhnout",
+          "lowLabel": null,
+          "highLabel": null
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Kolik lidí vás skutečně zná.",
+          "subtitle": "lidé, kteří viděli vaši neupravenou verzi a nic z vašeho vnitřního života by je nešokovalo",
+          "options": {
+            "none": "Žádný",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Mnoho"
+          }
+        },
+        "q4_2": {
+          "title": "Ve skupinách se obvykle stáváte.",
+          "subtitle": "role, do které bezmyšlenkovitě sklouznete — ten vtipný, posluchač, vůdce, pozorovatel, ten, kdo udržuje věci v klidu",
+          "options": {
+            "leader": "Vůdce",
+            "observer": "Pozorovatel",
+            "entertainer": "Bavič",
+            "mediator": "Mediátor",
+            "intellectual": "Intelektuál",
+            "caregiver": "Pečovatel",
+            "withdrawn": "Stažený"
+          }
+        },
+        "q4_3": {
+          "title": "Jak moc se bojíte zklamat ostatní.",
+          "subtitle": "nakolik reakce jiné osoby — pohled, povzdech, ticho — může ovlivnit to, co říkáte nebo děláte",
+          "lowLabel": "1 · VŮBEC NE",
+          "highLabel": "10 · DENNĚ"
+        },
+        "q4_4": {
+          "title": "Jaké části sebe sama skrýváte ve společnosti.",
+          "subtitle": "myšlenky, pocity, rysy nebo části vaší historie, které držíte skryté, když jste mezi lidmi"
+        },
+        "q4_5": {
+          "title": "Kdy se cítíte nejvíce přijati.",
+          "subtitle": "situace nebo vztahy, kde přestanete hrát a můžete být sami sebou — popište, čím se tyto prostory liší"
+        },
+        "q4_6": {
+          "title": "Jaké sociální situace vás nejvíce vyčerpávají.",
+          "subtitle": "setkání, dynamiky nebo vztahy, které vás unavují více, než by měly — a co je na nich vyčerpávající"
+        },
+        "q4_7": {
+          "title": "Jaké lidi závidíte.",
+          "subtitle": "závist obvykle ukazuje na něco, co chcete, ale nedovolili jste si to otevřeně chtít — popište, kdo ji spouští a proč"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Které platformy aktivně používáte.",
+          "subtitle": "aplikace, které otevíráte ze zvyku, více než jednou denně, nikoli ty, na kterých máte technicky účet",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Žádné"
+          }
+        },
+        "q5_2": {
+          "title": "Průměrná denní doba používání na platformu.",
+          "subtitle": "hrubý odhad, kolik času skutečně strávíte na každé z nich — minuty nebo hodiny, bez posuzování",
+          "unit": "MINUT DENNĚ"
+        },
+        "q5_3": {
+          "title": "K čemu je hlavně používáte.",
+          "subtitle": "skutečný důvod pod tím zjevným — spojení, rozptýlení, validace, únik, srovnání, informace",
+          "options": {
+            "validation": "Validace",
+            "learning": "Učení",
+            "escapism": "Únik z reality",
+            "networking": "Networking",
+            "self_expression": "Sebevyjádření",
+            "entertainment": "Zábava",
+            "comparison": "Srovnávání",
+            "dating": "Seznamování"
+          }
+        },
+        "q5_4": {
+          "title": "Jak často mažete nebo upravujete příspěvky před publikováním.",
+          "subtitle": "jak moc nacvičujete, pochybujete nebo přepisujete to, co sdílíte, než to uvidí ostatní",
+          "options": {
+            "always": "Vždy",
+            "often": "Často",
+            "sometimes": "Někdy",
+            "rarely": "Zřídka",
+            "never": "Nikdy"
+          }
+        },
+        "q5_5": {
+          "title": "Jak často srovnáváte svůj život s ostatními online.",
+          "subtitle": "tiché měření, které probíhá při procházení — ohledně vzhledu, úspěchu, vztahů, životního stylu, čehokoli",
+          "lowLabel": "1 · NIKDY",
+          "highLabel": "10 · NEUSTÁLE"
+        },
+        "q5_6": {
+          "title": "Jaká verze vás se objevuje online.",
+          "subtitle": "popište postavu, kterou prezentujete — kurátorovanou verzi — a jak se liší od toho, kým jste, když se nikdo nedívá"
+        },
+        "q5_7": {
+          "title": "Co emocionálně hledáte, když otevřete sociální média.",
+          "subtitle": "pocit, po kterém saháte v okamžiku otevření aplikace — rozptýlení, útěcha, vzrušení, otupělost, spojení"
+        },
+        "q5_8": {
+          "title": "Jaký typ obsahu vás znepokojuje.",
+          "subtitle": "příspěvky nebo videa, u kterých chcete rychle posunout dál, a co si myslíte, že je skutečným důvodem tohoto nepohodlí"
+        },
+        "q5_9": {
+          "title": "Jací lidé přitahují vaši pozornost online.",
+          "subtitle": "účty, u kterých se zastavíte a sledujete — popište vlastnosti, které sdílejí, a co vás přitahuje"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Váš aktuální stav vztahu.",
+          "subtitle": "kde se právě nacházíte – svobodní, randící, ve vztahu, ženatí/vdané, odloučení, komplikované – ne kde byste si přáli být",
+          "options": {
+            "single": "Svobodní",
+            "dating": "Randící",
+            "in_relationship": "Ve vztahu",
+            "engaged": "Zasnoubení",
+            "married": "Ženatí/vdané",
+            "separated_divorced": "Odloučení nebo rozvedení",
+            "widowed": "Ovdovělí",
+            "its_complicated": "Je to komplikované"
+          }
+        },
+        "q6_2": {
+          "title": "Kolik vážných vztahů jste měli.",
+          "subtitle": "ty, které byly emočně důležité, bez ohledu na to, jak dlouho trvaly nebo jak oficiální byly",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Typické konflikty ve vašich vztazích.",
+          "subtitle": "hádky, které se opakovaně objevují v různých formách u různých partnerů – peníze, vzdálenost, kontrola, komunikace",
+          "options": {
+            "distance": "Vzdálenost",
+            "jealousy": "Žárlivost",
+            "control": "Kontrola",
+            "emotional_unavailability": "Emoční nedostupnost",
+            "communication": "Komunikace",
+            "trust": "Důvěra",
+            "dependency": "Závislost"
+          }
+        },
+        "q6_4": {
+          "title": "Ve vztazích máte tendenci.",
+          "subtitle": "váš výchozí krok, když se věci zkomplikují – přiblížit se, vzdálit se, převzít kontrolu, uzavřít se, pokusit se to napravit",
+          "options": {
+            "pursue": "Pronásledovat",
+            "withdraw": "Stáhnout se",
+            "overgive": "Příliš dávat",
+            "test_loyalty": "Testovat loajalitu",
+            "avoid_vulnerability": "Vyhýbat se zranitelnosti"
+          }
+        },
+        "q6_5": {
+          "title": "Do jakých lidí se opakovaně zamilováváte.",
+          "subtitle": "typ, který se stále objevuje ve vašem milostném životě – nejen vzhled, ale emoční vzorce, temperament, jak se k vám chovají"
+        },
+        "q6_6": {
+          "title": "Co obvykle ukončuje vaše vztahy.",
+          "subtitle": "skutečný důvod, proč se věci rozpadají, nad rámec oficiálního příběhu, který vyprávíte přátelům nebo rodině"
+        },
+        "q6_7": {
+          "title": "Jakou emoční potřebu si nejvíce přejete naplnit.",
+          "subtitle": "potřeba, o kterou je pro vás nejtěžší přímo požádat – být viděn, být vybrán, být v bezpečí, být svobodný, být chtěný"
+        },
+        "q6_8": {
+          "title": "Čeho se nejvíce obáváte v intimitě.",
+          "subtitle": "co blízkost pro vás ohrožuje – být poznán, být uvězněn, být opuštěn, být příliš, být nedostatečný"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Váš aktuální pracovní status.",
+          "subtitle": "podoba vašeho pracovního života právě teď — zaměstnaný, OSVČ, mezi zaměstnáními, studující, pečující, něco jiného",
+          "options": {
+            "employed_full_time": "Zaměstnaný, na plný úvazek",
+            "employed_part_time": "Zaměstnaný, na částečný úvazek",
+            "self_employed": "OSVČ nebo zakladatel",
+            "freelance": "Na volné noze nebo na smlouvu",
+            "studying": "Studující",
+            "between_roles": "Mezi zaměstnáními",
+            "caregiving": "Pečující doma",
+            "retired": "V důchodu",
+            "not_working": "Nepracující"
+          }
+        },
+        "q7_2": {
+          "title": "Jak jste spokojen/a se směrem své kariéry.",
+          "subtitle": "delší oblouk, kam vaše práce směřuje, nikoli jak se cítíte tento konkrétní týden",
+          "lowLabel": "1 · ZTRACENÝ/Á",
+          "highLabel": "10 · PŘESNĚ TAK"
+        },
+        "q7_3": {
+          "title": "V práci jste obvykle.",
+          "subtitle": "způsob, jakým profesionálně fungujete — role, kterou zaujímáte, když vám ji nikdo nepřiřazuje",
+          "options": {
+            "perfectionistic": "Perfekcionistický/á",
+            "avoidant": "Vyhýbavý/á",
+            "competitive": "Soutěživý/á",
+            "cooperative": "Kooperativní",
+            "over_responsible": "Přehnaně zodpovědný/á",
+            "detached": "Odtažitý/á"
+          }
+        },
+        "q7_4": {
+          "title": "Váš největší stres na pracovišti.",
+          "subtitle": "zdroj tlaku, který vás pronásleduje domů — osoba, pracovní zátěž, strach, prostředí, vzorec",
+          "options": {
+            "criticism": "Kritika",
+            "failure": "Selhání",
+            "visibility": "Viditelnost",
+            "authority": "Autorita",
+            "uncertainty": "Nejistota",
+            "conflict": "Konflikt"
+          }
+        },
+        "q7_5": {
+          "title": "Co pro vás emocionálně znamená úspěch.",
+          "subtitle": "pocit, který si představujete, že přijde, když ho konečně dosáhnete — úleva, hrdost, klid, svoboda, být dost dobrý/á"
+        },
+        "q7_6": {
+          "title": "Jaký druh uznání vás nejvíce ovlivňuje.",
+          "subtitle": "chvála, která skutečně dopadne a změní váš pocit, a druh, který se odrazí bez ohledu na to, kolik ho dostanete"
+        },
+        "q7_7": {
+          "title": "Jaké selhání vás dodnes ovlivňuje.",
+          "subtitle": "konkrétní selhání, které jste ještě zcela nezpracovali — co se stalo a jak stále formuje vaše volby"
+        },
+        "q7_8": {
+          "title": "Kdyby peníze zmizely, co byste dělal/a.",
+          "subtitle": "práce nebo činnost, kterou byste dělal/a, i kdyby vám za ni nikdo neplatil — popište, jak to vypadá"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Jak se obvykle vyrovnáváte se stresem.",
+          "subtitle": "po čem sáhnete, když je situace obtížná — jídlo, obrazovky, cvičení, izolace, rozhovory, návykové látky, spánek, práce",
+          "options": {
+            "isolation": "Izolace",
+            "food": "Jídlo",
+            "gaming": "Hraní her",
+            "exercise": "Cvičení",
+            "overworking": "Přepracování",
+            "scrolling": "Procházení sociálních sítí",
+            "substance_use": "Užívání návykových látek",
+            "shopping": "Nakupování",
+            "sleeping": "Spánek",
+            "socializing": "Socializace"
+          }
+        },
+        "q8_2": {
+          "title": "Jak často se společensky stýkáte.",
+          "subtitle": "jak často trávíte čas s jinými lidmi osobně, nikoli online nebo prostřednictvím zpráv",
+          "options": {
+            "multiple_per_week": "Několikrát týdně",
+            "weekly": "Týdně",
+            "monthly": "Měsíčně",
+            "rarely": "Zřídka",
+            "never": "Nikdy"
+          }
+        },
+        "q8_3": {
+          "title": "Jak často se cítíte osaměle, i když jste ve skupině.",
+          "subtitle": "osamělost, která se objeví, když jste obklopeni lidmi, ale přesto se cítíte neviděni nebo vzdáleni",
+          "lowLabel": "1 · NIKDY",
+          "highLabel": "10 · VŽDY"
+        },
+        "q8_4": {
+          "title": "Jaké činnosti vás nutí zapomenout na sebe.",
+          "subtitle": "věci, které vás pohltí tak hluboce, že čas zmizí — v dobrém i ve zlém, zdravé i nezdravé"
+        },
+        "q8_5": {
+          "title": "Na co se nejvíce vyhýbáte myšlenkám.",
+          "subtitle": "téma nebo vzpomínka, které se rychle vyhnete, když se objeví — o sobě, své minulosti, své budoucnosti"
+        },
+        "q8_6": {
+          "title": "Kdy se cítíte emočně otupělí.",
+          "subtitle": "situace, kdy hlasitost klesne na nulu — práce, vztahy, konflikt, intimita, samota"
+        },
+        "q8_7": {
+          "title": "Jaký zvyk je nejtěžší přestat.",
+          "subtitle": "chování, které jste se pokusili změnit nebo opustit více než jednou, bez úspěchu — popište, co to je a co vás neustále táhne zpět"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Jak moc jste sebekritický/á.",
+          "subtitle": "tón vašeho vnitřního hlasu, když se vám něco nepovede nebo zaostáváte – drsný, spravedlivý, odmítavý, zničující",
+          "lowLabel": "1 · JEMNÝ",
+          "highLabel": "10 · NEMILOSRDNÝ"
+        },
+        "q9_2": {
+          "title": "Které tvrzení se nejvíce blíží vašemu soukromému strachu.",
+          "subtitle": "věta o vás samých, která žije pod vším ostatním, ta, kterou byste přiznali jen ve špatný den",
+          "options": {
+            "never_enough": "Nikdy nejsem dost dobrý/á",
+            "fear_abandoned": "Bojím se, že budu opuštěn/a",
+            "fear_losing_control": "Bojím se ztráty kontroly",
+            "fear_failure": "Bojím se selhání",
+            "fear_ordinary": "Bojím se být obyčejný/á",
+            "fear_rejection": "Bojím se odmítnutí",
+            "fear_dependence": "Bojím se závislosti"
+          }
+        },
+        "q9_3": {
+          "title": "Jak často se cítíte odpojený/á od sebe sama.",
+          "subtitle": "pocit, že sledujete svůj vlastní život z malé vzdálenosti, jako byste v něm nebyli plně přítomni",
+          "lowLabel": "1 · NIKDY",
+          "highLabel": "10 · DENNĚ"
+        },
+        "q9_4": {
+          "title": "Jaká myšlenka se vám nejčastěji opakuje v mysli.",
+          "subtitle": "opakující se věta nebo starost, která se pravidelně vrací – napište ji doslovně, ne jako shrnutí"
+        },
+        "q9_5": {
+          "title": "Za co se soukromě kritizujete.",
+          "subtitle": "věci, za které se hodnotíte a o kterých nikdo jiný neví – týkající se vašeho těla, mysli, voleb, charakteru"
+        },
+        "q9_6": {
+          "title": "Co by vás přimělo cítit se dostatečně.",
+          "subtitle": "podmínka, kterou jste si tiše stanovili, abyste se konečně uvolnili – buďte upřímní, odpověď je často menší, než očekáváte"
+        },
+        "q9_7": {
+          "title": "Kdyby měl váš vnitřní hlas osobnost, jak byste ho popsali.",
+          "subtitle": "věk, pohlaví, tón tohoto hlasu – a čí hlas by to ve skutečnosti mohl být, kdybyste ho vystopovali"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Co je pro vás důležitější.",
+          "subtitle": "vyberte to nejdůležitější právě teď – ostatní mohou být stále důležité, ale buďte upřímní ohledně pořadí",
+          "options": {
+            "freedom": "Svoboda",
+            "love": "Láska",
+            "recognition": "Uznání",
+            "stability": "Stabilita",
+            "power": "Moc",
+            "meaning": "Smysl",
+            "peace": "Klid",
+            "influence": "Vliv"
+          }
+        },
+        "q10_2": {
+          "title": "Jak moc doufáte ve svou budoucnost.",
+          "subtitle": "pocit, který máte, když přemýšlíte dopředu, ne optimistická odpověď, kterou dáváte ostatním, když se ptají",
+          "lowLabel": "1 · ŽÁDNÁ",
+          "highLabel": "10 · HLUBOKÁ"
+        },
+        "q10_3": {
+          "title": "Co tajně nejvíce chcete.",
+          "subtitle": "přání, které jste si ještě nedovolili vyslovit nahlas – to, které se zdá příliš velké, příliš riskantní nebo příliš trapné",
+          "options": {
+            "to_be_understood": "Být pochopen",
+            "to_be_admired": "Být obdivován",
+            "to_feel_safe": "Cítit se bezpečně",
+            "to_be_desired": "Být toužen",
+            "to_feel_important": "Cítit se důležitě",
+            "to_feel_free": "Cítit se svobodně",
+            "to_belong": "Náležet"
+          }
+        },
+        "q10_4": {
+          "title": "Popište svůj ideální budoucí život podrobně.",
+          "subtitle": "konkrétní detaily – kde jste, s kým jste, jak vypadají vaše rána, práce, světlo, rytmus"
+        },
+        "q10_5": {
+          "title": "Jaký strach by mohl tuto budoucnost zničit.",
+          "subtitle": "věc – vnitřní nebo vnější – která vás už dříve zastavila a mohla by vás zastavit znovu, pokud ji necháte"
+        },
+        "q10_6": {
+          "title": "Jakou částí sebe sama se stále snažíte stát.",
+          "subtitle": "verze vás na obzoru – vlastnosti, svobody, způsob bytí, ke kterému se pomalu posouváte"
+        },
+        "q10_7": {
+          "title": "Kdyby vás nikdo nesoudil, jak byste žili jinak.",
+          "subtitle": "rozhodnutí, která byste učinili, kdyby pozorování přestalo – ohledně práce, lásky, těla, času, peněz, hlasu"
+        },
+        "q10_8": {
+          "title": "Co si myslíte, že skutečně hledáte.",
+          "subtitle": "hlubší věc pod všemi vašimi předchozími odpověďmi – na co skutečně ukazuje každá volba a touha"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "PŮVOD · VÝVOJOVÉ VTIŠTĚNÍ",
+        "headline": [
+          "Co vás naučila ",
+          "raná místnost",
+          "."
+        ],
+        "lede": "První sekce naslouchá emočnímu klimatu, bezpečí a roli, do které jste byli obsazeni. Zaznamenané vzorce se stávají základem, na kterém se staví vše pozdější.",
+        "title": "Původ",
+        "subtitle": "vývojové vtištění"
+      },
+      "attachment": {
+        "eyebrow": "PŘIPOUTÁNÍ · RODINNÁ STRUKTURA",
+        "headline": [
+          "První ",
+          "vazby",
+          " a tvar, který zanechaly."
+        ],
+        "lede": "Určuje váš styl připoutání, váš vztah k autoritě a triangulaci, ve které jste vyrůstali. Tvar první vazby se stává šablonou, podle které se měří každá pozdější.",
+        "title": "Připoutání",
+        "subtitle": "rodinná struktura"
+      },
+      "authority": {
+        "eyebrow": "AUTORITA · SYMBOLICKÝ ZÁKON",
+        "headline": [
+          "Hlasy, které jste ",
+          "zdědili",
+          "."
+        ],
+        "lede": "Odhaluje morální kodexy, struktury viny a zděděnou identitu, které stále běží na pozadí. Hlasy, pod kterými jste vyrůstali, zřídka odejdou; stanou se hlasem, který vás soudí.",
+        "title": "Autorita",
+        "subtitle": "symbolický zákon"
+      },
+      "belonging": {
+        "eyebrow": "PŘÍSLUŠNOST · SOCIÁLNÍ IDENTITA",
+        "headline": [
+          "Kdo vás smí ",
+          "vidět",
+          "."
+        ],
+        "lede": "Měří sociální závislost, maskování identity a strach z vyloučení. Příslušnost je zřídka zdarma; tato sekce se ptá, co za ni vyměníte.",
+        "title": "Příslušnost",
+        "subtitle": "sociální identita"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · TOUHA A DIGITÁLNÍ JÁ",
+        "headline": [
+          "Já, které ",
+          "předvádíte",
+          "."
+        ],
+        "lede": "Čte idealizované já, validační smyčku a symbolické představení, které inscenujete online. Persona není lež; je to napůl odhalené přání.",
+        "title": "Persona",
+        "subtitle": "touha a digitální já"
+      },
+      "desire": {
+        "eyebrow": "TOUHA · INTIMITA A OPAKOVÁNÍ",
+        "headline": [
+          "Vzorec, který se ",
+          "stále vrací",
+          "."
+        ],
+        "lede": "Nachází opakující se vztahový tvar, strach z opuštění, rozpor uvnitř touhy. To, co se opakuje, je zřídka zvoleno; je to to, co se žádá, aby bylo viděno.",
+        "title": "Touha",
+        "subtitle": "intimita a opakování"
+      },
+      "achievement": {
+        "eyebrow": "ÚSPĚCH · PRÁCE A UZNÁNÍ",
+        "headline": [
+          "Co se snažíte ",
+          "dokázat",
+          "."
+        ],
+        "lede": "Detekuje úzkost z úspěchu, hlad po uznání a váš vztah k autoritě v práci. Pod každou ambicí je publikum jednoho nebo dvou lidí.",
+        "title": "Úspěch",
+        "subtitle": "práce a uznání"
+      },
+      "escape": {
+        "eyebrow": "ÚNIK · POTĚŠENÍ A RITUÁL",
+        "headline": [
+          "Kam jdete, ",
+          "abyste tu nebyli",
+          "."
+        ],
+        "lede": "Identifikuje vzorce vyhýbání se, nutkání a rituály, které regulují potěšení. Východ, po kterém sáhnete, vypovídá stejně jako místnost, kterou opouštíte.",
+        "title": "Únik",
+        "subtitle": "potěšení a rituál"
+      },
+      "self-relation": {
+        "eyebrow": "SEBEVÝCHOD · VNITŘNÍ DIALOG",
+        "headline": [
+          "Hlas, který nemůžete ",
+          "úplně ztišit",
+          "."
+        ],
+        "lede": "Mapuje hranice superega, struktury studu a internalizované hlasy. Způsob, jakým k sobě mluvíte v soukromí, je nejupřímnějším záznamem toho, kdo vás vychoval.",
+        "title": "Sebevztah",
+        "subtitle": "vnitřní dialog"
+      },
+      "future-fantasy": {
+        "eyebrow": "BUDOUCNOST · FANTAZIE, STRACH A TOUHA",
+        "headline": [
+          "Co skutečně ",
+          "hledáte",
+          "."
+        ],
+        "lede": "Emoční vyvrcholení — budoucnost, kterou si představujete, strach, který ji pronásleduje, základní touha pod ní. Poslední otázka je ta první, která se vrátí.",
+        "title": "Budoucnost-fantazie",
+        "subtitle": "fantazie, strach a touha"
+      }
+    }
+  },
+  "common": {
+    "or": "nebo",
+    "loading": "načítání…",
+    "sending": "odesílání…",
+    "save": "Uložit",
+    "saved": "uloženo",
+    "cancel": "Zrušit",
+    "close": "Zavřít",
+    "back": "Zpět",
+    "continue": "Pokračovat",
+    "retry": "Zkusit znovu",
+    "more": "více"
+  },
+  "nav": {
+    "room": "Místnost",
+    "readings": "Čtení",
+    "catchup": "Shrnutí",
+    "consulting": "Konzultace",
+    "caseFile": "Spis případu",
+    "settings": "Nastavení",
+    "signIn": "Přihlásit se",
+    "signOut": "Odhlásit se",
+    "getStarted": "Začít",
+    "language": "Jazyk",
+    "method": "Metoda",
+    "theWork": "Práce",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "start": "Začít"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Přihlásit ",
+      "titleItalic": "se",
+      "titleAfter": ".",
+      "googleLabel": "Přihlásit se přes Google",
+      "or": "nebo",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "HESLO",
+      "forgotPassword": "Zapomenuté heslo",
+      "submit": "Přihlásit se",
+      "footPrompt": "Jste tu poprvé? ",
+      "footLink": "Vytvořit účet"
+    },
+    "signUp": {
+      "titleBefore": "Vytvořit ",
+      "titleItalic": "účet",
+      "titleAfter": ".",
+      "googleLabel": "Pokračovat přes Google",
+      "or": "nebo",
+      "emailLabel": "E-MAIL",
+      "passwordLabel": "HESLO",
+      "confirmPasswordLabel": "POTVRDIT HESLO",
+      "submit": "Vytvořit účet",
+      "footPrompt": "Už účet máte? ",
+      "footLink": "Přihlásit se",
+      "resentNote": "Nový odkaz byl odeslán.",
+      "resendConfirmation": "Znovu odeslat potvrzení",
+      "pendingFootPrompt": "Špatná adresa? ",
+      "pendingFootLink": "Začít znovu"
+    },
+    "forgot": {
+      "titleBefore": "Zapomněli jste ",
+      "titleItalic": "heslo",
+      "titleAfter": ".",
+      "lede": "Zadejte adresu, se kterou jste se registrovali. Pošleme vám odkaz pro resetování.",
+      "emailLabel": "E-MAIL",
+      "submit": "Odeslat odkaz pro resetování",
+      "footPrompt": "Vzpomněli jste si? ",
+      "footLink": "Přihlásit se",
+      "sentBackLink": "Zpět k přihlášení"
+    },
+    "reset": {
+      "titleBefore": "Nastavit ",
+      "titleItalic": "nové heslo",
+      "titleAfter": ".",
+      "newPasswordLabel": "NOVÉ HESLO",
+      "confirmPasswordLabel": "POTVRDIT HESLO",
+      "submit": "Aktualizovat heslo",
+      "expiredTitleBefore": "Tento odkaz je ",
+      "expiredTitleItalic": "neplatný",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Vyžádat nový odkaz"
+    },
+    "errors": {
+      "invalid_credentials": "E-mail nebo heslo se neshoduje.",
+      "email_taken": "Tento e-mail je již registrován. Zkuste se přihlásit.",
+      "weak_password": "Použijte alespoň 8 znaků.",
+      "passwords_dont_match": "Hesla se neshodují.",
+      "email_invalid": "Nevypadá to jako platný e-mail.",
+      "rate_limited": "Příliš mnoho pokusů. Zkuste to za chvíli znovu.",
+      "unconfirmed_email": "Nejprve potvrďte svůj e-mail. Zkontrolujte si schránku.",
+      "reset_link_expired": "Tento odkaz vypršel. Vyžádejte si nový.",
+      "reset_link_invalid": "Tento odkaz již není platný. Vyžádejte si nový.",
+      "oauth_failed": "Nepodařilo se navázat spojení s Google. Zkuste to znovu.",
+      "callback_failed": "Nepodařilo se dokončit přihlášení.",
+      "generic": "Něco se pokazilo. Zkuste to znovu.",
+      "no_session": "Pro pokračování se přihlaste."
+    },
+    "success": {
+      "checkInboxEyebrow": "ZKONTROLUJTE SI SCHRÁNKU",
+      "confirmationHeadlineBefore": "Odeslali jsme ",
+      "confirmationHeadlineItalic": "potvrzovací odkaz",
+      "confirmationHeadlineAfter": " na ",
+      "confirmationLede": "Kliknutím na něj dokončíte vytvoření účtu.",
+      "resetSentEyebrow": "ZKONTROLUJTE SI SCHRÁNKU",
+      "resetSentHeadlineBefore": "Pokud je tento e-mail ",
+      "resetSentHeadlineItalic": "registrován",
+      "resetSentHeadlineAfter": ", odeslali jsme odkaz pro resetování.",
+      "resetSentLede": "Odkaz funguje pouze jednou a vyprší do hodiny. Pokud odkaz nedorazil, účet neexistuje.",
+      "passwordUpdated": "Heslo aktualizováno. Přihlašujeme vás."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "ÚČET",
+      "headlineBefore": "Nastavte si svůj",
+      "headlineItalic": "tichý pokoj",
+      "lede": "Jméno, rok a souhlas. Pak začíná práce.",
+      "saveFailed": "Nepodařilo se uložit. Zkuste to za chvíli znovu.",
+      "nameLabel": "JMÉNO",
+      "nameRequired": "Jméno je povinné.",
+      "prefilledHint": "předvyplněno z Google · editovatelné",
+      "yearLabel": "ROK NAROZENÍ",
+      "yearRequired": "Vyberte rok.",
+      "genderLabel": "POHLAVÍ",
+      "genderRequired": "Vyberte jedno.",
+      "gender": {
+        "male": "Muž",
+        "female": "Žena",
+        "nonBinary": "Ne-binární",
+        "preferNotToSay": "Nechci uvést"
+      },
+      "languageLabel": "JAZYK",
+      "termsBefore": "Souhlasím s",
+      "termsLink": "Podmínkami",
+      "termsAnd": "a",
+      "privacyLink": "Zásadami ochrany osobních údajů",
+      "termsAfter": ".",
+      "submit": "Založit účet"
+    },
+    "intro": {
+      "eyebrow": "PŘÍJEM · ŽÁDNÉ ŠPATNÉ ODPOVĚDI",
+      "headlineBefore": "Neexistují žádné správné odpovědi",
+      "headlineItalic": "zde"
+    },
+    "brief": {
+      "title": "STRUČNÉ POUČENÍ",
+      "hint": "přečtěte si jednou, pak začněte",
+      "opener": "Špatné odpovědi — váhání, překlepy, přeskočení — mluví stejně jasně jako ty správné.",
+      "privacy": "Vše, co napíšete, je soukromé. Nic neopustí tuto místnost.",
+      "length": "Protože práce je hluboká, příjem je dlouhý. Rozdělili jsme jej na deset částí. Celá věc trvá asi dvě hodiny.",
+      "resume": "Uložte a pokračujte jindy. Po dokončení můžete upravit jakoukoli sekci — profil stále naslouchá.",
+      "begin": "Zahájit příjem"
+    },
+    "saved": {
+      "eyebrow": "ULOŽIT A POZASTAVIT",
+      "headlineItalic": "Uloženo.",
+      "headlineAfter": "Vraťte se, až budete připraveni.",
+      "body": "Vše, co jste napsali, je ve vašem spisu. Místnost se příště otevře na stejném místě.",
+      "keepGoing": "pokračovat",
+      "leaveRoom": "Opustit tichý pokoj"
+    },
+    "step": {
+      "label": "KROK",
+      "of": "Z",
+      "min": "MIN",
+      "progressLabel": "Průběh příjmu",
+      "finalEpigraph": "poslední otázka je vždy znovu ta první.",
+      "backTo": "Krok {n}",
+      "continueTo": "Pokračovat na krok {n}",
+      "submit": "Uložit a odeslat",
+      "submitReading": "čtení…"
+    },
+    "questions": {
+      "closeTitle": "UZAVŘENÉ OTÁZKY",
+      "closeHint": "vyberte, co je pravda",
+      "openTitle": "OTEVŘENÉ OTÁZKY",
+      "openHint": "napište, co se vynoří",
+      "countLabel": "{count, plural, one {otázka} few {otázky} many {otázek} other {otázek}}"
+    },
+    "saveExit": {
+      "or": "nebo",
+      "saveAndReturn": "uložit a vrátit se později"
+    },
+    "saveIndicator": {
+      "saving": "ukládání…",
+      "saved": "uloženo",
+      "saveFailed": "uložení se nezdařilo"
+    }
+  },
+  "readings": {
+    "whatThisIs": "co to je →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "podvědomé smyčky",
+        "definition": "Opakující se sekvence pocitů, činů a výsledků, které se dějí mimo vědomou volbu. Pojmenování smyčky je prvním krokem k jejímu přerušení.",
+        "seedReading": "přibližuje se, pak vyvolá malou chybu, aby se stáhl.",
+        "seedTakeaway": "ústup je smyčka. ne blízkost."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "lingvistické nevědomí",
+        "definition": "Způsob, jakým se nevědomý materiál projevuje ve výběru slov, opakováních, přeřeknutích a struktuře řeči — Lacanovo tvrzení, že nevědomí je strukturováno jako jazyk.",
+        "seedReading": "řeč se zdvojuje u slova „měl by“ — místo zděděného požadavku.",
+        "seedTakeaway": "hlas někoho jiného stále promlouvá skrze toto slovo."
+      },
+      "father-imago": {
+        "subtitle": "otcovský imago",
+        "definition": "Internalizovaný obraz otce, utvářený v raném věku a částečně mýtický. Formuje, jak se později v životě setkáváme s autoritou, ambicemi a úsudkem.",
+        "seedReading": "soudí shora, než je souzen shora — pozice je identická.",
+        "seedTakeaway": "sedadlo se mění. židle ne."
+      },
+      "intimacy-threshold": {
+        "subtitle": "práh intimity",
+        "definition": "Bod, kdy se blízkost začíná jevit jako riziko, a následuje obranný tah. Pro každého člověka jiný; překvapivě stabilní napříč vztahy.",
+        "seedReading": "dobře drží, dokud se druhý nestane čitelným — pak se stáhne.",
+        "seedTakeaway": "být poznán je hranice, ne být blízko."
+      },
+      "desire-structure": {
+        "subtitle": "struktura touhy",
+        "definition": "Co uživatel skutečně chce, odlišeno od toho, co mu bylo řečeno, že má chtít. Často objeveno negací — všimnutím si, co odmítá.",
+        "seedReading": "pojmenuje mnoho přání, odmítá dvě — odmítnutí je signál.",
+        "seedTakeaway": "co je odstrkováno, ukazuje jasněji než to, co je pronásledováno."
+      },
+      "professional-block": {
+        "subtitle": "profesní blok",
+        "definition": "Kde práce naráží: začátek, střed, konec nebo viditelnost. Každé místo má svůj vlastní nevědomý zdroj.",
+        "seedReading": "cílová čára je místo, kde přichází pochybnost, nikdy ne začátek.",
+        "seedTakeaway": "blok je ve viditelnosti, ne v úsilí."
+      },
+      "mother-imago": {
+        "subtitle": "mateřský imago",
+        "definition": "Internalizovaný obraz matky — první naladění, první separace. Informuje o textuře závislosti a útočiště.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "rané naladění zanechává dlouhý podpis."
+      },
+      "dream-logic": {
+        "subtitle": "logika snu",
+        "definition": "Kondenzace a přesun působící v materiálu snů. Čtěte pro gramatiku, ne pro symboly.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "obsah snu má svou vlastní gramatiku."
+      },
+      "relational-pattern": {
+        "subtitle": "vztahový vzorec",
+        "definition": "Opakující se postoj zaujímaný ve vztazích — pronásledovatel, stahující se, rodič, dítě, rovnocenný. Stabilní napříč partnery více než partneři jsou stabilní napříč uživatelem.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "stejný tvar se objevuje v různých místnostech."
+      },
+      "defenses": {
+        "subtitle": "obrany",
+        "definition": "Charakteristické tahy používané k udržení obtížného materiálu mimo vědomí — intelektualizace, přesun, reakční formace, štěpení. Obrany nejsou selhání; jsou to stará řešení.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "obrana pojmenuje to, co bylo kdysi nesnesitelné."
+      },
+      "shadow": {
+        "subtitle": "stín",
+        "definition": "Co bylo popřeno a přiřazeno ostatním — vlastnosti, o kterých je uživatel nejvíce přesvědčen, že jimi není. Často cesta k vitalitě.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "co je popřeno, stále působí."
+      },
+      "transference": {
+        "subtitle": "transference",
+        "definition": "Způsob, jakým jsou staré vztahové postavy promítány na ty současné — analytika, partnera, šéfa. Vzorec odhaluje imago.",
+        "seedReading": "příliš brzy na to, abychom to s jistotou řekli — tvar se formuje.",
+        "seedTakeaway": "staré postavy přicházejí do současných místností."
+      }
+    },
+    "strip": {
+      "lastRefined": "naposledy upřesněno",
+      "readingDepth": "hloubka čtení"
+    },
+    "section": {
+      "eyebrow": "ČTENÍ {index} · {subtitle}",
+      "strengthen": "posílit přesnost",
+      "requestReport": "vyžádat si zprávu"
+    },
+    "card": {
+      "reading": "Čtení {index}"
+    },
+    "report": {
+      "eyebrow": "KLINICKÁ ZPRÁVA",
+      "heading": "Pro vaše <it>analytika.</it>",
+      "lede": "Dossier o 12–18 stranách — šest plně rozvinutých čtení, plus dalších šest, které dashboard neukazuje: mateřský imago, logika snu, vztahový vzorec, obrany, stín, transference. Přeloženo do jazyka, ve kterém pracuje klinický lékař.",
+      "note": "zpráva bude odrážet dostupnou hloubku. může být znovu vygenerována, jak se čtení prohlubuje.",
+      "generate": "Generovat klinickou zprávu",
+      "request": "Vyžádat klinickou zprávu",
+      "footPrefix": "jedna zpráva měsíčně zahrnuta pro ",
+      "footLink": "předplatitele"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "OTÁZKA {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Co vám z týdne utkvělo v paměti?",
+        "framing": "fráze, obraz, věta, kterou někdo řekl."
+      },
+      "closeness": {
+        "prompt": "Jak blízko jste k sobě někoho pustili?",
+        "options": {
+          "not_at_all": "vůbec ne",
+          "briefly": "krátce",
+          "with_hesitation": "s váháním",
+          "openly": "otevřeně",
+          "too_far": "příliš daleko"
+        }
+      },
+      "loop": {
+        "prompt": "Přistihli jste se v povědomé smyčce?",
+        "framing": "kde a jak to skončilo."
+      },
+      "loudest_voice": {
+        "prompt": "Který hlas byl tento týden nejhlasitější?",
+        "options": {
+          "demand": "požadavek",
+          "doubt": "pochybnost",
+          "desire": "touha",
+          "watcher": "pozorovatel",
+          "none": "žádný z nich"
+        }
+      },
+      "dream": {
+        "prompt": "Byl nějaký sen, který stál za zapsání?",
+        "framing": "pokud ano, fragment, který přetrvával."
+      },
+      "acted_on_desire": {
+        "prompt": "Jak dalece jste jednali podle toho, co jste skutečně chtěli?",
+        "lowLabel": "vůbec ne",
+        "highLabel": "zcela"
+      },
+      "work_catch": {
+        "prompt": "Kde vás zastihla práce?",
+        "options": {
+          "start": "začátek",
+          "middle": "prostředek",
+          "finish": "konec",
+          "visibility": "viditelnost",
+          "nowhere": "nikde"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Jaká je otázka, na kterou teď nechcete odpovědět?",
+        "framing": "ta, která stále proklouzává."
+      }
+    },
+    "openHint": "delší odpovědi prohlubují čtení",
+    "scaleLegend": "{low} až {high}",
+    "noValue": "nebyla vybrána žádná hodnota",
+    "valueOf": "{value} z {max}",
+    "weekLabel": "TÝDEN {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Co vám <it>utkvělo v paměti?</it>",
+    "coverLede": "Osm krátkých otázek. Upřímnost je lepší než délka. Odpovědi upřesňují čtení; nic zde není hodnoceno.",
+    "begin": "Začít",
+    "back": "zpět",
+    "next": "další",
+    "submitting": "odesílání",
+    "closeTheWeek": "uzavřít týden",
+    "previousQuestion": "předchozí otázka",
+    "processingLine": "<em>týden je čten.</em>",
+    "summaryEyebrow": "{weekLabel} · ZPĚTNÉ ČTENÍ",
+    "summaryTitle": "Týden, <it>vašimi vlastními slovy.</it>",
+    "caseLabel": "případ · {week}",
+    "justRefined": "právě upřesněno",
+    "readingsShifted": "čtení posunuto",
+    "readingsCount": "{n} z 12",
+    "returnToRoom": "Zpět do Místnosti",
+    "readAgain": "přečíst znovu v záznamech případu",
+    "somethingToHold": "NĚCO K UDRŽENÍ",
+    "enterConsultingRoom": "vstoupit do Konzultační místnosti",
+    "openConsultingRoom": "otevřít Konzultační místnost",
+    "requestReport": "vyžádat klinickou zprávu",
+    "errorSubmit": "nepodařilo se odeslat catchup",
+    "errorGeneric": "něco se pokazilo",
+    "errorFailed": "catchup je zaznamenán. souhrn dorazí později.",
+    "errorGiveUp": "místnost je krátce tichá — váš catchup je zaznamenán. obnovte za minutu.",
+    "summaryFallback": "Catchup je zaznamenán. Čtení bylo tiše aktualizováno; delší souhrn dorazí při dalším průchodu.",
+    "readBackTitle": "Týden, <it>již zaznamenán.</it>",
+    "readBackEmpty": "catchup je zaznamenán. souhrn bude tento týden stručný.",
+    "readBackFoot": "další catchup se otevírá na začátku týdne {n}."
+  },
+  "consulting": {
+    "sessionClose": "to je naše hodina.",
+    "sayIt": "říct to →",
+    "closeSession": "ukončit sezení →",
+    "eyebrow": "KONZULTAČNÍ MÍSTNOST",
+    "closing": "ukončování",
+    "closeSessionLabel": "ukončit sezení",
+    "timerAria": "čas sezení uplynul",
+    "chooseTopicAria": "vybrat téma",
+    "noTopic": "bez tématu",
+    "justOpened": "právě otevřeno",
+    "minutesIn": "{count} min uplynulo",
+    "speakToAnalyst": "mluvit s analytikem",
+    "send": "odeslat",
+    "sessionClosedFoot": "sezení je ukončeno. bylo uloženo do spisu.",
+    "previewHeld": "jaká část vás si to stále vybírá?",
+    "previewTopicDreamingFuture": "Snění o budoucnosti",
+    "previewTopicNightDream": "Noční sen",
+    "previewTopicRelations": "Vztahy v mém životě",
+    "previewTopicProfessionalGrowth": "Profesní růst",
+    "previewTurnAnalyst1": "Pojmenujete vzorec, pak ho vyprávíte jako cizí. Všimněte si, kdy začíná <em>stažení</em>.",
+    "previewTurnUser1": "Stále ukončuji věci týden poté, co se stanou vážnými.",
+    "previewTurnAnalyst2": "Ráno je rozsudek, nikoli soud. Váš <em>práh intimity</em> zkoušel odchod týdny před rozhovorem.",
+    "sayItEllipsis": "říct to…",
+    "offerHeadline": "Konzultační místnost",
+    "offerLede": "Dlouhé sezení s analytikem, vedené stejným hlasem jako vaše čtení. Sezení jsou soukromá, uchovávaná ve spisu a slouží k obohacení čtení mezi sezeními.",
+    "offerPanelsAria": "co sezení dělá",
+    "offerPanel1Title": "pojmenováno, nikoli vyprávěno",
+    "offerPanel1Body": "Analytik pojmenuje, co se děje ve vaší řeči — přeřeknutí, kvalifikátor, nedořečené — a podrží to tam, dokud to neuvidíte.",
+    "offerPanel2Title": "uchováno ve spisu",
+    "offerPanel2Body": "Každé sezení je zaznamenáno. Další čtení ho přečte. Vzorce se objevují napříč týdny, nikoli tahy.",
+    "offerPanel3Title": "jeden hlas, žádný seznam",
+    "offerPanel3Body": "Nejedná se o rotaci chatbota. Jediný analytický hlas, vyškolený na vašem vstupním dotazníku a zdokonalovaný každým Catchupem.",
+    "offerFootLine": "Předplatitelé obdrží každý měsíc jednu klinickou zprávu.",
+    "offerPillCta": "Vstoupit do konzultační místnosti",
+    "offerReturnToRoom": "zpět do místnosti",
+    "previewFigureLabel": "konzultační místnost",
+    "previewFigureSubtitle": "sezení, náhled",
+    "previewRailAria": "oblasti spisu, ze kterých analytik čte",
+    "previewReadingFrom": "ČTENÍ Z",
+    "previewActive": "aktivní",
+    "previewRoleYou": "VY",
+    "previewRoleAnalyst": "ANALYTIK",
+    "previewBubble1": "Stále ukončuji věci týden poté, co se stanou vážnými. Nevím, proč to dělám.",
+    "previewAnalyst1": "Pojmenujete vzorec, pak ho vyprávíte jako cizí. To <em>„nevím“</em> vykonává práci — udržuje čin na vzdálené straně záměru. Všimněte si, kdy začíná <em>stažení</em>. Často k zamezení dochází dříve než k odchodu.",
+    "previewBubble2": "Dříve jak? Minule jsem se prostě jednoho rána probudil a věděl jsem to.",
+    "previewAnalyst2": "Ráno je rozsudek, nikoli soud. Vaše čtení <strong>prahu intimity</strong> z 04. týdne zaznamenalo stejný tvar — tichou zkoušku odchodu, dva až tři týdny před rozhovorem. Ráno je, když tělo konečně souhlasí s tím, co jste se již rozhodli.",
+    "previewBubble3": "To je ta část, která mě děsí. Že už je to rozhodnuto.",
+    "previewAnalyst3": "<em>Rozhodnuto</em> je to slovo. Ne <em>zvoleno</em>. Něco ve struktuře preferuje zamezení před testem. Budeme se tam stále vracet.",
+    "previewExampleMark": "PŘÍKLAD · NE Z VAŠEHO ZÁZNAMU"
+  },
+  "caseFile": {
+    "silentWeek": "— tichý týden —",
+    "eyebrow": "SPIS PŘÍPADU",
+    "headlineLead": "Záznam, vedený",
+    "headlineItalic": "tiše.",
+    "lede": "Každý Catchup, sezení a zpráva — uchováno v chronologickém pořadí. Mezery jsou součástí záznamu.",
+    "filterAria": "Filtr",
+    "filter": {
+      "all": "vše",
+      "catchups": "catchupy",
+      "sessions": "sezení",
+      "reports": "zprávy"
+    },
+    "subscriptionTitle": "Předplatné",
+    "emptyCatchups": "spis případu je stále prázdný — první catchup jej otevře.",
+    "emptyCatchupsCta": "Přejít na Catchup",
+    "emptySessions": "spis případu je stále prázdný — první konzultační sezení jej otevře.",
+    "emptySessionsCta": "Přejít do Konzultační místnosti",
+    "emptyReports": "spis případu je stále prázdný — první vygenerovaná zpráva jej otevře.",
+    "open": "otevřít",
+    "kindCatchup": "catchup",
+    "kindSession": "sezení",
+    "kindReport": "klinická zpráva",
+    "kindReading": "úvodní čtení",
+    "kindConnection": "událost spojení",
+    "entryEyebrow": "SPIS PŘÍPADU · ZÁZNAM",
+    "entryBackToCaseFile": "zpět do spisu případu",
+    "entryReturnToRoom": "zpět do místnosti",
+    "sessionStillOpen": "toto sezení je stále otevřené. čtení se objeví, jakmile se uzavře.",
+    "entryDetailComing": "podrobný pohled na tento záznam se připravuje. prozatím spis případu uchovává datum, typ a název — a zbytek je stále v místnosti.",
+    "detailSummaryEyebrow": "SOUHRN · VAŠE ODPOVĚDI",
+    "detailRecommendationEyebrow": "NÁŠ CATCHUP",
+    "preparingRead": "připravuji čtení…",
+    "readNotAssembled": "čtení se nepodařilo sestavit.",
+    "tryAgain": "zkusit znovu",
+    "intakeClose": "zavřít",
+    "intakeEdit": "upravit",
+    "intakeSaving": "ukládání",
+    "intakeSave": "uložit",
+    "intakeCancel": "zrušit",
+    "intakeUnsupported": "tato otázka je upravena přímo z úvodního dotazníku.",
+    "intakePickUpTo": "vybrat až {count}.",
+    "intakeScaleSetTo": "Nastaveno na {value}"
+  },
+  "settings": {
+    "eyebrow": "NASTAVENÍ",
+    "heading": "Tvar <it>místnosti.</it>",
+    "lede": "Nic zde není trvalé. Odpovědi lze upravovat, preference měnit a spis lze zcela vymazat.",
+    "blocks": {
+      "account": "Účet",
+      "readingDepth": "Hloubka čtení",
+      "notifications": "Oznámení",
+      "subscription": "Předplatné",
+      "dangerZone": "Nebezpečná zóna"
+    },
+    "dangerZoneIntro": "jediná nevrátitelná akce v místnosti.",
+    "depthSub": {
+      "intake": {
+        "title": "Váš příjem",
+        "caption": "zodpovězeno {answered} / {total}",
+        "ctaEmpty": "Dokončete svůj příjem",
+        "ctaPartial": "Přidejte více detailů",
+        "ctaFull": "Zkontrolovat svůj příjem"
+      },
+      "catchups": {
+        "title": "Catchupy",
+        "caption": "{count} za posledních 8 týdnů",
+        "ctaEmpty": "Přidat catchup",
+        "ctaDue": "Dokončete catchup pro tento týden",
+        "ctaFull": "Zkontrolovat minulé catchupy"
+      },
+      "sessions": {
+        "title": "Sezení",
+        "caption": "dokončeno {count}",
+        "ctaEmpty": "Zahájit konzultaci",
+        "ctaPartial": "Pokračovat v konzultaci",
+        "ctaFull": "Zkontrolovat minulá sezení"
+      },
+      "connections": {
+        "title": "Spojení",
+        "caption": "{count} aktivních",
+        "ctaEmpty": "Přidat spojení",
+        "ctaSingle": "Přidat další spojení",
+        "ctaFull": "Zkontrolovat svá spojení"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "týdenní připomenutí catchupu",
+        "sub": "tichá poznámka na začátku nového týdne"
+      },
+      "consulting_session_reminder": {
+        "label": "připomenutí konzultačního sezení",
+        "sub": "připomenutí před vaší nadcházející konzultací"
+      },
+      "connection_requests": {
+        "label": "spojení přijato",
+        "sub": "poznámka, když někdo přijme vaše pozvání"
+      }
+    },
+    "toggleOn": "zapnuto",
+    "toggleOff": "vypnuto",
+    "quietHours": {
+      "label": "klidové hodiny",
+      "sub": "žádné e-maily mezi těmito hodinami, ve vašem místním čase",
+      "from": "od",
+      "to": "do"
+    },
+    "saveFailed": "uložení selhalo",
+    "dangerZone": {
+      "trigger": "Smazat účet",
+      "modalAria": "Potvrdit smazání účtu",
+      "eyebrow": "NEBEZPEČNÁ ZÓNA",
+      "heading": "Vymazat <it>spis.</it>",
+      "body": "Tímto se odstraní každé čtení, catchup, sezení a zpráva ze záznamu. Aktivní spojení budou ukončena; obě strany budou upozorněny. Nelze to vrátit zpět.",
+      "instruction": "napište <phrase></phrase> pro povolení akce.",
+      "inputAria": "Napište potvrzovací frázi",
+      "cancel": "zrušit",
+      "erasing": "mazání…",
+      "eraseConfirm": "vymazat spis",
+      "deleteFailed": "smazání selhalo"
+    },
+    "subscription": {
+      "statusLabel": "STAV",
+      "badge": "PŘÍSTUP ČLENA",
+      "tagline": "Konzultační místnost, otevřena. <em>Čtení, které čte dál.</em>",
+      "features": {
+        "room": {
+          "title": "Konzultační místnost",
+          "desc": "dlouhá sezení s analytikem."
+        },
+        "report": {
+          "title": "Měsíční klinická zpráva",
+          "desc": "jedna mapa připravená pro terapeuta každý kalendářní měsíc."
+        },
+        "connections": {
+          "title": "{count} dalších spojení",
+          "desc": "přidejte lidi, jejichž přítomnost formuje čtení."
+        },
+        "depth": {
+          "title": "Plná hloubka čtení",
+          "desc": "každá kapitola otevřená, bez omezení detailů."
+        }
+      },
+      "perMonth": "měsíčně",
+      "subscribe": "předplatit",
+      "reassurance": "<em>bez závazků.</em> zrušte kdykoli v nastavení.",
+      "activeToday": "aktivní — obnovuje se dnes",
+      "activeRenews": "aktivní — obnovuje se za {days, plural, one {1 den} few {# dny} many {# dní} other {# dní}}",
+      "cancel": "zrušit předplatné",
+      "cancelled": "zrušeno — přístup do {date}",
+      "resubscribe": "znovu předplatit"
+    },
+    "resetPassword": {
+      "sent": "odkaz pro resetování byl odeslán na {email}. zkontrolujte svou schránku",
+      "sending": "odesílání",
+      "action": "resetovat heslo",
+      "error": "nepodařilo se odeslat. zkuste to znovu"
+    }
+  },
+  "connections": {
+    "explainer": "Až {limit, plural, one {# osoba, jejíž přítomnost formuje čtení} few {# osoby, jejíž přítomnost formuje čtení} many {# osob, jejichž přítomnost formuje čtení} other {# osob, jejichž přítomnost formuje čtení}}. Neuvidí vaše čtení; vy neuvidíte jejich. To, co řeknou o vztahu, napájí model, který vytváří vaše čtení, a vaše napájí jejich.",
+    "invite": {
+      "emailSubject": "{inviterName} by vás rád/a měl/a ve čtení."
+    },
+    "form": {
+      "emailLabel": "E-MAIL",
+      "roleLabel": "ROLE",
+      "rolePlaceholder": "vyberte jednu",
+      "noteLabel": "VĚTA, KTEROU SI PŘEČTOU NEJDŘÍVE",
+      "noteHint": "nepovinné. stačí jeden řádek.",
+      "addMoreSub": "přidat další v rámci předplatného",
+      "missingNameLine": "vaše jméno není v evidenci. přidejte ho v nastavení a poté odešlete požadavek znovu.",
+      "addYourName": "přidat své jméno",
+      "noteLengthError": "poznámky jsou omezeny na jeden řádek – přibližně {max} znaků."
+    },
+    "list": {
+      "empty": "zatím žádná spojení. možnost pozvat je níže.",
+      "active": "AKTIVNÍ",
+      "pending": "ČEKÁ",
+      "since": "od",
+      "invited": "pozván",
+      "received": "přijato",
+      "resend": "znovu odeslat",
+      "cancel": "zrušit",
+      "expiresIn": "vyprší za {days, plural, one {# den} few {# dny} many {# dní} other {# dní}}"
+    },
+    "lookup": {
+      "invalidEmail": "zadejte prosím platnou e-mailovou adresu.",
+      "self": "nemůžete se spojit sami se sebou.",
+      "notMemberLine": "tento e-mail zatím není součástí členů. pozvěte je k vytvoření účtu, abyste se mohli spojit.",
+      "copyHint": "sdílet odkaz pro registraci",
+      "copied": "odkaz zkopírován",
+      "requestSent": "tomuto členovi jste již odeslali požadavek.",
+      "requestReceivedLine": "tento člen vám poslal požadavek – zkontrolujte své pozvánky.",
+      "inboxLabel": "otevřít požadavek",
+      "alreadyConnected": "s tímto členem jste již spojeni.",
+      "rateLimited": "příliš mnoho vyhledávání v krátkém časovém úseku. chvíli počkejte a zkuste to znovu.",
+      "sent": "žádost o spojení odeslána.",
+      "sending": "odesílání…",
+      "send": "odeslat požadavek",
+      "limitReached": "{limit, plural, one {# spojení je limit. odpojte ho, abyste mohli přidat další.} few {# spojení jsou limit. odpojte jedno, abyste mohli přidat další.} many {# spojení je limit. odpojte jedno, abyste mohli přidat další.} other {# spojení je limit. odpojte jedno, abyste mohli přidat další.}}",
+      "limitReachedFree": "{limit, plural, one {# spojení je limit na bezplatné úrovni.} few {# spojení jsou limit na bezplatné úrovni.} many {# spojení je limit na bezplatné úrovni.} other {# spojení je limit na bezplatné úrovni.}}",
+      "generic": "nepodařilo se odeslat požadavek."
+    },
+    "incoming": {
+      "eyebrow": "ČEKÁ NA VÁS",
+      "empty": "nikdo na vás nečeká.",
+      "accept": "přijmout",
+      "decline": "odmítnout",
+      "limitReached": "{limit, plural, one {# spojení je limit. odpojte ho, abyste mohli toto přijmout.} few {# spojení jsou limit. odpojte jedno, abyste mohli toto přijmout.} many {# spojení je limit. odpojte jedno, abyste mohli toto přijmout.} other {# spojení je limit. odpojte jedno, abyste mohli toto přijmout.}}",
+      "limitReachedFree": "{limit, plural, one {# spojení je limit na bezplatné úrovni.} few {# spojení jsou limit na bezplatné úrovni.} many {# spojení je limit na bezplatné úrovni.} other {# spojení je limit na bezplatné úrovni.}}",
+      "upsell": "předplatitelé přidávají více",
+      "inviteExpired": "tato pozvánka vypršela.",
+      "inviteEnded": "tato pozvánka již není čekající.",
+      "generic": "nepodařilo se vyřídit tento požadavek."
+    },
+    "roles": {
+      "partner": "partner",
+      "closest_friend": "nejbližší přítel",
+      "parent": "rodič",
+      "sibling": "sourozenec",
+      "co_parent": "spolurodič"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "POZNÁMKA OD ANALYTIKA",
+    "noteAria": "Poznámka od analytika",
+    "lede": "to přesahuje to, co místnost pojme.",
+    "body": {
+      "intake": "Něco z toho, co jste napsal/a při úvodním dotazníku, poukazuje na závažnost, která vyžaduje skutečnou péči – přesahující to, co tato místnost pojme. Zvažte prosím kontaktování lékaře, terapeuta nebo místní krizové linky ještě dnes. Čtení zde bude, až se vrátíte.",
+      "catchup": "Něco z tohoto týdenního Catchupu poukazuje na závažnost, která vyžaduje skutečnou péči – přesahující to, co tato místnost pojme. Zvažte prosím kontaktování lékaře, terapeuta nebo místní krizové linky ještě dnes. Čtení počká.",
+      "session": "To, co jste právě napsal/a, poukazuje na závažnost, která vyžaduje skutečnou péči – přesahující to, co tato místnost pojme. Zvažte prosím kontaktování lékaře, terapeuta nebo místní krizové linky ještě dnes. Do místnosti se můžeme vrátit, až budete v bezpečí."
+    },
+    "crisisResources": "KRIZOVÉ ZDROJE",
+    "resources": {
+      "us": "Spojené státy",
+      "ukIe": "Spojené království a Irsko",
+      "europe": "Evropa (většina zemí)",
+      "everywhere": "Všude",
+      "localEmergency": "místní záchranné služby"
+    },
+    "hintResources": "pokud nemůžete najít linku, správnou místností je nejbližší nemocniční pohotovost.",
+    "hintLink": "krizové zdroje jsou uvedeny v dolní části každé stránky Místnosti.",
+    "footerLine": "TwentyThird nenahrazuje klinickou péči. V krizi kontaktujte místní záchrannou linku.",
+    "footerRoomLabel": "místnost"
+  }
+}

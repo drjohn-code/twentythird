@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 
 // Case-file entry detail view — short two-section read.
 //
@@ -51,6 +51,7 @@ export type CaseDetailPromptInput = {
    * Section 2 without changing the system prompt.
    */
   regenerateNotice?: string;
+  locale: string;
 };
 
 export type CaseDetailResponse = {
@@ -102,7 +103,7 @@ export function buildCaseDetailPrompt(input: CaseDetailPromptInput): {
   messages: ChatMessage[];
 } {
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       { role: "user", content: renderUserMessage(input) },
     ],

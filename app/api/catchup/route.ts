@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
+import { getActiveLocale } from "@/lib/i18n/locale";
 import {
   CATCHUP_QUESTIONS,
   isComplete,
@@ -115,6 +116,11 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
 
+  // Resolve the requester's active locale while still in request
+  // context (cookies/headers available). The pipeline runs detached,
+  // so we capture it here and thread it through.
+  const locale = await getActiveLocale();
+
   // Fire the background pipeline. We do not await — the runner polls
   // GET /api/catchup?id=… and renders the summary when status flips.
   void runCatchupPipeline({
@@ -122,6 +128,7 @@ export async function POST(request: Request): Promise<NextResponse> {
     catchupId: inserted.id,
     weekNumber,
     answers: answers as CatchupAnswers,
+    locale,
   }).catch(() => undefined);
 
   return NextResponse.json(
@@ -219,6 +226,7 @@ type PipelineInput = {
   catchupId: string;
   weekNumber: number;
   answers: CatchupAnswers;
+  locale: string;
 };
 
 async function runCatchupPipeline(input: PipelineInput): Promise<void> {
@@ -228,7 +236,7 @@ async function runCatchupPipeline(input: PipelineInput): Promise<void> {
     return;
   }
 
-  const { userId, catchupId, weekNumber, answers } = input;
+  const { userId, catchupId, weekNumber, answers, locale } = input;
   const answerInputs = toAnswerInputs(answers);
 
   try {
@@ -263,6 +271,7 @@ async function runCatchupPipeline(input: PipelineInput): Promise<void> {
       const { system, messages } = buildCatchupSummaryPrompt({
         weekNumber,
         answers: answerInputs,
+        locale,
       });
       const { text } = await callAI("catchup_summary", {
         system,
@@ -322,6 +331,7 @@ async function runCatchupPipeline(input: PipelineInput): Promise<void> {
           };
         }),
         connectionContexts,
+        locale,
       });
       const { text } = await callAI("catchup_refinement", {
         system,
@@ -395,6 +405,7 @@ async function runCatchupPipeline(input: PipelineInput): Promise<void> {
         depthBand: subState.depthBand,
         isSubscribed: subState.isSubscribed,
         highestSafetySeverity: highest,
+        locale,
       });
       const { text } = await callAI("catchup_feedback", {
         system,

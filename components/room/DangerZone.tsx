@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
 // DangerZone — delete-account row + typed confirmation modal.
@@ -10,6 +11,7 @@ import { useRouter } from "next/navigation";
 const REQUIRED_PHRASE = "delete the case file";
 
 export default function DangerZone() {
+  const t = useTranslations("settings");
   const [open, setOpen] = useState(false);
   const [typed, setTyped] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -37,14 +39,14 @@ export default function DangerZone() {
           const data = (await res.json().catch(() => null)) as
             | { error?: string }
             | null;
-          setError(data?.error ?? "delete failed");
+          setError(data?.error ?? t("dangerZone.deleteFailed"));
           return;
         }
         // Account is gone — leave the room.
         router.push("/");
         router.refresh();
       } catch {
-        setError("delete failed");
+        setError(t("dangerZone.deleteFailed"));
       }
     });
   }
@@ -56,7 +58,7 @@ export default function DangerZone() {
         className="danger-zone-trigger"
         onClick={() => setOpen(true)}
       >
-        Delete account
+        {t("dangerZone.trigger")}
       </button>
 
       {open ? (
@@ -64,25 +66,25 @@ export default function DangerZone() {
           className="danger-modal-backdrop"
           role="dialog"
           aria-modal="true"
-          aria-label="Confirm account deletion"
+          aria-label={t("dangerZone.modalAria")}
           onClick={(e) => {
             if (e.target === e.currentTarget) reset();
           }}
         >
           <div className="danger-modal glass">
-            <p className="danger-modal-eyebrow">DANGER ZONE</p>
+            <p className="danger-modal-eyebrow">{t("dangerZone.eyebrow")}</p>
             <h3 className="danger-modal-h">
-              Erase the <span className="it">case file.</span>
+              {t.rich("dangerZone.heading", {
+                it: (chunks) => <span className="it">{chunks}</span>,
+              })}
             </h3>
-            <p className="danger-modal-body">
-              This removes every reading, catchup, session, and report
-              from the record. Active connections will be ended; both
-              parties will be notified. It cannot be undone.
-            </p>
+            <p className="danger-modal-body">{t("dangerZone.body")}</p>
             <p className="danger-modal-instr">
-              type{" "}
-              <em className="serif-i">&ldquo;{REQUIRED_PHRASE}&rdquo;</em>{" "}
-              to enable the action.
+              {t.rich("dangerZone.instruction", {
+                phrase: () => (
+                  <em className="serif-i">&ldquo;{REQUIRED_PHRASE}&rdquo;</em>
+                ),
+              })}
             </p>
             <input
               type="text"
@@ -90,7 +92,7 @@ export default function DangerZone() {
               value={typed}
               onChange={(e) => setTyped(e.target.value)}
               autoFocus
-              aria-label="Type the confirmation phrase"
+              aria-label={t("dangerZone.inputAria")}
             />
             {error ? <p className="danger-modal-error">{error}</p> : null}
             <div className="danger-modal-actions">
@@ -100,7 +102,7 @@ export default function DangerZone() {
                 onClick={reset}
                 disabled={isPending}
               >
-                cancel
+                {t("dangerZone.cancel")}
               </button>
               <button
                 type="button"
@@ -108,7 +110,9 @@ export default function DangerZone() {
                 onClick={confirm}
                 disabled={!enabled || isPending}
               >
-                {isPending ? "erasing…" : "erase the case file"}
+                {isPending
+                  ? t("dangerZone.erasing")
+                  : t("dangerZone.eraseConfirm")}
               </button>
             </div>
           </div>

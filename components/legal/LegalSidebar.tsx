@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 const sections = [
-  { id: "privacy", label: "Privacy Policy", href: "/legal/privacy" },
-  { id: "terms", label: "Terms of Service", href: "/legal/terms" },
-  { id: "cookies", label: "Cookie Policy", href: "/legal/cookies" },
+  { id: "privacy", labelKey: "privacyPolicy", href: "/legal/privacy" },
+  { id: "terms", labelKey: "termsOfService", href: "/legal/terms" },
+  { id: "cookies", labelKey: "cookiePolicy", href: "/legal/cookies" },
 ];
 
 function pathToId(pathname: string): string {
@@ -16,6 +17,7 @@ function pathToId(pathname: string): string {
 }
 
 export default function LegalSidebar() {
+  const t = useTranslations("marketing.legal.sidebar");
   const pathname = usePathname();
   const [observedId, setObservedId] = useState<string | null>(null);
 
@@ -45,7 +47,7 @@ export default function LegalSidebar() {
 
   return (
     <aside className="legal-sidebar">
-      <div className="legal-sidebar-label">ON THIS PAGE</div>
+      <div className="legal-sidebar-label">{t("onThisPage")}</div>
       <nav>
         {sections.map((s) => (
           <Link
@@ -53,7 +55,7 @@ export default function LegalSidebar() {
             href={s.href}
             className={`legal-nav-link${active === s.id ? " active" : ""}`}
           >
-            {s.label}
+            {t(s.labelKey)}
           </Link>
         ))}
       </nav>

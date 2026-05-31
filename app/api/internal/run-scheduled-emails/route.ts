@@ -5,6 +5,7 @@ import { firstNameFrom } from "@/lib/connections";
 import { sendRoomReadyEmail } from "@/lib/emails/room-ready";
 import { sendWeeklyCatchupReminderEmail } from "@/lib/emails/weekly-catchup-reminder";
 import { sendOnboardingResumeEmail } from "@/lib/emails/onboarding-resume";
+import { localeForUser } from "@/lib/emails/locale";
 
 // POST /api/internal/run-scheduled-emails
 //
@@ -233,6 +234,7 @@ async function dispatchRoomReady(
     to: email,
     firstName: firstNameFrom(profile.full_name),
     roomUrl: `${siteOrigin()}/room`,
+    locale: await localeForUser(admin, row.user_id),
   });
   if (!res.ok) {
     return { action: "defer", reason: `resend_${res.error}` };
@@ -293,6 +295,7 @@ async function dispatchWeeklyCatchup(
     firstName: firstNameFrom(profile?.full_name ?? null),
     catchupUrl: `${siteOrigin()}/catchup`,
     isoWeek,
+    locale: await localeForUser(admin, row.user_id),
   });
   if (!res.ok) {
     return { action: "defer", reason: `resend_${res.error}` };
@@ -332,6 +335,7 @@ async function dispatchOnboardingResume(
     to: email,
     firstName: firstNameFrom(profile?.full_name ?? null),
     resumeUrl: `${siteOrigin()}/onboarding/intake/${profile?.onboarding_step ?? 1}`,
+    locale: await localeForUser(admin, row.user_id),
   });
   if (!res.ok) {
     return { action: "defer", reason: `resend_${res.error}` };

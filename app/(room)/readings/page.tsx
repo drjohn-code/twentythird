@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Glass from "@/components/ui/Glass";
 import BlockSection from "@/components/room/BlockSection";
@@ -56,6 +57,7 @@ const FIGURE_INDEX: Record<BlockSlug, number> = {
 };
 
 export default async function ReadingsPage() {
+  const t = await getTranslations("readings");
   const supabase = await createClient();
   const {
     data: { user },
@@ -146,13 +148,13 @@ export default async function ReadingsPage() {
       <section className="room-section reading-strip-wrap">
         <Glass className="reading-strip">
           <span className="reading-strip-left">
-            <span className="reading-strip-label">last refined</span>
+            <span className="reading-strip-label">{t("strip.lastRefined")}</span>
             <span className="reading-strip-date">
               {formatRefinedDate(mostRecentAt)}
             </span>
           </span>
           <span className="reading-strip-right">
-            <span className="reading-strip-label">reading depth</span>
+            <span className="reading-strip-label">{t("strip.readingDepth")}</span>
             <span className="reading-mini-meter" aria-hidden="true">
               <span
                 className="reading-mini-meter-fill"
@@ -166,7 +168,7 @@ export default async function ReadingsPage() {
       {/* Six BlockSections in catalogue order */}
       {DASHBOARD_BLOCKS.map((b) => {
         const row = readingsBySlug.get(b.slug);
-        const definition = row?.definition ?? b.definition;
+        const definition = row?.definition ?? t(`blocks.${b.slug}.definition`);
         const lede = ledeFromRow(b.slug, row);
         const hasPriorReadings = row ? row.version > 1 : false;
         if (row && (!row.lede || row.lede.trim().length === 0)) {
@@ -188,7 +190,7 @@ export default async function ReadingsPage() {
             key={b.slug}
             index={FIGURE_INDEX[b.slug]}
             slug={b.slug}
-            subtitle={b.subtitle}
+            subtitle={t(`blocks.${b.slug}.subtitle`)}
             definition={definition}
             readingLede={lede}
             hasPriorReadings={hasPriorReadings}

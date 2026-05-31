@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import LogoMark from "../brand/LogoMark";
+import LocaleSwitcher from "../i18n/LocaleSwitcher";
 
 export default function Nav() {
+  const t = useTranslations("nav");
   return (
     <nav className="nav glass">
       <Link href="/" className="wordmark" aria-label="TwentyThird">
@@ -9,12 +14,13 @@ export default function Nav() {
         <span>TwentyThird</span>
       </Link>
       <div className="nav-links">
-        <Link href="/#philosophy">Method</Link>
-        <Link href="/#brain">The Work</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/#philosophy">{t("method")}</Link>
+        <Link href="/#brain">{t("theWork")}</Link>
+        <Link href="/about">{t("about")}</Link>
+        <Link href="/contact">{t("contact")}</Link>
       </div>
       <div className="nav-right">
+        <LocaleSwitcher />
         <button
           className="theme-toggle"
           aria-label="Toggle theme"
@@ -42,10 +48,10 @@ export default function Nav() {
           </svg>
         </button>
         <Link href="/auth/sign-in" className="signin">
-          Sign in
+          {t("signIn")}
         </Link>
         <Link href="/auth/sign-up" className="pill">
-          Start <span>→</span>
+          {t("start")} <span>→</span>
         </Link>
       </div>
     </nav>

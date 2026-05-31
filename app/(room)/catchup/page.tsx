@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import CatchupRunner from "@/components/room/CatchupRunner";
 import CTA from "@/components/ui/CTA";
@@ -29,7 +30,7 @@ export default async function CatchupPage() {
     .maybeSingle<CatchupRow>();
 
   if (existing) {
-    return <ReadBack row={existing} />;
+    return await ReadBack({ row: existing });
   }
 
   const { data: sub } = await supabase
@@ -50,16 +51,23 @@ export default async function CatchupPage() {
 // Read-back state (catchup already submitted for this ISO week)
 // ────────────────────────────────────────────────────────────────────
 
-function ReadBack({ row }: { row: CatchupRow }) {
-  const weekLabel = `WEEK ${String(row.week_number).padStart(2, "0")}`;
+async function ReadBack({ row }: { row: CatchupRow }) {
+  const t = await getTranslations("catchup");
+  const weekLabel = t("weekLabel", {
+    n: String(row.week_number).padStart(2, "0"),
+  });
   const paragraphs = (row.summary ?? "").split("\n\n").filter(Boolean);
 
   return (
     <section className="room-section">
       <Reveal as="div" className="catchup-summary">
-        <div className="catchup-summary-eyebrow">{weekLabel} · READ BACK</div>
+        <div className="catchup-summary-eyebrow">
+          {t("summaryEyebrow", { weekLabel })}
+        </div>
         <h2 className="catchup-summary-h">
-          The week, <span className="it">already in.</span>
+          {t.rich("readBackTitle", {
+            it: (c) => <span className="it">{c}</span>,
+          })}
         </h2>
 
         {paragraphs.length > 0 ? (
@@ -69,19 +77,18 @@ function ReadBack({ row }: { row: CatchupRow }) {
             ))}
           </div>
         ) : (
-          <p className="catchup-summary-empty">
-            the catchup is on file. the summary will be brief this week.
-          </p>
+          <p className="catchup-summary-empty">{t("readBackEmpty")}</p>
         )}
 
         <p className="catchup-summary-foot">
-          the next catchup opens at the start of week{" "}
-          {String(row.week_number + 1).padStart(2, "0")}.
+          {t("readBackFoot", {
+            n: String(row.week_number + 1).padStart(2, "0"),
+          })}
         </p>
 
         <div className="catchup-summary-cta">
-          <CTA href="/room">Return to the room</CTA>
-          <RowLink href="/case-file">read it again in the case file</RowLink>
+          <CTA href="/room">{t("returnToRoom")}</CTA>
+          <RowLink href="/case-file">{t("readAgain")}</RowLink>
         </div>
       </Reveal>
     </section>

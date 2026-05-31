@@ -34,3 +34,31 @@ Position:
 
 Safety:
 - The analyst is not a therapist. If material indicates real risk to self or others, name that the room cannot hold it and point the user toward professional care. Do this in the analyst's voice — clinical, warm at the edge, not alarmed.`;
+
+// Resolve a locale code to its English language name for the prompt
+// directive (e.g. "de" → "German"). Falls back to the code itself.
+function languageName(locale: string): string {
+  try {
+    return new Intl.DisplayNames(["en"], { type: "language" }).of(locale) ?? locale;
+  } catch {
+    return locale;
+  }
+}
+
+/**
+ * The locale directive appended to ANALYST_VOICE in every analyst-facing
+ * prompt. The analyst writes Class-B content in the user's active locale
+ * (see I18N.md) while keeping the voice and every term of art intact.
+ * Always included — for English it simply pins the language.
+ */
+export function analystLocaleDirective(locale: string): string {
+  const name = languageName(locale);
+  return `
+
+Language — non-negotiable:
+- Respond entirely in ${name}. Every sentence, every field of any JSON you return.
+- Preserve the analyst voice exactly in ${name}: short, certain, clinical, lowercase where the surrounding UI is lowercase.
+- Render the clinical terms of art in ${name}'s established psychoanalytic register (Freudian/Lacanian terms are translated in every European language) — do not leave them in English unless that is genuinely the convention in ${name}.
+- Keep the italics-as-voice intent: wrap the half-said in Markdown *like this*, around the natural ${name} word.
+- Do not translate proper names (Freud, Lacan) or the brand (TwentyThird).`;
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import GoogleAuthButton from "@/components/ui/GoogleAuthButton";
 import InlineError from "@/components/ui/InlineError";
 import AuthSubmit from "@/components/ui/AuthSubmit";
@@ -20,6 +21,7 @@ export default async function SignInPage({
   searchParams: SearchParams;
 }) {
   const { error, message, email, next } = await searchParams;
+  const t = await getTranslations("auth");
 
   // If the user is already signed in, route them via the helper.
   const supabase = await createClient();
@@ -35,24 +37,30 @@ export default async function SignInPage({
     <main className="auth-shell">
       <div className="auth-card glass">
         <h1 className="serif">
-          Sign <em>in</em>.
+          {t("signIn.titleBefore")}
+          <em>{t("signIn.titleItalic")}</em>
+          {t("signIn.titleAfter")}
         </h1>
 
-        {error ? <InlineError>{error}</InlineError> : null}
+        {error ? (
+          <InlineError>
+            {t.has(`errors.${error}`) ? t(`errors.${error}`) : t("errors.generic")}
+          </InlineError>
+        ) : null}
         {message ? (
           <InlineError label="note">{message}</InlineError>
         ) : null}
 
-        <GoogleAuthButton label="Sign in with Google" next={next} />
+        <GoogleAuthButton label={t("signIn.googleLabel")} next={next} />
 
         <div className="auth-divider" role="separator" aria-label="or">
-          <span>or</span>
+          <span>{t("signIn.or")}</span>
         </div>
 
         <form action={signIn} className="auth-form" noValidate>
           <div className="auth-field">
             <label className="eyebrow" htmlFor="signin-email">
-              EMAIL
+              {t("signIn.emailLabel")}
             </label>
             <input
               id="signin-email"
@@ -67,7 +75,7 @@ export default async function SignInPage({
 
           <div className="auth-field">
             <label className="eyebrow" htmlFor="signin-password">
-              PASSWORD
+              {t("signIn.passwordLabel")}
             </label>
             <input
               id="signin-password"
@@ -81,15 +89,16 @@ export default async function SignInPage({
               href="/auth/forgot-password"
               className="auth-rowlink"
             >
-              Forgot password<span aria-hidden="true">→</span>
+              {t("signIn.forgotPassword")}<span aria-hidden="true">→</span>
             </Link>
           </div>
 
-          <AuthSubmit>Sign in</AuthSubmit>
+          <AuthSubmit>{t("signIn.submit")}</AuthSubmit>
         </form>
 
         <p className="auth-foot">
-          New here? <Link href="/auth/sign-up">Create an account</Link>
+          {t("signIn.footPrompt")}
+          <Link href="/auth/sign-up">{t("signIn.footLink")}</Link>
         </p>
       </div>
     </main>

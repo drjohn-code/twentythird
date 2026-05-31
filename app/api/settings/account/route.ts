@@ -1,18 +1,24 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import {
+  isSupportedLocale,
+  LOCALE_COOKIE,
+  LOCALE_COOKIE_MAX_AGE,
+} from "@/lib/i18n/locales";
 
 // POST /api/settings/account
 //
-// Writes a single Account field — currently `name` (profiles.full_name)
-// or `birth_year` (profiles.birth_year). Returns the canonical persisted
-// value so the client can collapse back to resting state with whatever
-// the database actually accepted.
+// Writes a single Account field — `name` (profiles.full_name),
+// `birth_year` (profiles.birth_year), or `locale` (users_meta.locale +
+// NEXT_LOCALE cookie). Returns the canonical persisted value so the
+// client can collapse back to resting state with whatever the database
+// actually accepted.
 //
 // Email is intentionally not editable here. The user changes their
 // email through the password-reset / account-recovery flow handled by
 // /api/settings/reset-password.
 
-type Field = "name" | "birth_year";
+type Field = "name" | "birth_year" | "locale";
 type Body = { field?: Field; value?: unknown };
 
 const MAX_NAME_LENGTH = 80;
@@ -106,6 +112,35 @@ export async function POST(req: Request) {
       );
     }
     return NextResponse.json({ ok: true, value: String(year) });
+  }
+
+  if (body.field === "locale") {
+    const raw = typeof body.value === "string" ? body.value : "";
+    if (!isSupportedLocale(raw)) {
+      return NextResponse.json(
+        { ok: false, error: "unsupported language" },
+        { status: 400 },
+      );
+    }
+    const { error } = await supabase
+      .from("users_meta")
+      .update({ locale: raw })
+      .eq("user_id", user.id);
+    if (error) {
+      return NextResponse.json(
+        { ok: false, error: "save failed" },
+        { status: 500 },
+      );
+    }
+    // Mirror to the cookie so the choice survives sign-out and is read
+    // by anonymous renders / the middleware fast-path.
+    const res = NextResponse.json({ ok: true, value: raw });
+    res.cookies.set(LOCALE_COOKIE, raw, {
+      path: "/",
+      maxAge: LOCALE_COOKIE_MAX_AGE,
+      sameSite: "lax",
+    });
+    return res;
   }
 
   return NextResponse.json(

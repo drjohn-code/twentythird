@@ -15,7 +15,10 @@
 // SUBSCRIBER_BONUS_CONNECTIONS so changing the constant updates the
 // member-benefit line everywhere automatically.
 
+import { getTranslations } from "next-intl/server";
 import { SUBSCRIBER_BONUS_CONNECTIONS } from "@/lib/connections";
+
+type SettingsT = Awaited<ReturnType<typeof getTranslations<"settings">>>;
 
 export type SubscriptionCardRow = {
   status: string | null;
@@ -51,31 +54,37 @@ function resolveState(row: SubscriptionCardRow | null): ResolvedState {
   return { kind: "none" };
 }
 
-export default function SubscriptionCard({ subscription }: Props) {
+export default async function SubscriptionCard({ subscription }: Props) {
+  const t = await getTranslations("settings");
   const state = resolveState(subscription);
 
-  if (state.kind === "active") return <ActiveBody days={state.renewsInDays} />;
+  if (state.kind === "active")
+    return <ActiveBody days={state.renewsInDays} t={t} />;
   if (state.kind === "cancelled_in_period")
-    return <CancelledBody accessUntil={state.accessUntil} />;
-  return <NoneBody />;
+    return <CancelledBody accessUntil={state.accessUntil} t={t} />;
+  return <NoneBody t={t} />;
 }
 
-function StatusRow({ value }: { value: string }) {
+function StatusRow({ value, t }: { value: string; t: SettingsT }) {
   return (
     <div className="subscription-status">
-      <span className="subscription-status-label">STATUS</span>
+      <span className="subscription-status-label">
+        {t("subscription.statusLabel")}
+      </span>
       <span className="subscription-status-value">{value}</span>
     </div>
   );
 }
 
-function NoneBody() {
+function NoneBody({ t }: { t: SettingsT }) {
   return (
     <div className="subscription-body subscription-body-none">
-      <p className="subscription-badge">MEMBER ACCESS</p>
+      <p className="subscription-badge">{t("subscription.badge")}</p>
 
       <p className="subscription-tagline">
-        The consulting room, opened. <em>A reading that keeps reading.</em>
+        {t.rich("subscription.tagline", {
+          em: (chunks) => <em>{chunks}</em>,
+        })}
       </p>
 
       <ul className="subscription-feature-grid">
@@ -83,10 +92,10 @@ function NoneBody() {
           <span className="subscription-feature-dot" aria-hidden="true" />
           <div className="subscription-feature-text">
             <span className="subscription-feature-title">
-              Consulting room
+              {t("subscription.features.room.title")}
             </span>
             <span className="subscription-feature-desc">
-              long-form sessions with the analyst.
+              {t("subscription.features.room.desc")}
             </span>
           </div>
         </li>
@@ -94,10 +103,10 @@ function NoneBody() {
           <span className="subscription-feature-dot" aria-hidden="true" />
           <div className="subscription-feature-text">
             <span className="subscription-feature-title">
-              Monthly clinical report
+              {t("subscription.features.report.title")}
             </span>
             <span className="subscription-feature-desc">
-              one therapist-ready map each calendar month.
+              {t("subscription.features.report.desc")}
             </span>
           </div>
         </li>
@@ -105,10 +114,12 @@ function NoneBody() {
           <span className="subscription-feature-dot" aria-hidden="true" />
           <div className="subscription-feature-text">
             <span className="subscription-feature-title">
-              {SUBSCRIBER_BONUS_CONNECTIONS} more connections
+              {t("subscription.features.connections.title", {
+                count: SUBSCRIBER_BONUS_CONNECTIONS,
+              })}
             </span>
             <span className="subscription-feature-desc">
-              add the people whose presence shapes the reading.
+              {t("subscription.features.connections.desc")}
             </span>
           </div>
         </li>
@@ -116,10 +127,10 @@ function NoneBody() {
           <span className="subscription-feature-dot" aria-hidden="true" />
           <div className="subscription-feature-text">
             <span className="subscription-feature-title">
-              Full reading depth
+              {t("subscription.features.depth.title")}
             </span>
             <span className="subscription-feature-desc">
-              every chapter open, no ceiling on detail.
+              {t("subscription.features.depth.desc")}
             </span>
           </div>
         </li>
@@ -134,50 +145,58 @@ function NoneBody() {
 
         <div className="subscription-price">
           <span className="subscription-price-amount">€23.23</span>
-          <span className="subscription-price-period">per month</span>
+          <span className="subscription-price-period">
+            {t("subscription.perMonth")}
+          </span>
         </div>
 
         <button
           type="submit"
           className="subscription-primary subscription-primary-wide"
         >
-          subscribe
+          {t("subscription.subscribe")}
         </button>
 
         <p className="subscription-reassurance">
-          <em>no commitment.</em> cancel anytime from settings.
+          {t.rich("subscription.reassurance", {
+            em: (chunks) => <em>{chunks}</em>,
+          })}
         </p>
       </form>
     </div>
   );
 }
 
-function ActiveBody({ days }: { days: number }) {
+function ActiveBody({ days, t }: { days: number; t: SettingsT }) {
   const value =
     days <= 0
-      ? "active — renews today"
-      : days === 1
-        ? "active — renews in 1 day"
-        : `active — renews in ${days} days`;
+      ? t("subscription.activeToday")
+      : t("subscription.activeRenews", { days });
   return (
     <div className="subscription-body">
-      <StatusRow value={value} />
+      <StatusRow value={value} t={t} />
       <form action="/api/stripe/portal" method="post" className="subscription-actions">
         <button type="submit" className="subscription-secondary">
-          cancel subscription
+          {t("subscription.cancel")}
         </button>
       </form>
     </div>
   );
 }
 
-function CancelledBody({ accessUntil }: { accessUntil: string }) {
+function CancelledBody({
+  accessUntil,
+  t,
+}: {
+  accessUntil: string;
+  t: SettingsT;
+}) {
   return (
     <div className="subscription-body">
-      <StatusRow value={`cancelled — access until ${accessUntil}`} />
+      <StatusRow value={t("subscription.cancelled", { date: accessUntil })} t={t} />
       <form action="/api/stripe/portal" method="post" className="subscription-actions">
         <button type="submit" className="subscription-primary">
-          resubscribe
+          {t("subscription.resubscribe")}
         </button>
       </form>
     </div>

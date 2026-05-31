@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
@@ -40,6 +41,7 @@ type CatchupRow = {
 };
 
 export default async function ConsultingPage() {
+  const t = await getTranslations("consulting");
   const supabase = await createClient();
   const {
     data: { user },
@@ -98,7 +100,7 @@ export default async function ConsultingPage() {
 
   return (
     <Reveal as="section" className="room-section room-section-tight">
-      <Eyebrow>CONSULTING ROOM</Eyebrow>
+      <Eyebrow>{t("eyebrow")}</Eyebrow>
       <SessionView
         initialSession={openSession}
         heldQuestion={heldQuestion}

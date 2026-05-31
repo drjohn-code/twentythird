@@ -9,6 +9,7 @@ import {
 } from "@/lib/ai/prompts/report-generation";
 import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 import { firstNameFrom } from "@/lib/connections";
+import { localeForUser } from "@/lib/emails/locale";
 import {
   captureReportArtifact,
   safetySummaryFrom,
@@ -81,7 +82,9 @@ async function generateReport(reportId: string): Promise<void> {
       system,
       messages,
       jsonMode: true,
-      maxTokens: 6000,
+      // Headroom for verbose-language reports — a 12-block German report ran ~5.5k tokens
+      // in testing (4000 truncated mid-JSON); 6000 was marginal for the verbose tail.
+      maxTokens: 8000,
       temperature: 0.4,
       userId: report.user_id,
       timeoutMs: 180_000,
@@ -205,6 +208,9 @@ async function buildGenerationInput(
 
   const inviterFirstName = firstNameFrom(profileRes.data?.full_name ?? null);
 
+  // Write the report in the subject user's stored locale.
+  const locale = await localeForUser(admin, userId);
+
   // Intake: map each step payload back to (question_key, question_text, answer)
   // Defer loading the STEPS module statically — the user-side schema
   // mapping is what the prompt wants.
@@ -317,6 +323,7 @@ async function buildGenerationInput(
     sessions,
     connections,
     safetyFlags,
+    locale,
   };
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import CaseDetailSections from "./CaseDetailSections";
 
 // Lazy generator + renderer for the case-file detail view.
@@ -23,6 +24,7 @@ type State =
   | { phase: "error"; message: string };
 
 export default function CaseDetailGenerator({ entryId, entryKind }: Props) {
+  const t = useTranslations("caseFile");
   const [state, setState] = useState<State>({ phase: "loading" });
   // Guard against double-fire from React strict mode in dev.
   const inflight = useRef(false);
@@ -66,7 +68,7 @@ export default function CaseDetailGenerator({ entryId, entryKind }: Props) {
   if (state.phase === "loading") {
     return (
       <p className="case-file-entry-line" aria-live="polite">
-        preparing the read…
+        {t("preparingRead")}
       </p>
     );
   }
@@ -75,14 +77,14 @@ export default function CaseDetailGenerator({ entryId, entryKind }: Props) {
     return (
       <div className="case-file-entry-error" role="alert">
         <p className="case-file-entry-line">
-          the read could not be assembled just now.
+          {t("readNotAssembled")}
         </p>
         <button
           type="button"
           onClick={() => void run()}
           className="auth-rowlink"
         >
-          <span>try again</span>
+          <span>{t("tryAgain")}</span>
           <span aria-hidden="true">→</span>
         </button>
       </div>

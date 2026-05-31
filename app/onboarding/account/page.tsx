@@ -1,10 +1,12 @@
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Reveal from "@/components/layout/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Glass from "@/components/ui/Glass";
 import AccountForm from "@/components/onboarding/AccountForm";
 import { resolveForUser, ACCOUNT_PATH } from "@/lib/onboarding/routing";
+import { getActiveLocale } from "@/lib/i18n/locale";
 
 type SearchParams = Promise<{
   error?: string;
@@ -61,17 +63,19 @@ export default async function AccountPage({
     sp.birth_year ??
     (profile?.birth_year ? String(profile.birth_year) : "");
   const defaultGender = sp.gender ?? profile?.gender ?? "";
+  const defaultLocale = await getActiveLocale();
+  const t = await getTranslations("onboarding");
 
   return (
     <main className="account-shell">
       <div className="account-shell-inner">
         <Reveal as="div" className="account-head">
-          <Eyebrow>STEP 00 · ACCOUNT</Eyebrow>
+          <Eyebrow>STEP 00 · {t("account.eyebrowLabel")}</Eyebrow>
           <h1 className="serif account-headline">
-            Set up your <em>quiet room</em>.
+            {t("account.headlineBefore")} <em>{t("account.headlineItalic")}</em>.
           </h1>
           <p className="account-lede">
-            A name, a year, and a yes. Then the work begins.
+            {t("account.lede")}
           </p>
         </Reveal>
         <Reveal as="div" className="account-panel-wrap">
@@ -81,6 +85,7 @@ export default async function AccountPage({
               prefilledFromGoogle={prefilledFromGoogle}
               defaultBirthYear={defaultBirthYear}
               defaultGender={defaultGender}
+              defaultLocale={defaultLocale}
               errorField={sp.field}
               errorKind={sp.error}
             />

@@ -1,0 +1,2841 @@
+{
+  "_meta": {
+    "status": "machine-draft",
+    "reviewed": false,
+    "source": "en",
+    "generatedBy": "scripts/i18n/draft-translations.ts"
+  },
+  "marketing": {
+    "landing": {
+      "hero": {
+        "eyebrow": "INTLEACHT SHÍCEADINIMICIÚIL",
+        "titleLine1": "Ard-",
+        "titleLine2Pre": "Síceadinimiciúil",
+        "titleLine2It": "AI",
+        "titleLine3Pre": "le haghaidh",
+        "titleLine3It": "Féinfhionnachtana",
+        "ctaPrimary": "Tosaigh do fhionnachtain",
+        "ctaGhostOr": "nó",
+        "ctaGhostText": "léigh an eolaíocht",
+        "scroll": "scrollaigh"
+      },
+      "philosophy": {
+        "eyebrow": "FEALSÚNACHT LÁRNACH",
+        "titlePre": "Ní dhéanann réitigh 5 nóiméad",
+        "titleIt": "aon duine a athrú",
+        "sub1": "Déanaimid anailís ar bhunchúiseanna. Trí léargais bhunúsacha Sigmund Freud a chumasc le ceannródaíocht Jacques Lacan sa teangeolaíocht, sa mhian, agus san fhéiniúlacht.",
+        "sub2": "Oibríonn an chuid is mó d'uirlisí ar an dromchla. Oibrímid san áit ar scríobhadh é — in ailtireacht na teanga, i sleamhnáin na cainte, sna patrúin nár ainmnigh tú fós.",
+        "metaLineageLabel": "Líneáil",
+        "metaLineageVal": "Freud · Lacan",
+        "metaMethodLabel": "Modh",
+        "metaMethodVal": "Struchtúrach",
+        "metaFocusLabel": "Fócas",
+        "metaFocusVal": "An neamhaireachtáil"
+      },
+      "privacy": {
+        "eyebrow": "RÚNDAÍOCHT",
+        "titlePre": "Is í príobháideachas sonraí",
+        "titleIt": "an",
+        "titlePost": "tosaíocht.",
+        "lede": "Ní gné an rúndacht anseo; is í an réamhchoinníoll don doimhneacht í. Ní labhraíonn daoine go saor ach amháin nuair a bhraitheann siad sábháilte — mar sin tá an seomra tógtha chun an méid a deir tú a choinneáil cosanta.",
+        "rowTag": "Coimirce",
+        "rowTitlePre": "Seomra tógtha chun",
+        "rowTitleIt": "coinneáil",
+        "rowTitlePost": "an méid a deir tú.",
+        "rowBody": "Éilíonn an obair an t-ábhar is neamhchosanta uait. Tá an seomra tógtha chun é a fháil go rúnda agus é a choinneáil dúnta d'aon duine nach raibh sé ceaptha dó.",
+        "figLabel": "Láimhseáil sonraí",
+        "figSubtitle": "posture seasta",
+        "listProcessingKey": "próiseáil",
+        "listProcessingVal": "Déantar gach iontráil a phróiseáil trí-dhall.",
+        "listEncryptionKey": "criptiú",
+        "listEncryptionVal": "Tá na sonraí go léir criptithe.",
+        "listProtectionKey": "cosaint",
+        "listProtectionVal": "Coinnítear faoin gcosaint is airde atá ar fáil.",
+        "footKey": "Cuspóir",
+        "footVal": "áit chiúin, shlán chun labhairt go domhain"
+      },
+      "process": {
+        "eyebrow": "CONAS A OIBRÍONN SÉ",
+        "titlePre": "Ceithre chéim,",
+        "titleIt": "ciorcal amháin ag leathnú",
+        "lede": "Doimhníonn an chumarsáid i gceithre ghluaiseacht. Leathnaíonn gach ceann acu an méid is féidir leis an gcóras a léamh — ó iontógáil aonair go comhrá leanúnach.",
+        "step1Sub": "próifíliú domhain-chroí",
+        "step1TitlePre": "Iontógáil",
+        "step1TitleIt": "10 gcéim",
+        "step1TitlePost": ".",
+        "step1Body": "Cruthaigh do chuntas agus comhlánaigh iontógáil 10 gcéim. Is é seo an pas próifílithe domhain-chroí; tógfar an chéad léamh go hiomlán as an méid a leagann tú síos anseo.",
+        "step2Sub": "idirghabhála, ní comhchoiteann riamh",
+        "step2TitlePre": "Na daoine a",
+        "step2TitleIt": "mhúnlaíonn tú",
+        "step2Body": "Cuir leis na daoine a mhúnlaíonn tú, gach duine de réir róil — páirtí, cara is gaire, tuismitheoir, siblín, comh-thuismitheoir. Ní fheiceann tú an méid a roinneann siad riamh; ní fheiceann siad an méid a roinneann tú riamh. Ní léann ach an córas an dá rud.",
+        "step3Sub": "an léamh seachtainiúil",
+        "step3TitlePre": "An",
+        "step3TitleIt": "Catchup",
+        "step3Body": "Tráthnónta Domhnaigh, inis dúinn cad a tharla le linn do sheachtaine agus conas a bhraith sé é a chaitheamh. Déanann gach Catchup an léamh a bheachtú — géaraíonn an pictiúr de réir mar a charnann na seachtainí.",
+        "step4Sub": "go hiomlán príobháideach",
+        "step4TitlePre": "An",
+        "step4TitleIt": "Seomra Comhairliúcháin",
+        "step4Body": "Labhair i gcomhairliúchán go hiomlán príobháideach leis an anailísí — guth a bhfuil aithne níos fearr aige ort ná aon duine eile, oilte thar 23 ciseal de mhúnlaí AI ceannródaíocha."
+      },
+      "brain": {
+        "eyebrow": "AN OBAIR",
+        "titleLine1": "Ag Dí-chomhdhéanamh",
+        "titleLine2": "d'fho-chomhfhios",
+        "state1Tag": "Mapáil Patrún",
+        "state1TitlePre": "Lúba",
+        "state1TitleIt": "fo-chomhfhiosacha",
+        "state1TitlePost": "& athfhillteacht.",
+        "state1Body": "Déanaimid rianú ar na timthriallta athfhillteacha i do roghanna, imní caidrimh, agus truicear mothúchánach. Trí na lúba seo a aithint, léirímid duit go beacht cá bhfuil do rún comhfhiosach á fhuadach ag clárú neamh-chomhfhiosach.",
+        "state2Tag": "Próifíliú",
+        "state2TitlePre": "Próifíliú",
+        "state2TitleIt": "síceadinimiciúil",
+        "state2TitlePost": "domhain-lárnach.",
+        "state2Body": "Bog thar cheisteanna pearsantachta dromchlacha. Is scanadh struchtúrach é seo ar do dhinimic shíceolaíoch — ag mapáil conas a mhúnlaíonn d'eispéiris san am atá caite d'fhéiniúlacht, d'ego, agus do mheicníochtaí cosanta reatha.",
+        "state3Tag": "Teanga",
+        "state3TitlePre": "Iniúchadh ar an",
+        "state3TitleIt": "neamh-chomhfhiosach teanga",
+        "state3TitlePost": ".",
+        "state3Body": "Fréamhaithe i dteoiric Lacan, déanann ár n-AI anailís ar do chomhlachais focal, do shosanna, agus do phatrúin cainte. Cuidímid leat léamh idir línte do chuid smaointe féin chun teacht ar na himní agus na mianta ceilte nár éirigh leat a chur in iúl fós."
+      },
+      "transform": {
+        "eyebrow": "CLAOCHLAIGH",
+        "titleLine1": "Bris an timthriall,",
+        "titleLine2": "Ansin athscríobh é.",
+        "lede": "Trí ghluaiseacht san obair. Trí áit a n-éiríonn léargas ina athrú.",
+        "row1Tag": "Caidrimh",
+        "row1TitlePre": "Leigheas do",
+        "row1TitleIt": "dinimic chaidrimh",
+        "row1TitlePost": ".",
+        "row1Body": "Tarraingíonn an t-atractor céanna tú i dtreo an chineáil chéanna duine, an troid chéanna, an cúlú céanna. Nochtann muid an patrún thar na blianta, ainmnímid é, agus féachaimid air ag cailleadh a dhomhantarraingthe.",
+        "row1Link": "Léigh an staidéar cáis",
+        "row1FigLabel": "Ábhar 1149-A",
+        "row1FigSubtitle": "patrún fadaimseartha",
+        "row1Outcome": "chúlaigh",
+        "row1SummaryRecurrenceKey": "athfhillteacht",
+        "row1SummaryIntervalKey": "eatramh",
+        "row1SummaryAttractorKey": "atractor",
+        "row1SummaryAttractorVal": "tairseach dlúthchaidrimh",
+        "row2Tag": "Obair Bhrionglóidí",
+        "row2TitlePre": "Díchódaigh",
+        "row2TitleIt": "loighic bhrionglóide",
+        "row2TitlePost": ", ailínigh spriocanna.",
+        "row2Body": "Is cleachtaí brí iad do bhrionglóidí. Leanann muid a ngraiméar — na díláithrithe, na comhdhlúthuithe, na sleamhnáin — ar ais chuig an gcinneadh dúiseachta a bhí siad ag iarraidh a dhéanamh duit.",
+        "row2Link": "Féach sampla anótáilte",
+        "row2FigLabel": "Seisiún 06",
+        "row2FigSubtitle": "iontráil bhrionglóide, anótáilte",
+        "row2Dream1Pre": "Táim ar ais i dteach mo thuismitheoirí",
+        "row2Ann1": "radharc príomha",
+        "row2Dream1Mid": ", ach osclaíonn na seomraí isteach i seomraí eile i gcónaí",
+        "row2Ann2": "teorainn ego",
+        "row2Dream2Pre": "Fear le guth m'athar",
+        "row2Ann3": "athair-íomhá",
+        "row2Dream2Mid": "tugann sé eochair dom. Casann an eochair ina huisce",
+        "row2Ann4": "díláithriú",
+        "row2Dream3Pre": "Dúisím sula bhféadaim an doras a oscailt",
+        "row2Ann5": "fonn / easpa",
+        "row2Key1": "radharc príomha",
+        "row2Key2": "teorainn ego",
+        "row2Key3": "athair-íomhá",
+        "row2Key4": "díláithriú",
+        "row2Key5": "fonn / easpa",
+        "row3Tag": "Gairm",
+        "row3TitlePre": "Díscaoil",
+        "row3TitleIt": "bacainní gairmiúla",
+        "row3TitlePost": ".",
+        "row3Body": "Is annamh a bhaineann an tsíleáil a bhuaileann tú i gcónaí le scil. Is script í — scríofa go luath, cleachtaithe go ciúin — a chabhróidh muid leat a léamh os ard agus a athscríobh, abairt ar abairt.",
+        "row3Link": "An páipéar modha",
+        "row3FigLabel": "Athbhreithniú scripte",
+        "row3FigSubtitle": "dréacht oibre",
+        "row3Line1Prefix": "01 · Níl mé",
+        "row3Line1Old": "réidh fós.",
+        "row3Line1New": "ceadaithe cheana féin.",
+        "row3Line2Prefix": "02 · chun",
+        "row3Line2Old": "fanacht le mo sheal.",
+        "row3Line2New": "ainmnigh an rud atá uaim.",
+        "row3Line3Prefix": "03 · mar",
+        "row3Line3Old": "d'fhéadfadh duine éigin a bheith díomách.",
+        "row3Line3New": "is teanga freisin an díomá.",
+        "row3MetaOriginalPre": "bunaidh",
+        "row3MetaOriginalIt": "aois 11",
+        "row3MetaRevisedPre": "athbhreithnithe",
+        "row3MetaRevisedIt": "seisiún 06"
+      },
+      "outcomes": {
+        "eyebrow": "TORTHAÍ",
+        "titleLine1Pre": "Léargais",
+        "titleLine1It": "inchonraithe",
+        "titleLine2": "Intomhaiste go ciúin.",
+        "lede": "Féinfheasacht bunaithe ar shonraí, curtha ar fáil i dteanga cliniceora — ní tráth na gceist.",
+        "row1Tag": "Luasghéarú",
+        "row1TitlePre": "An aicearra",
+        "row1TitleIt": "deiridh",
+        "row1TitlePost": "do theiripe an tsaoil réadaigh.",
+        "row1Body": "Is féidir anois tús a chur le seachtainí ullmhúcháin ar a thógadh blianta fada de chaidreamh. Téigh isteach in oifig do theiripeora agus fios agat cad atá le rá agat.",
+        "row1Link": "Féach ar an modheolaíocht",
+        "row1FigSubtitle": "am go dtí an chéad léargas",
+        "row1TraditionalLabel": "Conair thraidisiúnta",
+        "row1AxisYr1": "bliain 1",
+        "row1AxisYr3": "bliain 3",
+        "row1AxisYr6": "bliain 6",
+        "row1AxisYr9": "bliain 9",
+        "row1AxisYr12": "bliain 12",
+        "row1TwentyThirdLabelPre": "Le",
+        "row1AxisWk1": "seachtain 1",
+        "row1AxisWk4": "seachtain 4",
+        "row1AxisWk8": "seachtain 8",
+        "row1AxisWk12": "seachtain 12",
+        "row1SummaryFaster": "níos tapúla",
+        "row1SummaryDesc": "am go dtí an chéad léargas",
+        "row2Tag": "Tuarascáil",
+        "row2TitlePre": "Léarscáil",
+        "row2TitleIt": "síceolaíoch",
+        "row2TitlePost": "réidh don teiripeoir.",
+        "row2Body": "Léaráid struchtúrach díot — in easpórtáilte, inroinnte, intuigthe go domhain ag cliniceoir oilte. Ní tráth na gceist pearsantachta; achoimre oibre.",
+        "row2Link": "Féach ar shampla tuarascála",
+        "row2FigLabel": "Ábhar 1149-A",
+        "row2FigSubtitle": "próifíl struchtúrach",
+        "row2RepCase": "cás 1149-A",
+        "row2RepPrepared": "ullmhaithe 04 · 26",
+        "row2MetricEgo": "Struchtúr ego",
+        "row2MetricObject": "Caidrimh oibiachta",
+        "row2MetricDefense": "Castacht cosanta",
+        "row2MetricDrive": "Eagrú tiomána",
+        "row2MetricSymbolic": "Clár siombalach",
+        "row2FootLabel": "Struchtúr ceannasach",
+        "row2FootVal": "éigeantach · le rianta histeria",
+        "row3Tag": "Comhtháthú",
+        "row3TitlePre": "Comhtháthú",
+        "row3TitleIt": "pearsantaithe",
+        "row3TitlePost": "& pleananna oibre scáth.",
+        "row3Body": "Leideanna agus deasghnátha laethúla a thógann an léargas den leathanach agus isteach sa chorp. Beag, d'aon ghnó. Tógtha timpeall ar do struchtúr, ní ar churaclam cineálach.",
+        "row3Link": "Conas a oiriúnaíonn an plean",
+        "row3FigLabel": "Lá 23",
+        "row3FigSubtitle": "leid laethúil",
+        "row3FigPlan": "plean 04",
+        "row3Day": "Dé Céadaoin",
+        "row3PromptEyebrow": "leid an lae inniu · obair scáth",
+        "row3PromptPre": "Cá roghnaigh tú inniu",
+        "row3PromptIt": "gan",
+        "row3PromptPost": "a bheith le feiceáil? Agus cad a bhí tú ag coinneáil slán trí cheilt?",
+        "row3Stream1Label": "obair anála",
+        "row3Stream1Dur": "6 nóim",
+        "row3Stream2Label": "dialann",
+        "row3Stream2Dur": "12 nóim",
+        "row3Stream3Label": "leid scáth",
+        "row3Stream3Dur": "8 nóim",
+        "row3StreakLabel": "stríoc",
+        "row3StreakVal": "{n, plural, one {# lá} other {# lá}}"
+      },
+      "final": {
+        "eyebrow": "TÚS",
+        "titlePre": "Tá d'intinn fho-chomhfhiosach ag labhairt.",
+        "titleIt": "Tá sé in am éisteacht.",
+        "ctaPrimary": "Cuir tús le d'fhionnachtain",
+        "ctaGhostOr": "nó",
+        "ctaGhostText": "léigh an eolaíocht"
+      }
+    },
+    "legal": {
+      "privacy": {
+        "metaTitle": "Polasaí Príobháideachais — TwentyThird",
+        "metaDescription": "Conas a láimhseálann TwentyThird sonraí pearsanta. Ní fhágann aon rud an AE. Ní dhíoltar aon rud.",
+        "eyebrow": "PRÍOBHÁIDEACHAS",
+        "headingLead": "Sonraí pearsanta,",
+        "headingItalic": "láimhseáilte go cúramach.",
+        "lede": "Déanann TwentyThird an méid a roinneann tú a phróiseáil chun léargas síceanailíseach cruinn a thabhairt duit. Ní fhágann aon rud an AE. Ní dhíoltar aon rud.",
+        "controls": {
+          "headingLead": "Cé",
+          "headingItalic": "rialaithe",
+          "headingTail": "do shonraí",
+          "p1": "Is é WelloWork AB, atá cláraithe sa tSualainn (org. nr. 559472‑9997), agus a fheidhmíonn ó Uppsala, an rialaitheoir sonraí do shonraí pearsanta a bhailítear ar an suíomh Gréasáin seo agus trí fhiosrúcháin dhíreacha.",
+          "p2": "Maidir le sonraí a phróiseáiltear laistigh den ardán TwentyThird thar ceann eagraíochta — clinic, institiúid taighde, fostóir — feidhmíonn WelloWork AB mar phróiseálaí agus is í an eagraíocht custaiméara an rialaitheoir. Tá an caidreamh sin á rialú ag Comhaontú Próiseála Sonraí ar leith."
+        },
+        "figure": {
+          "label": "cé a rialaíonn do shonraí",
+          "controller": "Rialaitheoir",
+          "directRelationship": "caidreamh díreach",
+          "websiteVisitor": "Cuairteoir Láithreáin Ghréasáin",
+          "you": "Tú",
+          "customerOrg": "Eagraíocht Custaiméara",
+          "viaDpa": "trí DPA",
+          "processor": "Próiseálaí",
+          "platformUser": "Úsáideoir Ardáin"
+        },
+        "collect": {
+          "headingLead": "Cad a bhailímid",
+          "headingItalic": "*bailímid*",
+          "contactStrong": "Sonraí teagmhála agus cuntais.",
+          "contactBody": "Ainm, seoladh ríomhphoist, agus aon fhaisnéis a sholáthraíonn tú nuair a chláraíonn tú nó a scríobhann tú chugainn. Bunús dlíthiúil: comhlíonadh conartha (Airteagal 6(1)(b) GDPR).",
+          "sessionStrong": "Sonraí seisiúin agus ardáin.",
+          "sessionBody": "Iontrálacha dialainne, freagraí, ábhar aislingí, agus patrúin teanga a roinneann tú laistigh de TwentyThird. Is é seo foshraith na hanailíse. Bunús dlíthiúil: toiliú sainráite (Airteagal 9(2)(a) GDPR), tugtha ag an gclárú agus in-aisghairthe am ar bith. Déanaimid caitheamh leis na sonraí seo mar shonraí speisialta a bhaineann le sláinte agus cuirimid coimircí comhfhreagracha i bhfeidhm beag beann ar aicmiú foirmiúil.",
+          "technicalStrong": "Sonraí teicniúla.",
+          "technicalBody": "Seoladh IP, cineál brabhsálaí, aitheantóirí gléasanna, agus stampaí ama úsáide — bailithe go huathoibríoch nuair a fhaigheann tú rochtain ar an ardán. Bunús dlíthiúil: leas dlisteanach (Airteagal 6(1)(f) GDPR) chun slándáil a chothabháil agus earráidí a dhiagnóisiú.",
+          "p4": "Ní bhailímid sonraí faoi chine, eitneachas, tuairim pholaitiúil, nó creideamh reiligiúnach. Má nochtann ábhar a roinneann tú a leithéid d'fhaisnéis de thaisme, ní dhéantar é a phróiseáil mar chatagóir ar leith."
+        },
+        "use": {
+          "headingLead": "Conas a",
+          "headingItalic": "úsáidimid",
+          "headingTail": "é",
+          "p1": "Úsáidimid do shonraí chun seirbhís TwentyThird a sheachadadh agus a fheabhsú, teachtaireachtaí idirbheartacha a d'iarr tú a sheoladh, calaois nó mí-úsáid a bhrath agus a chosc, agus chun oibleagáidí dlíthiúla a chomhlíonadh.",
+          "p2": "Ní úsáidimid do shonraí le haghaidh próifílithe fógraíochta. Ní dhíolaimid é, ní cheadaímid é, ná ní roinnimid é le bróicéirí sonraí. Ní úsáidimid é chun samhlacha AI ginearálta a oibríonn tríú páirtithe a oiliúint."
+        },
+        "sees": {
+          "headingLead": "Cé",
+          "headingItalic": "fheiceann",
+          "headingTail": "é",
+          "withinStrong": "Laistigh de WelloWork AB:",
+          "withinBody": "Cliniceoirí agus innealtóirí a dteastaíonn rochtain uathu chun an tseirbhís a chothabháil. Tá rochtain srianta de réir róil agus logáilte.",
+          "infraStrong": "Soláthraithe bonneagair:",
+          "infraBody": "Supabase (bunachar sonraí agus fíordheimhniú, réigiún an AE), Vercel (óstáil, imeall an AE), agus Postmark (ríomhphost idirbheartach). Tá gach ceann acu faoi cheangal ag Comhaontú Próiseála Sonraí agus ní phróiseálann siad sonraí ach amháin ar ár dtreoir dhoiciméadaithe.",
+          "legalStrong": "Oibleagáid dhlíthiúil:",
+          "legalBody": "Nochtann muid sonraí d’údaráis inniúla ach amháin nuair a éilíonn an dlí é, agus ach amháin a mhéid a éilítear.",
+          "p4": "Ní aistrítear aon sonraí lasmuigh den AE/LEE. Má athraíonn sé sin, déanfaimid an polasaí seo a nuashonrú agus gheobhaidh muid toiliú úr nuair is gá."
+        },
+        "retention": {
+          "headingItalic": "Coinneáil",
+          "p1": "Coimeádtar sonraí cuntais agus ardáin chomh fada agus a bhíonn do chuntas gníomhach, móide 30 lá tar éis scriosadh chun aisghabháil a cheadú. Coimeádtar logaí teicniúla ar feadh 90 lá. Coimeádtar fiosrúcháin teagmhála ar feadh 24 mhí.",
+          "p2": "Tar éis na tréimhsí seo, scriostar sonraí go buan nó déantar iad a ainm gan inchúlaithe."
+        },
+        "rights": {
+          "headingLead": "Do Chearta",
+          "headingItalic": "Féin",
+          "p1": "Tá an ceart agat rochtain a fháil ar na sonraí atá againn fút, míchruinneas a cheartú, scriosadh a iarraidh, próiseáil a shrianadh nó cur ina coinne, agus cóip inléite ag meaisín a fháil le haghaidh iniomparthachta. I gcás ina bhfuil próiseáil bunaithe ar thoiliú, féadfaidh tú é a tharraingt siar am ar bith gan difear a dhéanamh do dhlíthiúlacht na próiseála roimh an tarraingt siar.",
+          "exerciseLead": "Chun aon cheart a fheidhmiú:",
+          "exerciseTail": ". Freagraímid laistigh de 30 lá. Mura bhfuil tú sásta lenár bhfreagra, féadfaidh tú gearán a dhéanamh le hIntegritetsskyddsmyndigheten (IMY), údarás cosanta sonraí na Sualainne."
+        },
+        "children": {
+          "headingItalic": "Leanaí",
+          "p1": "Níl TwentyThird dírithe ar dhaoine faoi 18 mbliana d'aois. Ní bhailímid sonraí ó mhionaoisigh d'aon ghnó. Má thagann sé chun solais go bhfuil sonraí curtha isteach ag mionaoiseach, scriosaimid iad gan mhoill."
+        },
+        "changes": {
+          "headingItalic": "Athruithe",
+          "p1": "Déanaimid an polasaí seo a nuashonrú nuair a athraíonn ár gcleachtais. Cuirtear athruithe ábhartha in iúl trí ríomhphost 14 lá ar a laghad sula dtagann siad i bhfeidhm. Tá dáta an leagain le feiceáil ag bun an leathanaigh seo.",
+          "effectivePrefix": "I bhfeidhm:",
+          "effectiveSuffix": "· Dlí rialaithe: Dlí na Sualainne agus an GDPR"
+        }
+      },
+      "terms": {
+        "metaTitle": "Téarmaí Seirbhíse — TwentyThird",
+        "metaDescription": "An comhaontú a rialaíonn d'úsáid as TwentyThird. Scríofa le léamh, ní le seachaint.",
+        "eyebrow": "TÉARMAÍ",
+        "headingLead": "An comhaontú,",
+        "headingItalic": "ráite go soiléir.",
+        "lede": "Rialaíonn na téarmaí seo d'úsáid as TwentyThird. Tá siad scríofa le léamh, ní le seachaint.",
+        "service": {
+          "headingLead": "An",
+          "headingItalic": "tseirbhís",
+          "p1": "Is ardán síceanailíseach AI é TwentyThird atá á oibriú ag WelloWork AB. Soláthraíonn sé léargas anailíseach a tharraingítear as an méid a roinneann tú. Ní gléas leighis é. Ní ionann é agus síciteiripe, diagnóis síciatrach, nó cóireáil chliniciúil. Má tá tú i gcruachás síceolaíoch, déan teagmháil le cliniceoir cáilithe nó le seirbhís éigeandála."
+        },
+        "account": {
+          "headingLead": "Do",
+          "headingItalic": "chuntas",
+          "p1": "Ní mór duit a bheith 18 mbliana d'aois nó níos sine chun TwentyThird a úsáid. Tá tú freagrach as rúndacht do dhintiúirí a choinneáil. Ní fhéadfaidh tú do chuntas a roinnt ná an t-ardán a úsáid thar ceann duine eile gan a dtoiliú sainráite.",
+          "p2": "Is leat an t-ábhar a chruthaíonn tú — d'iontrálacha dialainne, do chuid freagraí. Trí iad a chur isteach, tugann tú ceadúnas teoranta do WelloWork AB iad a phróiseáil chun na gcríoch a thuairiscítear sa Pholasaí Príobháideachais. Féadfaidh tú d'ábhar a easpórtáil nó a scriosadh am ar bith."
+        },
+        "acceptableUse": {
+          "headingLead": "Úsáid",
+          "headingItalic": "inghlactha",
+          "p1": "Féadfaidh tú TwentyThird a úsáid le haghaidh féin-iniúchadh pearsanta agus gairmiúil dleathach. Ní fhéadfaidh tú é a úsáid chun dochar a dhéanamh duit féin nó do dhaoine eile, chun iarracht a dhéanamh córais sábháilteachta an ardáin a sheachaint, chun na samhlacha bunúsacha a aisiompú, nó chun córais AI iomaíocha a oiliúint.",
+          "p2": "Coimeádaimid an ceart cuntais a sháraíonn na téarmaí seo a chur ar fionraí nó a fhoirceannadh, gan fógra roimh ré nuair is gá ar mhaithe le sábháilteacht."
+        },
+        "liability": {
+          "headingLead": "Ár",
+          "headingItalic": "dliteanas",
+          "p1": "Soláthraíonn TwentyThird léargas, ní cinnteacht. Ní ráthaímid go bhfuil an anailís cruinn, iomlán, nó oiriúnach do do chúinsí. A mhéid a cheadaíonn dlí na Sualainne, tá ár ndliteanas teoranta don mhéid a d'íoc tú sna 3 mhí roimh an éileamh ábhartha.",
+          "p2": "Ní chuireann aon ní sna téarmaí seo teorainn le dliteanas i leith báis nó díobhála pearsanta de bharr ár bhfaillí, nó i leith calaoise."
+        },
+        "disputes": {
+          "headingLead": "Dlí rialaithe agus",
+          "headingItalic": "díospóidí",
+          "p1": "Rialaítear na téarmaí seo le dlí na Sualainne. Déantar díospóidí nach féidir a réiteach go díreach a tharchur chuig cúirteanna Uppsala, an tSualainn, mar an chúirt chéadchéime.",
+          "p2Lead": "Má tá tú i do thomhaltóir san AE, tá rochtain agat freisin ar ardán Réiteach Díospóidí Ar Líne an AE ag",
+          "p2Tail": "."
+        },
+        "changes": {
+          "headingItalic": "Athruithe",
+          "p1": "Féadfaimid na téarmaí seo a nuashonrú. Is ionann úsáid leanúnach tar éis dáta éifeachtach athraithe ábhartha agus glacadh leis. Cuirimid athruithe ábhartha in iúl trí ríomhphost 14 lá ar a laghad roimh ré.",
+          "effectivePrefix": "Éifeachtach:"
+        }
+      },
+      "cookies": {
+        "metaTitle": "Polasaí Fianán — TwentyThird",
+        "metaDescription": "Úsáideann TwentyThird fianáin le haghaidh fíordheimhnithe agus buanseasmhacht roghanna amháin. Gan fianáin fógraíochta. Gan rianaitheoirí tríú páirtí.",
+        "eyebrow": "FIANÁIN",
+        "headingLead": "Cad a stóráilimid",
+        "headingItalic": "i do bhrabhsálaí.",
+        "lede": "Úsáideann TwentyThird fianáin le haghaidh fíordheimhnithe agus buanseasmhacht roghanna. Ní úsáidimid fianáin fógraíochta ná rianaitheoirí tríú páirtí.",
+        "whatIs": {
+          "headingLead": "Cad is fianán",
+          "headingItalic": "ann",
+          "p1": "Comhad téacs beag is ea fianán a stóráiltear i do bhrabhsálaí. Úsáidimid iad chun tú a choinneáil logáilte isteach agus chun do rogha téama (dorcha nó éadrom) a mheabhrú. Sin uile."
+        },
+        "weSet": {
+          "headingLead": "Fianáin",
+          "headingItalic": "a shocraímid",
+          "authBody": "— Socraithe ag Supabase. Coinníonn sé do sheisiún fíordheimhnithe. Téann sé in éag nuair a logálann tú amach nó tar éis 7 lá neamhghníomhaíochta. Riachtanach go docht.",
+          "themeBody": "— Stórálann sé do rogha mód dorcha/éadrom. Maireann sé go dtí go nglanfar é. Feidhmiúil.",
+          "p3": "Ní shocraímid fianáin fógraíochta. Ní lódálaimid scripteanna rianaithe tríú páirtí — gan Google Analytics, gan Meta Pixel, gan aon chineál clibeanna margaíochta."
+        },
+        "choices": {
+          "headingLead": "Do",
+          "headingItalic": "roghanna",
+          "p1Lead": "Féadfaidh tú fianáin a ghlanadh am ar bith trí shocruithe do bhrabhsálaí. Glanadh",
+          "p1Mid": "déanfaidh sé tú a logáil amach. Glanadh",
+          "p1Tail": "athshocróidh sé an taispeáint go dtí an réamhshocrú dorcha.",
+          "p2": "Ní úsáidimid meirge toilithe fianán le haghaidh fianán atá riachtanach go docht nó feidhmiúil faoin Treoir ePrivacy, toisc nach dteastaíonn aon toiliú uathu. Má thugaimid isteach aon fhianáin neamhriachtanacha amach anseo, gheobhaidh muid toiliú sula socróimid iad."
+        },
+        "contact": {
+          "headingItalic": "Teagmháil",
+          "p1Lead": "Ceisteanna faoi fhianáin nó aon ábhar sonraí eile:",
+          "effectivePrefix": "Éifeachtach ó:"
+        }
+      },
+      "sidebar": {
+        "onThisPage": "AR AN LEATHANACH SEO",
+        "privacyPolicy": "Polasaí Príobháideachais",
+        "termsOfService": "Téarmaí Seirbhíse",
+        "cookiePolicy": "Polasaí Fianán"
+      },
+      "layout": {
+        "eyebrow": "DLÍ",
+        "headingLead": "Doiciméid dhlíthiúla,",
+        "headingItalic": "ráite go soiléir.",
+        "lede": "Polasaí príobháideachta, téarmaí seirbhíse, agus polasaí fianán — á rialú ag dlí na Sualainne agus an GDPR."
+      }
+    },
+    "footer": {
+      "tagline": "AI Síceanalíseach don saol istigh. Seomra ciúin do smaointeoireacht thromchúiseach.",
+      "product": "Táirge",
+      "discovery": "Fionnachtain",
+      "sampleReport": "Tuarascáil shamplach",
+      "integrationPlan": "Plean comhtháthaithe",
+      "company": "Cuideachta",
+      "about": "Maidir Linn",
+      "contact": "Teagmháil",
+      "manifesto": "Manifesto",
+      "resources": "Acmhainní",
+      "science": "An eolaíocht",
+      "methodology": "Modheolaíocht",
+      "methodPaper": "Páipéar modha",
+      "caseStudy": "Cás-staidéar",
+      "dreamExample": "Sampla aislinge",
+      "legal": "Dlíthiúil",
+      "privacy": "Príobháideachas",
+      "terms": "Téarmaí",
+      "cookies": "Fianáin",
+      "rights": "gach ceart ar cosaint"
+    },
+    "about": {
+      "metaTitle": "Maidir le — TwentyThird",
+      "metaDescription": "Bunús, modh, agus an t-infhilleadh ar an tríú lá is fiche. Tógtha laistigh de CognitiveLab ag WelloWork AB.",
+      "hero": {
+        "eyebrow": "MAIDIR LE",
+        "headingLead": "Bunús, modh, agus an",
+        "headingItalic": "t-infhilleadh ar an tríú lá is fiche",
+        "lede": "Is AI síceanailíseach é TwentyThird le haghaidh féinfhionnachtana. Déanann sé léarscáil ar na lúba agus na struchtúir athfhillteacha faoin siomptóm — teanga, ceangal, athrá — agus tugann sé achoimre oibre ar ais, ní tráth na gceist.",
+        "figure": {
+          "label": "day-23",
+          "subtitle": "meafar infhillte",
+          "heading": "An stua 23-lá",
+          "range": "fiosracht → feasacht",
+          "markerInflection": "infhilleadh",
+          "summaryLabel": "lá a\ntiontaíonn an cheist\nisteach"
+        }
+      },
+      "philosophy": {
+        "eyebrow": "FEALSÚNACHT",
+        "headingLead": "Comhfhreagraí Freud. Uimhir Fliess.",
+        "headingItalic": "Ár meafar",
+        "tag": "Ginealach",
+        "row": {
+          "headingPre": "Rithim",
+          "headingItalic": "23-lá",
+          "headingPost": "molta i litir, coinnithe mar fhigiúr.",
+          "para1": "Ba é hipitéis Wilhelm Fliess an timthriall 23-lá, a pléadh trína chomhfhreagras le Freud ag deireadh an naoú haois déag. Ní thacaíonn an eolaíocht chomhaimseartha le biorithimí seasta.",
+          "para2": "Coinnímid an uimhir mar gheall ar a n-ainmníonn sí — an tairseach ag a n-aibíonn an fiosracht ina feasacht. Is figiúr é Lá-23, ní bitheolaíocht."
+        },
+        "figure": {
+          "label": "ginealach",
+          "subtitle": "ceithre ancaire",
+          "row1Outcome": "moladh",
+          "row2Duration": "Ego & Id",
+          "row2Outcome": "samhail struchtúrach",
+          "row3Duration": "Díospóireacht na Róimhe",
+          "row3Outcome": "casadh teangeolaíoch",
+          "row4Outcome": "sintéis",
+          "summary1Key": "eatramh",
+          "summary2Key": "snáithe",
+          "summary2Value": "struchtúr",
+          "summary3Key": "modh",
+          "summary3Value": "síceanailíseach"
+        }
+      },
+      "origin": {
+        "eyebrow": "BUNÚS",
+        "headingLead": "Tógtha laistigh de CognitiveLab.",
+        "headingItalic": "Freagraíodh ceist a cuireadh orainn i gcónaí",
+        "tag": "Foireann",
+        "row": {
+          "headingLead": "Lianna, ag tógáil ar dtús",
+          "headingItalic": "oiliúint chognaíoch",
+          "para1": "Thosaigh TwentyThird laistigh den CognitiveLab ag WelloWork AB, áit a raibh an fhoireann ag forbairt córais oiliúna cognaíocha. Thosaigh cairde agus comhghleacaithe ag tabhairt ceisteanna pearsanta — imní, patrúin athfhillteacha, na lúba nach raibh siad in ann a ainmniú.",
+          "para2": "Idir cleachtas cliniciúil mar lianna, na sonraí píolótacha a bhí á gcruinniú againn, agus liosta fada léitheoireachta sa tsíceanailís agus i dteoiric Lacan, bhí rud éigin le tairiscint againn. Is é TwentyThird an rud a d'eascair as sin."
+        },
+        "figure": {
+          "label": "foireann",
+          "subtitle": "próifíl",
+          "caseLabel": "cognitivelab · wellowork ab",
+          "prepared": "ullmhaithe 05 · 26",
+          "row1Key": "Cleachtas cliniciúil",
+          "row2Key": "Aschur taighde",
+          "row3Key": "Ábhair sa phíolótach",
+          "row4Key": "Lianna ar fhoireann",
+          "footerLabel": "Próifíl",
+          "footerValue": "hibrid cliniceoir–taighdeoir"
+        }
+      },
+      "method": {
+        "eyebrow": "MODH",
+        "headingLead": "Cad a dhéanann an tsamhail",
+        "headingItalic": "i ndáiríre",
+        "tag": "Cumas",
+        "row": {
+          "headingLead": "Faoin siomptóm, struchtúr",
+          "headingItalic": "struchtúr",
+          "para1": "Déanann TwentyThird anailís ar bhunchúiseanna. Déanann sé léarscáil ar an <em>lúb fho-chomhfhiosach</em> thar na blianta, léann sé an <em>neamhchomhfhiosach teangeolaíoch</em> i roghnú focal agus i sleamhnáin cainte, cuireann sé <em>ceangal</em> chun cinn ag an tairseach dlúthchaidrimh, agus scríobhann sé plean oibre le haghaidh <em>obair scáthach</em>.",
+          "para2": "Tá an t-aschur réidh don teiripeoir. Ainmníonn sé an struchtúr, ní an dromchla."
+        },
+        "figure": {
+          "label": "siomptóm → struchtúr",
+          "subtitle": "trí athscríobh",
+          "row1Prefix": "01 · dromchla",
+          "row1Old": "Cuirim moill ar obair thábhachtach.",
+          "row1Next": "Seachaint a bheith le feiceáil mar an té a bhfuil eolas aige.",
+          "row2Prefix": "02 · dromchla",
+          "row2Old": "Coinním ag dul amach leis an duine céanna.",
+          "row2Next": "Athrá ar an athair-imago ag an tairseach dlúthchaidrimh.",
+          "row3Prefix": "03 · dromchla",
+          "row3Old": "Ní féidir liom aon rud a chríochnú.",
+          "row3Next": "Diúltú seasamh na cumais a thabhairt suas.",
+          "metaLeftLabel": "ag cur i láthair",
+          "metaLeftValue": "gearán",
+          "metaRightLabel": "struchtúrach",
+          "metaRightValue": "léamh"
+        }
+      },
+      "final": {
+        "eyebrow": "LEAN AR AGHAIDH",
+        "headingLead": "Léigh an modh,",
+        "headingItalic": "nó cuir tús leis",
+        "ctaPrimary": "Léigh an modh",
+        "ctaGhostPrefix": "nó",
+        "ctaGhostText": "scríobh chugainn"
+      }
+    },
+    "contact": {
+      "page": {
+        "heroEyebrow": "TEAGMHÁIL",
+        "heroHeadlineLead": "Scríobh chugainn.",
+        "heroHeadlineItalic": "Léimid gach rud",
+        "heroLede": "Freagraítear an chuid is mó de theachtaireachtaí laistigh de seachtó a dó uair an chloig. Tugtar tús áite d'fhiosrúcháin chliniciúla agus comhpháirtíochta.",
+        "formCardLabel": "foirm",
+        "formCardSubtitle": "fiosrúcháin shubstainteacha amháin",
+        "addressLabel": "SEOLADH",
+        "addressValue": "Rosendal, Uppsala, an tSualainn",
+        "emailLabel": "RÍOMHPHOST",
+        "phoneLabel": "FÓN",
+        "finalEyebrow": "TOSAIGH",
+        "finalHeadlineLead": "Nó díreach",
+        "finalHeadlineItalic": "tosaigh",
+        "finalCta": "Tosaigh do fhionnachtain",
+        "finalGhostOr": "nó",
+        "finalGhostText": "léigh an bunús",
+        "disclaimer": "I gcás imní práinneacha meabhairshláinte, déan teagmháil le seirbhísí éigeandála áitiúla nó le cliniceoir ceadúnaithe. Ní seirbhís ghéarchéime é TwentyThird."
+      },
+      "form": {
+        "successEyebrow": "FAIGHTE",
+        "successHeadlineLead": "Tá do nóta",
+        "successHeadlineItalic": "linn",
+        "successBody": "Freagróimid laistigh de dhá lá oibre.",
+        "nameLabel": "Ainm",
+        "emailLabel": "Ríomhphost",
+        "messageLabel": "Teachtaireacht",
+        "submitSend": "Seol",
+        "submitSending": "Ag seoladh",
+        "errorMessage": "tharla earráid éigin · bain triail eile as",
+        "submittingStatus": "Ag seoladh do theachtaireachta."
+      }
+    },
+    "methodology": {
+      "metaTitle": "Modheolaíocht — TwentyThird",
+      "metaDescription": "Ón gcéad chomhrá go dtí léarscáil atá réidh don teiripeoir. Cúig chéim de phíblíne TwentyThird.",
+      "hero": {
+        "eyebrow": "AN MODH",
+        "headingLead": "Seachtainí ullmhúcháin,",
+        "headingItalic": "ní blianta cuardaigh",
+        "lede": "Oibríonn teiripe. Tógann sé am freisin a fhios a bheith agat cén fáth a bhfuil tú ann. Comhbhrúíonn TwentyThird an t-ullmhúchán — an chuid ina bhfoghlaimíonn tú cad atá á rá agat i ndáiríre — ionas gur féidir leis an seomra féin dul níos tapúla."
+      },
+      "pipeline": {
+        "eyebrow": "AN PÍBLÍNE",
+        "headingLead": "Cúig chéim, ceann",
+        "headingItalic": "gairid",
+        "lede": "Ó urlabhra sampláilte go doiciméad oibre is féidir le cliniceoir a léamh i n-ocht nóiméad.",
+        "stageLabel": "CÉIM",
+        "stage01": {
+          "name": "Sampláil",
+          "blurb": "Guth agus téacs ó sheisiúin threoraithe. Éisteann an tsamhail le haghaidh cruth, ní le haghaidh ábhair.",
+          "label": "sampláil",
+          "subtitle": "toirt trasna an chohóirt",
+          "fig": {
+            "wordsSampled": "focail sampláilte",
+            "sessions": "seisiúin",
+            "elapsed": "caite",
+            "medianTurn": "casadh airmheánach"
+          }
+        },
+        "stage02": {
+          "nameLead": "Eastóscadh",
+          "nameEm": "teangeolaíoch",
+          "blurb": "Gnéithe a ardaíonn an tsamhail ón trascríbhinn — go ciúin, roimh aon léirmhíniú.",
+          "label": "eastóscadh",
+          "subtitle": "aicmí gnéithe",
+          "fig": {
+            "qualifierDensity": "dlús cáilitheora",
+            "modalVerbs": "briathra módúla",
+            "conditionalFrame": "fráma coinníollach",
+            "affectiveHedges": "fálta mothúchánacha",
+            "slipsMisnamings": "duillíní · mí-ainmniúcháin",
+            "repetitionWindows": "fuinneoga athrá"
+          }
+        },
+        "stage03": {
+          "nameLead": "Brath",
+          "nameEm": "athfhillteachais",
+          "blurb": "An patrún a fhilleann ar an gcruth céanna, i ndeich mbliana éagsúla. An comhartha go bhfuil rud éigin struchtúrach.",
+          "label": "athfhillteacht",
+          "subtitle": "trí ancaire de phatrún amháin",
+          "fig": {
+            "row1": {
+              "durationLabel": "céad phost",
+              "outcome": "uasteorainn ag mí 9"
+            },
+            "row2": {
+              "durationLabel": "dara",
+              "outcome": "uasteorainn ag mí 11"
+            },
+            "row3": {
+              "durationLabel": "tríú",
+              "outcome": "uasteorainn ag mí 8"
+            }
+          }
+        },
+        "stage04": {
+          "nameLead": "Atógáil",
+          "nameEm": "script",
+          "blurb": "An abairt faoin bpatrún. Seanlíne, ansin athbhreithniú iarrthach is féidir leis an ábhar a chleachtadh.",
+          "label": "atógáil",
+          "subtitle": "dréacht oibre",
+          "fig": {
+            "row1": {
+              "prefix": "Táim",
+              "old": "gan a bheith réidh fós.",
+              "next": "ceadaithe cheana féin."
+            },
+            "row2": {
+              "prefix": "chun",
+              "old": "fanacht le roghnú.",
+              "next": "ainmnigh cad ba mhaith liom."
+            }
+          }
+        },
+        "stage05": {
+          "nameLead": "Léarscáil don",
+          "nameEm": "cliniceoir",
+          "blurb": "Trí mhéadar lipéadaithe agus léamh struchtúrach aonlíne. Ocht nóiméad le léamh, seachtainí le húsáid.",
+          "label": "aistriú cliniciúil",
+          "subtitle": "achoimre oibre",
+          "fig": {
+            "casePrefix": "cás",
+            "preparedPrefix": "ullmhaithe",
+            "egoStructure": "Struchtúr Ego",
+            "objectRelations": "Caidrimh oibiachta",
+            "symbolicRegister": "Clár siombalach",
+            "footerLabel": "Léamh",
+            "footerValue": "obsessional · le rianta hisitéireacha"
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "RAON FEIDHME",
+        "headingLead": "Cad a thomhaisimid, agus cad a",
+        "headingItalic": "dhiúltaímid",
+        "headingTail": "do.",
+        "measureHead": "Cad a thomhaisimid",
+        "refuseHead": "Cad nach ndéanaimid",
+        "measure": {
+          "languagePatterns": {
+            "k": "patrúin teanga",
+            "gloss": "Dlús cáilitheora, briathra módúla, fálta, frámaí coinníollacha."
+          },
+          "recurrence": {
+            "k": "athfhillteacht",
+            "gloss": "Patrúin a fhilleann ar an gcruth céanna thar na blianta."
+          },
+          "narrativeCoherence": {
+            "k": "comhleanúnachas insinte",
+            "gloss": "Conas a insítear saol, cá dtaispeánann na seams."
+          },
+          "attachmentMarkers": {
+            "k": "marcálaithe ceangail",
+            "gloss": "Cá dtrasnaíonn dlúthchaidreamh tairseach, cad a leanann."
+          },
+          "linguisticSlips": {
+            "k": "duillíní teangeolaíocha",
+            "gloss": "Mí-ainmniúcháin, comhdhlúthuithe, díláithrithe."
+          }
+        },
+        "refuse": {
+          "dsmIcd": {
+            "k": "catagóirí DSM / ICD",
+            "gloss": "Is ionstraim ar leith é an nosology, a úsáideann cliniceoirí."
+          },
+          "iqCognition": {
+            "k": "IQ nó cognaíocht",
+            "gloss": "Lasmuigh den raon feidhme. Is síceadinimiciúil an tsamhail, ní síceiméadrach."
+          },
+          "personalityTypes": {
+            "k": "cineálacha pearsantachta",
+            "gloss": "Níl an cúig fhachtóir agus a shliocht mar chuid den achoimre."
+          },
+          "riskScores": {
+            "k": "scóir riosca",
+            "gloss": "Is glaoch cliniceora é riosca géar, ní samhail."
+          },
+          "predictions": {
+            "k": "tuar",
+            "gloss": "Struchtúr, ní réamhaisnéis. Ainmnímid cad atá, ní cad a thagann."
+          }
+        }
+      },
+      "compression": {
+        "tag": "Comhbhrú",
+        "headingLead": "Siúil isteach agus fios agat cad atá le",
+        "headingItalic": "rá",
+        "body1": "Ní hé an teiripe an áit chun an cheist a réiteach. Is í an áit chun maireachtáil léi. Is ar an gcur chuige atá an comhbhrú a chuirimid ar fáil — na míonna a chaitheann cliniceoir de ghnáth ag éisteacht le haghaidh cruth na hachoimre.",
+        "body2": "Trasna an chohóirt phíolótach, shroich ábhair ullmhaithe comhghuaillíocht oibre i níos lú seisiún. Bhí an léamh ann cheana féin.",
+        "figure": {
+          "label": "comhghuaillíocht",
+          "subtitle": "seisiúin airmheánacha go comhghuaillíocht oibre",
+          "heading": "Am go comhghuaillíocht oibre",
+          "range": "airmheán trasna an chohóirt",
+          "markerUnprepared": "neamhullmhaithe",
+          "markerPrepared": "ullmhaithe",
+          "summaryLabel": "níos lú seisiún go\ncomhghuaillíocht oibre"
+        }
+      },
+      "finalCta": {
+        "eyebrow": "LEAN AR AGHAIDH",
+        "headingLead": "Tosaigh,",
+        "headingItalic": "nó féach ar thuarascáil shamplach",
+        "beginLabel": "Tosaigh",
+        "or": "nó",
+        "ghostLabel": "féach ar thuarascáil shamplach"
+      }
+    },
+    "plan": {
+      "hero": {
+        "eyebrow": "COMHPHÁIRTIÚ",
+        "headlineLead": "Léargas, ansin",
+        "headlineItalic": "nós",
+        "lede": "Níl ainmniú patrúin ach an chéad chéim. Is é an plean an dara céim — leideanna laethúla agus deasghnátha beaga tógtha timpeall ar do struchtúr, ní curaclam cineálach."
+      },
+      "week": {
+        "eyebrow": "SEACHTAIN SA PHLEAN",
+        "headlineLead": "Seacht leid,",
+        "headlineItalic": "struchtúr amháin",
+        "lede": "Machnamhach, corpraithe, scríofa. An tseachtain ag análú timpeall an phatrúin a ainmníodh sa tuarascáil, ní timpeall ar churaclam.",
+        "days": {
+          "mon": {
+            "day": "LUA",
+            "prompt": "“Cá háit inniu ar roghnaigh tú <em>gan</em> a bheith le feiceáil?”",
+            "stream": {
+              "journal": "dialann",
+              "shadowPrompt": "leid scáth"
+            }
+          },
+          "tue": {
+            "day": "MÁIRT",
+            "prompt": "“Tóg siúlóid gan cúram. Tabhair faoi deara rud amháin a bhí tú ar tí a rá.”",
+            "stream": {
+              "walking": "siúlóid",
+              "note": "nóta"
+            }
+          },
+          "wed": {
+            "day": "CÉAD",
+            "prompt": "“Cad a rinne tú ró-cháiliú inniu, agus cad é an abairt <em>neamhcháilithe</em> a bhí faoi?”",
+            "stream": {
+              "breathWork": "obair anála",
+              "journal": "dialann",
+              "shadowPrompt": "leid scáth"
+            }
+          },
+          "thu": {
+            "day": "DÉAR",
+            "prompt": "“Scanadh coirp ón scornach síos. Cá háit a bhfuil an coinneáil?”",
+            "stream": {
+              "bodyScan": "scanadh coirp",
+              "note": "nóta"
+            }
+          },
+          "fri": {
+            "day": "AOINE",
+            "prompt": "“Scríobh an abairt a bheadh ráite agat dá mbeadh cead agat cheana féin.”",
+            "stream": {
+              "journal": "dialann",
+              "rewrite": "athscríobh"
+            }
+          },
+          "sat": {
+            "day": "SABH",
+            "prompt": "“Siúlóid fhada. Gan leideanna. Tabhair faoi deara cad a thagann ar ais leis an tost.”",
+            "stream": {
+              "walking": "siúlóid",
+              "rest": "scíth"
+            }
+          },
+          "sun": {
+            "day": "DOMH",
+            "prompt": "“Léigh an tseachtain ar ais. Cén líne a bhí <em>fíor</em> cheana féin?”",
+            "stream": {
+              "review": "athbhreithniú",
+              "note": "nóta"
+            }
+          }
+        }
+      },
+      "adaptation": {
+        "eyebrow": "OIRIÚNÚ",
+        "headlineLead": "An plean",
+        "headlineItalic": "laghdaíonn",
+        "tag": "Oiriúnú",
+        "rowHeadingLead": "Socraíonn athfhillteacht na seachtaine seo caite an",
+        "rowHeadingItalic": "dlús",
+        "body": "Nuair a laghdaíonn neart an phatrúin, tanann na leideanna. Nuair a thagann borradh faoi phatrún, filleann na leideanna. Ní cloí leis an aidhm. Is é an aidhm an scafall is lú a theastaíonn ón struchtúr fós.",
+        "figure": {
+          "label": "dlús leid",
+          "subtitle": "seachtainí 1–8",
+          "heading": "Líon na leideanna · in aghaidh na seachtaine",
+          "range": "ag laghdú de réir mar a lagaíonn athfhillteacht",
+          "markers": {
+            "wk1": "seacht. 1",
+            "wk3": "seacht. 3",
+            "wk5": "seacht. 5",
+            "wk8": "seacht. 8"
+          },
+          "summaryLabel": "níos lú leideanna\nfaoi sheacht. 8"
+        }
+      },
+      "shadow": {
+        "eyebrow": "OBAIR SCÁTH",
+        "headlineLead": "Ní catharsis.",
+        "headlineItalic": "Ag labhairt",
+        "tag": "Scáth",
+        "rowHeadingLead": "Cleachtadh d’aon ghnó chun an rud a bhí",
+        "rowHeadingItalic": "dofhógartha",
+        "body": "Ní nochtadh é obair scáth, sa chomhthéacs seo. Ní purgadóir é. Is é an cleachtadh mall é a rá — leat féin, ar dtús — an rud a múineadh duit a choinneáil gan rá. Trí líne roimh/tar éis tarraingthe ó fhíorphleananna.",
+        "figure": {
+          "label": "athbhreithnithe scáth",
+          "subtitle": "trí líne, dréacht oibre",
+          "rows": {
+            "r1": {
+              "prefix": "01 · chugat féin",
+              "old": "Níl mé tuillte agam seo.",
+              "next": "Níl cleachtadh déanta agam fós ar é a iarraidh os ard."
+            },
+            "r2": {
+              "prefix": "02 · chugat féin",
+              "old": "Ba chóir go mbeinn thairis seo faoin am seo.",
+              "next": "ní don chineál seo bróin a bhí an t-amlíne a fuair mé ar iasacht."
+            },
+            "r3": {
+              "prefix": "03 · chugat féin",
+              "old": "Tá mé an iomarca.",
+              "next": "Is é an toirt atá agam go díreach an toirt nach raibh an seomra tógtha dó."
+            }
+          },
+          "metaLeft": {
+            "label": "roimhe seo",
+            "value": "ráite fút féin"
+          },
+          "metaRight": {
+            "label": "anois",
+            "value": "ráite leat féin"
+          }
+        }
+      },
+      "frame": {
+        "eyebrow": "FRÁMA",
+        "headlineLead": "Coinnithe ag struchtúr, ní ag",
+        "headlineItalic": "curaclam",
+        "body1": "Is éard is curaclam ann ná sraith gluaiseachtaí a thóg strainséir. Is éard is struchtúr ann ná an cruth a thógann do shaol ar leith. Tógadh an plean i gcoinne an dara ceann. Tá gach leid ceangailte le líne i do thuarascáil — nuair a dhíscaoileann an líne, díscaoileann an leid freisin.",
+        "body2": "Níl aon rud anseo ceaptha a bheith buan. Tá an plean ar cíos. Is leatsa an struchtúr.",
+        "closeout": "is leatsa an struchtúr · tá an plean ar cíos"
+      },
+      "final": {
+        "eyebrow": "LEAN AR AGHAIDH",
+        "headlineLead": "Tosaigh,",
+        "headlineItalic": "nó léigh an eolaíocht",
+        "beginCta": "Tosaigh",
+        "or": "nó",
+        "readScience": "léigh an eolaíocht"
+      }
+    },
+    "science": {
+      "metadata": {
+        "title": "An eolaíocht — TwentyThird",
+        "description": "Céad bliain de theoiric shíocanailíseach agus ceithre scór bliain de thaighde eimpíreach ar phatrún, teanga, agus an neamhaireacht."
+      },
+      "hero": {
+        "eyebrow": "AN BHUNÚS",
+        "headlineLead": "An eolaíocht taobh thiar den",
+        "headlineItalic": "éisteacht",
+        "headlineTail": ".",
+        "lede": "Tá TwentyThird bunaithe ar chéad bliain de theoiric shíocanailíseach agus ceithre scór bliain de thaighde eimpíreach ar phatrún, teanga, agus an neamhaireacht. Seo an méid a léimid, agus an fáth."
+      },
+      "lineages": {
+        "eyebrow": "DHÁ SHINSEARACHT",
+        "headlineLead": "Struchtúr Freud. Litir",
+        "headlineItalic": "Lacan",
+        "headlineTail": ".",
+        "lede": "Dhá léamh ar an neamhaireacht, leathchéad bliain óna chéile. Le chéile cruthaíonn siad cnámh droma an mhodha.",
+        "freud": {
+          "headlineLead": "An neamhaireacht",
+          "headlineItalic": "struchtúrach",
+          "headlineTail": ".",
+          "body1": "Is struchtúrach, ní téamach, an rannchuidiú buan a rinne Freud. Ní íoslach d’ábhar dearmadta é an neamhaireacht dhinimiciúil — is orgán oibre den intinn é, ag cleachtadh, ag athrá, ag aistriú.",
+          "body2": "Léimid é mar chliniceoir athrá. Tagann an radharc céanna i ndeich mbliana éagsúla. Is é an atarlú sin an comhartha a bhfuil an tsamhail oilte chun é a aimsiú.",
+          "figure": {
+            "label": "atarlú",
+            "subtitle": "cúig ancaire, aon struchtúr amháin",
+            "outcome": "tarraingt siar",
+            "rows": {
+              "anchor1": "luath-ógántacht",
+              "anchor2": "an chéad bhanna fada",
+              "anchor3": "an dara banna fada",
+              "anchor4": "an tríú banna",
+              "anchor5": "an ceathrú banna"
+            },
+            "summary": {
+              "recurrenceLabel": "atarlú",
+              "intervalLabel": "eatramh",
+              "attractorLabel": "tarraingeoir",
+              "attractorValue": "tairseach dlúthchaidrimh"
+            }
+          }
+        },
+        "lacan": {
+          "headlineLead": "Tá an neamhaireacht struchtúrtha cosúil le",
+          "headlineItalic": "teanga",
+          "headlineTail": ".",
+          "body1Lead": "Athraíonn léamh Lacan an réimse. Bogann an comharthaí, sleamhnaíonn an bhrí ar feadh slabhraí meitnimí agus meafar. Ainmníonn an chéim scátháin an mhí-aitheantas bunúsach.",
+          "body1Italic": "Is é an dúil dúil an Eile.",
+          "body2": "Inár bpíblíne tá sé seo nithiúil. Léimid aislingí agus caint dhúisithe mar théacs — iompraíonn na díláithrithe, na comhdhlúthuithe, agus na duillíní an ghramadach struchtúrach.",
+          "figure": {
+            "label": "comhartha teanga",
+            "subtitle": "sliocht aislinge, anótáilte",
+            "dreamLead": "“Tá doras eile sa seomra inar chónaigh mé mar leanbh nach cuimhin liom",
+            "ann1": "díláithriú",
+            "dreamMid1": ". Taobh thiar de, glaonn guth mo mhaoirseora",
+            "ann2": "comhdhlúthú",
+            "dreamMid2": "orm leis an ainm mícheart",
+            "ann3": "duillín",
+            "dreamTail": ".”",
+            "key1": "díláithriú",
+            "key2": "comhdhlúthú",
+            "key3": "duillín"
+          }
+        }
+      },
+      "research": {
+        "eyebrow": "ANCARACHA EIMPÍREACHA",
+        "headlineLead": "An méid a",
+        "headlineItalic": "chuir",
+        "headlineTail": " taighde comhaimseartha leis.",
+        "lede": "Cúig shnáithe ag teacht le chéile ó thaighde ceangaltáin, insinte, agus próisis. Ní leabharliosta iomlán é — na hancairí a bhfuil an tsamhail bunaithe orthu i ndáiríre.",
+        "figure": {
+          "label": "ancairí eimpíreacha",
+          "subtitle": "fianaise ag teacht le chéile",
+          "caseLabel": "litríocht · sintéis",
+          "prepared": "nuashonraithe 04 · 26",
+          "rows": {
+            "attachment": "Leanúnachas ceangaltáin thar na blianta",
+            "alliance": "Comhghuaillíocht theiripeach mar thuarthóir toraidh",
+            "narrative": "Comhleanúnachas insinte agus folláine",
+            "relational": "Eolas caidrimh intuigthe",
+            "script": "Teoiric scripte i bhfostú gairme"
+          },
+          "footerLabel": "Sintéis",
+          "footerValue": "fianaise ag teacht le chéile · n = 2,418"
+        }
+      },
+      "limits": {
+        "eyebrow": "AN MÉID NACH N-ÉILÍOMID",
+        "headlineLead": "Imeall",
+        "headlineItalic": "macánta",
+        "headlineTail": " an tsaothair.",
+        "claim1Strong": "Ní ionadach muid do theiripeoir.",
+        "claim1Body": "Ullmhaíonn an tsamhail an comhrá. Ní choinníonn sé é.",
+        "claim2Strong": "Ní ionstraim dhiagnóiseach muid faoi DSM nó ICD.",
+        "claim2Body": "Is struchtúrach iad na catagóirí ina n-oibrímid — obsessional, hysterical, phobic — ní nosological. Ainmníonn siad an chaoi a bhfuil duine eagraithe, ní an méid atá acu.",
+        "claim3Strong": "Is meafar é an timthriall 23 lá.",
+        "claim3Body": "Tagann an uimhir ó chomhfhreagras Wilhelm Fliess le Freud ag deireadh an naoú haois déag. Ní thacaíonn an eolaíocht chomhaimseartha le biorhythms seasta. Coinnímid an uimhir don rud a ainmníonn sí — an t-inflection ó fhiosracht go feasacht."
+      },
+      "reading": {
+        "eyebrow": "TUILLEADH LÉITHEOIREACHTA",
+        "headlineLead": "An seilf",
+        "headlineItalic": "taobh thiar",
+        "headlineTail": " den tsamhail.",
+        "lede": "Leabhair, ní páipéir. Na cinn a bhfillimid orthu.",
+        "books": {
+          "book1": {
+            "title": "Thar an bPrionsabal Pléisiúir"
+          },
+          "book2": {
+            "title": "Léirmhíniú na nAislingí"
+          },
+          "book4": {
+            "title": "Ceithre Choincheap Bhunúsacha na Síocanailíse"
+          },
+          "book5": {
+            "title": "Ceangaltán"
+          },
+          "book6": {
+            "title": "Rialú Mothúchán agus Bunús an Fhéin"
+          },
+          "book7": {
+            "title": "Ag Seasamh sna Spásanna"
+          },
+          "book8": {
+            "title": "Rialú Mothúchán, Meabhrú, agus Forbairt an Fhéin"
+          }
+        }
+      },
+      "final": {
+        "eyebrow": "LEAN AR AGHAIDH",
+        "headlineLead": "Tosaigh próifíl,",
+        "headlineItalic": "nó léigh cás-staidéar",
+        "headlineTail": ".",
+        "ctaPrimary": "Tosaigh próifíl",
+        "ctaOr": "nó",
+        "ctaGhost": "léigh cás-staidéar"
+      }
+    }
+  },
+  "room": {
+    "hero": {
+      "greeting": "anseo arís",
+      "greetingNamed": "anseo arís, {name}.",
+      "strengthen": "Neartaigh an chruinneas"
+    },
+    "reviewEdit": "Athbhreithniú & eagarthóireacht",
+    "depth": {
+      "eyebrow": "DOIMHNEACHT LÉITHEOIREACHTA",
+      "overallEyebrow": "DOIMHNEACHT FHORIOMLÁN NA LÉITHEOIREACHTA",
+      "band": {
+        "deep": "tá an léitheoireacht domhain. coigeartuithe beaga as seo amach.",
+        "steady": "coinníonn an léitheoireacht. géaróidh na Catchups í.",
+        "partial": "tá an léitheoireacht páirteach. tá níos mó le tabhairt.",
+        "thin": "tá an léitheoireacht tanaí. sceitseálfaidh sí cruth, ní struchtúr fós."
+      },
+      "explainer": "Déanann doimhneacht léitheoireachta cur síos ar an méid a raibh rochtain ag an léitheoireacht ort — ón intake, ó Catchups seachtainiúla, ó chomhairliúcháin, agus ó na daoine a mhúnlaíonn tú. Ní duine níos fearr é léitheoireacht níos doimhne; is duine níos cruinne é. Is féidir leat í a dhoimhniú am ar bith, nó í a fhágáil mar atá sí.",
+      "status": {
+        "low": "Íseal",
+        "moderate": "Measartha",
+        "deep": "Cruinn"
+      },
+      "statusLine": {
+        "low": "tá an léitheoireacht tanaí. sceitseálfaidh sí cruth, ní struchtúr fós.",
+        "moderate": "tá an léitheoireacht ag teacht i gcruth. is féidir léi hipitéis oibre a shealbhú.",
+        "deep": "tá an léitheoireacht lán go leor chun an obair a bhunú."
+      },
+      "source": {
+        "intake": "na ceisteanna a d'fhreagair tú chun tús a chur leis.",
+        "catchups": "seiceálacha seachtainiúla a choinníonn an léitheoireacht cothrom le dáta.",
+        "sessions": "comhairliúcháin níos faide leis an anailísí.",
+        "connections": "daoine a mhúnlaíonn an léitheoireacht."
+      }
+    },
+    "latest": {
+      "eyebrow": "AN LÉAMH IS DÉANAÍ",
+      "heading": "Sé léamh <it>— agus cad a athraíonn.</it>",
+      "lede": "Déantar na sé léamh a ríomh ó d’iontógáil agus a bheachtú le gach Catchup, comhairliúchán, agus nasc glactha. Tá an struchtúr seasta; gluaiseann an uigeacht.",
+      "strengthen": "neartaigh na sonraí le haghaidh anailíse",
+      "open": "oscail na léamha"
+    },
+    "six": {
+      "eyebrow": "NA SÉ LÉAMH",
+      "heading": "Cad atá á léamh <it>ionat, faoi láthair.</it>"
+    },
+    "catchup": {
+      "figLabel": "CATCHUPS",
+      "figSubtitle": "seachtainí le déanaí",
+      "timelineHeading": "fuinneog",
+      "timelineRange": "na 4 seachtaine deireanacha",
+      "timelineSummary": "catchups san fhuinneog",
+      "eyebrow": "CATCHUP SEACHTAINIÚIL",
+      "heading": "Suigh leis an tseachtain. <it>Ansin féachaimid arís.</it>",
+      "lede": "Ocht gceist ghairide. Is fearr an macántacht ná an fad. Mionchoigeartaíonn na freagraí an léamh.",
+      "completed": "críochnaithe — léigh an achoimre",
+      "cta": "Oscail catchup na seachtaine seo",
+      "markerFirst": "céad",
+      "markerWeek": "s{week}"
+    },
+    "consulting": {
+      "eyebrow": "SEOMRA COMHAIRLIÚCHÁIN",
+      "heading": "Uair an chloig leis <it>an anailísí.</it>",
+      "ledeSubscribed": "Oscailte nuair a bhíonn brú ar an tseachtain. Cuimhníonn an seomra an méid atá ráite agat cheana féin.",
+      "ledeUnsubscribed": "Is féidir le síntiúsóirí dul isteach sa seomra comhairliúcháin — seisiún fada leis an anailísí, a choinnítear san fhuaim chéanna le do léamha.",
+      "cta": "Isteach sa seomra comhairliúcháin",
+      "figLabel": "SEISIÚN DEIRIDH",
+      "figSubtitle": "ceist choinnithe",
+      "lastQuestion": "“an brionglóid ón Máirt — an bhfuil tú ag iarraidh filleadh uirthi?”"
+    },
+    "subscribe": {
+      "eyebrow": "SEOMRA COMHAIRLEACHÁIN · DEIMHNIGH",
+      "title": "Isteach sa seomra comhairleacháin<it>.</it>",
+      "ledePrice": "Is é an síntiús",
+      "ledePerMonth": "in aghaidh na míosa",
+      "ledeIncludes": ". Cuimsíonn sé an seomra comhairleacháin, an cumas suas le {count} {count, plural, one {nasc} other {nasc}} a thabhairt isteach, agus tuarascáil chliniciúil amháin gach mí féilire.",
+      "ledeBilling": "Is é Stripe a láimhseálann an billeáil. Cealaigh am ar bith ó na socruithe — leanann an rochtain ar aghaidh go dtí go dtiocfaidh deireadh leis an tréimhse.",
+      "canceled": "<i>dúnadh an tseiceáil amach.</i> níor gearradh aon táille. is féidir leat filleadh thíos nuair a bhíonn tú réidh.",
+      "checkoutCta": "Lean ar aghaidh chuig an tseiceáil amach",
+      "returnLink": "fill ar an seomra comhairleacháin"
+    },
+    "reports": {
+      "confirm": {
+        "subscribedEyebrow": "TUAIRISC CHLÍNICIÚIL",
+        "subscribedTitle": "San áireamh <it>cheana féin.</it>",
+        "subscribedLede": "Áirítear sa síntiús tuairisc chliniciúil amháin gach mí féilire. Gineadh í ó bhun an leathanaigh léamha — níl aon íocaíocht ag teastáil.",
+        "eyebrow": "TUAIRISC CHLÍNICIÚIL · DEIMHNIGH",
+        "title": "An tuairisc chliniciúil<it>.</it>",
+        "ledePrice": "Is é tuairisc chliniciúil aonuaire",
+        "ledeDossier": ". Dosar 12–18 leathanach de na dhá léamh déag ar fad, sa teanga a n-oibríonn cliniceoir inti.",
+        "ledeBilling": "Is é Stripe a láimhseálann an billeáil. Is féidir tuairiscí a athghiniúint de réir mar a dhoimhníonn an léamh; faigheann síntiúsóirí ceann amháin gach mí féilire gan táille ar leith.",
+        "depthNotice": "<i>léireoidh an tuairisc an doimhneacht atá ar fáil.</i> is féidir í a athghiniúint de réir mar a dhoimhníonn an léamh.",
+        "canceled": "<i>dúnadh an tseiceáil amach.</i> níor gearradh aon táille.",
+        "checkoutCta": "Lean ar aghaidh chuig an tseiceáil amach",
+        "returnLink": "fill ar na léamha"
+      },
+      "status": {
+        "eyebrow": "TUAIRISC CHLÍNICIÚIL",
+        "line": {
+          "queued": "tá do thuairisc á hullmhú.",
+          "generating": "tá an tuairisc á scríobh.",
+          "ready": "tá an tuairisc réidh.",
+          "failed": "níor críochnaíodh an tuairisc. déanfaimid iarracht arís go luath."
+        },
+        "open": "oscail an tuairisc",
+        "back": "ar ais chuig na léamha"
+      },
+      "queued": {
+        "eyebrow": "TUAIRISC CHLÍNICIÚIL",
+        "line": "tá do thuairisc á hullmhú — seolfaimid ríomhphost chugat nuair a bheidh sí réidh.",
+        "back": "ar ais chuig na léamha"
+      }
+    },
+    "intake": {
+      "index": {
+        "eyebrow": "IONCHUR",
+        "title": "An t-ionchur, <it>ábhar ar ábhar.</it>",
+        "lede": "Deich gcuid. Oscail ceann ar bith chun na freagraí atá ann a athbhreithniú nó a dhoimhniú. Ní foirm aonuaire é an t-ionchur — is féidir freagraí a athbhreisiú am ar bith."
+      },
+      "step": {
+        "eyebrow": "IONCHUR",
+        "backToAll": "ar ais chuig gach cuid"
+      },
+      "failed": {
+        "eyebrow": "IONCHUR — NEAMHCHRÍOCHNAITHE",
+        "headline": "Níor <em>críochnaíodh</em> an léamh.",
+        "lede": "Tá d’ionchur ar comhad. Níor críochnaíodh an anailís a lean é.",
+        "retry": "Lean leis an léamh",
+        "retryPending": "Ag leanúint ar aghaidh"
+      }
+    },
+    "pending": {
+      "eyebrow": "STÁDAS · PRÓISEÁIL",
+      "headline": "Tá do phróifíl <em>á léamh</em>.",
+      "lede": "Táimid ag rith do chuid freagraí trí na samhlacha síceanailíseacha anois. Tógann an chéad phas thart ar 2 uair de ghnáth. Scríobhfaimid chugat nuair a bheidh an obair réidh, agus osclófar an Seomra.",
+      "figIntake": "IONTAOBHÁIL",
+      "figSubmitted": "curtha isteach {date}",
+      "rowResponses": "Freagraí faighte",
+      "rowPattern": "Eastóscadh Patrún",
+      "rowSynthesis": "Sintéis Próifíle",
+      "statusInProgress": "ar siúl",
+      "statusQueued": "sa scuaine",
+      "foot": "scríobhfaimid chugat nuair a bheidh an obair réidh",
+      "returnCta": "fill ar an seomra ciúin",
+      "devPrefix": "forb",
+      "devOpening": "ag oscailt…",
+      "devOpen": "oscail an seomra anois",
+      "devError": "níorbh fhéidir an seomra a oscailt — seiceáil an consól."
+    }
+  },
+  "invite": {
+    "eyebrow": "TABHAIR CUIRTEAR",
+    "safetyFooter": "Ní hionadú é TwentyThird do chúram cliniciúil. I gcás géarchéime, déan teagmháil le do líne éigeandála áitiúil.",
+    "notReady": {
+      "headline": "Tá an córas cuireadh á <it>ullmhú.</it>",
+      "body": "Déan iarracht arís go luath."
+    },
+    "notFound": {
+      "headline": "Ní <it>aithnítear</it> an nasc seo.",
+      "body": "Má tháinig an nasc ó ríomhphost le déanaí, seans gur athsheoladh an cuireadh. Oscail an ríomhphost is déanaí chun an nasc gníomhach a fháil."
+    },
+    "alreadyDeclined": {
+      "headline": "Diúltaíodh don chuireadh seo <it>cheana.</it>",
+      "body": "Níl aon rud eile ag teastáil uait. Ní chuirfear {name} ar an eolas níos faide ná an méid atá feicthe acu cheana."
+    },
+    "alreadyAccepted": {
+      "headline": "Tá tú <it>glactha</it> cheana féin.",
+      "body": "Mura bhfuil an iontógáil caidrimh críochnaithe fós, is féidir leat leanúint ar aghaidh thíos.",
+      "continueLink": "lean ar aghaidh leis an iontógáil caidrimh"
+    },
+    "ended": {
+      "headline": "Tá deireadh tagtha leis an nasc seo <it>.</it>",
+      "body": "Níl an nasc gníomhach a thuilleadh. Fanann taifead an chaidrimh sa chomhad cáis, ach ní chuireann sé leis an léamh a thuilleadh."
+    },
+    "expired": {
+      "headline": "Tá an cuireadh seo <it>imithe in éag.</it>",
+      "body": "Téann cuirí in éag ceithre lá déag tar éis iad a sheoladh. Iarr ar {name} ceann nua a sheoladh más mian leat freagra a thabhairt."
+    },
+    "declined": {
+      "headline": "Tá sé <it>faighte.</it>",
+      "body": "Níl aon rud eile ag teastáil uait. Tá an cuireadh dúnta; feiceann an té a chuir an cuireadh an t-athrú stádais go ciúin. Is féidir leat an fhuinneog seo a dhúnadh."
+    },
+    "live": {
+      "eyebrow": "IARRATAS NÓS IMEACHTA",
+      "headline": "Thug {name} cuireadh duit chuig <it>a léamh féin.</it>",
+      "lede": "Is ionstraim eagarthóireachta-cliniciúil é TwentyThird — seomra ciúin ina léitear struchtúr shaol istigh duine le cúram, agus a chuirtear i bhfocail is féidir le cliniceoir a úsáid.",
+      "explainerOne": "Ní cuntas comhroinnte é <em>nós imeachta</em>. Ní fheicfidh {name} do léamha, do sheisiúin, ná do chomhad cás. Ní fheicfidh tusa a gcuid. Cothaíonn an méid a deir tú faoin gcaidreamh an tsamhail a tháirgeann léamh {name}.",
+      "explainerTwo": "Más mian leat léamh de do chuid féin, tosaíonn an chéad chonair thíos do chuntas féin freisin. Ligeann an chonair lár duit cur le léamh {name} gan cuntas. Tá ceachtar acu ceadaithe.",
+      "metaSentTo": "seolta chuig",
+      "metaInviteAs": "tabhair cuireadh mar",
+      "metaReceived": "faighte",
+      "metaExpiresIn": "téann sé in éag i gceann {count, plural, one {# lá} other {# lá}}"
+    },
+    "intake": {
+      "eyebrow": "IONGHABHÁIL CAIDRIMH",
+      "notReady": {
+        "headline": "Tá an ionghabháil á <it>ullmhú.</it>",
+        "body": "Bain triail as arís go luath."
+      },
+      "notFound": {
+        "headline": "Níl an nasc seo <it>aitheanta.</it>",
+        "body": "Oscail an ríomhphost cuireadh is déanaí don nasc gníomhach."
+      },
+      "notOpen": {
+        "headline": "Níl an ionghabháil <it>oscailte.</it>",
+        "body": "Níor glacadh leis an gcuireadh seo, nó diúltaíodh dó nó cuireadh deireadh leis. Fill ar an nasc cuireadh chun rogha a dhéanamh arís.",
+        "backLink": "ar ais chuig an gcuireadh"
+      }
+    },
+    "actions": {
+      "acceptAccountLabel": "tá — tús a chur le glacadh an chaidrimh",
+      "acceptLabel": "tá — ceangail gan cuntas",
+      "declineLabel": "ní hea, go raibh maith agat",
+      "beginLabel": "tosaigh",
+      "continueLabel": "lean ar aghaidh",
+      "back": "ar ais",
+      "oneMoment": "nóiméad amháin…",
+      "declineConfirmLine": "dúntar an cuireadh seo. ní sheoltar ná ní stóráiltear aon rud eile fút.",
+      "declineClosing": "ag dúnadh…",
+      "declineConfirm": "diúltaigh don chuireadh",
+      "firstNameLabel": "DO CHÉAD AINM",
+      "firstNameAria": "Do chéad ainm",
+      "firstNameSub": "Ní fheicfidh {name} ach an chéad ainm seo ar a liosta ceangail.",
+      "errors": {
+        "missingFirstName": "tugann céad ainm deis don anailísí aghaidh a thabhairt ort i gceart.",
+        "generic": "níorbh fhéidir a chur isteach.",
+        "notFound": "ní aithnítear an nasc cuireadh seo.",
+        "expired": "tá an cuireadh seo imithe in éag. iarr ar an té a chuir an cuireadh nua a sheoladh.",
+        "declined": "diúltaíodh don chuireadh seo cheana.",
+        "ended": "níl an cuireadh seo gníomhach a thuilleadh.",
+        "missingFirstNameRequired": "tá céad ainm ag teastáil."
+      }
+    },
+    "relIntake": {
+      "eyebrow": "IONTAOBAINT CAIDRIMH",
+      "begin": "tosaigh",
+      "back": "ar ais",
+      "backToCover": "ar ais chuig an gclúdach",
+      "next": "ar aghaidh",
+      "finish": "críochnaigh",
+      "scaleAria": "scála {value}",
+      "cover": {
+        "headline": "Fanann an méid a deir tú faoi <it>{name}</it> idir tú féin agus an t-anailísí.",
+        "lede": "Dhá cheist déag ghearra. Timpeall cúig nóiméad. Cothaíonn na freagraí léamh {name}; ní fheicfidh siad an méid a scríobh tú, agus ní fheicfidh tú an méid a tháirgeann sé."
+      },
+      "closing": {
+        "recording": "nóiméad — tá na freagraí á dtaifeadadh.",
+        "tryAgain": "bain triail eile as",
+        "headline": "Is leor sin <it>faoi láthair.</it>",
+        "lede": "Cuirfidh an méid a dúirt tú faoi {name} lena léamh ón gcéad seisiún eile ar aghaidh. Ní fheicfidh siad é; ní fheicfidh tú an méid a tháirgeann sé.",
+        "closeWindow": "is féidir leat an fhuinneog seo a dhúnadh."
+      },
+      "errors": {
+        "unanswered": "nóiméad leis an gceann seo sula leanann tú ar aghaidh.",
+        "questionOpen": "tá ceist fós ar oscailt. nóiméad amháin.",
+        "couldNotSave": "níorbh fhéidir a shábháil",
+        "invalidAnswers": "níor pharsáladh rud éigin — seiceáil na freagraí le do thoil.",
+        "notAccepting": "níl an cuireadh seo ag glacadh le freagraí a thuilleadh.",
+        "notFound": "níl an nasc cuireadh seo aitheanta.",
+        "couldNotSaveAnswers": "níorbh fhéidir na freagraí a shábháil."
+      },
+      "questions": {
+        "duration": {
+          "prompt": "Cá fhad a bhí aithne agaibh ar a chéile?",
+          "options": {
+            "under_one_year": "níos lú ná bliain",
+            "one_to_three": "bliain go trí bliana",
+            "four_to_ten": "ceithre go deich mbliana",
+            "eleven_to_twenty": "aon bhliain déag go fiche bliain",
+            "more_than_twenty": "níos mó ná fiche bliain"
+          }
+        },
+        "closeness_now": {
+          "prompt": "Cé chomh gar is atá sibh beirt anois?",
+          "lowLabel": "i bhfad ó chéile",
+          "highLabel": "chomh gar agus is féidir"
+        },
+        "repair_initiator": {
+          "prompt": "Nuair a bhíonn easaontas agaibh, cé a bhíonn ag iarraidh réiteach ar dtús?",
+          "options": {
+            "i_do": "Is beagnach i gcónaí mise",
+            "usually_me": "mise de ghnáth",
+            "evenly": "bogaimid i dtreo a chéile go cothrom",
+            "usually_them": "iad de ghnáth",
+            "they_do": "Is beagnach i gcónaí iad"
+          }
+        },
+        "they_withdraw_at": {
+          "prompt": "Nuair a bhíonn rud éigin deacair, cá mbíonn claonadh acu dul?",
+          "options": {
+            "toward": "i dtreo tú, chun é a phlé",
+            "quiet": "isteach sa chiúnas, ansin ar ais",
+            "work": "isteach san obair nó sa seachrán",
+            "alone": "go hiomlán leo féin, taobh thiar de dhoras",
+            "elsewhere": "chuig daoine eile ar dtús"
+          }
+        },
+        "what_they_dont_see": {
+          "prompt": "Cad é rud éigin a theastaíonn uait go dtuigfeadh siad fúthu féin?"
+        },
+        "what_you_offer": {
+          "prompt": "I bhfrása amháin, cad a dhéanann tú dóibh nach féidir leo a dhéanamh dóibh féin?"
+        },
+        "their_loudest_voice": {
+          "prompt": "Cén guth is minice a thiomáineann iad?",
+          "options": {
+            "demand": "an t-éileamh — cad ba cheart a dhéanamh",
+            "doubt": "an t-amhras — an leor é",
+            "desire": "an fonn — an rud atá uathu i ndáiríre",
+            "watcher": "an faireoir — conas a fheicfear é",
+            "uncertain": "níl a fhios agam fós"
+          }
+        },
+        "where_work_catches": {
+          "prompt": "Cá mbíonn a gcuid oibre ag dul i bhfostú de ghnáth?",
+          "options": {
+            "start": "an tús — ag dul isteach ann",
+            "middle": "an lár — ag fanacht leis",
+            "finish": "an deireadh — ag ligean dó imeacht",
+            "visibility": "an infheictheacht — ag ligean dó a bheith le feiceáil",
+            "nowhere": "níl áit ar bith is féidir liom a fheiceáil ón taobh amuigh"
+          }
+        },
+        "they_avoid": {
+          "prompt": "An bhfuil ábhar ann a sheachnaíonn siad go seasta? Ainmnigh go héadrom é."
+        },
+        "they_at_their_best": {
+          "prompt": "Cathain is mó a bhíonn siad iad féin?"
+        },
+        "what_youve_changed": {
+          "prompt": "An bhfuil rud éigin fúthu atá glactha agat go ciúin nach n-athróidh tú?"
+        },
+        "future_together": {
+          "prompt": "Cé mhéad den todhchaí a shamhlaíonn tú a chuimsíonn iad?",
+          "lowLabel": "an-bheagán",
+          "highLabel": "beagnach gach rud"
+        }
+      }
+    }
+  },
+  "email": {
+    "shell": {
+      "orWord": "nó",
+      "fallbackPreamble": "greamaigh an nasc seo isteach i do bhrabhsálaí:",
+      "attendingInstitution": "INSTITIÚID FREASTALACH",
+      "tagline": "AI Síceadinimiciúil don saol istigh.",
+      "automatedFooter": "Seolta ag córas uathoibrithe · ná freagair"
+    },
+    "intakeSubmitted": {
+      "subject": "tá do phróifíl á léamh.",
+      "preheader": "Tá an chéad phas ar siúl. Osclaíonn an seomra nuair a bhíonn an obair réidh.",
+      "eyebrow": "PRÓIFÍL LÉITHE",
+      "titleText": "Tá do chuid freagraí á léamh.",
+      "italicPhrase": "á léamh",
+      "lede": "Tá an chéad phas trí na samhlacha síceanailíseacha ar siúl. Osclaíonn an seomra nuair a bhíonn an obair réidh.",
+      "figLeftItalic": "iontógáil faighte",
+      "figRightLabel": "An chéad phas",
+      "figRightItalic": "ar siúl",
+      "text": "{salutation}\n\nTá do chuid freagraí istigh. Tá an chéad phas trí na samhlacha síceanailíseacha ar siúl. Osclaíonn an seomra nuair a bhíonn an obair réidh.\n\nCognitiveLab, WelloWork AB\nINSTITIÚID FREASTAL"
+    },
+    "roomReady": {
+      "subject": "tá do sheomra oscailte.",
+      "preheader": "Dhá bhloc déag réidh le léamh. Tagann feabhas ar an obair de réir mar a fhilleann tú uirthi.",
+      "eyebrow": "SEOMRA RÉIDH",
+      "titleText": "Tá an chéad léamh oscailte.",
+      "italicPhrase": "an chéad léamh",
+      "lede": "Dhá bhloc déag de phróifíl síceanamach, sa seomra agus réidh le léamh. Tagann feabhas ar an obair de réir mar a fhilleann tú uirthi.",
+      "ctaLabel": "Isteach sa seomra",
+      "figLeftItalic": "seomra oscailte",
+      "figRightLabel": "An Chéad Léamh",
+      "figRightItalic": "réidh",
+      "text": "{salutation}\n\nTá an chéad léamh oscailte.\n\nDhá bhloc déag de phróifíl síceanamach, sa seomra agus réidh le léamh. Tagann feabhas ar an obair de réir mar a fhilleann tú uirthi.\n\nIsteach sa seomra:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nINSTITIÚID FREASTALACH"
+    },
+    "invite": {
+      "subject": "Ba mhaith le {inviterName} thú sa léamh.",
+      "preheader": "Ba mhaith le {inviterName} thú sa léamh. Ní fheiceann nasc do léamha; ní fheicfidh tú a gcuid féin.",
+      "eyebrow": "CUIRTEAR",
+      "titleText": "Ba mhaith le {inviterName} thú sa léamh.",
+      "italicPhrase": "sa léamh",
+      "lede": "Is seomra ciúin é TwentyThird ina léitear struchtúr shaol istigh duine le cúram. Ní fheiceann nasc léamha ná seisiúin an té a thugann cuireadh, agus ní fheicfidh tú a gcuid féin.",
+      "ctaLabel": "Oscail an cuireadh",
+      "figLeftItalic": "cuireadh eisithe",
+      "figRightLabel": "Éagann",
+      "figRightItalic": "ceithre lá déag",
+      "securityNote": "Má tháinig sé seo trí dhearmad, éagfaidh an cuireadh leis féin i gceithre lá déag.",
+      "textIntro": "Ba mhaith le {inviterName} thú sa léamh ag TwentyThird.",
+      "textBody": "Is seomra ciúin é TwentyThird ina léitear struchtúr shaol istigh duine le cúram. Ní fheiceann nasc léamha ná seisiúin an té a thugann cuireadh, agus ní fheicfidh tú a gcuid féin.",
+      "textNote": "Chuir {inviterName} nóta leis:\n  {note}",
+      "textOpen": "Oscail an cuireadh:",
+      "textSecurity": "Má tháinig sé seo trí dhearmad, éagfaidh an cuireadh leis féin i gceithre lá déag.",
+      "textCloser": "CognitiveLab, WelloWork AB\nINSTITIÚID FREASTAL"
+    },
+    "connectionAccepted": {
+      "subject": "Tá {nameLower} tar éis glacadh leis an nasc.",
+      "preheader": "Tá {nameTitle} tar éis glacadh leis an nasc. Éifeacht ar an gcéad seisiún eile ar aghaidh.",
+      "eyebrow": "GLACADH LEIS AN NASC",
+      "titleText": "Tá {nameTitle} tar éis glacadh leis an nasc.",
+      "italicPhrase": "glacadh leis an nasc",
+      "lede": "Cuirfidh a n-iontógáil caidrimh eolas ar do léamh ón gcéad seisiún eile ar aghaidh. Ní fheicfidh siad do léamha; ní fheicfidh tú a gcuid léamha.",
+      "ctaLabel": "Fill ar an Seomra",
+      "figLeftItalic": "glacadh leis an nasc",
+      "figRightLabel": "Éifeacht",
+      "figRightItalic": "an chéad seisiún eile ar aghaidh",
+      "text": "{salutation}\n\nTá {nameTitle} tar éis glacadh leis an nasc.\n\nCuirfidh a n-iontógáil caidrimh eolas ar do léamh ón gcéad seisiún eile ar aghaidh. Ní fheicfidh siad do léamha; ní fheicfidh tú a gcuid léamha.\n\nFill ar an Seomra:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nAN INSTITIÚID FREASTALACH"
+    },
+    "connectionEnded": {
+      "subject": "Chuir {nameLower} deireadh leis an nasc.",
+      "preheader": "Chuir {nameTitle} deireadh leis an nasc. Déanfar do léamh a choigeartú sa chéad seisiún eile.",
+      "eyebrow": "NASC CRÍOCHNAITHE",
+      "titleText": "Chuir {nameTitle} deireadh leis an nasc.",
+      "italicPhrase": "chuir deireadh leis an nasc",
+      "lede": "Déanfar do léamh a choigeartú sa chéad seisiún eile. Coimeádtar an méid a dúradh faoin gcaidreamh sa chomhad cásanna; níl sé san áireamh a thuilleadh sa léamh gníomhach.",
+      "ctaLabel": "Fill ar an Seomra",
+      "figLeftItalic": "nasc críochnaithe",
+      "figRightLabel": "Éifeacht",
+      "figRightItalic": "ón gcéad seisiún eile amach",
+      "text": "Chuir {nameTitle} deireadh leis an nasc.\n\nDéanfar do léamh a choigeartú sa chéad seisiún eile. Coimeádtar an méid a dúradh faoin gcaidreamh sa chomhad cásanna; níl sé san áireamh a thuilleadh sa léamh gníomhach.\n\nFill ar an Seomra:\n{roomUrl}\n\nCognitiveLab, WelloWork AB\nATTENDING INSTITUTION"
+    },
+    "weeklyCatchupReminder": {
+      "subject": "tá gabháil suas na seachtaine seo oscailte.",
+      "preheader": "Machnamh gairid. Cúig nóiméad. Nuashonraíonn sé an léamh.",
+      "eyebrow": "GABHÁIL SUAS SEACHTAINIÚIL",
+      "titleText": "Tá seachtain imithe go ciúin.",
+      "italicPhrase": "go ciúin",
+      "lede": "Machnamh gairid — cad atá ard, cad atá ciúin, cad atá athraithe. Nuashonraíonn sé an léamh.",
+      "ctaLabel": "Oscail an gabháil suas",
+      "figRightLabel": "Gabháil suas",
+      "figRightItalic": "cúig nóiméad",
+      "text": "{salutation}\n\nTá seachtain imithe go ciúin.\n\nMachnamh gairid — cad atá ard, cad atá ciúin, cad atá athraithe. Nuashonraíonn sé an léamh.\n\nOscail an gabháil suas:\n{catchupUrl}\n\nCognitiveLab, WelloWork AB\nINSTITIÚID FREASTALACH"
+    },
+    "onboardingResume": {
+      "subject": "tá do chuid freagraí coinnithe.",
+      "preheader": "Leanann d’iontógáil ar aghaidh ón áit ar stop tú. Ní thosaíonn an obair go dtí go mbíonn sí críochnaithe.",
+      "eyebrow": "IONTÓGÁIL COINNITHE",
+      "titleText": "Tá an iontógáil san áit ar fhág tú é.",
+      "italicPhrase": "san áit ar fhág tú é",
+      "lede": "Leanann d’iontógáil ar aghaidh ón áit ar stop tú. Ní thosaíonn an obair go dtí go mbíonn sí críochnaithe.",
+      "ctaLabel": "Fill ar an iontógáil",
+      "figLeftItalic": "iontógáil curtha ar sos",
+      "figRightLabel": "Lean ar aghaidh",
+      "figRightItalic": "san áit ar stop tú",
+      "text": "{salutation}\n\nTá an iontógáil san áit ar fhág tú é.\n\nLeanann d’iontógáil ar aghaidh ón áit ar stop tú. Ní thosaíonn an obair go dtí go mbíonn sí críochnaithe.\n\nFill ar an iontógáil:\n{resumeUrl}\n\nCognitiveLab, WelloWork AB\nINSTITIÚID FREASTAIL"
+    }
+  },
+  "errors": {},
+  "meta": {},
+  "intake": {
+    "questions": {
+      "origins": {
+        "q1_1": {
+          "title": "Cé na focail is fearr a chuireann síos ar an teach inar fhás tú aníos.",
+          "subtitle": "roghnaigh suas le trí fhocal a mhothaíonn fíor, fiú má thagann siad salach ar a chéile — is gnách go mbíonn tithe measctha",
+          "options": {
+            "calm": "Suaimhneach",
+            "strict": "Déine",
+            "emotionally_distant": "Fadálach ó thaobh mothúchán de",
+            "chaotic": "Caotach",
+            "achievement_focused": "Dírithe go mór ar éachtaí",
+            "protective": "Cosantach",
+            "unpredictable": "Dothuartha",
+            "conflict_heavy": "Lán coinbhleachta"
+          }
+        },
+        "q1_2": {
+          "title": "Mar leanbh, cén ról a ghlac tú go nádúrtha.",
+          "subtitle": "smaoinigh ar an ról a bhí agat i do theaghlach gan aon duine a rá leat é a dhéanamh — an síochánaí, an cúntóir, an té ciúin",
+          "options": {
+            "peacemaker": "Síochánaí",
+            "achiever": "Éachtóir",
+            "invisible_child": "Leanbh dofheicthe",
+            "caregiver": "Cúramóir",
+            "rebel": "Ceannairceach",
+            "funny_one": "An té greannmhar",
+            "responsible_one": "An té freagrach",
+            "problem_child": "Leanbh fadhbach"
+          }
+        },
+        "q1_3": {
+          "title": "Cé chomh sábháilte ó thaobh mothúchán de a mhothaigh tú ag fás aníos.",
+          "subtitle": "téigh le do mhothúchán gut faoin teach, ní an leagan a inseodh an teaghlach do strainséir",
+          "lowLabel": "1 · NÍ RAIBH SÁBHÁILTE RIAMH",
+          "highLabel": "10 · SÁBHÁILTE GO HIOMLÁN"
+        },
+        "q1_4": {
+          "title": "Ar pléadh mothúcháin go hoscailte sa bhaile.",
+          "subtitle": "ní hamháin an raibh mothúcháin ann, ach an ndearna aon duine iad a ainmniú nó a phlé os ard",
+          "options": {
+            "frequently": "Go minic",
+            "sometimes": "Uaireanta",
+            "rarely": "Go hannamh",
+            "never": "Riamh"
+          }
+        },
+        "q1_5": {
+          "title": "Cuimhne amháin ó óige a mhothaíonn fós beo ó thaobh mothúchán de inniu.",
+          "subtitle": "déan cur síos ar radharc sonrach amháin a thagann ar ais chugat fós — cá raibh tú, cé a bhí ann, cad a tharla, conas a mhothaigh sé"
+        },
+        "q1_6": {
+          "title": "Cad a d'fhoghlaim tú a bhí le déanamh agat chun grá nó ceadú a fháil.",
+          "subtitle": "na rudaí beaga a thug tú faoi deara a d'oibrigh — a bheith go maith, a bheith ciúin, a bhaint amach, fanacht as an mbealach — roinn an méid a chuimhníonn tú a choigeartú"
+        },
+        "q1_7": {
+          "title": "Cé na mothúcháin a bhí deacair a chur in iúl i do theach.",
+          "subtitle": "cé na mothúcháin a ndearnadh neamhaird orthu, a cuireadh as an áireamh, nó a pionósaíodh nuair a rinne tú iarracht iad a thaispeáint — fearg, brón, eagla, áthas, rud ar bith"
+        },
+        "q1_8": {
+          "title": "Nuair a smaoiníonn tú ar do chuid féin níos óige, cad a mhothaíonn tú ina leith.",
+          "subtitle": "bí macánta faoin mothúchán a thagann aníos — teas, brón, fad, frustrachas, cosantacht — cibé rud atá ann i ndáiríre"
+        }
+      },
+      "attachment": {
+        "q2_1": {
+          "title": "Conas a chuirfeá síos ar do mháthair nó ar do phríomhchúramóir máithreachais.",
+          "subtitle": "cúpla abairt faoi cén cineál duine a bhí inti, conas a bhí sí ann duit, agus conas a bhraith tú ina timpeall",
+          "options": {
+            "warm": "Te",
+            "controlling": "Rialaitheach",
+            "emotionally_unavailable": "Neamh-infhaighte go mothúchánach",
+            "sacrificing": "Íobartach",
+            "critical": "Criticiúil",
+            "anxious": "Imníoch",
+            "unpredictable": "Neamh-intuartha",
+            "admired": "Admhaítear",
+            "fearful": "Eaglach",
+            "not_applicable": "Neamhbhainteach"
+          }
+        },
+        "q2_2": {
+          "title": "Conas a chuirfeá síos ar d’athair nó ar do phríomhchúramóir athartha.",
+          "subtitle": "cúpla abairt faoi cén cineál duine a bhí ann, conas a bhí sé ann duit, agus conas a bhraith tú ina thimpeall",
+          "options": {
+            "supportive": "Tacaíoch",
+            "distant": "I bhfad i gcéin",
+            "dominant": "Ceannasach",
+            "passive": "Éighníomhach",
+            "ambitious": "Uaillmhianach",
+            "emotionally_closed": "Dúnta go mothúchánach",
+            "protective": "Cosantach",
+            "critical": "Criticiúil",
+            "absent": "As láthair",
+            "not_applicable": "Neamhbhainteach"
+          }
+        },
+        "q2_3": {
+          "title": "Do sheasamh i measc siblíní.",
+          "subtitle": "cá raibh tú san ord — an duine is sine, an duine lár, an duine is óige, an t-aon leanbh, nó áit éigin eatarthu",
+          "options": {
+            "oldest": "An duine is sine",
+            "middle": "An duine lár",
+            "youngest": "An duine is óige",
+            "only_child": "Aon leanbh"
+          }
+        },
+        "q2_4": {
+          "title": "Cén ról is fearr a oireann do do sheasamh siblíneach.",
+          "subtitle": "thar ord breithe, an ról a bhí agat sa deireadh — an duine freagrach, an ceannairceach, an duine dofheicthe, an duine is fearr leat",
+          "options": {
+            "responsible": "Freagrach",
+            "ignored": "Neamhaird déanta air",
+            "compared": "I gcomparáid le daoine eile",
+            "favored": "Fabharaithe",
+            "competitive": "Iomaíoch",
+            "protective": "Cosantach",
+            "not_applicable": "Neamhbhainteach"
+          }
+        },
+        "q2_5": {
+          "title": "Cén tuismitheoir a thuig tú is fearr.",
+          "subtitle": "ainmnigh iad agus abair cad a chonaic siad ionat a chaill an tuismitheoir eile nó a fuair mícheart"
+        },
+        "q2_6": {
+          "title": "Cén tuismitheoir a raibh an tionchar is mó aige ar d’eagla.",
+          "subtitle": "cé a raibh a n-imní sáite agat agus tú ag fás aníos, agus conas a léiríonn na faitíos sin fós i do shaol inniu"
+        },
+        "q2_7": {
+          "title": "Cén chuma a bhí ar choimhlint i do theaghlach.",
+          "subtitle": "déan cur síos ar an gcruth a ghlac argóintí — screadaíl, tost, doirse buailte, seachtainí fuara, patrúin athfhillteacha — cibé rud a bhí eolach"
+        },
+        "q2_8": {
+          "title": "Cén cineál airde a bhí an-deacair a fháil.",
+          "subtitle": "an cineál cúraim a chuir míchompord ort — moladh, imní, gaireacht fhisiciúil, a bheith le feiceáil — agus cén fáth a raibh sé deacair"
+        }
+      },
+      "authority": {
+        "q3_1": {
+          "title": "Cé chomh reiligiúnach nó spioradálta is a bhí an timpeallacht inar tógadh thú.",
+          "subtitle": "atmaisféar iarbhír an tí — cleachtais, rialacha, creidimh san aer — ní an rud a chreideann tú anois mar dhuine fásta",
+          "lowLabel": "1 · NÍL AR CHOR AR BITH",
+          "highLabel": "10 · GO DOMHAIN"
+        },
+        "q3_2": {
+          "title": "Cén teachtaireacht a bhí ar an gceann is láidre agus tú ag fás aníos.",
+          "subtitle": "an riail nó an t-ionchas a athdhéantar chomh minic sin gur tháinig sé chun bheith ina thorann cúlra — faoi rath, iompar, íomhá, dualgas, teaghlach",
+          "options": {
+            "success": "Is é an rath is tábhachtaí",
+            "reputation": "Is é an clú is tábhachtaí",
+            "obedience": "Is í an umhlaíocht is tábhachtaí",
+            "family_loyalty": "Is í dílseacht an teaghlaigh is tábhachtaí",
+            "independence": "Is í an neamhspleáchas is tábhachtaí",
+            "sacrifice": "Is í an íobairt is tábhachtaí"
+          }
+        },
+        "q3_3": {
+          "title": "Cé chomh láidir is a bhraitheann tú go bhfuil an tsochaí ag tabhairt breithiúnais ort.",
+          "subtitle": "cé mhéad a bhraitheann tú go bhfuil daoine lasmuigh de do chiorcal dlúth ag faire nó ag meas ort — ag an obair, ar líne, go poiblí",
+          "lowLabel": "1 · NÍL AR CHOR AR BITH",
+          "highLabel": "10 · GO CÓNAÍ"
+        },
+        "q3_4": {
+          "title": "Cén creideamh ó d'óige a mhúnlaíonn tú fós.",
+          "subtitle": "na luachanna, na rialacha, nó na boinn tuisceana a fuair tú le hoidhreacht agus a mairfidh tú fós leo, fiú mura bhfuil tú tar éis smaoineamh orthu le blianta"
+        },
+        "q3_5": {
+          "title": "Cén creideamh a chuireann tú in aghaidh go rúnda.",
+          "subtitle": "na cinn a nglacann tú leo go poiblí ach a easaontaíonn tú leo go ciúin — faoi airgead, caidrimh, rath, inscne, aon rud"
+        },
+        "q3_6": {
+          "title": "Cén rud a chuirfeadh do theaghlach nó do phobal i gcoinne an duine fhíor atá ionat is mó.",
+          "subtitle": "na codanna díot féin, de do shaol, nó de do roghanna a choinníonn tú i bhfolach uathu, agus cén fáth a gcoinníonn tú i bhfolach iad"
+        },
+        "q3_7": {
+          "title": "Cén cineál duine a raibh súil go dtiocfá chun bheith ann.",
+          "subtitle": "an todhchaí a shamhlaigh daoine eile duit — gairm, teaghlach, iompar, íomhá — sula raibh aon rá agat ann"
+        }
+      },
+      "belonging": {
+        "q4_1": {
+          "title": "Cé mhéad duine a bhfuil aithne acu ort i ndáiríre.",
+          "subtitle": "na daoine a chonaic an leagan neamhchóirithe díot agus nach gcuirfeadh aon rud i do shaol istigh iontas orthu",
+          "options": {
+            "none": "Ar bith",
+            "one_two": "1–2",
+            "three_five": "3–5",
+            "many": "Go leor"
+          }
+        },
+        "q4_2": {
+          "title": "I ngrúpaí, is gnách go n-éiríonn tú.",
+          "subtitle": "an ról a shleamhnaíonn tú isteach ann gan smaoineamh — an duine greannmhar, an t-éisteoir, an ceannaire, an breathnóir, an té a choinníonn rudaí réidh",
+          "options": {
+            "leader": "Ceannaire",
+            "observer": "Breathnóir",
+            "entertainer": "Siamsóir",
+            "mediator": "Idirghabhálaí",
+            "intellectual": "Intleachtóir",
+            "caregiver": "Cúramóir",
+            "withdrawn": "Tarraingthe siar"
+          }
+        },
+        "q4_3": {
+          "title": "Cé chomh scanraithe is atá tú roimh díomá a chur ar dhaoine eile.",
+          "subtitle": "cé chomh mór is atá imoibriú duine eile — cuma, osna, tost — in ann an méid a deir nó a dhéanann tú a mhúnlú",
+          "lowLabel": "1 · NÍL AR CHOR AR BITH",
+          "highLabel": "10 · GO LAETHÚIL"
+        },
+        "q4_4": {
+          "title": "Cé na codanna díot féin a cheiltíonn tú go sóisialta.",
+          "subtitle": "na smaointe, na mothúcháin, na tréithe, nó na píosaí de do stair a choinníonn tú i bhfolach nuair a bhíonn tú i gcomhluadar daoine eile"
+        },
+        "q4_5": {
+          "title": "Cathain a bhraitheann tú an t-aitheantas is mó.",
+          "subtitle": "na cásanna nó na caidrimh ina stopann tú ag feidhmiú agus ina bhféadfá a bheith díreach — déan cur síos ar an méid a fhágann na spásanna sin difriúil"
+        },
+        "q4_6": {
+          "title": "Cé na cásanna sóisialta a dhraenálann tú is mó.",
+          "subtitle": "na cruinnithe, na dinimic, nó na caidrimh a fhágann tú níos tuirseach ná mar ba chóir — agus cad fúthu atá íditheach"
+        },
+        "q4_7": {
+          "title": "Cén cineál daoine a bhfuil éad ort leo.",
+          "subtitle": "is gnách go dtaispeánann éad rud éigin atá uait ach nach bhfuil cead tugtha agat duit féin a bheith ag iarraidh go hoscailte — déan cur síos ar cé a spreagann é agus cén fáth"
+        }
+      },
+      "persona": {
+        "q5_1": {
+          "title": "Cé na hardáin a úsáideann tú go gníomhach.",
+          "subtitle": "na haipeanna a osclaíonn tú de nós, níos mó ná uair amháin sa lá, ní iad siúd a bhfuil cuntas agat orthu go teicniúil",
+          "options": {
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "x": "X",
+            "linkedin": "LinkedIn",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "snapchat": "Snapchat",
+            "none": "Dada"
+          }
+        },
+        "q5_2": {
+          "title": "Meánúsáid laethúil in aghaidh an ardáin.",
+          "subtitle": "meastachán garbh ar an méid ama a chaitheann tú i ndáiríre ar gach ceann acu — nóiméad nó uaireanta, gan breithiúnas",
+          "unit": "NÓIMÉAD IN AGHAIDH AN LAE"
+        },
+        "q5_3": {
+          "title": "Cad chuige a n-úsáideann tú iad go príomha.",
+          "subtitle": "an fíorchúis faoin gcúis shoiléir — nasc, seachrán, bailíochtú, éalú, comparáid, faisnéis",
+          "options": {
+            "validation": "Bailíochtú",
+            "learning": "Foghlaim",
+            "escapism": "Éalú",
+            "networking": "Líonrú",
+            "self_expression": "Féinléiriú",
+            "entertainment": "Siamsaíocht",
+            "comparison": "Comparáid",
+            "dating": "Dátú"
+          }
+        },
+        "q5_4": {
+          "title": "Cé chomh minic a scriosann nó a chuireann tú poist in eagar sula bhfoilsíonn tú.",
+          "subtitle": "cé chomh minic a dhéanann tú cleachtadh, athmhachnamh, nó athscríobh ar a roinneann tú sula ligeann tú do dhaoine eile é a fheiceáil",
+          "options": {
+            "always": "I gcónaí",
+            "often": "Go minic",
+            "sometimes": "Uaireanta",
+            "rarely": "Is annamh",
+            "never": "Choíche"
+          }
+        },
+        "q5_5": {
+          "title": "Cé chomh minic a dhéanann tú comparáid idir do shaol agus saol daoine eile ar líne.",
+          "subtitle": "an tomhas ciúin a tharlaíonn agus tú ag scrollú — faoi chuma, rath, caidrimh, stíl mhaireachtála, aon rud",
+          "lowLabel": "1 · CHOÍCHE",
+          "highLabel": "10 · I GCNÓNAÍ"
+        },
+        "q5_6": {
+          "title": "Cén leagan díot féin a fheictear ar líne.",
+          "subtitle": "déan cur síos ar an gcarachtar a chuireann tú i láthair — an leagan coimeádta — agus conas a dhifríonn sé ó cé tú féin nuair nach bhfuil aon duine ag faire"
+        },
+        "q5_7": {
+          "title": "Cad a lorgaíonn tú go mothúchánach nuair a osclaíonn tú na meáin shóisialta.",
+          "subtitle": "an mothú atá á bhaint amach agat sa nóiméad a osclaíonn tú an aip — seachrán, compord, sceitimíní, neamh-mhothú, nasc"
+        },
+        "q5_8": {
+          "title": "Cén cineál ábhair a chuireann míchompord ort.",
+          "subtitle": "na poist nó na físeáin a chuireann fonn ort scrollú thart go tapa, agus cad a cheapann tú atá i gceist leis an míchompord sin i ndáiríre"
+        },
+        "q5_9": {
+          "title": "Cén cineál daoine a mheallann d'aird ar líne.",
+          "subtitle": "na cuntais a stopann tú agus a fhéachann tú orthu — déan cur síos ar na cáilíochtaí a roinneann siad agus cad a mheallann tú isteach"
+        }
+      },
+      "desire": {
+        "q6_1": {
+          "title": "Do stádas caidrimh reatha.",
+          "subtitle": "cá bhfuil tú i ndáiríre faoi láthair — singil, ag dul, i gcaidreamh, pósta, scartha, casta — ní cárbh fhearr leat a bheith",
+          "options": {
+            "single": "Singil",
+            "dating": "Ag dul",
+            "in_relationship": "I gcaidreamh",
+            "engaged": "Geallta",
+            "married": "Pósta",
+            "separated_divorced": "Scartha nó colscartha",
+            "widowed": "Baintreach",
+            "its_complicated": "Tá sé casta"
+          }
+        },
+        "q6_2": {
+          "title": "Cé mhéad caidreamh tromchúiseach a bhí agat.",
+          "subtitle": "na cinn a raibh tábhacht mhothúchánach leo, beag beann ar cé chomh fada is a mhair siad nó cé chomh hoifigiúil is a bhí siad",
+          "unit": "COUNT"
+        },
+        "q6_3": {
+          "title": "Coinbhleachtaí tipiciúla i do chaidrimh.",
+          "subtitle": "na hargóintí a bhíonn ag teacht aníos arís agus arís eile i bhfoirmeacha éagsúla le comhpháirtithe éagsúla — airgead, fad, smacht, cumarsáid",
+          "options": {
+            "distance": "Fad",
+            "jealousy": "Éad",
+            "control": "Smacht",
+            "emotional_unavailability": "Neamh-infhaighteacht mhothúchánach",
+            "communication": "Cumarsáid",
+            "trust": "Iontaobhas",
+            "dependency": "Spleáchas"
+          }
+        },
+        "q6_4": {
+          "title": "I gcaidrimh is gnách leat.",
+          "subtitle": "do ghluaiseacht réamhshocraithe nuair a éiríonn rudaí deacair — tarraingt níos gaire, tarraingt siar, dul i gceannas, múchadh, iarracht a dhéanamh socrú",
+          "options": {
+            "pursue": "Saothrú",
+            "withdraw": "Tarraingt siar",
+            "overgive": "Ró-thabhairt",
+            "test_loyalty": "Dílseacht a thástáil",
+            "avoid_vulnerability": "So-ghabháltacht a sheachaint"
+          }
+        },
+        "q6_5": {
+          "title": "Cén cineál daoine a mbíonn tú i ngrá leo arís agus arís eile.",
+          "subtitle": "an cineál a bhíonn ag teacht aníos i do shaol grá — ní hamháin cuma, ach patrúin mhothúchánacha, meon, an chaoi a gcaitheann siad leat"
+        },
+        "q6_6": {
+          "title": "Cad a chuireann deireadh le do chaidrimh de ghnáth.",
+          "subtitle": "an fíor-chúis go dtagann rudaí as a chéile, thar an scéal oifigiúil a insíonn tú do chairde nó do theaghlach"
+        },
+        "q6_7": {
+          "title": "Cén riachtanas mothúchánach is mó a theastaíonn uait a chomhlíonadh.",
+          "subtitle": "an riachtanas is deacra a iarraidh go díreach — a bheith feicthe, a bheith roghnaithe, a bheith sábháilte, a bheith saor, a bheith ag teastáil"
+        },
+        "q6_8": {
+          "title": "Cad is mó a bhfuil eagla ort roimhe san dlúthchaidreamh.",
+          "subtitle": "cad a chuireann dlúthchaidreamh i mbaol duit — a bheith ar eolas, a bheith i bpríosún, a bheith fágtha, a bheith an iomarca, a bheith gan dóthain"
+        }
+      },
+      "achievement": {
+        "q7_1": {
+          "title": "Do stádas fostaíochta reatha.",
+          "subtitle": "cruth do shaol oibre faoi láthair — fostaithe, féinfhostaithe, idir phoist, ag staidéar, ag tabhairt aire, rud éigin eile",
+          "options": {
+            "employed_full_time": "Fostaithe, lánaimseartha",
+            "employed_part_time": "Fostaithe, páirtaimseartha",
+            "self_employed": "Féinfhostaithe nó bunaitheoir",
+            "freelance": "Saorálaí nó conraitheoir",
+            "studying": "Ag staidéar",
+            "between_roles": "Idir róil",
+            "caregiving": "Ag tabhairt aire sa bhaile",
+            "retired": "Ar scor",
+            "not_working": "Gan a bheith ag obair"
+          }
+        },
+        "q7_2": {
+          "title": "Cé chomh sásta is atá tú le treo do ghairmréime.",
+          "subtitle": "an stua níos faide de cá bhfuil do chuid oibre ag dul, ní conas a bhraitheann tú faoin tseachtain áirithe seo",
+          "lowLabel": "1 · CAILLTE",
+          "highLabel": "10 · GO BEACTAS CEART"
+        },
+        "q7_3": {
+          "title": "Ag an obair is gnách leat a bheith.",
+          "subtitle": "an bealach a oibríonn tú go gairmiúil — an ról a ghlacann tú nuair nach bhfuil aon duine ag sannadh ceann duit",
+          "options": {
+            "perfectionistic": "Foirfeachtóir",
+            "avoidant": "Seachantach",
+            "competitive": "Iomaíoch",
+            "cooperative": "Comhoibríoch",
+            "over_responsible": "Ró-fhreagrach",
+            "detached": "Neamhcheangailte"
+          }
+        },
+        "q7_4": {
+          "title": "Do strus is mó san ionad oibre.",
+          "subtitle": "fóinse an bhrú a leanann tú abhaile — duine, ualach oibre, eagla, timpeallacht, patrún",
+          "options": {
+            "criticism": "Cáineadh",
+            "failure": "Teip",
+            "visibility": "Infheictheacht",
+            "authority": "Údarás",
+            "uncertainty": "Éiginnteacht",
+            "conflict": "Coimhlint"
+          }
+        },
+        "q7_5": {
+          "title": "Cad is brí le rath go mothúchánach duit.",
+          "subtitle": "an mothú a shamhlaíonn tú a thagann nuair a bhíonn sé agat ar deireadh — faoiseamh, bród, síocháin, saoirse, a bheith go leor"
+        },
+        "q7_6": {
+          "title": "Cén cineál aitheantais is mó a théann i bhfeidhm ort.",
+          "subtitle": "an moladh a thagann i dtír go fírinneach agus a athraíonn do mhothúcháin, agus an cineál a phreabann ar ais is cuma cé mhéad a fhaigheann tú de"
+        },
+        "q7_7": {
+          "title": "Cén teip a bhfuil tionchar aici ort fós inniu.",
+          "subtitle": "teip shonrach nár chríochnaigh tú ag próiseáil fós — cad a tharla, agus conas a mhúnlaíonn sé do roghanna fós"
+        },
+        "q7_8": {
+          "title": "Dá n-imeodh airgead, cad a bheadh á shaothrú agat.",
+          "subtitle": "an obair nó an ghníomhaíocht a dhéanfá fiú mura n-íocfadh aon duine as — déan cur síos ar an gcuma atá air"
+        }
+      },
+      "escape": {
+        "q8_1": {
+          "title": "Conas a dhéanann tú déileáil le strus de ghnáth.",
+          "subtitle": "cad a shroicheann tú nuair a éiríonn rudaí trom — bia, scáileáin, aclaíocht, aonrú, caint, substaintí, codladh, obair",
+          "options": {
+            "isolation": "Aonrú",
+            "food": "Bia",
+            "gaming": "Cearrbhachas",
+            "exercise": "Aclaíocht",
+            "overworking": "Ró-obair",
+            "scrolling": "Scrolláil",
+            "substance_use": "Úsáid substaintí",
+            "shopping": "Siopadóireacht",
+            "sleeping": "Codladh",
+            "socializing": "Sóisiálú"
+          }
+        },
+        "q8_2": {
+          "title": "Cé chomh minic a théann tú amach go sóisialta.",
+          "subtitle": "cé chomh minic a chaitheann tú am le daoine eile go pearsanta, ní ar líne nó trí theachtaireachtaí",
+          "options": {
+            "multiple_per_week": "Il-uaireanta sa tseachtain",
+            "weekly": "Go seachtainiúil",
+            "monthly": "Go míosúil",
+            "rarely": "Go hannamh",
+            "never": "Riamh"
+          }
+        },
+        "q8_3": {
+          "title": "Cé chomh minic a bhraitheann tú uaigneach fiú i ngrúpa.",
+          "subtitle": "an t-uaigneas a thaispeánann nuair a bhíonn tú timpeallaithe ag daoine ach go mbraitheann tú fós neamhfheicthe nó i bhfad i gcéin",
+          "lowLabel": "1 · RIAMH",
+          "highLabel": "10 · I GCOMHNAÍ"
+        },
+        "q8_4": {
+          "title": "Cé na gníomhaíochtaí a chuireann dearmad ort féin.",
+          "subtitle": "na rudaí a tharraingíonn isteach tú chomh domhain sin go n-imíonn an t-am — chun feabhais nó chun measa, sláintiúil nó nach ea"
+        },
+        "q8_5": {
+          "title": "Cad is mó a sheachnaíonn tú smaoineamh air.",
+          "subtitle": "an t-ábhar nó an chuimhne a sheachnaíonn tú go tapa nuair a thagann sé aníos — fút féin, do stair, do thodhchaí"
+        },
+        "q8_6": {
+          "title": "Cathain a bhraitheann tú go bhfuil tú gan mhothúchán.",
+          "subtitle": "na cásanna ina dtiteann an toirt go nialas — obair, caidrimh, coinbhleacht, dlúthchaidreamh, a bheith i d'aonar"
+        },
+        "q8_7": {
+          "title": "Cén nós is deacra a stopadh.",
+          "subtitle": "an iompar a rinne tú iarracht níos mó ná uair amháin a athrú nó a scor, gan rath — déan cur síos ar cad é agus cad a choinníonn ag tarraingt ar ais thú"
+        }
+      },
+      "self-relation": {
+        "q9_1": {
+          "title": "Cé chomh féin-chriticiúil is atá tú.",
+          "subtitle": "ton do ghutha inmheánaigh nuair a dhéanann tú praiseach nó nuair a theipeann ort — crua, cothrom, dímheasúil, tubaisteach",
+          "lowLabel": "1 · MÍN",
+          "highLabel": "10 · GAN TRÓCAIRE"
+        },
+        "q9_2": {
+          "title": "Cén ráiteas is gaire do d’eagla phríobháideach.",
+          "subtitle": "an abairt fút féin atá faoi gach rud eile, an ceann nach n-admhófá ach ar lá crua",
+          "options": {
+            "never_enough": "Ní leor mé riamh",
+            "fear_abandoned": "Tá eagla orm go dtréigfear mé",
+            "fear_losing_control": "Tá eagla orm smacht a chailleadh",
+            "fear_failure": "Tá eagla orm roimh theip",
+            "fear_ordinary": "Tá eagla orm a bheith gnáth",
+            "fear_rejection": "Tá eagla orm roimh dhiúltú",
+            "fear_dependence": "Tá eagla orm roimh spleáchas"
+          }
+        },
+        "q9_3": {
+          "title": "Cé chomh minic a bhraitheann tú dícheangailte uait féin.",
+          "subtitle": "an mothú go bhfuil tú ag breathnú ar do shaol féin ó fhad beag, amhail is nach bhfuil tú go hiomlán istigh ann",
+          "lowLabel": "1 · RIAMH",
+          "highLabel": "10 · GO LAETHÚIL"
+        },
+        "q9_4": {
+          "title": "Cén smaoineamh a athdhéantar i d’intinn is minice.",
+          "subtitle": "an abairt lúbach nó an imní a thagann ar ais go rialta — scríobh é ina fhocail iarbhír, ní achoimre"
+        },
+        "q9_5": {
+          "title": "Cén fáth a gcáineann tú tú féin go príobháideach.",
+          "subtitle": "na rudaí a scórálann tú féin orthu nach bhfuil a fhios ag aon duine eile fúthu — faoi do chorp, d’intinn, do roghanna, do charachtar"
+        },
+        "q9_6": {
+          "title": "Cad a chuirfeadh ar do chumas go mbraitheann tú go leor.",
+          "subtitle": "an coinníoll atá socraithe agat duit féin go ciúin chun scíth a ligean ar deireadh — bí macánta, is minic a bhíonn an freagra níos lú ná mar a cheapann tú"
+        },
+        "q9_7": {
+          "title": "Dá mbeadh pearsantacht ag do ghuth inmheánach, conas a chuirfeá síos air.",
+          "subtitle": "aois, inscne, ton an ghutha sin — agus cé leis an guth sin i ndáiríre, má rianaíonn tú siar é"
+        }
+      },
+      "future-fantasy": {
+        "q10_1": {
+          "title": "Cé acu is tábhachtaí duitse.",
+          "subtitle": "roghnaigh an ceann is tábhachtaí faoi láthair — is féidir leis na cinn eile a bheith tábhachtach fós, ach bí macánta faoin rangú",
+          "options": {
+            "freedom": "Saoirse",
+            "love": "Grá",
+            "recognition": "Aitheantas",
+            "stability": "Cobhsaíocht",
+            "power": "Cumhacht",
+            "meaning": "Brí",
+            "peace": "Síocháin",
+            "influence": "Tionchar"
+          }
+        },
+        "q10_2": {
+          "title": "Cé chomh dóchasach is atá tú faoi do thodhchaí.",
+          "subtitle": "an mothú a bhíonn ort nuair a smaoiníonn tú chun cinn, ní an freagra dóchasach a thugann tú do dhaoine eile nuair a iarrann siad",
+          "lowLabel": "1 · NÍL",
+          "highLabel": "10 · GO DOMHAIN"
+        },
+        "q10_3": {
+          "title": "Cad is mó atá uait go rúnda.",
+          "subtitle": "an fonn nár lig tú duit féin a ainmniú os ard fós — an ceann a bhraitheann ró-mhór, ró-riosca, nó ró-náireach",
+          "options": {
+            "to_be_understood": "A bheith tuigthe",
+            "to_be_admired": "A bheith measúil",
+            "to_feel_safe": "A bheith sábháilte",
+            "to_be_desired": "A bheith inmhianaithe",
+            "to_feel_important": "A bheith tábhachtach",
+            "to_feel_free": "A bheith saor",
+            "to_belong": "A bheith páirteach"
+          }
+        },
+        "q10_4": {
+          "title": "Déan cur síos mion ar do shaol idéalach amach anseo.",
+          "subtitle": "na sonraí coincréiteacha — cá bhfuil tú, cé leis a bhfuil tú, cén chuma atá ar do mhaidineacha, an obair, an solas, an rithim"
+        },
+        "q10_5": {
+          "title": "Cén eagla a d'fhéadfadh an todhchaí sin a scriosadh.",
+          "subtitle": "an rud — inmheánach nó seachtrach — a chuir stop leat roimhe seo, agus a d'fhéadfadh stop a chur leat arís má ligfidh tú dó"
+        },
+        "q10_6": {
+          "title": "Cén chuid díot féin atá tú fós ag iarraidh a bheith.",
+          "subtitle": "an leagan díot féin ar an léaslíne — na cáilíochtaí, na saoirsí, an bealach maireachtála a bhfuil tú ag bogadh go mall i dtreo"
+        },
+        "q10_7": {
+          "title": "Mura ndéanfadh aon duine breithiúnas ort, conas a mhairfeá go difriúil.",
+          "subtitle": "na roghanna a dhéanfá dá stopfadh an faire — faoi obair, grá, corp, am, airgead, guth"
+        },
+        "q10_8": {
+          "title": "Cad a cheapann tú atá á lorg agat i ndáiríre.",
+          "subtitle": "an rud níos doimhne faoi bhun do chuid freagraí go léir roimhe seo — cad atá gach rogha agus fonn ag díriú air i ndáiríre"
+        }
+      }
+    },
+    "steps": {
+      "origins": {
+        "eyebrow": "BUNAÍOCHTAÍ · PRIONTÁIL FHORBARTHA",
+        "headline": [
+          "Cad a mhúin an seomra luath ",
+          "duit",
+          "."
+        ],
+        "lede": "Éisteann an chéad chuid le haghaidh aeráid mhothúchánach, sábháilteacht, agus an ról a cuireadh ort. Éiríonn na patrúin a taifeadadh anseo mar bhunús le gach rud a thógtar níos déanaí.",
+        "title": "Bunaíochtaí",
+        "subtitle": "priontáil fhorbartha"
+      },
+      "attachment": {
+        "eyebrow": "CEANGAL · STRUCHTÚR TEAGHLAIGH",
+        "headline": [
+          "Na chéad ",
+          "naisc",
+          ", agus an cruth a d'fhág siad."
+        ],
+        "lede": "Aimsíonn sé do stíl cheangail, do ghaol le húdarás, agus an triantánú inar fhás tú aníos. Éiríonn cruth an chéad naisc mar theimpléad a ndéantar gach ceann eile a thomhas ina choinne.",
+        "title": "Ceangal",
+        "subtitle": "struchtúr teaghlaigh"
+      },
+      "authority": {
+        "eyebrow": "ÚDARÁS · DLÍ SIOMBALACH",
+        "headline": [
+          "Na guthanna a ",
+          "fuair tú le hoidhreacht",
+          "."
+        ],
+        "lede": "Nochtann sé na cóid mhorálta, na struchtúir chiontachta, agus an fhéiniúlacht oidhreachta atá fós ag rith sa chúlra. Is annamh a fhágann na guthanna a d'fhás tú aníos fúthu; éiríonn siad mar an guth a thugann breithiúnas ort.",
+        "title": "Údarás",
+        "subtitle": "dlí siombalach"
+      },
+      "belonging": {
+        "eyebrow": "BALLRAÍOCHT · FÉINIÚLacht SHÓISIALTA",
+        "headline": [
+          "Cé a fhaigheann ",
+          "tú a fheiceáil",
+          "."
+        ],
+        "lede": "Tomhaiseann sé spleáchas sóisialta, folú féiniúlachta, agus eagla an eisiaimh. Is annamh a bhíonn ballraíocht saor; fiafraíonn an chuid seo cad a thrádálann tú ar a son.",
+        "title": "Ballraíocht",
+        "subtitle": "féiniúlacht shóisialta"
+      },
+      "persona": {
+        "eyebrow": "PERSONA · MIANGAS & FÉIN DHIGITEACH",
+        "headline": [
+          "An féin a ",
+          "léiríonn tú",
+          "."
+        ],
+        "lede": "Léann sé an féin idéalach, an lúb bailíochtaithe, agus an léiriú siombalach a chuireann tú ar stáitse ar líne. Ní bréag é an persona; is mian leath-nochta é.",
+        "title": "Persona",
+        "subtitle": "miangas & féin dhigiteach"
+      },
+      "desire": {
+        "eyebrow": "MIANGAS · DLÚTHCHAIDREAMH & ATHCHUR",
+        "headline": [
+          "An patrún a ",
+          "fhilltear arís agus arís eile",
+          "."
+        ],
+        "lede": "Aimsíonn sé an cruth caidrimh athfhillteach, eagla an tréigthe, an contrárthacht laistigh den mhiangas. Is annamh a roghnaítear an rud a athdhéantar; is é an rud a iarrann a fheiceáil.",
+        "title": "Miangas",
+        "subtitle": "dlúthchaidreamh & athchur"
+      },
+      "achievement": {
+        "eyebrow": "GNÍOMH · OBAIR & AITHINT",
+        "headline": [
+          "Cad atá tú ",
+          "ag iarraidh a chruthú",
+          "."
+        ],
+        "lede": "Aimsíonn sé imní ghnóthachtála, ocras aitheantais, agus do ghaol le húdarás ag an obair. Faoi gach uaillmhian tá lucht féachana de dhuine nó de bheirt.",
+        "title": "Gníomh",
+        "subtitle": "obair & aitheantais"
+      },
+      "escape": {
+        "eyebrow": "ÉALÚ · PLÉISIÚR & DEASGHNÁTH",
+        "headline": [
+          "Cá dtéann tú ",
+          "chun gan a bheith anseo",
+          "."
+        ],
+        "lede": "Aithníonn sé na patrúin seachanta, na comhéigeantais, agus na deasghnátha a rialaíonn pléisiúr. Deir an bealach amach a shroicheann tú an oiread agus an seomra a fhágann tú.",
+        "title": "Éalú",
+        "subtitle": "pléisiúr & deasghnáth"
+      },
+      "self-relation": {
+        "eyebrow": "FÉIN-GAOL · IDIRPHLÉ INMHEÁNACH",
+        "headline": [
+          "An guth nach féidir leat ",
+          "a chiúnú go hiomlán",
+          "."
+        ],
+        "lede": "Léarscáilíonn sé imeall an superego, na struchtúir náire, agus na guthanna inmheánaithe. Is é an bealach a labhraíonn tú leat féin go príobháideach an taifead is macánta ar cé a thóg tú.",
+        "title": "Féin-gaol",
+        "subtitle": "idirphlé inmheánach"
+      },
+      "future-fantasy": {
+        "eyebrow": "TODHCHAÍ · FANTASY, EAGLA & MIANGAS",
+        "headline": [
+          "Cad atá tú ",
+          "ag lorg go fírinneach",
+          "."
+        ],
+        "lede": "Buaic mhothúchánach — an todhchaí a shamhlaíonn tú, an eagla a chuireann isteach uirthi, an miangas lárnach thíos. Is í an cheist dheireanach an chéad cheann a fhilltear.",
+        "title": "Todhchaí-fantasy",
+        "subtitle": "fantasy, eagla & miangas"
+      }
+    }
+  },
+  "common": {
+    "or": "nó",
+    "loading": "ag luchtú…",
+    "sending": "ag seoladh…",
+    "save": "Sábháil",
+    "saved": "sábháilte",
+    "cancel": "Cealaigh",
+    "close": "Dún",
+    "back": "Ar ais",
+    "continue": "Lean ar aghaidh",
+    "retry": "Bain triail eile as",
+    "more": "níos mó"
+  },
+  "nav": {
+    "room": "Seomra",
+    "readings": "Léamha",
+    "catchup": "Teacht Aníos",
+    "consulting": "Comhairliúchán",
+    "caseFile": "Comhad Cáise",
+    "settings": "Socruithe",
+    "signIn": "Sínigh isteach",
+    "signOut": "Sínigh amach",
+    "getStarted": "Tosaigh",
+    "language": "Teanga",
+    "method": "Modh",
+    "theWork": "An Obair",
+    "about": "Maidir Linn",
+    "contact": "Teagmháil",
+    "start": "Tosaigh"
+  },
+  "auth": {
+    "signIn": {
+      "titleBefore": "Logáil ",
+      "titleItalic": "isteach",
+      "titleAfter": ".",
+      "googleLabel": "Logáil isteach le Google",
+      "or": "nó",
+      "emailLabel": "RÍOMHPHOST",
+      "passwordLabel": "PASFHOCAL",
+      "forgotPassword": "Pasfhocal dearmadta",
+      "submit": "Logáil isteach",
+      "footPrompt": "Nua anseo? ",
+      "footLink": "Cruthaigh cuntas"
+    },
+    "signUp": {
+      "titleBefore": "Cruthaigh ",
+      "titleItalic": "cuntas",
+      "titleAfter": ".",
+      "googleLabel": "Lean ar aghaidh le Google",
+      "or": "nó",
+      "emailLabel": "RÍOMHPHOST",
+      "passwordLabel": "PASFHOCAL",
+      "confirmPasswordLabel": "DEIMHNIGH PASFHOCAL",
+      "submit": "Cruthaigh cuntas",
+      "footPrompt": "An bhfuil ceann agat cheana? ",
+      "footLink": "Logáil isteach",
+      "resentNote": "Seoladh nasc nua.",
+      "resendConfirmation": "Seol deimhniú arís",
+      "pendingFootPrompt": "Seoladh mícheart? ",
+      "pendingFootLink": "Tosaigh arís"
+    },
+    "forgot": {
+      "titleBefore": "Rinne tú dearmad ar do ",
+      "titleItalic": "phasfhocal",
+      "titleAfter": ".",
+      "lede": "Cuir isteach an seoladh a chláraigh tú leis. Seolfaimid nasc chun é a athshocrú.",
+      "emailLabel": "RÍOMHPHOST",
+      "submit": "Seol nasc athshocraithe",
+      "footPrompt": "Cuimhneamh air? ",
+      "footLink": "Logáil isteach",
+      "sentBackLink": "Ar ais chuig logáil isteach"
+    },
+    "reset": {
+      "titleBefore": "Socraigh ",
+      "titleItalic": "pasfhocal nua",
+      "titleAfter": ".",
+      "newPasswordLabel": "PASFHOCAL NUA",
+      "confirmPasswordLabel": "DEIMHNIGH PASFHOCAL",
+      "submit": "Nuashonraigh pasfhocal",
+      "expiredTitleBefore": "Níl an nasc sin ",
+      "expiredTitleItalic": "bailí a thuilleadh",
+      "expiredTitleAfter": ".",
+      "requestNewLink": "Iarr nasc nua"
+    },
+    "errors": {
+      "invalid_credentials": "Ní hionann an ríomhphost nó an pasfhocal.",
+      "email_taken": "Tá an ríomhphost sin cláraithe cheana. Bain triail as logáil isteach.",
+      "weak_password": "Úsáid 8 gcarachtar ar a laghad.",
+      "passwords_dont_match": "Ní hionann pasfhocail.",
+      "email_invalid": "Ní cosúil gur ríomhphost bailí é sin.",
+      "rate_limited": "An iomarca iarrachtaí. Bain triail as arís i gceann tamaill.",
+      "unconfirmed_email": "Deimhnigh do ríomhphost ar dtús. Seiceáil do bhosca isteach.",
+      "reset_link_expired": "Tá an nasc sin imithe in éag. Iarr ceann nua.",
+      "reset_link_invalid": "Níl an nasc sin bailí a thuilleadh. Iarr ceann nua.",
+      "oauth_failed": "Níorbh fhéidir Google a bhaint amach. Bain triail as arís.",
+      "callback_failed": "Níorbh fhéidir logáil isteach a chríochnú.",
+      "generic": "Tharla earráid. Bain triail as arís.",
+      "no_session": "Logáil isteach chun leanúint ar aghaidh."
+    },
+    "success": {
+      "checkInboxEyebrow": "SEICEÁIL DO BHOSCA ISTEACH",
+      "confirmationHeadlineBefore": "Tá ",
+      "confirmationHeadlineItalic": "nasc deimhnithe",
+      "confirmationHeadlineAfter": " seolta againn chuig ",
+      "confirmationLede": "Cliceáil air chun do chuntas a chríochnú.",
+      "resetSentEyebrow": "SEICEÁIL DO BHOSCA ISTEACH",
+      "resetSentHeadlineBefore": "Má tá an ríomhphost sin ",
+      "resetSentHeadlineItalic": "cláraithe",
+      "resetSentHeadlineAfter": ", tá nasc athshocraithe seolta againn.",
+      "resetSentLede": "Oibríonn an nasc uair amháin agus téann sé in éag laistigh den uair an chloig. Mura bhfuil nasc ann, níl cuntas ann.",
+      "passwordUpdated": "Pasfhocal nuashonraithe. Ag logáil isteach thú."
+    }
+  },
+  "onboarding": {
+    "account": {
+      "eyebrowLabel": "CUNTAS",
+      "headlineBefore": "Socraigh do",
+      "headlineItalic": "seomra ciúin",
+      "lede": "Ainm, bliain, agus tá. Ansin tosaíonn an obair.",
+      "saveFailed": "Níorbh fhéidir é sin a shábháil. Bain triail eile as i gceann nóiméad.",
+      "nameLabel": "AINM",
+      "nameRequired": "Tá ainm ag teastáil.",
+      "prefilledHint": "réamhlíonta ó Google · inathraithe",
+      "yearLabel": "BLIAIN BREITHE",
+      "yearRequired": "Roghnaigh bliain.",
+      "genderLabel": "INSINNE",
+      "genderRequired": "Roghnaigh ceann amháin.",
+      "gender": {
+        "male": "Fireann",
+        "female": "Baineann",
+        "nonBinary": "Neamh-dhénártha",
+        "preferNotToSay": "Is fearr gan a rá"
+      },
+      "languageLabel": "TEANGA",
+      "termsBefore": "Glacaim leis na",
+      "termsLink": "Téarmaí",
+      "termsAnd": "agus",
+      "privacyLink": "Polasaí Príobháideachais",
+      "termsAfter": ".",
+      "submit": "Cuir tús le cuntas"
+    },
+    "intro": {
+      "eyebrow": "IONTAOBHÁIL · GAN FREAGAIRTÍ MÍCHEARTA",
+      "headlineBefore": "Níl aon fhreagraí cearta",
+      "headlineItalic": "anseo"
+    },
+    "brief": {
+      "title": "AN CHOIMISIÚN",
+      "hint": "léigh uair amháin, ansin tosaigh",
+      "opener": "Labhraíonn na freagraí míchearta — na leisceanna, na clóscríobhanna, na scipeanna — chomh soiléir leis na cinn chearta.",
+      "privacy": "Tá gach rud a scríobhann tú príobháideach. Ní fhágann aon rud an seomra seo.",
+      "length": "Toisc go bhfuil an obair domhain, tá an t-iontógáil fada. Tá sé roinnte againn i ndeich gcuid. Tógann an rud ar fad thart ar dhá uair an chloig.",
+      "resume": "Sábháil agus lean ar aghaidh lá eile. Cuir aon chuid in eagar tar éis duit é a chríochnú — leanann an próifíl ag éisteacht.",
+      "begin": "Tosaigh iontógáil"
+    },
+    "saved": {
+      "eyebrow": "SÁBHÁIL & SOS",
+      "headlineItalic": "Sábháilte.",
+      "headlineAfter": "Tar ar ais nuair a bheidh tú réidh.",
+      "body": "Tá gach rud a scríobh tú i do chomhad cás. Osclóidh an seomra san áit chéanna an chéad uair eile.",
+      "keepGoing": "lean ar aghaidh",
+      "leaveRoom": "Fág an seomra ciúin"
+    },
+    "step": {
+      "label": "CÉIM",
+      "of": "DE",
+      "min": "NÓIM",
+      "progressLabel": "Dul chun cinn an iontógála",
+      "finalEpigraph": "is í an cheist dheireanach an chéad cheann arís i gcónaí.",
+      "backTo": "Céim {n}",
+      "continueTo": "Lean ar aghaidh go Céim {n}",
+      "submit": "Sábháil & cuir isteach",
+      "submitReading": "ag léamh…"
+    },
+    "questions": {
+      "closeTitle": "CEISTEANNA DÚNTA",
+      "closeHint": "roghnaigh an rud atá fíor",
+      "openTitle": "CEISTEANNA OSCAILTE",
+      "openHint": "scríobh an rud a thagann chun cinn",
+      "countLabel": "{count, plural, one {ceist} few {cheist} many {gceist} other {ceisteanna}}"
+    },
+    "saveExit": {
+      "or": "nó",
+      "saveAndReturn": "sábháil agus fill ar ais níos déanaí"
+    },
+    "saveIndicator": {
+      "saving": "ag sábháil…",
+      "saved": "sábháilte",
+      "saveFailed": "theip ar an sábháil"
+    }
+  },
+  "readings": {
+    "whatThisIs": "cad é seo →",
+    "blocks": {
+      "subconscious-loops": {
+        "subtitle": "lúba fo-chomhfhiosacha",
+        "definition": "Seichimh athfhillteacha mothúcháin, gníomhaíochta, agus torthaí a tharlaíonn lasmuigh de rogha chomhfhiosach. Is é ainmniú an lúb an chéad chur isteach air.",
+        "seedReading": "tagann sé i dtreo an ghaoil ansin cruthaíonn sé teip bheag chun céim siar a thógáil.",
+        "seedTakeaway": "is é an cúlú an lúb. ní an gaol."
+      },
+      "linguistic-unconscious": {
+        "subtitle": "fo-chomhfhiosach teangeolaíoch",
+        "definition": "An bealach a dtagann ábhar fo-chomhfhiosach chun solais i rogha focal, athrá, sciorrthaí, agus struchtúr na cainte — éileamh Lacan go bhfuil an fo-chomhfhiosach struchtúrtha cosúil le teanga.",
+        "seedReading": "dúblaíonn an chaint ar an bhfocal “ba chóir” — suíomh éilimh oidhreachta.",
+        "seedTakeaway": "tá guth duine eile fós ag labhairt tríd an bhfocal seo."
+      },
+      "father-imago": {
+        "subtitle": "íomhá an athar",
+        "definition": "An íomhá inmheánaithe den athair, a foirmíodh go luath agus atá go páirteach miotasach. Cruthaíonn sé an chaoi a gcomhlíontar údarás, uaillmhian, agus breithiúnas níos déanaí sa saol.",
+        "seedReading": "déanann sé breithiúnas ó thuas sula ndéantar breithiúnas air ó thuas — tá an seasamh comhionann.",
+        "seedTakeaway": "athraíonn an suíochán. ní athraíonn an cathaoir."
+      },
+      "intimacy-threshold": {
+        "subtitle": "tairseach an dlúthchaidrimh",
+        "definition": "An pointe ag a dtosaíonn dlúthchaidreamh ag mothú mar riosca, agus ina dhiaidh sin déantar bogadh cosantach. Difriúil do gach duine; ionadh cobhsaí ar fud caidrimh.",
+        "seedReading": "coinníonn sé go maith go dtí go n-éiríonn an duine eile inléite — ansin tarraingíonn sé siar.",
+        "seedTakeaway": "is é an t-eolas an imeall, ní an dlúthchaidreamh."
+      },
+      "desire-structure": {
+        "subtitle": "struchtúr an dúil",
+        "definition": "An rud atá an t-úsáideoir ag iarraidh i ndáiríre, difriúil ón rud a dúradh leo a iarraidh. Faightear amach go minic trí shéanadh — trína thabhairt faoi deara cad a dhiúltaíonn siad.",
+        "seedReading": "ainmníonn sé go leor mianta, diúltaíonn sé dhá cheann — is é an diúltú an comhartha.",
+        "seedTakeaway": "léiríonn an rud a bhrúitear ar shiúl níos soiléire ná an rud a shaothraítear."
+      },
+      "professional-block": {
+        "subtitle": "bac gairmiúil",
+        "definition": "An áit a gcuireann an obair isteach: an tús, an lár, an deireadh, nó an infheictheacht. Tá a fhoinse fho-chomhfhiosach féin ag gach suíomh.",
+        "seedReading": "is ag an líne chríochnaithe a thagann an t-amhras, ní ag an tús.",
+        "seedTakeaway": "tá an bac ag an infheictheacht, ní ag an iarracht."
+      },
+      "mother-imago": {
+        "subtitle": "íomhá na máthar",
+        "definition": "An íomhá inmheánaithe den mháthair — an chéad chomhréiteach, an chéad scaradh. Cuireann sé le huigeacht na spleáchais agus an tearmainn.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "fágann comhréiteach luath síniú fada."
+      },
+      "dream-logic": {
+        "subtitle": "loighic an aisling",
+        "definition": "An comhdhlúthú agus an díláithriú atá ag obair in ábhar aisling. Léigh don ghramadach, ní do na siombailí.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "tá a ghramadach féin ag ábhar an aisling."
+      },
+      "relational-pattern": {
+        "subtitle": "patrún caidrimh",
+        "definition": "An staidiúir athfhillteach a ghlactar i gcaidrimh — tóraí, tarraingeoir siar, tuismitheoir, leanbh, comhionann. Cobhsaí ar fud comhpháirtithe níos mó ná mar atá na comhpháirtithe cobhsaí ar fud an úsáideora.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "feictear an cruth céanna i seomraí éagsúla."
+      },
+      "defenses": {
+        "subtitle": "cosaintí",
+        "definition": "Na gluaiseachtaí sainiúla a úsáidtear chun ábhar deacair a choinneáil amach as an eolas — intleachtú, díláithriú, foirmiú imoibrithe, scoilteadh. Ní teipeanna iad cosaintí; is seanréitigh iad.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "ainmníonn an chosaint an rud a bhí dofhulaingthe tráth."
+      },
+      "shadow": {
+        "subtitle": "scáth",
+        "definition": "An rud a diúltaíodh agus a sannadh do dhaoine eile — na cáilíochtaí is cinnte nach bhfuil ag an úsáideoir. Go minic an bealach chun beogachta.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "gníomhaíonn an rud a diúltaíodh fós."
+      },
+      "transference": {
+        "subtitle": "aistriú",
+        "definition": "An bealach a theilgtear seanfhigiúirí caidrimh ar fhigiúirí reatha — an t-anailísí, an comhpháirtí, an boss. Nochtann an patrún an íomhá.",
+        "seedReading": "róluath le rá le muinín — tá an cruth ag teacht chun cinn.",
+        "seedTakeaway": "tagann seanfhigiúirí i seomraí reatha."
+      }
+    },
+    "strip": {
+      "lastRefined": "scagtha go deireanach",
+      "readingDepth": "doimhneacht léitheoireachta"
+    },
+    "section": {
+      "eyebrow": "LÉITHEOIREACHT {index} · {subtitle}",
+      "strengthen": "neartaigh an cruinneas",
+      "requestReport": "iarr tuarascáil"
+    },
+    "card": {
+      "reading": "Léitheoireacht {index}"
+    },
+    "report": {
+      "eyebrow": "TUARASCÁIL CHLINICIÚIL",
+      "heading": "Do d’<it>anailísí.</it>",
+      "lede": "Dossier 12–18 leathanach — na sé léitheoireacht forbartha go hiomlán, móide sé cinn eile nach dtaispeánann an painéal: íomhá na máthar, loighic an aisling, patrún caidrimh, cosaintí, scáth, aistriú. Aistrithe go teanga a n-oibríonn cliniceoir inti.",
+      "note": "léireoidh an tuarascáil an doimhneacht atá ar fáil. is féidir í a athghiniúint de réir mar a dhoimhníonn an léitheoireacht.",
+      "generate": "Gin tuarascáil chliniciúil",
+      "request": "Iarr tuarascáil chliniciúil",
+      "footPrefix": "tuarascáil amháin san áireamh gach mí do ",
+      "footLink": "síntiúsóirí"
+    }
+  },
+  "catchup": {
+    "questionEyebrow": "CEIST {n} · {total}",
+    "questions": {
+      "stayed_with": {
+        "prompt": "Cad a d'fhan leat ón tseachtain?",
+        "framing": "frása, íomhá, abairt a dúirt duine éigin."
+      },
+      "closeness": {
+        "prompt": "Cé chomh gar agus a lig tú d'aon duine teacht?",
+        "options": {
+          "not_at_all": "ní ar chor ar bith",
+          "briefly": "go hachomair",
+          "with_hesitation": "le drogall",
+          "openly": "go hoscailte",
+          "too_far": "rófhada"
+        }
+      },
+      "loop": {
+        "prompt": "Ar rug tú ort féin i lúb eolach?",
+        "framing": "cá háit, agus conas a chríochnaigh sé."
+      },
+      "loudest_voice": {
+        "prompt": "Cén guth a bhí is airde an tseachtain seo?",
+        "options": {
+          "demand": "an t-éileamh",
+          "doubt": "an t-amhras",
+          "desire": "an *fonn*",
+          "watcher": "an faireoir",
+          "none": "níl aon cheann díobh seo"
+        }
+      },
+      "dream": {
+        "prompt": "An raibh *brionglóid* ann ar fiú í a scríobh síos?",
+        "framing": "más ea, an blúire a d'fhan."
+      },
+      "acted_on_desire": {
+        "prompt": "Cé chomh fada agus a ghníomhaigh tú ar a raibh uait i ndáiríre?",
+        "lowLabel": "ní ar chor ar bith",
+        "highLabel": "go hiomlán"
+      },
+      "work_catch": {
+        "prompt": "Cá háit ar rug an obair ort?",
+        "options": {
+          "start": "an tús",
+          "middle": "an lár",
+          "finish": "an deireadh",
+          "visibility": "an infheictheacht",
+          "nowhere": "níl áit ar bith"
+        }
+      },
+      "avoided_question": {
+        "prompt": "Cad í an cheist nach bhfuil tú ag iarraidh a fhreagairt faoi láthair?",
+        "framing": "an ceann a bhíonn ag sleamhnú thart i gcónaí."
+      }
+    },
+    "openHint": "doimhneoidh freagraí níos faide an léamh",
+    "scaleLegend": "{low} go {high}",
+    "noValue": "níl aon luach roghnaithe",
+    "valueOf": "{value} as {max}",
+    "weekLabel": "SEACHTAIN {n}",
+    "coverEyebrow": "CATCHUP · {weekLabel}",
+    "coverTitle": "Cad a d'fhan leat<it>?</it>",
+    "coverLede": "Ocht gceist ghairide. Is fearr an macántacht ná an fada. Déanann freagraí an léamh a bheachtú; níl aon rud anseo grádaithe.",
+    "begin": "Tosaigh",
+    "back": "ar ais",
+    "next": "ar aghaidh",
+    "submitting": "á chur isteach",
+    "closeTheWeek": "dún an tseachtain",
+    "previousQuestion": "an cheist roimhe seo",
+    "processingLine": "<em>tá an tseachtain á léamh.</em>",
+    "summaryEyebrow": "{weekLabel} · LÉIGH AR AIS",
+    "summaryTitle": "An tseachtain, <it>i do chuid focal féin.</it>",
+    "caseLabel": "cás · {week}",
+    "justRefined": "díreach beachtaithe",
+    "readingsShifted": "léamha aistrithe",
+    "readingsCount": "{n} de 12",
+    "returnToRoom": "Fill ar an Seomra",
+    "readAgain": "léigh arís é sa Chomhad Cáis",
+    "somethingToHold": "RUD LE COIMEÁD",
+    "enterConsultingRoom": "téigh isteach sa Seomra Comhairliúcháin",
+    "openConsultingRoom": "oscail an Seomra Comhairliúcháin",
+    "requestReport": "iarr tuarascáil chliniciúil",
+    "errorSubmit": "níorbh fhéidir an catchup a chur isteach",
+    "errorGeneric": "tharla rud éigin mícheart",
+    "errorFailed": "tá an catchup ar comhad. tiocfaidh an achoimre níos déanaí.",
+    "errorGiveUp": "tá an seomra ciúin ar feadh tamaill — tá do catchup ar comhad. athnuachan i gceann nóiméid.",
+    "summaryFallback": "Tá an catchup ar comhad. Tá an léamh nuashonraithe go ciúin; tiocfaidh an achoimre níos faide ar an gcéad phas eile.",
+    "readBackTitle": "An tseachtain, <it>cheana féin istigh.</it>",
+    "readBackEmpty": "tá an catchup ar comhad. beidh an achoimre gearr an tseachtain seo.",
+    "readBackFoot": "osclaíonn an chéad catchup eile ag tús seachtain {n}."
+  },
+  "consulting": {
+    "sessionClose": "sin é ár n-uair.",
+    "sayIt": "abair é →",
+    "closeSession": "dún an seisiún →",
+    "eyebrow": "SEOMRA COMHAIRLIÚCHÁIN",
+    "closing": "ag dúnadh",
+    "closeSessionLabel": "dún an seisiún",
+    "timerAria": "am seisiúin caite",
+    "chooseTopicAria": "roghnaigh ábhar",
+    "noTopic": "gan ábhar",
+    "justOpened": "díreach oscailte",
+    "minutesIn": "{count} nóim isteach",
+    "speakToAnalyst": "labhair leis an anailísí",
+    "send": "seol",
+    "sessionClosedFoot": "tá an seisiún dúnta. coinníodh é sa chomhad cáis.",
+    "previewHeld": "cén chuid díot a choinníonn ag roghnú seo?",
+    "previewTopicDreamingFuture": "Ag brionglóid faoin todhchaí",
+    "previewTopicNightDream": "Brionglóid oíche",
+    "previewTopicRelations": "Caidrimh i mo shaol",
+    "previewTopicProfessionalGrowth": "Fás gairmiúil",
+    "previewTurnAnalyst1": "Ainmníonn tú patrún, ansin insíonn tú é mar scéal strainséara. Tabhair faoi deara cathain a thosaíonn an <em>tarraingt siar</em>.",
+    "previewTurnUser1": "Coinním ag cur deireadh le rudaí an tseachtain a éiríonn siad tromchúiseach.",
+    "previewTurnAnalyst2": "Is é an mhaidin an fíorasc, ní an triail. Rinne do <em>thairseach dlúthchaidrimh</em> cleachtadh ar imeacht seachtainí roimh an gcomhrá.",
+    "sayItEllipsis": "abair é…",
+    "offerHeadline": "An seomra comhairliúcháin",
+    "offerLede": "Suí fada leis an anailísí, a choinnítear san fhuaim chéanna le do léamha. Tá seisiúin príobháideach, coinnítear sa chomhad cáis iad, agus cothaíonn siad na léamha idir suíonna.",
+    "offerPanelsAria": "cad a dhéanann seisiún",
+    "offerPanel1Title": "ainmnithe, ní insinte",
+    "offerPanel1Body": "Ainmneoidh an anailísí cad atá ag tarlú i do chaint — an duillín, an cáilitheoir, an leath-ráite — agus coimeádfaidh sé ann é go dtí go bhfeiceann tú é.",
+    "offerPanel2Title": "coinnithe sa chomhad cáis",
+    "offerPanel2Body": "Scríobhtar síos gach suí. Léann an chéad léamh eile é. Tagann patrúin chun cinn thar seachtainí, ní thar shealanna.",
+    "offerPanel3Title": "guth amháin, gan roghchlár",
+    "offerPanel3Body": "Ní rothlú chatbot é. Guth anailíseach amháin, oilte ar do ghlacadh isteach agus scagtha ag gach Catchup.",
+    "offerFootLine": "Faigheann síntiúsóirí tuarascáil chliniciúil amháin gach mí.",
+    "offerPillCta": "Isteach sa seomra comhairliúcháin",
+    "offerReturnToRoom": "fill ar an seomra",
+    "previewFigureLabel": "an seomra comhairliúcháin",
+    "previewFigureSubtitle": "suí, réamhamharc",
+    "previewRailAria": "réimsí comhad cáis a bhfuil an anailísí ag léamh astu",
+    "previewReadingFrom": "AG LÉAMH Ó",
+    "previewActive": "gníomhach",
+    "previewRoleYou": "TÚ",
+    "previewRoleAnalyst": "AN AINILÍSÍ",
+    "previewBubble1": "Coinním ag cur deireadh le rudaí an tseachtain a éiríonn siad tromchúiseach. Níl a fhios agam cén fáth a dhéanaim é.",
+    "previewAnalyst1": "Ainmníonn tú patrún, ansin insíonn tú é mar scéal strainséara. Tá an <em>“níl a fhios agam”</em> ag déanamh oibre — coinníonn sé an gníomh ar an taobh eile den intinn. Tabhair faoi deara cathain a thosaíonn an <em>tarraingt siar</em>. Is minic a tharlaíonn an dúnadh níos luaithe ná an imeacht.",
+    "previewBubble2": "Níos luaithe conas? An uair dheireanach bhraith sé gur dhúisigh mé maidin amháin agus go raibh a fhios agam.",
+    "previewAnalyst2": "Is é an mhaidin an fíorasc, ní an triail. Thug do léamh <strong>tairseach dlúthchaidrimh</strong> ó sheachtain 04 faoi deara an cruth céanna — cleachtadh ciúin ar imeacht, dhá nó trí seachtaine roimh an gcomhrá. Is í an mhaidin an t-am a aontaíonn an corp ar deireadh leis an méid a bhí cinntithe agat cheana féin.",
+    "previewBubble3": "Sin an chuid a chuireann eagla orm. Go bhfuil sé cinntithe cheana féin.",
+    "previewAnalyst3": "Is é <em>cinntithe</em> an focal. Ní <em>roghnaithe</em>. Is fearr le rud éigin sa struchtúr an dúnadh ná an tástáil. Leanfaimid ar aghaidh ann.",
+    "previewExampleMark": "SAMPLA · NÍ Ó DO THAIFEAD"
+  },
+  "caseFile": {
+    "silentWeek": "— seachtain chiúin —",
+    "eyebrow": "COMHAD CÁS",
+    "headlineLead": "Taifead, coinnithe",
+    "headlineItalic": "go ciúin.",
+    "lede": "Gach Catchup, seisiún, agus tuarascáil — coinnithe in ord dáta. Is cuid den taifead iad na bearnaí.",
+    "filterAria": "Scagaire",
+    "filter": {
+      "all": "uile",
+      "catchups": "Catchups",
+      "sessions": "seisiúin",
+      "reports": "tuarascálacha"
+    },
+    "subscriptionTitle": "Síntiús",
+    "emptyCatchups": "tá an comhad cás fós folamh — osclóidh an chéad Catchup é.",
+    "emptyCatchupsCta": "Téigh chuig Catchup",
+    "emptySessions": "tá an comhad cás fós folamh — osclóidh an chéad seisiún comhairliúcháin é.",
+    "emptySessionsCta": "Téigh chuig an Seomra Comhairliúcháin",
+    "emptyReports": "tá an comhad cás fós folamh — osclóidh an chéad tuarascáil ghinte é.",
+    "open": "oscail",
+    "kindCatchup": "Catchup",
+    "kindSession": "seisiún",
+    "kindReport": "tuarascáil chliniciúil",
+    "kindReading": "léamh ionghabhála",
+    "kindConnection": "imeacht ceangail",
+    "entryEyebrow": "COMHAD CÁS · IONTRÁIL",
+    "entryBackToCaseFile": "ar ais chuig an gcomhad cás",
+    "entryReturnToRoom": "fill ar an seomra",
+    "sessionStillOpen": "tá an seisiún seo fós ar oscailt. beidh an léamh le feiceáil nuair a dhúnann sé.",
+    "entryDetailComing": "tá radharc mionsonraithe na hiontrála seo ag teacht. go dtí sin, coimeádann an comhad cás an dáta, an cineál, agus an teideal — agus tá an chuid eile fós sa seomra.",
+    "detailSummaryEyebrow": "ACHOIMRE · DO FHREAGRAÍ",
+    "detailRecommendationEyebrow": "ÁR CATCHUP",
+    "preparingRead": "ag ullmhú an léimh…",
+    "readNotAssembled": "níorbh fhéidir an léamh a chur le chéile anois.",
+    "tryAgain": "bain triail eile as",
+    "intakeClose": "dún",
+    "intakeEdit": "eagar",
+    "intakeSaving": "ag sábháil",
+    "intakeSave": "sábháil",
+    "intakeCancel": "cealaigh",
+    "intakeUnsupported": "déantar an cheist seo a chur in eagar ón ionghabháil féin.",
+    "intakePickUpTo": "bailigh suas go {count}.",
+    "intakeScaleSetTo": "Socraithe go {value}"
+  },
+  "settings": {
+    "eyebrow": "SOCRUITHE",
+    "heading": "Cruth <it>an tseomra.</it>",
+    "lede": "Níl aon rud buan anseo. Is féidir freagraí a chur in eagar, is féidir sainroghanna a athrú, agus is féidir an comhad cáis a scriosadh go hiomlán.",
+    "blocks": {
+      "account": "Cuntas",
+      "readingDepth": "Doimhneacht léitheoireachta",
+      "notifications": "Fógraí",
+      "subscription": "Síntiús",
+      "dangerZone": "Crios contúirte"
+    },
+    "dangerZoneIntro": "an t-aon ghníomh nach féidir a chealú sa seomra.",
+    "depthSub": {
+      "intake": {
+        "title": "Do ghlacadh isteach",
+        "caption": "{answered} / {total} freagartha",
+        "ctaEmpty": "Comhlánaigh do ghlacadh isteach",
+        "ctaPartial": "Cuir tuilleadh sonraí leis",
+        "ctaFull": "Athbhreithnigh do ghlacadh isteach"
+      },
+      "catchups": {
+        "title": "Teacht aníos",
+        "caption": "{count} le 8 seachtaine anuas",
+        "ctaEmpty": "Cuir teacht aníos leis",
+        "ctaDue": "Comhlánaigh teacht aníos na seachtaine seo",
+        "ctaFull": "Athbhreithnigh teacht aníos roimhe seo"
+      },
+      "sessions": {
+        "title": "Seisiúin",
+        "caption": "{count} comhlánaithe",
+        "ctaEmpty": "Tosaigh comhairliúchán",
+        "ctaPartial": "Lean ar aghaidh le comhairliúchán",
+        "ctaFull": "Athbhreithnigh seisiúin roimhe seo"
+      },
+      "connections": {
+        "title": "Naisc",
+        "caption": "{count} gníomhach",
+        "ctaEmpty": "Cuir nasc leis",
+        "ctaSingle": "Cuir nasc eile leis",
+        "ctaFull": "Athbhreithnigh do naisc"
+      }
+    },
+    "toggles": {
+      "weekly_catchup": {
+        "label": "meabhrúchán teacht aníos seachtainiúil",
+        "sub": "nóta ciúin ag tús na seachtaine nua"
+      },
+      "consulting_session_reminder": {
+        "label": "meabhrúchán seisiún comhairliúcháin",
+        "sub": "meabhrúchán roimh do chomhairliúchán atá le teacht"
+      },
+      "connection_requests": {
+        "label": "nasc glactha",
+        "sub": "nóta nuair a ghlacann duine éigin le do chuireadh"
+      }
+    },
+    "toggleOn": "ar siúl",
+    "toggleOff": "as",
+    "quietHours": {
+      "label": "uaireanta ciúine",
+      "sub": "gan ríomhphost idir na huaireanta seo, i do chuid ama áitiúil",
+      "from": "ó",
+      "to": "go dtí"
+    },
+    "saveFailed": "theip ar shábháil",
+    "dangerZone": {
+      "trigger": "Scrios cuntas",
+      "modalAria": "Deimhnigh scriosadh cuntais",
+      "eyebrow": "CRIOS CONTÚIRTE",
+      "heading": "Scrios an <it>comhad cáis.</it>",
+      "body": "Baineann sé seo gach léamh, teacht aníos, seisiún, agus tuarascáil as an taifead. Cuirfear deireadh le naisc ghníomhacha; cuirfear an dá pháirtí ar an eolas. Ní féidir é a chealú.",
+      "instruction": "clóscríobh <phrase></phrase> chun an gníomh a chumasú.",
+      "inputAria": "Clóscríobh an frása deimhnithe",
+      "cancel": "cealaigh",
+      "erasing": "ag scriosadh…",
+      "eraseConfirm": "scrios an comhad cáis",
+      "deleteFailed": "theip ar scriosadh"
+    },
+    "subscription": {
+      "statusLabel": "STÁDAS",
+      "badge": "ROCHTAIN BALL",
+      "tagline": "An seomra comhairliúcháin, oscailte. <em>Léamh a choinníonn ag léamh.</em>",
+      "features": {
+        "room": {
+          "title": "Seomra comhairliúcháin",
+          "desc": "seisiúin fhada leis an anailísí."
+        },
+        "report": {
+          "title": "Tuarascáil chliniciúil mhíosúil",
+          "desc": "léarscáil amháin réidh le teiripeoir gach mí féilire."
+        },
+        "connections": {
+          "title": "{count} nasc eile",
+          "desc": "cuir leis na daoine a mhúnlaíonn an léamh."
+        },
+        "depth": {
+          "title": "Doimhneacht iomlán léitheoireachta",
+          "desc": "gach caibidil oscailte, gan teorainn ar mhionsonraí."
+        }
+      },
+      "perMonth": "in aghaidh na míosa",
+      "subscribe": "liostáil",
+      "reassurance": "<em>gan tiomantas.</em> cealaigh am ar bith ó socruithe.",
+      "activeToday": "gníomhach — athnuachan inniu",
+      "activeRenews": "gníomhach — athnuachan i {days, plural, one {1 lá} other {# lá}}",
+      "cancel": "cealaigh síntiús",
+      "cancelled": "cealaithe — rochtain go dtí {date}",
+      "resubscribe": "athliostáil"
+    },
+    "resetPassword": {
+      "sent": "seoladh nasc athshocraithe chuig {email}. seiceáil do bhosca isteach",
+      "sending": "ag seoladh",
+      "action": "athshocraigh pasfhocal",
+      "error": "níorbh fhéidir a sheoladh. bain triail eile as"
+    }
+  },
+  "connections": {
+    "explainer": "Suas le {limit, plural, one {# duine a mhúnlaíonn an léamh lena láithreacht} other {# duine a mhúnlaíonn an léamh lena láithreacht}}. Ní fheiceann siad do léamha; ní fheiceann tú a gcuid. Cothaíonn an méid a deir siad faoin gcaidreamh an tsamhail a tháirgeann do léamha, agus cothaíonn do chuid féin a gcuid.",
+    "invite": {
+      "emailSubject": "Ba mhaith le {inviterName} thú sa léamh."
+    },
+    "form": {
+      "emailLabel": "RÍOMHPHOST",
+      "roleLabel": "RÓL",
+      "rolePlaceholder": "roghnaigh ceann amháin",
+      "noteLabel": "ABAIRT A LÉIFIDH SIAD AR DTÚS",
+      "noteHint": "roghnach. is leor líne amháin.",
+      "addMoreSub": "cuir níos mó le síntiús",
+      "missingNameLine": "níl d'ainm ar an gcomhad. cuir leis sna socruithe é, ansin seol an t-iarratas arís.",
+      "addYourName": "cuir d'ainm leis",
+      "noteLengthError": "tá nótaí teoranta do líne amháin — thart ar {max} carachtar."
+    },
+    "list": {
+      "empty": "gan aon naisc fós. tá an t-iarratas thíos.",
+      "active": "GNÍOMHACH",
+      "pending": "AR FEITHEAMH",
+      "since": "ó",
+      "invited": "tugadh cuireadh",
+      "received": "faighte",
+      "resend": "athsheol",
+      "cancel": "cealaigh",
+      "expiresIn": "téann sé in éag i {days, plural, one {# lá} other {# lá}}"
+    },
+    "lookup": {
+      "invalidEmail": "cuir isteach seoladh ríomhphoist bailí le do thoil.",
+      "self": "ní féidir leat nascadh leat féin.",
+      "notMemberLine": "níl an ríomhphost seo mar chuid de na baill fós. tabhair cuireadh dóibh cuntas a chruthú ionas gur féidir leat nascadh.",
+      "copyHint": "roinn an nasc clárúcháin",
+      "copied": "nasc cóipeáilte",
+      "requestSent": "tá iarratas seolta agat chuig an mball seo cheana féin.",
+      "requestReceivedLine": "tá iarratas seolta ag an mball seo chugat — seiceáil do chuirí.",
+      "inboxLabel": "oscail an t-iarratas",
+      "alreadyConnected": "tá tú nasctha leis an mball seo cheana féin.",
+      "rateLimited": "ró-iomarca cuardach i bhfuinneog ghearr. fan nóiméad, ansin bain triail as arís.",
+      "sent": "iarratas ceangail seolta.",
+      "sending": "ag seoladh…",
+      "send": "seol iarratas",
+      "limitReached": "{limit, plural, one {# nasc an teorainn. dícheangail é chun ceann eile a chur leis.} other {# nasc an teorainn. dícheangail ceann amháin chun ceann eile a chur leis.}}",
+      "limitReachedFree": "{limit, plural, one {# nasc an teorainn ar an leibhéal saor in aisce.} other {# nasc an teorainn ar an leibhéal saor in aisce.}}",
+      "generic": "níorbh fhéidir an t-iarratas a sheoladh."
+    },
+    "incoming": {
+      "eyebrow": "AG FANACHT LEAT",
+      "empty": "níl aon duine ag fanacht ort.",
+      "accept": "glac leis",
+      "decline": "diúltaigh",
+      "limitReached": "{limit, plural, one {# nasc an teorainn. dícheangail é chun glacadh leis seo.} other {# nasc an teorainn. dícheangail ceann amháin chun glacadh leis seo.}}",
+      "limitReachedFree": "{limit, plural, one {# nasc an teorainn ar an leibhéal saor in aisce.} other {# nasc an teorainn ar an leibhéal saor in aisce.}}",
+      "upsell": "cuireann síntiúsóirí níos mó leis",
+      "inviteExpired": "tá an cuireadh seo imithe in éag.",
+      "inviteEnded": "níl an cuireadh seo ar feitheamh a thuilleadh.",
+      "generic": "níorbh fhéidir gníomhú ar an iarratas seo."
+    },
+    "roles": {
+      "partner": "páirtí",
+      "closest_friend": "cara is gaire",
+      "parent": "tuismitheoir",
+      "sibling": "deartháir/deirfiúr",
+      "co_parent": "comh-thuismitheoir"
+    }
+  },
+  "safety": {
+    "noteEyebrow": "NÓTA ÓN ANALAÍ",
+    "noteAria": "Nóta ón anlaí",
+    "lede": "tá sé seo thar a bhfuil an seomra in ann a shealbhú.",
+    "body": {
+      "intake": "Léiríonn rud éigin sa mhéid a scríobh tú ag an iontógáil ualach a éilíonn fíorchúram — thar a bhfuil an seomra seo in ann a shealbhú. Smaoinigh le do thoil ar theagmháil a dhéanamh le dochtúir, teiripeoir, nó líne ghéarchéime áitiúil inniu. Beidh an léamh anseo nuair a fhillfidh tú.",
+      "catchup": "Léiríonn rud éigin i gCatchup na seachtaine seo ualach a éilíonn fíorchúram — thar a bhfuil an seomra seo in ann a shealbhú. Smaoinigh le do thoil ar theagmháil a dhéanamh le dochtúir, teiripeoir, nó líne ghéarchéime áitiúil inniu. Coinneoidh an léamh.",
+      "session": "Léiríonn an méid a scríobh tú díreach ualach a éilíonn fíorchúram — thar a bhfuil an seomra seo in ann a shealbhú. Smaoinigh le do thoil ar theagmháil a dhéanamh le dochtúir, teiripeoir, nó líne ghéarchéime áitiúil inniu. Is féidir linn filleadh ar an seomra nuair a bheidh tú slán."
+    },
+    "crisisResources": "ACMHUAINNÍ GÉARCHÉIME",
+    "resources": {
+      "us": "Stáit Aontaithe Mheiriceá",
+      "ukIe": "An Ríocht Aontaithe & Éire",
+      "europe": "An Eoraip (an chuid is mó de thíortha)",
+      "everywhere": "Gach áit",
+      "localEmergency": "seirbhísí éigeandála áitiúla"
+    },
+    "hintResources": "mura féidir leat líne a aimsiú, is é roinn éigeandála do ospidéil is gaire an seomra ceart.",
+    "hintLink": "tá acmhainní géarchéime liostaithe ag bun gach leathanach Seomra.",
+    "footerLine": "Ní ionadach é TwentyThird do chúram cliniciúil. I gcás géarchéime, déan teagmháil le do líne éigeandála áitiúil.",
+    "footerRoomLabel": "an seomra"
+  }
+}

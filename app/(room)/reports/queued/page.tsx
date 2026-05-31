@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import Eyebrow from "@/components/ui/Eyebrow";
 import RowLink from "@/components/ui/RowLink";
@@ -38,15 +39,14 @@ export default async function ReportsQueuedPage() {
     redirect(`/reports/${recent.id}`);
   }
 
+  const t = await getTranslations("room");
+
   return (
     <section className="report-status">
-      <Eyebrow>CLINICAL REPORT</Eyebrow>
-      <p className="report-status-line">
-        your report is being prepared — we&rsquo;ll email you when it&rsquo;s
-        ready.
-      </p>
+      <Eyebrow>{t("reports.queued.eyebrow")}</Eyebrow>
+      <p className="report-status-line">{t("reports.queued.line")}</p>
       <RowLink href="/readings" arrow="left">
-        back to the readings
+        {t("reports.queued.back")}
       </RowLink>
     </section>
   );

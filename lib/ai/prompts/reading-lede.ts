@@ -1,5 +1,5 @@
 import type { ChatMessage } from "@/lib/ai/router";
-import { ANALYST_VOICE } from "./analyst-voice";
+import { ANALYST_VOICE, analystLocaleDirective } from "./analyst-voice";
 import type { BlockSlug } from "@/lib/blocks";
 
 // Reading lede — long-form paragraph rendered on /readings under the
@@ -20,6 +20,7 @@ export type ReadingLedeInput = {
     | "script-revision";
   /** A small selection of recent intake / catchup excerpts that bear on this slug. */
   excerpts: Array<{ source: string; text: string }>;
+  locale: string;
 };
 
 const SYSTEM_TAIL = `Task — the long-form lede for a single reading on the /readings page.
@@ -45,7 +46,7 @@ export function buildReadingLedePrompt(input: ReadingLedeInput): {
       : input.excerpts.map((e) => `- (${e.source}) ${e.text}`).join("\n");
 
   return {
-    system: `${ANALYST_VOICE}\n\n${SYSTEM_TAIL}`,
+    system: `${ANALYST_VOICE}${analystLocaleDirective(input.locale)}\n\n${SYSTEM_TAIL}`,
     messages: [
       {
         role: "user",

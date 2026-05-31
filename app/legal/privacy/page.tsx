@@ -1,46 +1,44 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import FigureCard from "../../../components/figures/FigureCard";
 import { LEGAL_EFFECTIVE_DATE } from "../../../lib/legal";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — TwentyThird",
-  description:
-    "How TwentyThird handles personal data. Nothing leaves the EU. Nothing is sold.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("marketing.legal.privacy");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
-export default function PrivacyPage() {
+export default async function PrivacyPage() {
+  const t = await getTranslations("marketing.legal.privacy");
   return (
     <article className="legal-article" id="privacy">
       <section className="legal-section">
-        <div className="legal-eyebrow">PRIVACY</div>
+        <div className="legal-eyebrow">{t("eyebrow")}</div>
         <h2>
-          Personal data, <em>handled with care.</em>
+          {t("headingLead")} <em>{t("headingItalic")}</em>
         </h2>
         <p className="legal-lede">
-          TwentyThird processes what you share to give you accurate
-          psychodynamic insight. Nothing leaves the EU. Nothing is sold.
+          {t("lede")}
         </p>
 
         <div className="legal-sub">
           <h3>
-            Who <em>controls</em> your data
+            {t("controls.headingLead")} <em>{t("controls.headingItalic")}</em>{" "}
+            {t("controls.headingTail")}
           </h3>
           <p>
-            WelloWork AB, registered in Sweden (org.&nbsp;nr.&nbsp;559472‑9997),
-            operating from Uppsala, is the data controller for personal data
-            collected on this website and through direct enquiries.
+            {t("controls.p1")}
           </p>
           <p>
-            For data processed inside the TwentyThird platform on behalf of an
-            organisation — a clinic, a research institution, an employer —
-            WelloWork AB acts as processor and the customer organisation is the
-            controller. That relationship is governed by a separate Data
-            Processing Agreement.
+            {t("controls.p2")}
           </p>
         </div>
 
         <FigureCard
-          label="who controls your data"
+          label={t("figure.label")}
           subtitle=""
           fig="Fig. 01"
           className="legal-df-card"
@@ -48,37 +46,39 @@ export default function PrivacyPage() {
           <div className="df-rows">
             <div className="df-row">
               <div className="df-box">
-                <span className="df-role">Controller</span>
+                <span className="df-role">{t("figure.controller")}</span>
                 <span className="df-entity">WelloWork AB</span>
               </div>
               <div className="df-connector">
                 <div className="df-line" />
-                <span className="df-connector-label">direct relationship</span>
+                <span className="df-connector-label">
+                  {t("figure.directRelationship")}
+                </span>
               </div>
               <div className="df-box">
-                <span className="df-role">Website Visitor</span>
-                <span className="df-entity">You</span>
+                <span className="df-role">{t("figure.websiteVisitor")}</span>
+                <span className="df-entity">{t("figure.you")}</span>
               </div>
             </div>
             <div className="df-row">
               <div className="df-box">
-                <span className="df-role">Controller</span>
-                <span className="df-entity">Customer Org</span>
+                <span className="df-role">{t("figure.controller")}</span>
+                <span className="df-entity">{t("figure.customerOrg")}</span>
               </div>
               <div className="df-connector">
                 <div className="df-line" />
-                <span className="df-connector-label">via DPA</span>
+                <span className="df-connector-label">{t("figure.viaDpa")}</span>
               </div>
               <div className="df-box">
-                <span className="df-role">Processor</span>
+                <span className="df-role">{t("figure.processor")}</span>
                 <span className="df-entity">WelloWork AB</span>
               </div>
               <div className="df-connector">
                 <div className="df-line" />
               </div>
               <div className="df-box">
-                <span className="df-role">Platform User</span>
-                <span className="df-entity">You</span>
+                <span className="df-role">{t("figure.platformUser")}</span>
+                <span className="df-entity">{t("figure.you")}</span>
               </div>
             </div>
           </div>
@@ -86,139 +86,104 @@ export default function PrivacyPage() {
 
         <div className="legal-sub">
           <h3>
-            What we <em>collect</em>
+            {t("collect.headingLead")} <em>{t("collect.headingItalic")}</em>
           </h3>
           <p>
-            <strong>Contact and account data.</strong> Name, email address, and
-            any information you provide when signing up or writing to us. Legal
-            basis: performance of contract (Art.&nbsp;6(1)(b) GDPR).
+            <strong>{t("collect.contactStrong")}</strong>{" "}
+            {t("collect.contactBody")}
           </p>
           <p>
-            <strong>Session and platform data.</strong> Journal entries,
-            responses, dream content, and linguistic patterns you share inside
-            TwentyThird. This is the substrate of the analysis. Legal basis:
-            explicit consent (Art.&nbsp;9(2)(a) GDPR), given at onboarding and
-            revocable at any time. We treat this data as special-category
-            health-adjacent data and apply corresponding safeguards regardless
-            of formal classification.
+            <strong>{t("collect.sessionStrong")}</strong>{" "}
+            {t("collect.sessionBody")}
           </p>
           <p>
-            <strong>Technical data.</strong> IP address, browser type, device
-            identifiers, and usage timestamps — collected automatically when you
-            access the platform. Legal basis: legitimate interest
-            (Art.&nbsp;6(1)(f) GDPR) to maintain security and diagnose errors.
+            <strong>{t("collect.technicalStrong")}</strong>{" "}
+            {t("collect.technicalBody")}
           </p>
           <p>
-            We do not collect data on race, ethnicity, political opinion, or
-            religious belief. If content you share incidentally reveals such
-            information, it is not processed as a distinct category.
+            {t("collect.p4")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            How we <em>use</em> it
+            {t("use.headingLead")} <em>{t("use.headingItalic")}</em>{" "}
+            {t("use.headingTail")}
           </h3>
           <p>
-            We use your data to deliver and improve the TwentyThird service,
-            send transactional messages you have requested, detect and prevent
-            fraud or abuse, and comply with legal obligations.
+            {t("use.p1")}
           </p>
           <p>
-            We do not use your data for advertising profiling. We do not sell
-            it, license it, or share it with data brokers. We do not use it to
-            train general-purpose AI models operated by third parties.
+            {t("use.p2")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Who <em>sees</em> it
+            {t("sees.headingLead")} <em>{t("sees.headingItalic")}</em>{" "}
+            {t("sees.headingTail")}
           </h3>
           <p>
-            <strong>Within WelloWork AB:</strong> Clinicians and engineers who
-            need access to maintain the service. Access is role-restricted and
-            logged.
+            <strong>{t("sees.withinStrong")}</strong> {t("sees.withinBody")}
           </p>
           <p>
-            <strong>Infrastructure providers:</strong> Supabase (database and
-            authentication, EU region), Vercel (hosting, EU edge), and Postmark
-            (transactional email). Each is bound by a Data Processing Agreement
-            and processes data only on our documented instruction.
+            <strong>{t("sees.infraStrong")}</strong> {t("sees.infraBody")}
           </p>
           <p>
-            <strong>Legal obligation:</strong> We disclose data to competent
-            authorities only when required by law, and only to the extent
-            required.
+            <strong>{t("sees.legalStrong")}</strong> {t("sees.legalBody")}
           </p>
           <p>
-            No data is transferred outside the EU/EEA. If that changes, we will
-            update this policy and obtain fresh consent where required.
+            {t("sees.p4")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            <em>Retention</em>
+            <em>{t("retention.headingItalic")}</em>
           </h3>
           <p>
-            Account and platform data is retained for as long as your account
-            is active, plus 30 days after deletion to allow recovery. Technical
-            logs are retained for 90 days. Contact enquiries are retained for
-            24 months.
+            {t("retention.p1")}
           </p>
           <p>
-            After these periods, data is permanently deleted or irreversibly
-            anonymised.
+            {t("retention.p2")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            Your <em>rights</em>
+            {t("rights.headingLead")} <em>{t("rights.headingItalic")}</em>
           </h3>
           <p>
-            You have the right to access the data we hold about you, correct
-            inaccuracies, request deletion, restrict or object to processing,
-            and receive a machine-readable copy for portability. Where
-            processing is based on consent, you may withdraw it at any time
-            without affecting the lawfulness of processing before withdrawal.
+            {t("rights.p1")}
           </p>
           <p>
-            To exercise any right:{" "}
+            {t("rights.exerciseLead")}{" "}
             <a href="mailto:privacy@day-23.com" className="legal-link">
               privacy@day-23.com
             </a>
-            . We respond within 30 days. If you are unsatisfied with our
-            response, you may lodge a complaint with
-            Integritetsskyddsmyndigheten (IMY), Sweden&rsquo;s data protection
-            authority.
+            {t("rights.exerciseTail")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            <em>Children</em>
+            <em>{t("children.headingItalic")}</em>
           </h3>
           <p>
-            TwentyThird is not directed at persons under 18. We do not
-            knowingly collect data from minors. If we become aware that a minor
-            has submitted data, we delete it promptly.
+            {t("children.p1")}
           </p>
         </div>
 
         <div className="legal-sub">
           <h3>
-            <em>Changes</em>
+            <em>{t("changes.headingItalic")}</em>
           </h3>
           <p>
-            We update this policy when our practices change. Material changes
-            are notified by email at least 14 days before they take effect. The
-            version date appears at the bottom of this page.
+            {t("changes.p1")}
           </p>
           <p className="legal-effective">
-            Effective: {LEGAL_EFFECTIVE_DATE} · Governing law: Swedish law and
-            the GDPR
+            {t("changes.effectivePrefix")} {LEGAL_EFFECTIVE_DATE}{" "}
+            {t("changes.effectiveSuffix")}
           </p>
         </div>
       </section>
