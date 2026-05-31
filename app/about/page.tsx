@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Reveal from "../../components/layout/Reveal";
@@ -267,6 +268,57 @@ export default async function AboutPage() {
               </span>{" "}
               {t("final.ctaGhostText")}
             </Link>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* AUTHOR */}
+      <Reveal as="section" className="page-section author-section">
+        <div className="container">
+          <div className="split-row">
+            <div className="author-portrait">
+              <div className="portrait-wrap">
+                <Image
+                  src="/images/John.jpeg"
+                  alt={t("author.photoAlt")}
+                  width={1200}
+                  height={896}
+                  sizes="(max-width: 980px) 100vw, 40vw"
+                />
+              </div>
+              <div className="caption">
+                <span className="mono">{t("author.portraitCaption")}</span>
+                <span className="name">{t("author.portraitName")}</span>
+              </div>
+            </div>
+            <div className="split-copy author-copy">
+              <div className="eyebrow">{t("author.eyebrow")}</div>
+              <h2>
+                {t("author.headingLead")}{" "}
+                <span className="it">{t("author.headingItalic")}</span>.
+              </h2>
+              <p>{t("author.para1")}</p>
+              <p>{t("author.para2")}</p>
+              <div className="author-links">
+                <a
+                  className="author-link"
+                  href="https://www.linkedin.com/in/muhammadi-bg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="author-link-label">
+                    {t("author.linkedinLabel")}
+                  </span>
+                  <span className="ar" aria-hidden="true">→</span>
+                </a>
+                <a className="author-link" href="mailto:john@wellowork.net">
+                  <span className="author-link-label">
+                    {t("author.emailLabel")}
+                  </span>
+                  <span className="ar" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </Reveal>

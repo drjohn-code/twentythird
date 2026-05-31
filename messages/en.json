@@ -157,6 +157,18 @@
         "ctaPrimary": "Read the method",
         "ctaGhostPrefix": "or",
         "ctaGhostText": "write to us"
+      },
+      "author": {
+        "eyebrow": "THE AUTHOR",
+        "headingLead": "Built by a",
+        "headingItalic": "physician",
+        "para1": "John is a physician working where clinical excellence meets scalable systems. For more than 5 years he has built analytics and researched cognitive science — how the mind forms behaviour, and what that behaviour costs performance.",
+        "para2": "TwentyThird is that work made usable: modern computation set beside more than 100 years of clinical practice in mental health. He built the instrument he wanted to read from.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "PHYSICIAN · WELLOWORK AB",
+        "portraitName": "John",
+        "photoAlt": "John"
       }
     },
     "contact": {
