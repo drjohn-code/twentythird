@@ -529,6 +529,18 @@
         "ctaPrimary": "Lees de methode",
         "ctaGhostPrefix": "of",
         "ctaGhostText": "schrijf ons"
+      },
+      "author": {
+        "eyebrow": "DE AUTEUR",
+        "headingLead": "Gebouwd door een",
+        "headingItalic": "arts",
+        "para1": "John is arts en werkt daar waar klinische excellentie schaalbare systemen ontmoet. Al meer dan 5 jaar bouwt hij analyses en doet hij onderzoek naar cognitiewetenschap — hoe de geest gedrag vormt, en wat dat gedrag de prestaties kost.",
+        "para2": "TwentyThird is dat werk bruikbaar gemaakt: moderne berekening naast meer dan 100 jaar klinische praktijk in de geestelijke gezondheidszorg. Hij bouwde het instrument waaruit hij zelf wilde lezen.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "OPRICHTER · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

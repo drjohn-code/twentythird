@@ -529,6 +529,18 @@
         "ctaPrimary": "Preberite metodo",
         "ctaGhostPrefix": "ali",
         "ctaGhostText": "pišite nam"
+      },
+      "author": {
+        "eyebrow": "AUTOR",
+        "headingLead": "Vytvoril",
+        "headingItalic": "lekár",
+        "para1": "John je lekár, ktorý pôsobí tam, kde sa klinická dokonalosť stretáva so škálovateľnými systémami. Viac než 5 rokov buduje analytiku a skúma kognitívnu vedu — ako myseľ formuje správanie a koľko to správanie stojí výkon.",
+        "para2": "TwentyThird je táto práca pretvorená na použiteľnú: moderné výpočty postavené vedľa viac než 100 rokov klinickej praxe v oblasti duševného zdravia. Zostrojil nástroj, z ktorého chcel sám čítať.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "ZAKLADATEĽ · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

@@ -529,6 +529,18 @@
         "ctaPrimary": "Lue menetelmä",
         "ctaGhostPrefix": "tai",
         "ctaGhostText": "kirjoita meille"
+      },
+      "author": {
+        "eyebrow": "TEKIJÄ",
+        "headingLead": "Sen rakensi",
+        "headingItalic": "lääkäri",
+        "para1": "John on lääkäri, joka työskentelee siellä, missä kliininen huippuosaaminen kohtaa skaalautuvat järjestelmät. Yli 5 vuoden ajan hän on rakentanut analytiikkaa ja tutkinut kognitiotiedettä — miten mieli muovaa käyttäytymistä ja mitä se käyttäytyminen maksaa suorituskyvylle.",
+        "para2": "TwentyThird on tuo työ käytettäväksi tehtynä: moderni laskenta aseteltuna yli 100 vuoden kliinisen mielenterveystyön rinnalle. Hän rakensi välineen, josta itse halusi lukea.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "PERUSTAJA · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

@@ -163,6 +163,18 @@
         "ctaPrimary": "Lasīt metodi",
         "ctaGhostPrefix": "vai",
         "ctaGhostText": "rakstiet mums"
+      },
+      "author": {
+        "eyebrow": "AUTORS",
+        "headingLead": "Radīja",
+        "headingItalic": "ārsts",
+        "para1": "John ir ārsts, kurš strādā tur, kur klīniskā izcilība satiekas ar mērogojamām sistēmām. Vairāk nekā 5 gadus viņš veido analītiku un pēta kognitīvo zinātni — kā prāts veido uzvedību un cik šī uzvedība maksā sniegumam.",
+        "para2": "TwentyThird ir šis darbs, padarīts lietojams: mūsdienu skaitļošana, kas nostādīta blakus vairāk nekā 100 gadu klīniskajai praksei garīgās veselības jomā. Viņš uzbūvēja instrumentu, no kura pats vēlējās lasīt.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "DIBINĀTĀJS · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

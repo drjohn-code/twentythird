@@ -529,6 +529,18 @@
         "ctaPrimary": "Léigh an modh",
         "ctaGhostPrefix": "nó",
         "ctaGhostText": "scríobh chugainn"
+      },
+      "author": {
+        "eyebrow": "AN tÚDAR",
+        "headingLead": "Tógtha ag",
+        "headingItalic": "dochtúir",
+        "para1": "Is dochtúir é John a oibríonn san áit a mbuaileann sármhaitheas cliniciúil le córais inscálaithe. Le breis is 5 bliana tá anailísíocht á tógáil aige agus eolaíocht chognaíoch á taighde aige — conas a mhúnlaíonn an intinn iompar, agus an costas a bhaineann an t-iompar sin as feidhmíocht.",
+        "para2": "Is é TwentyThird an obair sin arna déanamh inúsáidte: ríomhaireacht nua-aimseartha curtha taobh le breis is 100 bliain de chleachtas cliniciúil i sláinte mheabhrach. Thóg sé an uirlis ar theastaigh uaidh féin léamh aisti.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "BUNAITHEOIR · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

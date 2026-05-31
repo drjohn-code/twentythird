@@ -529,6 +529,18 @@
         "ctaPrimary": "Aqra l-metodu",
         "ctaGhostPrefix": "jew",
         "ctaGhostText": "iktbilna"
+      },
+      "author": {
+        "eyebrow": "L-AWTUR",
+        "headingLead": "Maħluq minn",
+        "headingItalic": "tabib",
+        "para1": "John huwa tabib li jaħdem fejn l-eċċellenza klinika tiltaqa’ mas-sistemi skalabbli. Għal aktar minn 5 snin bena l-analitika u rriċerka x-xjenza koġnittiva — kif il-moħħ jifforma l-imġiba, u kemm tiswa dik l-imġiba fil-prestazzjoni.",
+        "para2": "TwentyThird huwa dak ix-xogħol li sar użabbli: komputazzjoni moderna mqiegħda ħdejn aktar minn 100 sena ta’ prattika klinika fis-saħħa mentali. Huwa bena l-għodda li ried jaqra minnha hu stess.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "FUNDATUR · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

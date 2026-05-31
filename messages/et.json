@@ -163,6 +163,18 @@
         "ctaPrimary": "Loe meetodit",
         "ctaGhostPrefix": "või",
         "ctaGhostText": "kirjuta meile"
+      },
+      "author": {
+        "eyebrow": "AUTOR",
+        "headingLead": "Selle lõi",
+        "headingItalic": "arst",
+        "para1": "John on arst, kes töötab seal, kus kliiniline tipptase kohtub skaleeritavate süsteemidega. Rohkem kui 5 aastat on ta ehitanud analüütikat ja uurinud kognitiivteadust — kuidas meel kujundab käitumist ja mida see käitumine sooritusele maksma läheb.",
+        "para2": "TwentyThird on see töö kasutatavaks tehtud: kaasaegne arvutus pandud kõrvuti enam kui 100 aasta kliinilise praktikaga vaimse tervise vallas. Ta ehitas tööriista, millest ta ise lugeda tahtis.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "ASUTAJA · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

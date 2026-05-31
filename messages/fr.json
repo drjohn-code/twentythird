@@ -530,6 +530,18 @@
         "ctaPrimary": "Lire la méthode",
         "ctaGhostPrefix": "ou",
         "ctaGhostText": "nous écrire"
+      },
+      "author": {
+        "eyebrow": "L’AUTEUR",
+        "headingLead": "Conçu par un",
+        "headingItalic": "médecin",
+        "para1": "John est médecin et travaille là où l’excellence clinique rencontre les systèmes évolutifs. Depuis plus de 5 ans, il construit des analyses et étudie les sciences cognitives — comment l’esprit façonne le comportement, et ce que ce comportement coûte à la performance.",
+        "para2": "TwentyThird, c’est ce travail rendu utilisable : un calcul moderne placé à côté de plus de 100 ans de pratique clinique en santé mentale. Il a construit l’instrument dont il voulait lui-même se servir pour lire.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "FONDATEUR · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

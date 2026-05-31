@@ -529,6 +529,18 @@
         "ctaPrimary": "Lestu um aðferðina",
         "ctaGhostPrefix": "eða",
         "ctaGhostText": "skrifaðu okkur"
+      },
+      "author": {
+        "eyebrow": "HÖFUNDURINN",
+        "headingLead": "Hannað af",
+        "headingItalic": "lækni",
+        "para1": "John er læknir sem starfar þar sem klínísk fágun mætir skalanlegum kerfum. Í meira en 5 ár hefur hann byggt greiningar og rannsakað hugfræði — hvernig hugurinn mótar hegðun og hvað sú hegðun kostar í frammistöðu.",
+        "para2": "TwentyThird er það verk gert nothæft: nútímaleg reikniorka sett við hlið meira en 100 ára klínískrar reynslu í geðheilbrigði. Hann smíðaði tækið sem hann vildi sjálfur lesa úr.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "STOFNANDI · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

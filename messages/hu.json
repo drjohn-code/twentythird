@@ -529,6 +529,18 @@
         "ctaPrimary": "Olvassa el a módszert",
         "ctaGhostPrefix": "vagy",
         "ctaGhostText": "írjon nekünk"
+      },
+      "author": {
+        "eyebrow": "A SZERZŐ",
+        "headingLead": "Megalkotta egy",
+        "headingItalic": "orvos",
+        "para1": "John orvos, aki ott dolgozik, ahol a klinikai kiválóság találkozik a skálázható rendszerekkel. Több mint 5 éve épít analitikát és kutatja a kognitív tudományt — hogyan formálja az elme a viselkedést, és mibe kerül ez a viselkedés a teljesítmény szempontjából.",
+        "para2": "A TwentyThird ez a munka használhatóvá téve: modern számítás több mint 100 év mentálhigiénés klinikai gyakorlata mellé állítva. Megépítette azt az eszközt, amelyből maga is olvasni szeretett volna.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "ALAPÍTÓ · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

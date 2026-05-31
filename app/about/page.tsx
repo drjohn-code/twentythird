@@ -249,29 +249,6 @@ export default async function AboutPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <Reveal as="section" className="page-final">
-        <div className="container">
-          <div className="eyebrow" style={{ marginBottom: "28px" }}>
-            {t("final.eyebrow")}
-          </div>
-          <h2>
-            {t("final.headingLead")} <span className="it">{t("final.headingItalic")}</span>.
-          </h2>
-          <div className="cta-row">
-            <Link href="/" className="cta">
-              {t("final.ctaPrimary")} <span className="arrow">→</span>
-            </Link>
-            <Link href="/contact" className="cta-ghost">
-              <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
-                {t("final.ctaGhostPrefix")}
-              </span>{" "}
-              {t("final.ctaGhostText")}
-            </Link>
-          </div>
-        </div>
-      </Reveal>
-
       {/* AUTHOR */}
       <Reveal as="section" className="page-section author-section">
         <div className="container">
@@ -319,6 +296,29 @@ export default async function AboutPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* FINAL CTA */}
+      <Reveal as="section" className="page-final">
+        <div className="container">
+          <div className="eyebrow" style={{ marginBottom: "28px" }}>
+            {t("final.eyebrow")}
+          </div>
+          <h2>
+            {t("final.headingLead")} <span className="it">{t("final.headingItalic")}</span>.
+          </h2>
+          <div className="cta-row">
+            <Link href="/" className="cta">
+              {t("final.ctaPrimary")} <span className="arrow">→</span>
+            </Link>
+            <Link href="/contact" className="cta-ghost">
+              <span style={{ fontFamily: "var(--serif)", fontStyle: "italic" }}>
+                {t("final.ctaGhostPrefix")}
+              </span>{" "}
+              {t("final.ctaGhostText")}
+            </Link>
           </div>
         </div>
       </Reveal>

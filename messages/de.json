@@ -163,6 +163,18 @@
         "ctaPrimary": "Methode lesen",
         "ctaGhostPrefix": "oder",
         "ctaGhostText": "schreiben Sie uns"
+      },
+      "author": {
+        "eyebrow": "DER AUTOR",
+        "headingLead": "Entwickelt von einem",
+        "headingItalic": "Arzt",
+        "para1": "John ist Arzt und arbeitet dort, wo klinische Exzellenz auf skalierbare Systeme trifft. Seit mehr als 5 Jahren baut er Analysen auf und erforscht die Kognitionswissenschaft — wie der Geist Verhalten formt und was dieses Verhalten die Leistung kostet.",
+        "para2": "TwentyThird ist diese Arbeit, nutzbar gemacht: moderne Berechnung neben mehr als 100 Jahren klinischer Praxis in der psychischen Gesundheit. Er baute das Instrument, aus dem er selbst lesen wollte.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "GRÜNDER · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

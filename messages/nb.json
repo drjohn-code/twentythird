@@ -529,6 +529,18 @@
         "ctaPrimary": "Les metoden",
         "ctaGhostPrefix": "eller",
         "ctaGhostText": "skriv til oss"
+      },
+      "author": {
+        "eyebrow": "FORFATTEREN",
+        "headingLead": "Bygget av en",
+        "headingItalic": "lege",
+        "para1": "John er lege og arbeider der klinisk dyktighet møter skalerbare systemer. I mer enn 5 år har han bygget analyser og forsket på kognitiv vitenskap — hvordan sinnet former atferd, og hva den atferden koster i ytelse.",
+        "para2": "TwentyThird er det arbeidet gjort brukbart: moderne beregning satt ved siden av mer enn 100 år med klinisk praksis innen psykisk helse. Han bygde instrumentet han selv ønsket å lese fra.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "GRUNNLEGGER · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

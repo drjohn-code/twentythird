@@ -546,6 +546,18 @@
         "ctaPrimary": "Skaitykite metodą",
         "ctaGhostPrefix": "arba",
         "ctaGhostText": "parašykite mums"
+      },
+      "author": {
+        "eyebrow": "AUTORIUS",
+        "headingLead": "Sukūrė",
+        "headingItalic": "gydytojas",
+        "para1": "John yra gydytojas, dirbantis ten, kur klinikinė kompetencija susitinka su keičiamo mastelio sistemomis. Daugiau nei 5 metus jis kuria analitiką ir tiria kognityvinį mokslą — kaip protas formuoja elgseną ir kiek ta elgsena kainuoja rezultatams.",
+        "para2": "TwentyThird yra tas darbas, paverstas naudojamu: šiuolaikiniai skaičiavimai, pastatyti šalia daugiau nei 100 metų klinikinės praktikos psichikos sveikatos srityje. Jis sukūrė įrankį, iš kurio pats norėjo skaityti.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "ĮKŪRĖJAS · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {

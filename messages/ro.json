@@ -529,6 +529,18 @@
         "ctaPrimary": "Citește metoda",
         "ctaGhostPrefix": "sau",
         "ctaGhostText": "scrie-ne"
+      },
+      "author": {
+        "eyebrow": "AUTORUL",
+        "headingLead": "Creat de un",
+        "headingItalic": "medic",
+        "para1": "John este medic și lucrează acolo unde excelența clinică întâlnește sistemele scalabile. De mai bine de 5 ani construiește analize și cercetează știința cognitivă — cum modelează mintea comportamentul și cât costă acel comportament în privința performanței.",
+        "para2": "TwentyThird este acea muncă făcută utilizabilă: calcul modern așezat alături de mai bine de 100 de ani de practică clinică în sănătatea mintală. A construit instrumentul din care voia el însuși să citească.",
+        "linkedinLabel": "LinkedIn",
+        "emailLabel": "john@wellowork.net",
+        "portraitCaption": "FONDATOR · WELLOWORK AB",
+        "portraitName": "John Muhammadi, M.D.",
+        "photoAlt": "John"
       }
     },
     "contact": {
