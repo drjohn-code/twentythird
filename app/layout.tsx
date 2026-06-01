@@ -7,6 +7,8 @@ import Atmosphere from "../components/layout/Atmosphere";
 import Grain from "../components/layout/Grain";
 import { MarketingNav, MarketingFooter } from "../components/layout/MarketingChrome";
 import SiteInteractions from "../components/layout/SiteInteractions";
+import MarketingAnalytics from "../components/analytics/MarketingAnalytics";
+import { siteUrl } from "../lib/routes";
 
 // Font subsets cover every supported script. Instrument Serif (display)
 // has no Cyrillic/Greek coverage on Google Fonts — no new face is added;
@@ -49,17 +51,26 @@ const mono = JetBrains_Mono({
 // (see I18N.md): marketing pages lose static caching.
 export const dynamic = "force-dynamic";
 
+// Search Console verification renders only when the env var is set — the
+// meta tag is absent otherwise (conditional spread below).
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+
 export const metadata: Metadata = {
   title: "TwentyThird — Psychodynamic AI for the inner life",
   description:
     "Advanced psychodynamic AI for self-discovery. Subconscious loop mapping, deep-core profiling, and Lacanian analysis of the linguistic unconscious.",
-  metadataBase: new URL("https://day-23.com"),
+  // Base for canonical/OG URLs. Sourced from NEXT_PUBLIC_SITE_URL so the
+  // domain is never hardcoded (siteUrl() carries the build-time fallback).
+  metadataBase: new URL(siteUrl()),
   openGraph: {
     title: "TwentyThird",
     description: "Psychodynamic AI for the inner life.",
     siteName: "TwentyThird",
     type: "website",
   },
+  ...(googleSiteVerification
+    ? { verification: { google: googleSiteVerification } }
+    : {}),
 };
 
 const themeBootstrap = `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
@@ -93,6 +104,7 @@ export default async function RootLayout({
           {children}
           <MarketingFooter />
           <SiteInteractions />
+          <MarketingAnalytics />
         </NextIntlClientProvider>
       </body>
     </html>

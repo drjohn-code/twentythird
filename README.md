@@ -43,7 +43,9 @@ See [`.env.example`](.env.example). All values are read from `.env.local`.
 | --------------------------------- | ------------------------------------------------------------ |
 | `NEXT_PUBLIC_SUPABASE_URL`        | Your Supabase project URL                                    |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY`   | Supabase anon (publishable) key                              |
-| `NEXT_PUBLIC_SITE_URL`            | Public site origin (used for email confirmation redirects)   |
+| `NEXT_PUBLIC_SITE_URL`            | Public site origin (email redirects + the production host that loads GA) |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID`   | GA4 id (`G-…`). Unset → no analytics, no consent banner. Runs under Consent Mode v2 (default denied) on **public marketing routes only** (never the Room, /invite, /auth, /onboarding); remote gtag.js loads on the production host only |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console HTML-tag token; the `<meta>` renders only when set |
 
 ## Project layout
 

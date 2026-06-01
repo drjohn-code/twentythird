@@ -3,38 +3,21 @@
 import { usePathname } from "next/navigation";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { isPrivatePath } from "@/lib/routes";
 
-// Room and invite routes render their own chrome (RoomNav + RoomFooter,
-// or no chrome at all on /invite). The marketing Nav/Footer should not
-// appear on top of them. The list mirrors every URL prefix served by
-// app/(room)/* plus the public /invite landing.
-const HIDE_PREFIXES = [
-  "/room",
-  "/readings",
-  "/catchup",
-  "/consulting",
-  "/case-file",
-  "/settings",
-  "/subscribe",
-  "/reports",
-  "/intake",
-  "/connections",
-  "/invite",
-];
-
-function isHidden(pathname: string | null): boolean {
-  if (!pathname) return false;
-  return HIDE_PREFIXES.some(
-    (p) => pathname === p || pathname.startsWith(`${p}/`),
-  );
-}
+// Room, invite, auth, onboarding, and internal routes render their own
+// chrome (RoomNav + RoomFooter, a self-contained auth/onboarding shell, or
+// no chrome at all on /invite). The marketing Nav/Footer must not appear on
+// top of them. lib/routes.ts (PRIVATE_PREFIXES) is the single source of
+// truth — shared with app/robots.ts so the private-route list can never
+// drift. (Analytics no longer path-gates — see lib/routes.ts.)
 
 export function MarketingNav() {
-  if (isHidden(usePathname())) return null;
+  if (isPrivatePath(usePathname())) return null;
   return <Nav />;
 }
 
 export function MarketingFooter() {
-  if (isHidden(usePathname())) return null;
+  if (isPrivatePath(usePathname())) return null;
   return <Footer />;
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import LogoMark from "../brand/LogoMark";
+import CookiePreferencesButton from "../consent/CookiePreferencesButton";
 
 export default function Footer() {
   const t = useTranslations("marketing.footer");
@@ -42,6 +43,7 @@ export default function Footer() {
             <Link href="/legal/privacy">{t("privacy")}</Link>
             <Link href="/legal/terms">{t("terms")}</Link>
             <Link href="/legal/cookies">{t("cookies")}</Link>
+            <CookiePreferencesButton />
           </div>
         </div>
         <div className="footer-bot">

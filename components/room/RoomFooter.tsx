@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import RoomCookieConsent from "@/components/consent/RoomCookieConsent";
 
 /**
  * Always rendered at the bottom of every Room page. The crisis safety
@@ -12,7 +13,10 @@ export default async function RoomFooter() {
       <p className="room-footer-safety">{t("footerLine")}</p>
       <div className="room-footer-bot">
         <span>© 2026 WelloWork AB</span>
-        <span>twentythird · {t("footerRoomLabel")}</span>
+        <span className="room-footer-bot-right">
+          <RoomCookieConsent />
+          <span>twentythird · {t("footerRoomLabel")}</span>
+        </span>
       </div>
     </footer>
   );
