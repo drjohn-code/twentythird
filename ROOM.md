@@ -312,6 +312,11 @@ CRON_SECRET=                        # equal to AI_INTERNAL_TOKEN in prod
 # Hosted browser for PDF capture (optional — HTML fallback if unset)
 PDF_RENDER_SERVICE_URL=
 PDF_RENDER_SERVICE_TOKEN=
+
+# SEO / analytics (optional — blank disables). See the
+# "SEO, Search Console & Analytics" section above.
+NEXT_PUBLIC_GA_MEASUREMENT_ID=        # GA4 "G-XXXXXXXXXX"; prod + public paths + consent only
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION= # GSC HTML-tag token; renders the meta only when set
 ```
 
 The pricing *amounts* (`23.23`, `11.11`) live in Stripe itself, plus the informational comment in `.env.local` and the user-facing confirm pages. They do not appear in code that ships to the client elsewhere.
@@ -345,6 +350,24 @@ The pricing *amounts* (`23.23`, `11.11`) live in Stripe itself, plus the informa
 12. **Email scheduling lives in Postgres, not in memory.** The `scheduled_emails` table is the only queue. Producers (intake submit, save-and-return page render, weekly cron) write rows; the every-minute drainer reads them. No `setTimeout` in a route handler, no in-memory queue, no external job runner. The drainer is the only consumer; idempotency is the `sent_at IS NULL` check. Vercel Cron is the only schedule source.
 
 13. **Settings consolidated Notifications + Subscription into a two-column pair.** The standalone Email block was absorbed into a renamed Notifications block (same `<EmailToggles />`, same `PATCH /api/settings/email`, same `SettingsSaveStrip` dispatch). The old Subscription row of key/values was replaced by `<SubscriptionCard />` — a `<Glass>` status surface with three states (`active`, `past_due`, none/`canceled`). Only the row-link inside the card is interactive; the card itself is informational. The unsubscribed-state row-link points at `/subscribe/confirm` and intentionally carries no price string — the `23.23` literal still lives only in `app/(room)/subscribe/confirm/page.tsx`.
+
+---
+
+## SEO, Search Console & Analytics
+
+The public marketing surface is discoverable; the Room is not. The privacy boundary is enforced in one place and reused everywhere.
+
+- **`lib/routes.ts` is the single source of truth for the *privacy boundary*.** `PRIVATE_PREFIXES` lists every prefix that must never be indexed — the authenticated Room routes, the secret-token `/invite` landing, the `/auth` and `/onboarding` flows, `/dashboard`, `/internal`, and `/api`. Two consumers import it so the list can't drift: `components/layout/MarketingChrome.tsx` (hides the marketing Nav/Footer) and `app/robots.ts` (disallows indexing). `isPrivatePath()` does the prefix match; `siteUrl()` resolves the trailing-slash-free origin from `NEXT_PUBLIC_SITE_URL`. **Analytics scoping is separate** — GA uses its own fail-closed *allow-list* (`isAnalyticsEligiblePath` in `lib/consent/consent.ts`), not the inverse of this denylist; see the GA4 bullet below.
+
+- **Sitemap & robots are public-marketing-only.** `app/sitemap.ts` lists the home page (priority 1) and the public pages (`/about`, `/methodology`, `/science`, `/plan`, `/contact`, the two long-form case/example/paper pages, `/reports/sample`, and the three `/legal/*` pages) at priority 0.7, monthly. `app/robots.ts` allows `/`, disallows every `PRIVATE_PREFIXES` entry, and references `${siteUrl()}/sitemap.xml`. On non-production deploys it blocks everything — and because Vercel previews report `NODE_ENV=production`, the prod check gates on `VERCEL_ENV === "production"` when `VERCEL_ENV` is present.
+
+- **`/reports/sample` is the one public page under a private prefix.** It lives beneath `/reports` (a Room prefix) but is a linked marketing asset, so it's a `PUBLIC_CRAWL_EXCEPTIONS` entry: explicitly `Allow`ed in robots (a longer rule wins over the parent `Disallow`) and listed in the sitemap. It stays chrome-less (under a private prefix, so `MarketingChrome` hides the Nav/Footer), but it IS a public marketing page — on the GA allow-list (`isAnalyticsEligiblePath`), so both its indexing and its analytics are opted in; only the Room chrome is suppressed.
+
+- **GA4 runs under an in-house Consent Mode v2 banner, on the public marketing surface only.** There is no `@next/third-parties` loader and no `Analytics.tsx`. `components/analytics/MarketingAnalytics.tsx` (mounted once from the root layout) gates everything on the **fail-closed allow-list** `isAnalyticsEligiblePath` (`lib/consent/consent.ts`) — the single source of truth for "GA-eligible." Anything not on it gets nothing: no gtag.js, no consent-default, no banner, no page_views. So the `(room)` group, `/invite`, `/auth`, and `/onboarding` are never tracked. Consent Mode v2 defaults register **denied** client-side before `config`; `analytics_storage` is granted only on Accept (ad_* stay denied), and the choice persists in `localStorage` (`tt-consent`, versioned). The remote `gtag.js` loads **only on the production host** (`NEXT_PUBLIC_SITE_URL`); dev + Vercel previews keep the dataLayer sequence inspectable without sending hits. A GA **kill switch** (`window['ga-disable-<ID>']`, flipped by `MarketingAnalytics`) stops the resident library the moment you leave a marketing route, so no page_view or `user_engagement` ping leaks. Banner copy is localized (`lib/consent/translations.ts`: site locale → browser → English); withdrawal is as easy as granting — the marketing footer re-opens the banner, and `RoomFooter` flips stored consent to denied. `page_view` keeps `utm_*` (campaign attribution) and drops the rest of the query.
+
+- **Search Console verification** renders via the root `metadata.verification.google` only when `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` is set (conditional spread — the meta tag is absent otherwise). `metadataBase` now reads `siteUrl()` instead of a hardcoded domain. Every public marketing page already exports its own `title`/`description`; the home page inherits the root metadata.
+
+- **Env vars added** (both `NEXT_PUBLIC_`, both optional — blank disables the feature): `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
 
 ---
 
