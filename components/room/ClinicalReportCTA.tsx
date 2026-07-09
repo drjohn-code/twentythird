@@ -4,16 +4,18 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import CTA from "@/components/ui/CTA";
 import Reveal from "@/components/layout/Reveal";
 
+import type { Entitlement } from "@/lib/entitlements";
+
 type ClinicalReportCTAProps = {
-  /** Whether the user has an active subscription. */
-  isSubscribed: boolean;
+  /** Subscription-or-trial entitlement — the single source of truth. */
+  entitlement: Entitlement;
   /** Current reading depth in [0, 1]. */
   depth: number;
   /**
-   * True when the subscriber has already used their included
+   * True when the entitled user has already used their included
    * report for the current calendar month. Computed by counting
    * `reports` rows with `kind = 'clinical'` and `created_at >=`
-   * the first of the month. Always false for non-subscribers.
+   * the first of the month. Always false when not entitled.
    */
   monthlyReportUsed: boolean;
 };
@@ -22,20 +24,28 @@ type ClinicalReportCTAProps = {
  * Bottom of /readings — the offer to generate a clinical report.
  *
  * Three states drive the button + caption:
- *   A · non-subscriber                  → glass CTA → /reports/confirm + caption
- *   B · subscriber, monthly unused      → solid CTA → POST /api/reports
- *   C · subscriber, monthly already used → glass CTA → /reports/confirm
+ *   A · not entitled                      → glass CTA → /reports/confirm + caption
+ *   B · entitled, monthly unused          → solid CTA → POST /api/reports
+ *   C · entitled, monthly already used    → glass CTA → /reports/confirm
+ *
+ * State B additionally shows a mono "trial · N days left" line under
+ * the button when the entitlement comes from a trial rather than a
+ * subscription.
  *
  * The price never appears here. It is only shown on /reports/confirm.
  */
 export default async function ClinicalReportCTA({
-  isSubscribed,
+  entitlement,
   depth,
   monthlyReportUsed,
 }: ClinicalReportCTAProps) {
   const t = await getTranslations("readings");
-  const canGenerateIncluded = isSubscribed && !monthlyReportUsed;
-  const showSubscribersCaption = !isSubscribed;
+  const canGenerateIncluded = entitlement.active && !monthlyReportUsed;
+  const showSubscribersCaption = !entitlement.active;
+  const showTrialLine =
+    canGenerateIncluded &&
+    entitlement.reason === "trial" &&
+    entitlement.trialDaysRemaining !== null;
 
   return (
     <Reveal as="section" className="clinical-report-cta">
@@ -65,6 +75,11 @@ export default async function ClinicalReportCTA({
             <CTA href="/reports/confirm">{t("report.request")}</CTA>
           )}
         </div>
+        {showTrialLine ? (
+          <p className="clinical-report-foot">
+            {t("report.trialDaysLeft", { days: entitlement.trialDaysRemaining })}
+          </p>
+        ) : null}
         {showSubscribersCaption ? (
           <p className="clinical-report-foot">
             <span>{t("report.footPrefix")}</span>

@@ -14,6 +14,7 @@ import SubscriptionCard from "@/components/room/SubscriptionCard";
 import DangerZone from "@/components/room/DangerZone";
 import AccountFields from "@/components/room/settings/AccountFields";
 import { loadSubscriptionRow } from "@/lib/subscription";
+import { getEntitlement } from "@/lib/entitlements";
 import {
   loadDepthInputs,
   computeDepthBreakdown,
@@ -48,7 +49,7 @@ export default async function SettingsPage() {
   } = await supabase.auth.getUser();
   if (!user) return null;
 
-  const [profileRes, metaRes, subscription] = await Promise.all([
+  const [profileRes, metaRes, subscription, entitlement] = await Promise.all([
     supabase
       .from("profiles")
       .select("full_name, email, birth_year")
@@ -60,6 +61,7 @@ export default async function SettingsPage() {
       .eq("user_id", user.id)
       .maybeSingle<UsersMetaRow>(),
     loadSubscriptionRow(supabase, user.id),
+    getEntitlement(user.id, supabase),
   ]);
 
   const inputs = await loadDepthInputs(user.id, supabase);
@@ -133,7 +135,7 @@ export default async function SettingsPage() {
         </SettingsBlock>
 
         <SettingsBlock title={t("blocks.subscription")} id="subscription">
-          <SubscriptionCard subscription={subscription} />
+          <SubscriptionCard subscription={subscription} entitlement={entitlement} />
         </SettingsBlock>
       </div>
 

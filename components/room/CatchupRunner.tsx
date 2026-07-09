@@ -34,7 +34,10 @@ type PollResponse = {
 type Props = {
   /** The ISO week number being captured. */
   weekNumber: number;
-  /** Whether the user is currently subscribed. Drives recommend links. */
+  /**
+   * Whether the user currently has full access — subscribed or
+   * trialing (see lib/entitlements.ts). Drives recommend links.
+   */
   isSubscribed: boolean;
 };
 

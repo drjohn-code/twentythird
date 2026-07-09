@@ -16,7 +16,9 @@
 // member-benefit line everywhere automatically.
 
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import { SUBSCRIBER_BONUS_CONNECTIONS } from "@/lib/connections";
+import type { Entitlement } from "@/lib/entitlements";
 
 type SettingsT = Awaited<ReturnType<typeof getTranslations<"settings">>>;
 
@@ -28,40 +30,56 @@ export type SubscriptionCardRow = {
 
 type Props = {
   subscription: SubscriptionCardRow | null;
+  entitlement: Entitlement;
 };
 
 type ResolvedState =
   | { kind: "none" }
   | { kind: "active"; renewsInDays: number }
-  | { kind: "cancelled_in_period"; accessUntil: string };
+  | { kind: "cancelled_in_period"; accessUntil: string }
+  | { kind: "trial"; daysRemaining: number };
 
-function resolveState(row: SubscriptionCardRow | null): ResolvedState {
-  if (!row) return { kind: "none" };
-  const status = row.status ?? null;
-  const periodEnd = row.current_period_end
-    ? new Date(row.current_period_end)
-    : null;
-  const periodEndValid = periodEnd && !Number.isNaN(periodEnd.getTime());
-  const inFuture = periodEndValid ? periodEnd.getTime() > Date.now() : false;
+function resolveState(
+  row: SubscriptionCardRow | null,
+  entitlement: Entitlement,
+): ResolvedState {
+  if (row) {
+    const status = row.status ?? null;
+    const periodEnd = row.current_period_end
+      ? new Date(row.current_period_end)
+      : null;
+    const periodEndValid = periodEnd && !Number.isNaN(periodEnd.getTime());
+    const inFuture = periodEndValid ? periodEnd.getTime() > Date.now() : false;
 
-  if (status === "active" && row.cancel_at_period_end && inFuture) {
-    return { kind: "cancelled_in_period", accessUntil: formatDate(periodEnd!) };
+    if (status === "active" && row.cancel_at_period_end && inFuture) {
+      return { kind: "cancelled_in_period", accessUntil: formatDate(periodEnd!) };
+    }
+    if (status === "active" || status === "trialing") {
+      const days = periodEndValid ? daysUntil(periodEnd!) : 0;
+      return { kind: "active", renewsInDays: Math.max(0, days) };
+    }
   }
-  if (status === "active" || status === "trialing") {
-    const days = periodEndValid ? daysUntil(periodEnd!) : 0;
-    return { kind: "active", renewsInDays: Math.max(0, days) };
+  // Not subscribed (or no row at all) — trialing takes over the card
+  // until the trial closes, then falls through to the free-tier body.
+  if (entitlement.reason === "trial" && entitlement.trialDaysRemaining !== null) {
+    return { kind: "trial", daysRemaining: entitlement.trialDaysRemaining };
   }
   return { kind: "none" };
 }
 
-export default async function SubscriptionCard({ subscription }: Props) {
+export default async function SubscriptionCard({
+  subscription,
+  entitlement,
+}: Props) {
   const t = await getTranslations("settings");
-  const state = resolveState(subscription);
+  const state = resolveState(subscription, entitlement);
 
   if (state.kind === "active")
     return <ActiveBody days={state.renewsInDays} t={t} />;
   if (state.kind === "cancelled_in_period")
     return <CancelledBody accessUntil={state.accessUntil} t={t} />;
+  if (state.kind === "trial")
+    return <TrialBody daysRemaining={state.daysRemaining} t={t} />;
   return <NoneBody t={t} />;
 }
 
@@ -180,6 +198,26 @@ function ActiveBody({ days, t }: { days: number; t: SettingsT }) {
           {t("subscription.cancel")}
         </button>
       </form>
+    </div>
+  );
+}
+
+function TrialBody({
+  daysRemaining,
+  t,
+}: {
+  daysRemaining: number;
+  t: SettingsT;
+}) {
+  return (
+    <div className="subscription-body">
+      <StatusRow value={t("subscription.trial.status", { days: daysRemaining })} t={t} />
+      <p className="subscription-tagline">{t("subscription.trial.lede", { days: daysRemaining })}</p>
+      <div className="subscription-actions">
+        <Link href="/subscribe/confirm" className="subscription-secondary">
+          {t("subscription.trial.subscribe")}
+        </Link>
+      </div>
     </div>
   );
 }

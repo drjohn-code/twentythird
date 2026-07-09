@@ -1473,7 +1473,8 @@
       "generate": "Generate clinical report",
       "request": "Request clinical report",
       "footPrefix": "one report included each month for ",
-      "footLink": "subscribers"
+      "footLink": "subscribers",
+      "trialDaysLeft": "trial · {days, plural, one {1 day left} other {# days left}}"
     }
   },
   "catchup": {
@@ -1769,7 +1770,12 @@
       "activeRenews": "active — renews in {days, plural, one {1 day} other {# days}}",
       "cancel": "cancel subscription",
       "cancelled": "cancelled — access until {date}",
-      "resubscribe": "resubscribe"
+      "resubscribe": "resubscribe",
+      "trial": {
+        "status": "trial · {days, plural, one {1 day left} other {# days left}}",
+        "lede": "the trial ends in {days, plural, one {1 day} other {# days}}. subscribing keeps the room open without interruption.",
+        "subscribe": "Subscribe now →"
+      }
     },
     "resetPassword": {
       "sent": "a reset link has been sent to {email}. check your inbox",

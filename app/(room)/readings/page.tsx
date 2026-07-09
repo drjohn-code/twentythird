@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
+import { getEntitlement } from "@/lib/entitlements";
 import Glass from "@/components/ui/Glass";
 import BlockSection from "@/components/room/BlockSection";
 import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
@@ -23,10 +24,6 @@ type BlockReadingRow = {
   version: number;
   created_at: string;
   lede: string | null;
-};
-
-type SubscriptionRow = {
-  status: string | null;
 };
 
 type IntakeResponseRow = {
@@ -79,7 +76,7 @@ export default async function ReadingsPage() {
   const [
     metaRes,
     readingsRes,
-    subRes,
+    entitlement,
     monthReportRes,
     intakeResponsesRes,
     intakeAnswersRes,
@@ -97,11 +94,7 @@ export default async function ReadingsPage() {
       .eq("user_id", user.id)
       .is("superseded_at", null)
       .order("created_at", { ascending: false }),
-    supabase
-      .from("subscriptions")
-      .select("status")
-      .eq("user_id", user.id)
-      .maybeSingle<SubscriptionRow>(),
+    getEntitlement(user.id, supabase),
     supabase
       .from("reports")
       .select("id", { count: "exact", head: true })
@@ -119,9 +112,8 @@ export default async function ReadingsPage() {
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
-  const isSubscribed = subRes.data?.status === "active";
   const monthlyReportUsed =
-    isSubscribed && (monthReportRes.count ?? 0) >= 1;
+    entitlement.active && (monthReportRes.count ?? 0) >= 1;
 
   const readingsBySlug = new Map<string, BlockReadingRow>();
   let mostRecentAt: Date | null = null;
@@ -204,7 +196,7 @@ export default async function ReadingsPage() {
       })}
 
       <ClinicalReportCTA
-        isSubscribed={isSubscribed}
+        entitlement={entitlement}
         depth={depth}
         monthlyReportUsed={monthlyReportUsed}
       />

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
+import { getEntitlement } from "@/lib/entitlements";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/layout/Reveal";
 import SessionView from "@/components/room/SessionView";
@@ -27,8 +28,6 @@ type SessionRow = {
 };
 type Turn = { role: "user" | "analyst" | "system"; text: string; at: string };
 
-type SubscriptionRow = { status: string | null };
-
 type SessionMetaRow = {
   held_question: string | null;
   topic: string | null;
@@ -49,13 +48,9 @@ export default async function ConsultingPage() {
   // (room) layout has already guaranteed a session.
   if (!user) return null;
 
-  const [subRes, openSessionRes, lastClosedSessionRes, lastCatchupRes] =
+  const [entitlement, openSessionRes, lastClosedSessionRes, lastCatchupRes] =
     await Promise.all([
-      supabase
-        .from("subscriptions")
-        .select("status")
-        .eq("user_id", user.id)
-        .maybeSingle<SubscriptionRow>(),
+      getEntitlement(user.id, supabase),
       supabase
         .from("sessions")
         .select(
@@ -83,9 +78,7 @@ export default async function ConsultingPage() {
         .maybeSingle<CatchupRow>(),
     ]);
 
-  const isSubscribed = subRes.data?.status === "active";
-
-  if (!isSubscribed) {
+  if (!entitlement.active) {
     return <ConsultingOffer />;
   }
 

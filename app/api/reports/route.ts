@@ -1,16 +1,17 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { getEntitlement } from "@/lib/entitlements";
 
 // POST /api/reports — queue a clinical report for generation.
 //
-// Subscriber gets one included report per calendar month. Free users
-// are bounced to /reports/confirm to pay. The Stripe webhook is the
-// only path that creates a paid one-off report.
+// Entitled users (subscribed OR trialing) get one included report per
+// calendar month. Everyone else is bounced to /reports/confirm to pay.
+// The Stripe webhook is the only path that creates a paid one-off
+// report.
 //
 // The actual generation happens in the background — this route only
 // inserts the row and fires the internal generator endpoint.
 
-type SubscriptionRow = { status: string | null };
 type UsersMetaRow = { reading_depth: number | null };
 
 function siteOrigin(request: Request): string {
@@ -39,14 +40,9 @@ export async function POST(request: Request): Promise<NextResponse> {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  const { data: sub } = await supabase
-    .from("subscriptions")
-    .select("status")
-    .eq("user_id", user.id)
-    .maybeSingle<SubscriptionRow>();
-  const isSubscribed = sub?.status === "active";
+  const entitlement = await getEntitlement(user.id, supabase);
 
-  if (!isSubscribed) {
+  if (!entitlement.active) {
     if (wantsRedirect(request)) {
       return NextResponse.redirect(
         new URL("/reports/confirm", siteOrigin(request)),
@@ -62,8 +58,9 @@ export async function POST(request: Request): Promise<NextResponse> {
     );
   }
 
-  // Subscribers — one included report per calendar month. Anything
-  // beyond that has to go through the one-off paid path.
+  // Entitled users (subscribed or trialing) — one included report per
+  // calendar month. Anything beyond that has to go through the
+  // one-off paid path.
   const monthStart = startOfMonthIso(new Date());
   const { count: thisMonthCount } = await supabase
     .from("reports")

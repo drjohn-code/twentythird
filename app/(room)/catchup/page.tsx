@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
+import { getEntitlement } from "@/lib/entitlements";
 import CatchupRunner from "@/components/room/CatchupRunner";
 import CTA from "@/components/ui/CTA";
 import RowLink from "@/components/ui/RowLink";
@@ -33,16 +34,11 @@ export default async function CatchupPage() {
     return await ReadBack({ row: existing });
   }
 
-  const { data: sub } = await supabase
-    .from("subscriptions")
-    .select("status")
-    .eq("user_id", user.id)
-    .maybeSingle<{ status: string | null }>();
-  const isSubscribed = sub?.status === "active";
+  const entitlement = await getEntitlement(user.id, supabase);
 
   return (
     <section className="room-section">
-      <CatchupRunner weekNumber={weekNumber} isSubscribed={isSubscribed} />
+      <CatchupRunner weekNumber={weekNumber} isSubscribed={entitlement.active} />
     </section>
   );
 }

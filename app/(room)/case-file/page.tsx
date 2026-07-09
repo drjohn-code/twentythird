@@ -11,6 +11,7 @@ import ClinicalReportCTA from "@/components/room/ClinicalReportCTA";
 import SubscriptionCard from "@/components/room/SubscriptionCard";
 import SettingsBlock from "@/components/room/SettingsBlock";
 import { loadSubscriptionRow } from "@/lib/subscription";
+import { getEntitlement } from "@/lib/entitlements";
 
 // /case-file — the chronological dossier.
 //
@@ -74,27 +75,28 @@ export default async function CaseFilePage({
     ),
   ).toISOString();
 
-  const [entriesRes, subscription, metaRes, monthReportRes] = await Promise.all([
-    entriesQuery,
-    loadSubscriptionRow(supabase, user.id),
-    supabase
-      .from("users_meta")
-      .select("reading_depth")
-      .eq("user_id", user.id)
-      .maybeSingle<{ reading_depth: number | null }>(),
-    supabase
-      .from("reports")
-      .select("id", { count: "exact", head: true })
-      .eq("user_id", user.id)
-      .eq("kind", "clinical")
-      .gte("created_at", monthStartIso),
-  ]);
+  const [entriesRes, subscription, entitlement, metaRes, monthReportRes] =
+    await Promise.all([
+      entriesQuery,
+      loadSubscriptionRow(supabase, user.id),
+      getEntitlement(user.id, supabase),
+      supabase
+        .from("users_meta")
+        .select("reading_depth")
+        .eq("user_id", user.id)
+        .maybeSingle<{ reading_depth: number | null }>(),
+      supabase
+        .from("reports")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", user.id)
+        .eq("kind", "clinical")
+        .gte("created_at", monthStartIso),
+    ]);
 
   const entries = (entriesRes.data ?? []) as CaseEntry[];
-  const isSubscribed = subscription?.status === "active";
   const depth = metaRes.data?.reading_depth ?? 0;
   const monthlyReportUsed =
-    isSubscribed && (monthReportRes.count ?? 0) >= 1;
+    entitlement.active && (monthReportRes.count ?? 0) >= 1;
 
   const isEmpty = entries.length === 0;
 
@@ -134,20 +136,20 @@ export default async function CaseFilePage({
       </Reveal>
 
       {filter === "sessions" ? (
-        isSubscribed ? (
+        entitlement.active ? (
           <SettingsBlock title={t("subscriptionTitle")} id="subscription">
-            <SubscriptionCard subscription={subscription} />
+            <SubscriptionCard subscription={subscription} entitlement={entitlement} />
           </SettingsBlock>
         ) : (
           <div className="mx-auto max-w-[480px] text-center">
             <SettingsBlock title={t("subscriptionTitle")} id="subscription">
-              <SubscriptionCard subscription={subscription} />
+              <SubscriptionCard subscription={subscription} entitlement={entitlement} />
             </SettingsBlock>
           </div>
         )
       ) : (
         <ClinicalReportCTA
-          isSubscribed={isSubscribed}
+          entitlement={entitlement}
           depth={depth}
           monthlyReportUsed={monthlyReportUsed}
         />

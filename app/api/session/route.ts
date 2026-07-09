@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { adminClient } from "@/lib/supabase/admin";
 import { getActiveLocale } from "@/lib/i18n/locale";
+import { getEntitlement } from "@/lib/entitlements";
 import { recomputeDepthFor } from "@/lib/depth";
 import { sessionClose } from "@/lib/copy";
 import { classifySafety } from "@/lib/ai/safety";
@@ -64,8 +65,6 @@ type SessionRow = {
   created_at: string;
 };
 
-type SubscriptionRow = { status: string | null };
-
 type StartBody = {
   action: "start";
   topic?: string | null;
@@ -103,18 +102,12 @@ export async function POST(request: Request): Promise<Response> {
     return NextResponse.json({ error: "missing action" }, { status: 400 });
   }
 
-  const { data: sub } = await supabase
-    .from("subscriptions")
-    .select("status")
-    .eq("user_id", user.id)
-    .maybeSingle<SubscriptionRow>();
-  if (sub?.status !== "active") {
-    return NextResponse.json(
-      { error: "consulting room requires an active subscription" },
-      { status: 402 },
-    );
-  }
-
+  // Entitlement (subscription or trial) is checked inside startSession,
+  // only when actually opening a NEW session — not here, and not for
+  // turn/close. An already-open session must not be interrupted by a
+  // trial expiring mid-conversation (see lib/entitlements.ts); the page
+  // gate at app/(room)/consulting/page.tsx is what a lapsed user
+  // actually hits on their next visit.
   const locale = await getActiveLocale();
 
   switch (body.action) {
@@ -156,9 +149,28 @@ async function startSession(
     .maybeSingle<SessionRow>();
 
   if (openRow) {
+    // Continuing an already-open session is never re-gated — a trial
+    // expiring mid-conversation must not interrupt it.
     return NextResponse.json(
       { session: openRow, resumed: true },
       { status: 200 },
+    );
+  }
+
+  // Opening a genuinely NEW session is the actual enforcement point.
+  // The (room)/consulting page already gates on the same entitlement,
+  // so a request reaching here without it means either a stale tab or
+  // a hand-crafted POST — this is defense-in-depth, not a new UI state.
+  const entitlement = await getEntitlement(userId, supabase);
+  if (!entitlement.active) {
+    return NextResponse.json(
+      {
+        error:
+          entitlement.reason === "none" && entitlement.trialEndsAt
+            ? "trial_expired"
+            : "subscription_required",
+      },
+      { status: 403 },
     );
   }
 

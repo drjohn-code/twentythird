@@ -15,6 +15,7 @@ import StructureMap from "@/components/room/analytics/StructureMap";
 import ReadingDiagram from "@/components/room/analytics/ReadingDiagram";
 import { DASHBOARD_BLOCKS } from "@/lib/blocks";
 import { firstNameFrom } from "@/lib/connections";
+import { getEntitlement } from "@/lib/entitlements";
 import {
   computeStructure,
   computeReadingDiagramInput,
@@ -29,10 +30,6 @@ type BlockReadingRow = {
   weight: number | null;
   last_refined_source: string | null;
   version: number;
-};
-
-type SubscriptionRow = {
-  status: string | null;
 };
 
 type CatchupSummaryRow = {
@@ -68,7 +65,7 @@ export default async function RoomLandingPage() {
     metaRes,
     profileRes,
     readingsRes,
-    subRes,
+    entitlement,
     catchupsRes,
     intakeResponsesRes,
     intakeAnswersRes,
@@ -90,11 +87,7 @@ export default async function RoomLandingPage() {
       )
       .eq("user_id", user.id)
       .is("superseded_at", null),
-    supabase
-      .from("subscriptions")
-      .select("status")
-      .eq("user_id", user.id)
-      .maybeSingle<SubscriptionRow>(),
+    getEntitlement(user.id, supabase),
     supabase
       .from("catchups")
       .select("week_number, created_at")
@@ -112,7 +105,6 @@ export default async function RoomLandingPage() {
   ]);
 
   const depth = metaRes.data?.reading_depth ?? 0;
-  const isSubscribed = subRes.data?.status === "active";
   const firstName = firstNameFrom(
     metaRes.data?.display_name ?? profileRes.data?.full_name ?? null,
   );
@@ -268,7 +260,7 @@ export default async function RoomLandingPage() {
               })}
             </h2>
             <p className="lede">
-              {isSubscribed
+              {entitlement.active
                 ? t("consulting.ledeSubscribed")
                 : t("consulting.ledeUnsubscribed")}
             </p>
@@ -277,7 +269,7 @@ export default async function RoomLandingPage() {
             </div>
           </div>
           <div className="room-split-figure">
-            {isSubscribed ? (
+            {entitlement.active ? (
               <FigureCard
                 label={t("consulting.figLabel")}
                 subtitle={t("consulting.figSubtitle")}
