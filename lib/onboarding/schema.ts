@@ -12,11 +12,12 @@ import {
   getStep,
   isValidStepNumber,
 } from "@/lib/onboarding/steps";
-import type {
-  AnswerValue,
-  CloseQuestion,
-  OpenQuestion,
-  StepPayload,
+import {
+  assertNever,
+  type AnswerValue,
+  type CloseQuestion,
+  type OpenQuestion,
+  type StepPayload,
 } from "@/lib/types/intake";
 
 // ---------------------------------------------------------------
@@ -49,7 +50,12 @@ export type AccountInput = z.infer<typeof accountSchema>;
 // Step payload — built from the step's question definitions
 // ---------------------------------------------------------------
 
-function questionValidator(q: CloseQuestion | OpenQuestion) {
+/** `siblings` is the full question list for the step, needed by
+ *  per_option_number to resolve its dependsOn parent's option set. */
+function questionValidator(
+  q: CloseQuestion | OpenQuestion,
+  siblings: (CloseQuestion | OpenQuestion)[],
+): z.ZodTypeAny {
   switch (q.kind) {
     case "single": {
       const allowed = new Set(q.options.map((o) => o.value));
@@ -75,6 +81,18 @@ function questionValidator(q: CloseQuestion | OpenQuestion) {
     case "open": {
       return z.string().max(5000);
     }
+    case "per_option_number": {
+      const parent = siblings.find((s) => s.id === q.dependsOn);
+      const allowedKeys = new Set(
+        parent && "options" in parent ? parent.options.map((o) => o.value) : [],
+      );
+      return z.record(
+        z.string().refine((k) => allowedKeys.has(k), `Unknown option for ${q.id}`),
+        z.number().min(q.min).max(q.max),
+      );
+    }
+    default:
+      return assertNever(q);
   }
 }
 
@@ -95,13 +113,8 @@ export function stepPayloadSchema(stepNumber: number) {
   const qidSet = new Set(qs.map((q) => q.id));
   const shape: Record<string, z.ZodTypeAny> = {};
   for (const q of qs) {
-    if (q && q.id) {
-      const validator = questionValidator(q as any);
-      if (validator) {
-        shape[q.id] = validator.optional();
-      }
-    }
-  } 
+    shape[q.id] = questionValidator(q, qs).optional();
+  }
   shape[SKIPPED_KEY] = z
     .array(
       z
@@ -160,6 +173,13 @@ export function normaliseStepPayload(
     if (v === undefined) continue;
     if (typeof v === "string" && v.length === 0) continue;
     if (Array.isArray(v) && v.length === 0) continue;
+    if (
+      typeof v === "object" &&
+      v !== null &&
+      !Array.isArray(v) &&
+      Object.keys(v).length === 0
+    )
+      continue;
     out[q.id] = v as AnswerValue;
   }
   if (skipList.length > 0) {

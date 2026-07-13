@@ -29,12 +29,13 @@ import {
   INTAKE_INTRO_PATH,
 } from "@/lib/onboarding/routing";
 import { SKIPPED_KEY } from "@/lib/onboarding/schema";
-import type {
-  AnswerValue,
-  CloseQuestion,
-  OpenQuestion,
-  StepDef,
-  StepPayload,
+import {
+  assertNever,
+  type AnswerValue,
+  type CloseQuestion,
+  type OpenQuestion,
+  type StepDef,
+  type StepPayload,
 } from "@/lib/types/intake";
 
 type StepFormProps = {
@@ -50,6 +51,7 @@ type Values = Record<string, AnswerValue | undefined>;
 
 function defaultFor(q: CloseQuestion | OpenQuestion): AnswerValue {
   if (q.kind === "multi") return [];
+  if (q.kind === "per_option_number") return {};
   return null;
 }
 
@@ -58,6 +60,7 @@ function isEmptyAnswer(v: AnswerValue | undefined): boolean {
   if (v === undefined || v === null) return true;
   if (typeof v === "string" && v.length === 0) return true;
   if (Array.isArray(v) && v.length === 0) return true;
+  if (typeof v === "object" && Object.keys(v).length === 0) return true;
   return false;
 }
 
@@ -310,17 +313,74 @@ export default function StepForm({
         </div>
       );
     }
-    // open
-    const v = (values[q.id] ?? "") as string;
-    return (
-      <Textarea
-        showWordCount
-        value={v}
-        onChange={(e) => setValue(q.id, e.target.value)}
-        placeholder=""
-        aria-label={qTitle(q.id)}
-      />
-    );
+    if (q.kind === "per_option_number") {
+      const parent = all.find((sib) => sib.id === q.dependsOn);
+      const parentOptions =
+        parent && "options" in parent ? parent.options : [];
+      const selected = (values[q.dependsOn] ?? []) as string[];
+      const raw = (values[q.id] ?? {}) as Record<string, number>;
+      if (selected.length === 0) {
+        return (
+          <p className="per-option-empty mono">
+            {ti(`questions.${slug}.${q.dependsOn}.title`)}
+          </p>
+        );
+      }
+      return (
+        <div className="per-option-number-group">
+          {selected.map((optValue) => {
+            const opt = parentOptions.find((o) => o.value === optValue);
+            const label = opt
+              ? ti(`questions.${slug}.${q.dependsOn}.options.${opt.value}`)
+              : optValue;
+            const current = raw[optValue];
+            const str = current === undefined ? "" : String(current);
+            return (
+              <div className="per-option-number-row" key={optValue}>
+                <span className="per-option-label mono">{label}</span>
+                <div className="number-field">
+                  <Input
+                    type="number"
+                    inputMode="numeric"
+                    min={q.min}
+                    max={q.max}
+                    value={str}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      const next = { ...raw };
+                      if (val === "") {
+                        delete next[optValue];
+                      } else {
+                        const n = Number(val);
+                        if (Number.isFinite(n)) next[optValue] = n;
+                      }
+                      setValue(q.id, next);
+                    }}
+                    className="number-input"
+                  />
+                  <span className="number-unit mono">
+                    {ti(`questions.${slug}.${q.id}.unit`)}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+    if (q.kind === "open") {
+      const v = (values[q.id] ?? "") as string;
+      return (
+        <Textarea
+          showWordCount
+          value={v}
+          onChange={(e) => setValue(q.id, e.target.value)}
+          placeholder=""
+          aria-label={qTitle(q.id)}
+        />
+      );
+    }
+    return assertNever(q);
   }
 
   return (

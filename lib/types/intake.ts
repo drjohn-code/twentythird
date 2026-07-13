@@ -118,6 +118,8 @@ export type MultiAnswer = string[];
 export type ScaleAnswer = number;
 export type NumberAnswer = number;
 export type OpenAnswer = string;
+/** Keyed by the dependsOn multi-question's option values. */
+export type PerOptionNumberAnswer = Record<string, number>;
 
 export type AnswerValue =
   | SingleAnswer
@@ -125,7 +127,16 @@ export type AnswerValue =
   | ScaleAnswer
   | NumberAnswer
   | OpenAnswer
+  | PerOptionNumberAnswer
   | null;
+
+/** Exhaustiveness guard: a switch over a `kind` union that reaches this
+ *  call has failed to narrow to `never`, meaning a case is missing.
+ *  Callers should hit this at compile time (tsc), not at runtime — if
+ *  it throws, a new `kind` was added without a matching case. */
+export function assertNever(x: never): never {
+  throw new Error(`Unhandled question kind: ${JSON.stringify(x)}`);
+}
 
 /** Per-step payload, as stored in the `intake_responses.payload` jsonb column.
  *
