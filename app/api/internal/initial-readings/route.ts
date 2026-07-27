@@ -29,17 +29,22 @@ import { BLOCKS, type BlockSlug } from "@/lib/blocks";
 //   5. Recompute depth.
 //   6. Mark initial_readings_status = 'ready'.
 //
-// Failures are classified:
-//   - Transient (HTTP 429/402/5xx, fetch timeouts, network errors,
-//     hourly capacity guard): leaves profiles.intake_status as
-//     'processing' and resets users_meta.initial_readings_status to
-//     'pending'. The room_ready email scheduler keeps deferring (capped
-//     at 6h) and a retry mechanism — manual via /api/internal/intake-retry
-//     or future automated worker — can pick the user back up.
-//   - Permanent (JSON parse failures, missing data, code bugs, 4xx
-//     responses other than 429/402): flips intake_status to 'failed'
-//     and initial_readings_status to 'failed'. The Room gate renders a
-//     quiet error state with a retry CTA.
+// Failures — transient (HTTP 429/402/5xx, fetch timeouts, network
+// errors, hourly capacity guard, JSON parse failures) or permanent
+// (missing data, code bugs, 4xx other than 429/402) — both flip
+// intake_status and initial_readings_status to 'failed'. There is no
+// automated worker that re-scans 'pending' rows, so a transient
+// failure used to reset back to 'pending' and sit there forever,
+// indistinguishable from "still generating" (incident: 2026-07-23,
+// a double JSON-parse failure from initial_readings left an account
+// stuck silently past the ~2h window and the room_ready email
+// deferring for 6h before it would have quietly failed). callAI
+// already retries once internally on a JSON parse failure; anything
+// that still throws after that gets treated the same as a permanent
+// failure. The Room gate renders IntakeFailedState with a retry CTA
+// (POST /api/intake/retry) either way — that CTA only fires when
+// intake_status === 'failed', so leaving a failure in 'pending' also
+// silently disabled the user's own recovery path.
 
 type InitialReadingsBody = { user_id?: string };
 
@@ -234,14 +239,11 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
       e,
     );
 
-    if (transient) {
-      await admin
-        .from("users_meta")
-        .update({ initial_readings_status: "pending" })
-        .eq("user_id", userId);
-      return;
-    }
-
+    // No automated worker re-scans 'pending' rows, so any failure that
+    // reaches here — transient or not — is a dead end unless we make
+    // it visible. Fail loud: the Room gate's IntakeFailedState + the
+    // user's own /api/intake/retry CTA only activate once
+    // intake_status === 'failed'.
     await admin
       .from("users_meta")
       .update({ initial_readings_status: "failed" })
