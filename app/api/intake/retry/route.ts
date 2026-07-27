@@ -87,7 +87,7 @@ export async function POST(): Promise<NextResponse> {
   const internalToken = process.env.AI_INTERNAL_TOKEN;
   if (internalToken) {
     try {
-      await fetch(`${siteUrl}/api/internal/initial-readings`, {
+      const res = await fetch(`${siteUrl}/api/internal/initial-readings`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -95,11 +95,39 @@ export async function POST(): Promise<NextResponse> {
         },
         body: JSON.stringify({ user_id: user.id }),
       });
-    } catch {
-      // best effort — the user is now in 'processing' / 'pending'; a
-      // future retry worker can pick them up if this call dropped.
+      if (!res.ok) {
+        console.error(
+          `[intake-retry] initial-readings trigger rejected: ${res.status}`,
+        );
+        await markTriggerFailed(admin, user.id);
+      }
+    } catch (e) {
+      console.error("[intake-retry] initial-readings trigger threw:", e);
+      await markTriggerFailed(admin, user.id);
     }
+  } else {
+    console.error(
+      "[intake-retry] AI_INTERNAL_TOKEN missing — initial readings never triggered",
+    );
+    await markTriggerFailed(admin, user.id);
   }
 
   return NextResponse.json({ ok: true }, { status: 202 });
+}
+
+// A rejected or thrown trigger means the background job never started,
+// so the row would otherwise sit in 'processing'/'pending' forever with
+// nothing to move it — the original silent-hang shape.
+async function markTriggerFailed(
+  admin: NonNullable<ReturnType<typeof adminClient>>,
+  userId: string,
+): Promise<void> {
+  await admin
+    .from("users_meta")
+    .update({ initial_readings_status: "failed" })
+    .eq("user_id", userId);
+  await admin
+    .from("profiles")
+    .update({ intake_status: "failed" })
+    .eq("id", userId);
 }

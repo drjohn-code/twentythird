@@ -137,7 +137,11 @@ async function runInitialReadingsJob(userId: string): Promise<void> {
       system,
       messages,
       jsonMode: true,
-      maxTokens: 3500,
+      // 12 blocks of JSON needs ~1300 tokens, but gemini-2.5-pro spends
+      // most of its budget on reasoning tokens before emitting any of
+      // it — at 3500 every call came back pinned at 3484–3486 and cut
+      // off mid-object. Matches report_generation's ceiling.
+      maxTokens: 8000,
       temperature: 0.4,
       userId,
       timeoutMs: 90_000,

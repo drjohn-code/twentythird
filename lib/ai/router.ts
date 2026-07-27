@@ -147,6 +147,31 @@ class JsonParseError extends Error {
   }
 }
 
+// Raised when the model stopped because it hit max_tokens rather than
+// finishing its answer. Previously this surfaced only as a downstream
+// JsonParseError — the completion was well-formed prose cut off
+// mid-object, so the real cause (a maxTokens ceiling too low for the
+// task) was invisible. Carries token counts only, never content.
+export class AiTruncatedError extends Error {
+  readonly task: AITask;
+  readonly completionTokens: number | null;
+  readonly maxTokens: number | null;
+
+  constructor(args: {
+    task: AITask;
+    completionTokens: number | null;
+    maxTokens: number | null;
+  }) {
+    super(
+      `response truncated at max_tokens (task=${args.task}, completion_tokens=${args.completionTokens ?? "?"}, max_tokens=${args.maxTokens ?? "?"})`,
+    );
+    this.name = "AiTruncatedError";
+    this.task = args.task;
+    this.completionTokens = args.completionTokens;
+    this.maxTokens = args.maxTokens;
+  }
+}
+
 // parseModelJson — normalize the model's raw text into a JSON string
 // we know parses, or throw JsonParseError. Used by callAI when
 // jsonMode is true. Anthropic models on OpenRouter do not honor
@@ -309,7 +334,7 @@ type LogPayload = {
   completionTokens?: number | null;
   costUsd?: number | null;
   durationMs: number;
-  status: "ok" | "error" | "timeout" | "parse_error";
+  status: "ok" | "error" | "timeout" | "parse_error" | "truncated";
   errorMessage?: string | null;
 };
 
@@ -360,6 +385,7 @@ export async function callAI(
     let status: LogPayload["status"] = "ok";
     let errorMessage: string | null = null;
     let thrown: unknown = null;
+    let finishReason: string | null = null;
     try {
       const res = await fetch(OPENROUTER_URL, {
         method: "POST",
@@ -381,6 +407,7 @@ export async function callAI(
       const json = (await res.json()) as OpenRouterChatResponse;
       text = json.choices?.[0]?.message?.content ?? "";
       usage = extractUsage(json);
+      finishReason = json.choices?.[0]?.finish_reason ?? null;
     } catch (err) {
       thrown = err;
       if ((err as Error).name === "AbortError") {
@@ -421,6 +448,30 @@ export async function callAI(
       clearTimeout(timer);
     }
     const duration = Date.now() - started;
+
+    // Check truncation before parsing. A response cut off at the token
+    // ceiling is well-formed prose ending mid-object — it would
+    // otherwise surface as a generic JSON parse failure and send the
+    // reader hunting for a quoting bug that isn't there.
+    if (finishReason === "length") {
+      const err = new AiTruncatedError({
+        task,
+        completionTokens: usage.completionTokens,
+        maxTokens: opts.maxTokens ?? null,
+      });
+      await logCall({
+        task,
+        model,
+        userId: opts.userId,
+        promptTokens: usage.promptTokens,
+        completionTokens: usage.completionTokens,
+        costUsd: usage.costUsd,
+        durationMs: duration,
+        status: "truncated",
+        errorMessage: err.message,
+      });
+      throw err;
+    }
 
     if (opts.jsonMode) {
       try {
@@ -589,7 +640,7 @@ export async function* streamAI(
 // ────────────────────────────────────────────────────────────────────
 
 type OpenRouterChatResponse = {
-  choices?: Array<{ message?: { content?: string } }>;
+  choices?: Array<{ message?: { content?: string }; finish_reason?: string }>;
   usage?: OpenRouterUsage;
 };
 type OpenRouterStreamEvent = {
