@@ -118,7 +118,10 @@ export default async function SignUpPage({
               autoComplete="new-password"
               aria-describedby="signup-password-hint"
             />
-            <p id="signup-password-hint" className="auth-hint">
+            {/* PASSWORD_HINT is a hardcoded English literal (lib/auth/messages.ts),
+                not wired through the locale layer — lang="en" so it isn't
+                announced as Lithuanian; translating it is separate, fenced-off work. */}
+            <p id="signup-password-hint" className="auth-hint" lang="en">
               {PASSWORD_HINT}
             </p>
           </div>
