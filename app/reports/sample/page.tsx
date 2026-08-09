@@ -16,7 +16,10 @@ export const metadata: Metadata = {
 
 export default function SampleReportPage() {
   return (
-    <main className="page-shell">
+    // Body copy here is a hardcoded English sample report — never wired
+    // through the locale layer (see I18N.md). lang="en" so it isn't
+    // announced as Lithuanian; translating it is separate, fenced-off work.
+    <main className="page-shell" lang="en">
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">
