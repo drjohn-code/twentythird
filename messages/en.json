@@ -10,7 +10,8 @@
     "back": "Back",
     "continue": "Continue",
     "retry": "Try again",
-    "more": "more"
+    "more": "more",
+    "priceLine": "{sub}/month · {report} one-off report"
   },
   "nav": {
     "room": "Room",

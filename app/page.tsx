@@ -3,6 +3,7 @@ import LandingInteractions from "./landing-interactions";
 
 export default async function LandingPage() {
   const t = await getTranslations("marketing.landing");
+  const tc = await getTranslations("common");
   return (
     <main className="shell">
       {/* HERO */}
@@ -46,6 +47,9 @@ export default async function LandingPage() {
               {t("hero.ctaGhostText")}
             </a>
           </div>
+          <p className="mono" style={{ marginTop: "20px", color: "var(--fg-mute)" }}>
+            {tc("priceLine", { sub: "€23.23", report: "€11.11" })}
+          </p>
         </div>
       </section>
 

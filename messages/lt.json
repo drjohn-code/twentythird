@@ -2202,7 +2202,8 @@
     "back": "Atgal",
     "continue": "Tęsti",
     "retry": "Bandyti dar kartą",
-    "more": "daugiau"
+    "more": "daugiau",
+    "priceLine": "{sub}/mėn. · {report} vienkartinė ataskaita"
   },
   "nav": {
     "room": "Kambarys",
