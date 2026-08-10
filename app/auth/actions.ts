@@ -162,7 +162,7 @@ export async function resendConfirmation(formData: FormData) {
   const parsed = emailSchema.safeParse(email);
   if (!parsed.success) {
     redirect(
-      backTo("/auth/sign-up", { error: AUTH_ERRORS.EMAIL_INVALID }),
+      backTo("/auth/sign-up", { error: "email_invalid" }),
     );
   }
 
