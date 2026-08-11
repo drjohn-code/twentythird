@@ -1566,6 +1566,7 @@ section{position:relative;}
   margin-bottom:42px;text-wrap:pretty;
 }
 .page-final h2 .it{font-style:italic;color:var(--fg-dim)}
+.page-final .lede{color:var(--fg-dim);font-size:17px;max-width:520px;margin:0 auto}
 .page-final .cta-row{justify-content:center}
 
 /* -------- legal pages -------- */
