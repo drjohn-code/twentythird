@@ -316,6 +316,7 @@ export default async function PlanPage() {
           <h2>
             {t("final.headlineLead")} <span className="it">{t("final.headlineItalic")}</span>.
           </h2>
+          <p className="lede" style={{ marginBottom: "28px" }}>{t("final.processNote")}</p>
           <div className="cta-row">
             <Link href="/auth/sign-up" className="cta">
               {t("final.beginCta")} <span className="arrow">→</span>

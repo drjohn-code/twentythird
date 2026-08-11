@@ -262,7 +262,7 @@
         "step1TitlePre": "A",
         "step1TitleIt": "10‑step",
         "step1TitlePost": "intake.",
-        "step1Body": "Create your account and complete a 10‑step intake. This is the deep‑core profiling pass; the first reading is built entirely from what you set down here.",
+        "step1Body": "Create your account and complete a 10‑step intake. This is the deep‑core profiling pass; the first reading is built entirely from what you set down here. The reading does not arrive the moment you finish: when you submit the intake, the Room stays closed while your profile is built, and shows you the stage the work has reached.",
         "step2Sub": "mediated, never mutual",
         "step2TitlePre": "The people who",
         "step2TitleIt": "shape you",
@@ -922,6 +922,7 @@
         "eyebrow": "CONTINUE",
         "headlineLead": "Begin,",
         "headlineItalic": "or read the science",
+        "processNote": "It starts with a 10‑step intake. The first reading is built from those answers, and the Room opens when that work is done — not the moment you sign up.",
         "beginCta": "Begin",
         "or": "or",
         "readScience": "read the science"
