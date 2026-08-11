@@ -188,7 +188,7 @@ export default async function LandingPage() {
                 <span className="story-sub">{t("process.step1Sub")}</span>
               </div>
               <h3>
-                {t("process.step1TitlePre")} <span className="it">{t("process.step1TitleIt")}</span>{/^\p{L}/u.test(t("process.step1TitlePost")) ? " " : ""}{t("process.step1TitlePost")}
+                {t("process.step1TitlePre").trim() ? t("process.step1TitlePre") : null}{t("process.step1TitlePre").trim() ? " " : null}<span className="it">{t("process.step1TitleIt")}</span>{/^\p{L}/u.test(t("process.step1TitlePost")) ? " " : ""}{t("process.step1TitlePost")}
               </h3>
               <p>
                 {t("process.step1Body")}
