@@ -70,7 +70,10 @@ export default function GoogleAuthButton({ label, next }: Props) {
         </span>
       </button>
       {error ? (
-        <p className="google-error" role="alert">
+        // AUTH_ERRORS.OAUTH_FAILED is a hardcoded English literal (lib/auth/messages.ts),
+        // not wired through the locale layer — lang="en" so it isn't
+        // announced as Lithuanian; translating it is separate, fenced-off work.
+        <p className="google-error" role="alert" lang="en">
           {error}
         </p>
       ) : null}
