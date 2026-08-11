@@ -50,9 +50,6 @@ export default async function LandingPage() {
           <p className="mono" style={{ marginTop: "20px", color: "var(--fg-mute)" }}>
             {tc("priceLine", { sub: "€23.23", report: "€11.11" })}
           </p>
-          <p className="mono" style={{ marginTop: "8px", color: "var(--fg-mute)" }}>
-            {tc("processLine")}
-          </p>
         </div>
       </section>
 
