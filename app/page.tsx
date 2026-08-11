@@ -28,7 +28,7 @@ export default async function LandingPage() {
           <h1>
             {t("hero.titleLine1")}
             <br />
-            {t("hero.titleLine2Pre")} <span className="it">{t("hero.titleLine2It")}</span>,
+            {t("hero.titleLine2Pre")} <span className="it">{t("hero.titleLine2It")}</span>,{" "}
             <span className="break">
               {t("hero.titleLine3Pre")} <span className="it">{t("hero.titleLine3It")}</span>
             </span>
