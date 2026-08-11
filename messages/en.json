@@ -11,7 +11,8 @@
     "continue": "Continue",
     "retry": "Try again",
     "more": "more",
-    "priceLine": "{sub}/month · {report} one-off report"
+    "priceLine": "{sub}/month · {report} one-off report",
+    "processLine": "sign up, answer ten intake steps, then wait while we read your answers — the room opens when that's done"
   },
   "nav": {
     "room": "Room",
