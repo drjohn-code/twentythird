@@ -11,7 +11,7 @@
     "continue": "Continue",
     "retry": "Try again",
     "more": "more",
-    "priceLine": "{sub}/month · {report} one-off report"
+    "priceLine": "{sub}/month for the consulting room · {report} for a one-off clinical report"
   },
   "nav": {
     "room": "Room",
