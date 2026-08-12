@@ -63,6 +63,7 @@
         "step1TitleIt": "10-stopenjski",
         "step1TitlePost": "vnos.",
         "step1Body": "Ustvarite svoj račun in izpolnite 10-stopenjski vnos. To je globinsko profiliranje; prvo branje je v celoti zgrajeno iz tistega, kar vnesete tukaj.",
+        "step1Wait": "Čítanie neprichádza vo chvíli, keď skončíte: po odoslaní vstupného dotazníka zostáva miestnosť zatvorená, kým sa buduje váš profil, a ukazuje vám, do akého štádia práca dospela.",
         "step2Sub": "posredovano, nikoli vzajemno",
         "step2TitlePre": "Ljudje, ki",
         "step2TitleIt": "vas oblikujejo",
@@ -2228,7 +2229,8 @@
     "back": "Nazaj",
     "continue": "Nadaljuj",
     "retry": "Poskusi znova",
-    "more": "več"
+    "more": "več",
+    "priceLine": "{sub}/mesiac za konzultačnú miestnosť · {report} za jednorazovú klinickú správu"
   },
   "nav": {
     "room": "Soba",

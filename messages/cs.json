@@ -63,6 +63,7 @@
         "step1TitleIt": "10krokový",
         "step1TitlePost": "intake.",
         "step1Body": "Vytvořte si účet a dokončete 10krokový intake. Toto je hloubková profilace; první reading je zcela sestaven z toho, co zde uvedete.",
+        "step1Wait": "Čtení nepřichází ve chvíli, kdy skončíte: když odešlete intake, místnost zůstává zavřená, dokud se buduje váš profil, a ukazuje vám, kam práce dospěla.",
         "step2Sub": "zprostředkované, nikdy vzájemné",
         "step2TitlePre": "Lidé, kteří vás",
         "step2TitleIt": "formují",
@@ -2236,7 +2237,8 @@
     "back": "Zpět",
     "continue": "Pokračovat",
     "retry": "Zkusit znovu",
-    "more": "více"
+    "more": "více",
+    "priceLine": "{sub}/měsíc za konzultační místnost · {report} za jednorázovou klinickou zprávu"
   },
   "nav": {
     "room": "Místnost",

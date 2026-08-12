@@ -63,6 +63,7 @@
         "step1TitleIt": "intake in 10 fasi",
         "step1TitlePost": ".",
         "step1Body": "Crea il tuo account e completa un intake in 10 fasi. Questa è la fase di profilazione profonda; la prima lettura è costruita interamente su ciò che inserisci qui.",
+        "step1Wait": "La lettura non arriva nel momento in cui finisci: quando invii il questionario d'ingresso, la stanza resta chiusa mentre il tuo profilo viene costruito e ti mostra a che punto è arrivato il lavoro.",
         "step2Sub": "mediato, mai reciproco",
         "step2TitlePre": "Le persone che",
         "step2TitleIt": "ti plasmano",
@@ -2183,7 +2184,8 @@
     "back": "Indietro",
     "continue": "Continua",
     "retry": "Riprova",
-    "more": "altro"
+    "more": "altro",
+    "priceLine": "{sub}/mese per la stanza di consulenza · {report} per un referto clinico una tantum"
   },
   "nav": {
     "room": "Room",

@@ -2205,7 +2205,7 @@
     "continue": "Tęsti",
     "retry": "Bandyti dar kartą",
     "more": "daugiau",
-    "priceLine": "{sub}/mėn. už konsultacijų kabinetą · {report} už vienkartinę klinikinę ataskaitą"
+    "priceLine": "{sub}/mėn. už konsultacijų kambarį · {report} už vienkartinę klinikinę ataskaitą"
   },
   "nav": {
     "room": "Kambarys",

@@ -63,6 +63,7 @@
         "step1TitleIt": "10-trinns",
         "step1TitlePost": "inntak.",
         "step1Body": "Opprett kontoen din og fullfør et 10-trinns inntak. Dette er dybdekjerneprofileringen; den første lesningen er bygget utelukkende på det du legger frem her.",
+        "step1Wait": "Lesningen kommer ikke i det øyeblikket du er ferdig: når du sender inn inntaket, forblir rommet lukket mens profilen din bygges, og viser deg hvor langt arbeidet har kommet.",
         "step2Sub": "mediert, aldri gjensidig",
         "step2TitlePre": "Menneskene som",
         "step2TitleIt": "former deg",
@@ -2228,7 +2229,8 @@
     "back": "Tilbake",
     "continue": "Fortsett",
     "retry": "Prøv igjen",
-    "more": "mer"
+    "more": "mer",
+    "priceLine": "{sub}/måned for konsultasjonsrommet · {report} for en klinisk engangsrapport"
   },
   "nav": {
     "room": "Rom",

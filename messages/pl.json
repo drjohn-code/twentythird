@@ -63,6 +63,7 @@
         "step1TitleIt": "przyjęcie",
         "step1TitlePost": ".",
         "step1Body": "Utwórz konto i wypełnij 10-etapowe przyjęcie. Jest to etap profilowania głęboko rdzeniowego; pierwsze czytanie jest w całości zbudowane z tego, co tutaj zapiszesz.",
+        "step1Wait": "Czytanie nie pojawia się w chwili, gdy kończysz: po przesłaniu przyjęcia pokój pozostaje zamknięty, dopóki budowany jest Twój profil, i pokazuje, na jakim etapie jest praca.",
         "step2Sub": "pośredniczone, nigdy wzajemne",
         "step2TitlePre": "Ludzie, którzy",
         "step2TitleIt": "cię kształtują",
@@ -2181,7 +2182,8 @@
     "back": "Wstecz",
     "continue": "Kontynuuj",
     "retry": "Spróbuj ponownie",
-    "more": "więcej"
+    "more": "więcej",
+    "priceLine": "{sub}/miesiąc za pokój konsultacyjny · {report} za jednorazowy raport kliniczny"
   },
   "nav": {
     "room": "Pokój",

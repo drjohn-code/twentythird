@@ -63,6 +63,7 @@
         "step1TitleIt": "admission",
         "step1TitlePost": "en 10 étapes.",
         "step1Body": "Créez votre compte et complétez une admission en 10 étapes. Il s'agit du passage de profilage en profondeur ; la première lecture est entièrement construite à partir de ce que vous déposez ici.",
+        "step1Wait": "La lecture n'arrive pas au moment où vous terminez : lorsque vous envoyez l'entretien préalable, la salle reste fermée pendant que votre profil se construit, et vous montre l'étape que le travail a atteinte.",
         "step2Sub": "médiatisé, jamais mutuel",
         "step2TitlePre": "Les personnes qui vous",
         "step2TitleIt": "façonnent",
@@ -2242,7 +2243,8 @@
     "back": "Retour",
     "continue": "Continuer",
     "retry": "Réessayer",
-    "more": "plus"
+    "more": "plus",
+    "priceLine": "{sub}/mois pour la salle de consultation · {report} pour un rapport clinique ponctuel"
   },
   "nav": {
     "room": "Room",

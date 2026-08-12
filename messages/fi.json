@@ -63,6 +63,7 @@
         "step1TitleIt": "vaiheen",
         "step1TitlePost": "aloitus.",
         "step1Body": "Luo tili ja suorita 10-vaiheinen aloitus. Tämä on syväprofilointivaihe; ensimmäinen lukema rakentuu kokonaan siitä, mitä tähän kirjaat.",
+        "step1Wait": "Luenta ei saavu sillä hetkellä, kun lopetat: kun lähetät haastattelun, huone pysyy suljettuna, kun profiiliasi rakennetaan, ja näyttää sinulle, mihin vaiheeseen työ on edennyt.",
         "step2Sub": "välitetty, ei koskaan molemminpuolinen",
         "step2TitlePre": "Ihmiset, jotka",
         "step2TitleIt": "muokkaavat sinua",
@@ -2248,7 +2249,8 @@
     "back": "Takaisin",
     "continue": "Jatka",
     "retry": "Yritä uudelleen",
-    "more": "lisää"
+    "more": "lisää",
+    "priceLine": "{sub}/kk konsultaatiohuoneesta · {report} kertaluonteisesta kliinisestä raportista"
   },
   "nav": {
     "room": "Huone",

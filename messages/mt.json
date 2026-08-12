@@ -63,6 +63,7 @@
         "step1TitleIt": "10 passi",
         "step1TitlePost": ".",
         "step1Body": "Oħloq il-kont tiegħek u imla intake ta' 10 passi. Dan huwa l-pass tal-profiling tal-qalba profonda; l-ewwel reading tinbena kompletament minn dak li tniżżel hawn.",
+        "step1Wait": "Il-qari ma jaslux fil-mument li tispiċċa: meta tibgħat l-intake, il-kamra tibqa' magħluqa waqt li jinbena l-profil tiegħek, u turik f'liema stadju wasal ix-xogħol.",
         "step2Sub": "medjat, qatt reċiproku",
         "step2TitlePre": "Il-persuni li",
         "step2TitleIt": "jsawruk",
@@ -2181,7 +2182,8 @@
     "back": "Lura",
     "continue": "Kompli",
     "retry": "Erġa' pprova",
-    "more": "aktar"
+    "more": "aktar",
+    "priceLine": "{sub}/xahar għall-kamra tal-konsultazzjoni · {report} għal rapport kliniku ta' darba"
   },
   "nav": {
     "room": "Room",

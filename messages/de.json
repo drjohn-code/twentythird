@@ -16,7 +16,8 @@
     "back": "Zurück",
     "continue": "Weiter",
     "retry": "Erneut versuchen",
-    "more": "mehr"
+    "more": "mehr",
+    "priceLine": "{sub}/Monat für das Sprechzimmer · {report} für einen einmaligen klinischen Bericht"
   },
   "nav": {
     "room": "Room",
@@ -268,6 +269,7 @@
         "step1TitleIt": "10-stufige",
         "step1TitlePost": "Aufnahme.",
         "step1Body": "Erstellen Sie Ihr Konto und schließen Sie eine 10-stufige Aufnahme ab. Dies ist der Tiefenkern-Profildurchgang; die erste Deutung wird vollständig aus dem gebaut, was Sie hier niederlegen.",
+        "step1Wait": "Die Deutung kommt nicht in dem Moment, in dem Sie fertig sind: Wenn Sie die Aufnahme absenden, bleibt der Raum geschlossen, während Ihr Profil aufgebaut wird, und zeigt Ihnen, wie weit die Arbeit gediehen ist.",
         "step2Sub": "vermittelt, niemals gegenseitig",
         "step2TitlePre": "Die Menschen, die Sie",
         "step2TitleIt": "prägen",

@@ -63,6 +63,7 @@
         "step1TitleIt": "10-stappen",
         "step1TitlePost": "intake.",
         "step1Body": "Maak uw account aan en voltooi een intake van 10 stappen. Dit is de diepgaande profileringsfase; de eerste reading wordt volledig opgebouwd uit wat u hier vastlegt.",
+        "step1Wait": "De duiding komt niet op het moment dat u klaar bent: wanneer u de intake indient, blijft de kamer gesloten terwijl uw profiel wordt opgebouwd, en toont u hoever het werk gevorderd is.",
         "step2Sub": "gemedieerd, nooit wederzijds",
         "step2TitlePre": "De mensen die",
         "step2TitleIt": "u vormen",
@@ -2188,7 +2189,8 @@
     "back": "Terug",
     "continue": "Doorgaan",
     "retry": "Opnieuw proberen",
-    "more": "meer"
+    "more": "meer",
+    "priceLine": "{sub}/maand voor de spreekkamer · {report} voor een eenmalig klinisch rapport"
   },
   "nav": {
     "room": "Room",

@@ -63,6 +63,7 @@
         "step1TitleIt": "10-trins",
         "step1TitlePost": "intake.",
         "step1Body": "Opret din konto og udfyld en 10-trins intake. Dette er den dybdegående profileringsrunde; den første reading er udelukkende bygget på det, du angiver her.",
+        "step1Wait": "Læsningen kommer ikke i det øjeblik, du er færdig: når du indsender indtaget, forbliver rummet lukket, mens din profil bygges, og viser dig, hvor langt arbejdet er nået.",
         "step2Sub": "medieret, aldrig gensidig",
         "step2TitlePre": "Menneskerne der",
         "step2TitleIt": "former dig",
@@ -2181,7 +2182,8 @@
     "back": "Tilbage",
     "continue": "Fortsæt",
     "retry": "Prøv igen",
-    "more": "mere"
+    "more": "mere",
+    "priceLine": "{sub}/måned for konsultationsrummet · {report} for en klinisk engangsrapport"
   },
   "nav": {
     "room": "Rum",

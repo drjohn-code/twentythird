@@ -63,6 +63,7 @@
         "step1TitleIt": "preluare în 10 pași",
         "step1TitlePost": ".",
         "step1Body": "Creați-vă contul și completați o preluare în 10 pași. Aceasta este etapa de profilare profundă; prima lectură este construită în întregime din ceea ce ați consemnat aici.",
+        "step1Wait": "Lectura nu sosește în clipa în care terminați: când trimiteți chestionarul de admitere, camera rămâne închisă cât timp vă este construit profilul și vă arată la ce etapă a ajuns lucrarea.",
         "step2Sub": "mediat, niciodată reciproc",
         "step2TitlePre": "Persoanele care",
         "step2TitleIt": "vă modelează",
@@ -2240,7 +2241,8 @@
     "back": "Înapoi",
     "continue": "Continuați",
     "retry": "Reîncercați",
-    "more": "mai mult"
+    "more": "mai mult",
+    "priceLine": "{sub}/lună pentru camera de consultații · {report} pentru un raport clinic unic"
   },
   "nav": {
     "room": "Cameră",

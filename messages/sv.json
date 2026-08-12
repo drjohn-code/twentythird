@@ -63,6 +63,7 @@
         "step1TitleIt": "10-stegs",
         "step1TitlePost": "intag.",
         "step1Body": "Skapa ditt konto och slutför ett 10-stegs intag. Detta är den djupgående profileringsfasen; den första läsningen byggs helt utifrån vad du anger här.",
+        "step1Wait": "Läsningen kommer inte i det ögonblick du är klar: när du skickar in intaget förblir rummet stängt medan din profil byggs, och visar dig hur långt arbetet har kommit.",
         "step2Sub": "medierat, aldrig ömsesidigt",
         "step2TitlePre": "Människorna som",
         "step2TitleIt": "formar dig",
@@ -2181,7 +2182,8 @@
     "back": "Tillbaka",
     "continue": "Fortsätt",
     "retry": "Försök igen",
-    "more": "mer"
+    "more": "mer",
+    "priceLine": "{sub}/månad för konsultationsrummet · {report} för en klinisk engångsrapport"
   },
   "nav": {
     "room": "Rum",

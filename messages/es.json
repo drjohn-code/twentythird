@@ -63,6 +63,7 @@
         "step1TitleIt": "admisión",
         "step1TitlePost": "de 10 pasos.",
         "step1Body": "Cree su cuenta y complete una admisión de 10 pasos. Este es el pase de perfilado de núcleo profundo; la primera lectura se construye enteramente a partir de lo que usted establezca aquí.",
+        "step1Wait": "La lectura no llega en el momento en que terminas: cuando envías la admisión, la sala permanece cerrada mientras se construye tu perfil y te muestra en qué fase está el trabajo.",
         "step2Sub": "mediado, nunca mutuo",
         "step2TitlePre": "Las personas que",
         "step2TitleIt": "lo moldean",
@@ -2194,7 +2195,8 @@
     "back": "Volver",
     "continue": "Continuar",
     "retry": "Reintentar",
-    "more": "más"
+    "more": "más",
+    "priceLine": "{sub}/mes por la sala de consulta · {report} por un informe clínico puntual"
   },
   "nav": {
     "room": "Room",

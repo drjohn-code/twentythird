@@ -16,7 +16,8 @@
     "back": "Tagasi",
     "continue": "Jätka",
     "retry": "Proovi uuesti",
-    "more": "veel"
+    "more": "veel",
+    "priceLine": "{sub}/kuus konsultatsioonitoa eest · {report} ühekordse kliinilise aruande eest"
   },
   "nav": {
     "room": "Ruum",
@@ -268,6 +269,7 @@
         "step1TitleIt": "10‑sammuline",
         "step1TitlePost": "sisseastumine.",
         "step1Body": "Loo konto ja täida 10‑sammuline sisseastumine. See on sügav-tuuma profileerimise läbimine; esimene lugemine ehitatakse täielikult sellest, mida sa siia paned.",
+        "step1Wait": "Lugemine ei saabu hetkel, mil lõpetate: kui esitate sisseastumise, jääb tuba suletuks, kuni teie profiili koostatakse, ja näitab teile, millise etapini töö on jõudnud.",
         "step2Sub": "vahendatud, mitte vastastikune",
         "step2TitlePre": "Inimesed, kes",
         "step2TitleIt": "kujundavad sind",

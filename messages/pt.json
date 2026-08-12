@@ -63,6 +63,7 @@
         "step1TitleIt": "intake de 10 passos",
         "step1TitlePost": ".",
         "step1Body": "Crie a sua conta e complete uma intake de 10 passos. Esta é a passagem de perfilagem de núcleo profundo; a primeira leitura é construída inteiramente a partir do que aqui estabelece.",
+        "step1Wait": "A leitura não chega no momento em que termina: quando envia a admissão, a sala permanece fechada enquanto o seu perfil é construído e mostra-lhe em que fase está o trabalho.",
         "step2Sub": "mediado, nunca mútuo",
         "step2TitlePre": "As pessoas que",
         "step2TitleIt": "o moldam",
@@ -2197,7 +2198,8 @@
     "back": "Voltar",
     "continue": "Continuar",
     "retry": "Tentar novamente",
-    "more": "mais"
+    "more": "mais",
+    "priceLine": "{sub}/mês pela sala de consulta · {report} por um relatório clínico avulso"
   },
   "nav": {
     "room": "Sala",

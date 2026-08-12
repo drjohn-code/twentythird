@@ -63,6 +63,7 @@
         "step1TitleIt": "10 koraka",
         "step1TitlePost": ".",
         "step1Body": "Kreirajte svoj račun i ispunite unos u 10 koraka. Ovo je dubinsko profiliranje; prvo čitanje u potpunosti je izgrađeno na temelju onoga što ovdje unesete.",
+        "step1Wait": "Čitanje ne stiže u trenutku kad završite: kad pošaljete unos, soba ostaje zatvorena dok se gradi vaš profil i pokazuje vam dokle je rad stigao.",
         "step2Sub": "posredovano, nikad uzajamno",
         "step2TitlePre": "Ljudi koji",
         "step2TitleIt": "vas oblikuju",
@@ -2237,7 +2238,8 @@
     "back": "Natrag",
     "continue": "Nastavi",
     "retry": "Pokušaj ponovno",
-    "more": "više"
+    "more": "više",
+    "priceLine": "{sub}/mjesec za savjetovališnu sobu · {report} za jednokratni klinički izvještaj"
   },
   "nav": {
     "room": "Soba",

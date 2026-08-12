@@ -63,6 +63,7 @@
         "step1TitleIt": "10 korakih",
         "step1TitlePost": ".",
         "step1Body": "Ustvarite svoj račun in izpolnite vstopni vprašalnik v 10 korakih. To je globinsko profiliranje; prvo branje je v celoti zgrajeno iz tistega, kar vnesete tukaj.",
+        "step1Wait": "Branje ne prispe v trenutku, ko končate: ko oddate vstopni vprašalnik, soba ostane zaprta, medtem ko se gradi vaš profil, in vam kaže, do katere faze je delo prišlo.",
         "step2Sub": "posredovano, nikoli vzajemno",
         "step2TitlePre": "Ljudje, ki",
         "step2TitleIt": "vas oblikujejo",
@@ -2183,7 +2184,8 @@
     "back": "Nazaj",
     "continue": "Nadaljuj",
     "retry": "Poskusi znova",
-    "more": "več"
+    "more": "več",
+    "priceLine": "{sub}/mesec za posvetovalno sobo · {report} za enkratno klinično poročilo"
   },
   "nav": {
     "room": "Soba",

@@ -63,6 +63,7 @@
         "step1TitleIt": "10 lépéses",
         "step1TitlePost": "intake.",
         "step1Body": "Hozzon létre fiókot, és töltsön ki egy 10 lépéses intake-et. Ez a mélyreható profilalkotási fázis; az első reading teljes egészében abból épül fel, amit itt rögzít.",
+        "step1Wait": "Az olvasat nem abban a pillanatban érkezik meg, amikor végez: amikor beküldi a felvételi kérdőívet, a szoba zárva marad, amíg a profilja felépül, és megmutatja, hol tart a munka.",
         "step2Sub": "közvetített, sosem kölcsönös",
         "step2TitlePre": "Azok az emberek, akik",
         "step2TitleIt": "formálnak téged",
@@ -2181,7 +2182,8 @@
     "back": "Vissza",
     "continue": "Folytatás",
     "retry": "Újra",
-    "more": "több"
+    "more": "több",
+    "priceLine": "{sub}/hó a konzultációs szobáért · {report} egy egyszeri klinikai jelentésért"
   },
   "nav": {
     "room": "Szoba",

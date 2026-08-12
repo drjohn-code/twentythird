@@ -63,6 +63,7 @@
         "step1TitleIt": "skrefa",
         "step1TitlePost": "inntaka.",
         "step1Body": "Búðu til reikning og ljúktu 10 skrefa inntöku. Þetta er djúpkjarna prófílgreiningin; fyrsta lesturinn er byggður alfarið á því sem þú setur fram hér.",
+        "step1Wait": "Lesturinn kemur ekki um leið og þú lýkur: þegar þú sendir inn inntökuna helst herbergið lokað á meðan sniðið þitt er byggt og sýnir þér hvaða stigi vinnan er komin á.",
         "step2Sub": "miðlað, aldrei gagnkvæmt",
         "step2TitlePre": "Fólkið sem",
         "step2TitleIt": "mótar þig",
@@ -2181,7 +2182,8 @@
     "back": "Til baka",
     "continue": "Halda áfram",
     "retry": "Reyna aftur",
-    "more": "meira"
+    "more": "meira",
+    "priceLine": "{sub}/mánuði fyrir ráðgjafarherbergið · {report} fyrir staka klíníska skýrslu"
   },
   "nav": {
     "room": "Herbergi",

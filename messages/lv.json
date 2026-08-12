@@ -16,7 +16,8 @@
     "back": "Atpakaļ",
     "continue": "Turpināt",
     "retry": "Mēģināt vēlreiz",
-    "more": "vairāk"
+    "more": "vairāk",
+    "priceLine": "{sub}/mēnesī par konsultāciju istabu · {report} par vienreizēju klīnisko ziņojumu"
   },
   "nav": {
     "room": "Telpa",
@@ -268,6 +269,7 @@
         "step1TitleIt": "10 soļu",
         "step1TitlePost": "uzņemšana.",
         "step1Body": "Izveidojiet savu kontu un aizpildiet 10 soļu uzņemšanu. Šī ir dziļā kodola profilēšanas pāreja; pirmais lasījums tiek veidots pilnībā no tā, ko jūs šeit ieliekat.",
+        "step1Wait": "Lasījums nepienāk brīdī, kad esat pabeidzis: kad iesniedzat uzņemšanu, istaba paliek slēgta, kamēr tiek veidots jūsu profils, un rāda, kādā posmā darbs ir nonācis.",
         "step2Sub": "starpniecisks, nekad savstarpējs",
         "step2TitlePre": "Cilvēki, kas",
         "step2TitleIt": "jūs veido",

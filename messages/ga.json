@@ -63,6 +63,7 @@
         "step1TitleIt": "10 gcéim",
         "step1TitlePost": ".",
         "step1Body": "Cruthaigh do chuntas agus comhlánaigh iontógáil 10 gcéim. Is é seo an pas próifílithe domhain-chroí; tógfar an chéad léamh go hiomlán as an méid a leagann tú síos anseo.",
+        "step1Wait": "Ní thagann an léamh an nóiméad a chríochnaíonn tú: nuair a chuireann tú an iontógáil isteach, fanann an seomra dúnta fad is atá do phróifíl á tógáil, agus taispeánann sé duit cén chéim ag a bhfuil an obair.",
         "step2Sub": "idirghabhála, ní comhchoiteann riamh",
         "step2TitlePre": "Na daoine a",
         "step2TitleIt": "mhúnlaíonn tú",
@@ -2181,7 +2182,8 @@
     "back": "Ar ais",
     "continue": "Lean ar aghaidh",
     "retry": "Bain triail eile as",
-    "more": "níos mó"
+    "more": "níos mó",
+    "priceLine": "{sub}/mí ar an seomra comhairleach · {report} ar thuairisc chliniciúil aonuaire"
   },
   "nav": {
     "room": "Seomra",
