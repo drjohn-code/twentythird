@@ -1,8 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { signInWithGoogle } from "@/lib/supabase/client";
 import { AUTH_ERRORS } from "@/lib/auth/messages";
+
+// If the browser hasn't begun unloading toward the Google authorize URL
+// within this window, the navigation is never going to commit (blocked by
+// an extension, proxy, or content blocker) — surface the error instead of
+// spinning forever. A successful redirect unloads the document first, so
+// the watchdog dies with it and the happy path pays nothing.
+const OAUTH_WATCHDOG_MS = 10_000;
 
 type Props = {
   label: string;
@@ -12,18 +19,37 @@ type Props = {
 export default function GoogleAuthButton({ label, next }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const watchdogRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearWatchdog() {
+    if (watchdogRef.current !== null) {
+      clearTimeout(watchdogRef.current);
+      watchdogRef.current = null;
+    }
+  }
+
+  useEffect(() => clearWatchdog, []);
 
   async function handleClick() {
     setError(null);
     setLoading(true);
+    clearWatchdog();
+    watchdogRef.current = setTimeout(() => {
+      watchdogRef.current = null;
+      setLoading(false);
+      setError(AUTH_ERRORS.OAUTH_FAILED);
+    }, OAUTH_WATCHDOG_MS);
     try {
-      const { error } = await signInWithGoogle(next);
-      if (error) {
+      const { data, error } = await signInWithGoogle(next);
+      if (error || !data?.url) {
+        clearWatchdog();
         setLoading(false);
         setError(AUTH_ERRORS.OAUTH_FAILED);
       }
-      // On success the browser is already redirecting; leave loading=true.
+      // On success the browser is already navigating away; leave
+      // loading=true and let the watchdog die with the document.
     } catch {
+      clearWatchdog();
       setLoading(false);
       setError(AUTH_ERRORS.OAUTH_FAILED);
     }
