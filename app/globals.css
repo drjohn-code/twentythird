@@ -210,6 +210,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .signin:hover{color:var(--fg)}
 
+/* Below ~402px the nav-right cluster (locale switcher + sign in + CTA
+   pill) no longer fits its grid track and the CTA clips off-screen —
+   drop the wordmark's text label first, since the logo mark alone
+   still links home and carries the "TwentyThird" aria-label. */
+@media (max-width:460px){
+  .nav .wordmark span{display:none}
+}
+
 /* ------- locale switcher (toolbar language badge) ------- */
 .locale-switcher{position:relative;display:flex;align-items:center}
 .locale-switcher-trigger{
