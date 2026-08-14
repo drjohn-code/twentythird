@@ -21,11 +21,6 @@ export default async function PaperPage() {
     // through the locale layer (see I18N.md). lang="en" so it isn't
     // announced as Lithuanian; translating it is separate, fenced-off work.
     <main className="page-shell" lang="en">
-      {locale === "lt" && (
-        <p className="lede" lang="lt">
-          {t("englishPageNotice")}
-        </p>
-      )}
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">
@@ -42,6 +37,11 @@ export default async function PaperPage() {
               sentence written early and rehearsed quietly. This paper
               describes how TwentyThird surfaces and rewrites that sentence.
             </p>
+            {locale === "lt" && (
+              <p className="lede" lang="lt">
+                {t("englishPageNotice")}
+              </p>
+            )}
           </div>
         </div>
       </Reveal>

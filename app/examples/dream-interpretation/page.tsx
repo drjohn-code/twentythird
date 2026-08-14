@@ -21,11 +21,6 @@ export default async function DreamExamplePage() {
     // through the locale layer (see I18N.md). lang="en" so it isn't
     // announced as Lithuanian; translating it is separate, fenced-off work.
     <main className="page-shell" lang="en">
-      {locale === "lt" && (
-        <p className="lede" lang="lt">
-          {t("englishPageNotice")}
-        </p>
-      )}
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">
@@ -41,6 +36,11 @@ export default async function DreamExamplePage() {
               subject in week three of analysis, followed by the structure we
               surfaced and the waking decision it was preparing them to make.
             </p>
+            {locale === "lt" && (
+              <p className="lede" lang="lt">
+                {t("englishPageNotice")}
+              </p>
+            )}
           </div>
         </div>
       </Reveal>
