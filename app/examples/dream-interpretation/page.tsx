@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import Reveal from "../../../components/layout/Reveal";
 import FigureCard from "../../../components/figures/FigureCard";
 import ReportMock from "../../../components/figures/ReportMock";
@@ -12,9 +13,19 @@ export const metadata: Metadata = {
     "An annotated dream specimen. How TwentyThird reads the displacements, condensations, and slips that carry the waking decision.",
 };
 
-export default function DreamExamplePage() {
+export default async function DreamExamplePage() {
+  const locale = await getLocale();
+  const t = await getTranslations("marketing");
   return (
-    <main className="page-shell">
+    // Body copy here is a hardcoded English dream example — never wired
+    // through the locale layer (see I18N.md). lang="en" so it isn't
+    // announced as Lithuanian; translating it is separate, fenced-off work.
+    <main className="page-shell" lang="en">
+      {locale === "lt" && (
+        <p className="lede" lang="lt">
+          {t("englishPageNotice")}
+        </p>
+      )}
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">

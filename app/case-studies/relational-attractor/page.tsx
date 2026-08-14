@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import Reveal from "../../../components/layout/Reveal";
 import FigureCard from "../../../components/figures/FigureCard";
 import InsightTimeline from "../../../components/figures/InsightTimeline";
@@ -14,12 +15,19 @@ export const metadata: Metadata = {
     "Clinical case study. A subject in their late thirties traces a relational pattern back through five prior relationships and one earlier scene.",
 };
 
-export default function CaseStudyPage() {
+export default async function CaseStudyPage() {
+  const locale = await getLocale();
+  const t = await getTranslations("marketing");
   return (
     // Body copy here is a hardcoded English case study — never wired
     // through the locale layer (see I18N.md). lang="en" so it isn't
     // announced as Lithuanian; translating it is separate, fenced-off work.
     <main className="page-shell" lang="en">
+      {locale === "lt" && (
+        <p className="lede" lang="lt">
+          {t("englishPageNotice")}
+        </p>
+      )}
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import Reveal from "../../../components/layout/Reveal";
 import FigureCard from "../../../components/figures/FigureCard";
 import PatternList from "../../../components/figures/PatternList";
@@ -14,12 +15,19 @@ export const metadata: Metadata = {
     "A complete TwentyThird report for a synthesised subject. Names and dates are invented; the structure is what we deliver.",
 };
 
-export default function SampleReportPage() {
+export default async function SampleReportPage() {
+  const locale = await getLocale();
+  const t = await getTranslations("marketing");
   return (
     // Body copy here is a hardcoded English sample report — never wired
     // through the locale layer (see I18N.md). lang="en" so it isn't
     // announced as Lithuanian; translating it is separate, fenced-off work.
     <main className="page-shell" lang="en">
+      {locale === "lt" && (
+        <p className="lede" lang="lt">
+          {t("englishPageNotice")}
+        </p>
+      )}
       {/* HERO */}
       <Reveal as="section" className="page-hero no-figure">
         <div className="container">

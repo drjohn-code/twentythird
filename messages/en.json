@@ -1068,7 +1068,8 @@
         "ctaOr": "or",
         "ctaGhost": "read a case study"
       }
-    }
+    },
+    "englishPageNotice": "This page is in English."
   },
   "auth": {
     "signIn": {
