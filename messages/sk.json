@@ -54,6 +54,7 @@
         "footVal": "tiho, varno mesto za poglobljen pogovor"
       },
       "process": {
+        "stepLabel": "Krok",
         "eyebrow": "KAKO DELUJE",
         "titlePre": "Štirje koraki,",
         "titleIt": "en širši krog",

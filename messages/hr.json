@@ -54,6 +54,7 @@
         "footVal": "mirno, sigurno mjesto za duboki razgovor"
       },
       "process": {
+        "stepLabel": "Korak",
         "eyebrow": "KAKO RADI",
         "titlePre": "Četiri koraka,",
         "titleIt": "jedan krug koji se širi",

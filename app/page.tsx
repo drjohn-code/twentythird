@@ -184,7 +184,7 @@ export default async function LandingPage() {
           <div className="story-grid">
             <article className="story-step glass reveal">
               <div className="story-head">
-                <span className="story-num">STEP 01</span>
+                <span className="story-num">{t("process.stepLabel")} 01</span>
                 <span className="story-sub">{t("process.step1Sub")}</span>
               </div>
               <h3>
@@ -197,7 +197,7 @@ export default async function LandingPage() {
 
             <article className="story-step glass reveal">
               <div className="story-head">
-                <span className="story-num">STEP 02</span>
+                <span className="story-num">{t("process.stepLabel")} 02</span>
                 <span className="story-sub">{t("process.step2Sub")}</span>
               </div>
               <h3>
@@ -210,7 +210,7 @@ export default async function LandingPage() {
 
             <article className="story-step glass reveal">
               <div className="story-head">
-                <span className="story-num">STEP 03</span>
+                <span className="story-num">{t("process.stepLabel")} 03</span>
                 <span className="story-sub">{t("process.step3Sub")}</span>
               </div>
               <h3>
@@ -223,7 +223,7 @@ export default async function LandingPage() {
 
             <article className="story-step glass reveal">
               <div className="story-head">
-                <span className="story-num">STEP 04</span>
+                <span className="story-num">{t("process.stepLabel")} 04</span>
                 <span className="story-sub">{t("process.step4Sub")}</span>
               </div>
               <h3>

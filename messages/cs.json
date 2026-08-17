@@ -54,6 +54,7 @@
         "footVal": "klidné, bezpečné místo pro hlubokou promluvu"
       },
       "process": {
+        "stepLabel": "Krok",
         "eyebrow": "JAK TO FUNGUJE",
         "titlePre": "Čtyři kroky,",
         "titleIt": "jeden rozšiřující se kruh",

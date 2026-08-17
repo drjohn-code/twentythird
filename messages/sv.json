@@ -54,6 +54,7 @@
         "footVal": "en lugn, säker plats att tala djupt"
       },
       "process": {
+        "stepLabel": "Steg",
         "eyebrow": "SÅ FUNGERAR DET",
         "titlePre": "Fyra steg,",
         "titleIt": "en vidgande cirkel",

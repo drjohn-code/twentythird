@@ -54,6 +54,7 @@
         "footVal": "et roligt, sikkert sted at tale dybt"
       },
       "process": {
+        "stepLabel": "Trin",
         "eyebrow": "SÅDAN VIRKER DET",
         "titlePre": "Fire trin,",
         "titleIt": "én udvidende cirkel",
