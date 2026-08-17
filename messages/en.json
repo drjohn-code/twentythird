@@ -1094,6 +1094,7 @@
       "or": "or",
       "emailLabel": "EMAIL",
       "passwordLabel": "PASSWORD",
+      "passwordHint": "At least 8 characters.",
       "confirmPasswordLabel": "CONFIRM PASSWORD",
       "submit": "Create account",
       "footPrompt": "Already have one? ",

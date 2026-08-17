@@ -7,7 +7,7 @@ import AuthSubmit from "@/components/ui/AuthSubmit";
 import { signUp, resendConfirmation } from "../actions";
 import { createClient } from "@/lib/supabase/server";
 import { resolveDestinationForUser } from "@/lib/auth/post-auth";
-import { PASSWORD_HINT, MIN_PASSWORD_LENGTH } from "@/lib/auth/messages";
+import { MIN_PASSWORD_LENGTH } from "@/lib/auth/messages";
 
 type SearchParams = Promise<{
   error?: string;
@@ -118,11 +118,8 @@ export default async function SignUpPage({
               autoComplete="new-password"
               aria-describedby="signup-password-hint"
             />
-            {/* PASSWORD_HINT is a hardcoded English literal (lib/auth/messages.ts),
-                not wired through the locale layer — lang="en" so it isn't
-                announced as Lithuanian; translating it is separate, fenced-off work. */}
-            <p id="signup-password-hint" className="auth-hint" lang="en">
-              {PASSWORD_HINT}
+            <p id="signup-password-hint" className="auth-hint">
+              {t("signUp.passwordHint")}
             </p>
           </div>
 

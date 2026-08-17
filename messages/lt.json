@@ -2250,6 +2250,7 @@
       "or": "arba",
       "emailLabel": "EL. PAŠTAS",
       "passwordLabel": "SLAPTAŽODIS",
+      "passwordHint": "Bent 8 simboliai.",
       "confirmPasswordLabel": "PATVIRTINTI SLAPTAŽODĮ",
       "submit": "Sukurti paskyrą",
       "footPrompt": "Jau turite paskyrą? ",
