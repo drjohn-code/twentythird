@@ -1138,7 +1138,7 @@
     },
     "signUp": {
       "titleBefore": "Ein Konto ",
-      "titleItalic": "Konto erstellen",
+      "titleItalic": "erstellen",
       "titleAfter": ".",
       "googleLabel": "Mit Google fortfahren",
       "or": "oder",
