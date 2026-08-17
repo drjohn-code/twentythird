@@ -1124,9 +1124,9 @@
   },
   "auth": {
     "signIn": {
-      "titleBefore": "An",
-      "titleItalic": "Anmelden",
-      "titleAfter": ".",
+      "titleBefore": "Melden ",
+      "titleItalic": "Sie",
+      "titleAfter": " sich an.",
       "googleLabel": "Mit Google anmelden",
       "or": "oder",
       "emailLabel": "E-MAIL",
