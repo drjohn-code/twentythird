@@ -1222,7 +1222,8 @@
     },
     "notFound": {
       "headline": "Ši nuoroda <it>neatpažinta.</it>",
-      "body": "Jei nuoroda gauta neseniai el. paštu, kvietimas galėjo būti išsiųstas pakartotinai. Atidarykite naujausią el. laišką, kad rastumėte aktyvią nuorodą."
+      "body": "Patikrinkite naujausią kvietimo el. laišką — galbūt buvo išsiųsta nauja nuoroda. Jei naujesnio laiško nėra, paprašykite jus pakvietusio asmens atsiųsti naują. Kvietimas nebūtinas norint naudotis TwentyThird.",
+      "startLink": "susikurti savo paskyrą"
     },
     "alreadyDeclined": {
       "headline": "Šis kvietimas buvo <it>atmestas.</it>",
@@ -1239,7 +1240,8 @@
     },
     "expired": {
       "headline": "Šis kvietimas <it>pasibaigė.</it>",
-      "body": "Kvietimai baigia galioti praėjus keturiolikai dienų nuo išsiuntimo. Paprašykite {name} atsiųsti naują, jei norite atsakyti."
+      "body": "Kvietimai baigia galioti praėjus keturiolikai dienų nuo išsiuntimo. Paprašykite {name} atsiųsti naują, jei norite atsakyti. Kvietimas nebūtinas norint naudotis TwentyThird.",
+      "startLink": "susikurti savo paskyrą"
     },
     "declined": {
       "headline": "Tai <it>gauta.</it>",

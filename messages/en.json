@@ -1863,7 +1863,8 @@
     },
     "notFound": {
       "headline": "This link is <it>not recognised.</it>",
-      "body": "If the link came from an email recently, the invite may have been resent. Open the most recent email for the active link."
+      "body": "Check the most recent invite email, in case a newer link was sent. If there is none, ask the person who invited you to send a new one. An invite is not required to use TwentyThird.",
+      "startLink": "create your own account"
     },
     "alreadyDeclined": {
       "headline": "This invite was <it>declined.</it>",
@@ -1880,7 +1881,8 @@
     },
     "expired": {
       "headline": "This invite has <it>expired.</it>",
-      "body": "Invites expire fourteen days after they are sent. Ask {name} to send a new one if you would like to respond."
+      "body": "Invites expire fourteen days after they are sent. Ask {name} to send a new one if you would like to respond. An invite is not required to use TwentyThird.",
+      "startLink": "create your own account"
     },
     "declined": {
       "headline": "That is <it>received.</it>",

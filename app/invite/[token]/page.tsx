@@ -90,6 +90,12 @@ export default async function InvitePage({
             it: (chunks) => <span className="it">{chunks}</span>,
           })}
           body={t("notFound.body")}
+          footer={
+            <Link href="/auth/sign-up" className="auth-rowlink invite-cta-link">
+              <span>{t("notFound.startLink")}</span>
+              <span aria-hidden="true">→</span>
+            </Link>
+          }
         />
       </InviteShell>
     );
@@ -172,6 +178,12 @@ export default async function InvitePage({
             it: (chunks) => <span className="it">{chunks}</span>,
           })}
           body={t("expired.body", { name: inviterFirstName })}
+          footer={
+            <Link href="/auth/sign-up" className="auth-rowlink invite-cta-link">
+              <span>{t("expired.startLink")}</span>
+              <span aria-hidden="true">→</span>
+            </Link>
+          }
         />
       </InviteShell>
     );
