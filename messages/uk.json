@@ -2281,8 +2281,8 @@
   },
   "auth": {
     "signIn": {
-      "titleBefore": "Увійти",
-      "titleItalic": "увійти",
+      "titleBefore": "Увійти в ",
+      "titleItalic": "обліковий запис",
       "titleAfter": ".",
       "googleLabel": "Увійти через Google",
       "or": "або",

@@ -2261,8 +2261,8 @@
   },
   "auth": {
     "signIn": {
-      "titleBefore": "Prijava",
-      "titleItalic": "u",
+      "titleBefore": "Prijava na ",
+      "titleItalic": "račun",
       "titleAfter": ".",
       "googleLabel": "Prijavite se putem Googlea",
       "or": "ili",

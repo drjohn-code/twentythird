@@ -2264,8 +2264,8 @@
   },
   "auth": {
     "signIn": {
-      "titleBefore": "Conectați-vă",
-      "titleItalic": "în",
+      "titleBefore": "Conectați-vă la ",
+      "titleItalic": "cont",
       "titleAfter": ".",
       "googleLabel": "Conectați-vă cu Google",
       "or": "sau",
