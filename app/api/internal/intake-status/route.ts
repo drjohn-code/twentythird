@@ -4,10 +4,18 @@ import { adminClient } from "@/lib/supabase/admin";
 
 // GET /api/internal/intake-status?user_id=<uuid>   (or ?email=<email>)
 //
-// Read-only status probe for a single intake. Guarded by the same
-// AI_INTERNAL_TOKEN convention as every other /api/internal/* route
-// (header x-internal-token, or Authorization: Bearer <token>) — no new
-// secret introduced.
+// Read-only status probe for a single intake. Two independent auth paths:
+//
+// 1. The same AI_INTERNAL_TOKEN convention as every other /api/internal/*
+//    route (header x-internal-token, or Authorization: Bearer <token>).
+// 2. ?token=<WALK_STATUS_TOKEN> query param — for callers that cannot set
+//    custom headers (the daily walk's WebFetch issues plain GETs only).
+//    Deliberately a SEPARATE, narrower credential from AI_INTERNAL_TOKEN:
+//    that token also gates write endpoints (run-scheduled-emails,
+//    report-generate, schedule-weekly-catchups), and a query-string value
+//    is more exposed to leaking via access logs/referrers than a header,
+//    so a leaked walk token must not carry write capability anywhere.
+//    WALK_STATUS_TOKEN only ever unlocks this one read-only route.
 //
 // Exists because nothing could answer "did this intake reach ready,
 // and if not, where did it stop and when" without a live browser
@@ -20,14 +28,23 @@ import { adminClient } from "@/lib/supabase/admin";
 // without guessing which of the two statuses is authoritative.
 
 const TOKEN_HEADER = "x-internal-token";
+const TOKEN_QUERY_PARAM = "token";
 
-function tokenOk(req: Request): boolean {
+function tokenOk(req: Request, searchParams: URLSearchParams): boolean {
   const required = process.env.AI_INTERNAL_TOKEN;
-  if (!required) return false;
-  const header = req.headers.get(TOKEN_HEADER);
-  if (header && header === required) return true;
-  const auth = req.headers.get("authorization");
-  if (auth && auth === `Bearer ${required}`) return true;
+  if (required) {
+    const header = req.headers.get(TOKEN_HEADER);
+    if (header && header === required) return true;
+    const auth = req.headers.get("authorization");
+    if (auth && auth === `Bearer ${required}`) return true;
+  }
+
+  const walkRequired = process.env.WALK_STATUS_TOKEN;
+  if (walkRequired) {
+    const provided = searchParams.get(TOKEN_QUERY_PARAM);
+    if (provided && provided === walkRequired) return true;
+  }
+
   return false;
 }
 
@@ -53,7 +70,9 @@ type ScheduledEmailRow = {
 };
 
 export async function GET(req: Request): Promise<NextResponse> {
-  if (!tokenOk(req)) {
+  const { searchParams } = new URL(req.url);
+
+  if (!tokenOk(req, searchParams)) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
@@ -65,7 +84,6 @@ export async function GET(req: Request): Promise<NextResponse> {
     );
   }
 
-  const { searchParams } = new URL(req.url);
   const userId = searchParams.get("user_id");
   const email = searchParams.get("email");
   if (!userId && !email) {

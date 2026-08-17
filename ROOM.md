@@ -243,6 +243,14 @@ AI_CALLS_HOURLY_LIMIT=5000
 # Required for internal-only routes (initial-readings, report-generate)
 AI_INTERNAL_TOKEN=<random>
 
+# Optional — narrower, read-only credential for GET /api/internal/intake-status
+# only, accepted via ?token=<value> query param (header-free, for callers like
+# a status-check crawler that cannot set custom headers). Deliberately separate
+# from AI_INTERNAL_TOKEN, which also gates write endpoints — a leaked query-
+# string value must not carry write capability. Unset = that auth path is
+# simply unavailable; the header-based AI_INTERNAL_TOKEN path still works.
+WALK_STATUS_TOKEN=<random, different from AI_INTERNAL_TOKEN>
+
 # Optional — hosted browser for PDF rendering
 PDF_RENDER_SERVICE_URL=https://browserless.example.com/pdf
 PDF_RENDER_SERVICE_TOKEN=...
