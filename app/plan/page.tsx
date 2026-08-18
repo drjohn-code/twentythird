@@ -49,6 +49,7 @@ function DayCard({ day, num, prompt, stream, pips }: DayCardProps) {
 export default async function PlanPage() {
   const t = await getTranslations("marketing.plan");
   const tc = await getTranslations("common");
+  const tb = await getTranslations("room.subscribe");
   return (
     <main className="page-shell">
       {/* HERO */}
@@ -330,6 +331,9 @@ export default async function PlanPage() {
           </div>
           <p className="mono" style={{ marginTop: "20px", color: "var(--fg-mute)" }}>
             {tc("priceLine", { sub: "€23.23", report: "€11.11" })}
+          </p>
+          <p className="mono" style={{ marginTop: "8px", color: "var(--fg-mute)" }}>
+            {tb("ledeBilling")}
           </p>
         </div>
       </Reveal>

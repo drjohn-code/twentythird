@@ -4,6 +4,7 @@ import LandingInteractions from "./landing-interactions";
 export default async function LandingPage() {
   const t = await getTranslations("marketing.landing");
   const tc = await getTranslations("common");
+  const tb = await getTranslations("room.subscribe");
   return (
     <main className="shell">
       {/* HERO */}
@@ -49,6 +50,9 @@ export default async function LandingPage() {
           </div>
           <p className="mono" style={{ marginTop: "20px", color: "var(--fg-mute)" }}>
             {tc("priceLine", { sub: "€23.23", report: "€11.11" })}
+          </p>
+          <p className="mono" style={{ marginTop: "8px", color: "var(--fg-mute)" }}>
+            {tb("ledeBilling")}
           </p>
         </div>
       </section>
