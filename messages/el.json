@@ -2229,6 +2229,7 @@
       "or": "ή",
       "emailLabel": "EMAIL",
       "passwordLabel": "ΚΩΔΙΚΟΣ ΠΡΟΣΒΑΣΗΣ",
+      "passwordHint": "Τουλάχιστον 8 χαρακτήρες.",
       "confirmPasswordLabel": "ΕΠΙΒΕΒΑΙΩΣΗ ΚΩΔΙΚΟΥ ΠΡΟΣΒΑΣΗΣ",
       "submit": "Δημιουργία λογαριασμού",
       "footPrompt": "Έχετε ήδη λογαριασμό; ",

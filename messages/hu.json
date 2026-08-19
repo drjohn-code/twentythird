@@ -2226,6 +2226,7 @@
       "or": "vagy",
       "emailLabel": "E-MAIL CÍM",
       "passwordLabel": "JELSZÓ",
+      "passwordHint": "Legalább 8 karakter.",
       "confirmPasswordLabel": "JELSZÓ MEGERŐSÍTÉSE",
       "submit": "Fiók létrehozása",
       "footPrompt": "Már van fiókja? ",

@@ -2226,6 +2226,7 @@
       "or": "jew",
       "emailLabel": "EMAIL",
       "passwordLabel": "PASSWORD",
+      "passwordHint": "Mill-inqas 8 karattri.",
       "confirmPasswordLabel": "IKKONFERMA L-PASSWORD",
       "submit": "Oħloq kont",
       "footPrompt": "Diġà għandek wieħed? ",

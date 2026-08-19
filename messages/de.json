@@ -1146,6 +1146,7 @@
       "or": "oder",
       "emailLabel": "E-MAIL",
       "passwordLabel": "PASSWORT",
+      "passwordHint": "Mindestens 8 Zeichen.",
       "confirmPasswordLabel": "PASSWORT BESTÄTIGEN",
       "submit": "Konto erstellen",
       "footPrompt": "Bereits registriert? ",

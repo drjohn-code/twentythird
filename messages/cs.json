@@ -2281,6 +2281,7 @@
       "or": "nebo",
       "emailLabel": "E-MAIL",
       "passwordLabel": "HESLO",
+      "passwordHint": "Alespoň 8 znaků.",
       "confirmPasswordLabel": "POTVRDIT HESLO",
       "submit": "Vytvořit účet",
       "footPrompt": "Už účet máte? ",

@@ -2226,6 +2226,7 @@
       "or": "eller",
       "emailLabel": "E-MAIL",
       "passwordLabel": "ADGANGSKODE",
+      "passwordHint": "Mindst 8 tegn.",
       "confirmPasswordLabel": "BEKRÆFT ADGANGSKODE",
       "submit": "Opret konto",
       "footPrompt": "Har du allerede en? ",

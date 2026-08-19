@@ -2232,6 +2232,7 @@
       "or": "или",
       "emailLabel": "ИМЕЙЛ",
       "passwordLabel": "ПАРОЛА",
+      "passwordHint": "Поне 8 символа.",
       "confirmPasswordLabel": "ПОТВЪРДЕТЕ ПАРОЛАТА",
       "submit": "Създаване на акаунт",
       "footPrompt": "Вече имате акаунт? ",

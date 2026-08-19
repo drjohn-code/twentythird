@@ -2285,6 +2285,7 @@
       "or": "sau",
       "emailLabel": "EMAIL",
       "passwordLabel": "PAROLĂ",
+      "passwordHint": "Cel puțin 8 caractere.",
       "confirmPasswordLabel": "CONFIRMAȚI PAROLA",
       "submit": "Creați cont",
       "footPrompt": "Aveți deja unul? ",

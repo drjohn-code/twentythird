@@ -2293,6 +2293,7 @@
       "or": "tai",
       "emailLabel": "SÄHKÖPOSTI",
       "passwordLabel": "SALASANA",
+      "passwordHint": "Vähintään 8 merkkiä.",
       "confirmPasswordLabel": "VAHVISTA SALASANA",
       "submit": "Luo tili",
       "footPrompt": "Onko sinulla jo tili? ",

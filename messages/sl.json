@@ -2228,6 +2228,7 @@
       "or": "ali",
       "emailLabel": "E-POŠTA",
       "passwordLabel": "GESLO",
+      "passwordHint": "Vsaj 8 znakov.",
       "confirmPasswordLabel": "POTRDITE GESLO",
       "submit": "Ustvari račun",
       "footPrompt": "Že imate račun? ",

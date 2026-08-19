@@ -2226,6 +2226,7 @@
       "or": "nó",
       "emailLabel": "RÍOMHPHOST",
       "passwordLabel": "PASFHOCAL",
+      "passwordHint": "8 gcarachtar ar a laghad.",
       "confirmPasswordLabel": "DEIMHNIGH PASFHOCAL",
       "submit": "Cruthaigh cuntas",
       "footPrompt": "An bhfuil ceann agat cheana? ",

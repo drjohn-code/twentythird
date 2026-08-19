@@ -2302,6 +2302,7 @@
       "or": "або",
       "emailLabel": "ЕЛЕКТРОННА ПОШТА",
       "passwordLabel": "ПАРОЛЬ",
+      "passwordHint": "Щонайменше 8 символів.",
       "confirmPasswordLabel": "ПІДТВЕРДІТЬ ПАРОЛЬ",
       "submit": "Створити обліковий запис",
       "footPrompt": "Вже маєте обліковий запис? ",

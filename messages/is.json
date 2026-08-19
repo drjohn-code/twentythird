@@ -2226,6 +2226,7 @@
       "or": "eða",
       "emailLabel": "NETFANG",
       "passwordLabel": "LYKILORÐ",
+      "passwordHint": "Að minnsta kosti 8 stafir.",
       "confirmPasswordLabel": "STAÐFESTA LYKILORÐ",
       "submit": "Stofna aðgang",
       "footPrompt": "Ertu nú þegar með aðgang? ",

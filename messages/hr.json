@@ -2282,6 +2282,7 @@
       "or": "ili",
       "emailLabel": "E-MAIL",
       "passwordLabel": "LOZINKA",
+      "passwordHint": "Najmanje 8 znakova.",
       "confirmPasswordLabel": "POTVRDITE LOZINKU",
       "submit": "Kreiraj račun",
       "footPrompt": "Već imate račun? ",

@@ -2239,6 +2239,7 @@
       "or": "o",
       "emailLabel": "CORREO ELECTRÓNICO",
       "passwordLabel": "CONTRASEÑA",
+      "passwordHint": "Al menos 8 caracteres.",
       "confirmPasswordLabel": "CONFIRMAR CONTRASEÑA",
       "submit": "Crear cuenta",
       "footPrompt": "¿Ya tienes una? ",

@@ -2226,6 +2226,7 @@
       "or": "lub",
       "emailLabel": "EMAIL",
       "passwordLabel": "HASŁO",
+      "passwordHint": "Co najmniej 8 znaków.",
       "confirmPasswordLabel": "POTWIERDŹ HASŁO",
       "submit": "Utwórz konto",
       "footPrompt": "Masz już konto? ",

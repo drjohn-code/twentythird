@@ -2228,6 +2228,7 @@
       "or": "o",
       "emailLabel": "EMAIL",
       "passwordLabel": "PASSWORD",
+      "passwordHint": "Almeno 8 caratteri.",
       "confirmPasswordLabel": "CONFERMA PASSWORD",
       "submit": "Crea account",
       "footPrompt": "Hai già un account? ",

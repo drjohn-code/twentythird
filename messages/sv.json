@@ -2226,6 +2226,7 @@
       "or": "eller",
       "emailLabel": "E-POST",
       "passwordLabel": "LÖSENORD",
+      "passwordHint": "Minst 8 tecken.",
       "confirmPasswordLabel": "BEKRÄFTA LÖSENORD",
       "submit": "Skapa konto",
       "footPrompt": "Har du redan ett? ",

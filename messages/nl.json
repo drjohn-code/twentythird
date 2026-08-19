@@ -2233,6 +2233,7 @@
       "or": "of",
       "emailLabel": "E-MAIL",
       "passwordLabel": "WACHTWOORD",
+      "passwordHint": "Minimaal 8 tekens.",
       "confirmPasswordLabel": "BEVESTIG WACHTWOORD",
       "submit": "Account aanmaken",
       "footPrompt": "Heeft u al een account? ",

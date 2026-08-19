@@ -2226,6 +2226,7 @@
       "or": "või",
       "emailLabel": "E-POST",
       "passwordLabel": "PAROOL",
+      "passwordHint": "Vähemalt 8 märki.",
       "confirmPasswordLabel": "KINNITA PAROOL",
       "submit": "Loo konto",
       "footPrompt": "Juba on konto? ",
