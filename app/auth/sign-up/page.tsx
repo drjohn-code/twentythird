@@ -62,6 +62,11 @@ export default async function SignUpPage({
             {t("signUp.pendingFootPrompt")}
             <Link href="/auth/sign-up">{t("signUp.pendingFootLink")}</Link>
           </p>
+
+          <p className="auth-foot">
+            {t("signUp.footPrompt")}
+            <Link href="/auth/sign-in">{t("signUp.footLink")}</Link>
+          </p>
         </div>
       </main>
     );
