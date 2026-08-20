@@ -1312,6 +1312,20 @@ section{position:relative;}
 }
 .auth-shell-foot-links a:hover{color:var(--fg)}
 
+/* shrink the fixed vertical budget so the footer sits within the first
+   viewport on short screens instead of behind a full desktop rhythm.
+   Height-gated too: a narrow phone and a short desktop window are the
+   same problem — not enough vertical room — not just a width breakpoint. */
+@media (max-width:980px), (max-height:850px){
+  .auth-shell{padding:36px 20px 10px}
+  .auth-card{padding:20px;gap:12px}
+  .auth-shell-foot{padding:8px 16px 16px}
+  .auth-form{gap:13px}
+  .auth-field{gap:4px}
+  .google-auth{gap:6px}
+  .auth-divider{margin:0}
+}
+
 /* inline error — typographic, no colour. Hairline above. */
 .auth-inline-error{
   display:flex;flex-direction:column;gap:6px;
