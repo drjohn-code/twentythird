@@ -1295,7 +1295,7 @@ section{position:relative;}
 
 /* shared footer across /auth/* — see app/auth/layout.tsx */
 .auth-shell-foot{
-  max-width:440px;margin:0 auto;padding:24px 24px 53px;
+  width:min(440px, 100%);margin:0 auto;padding:24px 24px 53px;
   border-top:1px solid var(--hair);
   display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
   gap:14px 24px;position:relative;z-index:2;
@@ -1319,7 +1319,7 @@ section{position:relative;}
 @media (max-width:980px), (max-height:850px){
   .auth-shell{padding:36px 20px 10px}
   .auth-card{padding:20px;gap:12px}
-  .auth-shell-foot{padding:8px 16px 16px}
+  .auth-shell-foot{padding:8px 20px 16px}
   .auth-form{gap:13px}
   .auth-field{gap:4px}
   .google-auth{gap:6px}
