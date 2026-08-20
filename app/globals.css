@@ -1295,7 +1295,7 @@ section{position:relative;}
 
 /* shared footer across /auth/* — see app/auth/layout.tsx */
 .auth-shell-foot{
-  width:min(440px, 100%);margin:0 auto;padding:24px 24px 53px;
+  width:min(440px, calc(100% - 48px));margin:0 auto;padding:24px 24px 53px;
   border-top:1px solid var(--hair);
   display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
   gap:14px 24px;position:relative;z-index:2;
@@ -1315,11 +1315,14 @@ section{position:relative;}
 /* shrink the fixed vertical budget so the footer sits within the first
    viewport on short screens instead of behind a full desktop rhythm.
    Height-gated too: a narrow phone and a short desktop window are the
-   same problem — not enough vertical room — not just a width breakpoint. */
+   same problem — not enough vertical room — not just a width breakpoint.
+   align-items:end pins the card to the bottom of .auth-shell's flex-grown
+   box instead of centring it, so leftover height collects above the card
+   instead of becoming a gap the footer floats below. */
 @media (max-width:980px), (max-height:850px){
-  .auth-shell{padding:36px 20px 10px}
+  .auth-shell{padding:36px 20px 10px;align-items:end}
   .auth-card{padding:20px;gap:12px}
-  .auth-shell-foot{padding:8px 20px 16px}
+  .auth-shell-foot{padding:8px 20px 16px;width:min(440px, calc(100% - 40px))}
   .auth-form{gap:13px}
   .auth-field{gap:4px}
   .google-auth{gap:6px}
