@@ -1290,6 +1290,25 @@ section{position:relative;}
 .auth-foot a{color:var(--fg);border-bottom:1px solid var(--hair)}
 .auth-foot a:hover{border-color:var(--hair-strong)}
 
+/* shared footer across /auth/* — see app/auth/layout.tsx */
+.auth-shell-foot{
+  max-width:440px;margin:0 auto;padding:24px 24px 53px;
+  border-top:1px solid var(--hair);
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:14px 24px;position:relative;z-index:2;
+}
+.auth-shell-foot-wordmark{
+  font-family:var(--serif-display);font-size:15px;letter-spacing:-0.01em;
+  color:var(--fg-dim);transition:color 300ms var(--ease);
+}
+.auth-shell-foot-wordmark:hover{color:var(--fg)}
+.auth-shell-foot-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.auth-shell-foot-links a{
+  font-family:var(--sans);font-size:12px;color:var(--fg-mute);
+  transition:color 300ms var(--ease);
+}
+.auth-shell-foot-links a:hover{color:var(--fg)}
+
 /* inline error — typographic, no colour. Hairline above. */
 .auth-inline-error{
   display:flex;flex-direction:column;gap:6px;
