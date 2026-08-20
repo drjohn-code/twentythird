@@ -20,16 +20,22 @@ function resolveLocaleParam(value: string | null): Locale | null {
   return isSupportedLocale(primary) ? primary : null;
 }
 
-// First-visit locale guess. Returns a locale to persist, or null to
-// leave an already-valid cookie untouched. Edge-safe: only pure i18n
-// data + Accept-Language parsing, no server-only / Node imports.
-function localeToPersist(request: NextRequest): Locale | null {
+// An explicit choice (switcher, ?__locale=, ?lang=) persists for a year;
+// an inferred guess (geo / Accept-Language / default) is session-scoped
+// so it never outlives the guess it was.
+type LocaleResolution = { locale: Locale; explicit: boolean };
+
+// First-visit locale guess. Returns the locale to persist and whether
+// it was an explicit choice or an inference, or null to leave an
+// already-valid cookie untouched. Edge-safe: only pure i18n data +
+// Accept-Language parsing, no server-only / Node imports.
+function localeToPersist(request: NextRequest): LocaleResolution | null {
   // Explicit override: ?__locale=xx (undocumented) or ?lang=xx forces
   // and persists a locale. __locale wins if both are present.
   const override =
     resolveLocaleParam(request.nextUrl.searchParams.get("__locale")) ??
     resolveLocaleParam(request.nextUrl.searchParams.get("lang"));
-  if (override) return override;
+  if (override) return { locale: override, explicit: true };
 
   const existing = request.cookies.get(LOCALE_COOKIE)?.value;
   if (existing && isSupportedLocale(existing)) return null;
@@ -39,31 +45,33 @@ function localeToPersist(request: NextRequest): Locale | null {
   const country = request.headers.get("x-vercel-ip-country");
   if (country) {
     const mapped = COUNTRY_TO_LOCALE[country.toUpperCase()];
-    if (mapped) return mapped;
+    if (mapped) return { locale: mapped, explicit: false };
   }
 
-  return (
-    negotiateAcceptLanguage(request.headers.get("accept-language")) ??
-    DEFAULT_LOCALE
+  const negotiated = negotiateAcceptLanguage(
+    request.headers.get("accept-language"),
   );
+  return { locale: negotiated ?? DEFAULT_LOCALE, explicit: false };
 }
 
 export async function middleware(request: NextRequest) {
-  const locale = localeToPersist(request);
+  const resolution = localeToPersist(request);
 
   // Forward the locale on the *request* so the current render already
   // resolves it — updateSession's NextResponse.next({ request }) carries
   // forwarded request cookies through.
-  if (locale) request.cookies.set(LOCALE_COOKIE, locale);
+  if (resolution) request.cookies.set(LOCALE_COOKIE, resolution.locale);
 
   const response = await updateSession(request);
 
   // Persist on the *response* so the browser stores it for next time.
-  if (locale) {
-    response.cookies.set(LOCALE_COOKIE, locale, {
+  // Explicit writes carry Max-Age; an inferred locale doesn't, so it
+  // stays a session cookie rather than pinning a guess for a year.
+  if (resolution) {
+    response.cookies.set(LOCALE_COOKIE, resolution.locale, {
       path: "/",
-      maxAge: LOCALE_COOKIE_MAX_AGE,
       sameSite: "lax",
+      ...(resolution.explicit ? { maxAge: LOCALE_COOKIE_MAX_AGE } : {}),
     });
   }
 
