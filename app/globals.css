@@ -1211,8 +1211,11 @@ section{position:relative;}
 }
 
 /* ------- auth pages ------- */
+/* .auth-page + .auth-shell share the viewport (see app/auth/layout.tsx)
+   so the footer is never pushed below the fold by a 100vh shell. */
+.auth-page{display:flex;flex-direction:column;min-height:100vh}
 .auth-shell{
-  min-height:100vh;display:grid;place-items:center;padding:105px 24px 53px;
+  flex:1;display:grid;place-items:center;padding:105px 24px 53px;
   position:relative;z-index:2;
 }
 .auth-card{
@@ -1298,8 +1301,8 @@ section{position:relative;}
   gap:14px 24px;position:relative;z-index:2;
 }
 .auth-shell-foot-wordmark{
-  font-family:var(--serif-display);font-size:15px;letter-spacing:-0.01em;
-  color:var(--fg-dim);transition:color 300ms var(--ease);
+  font-family:var(--serif-display);font-size:22px;letter-spacing:-0.018em;
+  color:var(--fg);transition:color 300ms var(--ease);
 }
 .auth-shell-foot-wordmark:hover{color:var(--fg)}
 .auth-shell-foot-links{display:flex;flex-wrap:wrap;gap:8px 18px}
