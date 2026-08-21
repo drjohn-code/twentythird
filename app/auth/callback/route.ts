@@ -52,6 +52,13 @@ export async function GET(request: NextRequest) {
         `${origin}/auth/forgot-password?error=reset_link_expired`,
       );
     }
+    // OAuth never sends type=signup/type=email on its callback, so this
+    // arm is unreachable from the OAuth-denial path by construction.
+    if (type === "signup" || type === "email") {
+      return NextResponse.redirect(
+        `${origin}/auth/sign-up?error=confirm_link_expired`,
+      );
+    }
     return NextResponse.redirect(
       `${origin}/auth/sign-in?error=callback_failed`,
     );
