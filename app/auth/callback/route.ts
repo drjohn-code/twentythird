@@ -8,6 +8,15 @@ export async function GET(request: NextRequest) {
   const code = searchParams.get("code");
   const type = searchParams.get("type");
   const nextParam = searchParams.get("next");
+  // Supabase's /auth/v1/verify redirects a dead email-OTP link (expired or
+  // already consumed) here with no `code` at all — just these two params.
+  // This shape is specific to email-link flows (signup confirmation,
+  // recovery); it is not how OAuth denial/failure presents, so it's safe
+  // to route on without touching the shared code-exchange-failure branch
+  // below, which OAuth and confirmation both still fall through to.
+  const isDeadEmailLink =
+    searchParams.get("error") === "access_denied" &&
+    searchParams.get("error_code") === "otp_expired";
   // Recovery is signalled either by path (/auth/callback/recovery, which
   // survives Supabase's verify redirect intact) or by ?type=recovery on
   // the legacy query-param flow.
@@ -24,6 +33,11 @@ export async function GET(request: NextRequest) {
   console.log("[auth/callback] parsed type:", type, "isRecovery:", isRecovery);
 
   if (!code) {
+    if (isDeadEmailLink && !isRecovery) {
+      return NextResponse.redirect(
+        `${origin}/auth/sign-up?error=confirm_link_expired`,
+      );
+    }
     return NextResponse.redirect(
       `${origin}/auth/sign-in?error=callback_failed`,
     );

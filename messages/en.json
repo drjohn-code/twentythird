@@ -1137,6 +1137,7 @@
       "unconfirmed_email": "Confirm your email first. Check your inbox.",
       "reset_link_expired": "That link has expired. Request a new one.",
       "reset_link_invalid": "That link is no longer valid. Request a new one.",
+      "confirm_link_expired": "That confirmation link is no longer valid. Enter your email again to get a new one.",
       "oauth_failed": "Couldn't reach Google. Try again.",
       "callback_failed": "Could not complete sign-in.",
       "generic": "Something went wrong. Try again.",
