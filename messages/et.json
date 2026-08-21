@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Kinnita esmalt oma e-post. Kontrolli postkasti.",
       "reset_link_expired": "See link on aegunud. Taotle uus.",
       "reset_link_invalid": "See link ei kehti enam. Taotle uus.",
+      "confirm_link_expired": "See kinnituslink ei kehti enam. Sisesta oma e-post ja saadame uue.",
       "oauth_failed": "Google'iga ei õnnestunud ühendust saada. Proovi uuesti.",
       "callback_failed": "Sisselogimist ei õnnestunud lõpule viia.",
       "generic": "Midagi läks valesti. Proovi uuesti.",

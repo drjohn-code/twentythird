@@ -2293,7 +2293,7 @@
       "unconfirmed_email": "Pirmiausia patvirtinkite savo el. paštą. Patikrinkite gautuosius.",
       "reset_link_expired": "Ši nuoroda pasibaigė. Prašykite naujos.",
       "reset_link_invalid": "Ši nuoroda nebegalioja. Prašykite naujos.",
-      "confirm_link_expired": "Ši patvirtinimo nuoroda nebegalioja. Įveskite el. paštą dar kartą.",
+      "confirm_link_expired": "Ši patvirtinimo nuoroda nebegalioja. Įveskite el. paštą ir atsiųsime naują.",
       "oauth_failed": "Nepavyko prisijungti prie Google. Bandykite dar kartą.",
       "callback_failed": "Nepavyko užbaigti prisijungimo.",
       "generic": "Kažkas nutiko. Bandykite dar kartą.",

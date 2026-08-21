@@ -2324,6 +2324,7 @@
       "unconfirmed_email": "Nejprve potvrďte svůj e-mail. Zkontrolujte si schránku.",
       "reset_link_expired": "Tento odkaz vypršel. Vyžádejte si nový.",
       "reset_link_invalid": "Tento odkaz již není platný. Vyžádejte si nový.",
+      "confirm_link_expired": "Tento potvrzovací odkaz už není platný. Zadejte svůj e-mail a pošleme vám nový.",
       "oauth_failed": "Nepodařilo se navázat spojení s Google. Zkuste to znovu.",
       "callback_failed": "Nepodařilo se dokončit přihlášení.",
       "generic": "Něco se pokazilo. Zkuste to znovu.",

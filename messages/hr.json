@@ -2325,6 +2325,7 @@
       "unconfirmed_email": "Prvo potvrdite svoju e-mail adresu. Provjerite pristiglu poštu.",
       "reset_link_expired": "Ta poveznica je istekla. Zatražite novu.",
       "reset_link_invalid": "Ta poveznica više nije važeća. Zatražite novu.",
+      "confirm_link_expired": "Ta poveznica za potvrdu više ne vrijedi. Unesite svoju e-poštu i poslat ćemo novu.",
       "oauth_failed": "Nije moguće doći do Googlea. Pokušajte ponovno.",
       "callback_failed": "Nije moguće dovršiti prijavu.",
       "generic": "Nešto je pošlo po zlu. Pokušajte ponovno.",

@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Ikkonferma l-email tiegħek l-ewwel. Iċċekkja l-inbox tiegħek.",
       "reset_link_expired": "Dak il-link skada. Itlob wieħed ġdid.",
       "reset_link_invalid": "Dak il-link m'għadux validu. Itlob wieħed ġdid.",
+      "confirm_link_expired": "Dak il-link ta' konferma m'għadux validu. Daħħal l-email tiegħek u nibagħtulek wieħed ġdid.",
       "oauth_failed": "Ma setax jintlaħaq Google. Erġa' pprova.",
       "callback_failed": "Ma setax jitlesta d-dħul.",
       "generic": "Xi ħaġa marret ħażin. Erġa' pprova.",

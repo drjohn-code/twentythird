@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Staðfestu netfangið þitt fyrst. Athugaðu pósthólfið þitt.",
       "reset_link_expired": "Þessi tengill er útrunninn. Biðja um nýjan.",
       "reset_link_invalid": "Þessi tengill er ekki lengur gildur. Biðja um nýjan.",
+      "confirm_link_expired": "Þessi staðfestingartengill er ekki lengur gildur. Sláðu inn netfangið þitt og við sendum nýjan.",
       "oauth_failed": "Náði ekki sambandi við Google. Reyndu aftur.",
       "callback_failed": "Gat ekki lokið innskráningu.",
       "generic": "Eitthvað fór úrskeiðis. Reyndu aftur.",

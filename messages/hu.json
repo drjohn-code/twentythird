@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Először erősítse meg az e-mail címét. Ellenőrizze a beérkező leveleket.",
       "reset_link_expired": "Ez a link lejárt. Kérjen újat.",
       "reset_link_invalid": "Ez a link már nem érvényes. Kérjen újat.",
+      "confirm_link_expired": "Ez a megerősítő link már nem érvényes. Adja meg az e-mail-címét, és küldünk egy újat.",
       "oauth_failed": "Nem sikerült elérni a Google-t. Próbálja újra.",
       "callback_failed": "Nem sikerült befejezni a bejelentkezést.",
       "generic": "Hiba történt. Próbálja újra.",

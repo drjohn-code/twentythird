@@ -2316,6 +2316,7 @@
       "unconfirmed_email": "Najprej potrdite svojo e-pošto. Preverite svoj nabiralnik.",
       "reset_link_expired": "Ta povezava je potekla. Zahtevajte novo.",
       "reset_link_invalid": "Ta povezava ni več veljavna. Zahtevajte novo.",
+      "confirm_link_expired": "Ta potrditvena povezava ni več veljavna. Vnesite svoj e-naslov in poslali vam bomo novo.",
       "oauth_failed": "Googla ni bilo mogoče doseči. Poskusite znova.",
       "callback_failed": "Prijave ni bilo mogoče dokončati.",
       "generic": "Nekaj je šlo narobe. Poskusite znova.",

@@ -2336,6 +2336,7 @@
       "unconfirmed_email": "Vahvista ensin sähköpostisi. Tarkista postilaatikkosi.",
       "reset_link_expired": "Linkki on vanhentunut. Pyydä uusi.",
       "reset_link_invalid": "Linkki ei ole enää kelvollinen. Pyydä uusi.",
+      "confirm_link_expired": "Tämä vahvistuslinkki ei ole enää voimassa. Anna sähköpostiosoitteesi, niin lähetämme uuden.",
       "oauth_failed": "Googleen ei saatu yhteyttä. Yritä uudelleen.",
       "callback_failed": "Kirjautuminen epäonnistui.",
       "generic": "Jokin meni pieleen. Yritä uudelleen.",

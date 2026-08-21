@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Deimhnigh do ríomhphost ar dtús. Seiceáil do bhosca isteach.",
       "reset_link_expired": "Tá an nasc sin imithe in éag. Iarr ceann nua.",
       "reset_link_invalid": "Níl an nasc sin bailí a thuilleadh. Iarr ceann nua.",
+      "confirm_link_expired": "Níl an nasc deimhnithe sin bailí a thuilleadh. Cuir do sheoladh ríomhphoist isteach agus seolfaimid ceann nua.",
       "oauth_failed": "Níorbh fhéidir Google a bhaint amach. Bain triail as arís.",
       "callback_failed": "Níorbh fhéidir logáil isteach a chríochnú.",
       "generic": "Tharla earráid. Bain triail as arís.",

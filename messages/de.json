@@ -1189,6 +1189,7 @@
       "unconfirmed_email": "Bestätigen Sie zuerst Ihre E-Mail. Überprüfen Sie Ihren Posteingang.",
       "reset_link_expired": "Dieser Link ist abgelaufen. Fordern Sie einen neuen an.",
       "reset_link_invalid": "Dieser Link ist nicht mehr gültig. Fordern Sie einen neuen an.",
+      "confirm_link_expired": "Dieser Bestätigungslink ist nicht mehr gültig. Geben Sie Ihre E-Mail-Adresse ein, wir senden Ihnen einen neuen.",
       "oauth_failed": "Google konnte nicht erreicht werden. Versuchen Sie es erneut.",
       "callback_failed": "Anmeldung konnte nicht abgeschlossen werden.",
       "generic": "Etwas ist schiefgelaufen. Versuchen Sie es erneut.",

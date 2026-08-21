@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Bekräfta din e-post först. Kontrollera din inkorg.",
       "reset_link_expired": "Den länken har gått ut. Begär en ny.",
       "reset_link_invalid": "Den länken är inte längre giltig. Begär en ny.",
+      "confirm_link_expired": "Den bekräftelselänken är inte längre giltig. Ange din e-postadress, så skickar vi en ny.",
       "oauth_failed": "Kunde inte nå Google. Försök igen.",
       "callback_failed": "Kunde inte slutföra inloggningen.",
       "generic": "Något gick fel. Försök igen.",

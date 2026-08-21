@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Najpierw potwierdź swój adres e-mail. Sprawdź skrzynkę odbiorczą.",
       "reset_link_expired": "Ten link wygasł. Poproś o nowy.",
       "reset_link_invalid": "Ten link jest już nieaktywny. Poproś o nowy.",
+      "confirm_link_expired": "Ten link potwierdzający już nie działa. Podaj swój e-mail, a wyślemy nowy.",
       "oauth_failed": "Nie udało się połączyć z Google. Spróbuj ponownie.",
       "callback_failed": "Nie udało się zakończyć logowania.",
       "generic": "Coś poszło nie tak. Spróbuj ponownie.",

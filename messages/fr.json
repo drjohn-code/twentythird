@@ -2330,6 +2330,7 @@
       "unconfirmed_email": "Confirmez d'abord votre email. Vérifiez votre boîte de réception.",
       "reset_link_expired": "Ce lien a expiré. Demandez-en un nouveau.",
       "reset_link_invalid": "Ce lien n'est plus valide. Demandez-en un nouveau.",
+      "confirm_link_expired": "Ce lien de confirmation n'est plus valide. Saisissez votre e-mail, nous vous en enverrons un nouveau.",
       "oauth_failed": "Impossible de joindre Google. Réessayez.",
       "callback_failed": "Impossible de finaliser la connexion.",
       "generic": "Une erreur est survenue. Réessayez.",

@@ -2328,6 +2328,7 @@
       "unconfirmed_email": "Confirmați mai întâi emailul. Verificați-vă inboxul.",
       "reset_link_expired": "Acest link a expirat. Solicitați unul nou.",
       "reset_link_invalid": "Acest link nu mai este valid. Solicitați unul nou.",
+      "confirm_link_expired": "Acest link de confirmare nu mai este valid. Introduceți adresa de e-mail și vă trimitem unul nou.",
       "oauth_failed": "Nu s-a putut contacta Google. Încercați din nou.",
       "callback_failed": "Nu s-a putut finaliza conectarea.",
       "generic": "A apărut o eroare. Încercați din nou.",

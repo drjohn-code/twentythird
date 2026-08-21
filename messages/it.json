@@ -2271,6 +2271,7 @@
       "unconfirmed_email": "Conferma prima la tua email. Controlla la tua casella di posta.",
       "reset_link_expired": "Quel link è scaduto. Richiedine uno nuovo.",
       "reset_link_invalid": "Quel link non è più valido. Richiedine uno nuovo.",
+      "confirm_link_expired": "Quel link di conferma non è più valido. Inserisci la tua email e te ne invieremo uno nuovo.",
       "oauth_failed": "Impossibile raggiungere Google. Riprova.",
       "callback_failed": "Impossibile completare l'accesso.",
       "generic": "Qualcosa è andato storto. Riprova.",

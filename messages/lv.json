@@ -2316,6 +2316,7 @@
       "unconfirmed_email": "Vispirms apstipriniet savu e-pastu. Pārbaudiet iesūtni.",
       "reset_link_expired": "Šī saite ir beigusies. Pieprasiet jaunu.",
       "reset_link_invalid": "Šī saite vairs nav derīga. Pieprasiet jaunu.",
+      "confirm_link_expired": "Šī apstiprinājuma saite vairs nav derīga. Ievadiet savu e-pastu, un mēs nosūtīsim jaunu.",
       "oauth_failed": "Nevarēja sasniegt Google. Mēģiniet vēlreiz.",
       "callback_failed": "Nevarēja pabeigt pieteikšanos.",
       "generic": "Kaut kas nogāja greizi. Mēģiniet vēlreiz.",

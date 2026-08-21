@@ -2269,6 +2269,7 @@
       "unconfirmed_email": "Bekræft din e-mail først. Tjek din indbakke.",
       "reset_link_expired": "Det link er udløbet. Anmod om et nyt.",
       "reset_link_invalid": "Det link er ikke længere gyldigt. Anmod om et nyt.",
+      "confirm_link_expired": "Det bekræftelseslink er ikke længere gyldigt. Indtast din e-mail, så sender vi et nyt.",
       "oauth_failed": "Kunne ikke nå Google. Prøv igen.",
       "callback_failed": "Kunne ikke fuldføre login.",
       "generic": "Noget gik galt. Prøv igen.",

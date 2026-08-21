@@ -2276,6 +2276,7 @@
       "unconfirmed_email": "Bevestig eerst uw e-mailadres. Controleer uw inbox.",
       "reset_link_expired": "Die link is verlopen. Vraag een nieuwe aan.",
       "reset_link_invalid": "Die link is niet langer geldig. Vraag een nieuwe aan.",
+      "confirm_link_expired": "Die bevestigingslink is niet meer geldig. Voer je e-mailadres in, dan sturen we een nieuwe.",
       "oauth_failed": "Kon Google niet bereiken. Probeer het opnieuw.",
       "callback_failed": "Aanmelden kon niet worden voltooid.",
       "generic": "Er is iets misgegaan. Probeer het opnieuw.",

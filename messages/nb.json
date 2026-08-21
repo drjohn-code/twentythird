@@ -2316,6 +2316,7 @@
       "unconfirmed_email": "Bekreft e-posten din først. Sjekk innboksen din.",
       "reset_link_expired": "Den lenken har utløpt. Be om en ny.",
       "reset_link_invalid": "Den lenken er ikke lenger gyldig. Be om en ny.",
+      "confirm_link_expired": "Den bekreftelseslenken er ikke lenger gyldig. Skriv inn e-postadressen din, så sender vi en ny.",
       "oauth_failed": "Kunne ikke nå Google. Prøv igjen.",
       "callback_failed": "Kunne ikke fullføre innloggingen.",
       "generic": "Noe gikk galt. Prøv igjen.",

@@ -2285,6 +2285,7 @@
       "unconfirmed_email": "Confirme o seu e-mail primeiro. Verifique a sua caixa de entrada.",
       "reset_link_expired": "Esse link expirou. Solicite um novo.",
       "reset_link_invalid": "Esse link já não é válido. Solicite um novo.",
+      "confirm_link_expired": "Esse link de confirmação já não é válido. Insira seu e-mail e enviaremos um novo.",
       "oauth_failed": "Não foi possível contactar o Google. Tente novamente.",
       "callback_failed": "Não foi possível concluir o início de sessão.",
       "generic": "Algo correu mal. Tente novamente.",
